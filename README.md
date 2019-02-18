@@ -22,7 +22,8 @@ Create a `Greetings` component with 2 props:
 ```
 
 **Output**
-WIP
+![image](https://user-images.githubusercontent.com/5306791/52957158-57edfd80-3391-11e9-8726-93c1a3389016.png)
+
 
 ## `Random`
 
@@ -37,12 +38,13 @@ Create a `Random` component with 2 props:
 ```
 
 **Output**
-WIP
+![image](https://user-images.githubusercontent.com/5306791/52957202-718f4500-3391-11e9-9b45-d1172067e877.png)
+
 
 
 ## `BoxColor`
 
-Create a `BoxColor` component that display a square with a background color based on props. For this. You will need a styled component. 
+Create a `BoxColor` component that display a rectangle with a background color based on props. For this, you will need a inline style ([documentation](https://reactjs.org/docs/dom-elements.html#style)). 
 
 It takes 3 props:
 - `r`: A number between 0 and 255 representing the amount of red
@@ -56,7 +58,8 @@ It takes 3 props:
 ```
 
 **Output**
-WIP
+![image](https://user-images.githubusercontent.com/5306791/52957816-ec0c9480-3392-11e9-9e00-67094fa2b431.png)
+
 
 As a bonus, you can also display the hex values of the color (ex: `#ff0000` for red).
 
