@@ -6,10 +6,12 @@ class DriverCard extends Component {
   render() {
     return (
       <div className="DriverCard">
-        <h2>Your Driver</h2>
-        {this.props.name}
-        <img src={this.props.img} />
-        <Rating>{this.props.rating}</Rating>
+        <img className="left" src={this.props.img} />
+        <div className="right">
+          <h2>{this.props.name}</h2>
+          <Rating>{this.props.rating}</Rating>
+          <p>{this.props.car.model} - {this.props.car.licensePlate}</p>
+        </div>
       </div>
     );
   }

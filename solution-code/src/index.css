@@ -13,10 +13,19 @@ code {
     monospace;
 }
 
+
 .box {
   border: 1px solid black;
   padding: 5px;
   margin: 10px 0;
+}
+
+.IdCard {
+  display: flex;
+}
+
+.IdCard img {
+  margin-right: 5px;
 }
 
 .BoxColor {
@@ -25,10 +34,11 @@ code {
 }
 
 .CreditCard {
-  margin: 10px 0;
-  padding: 15px;
+  margin: 10px;
+  padding: 20px;
   width: 300px;
   border-radius: 10px;
+  display: inline-block;
 }
 
 .CreditCard .type {
@@ -54,8 +64,18 @@ code {
 }
 
 .DriverCard {
-  border: 1px solid black;
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: white;
   padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.DriverCard > * {
+  margin: 5px;
 }
 
 .DriverCard img {
@@ -63,4 +83,13 @@ code {
   width: 100px;
   object-fit: cover;
   border-radius: 100px;
+}
+
+.DriverCard .right > * {
+  margin: 0;
+}
+
+.Dice {
+  height: 100px;
+  width: 100px;
 }

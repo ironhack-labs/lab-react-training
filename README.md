@@ -6,10 +6,48 @@ The goal of this repository is to create a lot of React components.
 
 To start this project, you can:
 - Clone this project
+- Go inside `starter-code`
 - Run `npm install`
 - Run `npm start`
 
-## `Greetings`
+
+## Components | `IdCard`
+
+Create a `IdCard` component with 6 props:
+- `lastName`: A string
+- `firstName`:  A string
+- `gender`:  A string, `'male'` or `'female'`
+- `height`: A number
+- `birth`: A date
+- `picture`: A string
+
+**Example**
+```js
+<IdCard 
+  lastName='Doe'
+  firstName='John'
+  gender='male'
+  height={178}
+  birth={new Date("1992-07-14")}
+  picture="https://randomuser.me/api/portraits/men/44.jpg"
+/>
+
+<IdCard 
+  lastName='Delores '
+  firstName='Obrien'
+  gender='female'
+  height={172}
+  birth={new Date("1988-05-11")}
+  picture="https://randomuser.me/api/portraits/women/44.jpg"
+/>
+```
+
+**Output**
+
+![image](https://user-images.githubusercontent.com/5306791/52976030-22b0d200-33c8-11e9-91fe-e3ce0fa14078.png)
+
+
+## Components | `Greetings`
 
 Create a `Greetings` component with 2 props:
 - `lang`: A string that could be ,`"de"`,`"en"`,`"es"`,`"fr"`
@@ -26,7 +64,7 @@ Create a `Greetings` component with 2 props:
 ![image](https://user-images.githubusercontent.com/5306791/52957158-57edfd80-3391-11e9-8726-93c1a3389016.png)
 
 
-## `Random`
+## Components | `Random`
 
 Create a `Random` component with 2 props:
 - `min`: A number
@@ -44,7 +82,7 @@ Create a `Random` component with 2 props:
 
 
 
-## `BoxColor`
+## Components | `BoxColor`
 
 Create a `BoxColor` component that displays a rectangle with a background color based on props. For this, you will need a inline style ([documentation](https://reactjs.org/docs/dom-elements.html#style)). 
 
@@ -66,7 +104,7 @@ It takes 3 props:
 
 As a bonus, you can also display the hex values of the color (ex: `#ff0000` for red).
 
-## `CreditCard`
+## Components | `CreditCard`
 
 Create a `CreditCard` component that displays a square with a background color based on props. For this. You will need a styled component. 
 
@@ -84,22 +122,144 @@ Take your time to do as close to the output. You probably have to use flexbox.
 
 **Example**
 ```js
-<CreditCard type="Visa" number="0123456789016984" expirationMonth={12} expirationYear={2019} bank="Name of the Bank" owner="Firstname Lastname" bgColor="#eecc55" color="white" />
+<CreditCard 
+  type="Visa"
+  number="0123456789018845"
+  expirationMonth={3}
+  expirationYear={2021}
+  bank="BNP"
+  owner="Maxence Bouret"
+  bgColor="#11aa99"
+  color="white" />
+<CreditCard 
+  type="Master Card"
+  number="0123456789010995"
+  expirationMonth={3}
+  expirationYear={2021}
+  bank="N26"
+  owner="Maxence Bouret"
+  bgColor="#eeeeee"
+  color="#222222" />
+<CreditCard 
+  type="Visa"
+  number="0123456789016984"
+  expirationMonth={12}
+  expirationYear={2019}
+  bank="Name of the Bank"
+  owner="Firstname Lastname"
+  bgColor="#ddbb55"
+  color="white" />
 ```
 
 **Output**
 
-![](https://trello-attachments.s3.amazonaws.com/5c05678a9f27127996f56d38/5c69daff8b89794b0772c527/26255e6386a63397b41cfea6fd8016c7/image.png)
+![image](https://user-images.githubusercontent.com/5306791/52975678-ac5fa000-33c6-11e9-8cbf-7d13a8a0f625.png)
 
 
-## `Rating`
 
-Create a `Rating` component that displays
+## Components | `Rating`
+
+Create a `Rating` component that displays 5 stars, some of them must be empty (☆), some must be full (★).
 
 It takes 1 props:
-- `children`: A float number between 0 and 5
+- `children`: A number between 0 and 5. Be careful, it can be a float number. If it's 3.9, it will display 4 stars.
 
-For this, you will need to install Font Awesome
-```sh
-npm i @fortawesome/free-brands-svg-icons @fortawesome/free-regular-svg-icons
+
+**Example**
+```js
+<Rating>0</Rating>
+<Rating>1.49</Rating>
+<Rating>1.5</Rating>
+<Rating>3</Rating>
+<Rating>4</Rating>
+<Rating>5</Rating>
+```
+
+**Output**
+
+![image](https://user-images.githubusercontent.com/5306791/52972787-39512c00-33bc-11e9-93d8-428d835442fd.png)
+
+
+## Components | `DriverCard`
+
+**Example**
+```js
+<DriverCard 
+  name="Travis Kalanick"
+  rating={4.2}
+  img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+  car={{
+    model: "Toyota Corolla Altis",
+    licensePlate: "CO42DE"
+  }} />
+<DriverCard 
+  name="Dara Khosrowshahi"
+  rating={4.9}
+  img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+  car={{
+    model: "Audi A3",
+    licensePlate: "BE33ER"
+  }} />
+```
+
+**Output**
+
+![image](https://user-images.githubusercontent.com/5306791/52972847-66054380-33bc-11e9-92e0-8e48d1ab0212.png)
+
+
+## State | `Dice`
+
+Create a `Dice` component that display a random picture (example: `'/img/dice3.png'`). Then everytime the user clicks on the component:
+- An empty picture is displayed (`'/img/dice-empty.png'`) 
+- 2 seconds later, a new random picture is displayed (example: `'/img/dice6.png'`).
+
+**Example**
+```js
+<Dice />
+```
+
+**Output before a click**
+
+![image](https://user-images.githubusercontent.com/5306791/52976705-c13e3280-33ca-11e9-8684-f4dbff643b79.png)
+
+
+**Output 1 millisecond after a click**
+
+![image](https://user-images.githubusercontent.com/5306791/52976790-25f98d00-33cb-11e9-864e-ec14b4ec2a31.png)
+
+
+**Output 2 seconds after a click**
+
+![image](https://user-images.githubusercontent.com/5306791/52976752-f64a8500-33ca-11e9-98ee-b0b17f5e85b2.png)
+
+
+## State | `ClickablePicture`
+
+Create a component `ClickablePicture` that displays a picture and toggle to the next picture on click.
+
+**Example**
+```js
+<ClickablePicture
+  img="/img/persons/maxence.png"
+  imgClicked="/img/persons/maxence-glasses.png" />
+```
+
+**Output before click**
+
+![image](./solution-code/public/img/persons/maxence.png)
+
+**Output after the 1st click**
+
+![image](./solution-code/public/img/persons/maxence-glasses.png)
+
+PS: If you want your own picture instead, you can do it yourself with this picture: http://www.stickpng.com/assets/images/584999937b7d4d76317f5ffd.png 😎
+
+## State | `Carousel`
+
+Create a `Carousel` component that displays an image and two buttons ('left' and 'right') and that changes the picture everytime.
+
+**Example**
+```js
+<Carousel
+  imgs={["https://randomuser.me/api/portraits/women/1.jpg", "https://randomuser.me/api/portraits/men/1.jpg","https://randomuser.me/api/portraits/women/2.jpg", "https://randomuser.me/api/portraits/men/2.jpg"]} />
 ```

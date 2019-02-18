@@ -9,8 +9,8 @@ class CreditCard extends Component {
         color: this.props.color,
       }}>
         <div className="type">
-          {this.props.type === "Visa" && <img src="https://resources.mynewsdesk.com/image/upload/ojf8ed4taaxccncp6pcp.png" />}
-          {this.props.type === "Master Card" && <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/MasterCard_early_1990s_logo.svg" />}
+          {this.props.type === "Visa" && <img src="/img/visa.png" />}
+          {this.props.type === "Master Card" && <img src="/img/master-card.svg" />}
         </div>
         <div className="number">•••• •••• •••• {this.props.number.substr(-4)}</div>
         <div className="expires-bank">
