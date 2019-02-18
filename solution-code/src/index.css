@@ -23,3 +23,44 @@ code {
   text-align: center;
   padding: 20px;
 }
+
+.CreditCard {
+  margin: 10px 0;
+  padding: 15px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.CreditCard .type {
+  text-align: right;
+}
+
+.CreditCard .type img {
+  height: 20px;
+}
+
+.CreditCard .number {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.CreditCard .bank {
+  margin-left: 20px;
+}
+
+.Rating {
+  font-size: 2rem;
+}
+
+.DriverCard {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.DriverCard img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+}

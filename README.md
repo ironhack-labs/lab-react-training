@@ -46,7 +46,7 @@ Create a `Random` component with 2 props:
 
 ## `BoxColor`
 
-Create a `BoxColor` component that display a rectangle with a background color based on props. For this, you will need a inline style ([documentation](https://reactjs.org/docs/dom-elements.html#style)). 
+Create a `BoxColor` component that displays a rectangle with a background color based on props. For this, you will need a inline style ([documentation](https://reactjs.org/docs/dom-elements.html#style)). 
 
 It takes 3 props:
 - `r`: A number between 0 and 255 representing the amount of red
@@ -68,9 +68,9 @@ As a bonus, you can also display the hex values of the color (ex: `#ff0000` for 
 
 ## `CreditCard`
 
-Create a `CreditCard` component that display a square with a background color based on props. For this. You will need a styled component. 
+Create a `CreditCard` component that displays a square with a background color based on props. For this. You will need a styled component. 
 
-It takes 3 props:
+It takes 8 props:
 - `type`: A string that can be `"Visa"` or `"Master Card"`
 - `number`: A string that is number of the credit card. You will only display the 4 last digits for security reasons 😉
 - `expirationMonth`: A number that represents the month, between 1 and 12
@@ -90,3 +90,16 @@ Take your time to do as close to the output. You probably have to use flexbox.
 **Output**
 
 ![](https://trello-attachments.s3.amazonaws.com/5c05678a9f27127996f56d38/5c69daff8b89794b0772c527/26255e6386a63397b41cfea6fd8016c7/image.png)
+
+
+## `Rating`
+
+Create a `Rating` component that displays
+
+It takes 1 props:
+- `children`: A float number between 0 and 5
+
+For this, you will need to install Font Awesome
+```sh
+npm i @fortawesome/free-brands-svg-icons @fortawesome/free-regular-svg-icons
+```
