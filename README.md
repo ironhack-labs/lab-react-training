@@ -22,6 +22,7 @@ Create a `Greetings` component with 2 props:
 ```
 
 **Output**
+
 ![image](https://user-images.githubusercontent.com/5306791/52957158-57edfd80-3391-11e9-8726-93c1a3389016.png)
 
 
@@ -38,6 +39,7 @@ Create a `Random` component with 2 props:
 ```
 
 **Output**
+
 ![image](https://user-images.githubusercontent.com/5306791/52957202-718f4500-3391-11e9-9b45-d1172067e877.png)
 
 
@@ -58,6 +60,7 @@ It takes 3 props:
 ```
 
 **Output**
+
 ![image](https://user-images.githubusercontent.com/5306791/52957816-ec0c9480-3392-11e9-9e00-67094fa2b431.png)
 
 
@@ -85,4 +88,5 @@ Take your time to do as close to the output. You probably have to use flexbox.
 ```
 
 **Output**
+
 ![](https://trello-attachments.s3.amazonaws.com/5c05678a9f27127996f56d38/5c69daff8b89794b0772c527/26255e6386a63397b41cfea6fd8016c7/image.png)
