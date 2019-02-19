@@ -11,6 +11,7 @@ import ClickablePicture from './ClickablePicture'
 import Dice from './Dice';
 import Carousel from './Carousel'
 import NumbersTable from './NumbersTable'
+import FaceBook from './FaceBook'
 
 class App extends Component {
   render() {
@@ -122,6 +123,9 @@ class App extends Component {
 
         <h1>NumbersTable</h1>
         <NumbersTable limit={12} />
+
+        <h1>FaceBook</h1>
+        <FaceBook />
       </div>
     );
   }

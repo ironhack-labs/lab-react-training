@@ -26,6 +26,9 @@ code {
 
 .IdCard img {
   margin-right: 5px;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
 }
 
 .BoxColor {

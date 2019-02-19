@@ -1,23 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class NumbersTable extends Component {
-  getList() {
-    let list = []
-    for (let n = 1; n <= this.props.limit; n++) {
-      let style = {
-        backgroundColor: n % 2 == 0 ? 'red' : 'white',
-      }
-      list.push(<li style={style} key={n}>{n}</li>)
+function NumbersTable(props) {
+  let list = []
+  for (let n = 1; n <= props.limit; n++) {
+    let style = {
+      backgroundColor: n % 2 === 0 ? 'red' : 'white',
     }
-    return list
+    list.push(<li style={style} key={n}>{n}</li>)
   }
-  render() {
-    return (
-      <ul className="NumbersTable">
-        {this.getList()}
-      </ul>
-    );
-  }
+  return (
+    <ul className="NumbersTable">
+      {list}
+    </ul>
+  );
 }
 
 export default NumbersTable;
