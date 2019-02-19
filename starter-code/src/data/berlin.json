@@ -11,7 +11,7 @@
   {"firstName": "Jamie", "lastName": "Egan", "country": "Scotland", "img": "https://i.imgur.com/dHPAcef.jpg", "isStudent": true},
   {"firstName": "Jennifer", "lastName": "Roberts", "country": "England", "img": "https://i.imgur.com/LFPrISE.jpg", "isStudent": true},
   {"firstName": "Julia", "lastName": "Miller", "country": "Kazakhstan", "img": "https://i.imgur.com/T8QeHKx.jpg", "isStudent": true},
-  {"firstName": "Ksenia", "lastName": "Danniker", "country": "Kazakhstan", "img": "https://i.imgur.com/B6djgVA.jpg", "isStudent": true},
+  {"firstName": "Ksenia", "lastName": "Danniker", "country": "Russia", "img": "https://i.imgur.com/B6djgVA.jpg", "isStudent": true},
   {"firstName": "Laura", "lastName": "Puyol Rigol", "country": "Catalonia", "img": "https://i.imgur.com/oZJDklg.jpg", "isStudent": true},
   {"firstName": "Malte", "lastName": "Felmy", "country": "Germany", "img": "https://i.imgur.com/eTsNpZB.jpg", "isStudent": true},
   {"firstName": "Marvin", "lastName": "Artioli", "country": "Italy", "img": "https://i.imgur.com/DrY6NIv.jpg", "isStudent": true},
