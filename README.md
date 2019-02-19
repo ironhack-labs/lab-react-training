@@ -207,6 +207,29 @@ It takes 1 props:
 ![image](https://user-images.githubusercontent.com/5306791/52972847-66054380-33bc-11e9-92e0-8e48d1ab0212.png)
 
 
+
+## State | `ClickablePicture`
+
+Create a component `ClickablePicture` that displays a picture and toggle to the next picture on click.
+
+**Example**
+```js
+<ClickablePicture
+  img="/img/persons/maxence.png"
+  imgClicked="/img/persons/maxence-glasses.png" />
+```
+
+**Output before click**
+
+![image](./solution-code/public/img/persons/maxence.png)
+
+**Output after the 1st click**
+
+![image](./solution-code/public/img/persons/maxence-glasses.png)
+
+PS: If you want your own picture instead, you can do it yourself with this picture: http://www.stickpng.com/assets/images/584999937b7d4d76317f5ffd.png 😎
+
+
 ## State | `Dice`
 
 Create a `Dice` component that display a random picture (example: `'/img/dice3.png'`). Then everytime the user clicks on the component:
@@ -232,27 +255,6 @@ Create a `Dice` component that display a random picture (example: `'/img/dice3.p
 
 ![image](https://user-images.githubusercontent.com/5306791/52976752-f64a8500-33ca-11e9-98ee-b0b17f5e85b2.png)
 
-
-## State | `ClickablePicture`
-
-Create a component `ClickablePicture` that displays a picture and toggle to the next picture on click.
-
-**Example**
-```js
-<ClickablePicture
-  img="/img/persons/maxence.png"
-  imgClicked="/img/persons/maxence-glasses.png" />
-```
-
-**Output before click**
-
-![image](./solution-code/public/img/persons/maxence.png)
-
-**Output after the 1st click**
-
-![image](./solution-code/public/img/persons/maxence-glasses.png)
-
-PS: If you want your own picture instead, you can do it yourself with this picture: http://www.stickpng.com/assets/images/584999937b7d4d76317f5ffd.png 😎
 
 ## State | `Carousel`
 
