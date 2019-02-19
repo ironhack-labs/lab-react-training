@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import profiles from './data/berlin.json'
 
 class FaceBook extends Component {
+  // This is the advanced part
   constructor(props) {
     super(props)
     // Save the list of countries from profiles and only keep the unique values (Set)
@@ -10,6 +11,7 @@ class FaceBook extends Component {
       selected: null
     }
   }
+  // This is the advanced part
   handleButtonClick(country) {
     this.setState(prevState => ({
       selected: country
@@ -18,6 +20,7 @@ class FaceBook extends Component {
   render() {
     return (
       <div className="FaceBook">
+        {/* This map is the advanced part */}
         {this.countries.map(country => (
           <button 
             key={country}
