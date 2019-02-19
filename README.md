@@ -265,3 +265,41 @@ Create a `Carousel` component that displays an image and two buttons ('left' and
 <Carousel
   imgs={["https://randomuser.me/api/portraits/women/1.jpg", "https://randomuser.me/api/portraits/men/1.jpg","https://randomuser.me/api/portraits/women/2.jpg", "https://randomuser.me/api/portraits/men/2.jpg"]} />
 ```
+
+## List and Keys | `FaceBook` | Simple
+
+Create a `FaceBook` component that displays the list of all profiles from `src/data/berlin.json`. You will probably have to write: 
+
+```js
+import profiles from './data/berlin.json'
+```
+
+**Example**
+```js
+<FaceBook />
+```
+
+**Output** (you should see about 28 profiles)
+
+![image](https://user-images.githubusercontent.com/5306791/53018529-e8d8dd80-3452-11e9-9912-1221eef67be6.png)
+
+
+## List and Keys | `FaceBook` | Advanced
+
+On your `FaceBook` component, add as many buttons as you have `country`. Then, when the user clicks on one of the button (example: 'USA'), add a blue background to all the profiles where their country is the one selected.
+
+**Example**
+```js
+<FaceBook />
+```
+
+**Output** (you should see more profiles and more countries)
+
+![image](https://user-images.githubusercontent.com/5306791/53018961-f8a4f180-3453-11e9-9c82-1f57a2f66a30.png)
+
+
+
+Example of extra iterations:
+- By default, only display the picture. Then, when a user clicks on a picture, display more informations
+- Add sort buttons
+- Add a search input
