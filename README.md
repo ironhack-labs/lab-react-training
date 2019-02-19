@@ -1,4 +1,4 @@
-# React Monday Training | React Components
+# React Training
 
 ## Introduction
 
