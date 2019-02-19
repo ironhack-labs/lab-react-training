@@ -266,6 +266,32 @@ Create a `Carousel` component that displays an image and two buttons ('left' and
   imgs={["https://randomuser.me/api/portraits/women/1.jpg", "https://randomuser.me/api/portraits/men/1.jpg","https://randomuser.me/api/portraits/women/2.jpg", "https://randomuser.me/api/portraits/men/2.jpg"]} />
 ```
 
+## List and Keys | `NumbersTable`
+
+**Example**
+```js
+<NumbersTable limit={10} />
+```
+
+**Output**
+```html
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+</ul>
+```
+
+If the number is even, display it in red, otherwise in black.
+
+
 ## List and Keys | `FaceBook` | Simple
 
 Create a `FaceBook` component that displays the list of all profiles from `src/data/berlin.json`. You will probably have to write: 
