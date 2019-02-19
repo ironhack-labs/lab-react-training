@@ -7,6 +7,7 @@ import DriverCard from './DriverCard';
 import Rating from './Rating';
 import IdCard from './IdCard';
 import Dice from './Dice';
+import ClickablePicture from './ClickablePicture'
 
 
 class App extends Component {
@@ -102,6 +103,11 @@ class App extends Component {
             licensePlate: "BE33ER"
           }} />
 
+        <h1>ClickablePicture</h1>
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png" />
+          
         <h1>Dice</h1>
         <Dice /> 
       </div>

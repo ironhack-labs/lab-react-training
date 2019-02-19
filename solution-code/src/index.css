@@ -93,3 +93,13 @@ code {
   height: 100px;
   width: 100px;
 }
+
+.ClickablePicture {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.Dice {
+  cursor: pointer;
+}
