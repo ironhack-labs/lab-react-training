@@ -6,8 +6,9 @@ import CreditCard from './CreditCard';
 import DriverCard from './DriverCard';
 import Rating from './Rating';
 import IdCard from './IdCard';
-import Dice from './Dice';
+import LikeButton from './LikeButton'
 import ClickablePicture from './ClickablePicture'
+import Dice from './Dice';
 import Carousel from './Carousel'
 import NumbersTable from './NumbersTable'
 
@@ -103,6 +104,9 @@ class App extends Component {
             model: "Audi A3",
             licensePlate: "BE33ER"
           }} />
+
+        <h1>LikeButton</h1>
+        <LikeButton /> <LikeButton />
 
         <h1>ClickablePicture</h1>
         <ClickablePicture

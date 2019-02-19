@@ -10,6 +10,8 @@ To start this project, you can:
 - Run `npm install`
 - Run `npm start`
 
+You can preview the solution here: https://5c6c2a0de07b084ce35373ee--determined-aryabhata-a8a833.netlify.com/
+
 
 ## Components | `IdCard`
 
@@ -207,6 +209,20 @@ It takes 1 props:
 ![image](https://user-images.githubusercontent.com/5306791/52972847-66054380-33bc-11e9-92e0-8e48d1ab0212.png)
 
 
+## State | `LikeButton`
+
+Create a component `LikeButton` that displays a button "0 Likes" and with a number increases when the user clicks on it.
+
+As a bonus, you can change the background color and set it to one of these: `['purple','blue','green','yellow','orange','red']`
+
+**Example**
+```js
+<LikeButton /> <LikeButton />
+```
+
+**Output**
+
+![](https://media.giphy.com/media/OQJkfIEkYTUdYkgNP7/giphy.gif)
 
 ## State | `ClickablePicture`
 
@@ -219,13 +235,9 @@ Create a component `ClickablePicture` that displays a picture and toggle to the 
   imgClicked="/img/persons/maxence-glasses.png" />
 ```
 
-**Output before click**
+**Output**
 
-![image](./solution-code/public/img/persons/maxence.png)
-
-**Output after the 1st click**
-
-![image](./solution-code/public/img/persons/maxence-glasses.png)
+![](https://media.giphy.com/media/9FXwCr2LLLIlgNL2sL/giphy.gif)
 
 PS: If you want your own picture instead, you can do it yourself with this picture: http://www.stickpng.com/assets/images/584999937b7d4d76317f5ffd.png 😎
 
@@ -234,7 +246,7 @@ PS: If you want your own picture instead, you can do it yourself with this pictu
 
 Create a `Dice` component that display a random picture (example: `'/img/dice3.png'`). Then everytime the user clicks on the component:
 - An empty picture is displayed (`'/img/dice-empty.png'`) 
-- 2 seconds later, a new random picture is displayed (example: `'/img/dice6.png'`).
+- 1 second later, a new random picture is displayed (example: `'/img/dice6.png'`).
 
 **Example**
 ```js
@@ -251,7 +263,7 @@ Create a `Dice` component that display a random picture (example: `'/img/dice3.p
 ![image](https://user-images.githubusercontent.com/5306791/52976790-25f98d00-33cb-11e9-864e-ec14b4ec2a31.png)
 
 
-**Output 2 seconds after a click**
+**Output 1 second after a click**
 
 ![image](https://user-images.githubusercontent.com/5306791/52976752-f64a8500-33ca-11e9-98ee-b0b17f5e85b2.png)
 
@@ -265,6 +277,10 @@ Create a `Carousel` component that displays an image and two buttons ('left' and
 <Carousel
   imgs={["https://randomuser.me/api/portraits/women/1.jpg", "https://randomuser.me/api/portraits/men/1.jpg","https://randomuser.me/api/portraits/women/2.jpg", "https://randomuser.me/api/portraits/men/2.jpg"]} />
 ```
+
+**Output**
+
+![](https://media.giphy.com/media/1n7cAJu0MWerLnnohR/giphy.gif)
 
 ## List and Keys | `NumbersTable`
 
