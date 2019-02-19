@@ -103,3 +103,21 @@ code {
 .Dice {
   cursor: pointer;
 }
+
+.NumbersTable {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.NumbersTable li {
+  margin: 0;
+  list-style-type: none;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

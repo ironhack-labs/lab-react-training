@@ -268,28 +268,21 @@ Create a `Carousel` component that displays an image and two buttons ('left' and
 
 ## List and Keys | `NumbersTable`
 
+Create a `NumbersTable` component that displays a list of numbers between 1 and a limit. Even numbers must be red.
+
+It takes 1 props:
+- `limit`: A number.
+
 **Example**
 ```js
-<NumbersTable limit={10} />
+<NumbersTable limit={12} />
 ```
 
 **Output**
-```html
-<ul>
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li>10</li>
-</ul>
-```
 
-If the number is even, display it in red, otherwise in black.
+![image](https://user-images.githubusercontent.com/5306791/53028410-13349600-3467-11e9-8199-407375e61ab0.png)
+
+
 
 
 ## List and Keys | `FaceBook` | Simple
