@@ -368,10 +368,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 **Example**
 ```js
-<Signup />
+<SignupPage />
 ```
 
 **Output**
 
 ![image](https://user-images.githubusercontent.com/5306791/53089348-9c51d880-350c-11e9-9621-cad9d87bdd48.png)
 
+
+## Lifting State Up | RGBColorPicker
+
+
+
+Create 2 components:
+- `RGBColorPicker`: 
+  - `state.rValue`: A number between 0 and 255, representing the amount of red
+  - `state.gValue`: A number between 0 and 255, representing the amount of green
+  - `state.bValue`: A number between 0 and 255, representing the amount of blue
+- `SingleColorPicker`: A box with an input range to select an amount of a value
+  - `props.color`: A string that is either "r", "g" or "b"
+  - `props.value`: A number between 0 and 255
+  - `props.onChange`: A method that is triggered when the input is changed
+
+**Output**
+
+![image](https://user-images.githubusercontent.com/5306791/53128861-25e1c480-3566-11e9-8b75-b0e79f217f29.png)

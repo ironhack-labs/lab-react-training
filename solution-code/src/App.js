@@ -13,6 +13,7 @@ import Carousel from './Carousel'
 import NumbersTable from './NumbersTable'
 import FaceBook from './FaceBook'
 import SignupPage from './SignupPage'
+import RGBColorPicker from './color-picker/RGBColorPicker'
 
 
 class App extends Component {
@@ -132,6 +133,8 @@ class App extends Component {
         <h1>SignupPage</h1>
         <SignupPage />
         
+        <h1>RGBColorPicker</h1>
+        <RGBColorPicker />
       </div>
     );
   }

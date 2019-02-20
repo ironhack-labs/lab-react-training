@@ -124,3 +124,24 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+.RGBColorPicker {
+  /* display: flex; */
+  align-items: center;
+}
+
+.SingleColorPicker {
+  display: flex;
+  align-items: center;
+}
+
+.color-box {
+  height: 40px;
+  width: 40px;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.color-box input {
+  width: 100%;
+}
