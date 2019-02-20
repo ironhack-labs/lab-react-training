@@ -338,3 +338,40 @@ Example of extra iterations:
 - By default, only display the picture. Then, when a user clicks on a picture, display more informations
 - Add sort buttons
 - Add a search input
+
+
+## Form | SignupPage
+
+Create a `SignupPage` component with the following elements:
+- A input "email" (bonus: make the input green/red when the email is valid/invalid)
+- A input "password" (bonus: make the input green/red when the password is strong/weak)
+- A select input "nationality" (possible values: "en","de","fr")
+- A text "Hello", "Hallo" or "Bonjour" based on the selected nationality 
+- A text "Your email is john@doe.com"
+
+For this, you will need 3 states:
+- `email`
+- `password`
+- `nationality`
+
+
+If you want to include Bootstrap with [Reactstrap](https://reactstrap.github.io), you should run
+```sh
+npm install reactstrap bootstrap
+```
+
+And add the following line in `src/index.js`
+```js
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
+
+**Example**
+```js
+<Signup />
+```
+
+**Output**
+
+![image](https://user-images.githubusercontent.com/5306791/53089348-9c51d880-350c-11e9-9621-cad9d87bdd48.png)
+
