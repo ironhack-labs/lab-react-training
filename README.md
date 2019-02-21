@@ -392,4 +392,10 @@ Create 2 components:
 
 **Output**
 
-![image](https://user-images.githubusercontent.com/5306791/53128861-25e1c480-3566-11e9-8b75-b0e79f217f29.png)
+<!-- ![image](https://user-images.githubusercontent.com/5306791/53165631-8824de80-35d3-11e9-914d-6b6c2bdbe0d0.png) -->
+
+![image](https://user-images.githubusercontent.com/5306791/53166207-f918c600-35d4-11e9-8c47-c58cdc2d05b0.png)
+
+
+
+

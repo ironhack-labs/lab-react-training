@@ -130,7 +130,11 @@ code {
   align-items: center;
 }
 
-.SingleColorPicker {
+.SingleColorPicker input {
+  width: 80px;
+}
+
+.flex-align-items-center {
   display: flex;
   align-items: center;
 }
