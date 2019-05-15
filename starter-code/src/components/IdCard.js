@@ -9,7 +9,6 @@ const IdCard = ({
   birth,
   picture
 }) => {
-  console.log(birth);
   return (
     <div className="box small-padding">
       <article className="media">

@@ -20,3 +20,7 @@ code {
 .centered{
   text-align: center;
 }
+
+.small-margin-left{
+  margin-left: 10px;
+}
