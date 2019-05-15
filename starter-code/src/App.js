@@ -65,6 +65,7 @@ class App extends Component {
         />
 
         {/* Rating Component */}
+        <h1 className="title">Rating</h1>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
