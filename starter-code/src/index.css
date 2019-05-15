@@ -12,3 +12,88 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.cardContainer {
+  border: black 1px solid;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:center;
+  }
+
+.cardInfo{
+flex-grow:0;
+}
+
+.Greetings{
+  margin:0.5%;
+  padding: 0.5%;
+  border: black 2px solid;
+}
+
+.Random{
+  margin:0.5%;
+  padding: 0.5%;
+  border: black 2px solid;
+}
+
+.BoxColor{
+  margin:2%;
+  padding: 2%;
+  border: black 2px solid;
+}
+
+.CreditCard {
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  display: inline-block;
+}
+.CreditCard .tipo{
+ text-align: right;
+}
+
+.CreditCard .number {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.DriverCard {
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: 10px;
+}
+.DriverCard img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.Table{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.Table .PAR{
+  background-color: red;
+  padding: 5%;
+  font-size: 250%;
+  border: black 2px solid;
+}
+
+.Table .NON {
+padding: 5%;
+font-size: 250%;
+  border: black 2px solid;
+}
