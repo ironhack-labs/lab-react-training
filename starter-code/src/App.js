@@ -11,6 +11,7 @@ import LikeButton from "./components/Likebutton";
 import ClickablePicture from "./components/ClickablePicture";
 import Dice from "./components/Dice";
 import Carousel from "./components/Carousel";
+import NumbersTable from "./components/NumbersTable";
 
 class App extends Component {
   render() {
@@ -130,6 +131,10 @@ class App extends Component {
             "https://randomuser.me/api/portraits/men/2.jpg"
           ]}
         />
+
+        {/* NumbersTable Component */}
+        <h1 className="title">NumbersTable</h1>
+        <NumbersTable limit={12}/>
       </div>
     );
   }

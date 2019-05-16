@@ -13,18 +13,33 @@ code {
     monospace;
 }
 
-.small-padding{
+.small-padding {
   padding: 5px;
 }
 
-.centered{
+.centered {
   text-align: center;
 }
 
-.small-margin-left{
+.small-margin-left {
   margin-left: 10px;
 }
 
-.star{
+.star {
   font-size: 2em;
+}
+
+.numbers-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numbers-table > li {
+  display: flex;
+  list-style-type: none;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
 }
