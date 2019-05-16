@@ -1,8 +1,6 @@
 import React from "react";
+import {randNumber} from "../helpers/functions";
 
-const randNumber = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-};
 const Random = ({ min, max }) => (
   <div className="box">
     <p>

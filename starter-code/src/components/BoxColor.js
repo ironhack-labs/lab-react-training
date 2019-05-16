@@ -12,16 +12,22 @@ const toHex = number => {
   return hex;
 };
 
-const BoxColor = ({ r, g, b }) => (
+const BoxColor = ({ r, g, b, children }) => (
   <div className="box centered" style={boxColorStyle(r, g, b)}>
-    <p>
-      rgb({r},{g},{b})
-    </p>
-    <p>
-      #{toHex(r)}
-      {toHex(g)}
-      {toHex(b)}
-    </p>
+    {!children ? (
+      <div>
+        <p>
+          rgb({r},{g},{b})
+        </p>
+        <p>
+          #{toHex(r)}
+          {toHex(g)}
+          {toHex(b)}
+        </p>
+      </div>
+    ) : (
+      children
+    )}
   </div>
 );
 
