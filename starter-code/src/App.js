@@ -6,8 +6,8 @@ import BoxColor from './Components/BoxColor.js';
 import CreditCard from './Components/CreditCard.js';
 import Rating from './Components/Rating';
 import DriverCard from './Components/DriverCard';
-
-
+import LikeButton from './Components/LikeButton';
+import ClickablePicture from './Components/ClickablePicture';
 
 class App extends Component {
 	state = {
@@ -137,6 +137,12 @@ class App extends Component {
 						licensePlate: 'BE33ER'
 					}}
 				/>
+        <h1>Like Button</h1>
+          <LikeButton />
+          <LikeButton />
+          <h1>Clickable Picture</h1>
+          <ClickablePicture img="/img/persons/maxence.png"
+  imgClicked="/img/persons/maxence-glasses.png"/>
 			</div>
 		);
 	}

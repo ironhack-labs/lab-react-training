@@ -16,7 +16,7 @@ class CreditCard extends Component {
 		let styles = {
 			backgroundColor: this.props.bgColor,
 			color: this.props.color,
-			width: 300,
+			width: 400,
 			borderRadius: 8,
 			padding: 10,
 			margin: 10
@@ -25,10 +25,10 @@ class CreditCard extends Component {
 		return (
 			<div className="type" style={styles}>
 				{this.state.type === 'Visa' && (
-					<img className="right" src="/img/visa.png" alt="visa" height="20" width="30" />
+					<img className="right" src="/img/visa.png" alt="visa" height="20" width="auto" />
 				)}
 				{this.state.type === 'Master Card' && (
-					<img className="right" src="/img/master-card.svg" alt="master" height="20" width="30" />
+					<img className="right" src="/img/master-card.svg" alt="master" height="20" width="auto" />
 				)}
 				<br />
 				<br />
