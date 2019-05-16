@@ -1,0 +1,21 @@
+.card {
+  background-color: #425cbb;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileData{
+  margin: 5px;
+}

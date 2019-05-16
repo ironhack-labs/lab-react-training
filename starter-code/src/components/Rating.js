@@ -7,7 +7,6 @@ const rate = rating => {
     if (index < filledStars) stars += String.fromCharCode('9733');
     else stars += String.fromCharCode('9734');
   }
-  console.log(stars);
   return stars;
 };
 
