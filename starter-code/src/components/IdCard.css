@@ -1,0 +1,20 @@
+.idCardRecord {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.idCardRecord img { 
+  max-width:230px;
+  max-height:95px; 
+}
+
+.idCardRecord div p {
+  margin: 0px;
+}
+
+.idCardDescription {
+  font-weight: bold; 
+  margin-left: 5px;
+}
+

@@ -1,0 +1,21 @@
+.caroussel-container {
+  display: inline-flex;
+  flex-direction: column; 
+  text-align: center;
+}
+
+.caroussel-button {
+  padding: 5px; 
+  background-color: goldenrod;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; 
+}

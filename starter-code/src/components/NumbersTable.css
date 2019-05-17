@@ -1,0 +1,24 @@
+.numbers-table {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.numbers-table li {
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  font-weight: bold;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers-table-red {
+  background-color: red;
+}
+
+.numbers-table-white {
+  background-color: white;
+}

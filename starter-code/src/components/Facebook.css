@@ -1,0 +1,7 @@
+.facebook-country-filter {
+  padding: 5px 15px;
+  border: 1px solid grey;
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  cursor: pointer;
+}
