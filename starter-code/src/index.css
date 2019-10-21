@@ -12,3 +12,199 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.IdCard {
+  border: 1px solid black;
+  margin: 10px;
+  display: flex;
+}
+
+.IdCard img {
+  display: flex;
+  width: 125px;
+  height: 125px;
+  align-items: center;
+  padding: 10px;
+  
+}
+
+.id-content {
+  line-height: 20%;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.App h1 {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.Greeting {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.Random {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.BoxColor {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.CreditCard {
+  /* width: 30%; */
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.CreditCard img {
+  height: 20px;
+  padding: 10px;
+  
+}
+
+.CreditCard .logo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.CreditCard-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.creditcard-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  padding: 0px 10px 0px 10px;
+}
+
+.expiration {
+  display: flex;
+  padding-left: 20px;
+}
+
+.bank {
+  padding-left: 20px;
+}
+
+.owner {
+  padding-left: 20px;
+}
+
+.Rating {
+  font-size: 30px;
+}
+
+.DriverCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #415CBB;
+  color: white;
+  margin: 10px;
+  height: 150px;
+  border-radius: 20px
+}
+
+.DriverCard img{
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.driverInfo{
+  padding-left: 20px; 
+}
+
+.LikeButton{
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+}
+
+.ClickablePicture {
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
+}
+
+.Dice {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+.Carousel {
+  margin-left: 10px;
+}
+
+.NumberTable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.NumberTable li{
+  list-style-type: none;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#FaceBookProfile {
+  display: flex;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#FaceBookProfile img {
+  display: flex;
+  width: 125px;
+  height: 125px;
+  align-items: center;
+  padding: 10px;
+}
+
+.countryButtons{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 10px 10px 10px;
+}
+
+.countryButtons button {
+  padding: 10px;
+  margin: 5px;
+}
+
+.blue{
+  background-color: lightblue;
+}
+
