@@ -44,7 +44,7 @@ code {
 .Greeting {
   margin-left: 10px;
   margin-right: 10px;
-  border: 1px solid black;
+ 
   padding: 5px;
 }
 
@@ -208,3 +208,22 @@ code {
   background-color: lightblue;
 }
 
+.signup input, select {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+.signup button {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+.signup {
+  margin-left: 10px;
+}
+
+.mailMsg {
+  margin-left: 10px;
+}
