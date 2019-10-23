@@ -7,7 +7,7 @@ class FaceBook extends React.Component {
   }
 
   clickHandler = (e) => {
-    this.setState({ country: e.target.innerHTML })
+    this.setState({ country: e.currentTarget.innerHTML })
   }
 
   render() {
