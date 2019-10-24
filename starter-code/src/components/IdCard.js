@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 class IdCard extends Component {
   render() {
     console.log("this.props", this.props);
