@@ -1,0 +1,8 @@
+.card-css {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-css img {
+  margin-right: 5px;
+}
