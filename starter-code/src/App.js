@@ -3,6 +3,7 @@ import IdCard from "./components/IdCard";
 import Data from "./data/berlin.json";
 import LikeButton from "./components/LikeButton";
 import { listItems } from "./components/ListItems";
+import Greetings from "./components/Greetings";
 class App extends Component {
   render() {
     console.log("Data", Data);
@@ -16,6 +17,9 @@ class App extends Component {
         <LikeButton count={15} />
         {/* TODO: Use the Greetings component */}
         <ul>{listItems}</ul>
+
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
       </div>
     );
   }
