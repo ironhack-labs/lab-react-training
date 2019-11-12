@@ -1,4 +1,4 @@
-# React Training
+# React Training.
 
 ## Introduction
 
