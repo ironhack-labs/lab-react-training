@@ -12,3 +12,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.idBox {
+  width: 500px;
+  height: 160px;
+  border-radius: 6px;
+  border-top-right-radius: 40px;
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.divx {
+  padding: 3px;
+}
+.imgC {
+  
+  width: 100%;
+  height: 100%;
+}
