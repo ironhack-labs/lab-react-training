@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import IDcard from "./Comps/IDcard";
 import Greetings from "./Comps/Greetings";
 import Random from "./Comps/Random";
+import BoxColor from "./Comps/BoxColor";
 
 export default class App extends Component {
   render() {
@@ -33,6 +34,10 @@ export default class App extends Component {
         <h1>Random Component:</h1>
         <Random min={1} max={4} />
         <Random min={50} max={100} />
+
+        <h1>BoxColor Component:</h1>
+        <BoxColor r={75} g={161} b={181} /><BoxColor r={97} g={183} b={203} /><BoxColor r={124} g={205} b={223} />
+        <BoxColor r={161} g={224} b={238} /><BoxColor r={194} g={240} b={250} /><BoxColor r={228} g={246} b={250} />
       </div>
     );
   }
