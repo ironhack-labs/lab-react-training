@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: left !important;
 }
 
 code {
@@ -13,11 +14,13 @@ code {
     monospace;
 }
 .idBox {
-  background-color: #e0f1f5;
+  background-color: #375d71;
+  color: white;
   width: 500px;
   height: 160px;
   border-radius: 6px;
   border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
   border: 1px solid gray;
   margin: 10px;
   padding: 5px;
@@ -50,5 +53,21 @@ code {
 .rec {
   width: 400px;
   height: 60px;
-  border: 1px solid #3a4f53;
+  border: 0.1px solid #3a4f53;
+}
+.card {
+  background-color: #e0f1f5;
+  width: 400px;
+  height: 190px;
+  border-radius: 12px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.credit {
+  width: 20%;
+  height: 25%;
 }
