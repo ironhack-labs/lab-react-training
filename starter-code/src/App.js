@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import IdCard from './components/IdCard'
+import React, { Component } from "react";
+import IdCard from "./components/id-card-component/IdCard";
+import Greetings from "./components/Greetings-component/Greetings";
 
 class App extends Component {
   render() {
@@ -17,7 +18,7 @@ class App extends Component {
         />
 
         <IdCard
-          lastName="Delores "
+          lastName="Delores"
           firstName="Obrien"
           gender="female"
           height={172}
@@ -27,6 +28,8 @@ class App extends Component {
 
         <h1>Greetings</h1>
         {/* TODO: Use the Greetings component */}
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
       </div>
     );
   }
