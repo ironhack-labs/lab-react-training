@@ -4,6 +4,7 @@ import Greetings from "./components/Greetings-component/Greetings";
 import Random from "./components/Random-component/Random";
 import BoxColor from "./components/BoxColor-component/BoxColor";
 import CreditCard from "./components/CreditCard-component/CreditCard";
+import Rating from "./components/Rating-component/Rating";
 
 class App extends Component {
   render() {
@@ -73,6 +74,13 @@ class App extends Component {
           bgColor="#ddbb55"
           color="white"
         />
+        <h1>Rating</h1>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
       </div>
     );
   }
