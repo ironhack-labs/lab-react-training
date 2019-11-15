@@ -1,46 +1,41 @@
 import React, { Component } from "react";
 
-export default class Carousel extends Component {
+class Carousel extends Component {
   state = {
-    currentImg: 0
-  };
-  decreaseArray = () => {
-    console.log(this.state.currentImg);
-    if (this.state.currentImg === 0) {
-      this.setState({
-        currentImg: this.props.images.length - 1
-      });
-    } else {
-      this.setState({
-        currentImg: this.props.currentImg - 1
-      });
-    }
+    carouselImg: this.props.imgs[0]
   };
 
-  increaseArray = () => {
-    console.log(this.state.currentImg);
-    if (this.state.currentImg === this.state.currentImg.length - 1) {
-      this.setState({
-        currentImg: 0
-      });
-    } else {
-      this.setState({
-        currentImg: this.state.currentImg + 1
-      });
-    }
+  clickedLeft = () => {
+    let nextIdx = this.props.imgs.indexOf(this.state.carouselImg) - 1;
+    this.props.imgs[nextIdx]
+      ? this.setState({ carouselImg: this.props.imgs[nextIdx] })
+      : this.setState({
+          carouselImg: this.props.imgs[this.props.imgs.length - 1]
+        });
+  };
+
+  clickedRight = () => {
+    let nextIdx = this.props.imgs.indexOf(this.state.carouselImg) + 1;
+    this.props.imgs[nextIdx]
+      ? this.setState({ carouselImg: this.props.imgs[nextIdx] })
+      : this.setState({ carouselImg: this.props.imgs[0] });
   };
 
   render() {
     return (
       <div>
-        <div>
-          <img src={this.props.images[this.state.currentImg]} alt="" />
-        </div>
-        <div>
-          <button onClick={e => this.decreaseArray()}>{"<="}</button>
-          <button onClick={e => this.increaseArray()}>{"=>"}</button>
-        </div>
+        <img
+          height="100px"
+          width="100px"
+          src={this.state.carouselImg}
+          alt={this.state.carouselImg}
+        />
+        <p></p>
+        <button onClick={this.clickedLeft}>Previous</button>
+        <button onClick={this.clickedRight}>Next</button>
       </div>
     );
   }
 }
+
+export default Carousel;
