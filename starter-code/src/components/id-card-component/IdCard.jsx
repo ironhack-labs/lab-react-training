@@ -1,9 +1,18 @@
 import React, { Component } from "react";
 
 export default class IdCard extends Component {
+  constructor(props) {
+    super(props);
+
+    this.flexBox = {
+      display: "flex",
+      border: "1px solid black",
+      alignItems: "center"
+    };
+  }
   render() {
     return (
-      <div>
+      <div style={this.flexBox}>
         <div>
           <img src={this.props.picture} alt={this.props.name} />
         </div>
@@ -25,9 +34,17 @@ export default class IdCard extends Component {
             {this.props.height / 100}m
           </p>
           <p>
+            <span>Type: </span>
+            {this.props.type}
+          </p>
+          <p>
+            <span>Country: </span>
+            {this.props.country}
+          </p>
+          {/* <p>
             <span>Birth: </span>
             {this.props.birth.toDateString()}
-          </p>
+          </p> */}
         </div>
       </div>
     );

@@ -11,6 +11,8 @@ import ClickablePicture from "./components/ClickablePicture-component/ClickableP
 import Dice from "./components/Dice-component/Dice";
 import Carousel from "./components/Carousel-component/Carousel";
 import NumbersTable from "./components/NumbersTable-component/NumbersTable";
+import FaceBook from "./components/FaceBook-component/FaceBook";
+import profiles from "./data/berlin.json";
 
 class App extends Component {
   render() {
@@ -121,6 +123,8 @@ class App extends Component {
         />
         <h1>NumbersTable</h1>
         <NumbersTable limit={12} />
+        <h1>Facebook</h1>
+        <FaceBook data={profiles} />
       </div>
     );
   }
