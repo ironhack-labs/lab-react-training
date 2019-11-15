@@ -6,9 +6,10 @@ import BoxColor from "./components/BoxColor-component/BoxColor";
 import CreditCard from "./components/CreditCard-component/CreditCard";
 import Rating from "./components/Rating-component/Rating";
 import DriverCard from "./components/DriverCard-component/DriverCard";
-import LikeButton from './components/LikeButton-component/LikeButton'
-import ClickablePicture from './components/ClickablePicture-component/ClickablePicture'
-import Dice from './components/Dice-component/Dice'
+import LikeButton from "./components/LikeButton-component/LikeButton";
+import ClickablePicture from "./components/ClickablePicture-component/ClickablePicture";
+import Dice from "./components/Dice-component/Dice";
+import Carousel from "./components/Carousel-component/Carousel";
 
 class App extends Component {
   render() {
@@ -24,7 +25,6 @@ class App extends Component {
           birth={new Date("1992-07-14")}
           picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
-
         <IdCard
           lastName="Delores"
           firstName="Obrien"
@@ -33,20 +33,16 @@ class App extends Component {
           birth={new Date("1988-05-11")}
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
-
         <h1>Greetings</h1>
         {/* TODO: Use the Greetings component */}
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
-
         <h1>Random</h1>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
-
         <h1>BoxColor</h1>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
-
         <h1>CreditCard</h1>
         <CreditCard
           type="Visa"
@@ -85,7 +81,6 @@ class App extends Component {
         <Rating>3</Rating>
         <Rating>4</Rating>
         <Rating>5</Rating>
-
         <h1>DriverCard</h1>
         <DriverCard
           name="Travis Kalanick"
@@ -105,18 +100,24 @@ class App extends Component {
             licensePlate: "BE33ER"
           }}
         />
-
         <h1>LikeButton</h1>
         <LikeButton /> <LikeButton />
-        
         <h1>ClickablePicture</h1>
         <ClickablePicture
           img="./img/persons/maxence.png"
-          imgClicked="./img/persons/maxence-glasses.png" />
-
+          imgClicked="./img/persons/maxence-glasses.png"
+        />
         <h1>Dice</h1>
         <Dice />
-
+        <h1>Carousel</h1>
+        <Carousel
+          images={[
+            "https://randomuser.me/api/portraits/women/1.jpg",
+            "https://randomuser.me/api/portraits/men/1.jpg",
+            "https://randomuser.me/api/portraits/women/2.jpg",
+            "https://randomuser.me/api/portraits/men/2.jpg"
+          ]}
+        />
       </div>
     );
   }
