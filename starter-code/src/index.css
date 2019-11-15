@@ -12,3 +12,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.cards {
+  border: 1px solid black;
+  padding: 5px;
+  border-color: black;
+  width: 500px;
+}
+
+.cards img {
+  height: 100px;
+  width: 100px;
+}
+
+.creditCards {
+  display: flexbox;
+  border: 1px solid black;
+  padding: 5px;
+  border-color: black;
+  width: 300px;
+  height: 200px;
+}
+
+.creditCards img {
+  height: 50px;
+  width: 100px;
+  float: right;
+}
+
+.creditNumber {
+  margin-left: 40px;
+
+  font-size: 25px;
+}
