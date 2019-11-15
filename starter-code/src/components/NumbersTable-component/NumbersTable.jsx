@@ -11,33 +11,33 @@ export default class NumbersTable extends Component {
       listStyle: "none",
       border: "1px solid black",
       backgroundColor: "red",
-      float:'left',
       padding:'5px',
+      width:'10px'
     };
     this.whiteTable = {
-        listStyle: "none",
-        border: "1px solid black",
-        backgroundColor: "white",
-        float:'left',
-        padding:'5px',
+      listStyle: "none",
+      border: "1px solid black",
+      backgroundColor: "white",
+      padding:'5px',
+      width:'10px'
     };
   }
 
   render() {
     return (
-      <ul>
+      <div>
         {this.numbers.map((number, i) => {
           return number % 2 === 0 ? (
-            <li key={i} style={this.redTable}>
+            <div key={i} style={this.redTable}>
               {number}
-            </li>
+            </div>
           ) : (
-            <li key={i} style={this.whiteTable}>
+            <div key={i} style={this.whiteTable}>
               {number}
-            </li>
+            </div>
           );
         })}
-      </ul>
+      </div>
     );
   }
 }
