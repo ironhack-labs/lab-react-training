@@ -25,7 +25,6 @@ code {
   margin: 20px 0;
 }
 
-
 h1 {
   padding: 50px 0 20px 20px;
   border-top: 3px dotted green;
@@ -46,4 +45,8 @@ h1 {
 
 .credit-card span {
   padding: 0 0 0 15px;
+}
+
+.stars {
+  font-size: 2em;
 }
