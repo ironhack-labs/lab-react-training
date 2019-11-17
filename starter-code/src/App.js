@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import IdCard from "./components/IdCard.js";
-// import Greetings from "./components/Greetings";
+import Greetings from "./components/Greetings";
 // import Random from "./components/Random";
 // import BoxColor from "./components/BoxColor";
 // import CreditCard from "./components/CreditCard";
@@ -9,7 +9,6 @@ import IdCard from "./components/IdCard.js";
 // import LikeButton from "./components/LikeButton";
 
 class App extends Component {
-
   render() {
     return (
       <div className="App">
@@ -32,7 +31,9 @@ class App extends Component {
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
 
-       
+        <h1>Greetings</h1>
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
       </div>
     );
   }
