@@ -50,3 +50,13 @@ h1 {
 .stars {
   font-size: 2em;
 }
+
+.img {
+  position: relative;
+  float: left;
+  width:  100px !important;
+  height: 100px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
