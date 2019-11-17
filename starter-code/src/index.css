@@ -12,3 +12,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.App {
+  margin: 20px;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+
