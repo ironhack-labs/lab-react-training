@@ -6,7 +6,7 @@ import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
 import Rating from "./components/Rating";
 import DriverCard from "./components/DriverCard";
-// import LikeButton from "./components/LikeButton";
+import LikeButton from "./components/LikeButton";
 
 class App extends Component {
   render() {
@@ -21,7 +21,6 @@ class App extends Component {
           birth={new Date("1992-07-14")}
           picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
-
         <IdCard
           lastName="Delores "
           firstName="Obrien"
@@ -30,18 +29,19 @@ class App extends Component {
           birth={new Date("1988-05-11")}
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
-
+        {/* break -------------------- */}
         <h1>Greetings</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
-
+        {/* break -------------------- */}
         <h1>Random Number</h1>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
-
+        {/* break -------------------- */}
         <h1>Box Color</h1>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
+        {/* break -------------------- */}
         <h1>Credit Cards</h1>
         <div className="d-flex flex-row">
           <CreditCard
@@ -75,7 +75,7 @@ class App extends Component {
             color="white"
           />
         </div>
-
+        {/* break -------------------- */}
         <h1>Rating</h1>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
@@ -83,7 +83,7 @@ class App extends Component {
         <Rating>3</Rating>
         <Rating>4</Rating>
         <Rating>5</Rating>
-
+        {/* break -------------------- */}
         <h1>Driver Card</h1>
         <DriverCard
           name="Travis Kalanick"
@@ -103,6 +103,9 @@ class App extends Component {
             licensePlate: "BE33ER"
           }}
         />
+        {/* break -------------------- */}
+        <h1>Like Button</h1>
+        <LikeButton /> <LikeButton />
       </div>
     );
   }
