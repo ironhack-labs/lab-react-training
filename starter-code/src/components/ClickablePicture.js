@@ -18,7 +18,7 @@ export default class ClickablePicture extends Component {
           src={this.state.photoToggle ? this.props.img : this.props.imgClicked}
           alt="Clickable"
           onClick={this.changePhoto}
-          width="200px"
+          width="220px"
         />
       </div>
     );
