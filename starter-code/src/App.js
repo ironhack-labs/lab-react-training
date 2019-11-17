@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import IdCard from "./components/IdCard.js";
 import Greetings from "./components/Greetings";
-// import Random from "./components/Random";
+import Random from "./components/Random";
 // import BoxColor from "./components/BoxColor";
 // import CreditCard from "./components/CreditCard";
 // import Rating from "./components/Rating";
@@ -34,6 +34,10 @@ class App extends Component {
         <h1>Greetings</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
+        
+        <h1>Random Number</h1>
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
       </div>
     );
   }
