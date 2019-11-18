@@ -60,3 +60,12 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.carousel {
+  padding: 10px;
+}
+
+.carousel button {
+  padding: 5px;
+  font-size: 25px;
+}
