@@ -16,6 +16,9 @@ export class SignupPage extends Component {
       },
       password: {
         value: ''
+      },
+      nationality: {
+        value: ""
       }
     },
       nationality: {
@@ -101,7 +104,7 @@ validateEmail(e) {
           </FormGroup>
           <FormGroup>
             <Label>Nationality</Label>
-            <Input type="select" name="nationality">
+            <Input type="select" name="nationality" value={this.state.formControls.nationality.value} onChange={(e) => {this.handleChange(e)}} >
               <option value={this.state.nationality.en}>English</option>
               <option value={this.state.nationality.de}>German</option>
               <option value={this.state.nationality.es}>Spanish</option>
@@ -111,7 +114,7 @@ validateEmail(e) {
           <Button onClick={this.handleSubmit}>Sign up</Button>
       </Form>
       <hr />
-      {this.state.showData && <h2>{this.state.nationality}</h2>}
+      {this.state.showData && <h2>{this.state.formControls.nationality.value}</h2>}
       {this.state.showData && <h2>Your email address is: {this.state.formControls.email.value}</h2>}
       </Container>
     )
