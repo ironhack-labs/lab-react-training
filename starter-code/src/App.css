@@ -1,0 +1,69 @@
+.id-cards, .greetings, .randoms, .box-colors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.greetings, .randoms, .box-colors{
+    height: 30vh;
+}
+.credit-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+}
+h2 {
+    text-align: center;
+}
+.driver-cards {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+}
+.like-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 35vw;
+    height: 15vh;
+}
+.click-pic {
+    height: 30vh;
+    width: 25vw;
+    
+}
+.dice {
+    height: 30vh;
+    width: 25vw; 
+}
+.carousal {
+    height: 30vh;
+    width: 100vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* margin-left: 200px; */
+}
+.numbers-table {
+    height: 40vh;
+    width: 100vw;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facebook {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}

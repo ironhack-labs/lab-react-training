@@ -1,0 +1,10 @@
+.ratings {
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    padding:5px;
+    height: 8vh;
+}
+.ratings p {
+    font-size: 30px;
+}

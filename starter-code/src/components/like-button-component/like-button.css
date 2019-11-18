@@ -1,0 +1,6 @@
+.like button {
+    height: 4vh;
+    width: 15vw;
+    border-radius: 10px;
+    border: solid 2px black;
+}

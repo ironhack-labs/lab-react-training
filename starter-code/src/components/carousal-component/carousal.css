@@ -1,0 +1,12 @@
+.carousal-content {
+    height: 30vh;
+    width: 50vw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousal-content img {
+    height: 30vh;
+    width: 35vw;
+}

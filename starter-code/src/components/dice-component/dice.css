@@ -1,0 +1,14 @@
+.dice-content{
+    padding: 5px;
+}
+.dice-content button{
+    height: 25vh;
+    width: 25vw;  
+    border-radius: 23px;
+    border: solid 1px white;
+}
+.dice-content img {
+    height: 23vh;
+    width: 20vw;
+    
+}

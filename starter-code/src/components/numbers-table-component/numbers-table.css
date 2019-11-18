@@ -1,0 +1,17 @@
+.key-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40vh;
+    width: 50vw;
+    padding: 5px;
+}
+.self-box {
+    height: 15vh;
+    width: 10vw;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

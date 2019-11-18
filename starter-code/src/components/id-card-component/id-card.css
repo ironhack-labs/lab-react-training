@@ -1,0 +1,22 @@
+.content {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+label {
+    text-align: left;
+}
+.self-body {
+    width: 30vw;
+    height: 30vh;
+}
+.self-img {
+    width: 20vw !important;
+    height: 30vh;
+}
+.self-card {
+    width: 60%;
+}

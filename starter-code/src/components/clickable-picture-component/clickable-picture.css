@@ -1,0 +1,13 @@
+.pic {
+    padding: 10px;
+}
+.pic button{
+    height: 20vh;
+    width: 12vw;
+    border: solid 1px white;
+}
+.pic img {
+    height: 25vh;
+    width: 24vw;
+    border: 2px solid black;
+}
