@@ -12,3 +12,318 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1 {
+  margin: 1.5em;
+}
+
+
+/* idcard */
+
+.profiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.profile-container {
+  margin: 2em;
+  display: flex;
+  align-items: center;
+  width: 35%;
+  border: 1px solid black;
+  font-weight: 300;
+}
+
+h2 {
+  margin: 1em;
+  font-weight: 300;
+}
+
+h2 em {
+  font-weight: 700;
+}
+
+.profile-container img {
+  margin: 1em;
+  min-width: 200px;
+  max-height: 200px;
+}
+
+/* box color */
+
+.box-color-card {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+
+h4 {
+  color: white;
+  mix-blend-mode: difference;
+  font-weight: 400;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+/* credit card */
+
+.credit-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.credit-card {
+  display: flex;
+  margin: 1em;
+  flex-direction: column;
+  font-size: 1.6rem;
+  width: 700px;
+  border-radius: 30px;
+}
+
+.card-type {
+  align-self: flex-end;
+  margin: 2em;
+  padding: 0;
+}
+
+.card-num {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.card-num span {
+  margin: 0 0.5em;
+}
+
+.censored-num {
+  font-size: 1.4rem;
+  letter-spacing: 0.2em;
+  padding-top: 0.25em;
+}
+
+.card-info {
+  margin: 3em 2em 2em;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.card-info div {
+  display: flex;
+}
+
+.card-info h3 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin: 0.5em;
+}
+
+/* star ratings */
+
+.rating-container {
+  margin: 1em;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* driver card */
+
+.driver-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #455EB5;
+  padding: 1em 20vw;
+  margin: 3em;
+  border-radius: 30px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 2em;
+}
+
+.driver-info {
+  display: flex;
+  flex-direction: column;
+  color: #EEE;
+}
+
+.driver-info > * {
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0.25em;
+}
+
+.car-info {
+  font-size: 1.2rem;
+  word-wrap: normal;
+}
+
+/* counting like button */
+
+.like-btn-container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.like-button {
+  mix-blend-mode: exclusion;
+  color: white;
+  padding: 1em 1.8em;
+  min-width: 7em;
+  margin: 1em;
+  font-size: 2.6rem;
+}
+
+/* clickable pic */
+
+.fancy-clickable-pic-container {
+  display: flex;
+  margin: 5em 40%;
+  justify-content: center;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.fancy-clickable-pic-container > img {
+  border-radius: 15px;
+}
+
+
+/* dice */
+
+.dice-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.dice-img {
+  max-width: 25%;
+}
+
+
+/* carousel */
+
+.carousel-container {
+  display: flex;
+  margin: 2em auto;
+  padding: 3em;
+  max-width: 15em;
+  justify-content: center;
+  background: skyblue;
+  border-radius: 10em;
+}
+
+.carousel-btn {
+  background: rgba(240, 240, 200, 0.5);
+}
+
+/* numbers table */
+
+.numbers-table-container {
+  display: flex;
+  margin: 2em;
+  font-size: 2rem;
+  flex-wrap: wrap;
+}
+
+.num-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+  height: 5em;
+}
+
+.number-odd {
+  border: 2px solid black;
+}
+
+.number-even {
+  border: 2px solid black;
+  background: #EB3324;
+}
+
+/* facebook */
+
+.selected {
+  background: #A3D2E2;
+}
+
+.country-selector-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.country-btn {
+  padding: 1em 1.8em;
+  margin: 1em;
+  font-size: 1.6rem;
+}
+
+/* signup page */
+/* 
+.signup-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 50%;
+} */
+
+.signup-page-container {
+  font-size: 2rem;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+
+/* .email-container, .password-container, .nationality-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+} */
+
+/* 
+
+.email-container > label, .password-container > label {
+  font-size: 1em;
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+
+.email-container > input, .password-container > input {
+  font-size: 1em;
+  width: 100%;
+}
+
+.nationality-container > select {
+  font-size: 1em;
+  width: 100%;
+}  */
