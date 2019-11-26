@@ -305,7 +305,7 @@ class Carousel extends Component {
 const NumbersTable = () => {
   return (
     <ul className="list">
-      {[...Array(12).keys()].map((el, index) => (
+      {[...Array(13).keys()].slice(1).map((el, index) => (
         <li className={`${index % 2 === 0 && "red"}`} key={index}>
           {el}
         </li>
