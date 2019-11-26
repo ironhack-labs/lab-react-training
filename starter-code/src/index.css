@@ -12,3 +12,70 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.card {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.card img {
+  margin-right: 5px;
+}
+
+.card-flex {
+  display: flex;
+  align-items: center;
+}
+
+.card-center {
+  text-align: center;
+}
+
+.card-credit {
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.card-credit .type {
+  text-align: right;
+}
+
+.card-credit .type img {
+  height: 20px;
+}
+
+.card-credit .number {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.card-credit .bank {
+  margin-left: 20px;
+}
+
+.card-driver {
+  justify-content: center;
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  margin: 10px;
+}
+
+.card-driver img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+  margin-right: 1rem;
+}
+
+.rating {
+  font-size: 3rem;
+  line-height: 2rem;
+}
