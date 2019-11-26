@@ -94,3 +94,27 @@ button {
   font-size: 3rem;
   line-height: 2rem;
 }
+
+.list {
+  list-style-type: none;
+}
+
+.list > li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+}
+
+.list .red {
+  background-color: #ff0000;
+}
+
+.carousel {
+  display: flex;
+}
+
+.carousel button {
+  align-self: center;
+  background-color: #aeaeae;
+}

@@ -267,6 +267,53 @@ class Dice extends Component {
   }
 }
 
+class Carousel extends Component {
+  state = {
+    currentIndex: 0
+  };
+
+  decreaseItem = () => {
+    this.setState({
+      currentIndex:
+        (this.state.currentIndex + 1 + this.props.imgs.length) %
+        this.props.imgs.length
+    });
+  };
+
+  increaseItem = () => {
+    this.setState({
+      currentIndex:
+        (this.state.currentIndex - 1 + this.props.imgs.length) %
+        this.props.imgs.length
+    });
+  };
+
+  render() {
+    return (
+      <div className="carousel">
+        <button onClick={this.decreaseItem}>Left</button>
+        <img
+          src={this.props.imgs[this.state.currentIndex]}
+          alt="Carousel item"
+        />
+        <button onClick={this.increaseItem}>Right</button>
+      </div>
+    );
+  }
+}
+
+const NumbersTable = () => {
+  return (
+    <ul className="list">
+      {[...Array(12).keys()].map((el, index) => (
+        <li className={`${index % 2 === 0 && "red"}`} key={index}>
+          {el}
+        </li>
+      ))}
+    </ul>
+  );
+};
+
 class App extends Component {
   render() {
     return (
@@ -373,6 +420,19 @@ class App extends Component {
 
         <h1>Dice</h1>
         <Dice />
+
+        <h1>Carousel</h1>
+        <Carousel
+          imgs={[
+            "https://randomuser.me/api/portraits/women/1.jpg",
+            "https://randomuser.me/api/portraits/men/1.jpg",
+            "https://randomuser.me/api/portraits/women/2.jpg",
+            "https://randomuser.me/api/portraits/men/2.jpg"
+          ]}
+        />
+
+        <h1>NumbersTable</h1>
+        <NumbersTable limit={12} />
       </div>
     );
   }
