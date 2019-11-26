@@ -168,6 +168,105 @@ const DriverCard = props => {
   );
 };
 
+class LikeButton extends Component {
+  state = {
+    counter: 0,
+    bgColor: this.getRandomColor
+  };
+
+  updateState = () => {
+    this.setState({
+      counter: this.state.counter + 1,
+      bgColor: this.getRandomColor()
+    });
+  };
+
+  getRandomNum = num => {
+    return Math.floor(Math.random() * num) + 1;
+  };
+
+  getRandomColor = () => {
+    const colors = ["purple", "blue", "green", "yellow", "orange", "red"];
+    let prevColor = "";
+    let randomColor = this.getRandomNum(colors.length);
+    prevColor = colors[randomColor];
+
+    while (prevColor === randomColor) {
+      randomColor = this.getRandomNum(colors.length);
+    }
+
+    return colors[randomColor];
+  };
+
+  render() {
+    return (
+      <button
+        onClick={this.updateState}
+        style={{ backgroundColor: `${this.getRandomColor()}`, color: "#fff" }}
+      >
+        {this.state.counter} Likes
+      </button>
+    );
+  }
+}
+
+class ClickablePicture extends Component {
+  state = {
+    isClicked: false
+  };
+
+  handleClick = () => {
+    this.setState({
+      isClicked: !this.state.isClicked
+    });
+  };
+
+  render() {
+    return (
+      <img
+        src={this.state.isClicked ? this.props.imgClicked : this.props.img}
+        onClick={this.handleClick}
+        width="200"
+        height="200"
+        alt="Click me!"
+      />
+    );
+  }
+}
+
+class Dice extends Component {
+  state = {
+    img: `${this.getRandomNum()}`
+  };
+
+  getRandomNum() {
+    return Math.floor(Math.random() * 6) + 1;
+  }
+
+  handleClick = () => {
+    this.setState({
+      img: `-empty`
+    });
+    setTimeout(_ => {
+      this.setState({
+        img: `${this.getRandomNum()}`
+      });
+    }, 1000);
+  };
+
+  render() {
+    return (
+      <img
+        src={`./img/dice${this.state.img}.png`}
+        onClick={this.handleClick}
+        width="200"
+        height="200"
+        alt="Dice"
+      />
+    );
+  }
+}
+
 class App extends Component {
   render() {
     return (
@@ -261,6 +360,19 @@ class App extends Component {
             licensePlate: "BE33ER"
           }}
         />
+
+        <h1>LikeButton</h1>
+        <LikeButton />
+        <LikeButton />
+
+        <h1>ClickablePicture</h1>
+        <ClickablePicture
+          img="./img/persons/maxence.png"
+          imgClicked="./img/persons/maxence-glasses.png"
+        />
+
+        <h1>Dice</h1>
+        <Dice />
       </div>
     );
   }

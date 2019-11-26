@@ -13,6 +13,21 @@ code {
     monospace;
 }
 
+button {
+  width: 200px;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
 .card {
   border: 1px solid black;
   padding: 5px;
