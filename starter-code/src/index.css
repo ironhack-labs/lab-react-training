@@ -8,7 +8,135 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.flex {
+  display: flex;
+}
+
+.box {
+  border: 2px solid #333;
+  margin: 2vh 2vw;
+}
+
+.user-photo {
+  margin: 1vh 1vw;
+  width: 100px;
+}
+
+.user-photo > img {
+  width: 100%;
+}
+
+.card {
+  margin: 2vh 2vw;
+  padding: 2vh 2vw;
+  width: 30vw;
+  height: 140px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card h4 {
+  text-align: center;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.cardFlag {
+  height: 20px;
+  align-self: flex-end;
+}
+.cardFlag > img {
+  height: 100%;
+}
+
+.rating {
+  margin: 2vh 2vw;
+  font-size: 1.5rem;
+}
+
+.driverCard {
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+  margin: 2vh 2vw;
+  padding: 2vh 2vw;
+
+  background-color: #455eb4;
+  border-radius: 10px;
+  color: white;
+}
+
+.driverCard-photo {
+  height: 100px;
+  width: 100px;
+  margin-right: 15px;
+}
+
+.driverCard img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.glasses-photo {
+  width: 300px;
+}
+
+.glasses-photo > img {
+  width: 100%;
+}
+
+.dice {
+  height: 100px;
+}
+.dice > img {
+  height: 100%;
+}
+
+.carousel {
+  display: flex;
+  height: 30vh;
+}
+
+.carousel > img {
+  height: 100%;
+}
+
+.numberTable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numberTable > div {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #333;
+}
+
+.bg-blue {
+  background-color: aquamarine;
 }
