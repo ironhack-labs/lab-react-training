@@ -1,0 +1,19 @@
+.creditCard {
+  height: 7.5em;
+  width: 15em;
+  /* background-color: green;
+  border: 0.25em solid green; */
+  border-radius: 0.25em;
+  margin: 1em;
+}
+
+.creditCard img {
+  float: right;
+  height: 1em;
+  width: auto;
+  margin: 1em;
+}
+
+.creditBottom {
+  line-height: 0.5em;
+}

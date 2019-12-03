@@ -1,0 +1,21 @@
+.idcard {
+  display: flex;
+  width: auto;
+  margin: 1em;
+  border: 0.1em solid black;
+  height: 10em;
+}
+
+.idcard p {
+  line-height: 0.5em;
+}
+
+.idcard img {
+  height: 10em;
+  width: auto;
+}
+
+.bold {
+  font-weight: 600;
+}
+
