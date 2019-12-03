@@ -12,3 +12,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.single-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  max-width: 20%;
+  margin: 1rem;
+}
+
+.single-card img {
+  width: 10rem;
+}
+
+.ids {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#greeting-box {
+  border: 1px solid red;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  height: 5rem;
+}
