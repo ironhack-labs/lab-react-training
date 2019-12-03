@@ -1,0 +1,22 @@
+.CreditCard {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	height: 230px;
+	border-radius: 10%;
+	margin: 2em;
+}
+
+.bankH3 {
+	text-align: center;
+	margin-top: 3em;
+	font-size: 30px;
+}
+
+.bankH2 {
+	display: flex;
+	flex-direction: row;
+	font-size: 15px;
+	margin-left: 1em;
+	line-height: 0.03;
+}
