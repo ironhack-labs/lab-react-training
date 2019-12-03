@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import IdCard from "./components/IdCard";
 import Greetings from "./components/Greetings";
 import Random from "./components/Random";
+import BoxColor from "./components/BoxColor";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+
         <h1>IdCard</h1>
         <IdCard
           lastName="Doe"
@@ -16,7 +18,6 @@ class App extends Component {
           birth={new Date("1992-07-14")}
           picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
-
         <IdCard
           lastName="Delores "
           firstName="Obrien"
@@ -33,6 +34,10 @@ class App extends Component {
         <h1>Random Number</h1>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
+
+        <h1>Box Color</h1>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
       </div>
     );
   }
