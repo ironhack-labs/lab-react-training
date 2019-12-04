@@ -1,0 +1,17 @@
+.drive{
+  width: 40em;
+  height: 8em;
+  margin: 1em;
+  background-color:rgb(37, 54, 155);
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.drive-img{
+  width: 6em;
+  border-radius: 90px;
+}

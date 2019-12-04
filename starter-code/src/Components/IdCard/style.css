@@ -1,0 +1,11 @@
+img{
+  width: 10em;
+  margin: 1em
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
