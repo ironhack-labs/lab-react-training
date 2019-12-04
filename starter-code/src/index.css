@@ -12,3 +12,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.idimage {
+  width: 30vh;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid orange;
+}
+
+.greetings {
+  border: solid orange;
+}
+
+#blocktitles {
+  margin-top: 100px;
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+#blocktitles1 {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+.random {
+  border: solid orange;
+}
