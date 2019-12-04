@@ -12,3 +12,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#header{
+  display: flex;
+  border:1px  solid;
+}
+
+#CreditCard {
+  width:400px;
+  border:1px  solid;
+}
+
+.CreditCard img {
+  height: 50px;
+}
+
+#DriverCard {
+  display: flex;
+  align-items: center;
+}
+
+#DriverCard img{
+  height: 100px;
+  border-radius: 50%;
+}
+
+#Dice img{
+  width:100px;
+}
