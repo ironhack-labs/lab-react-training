@@ -3,26 +3,29 @@ import React, { Component } from "react";
 class ClickablePicture extends Component {
   constructor(props) {
     super(props);
-    this.tooglePicture = this.tooglePicture.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
-      imgState: "unclicked",
-      img: this.props.img
+      isClicked: false
     };
   }
 
-  tooglePicture() {
-    console.log(this);
+  handleClick() {
+    this.setState(prevState => ({
+      isClicked: !prevState.isClicked
+    }))
   }
+  
 
   render() {
-    const imgSrc = require(this.props.img);
     return (
       <div>
         <img
           className="clickablePicture"
-          src={imgSrc}
+          src={this.state.isClicked ? this.props.imgClicked : this.props.img }
+          height="400"
+          width="400"
           alt=""
-          onClick={() => this.tooglePicture()}
+          onClick={() => this.handleClick()}
         />
       </div>
     );

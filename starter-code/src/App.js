@@ -10,9 +10,8 @@ import ClickablePicture from './components/ClickablePicture';
 
 class App extends Component {
   render() {
-    return ( <div className = "App" >
+    return ( <div className = "App">
       <h1 > IdCard </h1> 
-      { /* TODO: Use the IdCard component */ }
       <IdCard 
         lastName='Doe'
         firstName='John'
@@ -73,6 +72,9 @@ class App extends Component {
           bgColor="#ddbb55"
           color="white" />
         <LikeButton /> <LikeButton />
+        <ClickablePicture
+          img="./../../img/persons/maxence.png"
+          imgClicked="./../../img/persons/maxence-glasses.png" />
       </div>
     );
   }

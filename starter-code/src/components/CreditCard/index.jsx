@@ -25,12 +25,16 @@ function CreditCard (props) {
       cardTypeImg = '';
   }
 
-  // const cardNum = props.number.split().reduce()
+  // const cardNum = props.number.split().reduce( (acc, val, index) => {
+  //   if (index < props.number.length - 4) {
+
+  //   }
+  // })
 
   return (
     <div className="creditCard" style={divStyle}>
       <img src={cardTypeImg} alt=""/>
-      <p className="creditNum">{cardNum}</p>
+      <p className="creditNum">{props.number}</p>
       <div className="creditBottom">
         <p>Expires: {props.expirationMonth}/
         {props.expirationYear}  {props.bank}</p>
