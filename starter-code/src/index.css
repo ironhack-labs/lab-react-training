@@ -1,14 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	width: 100vw;
+	height: 100vh;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.cards-container {
+	width: 100%;
+}
+
+.card-container {
+	height: 135px;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	overflow: auto;
+	border: 2px solid;
+	margin: 20px;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-left: 5px;
+}
+
+.card-name {
+	border: 1px solid black;
+	margin-bottom: 20px;
+	padding-left: 10px;
+}
+
+.random-container {
+	border: 1px solid black;
+	margin-bottom: 20px;
+	padding-left: 10px;
+}
+.BoxColor {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+.BoxColor p {
+	font-size: 20px;
+	color: white;
+	margin-bottom: 10px;
+}
+.startWrapper {
+	width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.star {
+	width: 80px;
+	height: 80px;
+	border: 1px solid black;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	background-color: rgba(0, 0, 0, .1);
+}
+.startCpntainer {
+	display: flex;
+}
+.star.rate {
+	background-color: black;
+}
+
+.CreditCard {
+	width: 300px;
+	height: 150px;
+	border-radius: 20px;
+	padding: 30px;
+	margin-right: 20px;
+}
+
+.CreditCardBorder {
+	display: flex;
+	justify-content: space-evenly;
+}
+.CreditCard-logo {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.CreditCard-logo svg {
+	width: 80px;
+	height: 60px;
+}
+.CreditCard-name {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.CreditCard-name p {
+	font-size: 20px;
+	letter-spacing: 8px;
 }
