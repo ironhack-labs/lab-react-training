@@ -65,7 +65,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>IdCard</h1>
+        <h2>IdCard</h2>
         <IdCard 
           lastName='Doe'
           firstName='John'
@@ -82,19 +82,19 @@ class App extends Component {
           birth={new Date("1988-05-11")}
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
-     
-        <h1>Greetings</h1>
+        <br/>
+        <h2>Greetings</h2>
         <Greetings lang="de"> Ludwig</Greetings>
         <Greetings lang="fr"> François</Greetings>
-
-        <h1>Random</h1>
+        <br/>
+        <h2>Random</h2>
         <Random min={1} max={6}/>
         <Random min={1} max={100}/>
 
-
-      <h2>Colors</h2>
-      <BoxColor r={255} g={0} b={0} />
-      <BoxColor r={128} g={255} b={0} />
+        <br/>
+        <h2>Colors</h2>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
 
       <h2>Credit cards</h2>
       <CreditCard 

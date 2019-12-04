@@ -11,7 +11,7 @@ const BoxColor = (props) => {
 	};
 
 	return (
-		<div style={{
+		<div className="colors" style={{
 			backgroundColor : `rgb(${props.r}, ${props.g}, ${props.b})`
 		}}>
 		

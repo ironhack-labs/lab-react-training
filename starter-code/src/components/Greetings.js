@@ -2,14 +2,15 @@ import React from "react";
 
 const Greetings = (props) => {
 	return (
-		<div>
-			<p>	{
+		<div className="border">
+			<p className="greetings" >	{
 			props.lang === 'de' ? 'Hallo'
 			: props.lang === 'fr' ? 'Bonjour'
 			: props.lang === 'es' ? 'Hola'
 			: 'Hello'
-			}</p>		
-			<p>	{props.children}</p>
+			
+			}{props.children}</p>		
+			<p>	</p>
 		</div>
 		)
 };

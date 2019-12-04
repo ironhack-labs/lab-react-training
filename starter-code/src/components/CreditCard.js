@@ -2,7 +2,7 @@ import React from "react";
 
 function CreditCard(props){
 	return(
-		<div>
+		<div className="card">
 			<p>{props.type}</p>
 			<p>{props.number}</p>
 			<p>{props.expirationMonth}</p>
@@ -11,7 +11,6 @@ function CreditCard(props){
 			<p>{props.owner}</p>
 			<p>{props.bgColor}</p>
 			<p>{props.color}</p>
-
 		</div>
 	)
 }

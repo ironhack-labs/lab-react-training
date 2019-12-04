@@ -2,13 +2,18 @@ import React from "react";
 
 function IdCard(props){
 	return(
+
+		<div className="border">
 		<div>
-			<img src={props.picture} alt = {props.picture}/>
-			<span>Fisr Name:</span><p>{props.firstName}</p>
-			<span>Last Name:</span><p>{props.lastName}</p>
-			<span>Gender:</span><p>{props.gender}</p>
-			<span>Height:</span><p>{props.height}</p>
-			<span>Birth:</span><p>{props.birth.toLocaleString()}</p>
+		<img src={props.picture} alt = {props.picture}  className="idImg"/>
+		</div>
+			<div className="idCardContent">
+				<p><strong>First Name:</strong> {props.firstName}</p>
+				<p><strong>Last Name:</strong> {props.lastName}</p>
+				<p><strong>Gender:</strong> {props.gender}</p>
+				<p><strong>Height:</strong> {props.height}</p>
+				<p><strong>Birth:</strong> {props.birth.toLocaleString()}</p>
+			</div>
 		</div>
 	)
 }

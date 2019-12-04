@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -11,4 +11,39 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.border {
+  border: solid black 1px;
+  display: flex;
+  margin: 10px 0;
+}
+
+.idCardContent {
+  line-height: 10px;
+}
+
+.idImg {
+  width: 300;
+  margin: 10px;
+}
+
+.greetings{
+  font-size: 1.3rem;
+  padding-left: 10px;
+}
+
+.colors{
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card{
+  border-radius: 5px;
+  
 }
