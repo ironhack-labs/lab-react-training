@@ -12,3 +12,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.tarjetas{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
