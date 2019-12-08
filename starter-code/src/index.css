@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -11,4 +11,75 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.MediaContainer{
+  border: solid black 1px;
+  padding: 5px;
+}
+.label-id{
+  font-weight: bold;
+}
+.props-container{
+  padding-left: 10px;
+}
+
+.Greetings , .Random{
+  text-align: left;
+  border: solid black 1px;
+
+}
+
+.boxColor{
+  border: solid black 1px;
+  height: 80px;
+  text-align: center;
+}
+.creditCard{
+  padding: 20px;
+  width: 400px;
+  border-radius: 15px;
+}
+.cardsContainer{
+  display: flex;
+  justify-content: space-around;
+}
+.Rating{
+  font-size: 3rem;
+}
+.driverCard{
+  display: flex;
+  justify-content: center;
+  background-color: #3b52b8;
+  color:white;
+  padding: 20px;
+  border-radius: 15px;
+
+
+}
+.driverCard img{
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  margin-right: 20px;
+}
+button{
+  color: white;
+  height: 50px;
+  width: 150px;
+}
+.carousel-container{
+  display: flex;
+  align-items: baseline;
+}
+.carousel-container img{
+  width: 250px;
+  height: 250px; 
+  margin: 50px; 
+}
+.carousel-container button{
+  color: black;
+}
+.Dice img{
+  width: 200px;
+  height: 200px;
 }
