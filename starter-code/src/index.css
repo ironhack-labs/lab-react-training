@@ -12,3 +12,92 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.card {
+  border: solid black 1px;
+  display: flex;
+  margin: 10px 0;
+}
+.container{
+  line-height: 20px;
+}
+.imagen{
+  width: 180px;
+  margin: 10px;
+}
+.greet{
+  font-size: 1.3rem;
+  padding-left: 10px;
+}
+.creditcard{
+  margin: 2vh 2vw;
+  padding: 2vh 2vw;
+  width: 30vw;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border:solid black 1px;
+  border-radius: 10px;
+   
+}
+.creditcard h4 {
+  text-align: center;
+}
+.creditcard p {
+  font-size: 14px;
+}
+.cardFlag {
+  height: 20px;
+  align-self: flex-end;
+}
+.cardFlag > img {
+  width: 100px;
+}
+.rating {
+  margin: 2vh 2vw;
+  font-size: 50px;
+}
+.driverCard {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin: 2vh 2vw;
+  padding: 2vh 2vw;
+  background-color: #455eb4;
+  border-radius: 10px;
+  color: white;
+}
+.driverCard-photo {
+  height: 150px;
+  width: 150px;
+  margin-right: 80px;
+}
+.driverCard img {
+  display: flex;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  margin: 50px;
+  padding: 5px;
+  
+}
+
+.dice {
+  height: 100px;
+}
+.dice > img {
+  height: 100%;
+}
+.carousel {
+  display: flex;
+  height: 30vh;
+}
+
+.carousel > img {
+  height: 100%;
+}
+
+
+
+
