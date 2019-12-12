@@ -1,5 +1,5 @@
 # React Training
-
+------------
 ## Introduction
 
 The goal of this repository is to create a lot of React components.
