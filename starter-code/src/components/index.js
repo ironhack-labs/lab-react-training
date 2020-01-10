@@ -1,3 +1,4 @@
 import IdCard from './IdCard'
+import Greetings from './Greetings'
 
-export { IdCard }
+export { Greetings, IdCard }

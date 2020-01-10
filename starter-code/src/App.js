@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { IdCard } from './components';
+import { Greetings, IdCard } from './components';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <h1>IdCard</h1>
-        {/* TODO: Use the IdCard component */}
         <IdCard lastName='Doe'
           firstName='John'
           gender='male'
@@ -22,7 +21,8 @@ class App extends Component {
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
         <h1>Greetings</h1>
-        {/* TODO: Use the Greetings component */}
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
       </div>
     );
   }
