@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Greetings, IdCard } from './components';
+import { Greetings, IdCard, Random } from './components';
 
 class App extends Component {
   render() {
@@ -23,6 +23,9 @@ class App extends Component {
         <h1>Greetings</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
+        <h1>Random</h1>
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
       </div>
     );
   }
