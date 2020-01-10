@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 6PX;
+}
+.id-card {
+  padding: 4PX;
+  border: solid 2px black;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
