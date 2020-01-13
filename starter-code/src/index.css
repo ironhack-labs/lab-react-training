@@ -12,3 +12,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.credit-card{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  width: 400px;
+  height: 200px;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo figure{
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.card-number{
+  display: flex;
+  justify-content: center;
+}
+
+.card-info{
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.owner{
+  margin-left: 25px;
+ 
+}
+
+.card-info span{
+  margin-right: 25px;
+}
