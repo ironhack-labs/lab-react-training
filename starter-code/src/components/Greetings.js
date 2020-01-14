@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-function Greetings() {
-    switch (this.props.lang) {
+function Greetings(props) {
+    switch (props.lang) {
         case "de":
             return <div>
                 <p>Hallo, {props.children}!</p>

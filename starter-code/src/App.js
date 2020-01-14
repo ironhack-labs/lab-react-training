@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import IdCard from './components/IdCard'
-// import Greetings from './components/Greetings'
+import Greetings from './components/Greetings'
 import Random from './components/Random'
 
 
@@ -27,8 +27,8 @@ class App extends Component {
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
         <h1>Greetings</h1>
-        {/* <Greetings lang="de">Ludwig</Greetings>
-        <Greetings lang="fr">François</Greetings> */}
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
 
