@@ -5,7 +5,8 @@ import {
   Greetings,
   IdCard,
   Random,
-  LikeBtn
+  LikeBtn,
+  ClickablePicture
 } from './components';
 
 class App extends Component {
@@ -46,8 +47,11 @@ class App extends Component {
           owner="Maxence Bouret"
           bgColor="#11aa99"
           color="white" />
-          <h1>Like Button</h1>
-          <LikeBtn />
+        <h1>Like Button</h1>
+        <LikeBtn />
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png" />
       </div>
     );
   }
