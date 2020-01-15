@@ -3,5 +3,6 @@ import Greetings from './Greetings'
 import Random from './Random'
 import BoxColor from './BoxColor'
 import CreditCard from './CreditCard'
+import LikeBtn from './LikeBtn'
 
-export { BoxColor, CreditCard, Greetings, IdCard, Random }
+export { BoxColor, CreditCard, LikeBtn, Greetings, IdCard, Random }

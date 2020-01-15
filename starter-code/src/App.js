@@ -4,7 +4,8 @@ import {
   CreditCard,
   Greetings,
   IdCard,
-  Random
+  Random,
+  LikeBtn
 } from './components';
 
 class App extends Component {
@@ -45,6 +46,8 @@ class App extends Component {
           owner="Maxence Bouret"
           bgColor="#11aa99"
           color="white" />
+          <h1>Like Button</h1>
+          <LikeBtn />
       </div>
     );
   }
