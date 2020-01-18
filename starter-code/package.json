@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "react-scripts": "2.1.5"
+    "react-fontawesome": "^1.7.1",
+    "react-scripts": "^3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
