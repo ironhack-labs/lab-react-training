@@ -55,3 +55,17 @@ p{
 .white {
   color: white;
 }
+
+.card-type{
+  text-align: right;
+}
+
+img{
+  height: 13px;
+  width: auto;
+}
+
+.CreditCard{
+  display: flex;
+  justify-content: space-around;
+}
