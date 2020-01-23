@@ -12,3 +12,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+p{
+  border: 1px solid black;
+  padding: 5px;
+  width: auto;
+  margin: 5px;
+}
+
+.container {
+  height: fit-content;
+  width: auto;
+  border: 1px solid black;
+  padding: 5px;
+  display: flex;
+  margin: 5px;
+
+}
+
+.cardinfo {
+  padding-left: 5px;
+}
+
+.cardinfo span{
+  font-weight: bold;
+}
+
+.cardinfo p{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.boxcolor {
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  width: auto;
+  margin: 5px;
+}
+
+.white {
+  color: white;
+}
