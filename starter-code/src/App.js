@@ -3,6 +3,7 @@ import IdCard from './component/IdCard';
 import Greetings from './component/Greetings';
 import Random from './component/Random';
 import BoxColor from './component/BoxColor';
+import CreditCard from './component/CreditCard'
 
 class App extends Component {
   render() {
@@ -32,15 +33,51 @@ class App extends Component {
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
 
-
+{/* Random Number */}
         <Random min={1} max={6}/>
-<Random min={1} max={100}/>
+        <Random min={1} max={100}/>
+
+
+{/* Color Compononent */}
+
+        <BoxColor r={255} g={1} b={0} />
+        <BoxColor r={128} g={255} b={0} />
 
 
 
 
-<BoxColor r={255} g={1} b={0} />
-<BoxColor r={128} g={255} b={0} />
+
+
+
+{/* Credit Card Component */}
+<CreditCard 
+  type="Visa"
+  number="0123456789018845"
+  expirationMonth={3}
+  expirationYear={2021}
+  bank="BNP"
+  owner="Maxence Bouret"
+  bgColor="#11aa99"
+  color="white" />
+<CreditCard 
+  type="Master Card"
+  number="0123456789010995"
+  expirationMonth={3}
+  expirationYear={2021}
+  bank="N26"
+  owner="Maxence Bouret"
+  bgColor="#eeeeee"
+  color="#222222" />
+<CreditCard 
+  type="Visa"
+  number="0123456789016984"
+  expirationMonth={12}
+  expirationYear={2019}
+  bank="Name of the Bank"
+  owner="Firstname Lastname"
+  bgColor="#ddbb55"
+  color="white" />
+
       </div>
 
 
