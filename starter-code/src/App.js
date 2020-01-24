@@ -4,9 +4,14 @@ import Greetings from "./Greetings";
 import Random from "./Random";
 import BoxColor from "./BoxColor";
 import CreditCard from "./CreditCard";
+import LikeButton from "./LikeButton";
 
 
 class App extends Component {
+
+
+
+
   render() {
     return (
       <div className="App">
@@ -76,9 +81,12 @@ class App extends Component {
           bgColor="#ddbb55"
           color="white" 
         />
+
+        <LikeButton /> <LikeButton />
       </div>
     );
   }
 }
+
 
 export default App;
