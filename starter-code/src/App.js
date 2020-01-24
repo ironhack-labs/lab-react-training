@@ -3,10 +3,14 @@ import IdCard from './component/IdCard';
 import Greetings from './component/Greetings';
 import Random from './component/Random';
 import BoxColor from './component/BoxColor';
-import CreditCard from './component/CreditCard'
+import CreditCard from './component/CreditCard';
+import LikeButton from './component/LikeButton';
 
 class App extends Component {
   render() {
+
+    
+
     return (
       <div className="App">
         <h1>IdCard</h1>
@@ -78,6 +82,13 @@ class App extends Component {
   bgColor="#ddbb55"
   color="white" />
 
+
+
+
+{/* State Like Button */}
+
+<LikeButton/>
+<LikeButton/>
       </div>
 
 
