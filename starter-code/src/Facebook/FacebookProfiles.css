@@ -1,0 +1,11 @@
+.FacebookProfile img{
+    max-width: 200px;
+    height: auto;
+}
+
+.FacebookProfile {
+    display: flex;
+    border: solid 2px black;
+    max-width: 50%;
+    align-content: center;
+}
