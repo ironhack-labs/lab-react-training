@@ -89,3 +89,35 @@ p, strong {
 .rating > div > p {
   font-size: 30px;
 }
+
+.driver {
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(70,95,185);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.driver > img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.driver > div > h2 {
+  color: white;
+  font-size: 2rem;
+  padding: 5px 0;
+}
+
+.driver > div > p {
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
