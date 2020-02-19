@@ -12,3 +12,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1{
+  margin: 15px;
+}
+#card {
+  width: 90%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 1px solid black;
+  margin: 15px;
+}
+#card-img{
+  height: 150px;
+  margin: 15px;
+}
+#simple-card {
+  width: 90%;
+  border: 2px solid black;
+  margin: 15px;
+}
+#simple-card p{
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.rating{
+  margin: 15px;
+}
+
+.rating p{
+  font-size: 4rem;
+  margin: 0;
+}
+
+#driverCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #455EB5;
+  margin: 15px;
+  height: 180px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+}
+
+#driverCard img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 25px;
+}
+
+#driverContent{
+  margin: 25px;
+}
+#driverContent h1{
+  margin: 0;
+}
+#driverContent p{
+  margin: 0;
+  font-size: 3rem;
+}
+#driverContent span{
+  margin: 0;
+  font-size: 1.5rem;
+}
+#btn{
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 15px;
+    width: 80px;
+}
