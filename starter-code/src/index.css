@@ -66,3 +66,44 @@ strong {
   padding: 1%;
   justify-content: space-evenly;
 }
+
+.rating {
+  padding: 10px;
+  margin: 10px;
+}
+
+.rating>div>p {
+  font-size: 45px;
+}
+
+.driver {
+  display: flex;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 1%;
+  background-color: rgb(70, 95, 185);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.driver>img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 2%;
+}
+
+.driver>div>h2 {
+  color: white;
+  font-size: 2.5rem;
+  padding: 5% 0;
+}
+
+.driver>div>p {
+  color: white;
+  font-size: 2rem;
+  padding: 1% 0;
+}
