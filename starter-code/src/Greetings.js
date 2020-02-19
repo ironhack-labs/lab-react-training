@@ -20,7 +20,7 @@ const Greetings = (prop) => {
     }
 
     return (
-    <h1 className="greetings-card">{`${greeting} ${prop.children}`}</h1>
+    <p className="greetings-card">{`${greeting} ${prop.children}`}</p>
     )
 }
 
