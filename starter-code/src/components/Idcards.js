@@ -4,9 +4,9 @@ import React, { Component } from 'react';
 class IdCard extends Component {
   render() {
     return (
-      <div className="IdCard box">
+      <div className="IdCards">
         <img src={this.props.picture} alt=""/>
-        <div className="right">
+        <div className="name">
           <p>First name</p>: {this.props.firstName} 
             <br/>
           <p>Last name</p>: {this.props.lastName} 
