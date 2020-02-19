@@ -12,3 +12,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.IdCard {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.IdCard p{
+  margin: 0;
+  padding: 0;
+}
+
+.greetings {
+  width: 100%;
+  padding: 10px 5px;
+  border: 1px solid black;
+}
+
+.random {
+  width: 100%;
+  padding: 10px 5px;
+  border: 1px solid black;
+}
+
+.boxcolor{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
