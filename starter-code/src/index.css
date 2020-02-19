@@ -12,3 +12,70 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.id-card {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.photo{
+  width: 200px;
+}
+
+.content{
+  margin-left: 10px;
+}
+
+.greeting, .random, .box-color{
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.box-color{
+  text-align: center;
+}
+
+.CreditCard{
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+
+.Rating p{
+  font-size: 50px;
+}
+
+.DriverCard{
+  width: 190vh;
+  height: 130px;
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(70,95,185);
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.DriverCard img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.DriverCard h2, .DriverCard p {
+  color: aliceblue;
+}
+
+.like-btn{
+  width: 100px;
+  height: 40px;
+  font-size: 1rem;
+  border: 0;
+}
