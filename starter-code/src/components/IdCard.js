@@ -5,29 +5,24 @@ const IdCard = props => {
     <article className="id-card">
       <div>
         <img src={props.picture} alt="" />
-      </div>{" "}
+      </div>
       <div className="id-card-info">
         <p>
-          {" "}
-          <strong> First name: </strong> {props.firstName}{" "}
-        </p>{" "}
+          <strong> First name: </strong> {props.firstName}
+        </p>
         <p>
-          {" "}
-          <strong> Last name: </strong> {props.lastName}{" "}
-        </p>{" "}
+          <strong> Last name: </strong> {props.lastName}
+        </p>
         <p>
-          {" "}
-          <strong> Gender: </strong> {props.gender}{" "}
-        </p>{" "}
+          <strong> Gender: </strong> {props.gender}
+        </p>
         <p>
-          {" "}
-          <strong> Height: </strong> {props.height}m{" "}
-        </p>{" "}
+          <strong> Height: </strong> {props.height}
+        </p>
         <p>
-          {" "}
-          <strong> Birth: </strong> {props.birth.toDateString()}{" "}
-        </p>{" "}
-      </div>{" "}
+          <strong> Birth: </strong> {props.birth.toDateString()}
+        </p>
+      </div>
     </article>
   );
 };

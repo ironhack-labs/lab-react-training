@@ -6,10 +6,8 @@ const Random = props => {
   return (
     <article className="random">
       <p>
-        {" "}
-        Random value between {props.min}
-        and {props.max} => {random}{" "}
-      </p>{" "}
+        Random value between {props.min} and {props.max} => {random}
+      </p>
     </article>
   );
 };

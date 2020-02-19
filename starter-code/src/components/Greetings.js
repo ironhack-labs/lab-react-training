@@ -23,9 +23,8 @@ const Greetings = props => {
   return (
     <article className="greetings">
       <p>
-        {" "}
-        {greeting} {props.children}{" "}
-      </p>{" "}
+        {greeting} {props.children}
+      </p>
     </article>
   );
 };
