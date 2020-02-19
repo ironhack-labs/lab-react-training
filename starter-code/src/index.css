@@ -43,3 +43,29 @@ code {
   align-items: center;
   flex-direction: column;
 }
+
+.creditcard {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.drivercard {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  background-color: #4545ff;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin: 5px 0;
+}
+
+.drivercard img{
+  width: 100px;
+  height: 100px;
+  border-radius: 45px;
+}
+.drivercard > div {
+  width: 300px;
+  margin-left: 10px;
+}
