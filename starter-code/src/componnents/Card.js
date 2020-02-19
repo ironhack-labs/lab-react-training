@@ -5,7 +5,7 @@ class Card extends Component{
         return (
             <div >
                 <div className="containerImg">
-                    <img    src={this.props.img}  alt="Image"/>
+                    <img src={this.props.img}  alt={this.props.firstName}/>
                 </div>
                 <p>Last Name:{this.props.lastName}</p>
                 <p>first Name:{this.props.firstName}</p>
