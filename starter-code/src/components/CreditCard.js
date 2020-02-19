@@ -7,10 +7,10 @@ export default class CreditCard extends Component {
           backgroundColor:`${this.props.bgColor}`,
           color:`${this.props.color}`
       }}>
-      {/* <img src={this.props.type==="Visa" ? '/img/visa.png':'/img/master-card.svg'} alt={this.props.type}> </img>
-         */}
+         
         
-         <p>{this.props.type}</p>
+         <p>{this.props.type === 'Visa' && <img src='/img/visa.png'/>}
+         {this.props.type === 'Master Card' && <img src='/img/master-card.svg'/>}</p>
          <div>
              <h1> ●●●● ●●●● ●●●● {this.props.number.substring(12,16)} </h1>
             <div id="fechas">

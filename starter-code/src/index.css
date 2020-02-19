@@ -67,9 +67,35 @@ flex-direction: row;
 #Credit #banco{
   margin-left: 10px ;
 }
+#Credit img{
+  width: 50px;
+  margin-left: 80%;
+}
 #CreditCards{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 
+}
+#stars{
+  font-size: 50px;
+}
+#driver{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #3300FF;
+  width: 95vw;
+  margin: 40px auto;
+ color:white
+}
+#driver img{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin:30px;
+}
+#driver p{
+  font-size: 1.3rem;
 }
