@@ -25,8 +25,8 @@ code {
 .App{
   width: 100%;
   display: flex;
-  background: red;
-  flex-direction: row;
+
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
