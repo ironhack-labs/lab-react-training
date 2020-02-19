@@ -32,3 +32,9 @@ code {
 .card-info span{
   font-weight: normal;
 }
+
+.greetings-card {
+  border: 2px solid black;
+  margin: 5px;
+  padding: 2px;
+}

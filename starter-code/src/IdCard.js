@@ -3,7 +3,7 @@ import React from 'react';
 const IdCard = props => {
     return (
         <div className="card">
-            <img className="card-image" src={props.picture} />
+            <img alt="" className="card-image" src={props.picture} />
             <div className="card-info">
                 <p>First Name: <span>{props.firstName}</span></p>
                 <p>Last Name: <span>{props.lastName}</span></p>
