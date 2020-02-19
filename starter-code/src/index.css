@@ -48,6 +48,7 @@ code {
   border-radius: 10px;
   color: beige;
   text-align: center;
+  margin: 20px;
  
 }
 
@@ -58,4 +59,11 @@ code {
   display:block;
   margin-left: auto;
   margin-right: auto;
+  
+}
+
+.random{
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
 }
