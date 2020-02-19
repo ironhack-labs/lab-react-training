@@ -9,7 +9,7 @@ const Greetings = (props) => {
     };
 
     return (
-        <div class="box">{languages[props.lang]} {props.children}</div>
+        <div className="box">{languages[props.lang]} {props.children}</div>
     );
 };
 
