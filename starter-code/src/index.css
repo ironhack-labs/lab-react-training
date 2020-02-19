@@ -36,4 +36,9 @@ code {
   border-radius: 4px;
   border: solid 1px black;
   padding: 8px;
+  display: inline-block
+}
+
+.Creditcards .type img {
+  height: 20px;
 }

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class CreditCard extends Component {
   render() {
     return (
-      <div className='Creditcards'>
+      <div className='Creditcards' style={{backgroundColor:`${this.props.bgColor}`, color:`${this.props.color}`}}>
         <div className='type'> {this.props.type === 'Visa' && <img src="/img/visa.png" alt="logo"/>}</div>
         <div className='type'> {this.props.type === 'Master Card' && <img src="/img/master-card.svg" alt="logo"/>}</div>
        <div className='number'> {this.props.number}</div>
