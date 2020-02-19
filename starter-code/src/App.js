@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import IdCard from './components/Idcards'
 import Greetings from './components/Greetings'
 import Random from './components/Random'
+import BoxColor from './components/Boxcolors'
 
 class App extends Component {
   render() {
@@ -25,14 +26,18 @@ class App extends Component {
         birth={new Date("1993-05-11")}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+      {/* Greetings*/}
        <h1>Greetings</h1>
-        {/* Use the Greetings component and definie props.lang="de" and props.children="Ludwig" */}
-        <Greetings lang="de">Ludwig</Greetings>
-        <Greetings lang="fr">François</Greetings>
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
 
         <h1>Random</h1>
-        <Random min={1} max={5}/>
-        <Random min={1} max={100}/>
+      <Random min={1} max={5}/>
+      <Random min={1} max={100}/>
+
+        <h1>BoxColor</h1>
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
 
    
       </div>
