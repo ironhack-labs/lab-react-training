@@ -107,3 +107,14 @@ strong {
   font-size: 2rem;
   padding: 1% 0;
 }
+
+.like-button {
+  width: 100px;
+  height: 40px;
+  color: white;
+  font-size: 2rem;
+  border: 0;
+  margin: 0 20%;
+  text-align: center;
+  justify-content: space-evenly;
+}
