@@ -17,18 +17,8 @@ export default class BoxColor extends Component {
     }
     render() {
         return (
-            <div style={{
-                background:`rgb(${this.props.r},${this.props.g},${this.props.b})`, 
-                opacity:'1',
-                width:'90%', 
-                margin:'25px', 
-                border:'2px solid balck',
-                borderRadius:'20px',
-                display:'flex',
-                flexDirection:"column",
-                alignItems:'center',
-                justifyContent:'center'
-                }}>
+            <div className="BoxColor"
+                 style={{background:`rgb(${this.props.r},${this.props.g},${this.props.b})`}}>
                 <h3>rgb({this.props.r},{this.props.g},{this.props.b})</h3>
                 <h3>{this.GiveMeHex(this.props)}</h3>
             </div>

@@ -3,18 +3,8 @@ import React, { Component } from 'react'
 export default class Greetings extends Component {
     render() {
         return (
-            <div style={{
-                background:'#b9cced', 
-                width:'90%', 
-                margin:'25px', 
-                border:'2px solid balck',
-                borderRadius:'20px',
-                display:'flex',
-                alignItems:'center',
-                justifyContent:'center'
-                }}>
+            <div className="Greetings">
                 <h3>{
-
                     (()=>{
                         switch(this.props.lang){
                             case 'de':
@@ -30,7 +20,6 @@ export default class Greetings extends Component {
                         }
                     })()
                     
-
                     }
                      {this.props.children}</h3>
             </div>

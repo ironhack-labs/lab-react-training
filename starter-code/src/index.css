@@ -1,20 +1,204 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ h1{
+    margin-left: 50px;
+    margin-top: 100px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.IdCard{  
+background:#b0a160; 
+width:90%; 
+margin:25px;
+border:2px solid balck;
+border-radius:20px;
+display:flex;
+flex-direction:row;
+justify-content:flex-start;
+}
+
+.IdCard img{
+height:200px;
+width:200px;
+padding:15px;
+border-radius:40px;
+}
+
+.IdCard div{
+        margin-left:15px;
+        display:flex;
+        flex-direction:column;
+}
+
+.IdCard p{
+    margin:12px;
+}
+
+.Greetings{
+        background:#b9cced;
+        width:90%;
+        margin:25px;
+        border:2px solid balck;
+        border-radius:20px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+}
+
+.Random{
+        background:#ccedd2; 
+        width:90%;
+        margin:25px;
+        border-radius:20px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+}
+
+.BoxColor{
+        opacity:1;
+        width:90%; 
+        margin:25px; 
+        border:2px solid balck;
+        border-radius:20px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+}
+
+.sectionCreditCard{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin:100px 0;
 }
 
 .CreditCard{
-  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
-   box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
+ box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
+ width:350px;
+ height:216px;
+ margin:25px 0;
+ border:1px solid black;
+ border-radius:20px;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:space-around;
+}
+
+.topCC{
+    padding:10px 25px;
+    align-self:flex-end;
+}
+.topCC img{
+    height:25px;
+}
+
+.middleCC{
+    padding:0;
+    align-self:center;
+    display:flex;
+    flex-direction:row;
+}
+.dotsCC{
+    font-size:4rem;
+    margin:0;
+    align-self:center;
+}
+.numCC{
+    padding:0 10px;
+    align-self:center;
+    font-size:2rem;
+}
+
+.bottomCC{
+    padding:10px 25px;
+    align-self:flex-start;
+}
+
+.bottomCC p{
+    margin:5px 0;
+}
+
+.bankCC{
+    padding-left:35px;
+}
+
+.Rating{
+    display:flex;
+    justify-content:center;
+}
+
+.Rating h1{
+    font-size:2.5rem;
+    margin:0;
+}
+
+.DriverCard{
+        background:#455eb5;
+        width:90%;
+        margin:25px;
+        border-radius:20px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:white;   
+}
+
+.DriverCard div:first-child{
+        width:50%;
+        margin:0;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:center;      
+}
+
+.DriverCard img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius:50%;
+    padding:25px;
+}
+
+.DriverCard h2{
+    margin:0;
+}
+
+.sectionLikeButton{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    margin:100px 0;
+}
+
+.LikeButton{
+    width:250px;
+    height:50px;
+    border:1px solid transparent;
+    border-radius:20px;
+    font-size:2rem;
+}
+
+.ClickablePicture{
+    display:flex;
+    justify-content:center;
+}
+
+.ClickablePicture img{
+    width:180px;
+    height:auto;
+}
+
+.Dice{
+    display:flex;
+    justify-content:center;
+}
+
+.Dice img{
+    width:250px;
+    height:auto;
+    margin:50px;
 }
