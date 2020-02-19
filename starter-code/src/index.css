@@ -32,3 +32,23 @@ p{
   padding: 0px 5px;
   margin: 10px;
 }
+#Box{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  width: 97vw;
+  padding: 0px 5px;
+  margin: 10px;
+}
+
+#BoxColor{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 97vw;
+  height:  100px;
+  padding: 0px 5px;
+  margin: 10px;
+}
