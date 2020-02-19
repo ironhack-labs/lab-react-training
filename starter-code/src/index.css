@@ -12,3 +12,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.card{
+  display: flex;
+  border:  1px solid black;
+  padding: 10px;
+  margin: 5px;
+}
+
+.greetings{
+  border: 2px solid black;
+  padding: 5px;
+  margin: 8px;
+}
+
+.random{
+  border: 2px solid black;
+  padding: 5px;
+  margin: 8px;
+}
+
+.boxcolor{
+  display: flex;
+  border: 2px solid black;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+
+}
+
+.creditcar{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+
+.type img{
+  width: 50px;
+  align-self:flex-start;
+}
+
+
+
