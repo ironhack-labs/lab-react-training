@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import IdCard from './IdCard';
 import Greetings from './Greetings';
 import Random from './Random';
+import BoxColor from './BoxColor';
 
 class App extends Component {
   render() {
@@ -30,7 +31,10 @@ class App extends Component {
         <h1>Random</h1>
         <Random min={1} max={6}/>
         <Random min={1} max={100}/>
-      </Fragment>
+        <h1>Box Color</h1>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
+        </Fragment>
     );
   }
 }
