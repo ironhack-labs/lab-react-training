@@ -20,8 +20,8 @@ class App extends Component {
 
         <h1>Random</h1>
         {/* TODO: Use the Greetings component */}
-        <Random min="{1}" max="{6}"/>
-        <Random min="{1}" max="{100}" />
+        <Random min={1} max={6}/>
+        <Random min={1} max={100} />
 
         <h1>Box</h1>
         {/* TODO: Use the Greetings component */}
