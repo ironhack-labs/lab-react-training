@@ -25,8 +25,8 @@ class App extends Component {
 
         <h1>Box</h1>
         {/* TODO: Use the Greetings component */}
-        <Box r={255} g={0} b={0}/>
-        <Box r={128} g={255} b={0} />
+        <Box r={255} g={0} b={0} color="black"/>
+        <Box r={128} g={255} b={0} color="white"/>
       </div>
     );
   }
