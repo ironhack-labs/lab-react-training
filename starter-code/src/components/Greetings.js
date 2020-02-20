@@ -2,9 +2,8 @@ import React from 'react';
 
 const Greetings = props => {
     return (
-        <div className = "greetings">
+        <div className = "box">
             <div>
-                <h3> 
                     {
                     props.lang == "fr" ? 
                         <p>Bonjour  {props.children}</p>
@@ -17,7 +16,6 @@ const Greetings = props => {
                         :
                         <p>Hello  {props.children}</p>
                     }
-                    </h3>
             </div>
         </div>
     )
