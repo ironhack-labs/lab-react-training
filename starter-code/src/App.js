@@ -3,7 +3,8 @@ import Card from './componnents/Card'
 import Greatings from './componnents/Greatings';
 import Random from './componnents/Random'
 import Boxcolor from './componnents/Boxcolor'
-import CreditCard from './componnents/CreditCard';
+import CreditCard from './componnents/CreditCard'
+import Raiting from './componnents/Raiting'
 
 class App extends Component {
   render() {
@@ -42,17 +43,34 @@ class App extends Component {
         <h1>Boxcolor</h1>
         <Boxcolor r={255} g={0} b={0} />
         <Boxcolor r={128} g={255} b={0} />
+
         <h1>CreditCard</h1>
         <CreditCard
+        img="./img/visa.png"
         tipo="Visa"
         expiraMes={3}
-        numero={3454524354}
+        numero={9718}
         expiraAnio = {22}
         banco ="Banco Nacional"
         nombre="Risha"
         bgc="rgb(17, 170, 153)"
         colorFuente ="white"
         />
+         <CreditCard
+        
+        tipo="Mastercard"
+        expiraMes={3}
+        numero={9718}
+        expiraAnio = {22}
+        banco ="Banco Nacional"
+        nombre="Risha"
+        bgc="rgb(180, 80, 100)"
+        colorFuente ="white"
+        />
+
+        <h1>Raiting</h1>
+        <Raiting>1</Raiting>
+
       </div>
     );
   }
