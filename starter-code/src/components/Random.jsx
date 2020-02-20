@@ -6,7 +6,7 @@ const Random = (props) => {
     const number = min + Math.floor(Math.random() * max);
 
     return (
-        <div class="box">Random value between {min} and {max} =&gt; {number}</div>
+        <div className="box">Random value between {min} and {max} =&gt; {number}</div>
     );
 };
 
