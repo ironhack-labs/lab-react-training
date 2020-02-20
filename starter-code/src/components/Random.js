@@ -8,16 +8,9 @@ class Random extends Component{
             randomNumber : 0
         }
     }
-    setRandomNumber(){
-        this.setState({
-            randomNumber: this.randomNumber()
-        })
-        
-
-    }
     randomNumber(max,min){
-        let number= Math.floor(Math.random() * max ) + min;
-        return number
+        let randomNumber= Math.floor(Math.random() * max ) + min;
+        return randomNumber;
     }
 
     render(){

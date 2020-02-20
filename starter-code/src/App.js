@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import 'bulma/css/bulma.css'
+/* Data */
+import {users} from './users'
+
+/*  Components */
 import IdCard from './components/IdCard'
 import Greetings from './components/Greetings'
 import Random from './components/Random'
-import {users} from './users'
+import BoxColor from './components/BoxColor'
 class App extends Component {
   render() {
     return (
@@ -45,6 +49,14 @@ class App extends Component {
             </div>
             <div className="column is-12">
               <Random  min={1} max={100}/>
+            </div>
+            <div className="column is-12">
+            <h1 className="title"> BoxColor</h1>
+
+              < BoxColor  r={255} g={0} b={0}/>
+            </div>
+            <div className="column is-12">
+              < BoxColor  r={128} g={255} b={0}/>
             </div>
         </section> 
         
