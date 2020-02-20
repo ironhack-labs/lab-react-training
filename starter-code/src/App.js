@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import 'bulma/css/bulma.css'
 /* Data */
 import {users} from './users'
-
+import {creditCardsData} from './creditCardsData'
 /*  Components */
 import IdCard from './components/IdCard'
 import Greetings from './components/Greetings'
 import Random from './components/Random'
 import BoxColor from './components/BoxColor'
+import CreditCard  from './components/CreditCard'
+
 class App extends Component {
   render() {
     return (
@@ -57,6 +59,22 @@ class App extends Component {
             </div>
             <div className="column is-12">
               < BoxColor  r={128} g={255} b={0}/>
+            </div>
+            <div>
+                {creditCardsData.map((creditCard, index) =>{
+                  return <CreditCard 
+                  key={`credit-car-num-${index}`} 
+                  type={creditCard.type}
+                  number={creditCard.number}
+                  expirationMonth={creditCard.expirationMonth}
+                  expirationYear={creditCard.expirationYear}
+                  bank={creditCard.bank}
+                  owner={creditCard.owner}
+                  bgColor={creditCard.bgColor}
+                  color={creditCard.color}
+                  />
+
+                })}
             </div>
         </section> 
         
