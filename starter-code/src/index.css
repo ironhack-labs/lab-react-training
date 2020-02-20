@@ -12,3 +12,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.id {
+  display: flex;
+  border: 1px solid black;
+}
+
+.greetings {
+  border: 1px solid black;
+}
+
+.random {
+  border: 1px solid black;
+}
+
+.boxcolor {
+  border: 1px solid black;
+  width: 300px;
+  margin-inline-start: 30vw;
+}
+
+.boxcolor p {
+  margin-inline-start: 15vw;
+  color: white;
+}
+
+.boxcolor p:last-of-type {
+  color: black;
+}
+
