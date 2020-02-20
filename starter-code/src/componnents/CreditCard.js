@@ -1,11 +1,6 @@
 import React from 'react'
 
 const  CreditCard= (props) => {
-  let typo = {
-    visa:"Visa",
-    masterCard:"Master Card"
-  }
-
 
     return (
       <div className="targetaCredito" style={
@@ -19,7 +14,7 @@ const  CreditCard= (props) => {
 
         }
       }>
-          <img src={props.tipo === "Visa"? "./img/visa.png": "./img/master-card.svg"} style={{
+          <img src={props.tipo === "Visa"? "./img/visa.png" : "./img/master-card.svg"} alt="" style={{
             width:"15% ",
             position:"relative",
             left:"75%",
@@ -48,7 +43,8 @@ const  CreditCard= (props) => {
           paddingLeft:"10%",
           margin:"5% 0",
         }}
-        >{props.nombre}</p>
+        >
+        {props.nombre}</p>
 
         </div>
     )
