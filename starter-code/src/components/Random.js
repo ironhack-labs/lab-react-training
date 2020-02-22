@@ -12,7 +12,8 @@ class Random extends Component {
     return (
       <div className="Flex">
         <p>
-          Random value between {this.props.min} and {this.props.max} =>
+          Random value between {this.props.min} and {this.props.max} =>{" "}
+          {Math.ceil(Math.random(this.props.min) * this.props.max)}
         </p>
       </div>
     );
