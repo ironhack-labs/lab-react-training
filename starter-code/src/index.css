@@ -33,3 +33,24 @@ code {
 .text-center {
   text-align: center;
 }
+
+.CreditCardContainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.CreditCard {
+  background-color: aqua;
+  height: 200px;
+  width: 30%;
+}
+
+.imgCreditCard {
+  width: 50px;
+}
+
+.white-text {
+  color: #ffffff;
+  font-size: 16px;
+}
