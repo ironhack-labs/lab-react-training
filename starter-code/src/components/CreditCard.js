@@ -17,13 +17,15 @@ const CreditCard = props => {
   }
 
   return (
-    <div className="CreditCard">
+    <div className="CreditCard" style={props.style}>
       <img className="imgCreditCard" src="/img/visa.png" />
-      <p className="text-center white-text">{displayNumber(props.number)}</p>
-      <p className="white-text">
+      <p className="text-center" style={(props.color = props.color)}>
+        {displayNumber(props.number)}
+      </p>
+      <p>
         Expires {displayExp(expMth)} <span>{props.bank}</span>{" "}
       </p>
-      <p className="white-text">{props.owner}</p>
+      <p>{props.owner}</p>
     </div>
   );
 };

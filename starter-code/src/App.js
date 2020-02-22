@@ -6,6 +6,22 @@ import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  first = {
+    backgroundColor: "#11AA99"
+  };
+
+  second = {
+    backgroundColor: "#EEEEEE"
+  };
+
+  third = {
+    backgroundColor: "#F7EFD7"
+  };
+
   render() {
     return (
       <div className="App">
@@ -51,6 +67,7 @@ class App extends Component {
             owner="Maxence Bouret"
             bgColor="#11aa99"
             color="white"
+            style={this.first}
           />
           <CreditCard
             type="Master Card"
@@ -61,6 +78,7 @@ class App extends Component {
             owner="Maxence Bouret"
             bgColor="#eeeeee"
             color="#222222"
+            style={this.second}
           />
           <CreditCard
             type="Visa"
@@ -71,6 +89,7 @@ class App extends Component {
             owner="Firstname Lastname"
             bgColor="#ddbb55"
             color="white"
+            style={this.third}
           />
         </div>
       </div>
