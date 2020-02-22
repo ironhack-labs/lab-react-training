@@ -44,3 +44,7 @@ code {
   border-radius: solid black 20px;
 
 }
+/* Rating component */
+.checked {
+  color: orange;
+}

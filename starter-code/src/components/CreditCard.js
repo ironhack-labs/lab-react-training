@@ -6,7 +6,8 @@ function CreditCard(props){
     const divStyle = {
         color: `${props.color}`,
         backgroundColor:`${props.bgColor}`
-      };
+    };
+
     const replaceCharacter = (numCard)=>{    
       const strArray= numCard.split('').map((e , index )=>{
         if (index < numCard.length -3){
@@ -14,10 +15,11 @@ function CreditCard(props){
         }else{
             return e
         }
-    })
+      })
       return strArray.join('')
 
     }
+
     return(
         <div className="column is-4">
             <div className="creditCard" type={props.type} style={divStyle}>
