@@ -53,3 +53,38 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+.card-container {
+  display: flex;
+}
+
+.credit-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 20%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.card-logo img{
+  height:30px;
+  width: 60px;
+  padding: 10px;
+}
+
+.card-logo{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.middle-card {
+  text-align: center;
+  font-size: larger;
+  margin: 10px;
+}
+
+.lower-card{
+  padding: 10px;
+}
