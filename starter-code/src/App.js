@@ -6,6 +6,8 @@ import Box from './components/Box';
 import CreditCard from './components/CreditCard'
 import Rating from './components/Rating'
 import DriveCard from './components/DriveCard';
+import CkPic from './components/ClickeablePicture'
+import Dice from './components/Dice'
 
 class App extends Component {
   render() {
@@ -50,6 +52,15 @@ class App extends Component {
         {/* TODO: Use the Rating component */}
         <DriveCard driver="Travis Kalanick" car="Toyota Corolla Altis" plate="CO42DE"  color="white" picture="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"/>
         <DriveCard driver="Travis Kalanick" car="Toyota Corolla Altis" plate="CO42DE"  color="white" picture="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"/>
+
+        <h1>ClickeablePicture</h1>
+        {/* TODO: Use the ClickeablePicture component */}
+        <CkPic click="false" />
+
+        <h1>Dice</h1>
+        {/* TODO: Use the Dice component */}
+        <Dice click="false" />
+
       </div>
     );
   }
