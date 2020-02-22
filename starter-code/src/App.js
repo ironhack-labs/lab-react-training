@@ -20,7 +20,6 @@ class App extends Component {
               <div className="columns is-desktop is-multiline">
                 {/* TODO: Use the IdCard component */}
                 {users.map( (user,i)=>{
-                  console.log(user)
                   return <IdCard
                     key={"user-"+i} 
                     firstName={user.firstName}

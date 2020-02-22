@@ -7,7 +7,17 @@ function CreditCard(props){
         color: `${props.color}`,
         backgroundColor:`${props.bgColor}`
       };
-      
+    const replaceCharacter = (numCard)=>{    
+      const strArray= numCard.split('').map((e , index )=>{
+        if (index < numCard.length -3){
+            return( e = '*')
+        }else{
+            return e
+        }
+    })
+      return strArray.join('')
+
+    }
     return(
         <div className="column is-4">
             <div className="creditCard" type={props.type} style={divStyle}>
@@ -15,7 +25,7 @@ function CreditCard(props){
             ${props.type ==='Master Card' ? '/img/master-card.svg' : ''}
             `} alt="" className="logo"/>
 
-            <p className="numCreditCard">{props.number}</p>
+            <p className="numCreditCard">{replaceCharacter(props.number)}</p>
             <p>Expires: {props.expirationMonth}/{props.expirationYear} </p>
 
             <p>{props.owner}</p>

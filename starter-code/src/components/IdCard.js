@@ -2,11 +2,11 @@ import React, {Component} from "react";
 import 'bulma/css/bulma.css'
 
 class IdCard extends Component{
-    // eslint-disable-next-line no-useless-constructor
-    constructor(props){
-        super(props)
- 
+    
+    state = {
+        name: 'jp'
     }
+
     render(){
         return(
             <div className="column is-6">
