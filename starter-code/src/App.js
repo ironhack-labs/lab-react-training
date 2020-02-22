@@ -8,6 +8,8 @@ import Rating from './components/Rating'
 import DriveCard from './components/DriveCard';
 import CkPic from './components/ClickeablePicture'
 import Dice from './components/Dice'
+import Carousel from './components/Carousel';
+
 
 class App extends Component {
   render() {
@@ -61,6 +63,9 @@ class App extends Component {
         {/* TODO: Use the Dice component */}
         <Dice click="false" />
 
+        <h1>Carousel</h1>
+        {/* TODO: Use the Dice component */}
+        <Carousel click={1}/>
       </div>
     );
   }
