@@ -3,6 +3,7 @@ import IdCard from './components/idcard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
 import Box from './components/Box';
+import CreditCard from './components/CreditCard'
 
 class App extends Component {
   render() {
@@ -27,6 +28,12 @@ class App extends Component {
         {/* TODO: Use the Greetings component */}
         <Box r={255} g={0} b={0} color="black"/>
         <Box r={128} g={255} b={0} color="white"/>
+
+        <h1>Credit Card</h1>
+        {/* TODO: Use the Greetings component */}
+        <CreditCard type="Visa" number="•••• •••• •••• 4309" expirationMonth={3} expirationYear={2027} bank="Ardbank" owner="Karen A. Sato" bgColor="#11aa99" color="white" />
+        <CreditCard type="Master Card" number="•••• •••• •••• 9000" expirationMonth={3} expirationYear={2021} bank="Leonbank" owner="Leon T. Dua" bgColor="#eeeeee" color="black" />
+        <CreditCard type="Visa" number="•••• •••• •••• 1071" expirationMonth={3} expirationYear={2023} bank="Karbank" owner="Jony M. Tiga" bgColor="#ddbb55" color="white" />
       </div>
     );
   }

@@ -5,13 +5,13 @@ const Greetings = props => {
         <div className = "box">
             <div>
                     {
-                    props.lang == "fr" ? 
+                    props.lang === "fr" ? 
                         <p>Bonjour  {props.children}</p>
                         :
-                        props.lang == "de" ?
+                        props.lang === "de" ?
                         <p>Hallo  {props.children}</p>
                         :
-                        props.lang == "es" ?
+                        props.lang === "es" ?
                         <p>Hola  {props.children}</p>
                         :
                         <p>Hello  {props.children}</p>
