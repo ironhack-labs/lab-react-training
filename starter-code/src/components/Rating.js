@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 function Rating({children}) { 
     let rate = Math.round((children))
     let rating = ['☆', '☆', '☆', '☆', '☆']
