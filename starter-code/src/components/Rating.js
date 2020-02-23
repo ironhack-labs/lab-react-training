@@ -1,11 +1,15 @@
 import React from 'react'
 
-function Rating({stars}) {
-    let rate = Math.round((stars))
-    let render = []
+
+function Rating({children}) { 
+    let rate = Math.round((children))
+    let rating = ['☆', '☆', '☆', '☆', '☆']
+    for(let i= 0; i< rate; i++){
+        rating[i] = '☆'
+    }
     return (
         <div>
-            
+            {rating.join('')}
         </div>
     )
 }

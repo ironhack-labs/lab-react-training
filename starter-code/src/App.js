@@ -4,6 +4,7 @@ import IdCard from './components/IdCard';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard'
+import Rating from './components/Rating';
 
 class App extends Component {
   render() {
@@ -50,6 +51,7 @@ class App extends Component {
           owner="Maxence Bouret"
           bgColor="#11aa99"
           color="white" />
+        <br/>
         <CreditCard 
           type="Master Card"
           number="0123456789010995"
@@ -59,6 +61,7 @@ class App extends Component {
           owner="Maxence Bouret"
           bgColor="#eeeeee"
           color="#222222" />
+         <br/>
         <CreditCard 
           type="Visa"
           number="0123456789016984"
@@ -68,7 +71,9 @@ class App extends Component {
           owner="Firstname Lastname"
           bgColor="#ddbb55"
           color="white" />
+          <br />
           </div>
+          <Rating />
 
       </div>
     );
