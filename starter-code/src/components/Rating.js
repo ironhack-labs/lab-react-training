@@ -5,19 +5,20 @@ import './../index.css'
 const Rating = (props)=>{
 
    let displayStars = ()=>{
-        let number = parseFloat(props.children)
+    
+        let number = Math.round(parseFloat(props.children))
         let total=[]
         for(let i = 0 ; i< 5 ; i++){
-            console.log(`num: ${i} number:${number-1} `)
-             if( i < number ){
-                total.push(<span className="fa fa-star checked " />)                
+           // console.log(`num: ${i} number:${number-1} `)
+            //console.log(i % 2 )
+             if( i < number){
+                total.push(<span className="fa fa-star checked " />)
             }else{
                 total.push(<span className="fa fa-star"/>)
             } 
         }
-        return total.map(ele=>ele)   
+       return total.map(ele=>ele)   
     }
-    
     return(
         <div className="Rating">
             
