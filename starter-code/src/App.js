@@ -13,7 +13,7 @@ import Rating from './components/Rating'
 import DriveCard from './components/DriveCard'
 import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture'
-
+import Dice from './components/Dice'
 
 class App extends Component {
 
@@ -43,7 +43,7 @@ class App extends Component {
             </div>
 
             <div className="column is-12">
-            <h1 className="title">Greetings</h1>
+            <h1 >Greetings</h1>
 
               <Greetings lang="de" children="Ludwig"/>
             </div>
@@ -82,7 +82,7 @@ class App extends Component {
                 })}
             </div>
             <div  className="column is-12">
-              <h1>Rating component</h1>
+              <h1 className="title">Rating component</h1>
               <Rating>0</Rating>
               <Rating>1.49</Rating>
               <Rating>1.5</Rating>
@@ -112,7 +112,7 @@ class App extends Component {
                 }} />
             </div>
             <div className="column is-12">
-              <h1>LikeButton</h1>
+              <h1 className="title">LikeButton</h1>
                 <LikeButton />
             </div>
             <div className="column is-6">
@@ -122,6 +122,10 @@ class App extends Component {
             <div className="column is-6">
                 <ClickablePicture img="/img/persons/maxence.png"
                 imgClicked="/img/persons/maxence-glasses.png"  />
+            </div>
+            <div className="column is-6">
+              <h1 className="title">Dice component</h1>
+                <Dice />
             </div>
         </section> 
         

@@ -56,3 +56,7 @@ code {
   padding-top:1em;
   background-color: #455EB5;
 }
+/* Dice */
+.Dice {
+  width: 60px
+}

@@ -1,13 +1,11 @@
 import React, {Component} from 'react'
  
 class ClickablePicture extends Component{
-
-    
+   
     state={
         togle: true
     }
      togleImagen =() => {
-         console.log(this.state)
          this.setState({
             togle: this.toggleImagen(this.state.togle)
         }) 
