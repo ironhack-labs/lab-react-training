@@ -46,3 +46,13 @@ code {
 .checked {
   color: orange;
 }
+/* DriveCard component */
+.DriveCard{
+  margin-top:1em;
+  border-radius: solid  #455EB5 20px;
+  width:100%;
+  height:14em;
+  color: white;
+  padding-top:1em;
+  background-color: #455EB5;
+}

@@ -9,8 +9,7 @@ const Rating = (props)=>{
         let number = Math.round(parseFloat(props.children))
         let total=[]
         for(let i = 0 ; i< 5 ; i++){
-           // console.log(`num: ${i} number:${number-1} `)
-            //console.log(i % 2 )
+         
              if( i < number){
                 total.push(<span className="fa fa-star checked " />)
             }else{
