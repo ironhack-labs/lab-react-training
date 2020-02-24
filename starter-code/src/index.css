@@ -1,14 +1,116 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1 {
+  font-size: 3rem;
+  padding: 20px;
+}
+
+p, strong {
+  font-size: 1.5rem;
+}
+
+.id-card {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.id-card-info {
+  margin-left: 10px;
+}
+
+.greetings {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.greetings > p {
+  font-size: 2.5rem;
+}
+
+.random {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.random > p {
+  font-size: 2.5rem;
+}
+
+.boxcolor {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxcolor > p {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+.rating {
+  padding: 10px;
+  margin: 10px;
+}
+
+.rating > div > p {
+  font-size: 30px;
+}
+
+.driver {
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(70,95,185);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.driver > img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.driver > div > h2 {
+  color: white;
+  font-size: 2rem;
+  padding: 5px 0;
+}
+
+.driver > div > p {
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+
+.like-button {
+  width: 100px;
+  height: 40px;
+  color: white;
+  font-size: 1.5rem;
+  border: 0;
 }
