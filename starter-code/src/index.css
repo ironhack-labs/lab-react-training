@@ -87,3 +87,12 @@ code {
   .DriverCard .rightc > * {
     margin:0
 }
+
+.ClickablePicture,.Dice {
+  height: 100px;
+  width: 100px
+}
+
+.ClickablePicture,.Dice {
+  cursor: pointer
+}
