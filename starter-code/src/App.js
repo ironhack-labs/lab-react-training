@@ -6,6 +6,7 @@ import BoxColor from './BoxColor';
 import CreditCard from './CreditCard';
 import Rating from './Rating';
 import DriverCard from './DriverCard';
+import LikeButton from './LikeButton';
 
 class App extends Component {
   render() {
@@ -28,15 +29,19 @@ class App extends Component {
           birth={new Date("1988-05-11")}
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
+
         <h1>Greetings</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
+
         <h1>Random</h1>
         <Random min={1} max={6}/>
         <Random min={1} max={100}/>
+
         <h1>BoxColor</h1>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
+
         <h1>CreditCard</h1>
         <div class="card-container">
           <CreditCard 
@@ -67,6 +72,7 @@ class App extends Component {
             bgColor="#ddbb55"
             color="white" />
           </div>
+
           <h1>Rating</h1>
           <Rating>0</Rating>
           <Rating>1.49</Rating>
@@ -74,6 +80,7 @@ class App extends Component {
           <Rating>3</Rating>
           <Rating>4</Rating>
           <Rating>5</Rating>
+
           <h1>DriverCard</h1>
           <DriverCard 
             name="Travis Kalanick"
@@ -91,6 +98,10 @@ class App extends Component {
               model: "Audi A3",
               licensePlate: "BE33ER"
           }} />
+
+          <h1>LikeButton</h1>
+          <LikeButton/> <LikeButton />
+          
         </Fragment>
     );
   }
