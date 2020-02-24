@@ -7,11 +7,19 @@ class Carousel extends Component {
     }
 
     handleChangeUp = (e) => { 
-        this.setState({click: 2})
+        if (this.state.click == 4) {
+            this.setState({click: 1})
+        } else {
+            this.setState({click:this.state.click+1})
+        }
     }
 
     handleChangeDown = (e) => { 
-        this.setState({click: 1})
+        if (this.state.click == 1) {
+            this.setState({click: 4})
+        } else {
+            this.setState({click:this.state.click-1})
+        }
     }
 
 
