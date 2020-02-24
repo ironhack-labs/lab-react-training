@@ -5,12 +5,13 @@ import Random from './Random';
 import BoxColor from './BoxColor';
 import CreditCard from './CreditCard';
 import Rating from './Rating';
+import DriverCard from './DriverCard';
 
 class App extends Component {
   render() {
     return (
       <Fragment>
-        <h1>Id Card</h1>
+        <h1>IdCard</h1>
         <IdCard 
           lastName='Doe'
           firstName='John'
@@ -33,10 +34,10 @@ class App extends Component {
         <h1>Random</h1>
         <Random min={1} max={6}/>
         <Random min={1} max={100}/>
-        <h1>Box Color</h1>
+        <h1>BoxColor</h1>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
-        <h1>Credit Card</h1>
+        <h1>CreditCard</h1>
         <div class="card-container">
           <CreditCard 
             type="Visa"
@@ -73,6 +74,23 @@ class App extends Component {
           <Rating>3</Rating>
           <Rating>4</Rating>
           <Rating>5</Rating>
+          <h1>DriverCard</h1>
+          <DriverCard 
+            name="Travis Kalanick"
+            rating={4.2}
+            img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+            car={{
+              model: "Toyota Corolla Altis",
+              licensePlate: "CO42DE"
+          }} />
+          <DriverCard 
+            name="Dara Khosrowshahi"
+            rating={4.9}
+            img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+            car={{
+              model: "Audi A3",
+              licensePlate: "BE33ER"
+          }} />
         </Fragment>
     );
   }

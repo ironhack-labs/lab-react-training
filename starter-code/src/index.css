@@ -92,3 +92,26 @@ code {
 .rating {
   font-size: 50px;
 }
+
+.driver-card {
+  margin: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #455eb5;
+  color: white;
+  padding: 10px;
+}
+
+.driver-card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.driver-info {
+  padding-left: 30px;
+  font-size: 20px;
+}
