@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { Component } from "react";
 
-const Greetings = (props) => {
-    return(
-        <div>
-            <p>{props.lang === 'de' ? 'Hallo'
-                : props.lang === 'fr' ? 'Bonjour'
-                : props.lang === 'es' ? 'Hola'
-                : 'Hello' 
-                }
-            </p>
-            <p>{props.children}</p>
-        </div>
-    )
+class Greetings extends Component {
+  render() {
+    const greetings = {
+      de: "Hallo",
+      en: "Hello",
+      fr: "Bonjour",
+      es: "Hola"
+    };
+    
+    return (
+      <div className="Box">
+        {greetings[this.props.lang]} {this.props.children}
+      </div>
+    );
+  }
 }
 
 export default Greetings;
