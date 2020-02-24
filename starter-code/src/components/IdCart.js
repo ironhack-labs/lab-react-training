@@ -4,7 +4,7 @@ const IdCard = (props) => {
     return (
         <div className="idcardconteiner">
              <div>
-                 <img src={props.picture} alt="this is a image"/>
+                 <img src={props.picture} alt=""/>
              </div>
                  <div className="idcardinfo">
                      <p><h1>First Name:</h1>{props.firsName}</p>

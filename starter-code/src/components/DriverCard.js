@@ -17,7 +17,7 @@ for (let i = render.length; i < 5; i++){
 
 return (
     <div className="driverCard">
-        <img src={props.img} alt="esto es una imagen"/>
+        <img src={props.img} alt=""/>
             <div>
             <h2>{props.name}</h2>
             <h2>{render}</h2>
@@ -26,5 +26,4 @@ return (
     </div>
 )
 
-// eslint-disable-next-line no-unreachable
 export default Driver;
