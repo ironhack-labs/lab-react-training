@@ -11,11 +11,9 @@ import BoxColor from './components/BoxColor'
 import CreditCard  from './components/CreditCard'
 import Rating from './components/Rating'
 import DriveCard from './components/DriveCard'
-class App extends Component {
+import LikeButton from './components/LikeButton'
 
-  state={
-    ratingChecked : true
-  }
+class App extends Component {
 
   render() {
     return (
@@ -110,6 +108,11 @@ class App extends Component {
                   model: "Audi A3",
                   licensePlate: "BE33ER"
                 }} />
+            </div>
+            <div className="column is-12">
+              <h1>LikeButton</h1>
+                <LikeButton />
+                <LikeButton />
             </div>
         </section> 
         

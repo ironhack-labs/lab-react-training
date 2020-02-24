@@ -7,7 +7,7 @@ const DriveCard = (props) =>{
     return(
         <div className="DriveCard">
             
-                <figure className="image is-128x128">
+                <figure className="image  is-128x128">
                     <img className="is-rounded" src={props.img} alt=""/>
                 </figure> 
                 <h2> {props.name}</h2>
