@@ -2,8 +2,7 @@ import React from "react"
 import 'bulma/css/bulma.css'
 
 class LikeButton extends  React.Component{
-//const LikeButton = (props,state) =>{
-  
+ 
     state={
         counterLikes: 0,
         backgroundColor : 'white'
@@ -11,7 +10,6 @@ class LikeButton extends  React.Component{
     }
 
      counterLikes = () =>{
-        console.log("inside counter likes")
         this.setState({
             counterLikes : this.state.counterLikes + 1,
             backgroundColor : this.randomColor()
