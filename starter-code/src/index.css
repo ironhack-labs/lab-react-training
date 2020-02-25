@@ -60,3 +60,25 @@ code {
 .Dice {
   width: 60px
 }
+/* Square component */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.containerSquare{
+  display:flex
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.square{
+  text-align: center;
+  padding-top: .5em;
+  width: 3em;
+  height: 3em;
+}

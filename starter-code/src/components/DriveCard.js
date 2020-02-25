@@ -3,7 +3,6 @@ import 'bulma/css/bulma.css'
 import './../index.css'
 import Rating from './Rating'
 const DriveCard = (props) =>{
-    console.log(props)
     return(
         <div className="DriveCard">
             
