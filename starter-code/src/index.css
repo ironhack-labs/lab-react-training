@@ -96,3 +96,22 @@ code {
 .ClickablePicture,.Dice {
   cursor: pointer
 }
+
+.NumbersTable {
+  padding: 0;
+  flex-wrap: wrap
+}
+
+.NumbersTable,.NumbersTable li {
+  display: flex;
+  margin: 0
+}
+
+.NumbersTable li {
+  list-style-type: none;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center
+}
