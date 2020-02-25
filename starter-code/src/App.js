@@ -16,6 +16,7 @@ import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
 import Carousel from './components/Carousel'
 import NumbersTable from './components/NumbersTable'
+import Facebook from './components/Facebook';
 class App extends Component {
 
   render() {
@@ -136,6 +137,10 @@ class App extends Component {
             <div className="column is-6">
                 <h1 className ="title"> NumbersTable component</h1>
                 <NumbersTable limit={7} />
+            </div>
+            <div className="column is-3"> 
+              <h1 className="title"> Facebook component</h1>
+              <Facebook />
             </div>
         </section> 
         

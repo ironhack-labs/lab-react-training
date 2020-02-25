@@ -16,10 +16,10 @@ const NumbersTable = (props)=>{
             </div>)
         } */
         if(i % 2 === 0){
-            totalSquares.push(<div className="square " key={'square-'+{i}}  style ={styles}>{i}</div>)
+            totalSquares.push(<div className="square " key={'square-'+i}  style ={styles}>{i}</div>)
 
         }else{
-            totalSquares.push(<div className="square" key={'square-'+{i}} style ={{backgroundColor:'white'}}>{i}</div>)
+            totalSquares.push(<div className="square" key={'square-'+i} style ={{backgroundColor:'white'}}>{i}</div>)
         }
     }
     return totalSquares.map( square => square)

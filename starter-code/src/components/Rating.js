@@ -11,9 +11,9 @@ const Rating = (props)=>{
         for(let i = 0 ; i< 5 ; i++){
          
              if( i < number){
-                total.push(<span className="fa fa-star checked " />)
+                total.push(<span  key={"star"+i}className="fa fa-star checked " />)
             }else{
-                total.push(<span className="fa fa-star"/>)
+                total.push(<span key={"star"+i} className="fa fa-star"/>)
             } 
         }
        return total.map(ele=>ele)   
