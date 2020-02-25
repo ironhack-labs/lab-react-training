@@ -1,17 +1,17 @@
 import React from 'react'
-import styled from 'style-components'
+import styled from 'styled-components'
+
 
 const CreditCard = (props) => {
-    const {type, number, expirationMonth, expirationYear, bank, owner, bgColor, color} = props;
 
-    const image = type === 'Visa' ? '/img/visa.png' : '/img/master-card.svg'
-    const numberCreditCard = `xxxx xxxx xxxx ${number.split('').splice(12,4).join('')}`
+    const image = props.type === 'Visa' ? '/img/visa.png' : '/img/master-card.svg'
+    const number = `●●●● ●●●● ●●●● ${props.number.split('').splice(12,4).join('')}`
 
 
-    const CreditCard = styled.article`
-        background-color: ${bgColor};
-        border-radius: 10px;
-        width: 400px;
+    const Card = styled.article`
+        background-color: ${props.bgColor};
+	    border-radius: 10px;
+        width: 300px;
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -22,8 +22,9 @@ const CreditCard = (props) => {
             align-self: flex-end;
         }
         h6 {
-            color: ${color};
+            color: ${props.color};
             font-size: 20px;
+            margin: 50px 0 20px 0;
         }
         div {
             display: flex;
@@ -31,25 +32,23 @@ const CreditCard = (props) => {
             width: 90%;
         }
         p {
-            color: ${color};
+            color: ${props.color};
             font-size: 15px;
             padding: 5px 0;
             width: 90%;
         }
     `
-
-
     return (
-        <CreditCard>
+        <Card>
             <img src={image} alt='card type'/>
-            <h6>{numberCreditCard}</h6>
+            <h6>{number}</h6>
             <div>
-                <p>Expires: {expirationMonth}/{expirationYear}</p>
-                <p>{bank}</p>
+                <p>Expires: {props.expirationMonth}/{props.expirationYear}</p>
+                <p>{props.bank}</p>
             </div>
-            <p>{owner}</p>
-        </CreditCard>
+            <p>{props.owner}</p>
+        </Card>
     )
-}
+} 
 
-export default CreditCard;
+export default CreditCard

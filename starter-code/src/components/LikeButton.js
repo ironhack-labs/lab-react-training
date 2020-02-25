@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Like extends Component {
+class LikeButton extends Component {
     state = {
         counter: 0,
         colors: ['purple','blue','green','yellow','orange','red']
@@ -22,4 +22,5 @@ class Like extends Component {
     }
 }
 
-export default Like
+export default LikeButton
+

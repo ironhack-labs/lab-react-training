@@ -1,33 +1,31 @@
 import React from 'react'
 
-const Greeatings = (props) => {
-    
-    let greetings
+const Greetings = (props) => {
 
-    // eslint-disable-next-line default-case
+    let greeting
+
     switch (props.lang) {
-        case "de":
-            greetings = "Hallo"
-            break;
-
-        case "fr":
-            greetings = "Salut"
-            break;
-
-        case "es":
-            greetings = "Que onda"
-            break;
-
-         case "en":
-            greetings = "Hello"
-            break;
+        case 'de':
+            greeting = 'Hallo'
+            break
+        case 'fr':
+            greeting = 'Bonjour'
+            break
+        case 'en':
+            greeting = 'Hello'
+            break
+        case 'es':
+            greeting = 'Hola'
+            break
+        default:
+            greeting = 'Hey'
     }
-    return (
-        <div className="lenguage">
-            <h3> {greetings} {props.children} </h3>
-        </div>
 
+    return (
+        <article className='greetings'>
+            <p>{greeting} {props.children}</p>
+        </article>
     )
 }
 
-export default Greeatings
+export default Greetings
