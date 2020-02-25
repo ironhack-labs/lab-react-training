@@ -18,6 +18,11 @@ class Dice extends Component {
     state ={
         displayDice:this.diceFaces[this.diceRandom]
     }
+
+    style = {
+        width:'300px',
+        height: '300px'
+    }
     
     throwDice = () => {
         let newRandom = Math.floor(Math.random()*this.diceFaces.length);
@@ -34,7 +39,7 @@ class Dice extends Component {
 
     render(){
         return(
-            <img alt="" onClick={this.throwDice} src={this.state.displayDice} />
+            <img alt="" onClick={this.throwDice} src={this.state.displayDice} style={this.style} />
         )
     }
 }
