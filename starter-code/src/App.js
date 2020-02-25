@@ -10,9 +10,16 @@ import CkPic from './components/ClickeablePicture'
 import Dice from './components/Dice'
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import profiles from './data/berlin.json'
+import ButtonCountry from './components/ButtonCountry'
 
 
 class App extends Component {
+  state = {
+    listOfProfiles: profiles.slice(0, 28)
+  }
+
   render() {
     return (
       <div className="App">
@@ -65,12 +72,22 @@ class App extends Component {
         <Dice click="false" />
 
         <h1>Carousel</h1>
-        {/* TODO: Use the Dice component */}
+        {/* TODO: Use the Carousel component */}
         <Carousel click={1}/>
 
         <h1>NumbersTable</h1>
-        {/* TODO: Use the Dice component */}
+        {/* TODO: Use the NumbersTable component */}
         <NumbersTable limit={12}/>
+        
+        <h1>FaceBook</h1>
+        {/* TODO: Use the FaceBook component */}
+        <ButtonCountry init="All"/>
+        {
+          this.state.listOfProfiles.map((profiles, i)=> {
+            return <FaceBook llave={i} img={profiles.img} firstName={profiles.firstName} lastName={profiles.lastName} country={profiles.country} isStudent={profiles.isStudent}/>
+          })
+        }
+
       </div>
     );
   }

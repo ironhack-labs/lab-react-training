@@ -20,7 +20,8 @@ code {
 }
 
 .IdCard img {
-    margin-right:5px
+    margin-right:5px;
+    height:200px
 }
 
 .BoxColor {
@@ -123,4 +124,8 @@ code {
     background-color: red;
 }
 
+.FB {
+    font-size: 30px;
+    ;
+}
 /*# sourceMappingURL=main.c621223f.chunk.css.map */

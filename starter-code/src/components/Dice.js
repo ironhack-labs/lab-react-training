@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 class Dice extends Component {
     state = {
         click: 'false' 
