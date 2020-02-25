@@ -2,31 +2,23 @@ import React, { Component } from 'react'
 
 class NumbersTable extends Component {
     state = {
-        limit:1,
-        table:""
+        i:1,
     }
 
     calcTable = () => { 
-        for (let i=1; i<=this.props.limit; i++) {
-           
-            this.setState({table: "<td>"+{i}+"</td>"})
-        }
-        
+        let limitNumber = this.props.limit;
+        let numberArr = new Array(limitNumber).fill().map((x,i)=> {
+            return  i % 2 ? <li className="rojo" key={i}>{i + 1}</li> : <li key={i}>{i + 1}</li>
+          })
+          return numberArr;
     }
 
-
     render() {
-        this.calcTable();
         return (
-            <div className="NumbersTable">
-                {
-                    <table>
-
-                        {this.state.table}
-                    </table>
-                }
-            </div>
-        )
+             <ul className="NumbersTable">
+                 {this.calcTable()}
+             </ul>
+        ) 
     }
 }
 

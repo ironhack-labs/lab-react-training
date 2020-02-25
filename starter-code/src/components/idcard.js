@@ -1,7 +1,6 @@
 import React from 'react';
 
 const IdCard = props => {
-    console.log('id')
     return (
         <div className = "IdCard box">
             <div >
