@@ -7,7 +7,7 @@ class Carousel extends Component {
     }
 
     handleChangeUp = (e) => { 
-        if (this.state.click == 4) {
+        if (this.state.click === 4) {
             this.setState({click: 1})
         } else {
             this.setState({click:this.state.click+1})
@@ -15,7 +15,7 @@ class Carousel extends Component {
     }
 
     handleChangeDown = (e) => { 
-        if (this.state.click == 1) {
+        if (this.state.click === 1) {
             this.setState({click: 4})
         } else {
             this.setState({click:this.state.click-1})
@@ -28,13 +28,13 @@ class Carousel extends Component {
             <div className="Carousel">
                 <button onClick={this.handleChangeDown}>Left</button>
                 {
-                    this.state.click == 1 ?
+                    this.state.click === 1 ?
                     <img alt="carousel" src="https://randomuser.me/api/portraits/women/2.jpg" height="100px" />  
                     :
-                    this.state.click == 2?
+                    this.state.click === 2?
                     <img alt="carousel" src="https://randomuser.me/api/portraits/men/2.jpg" height="100px" /> 
                     :
-                    this.state.click == 3 ?
+                    this.state.click === 3 ?
                     <img alt="carousel" src="https://randomuser.me/api/portraits/women/1.jpg" height="100px" /> 
                     :
                     <img alt="carousel" src="https://randomuser.me/api/portraits/men/1.jpg" height="100px" />

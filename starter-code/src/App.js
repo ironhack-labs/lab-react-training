@@ -9,6 +9,7 @@ import DriveCard from './components/DriveCard';
 import CkPic from './components/ClickeablePicture'
 import Dice from './components/Dice'
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 
 class App extends Component {
@@ -66,6 +67,10 @@ class App extends Component {
         <h1>Carousel</h1>
         {/* TODO: Use the Dice component */}
         <Carousel click={1}/>
+
+        <h1>NumbersTable</h1>
+        {/* TODO: Use the Dice component */}
+        <NumbersTable limit={12}/>
       </div>
     );
   }

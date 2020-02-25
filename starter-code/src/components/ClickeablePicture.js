@@ -15,10 +15,10 @@ class CkPic extends Component {
         return (
             <div className="ClickablePicture">
                 {
-                    this.state.click == "true" ?
-                    <img src="./img/persons/maxence-glasses.png" height="100px" onClick={this.handleChange}/>  
+                    this.state.click === "true" ?
+                    <img alt="clickeablePicture" src="./img/persons/maxence-glasses.png" height="100px" onClick={this.handleChange}/>  
                     :
-                    <img src="./img/persons/maxence.png" height="100px" onClick={this.handleChange}/>  
+                    <img alt="clickeablePicture" src="./img/persons/maxence.png" height="100px" onClick={this.handleChange}/>  
                 }
             </div>
         )
