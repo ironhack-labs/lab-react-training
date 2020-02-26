@@ -28,9 +28,6 @@ class Greetings extends Component {
       );
     }
 
-    // 1. crear variable mensaje
-    // 2. hacer un condicional switch
-    // 3. dependiendo el caso si el lenguaje es x entonces mensaje va decir "hola,hellow,etc"
 
 
 

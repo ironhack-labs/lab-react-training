@@ -20,20 +20,22 @@ class CreditCard extends Component {
     yy=yy.slice(-2);
 
     return (
-    <div >
-      <div>
+      
+    <div className="CreditCard" style={{color:this.props.color, backgroundColor: this.props.bgColor}}>
+      <div className="logo">
        <img src= {picture} width="35" height="15"></img>
       </div>
-      <div>
-      <p>**** **** **** {num}</p>
+      <div className="numbers">
+        <p>**** **** **** {num}</p>
       </div>
-      <div>
-      <p>Expires {month}/{yy} {this.props.bank}</p>
+      <div className="expire">
+        <p>Expires {month}/{yy} {this.props.bank}</p>
       </div>
-      <div>
-      <p> {this.props.owner}</p>
+      <div className="owner">
+        <p> {this.props.owner}</p>
       </div>
     </div>
+
 );
 
   }
