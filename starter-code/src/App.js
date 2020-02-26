@@ -10,6 +10,7 @@ import LikeButton from './LikeButton';
 import ClickablePicture from './ClickablePicture';
 import Dice from './Dice';
 import Carousel from './Carousel';
+import NumbersTable from './NumbersTable';
 
 class App extends Component {
   render() {
@@ -118,6 +119,9 @@ class App extends Component {
           <Carousel
             imgs={["https://randomuser.me/api/portraits/women/1.jpg", "https://randomuser.me/api/portraits/men/1.jpg","https://randomuser.me/api/portraits/women/2.jpg", "https://randomuser.me/api/portraits/men/2.jpg"]} 
           />
+
+          <h1>NumbersTable</h1>
+          <NumbersTable limit={12} />
         </Fragment>
     );
   }
