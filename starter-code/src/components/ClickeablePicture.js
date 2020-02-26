@@ -1,6 +1,6 @@
-import React from "react";
+import React, {Component} from "react";
 
-class ClickeablePicture extends React.Component {
+class ClickeablePicture extends Component {
 	state = {
 		isClicked: "",
 	}

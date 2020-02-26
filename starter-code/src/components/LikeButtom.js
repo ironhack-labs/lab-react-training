@@ -1,6 +1,6 @@
-import React from "react"
+import React, {Component}  from "react"
 
-class LikeButton extends React.Component {
+class LikeButton extends Component {
 	state = {
 		likesNumber: 0,
 		color: "",
