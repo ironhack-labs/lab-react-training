@@ -14,17 +14,16 @@ class LikeButton extends Component {
             likes:this.state.likes + 1,
             clicks:this.state.clicks < this.colors.length -1 ? this.state.clicks +1:0
         })
-        console.log(this.state.clicks)
     }
     
-    styles = {
-        color: 'white',
-        background: this.colors[this.state.clicks]
-    }
     
     render(){
+        let styles = {
+            color: 'white',
+            background: this.colors[this.state.clicks]
+        }
         return(
-        <button style={this.styles} onClick={this.handleLikes}>{this.state.likes} Likes!</button>
+        <button style={styles} onClick={this.handleLikes}>{this.state.likes} Likes!</button>
         )
     }
 };
