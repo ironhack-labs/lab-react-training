@@ -1,0 +1,18 @@
+.id-card {
+  margin: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 200px;
+  align-content: flex-start;
+  img {
+    align-self: flex-start;
+    justify-self: flex-start;
+    height: 180px;
+    padding: 10px;
+  }
+  * {
+    margin-bottom: 0;
+  }
+}
