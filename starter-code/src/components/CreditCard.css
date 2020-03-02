@@ -1,0 +1,20 @@
+.credit-card {
+  margin: 10px;
+  padding: 1.3em;
+  width: 18em;
+  height: 8em;
+  border-radius: 6px;
+}
+
+.credit-card-type {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.credit-card-number {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}

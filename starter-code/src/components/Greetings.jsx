@@ -10,7 +10,7 @@ class Greetings extends Component {
       case 'de':
         return (
           <div className="greetings">
-            <span>Halo {children}</span>
+            <span>Hallo {children}</span>
           </div>
         );
       case 'en':

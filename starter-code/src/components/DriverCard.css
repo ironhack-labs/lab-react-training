@@ -1,0 +1,24 @@
+.driver-card {
+  display: flex;
+  background-color: #425cbb;
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  line-height: 1em;
+}
+
+.driver-card h2 {
+  font-size: 1.6em;
+  line-height: 0.8em;
+}
+
+.driver-card-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 50%;
+  padding: 10px;
+}

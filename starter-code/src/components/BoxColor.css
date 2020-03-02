@@ -1,0 +1,8 @@
+.box-color {
+  height: 3.5em;
+  border: 1px solid black;
+  margin: 10px;
+  font-size: 1em;
+  text-align: center;
+  padding-top: 2em;
+}
