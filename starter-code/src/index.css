@@ -21,3 +21,10 @@ code {
   display: flex;
   flex-direction: column;
 }
+
+.greetings {
+  border: 1px solid black;
+  width: 88%;
+  margin: 1% 5%;
+  padding: 1%;
+}

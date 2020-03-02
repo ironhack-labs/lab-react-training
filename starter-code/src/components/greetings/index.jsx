@@ -7,13 +7,13 @@ class Greetings extends React.Component {
     // eslint-disable-next-line default-case
     switch (lang) {
       case 'de':
-        return <p>Halo {children}</p>;
+        return <p className="greetings">Halo {children}</p>;
       case 'en':
-        return <p>Hello {children}</p>;
+        return <p className="greetings">Hello {children}</p>;
       case 'es':
-        return <p>Hola {children}</p>;
+        return <p className="greetings">Hola {children}</p>;
       case 'fr':
-        return <p>Bonjour {children}</p>;
+        return <p className="greetings">Bonjour {children}</p>;
     }
   }
 }

@@ -1,28 +1,17 @@
 import React, { Component } from 'react';
 
+//iteration #1
 import IdCard from './components/IdCard';
+import studentsData from './components/IdCard/studentData';
+
+//iteration #2
 import Greetings from './components/greetings';
 
-const studentsData = [
-  {
-    id: 123456,
-    lastName: 'Doe',
-    firstName: 'John',
-    gender: 'male',
-    height: 178,
-    birth: new Date('1992-07-14'),
-    picture: 'https://randomuser.me/api/portraits/men/44.jpg'
-  },
-  {
-    id: 234567,
-    lastName: 'Delores ',
-    firstName: 'Obrien',
-    gender: 'female',
-    height: 172,
-    birth: new Date('1988-05-11'),
-    picture: 'https://randomuser.me/api/portraits/women/44.jpg'
-  }
-];
+//iteration #3
+import Random from './components/random';
+
+//iteration #4
+import BoxColor from './components/boxColor';
 
 class App extends Component {
   render() {
@@ -44,7 +33,16 @@ class App extends Component {
         <h1>Greetings</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
-        {/* {<Greetings lang={greetingsTranslation.de}>Ludwig</Greetings>} */}
+
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
+
+        <div style={{ color: 'white' }}>
+          <BoxColor r={255} g={0} b={0} />
+        </div>
+        <div style={{ color: 'black' }}>
+          <BoxColor r={128} g={255} b={0} />
+        </div>
       </div>
     );
   }
