@@ -1,0 +1,19 @@
+{
+  "name": "lab-react-training",
+  "version": "1.0.0",
+  "description": "The goal of this repository is to create a lot of React components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carvalhobfr/lab-react-training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carvalhobfr/lab-react-training/issues"
+  },
+  "homepage": "https://github.com/carvalhobfr/lab-react-training#readme"
+}
