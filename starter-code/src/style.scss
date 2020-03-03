@@ -1,0 +1,63 @@
+body {
+    margin: 0 200px 0 200px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.idCard {
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    div {
+        margin: 20px;
+    }
+}
+
+.greetings {
+    border: 0.1em solid black;
+    text-align: center;
+    margin: 5px;
+}
+
+.random {
+    border: 0.1em solid black;
+    text-align: center;
+    margin: 5px;
+}
+
+.creditCard {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    div {
+        padding: 15px;
+    }
+    #account {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.driverCard {
+    background-color: #1e67a3;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 0.1em solid black;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+}
+
