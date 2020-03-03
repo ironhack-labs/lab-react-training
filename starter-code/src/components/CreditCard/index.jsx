@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from 'react';
 {/* <BoxColor r={255} g={0} b={0} /> */}
 
@@ -26,7 +27,7 @@ class CreditCard extends Component {
     const divStyle = {
         color: color,
         backgroundColor: bgColor,
-        width: 'auto',
+        width: '18em',
         height:'auto'
     };
 
@@ -38,16 +39,23 @@ class CreditCard extends Component {
       href = './img/master-card.svg';
     }
 
-    
-    const numberCard = '★'.repeat(12) + number.split('').splice(8,0);
+    let month;
+    if(Object.values({expirationMonth})[0] < 10){
+      month = '0'+(Object.values({expirationMonth})[0].toString());
+    }else{
+      month = (Object.values({expirationMonth})[0].toString())
+    }
+    const expire = month +'/'+Object.values({expirationYear})[0].toString()[2]+Object.values({expirationYear})[0].toString()[3]
 
+    console.log((Object.values({expirationYear})[0].toString()[3]))
+
+    const numberCard = '★'.repeat(8) + number.split('').splice(12,4).join(' ');
+    
     return( 
       <div style={divStyle}>
         <img href={href}></img>
-
         <p>{numberCard}</p>
-
-        <p>Expires: {expirationYear.this}</p>
+        <p>Expires: {expire}</p>
         <p>{bank}</p>
         <p>{owner}</p>
       </div>

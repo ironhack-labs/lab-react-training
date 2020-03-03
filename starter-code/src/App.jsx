@@ -7,6 +7,9 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 
 import CreditCard from './components/CreditCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/Clickimg';
+  
 
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
@@ -79,6 +82,16 @@ class App extends Component {
           owner="Maxence Bouret"
           bgColor="#11aa99"
           color="white" />
+
+
+        <h1>LikeButton</h1>
+
+        <LikeButton /> <LikeButton />
+
+        <h1>ClickablePicture</h1>
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png" />
 
       </div>
     );
