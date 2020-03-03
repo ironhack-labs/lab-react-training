@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 import IdCards from './components/idCards';
 import Greetings from './components/Greetings';
+import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
+
+
 
 
 const idcard = [
