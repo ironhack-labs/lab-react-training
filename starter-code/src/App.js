@@ -6,6 +6,7 @@ import ColorBox from './components/ColorBox';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 class App extends Component {
   render() {
@@ -28,21 +29,17 @@ class App extends Component {
           birth={new Date('1988-05-11').toDateString()}
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
-
         <h1>Greetings</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <br />
         <Greetings lang="fr">François</Greetings>
-
         <h1>Random</h1>
         <Random min={10} max={12} />
         <Random min={1} max={6} />
         <Random min={1} max={100} />
-
         <h1>ColorBox</h1>
         <ColorBox r={255} g={0} b={0} />
         <ColorBox r={128} g={255} b={0} />
-
         <h1>CreditCard</h1>
         <CreditCard
           type="Visa"
@@ -74,7 +71,6 @@ class App extends Component {
           bgColor="#ddbb55"
           color="white"
         />
-
         <h1>Rating</h1>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
@@ -82,9 +78,7 @@ class App extends Component {
         <Rating>3</Rating>
         <Rating>4</Rating>
         <Rating>5</Rating>
-
         <h1>DriverCard</h1>
-
         <DriverCard
           name="Travis Kalanick"
           rating={4.2}
@@ -103,6 +97,7 @@ class App extends Component {
             licensePlate: 'BE33ER'
           }}
         />
+        <LikeButton /> <LikeButton />
       </div>
     );
   }
