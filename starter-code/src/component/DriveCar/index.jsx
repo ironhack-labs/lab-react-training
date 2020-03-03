@@ -1,5 +1,6 @@
 import React from 'react';
 import Rating from './../Rating';
+import './style.scss';
 
 const DriverCard = props => {
 	const { name, rating, img, car } = props;

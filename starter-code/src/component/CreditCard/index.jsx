@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.scss';
 
 const CreditCard = props => {
 	const { type, number, expirationMonth, expirationYear, bank, owner, bgColor, color } = props;

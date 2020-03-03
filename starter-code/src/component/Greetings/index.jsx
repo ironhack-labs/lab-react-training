@@ -7,7 +7,7 @@ const Greetings = props => {
 		pt: 'Olá'
 	};
 	return (
-		<div class="box">
+		<div className="box">
 			{languages[props.lang]} {props.children}
 		</div>
 	);

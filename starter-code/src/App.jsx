@@ -7,6 +7,8 @@ import BoxColor from './component/BoxColor';
 import CreditCard from './component/CreditCard';
 import Rating from './component/Rating';
 import DriverCard from './component/DriveCar';
+import LikeButton from './component/likeButton';
+import ClickablePicture from './component/ClickablePicture';
 
 class App extends Component {
 	render() {
@@ -37,11 +39,9 @@ class App extends Component {
 				<h1>Random</h1>
 				<Random min={1} max={6} />
 				<Random min={1} max={100} />
-
 				<h1>BoxColor</h1>
 				<BoxColor r={123} g={123} b={251} />
 				<BoxColor r={128} g={215} b={121} />
-
 				<h1>CreditCard</h1>
 				<CreditCard
 					type="Visa"
@@ -77,7 +77,6 @@ class App extends Component {
 				<Rating>3</Rating>
 				<Rating>2.1</Rating>
 				<Rating>2.9</Rating>
-
 				<DriverCard
 					name="Travis Kalanick"
 					rating={4.2}
@@ -95,6 +94,11 @@ class App extends Component {
 						model: 'Audi A3',
 						licensePlate: 'BE33ER'
 					}}
+				/>
+				<LikeButton /> <LikeButton />
+				<ClickablePicture
+					img="/img/persons/maxence.png"
+					imgClicked="/img/persons/maxence-glasses.png"
 				/>
 			</div>
 		);
