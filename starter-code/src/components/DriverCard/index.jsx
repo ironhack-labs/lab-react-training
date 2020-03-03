@@ -1,10 +1,24 @@
-/* import React from 'react';
+import React from 'react';
+
+import './style.scss';
+
+import Rating from './../Rating';
 
 const DriverCard = props => {
-  <h2>{name}</h2>
-  <h2>{rating}</h2>
-  <img src={picture} alt=""/>
+  return (
+    <div className="driver-card">
+      <img src={props.img} alt={props.name} />
+      <div>
+        <strong>{props.name}</strong>
+        <br />
+        <Rating>{props.rating}</Rating>
+        <br />
+        <span>
+          {props.car.model} - {props.car.licensePlate}
+        </span>
+      </div>
+    </div>
+  );
 };
 
 export default DriverCard;
-  */
