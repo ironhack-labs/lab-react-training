@@ -5,6 +5,8 @@ import Greetings from './component/Greetings';
 import Random from './component/Random';
 import BoxColor from './component/BoxColor';
 import CreditCard from './component/CreditCard';
+import Rating from './component/Rating';
+import DriverCard from './component/DriveCar';
 
 class App extends Component {
 	render() {
@@ -70,6 +72,29 @@ class App extends Component {
 					owner="Firstname Lastname"
 					bgColor="#ddbb55"
 					color="white"
+				/>
+				<Rating>5</Rating>
+				<Rating>3</Rating>
+				<Rating>2.1</Rating>
+				<Rating>2.9</Rating>
+
+				<DriverCard
+					name="Travis Kalanick"
+					rating={4.2}
+					img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+					car={{
+						model: 'Toyota Corolla Altis',
+						licensePlate: 'CO42DE'
+					}}
+				/>
+				<DriverCard
+					name="Dara Khosrowshahi"
+					rating={4.9}
+					img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+					car={{
+						model: 'Audi A3',
+						licensePlate: 'BE33ER'
+					}}
 				/>
 			</div>
 		);
