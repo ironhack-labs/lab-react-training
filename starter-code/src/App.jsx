@@ -25,10 +25,14 @@ import DriverCard from './components/DriverCard';
 //iteration #8
 import LikeButton from './components/LikeButton';
 
+//iteration #9
+import ClickablePicture from './components/ClickablePicture';
+
 class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* iteration #1 */}
         <h1>IdCard</h1>
         {studentsData.map(idCard => (
           <IdCard
@@ -41,17 +45,21 @@ class App extends Component {
             birth={idCard.height}
           />
         ))}
+        {/* iteration #2 */}
         <h1>Greetings</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
+        {/* iteration #3 */}
         <Random min={1} max={6} />
         <Random min={1} max={100} />
+        {/* iteration #4 */}
         <div style={{ color: 'white' }}>
           <BoxColor r={255} g={0} b={0} />
         </div>
         <div style={{ color: 'black' }}>
           <BoxColor r={128} g={255} b={0} />
         </div>
+        {/* iteration #5 */}
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -82,6 +90,7 @@ class App extends Component {
           bgColor="#ddbb55"
           color="white"
         />
+        {/* iteration #6 */}
         <Rating>0</Rating>
         <br />
         <Rating>1.49</Rating>
@@ -93,6 +102,7 @@ class App extends Component {
         <Rating>4</Rating>
         <br />
         <Rating>5</Rating>
+        {/* iteration #7 */}
         <DriverCard
           name="Travis Kalanick"
           rating={4.2}
@@ -111,7 +121,13 @@ class App extends Component {
             licensePlate: 'BE33ER'
           }}
         />
+        {/* iteration #8 */}
         <LikeButton /> <LikeButton />
+        {/* iteration #9 */}
+        <ClickablePicture
+          img={process.env.PUBLIC_URL + './img/persons/maxence.png'}
+          imgClicked={process.env.PUBLIC_URL + './img/persons/maxence-glasses.png'}
+        />
       </div>
     );
   }
