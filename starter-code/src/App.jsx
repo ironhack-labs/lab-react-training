@@ -28,6 +28,9 @@ import LikeButton from './components/LikeButton';
 //iteration #9
 import ClickablePicture from './components/ClickablePicture';
 
+//iteration #10
+import Dice from './components/Dice';
+
 class App extends Component {
   render() {
     return (
@@ -128,6 +131,8 @@ class App extends Component {
           img={process.env.PUBLIC_URL + './img/persons/maxence.png'}
           imgClicked={process.env.PUBLIC_URL + './img/persons/maxence-glasses.png'}
         />
+        {/* iteration #10 */}
+        <Dice />
       </div>
     );
   }
