@@ -1,0 +1,20 @@
+.id-card {
+  display: flex;
+  border: solid 1px black;
+  margin: 1em;
+}
+
+.img-idCard {
+  width: 130px;
+  height: 130px;
+  align-self: center;
+  margin: 0.4em;
+}
+
+.id-card-content {
+  margin-left: 1em;
+}
+
+p {
+  margin: 0.3em;
+}

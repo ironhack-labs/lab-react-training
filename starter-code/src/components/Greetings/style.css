@@ -1,0 +1,6 @@
+.greeting-card {
+  border: solid 1px black;
+  display: block;
+  padding: 1em;
+  margin: 1em;
+}
