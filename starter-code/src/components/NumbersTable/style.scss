@@ -1,0 +1,15 @@
+.numbersTable {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% auto;
+  p {
+    margin: 0;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    width: 20px;
+    border: 1px solid black;
+    padding: 1em;
+  }
+}

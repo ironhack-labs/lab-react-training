@@ -31,7 +31,31 @@ import ClickablePicture from './components/ClickablePicture';
 //iteration #10
 import Dice from './components/Dice';
 
+//iteration #11
+import Carousel from './components/Carousel';
+
+//iteration #12
+import NumbersTable from './components/NumbersTable';
+
+//iteration #13
+import FaceBook from './components/FaceBook';
+
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      limit: 12
+    };
+    this.handleLimit = this.handleLimit.bind(this);
+  }
+  handleLimit(e) {
+    e.preventDefault();
+
+    this.setState({
+      limit: e.target.value
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -133,6 +157,28 @@ class App extends Component {
         />
         {/* iteration #10 */}
         <Dice />
+        {/* iteration #11 */}
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+        {/* iteration #11 */}
+        <NumbersTable limit={this.state.limit} />
+        <form>
+          <input
+            className="inputSearch"
+            type="number"
+            min="1"
+            value={this.state.limit}
+            placeholder="please insert anumber"
+            onChange={this.handleLimit}
+          />
+        </form>
+        <FaceBook />
       </div>
     );
   }

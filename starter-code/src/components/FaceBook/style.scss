@@ -1,0 +1,24 @@
+.profileButtons {
+  margin: 5% auto;
+  button {
+    margin: 1em;
+  }
+}
+.profile {
+  border: 1px solid black;
+  margin: 2% auto;
+  display: flex;
+  width: 60%;
+  img {
+    width: 180px;
+    margin: 2em;
+  }
+  .notes {
+    margin-top: 1.5%;
+  }
+  h3 {
+    font-size: 1.5em;
+    font-weight: 100;
+    line-height: 0.5em;
+  }
+}

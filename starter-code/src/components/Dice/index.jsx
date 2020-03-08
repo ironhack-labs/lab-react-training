@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// img={process.env.PUBLIC_URL + './img/persons/maxence.png'}
 
 class index extends Component {
   constructor() {
@@ -44,7 +43,11 @@ class index extends Component {
   render() {
     return (
       <button onClick={this.changePicture}>
-        <img src={process.env.PUBLIC_URL + this.state.dice} alt="hello" />;
+        <img
+          style={{ width: '300px', margin: '5% auto' }}
+          src={process.env.PUBLIC_URL + this.state.dice}
+          alt="hello"
+        />
       </button>
     );
   }
