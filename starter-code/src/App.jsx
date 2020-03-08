@@ -9,7 +9,11 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/Clickimg';
-  
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import FaceBookAdvanced from './components/FaceBookAdvanced';
 
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
@@ -89,9 +93,32 @@ class App extends Component {
         <LikeButton /> <LikeButton />
 
         <h1>ClickablePicture</h1>
+
         <ClickablePicture
           img="/img/persons/maxence.png"
           imgClicked="/img/persons/maxence-glasses.png" />
+
+        <h1>Dice</h1>
+        
+        <Dice />
+
+        <h1>Carousel</h1>
+        <Carousel
+          imgs={["https://randomuser.me/api/portraits/women/1.jpg", 
+          "https://randomuser.me/api/portraits/men/1.jpg",
+          "https://randomuser.me/api/portraits/women/2.jpg", 
+          "https://randomuser.me/api/portraits/men/2.jpg"]} />
+
+        
+        <h1>NumbersTable</h1>
+        <NumbersTable limit={12} />
+        <NumbersTable limit={9} />
+
+        <h1> Facebook Simple</h1>
+        <FaceBook />
+
+        <h1> Facebook Advanced</h1>
+        <FaceBookAdvanced />
 
       </div>
     );
