@@ -37,3 +37,8 @@ code {
   border-radius: 3px;
   box-shadow: 0 0 1em pink;
 }
+.labelSearch {
+  width: 80%;
+  margin: 0% 10%;
+  color: rgb(107, 94, 94);
+}

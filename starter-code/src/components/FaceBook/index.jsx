@@ -14,24 +14,30 @@ export default class FaceBook extends Component {
     this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
   }
   backBlueAll() {
-    for (let country in this.state) {
-      console.log(country, this.state);
-      this.setState({
-        [country]: !this.state.backBlueAll
-      });
-    }
+    profiles
+      .reduce(
+        (unique, item) => (unique.includes(item.country) ? unique : [...unique, item.country]),
+        []
+      )
+      .map((country, i) =>
+        this.setState({
+          backBlueAll: !this.state.backBlueAll,
+          [country]: this.state.backBlueAll
+        })
+      );
+    console.log(this.state);
   }
 
-  handleCountryKey(key) {
-    console.log(key, this.state);
+  handleCountryKey(country) {
+    console.log(country, this.state);
     if (this.state.backBlueAll) {
       return this.setState({
-        [key]: !this.state[key]
+        [country]: !this.state[country]
       });
     } else {
       return this.setState({
         backBlueAll: true,
-        [key]: !this.state[key]
+        [country]: !this.state[country]
       });
     }
   }
@@ -62,7 +68,7 @@ export default class FaceBook extends Component {
               []
             )
             .map((country, i) => (
-              <button key={i} onClick={() => this.handleCountryKey(i)}>
+              <button key={country} onClick={() => this.handleCountryKey(country)}>
                 {country}
               </button>
             ))}
@@ -77,7 +83,7 @@ export default class FaceBook extends Component {
             <div
               className="profile"
               key={i}
-              style={this.state[i] ? { backgroundColor: 'lightblue' } : {}}
+              style={this.state[singleProfile.country] ? { backgroundColor: 'lightblue' } : {}}
             >
               <img src={singleProfile.img} alt={singleProfile.firstName} />
               <div className="notes">

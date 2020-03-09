@@ -169,8 +169,12 @@ class App extends Component {
         {/* iteration #11 */}
         <NumbersTable limit={this.state.limit} />
         <form>
+          <label className="labelSearch" htmlFor="numbersTable">
+            Insert a number for a different number table
+          </label>
           <input
             className="inputSearch"
+            name="numbersTable"
             type="number"
             min="1"
             value={this.state.limit}
