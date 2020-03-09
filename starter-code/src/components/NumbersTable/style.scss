@@ -1,0 +1,11 @@
+.eachSquare {
+  padding: 30px;
+  width: 18%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.squares {
+  display: flex;
+  flex-wrap: wrap;
+}

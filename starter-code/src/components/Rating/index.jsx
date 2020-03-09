@@ -4,7 +4,6 @@ import './style.scss';
 class Rating extends Component {
   render() {
     const children = this.props.children;
-    console.log(children);
     function stars(children) {
       let rating = [];
       const round = Math.round(children);
