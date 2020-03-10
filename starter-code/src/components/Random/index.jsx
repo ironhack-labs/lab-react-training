@@ -6,7 +6,7 @@ class Random extends Component {
     const { min, max } = this.props;
     const rand = Math.floor(Math.random() * (max - min));
     return (
-      <div class="random">
+      <div className="random">
         <p>Random value between {min} and {max} => {rand}</p>
       </div>
     );

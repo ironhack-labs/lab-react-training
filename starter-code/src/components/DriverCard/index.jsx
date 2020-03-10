@@ -1,20 +1,9 @@
 import React, { Component } from 'react';
+import Rating from '../Rating';
 
 class DriverCard extends Component {
   render() {
     const { name, rating, img, car } = this.props;
-    const rounded = Math.round(rating);
-
-    let i = 0, stars = [];
-
-    while(i < rounded) {
-      stars.push('★');
-      i++;
-    }
-    while(i < 5) {
-      stars.push('☆')
-      i++;
-    }
 
     const style = {
       backgroundImage: `url(${img})`,
@@ -31,9 +20,7 @@ class DriverCard extends Component {
         <div>        
           <p>{name}</p>
           {
-            stars.map((star) => {
-              return <span>{star}</span>
-            })
+            <Rating>{rating}</Rating>
           }
           <p>{car.model} - {car.licensePlate}</p>
         </div>

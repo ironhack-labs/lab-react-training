@@ -9,10 +9,12 @@ import CreditCard from './components/CreditCard';
 import Dice from './components/Dice';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
-import NumbersTable from './components/NumbersTable';
 import Rating from './components/Rating';
+import FaceBook from './components/FaceBook';
 
 import './style.scss';
+import profiles from './data/berlin.json';
+import { Button } from 'react-bootstrap';
 
 const idCard = [
   {
@@ -124,6 +126,18 @@ const driverCard = [
   }
 ];
 
+const clickablePic = {
+  img: "/img/persons/maxence.png",
+  imgClicked: "/img/persons/maxence-glasses.png"
+} 
+
+const carousel = 
+{
+  imgs: ["https://randomuser.me/api/portraits/women/1.jpg","https://randomuser.me/api/portraits/men/1.jpg","https://randomuser.me/api/portraits/women/2.jpg", "https://randomuser.me/api/portraits/men/2.jpg"]
+}
+
+
+
 class App extends Component {
   render() {
     return (
@@ -131,44 +145,73 @@ class App extends Component {
         <h1>IdCard</h1>
         {
           idCard.map(card => (
-            <IdCard {...card}/>
+            <IdCard key={card.firstName} {...card}/>
           ))
         }
         <h1>Greetings</h1>
         {
           greetings.map(greeting => (
-            <Greetings {...greeting}/>
+            <Greetings key={greeting.lang} {...greeting}/>
           ))
         }
         <h1>Random</h1>
         {
           random.map(rand => (
-            <Random {...rand}/>
+            <Random key={Math.random() * 3} {...rand}/>
           ))
         }
         <h1>Box Color</h1>
         {
           boxColor.map(color => (
-            <BoxColor {...color}/>
+            <BoxColor key={Math.random() * 3} {...color}/>
           ))
         }
         <h1>Credit Card</h1>
         {
           creditCard.map(card => (
-            <CreditCard {...card}/>
+            <CreditCard key={Math.random() * 3} {...card}/>
           ))
         }
         <h1>Rating</h1>
         {
           ratings.map(rating => (
-            <Rating>{rating}</Rating>
+            <Rating key={Math.random() * 3}>{rating}</Rating>
           ))
         }
         <h1>DriverCard</h1>
         {
           driverCard.map(driver => (
-            <DriverCard {...driver}/>
+            <DriverCard key={Math.random() * 3} {...driver}/>
           ))    
+        }
+        <h1>LikeButton</h1>
+        {
+          <LikeButton/>
+        }
+        <h1>ClickablePicture</h1>
+        {
+          <ClickablePicture key={Math.random() * 3} {...clickablePic}/>
+        }
+        <h1>Dice</h1>
+        {
+          <Dice/>
+        }
+        <h1>Carousel</h1>
+        {
+          <Carousel key={Math.random() * 3} {...carousel}/>
+        }
+        <h1>FaceBook</h1>
+        {
+          profiles.map(profile => (
+            <Button key={Math.random() * 3} variant="secondary" size="lg">
+              {profile.country}
+            </Button>  
+          ))
+        }
+        {
+          profiles.map(profile => (
+            <FaceBook key={profile.firstName} {...profile}/>
+          ))
         }
       </div>
     );

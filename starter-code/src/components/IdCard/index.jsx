@@ -6,7 +6,7 @@ class IdCard extends Component {
     const {firstName, lastName, gender, height, birth, pic} = this.props;
     const dateBirth = birth.toLocaleString().split(",");  
     return (
-      <div class="idCard">
+      <div className="idCard">
         <div>        
           <img src={pic} alt="sea"></img>
         </div>
@@ -17,7 +17,6 @@ class IdCard extends Component {
           <p>Height: {height} cm</p>
           <p>Date of birth: {dateBirth[0]}</p>
         </div>
-
       </div>
     );
   }

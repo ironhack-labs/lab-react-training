@@ -22,7 +22,7 @@ class Greetings extends Component {
         break;
     }
     return (
-      <div class="greetings">
+      <div className="greetings">
         <p>{language} {text}</p>
       </div>
     );

@@ -17,6 +17,9 @@ h1 {
     margin: 5px;
     div {
         margin: 20px;
+        img{
+            width: 200px;
+        }
     }
 }
 
@@ -54,6 +57,9 @@ h1 {
     align-items: center;
     margin: 10px;
     border: 0.1em solid black;
+    p{
+        text-align: center;
+    }
 }
 
 .rating {
@@ -61,3 +67,52 @@ h1 {
     justify-content: center;
 }
 
+.likeButton {
+    background-color: #acb436;
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    button{
+        padding: 1em;
+        height: 50px;
+    }
+}
+
+.clickPic {
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.dice {
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    svg {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+.carousel {
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 20px;
+    img {
+        width: 250px;
+        margin: 20px;
+    }
+    button {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-size: x-large;
+        height: 50px;
+    }
+}
