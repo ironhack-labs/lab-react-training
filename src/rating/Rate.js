@@ -10,7 +10,13 @@ const unmarkedStars = Array.from({length: Math.abs(5-stars.length)},(v,i)=> '☆
 // console.log("Output for: Rate -> stars", stars)
     return (
         <div>
-            <li className='start-color'><span className='stars'>{stars.map(star => <Stars key={uuid()} star={star}/>)} {unmarkedStars}</span><span>{rate === 0? 'Ratings': rate}</span></li>
+            <li className='start-color'>
+                <span className='stars'>
+                    {stars.map(star => <Stars key={uuid()} star={star} elemClass={'marked'}/>)}
+                     {unmarkedStars.map(star => <Stars key={uuid()} star={star} elemClass={'unmarked'}/>)}
+                </span>
+                <span>{rate === 0? 'Ratings': rate}</span>
+            </li>
         </div>
     )
 }

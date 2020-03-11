@@ -10,11 +10,12 @@ li {
     background-color: lightgray;
     padding: 0 10px;
 }
-span.stars span::before{
+span.stars span.marked::before{
     content: "\2605";
     position: absolute;
 }
 span.stars span:hover::before{
     content: "\2605";
     position: absolute;
+    cursor: pointer;
 }

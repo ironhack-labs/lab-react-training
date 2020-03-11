@@ -1,0 +1,24 @@
+.container {
+    background-color: rgb(96, 96, 146);
+}
+.all-drivers {
+    padding: 10px 0;
+}
+.eachDriver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9, 143, 136);
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+img.driver-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-right: 10px;
+}

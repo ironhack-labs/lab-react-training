@@ -1,0 +1,14 @@
+.like-buttons  {
+    display: flex;
+    justify-content: center;
+}
+.like-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    
+}
+.like-buttons button:focus {
+   outline: 0;
+}

@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Stars = ({star}) => {
+const Stars = (props) => {
+    const {star,elemClass}= props
     return (
         <>
-            <span>{star}</span>
+            <span className={elemClass}>{star}</span>
         </>
     )
 }
