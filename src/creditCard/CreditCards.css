@@ -1,0 +1,44 @@
+.credit-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.each-card {
+width: 265px;
+height: 130px;
+padding: 5px 10px;
+margin: 5px;
+border-radius: 10px;
+position: relative;
+
+}
+.card-logo,
+.card-number,
+.card-exp-bank,
+.card-owner {
+position: absolute;    
+}
+
+.card-logo {
+    right: 10px;
+}
+.card-number{
+    top: 50px;
+    left: 15%;
+    font-size: 20px;
+}
+.card-number span {
+   
+}
+.card-exp-bank {
+    font-size: 14px;
+    bottom: 30px;
+    left: 20px;
+}
+.card-exp-bank span:nth-child(2) {
+    margin-left: 20px;
+}
+.card-owner {
+    font-size: 16px;
+    bottom: 10px;
+    left: 20px;
+}

@@ -1,0 +1,11 @@
+img.card-img-top {
+    width: 200px;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+.card-body {
+    width: 400px;
+}
