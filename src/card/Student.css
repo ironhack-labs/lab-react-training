@@ -9,3 +9,10 @@ img.card-img-top {
 .card-body {
     width: 400px;
 }
+p {
+    margin: 0;
+    font-size: 30px;
+}
+b {
+    /* font-size: 25px; */
+}

@@ -6,9 +6,11 @@ const LikeButtons = (props) => {
   
     return (
         <div className='container'>
+            <h2>Iteration 8: Component: LikeButton</h2>
+            <hr/>
             <div className='like-buttons'>
-                <button style={{backgroundColor: colors.color1}} id='likes1' onClick={onClick}><span>{counters.count1}</span> Likes</button>
-                <button style={{backgroundColor: colors.color2}} id='likes2' onClick={onClick}><span>{counters.count2}</span> Likes</button>
+                <button style={{backgroundColor: colors.color1}} id='like' onClick={onClick}>{counters.count1} Likes</button>
+                <button style={{backgroundColor: colors.color2}} id='dislike' onClick={onClick}>{counters.count2} Dislikes</button>
             </div>
         </div>
     )

@@ -1,0 +1,14 @@
+.main-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+.number {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    font-size: 25px;
+}

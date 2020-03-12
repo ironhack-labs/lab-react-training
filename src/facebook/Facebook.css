@@ -1,0 +1,14 @@
+.dropdown-menu {
+    max-height: 200px;
+    overflow: scroll;
+    color: black;
+}
+
+.dropdown-toggle {
+    /* background-color: transparent; */
+    /* padding: 0; */
+    height: 37px;
+    position: relative;
+    top: 5px;
+    border: none;
+}

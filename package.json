@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-scripts": "2.1.5",
+    "reactstrap": "^8.4.1",
     "uuidv4": "^6.0.6"
   },
   "scripts": {

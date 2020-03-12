@@ -1,6 +1,4 @@
-.start-color {
-    color:  black;
-}
+
 li {
     list-style: none;
     font-size: 30px;
@@ -13,9 +11,11 @@ li {
 span.stars span.marked::before{
     content: "\2605";
     position: absolute;
+    color: goldenrod;
 }
 span.stars span:hover::before{
     content: "\2605";
     position: absolute;
     cursor: pointer;
+    color: goldenrod;
 }
