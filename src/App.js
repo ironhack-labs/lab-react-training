@@ -25,9 +25,9 @@ class App extends Component {
 
   constructor(props){
     super(props);
-    this.countries = new Set(students.map(st=> st.country))
+    //making array of uniq coutries
+    [...this.countries] = new Set(students.map(st=> st.country))
     
-
     this.state = {
       isLoading: true,
       isValidEmail : {
