@@ -67,6 +67,10 @@ let length = document.getElementById("length");
                 <hr/>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group" style={{color: validationColor}}>
+                        <label htmlFor="exampleInputName1">Email address</label>
+                        <input  type="email" className="form-control" id="exampleInputName1"  placeholder="Enter name" />
+                    </div>
+                    <div className="form-group" style={{color: validationColor}}>
                         <label htmlFor="exampleInputEmail1">Email address</label>
                         <input onChange={handleChange} style={{borderColor: validationColor, color: validationColor}} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
                         <i id="emailHelp" className="form-text text-muted" style={{color: validationColor}}>{isValidEmail.msg}</i>
@@ -74,7 +78,6 @@ let length = document.getElementById("length");
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Password</label>
                         <input onChange={handlePassword} type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
-                        <i className="form-text text-muted" style={{color: validationColor}}>{isValidEmail.msg}</i>
                     </div>
                     <div className="form-group">
                         <label htmlFor="exampleInputNationality1">Nationality</label>

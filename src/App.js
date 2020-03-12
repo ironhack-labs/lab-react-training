@@ -11,6 +11,7 @@ import Carousel from './carousel/Carousel'
 import NumbersTable from './numbersTable/NumbersTable'
 import Facebook from './facebook/Facebook'
 import SignupPage from './signupPage/SignupPage'
+import AddStudent from './addStudent/AddStudent'
 
 //JSON files - data
 import students from './data/berlin.json'
@@ -135,8 +136,16 @@ class App extends Component {
         console.log(selectOption)
       }
   //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-
+  addTheStudent(theStudent){
+    const studentsCopy = [...this.state.students]
+    studentsCopy.push(theStudent)
+    this.setState({
+      students: studentsCopy
+    })
+  }
   render() {
-    // eslint-disable-next-line 
+    // eslint-disable-next-line
+    
     const { students, ratings, drivers, colors, counters, image, dice, selectedCountry, isValidEmail, greetings } = this.state;
     return (
       <div className="App">
@@ -146,16 +155,18 @@ class App extends Component {
         <DriverCard  drivers={drivers}/>
         <LikeButtons colors={colors} counters={counters} onClick={(e)=> {
           const {id}= e.target
-           this.counter(id)
+          this.counter(id)
         }}/>
         <ClickablePicture changeImg={()=>this.changeImg()} imgSrc = {image} />
         <Dice dice={dice} getRandomDice={()=> this.getRandomDice()}/>
         <Carousel students={students} />
         <NumbersTable limit= {12} />
         <Facebook countries={this.countries} students={students}  findCountry={(e)=> this.findCountry(e)} country={selectedCountry}/>
-        <SignupPage handleChange={(e)=> this.handleChange(e)} handleSubmit={e=> this.handleSubmit(e)} isValidEmail={isValidEmail} greetings={greetings}/>
+        <SignupPage handleChange={(e)=> this.handleChange(e)} handleSubmit={e=> this.handleSubmit(e)} isValidEmail={isValidEmail} greetings={greetings}/> 
+        <AddStudent  addTheStudent={this.addTheStudent.bind(this)}/>
       </div>
     );
+
   }
 }
 
