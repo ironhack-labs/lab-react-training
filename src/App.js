@@ -15,9 +15,12 @@ import SignupPage from './signupPage/SignupPage'
 //JSON files - data
 import students from './data/berlin.json'
 // const students = require('./data/berlin.json')
-const creditCards = require('./data/creditCard.json')
-const drivers = require('./data/drivers.json')
-const diceArr = require('./data/dice.json')
+import creditCards from './data/creditCard.json'
+// const creditCards = require('./data/creditCard.json')
+import drivers from './data/drivers.json'
+// const drivers = require('./data/drivers.json')
+import diceArr from './data/dice.json'
+// const diceArr = require('./data/dice.json')
 
 const colors = ['purple','blue','green','yellow','orange','red'];
 
@@ -25,7 +28,7 @@ class App extends Component {
 
   constructor(props){
     super(props);
-    //making array of uniq coutries
+    //making array of uniq countries
     [...this.countries] = new Set(students.map(st=> st.country))
     
     this.state = {
@@ -34,7 +37,7 @@ class App extends Component {
         status: undefined,
         msg: 'We\'ll never share your email with anyone else'
       },
-      greentings: '',
+      greetings: '',
       dice: diceArr[0],
       selectedCountry:'',
       diceArr,

@@ -1,6 +1,6 @@
 import React from 'react'
 import Stars from './Stars'
-import {uuid} from 'uuidv4'
+// import {uuid} from 'uuidv4'
 import './Rating.css'
 
 
@@ -12,8 +12,8 @@ const unmarkedStars = Array.from({length: Math.abs(5-stars.length)},(v,i)=> '☆
         <div>
             <li >
                 <span className='stars'>
-                    {stars.map(star => <Stars key={uuid()} star={star} elemClass={'marked'}/>)}
-                     {unmarkedStars.map(star => <Stars key={uuid()} star={star} elemClass={'unmarked'}/>)}
+                    {stars.map((star,i) => <Stars key={i+1} star={star} elemClass={'marked'}/>)}
+                     {unmarkedStars.map((star,i) => <Stars key={i+1} star={star} elemClass={'unmarked'}/>)}
                 </span>
                 <span>{rate === 0? 'Ratings': rate}</span>
             </li>
