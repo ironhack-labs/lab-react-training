@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import IdCard from "./components/IdCard/IdCard";
 import Greetings from "./components/greetings/Greetings";
-import Random from './components/random/Random';
+import Random from "./components/random/Random";
+import BoxColor from "./components/boxColor/BoxColor";
 
 class App extends Component {
   render() {
@@ -33,6 +34,10 @@ class App extends Component {
         {/* TODO: Use the Random component */}
         <Random min={1} max={6} />
         <Random min={1} max={100} />
+
+        {/* TODO: Use the BoxColor component */}
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
       </div>
     );
   }
