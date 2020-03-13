@@ -11,6 +11,7 @@ import StudentsPage from './components/pages-views/students-index/StudentsIndex'
 
 // RRD Components
 import {Switch, Route} from 'react-router-dom'
+import Greetings from './components/greetings/Greetings';
 
 
 
@@ -24,8 +25,8 @@ const App = () => {
           <Route path='/idCards' exact component={StudentsPage} />
         </Switch>
 
-
-       <h1>IdCard</h1>
+       <Greetings lang="de"/>
+       <Greetings lang="fr"/>
         
       </>
     );
