@@ -1,0 +1,14 @@
+.credit-card-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.credit-card {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 10px;
+}
