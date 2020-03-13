@@ -12,6 +12,7 @@ import NumbersTable from './numbersTable/NumbersTable'
 import Facebook from './facebook/Facebook'
 import SignupPage from './signupPage/SignupPage'
 import AddStudent from './addStudent/AddStudent'
+import TextareaAndSelectTagDemo from './textareaAndSelectTagDemo/TextareaAndSelect'
 
 //JSON files - data
 import students from './data/berlin.json'
@@ -164,6 +165,9 @@ class App extends Component {
         <Facebook countries={this.countries} students={students}  findCountry={(e)=> this.findCountry(e)} country={selectedCountry}/>
         <SignupPage handleChange={(e)=> this.handleChange(e)} handleSubmit={e=> this.handleSubmit(e)} isValidEmail={isValidEmail} greetings={greetings}/> 
         <AddStudent  addTheStudent={this.addTheStudent.bind(this)}/>
+        {/* or => */}
+        {/* <AddStudent  addTheStudent={(theStudent)=> this.addTheStudent(theStudent)}/> */}
+        <TextareaAndSelectTagDemo />
       </div>
     );
 
