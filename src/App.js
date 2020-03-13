@@ -1,17 +1,34 @@
 import React, { Component } from 'react';
+// Styling
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-class App extends Component {
-  render() {
+// Components
+import Navbar from './components/navbar/Nabvar'
+
+// Page - Views Components
+import IndexPage from './components/pages-views/index/IndexPage'
+import StudentsPage from './components/pages-views/students-index/StudentsIndex'
+
+// RRD Components
+import {Switch, Route} from 'react-router-dom'
+
+
+
+const App = () => {
     return (
-      <div className="App">
-        <h1>IdCard</h1>
-        {/* TODO: Use the IdCard component */}
+      <>
+        <Navbar />
 
-        <h1>Greetings</h1>
-        {/* TODO: Use the Greetings component */}
-      </div>
+        <Switch>
+        <Route path='/' exact component={IndexPage} />
+          <Route path='/idCards' exact component={StudentsPage} />
+        </Switch>
+
+
+       <h1>IdCard</h1>
+        
+      </>
     );
   }
-}
 
 export default App;
