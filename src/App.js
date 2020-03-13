@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import IdCard from "./components/IdCard/IdCard";
-import Greetings from './components/greetings/Greetings';
+import Greetings from "./components/greetings/Greetings";
+import Random from './components/random/Random';
 
 class App extends Component {
   render() {
@@ -28,6 +29,10 @@ class App extends Component {
         {/* TODO: Use the Greetings component */}
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
+
+        {/* TODO: Use the Random component */}
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
       </div>
     );
   }

@@ -4,7 +4,7 @@ import './IdCard.css';
 // IdCard component
 const IdCard = ({picture, firstName, lastName, gender, height, birth}) => {
     return (
-        <div className="container">
+        <div className="id-container">
             <div>
                 <img src={picture} alt="user-pic"/>
             </div>

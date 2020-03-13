@@ -1,21 +1,21 @@
 
-.container {
+.id-container {
     display: flex;
     border: 1px solid black;
     margin: 10px;
 }
 
-.container img {
+.id-container img {
     width: 150px;
     height: 100%;
 }
 
-.container ul {
+.id-container ul {
     list-style: none;
     padding: 0 0 0 10px;
 }
 
-.container li {
+.id-container li {
     font-size: 1.2em;
     line-height: 1.2em;
 }
