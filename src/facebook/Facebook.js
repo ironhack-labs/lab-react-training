@@ -16,13 +16,11 @@ const Facebook = ({students,findCountry,country,countries}) => {
             <div className='container btns-country'>
                 <div className='row '>
                     <Button classes='m-1' country={'All'} findCountry={findCountry}/>
-                    {countries.splice(0,4).map((country,i)=> <Button classes='m-1' key={i+1} country={country} findCountry={findCountry}/>)}
-                    {/* {[...countries].splice(0,4).map((country,i)=> <Button classes='m-1' key={i+1} country={country} findCountry={findCountry}/>)} */}
+                    {[...countries].splice(0,4).map((country,i)=> <Button classes='m-1' key={i+1} country={country} findCountry={findCountry}/>)}
                     <div className="btn-group">
                         <button type="button" className="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">...</button>
                         <div className="dropdown-menu">
-                        {countries.splice(4).map((country,i)=> <Button classes='dropdown-item' key={i+1} country={country} findCountry={findCountry}/>)}
-                        {/* {[...countries].splice(4).map((country,i)=> <Button classes='dropdown-item' key={i+1} country={country} findCountry={findCountry}/>)} */}
+                        {[...countries].splice(4).map((country,i)=> <Button classes='dropdown-item' key={i+1} country={country} findCountry={findCountry}/>)}
                         </div>
                     </div>
                 </div>

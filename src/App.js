@@ -31,7 +31,7 @@ class App extends Component {
   constructor(props){
     super(props);
     //making array of uniq countries
-    [...this.countries] = new Set(students.map(st=> st.country))
+    this.countries = new Set(students.map(st=> st.country))
     
     this.state = {
       isLoading: true,

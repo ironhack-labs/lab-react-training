@@ -21,7 +21,8 @@ class TextareaAndSelectTagDemo extends Component {
   
     render(){
       return(
-        <form onSubmit={this.handleSubmit}>
+       <div className='container'>
+            <form onSubmit={this.handleSubmit}>
           <label> Pick your favorite movie: </label>
   
           <select name="selectInputValue" value={this.state.selectInputValue} onChange={e => this.handleChange(e)} >
@@ -37,6 +38,7 @@ class TextareaAndSelectTagDemo extends Component {
           
           <input type="submit" value="Submit" />
         </form>
+       </div>
       )
     }
   }
