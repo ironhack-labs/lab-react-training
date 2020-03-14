@@ -15,17 +15,25 @@ const CreditCard = ({
     backgroundColor: bgColor,
     color
   };
+
+  const image = type === "Visa" ? "/img/visa.png" : "/img/master-card.svg";
+  const num = `●●●● ●●●● ●●●● ${number
+    .split("")
+    .splice(12, 4)
+    .join("")}`;
+
   return (
     <div className="credit-card-container">
       <div className="credit-card" style={divStyle}>
-        <h2>{number}</h2>
+        <img src={image} alt="credit card type" />
+        <h2>{num}</h2>
         <p>
           <span>
             Expires {expirationMonth}/{expirationYear}
           </span>
           <span>{bank}</span>
+          <p>{owner}</p>
         </p>
-        <p>{owner}</p>
       </div>
     </div>
   );

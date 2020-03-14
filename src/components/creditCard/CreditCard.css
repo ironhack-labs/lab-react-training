@@ -5,10 +5,27 @@
 }
 
 .credit-card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: 350px;
     height: 180px;
     padding: 10px;
     border-radius: 10px;
+}
+.credit-card img {
+    width: 70px;
+    position: absolute;
+    right: 5%;
+}
+
+.credit-card h2 {
+    position: absolute;
+    top: 30%;
+    font-size: 24px;
+}
+
+.credit-card p {
+    position: absolute;
+    bottom: 4%;
 }
