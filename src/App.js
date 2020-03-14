@@ -5,8 +5,9 @@ import Random from "./components/random/Random";
 import BoxColor from "./components/boxColor/BoxColor";
 import CreditCard from "./components/creditCard/CreditCard";
 import Rating from "./components/rating/Rating";
-import DriverCard from './components/driverCard/DriverCard';
-import LikeButton from './components/likeButton/LikeButton';
+import DriverCard from "./components/driverCard/DriverCard";
+import LikeButton from "./components/likeButton/LikeButton";
+import ClickablePicture from "./components/clickablePicture/ClickablePicture";
 
 class App extends Component {
   render() {
@@ -21,7 +22,6 @@ class App extends Component {
           birth="1992-07-14"
           picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
-
         <IdCard
           firstName="Obrien"
           lastName="Delores "
@@ -30,19 +30,15 @@ class App extends Component {
           birth="1988-05-11"
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
-
         {/* TODO: Use the Greetings component */}
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
-
         {/* TODO: Use the Random component */}
         <Random min={1} max={6} />
         <Random min={1} max={100} />
-
         {/* TODO: Use the BoxColor component */}
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
-
         {/* TODO: Use the CreditCard component */}
         <div className="credit-card-container">
           <CreditCard
@@ -76,7 +72,6 @@ class App extends Component {
             color="white"
           />
         </div>
-
         {/* TODO: Use the Rating component */}
         <Rating>0</Rating>
         <Rating>1.49</Rating>
@@ -84,7 +79,6 @@ class App extends Component {
         <Rating>3</Rating>
         <Rating>4</Rating>
         <Rating>5</Rating>
-
         {/* TODO: Use the Driver Card component */}
         <DriverCard
           name="Travis Kalanick"
@@ -104,9 +98,15 @@ class App extends Component {
             licensePlate: "BE33ER"
           }}
         />
-
+        
         {/* TODO: Use the LikeButton component */}
         <LikeButton /> <LikeButton />
+
+        {/* TODO: Use the Clickable Picture component */}
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
       </div>
     );
   }

@@ -6,10 +6,12 @@
     border-radius: 20px;
     margin: 10px;
     color: #FFFFFF;
+    padding: 10px;
 }
 
 .driverCard-container img {
     width: 14vw;
+    height: 140px;
     border-radius: 50%;
     margin-right: 20px;
 }
