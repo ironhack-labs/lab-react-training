@@ -32,8 +32,8 @@ const CreditCard = ({
             Expires {expirationMonth}/{expirationYear}
           </span>
           <span>{bank}</span>
-          <p>{owner}</p>
         </p>
+          <div className="owner">{owner}</div>
       </div>
     </div>
   );

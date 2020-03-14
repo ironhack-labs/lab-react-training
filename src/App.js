@@ -8,6 +8,7 @@ import Rating from "./components/rating/Rating";
 import DriverCard from "./components/driverCard/DriverCard";
 import LikeButton from "./components/likeButton/LikeButton";
 import ClickablePicture from "./components/clickablePicture/ClickablePicture";
+import Dice from './components/dice/Dice';
 
 class App extends Component {
   render() {
@@ -98,7 +99,7 @@ class App extends Component {
             licensePlate: "BE33ER"
           }}
         />
-        
+
         {/* TODO: Use the LikeButton component */}
         <LikeButton /> <LikeButton />
 
@@ -107,6 +108,9 @@ class App extends Component {
           img="/img/persons/maxence.png"
           imgClicked="/img/persons/maxence-glasses.png"
         />
+
+        {/* TODO: Use the Dice component */}
+        <Dice />
       </div>
     );
   }
