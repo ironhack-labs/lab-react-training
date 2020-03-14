@@ -1,26 +1,40 @@
 import React from 'react'
 import {Container, Table} from 'react-bootstrap'
 
-const Greetings = (props) => {
-    return (
-        <Container>
-            <div className={props.lang}>
-                <h3>Greetings!!</h3>
-                <Table>
-                    <tr>
-                        <td>
-                            <h2>
-                                {props.lang === "de"? "Hallo Ludwin" : "fr"? "Bonjour Francois" : "Hello my friend!!"}
-                                </h2>
-
-                        </td>
-                    </tr>
-                </Table>
-               
-            </div>
-            </Container>
-
-        )
+class Greetings extends React.Component {
+    render() {
+        let eachLang = '';
+        let phrase = '';
+        if(this.props.lang === 'sp') {
+            eachLang = this.props.lang;
+            phrase = 'Hola mi amigo'
+        }
+        if(this.props.lang === 'fr') {
+            eachLang = this.props.lang;
+            phrase = 'Bonjour mon ami'
+        }
+        if(this.props.lang === 'en') {
+            eachLang = this.props.lang;
+            phrase = 'Hello my friend'
+        }
+        
+        return (<Container>
+                         <div>
+                             <h3>Greetings!!</h3>
+                             <Table>
+                                 <tr>
+                                     <td>
+                                        <h2 lang={eachLang}>
+                                           {phrase}
+                                            </h2>
+            
+                                    </td>
+                                </tr>
+                            </Table>
+                           
+                        </div>
+                        </Container>)
+    }
 }
 
 export default Greetings

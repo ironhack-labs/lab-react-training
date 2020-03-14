@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import listOfStudents from '../../../../src/data/berlin'
 
 // Styles
-import Card from 'react-bootstrap/Card'
 import { Container, Table } from 'react-bootstrap';
 
 
@@ -20,7 +19,7 @@ render() {
                 <Table>
                     <tr>
                         <td>
-                            <img className="photo-id" src={student.img}></img>
+                            <img className="photo-id" src={student.img} alt={student.firstName}></img>
 
                         </td>
                         <td>
