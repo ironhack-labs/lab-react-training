@@ -1,17 +1,20 @@
 import React, { Component } from "react";
 
-export default class IdCard extends Component {
+class IdCard extends Component {
   render() {
     return (
       <div>
-        <h1>
+        <p>
           First Name: {this.props.firstName} <br />
           Last Name: {this.props.lastName} <br />
           Gender: {this.props.gender} <br />
           Height: {this.props.height} <br />
+          {this.props.picture} <br />
           {/* Birth: {this.props.birth} */}
-        </h1>
+        </p>
       </div>
     );
   }
 }
+
+export default IdCard;
