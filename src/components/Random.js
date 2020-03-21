@@ -1,16 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class Random extends Component {
-    render() {
-        return (
-            <div>
-                <p>
-                    Random value between 
-
-                </p>
-            </div>
-        )
-    }
+  render() {
+    const { min, max } = this.props;
+    const random = Math.floor(Math.random() * (max - min)) + min;
+    return (
+      <div>
+        <p>
+          Random value between {min} and {max} => {random}
+        </p>
+      </div>
+    );
+  }
 }
 
-export default Random
+export default Random;
