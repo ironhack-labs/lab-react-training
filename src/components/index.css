@@ -1,0 +1,15 @@
+.border-class{
+    border:  1px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+.img-class{
+
+    height: 150px;
+    width: 150px;
+}
+.it-back{
+
+    background-color: blue;
+    width: 300px;
+}
