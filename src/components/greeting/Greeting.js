@@ -16,7 +16,7 @@ const checkLang = (lang) => {
 const Greeting= (props) => {
     const greeting = checkLang(props.lang)
     return (
-        <div class="box">{greeting} {props.children}</div>
+        <div className="box">{greeting} {props.children}</div>
     );
 };
     
