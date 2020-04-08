@@ -1,0 +1,12 @@
+.idcard-box {
+  border: 1px solid black;
+  padding: 1rem 0 0 1rem;
+  display: flex;
+  margin: 0 20rem 2rem;
+}
+
+.idcard-img {
+  height: 10rem;
+  width: auto;
+  margin-right: 2rem;
+}
