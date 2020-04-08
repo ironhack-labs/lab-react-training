@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
-// import Random from './components/Random';
+import Random from './components/Random';
 // import BoxColor from './components/BoxColor';
 import './App.css';
 
@@ -24,11 +24,19 @@ class App extends Component {
         height={72}
         birth={new Date("1988-05-11")}
         picture="https://randomuser.me/api/portraits/women/44.jpg"/>
+
         <h1 className="titles">Greetings</h1>
         {/* TODO: Use the Greetings component */}
         <Greetings lang="es">Carles</Greetings>
         <Greetings lang="en">Susi</Greetings>
         <Greetings lang="de">Berni</Greetings>
+
+        <h1 className="titles">Random Number</h1>
+        {/* TODO: Use the Random component */}
+        <Random min={1} max={6}/>
+        <Random min={1} max={100}/>
+
+
       </div>
     );
   }

@@ -10,6 +10,7 @@ body {
   font-size: 2rem;
   text-align: center;
   text-decoration: underline;
+  margin-top: 3rem;
 }
 
 /**************
@@ -39,5 +40,15 @@ body {
   width: 24rem;
   margin: 0.5rem;
   padding: 0.5;
+  text-align: center;
+}
+
+/*****************
+*** RANDOM NUM ***
+*****************/
+
+.random-box {
+  font-size: 1.4rem;
+  border: 1.5px solid black;
   text-align: center;
 }
