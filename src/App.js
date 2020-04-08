@@ -3,6 +3,7 @@ import IdCard from './components/idcard/idcard';
 import Greetings from './components/greetings';
 import Random from './components/random';
 import BoxColor from './components/boxcolor';
+import CreditCard from './components/creditcard';
 import './App.css';
 
 class App extends Component {
@@ -40,6 +41,16 @@ class App extends Component {
         <BoxColor r={128} g={255} b={0} />
 
         <h1>CreditCard</h1>
+        <CreditCard
+        type="Visa"
+        number="0123456789018845"
+        expirationMonth={3}
+        expirationYear={2021}
+        bank="BNP"
+        owner="Maxence Bouret"
+        bgColor="#11aa99"
+        color="white" />
+        
         <h1>Rating</h1>
         <h1>DriverCard</h1>
         <h1>LikeButton</h1>
