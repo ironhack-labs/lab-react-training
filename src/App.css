@@ -51,4 +51,31 @@ body {
   font-size: 1.4rem;
   border: 1.5px solid black;
   text-align: center;
+  padding: 0.5rem;
+}
+
+/****************
+*** BOX COLOR ***
+****************/
+
+.flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.box-color {
+  font-size: 1rem;
+  border: 1.5px solid black;
+  height: 14rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90);
+}
+
+.rgb-color-text {
+  transform: rotate(-90deg);
 }
