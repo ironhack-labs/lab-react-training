@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import IdCard from './components/IdCard';
-// import Greetings from './components/Greetings';
+import Greetings from './components/Greetings';
 // import Random from './components/Random';
 // import BoxColor from './components/BoxColor';
 import './App.css';
@@ -26,6 +26,9 @@ class App extends Component {
         picture="https://randomuser.me/api/portraits/women/44.jpg"/>
         <h1 className="titles">Greetings</h1>
         {/* TODO: Use the Greetings component */}
+        <Greetings lang="es">Carles</Greetings>
+        <Greetings lang="en">Susi</Greetings>
+        <Greetings lang="de">Berni</Greetings>
       </div>
     );
   }

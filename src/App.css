@@ -28,3 +28,16 @@ body {
   width: 11rem;
   margin: 0.3rem;
 }
+
+/****************
+*** GREETINGS ***
+****************/
+
+.greetings-box {
+  font-size: 1.5rem;
+  border: 2px solid black;
+  width: 24rem;
+  margin: 0.5rem;
+  padding: 0.5;
+  text-align: center;
+}
