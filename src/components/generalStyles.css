@@ -1,0 +1,18 @@
+/* Separate this file in subfiles components */
+.card{
+  border: 1px black solid;
+  display: flex;
+  margin: 30px;
+}
+
+.card p{
+  line-height: 5px;
+  margin-left: 8px;
+}
+
+.encuadred {
+  font-size: 20px;
+  border: 2px black solid;
+  margin: 30px;
+  padding: 10px;
+}
