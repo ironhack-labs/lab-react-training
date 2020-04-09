@@ -6,6 +6,7 @@ import BoxColor from './components/boxcolor';
 import CreditCard from './components/creditcard';
 import Rating from './components/rating';
 import DriverCard from './components/drivercard';
+import LikeButton from './components/likebutton';
 import './App.css';
 
 class App extends Component {
@@ -100,6 +101,10 @@ class App extends Component {
         }} />
         
         <h1>LikeButton</h1>
+        <div className="likebuttons-both">
+          <LikeButton /> <LikeButton />
+        </div>
+
         <h1>ClickablePicture</h1>
         <h1>Dice</h1>
         <h1>Carousel</h1>
