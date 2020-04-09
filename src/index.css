@@ -12,3 +12,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.card{
+
+  height: 140px;
+  border: solid black 1px;
+  padding: 5px;
+}
+
+.card p{
+margin: 2px;
+
+}
+
+.card img{
+  height: 140px;
+
+  float: left;
+}
+.gree{
+  height: 30px;
+  border: solid black 1px;
+  padding: 5px;
+margin-bottom: 20px;
+font-weight: bold;
+}
