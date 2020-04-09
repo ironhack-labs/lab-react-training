@@ -8,6 +8,8 @@ import Rating from './components/rating';
 import DriverCard from './components/drivercard';
 import LikeButton from './components/likebutton';
 import ClickablePicture from './components/clickablepicture';
+import Dice from './components/dice';
+import Carousel from './components/carousel';
 import './App.css';
 
 class App extends Component {
@@ -108,9 +110,20 @@ class App extends Component {
 
         <h1>ClickablePicture</h1>
         <ClickablePicture img='/img/persons/maxence.png' imgClicked='/img/persons/maxence-glasses.png' />
-        
+
         <h1>Dice</h1>
+        <Dice />
+
         <h1>Carousel</h1>
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+        
         <h1>NumbersTable</h1>
         <h1>FaceBook</h1>
         <h1>SignupPage</h1>
