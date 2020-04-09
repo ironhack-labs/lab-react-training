@@ -1,0 +1,15 @@
+.card {
+  border: 1px solid;
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.img {
+  height: 60px;
+}
+
+.photo {
+  height: 135px;
+  margin: 10px;
+}
