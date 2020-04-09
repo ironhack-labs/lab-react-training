@@ -15,9 +15,6 @@ class Random extends Component {
         )
 
     }
-  
-
-
 }
 
 
