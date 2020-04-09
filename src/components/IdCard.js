@@ -2,17 +2,18 @@ import React, { Component } from 'react';
 
 class IdCard extends Component {
     render() {
+        const {picture, firstName, lastName, gender, height, birth} = this.props;
         return (
             <div className='user-container'>
                 <div className='user-image'>
-                    <img src={this.props.picture} alt='user'></img>
+                    <img src={picture} alt='user'></img>
                 </div>
                 <div className='user-information'>
-                    <p>First name: {this.props.firstName}</p>
-                    <p>Last name: {this.props.lastName}</p>
-                    <p>Gender: {this.props.gender}</p>
-                    <p>Height: {this.props.height}</p>
-                    <p>Height: {this.props.birth}</p>
+                    <p>First name: {firstName}</p>
+                    <p>Last name: {lastName}</p>
+                    <p>Gender: {gender}</p>
+                    <p>Height: {height}</p>
+                    <p>Height: {birth}</p>
                 </div>
             </div>
         )
