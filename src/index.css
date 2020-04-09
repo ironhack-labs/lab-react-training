@@ -12,3 +12,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.id-box{
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  border: 1px solid black;
+  margin: 0.5rem;
+}
+.id-box img{
+  
+  height: 10rem;
+  width: auto;
+}
+.id-info{
+  padding-left: 1.5rem;
+}

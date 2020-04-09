@@ -4,14 +4,14 @@ class IdCard extends Component {
 	render() {
 		
     return(
-			<div>
+			<div className="id-box">
 			<img src={this.props.picture} alt='user'></img>
-			<div>
+			<div className="id-info">
 					<p>First name: {this.props.firstName}</p>
 					<p>Last name: {this.props.lastName}</p>
 					<p>Gender: {this.props.gender}</p>
 					<p>Height: {this.props.height}</p>
-					<p>Height: {this.props.birth}</p>
+					<p>Birthday: {this.props.birth}</p>
 			</div>
 	</div>
 		);
