@@ -1,0 +1,12 @@
+.card {
+    border: solid 1px;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.card>img {
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+}

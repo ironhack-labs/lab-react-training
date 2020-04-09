@@ -1,0 +1,11 @@
+.greetings-container{
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.greetings-container > div{
+    border: solid 1px;
+    padding:5px;
+    width: 100%;
+}

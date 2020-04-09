@@ -1,0 +1,11 @@
+.random-container{
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.random-container > div{
+    border: solid 1px;
+    padding:5px;
+    width: 100%;
+}
