@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { render } from 'react-dom';
 import style from './IdCard.css'
 
 class IdCard extends Component  {

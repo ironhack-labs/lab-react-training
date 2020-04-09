@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import IdCard from './IdCard/IdCard.js'
-import Greetings from './Greetings/Greetings.js'
-import Random from './Random/Random.js'
-import BoxColor from './BoxColor/BoxColor.js'
+import IdCard from './Components/IdCard/IdCard.js'
+import Greetings from './Components/Greetings/Greetings.js'
+import Random from './Components/Random/Random.js'
+import BoxColor from './Components/BoxColor/BoxColor.js'
+import CreditCard from './Components/CreditCard/CreditCard.js'
 
 class App extends Component {
   render() {
@@ -21,6 +22,10 @@ class App extends Component {
         <h1>BoxColor</h1>
         <BoxColor r="255" g="0" b="0" />
         <BoxColor r="128" g="255" b="0" />
+        <h1>CreditCard</h1>
+        <CreditCard type="visa" number="0123456789018845" expirationMonth="02" expirationYear="2022" bank="N26" owner="Thibault Delfaud" bgColor="#11aa99" color="white"/>
+        <CreditCard type="master" number="0123456789010995" expirationMonth="03" expirationYear="2023" bank="BNP" owner="Thibault Delfaud" bgColor="#eeeeee" color="#222222"/>
+        <CreditCard type="visa" number="0123456789016984" expirationMonth="04" expirationYear="2024" bank="Name of the bank" owner="Thibault Delfaud" bgColor="#ddbb55" color="white"/>
       </div>
        
     );
