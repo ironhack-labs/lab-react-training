@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import IdCard from './components/IdCard';
+import './App.css';
 
 class App extends Component {
   render() {

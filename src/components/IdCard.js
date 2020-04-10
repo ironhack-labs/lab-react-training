@@ -3,37 +3,51 @@
 import React from 'react';
 import { uniqueId } from 'lodash';
 
-const FieldNameAndValue = (props) => {
-  const { fieldName, fieldValue } = props;
-  console.log('props', props);
-  return (
-    <p>
-      <span className='name'>{fieldName}</span>: 
-      <span className='value'>{fieldValue}</span>
-    </p>
-  )
-}
-
 const IdCard = (props) => {
-  const { firstName, lastName, gender, height, picture } = props;
+  const { picture, firstName, lastName, gender, height, birth } = props;
   const person = [
     { 'First name': firstName },
     { 'Last name': lastName },
     { 'Gender': gender },
     { 'Height': height }
   ];
-  console.log('unique', uniqueId());
   return (
-    <div>
-      <img src={picture} alt='portrait' />
-      {person.map((field) => {
-        return <FieldNameAndValue
+    <div class='id-card'>
+      <img class='portrait' src={picture} alt='portrait' />
+      <div class='person-info'>
+        {person.map((field) => {
+          return <FieldNameAndValue
+            key={uniqueId()}
+            fieldName={Object.keys(field)}
+            fieldValue={Object.values(field)} />
+        })}
+        <FieldNameAndValue
           key={uniqueId()}
-          fieldName={Object.keys(field)}
-          fieldValue={Object.values(field)} />
-      })}
+          fieldName='Birthday'
+          fieldValue={formatDate(birth)} />
+      </div>
     </div>
   )
+}
+
+const FieldNameAndValue = (props) => {
+  const { fieldName, fieldValue } = props;
+  return (
+    <p>
+      <span className='field-name'>{fieldName}</span>:&nbsp;
+      <span className='field-value'>{fieldValue}</span>
+    </p>
+  )
+}
+
+const formatDate = (date) => {
+  const options = {
+    weekday: 'short',
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  }
+  return date.toLocaleDateString('en-US', options);
 }
 
 export default IdCard;

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px 30px;
+}
+
+h1 {
+  margin: 20px 5px;
+}
+
+.id-card {
+  display: flex;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.person-info {
+ padding: 5px;
+}
+
+.portrait {
+  align-self: center; 
+}
+
+.id-card .field-name {
+  font-weight: 700;
+}
+
+.id-card p {
+  padding: 1px 0;
+}
