@@ -1,0 +1,8 @@
+.flex {
+    display: flex;
+
+}
+
+p:first-child {
+    font-weight: bold;
+}
