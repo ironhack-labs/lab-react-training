@@ -4,11 +4,11 @@
 }
 
 body {
-  padding: 20px 30px;
+  padding: 0 30px;
 }
 
 h1 {
-  margin: 20px 5px 10px 5px;
+  margin: 25px 5px 10px 5px;
 }
 
 .id-card {
@@ -35,10 +35,19 @@ h1 {
 }
 
 .greetings,
-.random {
+.random,
+.colored-box {
   border: 2px solid black;
   font-size: 20px;
   font-weight: 400;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+.colored-box {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
