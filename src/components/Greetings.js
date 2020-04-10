@@ -11,7 +11,7 @@ const hello = {
 const Greetings = (props) => {
   const { lang, children } = props;
   return (
-    <div class='greetings'>
+    <div className='greetings'>
       {hello[lang]} {children}
     </div>
   )

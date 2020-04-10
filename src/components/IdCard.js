@@ -13,9 +13,9 @@ const IdCard = (props) => {
     { 'Birthday': formatDate(birth)}
   ];
   return (
-    <div class='id-card'>
-      <img class='portrait' src={picture} alt='portrait' />
-      <div class='person-info'>
+    <div className='id-card'>
+      <img className='portrait' src={picture} alt='portrait' />
+      <div className='person-info'>
         {person.map((field) => {
           return <FieldNameAndValue
             key={uniqueId()}
