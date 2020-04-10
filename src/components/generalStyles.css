@@ -16,3 +16,43 @@
   margin: 30px;
   padding: 10px;
 }
+
+.credit-cards{
+  display: flex;
+}
+.driver-card{
+  border-radius: 2%;
+  background-color: #673ab7;
+  margin: 20px;
+  padding: 10px;
+  justify-content: center;
+  color: white;
+  display: flex;
+}
+
+.driver-card img{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.info{
+  align-self: center;
+}
+
+.info *{
+  margin: 0px;
+}
+
+.driver-name{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.driver-car{
+  font-size: 15px;
+}
+
+.dice{
+  width: 150px;
+}
