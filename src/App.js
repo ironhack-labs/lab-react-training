@@ -38,7 +38,8 @@ class App extends Component {
         <h1>BoxColor</h1>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
-        <BoxColor r={105} g={87} b={33} />
+        <BoxColor r={100} g={80} b={30} />
+        <BoxColor r={230} g={170} b={230} />
       </div>
     );
   }
