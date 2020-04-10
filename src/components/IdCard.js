@@ -9,7 +9,8 @@ const IdCard = (props) => {
     { 'First name': firstName },
     { 'Last name': lastName },
     { 'Gender': gender },
-    { 'Height': height }
+    { 'Height': height },
+    { 'Birthday': formatDate(birth)}
   ];
   return (
     <div class='id-card'>
@@ -21,10 +22,6 @@ const IdCard = (props) => {
             fieldName={Object.keys(field)}
             fieldValue={Object.values(field)} />
         })}
-        <FieldNameAndValue
-          key={uniqueId()}
-          fieldName='Birthday'
-          fieldValue={formatDate(birth)} />
       </div>
     </div>
   )
