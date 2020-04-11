@@ -7,6 +7,7 @@ import CreditCard from './Components/CreditCard/CreditCard.js'
 import Rating from './Components/Rating/Rating.js'
 import DriverCard from './Components/DriverCard/DriverCard.js'
 import LikeButton from './Components/LikeButton/LikeButton.js'
+import ClickablePicture from './Components/ClickablePicture/ClickablePicture.js'
 
 class App extends Component {
   render() {
@@ -42,6 +43,8 @@ class App extends Component {
        <h1>Like Button</h1>
        <LikeButton />
        <LikeButton />
+       <h1>Clickable Picture</h1>
+       <ClickablePicture imgClicked="/img/glasses.png" img="https://media-exp1.licdn.com/dms/image/C4D03AQEuLNpl9eTpPA/profile-displayphoto-shrink_200_200/0?e=1591833600&v=beta&t=3GJnpkGj7prpEGGbz-_aVx_7mtgzq8gsgAcLbFhQOvs"/>
        </div>
     );
   }
