@@ -6,7 +6,7 @@ class IdCard extends Component  {
         return(
             <div className="card">
                 <img src={this.props.picture}></img>
-                <div className="card-details">
+            <div>
                 <div >First name: {this.props.firstname}</div>
                 <div>Last name: {this.props.lastname}</div>
                 <div>Gender: {this.props.gender}</div>

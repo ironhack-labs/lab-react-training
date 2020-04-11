@@ -4,6 +4,8 @@ import Greetings from './Components/Greetings/Greetings.js'
 import Random from './Components/Random/Random.js'
 import BoxColor from './Components/BoxColor/BoxColor.js'
 import CreditCard from './Components/CreditCard/CreditCard.js'
+import Rating from './Components/Rating/Rating.js'
+import DriverCard from './Components/DriverCard/DriverCard.js'
 
 class App extends Component {
   render() {
@@ -26,8 +28,17 @@ class App extends Component {
         <CreditCard type="visa" number="0123456789018845" expirationMonth="02" expirationYear="2022" bank="N26" owner="Thibault Delfaud" bgColor="#11aa99" color="white"/>
         <CreditCard type="master" number="0123456789010995" expirationMonth="03" expirationYear="2023" bank="BNP" owner="Thibault Delfaud" bgColor="#eeeeee" color="#222222"/>
         <CreditCard type="visa" number="0123456789016984" expirationMonth="04" expirationYear="2024" bank="Name of the bank" owner="Thibault Delfaud" bgColor="#ddbb55" color="white"/>
-      </div>
-       
+       <h1>Rating</h1>
+       <Rating children = "0"  />
+       <Rating children = "0.5"/>
+       <Rating children = "1.6"/>
+       <Rating children = "2.7"/>
+       <Rating children = "3.8"/>
+       <Rating children = "4.7"/>
+       <h1>Driver Card</h1>
+       <DriverCard name ="Thibault Delfaud" rating = "4.8"car ={{model: "Aston Martin", licensePlate:"696969"}} img ="https://media-exp1.licdn.com/dms/image/C4D03AQEuLNpl9eTpPA/profile-displayphoto-shrink_200_200/0?e=1591833600&v=beta&t=3GJnpkGj7prpEGGbz-_aVx_7mtgzq8gsgAcLbFhQOvs" />
+       <DriverCard name ="Flora Delfaud" rating = "1"car ={{model: "Lada turbo", licensePlate:"420420"}} img ="https://media-exp1.licdn.com/dms/image/C5603AQFs-rPCVcptIQ/profile-displayphoto-shrink_200_200/0?e=1591833600&v=beta&t=a1rgaVRfzBqTAwXP2xFLVA1BgVaVDAbugpHPWBnqeLI" />
+       </div>
     );
   }
 }
