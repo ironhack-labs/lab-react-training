@@ -28,7 +28,7 @@ class Rating extends Component {
   render(){
     const { children } = this.props;
     return (
-      <div style= {{'fontSize':'30px'}}>{this.printStars({children})}</div>
+      <div style= {{'fontSize':'40px'}}>{this.printStars({children})}</div>
     )
   }
 }
