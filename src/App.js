@@ -6,6 +6,7 @@ import BoxColor from './Components/BoxColor/BoxColor.js'
 import CreditCard from './Components/CreditCard/CreditCard.js'
 import Rating from './Components/Rating/Rating.js'
 import DriverCard from './Components/DriverCard/DriverCard.js'
+import LikeButton from './Components/LikeButton/LikeButton.js'
 
 class App extends Component {
   render() {
@@ -38,6 +39,9 @@ class App extends Component {
        <h1>Driver Card</h1>
        <DriverCard name ="Thibault Delfaud" rating = "4.8"car ={{model: "Aston Martin", licensePlate:"696969"}} img ="https://media-exp1.licdn.com/dms/image/C4D03AQEuLNpl9eTpPA/profile-displayphoto-shrink_200_200/0?e=1591833600&v=beta&t=3GJnpkGj7prpEGGbz-_aVx_7mtgzq8gsgAcLbFhQOvs" />
        <DriverCard name ="Flora Delfaud" rating = "1"car ={{model: "Lada turbo", licensePlate:"420420"}} img ="https://media-exp1.licdn.com/dms/image/C5603AQFs-rPCVcptIQ/profile-displayphoto-shrink_200_200/0?e=1591833600&v=beta&t=a1rgaVRfzBqTAwXP2xFLVA1BgVaVDAbugpHPWBnqeLI" />
+       <h1>Like Button</h1>
+       <LikeButton />
+       <LikeButton />
        </div>
     );
   }

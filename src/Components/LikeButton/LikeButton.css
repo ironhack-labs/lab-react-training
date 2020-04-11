@@ -1,0 +1,9 @@
+.likes{
+    padding:15px;
+    display:inline;
+}
+
+.likes > button {
+    padding: 15px 30px  15px 30px;
+  
+}
