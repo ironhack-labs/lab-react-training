@@ -19,7 +19,7 @@ const Greetings = (props) => {
       break;
   }
   return (
-    <div className="Greetings">
+    <div className="Box">
       <p>
         {greeting} {props.children}
       </p>
