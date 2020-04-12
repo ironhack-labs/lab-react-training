@@ -1,0 +1,19 @@
+body {
+  margin: 3px;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  margin: 3px;
+}
+
+.card-container div {
+  margin: 5px;
+}
+.card-container img {
+  margin: 5px;
+}
+.card-container p {
+  margin: 3px;
+}
