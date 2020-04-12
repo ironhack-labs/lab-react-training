@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 3px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -11,4 +11,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.container-user{
+  display:flex;
+  border: solid 2px black;
+  margin: 15px
+}
+.container-data{
+  margin: 5px;
+
+}
+.title-idCard{
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
 }
