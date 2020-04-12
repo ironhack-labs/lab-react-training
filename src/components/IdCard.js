@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import "./IdCard.css";
+import moment from 'moment';
 
 class IdCard extends Component {
     render() {
         const { lastName, firstName, gender, height, birth, picture} = this.props;
-
         return(
             <div className="container-user">
                 <div className="container-img">
-                    {/* <img src={picture}></img> */}
+                    {<img src={picture}></img> }
                 </div>
                 <div className="container-data">
                     <div>
@@ -24,7 +23,7 @@ class IdCard extends Component {
                        <span className="title-idCard">Height: </span>{height}
                     </div>
                     <div>
-                        <span className="title-idCard">Birth: </span> {birth}
+                        <span className="title-idCard">Birth:  </span>{moment(new Date(birth)).format("ddd MMM DD YYYY")}
                     </div>
                 </div>
             </div>

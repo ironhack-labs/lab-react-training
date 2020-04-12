@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import IdCard from './components/IdCard';
-//import "./data/IdCard.css";
+import moment from 'moment';
 
 
 class App extends Component {
@@ -9,22 +9,23 @@ class App extends Component {
       <div className="App">
         <h1>IdCard</h1>
         <IdCard
-          // src={"./personas/maxence.png"}
+          picture="https://randomuser.me/api/portraits/men/44.jpg"
           firstName={"John"}
           lastName={"Doe"}
           gender={"male"}
           height={"1.78m"}
-          birth={"12"}>
+          birth={new Date("1992-07-14")}>       
+
 
         </IdCard>
         <IdCard
-          // src={"./personas/maxence.png"}
+          picture="https://randomuser.me/api/portraits/women/44.jpg"          
           firstName={"Obrien"}
           lastName={"Delores"}
           gender={"female"}
           height={"1.72m"}
-          birth={"12"}>
-        </IdCard>
+          birth={new Date("1988-05-11")}>       
+          </IdCard>
 
         <h1>Greetings</h1>
         {/* TODO: Use the Greetings component */}
