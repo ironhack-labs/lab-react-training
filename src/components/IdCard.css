@@ -1,0 +1,11 @@
+.idcard-container {
+    display: flex;
+}
+
+.idcard-p {
+    margin: 0;
+}
+
+.idcard-data {
+    margin-top: 5px;
+}
