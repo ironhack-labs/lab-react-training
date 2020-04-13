@@ -12,7 +12,7 @@ class IdCard extends Component {
                 <p> Last Name: {lastName}</p>
                 <p> Gender: {gender}</p>
                 <p> Height: {height}</p>
-                <p>Birth: {birth}</p>
+                <p>Birth: {birth.toDateString()}</p>
                 </div>
             
             </div>
