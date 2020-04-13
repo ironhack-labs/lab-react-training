@@ -6,38 +6,30 @@ const c = '/img/dice3.png';
 const d = '/img/dice4.png';
 const e = '/img/dice5.png';
 const f = '/img/dice6.png';
-const items = [a, b, c, d, e, f];
-let random = Math.floor(Math.random() * items.length);
-
 
 class Dice extends Component {
 
   state = {
-    active: false,
-  }
-
-  getDice = () => {
-    setTimeout(() => {
-      console.log('Hello, World!');
-      return items[random];
-    }, 1000);
-    console.log('works');
-    return '/img/dice-empty.png';
+    items: [a, b, c, d, e, f],
+    active: true,
   }
 
   changeDice = () => {
-    if (this.state.active === false) {
-      return items[random];
+    if (this.state.active === true) {
+      return this.state.items[Math.floor(Math.random() * this.state.items.length)];
     } else {
-      return this.getDice();;
+      setTimeout(() => { this.toggleClass() }, 1000);
+      return '/img/dice-empty.png';
     }
   }
 
   toggleClass = () => {
     const currentState = this.state.active;
-    this.setState({ active: !currentState });
+    this.setState({ 
+      active: !currentState, 
+    });
   };
-  
+
   render () {
     return (
       <div className="picture-box">
@@ -48,3 +40,4 @@ class Dice extends Component {
 }
 
 export default Dice;
+

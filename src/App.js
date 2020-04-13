@@ -10,6 +10,10 @@ import LikeButton from './components/likebutton';
 import ClickablePicture from './components/clickablepicture';
 import Dice from './components/dice';
 import Carousel from './components/carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import SignupPage from './components/signup/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 import './App.css';
 
 class App extends Component {
@@ -125,9 +129,17 @@ class App extends Component {
         />
         
         <h1>NumbersTable</h1>
+        <NumbersTable limit={12} />
+
         <h1>FaceBook</h1>
+        <FaceBook />
+
         <h1>SignupPage</h1>
+        <SignupPage />
+
         <h1>RGBColorPicker</h1>
+        <RGBColorPicker />
+
       </div>
     );
   }
