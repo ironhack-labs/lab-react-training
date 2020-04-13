@@ -87,3 +87,13 @@
   height: 15rem;
   cursor: pointer;
 }
+
+.carousel-box {
+  padding: 0 0.5rem;
+  margin: 0 20rem 2rem;
+  font-size: 2rem;
+}
+
+.carousel-img {
+  height: 10rem;
+}
