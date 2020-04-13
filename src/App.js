@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
+import Random from './components/Random';
 import './App.css'
 
 class App extends Component {
@@ -32,9 +33,9 @@ class App extends Component {
         <Greetings lang="es">Español</Greetings>
 
 
-
-        
-        
+        <h1>Random Number</h1>
+        <Random min={1} max={6}/>
+        <Random min={1} max={100}/> 
 
         
       </div>
