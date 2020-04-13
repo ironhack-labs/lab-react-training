@@ -1,0 +1,14 @@
+.Idcard {
+  border: 1px solid #000;
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+}
+
+.Idcard-info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 10px;
+  padding-bottom: 30px;
+}

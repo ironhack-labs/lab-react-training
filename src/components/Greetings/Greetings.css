@@ -1,0 +1,12 @@
+.Box{
+  border: 1px solid #000;
+  margin: 10px;
+  padding: 0 10px;
+  width: 500px;
+
+}
+
+.Box p {
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+}
