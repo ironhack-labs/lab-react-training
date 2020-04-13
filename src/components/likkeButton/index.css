@@ -1,0 +1,12 @@
+.likeButton {
+   display: inline-block;
+   margin-bottom: 20px;
+}
+.likeButton button {
+   font-size: 25px;
+   margin-right: 15px;
+   padding: 10px 10px;
+   color:black;
+   border-radius:15px;
+   border: 1px solid black;
+}

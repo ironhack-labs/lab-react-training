@@ -1,0 +1,13 @@
+.iteration {
+    margin: 30px 15px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.d-flex .content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.d-flex .content div {
+    width: 28%;
+}

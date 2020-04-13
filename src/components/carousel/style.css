@@ -1,0 +1,18 @@
+.carousel {
+    position: relative;
+    margin-bottom: 20px;
+}
+.carousel .prev, .carousel .next {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.carousel img {
+    margin: 0 40px;
+    width: 200px;
+    height: 200px;
+}

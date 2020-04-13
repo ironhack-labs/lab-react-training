@@ -1,0 +1,33 @@
+.creditCard {
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.creditCard .logo {
+    text-align: right;
+    min-width: 100%;
+    display: block;
+}
+.creditCard img {
+    width: 60px;
+}
+.creditCard .number {
+    min-width: 100%;
+    font-size: 70px;
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.creditCard .number span {
+    font-size: 40px;
+    margin-left: 20px;
+}
+.otherData {
+    min-width: 100%;
+}
+
+.otherData p span {
+    margin-left: 10px;
+}

@@ -1,0 +1,7 @@
+.clickablePicture img {
+    width: 200px;
+    cursor: pointer;
+}
+.clickablePicture {
+    margin-bottom: 20px;
+}

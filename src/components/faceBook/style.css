@@ -1,0 +1,19 @@
+.facebook {
+
+}
+.facebook nav {
+    margin-bottom: 20px;
+}
+.facebook input {
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+.facebook nav button {
+    margin: 5px;
+}
+
+.facebook .elements {
+    display: flex;
+    flex-flow: row wrap;
+}

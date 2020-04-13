@@ -1,0 +1,39 @@
+.idCardFacebook {
+    max-width: 200px;
+    width: 200px;
+    display: flex;
+    padding: 10px;
+    border:1px solid black;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transition: max-width 0.5s;
+    overflow: hidden;
+    align-items: center;
+    cursor: pointer;
+}
+.idCardFacebook.closed {
+    max-width: 50px;
+    width: 50px;
+}
+.idCardFacebook.closed .info {
+    display: none;
+}
+.idCardFacebook .info {
+    height: 120px;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+    justify-content: center;
+}
+.idCardFacebook.active {
+    background: lightblue;
+}
+.idCardFacebook img {
+    width: 50px;
+    height: 50px;
+}
+.idCardFacebook p {
+    margin-bottom: 4px;
+    margin-top: 0;
+    margin-left: 10px;
+}

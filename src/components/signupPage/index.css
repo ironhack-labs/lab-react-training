@@ -1,0 +1,15 @@
+.signUpPage {
+   margin-bottom: 20px;
+}
+.form-group {
+   margin-bottom: 20px;
+}
+.form-group label {
+   display: block;
+}
+.form-group .ok {
+   border:1px solid green;
+}
+.form-group .error {
+   border:1px solid red;
+}
