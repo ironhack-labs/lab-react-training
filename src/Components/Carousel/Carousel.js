@@ -5,14 +5,15 @@ class Carousel extends Component {
     state = {
         counter: 0,
     }
-    leftImage = () => {
+    
+    rightImage = () => {
         this.state.counter < this.props.imgs.length -1 ?
             this.setState({
                 counter: this.state.counter +1,
             }) : this.state.counter = this.state.counter;
     }
 
-    rightImage = () => {
+    leftImage = () => {
         this.state.counter > 0 ?
             this.setState({
                 counter: this.state.counter -1,
