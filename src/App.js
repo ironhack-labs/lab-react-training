@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
 import './App.css'
 
 class App extends Component {
@@ -25,6 +26,13 @@ class App extends Component {
         />
 
         <h1>Greetings</h1>
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
+        <Greetings lang="en">Inglés</Greetings>
+        <Greetings lang="es">Español</Greetings>
+
+
+
         
         
 
