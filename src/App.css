@@ -97,3 +97,13 @@
 .carousel-img {
   height: 10rem;
 }
+
+.number-list {
+  display: flex;
+}
+
+.number-value {
+  border: 1px solid black;
+  padding: 25px;
+  margin-left: 0.5rem;
+}
