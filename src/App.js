@@ -8,6 +8,8 @@ import Rating from './Components/Rating/Rating.js'
 import DriverCard from './Components/DriverCard/DriverCard.js'
 import LikeButton from './Components/LikeButton/LikeButton.js'
 import ClickablePicture from './Components/ClickablePicture/ClickablePicture.js'
+import Dice from './Components/Dice/Dice.js' 
+import Carousel from './Components/Carousel/Carousel.js'
 
 class App extends Component {
   render() {
@@ -45,7 +47,16 @@ class App extends Component {
        <LikeButton />
        <h1>Clickable Picture</h1>
        <ClickablePicture imgClicked="/img/glasses.png" img="https://media-exp1.licdn.com/dms/image/C4D03AQEuLNpl9eTpPA/profile-displayphoto-shrink_200_200/0?e=1591833600&v=beta&t=3GJnpkGj7prpEGGbz-_aVx_7mtgzq8gsgAcLbFhQOvs"/>
-       </div>
+       <h1>Dice</h1>
+       <Dice />
+       <h1>Carousel</h1>
+       <Carousel imgs={[
+         'https://randomuser.me/api/portraits/women/1.jpg',
+         'https://randomuser.me/api/portraits/men/1.jpg',
+         'https://randomuser.me/api/portraits/women/2.jpg',
+         'https://randomuser.me/api/portraits/men/2.jpg'
+        ]} />
+      </div>
     );
   }
 }

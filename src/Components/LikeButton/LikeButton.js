@@ -21,7 +21,7 @@ class LikeButton extends Component {
     render(){
         return(
             <div className="likes">
-                <button  style={{backgroundColor: this.state.bgColor}} onClick={this.increment}  > {this.state.counter} likes </button>
+                <button style={{backgroundColor: this.state.bgColor}} onClick={this.increment}> {this.state.counter} likes </button>
             </div>
         )
     }
