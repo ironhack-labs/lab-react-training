@@ -8,6 +8,8 @@ import Rating from "./components/rating/Rating.js";
 import DriverCard from "./components/driverCard/DriverCard.js";
 import LikeButton from "./components/likeButton/LikeButton.js";
 import ClickablePicture from "./components/clickablePicture/ClickablePicture.js";
+import Dice from "./components/dice/Dice.js";
+import Carousel from "./components/carousel/Carousel.js";
 
 class App extends Component {
   render() {
@@ -91,7 +93,11 @@ class App extends Component {
         <h1>LikeButton</h1>
         <LikeButton /> <LikeButton />
         <h1>ClickablePicture</h1>
-        <ClickablePicture image="/img/persons/maxence.png" />
+        <ClickablePicture img="/img/persons/maxence.png" />
+        <h1>Dice</h1>
+        <Dice />
+        <h1>Carousel</h1>
+        <Carousel leftBtn="left" rightBtn="right" />
       </div>
     );
   }

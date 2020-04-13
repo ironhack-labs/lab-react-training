@@ -1,9 +1,23 @@
 import React, { Component } from "react";
-import "./ClickablePicture.css";
 
-export default class ClickablePicture extends Component {
+export default class Dice extends Component {
   state = {
     active: false,
+  };
+
+  randomImg = () => {
+    const dices = [
+      "/img/dice1.png",
+      "/img/dice2.png",
+      "/img/dice3.png",
+      "/img/dice4.png",
+      "/img/dice5.png",
+      "/img/dice6.png",
+    ];
+
+    const indx = Math.floor(Math.random() * dices.length);
+
+    return dices[indx];
   };
 
   changePicture = (img, newImg) => {
@@ -21,10 +35,10 @@ export default class ClickablePicture extends Component {
   };
 
   render() {
-    const { img } = this.props;
-    const newImg = "/img/persons/maxence-glasses.png";
+    const img = "/img/dice1.png";
+    const newImg = this.randomImg();
     return (
-      <div className="picture-box">
+      <div>
         <img
           onClick={this.setImage}
           className="clickablePicture"
