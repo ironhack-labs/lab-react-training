@@ -6,11 +6,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+     
+}
+.App{
+     display: flex;
+  flex-direction: column;
 }
 .card{
 
@@ -35,4 +41,82 @@ margin: 2px;
   padding: 5px;
 margin-bottom: 20px;
 font-weight: bold;
+}
+
+.visa{
+  border: solid black 1px;
+  border-radius: 10px;
+float: left;
+margin-left: 60px;
+  width: 350px;
+  margin-bottom: 90px;
+
+  height: 180px;
+}
+
+.visa img { 
+  padding: 10px;
+  float: right;
+  width: 90px;
+  height: 50px;
+}
+
+.number{
+  padding-top: 40px;
+  padding-left: 24px;
+  font-size: 25px;
+}
+
+.bottext{
+  padding-left: 24px;
+
+}
+
+.start{
+  margin-left: 50px;
+font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.drivercard{
+width: 70%;
+margin: auto;
+padding:30px;
+background-color: rgb(90, 90, 212);
+margin-bottom: 20px;
+
+color: white;
+
+border-radius: 30px 30px;
+}
+.drivercard img {
+  width: 10%;
+  height: 10%;
+  border-radius:100% ; 
+  float: left;
+  margin-left: 35%;
+}
+.container{
+  width: 50%;
+  padding: 30px;
+  margin: 0 auto;
+}
+.buttonlike{
+  width: 30%;
+  padding: 30px;
+  font-size: 30px;
+}
+
+.imgdice{
+
+  width: 18%;
+  height: 18%;
+}
+
+.table{
+  width: 70px;
+  height: 70px;
+  border: solid black 1px;
 }
