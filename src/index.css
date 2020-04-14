@@ -6,9 +6,56 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgba(0,0,0,0.025);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  margin: 2rem;
+}
+
+p {
+  margin: 0;
+  margin-top: 4px;
+  color: #000;
+
+}
+
+p + p {
+  margin-left: 24px;
+}
+
+span {
+  font-weight: 600;
+}
+
+.card {
+  margin: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.card--dark p {
+  color: #FFF;
+}
+
+
+.card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.IdCard__text {
+  margin-left: 24px;
+}
+
+.border {
+  border: solid 1px rgba(0,0,0,0.15);
 }
