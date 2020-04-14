@@ -21,12 +21,6 @@ h1 {
 p {
   margin: 0;
   margin-top: 4px;
-  color: #000;
-
-}
-
-p + p {
-  margin-left: 24px;
 }
 
 span {
@@ -41,8 +35,32 @@ span {
   padding: 16px;
 }
 
+.card p + p {
+  margin-left: 24px;
+}
+
 .card--dark p {
   color: #FFF;
+}
+
+.card--credit {
+  max-width: 300px;
+  min-height: 160px;
+  margin: 2rem;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card--credit h2 {
+  margin-top: 56px;
+}
+
+.card--credit__info {
+  display: flex;
+}
+
+.card--credit__info p + p {
+  margin-left: 16px;
 }
 
 
