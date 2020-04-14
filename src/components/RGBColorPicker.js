@@ -3,10 +3,16 @@ import SingleColorPicker from './SingleColorPicker';
 
 class RGBColorPicker extends Component {
   
+  state = {
+    rValue: 0,
+    gValue: 0,
+    bValue: 0,
+  }
+
   render () {
     return (
       <div className="">
-       <p>1</p>
+      <SingleColorPicker />
       </div>
     )
   }

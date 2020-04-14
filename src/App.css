@@ -129,3 +129,10 @@
   cursor: pointer;
 }
 
+.country-blue-btn {
+  background-color: #74b9ff;
+  margin: 0.2rem 1rem 0.2rem 0.2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+

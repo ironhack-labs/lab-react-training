@@ -4,7 +4,8 @@ import profiles from '../data/berlin.json';
 class FaceBook extends Component {
 
   state = {
-    blue: true,
+    all: true,
+    selected: true,
   }
 
   studentOrTeacher = (isStudent) => {
@@ -22,18 +23,23 @@ class FaceBook extends Component {
       })
     let sortedArr = btnArray.slice().sort();
     let cleanArray = sortedArr.filter((a, b) => sortedArr.indexOf(a) === b);
-    return cleanArray.map(item => <button className="country-btn">{item}</button>)
+    return cleanArray.map(item => <button onClick={this.changeColorSelected} className="country-btn">{item}</button>)
   }
 
-  changeColor = () => {
-    this.setState({blue: !this.state.blue});
- }
+  changeColorAll = () => {
+    this.setState({all: !this.state.all});
+  }
+
+  changeColorSelected = () => {
+    this.setState({selected: !this.state.selected});
+  }
 
   render () {
-    let btnClass = this.state.blue ? "fb-box" : "fb-blue-box";
+    let btnClass = this.state.all ? "fb-box" : "fb-blue-box";
+    let btnBackColor = this.state.all ? "country-btn" : "country-blue-btn";
     return (
       <div>
-      <button onClick={this.changeColor} className="country-btn">All</button>
+      <button onClick={this.changeColorAll} className={btnBackColor}>All</button>
       {this.createBtns()}
  
         {profiles.map(item => (
