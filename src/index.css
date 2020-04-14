@@ -29,3 +29,10 @@ code {
 .container-img{
   margin: 5px;
 }
+.content-greeting{
+  border: solid 2px black;
+  margin: 10px;
+  padding: 10px;
+  font-size: 17px;
+  
+}

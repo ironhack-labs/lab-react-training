@@ -1,20 +1,15 @@
+
 import React, { Component } from 'react';
 
 class Greetings extends Component{
     render(){
-        const lang =  ["de" , "en", "es", "fr"];
         const {lang, children} = this.props;
 
         return(
             <div>
-                <div></div>
-                <div></div>
-
-
-
+                <div className="content-greeting">{lang} {children}</div>
             </div>
-
-            )
+        )
     }
     
 }

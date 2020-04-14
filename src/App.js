@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
+import Random from './components/Random';
 import moment from 'moment';
 
 
@@ -27,8 +29,16 @@ class App extends Component {
           birth={new Date("1988-05-11")}>       
           </IdCard>
 
-        <h1>Greetings</h1>
-        {/* TODO: Use the Greetings component */}
+       <h1>Greetings</h1>
+       <Greetings lang="de">Ludwig</Greetings>
+       <Greetings lang="fr">François</Greetings>
+
+      <h1>Random</h1>
+      <Random text="Random value between 1 and 6 =>" min={1} max={6}/>
+      <Random text="Random value between 1 and 100 =>" min={1} max={100}/>
+
+      <h1>BoxColor</h1>
+
     </div>
     );
   }
