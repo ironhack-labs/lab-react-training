@@ -15,10 +15,11 @@ code {
 
 /* ID CARD */
 
-.cards>div {
+.cards > div {
   display: flex;
   align-items: center;
-  border: 1mm solid black;
+  border: 0.5mm solid black;
+  margin: 5px;
 }
 .cards p {
   margin: 0;
@@ -28,4 +29,9 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.box {
+  border: 0.5mm solid black;
+  margin: 5px;
 }
