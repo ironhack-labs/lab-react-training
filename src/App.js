@@ -8,7 +8,7 @@ import './App.css'
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <h1>IdCard</h1>
         <IdCard
          lastName='Doe'

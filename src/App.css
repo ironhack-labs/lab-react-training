@@ -1,0 +1,19 @@
+.app{
+   text-align: center;  
+}
+
+.box {
+    display: flex;
+    padding: 10px;
+    margin: 0px 250px 10px;
+    border: 1px solid black;
+  }
+.img {
+    height: 200px;
+    margin-right: 50px;
+    width: auto;
+    
+  }
+
+
+

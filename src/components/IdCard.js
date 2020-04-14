@@ -4,8 +4,8 @@ class IdCard extends Component {
     render(){
         const { firstName, lastName, gender, height, birth, picture } = this.props;
         return (
-            <div className="">
-                <img className="" alt="" src={picture}/>
+            <div className="box">
+                <img className="img" alt="" src={picture}/>
                 
                 <div className="">
                 <p>First Name:{firstName}</p>
