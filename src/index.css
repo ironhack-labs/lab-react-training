@@ -13,6 +13,12 @@ code {
     monospace;
 }
 
+.box {
+  border: 0.5mm solid black;
+  margin: 5px;
+}
+
+
 /* ID CARD */
 
 .cards > div {
@@ -31,7 +37,58 @@ code {
   justify-content: center;
 }
 
-.box {
-  border: 0.5mm solid black;
-  margin: 5px;
+/* CREDITCARD */
+.credit {
+  display: flex;
+  
+}
+.credit img {
+  height: 20px;
+  margin-right: 15px;
+}
+.cardLogo {
+  align-self: flex-end;
+}
+.card {
+  display: flex;
+  width:300px;
+  height: 170px;
+  margin: 10px;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 10px;
+}
+
+/* DRIVERCARD */
+
+.driverCard {
+  display: flex;
+  background-color: cornflowerblue;
+  color: white;
+  width:auto;
+  height: 130px;
+  margin: 10px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.imgdiv {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+  align-self: flex-end;
+}
+.imgdiv img {
+  width: auto;
+  height: 100%;
+}
+.driverInfo {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
 }
