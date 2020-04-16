@@ -8,7 +8,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.box{
+  margin-left: 10px;
+  border: 1px solid #000;
+  padding: 5px;
+  display:flex;
+  width: 90%;
 }
+
+ /* ID CARD STYLES */
+
+ul {list-style-type:none} 
+  .child  {
+    margin:0;
+    padding: 0 5px ;
+  }
+
+  /* ID CARD STYLES END*/
+
+  /* ID CARD STYLES END*/
