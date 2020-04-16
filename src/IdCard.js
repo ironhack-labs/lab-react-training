@@ -12,10 +12,10 @@ class IdCard extends React.Component {
     return (
       <div>
         <img src= {this.props.picture} />
-        <h3> First name: {this.props.firstName}</h3>
-        <h3> Last name: {this.props.lastName}</h3>
-        <h3> Gender: {this.props.gender}</h3>
-        <h3> Height: {this.props.height}</h3>
+        <h4> First name: {this.props.firstName}</h4>
+        <h4> Last name: {this.props.lastName}</h4>
+        <h4> Gender: {this.props.gender}</h4>
+        <h4> Height: {this.props.height}</h4>
         {/* <h2> Birth: {this.props.birth}</h2> */}
         {/* <p>Mi edad es {this.state.age}</p> */}
         {/* <button onClick= { () => this.setState({age: this.state.age})}>Aumentar</button>*/}

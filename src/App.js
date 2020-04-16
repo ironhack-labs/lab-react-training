@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import IdCard from './IdCard'
-import Greetings from './Greetings'
+import IdCard from './IdCard';
+import Greetings from './Greetings';
+import Random from './Random';
 import "./index.css"
 
 class App extends Component {
@@ -45,6 +46,15 @@ class App extends Component {
         children="François"
         />
         </div>
+
+        <h1>Random</h1>
+        <div className="first-square">
+        <Random min={1} max={6}/>
+        </div>
+       <div className="first-square">
+       <Random min={1} max={100}/>
+       </div>
+       
       </div>
     );
   }
