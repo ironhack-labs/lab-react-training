@@ -13,7 +13,7 @@ const CreditCard = props => {
 
     return (
         <CardBody className="card--credit">
-            <h2>{props.number}</h2>
+            <h2>{props.number.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ')}</h2>
 
             <div className="card--credit__info">
                 <p>Expires: {props.expirationMonth} / {props.expirationYear}</p>

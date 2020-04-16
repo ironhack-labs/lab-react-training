@@ -1,15 +1,16 @@
 import React from 'react'
 
-function componentToHex(c) {
-    var hex = c.toString(16);
-    return hex.length == 1 ? "0" + hex : hex;
+const BoxColor = props => {
+
+  function numToHex(num) {
+    let hex = num.toString(16);
+    return hex.length === 1 ? `0${hex}` : hex;
   }
   
   function rgbToHex(r, g, b) {
-    return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+    return `#${numToHex(r)}${numToHex(g)}${numToHex(b)}`;
   }
 
-const BoxColor = props => {
     return (
         <div className="card card--dark" style={{backgroundColor: `rgb(${props.r},${props.g},${props.b})`}}>
            <p>RGB({props.r}, {props.g}, {props.b})</p>
