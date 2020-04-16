@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Iteration 1 */
+.first-person {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.second-person {
+  border: 1px solid black;
+}
+
