@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import IdCard from './IdCard'
+import Greetings from './Greetings'
 import "./index.css"
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>IdCard</h1>
-        <div className="first-person">
+        <div className="first-square">
         <IdCard
           lastName='Doe'
           firstName='John'
@@ -19,9 +20,9 @@ class App extends Component {
           picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
         </div>
-        <div className="second-person">
+        <div className="second-square">
         <IdCard
-          lastName='Delores '
+          lastName='Delores'
           firstName='Obrien'
           gender='female'
           height={172}
@@ -30,9 +31,20 @@ class App extends Component {
         />
         </div>
         
-
+        {/* Check language: de, en, es, fr */}
         <h1>Greetings</h1>
-        {/* TODO: Use the Greetings component */}
+        <div className="first-square">
+        <Greetings 
+        lang="Hallo"
+        children="Ludwig"
+        />
+        </div>
+        <div className="first-square">
+        <Greetings 
+        lang="Bonjour"
+        children="François"
+        />
+        </div>
       </div>
     );
   }

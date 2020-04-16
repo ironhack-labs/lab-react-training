@@ -14,12 +14,12 @@ code {
 }
 
 /* Iteration 1 */
-.first-person {
+.first-square {
   border: 1px solid black;
   margin-bottom: 10px;
 }
 
-.second-person {
+.second-square {
   border: 1px solid black;
 }
 
