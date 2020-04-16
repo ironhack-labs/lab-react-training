@@ -131,3 +131,11 @@ button {
   width: 200px;
   margin-top: 1.5rem;
 }
+
+.slider {
+  justify-content: space-evenly;
+}
+
+.slider button {
+  margin-top: 0;
+}
