@@ -10,6 +10,7 @@ import Rating from './Rating'
 import DriverCard from './DriverCard'
 import LikeButton from './LikeButton'
 import ClickablePicture from './ClickablePicture'
+import Dice from './Dice'
 
 class App extends Component {
 
@@ -129,6 +130,11 @@ class App extends Component {
           <h1>ClickablePicture</h1>
 
           <ClickablePicture />
+
+          <h1>Dice</h1>
+
+          <Dice />
+
       </div>
     );
   }

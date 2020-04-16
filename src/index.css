@@ -126,3 +126,8 @@ button {
 .drlicense img {
   margin-right: 1.5rem;
 }
+
+.img-sm {
+  width: 200px;
+  margin-top: 1.5rem;
+}

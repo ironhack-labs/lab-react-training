@@ -13,7 +13,7 @@ class ClickablePicture extends Component {
 
     render () {
         return (
-            <img onClick={this.handleClick} src={this.state.glassesOn ? "./img/persons/maxence-glasses.png" : "./img/persons/maxence.png"} alt="So Fresh" />
+            <img onClick={this.handleClick} src={this.state.glassesOn ? "./img/persons/maxence-glasses.png" : "./img/persons/maxence.png"} alt="So Fresh" className="img-sm" />
         )
     }
 }
