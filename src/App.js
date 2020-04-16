@@ -9,6 +9,7 @@ import CreditCard from './CreditCard'
 import Rating from './Rating'
 import DriverCard from './DriverCard'
 import LikeButton from './LikeButton'
+import ClickablePicture from './ClickablePicture'
 
 class App extends Component {
 
@@ -124,6 +125,10 @@ class App extends Component {
           <h1>Like Button</h1>
           
           <LikeButton />
+
+          <h1>ClickablePicture</h1>
+
+          <ClickablePicture />
       </div>
     );
   }
