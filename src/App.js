@@ -9,7 +9,12 @@ import Rating from './components/Rating'
 import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
 import Random from './components/Random'
+import Carousel from './components/Carousel'
+import FaceBook from './components/Facebook'
+import SignupPage from './components/SignupPage'
+import NumbersTable from './components/NumbersTable'
 import './components/generalStyles.css'
+
 
 class App extends Component {
   render() {
@@ -102,6 +107,21 @@ class App extends Component {
       <ClickablePicture img='/img/persons/maxence.png' imgClicked='/img/persons/maxence-glasses.png' />
       <h1>Dice</h1>
       <Dice />
+      <h1>Carousel</h1>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <h1>Numbers Table</h1>
+      <NumbersTable limit={12} />
+      <h1>Facebook and Facebook Advanced</h1>
+      <FaceBook />
+      <h1>SignUp</h1>
+      <SignupPage />
       </div>
     );
   }

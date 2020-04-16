@@ -9,6 +9,7 @@ export default class Greetings extends Component {
       'es': 'Hola',
       'fr': 'Bonjour',
     }
+    console.log(this.props.lang)
     return `${data[this.props.lang]} ${this.props.children}`
   }
 
