@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import './App.css'
-import Card from './components/card/Card'
-import Greeting from './components/greeting/Greeting'
-import Random from './components/random/Random'
-import BoxColor from './components/boxcolor/BoxColor'
-import CreditCard from './components/creditcard/CreditCard'
+import './App.css';
+import Card from './components/card/Card';
+import Greeting from './components/greeting/Greeting';
+import Random from './components/random/Random';
+import BoxColor from './components/boxcolor/BoxColor';
+import CreditCard from './components/creditcard/CreditCard';
+import Rating from './components/rating/Rating';
+
 
 class App extends Component {
   render() {
@@ -64,6 +66,13 @@ class App extends Component {
           owner="Firstname Lastname"
           bgColor="#ddbb55"
           color="white" />
+        <h2>CreditCard</h2>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
       </div>
     );
   }
