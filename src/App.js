@@ -4,6 +4,7 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating'
 import './App.css';
 
 class App extends Component {
@@ -43,7 +44,7 @@ class App extends Component {
         <BoxColor r={230} g={170} b={230} />
 
         <h1>Credit Card</h1>
-        <div class='credit-cards'>
+        <div className='credit-cards'>
           <CreditCard
             type="Visa"
             number="0123456789018845"
@@ -72,6 +73,14 @@ class App extends Component {
             bgColor="#ddbb55"
             color="white" />
         </div>
+
+        <h1>Rating</h1>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
       </div>
     );
   }

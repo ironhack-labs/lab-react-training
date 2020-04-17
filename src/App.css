@@ -73,11 +73,15 @@ h1 {
 }
 
 .card-number {
-  font-size: 40px;
+  font-size: 35px;
   align-self: center;
 }
 
 .card-info {
   margin: 0 0 25px 25px;
   font-size: 16px;
+}
+
+.stars img {
+  width: 70px;
 }
