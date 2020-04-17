@@ -24,7 +24,7 @@ const Rating = (props) => {
             break;
     };
     return (
-        <div class="Rating">{stars}</div>
+        <div className="Rating">{stars}</div>
     );
 };
     
