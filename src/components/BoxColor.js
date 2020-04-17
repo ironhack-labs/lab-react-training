@@ -10,7 +10,7 @@ const BoxColor = (props) => {
   }
   return (
     <div className='colored-box' style={divStyle}>
-      <p>rgb({r},{g},{b})</p>
+      <p>rgb({r}, {g}, {b})</p>
       <p>#{rgbToHex(r, g, b)}</p>
     </div>
   )
