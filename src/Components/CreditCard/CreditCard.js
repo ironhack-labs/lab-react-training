@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import style from './CreditCard.css'
+import './CreditCard.css'
 
 class CreditCard extends Component {
-
-
 
     selectImage(type){
         let logo = undefined
@@ -32,7 +30,7 @@ class CreditCard extends Component {
                 color: this.props.color,
             }}>
                 <div className="credit-card">
-                    <img src ={this.selectImage(this.props.type)}></img>
+                    <img alt={this.props.bank} src ={this.selectImage(this.props.type)}></img>
                     <div className="card-number"> {this.hideNumb(this.props.number)} </div>
                     <div> Expires {this.props.expirationMonth}/{this.props.expirationYear} {this.props.bank}  </div>
                    

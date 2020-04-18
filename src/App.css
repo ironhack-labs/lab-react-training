@@ -1,5 +1,5 @@
 .NumberTablesContainer{
-    display:inline-block;
+    display:inline-flex;
 }
 .even, .uneven {
     display:flex;

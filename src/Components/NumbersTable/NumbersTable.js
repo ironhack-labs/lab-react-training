@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import style from "./NumbersTable.css";
 
 class NumbersTable extends Component {
   colorChose = (e) => {
@@ -9,11 +8,12 @@ class NumbersTable extends Component {
   };
 
   render() {
-    let { limit } = this.props,
-      tableArr = [];
+
+    let { limit } = this.props, tableArr = [];
     for (let i = 1; i <= limit; i++) {
       tableArr[i] = i;
     }
+
     return (
       <div>
         {tableArr.map((item, index) => {

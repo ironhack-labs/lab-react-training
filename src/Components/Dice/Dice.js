@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import style from './Dice.css'
+import './Dice.css'
 
 class Dice extends Component {
     state ={
@@ -22,7 +22,12 @@ class Dice extends Component {
     render(){
         return(
         <div>
-            <img className="dice" onClick={this.changeDice} src={this.state.dice}></img>
+            <img 
+                className="dice" 
+                onClick={this.changeDice} 
+                src={this.state.dice} 
+                alt="Dice">
+            </img>
         </div>
         )
     }

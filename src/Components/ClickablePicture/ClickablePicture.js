@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Style from './ClickablePicture.css'
+import './ClickablePicture.css'
 
 class ClickablePicture extends Component {
     state = {

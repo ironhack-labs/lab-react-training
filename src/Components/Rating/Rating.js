@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import style from './Rating.css'
+import './Rating.css'
 
 class Rating extends Component {
     starRound(number) {
@@ -15,10 +15,9 @@ class Rating extends Component {
               return star0
               break;
             default:
-              return [...Array(numb)].map((e, i) => <img src ="img/stars/1.png" key={i} />)
+              return [...Array(numb)].map((e, i) => <img alt= "img" src ="img/stars/1.png" key={i} />)
         }
     }
-
 
     render(){
         return(

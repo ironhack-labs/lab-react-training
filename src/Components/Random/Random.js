@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Style from './Random.css'
+import './Random.css'
 
 class Random extends Component {
     RandomNumb(min, max) {
