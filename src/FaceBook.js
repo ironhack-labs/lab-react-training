@@ -4,15 +4,17 @@ import profiles from './data/berlin.json';
 class FaceBook extends Component {
 
     state = {
-        selected: true
+        active: false
     }
 
     getType = (isStudent) => {
         return isStudent ? "Student" : "Teacher";
     }
 
-    handleClick = () => {
-        
+    handleClick = (e) => {
+        e.preventDefault();
+        const currentState = this.state.active;
+        this.setState({ active: !currentState });
     }
 
     render () {
@@ -20,7 +22,7 @@ class FaceBook extends Component {
             <section>
                 <div className="tabs">
                     { profiles.map(profile => (
-                        <button>{profile.country}</button>
+                        <button onClick={this.handleClick} className={this.state.active ? 'active' : null}>{profile.country}</button>
                     ))}
                 </div>
     
