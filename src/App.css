@@ -1,0 +1,15 @@
+.NumberTablesContainer{
+    display:inline-block;
+}
+.even, .uneven {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border: solid 2px black;
+    width:50px;
+    height: 50px;
+}
+.even {
+    background-color: red;
+    color:white;
+}

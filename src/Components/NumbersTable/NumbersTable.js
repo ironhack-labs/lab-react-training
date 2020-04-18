@@ -1,29 +1,31 @@
-import React, {Component} from 'react'
-import style from './NumbersTable.css'
+import React, { Component } from "react";
+import style from "./NumbersTable.css";
 
 class NumbersTable extends Component {
-    state = {
-        arr: []
-    }
+  colorChose = (e) => {
+    let color = null;
+    e % 2 === 0 ? (color = "even") : (color = "uneven");
+    return color;
+  };
 
-    compute = () => {
-        let temp =[]
-        for(let i = 0 ; i < this.props.limit ; i++ ){
-            temp[i] = i
-        }
-        this.setState({
-            arr: temp
-        })
+  render() {
+    let { limit } = this.props,
+      tableArr = [];
+    for (let i = 1; i <= limit; i++) {
+      tableArr[i] = i;
     }
-
-    render(){
-        return(
-            <div>
-                <div className="box" onClick= {this.compute}> YO </div>
-                <div className="arr" >{this.state.arr} </div>
+    return (
+      <div>
+        {tableArr.map((item, index) => {
+          return (
+            <div className="NumberTablesContainer">
+                <div key={index} className={this.colorChose(index)}>{item}</div>
             </div>
-        )
-    }
+          );
+        })}
+      </div>
+    );
+  }
 }
 
-export default NumbersTable
+export default NumbersTable;

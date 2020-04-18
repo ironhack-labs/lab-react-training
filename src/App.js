@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css'
 import IdCard from './Components/IdCard/IdCard.js'
 import Greetings from './Components/Greetings/Greetings.js'
 import Random from './Components/Random/Random.js'
