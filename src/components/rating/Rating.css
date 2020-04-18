@@ -1,0 +1,15 @@
+.rating{
+  font-size: 45px;
+  display: flex;
+  flex-direction: row;
+}
+
+.rating > span:before {
+  content: "\2605";
+  position: absolute;
+}
+
+.rating > div:before {
+  position: absolute;
+  display: inline;
+}
