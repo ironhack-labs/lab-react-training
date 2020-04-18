@@ -9,6 +9,8 @@ import Rating from './components/rating/Rating';
 import DriverCard from './components/drivercard/DriverCard';
 import ClickablePicture from './components/clickablepicture/ClickablePicture';
 import Dice from './components/dice/Dice';
+import Carousel from './components/carousel/Carousel';
+import NumbersTable from './components/numberstable/NumbersTable';
 
 class App extends Component {
   render() {
@@ -96,6 +98,17 @@ class App extends Component {
         <ClickablePicture initialImage="/img/persons/maxence.png" clickedImage="/img/persons/maxence-glasses.png" />
         <h2>Dice</h2>
         <Dice />
+        <h2>Carousel</h2>
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+        <h2>NumbersTable</h2>
+        <NumbersTable limit={12} />
       </div>
     );
   }
