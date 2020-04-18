@@ -33,3 +33,23 @@ code {
   margin: 1rem;
   text-align: center;
 }
+.img-cc{
+height: 2.5rem;
+top: 0;
+padding-left: 70%;
+
+}
+.credit-card{
+  width: 300px;
+  height: 160px;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.organized{
+display: flex;
+
+}
