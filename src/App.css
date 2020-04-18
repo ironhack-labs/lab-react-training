@@ -92,6 +92,12 @@ h1 {
   border-radius: 2%;
 }
 
+.like-button {
+  width: 100px;
+  padding: 10px;
+  font-size: 20px;
+}
+
 .driver-card img {
   height: 130px;
   width: 130px;
