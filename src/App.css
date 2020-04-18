@@ -1,3 +1,7 @@
+body{
+    margin-left: 50px;
+}
+
 .NumberTablesContainer{
     display:inline-flex;
 }
@@ -12,4 +16,12 @@
 .even {
     background-color: red;
     color:white;
+}
+
+.country {
+    display:inline-flex;
+    margin: 5px;
+    padding: 5px;
+    border:solid 1px grey;
+
 }

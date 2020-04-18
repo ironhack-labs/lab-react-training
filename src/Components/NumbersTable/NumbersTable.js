@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 class NumbersTable extends Component {
+  
   colorChose = (e) => {
     let color = null;
     e % 2 === 0 ? (color = "even") : (color = "uneven");
@@ -18,8 +19,8 @@ class NumbersTable extends Component {
       <div>
         {tableArr.map((item, index) => {
           return (
-            <div className="NumberTablesContainer">
-                <div key={index} className={this.colorChose(index)}>{item}</div>
+            <div key={index} className="NumberTablesContainer">
+                <div className={this.colorChose(index)}>{item}</div>
             </div>
           );
         })}
