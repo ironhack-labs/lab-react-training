@@ -6,7 +6,7 @@ import BoxColor from './Component/BoxColor';
 import CreditCard from './Component/CreditCard';
 import Rating from './Component/Rating';
 import DriverCard from './Component/DriverCard'
-
+import LikeButton from './Component/LikeButton'
 
 class App extends Component {
   render() {
@@ -93,6 +93,9 @@ class App extends Component {
     model: "Audi A3",
     licensePlate: "BE33ER"
   }} />
+
+<LikeButton /> <LikeButton />
+
       </div>
     );
   }
