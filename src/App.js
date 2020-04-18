@@ -12,6 +12,8 @@ import LikeButton from './LikeButton'
 import ClickablePicture from './ClickablePicture'
 import Dice from './Dice'
 import Carousel from './Carousel'
+import NumbersTable from './NumbersTable'
+import FaceBook from './FaceBook'
 
 class App extends Component {
 
@@ -146,6 +148,14 @@ class App extends Component {
               'https://randomuser.me/api/portraits/men/2.jpg'
             ]}
           />
+
+          <h1>Numbers Table</h1>
+
+          <NumbersTable limit={12} />
+
+          <h1>FaceBook</h1>
+
+          <FaceBook />  
 
       </div>
     );

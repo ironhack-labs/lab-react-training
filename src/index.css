@@ -11,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgba(0,0,0,0.025);
+  background: rgba(0, 0, 0, 0.025);
 }
 
 code {
@@ -73,7 +73,7 @@ button {
   padding: 16px;
 }
 
-.card p + p {
+.card p+p {
   margin-left: 24px;
 }
 
@@ -97,7 +97,7 @@ button {
   display: flex;
 }
 
-.card--credit__info p + p {
+.card--credit__info p+p {
   margin-left: 16px;
 }
 
@@ -113,7 +113,7 @@ button {
 }
 
 .border {
-  border: solid 1px rgba(0,0,0,0.15);
+  border: solid 1px rgba(0, 0, 0, 0.15);
 }
 
 .drlicense {
@@ -138,4 +138,83 @@ button {
 
 .slider button {
   margin-top: 0;
+}
+
+.flex-wrap {
+  padding-top: 1.5rem;
+  width: 520px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-wrap div {
+  width: 20%;
+  height: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background: #e0e0e0;
+}
+
+.flex-wrap div:nth-child(even) {
+  background: #f00049;
+}
+
+.flex-wrap-half {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-wrap-half div {
+  width: 48%;
+}
+
+.proper-card img {
+  height: 100%;
+  width: 160px;
+}
+
+.proper-card {
+  border: solid 1px rgba(0, 0, 0, 0.10);
+  border-radius: 8px;
+  height: 160px;
+  display: flex;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  background: #FFF;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.proper-card__info {
+  padding: 1.5rem;
+}
+.proper-card__info p {
+  margin-top: 0.5rem;
+}
+
+.tabs {
+  display: flex;
+  max-width: 100vw;
+  overflow: scroll;
+}
+
+.tabs > * {
+  margin-left: 0.5rem;
+}
+
+.tabs button {
+  border: 0;
+  background: rgba(0, 0, 0, 0.10);
+  border-radius: 4px;
+}
+
+.tabs button:hover {
+  background: rgba(0, 0, 0, 0.20);
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
 }
