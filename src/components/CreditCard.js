@@ -16,14 +16,12 @@ class CreditCard extends Component {
         const divStyle = {
             background: `${bgColor}`,
             color: `${color}`,
-            padding: '30px',
-            margin:'5px',
         }
         return (
-            <div style={divStyle}>
+            <div style={divStyle} className='container-credit-card'>
                 <div>
-                    {type === "Visa" && <img className="type-style" src="/img/visa.png" alt= "visa" />}
-                    {type === "Master Card" && <img className="type-style" src="/img/master-card.svg" alt= "master-card"/>}
+                    {type === "Visa" && <img className="type-style" src="/img/visa.png" alt="visa" />}
+                    {type === "Master Card" && <img className="type-style" src="/img/master-card.svg" alt="master-card" />}
                 </div>
                 <p>•••• •••• •••• {number.substr(-4)}</p>
                 <p>0{expirationMonth}/{expirationYear}</p>
