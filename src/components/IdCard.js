@@ -4,7 +4,7 @@ const moment = require ('moment')
 export default class IdCard extends Component {
   render(){
     return(
-      <div className="card">
+      <div className="my-card">
         <img src={this.props.picture} alt="Persona"/>
         <div>
           <p><strong>First name:</strong> {this.props.firstName}</p>

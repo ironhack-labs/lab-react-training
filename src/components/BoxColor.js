@@ -14,7 +14,6 @@ export default class BoxColor extends Component{
   render(){
     const { r, g, b } = this.props
     const divstyle = {
-      width: `100%`,
       height: `100px`,
       backgroundColor: `rgb(${r},${g},${b})`,
       border: '1px solid black',

@@ -1,13 +1,14 @@
 /* Separate this file in subfiles components */
-.card{
+.my-card{
   border: 1px black solid;
   display: flex;
   margin: 30px;
 }
 
-.card p{
+.my-card p{
   line-height: 5px;
   margin-left: 8px;
+  margin-top: 15px;
 }
 
 .encuadred {
