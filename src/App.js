@@ -13,6 +13,7 @@ import Carousel from './components/carousel/Carousel';
 import NumbersTable from './components/numberstable/NumbersTable';
 import LikeButton from './components/likebutton/LikeButton';
 import FaceBook from './components/facebook/FaceBook';
+import Signup from './components/signup/Signup';
 
 class App extends Component {
   render() {
@@ -115,6 +116,8 @@ class App extends Component {
         <LikeButton />
         <h2>FaceBook</h2>
         <FaceBook />
+        <h2>Signup</h2>
+        <Signup />
       </div>
     );
   }
