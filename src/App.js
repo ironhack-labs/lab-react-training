@@ -9,8 +9,13 @@ import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import FaceBook from './components/Facebook/Facebook';
+import SignupPage from './components/SignupPage/SignupPage';
 import './App.css';
 import './components//IdCard/IdCard.css';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 
 class App extends Component {
   render() {
@@ -103,6 +108,23 @@ class App extends Component {
         <ClickablePicture img='/img/persons/maxence.png' imgClicked='/img/persons/maxence-glasses.png' />
         <h1>Dice</h1>
         <Dice />
+        <h1>Carousel</h1>
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+        <h1>Numbers Table</h1>
+        <NumbersTable limit={12} />
+        <h1>Facebook</h1>
+        <FaceBook />
+        <h1>Signup Page</h1>
+        <SignupPage />
+        <h1>RGB Color Picker</h1>
+        <RGBColorPicker />
       </div>
     );
   }

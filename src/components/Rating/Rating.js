@@ -3,9 +3,7 @@ import React, { Component } from 'react';
 class Rating extends Component {
 
   printStars = (num) => {
-    console.log('num', num.children)
     let stars = Math.round(num.children);
-    console.log('stars', stars)
     switch (stars) {
       case 0:
       return stars = '☆☆☆☆☆';

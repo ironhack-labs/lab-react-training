@@ -1,0 +1,15 @@
+.SingleColorPicker{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.MiniBox{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  margin: 0 10px;
+}
+.SingleColorPicker input {
+  width: 45px; 
+  margin-left: 5px
+}

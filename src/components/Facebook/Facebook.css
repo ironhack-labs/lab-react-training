@@ -1,0 +1,23 @@
+.Profile{
+  display: flex;
+  margin: 10px;
+  border: 2px solid #000;
+  font-size: 20px;
+}
+.Strong {
+  font-weight: 900;
+}
+.Profile img {
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+}
+p{
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.ButtonCountry {
+  border: 1px solid grey; 
+  margin-left: 5px; 
+}

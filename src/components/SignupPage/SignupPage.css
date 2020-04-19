@@ -1,0 +1,21 @@
+.Form {
+  display: flex; 
+  flex-direction: column;
+}
+
+.Input{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;;
+}
+
+.Submit{
+  background-color: #5ba1fb;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  width: 75px; 
+  padding: 10px;
+  margin: 10px;
+}
