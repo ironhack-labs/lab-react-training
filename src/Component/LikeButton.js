@@ -11,7 +11,7 @@ class LikeButton extends Component{
       
         };
     render(){
-        console.log(this.addLike)
+      //  console.log(this.addLike)
         return(            
          <button onClick={this.addLike}>{this.state.likes} Like</button>
         )

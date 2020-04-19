@@ -34,7 +34,7 @@ class CreditCard extends Component{
         return(
             <div className='credit-card' style={colorStyle} >
                 <div >
-                <img className='img-cc' src={this.cardType(type)}/>
+                <img className='img-cc' src={this.cardType(type)}alt=''/>
                 </div>
                 <div>
                 <p> **** **** **** {this.cardNumber(number)}</p>
