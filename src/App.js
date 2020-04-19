@@ -9,6 +9,7 @@ import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import Dice from './components/Dice/Dice';
+<<<<<<< HEAD
 import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
 import FaceBook from './components/Facebook/Facebook';
@@ -16,6 +17,10 @@ import SignupPage from './components/SignupPage/SignupPage';
 import './App.css';
 import './components//IdCard/IdCard.css';
 import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
+=======
+import './App.css';
+import './components//IdCard/IdCard.css';
+>>>>>>> 162a313c2fb2da69a98af0b11a7fee2ddf36461d
 
 class App extends Component {
   render() {
