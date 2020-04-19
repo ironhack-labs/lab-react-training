@@ -1,0 +1,17 @@
+.NumbersTable {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.NumbersTable-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    height: 50px;
+    width: 50px;
+}
+
+.NumbersTable-div-even {
+    background-color: red;
+}
