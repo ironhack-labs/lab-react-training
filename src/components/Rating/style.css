@@ -1,0 +1,38 @@
+.shield__container{
+  background-color: #000;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.container__star,
+.container__star::before,
+.container__star::after{
+    width: 0;
+    border-color: transparent transparent #fff transparent;
+    border-width: 0 2rem 1.5rem 2rem;
+    border-style: solid;
+    position: absolute;
+    transform: rotate(180deg);
+    margin-top: 1.5rem;
+    margin-left: 0.25rem;    
+}
+
+.container__star::before{
+    content: '';
+    margin-top: -0.25rem;
+      margin-left: -2.3rem;
+    transform: rotate(70deg);
+}
+
+.container__star::after{
+    content: '';
+    margin-top: -0.45rem;
+      margin-left: -2.40rem;
+    transform: rotate(-70deg);
+}
+
+.red,
+.red::before,
+.red::after {
+    border-color: transparent transparent red transparent !important;
+}

@@ -5,7 +5,6 @@ class Random extends Component {
 
     randomNumber(n1, n2) {
       const num = Math.floor(Math.random() * (n2.max - n1.min + 1)) + n1.min;
-      console.log(n2);
       return num;  
     
     }

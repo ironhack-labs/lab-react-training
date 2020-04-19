@@ -1,0 +1,20 @@
+.card{
+    width: 20%;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.type {
+    float: right;
+}
+
+.number {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.expires{
+    margin-right: 30px;
+}
