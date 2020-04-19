@@ -25,7 +25,7 @@ class LikeButton extends Component {
         const { counter, styleColor } = this.state;
 
         return (
-            <button style={styleColor} onClick={this.incrementLike}>{counter} Likes</button>
+            <button className='LikeButton' style={styleColor} onClick={this.incrementLike}>{counter} Likes</button>
         );
     }
 }
