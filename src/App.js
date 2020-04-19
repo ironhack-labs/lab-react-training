@@ -8,7 +8,9 @@ import Rating from './Component/Rating';
 import DriverCard from './Component/DriverCard';
 import LikeButton from './Component/LikeButton';
 import ClickablePicture from './Component/ClickablePicture';
-import Dice from './Component/Dice'
+import Dice from './Component/Dice';
+import Carousel from './Component/Carousel';
+
 
 class App extends Component {
   render() {
@@ -102,7 +104,14 @@ class App extends Component {
       
       <Dice />
       
-      
+      <Carousel
+    imgs={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+    ]}
+/>
       </div>
     );
   }
