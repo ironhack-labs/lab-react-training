@@ -6,10 +6,7 @@ export default class DriverCard extends Component {
     state = {
         likes: 0,
         color: ['purple','blue','green','yellow','orange','red'],
-    }
-
-    getColor = () => {
-        return this.state.color[this.getRandomNum(this.state.color.length)];
+        style: ''
     }
 
     getRandomNum(max) {
@@ -18,22 +15,17 @@ export default class DriverCard extends Component {
 
     handleClick = () => {
         this.setState({
-            likes: this.state.likes + 1
-        })
-        return this.state.likes
+            likes: this.state.likes + 1,
+            style: this.state.color[this.getRandomNum(this.state.color.length)]
+        });
     }
   
   render() {
-    const { likes } = this.state;
+    const { likes, style } = this.state;
     return (
       <button onClick={this.handleClick}
-        style={{backgroundColor:`${this.getColor()}`}}
+        style={{backgroundColor:`${style}`}}
       > {likes}  Likes </button>
     );
   }
 }
-
-
-
-
-  //['purple','blue','green','yellow','orange','red']
