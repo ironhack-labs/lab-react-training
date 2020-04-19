@@ -14,6 +14,7 @@ import NumbersTable from './components/numberstable/NumbersTable';
 import LikeButton from './components/likebutton/LikeButton';
 import FaceBook from './components/facebook/FaceBook';
 import Signup from './components/signup/Signup';
+import RgbColorPicker from './components/rgbcolorpicker/RgbColorPicker';
 
 class App extends Component {
   render() {
@@ -118,6 +119,8 @@ class App extends Component {
         <FaceBook />
         <h2>Signup</h2>
         <Signup />
+        <h2>RgbColorPicker</h2>
+        <RgbColorPicker />
       </div>
     );
   }
