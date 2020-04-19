@@ -18,11 +18,11 @@ h1 {
   padding: 5px;
 }
 
-.person-info {
+.id-card .person-info {
  padding: 5px;
 }
 
-.portrait {
+.id-card .portrait {
   align-self: center; 
 }
 
@@ -142,4 +142,29 @@ h1 {
   height: 100px;
   border: 2px solid black;
   font-size: 30px;
+}
+
+.facebook-card {
+  display: flex;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.facebook-card .person-info {
+ padding: 5px;
+ font-size: 20px;
+}
+
+.facebook-card .portrait {
+  width: 150px;
+  align-self: center; 
+}
+
+.facebook-card .field-name {
+  font-weight: 700;
+}
+
+.facebook-card p {
+  padding: 1px 0;
 }
