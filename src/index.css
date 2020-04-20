@@ -35,3 +35,30 @@ code {
   padding: 10px;
   font-size: 17px;
 }
+
+.container-cards{
+  display: flex;
+ 
+
+}
+
+.type-img{
+  width: 50px;
+  margin-left: 250px;
+
+}
+.credit-card{
+  height: 100px;
+  width: 300px;
+  border-radius: 20%;
+  line-height: 5px;
+}
+.data-card{
+  margin-top: 40px;
+  font-size: 15px;
+}
+.number-card{
+  font-size: 25px;
+  margin-left: 15px
+
+}
