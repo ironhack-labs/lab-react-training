@@ -1,4 +1,4 @@
-// components/ValidEmail.js
+// components/SignupPage/ValidEmail.js
 
 import React from 'react';
 

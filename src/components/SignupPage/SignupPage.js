@@ -1,4 +1,4 @@
-// components/SignupPage.js
+// components/SignupPage/SignupPage.js
 
 import React, { Component } from 'react';
 import zxcvbn from 'zxcvbn';

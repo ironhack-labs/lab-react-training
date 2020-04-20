@@ -1,8 +1,8 @@
-// components/Facebook.js
+// components/Facebook/Facebook.js
 
 import React, { Component } from 'react';
 import FacebookCard from './FacebookCard';
-import profiles from '../data/berlin.json';
+import profiles from '../../data/berlin.json';
 
 export default class Facebook extends Component {
   state = { selected: 'All' };

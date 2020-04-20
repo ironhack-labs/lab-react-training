@@ -187,3 +187,27 @@ h1 {
 .facebook-card p {
   padding: 1px 0;
 }
+
+.single-color-picker {
+  display: flex;
+  align-items: center;
+}
+
+.single-color-picker .color-box {
+  width: 80px;
+  height: 80px;
+  border: 5px solid black;
+  margin: 5px;
+}
+
+.single-color-picker .form-group {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.single-color-picker label {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px;
+}

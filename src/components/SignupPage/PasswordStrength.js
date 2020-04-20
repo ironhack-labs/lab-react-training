@@ -1,4 +1,4 @@
-// components/PasswordStrength.js
+// components/SignupPage/PasswordStrength.js
 
 import React from 'react';
 

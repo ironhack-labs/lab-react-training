@@ -11,8 +11,9 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
-import Facebook from './components/Facebook';
-import SignupPage from './components/SignupPage';
+import Facebook from './components/Facebook/Facebook';
+import SignupPage from './components/SignupPage/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 import './App.css';
 
 class App extends Component {
@@ -108,34 +109,37 @@ class App extends Component {
             licensePlate: "BE33ER"
           }} />
   
-          <h1>Like Button</h1>
-          <LikeButton />
-          <LikeButton />
+        <h1>Like Button</h1>
+        <LikeButton />
+        <LikeButton />
 
-          <h1>Clickable Picture</h1>
-          <ClickablePicture img='/img/grumpy-cat.jpg' imgClicked='/img/grumpy-cat-glasses.jpg' />
+        <h1>Clickable Picture</h1>
+        <ClickablePicture img='/img/grumpy-cat.jpg' imgClicked='/img/grumpy-cat-glasses.jpg' />
 
-          <h1>Dice</h1>
-          <Dice />
+        <h1>Dice</h1>
+        <Dice />
 
-          <h1>Carousel</h1>
-          <Carousel
-            imgs={[
-              'https://randomuser.me/api/portraits/women/1.jpg',
-              'https://randomuser.me/api/portraits/men/1.jpg',
-              'https://randomuser.me/api/portraits/women/2.jpg',
-              'https://randomuser.me/api/portraits/men/2.jpg'
-            ]}
-          />
+        <h1>Carousel</h1>
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
 
-          <h1>Numbers Table</h1>
-          <NumbersTable limit={12} />
+        <h1>Numbers Table</h1>
+        <NumbersTable limit={12} />
 
-          <h1>Facebook</h1>
-          <Facebook />
+        <h1>Facebook</h1>
+        <Facebook />
 
-          <h1>Signup Page</h1>
-          <SignupPage />
+        <h1>Signup Page</h1>
+        <SignupPage />
+
+        <h1>RGB Color Picker</h1>
+        <RGBColorPicker />
       </div>
     );
   }

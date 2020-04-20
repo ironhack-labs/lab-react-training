@@ -1,4 +1,4 @@
-// components/FacebookCard.js
+// components/Facebook/FacebookCard.js
 
 import React from 'react';
 

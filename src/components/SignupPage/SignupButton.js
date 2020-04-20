@@ -1,3 +1,5 @@
+// components/SignupPage/SignupButton.js
+
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
