@@ -23,7 +23,7 @@ class RGBColorPicker extends Component {
       <SingleColorPicker color='g' value={g} onChange={this.boxOnChange}/>
       <SingleColorPicker color='b' value={b} onChange={this.boxOnChange}/>
       <div className="box-result-container">
-        <div style={{'background-color': `rgb(${r},${g},${b})`}} className='box-singlecolor'></div> <p>rgb({r},{g},{b})</p>
+        <div style={{'backgroundColor': `rgb(${r},${g},${b})`}} className='box-singlecolor'></div> <p>rgb({r},{g},{b})</p>
       </div>
       </div>
     )

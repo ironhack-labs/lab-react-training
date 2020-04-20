@@ -34,7 +34,7 @@ class CreditCard extends Component {
   render () {
     const { type, number, expirationMonth, expirationYear, bank, owner, bgColor, color } = this.props;
     return (
-      <div className="creditcard-box" style={{'background-color': `${bgColor}`, 'color': `${color}`}}>
+      <div className="creditcard-box" style={{'backgroundColor': `${bgColor}`, 'color': `${color}`}}>
         <img className="creditcard-img" src={this.cardType(type)} alt=""/>
         <p className="creditcard-num">{this.cardNumber(number)}</p>
         <p>Expires {this.monthExpire(expirationMonth)}/{this.yearExpire(expirationYear)} {bank}</p>

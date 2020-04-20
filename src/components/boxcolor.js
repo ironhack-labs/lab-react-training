@@ -16,12 +16,12 @@ class BoxColor extends Component {
     return (
       <div style={
         {
-        'background-color': [`rgb(${r}, ${g}, ${b})`], 
+        'backgroundColor': [`rgb(${r}, ${g}, ${b})`], 
         'border': '1px solid black',
         'padding': '0 0.5rem',
         'margin': '0 20rem 2rem',
-        'font-size': '2rem',
-        'text-align': 'center',
+        'fontSize': '2rem',
+        'textAlign': 'center',
         }
       }>
         <p>rgb({r}, {g}, {b})</p>
