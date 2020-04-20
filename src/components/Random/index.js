@@ -13,7 +13,7 @@ class Random extends Component {
         const { min, max} = this.props;
         
         return ( 
-            <div class="box">
+            <div className="box">
                 <p> Random value between {min} and {max} => 
                 {this.randomNumber({min},{max})}</p>
 

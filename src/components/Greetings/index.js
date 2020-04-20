@@ -18,7 +18,7 @@ class Greetings extends Component {
         const { lang, children} = this.props;
         
         return ( 
-            <div class="box">
+            <div className="box">
                 <p> 
                     {this.convertLang({lang})} 
                     &nbsp;

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Rating from "../Rating"
 import "./style.css";
 
 export default class DriverCard extends Component {

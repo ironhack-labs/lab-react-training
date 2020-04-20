@@ -9,6 +9,9 @@ import Iteration7 from './components/Iterations/iteration7';
 import Iteration8 from './components/Iterations/iteration8';
 import Iteration9 from './components/Iterations/iteration9';
 import Iteration10 from './components/Iterations/iteration10';
+import Iteration11 from './components/Iterations/iteration11';
+import Iteration12 from './components/Iterations/iteration12';
+import Iteration13y14 from './components/Iterations/iteration13';
 
 class App extends Component {
   render() {
@@ -24,6 +27,9 @@ class App extends Component {
         <Iteration8 />
         <Iteration9 />
         <Iteration10 />
+        <Iteration11 /> 
+        <Iteration12 /> 
+        <Iteration13y14 /> 
       </div>
     );
   }

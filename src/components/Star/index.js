@@ -10,8 +10,8 @@ export default class Star extends Component {
   render() {
       const {className,value} = this.props;
     return (
-     <div class="shield__container">
-        <div class={`container__star ${this.rating(className,value) ? "red" : ""}`} ></div>
+     <div className="shield__container">
+        <div className={`container__star ${this.rating(className,value) ? "red" : ""}`} ></div>
       </div>
     );
   }

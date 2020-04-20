@@ -5,7 +5,7 @@ class NameValue extends Component {
     render(){
         const { text, value } = this.props;
         return (
-          <div class="flex">
+          <div className="flex">
               <p> {text} </p> &nbsp;
               <p> {value}</p>
           </div>  
