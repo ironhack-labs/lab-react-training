@@ -1,0 +1,21 @@
+.FaceBook {
+    padding: 0;
+}
+
+.FaceBook-profile {
+    border: 2px solid #000;
+    list-style-type: none;
+    margin: 20px;
+    display: flex;
+    font-size: 2rem;
+}
+
+.FaceBook-profile > img {
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
+
+.FaceBook-profile-data {
+    margin-top: 10px;
+}
