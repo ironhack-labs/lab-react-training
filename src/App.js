@@ -6,6 +6,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 import './App.css';
 
 class App extends Component {
@@ -91,7 +92,7 @@ class App extends Component {
           </div>
 
           <h1 className="titles">Driver Card</h1>
-          <div className="">
+          <div>
             <DriverCard
               name="Travis Kalanick"
               rating={4.2}
@@ -109,6 +110,13 @@ class App extends Component {
                 licensePlate: "BE33ER"
               }} />
           </div>
+
+          <h1 className="titles">Like Button</h1>
+          <div>
+            <LikeButton />
+            <LikeButton />
+          </div>
+          
 
 
       </div>

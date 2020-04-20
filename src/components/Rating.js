@@ -31,7 +31,7 @@ class Rating extends Component {
   render() {
     const { children } = this.props;
     return (
-      <div>
+      <div className="rating-container">
         { this.showStars(children) }
       </div>
     )
