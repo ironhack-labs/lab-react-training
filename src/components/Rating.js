@@ -32,7 +32,7 @@ class Rating extends Component {
     const { children } = this.props;
     return (
       <div>
-        {this.showStars(children)}
+        { this.showStars(children) }
       </div>
     )
   }

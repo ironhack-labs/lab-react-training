@@ -131,3 +131,29 @@ body {
 .owner {
   margin: 0 0 2rem 0;
 }
+
+/******************
+*** DRIVER CARD ***
+******************/
+
+.driver-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  background-color: #455EB4;
+  width: 55rem;
+  border-radius: 1rem;
+}
+
+.drivercard-img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 10rem;
+}
+
+.driver-info-box {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  width: 20rem;
+}
