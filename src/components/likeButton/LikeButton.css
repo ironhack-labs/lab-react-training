@@ -1,0 +1,25 @@
+.btn-likes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 0 5% 0;
+}
+
+.btn-like {
+  margin: 0 2%;
+}
+
+.like-button{
+  /* background-color: #4CAF50; Green */
+  border: none;
+  color: white;
+  padding: 12px 38px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.like-button > style {
+  background-color: rgb(78, 76, 175); /* Green */
+
+}

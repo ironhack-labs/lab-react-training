@@ -7,6 +7,7 @@ import CreditCard from './components/creditCard/CreditCard.js'
 import './components/creditCard/CreditCard.css'
 import Rating from './components/rating/Rating.js';
 import DriverCard from './components/driverCard/DriverCard.js';
+import LikeButton from './components/likeButton/LikeButton.js';
 
 class App extends Component {
   render() {
@@ -97,6 +98,12 @@ class App extends Component {
               model: "Audi A3",
               licensePlate: "BE33ER"
             }} />
+
+            <div className="btn-likes">
+              <LikeButton />
+              <LikeButton />
+            </div>
+
 
         </div>
 

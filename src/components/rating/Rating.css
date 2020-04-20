@@ -2,6 +2,8 @@
   font-size: 45px;
   display: flex;
   flex-direction: row;
+  width: fit-content;
+  margin-left: 3%;
 }
 
 .rating > span:before {
