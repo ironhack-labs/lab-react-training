@@ -2,8 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-size: 10px;
+}
+
+.App {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .titles {
@@ -84,27 +88,34 @@ body {
 *** CREDIT CARD ***
 ******************/
 
+.credit-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .credit-card-container {
  display: flex;
  flex-direction: column;
  border-radius: 0.8rem;
- margin-bottom: 2rem;
+ margin: 1rem 1.5rem 2rem 1rem;
+ width: 27rem;
 }
 
 .type-of-card {
-  width: 5rem;
-  margin: 2rem 2rem 0 25rem;
+  width: 4rem;
+  margin: 2rem 2rem 0 19rem;
 }
 
 .expiration-date {
   display: flex;
   justify-content: center;
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   margin: 2rem 0;
 }
 
 .information-container {
- font-size: 1.2rem;
+ font-size: 1rem;
   margin-left: 3rem;
 }
 
