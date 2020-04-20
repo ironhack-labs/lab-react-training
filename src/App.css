@@ -168,3 +168,40 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+.rgb-container {
+  margin: 2rem 0 5rem 5rem;
+}
+
+.singlecolor-container {
+  display: flex;
+}
+
+.box-singlecolor {
+  border: 2px solid black;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.box-red {
+  background-color: red;
+}
+.box-green {
+  background-color: green;
+}
+.box-black {
+  background-color: black;
+}
+
+.input-singlecolor {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  height: 2rem;
+  width: 5rem;
+}
+
+.box-result-container {
+  display: flex;
+}
