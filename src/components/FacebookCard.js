@@ -3,7 +3,7 @@
 import React from 'react';
 
 const FacebookCard = (props) => {
-  const { firstName, lastName, country, img, isStudent } = props;
+  const { firstName, lastName, country, isStudent, img, divStyle } = props;
   const person = [
     { 'First name': firstName },
     { 'Last name': lastName },
@@ -11,7 +11,7 @@ const FacebookCard = (props) => {
     { 'Type': isStudent ? 'Student' : 'Teacher' },
   ];
   return (
-    <div className='facebook-card'>
+    <div className='facebook-card' style={divStyle}>
       <img className='portrait' src={img} alt='portrait' />
       <div className='person-info'>
         {person.map((field, index) => {
@@ -28,10 +28,10 @@ const FacebookCard = (props) => {
 const FieldNameAndValue = (props) => {
   const { fieldName, fieldValue } = props;
   return (
-    <p>
+    <div>
       <span className='field-name'>{fieldName}</span>:&nbsp;
       <span className='field-value'>{fieldValue}</span>
-    </p>
+    </div>
   )
 }
 

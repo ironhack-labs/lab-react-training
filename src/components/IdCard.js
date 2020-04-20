@@ -30,10 +30,10 @@ const IdCard = (props) => {
 const FieldNameAndValue = (props) => {
   const { fieldName, fieldValue } = props;
   return (
-    <p>
+    <div>
       <span className='field-name'>{fieldName}</span>:&nbsp;
       <span className='field-value'>{fieldValue}</span>
-    </p>
+    </div>
   )
 }
 

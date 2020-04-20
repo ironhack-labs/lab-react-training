@@ -12,6 +12,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
 import './App.css';
 
 class App extends Component {
@@ -132,6 +133,9 @@ class App extends Component {
 
           <h1>Facebook</h1>
           <Facebook />
+
+          <h1>Signup Page</h1>
+          <SignupPage />
       </div>
     );
   }

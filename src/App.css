@@ -19,7 +19,8 @@ h1 {
 }
 
 .id-card .person-info {
- padding: 5px;
+  margin: 0;
+ padding: 0 5px;
 }
 
 .id-card .portrait {
@@ -142,6 +143,24 @@ h1 {
   height: 100px;
   border: 2px solid black;
   font-size: 30px;
+}
+
+.Facebook button {
+  margin: 4px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border: 1px solid lightgray;
+  background-color: transparent;
+}
+
+.Facebook button:hover {
+  color: black;
+  background-color: #a3d2e2;
+}
+
+.Facebook button:active {
+  color: white;
+  background-color: #a3d2e2;
 }
 
 .facebook-card {
