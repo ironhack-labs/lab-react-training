@@ -10,6 +10,7 @@ const FacebookCard = (props) => {
     { 'Country': country },
     { 'Type': isStudent ? 'Student' : 'Teacher' },
   ];
+
   return (
     <div className='facebook-card' style={divStyle}>
       <img className='portrait' src={img} alt='portrait' />
@@ -18,7 +19,8 @@ const FacebookCard = (props) => {
           return <FieldNameAndValue
             key={index}
             fieldName={Object.keys(field)}
-            fieldValue={Object.values(field)} />
+            fieldValue={Object.values(field)}
+          />
         })}
       </div>
     </div>
