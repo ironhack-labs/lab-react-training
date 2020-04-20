@@ -1,0 +1,23 @@
+.SingleColorPicker {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.SingleColorPicker-square {
+    height: 50px;
+    width: 50px;
+    border: 3px solid #000;
+    margin: 10px;
+}
+
+.SingleColorPicker-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SingleColorPicker-input {
+    height: 30px;
+    width: 100px;
+    font-size: 1.5rem;
+}
