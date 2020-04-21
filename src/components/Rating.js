@@ -9,16 +9,16 @@ class Rating extends Component {
             if(numRounded == 0) {
                 star = <p>☆☆☆☆☆</p>
             }
-            else if (numRounded == 1){
+            else if (numRounded === 1){
                 star = <p>★☆☆☆☆</p>
             }
-            else if (numRounded == 2){
+            else if (numRounded === 2){
                 star = <p>★★☆☆☆</p>
             }
-            else if (numRounded == 3){
+            else if (numRounded === 3){
                 star = <p>★★★☆☆</p>
             }
-            else if (numRounded == 4){
+            else if (numRounded === 4){
                 star = <p>★★★★☆</p>
             }
             else{

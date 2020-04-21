@@ -60,5 +60,36 @@ code {
 .number-card{
   font-size: 25px;
   margin-left: 15px
+}
 
+.drivercard-img  {
+  width: 30px;
+  border-radius: 70%;
+}
+.container-drivercard{
+  display: flex;
+  justify-content: center;
+  background-color: #455eb5;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+.container-buttonlike{
+  margin-left: 300px;
+}
+.btn-likebutton{
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.clickablepicture-img{
+  width: 200px;
+  margin-left: 20px;
+}
+.btn-carousel{
+  display: flex;
+  justify-content: center;
+}
+.img-carousel{
+margin-left: 395px;
 }
