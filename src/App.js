@@ -9,6 +9,7 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
+import Carousel from './components/Carousel';
 import './App.css';
 
 class App extends Component {
@@ -127,6 +128,18 @@ class App extends Component {
           <h1 className="titles">Dice</h1>
           <div>
             <Dice />
+          </div>
+          
+          <h1 className="titles">Carousel</h1>
+          <div>
+            <Carousel
+              imgs={[
+                'https://randomuser.me/api/portraits/women/1.jpg',
+                'https://randomuser.me/api/portraits/men/1.jpg',
+                'https://randomuser.me/api/portraits/women/2.jpg',
+                'https://randomuser.me/api/portraits/men/2.jpg'
+              ]}
+            />
           </div>
 
 

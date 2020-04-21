@@ -193,3 +193,34 @@ body {
 .dice-image {
   width: 15rem;
 }
+
+/***************
+*** CAROUSEL ***
+***************/
+
+.carousel-image {
+  width: 15rem;
+}
+
+.box-buttons-carousel {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.carousel-button {
+  font-size: 1.4rem;
+  width: 5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: salmon;
+}
+
+.carousel-button:focus {
+  outline: none;
+}
+
+.carousel-button:active {
+  transform: translateY(3px);
+  box-shadow: 1px 1px 2px 1px sandybrown;
+}
