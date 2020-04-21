@@ -20,12 +20,6 @@ class Dice extends Component {
     }, 1000);
   }
 
-  componentDidUpdate(){
-    setTimeout(function(){
-      console.log("Carta cambiada");
-    }, 1000);
-  }
-
   render(){
     const {image, newDice} = this.state;
     let showDice = <img className="dice" src={image} alt="First time" onClick={this.changeDice} />
