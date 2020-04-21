@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+//IT.4
 class BoxColor extends Component {
 
     componentToHex(c) {
