@@ -1,30 +1,40 @@
 import React from "react";
 import profiles from '../../data/berlin.json';
 import BoxFaceBook from '../BoxFaceBook';
+import ButtonCountry from '../ButtonCountry';
 import "./style.css";
 
+const state = {
+  country: ''
+}
+
+const globalStateContext = React.createContext(state);
+
+const selectCuntry = (countryValue) => {
+  React.useContext(globalStateContext.country = countryValue.children[1]);
+}
+
 const FaceBook = () => {
-  console.log(profiles)
 
-
-    console.log(profiles[1].firstName)
     let buttons = [];
+    const countrys = [];
+    const myObj = [];
 
-    for(let a = 0; a <= profiles.length; a++){
-      //console.log(profiles[a].firstName.toString())
-      buttons.push(profiles[a]);
-      console.log(profiles[0].firstName);
-     // buttons.push(profiles[pos].firstName)
-    }
+    buttons = profiles.map((profile, index) => {
+              return profile.country;
+    })
 
-    console.log(buttons)
-
+    buttons.forEach(el => !(el in myObj) && (myObj[el] = true) && countrys.push(el))
+    const { selected } = React.useContext(globalStateContext);
     return (
         <div>
+            {countrys.map((country, index)=>{
+              return <ButtonCountry kee={index} selectCuntry={selectCuntry}> {country} </ButtonCountry>
+            })}
             {profiles.map((profile,index) => {
               return (
                 <div key={index}>
-                    <BoxFaceBook fname={profile.firstName} lname={profile.lastName} country={profile.country}
+                    <BoxFaceBook selected={selected} fname={profile.firstName} lname={profile.lastName} country={profile.country}
                     type={profile.isStudent} img={profile.img}/>
                 </div> 
               )
