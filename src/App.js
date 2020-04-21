@@ -8,6 +8,11 @@ import './components/creditCard/CreditCard.css'
 import Rating from './components/rating/Rating.js';
 import DriverCard from './components/driverCard/DriverCard.js';
 import LikeButton from './components/likeButton/LikeButton.js';
+import ClickablePicture from './components/clickablePicture/ClickablePicture.js';
+import Dice from './components/dice/Dice.js';
+import Carousel from './components/carousel/Carousel.js';
+import NumbersTable from './components/numbersTable/NumbersTable.js';
+import Facebook from './components/facebook/FaceBook.js';
 
 class App extends Component {
   render() {
@@ -103,8 +108,23 @@ class App extends Component {
               <LikeButton />
               <LikeButton />
             </div>
-
-
+            <div className="img-clickables">
+              <ClickablePicture originalImg='/img/persons/maxence.png' updateImg='/img/persons/maxence-glasses.png' />
+              <Dice />
+              <Carousel
+                imgs={[
+                  'https://randomuser.me/api/portraits/women/1.jpg',
+                  'https://randomuser.me/api/portraits/men/1.jpg',
+                  'https://randomuser.me/api/portraits/women/2.jpg',
+                  'https://randomuser.me/api/portraits/men/2.jpg'
+                ]}
+              />
+            </div>
+          <h1>List and keys:</h1>
+              <div>
+              {/* <NumbersTable limit={12} />  No se como plantearlo */}
+              </div>
+              <Facebook />
         </div>
 
 

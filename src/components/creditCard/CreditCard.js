@@ -10,9 +10,9 @@ class CreditCard extends Component {
       return array[index] = '*';
     })
     const hideNumbers = array.join('')
-    console.log(hideNumbers)
+    // console.log(hideNumbers)
     const showNumbers= numbers.join('')
-    console.log(showNumbers)
+    // console.log(showNumbers)
     return (hideNumbers + showNumbers)
   }
 

@@ -1,0 +1,40 @@
+.orderProfiles {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  margin-right:0;
+
+}
+
+.faceBook {
+  border: 1px solid;
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  color: black;
+  width: 100%;
+}
+
+.profile.img {
+  height: 60px;
+}
+
+.user-data{
+
+}
+
+.photo-fb {
+  height: 135px;
+  margin: 10px;
+}
+
+.btn-country{
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-weight:bold;
+	padding:11px 26px;
+	text-decoration:none;
+}

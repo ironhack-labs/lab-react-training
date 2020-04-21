@@ -1,0 +1,15 @@
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.round {
+  height: 35px;
+  border-radius: 30%;
+  margin-bottom: -30px;
+}
+
+.previous {
+  background-color: rgb(236, 147, 13);
+  color: white;
+}

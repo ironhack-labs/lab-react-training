@@ -4,14 +4,29 @@ import '../random/Random.css'
 // max: A number
 
 class Random extends Component {
-  avg(props){
-    const result = props.min+props.max
-    return result
+  constructor(props){
+    super(props);
+    this.state = {
+      randomNumber : 0
+    }
   }
-  render(){
+
+  componentDidMount(){
     const {min, max} = this.props;
+    const number = Math.floor(Math.random() * max) - min;
+    this.setState({
+      randomNumber : number
+    })
+  }
+
+  render(){
+    const {randomNumber} = this.state;
+    const {min, max} = this.props;
+
     return (
-      <div className="Random">Random value between {min} and {max} => {this.avg(this.props)} </div>
+      <div className="Random">
+        Random value between {min} and {max} => {randomNumber} 
+      </div>
     )
   }
 }

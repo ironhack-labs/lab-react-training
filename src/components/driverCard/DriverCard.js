@@ -14,7 +14,7 @@ class DriverCard extends Component {
           </div>
           <div className="info-driver-card">
             <p><strong>{name}</strong></p>
-            <p><Rating stars={rating} className="rating-driver-card" /></p>
+            <Rating stars={rating} className="rating-driver-card" />
             <p className="car-info">{car.model} - {car.licensePlate}</p>
           </div>    
       </div>
