@@ -15,5 +15,45 @@
     
   }
 
+.credit-card{
+  border-radius: 8px;
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  margin: 0px 450px 10px;
 
+}
+
+.number{
+  display: flex;
+  justify-content: center;
+}
+
+.type{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rating{
+  margin: 0px 450px 10px;
+  font-size: 40px;
+}
+
+.driver-card{
+  border-radius: 8px;
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  margin: 0px 450px 10px;
+  display: flex;
+  background-color: purple;
+
+
+
+}
+
+.driver-card img{
+  width: 100px;
+  height: 100px;
+}
 
