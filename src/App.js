@@ -10,8 +10,8 @@ import LikeButton from './Component/LikeButton';
 import ClickablePicture from './Component/ClickablePicture';
 import Dice from './Component/Dice';
 import Carousel from './Component/Carousel';
-
-
+import NumbersTable from './Component/NumbersTable';
+import FaceBook from './Component/FaceBook';
 class App extends Component {
   render() {
     return (
@@ -112,6 +112,15 @@ class App extends Component {
     'https://randomuser.me/api/portraits/men/2.jpg'
     ]}
 />
+<FaceBook />
+
+
+
+
+
+
+
+
       </div>
     );
   }

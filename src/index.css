@@ -86,3 +86,16 @@ margin-right: 4rem;
   left: 0px;
  
 }
+.facebook{
+  display: flex;
+ flex-direction: row ;
+ padding: 0.7rem;
+ border: 1px solid black;
+ margin: 45px;
+}
+.info{
+  padding-left: 5rem;
+}
+.img{
+  height: 13rem;
+}
