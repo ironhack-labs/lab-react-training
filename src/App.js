@@ -7,6 +7,7 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 import './App.css';
 
 class App extends Component {
@@ -115,6 +116,11 @@ class App extends Component {
           <div>
             <LikeButton />
             <LikeButton />
+          </div>
+
+          <h1 className="titles">Clickable Picture</h1>
+          <div>
+            <ClickablePicture withoutGlassesImage='/img/persons/maxence.png' withGlassesImage='/img/persons/maxence-glasses.png' />
           </div>
           
 
