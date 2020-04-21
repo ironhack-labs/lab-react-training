@@ -16,14 +16,46 @@ body {
   width: 90%;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  color: white
+}
  /* ID CARD STYLES */
 
 ul {list-style-type:none} 
   .child  {
     margin:0;
     padding: 0 5px ;
+    text-align: center;
   }
 
+
+  
   /* ID CARD STYLES END*/
+
+  .credit {
+    width: 300px;
+    height: 120px;
+    border: solid black 2px;
+
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+.credit img {
+  width: 50px;
+  height: auto;
+  align-self: flex-end
+}
+
+.credit h4 {
+  font-size: 30px;
+  padding: 0;
+  margin: 10px 0;
+
+}
 
   /* ID CARD STYLES END*/
