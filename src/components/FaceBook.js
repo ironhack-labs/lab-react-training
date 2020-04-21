@@ -5,9 +5,23 @@ import profiles from '../data/berlin.json';
 
 class Facebook extends Component {
 
-render() {
-  return (
+  createCountryButtonList = () => {
+    let countryButtonList = [];
+      profiles.map(profileInfo => {
+        return countryButtonList.push(profileInfo.country);
+      })
+      console.log(countryButtonList)
+      const newCountryButtonList = [ ...new Set(profiles.map((profileInfo) => {
+        return profileInfo.country
+      }))]
+      console.log(newCountryButtonList)
+      return newCountryButtonList.map((countries) => <button>{countries}</button>)
+  }
+
+  render() {
+    return (
       <div>
+        {this.createCountryButtonList()}
         { profiles.map((profileInfo) => {
           return (
             <div className="facebook-profile-box">
@@ -25,7 +39,7 @@ render() {
           )
         })}
       </div>
-  );
+    );
   }
 };
 
