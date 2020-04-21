@@ -13,7 +13,7 @@ import Dice from './Components/Dice/Dice.js'
 import Carousel from './Components/Carousel/Carousel.js'
 import NumbersTable from './Components/NumbersTable/NumbersTable.js'
 import Facebook from './Components/Facebook/Facebook';
-
+import Signup from './Components/Signup/Signup';
 
 class App extends Component {
   render() {
@@ -64,6 +64,9 @@ class App extends Component {
        <NumbersTable limit={12}/>
        <h1>Facebook</h1>
        <Facebook />
+       <h1>Signup</h1>
+       <Signup />
+
 
       </div>
     );

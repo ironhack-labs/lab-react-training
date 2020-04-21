@@ -9,7 +9,6 @@ class NumbersTable extends Component {
   };
 
   render() {
-
     let { limit } = this.props, tableArr = [];
     for (let i = 1; i <= limit; i++) {
       tableArr[i] = i;

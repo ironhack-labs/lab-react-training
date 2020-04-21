@@ -23,5 +23,8 @@ body{
     margin: 5px;
     padding: 5px;
     border:solid 1px grey;
+}
 
+.blue {
+    background-color: blue;
 }
