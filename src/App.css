@@ -185,3 +185,11 @@ body {
 .like-button:focus {
   outline: none;
 }
+
+/***********
+*** DICE ***
+***********/
+
+.dice-image {
+  width: 15rem;
+}

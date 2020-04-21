@@ -13,7 +13,7 @@ class LikeButton extends Component {
   counter = () => {
     this.setState({
       count: this.state.count +1,
-      idColor: Math.floor(Math.random() * 5) + 1
+      idColor: Math.floor(Math.random() * 5)
     })
   }
 
