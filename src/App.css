@@ -251,3 +251,28 @@ body {
   margin: 0;
   border: 2px solid black;
 }
+
+/***************
+*** FACEBOOK ***
+***************/
+
+.facebook-profile-box {
+  display: flex;
+  justify-content: flex-start;
+  width: 60rem;
+  border: 2px solid black;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.facebook-profile-image {
+  width: 17rem;
+  height: 17rem;
+}
+
+.facebook-profile-info-box {
+  font-size: 1.9rem;
+}
+.facebook-profile-info-box > p:first-child {
+  margin-top: 0;
+}
