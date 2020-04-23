@@ -35,6 +35,7 @@ class FaceBook extends Component {
 
     return(
       <div>
+        {/* <CountryFilter countries={countries} func={this.filterBycountry} /> he intentado hacer esto en otro componente pero no sabía pasar el resultado*/}
         {countries.map((country)=>{
           return <button key={country} className="btn-country" onClick={()=>this.filterBycountry(country)}>{country}</button>
           })

@@ -1,44 +1,24 @@
 import React, {Component} from 'react'
 import '../facebook/FaceBook.css'
-import profiles from '../../data/berlin.json';
-import CardProfile from './CardProfile';
 
 class CountryFilter extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      countries : [],
-    }
+
+  state = {
+      filterCountry: ""
   }
 
-  componentDidMount(){
-    let newCountry = []
-    profiles.map((profile) => {
-      return newCountry.includes(profile.country) ? console.log("Already exist") : newCountry.push(profile.country)  //Como puedo evitar tener que poner una condicion que no se quiero que se cumpla para llegar al else?
-     })
-    this.setState({
-      countries : newCountry,
-    })
-  };
-  
-
   render(){
-    const {countries} = this.state;
+    const {countries, func} = this.props;
+    const countryForFilter = countries.map((country)=>{
+      return <button key={country} className="btn-country" onClick={func(country)}>{country}</button>
+      })
 
     return(
       <div>
-        {countries.map((country)=>{
-          return <button key={country} className="btn-country">{country}</button>
-          })
-        }
 
-        {profiles.map((profile, index) => {
-          return (
-            <div className="orderProfiles" key={profile.firstName}>
-              <CardProfile profile={profile} />
-            </div>
-          )        
-        })}
+        <h2>{countryForFilter}</h2>
+        {/* como retorno esto? sin etiquetas a la función */}
+
       </div>
     )
   }

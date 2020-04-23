@@ -1,8 +1,9 @@
 .orderProfiles {
   display: flex;
+  flex: 0 1 auto;
   flex-direction: row;
   width: 40%;
-  margin-right:0;
+  margin-right: 10px;
 
 }
 

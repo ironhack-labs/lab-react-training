@@ -1,0 +1,26 @@
+.signupPage {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10% 5% 10%;
+}
+
+input {
+  margin: 0 3%;
+}
+
+select {
+  margin: 0 3%;
+  margin-right: 60%;
+}
+
+.btn-form {
+  background-color: greenyellow;
+  border: none;
+  color: white;
+  padding: 12px 38px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 3%;
+
+}
