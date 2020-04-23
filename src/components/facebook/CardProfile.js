@@ -5,11 +5,13 @@ import '../facebook/FaceBook.css'
 class CardProfile extends Component {
 
   render(){
-    const {profile} = this.props;
+    
+    const {profile, style} = this.props;
     let occupation = undefined
     profile.isStudent ? occupation = "Student" : occupation = "Teacher"
+
     return(
-      <div className="faceBook" key={profile.firstName} >
+      <div className="faceBook" key={profile.firstName} style={style} >
         <div className="profile.img">
           <img className="photo-fb" alt="Profile img" src={profile.img} />
         </div>

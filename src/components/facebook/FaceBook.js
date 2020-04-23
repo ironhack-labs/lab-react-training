@@ -10,12 +10,11 @@ class FaceBook extends Component {
     super(props);
     this.state = {
       countries : [],
-      filterIndex : 0
+      filterCountry : 0
     }
   }
 
   componentDidMount(){
-    //se puede llamar desde aqui a otro component?
     let newCountry = []
     profiles.map((profile) => {
       return newCountry.includes(profile.country) ? console.log("Already exist") : newCountry.push(profile.country)  //Como puedo evitar tener que poner una condicion que no se quiero que se cumpla para llegar al else?
@@ -25,36 +24,14 @@ class FaceBook extends Component {
     })
   };
   
-  filterBycountry(country){
-    const {countries} = this.state;
-    console.log(country)
-    console.log(this.state.countries)
-    const filterCountry = [];
-    for(let i=0; i<countries.length;i++){
-      if(countries[i]===country){
-        filterCountry.push(i)
-      }
-    }
-  
-  this.setState({
-    filterIndex: filterCountry
-  })
-  }
-
-  applyStyle(){
-    const style = { 
-      background: `aqua`,
-      border: '1px solid',
-      fontSize: '30px',
-      margin: '20px 30px',
-      textAlign: 'center',
-      padding: '30px',
-   };
-    return style
+  filterBycountry(country){  
+    this.setState({
+      filterCountry: country
+    })
   }
 
   render(){
-    const {countries, filterIndex} = this.state;
+    const {countries, filterCountry} = this.state;
 
     return(
       <div>
@@ -63,14 +40,24 @@ class FaceBook extends Component {
           })
         }
 
-        {profiles.map((profile, index) => {
-          if(filterIndex[index]===index){
-            return (
-            <div style={this.applyStyle} className="orderProfiles" key={profile.firstName}>
-              <CardProfile profile={profile} />
-            </div>
-            )} else {
+        {profiles.map((profile) => {
+          if(filterCountry.length>0){
+            if(profile.country===filterCountry){
               return (
+              <div className="orderProfiles" key={profile.firstName}>
+                <CardProfile profile={profile} style={{backgroundColor: '#A3D2E3'}} />
+              </div>
+              )
+            } else {
+                return (
+                <div className="orderProfiles" key={profile.firstName}>
+                  <CardProfile profile={profile} />
+                </div>
+              )
+            }
+ 
+          } else {
+            return (
               <div className="orderProfiles" key={profile.firstName}>
                 <CardProfile profile={profile} />
               </div>

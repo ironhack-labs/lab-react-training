@@ -10,7 +10,7 @@ class DriverCard extends Component {
     return(
       <div className="driverCard">  
           <div>
-            <img className="photo-driver-card" src={img} />
+            <img className="photo-driver-card" src={img} alt="IMG-Driver-Card" />
           </div>
           <div className="info-driver-card">
             <p><strong>{name}</strong></p>
