@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 100px;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -8,6 +8,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  margin-left: 50px;
+}
 .box{
   margin-left: 10px;
   border: 1px solid #000;
@@ -29,16 +32,12 @@ ul {list-style-type:none}
     padding: 0 5px ;
     text-align: center;
   }
-
-
   
   /* ID CARD STYLES END*/
-
   .credit {
     width: 300px;
     height: 120px;
     border: solid black 2px;
-
     border-radius: 3%;
     display: flex;
     flex-direction: column;
@@ -57,5 +56,19 @@ ul {list-style-type:none}
   margin: 10px 0;
 
 }
-
   /* ID CARD STYLES END*/
+
+   /* BUTTON LIKES*/
+   .likeButton button{
+     background-color: slateblue;
+     color: white;
+     margin: 10px;
+     padding: 10px;
+     border: solid black 2px;
+   }
+
+   .glasses {
+     width: 120px;
+     height: auto;
+   }
+

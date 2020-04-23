@@ -12,11 +12,12 @@ class BoxColor extends Component {
              {
                 VerticalAlign: "center",
                 height: "50px",
+                border: "solid 2px black",
                 backgroundColor: 
                 `rgb(${r}, ${g}, ${b})`
                 
              }
-                 }  > rgb( {r} {g} {b}         )
+                 }  > rgb( {r}, {g}, {b}         )
 
     </div>
     )
