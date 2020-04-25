@@ -1,0 +1,16 @@
+.id-card{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    border: 2px solid red;
+    margin: 5px;
+}
+
+li {
+    list-style-type:none;
+}
+
+.greetings {
+border: 2px solid black;
+margin: 5px;
+}
