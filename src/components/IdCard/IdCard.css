@@ -1,0 +1,19 @@
+.idcard {
+    border: 2px solid black;
+    margin: 0 0 10px 5px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.idcard-props {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.idcard-props p {
+    margin: 0;
+    padding: 0 0 5px 5px;
+}
