@@ -49,7 +49,7 @@ class App extends Component {
 
         <h1>Box Color</h1>
         <div>
-          <BoxColor r={210} g={50} b={0} />
+          <BoxColor r={129} g={201} b={198} />
           <BoxColor r={0} g={180} b={0} />
         </div>
       </div>
