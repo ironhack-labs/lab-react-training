@@ -1,0 +1,21 @@
+.id-card{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+    margin: 5px;
+}
+
+li {
+    list-style-type:none;
+}
+
+.greetings {
+border: 2px solid black;
+margin: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  } 
