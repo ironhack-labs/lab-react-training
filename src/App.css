@@ -1,16 +1,65 @@
-.id-card{
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
-    border: 2px solid red;
-    margin: 5px;
+.App {
+    padding: 10px;
+}
+
+.id-card {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  border: 2px solid red;
+  margin: 5px;
 }
 
 li {
-    list-style-type:none;
+  list-style-type: none;
 }
 
 .greetings {
-border: 2px solid black;
-margin: 5px;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.creditcard-wrapper {
+  width: 350px;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.creditcard-wrapper > img {
+  width: 40px;
+  align-self: flex-end;
+}
+.drivercard-wrapper {
+    background-color: blue; 
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.drivercard-wrapper > img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.like-button {
+    width: 100px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+}
+
+.dice {
+ width: 200px;
+ height: 200px;
 }
