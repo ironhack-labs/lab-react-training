@@ -72,3 +72,30 @@ ul {list-style-type:none}
      height: auto;
    }
 
+.driver {
+  background-color: royalblue;
+  width: 500px;
+  height: 120px;
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color: white
+}
+
+.driver span img {position:relative}
+
+.driver img {
+  width: 80px;
+  height: auto;
+  border-radius: 60%;
+  position: relative;
+  top: 50px;
+  left: 100px
+}
+
+.driveContent {
+  position: relative;
+  left: 200px;
+  bottom: 40px
+}

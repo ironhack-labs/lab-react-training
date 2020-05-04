@@ -7,6 +7,7 @@ import BoxColor from "./components/BoxColor.js"
 import CreditCard from "./components/CreditCard.js"
 import CreditCard2 from "./components/CreditCard2.js"
 import Rating from "./components/Rating.js"
+import DriversCard from "./components/DriverCard"
 import LikeButton from "./components/LikeButton.js"
 import ClickablePicture from "./components/ClickablePicture.js"
 
@@ -93,7 +94,20 @@ class App extends Component {
     {<Rating>5    </Rating>}
 
     <h1>7. DriverCard</h1>
-    Pendiente
+    <DriversCard 
+      name= "Travis Kalanick"
+      rate= "4"
+      car= "Toyota Corolla Altis - CO42DE"
+  
+    />    <br/>
+
+    <DriversCard 
+      name= "Maxence Laurence"
+      rate= "5"
+      car= "Audi A3 - BE33ER"
+    />
+
+
 
     <h1>8. Like Buttons</h1>
     <LikeButton />  
@@ -101,12 +115,27 @@ class App extends Component {
 
     <h1>9. Clickable Picture</h1>  
       <ClickablePicture />
-      Solo esta la primera imagen
+
+    <h1>10. Dice</h1>  
 
 
-      </div>
-    );
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>);}
 }
 
 export default App;

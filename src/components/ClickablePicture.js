@@ -5,34 +5,40 @@ let glasses = require("../img/persons/maxence-glasses.png")
 
 
 
-class ClickablePicture extends Component {
-   
-	render() {
-       
-    return(
+class ClickablePicture extends React.Component {
 
-    <div> 
-        <img onClick
-        alt ="maxence" 
-        src={maxence1} 
-        style={
-            {   height: "150px",
-                width: "auto",
-                border: "solid 2px black",
-                margin: "15px"
-            }}
-
-        
-        />   
-    </div>
-        
-    )
-}}
-    
+    constructor(props) {super(props);
+      this.state = { pic: true    };
+      this.toggleVisibility = this.toggleVisibility.bind(this)}
   
-
-
-
+      toggleVisibility() {   
+          this.setState( (state)=>{  
+              if (state.pic === true) {return {pic: false}       }
+              else {return {pic: true}   }} )}
+  
+    render() {
+      if (this.state.pic) { return (
+          <div>
+            <img onClick={this.toggleVisibility}
+                 src= {maxence1}    
+                 className="clicPic"
+                 style= {  {width: "150px"}}
+                 >
+          	</img>
+          </div>);}
+   
+      else { return (
+        <div>
+        <img onClick={this.toggleVisibility}
+             src= {glasses}    
+             className="clicPic"
+             style= {  {width: "150px"}}
+             
+             >
+        </img>
+        </div>
+        );}}};
+    
 
        
 export default ClickablePicture;
