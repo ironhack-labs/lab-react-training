@@ -12,3 +12,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.BoxColors {
+  margin: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.CreditCard {
+  margin: 5px;
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 1px solid black
+}
+
+.DriverCards {
+  display: flex;
+  justify-content: space-evenly;
+}
