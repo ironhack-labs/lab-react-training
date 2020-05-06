@@ -1,0 +1,6 @@
+.IdCard{
+    padding: 5px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 3px;
+}
