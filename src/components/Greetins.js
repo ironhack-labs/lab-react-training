@@ -5,7 +5,7 @@ const Greetings = (props) => {
     if (lang ==="de") return "Hallo";
     if (lang ==="fr") return "Bonjour";
   };
-  
+   
   return (
     <div className='container'>
       <p lang={props.lang}> {gLang(props.lang)} {props.children}</p>
