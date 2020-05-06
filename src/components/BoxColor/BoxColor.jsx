@@ -25,7 +25,7 @@ export default function BoxColor(props) {
 
   // Create an inline-style for the div
   const divStyle = {
-    background: "rgb(" + props.r + "," + props.g + "," + props.b + ")",
+    background: `rgb(${props.r}, ${props.g}, ${props.b})`,
     color: showRightTextColor,
   };
 
