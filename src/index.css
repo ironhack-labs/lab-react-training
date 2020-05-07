@@ -33,3 +33,47 @@ h2 {
   height: 100px;
   margin: 20px;
 }
+
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+.driverCardImg {
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.driverCardBox {
+  width: 400px;
+  background-color: blue;
+  margin: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.likeButton {
+  width: 150px;
+  font-size: 2rem;
+  margin: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.wigth-100 {
+  width: 100px;
+}
+
+.carouselButton {
+  width: 200px;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: white;
+}
