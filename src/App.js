@@ -6,8 +6,30 @@ import BoxColor from './components/BoxColor'
 import CreditCard from './components/CreditCard'
 import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
+import LikeButton from './components/LikeButton'
+import ClickablePicture from './components/ClickablePicture'
+import Dice from './components/Dice'
+import Carousel from './components/Carousel'
 
 class App extends Component {
+  state = {
+    counter: 0,
+    imgChange: true,
+    diceState: '/img/dice-empty.png',
+  }
+
+  increment = () => {
+    const { counter } = this.state
+    this.setState({ counter: counter + 1 })
+  }
+
+  changeDice = () => {
+    let random = Math.floor(Math.random() * (6 - 1) + 1)
+    let imageUrl = `/img/dice${random}.png`
+
+    this.setState({ diceState: imageUrl })
+  }
+
   render() {
     const langs = {
       fr: 'Bonjour',
@@ -106,6 +128,28 @@ class App extends Component {
             model: 'Audi A3',
             licensePlate: 'BE33ER',
           }}
+        />
+
+        <h1>Like Button</h1>
+        <LikeButton increment={this.increment} counter={this.state.counter} />
+
+        <h1>Clickable Picture</h1>
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
+
+        <h1>Dice</h1>
+        <Dice diceState={this.state.diceState} changeDice={this.changeDice} />
+
+        <h1>Carousel</h1>
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
         />
       </div>
     )
