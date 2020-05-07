@@ -7,16 +7,31 @@ import CreditCard from './components/CreditCard'
 import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
 import LikeButton from './components/LikeButton'
+import ClickablePicture from './components/ClickablePicture'
+import Dice from './components/Dice'
 
 class App extends Component {
-  // state = {
-  //   counter: 0,
-  // }
+  state = {
+    counter: 0,
+    imgChange: true,
+    diceState: '/img/dice-empty.png',
+  }
 
-  // increment = () => {
-  //   const { counter } = this.state
-  //   this.setState({ counter: counter + 1 })
-  // }
+  increment = () => {
+    const { counter } = this.state
+    this.setState({ counter: counter + 1 })
+  }
+
+  changeImg = () => {
+    this.setState({ imgChange: !this.state.imgChange })
+  }
+
+  changeDice = () => {
+    let random = Math.floor(Math.random() * (6 - 1) + 1)
+    let imageUrl = `/img/dice${random}.png`
+
+    this.setState({ diceState: imageUrl })
+  }
 
   render() {
     return (
@@ -105,7 +120,18 @@ class App extends Component {
           }}
         />
         <h1>Clickable button</h1>
-        {/* <LikeButton increment={this.increment} counter={this.state.counter} /> */}
+        <LikeButton increment={this.increment} counter={this.state.counter} />
+
+        <h1>Clickable Picture</h1>
+        <ClickablePicture
+          changeImg={this.changeImg}
+          imgChange={this.state.imgChange}
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
+
+        <h1>Dice</h1>
+        <Dice diceState={this.state.diceState} changeDice={this.changeDice} />
       </div>
     )
   }
