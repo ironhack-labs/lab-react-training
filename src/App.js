@@ -6,9 +6,26 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import Driver from './components/DriverCard';
-// import Demo from './components/ClickablePicture';
-
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 class App extends Component {
+  state = {
+    counter: 0,
+    diceState: '/img/dice-empty.png'
+  };
+
+  increment = () => {
+    const { counter } = this.state;
+    this.setState({ counter: counter + 1 });
+  };
+
+  changeDice = () => {
+    const random = Math.floor(Math.random() * (6 - 1 +1) ) + 1
+    const imageUrl = `/img/dice${random}.png`
+
+    this.setState({ diceState: imageUrl })
+  }
   render() {
     return (
       <div className="App">
@@ -87,29 +104,38 @@ class App extends Component {
         <Rating number="5" />
 
         <h1>Driver Card</h1>
-        <div className='DriverCards'>
-        <Driver
-          name="Travis Kalanick"
-          rating={4.2}
-          img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
-          car={{
-            model: 'Toyota Corolla Altis',
-            licensePlate: 'CO42DE',
-          }}
-        />
-        <Driver
-          name="Dara Khosrowshahi"
-          rating={4.9}
-          img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
-          car={{
-            model: 'Audi A3',
-            licensePlate: 'BE33ER',
-          }}
-        />
+        <div className="DriverCards">
+          <Driver
+            name="Travis Kalanick"
+            rating={4.2}
+            img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+            car={{
+              model: 'Toyota Corolla Altis',
+              licensePlate: 'CO42DE',
+            }}
+          />
+          <Driver
+            name="Dara Khosrowshahi"
+            rating={4.9}
+            img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+            car={{
+              model: 'Audi A3',
+              licensePlate: 'BE33ER',
+            }}
+          />
         </div>
 
         <h1>Likes</h1>
-        {/* <Demo /> */}
+        <LikeButton increment={this.increment} counter={this.state.counter} />
+
+        <h1>ClickablePicture</h1>
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
+
+        <h1>Dice</h1>
+        <Dice diceState={this.state.diceState} changeDice={this.changeDice} />
       </div>
     );
   }
