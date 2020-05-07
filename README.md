@@ -1,15 +1,21 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# React Training
+# LAB | React Training
 
 ## Introduction
 
 The goal of this repository is to create a lot of React components.
 
-## Requirements
+## Setup
 
 - Fork this repo
 - Clone this repo
+
+```shell
+$ cd lab-react-training
+$ npm install
+$ npm start
+```
 
 You can find the starter code in the starter code folder of this GitHub repo.
 
@@ -25,19 +31,11 @@ You can find the starter code in the starter code folder of this GitHub repo.
 
 - Create Pull Request so your TAs can check up your work.
 
-## Setup
-
-To start this project, you should:
-
-- Fork and clone this project
-- Run `npm install`
-- Run `npm start`
-
 You can preview the solution here: https://5c6c2a0de07b084ce35373ee--determined-aryabhata-a8a833.netlify.com/
 
 ## Instructions
 
-### Iteration 1: Component: `IdCard`
+### Iteration 1 | Component: `IdCard`
 
 Create a `IdCard` component with 6 props:
 
@@ -74,7 +72,7 @@ Create a `IdCard` component with 6 props:
 
 ![image](https://user-images.githubusercontent.com/5306791/52976030-22b0d200-33c8-11e9-91fe-e3ce0fa14078.png)
 
-### Iteration 2: Component: `Greetings`
+### Iteration 2 | Component: `Greetings`
 
 Create a `Greetings` component with 2 props:
 
@@ -92,7 +90,7 @@ Create a `Greetings` component with 2 props:
 
 ![image](https://user-images.githubusercontent.com/5306791/52957158-57edfd80-3391-11e9-8726-93c1a3389016.png)
 
-### Iteration 3: Component: `Random`
+### Iteration 3 | Component: `Random`
 
 Create a `Random` component with 2 props:
 
@@ -110,7 +108,7 @@ Create a `Random` component with 2 props:
 
 ![image](https://user-images.githubusercontent.com/5306791/52957202-718f4500-3391-11e9-9b45-d1172067e877.png)
 
-### Iteration 4: Component: `BoxColor`
+### Iteration 4 | Component: `BoxColor`
 
 Create a `BoxColor` component that displays a rectangle with a background color based on props. For this, you will need a inline style ([documentation](https://reactjs.org/docs/dom-elements.html#style)).
 
@@ -133,7 +131,7 @@ It takes 3 props:
 
 As a bonus, you can also display the hex values of the color (ex: `#ff0000` for red).
 
-### Iteration 5: Component: `CreditCard`
+### Iteration 5 | Component: `CreditCard`
 
 Create a `CreditCard` component that displays a square with a background color based on props. For this. You will need a styled component.
 
@@ -186,7 +184,7 @@ Take your time to do as close to the output. You probably have to use flexbox.
 
 ![image](https://user-images.githubusercontent.com/5306791/52975678-ac5fa000-33c6-11e9-8cbf-7d13a8a0f625.png)
 
-### Iteration 6: Component: `Rating`
+### Iteration 6 | Component: `Rating`
 
 Create a `Rating` component that displays 5 stars, some of them must be empty (☆), some must be full (★).
 
@@ -209,7 +207,7 @@ It takes 1 prop:
 
 ![image](https://user-images.githubusercontent.com/5306791/52972787-39512c00-33bc-11e9-93d8-428d835442fd.png)
 
-### Iteration 7: Component: `DriverCard`
+### Iteration 7 | Component: `DriverCard`
 
 **Example**
 
@@ -236,7 +234,7 @@ It takes 1 prop:
 
 ![image](https://user-images.githubusercontent.com/5306791/52972847-66054380-33bc-11e9-92e0-8e48d1ab0212.png)
 
-### Iteration 8: Component: `LikeButton`
+### Iteration 8 | Component: `LikeButton`
 
 Create a component `LikeButton` that displays a button "0 Likes" and with a number increases when the user clicks on it.
 
@@ -259,7 +257,10 @@ Create a component `ClickablePicture` that displays a picture and toggle to the 
 **Example**
 
 ```js
-<ClickablePicture img='/img/persons/maxence.png' imgClicked='/img/persons/maxence-glasses.png' />
+<ClickablePicture
+  img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'
+/>
 ```
 
 **Output**
@@ -268,7 +269,7 @@ Create a component `ClickablePicture` that displays a picture and toggle to the 
 
 PS: If you want your own picture instead, you can do it yourself with this picture: http://www.stickpng.com/assets/images/584999937b7d4d76317f5ffd.png 😎
 
-### Iteration 10: State: `Dice`
+### Iteration 10 | State: `Dice`
 
 Create a `Dice` component that displays a random picture (example: `'/img/dice3.png'`). Then every time the user clicks on the component:
 
@@ -293,7 +294,7 @@ Create a `Dice` component that displays a random picture (example: `'/img/dice3.
 
 ![image](https://user-images.githubusercontent.com/5306791/52976752-f64a8500-33ca-11e9-98ee-b0b17f5e85b2.png)
 
-### Iteration 11: State: `Carousel`
+### Iteration 11 | State: `Carousel`
 
 Create a `Carousel` component that displays an image and two buttons ('left' and 'right'), and that changes the picture every time.
 
@@ -314,7 +315,7 @@ Create a `Carousel` component that displays an image and two buttons ('left' and
 
 ![](https://media.giphy.com/media/1n7cAJu0MWerLnnohR/giphy.gif)
 
-### Iteration 12: List and Keys | `NumbersTable`
+### Iteration 12 | List and Keys | `NumbersTable`
 
 Create a `NumbersTable` component that displays a list of numbers between 1 and a limit. Even numbers must be red.
 
@@ -332,7 +333,7 @@ It takes 1 prop:
 
 ![image](https://user-images.githubusercontent.com/5306791/53028410-13349600-3467-11e9-8199-407375e61ab0.png)
 
-### Iteration 13: List and Keys | `FaceBook` | Simple
+### Iteration 13 | List and Keys - `FaceBook` (Simple)
 
 Create a `FaceBook` component that displays the list of all profiles from `src/data/berlin.json`. You will probably have to write:
 
@@ -350,7 +351,7 @@ import profiles from './data/berlin.json';
 
 ![image](https://user-images.githubusercontent.com/5306791/53018529-e8d8dd80-3452-11e9-9912-1221eef67be6.png)
 
-### Iteration 14: List and Keys | `FaceBook` | Advanced
+### Iteration 14 | List and Keys - `FaceBook` (Advanced)
 
 On your `FaceBook` component, add as many buttons as you have `country`. Then, when the user clicks on one of the buttons (example: 'USA'), add a blue background to all the profiles where their country is the one selected.
 
@@ -370,7 +371,7 @@ Example of extra iterations:
 - Add sort buttons
 - Add a search input
 
-### Iteration 15: Form | SignupPage
+### Iteration 15 | Form - SignupPage
 
 Create a `SignupPage` component with the following elements:
 
@@ -408,7 +409,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ![image](https://user-images.githubusercontent.com/5306791/53089348-9c51d880-350c-11e9-9621-cad9d87bdd48.png)
 
-### Iteration 16: Lifting State Up | RGBColorPicker
+### Iteration 16 | Lifting State Up - RGBColorPicker
 
 Create 2 components:
 
@@ -424,3 +425,5 @@ Create 2 components:
 **Output**
 
 ![image](https://user-images.githubusercontent.com/5306791/53166207-f918c600-35d4-11e9-8c47-c58cdc2d05b0.png)
+
+**Happy coding!** :heart:
