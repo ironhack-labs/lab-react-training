@@ -1,0 +1,8 @@
+.id-card {
+    border: 1px solid black;
+    display: flex;
+}
+
+.id-card span {
+    font-weight: bold;
+}
