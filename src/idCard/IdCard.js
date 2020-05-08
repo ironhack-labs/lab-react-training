@@ -13,7 +13,7 @@ class IdCard extends React.Component {
                     <p><span>Last name: </span>{this.props.lastName}</p>
                     <p><span>Gender: </span>{this.props.gender}</p>
                     <p><span>Height: </span>{this.props.height}</p>
-                    <p><span>Birth: </span>{this.props.birth.toString()}</p>
+                    <p><span>Birth: </span>{this.props.birth.toLocaleDateString()}</p>
                 </div>
             </div>
         );

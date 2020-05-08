@@ -1,0 +1,7 @@
+.box-color {
+    padding: 30px;
+    margin: 5px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,6 +1,12 @@
 .id-card {
-    border: 1px solid black;
+    border: 2px solid black;
     display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+
+.id-card img {
+    padding-right: 5px;
 }
 
 .id-card span {
