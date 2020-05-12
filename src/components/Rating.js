@@ -12,7 +12,7 @@ const Rating = (props) => {
         <div className="rating-container">
             {stars.map((star, index) =>
                 rating <= index ?
-                    <FaRegStar className="star-rating" size={40} /> : <FaStar className="star-rating" size={40} />
+                    <FaRegStar key={index} className="star-rating" size={40} /> : <FaStar key={index} className="star-rating" size={40} />
             )}
         </div>
     )

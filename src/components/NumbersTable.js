@@ -12,9 +12,9 @@ const NumbersTable = (props) => {
 
     return (
         <div className="numbers-table">
-            {squares.map(number => (
-                number % 2 == 0 ? color = "red" : color = "white",
-                <div className="numbers-table-square" style={{ backgroundColor: color }}>{number}</div>
+            {squares.map((number, index) => (
+                number % 2 === 0 ? color = "red" : color = "white",
+                <div key={index} className="numbers-table-square" style={{ backgroundColor: color }}>{number}</div>
             ))}
         </div>
     )

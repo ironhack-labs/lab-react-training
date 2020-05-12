@@ -9614,6 +9614,11 @@ uglify-js@^3.1.4:
   dependencies:
     commander "~2.20.3"
 
+uikit@^3.4.4:
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.4.4.tgz#0b2e1b17264ec62219df2485693a04704df2dbb6"
+  integrity sha512-VTDqtTUTH2XiGw0MudWki4oPl+Bxt3JEm5S/CE1B9zUmt9/FqKRYxv/7s5GSeNMnRMSQa2evQTkLSGsdBmKXdA==
+
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz#2619800c4c825800efdd8343af7dd9933cbe2818"

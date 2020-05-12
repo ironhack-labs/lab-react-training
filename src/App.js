@@ -11,6 +11,7 @@ import ClickablePicture from "./components/ClickablePicture";
 import Dice from "./components/Dice";
 import Carousel from "./components/Carousel";
 import NumbersTable from "./components/NumbersTable";
+import Facebook from "./components/Facebook";
 
 
 class App extends Component {
@@ -114,8 +115,8 @@ class App extends Component {
         <h1>Credit Card</h1>
         {/* TODO: Use the CreditCard component */}
         <div className="credit-card-container">
-          {creditCards.map(cardProps => (
-            <CreditCard {...cardProps} />
+          {creditCards.map((cardProps, index) => (
+            <CreditCard key={index} {...cardProps} />
           ))}
         </div>
 
@@ -130,8 +131,8 @@ class App extends Component {
 
         <h1>DriveCard</h1>
         {/* TODO: Use the DriveCard component */}
-        {driveCards.map(cardProps => (
-          <DriveCard {...cardProps} />
+        {driveCards.map((cardProps, index) => (
+          <DriveCard key={index} {...cardProps} />
         ))}
 
         <h1>Like Button</h1>
@@ -153,6 +154,10 @@ class App extends Component {
         <h1>Numbers Table</h1>
         {/* TODO: Use the NumbersTable component */}
         <NumbersTable limit={12}/>
+
+        <h1>Facebook</h1>
+        {/* TODO: Use the NumbersTable component */}
+        <Facebook />
 
 
       </div >
