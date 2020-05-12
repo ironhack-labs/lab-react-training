@@ -12,3 +12,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* IdCard */
+.IdCard {
+  border: 1px solid black;
+  margin: 8px;
+  padding: 5px;
+  display: flex;
+}
+
+.CardDataLabel {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.Greetings {
+  border: 1px solid black;
+  margin: 8px;
+  padding: 5px;
+  font-size: xx-large;
+}
+
+.Random {
+  border: 1px solid black;
+  margin: 8px;
+  padding: 5px;
+  font-size: xx-large;
+}

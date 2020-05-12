@@ -1,0 +1,18 @@
+[
+  {
+    "photo": "./img/persons/john.jpg",
+    "name": "John",
+    "lastName": "Doe",
+    "gender": "male",
+    "height": "1.78m",
+    "birth": "Mon Jul 13 1992"
+  },
+  {
+    "photo": "./img/persons/obrien.jpg",
+    "name": "Obrien",
+    "lastName": "Delores",
+    "gender": "female",
+    "height": "1.72m",
+    "birth": "Mon May 10 1993"
+  }
+]

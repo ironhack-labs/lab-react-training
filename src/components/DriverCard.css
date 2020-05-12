@@ -1,0 +1,30 @@
+.mainDiv {
+    background: #455eb5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-radius: 20px;
+    margin: 10px
+}
+
+.photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.nameDiv {
+    font-size: xx-large;
+    font-weight:500;
+}
+
+.ratingDiv {
+    margin: -5px 0px;
+}
+
+.carDiv{
+    font-size: large;
+}
