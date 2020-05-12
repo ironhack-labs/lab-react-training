@@ -1,0 +1,12 @@
+.IdCard{
+    border: 3px solid rgb(255, 0, 242);
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+}
+
+.Details{
+    font-size: 1.2rem;
+    margin: 2px;
+    padding: 2px;
+}
