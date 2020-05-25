@@ -1,0 +1,18 @@
+.idcardStyle {
+  border-style: solid;
+  margin: 50px 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cardInformation {
+  margin-left: 20px;
+  line-height: 70%;
+  text-align: left;
+}
+
+.photo {
+  margin: 10px 0;
+  margin-left: 10px;
+  background-color: rgb(red, green, blue);
+}
