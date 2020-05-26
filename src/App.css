@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.LikeButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

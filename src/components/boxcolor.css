@@ -6,3 +6,8 @@
   display: flex;
   justify-content: center;
 }
+
+.imgsize {
+  width: 400px;
+  height: 400px;
+}

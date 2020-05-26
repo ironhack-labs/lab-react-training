@@ -4,6 +4,9 @@ import IdCard from './components/idcard.jsx';
 import Greetings from './components/greetings.jsx';
 import Random from './components/random.jsx';
 import BoxColor from './components/boxcolor.jsx';
+import LikeButton from './components/likebutton.jsx';
+import ClickablePicture from './components/clickablepicture.jsx';
+import Dice from './components/dice.jsx';
 
 function App() {
   return (
@@ -37,6 +40,23 @@ function App() {
       <h2>BoxColor</h2>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+
+      <h2>LikeButton</h2>
+      <div className="LikeButton">
+        <LikeButton /> <LikeButton />
+      </div>
+
+      <h2>ClickablePicture</h2>
+      <div className="LikeButton">
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
+      </div>
+
+      <h2>Dice</h2>
+
+      <Dice />
     </div>
   );
 }
