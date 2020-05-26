@@ -27,7 +27,7 @@ const Greetings = (props) => {
   }
 
   return (
-    <div class="idcardStyle">
+    <div className="idcardStyle">
       <p>
         {message} {props.children}
       </p>

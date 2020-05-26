@@ -15,8 +15,11 @@ const BoxColor = (props) => {
   if (bhex.length === 1) bhex = '0' + bhex;
 
   return (
-    <div class="container" style={{ backgroundColor: `rgb(${r}, ${g}, ${b})` }}>
-      <div class="information">
+    <div
+      className="container"
+      style={{ backgroundColor: `rgb(${r}, ${g}, ${b})` }}
+    >
+      <div className="information">
         <p>
           rgb({r}, {g}, {b})
         </p>

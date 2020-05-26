@@ -8,11 +8,11 @@ const IdCard = (props) => {
   const height = props.height;
   const birth = props.birth;
   return (
-    <div class="idcardStyle">
+    <div className="idcardStyle">
       <div className="photo">
         <img src={props.picture} alt="IdCard Photography" />
       </div>
-      <div class="cardInformation">
+      <div className="cardInformation">
         <p>
           <strong>First Name: </strong>
           {firstName}

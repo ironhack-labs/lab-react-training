@@ -1,0 +1,20 @@
+.card {
+  width: 350px;
+  height: 175px;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.logoCard {
+  width: 50px;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+  margin-top: 50px;
+}
