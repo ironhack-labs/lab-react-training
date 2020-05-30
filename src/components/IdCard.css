@@ -1,0 +1,11 @@
+
+
+.card {
+    display: flex;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.card p {
+    margin-left: 5px;
+}
