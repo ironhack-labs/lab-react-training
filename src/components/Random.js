@@ -11,17 +11,17 @@ import React, { Component } from "react";
     return randomNumber;
 }; */
 
-function Random (props) {
-
 function randomValue (min , max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
     // return randomNumber;
 };
+
+function Random (props) {
     return (
         <div>
-            <p>Random value between {props.min} and {props.max} => {randomValue()}.</p>
+            <p>Random value between {props.min} and {props.max} => {randomValue(props.min, props.max)}.</p>
         </div>
     )
 };

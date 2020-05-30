@@ -17,8 +17,8 @@ class App extends Component {
           lastName="Obrien"
           firstName="Dolores"
           gender="female"
-          height="172"
-          birth="1992-07-14"
+          height={172}
+          birth={new Date("1988-05-11")}
           picture="https://randomuser.me/api/portraits/women/44.jpg">
         </IdCard>
         <Greetings lang="fr">
@@ -30,5 +30,7 @@ class App extends Component {
   }
 }
 
+// just a string birth="1992-07-14"
+// a date or number 
 
 export default App;
