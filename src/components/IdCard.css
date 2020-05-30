@@ -1,0 +1,16 @@
+.pic {
+    float: left;
+}
+
+.details {
+    margin: 2px;
+    padding-left: 5px;
+    text-align:left;
+}
+
+.container {
+    padding: 2px;
+    border: 1px solid black;
+    width: 100%;
+}
+
