@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.FlexRow {
+    width: 98vw;
+    margin: 5px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #000;
+}
+
+h1 {
+    text-align: left;
+    padding: 20px 0px 20px 15px;
+}
+
+.PersonData {
+    text-align: left;
+    margin-left: 5px;
+}
