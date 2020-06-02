@@ -1,3 +1,7 @@
+.red {
+  background-color: rgb(255,0,0);
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,4 @@
     transform: rotate(360deg);
   }
 }
+

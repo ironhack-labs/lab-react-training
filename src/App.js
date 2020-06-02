@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.css';
+import _ from 'lodash';
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
+import BoxColor from './components/BoxColor';
 
 // App.js
 class App extends Component {
@@ -25,6 +27,8 @@ class App extends Component {
           François
         </Greetings>
         <Random min={2} max={6}></Random>
+        {/* <BoxColor red="red"></BoxColor> */}
+        <BoxColor r={255} g={128} b={255}></BoxColor>
       </div>
     );
   }

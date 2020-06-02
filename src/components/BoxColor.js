@@ -6,19 +6,12 @@ import React from "react";
 
 function BoxColor (props) {
 
-    let classesArr = ["button"]
-    // let text = "BIG"
-
-    props.isSmall // true or false
-    if (props.isSmall === true) {
-        //text = "small"
-        classesArr.push("is-small")
-    }
     return (
-        <button className={classesArr.join(' ')}>I'm a button</button>
-        // {text} between buttons for uncommented test
+        <div>
+        {/* <div className={props.red}>some text</div> */}
+            <div style={{backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})`}}>{props.r} Some text</div>
+        </div>
     )
-
 }
 
 
