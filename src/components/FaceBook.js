@@ -7,9 +7,15 @@ class FaceBook extends Component {
   render() {
     return (
       <div>
+          {this.state.profiles.map((profile)=> {
+              return <button key={profile.country}>{profile.country}</button>
+          })}
         {this.state.profiles.map((profile) => {
           return (
             <div key={profile.firstName+profile.lastName} className="FaceBook" style={{"display":"flex"}}>
+                <div>
+                    
+                </div>
                 <div>
                     <img src={profile.img} style={{"objectFit": "cover"}} width="200" height="200" alt=""/>
                 </div>
