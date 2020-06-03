@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 
 class ClickablePicture extends Component {
     state = {
-        image: this.props.img
+        image: this.props.image
     }
     clickHandler = () => {
-        if (this.state.image === this.props.img) {
+        if (this.state.image === this.props.image) {
             this.setState({
                 image: this.props.imgClicked
             })
         } else {
             this.setState({
-                image: this.props.img
+                image: this.props.image
             })
         }
     }
