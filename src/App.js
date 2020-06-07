@@ -14,6 +14,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage'
 
 class App extends Component {
   state = {
@@ -156,6 +157,8 @@ class App extends Component {
         <NumbersTable limit={12} />
         <h5>13. List and Keys - FaceBook (simple)</h5>
         <FaceBook />
+        <h5>15. Signup Page</h5>
+        <SignupPage />
       </div>
     );
   }
