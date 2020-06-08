@@ -60,3 +60,11 @@ code {
   border: 1px solid black;
   font-size: 1.5em;
 }
+
+.like-button{
+  margin: 20px;
+  width: 5em;
+  height: 2em;
+  color: white;
+  border: none;
+}
