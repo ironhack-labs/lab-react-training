@@ -3,7 +3,7 @@ import './IdCard.css';
 
 function IdCard (props) {
     return (
-        <div className="container">
+        <div className="container" style={{width: "50%"}}>
             <div className="pic">
                 <img src={props.picture} width="175" height="150"/>
             </div>
