@@ -1,0 +1,19 @@
+.numberstable{
+    display:flex;
+    max-width:80%;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+.square{
+    flex: 1 0 18%; /* explanation below */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100px;
+    height:100px;
+    font-size:20px;
+    color:#222;
+    font-weight:bold;
+    border:1px solid #222;
+    flex-grow: 0;
+}

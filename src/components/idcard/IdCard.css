@@ -1,0 +1,11 @@
+.Card {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    text-align:left;
+    font-size:11px;
+}
+
+.Card >*{
+    margin:10px;
+}

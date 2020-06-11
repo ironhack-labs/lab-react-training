@@ -1,0 +1,8 @@
+.Box{
+    width:100px;
+    display:flex;
+    height:100px;
+    margin:20px auto;
+    align-items: center;
+    justify-content: center;
+}
