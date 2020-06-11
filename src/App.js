@@ -19,7 +19,9 @@ import FaceBook from "./components/facebook/FaceBook";
 
 class App extends Component {
 
-
+  state={
+    profiles: profiles
+  }
 
   render(){
     return (
@@ -141,7 +143,15 @@ class App extends Component {
 
             <NumbersTable limit={12} />
 
-            <FaceBook />
+
+            
+            {/* only way of list json, is to access json on state */}
+            {this.state.profiles.map((onePerson)=>{
+              return(
+                <FaceBook person={onePerson}/>
+              )
+            })}
+            
 
 
 
