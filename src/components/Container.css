@@ -1,0 +1,20 @@
+.container div:first-child{
+    display: flex;
+    margin-top: 2em;
+    padding: 0.5em 0;
+    border: 1px solid black;
+}
+.container span {
+    font-weight: 400;
+}
+.container img {
+    max-height: 150px;
+}
+.container h3 {
+    margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
