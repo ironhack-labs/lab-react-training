@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Container.css'
 export default function Greetings(props) {
     const lang = props.lang;
     let text = "";
@@ -23,7 +23,7 @@ export default function Greetings(props) {
         }
     
     return (
-        <div>
+        <div className="container">
             <h3>{text}</h3>
         </div>
     )

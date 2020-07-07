@@ -3,7 +3,8 @@ import React from 'react';
 export default function BoxColor(props) {
     const style = {
         backgroundColor: `rgb(${props.r},${props.g},${props.b})`,
-        flexDirection: 'column'
+        flexDirection: 'column',
+        textAlign: 'center'
     }
     const toHex = (color) => {
         let hex = Number(color).toString(16);
@@ -13,7 +14,7 @@ export default function BoxColor(props) {
         return hex;
     }
     return (
-        <div style={style}>
+        <div style={style} className="container">
             <h3>rgb({props.r},{props.g},{props.b})</h3>
             <p>hex = #{toHex(props.r)}{toHex(props.g)}{toHex(props.b)}</p>
         </div>
