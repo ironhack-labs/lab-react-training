@@ -1,30 +1,30 @@
 import React from 'react';
 import './Container.css'
-export default function Greetings(props) {
-    const lang = props.lang;
-    let text = "";
 
-    switch (lang) {
-        case "de": 
-            text = "Hallo Freunde!"
-            break;
-        case "en":
-            text = "Hello friends!"
-            break;
-        case "es":
-            text = "Hola amigos!"
-            break;
-        case "fr":
-            text = "Salut les amis!"
-            break;
-        default:
-            text = "Hola amigos!"
-            break;
-        }
+export default function Greetings(props) {
     
+    const determineLang = () => {
+        switch (props.lang) {
+            case "de": 
+                return "Hallo Freunde!"
+                
+            case "en":
+                return "Hello friends!"
+                
+            case "es":
+                return "Hola amigos!"
+                
+            case "fr":
+                return "Salut les amis!"
+                
+            default:
+                return "Hola amigos!"
+                
+            }
+    }
     return (
         <div className="container">
-            <h3>{text}</h3>
+            <h3>{determineLang()}</h3>
         </div>
     )
 }

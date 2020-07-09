@@ -10,7 +10,7 @@ export default function IdCard (props){
                 <h3>Last Name: <span>{props.lastName}</span></h3>
                 <h3>Gender: <span>{props.gender}</span></h3>
                 <h3>Height: <span>{props.height}</span></h3>
-                <h3>Birth: <span>{props.birth}</span></h3>
+                <h3>Birth: <span>{String(props.birth)}</span></h3>
             </div>
         </div>
     )
