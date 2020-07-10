@@ -51,9 +51,14 @@ function App() {
       <h1>Random</h1>
       <div>
         <Random
-          min="1"
-          max="6"
+          min={2}
+          max={6}
         />
+        <Random
+          min={1}
+          max={100}
+        />
+
       </div>
         <BoxColor
           r="255"

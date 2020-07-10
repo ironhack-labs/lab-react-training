@@ -8,7 +8,7 @@ export default class Random extends React.Component {
 
     static getDerivedStateFromProps(props, state) {
         const { max, min } = props
-        const calRandom = max - min + 1 + min
+        const calRandom = (max - min + 1) + min
         const random = Math.floor(Math.random() * calRandom)
         return {
             randomNumber: random
@@ -18,7 +18,7 @@ export default class Random extends React.Component {
     render() {
         return (
             <div>
-                <p>Random Number {this.state.randomNumber}</p>
+                <p>Random Number between {this.props.min} and {this.props.max} => {this.state.randomNumber}</p>
             </div>
         )
     }
