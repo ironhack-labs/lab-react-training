@@ -3,10 +3,11 @@ import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import RandomNumber from './components/RandomNumber';
 import BoxColor from './components/BoxColor';
+import CreditCard from './components/CreditCard';
 
 function App() {
 
-  const cardData = [
+  const iDCardData = [
     {
       lastName: "Doe",
       firstName: "John",
@@ -24,8 +25,8 @@ function App() {
       picture: "https://randomuser.me/api/portraits/women/44.jpg"
     }
   ]
-
-  const renderIdCard = cardData.map(user => (
+  
+  const renderIdCard = iDCardData.map(user => (
     <IdCard 
       lastName={user.lastName} 
       firstName={user.firstName} 
@@ -34,19 +35,65 @@ function App() {
       birth={user.date}  
       picture={user.picture}
       />
+  ));
+
+  const random = {
+    num: (num) => (Math.floor(Math.random() * num)),
+    color: () => (Math.floor(Math.random() * 256)),
+    lang: () => {
+      const diffLang = ['en', 'es', 'de', 'fr']
+      return diffLang[Math.floor(Math.random() * diffLang.length)]
+    }
+  }
+   
+  const creditCardData = [
+    {
+      type: "/img/master-card.svg",
+      number: 123456789010995,
+      expirationMonth: random.num(13),
+      expirationYear: 2021,
+      bank: "N26",
+      owner: "John Doe",
+      bgColor: `rgb(${random.color()},${random.color()},${random.color()})`,
+      color: 'white'
+    },
+    {
+      type: "/img/visa.png",
+      number: 123963817010995,
+      expirationMonth: random.num(13),
+      expirationYear: 2025,
+      bank: "BNP",
+      owner: "Waskaman Doe",
+      bgColor: `rgb(${random.color()},${random.color()},${random.color()})`,
+      color: 'red'
+    }
+  ]
+
+  const renderCCard = creditCardData.map(elem => (
+    <CreditCard 
+      type={elem.type}
+      number={elem.number}
+      expirationMonth={elem.expirationMonth}
+      expirationYear={elem.expirationYear}
+      bank={elem.bank}
+      owner={elem.owner}
+      bgColor={elem.bgColor}
+      color={elem.color}
+      className="c-card"
+    />
   ))
 
   return (
     <div className="App">
         {renderIdCard}
-        <Greetings lang="en" />
-        <Greetings lang="de" />
-        <RandomNumber min="1" max="6" />
-        <RandomNumber min="1" max="5000" />
-        <BoxColor r="255" g="0" b="0" />
-        <BoxColor r="122" g="100" b="0" />
-        <BoxColor r="128" g="255" b="0" />
-        <BoxColor r="0" g="0" b="255" />
+        <Greetings lang={random.lang()} />
+        <Greetings lang={random.lang()} />
+        <RandomNumber min={random.num(10)} max={random.num(250)} />
+        <RandomNumber min={random.num(10)} max={random.num(5000)} />
+        <BoxColor r={random.color()} g={random.color()} b={random.color()} />
+        <BoxColor r={random.color()} g={random.color()} b={random.color()} />
+        <BoxColor r={random.color()} g={random.color()} b={random.color()} />
+        {renderCCard}
     </div>
   );
 }
