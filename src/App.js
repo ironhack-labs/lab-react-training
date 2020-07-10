@@ -41,11 +41,12 @@ function App() {
       <div>
         {personsCollection}
       </div>
-
+      <h1>Greetings</h1>
+      <div>
       <Greetings lang="fr">Marcela</Greetings>
       <Greetings lang="es">Roger</Greetings>
-      <Greetings lang="de">Paio</Greetings>
-      <Greetings lang="en">Lua</Greetings>
+      </div>
+
 
     </div>
   );
