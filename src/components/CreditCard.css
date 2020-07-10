@@ -1,0 +1,35 @@
+.credit-card {
+  width: 400px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.card-type {
+  text-align: right;
+  padding: 20px;
+}
+
+.card-type > img {
+  height: 30px;
+}
+
+.card-number > h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 48px;
+}
+
+.card-expire {
+  display: flex;
+  justify-content: flex-start;
+  width: 300px;
+}
+
+.card-expire h5 {
+  margin: 30px 0 0 30px;
+}
+
+.card-data > h5 {
+  margin: 0 0 20px 30px;
+  text-align: left;
+}

@@ -16,6 +16,10 @@ const Greetings = (props) => {
       break;
     case 'fr':
       helloWord = 'Alô';
+      break;
+    default:
+      helloWord = 'Hello';
+      break;
   }
 
   return (

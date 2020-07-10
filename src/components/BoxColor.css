@@ -1,0 +1,9 @@
+.card-box {
+  margin: 10px 20px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.card-box > h4 {
+  margin: 10px;
+}
