@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Avatar from './Avatar';
 
 class IdCard extends Component {
   render() {
     return (
       <div className="card">
-        <img className="cardAvatar" src={this.props.picture} alt="" />
+        <Avatar src={this.props.picture} width="150px" />
         <div className="cardItem">
           <div>
             <label className="cardLabel">First Name:&nbsp;</label>

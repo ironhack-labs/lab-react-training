@@ -1,18 +1,30 @@
 import React, { Component } from 'react';
-import './Rating.css';
 
 class Rating extends Component {
   render() {
-    const starTotal = 5;
+    const stars = [
+      { checked: false },
+      { checked: false },
+      { checked: false },
+      { checked: false },
+      { checked: false },
+    ];
 
-    const starPercentage =
-      (Math.round(parseFloat(this.props.children)) / starTotal) * 100;
-    const starPercentageRounded = Math.round(starPercentage) * 4.7;
-    const cssStarsInner = { width: starPercentageRounded };
-
+    const starsChecked = Math.round(parseFloat(this.props.children));
+    stars.map(
+      (star, index) => (star.checked = index < starsChecked ? true : false)
+    );
     return (
-      <div class="stars-outer">
-        <div class="stars-inner" style={cssStarsInner}></div>
+      <div>
+        {stars.map((star, index) => {
+          const cnStar = 'fa ' + (star.checked ? 'fa-star' : 'fa-star-o');
+          const cssStar = {
+            color: this.props.color ? this.props.color : 'black',
+            fontSize: this.props.width ? this.props.width : '100px',
+          };
+          const id = Math.random() * 1000000 + index;
+          return <i key={id} className={cnStar} style={cssStar}></i>;
+        })}
       </div>
     );
   }

@@ -12,8 +12,13 @@ class CreditCard extends Component {
       (this.props.expirationMonth.toString().length === 1 ? '0' : '') +
       this.props.expirationMonth;
     const expYear = this.props.expirationYear.toString().substring(2);
+
     return (
-      <div className="creditCard" style={styledCreditCard}>
+      <div
+        key={this.props.number}
+        className="creditCard"
+        style={styledCreditCard}
+      >
         <div className={cssLogo} />
         <div className="numberCreditCard">
           {this.props.number.split('').map((num, index) => {
@@ -23,12 +28,13 @@ class CreditCard extends Component {
                 ((index + 1) % 4 === 0 ? ' spaceCreditCard' : '');
               return (
                 <span
+                  key={this.props.number + '-' + index}
                   className={cssNumber}
                   style={{ backgroundColor: this.props.color }}
                 ></span>
               );
             } else {
-              return <span>{num}</span>;
+              return <span key={this.props.number + '-' + index}>{num}</span>;
             }
           })}
         </div>

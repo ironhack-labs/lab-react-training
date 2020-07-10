@@ -1,0 +1,8 @@
+.LikeButton {
+  width: 100px;
+  border: 1px solid black;
+  font-size: x-large;
+  background-color: purple;
+  color: white;
+  mix-blend-mode: 'difference';
+}

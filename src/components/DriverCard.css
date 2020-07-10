@@ -1,0 +1,30 @@
+.driverCard {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 125px;
+  padding: 20px;
+  background-color: #455eb5;
+  margin: 5px;
+  padding: 20px;
+}
+.driverAvatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.driverData {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  margin-left: 10px;
+}
+.driverName {
+  font-size: 22px;
+  font-weight: bold;
+}
