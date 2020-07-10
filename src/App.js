@@ -4,6 +4,7 @@ import Greetings from './components/Greetings'
 import IdCard from './components/IdCard';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
+import CreditCard from './components/CreditCard';
 
 function App() {
 
@@ -58,8 +59,9 @@ function App() {
           min={1}
           max={100}
         />
-
       </div>
+      <h1>BoxColor</h1>
+      <div>
         <BoxColor
           r="255"
           g="0"
@@ -74,6 +76,40 @@ function App() {
           color="black"
           hex="#80ff00"
         />
+      </div>
+      <h1>CreditCard</h1>
+      <div className="credit">
+        <CreditCard
+          type="Visa"
+          bgColor="#11aa99"
+          color="white"
+          number="0123456789018845"
+          month={3}
+          year={2021}
+          bank="BNP"
+          owner="Maxence Bouret"
+        />
+        <CreditCard
+          type="Master Card"
+          bgColor="#eeeeee"
+          color="#222222"
+          number="0123456789010995"
+          month={3}
+          year={2021}
+          bank="N26"
+          owner="Marcela Vilas Boas"
+        />
+        <CreditCard
+          type="Visa"
+          bgColor="#ddbb55"
+          color="white"
+          number="0123456789016984"
+          month={12}
+          year={2019}
+          bank="Santander"
+          owner="Paio Pastanaga"
+        />
+      </div>
     </div>
   );
 }

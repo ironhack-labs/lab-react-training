@@ -28,7 +28,7 @@
   color: #61dafb;
 }
 
-.card{
+.card {
   border: solid black 1px;
   display: flex;
   margin: 10px
@@ -40,11 +40,11 @@
   margin: 5px;
 }
 
-.personInfo p{
+.personInfo p {
   margin: 5px;
 }
 
-.greetings p{
+.greetings p {
   border: solid black 1px;
   padding: 5px;
 }
@@ -63,6 +63,40 @@
   margin: 0
 }
 
+.credit {
+  display: flex;
+}
+.mycard {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 0 30px;
+  padding: 10px;
+}
+
+.cardInfo{
+  display:flex;
+  align-items: flex-end;
+
+}
+
+.flag {
+
+}
+.flag img {
+  width: 40px;
+}
+
+.mycard p {
+  margin: 5px;
+}
+
+
+
+
 
 
 
@@ -70,6 +104,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
