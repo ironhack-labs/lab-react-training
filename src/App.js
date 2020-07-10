@@ -10,7 +10,7 @@ function App() {
       lastName: 'Doe',
       firstName: 'John',
       gender: 'male',
-      height: 178,
+      height: 178 / 100 + ' m',
       birth: new Date('1992-07-14').toISOString().slice(0, 10),
       picture: 'https://randomuser.me/api/portraits/men/44.jpg',
     },
@@ -18,7 +18,7 @@ function App() {
       lastName: 'Delores',
       firstName: 'Obrien',
       gender: 'female',
-      height: 178,
+      height: 172 / 100 + ' m',
       birth: new Date('1988-05-11').toISOString().slice(0, 10),
       picture: 'https://randomuser.me/api/portraits/women/44.jpg',
     },
@@ -39,6 +39,10 @@ function App() {
     <div className="App">
       <h1>IdCard</h1>
       {idCardMap}
+
+      <h1>Greetings</h1>
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
     </div>
   );
 }

@@ -1,18 +1,29 @@
 import React from 'react';
+import './Greetings.css';
 
 const Greetings = (props) => {
   let helloWord = 'Hello';
 
-  if (props.lang === 'pt') {
-    helloWord = 'Olá';
-  } else if (props.lang === 'es') {
-    helloWord = 'Hola';
+  switch (props) {
+    case 'de':
+      helloWord = 'Halo';
+      break;
+    case 'en':
+      helloWord = 'Hello';
+      break;
+    case 'es':
+      helloWord = 'Hola';
+      break;
+    case 'fr':
+      helloWord = 'Alô';
   }
 
   return (
-    <h1>
-      {helloWord} {props.children}
-    </h1>
+    <div className="greetings-card">
+      <h5>
+        {helloWord} {props.children}
+      </h5>
+    </div>
   );
 };
 
