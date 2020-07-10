@@ -1,5 +1,4 @@
 import React from 'react';
-import './Container.css'
 
 export default function IdCard (props){
     return(

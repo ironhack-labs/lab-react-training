@@ -4,6 +4,7 @@ import Greetings from './components/Greetings';
 import RandomNumber from './components/RandomNumber';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import './App.css'
 
 function App() {
 
@@ -49,7 +50,7 @@ function App() {
   const creditCardData = [
     {
       type: "/img/master-card.svg",
-      number: 123456789010995,
+      number: '1234567890101995',
       expirationMonth: random.num(13),
       expirationYear: 2021,
       bank: "N26",
@@ -59,7 +60,7 @@ function App() {
     },
     {
       type: "/img/visa.png",
-      number: 123963817010995,
+      number: '1239638170104995',
       expirationMonth: random.num(13),
       expirationYear: 2025,
       bank: "BNP",
@@ -69,10 +70,12 @@ function App() {
     }
   ]
 
+  const hideNumbers = (str) => str.replace(/[0-9](?=\d{4})/g, "*");
+
   const renderCCard = creditCardData.map(elem => (
     <CreditCard 
       type={elem.type}
-      number={elem.number}
+      number={hideNumbers(elem.number)}
       expirationMonth={elem.expirationMonth}
       expirationYear={elem.expirationYear}
       bank={elem.bank}
@@ -82,6 +85,7 @@ function App() {
       className="c-card"
     />
   ))
+  
 
   return (
     <div className="App">
@@ -93,7 +97,9 @@ function App() {
         <BoxColor r={random.color()} g={random.color()} b={random.color()} />
         <BoxColor r={random.color()} g={random.color()} b={random.color()} />
         <BoxColor r={random.color()} g={random.color()} b={random.color()} />
+        <div className="c-card-container" >
         {renderCCard}
+        </div>
     </div>
   );
 }

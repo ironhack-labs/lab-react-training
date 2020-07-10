@@ -1,5 +1,4 @@
 import React from 'react';
-import './Container.css'
 
 export default function RandomNumber(props) {
     const generateRandom = () => Math.floor(Math.random() * Number(props.max)) + Number(props.min);
