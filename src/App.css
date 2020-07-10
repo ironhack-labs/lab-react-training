@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  margin: 20px
 }
 
 .App-logo {
@@ -27,6 +27,25 @@
 .App-link {
   color: #61dafb;
 }
+
+.card{
+  border: solid black 1px;
+  display: flex;
+  margin: 10px
+}
+
+.card img {
+  width: 128px;
+  height: 128px;
+  margin: 5px;
+}
+
+.personInfo p{
+  margin: 5px;
+}
+
+
+
 
 @keyframes App-logo-spin {
   from {
