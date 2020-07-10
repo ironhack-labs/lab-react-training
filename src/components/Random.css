@@ -1,0 +1,10 @@
+.card-random {
+  text-align: left;
+  margin: 10px 20px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.card-random > h5 {
+  margin: 0;
+}
