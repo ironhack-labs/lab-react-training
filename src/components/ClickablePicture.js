@@ -20,12 +20,14 @@ class ClickablePicture extends Component {
 
   render() {
     return (
-      <img
-        onClick={this.toggleGlasses}
-        className="clickable-picture"
-        alt="img"
-        src={this.state.glasses ? this.props.imgClicked : this.props.img}
-      />
+      <div>
+        <img
+          onClick={this.toggleGlasses}
+          className="clickable-picture"
+          alt="img"
+          src={this.state.glasses ? this.props.imgClicked : this.props.img}
+        />
+      </div>
     );
   }
 }
