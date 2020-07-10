@@ -39,6 +39,12 @@
   padding-left: 20px;
 }
 
+.rating {
+  font-size: 32px;
+  text-align: left;
+  margin-left: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
