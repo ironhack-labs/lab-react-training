@@ -45,6 +45,14 @@
   margin-left: 10px;
 }
 
+.cool-button {
+  border: none;
+  padding: 5px 30px;
+  margin-left: 20px;
+  color: white;
+  font-size: 18px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
