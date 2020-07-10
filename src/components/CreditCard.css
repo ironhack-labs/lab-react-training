@@ -1,0 +1,45 @@
+.creditCard {
+  border: 1px solid transparent;
+  justify-content: space-between;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 125px;
+  padding: 20px;
+}
+.numberCreditCard {
+  font-size: 30px;
+  text-align: center;
+}
+.typeCredirCard {
+  height: 20px;
+  background-image: url('/img/visa.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  /* margin-bottom: 10px; */
+}
+.visa {
+  background-image: url('/img/visa.png');
+}
+.mastercard {
+  background-image: url('/img/master-card.svg');
+}
+.dotCreditCard {
+  height: 10px;
+  width: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.spaceCreditCard {
+  margin-right: 20px;
+}
+.dataCreditCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-top: 15px; */
+}
