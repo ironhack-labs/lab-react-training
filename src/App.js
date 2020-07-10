@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
+import Random from './components/Random';
 
 function App() {
 
@@ -26,7 +26,6 @@ function App() {
   ]
 
   const cards = card.map(thisCard => {
-    console.log(thisCard.birth)
     return (
       <IdCard lastname={thisCard.lastName}
               firstName={thisCard.firstName} 
@@ -46,15 +45,12 @@ function App() {
       <Greetings lang="pt">Lourenço</Greetings>
       <Greetings lang="es">Juan</Greetings> 
       <Greetings>Jack</Greetings> 
+      <h1>Random</h1>
+      <Random min={1} max={6}/>
+      <Random min={1} max={100}/>
+      <h1>BoxColor</h1>
     </div>
   );
 }
 
 export default App;
-
-// lastName: A string
-// firstName: A string
-// gender: A string, 'male' or 'female'
-// height: A number
-// birth: A date
-// picture: A string

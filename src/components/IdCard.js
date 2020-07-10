@@ -21,11 +21,3 @@ function IdCard(props) {
 }
 
 export default IdCard
-
-{/* <IdCard lastname={thisCard.lastName}
-              firstName={thisCard.firstName} 
-              gender={thisCard.gender} 
-              height={thisCard.height} 
-              birth={thisCard.birth}
-              picture={thisCard.picture}
-       /> */}
