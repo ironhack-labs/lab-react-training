@@ -5,6 +5,7 @@ import IdCard from './components/IdCard';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
 
 function App() {
 
@@ -110,6 +111,29 @@ function App() {
           owner="Paio Pastanaga"
         />
       </div>
+      <h1>Rating</h1>
+      <div>
+        <Rating
+          children={0}
+        />
+        <Rating
+          children={1.49}
+        />
+        <Rating
+          children={1.5}
+        />
+        <Rating
+          children={3}
+        />
+        <Rating
+          children={4}
+        />
+        <Rating
+          children={5}
+        />
+      </div>
+      <h1>Rating</h1>
+
     </div>
   );
 }

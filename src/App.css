@@ -94,9 +94,14 @@
   margin: 5px;
 }
 
+.rateStars{
+  display: flex;
+}
 
-
-
+.rateStars p {
+  font-size: 30px;
+  margin: 5px;
+}
 
 
 
