@@ -49,6 +49,20 @@
   padding: 5px;
 }
 
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  border: 1px black solid;
+  margin: 10px 0;
+}
+
+.box p {
+  margin: 0
+}
+
 
 
 

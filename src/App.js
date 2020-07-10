@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Greetings from './components/Greetings'
 import IdCard from './components/IdCard';
+import Random from './components/Random';
+import BoxColor from './components/BoxColor';
 
 function App() {
 
@@ -43,11 +45,30 @@ function App() {
       </div>
       <h1>Greetings</h1>
       <div>
-      <Greetings lang="fr">Marcela</Greetings>
-      <Greetings lang="es">Roger</Greetings>
+        <Greetings lang="fr">Marcela</Greetings>
+        <Greetings lang="es">Roger</Greetings>
       </div>
-
-
+      <h1>Random</h1>
+      <div>
+        <Random
+          min="1"
+          max="6"
+        />
+      </div>
+        <BoxColor
+          r="255"
+          g="0"
+          b="0"
+          color="white"
+          hex="#ff0000"
+        />
+        <BoxColor
+          r="128"
+          g="255"
+          b="0"
+          color="black"
+          hex="#80ff00"
+        />
     </div>
   );
 }
