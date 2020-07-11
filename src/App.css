@@ -54,3 +54,11 @@
   align-items: flex-start;
   margin: 0px 10px;
 }
+
+.text-in-border {
+  font-size: 24px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+  width: fit-content;
+}

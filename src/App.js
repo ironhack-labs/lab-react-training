@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
+import Random from './components/Random';
 
 const idCards = [
   {
@@ -49,6 +50,10 @@ function App() {
         </Greetings>
       </div>
       {idCardsCollection}
+      <Random 
+        min='1'
+        max='10'
+      />
     </div>
   );
 }
