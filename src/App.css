@@ -60,7 +60,7 @@
   margin: 0;
 }
 
-.greetings {
+.greetings, .random {
   border: 2px solid black;
   text-align: left;
   font-size: 36px;
