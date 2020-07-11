@@ -78,3 +78,45 @@
 .box-color p {
   margin: 10px;
 }
+
+.credit-card {
+  height: auto;
+  width: 300px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.credit-card-logo {
+  height: 25px;
+  text-align: right;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.credit-card-logo img {
+  height: 80%;
+}
+
+.credit-card-number {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 10px auto;
+}
+
+.credit-card-number span {
+  font-weight: bolder;
+}
+
+.credit-card-data {
+  text-align: left;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.credit-card-data p {
+  margin: 0;
+}
+
+.credit-card-data p span {
+  padding-left: 25px;
+}
