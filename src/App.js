@@ -4,7 +4,9 @@ import Greetings from './components/Greetings';
 import RandomNumber from './components/RandomNumber';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
 import './App.css'
+
 
 function App() {
 
@@ -46,7 +48,7 @@ function App() {
       return diffLang[Math.floor(Math.random() * diffLang.length)]
     }
   }
-   
+
   const creditCardData = [
     {
       type: "/img/master-card.svg",
@@ -100,6 +102,7 @@ function App() {
         <div className="c-card-container" >
         {renderCCard}
         </div>
+        <Rating value="1.5"/>
     </div>
   );
 }

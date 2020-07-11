@@ -59,15 +59,14 @@
 
 .c-card-container {
   margin-top: 2em;
-  display: grid;
-  grid-template-columns: 17.5% 17.5%;
-  gap: 2em;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 .c-card {
   border-radius: 25px;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   height: 175px;
+  min-width: 300px;
 }
 .c-card div > *, .c-card > * {
   margin: 0;
