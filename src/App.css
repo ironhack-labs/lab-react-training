@@ -40,6 +40,8 @@
 .idCard {
   display: flex;
   border: 1px solid black;
+  margin-top: 5px;
+  margin: 5px;
 }
 
 .idCard div {
@@ -56,4 +58,12 @@
 
 .data-idCard p {
   margin: 0;
+}
+
+.greetings {
+  border: 2px solid black;
+  text-align: left;
+  font-size: 36px;
+  padding: 5px;
+  margin: 5px;
 }
