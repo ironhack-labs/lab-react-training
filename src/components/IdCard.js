@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './IdCard.css';
+
 
 export default class IdCard extends Component {
   render() {
