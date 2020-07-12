@@ -27,3 +27,17 @@
    padding-top: 30px; 
    align-self: center;
 }
+
+.credit-cards-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.credit-card {
+  display: inline-block;
+  width: 300px;
+  height: 175px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: blue;
+}
