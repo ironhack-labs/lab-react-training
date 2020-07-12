@@ -7,25 +7,18 @@ function CreditCard(props) {
         color:props.color
     }
 
+    const cleanCCNumber = () => {
+        return `•••• •••• •••• ${props.number[12]}${props.number[13]}${props.number[14]}${props.number[15]}`
+    }
+
     const source = () => props.type === "Visa" ? "img/visa.png" : "master-card.svg"
 
-    // type="Visa"
-    // number="0123456789018845"
-    // bank="BNP"
-    // owner="Maxence Bouret"
-    // expirationMonth={3}
-    // expirationYear={2021}
-
     return (
-        <div 
-            className="credit-card"
-            style={myStyle}>
-            <img style={{width:"50px"}} src={source()} />
-            {props.number}
-            {props.bank}
-            {props.owner}
-            {props.expirationMonth}
-            {props.expirationYear}
+        <div className="credit-card" style={myStyle}>
+            <img className="cc-img" src={source()} />
+            <span className="cc-number">{cleanCCNumber()}</span>
+            <span className="cc-expires">Expires {props.expirationMonth}/{props.expirationYear}    {props.bank}</span>
+            <span className="cc-name">{props.owner}</span>
         </div>
     )
 }

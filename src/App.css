@@ -31,6 +31,7 @@
 .credit-cards-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .credit-card {
@@ -40,4 +41,33 @@
   border-radius: 10px;
   margin: 10px;
   background-color: blue;
+}
+
+.cc-img {
+  width: 50px;
+  position: relative;
+  left: 80%;
+  margin-top: 10px
+}
+
+.cc-number {
+  display: block;
+  font-size: 26px;
+  position: relative;
+  top: 10%;
+  left: 15%
+}
+
+.cc-expires {
+  display: block;
+  position: relative;
+  top: 25%;
+  left: 5%;
+}
+
+.cc-name {
+  display: block;
+  position: relative;
+  top: 25%;
+  left: 5%
 }
