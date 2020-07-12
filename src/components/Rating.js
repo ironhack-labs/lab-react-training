@@ -7,14 +7,14 @@ export default function Rating({value}) {
     const rate = Math.round(Number(value));
 
     let stars = []
-
     let count = 0;
+
     while (count < 5) {
         if (count < rate) {
-            stars.push(<StarIcon />)
+            stars.push(<StarIcon key={stars}/>)
             count ++;
         } else {
-            stars.push(<StarBorderIcon />)
+            stars.push(<StarBorderIcon key={stars}/>)
             count ++;
         }
     }

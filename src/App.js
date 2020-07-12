@@ -8,6 +8,8 @@ import Rating from './components/Rating';
 import './App.css'
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickedImg from './components/ClickedImg';
+import Dice from './components/Dice';
 
 
 function App() {
@@ -59,6 +61,7 @@ function App() {
       driverRating={driver.rating}
       model={driver.car.model}
       licensePlate={driver.car.licensePlate}
+      key={driver.name}
     />
   ))
 
@@ -70,6 +73,7 @@ function App() {
       height={user.height}
       birth={user.date}  
       picture={user.picture}
+      key={user.lastName}
       />
   ));
 
@@ -118,6 +122,7 @@ function App() {
       bgColor={elem.bgColor}
       color={elem.color}
       className="c-card"
+      key={elem.owner}
     />
   ))
   
@@ -138,6 +143,8 @@ function App() {
         <Rating value={2}/>
         {renderDrivers}
         <LikeButton />
+        <ClickedImg />
+        <Dice />
     </div>
   );
 }

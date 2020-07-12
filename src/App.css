@@ -144,4 +144,8 @@ html {
   padding: 1em 2em;
   font-weight: 600;
   margin: 1em 0;
+  color: white;
+}
+.dice {
+  max-width: 100px;
 }
