@@ -59,7 +59,7 @@
   padding: 10px;
   border: 2px solid black;
   margin: 10px 50px;
-  text-align:left;
+  text-align: left;
 }
 
 .box-color {
@@ -76,12 +76,77 @@
 }
 
 .credit-card {
-  width: 350px;
+  width: 300px;
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
 }
 
 .card-image {
   height: 20px;
+  float: right;
+}
+
+.credit-card p {
+  font-size: 14px;
+  text-align: left;
+  margin: 0;
+}
+
+.credit-card p span {
+  padding-right: 25px;
+}
+
+.credit-card h5 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.credit-card h5 span {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.stars-rating {
+  display: flex;
+  padding: 20px;
+}
+
+
+.driver-card {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #455eb5;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.driver-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.driver-card h1, .driver-card p {
+  padding-left: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+.driver-card h1{
+  font-size: 22px;
+}
+
+.like-button {
+  margin: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.dices {
+  width: 100px;
 }

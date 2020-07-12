@@ -10,11 +10,10 @@ const CreditCard = (props) => {
 
 
   return (
-    <div className="credit-card" style={{backgroundColor: props.bgColor}}>
+    <div className="credit-card" style={{backgroundColor: props.bgColor, color: props.color}}>
       <img src={cardType} alt="Card Type" className="card-image"/>
       <h5> <span>●●●● ●●●● ●●●● </span>{props.number.substring(12,16)}</h5>
-      <p>Expires {props.expirationMonth}/{props.expirationYear}</p>
-      <p>{props.bank}</p>
+      <p><span>Expires {props.expirationMonth}/{props.expirationYear}</span> {props.bank}</p>
       <p>{props.owner}</p>
     </div>
   );
