@@ -7,8 +7,6 @@ export default class Dice extends Component {
             diceNumber: this.randomDice()
         }
         this.changeDice = this.changeDice.bind(this)//El valor de this es ignorado cuando la función es llamada con el operador new.
-
-
     }
 
     randomDice = () => {

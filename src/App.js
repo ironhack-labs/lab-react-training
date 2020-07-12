@@ -10,6 +10,7 @@ import DriveCar from './components/DriveCar';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
+import NumbersTable from './components/NumbersTable';
 
 function App() {
 
@@ -172,8 +173,13 @@ function App() {
       </div>
       <h1>Dice</h1>
       <div className="diceDiv">
-        <Dice/>
+        <Dice />
       </div>
+      <h1>NumbersTable</h1>
+      <NumbersTable
+        limit={12}
+      />
+
     </div>
   );
 }

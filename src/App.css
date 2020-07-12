@@ -139,6 +139,19 @@
   margin: 20px
 }
 
+.tableUl {
+  display: table;
+  height:50px;
+
+}
+.table {
+  list-style: none;
+  width: 50px;
+  border: 1px solid black;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
 
 
 @keyframes App-logo-spin {
