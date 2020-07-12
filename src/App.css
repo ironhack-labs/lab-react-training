@@ -45,26 +45,30 @@ html {
     transform: rotate(360deg);
   }
 }
-.container div:first-child{
+.container div{
   display: flex;
-  margin-top: 2em;
-  padding: 0.5em 0;
-  border: 1px solid black;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
 }
 .container span {
   font-weight: 400;
 }
 .container img {
   max-height: 150px;
+  margin-right: 1em;
 }
 .container h3 {
-  margin: 0;
+  padding-right: 1em;
 }
 .container {
   display: flex;
-  justify-content: center;
-  
+  justify-content: space-between;
+  width: 30%;
+  border: 1px solid black;
+  margin-top: 1em;
 }
+
 
 .c-card-container {
   margin-top: 2em;
@@ -148,4 +152,29 @@ html {
 }
 .dice {
   max-width: 100px;
+}
+.number-box {
+  padding: 1em;
+  border: 2px solid black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers-table {
+  display: flex;
+  justify-content: center;
+}
+.nt-content {
+  width: 33%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.profiles-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
 }

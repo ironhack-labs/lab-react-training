@@ -11,6 +11,9 @@ import LikeButton from './components/LikeButton';
 import ClickedImg from './components/ClickedImg';
 import Dice from './components/Dice';
 import Caroussel from './components/Caroussel';
+import NumbersTable from './components/NumbersTable';
+import profiles from './data/berlin.json'
+import FbProfiles from './components/FbProfile';
 
 
 function App() {
@@ -21,7 +24,7 @@ function App() {
       firstName: "John",
       gender: "male",
       height: 178,
-      date: (new Date('1992-07-14')),
+      date: new Date('1992-07-14').toLocaleDateString(),
       picture: "https://randomuser.me/api/portraits/men/44.jpg"
     },
     {
@@ -29,7 +32,7 @@ function App() {
       firstName: "Obrien",
       gender: "female",
       height: 170,
-      date: (new Date('1990-07-14')),
+      date: new Date('1990-07-14').toLocaleDateString(),
       picture: "https://randomuser.me/api/portraits/women/44.jpg"
     }
   ]
@@ -134,6 +137,17 @@ function App() {
     'https://randomuser.me/api/portraits/men/2.jpg'
   ]
 
+  const renderFBProfiles = profiles.map(user => (
+    <FbProfiles
+      firstName={user.firstName}
+      lastName={user.lastName}
+      country={user.country}
+      isStudent={user.isStudent}
+      img={user.img}
+      key={user.lastName}
+    />
+  ))
+
   return (
     <div className="App">
         {renderIdCard}
@@ -153,6 +167,11 @@ function App() {
         <ClickedImg />
         <Dice />
         <Caroussel images={carouselImgs}/>
+        <NumbersTable limit={15}/>
+        <div className="profiles-box">
+          {renderFBProfiles}
+        </div>
+        
     </div>
   );
 }
