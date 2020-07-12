@@ -154,3 +154,22 @@ App {
   height: 100px;
   object-fit: contain;
 }
+
+.NumbersTable {
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
+  margin: 20px;
+  justify-content: flex-start;
+}
+
+.NumbersTable__number {
+  border: 1px solid black;
+
+  padding: 40px;
+} 	
+
+.NumbersTable__number:nth-child(even) {
+  background-color: red;
+}
+
