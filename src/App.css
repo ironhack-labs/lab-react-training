@@ -164,12 +164,12 @@ App {
 }
 
 .NumbersTable__number {
-  border: 1px solid black;
+  border: 2px solid black;
 
   padding: 40px;
 } 	
 
 .NumbersTable__number:nth-child(even) {
-  background-color: red;
+  background-color: rgb(157, 36, 36);
 }
 
