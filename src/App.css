@@ -148,3 +148,9 @@ App {
   display: flex;
   flex-direction: column;
 }
+
+.Dice img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}

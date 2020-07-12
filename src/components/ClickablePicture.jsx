@@ -7,9 +7,9 @@ export default function ClickablePicture(props) {
     }
     const [state, setState] = useState(initialState)
     const handleState = () => {
-        setState((state) => ({...state, img : state.imgClicked}))
+        setState(state => ({...state, img : state.imgClicked}))
     }
-    console.log(state.img)
+
     return (
         <div>
             <img src={state.img} onClick={handleState} alt="img"/>
