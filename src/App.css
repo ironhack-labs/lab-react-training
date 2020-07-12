@@ -143,3 +143,9 @@
   text-align: left;
   padding-left: 20px;
 }
+
+.like-button {
+  color: white;
+  font-size: 32px;
+  padding: 5px;
+}
