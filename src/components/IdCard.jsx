@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function IdCard(props) {
     return (
-        <div className="id-card">
+        <div className="id-card" key={props.lastName}>
             <div className="id-card__img">
                 <img src={props.picture} alt="img"/>
             </div>

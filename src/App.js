@@ -1,9 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import Random from './components/Random';
+import BoxColor from './components/BoxColor';
+
 
 const idCards = [
   {
@@ -32,6 +33,7 @@ const idCardsCollection = idCards.map(card =>
     height = {card.height}
     birth = {card.birth}
     picture = {card.picture}
+    key = {card.lastName}
   />
 )
 
@@ -51,9 +53,11 @@ function App() {
       </div>
       {idCardsCollection}
       <Random 
-        min='1'
-        max='10'
+        min='0'
+        max='255'
       />
+      <BoxColor r={255} g={0} b={0}>#ff0000</BoxColor>;
+      <BoxColor r={128} g={255} b={0}>#80ff00</BoxColor>;
     </div>
   );
 }

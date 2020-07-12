@@ -17,7 +17,7 @@ export default class Random extends Component {
         return (
             <div className="text-in-border">
             <button onClick={this.countRandom}>Click me</button>
-                {this.props.min} {this.props.max} {this.state.random}
+            <p>Random value between {this.props.min} and {this.props.max}<br /> = {this.state.random}</p>
             </div>
         )
     }
