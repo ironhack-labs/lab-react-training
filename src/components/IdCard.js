@@ -1,37 +1,20 @@
 import React, { Component } from 'react';
 import Avatar from './Avatar';
 
+const mapLabels = {
+  firstName: 'First Name',
+  lastName: 'Last Name',
+  gender: 'Gender',
+  height: 'Height',
+  birth: 'Birth',
+  country: 'Country',
+  type: 'Type',
+};
 class IdCard extends Component {
   render() {
     const dataToShow = [];
     Object.keys(this.props).map((key, index) => {
-      let label = '';
-      switch (key) {
-        case 'firstName':
-          label = 'First Name:';
-          break;
-        case 'lastName':
-          label = 'Last Name:';
-          break;
-        case 'gender':
-          label = 'Gender:';
-          break;
-        case 'height':
-          label = 'Height:';
-          break;
-        case 'birth':
-          label = 'Birth Date:';
-          break;
-        case 'country':
-          label = 'Country:';
-          break;
-        case 'type':
-          label = 'Type:';
-          break;
-        default:
-          label = '';
-          break;
-      }
+      let label = mapLabels[key];
       if (label) {
         dataToShow.push(
           <div key={index}>

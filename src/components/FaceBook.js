@@ -7,7 +7,7 @@ function FaceBook() {
 
   function getCards() {
     const idCards = profiles.map((p, index) => {
-      console.log(p.country, countrySelected);
+      const isSelected = p.country === countrySelected;
       return (
         <IdCard
           key={index}
@@ -16,7 +16,7 @@ function FaceBook() {
           country={p.country}
           type={p.isStudent ? 'Student' : 'Teacher'}
           picture={p.img}
-          selected={p.country === countrySelected ? true : false}
+          selected={isSelected}
         />
       );
     });
@@ -25,13 +25,14 @@ function FaceBook() {
   function getCountries() {
     const buttonCountries = [];
     const countries = profiles.map((p, index) => {
+      const isSelected = p.country === countrySelected;
       if (buttonCountries.indexOf(p.country) < 0) {
         buttonCountries.push(p.country);
         return (
           <button
             key={p.country}
             onClick={() => handleCountrySelect(p.country)}
-            className={p.country === countrySelected ? 'cardSelected' : ''}
+            className={isSelected ? 'cardSelected' : ''}
           >
             {p.country}
           </button>
@@ -40,24 +41,23 @@ function FaceBook() {
     });
     return countries;
   }
-  const [cards, setCards] = useState(getCards);
-  const [countries, setCountries] = useState(getCountries);
 
   function handleCountrySelect(_country) {
-    console.log(_country);
     setCountry(_country);
-    console.log(countrySelected);
-    setCountries(getCountries);
-    setCards(getCards);
   }
 
   return (
     <div>
       <div>
-        <button>All</button>
-        {countries}
+        <button
+          onClick={() => handleCountrySelect('all')}
+          className={countrySelected === 'all' ? 'cardSelected' : ''}
+        >
+          All
+        </button>
+        {getCountries()}
       </div>
-      <div>{cards}</div>
+      <div>{getCards()}</div>
     </div>
   );
 }
