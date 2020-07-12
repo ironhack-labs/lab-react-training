@@ -13,7 +13,6 @@ function NumbersTable(props) {
       </div>
     );
   }
-  console.log(boxNumbers);
   return <div className="numbersContainer">{boxNumbers}</div>;
 }
 export default NumbersTable;
