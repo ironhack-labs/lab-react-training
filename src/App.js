@@ -10,6 +10,7 @@ import DriverCard from './components/DriverCard'
 import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
+import Carousel from './components/Carousel'
 
 
 //Iteration 1
@@ -156,6 +157,14 @@ function App() {
 
     <Dice />
 
+    <Carousel
+      imgs={[
+      'https://randomuser.me/api/portraits/women/1.jpg',
+      'https://randomuser.me/api/portraits/men/1.jpg',
+      'https://randomuser.me/api/portraits/women/2.jpg',
+      'https://randomuser.me/api/portraits/men/2.jpg'
+    ]}
+    />
     </div>
   );
 }

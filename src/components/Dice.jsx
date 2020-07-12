@@ -24,12 +24,9 @@ export default function Dice() {
         window.setTimeout(() => {
             setState(state => ({...state, img: state.dices[Math.floor(Math.random() * 6)]}))
          }, 1000)
-
-         
     }
     return (
         <div className="Dice">
-            <React.StrictMode />
             <img src={state.img} alt="" onClick={handleChange}/>
         </div>
     )
