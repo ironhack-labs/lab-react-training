@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -85,8 +94,8 @@
   justify-content: flex-end;
 }
 .c-card-img img {
-  width: 50px;
-  max-height: 27px;
+  width: 75px;
+  max-height: 50px;
   padding-right: 2em;
 }
 .c-card-num {
@@ -102,4 +111,31 @@
 }
 .c-card-features p:first-child {
   padding-right: 2em;
+}
+
+.driver-card {
+  display: flex;
+  justify-content: center;
+  margin: 1em 5em;
+  padding: 1em 0;
+  border-radius: 10px;
+  background-color: #455eb5;
+  color: white;
+}
+.driver-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-right: 2em;
+}
+.driver-data {
+  text-align: start;
+}
+.driver-data h4{
+  padding-bottom: 0.5em;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.driver-data p {
+  font-size: 0.8em;
 }

@@ -6,6 +6,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import './App.css'
+import DriverCard from './components/DriverCard';
 
 
 function App() {
@@ -29,6 +30,37 @@ function App() {
     }
   ]
   
+  const drivers = [
+    {
+      name: "Travis Kalanick",
+      rating: 4.2,
+      img: "https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428",
+      car: {
+        model: "Toyota Corolla Altis",
+        licensePlate: "CO42DE"
+      }
+    },
+    {
+      name: "Dara khosrowsahi",
+      rating: 4.9,
+      img: "https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg",
+      car: {
+        model: "Audi A3",
+        licensePlate: "BE33ER"
+      }
+    }
+  ]
+
+  const renderDrivers = drivers.map(driver => (
+    <DriverCard
+      imgUrl={driver.img}
+      name={driver.name}
+      driverRating={driver.rating}
+      model={driver.car.model}
+      licensePlate={driver.car.licensePlate}
+    />
+  ))
+
   const renderIdCard = iDCardData.map(user => (
     <IdCard 
       lastName={user.lastName} 
@@ -102,7 +134,8 @@ function App() {
         <div className="c-card-container" >
         {renderCCard}
         </div>
-        <Rating value="1.5"/>
+        <Rating value={2}/>
+        {renderDrivers}
     </div>
   );
 }
