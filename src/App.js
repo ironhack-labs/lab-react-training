@@ -7,6 +7,7 @@ import CreditCard from "./components/Credit card/CreditCard"
 import DriverCard from "./components/DriverCard/DriverCard"
 import LikeButton from "./components/LikeButton/LikeButton"
 import ClickablePicture from "./components/ClickablePicture/ClickablePicture"
+import Dice from "./components/Dice/Dice"
 
 
 function App() {
@@ -91,7 +92,8 @@ function App() {
   img='/img/persons/maxence.png'
   imgClicked='/img/persons/maxence-glasses.png'
 />
-
+  <h2>Dice</h2>
+  <Dice/>
     </div>
   );
 }
