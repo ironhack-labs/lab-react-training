@@ -5,6 +5,7 @@ import Random from "./components/random/Random"
 import BoxColor from "./components/BoxColor/BoxColor"
 import CreditCard from "./components/Credit card/CreditCard"
 import DriverCard from "./components/DriverCard/DriverCard"
+import LikeButton from "./components/LikeButton/LikeButton"
 
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
     model: "Audi A3",
     licensePlate: "BE33ER"
   }} />
+  <LikeButton /> 
 
     </div>
   );
