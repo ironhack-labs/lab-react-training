@@ -13,6 +13,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
+// import SignupPage from './components/SignupPage';
 
 function App() {
   return (
@@ -33,14 +34,18 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+      <hr />
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
       <Greetings lang="es">Marc</Greetings>
+      <hr />
       <Random min={1} max={6} />
       <Random min={25} max={50} />
       <Random min={1} max={100} />
+      <hr />
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+      <hr />
       <div className="container">
         <CreditCard
           type="Visa"
@@ -73,6 +78,7 @@ function App() {
           color="white"
         />
       </div>
+      <hr />
       <div className="containerColumn">
         <Rating>0</Rating>
         <Rating>1.49</Rating>
@@ -81,6 +87,7 @@ function App() {
         <Rating>4</Rating>
         <Rating>5</Rating>
       </div>
+      <hr />
       <div className="containerColumn">
         <DriverCard
           name="Travis Kalanick"
@@ -101,18 +108,22 @@ function App() {
           }}
         />
       </div>
+      <hr />
       <div>
         <LikeButton /> <LikeButton />
       </div>
+      <hr />
       <div>
         <ClickablePicture
           img="/img/persons/maxence.png"
           imgClicked="/img/persons/maxence-glasses.png"
         />
       </div>
+      <hr />
       <div>
         <Dice />
       </div>
+      <hr />
       <div style={{ height: 650 }}>
         <Carousel
           imgs={[
@@ -123,12 +134,18 @@ function App() {
           ]}
         />
       </div>
+      <hr />
       <div>
         <NumbersTable limit={12} />
       </div>
+      <hr />
       <div>
         <FaceBook />
       </div>
+      <hr />
+      {/* <div>
+        <SignupPage />
+      </div> */}
     </div>
   );
 }

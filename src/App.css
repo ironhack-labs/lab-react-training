@@ -9,6 +9,9 @@
 .cardAvatar {
   width: 150px;
 }
+.cardSelected {
+  background-color: cyan;
+}
 .cardItem {
   display: flex;
   margin-left: 5px;

@@ -4,10 +4,8 @@ import Avatar from './Avatar';
 class IdCard extends Component {
   render() {
     const dataToShow = [];
-    console.log(this.props);
     Object.keys(this.props).map((key, index) => {
       let label = '';
-      console.log(key);
       switch (key) {
         case 'firstName':
           label = 'First Name:';
@@ -46,9 +44,11 @@ class IdCard extends Component {
           </div>
         );
       }
+      return null;
     });
+    const cssCard = this.props.selected ? 'card cardSelected' : 'card';
     return (
-      <div key={this.props.picture} className="card">
+      <div key={this.props.picture} className={cssCard}>
         <Avatar src={this.props.picture} width="150px" />
         <div className="cardItem">{dataToShow}</div>
       </div>
