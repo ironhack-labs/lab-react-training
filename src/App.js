@@ -10,6 +10,7 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickedImg from './components/ClickedImg';
 import Dice from './components/Dice';
+import Caroussel from './components/Caroussel';
 
 
 function App() {
@@ -126,6 +127,12 @@ function App() {
     />
   ))
   
+  const carouselImgs = [
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]
 
   return (
     <div className="App">
@@ -145,6 +152,7 @@ function App() {
         <LikeButton />
         <ClickedImg />
         <Dice />
+        <Caroussel images={carouselImgs}/>
     </div>
   );
 }
