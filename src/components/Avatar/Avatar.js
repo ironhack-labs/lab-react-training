@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CssOptions from './CssOptions';
+import CssOptions from '../CssOptions';
 import './Avatar.css';
 
 class Avatar extends Component {

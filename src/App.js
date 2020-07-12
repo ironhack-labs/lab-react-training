@@ -1,18 +1,18 @@
 import React from 'react';
 import './App.css';
-import IdCard from './components/IdCard';
-import Greetings from './components/Greetings';
-import Random from './components/Random';
-import BoxColor from './components/BoxColor';
-import CreditCard from './components/CreditCard';
-import Rating from './components/Rating';
-import DriverCard from './components/DriverCard';
-import LikeButton from './components/LikeButton';
-import ClickablePicture from './components/ClickablePicture';
-import Dice from './components/Dice';
-import Carousel from './components/Carousel';
-import NumbersTable from './components/NumbersTable';
-import FaceBook from './components/FaceBook';
+import IdCard from './components/IdCard/IdCard';
+import Greetings from './components/Greetings/Greetings';
+import Random from './components/Random/Random';
+import BoxColor from './components/BoxColor/BoxColor';
+import CreditCard from './components/CreditCard/CreditCard';
+import Rating from './components/Rating/Rating';
+import DriverCard from './components/DriverCard/DriverCard';
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickeablePicture/ClickablePicture';
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import FaceBook from './components/FaceBook/FaceBook';
 // import SignupPage from './components/SignupPage';
 
 function App() {

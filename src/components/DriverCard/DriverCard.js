@@ -1,7 +1,7 @@
 import React from 'react';
 import './DriverCard.css';
-import Rating from './Rating';
-import Avatar from './Avatar';
+import Rating from '../Rating/Rating';
+import Avatar from '../Avatar/Avatar';
 
 function DirverCard(props) {
   return (

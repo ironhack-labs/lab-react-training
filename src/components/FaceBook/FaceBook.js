@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import profiles from '../data/berlin.json';
-import IdCard from './IdCard';
+import profiles from '../../data/berlin.json';
+import IdCard from '../IdCard/IdCard';
 
 function FaceBook() {
   const [countrySelected, setCountry] = useState('all');
