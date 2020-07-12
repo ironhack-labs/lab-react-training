@@ -7,6 +7,7 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import './App.css'
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 
 function App() {
@@ -136,6 +137,7 @@ function App() {
         </div>
         <Rating value={2}/>
         {renderDrivers}
+        <LikeButton />
     </div>
   );
 }

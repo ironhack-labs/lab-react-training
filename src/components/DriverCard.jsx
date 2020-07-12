@@ -5,7 +5,7 @@ export default function DriverCard({imgUrl, name, driverRating, model, licensePl
     return (
       <div className="driver-card">
       <div>
-      <img src={imgUrl} alt="" />
+      <img src={imgUrl} alt={name} />
       </div>
           
         <div className="driver-data">

@@ -139,3 +139,9 @@ html {
 .driver-data p {
   font-size: 0.8em;
 }
+
+.like-button {
+  padding: 1em 2em;
+  font-weight: 600;
+  margin: 1em 0;
+}
