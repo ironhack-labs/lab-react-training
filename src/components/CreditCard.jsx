@@ -5,9 +5,7 @@ export default function CreditCard(props) {
 const numbers = [...props.number]
 
 const lastNumbers = numbers.splice((numbers.length/4) * 3, (numbers.length/4) * 4)
-const firstNumbers = numbers.splice(0, (numbers.length/4) * 3)
 
-console.log(firstNumbers)
     return (
         
         <div 

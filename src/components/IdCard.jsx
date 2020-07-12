@@ -3,16 +3,20 @@ import React from 'react'
 export default function IdCard(props) {
     return (
         <div className="id-card" key={props.lastName}>
-            <div className="id-card__img">
-                <img src={props.picture} alt="img"/>
-            </div>
+            <div className="id-card__img"
+                style={{backgroundImage: `url(${props.img})`}}
+            />
+            
             <div className="id-card__info">
-                <label><strong>First name:</strong>{props.firstName}</label>
-                <label><strong>Last name:</strong>{props.lastName}</label>
-                <label><strong>Gender:</strong>{props.gender}</label>
-                <label><strong>Height:</strong>{props.height}</label>
-                <label><strong>Birth:</strong>{props.birth}</label>
-            </div>
+                <label><strong>First name: {props.firstName}</strong></label>
+                <label><strong>Last name: {props.lastName}</strong></label>
+                <label><strong>Country: {props.country}</strong></label>
+                <label>
+                    <strong>Type: </strong>
+                    {props.isStudent === true ? 'Student' : 'Teacher'}
+                </label>
+            </div>  
         </div>
     )
+    
 }

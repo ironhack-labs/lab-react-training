@@ -5,7 +5,7 @@ export default function NumbersTable(props) {
         let numbers = [];
         for (let num = 1; num <= limit; num++) {
             numbers.push(
-                <div className='NumbersTable__number'key={num}>
+                <div className='NumbersTable__number' key={num}>
                     {num}
                 </div>
             )
