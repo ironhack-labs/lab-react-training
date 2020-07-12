@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 10px;
 }
 
 .App-logo {
@@ -60,5 +61,53 @@
   border: 1px solid black;
   padding: 5px;
   margin: 10px 0;
-  width: fit-content;
+  width: fit-content
 }
+.CreditCard{
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px #111;
+}
+.CreditCard__type{
+  font-size: 14px;
+  width: 100%;
+  flex-direction: row-reverse;
+  display: flex;
+  margin-bottom: 40px;
+ 
+}
+.CreditCard__type img {
+  height: 15px;
+  object-fit: contain;
+  float: right;
+}
+.CreditCard__number{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.number-secret span {
+  display: none;
+}
+.number-secret:after {
+  content: '**** **** **** ';
+}
+
+.CreditCard__expire-cont{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 9px;
+}
+.CreditCard__expire-cont label{
+  margin: 5px 10px 0 0;
+}
+.CreditCard__owner{
+  display: flex;
+  font-size: 12px;
+}
+
