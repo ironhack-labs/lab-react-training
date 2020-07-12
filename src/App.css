@@ -120,3 +120,26 @@
 .credit-card-data p span {
   padding-left: 25px;
 }
+
+.driver-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: blue;
+  width: 60%;
+  border-radius: 15px;
+  margin: 20px auto;
+  color: white;
+}
+
+.driver-card img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.driver-card-data {
+  text-align: left;
+  padding-left: 20px;
+}
