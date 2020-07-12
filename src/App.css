@@ -37,14 +37,14 @@
   }
 }
 
-.idCard {
+.idCard, .profile {
   display: flex;
   border: 1px solid black;
   margin-top: 5px;
   margin: 5px;
 }
 
-.idCard div {
+.idCard div, .profile div {
   margin: 10px;
 }
 
@@ -52,11 +52,15 @@
   height: 100%;
 }
 
-.data-idCard {
+.image-profile img {
+  height: 150px;
+}
+
+.data-idCard, .data-profile {
   text-align: left;
 }
 
-.data-idCard p {
+.data-idCard p, .data-profile p {
   margin: 0;
 }
 
