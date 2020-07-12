@@ -157,12 +157,25 @@
   border: 3px solid black;
   margin-bottom: 10px;
   padding: 5px;
-  background-color: lightcyan;
 }
 
 .fbPhoto {
   width: 200px;
   margin-right: 20px;
+}
+
+.divBtn {
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.faceBtn {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 8px;
+
 }
 
 

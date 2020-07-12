@@ -180,11 +180,10 @@ function App() {
       <NumbersTable
         limit={12}
       />
-      <h1>Facebook simple</h1>
+      <h1>Facebook</h1>
       <div>
         <Facebook/>
       </div>
-
 
     </div>
   );
