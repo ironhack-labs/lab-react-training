@@ -71,3 +71,39 @@
   top: 25%;
   left: 5%
 }
+
+.stars-container {
+  border: none;
+  margin: 10px;
+  width:80px;
+  border-bottom: none;
+}
+.stars-outer {
+  position: relative;
+  display: inline-block;
+  border-bottom:none;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0%;
+  border-bottom:none;
+}
+
+.stars-outer::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #ccc;
+}
+
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #f8ce0b;
+}
