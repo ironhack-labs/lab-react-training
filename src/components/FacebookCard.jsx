@@ -2,8 +2,8 @@ import React from 'react'
 
 function FacebookCard(props) {
     return (
-        <div className='profile'>
-            <div className='image-profile'>
+        <div className='profile' style={{backgroundColor: props.profile.isSelected ? 'lightBlue' : 'white'}}>
+            <div className='image-profile' >
                 <img src={props.profile.img} alt="card person"/>
             </div>
             <div className='data-profile'>
