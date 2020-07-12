@@ -1,6 +1,5 @@
-.App {
+App {
   text-align: center;
-  margin: 10px;
 }
 
 .App-logo {
@@ -95,7 +94,7 @@
   display: none;
 }
 .number-secret:after {
-  content: '**** **** **** ';
+  content: '****  ****  **** ';
 }
 
 .CreditCard__expire-cont{
@@ -111,3 +110,41 @@
   font-size: 12px;
 }
 
+.rating-line{
+  display: flex;
+  margin-top: 5px;
+  font-size: 16px;
+  color: black;
+}
+
+.DriverCard {
+  display: flex;
+  width: 100%;
+  background-color: royalblue;
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
+  margin: 5px 10px;
+  justify-content: center;
+
+}
+
+.DriverCard div{
+
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+
+}
+.DriverCard img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.DriverCard__info {
+  display: flex;
+  flex-direction: column;
+}
