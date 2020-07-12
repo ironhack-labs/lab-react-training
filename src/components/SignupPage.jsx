@@ -40,7 +40,7 @@ class SignupPage extends Component {
     }
     render() {
         return (
-            <div>
+            <div className='signup'>
                 <div>
                     <label htmlFor="email">Email: </label>
                     <input type="email" name='email' placeholder='Enter your email' onChange={this.handleChange}/>
