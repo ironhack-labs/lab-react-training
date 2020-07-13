@@ -7,7 +7,6 @@ class Dice extends Component {
             imgSource: "img/dice3.png",
             imgEmpty: "img/dice-empty.png",
             isThrowing: false
-
         }
     }
 
