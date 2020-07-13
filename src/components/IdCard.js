@@ -10,7 +10,7 @@ function IdCard(props) {
             <div>
                 <ul>
                     <li>First name: {props.firstName}</li>
-                    <li>Lasr name: {props.lastName}</li>
+                    <li>Last name: {props.lastName}</li>
                     <li>Gender: {props.gender}</li>
                     <li>Height: {props.height}</li>
                     <li>Birth: {props.birth}</li>

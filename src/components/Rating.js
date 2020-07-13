@@ -2,7 +2,7 @@ import React from 'react'
 
 function Rating(props) {
 
-    const pourcentage = Math.round((props.children /5 * 100) / 5) * 5 
+    const pourcentage = Math.floor((props.children /5 * 100) / 5) * 5
     
 
     return (

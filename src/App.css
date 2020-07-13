@@ -98,12 +98,54 @@
   content: "\f005 \f005 \f005 \f005 \f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #ccc;
+  color: rgba(255,255,255,0);
+  text-shadow: 0 0 1px rgba(255,255,255,.3);
+  /* text-shadow: -1px 0 rgba(255,255,255,0), 0 1px rgba(255,255,255,0), 1px 0 rgba(255,255,255,0), 0 -1px rgba(255,255,255,0); */
 }
 
 .stars-inner::before {
   content: "\f005 \f005 \f005 \f005 \f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #f8ce0b;
+  color: white;
+  /* text-shadow: 0 0 1px #000; */
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.driver-card {
+    height: 150px;
+    width: 100%;  
+    margin: 10px 0; 
+    border-radius: 10px;
+    background-color: #445eb5;
+    display: flex;
+    justify-content: center;
+
+}
+
+.driver-card-container {
+  width: 500px;  
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.driver-card-container ul {
+  width: 250px;
+}
+
+.driver-card-container h2 {
+  margin: 0;
+}
+
+.driver-card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.driver-card li {
+  list-style: none;
 }
