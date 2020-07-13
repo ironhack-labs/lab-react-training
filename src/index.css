@@ -44,3 +44,13 @@ h1 {
 #IdCard ul .tag {
   font-weight: bold;
 }
+
+/*ITERATION 4*/
+#BoxColor .box {
+  padding: 40px 0;
+}
+span {
+  color: #ffffff;
+  font-size: 1.4em;
+  display: block;
+}
