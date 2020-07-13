@@ -16,7 +16,7 @@ function CreditCard(props) {
 
     return (
         
-        <div className="card" style={{backgroundColor: props.bgColor, color: props.color}}>
+        <div className="creditCard" style={{backgroundColor: props.bgColor, color: props.color}}>
         <img className="logo    " src={bankImg} alt="logo"></img>
         <p className="number">{props.number}</p>     
         <p className="expires">Expires: {props.expirationMonth} / {props.expirationYear}  {props.bank}</p>
