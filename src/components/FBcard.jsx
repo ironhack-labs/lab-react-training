@@ -2,7 +2,14 @@ import React from 'react'
 
 export default function FBcard(props) {
     return (
-        <div className="id-card" key={props.profile.lastName}>
+        <div 
+            className="id-card" 
+            key={props.profile.lastName}
+            style={{
+                backgroundColor: props.profile.isFiltered === true ? '#9e9ecc' : '#fff'
+            }}
+           >
+            
             <div className="id-card__img">
                 <img src={props.profile.img} alt="img"/>
             </div>
