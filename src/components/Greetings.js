@@ -1,16 +1,24 @@
 import React from 'react';
 
 const Greetings = (props) => {
-  let helloWorld = 'Hello';
-  if (props.lang === 'pt') {
-    helloWorld = 'Olá';
-  } else if (props.lang === 'es') {
-    helloWorld = 'Hola';
+  let greeting;
+  switch (props.lang) {
+    case 'de':
+      greeting = 'Hallo';
+      break;
+    case 'es':
+      greeting = 'Hola';
+      break;
+    case 'fr':
+      greeting = 'Bonjour';
+      break;
+    default:
+      greeting = 'Hello';
   }
   return (
-    <div>
+    <div className="box">
       <h1>
-        {helloWorld} {props.children}
+        {greeting} {props.children}
       </h1>
     </div>
   );

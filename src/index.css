@@ -12,16 +12,21 @@ code {
     monospace;
 }
 
-#IdCard {
+.App {
   max-width: 500px;
   margin: 0 auto;
 }
 
-#IdCard .wrapper {
-  display: flex;
+.box {
   padding: 10px;
   border: 1px solid #000;
   margin: 15px;
+}
+
+/*ITERATION 1*/
+
+#IdCard .box {
+  display: flex;
 }
 
 #IdCard ul {
@@ -33,4 +38,10 @@ code {
 
 #IdCard ul .tag {
   font-weight: bold;
+}
+
+/*ITERATION 2*/
+#Greetings h1 {
+  margin: 0;
+  text-align: left;
 }

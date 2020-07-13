@@ -2,7 +2,7 @@ import React from 'react';
 
 const IdCard = (props) => {
   return (
-    <div className="wrapper">
+    <div className="box">
       <div className="col">
         <img
           className="profile_picture"

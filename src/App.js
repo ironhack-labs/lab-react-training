@@ -45,10 +45,17 @@ function App() {
 
   return (
     <div className="App">
-      <div id="IdCard">{cardsList}</div>
-      <Greetings lang="pt">Lourenço</Greetings>
-      <Greetings lang="es">Marcos</Greetings>
-      <Greetings>John</Greetings>
+      <div id="IdCard">
+        <h3>Iteration 1</h3>
+        {cardsList}
+      </div>
+      <div id="Greetings">
+        <h3>Iteration 2</h3>
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="">John</Greetings>
+        <Greetings lang="es">Julio</Greetings>
+        <Greetings lang="fr">François</Greetings>
+      </div>
     </div>
   );
 }
