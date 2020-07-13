@@ -13,7 +13,7 @@ code {
 }
 
 .App {
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -21,6 +21,11 @@ code {
   padding: 10px;
   border: 1px solid #000;
   margin: 15px;
+}
+
+h1 {
+  margin: 0;
+  text-align: left;
 }
 
 /*ITERATION 1*/
@@ -38,10 +43,4 @@ code {
 
 #IdCard ul .tag {
   font-weight: bold;
-}
-
-/*ITERATION 2*/
-#Greetings h1 {
-  margin: 0;
-  text-align: left;
 }

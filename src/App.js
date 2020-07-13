@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
+import Random from './components/Random';
 
 function App() {
   const getBirthDate = (date) => {
@@ -42,7 +43,6 @@ function App() {
       picture={el.picture}
     />
   ));
-
   return (
     <div className="App">
       <div id="IdCard">
@@ -55,6 +55,11 @@ function App() {
         <Greetings lang="">John</Greetings>
         <Greetings lang="es">Julio</Greetings>
         <Greetings lang="fr">François</Greetings>
+      </div>
+      <div id="Random">
+        <h3>Iteration 3</h3>
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
       </div>
     </div>
   );
