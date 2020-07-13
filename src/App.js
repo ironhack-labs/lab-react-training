@@ -13,6 +13,7 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
 
 function App() {
   const idCard = [
@@ -42,6 +43,7 @@ function App() {
       gender={card.gender}
       height={card.height}
       birth={card.birth}
+      key={card.lastName}
     />
   ));
 
@@ -88,6 +90,7 @@ function App() {
       owner={card.owner}
       bgColor={card.bgColor}
       color={card.color}
+      key={card.number}
     />
   ));
 
@@ -117,6 +120,7 @@ function App() {
   const driverLicenseMap = driverLicense.map((license) => (
     <DriverCard
       name={license.name}
+      key={license.name}
       rating={license.rating}
       img={license.img}
       car={{
@@ -182,6 +186,9 @@ function App() {
 
       <h1>12. NumberTable</h1>
       <NumbersTable limit={12} />
+
+      <h1>13 & 14. List and Keys - FaceBook</h1>
+      <FaceBook />
     </div>
   );
 }

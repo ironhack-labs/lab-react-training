@@ -4,7 +4,7 @@ import './DriverCard.css';
 
 const DriverCard = (props) => {
   return (
-    <div className="driver-card">
+    <div className="driver-card" key={props.name}>
       <div className="driver-img">
         <img src={props.img} alt="driver-img" />
       </div>

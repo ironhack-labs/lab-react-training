@@ -34,7 +34,11 @@ const CreditCard = (props) => {
   };
 
   return (
-    <div className="credit-card" style={divStyle(props.bgColor, props.color)}>
+    <div
+      className="credit-card"
+      key={props.number}
+      style={divStyle(props.bgColor, props.color)}
+    >
       <div className="card-type">
         <img src={cardType(props.type)} alt="credit" />
       </div>

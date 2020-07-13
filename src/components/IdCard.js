@@ -4,7 +4,7 @@ import './IdCard.css';
 const IdCard = (props) => {
   return (
     <div className="id-card">
-      <div className="card-img">
+      <div className="card-img" key={props.lastNames}>
         <img src={props.picture} alt="avatar" />
       </div>
       <div className="card-data">
