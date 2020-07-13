@@ -12,6 +12,7 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
 
 
 function App() {
@@ -71,7 +72,7 @@ function App() {
   const cards = card.map(thisCard => {
     return (
       <IdCard key={thisCard.lastName}
-              lastname={thisCard.lastName}
+              lastName={thisCard.lastName}
               firstName={thisCard.firstName} 
               gender={thisCard.gender} 
               height={thisCard.height} 
@@ -155,6 +156,8 @@ function App() {
       ]} />
       <h1>NumbersTable</h1>
       <NumbersTable limit={12} />
+      <h1>FaceBook</h1>
+      <FaceBook />
     </div>
   );
 }

@@ -10,6 +10,17 @@
   border: 1px solid black;
   display: flex;
   flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.id-card li {
+  list-style: none;
+}
+
+.id-card img {
+  width: 150px;
+  margin: 5px;
 }
 
 .box-color {

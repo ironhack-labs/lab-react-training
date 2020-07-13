@@ -2,6 +2,43 @@ import React from 'react'
 
 function IdCard(props) {
 
+    const fields = []
+    const options = [{
+            title: "First Name",
+            key: "firstName"
+        },
+        {
+            title: "Last Name",
+            key: "lastName"
+        },
+        {
+            title: "Gender",
+            key: "gender"
+        },
+        {
+            title: "Height",
+            key: "height"
+        },
+        {
+            title: "Birth",
+            key: "birth"
+        },
+        {
+            title: "Country",
+            key: "country"
+        },
+        {
+            title: "Type",
+            key: "type"
+        }
+    ]
+
+    options.forEach((option,index) => {
+        if (props[option.key]) {
+            fields.push(<li key={index}>{option.title}: {props[option.key]}</li>)
+        }
+    })
+
     return (
         <div className="id-card">
             <div>
@@ -9,11 +46,7 @@ function IdCard(props) {
             </div>
             <div>
                 <ul>
-                    <li>First name: {props.firstName}</li>
-                    <li>Last name: {props.lastName}</li>
-                    <li>Gender: {props.gender}</li>
-                    <li>Height: {props.height}</li>
-                    <li>Birth: {props.birth}</li>
+                    {fields}
                 </ul>
             </div>
         </div>
