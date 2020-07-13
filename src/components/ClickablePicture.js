@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class ClickablePicture extends Component {
+class ClickablePicture extends Component {
     constructor(props) {
         super(props)
         this.state = {
