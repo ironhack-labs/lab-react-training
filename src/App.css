@@ -55,6 +55,29 @@
   margin-left: 20px;
 }
 
+.carousel {
+  margin-left: 20px;
+}
+
+.number-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+}
+
+.square > h1 {
+  margin: 20px;
+  font-size: 72px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

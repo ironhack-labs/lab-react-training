@@ -14,11 +14,11 @@ class Dice extends Component {
 
   changeState = () => {
     if (this.state.number) {
-      this.setState((prevState) => ({
+      this.setState(() => ({
         number: 0,
       }));
       setTimeout(() => {
-        this.setState((prevState) => ({
+        this.setState(() => ({
           number: this.getRandom(),
         }));
       }, 1000);

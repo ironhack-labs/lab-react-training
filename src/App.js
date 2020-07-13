@@ -11,6 +11,8 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 function App() {
   const idCard = [
@@ -126,25 +128,25 @@ function App() {
 
   return (
     <div className="App">
-      <h1>IdCard</h1>
+      <h1>1. IdCard</h1>
       {idCardMap}
 
-      <h1>Greetings</h1>
+      <h1>2. Greetings</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
 
-      <h1>Random</h1>
+      <h1>3. Random</h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
 
-      <h1>BoxColor</h1>
+      <h1>4. BoxColor</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
-      <h1>CreditCard</h1>
+      <h1>5. CreditCard</h1>
       <div className="credit-box">{creditCardMap}</div>
 
-      <h1>Rating</h1>
+      <h1>6. Rating</h1>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
@@ -152,21 +154,34 @@ function App() {
       <Rating>4</Rating>
       <Rating>5</Rating>
 
-      <h1>DriverCard</h1>
+      <h1>7. DriverCard</h1>
       {driverLicenseMap}
 
-      <h1>LikeButton</h1>
+      <h1>8. LikeButton</h1>
       <LikeButton />
       <LikeButton />
 
-      <h1>ClickablePicture</h1>
+      <h1>9. ClickablePicture</h1>
       <ClickablePicture
         img="/img/persons/maxence.png"
         imgClicked="/img/persons/maxence-glasses.png"
       />
 
-      <h1>Dice</h1>
+      <h1>10. Dice</h1>
       <Dice />
+
+      <h1>11. Carousel</h1>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      <h1>12. NumberTable</h1>
+      <NumbersTable limit={12} />
     </div>
   );
 }
