@@ -53,3 +53,17 @@ code {
   align-items: center;
   border: 2px solid black;
 }
+
+.credit-card {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.credit-card img {
+  width: 20%;
+}
+
+.card-number {
+  font-size: 30px;
+  font-weight: 600;
+}
