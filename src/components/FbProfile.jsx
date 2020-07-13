@@ -5,7 +5,7 @@ export default function FbProfiles({firstName, lastName, country, isStudent, img
     const role = isStudent ? 'Student' : 'Teacher'
 
     return (
-        <div className="container">
+        <div className={`container fb-profile ${country}`}>
             <img src={img} alt=""/>
             <div>
                 <h3>First Name: <span>{firstName}</span></h3>

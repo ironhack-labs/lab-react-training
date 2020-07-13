@@ -11,7 +11,7 @@ export default function NumbersTable({limit}) {
             const bGColor = {
                 backgroundColor: num % 2 === 0 ? 'red' : 'none'
             }
-            elements.push(<NumberBox number={num} style={bGColor}/>)
+            elements.push(<NumberBox number={num} style={bGColor} key={num}/>)
         };
 
         while (numberOfElements < limit) {

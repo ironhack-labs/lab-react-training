@@ -1,0 +1,17 @@
+[{
+    "lastName": "Doe",
+    "firstName": "John",
+    "gender": "male",
+    "height": 178,
+    "date": new Date('1992-07-14').toLocaleDateString(),
+    "picture": "https://randomuser.me/api/portraits/men/44.jpg"
+  },
+  {
+    "lastName": "Dolores",
+    "firstName": "Obrien",
+    "gender": "female",
+    "height": 170,
+    "date": new Date('1990-07-14').toLocaleDateString(),
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg"
+  }
+]
