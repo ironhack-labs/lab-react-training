@@ -149,3 +149,16 @@
 .driver-card li {
   list-style: none;
 }
+
+.like-button {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.like-button:hover {
+  border: 5px solid grey;
+  border-radius: 5px;
+}

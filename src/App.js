@@ -7,6 +7,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 
 function App() {
@@ -65,7 +66,8 @@ function App() {
 
   const cards = card.map(thisCard => {
     return (
-      <IdCard lastname={thisCard.lastName}
+      <IdCard key={thisCard.lastName}
+              lastname={thisCard.lastName}
               firstName={thisCard.firstName} 
               gender={thisCard.gender} 
               height={thisCard.height} 
@@ -77,7 +79,8 @@ function App() {
 
   const creditCards = creditCard.map(thisCC => {
     return (
-      <CreditCard type={thisCC.type}
+      <CreditCard key={thisCC.number}
+                  type={thisCC.type}
                   number={thisCC.number}
                   expirationMonth={thisCC.expirationMonth}
                   expirationYear={thisCC.expirationYear}
@@ -131,6 +134,9 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
       }} />
+      <h1>LikeButton</h1>
+      <LikeButton />
+      <LikeButton />
     </div>
   );
 }
