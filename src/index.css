@@ -36,3 +36,20 @@ code {
   list-style-type: none;
   text-align: left;
 }
+
+.random {
+  text-align: center;
+  margin-left: 10px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.color {
+  width: 300px;
+  height: 40px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
