@@ -12,6 +12,7 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
 
 function App() {
 
@@ -184,7 +185,10 @@ function App() {
       <div>
         <Facebook/>
       </div>
-
+      <h1>Signup Page</h1>
+      <div>
+        <SignupPage/>
+      </div>
     </div>
   );
 }

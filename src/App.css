@@ -120,6 +120,7 @@
 .like {
   display: flex;
 }
+
 .likeButton {
   border: 1px solid grey;
   border-radius: 5px;
@@ -131,7 +132,6 @@
 .picture img {
   width: 150px;
   margin: 20px
-
 }
 
 .diceDiv img {
@@ -141,9 +141,10 @@
 
 .tableUl {
   display: table;
-  height:50px;
+  height: 50px;
 
 }
+
 .table {
   list-style: none;
   width: 50px;
@@ -152,6 +153,7 @@
   display: table-cell;
   text-align: center;
 }
+
 .profileCard {
   display: flex;
   border: 3px solid black;
@@ -169,13 +171,53 @@
   margin: 10px;
   flex-wrap: wrap;
 }
+
 .faceBtn {
   background-color: #61dafb;
   border: none;
   border-radius: 5px;
   margin: 10px;
   padding: 8px;
+}
 
+.signupForm {
+  border: 1px solid grey;
+
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formInput {
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 10px;
+
+}
+
+.selectIput {
+  margin-bottom: 10px;
+}
+
+.formButton {
+  background-color: greenyellow;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+.formMessages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.messForm {
+  border: none !important
 }
 
 
