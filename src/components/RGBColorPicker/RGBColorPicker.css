@@ -1,0 +1,20 @@
+.colorPickerContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  padding: 10px;
+}
+.colorPicker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+.colorNumber {
+  font-size: x-large;
+}
+.colorBox {
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+}
