@@ -13,7 +13,7 @@ code {
 }
 
 .App {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -49,8 +49,58 @@ h1 {
 #BoxColor .box {
   padding: 40px 0;
 }
-span {
+
+#BoxColor span {
   color: #ffffff;
   font-size: 1.4em;
   display: block;
+}
+
+/*ITERATION 5*/
+#CreditCard .wrapper {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#CreditCard .card {
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#CreditCard .logo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+#CreditCard .logo img {
+  width: 50px;
+}
+
+#CreditCard span {
+  display: block;
+  text-align: left;
+}
+
+#CreditCard .number {
+  font-size: 1.6em;
+  text-align: right;
+  margin-bottom: 25px;
+  letter-spacing: 0.2em;
+}
+
+#CreditCard .flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 5px;
+}
+
+#CreditCard .flex-row .bank {
+  margin-left: 30px;
 }

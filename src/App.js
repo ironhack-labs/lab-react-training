@@ -4,6 +4,7 @@ import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
+import CreditCard from './components/CreditCard';
 
 function App() {
   const getBirthDate = (date) => {
@@ -44,6 +45,49 @@ function App() {
       picture={el.picture}
     />
   ));
+  const generateRandomCardNumber = () => {
+    return Math.floor(Math.random() * 10 ** 16);
+  };
+  const generateRandomExpDate = (max, min) => {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  };
+  const creditCards = [
+    {
+      cardImg: './img/visa.png',
+      bank: 'BNP',
+      owner: 'Maxence Bouret',
+      background: '#11aa99',
+      color: '#ffffff',
+    },
+    {
+      cardImg: './img/master-card.svg',
+      bank: 'N26',
+      owner: 'Maxence Bouret',
+      background: '#eeeeee',
+      color: '#222222',
+    },
+    {
+      cardImg: './img/visa.png',
+      bank: 'BBVA',
+      owner: 'Maxence Bouret',
+      background: '#ddbb55',
+      color: '#ffffff',
+    },
+  ];
+  const creditCardsList = creditCards.map((el, index) => (
+    <CreditCard
+      key={index}
+      cardImg={el.cardImg}
+      number={generateRandomCardNumber()}
+      expirationMonth={generateRandomExpDate(12, 1)}
+      expirationYear={generateRandomExpDate(21, 25)}
+      bank={el.bank}
+      owner={el.owner}
+      background={el.background}
+      color={el.color}
+    />
+  ));
+
   return (
     <div className="App">
       <div id="IdCard">
@@ -66,6 +110,10 @@ function App() {
         <h3>Iteration 4</h3>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
+      </div>
+      <div id="CreditCard">
+        <h3>Iteration 5</h3>
+        <div className="wrapper">{creditCardsList}</div>
       </div>
     </div>
   );
