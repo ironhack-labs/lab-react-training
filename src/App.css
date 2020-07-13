@@ -83,6 +83,10 @@
   border: 1px solid black;
 }
 
+.form {
+  margin-bottom: 200px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

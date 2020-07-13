@@ -14,6 +14,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage';
 
 function App() {
   const idCard = [
@@ -189,6 +190,9 @@ function App() {
 
       <h1>13 & 14. List and Keys - FaceBook</h1>
       <FaceBook />
+
+      <h1>15. Form SignupPage</h1>
+      <SignupPage />
     </div>
   );
 }
