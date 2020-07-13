@@ -15,7 +15,7 @@ function CreditCard(props) {
 
     return (
         <div className="credit-card" style={myStyle}>
-            <img className="cc-img" src={source()} />
+            <img className="cc-img" src={source()} alt="Credit card owner pic" />
             <span className="cc-number">{cleanCCNumber()}</span>
             <span className="cc-expires">Expires {props.expirationMonth}/{props.expirationYear}    {props.bank}</span>
             <span className="cc-name">{props.owner}</span>
