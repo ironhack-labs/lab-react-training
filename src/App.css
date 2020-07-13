@@ -192,3 +192,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.selected-style {
+  background-color: blue;
+}
+
+.not-selected-style {
+  background-color: white;
+}

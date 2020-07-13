@@ -1,6 +1,7 @@
 import profiles from '../data/berlin.json';
 import React, { Component } from 'react'
 import IdCard from './IdCard';
+import Button from './Button';
 
 const profilesImported = JSON.parse(JSON.stringify(profiles))
 const newProfiles = [...profilesImported]
@@ -11,18 +12,16 @@ export class FaceBook extends Component {
         this.state = {
             profiles: newProfiles,
             countriesArray: [],
-            selectedCountry: "None",
-            style: {
-                backgroundColor: "#a3d2e2"
-            }
+            selectedCountry: "None"
         }
         this.state.profiles.forEach(profile => {
             if (this.state.countriesArray.indexOf(profile.country) === -1) {
                 this.state.countriesArray.push(profile.country)
             }
         })
+        this.selectCss = 
         this.countryButtons = this.state.countriesArray.map((country,index) =>{
-            return <button key={index} style={this.state.style}>{country}</button>
+            return <Button theKey={index} class={this.selectCSS({country})} updateCountryFunction={() => this.updateSelectedCountry({country})} country={country} />
         })
         this.faceBookProfiles = this.state.profiles.map((profile, index) => {
             const isAStudent = profile.isStudent
@@ -35,6 +34,27 @@ export class FaceBook extends Component {
                         type={isAStudent ? "Student" : "Teacher"} 
                  />
             )
+        })
+    }
+
+    isSelectedCountry(country) {
+        if (country.country === this.state.selectedCountry) {
+            return true
+        }
+        return false
+    }
+
+    selectCSS(country) {
+        console.log(this.isSelectedCountry(country))
+        if (this.isSelectedCountry(country)) {
+            return "selected-style"
+        }
+        return "not-selected-style"
+    }
+
+    updateSelectedCountry(country) {
+        this.setState({
+            selectedCountry: country.country
         })
     }
 
