@@ -1,0 +1,14 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-control {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.form-control:valid {
+  border: 1px solid green;
+}
+.form-control:invalid {
+  border: 1px solid red;
+}

@@ -1,65 +1,85 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import './SignUp.css';
 class SignupPage extends Component {
-  nationalityOnChange = (nat) => {
-    let helloText = 'Hello';
-    switch (nat.value) {
+  constructor(props) {
+    super(props);
+    this.state = { helloText: 'Hello', email: '', emailValid: false };
+  }
+  emailOnChange(_email) {
+    this.setState({
+      email: _email.target.value,
+      emailValid: _email.target.checkValidity(),
+    });
+  }
+  nationalityOnChange = (_nat) => {
+    let _helloText = 'Hello';
+    switch (_nat.target.value) {
       case 'de':
-        helloText = 'Hallo';
+        _helloText = 'Hallo';
         break;
       case 'fr':
-        helloText = 'Bonjour';
+        _helloText = 'Bonjour';
         break;
       default:
-        helloText = 'Hello';
+        _helloText = 'Hello';
         break;
     }
+    this.setState({ helloText: _helloText });
   };
   render() {
     return (
-      <div>
-        <div class="form-group">
-          <label for="emal">Email</label>
+      <div className="">
+        <div className="form-group">
+          <label htmlFor="emal">Email</label>
           <input
             type="email"
-            class="form-control"
+            className="form-control"
             name="email"
             id="email"
             aria-describedby="emailHelpId"
-            placeholder=""
+            placeholder="Put your email address"
+            onChange={(e) => this.emailOnChange(e)}
           />
-          <small id="emailHelpId" class="form-text text-muted">
+          <small id="emailHelpId" className="form-text text-muted">
             Put your email address
           </small>
         </div>
-        <div class="form-group">
-          <label for="password">Password</label>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
           <input
             type="password"
-            class="form-control"
+            className="form-control"
             name="password"
             id="password"
             placeholder="Put yor password"
           />
         </div>
-        <div class="form-group">
-          <label for="nationality">Nationality</label>
+        <div className="form-group">
+          <label htmlFor="nationality">Nationality</label>
           <select
-            class="form-control"
+            className="form-control"
             name="nationality"
             id="nationality"
-            onChange={() => this.nationalityOnChange(this)}
+            onChange={(e) => this.nationalityOnChange(e)}
           >
             <option value="en">England</option>
             <option value="de">Germany</option>
             <option value="fr">France</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" className="btn btn-primary">
           Signup
         </button>
-        <span></span>
+        <hr />
+        <span>{this.state.helloText}</span>
+        <br />
+        <span>Your email address is: {this.state.email}</span>
+        <br />
+        <span>
+          Your email address is{' '}
+          {this.state.emailValid ? 'correct' : 'not correct'}
+        </span>
       </div>
     );
   }
