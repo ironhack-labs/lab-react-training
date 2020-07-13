@@ -5,10 +5,20 @@
 .form-control {
   border: 1px solid gray;
   border-radius: 5px;
+  font-size: large;
+  margin: 5px;
 }
 .form-control:valid {
   border: 1px solid green;
 }
 .form-control:invalid {
   border: 1px solid red;
+}
+.btn-primary {
+  background-color: slateblue;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: large;
+  color: white;
+  margin: 5px;
 }

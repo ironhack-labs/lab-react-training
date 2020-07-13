@@ -4,13 +4,49 @@ import './SignUp.css';
 class SignupPage extends Component {
   constructor(props) {
     super(props);
-    this.state = { helloText: 'Hello', email: '', emailValid: false };
+    this.state = {
+      helloText: 'Hello',
+      email: '',
+      emailValid: false,
+      emailColor: 'red',
+      emailMsg: '',
+      passMsg: '',
+      passColor: 'red',
+    };
   }
   emailOnChange(_email) {
     this.setState({
       email: _email.target.value,
       emailValid: _email.target.checkValidity(),
+      emailColor: _email.target.checkValidity() ? 'green' : 'red',
+      emailMsg: _email.target.checkValidity()
+        ? 'You typed a correct email'
+        : 'You typed an incorrect email',
     });
+  }
+  passOnChange(_pass) {
+    const strongRegex = new RegExp(
+      '^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})'
+    );
+    const mediumRegex = new RegExp(
+      '^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})'
+    );
+    if (strongRegex.test(_pass.target.value)) {
+      this.setState({
+        passMsg: 'You typed a strong password',
+        passColor: 'green',
+      });
+    } else if (mediumRegex.test(_pass.target.value)) {
+      this.setState({
+        passMsg: 'You typed a soft password',
+        passColor: 'orange',
+      });
+    } else {
+      this.setState({
+        passMsg: 'You typed a easy password',
+        passColor: 'red',
+      });
+    }
   }
   nationalityOnChange = (_nat) => {
     let _helloText = 'Hello';
@@ -41,8 +77,8 @@ class SignupPage extends Component {
             placeholder="Put your email address"
             onChange={(e) => this.emailOnChange(e)}
           />
-          <small id="emailHelpId" className="form-text text-muted">
-            Put your email address
+          <small id="emailHelpId" style={{ color: this.state.emailColor }}>
+            {this.state.emailMsg}
           </small>
         </div>
         <div className="form-group">
@@ -51,9 +87,14 @@ class SignupPage extends Component {
             type="password"
             className="form-control"
             name="password"
+            aria-describedby="passHelpId"
             id="password"
             placeholder="Put yor password"
+            onChange={(e) => this.passOnChange(e)}
           />
+          <small id="passHelpId" style={{ color: this.state.passColor }}>
+            {this.state.passMsg}
+          </small>
         </div>
         <div className="form-group">
           <label htmlFor="nationality">Nationality</label>
