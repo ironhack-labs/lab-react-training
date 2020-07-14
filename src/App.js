@@ -14,6 +14,8 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
 import SignupPage from './components/SignupPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
 
@@ -160,6 +162,8 @@ function App() {
       <FaceBook />
       <h1>SignupPage</h1>
       <SignupPage />
+      <h1>RGBColorPicker</h1>
+      <RGBColorPicker />
     </div>
   );
 }
