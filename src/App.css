@@ -30,3 +30,12 @@
   padding: 5px;
   text-align: center;
 }
+
+.rateStars{
+  display: flex;
+}
+
+.rateStars p {
+  font-size: 30px;
+  margin: 5px;
+}
