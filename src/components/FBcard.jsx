@@ -1,27 +1,35 @@
-import React from 'react'
+import React from 'react';
 
 export default function FBcard(props) {
-    return (
-        <div 
-            className="id-card" 
-            key={props.profile.lastName}
-            style={{
-                backgroundColor: props.profile.isFiltered === true ? '#9e9ecc' : '#fff'
-            }}
-           >
-            
-            <div className="id-card__img">
-                <img src={props.profile.img} alt="img"/>
-            </div>
-            <div className="id-card__info">
-                <label><strong>First name:</strong>{props.profile.firstName}</label>
-                <label><strong>Last name:</strong>{props.profile.lastName}</label>
-                <label><strong>Country:</strong>{props.profile.country}</label>
-                <label><strong>Type:</strong>
-                    {props.profile.isStudent === true ? 'Student' : 'Teacher'}
-                </label>
-
-            </div>
-        </div>
-    )
+  return (
+    <div
+      className="id-card"
+      key={props.profile.lastName}
+      style={{
+        backgroundColor: props.bgColor,
+      }}
+    >
+      <div className="id-card__img">
+        <img src={props.profile.img} alt="img" />
+      </div>
+      <div className="id-card__info">
+        <label>
+          <strong>First name:</strong>
+          {props.profile.firstName}
+        </label>
+        <label>
+          <strong>Last name:</strong>
+          {props.profile.lastName}
+        </label>
+        <label>
+          <strong>Country:</strong>
+          {props.profile.country}
+        </label>
+        <label>
+          <strong>Type:</strong>
+          {props.profile.isStudent === true ? 'Student' : 'Teacher'}
+        </label>
+      </div>
+    </div>
+  );
 }
