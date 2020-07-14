@@ -14,7 +14,7 @@ export default class Dice extends Component {
     }
 
     randomPic = () => {
-        const randomDice = Math.floor(Math.random() * 6)
+        const randomDice = Math.floor(Math.random() * 6) + 1
         this.setState(({pic}) => ( {pic: `/img/dice${randomDice}.png` } ))
     }
     
