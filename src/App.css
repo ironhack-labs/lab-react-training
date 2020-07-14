@@ -79,3 +79,22 @@
   width: 400px;
 }
 
+numbers-table {
+  display: flex;
+  flex-wrap: wrap;
+  width: 550px;
+  margin: 10px auto;
+}
+
+.number:nth-child(even) {
+  background-color: red;
+}
+
+.number {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 32px;
+  margin: 0;
+}
+
