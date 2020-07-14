@@ -25,7 +25,7 @@ export default class IdCard extends Component {
           </div>
           <div>
             <label className="cardLabel">Birth:&nbsp;</label>
-            <span>{this.props.birth.toLocaleDateString()}</span>
+            <span>{this.props.birth.toDateString()}</span>
           </div>
         </div>
       </div>

@@ -1,16 +1,18 @@
 import React from 'react';
 
 export default function Greetings(props) {
-  let helloWord = 'hello';
+  let helloWord="";
+
   switch (this.props.lang) {
-    case 'es':
+    
+    case 'de':
+      helloWord = 'Hallo';
+      break;
+      case 'es':
       helloWord = 'Hola';
       break;
     case 'fr':
       helloWord = 'Bounjour';
-      break;
-    case 'de':
-      helloWord = 'Hallo';
       break;
     default:
       helloWord = 'Hello';

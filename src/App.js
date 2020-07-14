@@ -6,8 +6,14 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
+import DriveCar from './components/DriveCar';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 function App() {
+  
+    
   const persons = [
     {
       img: '/img/persons/maxence-glasses.png',
@@ -15,15 +21,16 @@ function App() {
       lastName: 'Doe',
       genger: 'male',
       height: '1.78m',
-      birth: 'Tue Jul 14 1992',
+      birth={new Date("1992-07-14")},
+     
     },
     {
       img: '/img/persons/maxence.png',
       firstName: 'Paul',
-      lastName: 'Doe',
-      genger: 'male',
-      height: '1.73m',
-      birth: 'Tue May 11 1993',
+      lastName: 'DoLORES',
+      genger: 'Female',
+      height: '1.72m',
+      birth={new Date("1988-05-11")},
     },
   ];
 
@@ -98,7 +105,43 @@ function App() {
         <Rating children={4} />
         <Rating children={5} />
       </div>
-      <h1>Rating</h1>
+      <h1>DriveCar</h1>
+      <div>
+        <DriveCar
+          img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+          name="Travis Kalanick"
+          rate={4.2}
+          car={{
+            model: 'Toyota Corolla Altis',
+            licensePlate: 'CO42DE',
+          }}
+        />
+        <DriveCar
+          img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+          name="Dara Khosrowshahi"
+          rate={4.9}
+          car={{
+            model: 'Audi A3',
+            licensePlate: 'BE33ER',
+          }}
+        />
+      </div>
+      <h1>LikeButton</h1>
+      <div className="like">
+        <LikeButton />
+        <LikeButton />
+      </div>
+      <h1>ClickablePicture</h1>
+      <div className="picture">
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          img2="/img/persons/maxence-glasses.png"
+        />
+      </div>
+      <h1>Dice</h1>
+      <div className="diceDiv">
+        <Dice />
+      </div>
     </div>
   );
 }

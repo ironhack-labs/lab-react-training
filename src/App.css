@@ -21,6 +21,13 @@
 .cardLabel {
   font-weight: bold;
 }
+.greetings {
+  border: 2px solid black;
+  text-align: left;
+  font-size: 36px;
+  padding: 5px;
+  margin: 5px;
+}
 
 .boxColor {
   border: 1px solid black;
@@ -31,11 +38,39 @@
   text-align: center;
 }
 
-.rateStars{
+.rateStars {
   display: flex;
 }
 
 .rateStars p {
   font-size: 30px;
   margin: 5px;
+}
+
+.driver img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.like {
+  display: flex;
+}
+.likeButton {
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+}
+
+.picture img {
+  width: 150px;
+  margin: 20px;
+}
+
+.diceDiv img {
+  width: 150px;
+  margin: 20px;
 }
