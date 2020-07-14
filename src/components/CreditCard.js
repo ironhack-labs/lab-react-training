@@ -20,7 +20,7 @@ const CreditCard = props => {
       };
 
     return (
-      <div className="credit-card" style={divStyle}>
+      <div className="credit-card ml-3" style={divStyle}>
         <div>
           <img alt="credit card logo" src={logo(props.type)}></img>
         </div>
