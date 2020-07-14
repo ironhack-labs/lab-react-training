@@ -36,3 +36,138 @@
     transform: rotate(360deg);
   }
 }
+
+.title {
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid;
+  margin: 20px 20px 20px 20px;
+}
+
+.idcard-text {
+line-height: 0.5;
+}
+
+.container-boxcolor {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  margin: 20px;
+}
+.ccards {
+  display: flex;
+  flex-direction: row;
+}
+.container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 20px;
+  height: 175px;
+  width: 320px;
+  
+}
+
+.ccard-img {
+  height: 30px;
+  width: 70px;
+  float: right;
+  margin-bottom: 25px;
+}
+
+.ccard-number {
+  font-size: 35px;
+}
+
+.ccard-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.container-dcard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  margin: 20px 400px;
+  border-radius: 10px;
+}
+
+.dcard-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+  margin: 20px;
+}
+
+.dcard-text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.dice-img {
+  height: 100px;
+  width: 100px;
+  float: center;
+  margin: 20px;
+}
+
+.container-number {
+  display: flex;
+  flex-direction: row;
+  font-size: 50px;
+  margin-right:1070px;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.number-box {
+  padding:20px 50px;
+  border: 1px solid black;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid;
+  margin: 20px 20px 20px 20px;
+}
+
+.container-rgb {
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  margin-right:1000px;
+  margin-left:200px;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.container-color {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  margin-right: 50px;
+  align-items: baseline;
+}
+
+
