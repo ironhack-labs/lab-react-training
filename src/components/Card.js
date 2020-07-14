@@ -5,9 +5,7 @@ export default class Card extends Component {
         return (
           <div className="card border-dark">
             <div className="card-horizontal">
-
                 <img src={this.props.pic} alt="Person's face" />
-
               <div className="card-body">
                   <ul className="card-text">
                       <li><b>First name</b>: {this.props.firstName}</li>
