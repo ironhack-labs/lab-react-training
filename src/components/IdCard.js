@@ -40,7 +40,7 @@ function IdCard(props) {
     })
 
     return (
-        <div className="id-card">
+        <div className="id-card" style={props.style}>
             <div>
                 <img src={props.picture} alt="Profile pic" />
             </div>

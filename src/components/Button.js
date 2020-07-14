@@ -2,7 +2,7 @@ import React from 'react'
 
 function Button(props) {
     return (
-        <button className={props.class} key={props.theKey} style={{backgroundColor:`${props.style}`}} onClick={props.updateCountryFunction}>{props.country}</button>
+        <button style={props.style} onClick={props.updateCountryFunction}>{props.country}</button>
     )
 }
 
