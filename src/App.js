@@ -9,6 +9,7 @@ import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
 import LikeBtn from './components/LikeBtn'
 import ClickablePic from './components/ClickablePic'
+import Dice from './components/Dice'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <DriverCard name="Travis Kalanick" rating={4.2} img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"  car={{model: "Toyota Corolla Altis",  licensePlate: "CO42DE"}} />
       <LikeBtn />
       <ClickablePic img='/img/persons/maxence.png' imgClicked='/img/persons/maxence-glasses.png'/>
+      <Dice />
     </div>
   );
 }
