@@ -97,3 +97,7 @@ code {
 .dice img {
   width: 10%;
 }
+
+.number {
+  border: 2px solid black;
+}
