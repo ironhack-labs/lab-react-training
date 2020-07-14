@@ -5,6 +5,7 @@ import IdCard from './components/IdCard';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
 
 function App() {
   const getBirthDate = (date) => {
@@ -87,7 +88,6 @@ function App() {
       color={el.color}
     />
   ));
-
   return (
     <div className="App">
       <div id="IdCard">
@@ -114,6 +114,15 @@ function App() {
       <div id="CreditCard">
         <h3>Iteration 5</h3>
         <div className="wrapper">{creditCardsList}</div>
+      </div>
+      <div id="Rating">
+        <h3>Iteration 6</h3>
+        <Rating>0</Rating>
+        {/* <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating> */}
       </div>
     </div>
   );

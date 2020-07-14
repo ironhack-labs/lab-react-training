@@ -104,3 +104,8 @@ h1 {
 #CreditCard .flex-row .bank {
   margin-left: 30px;
 }
+
+/*ITERATION 6*/
+#Rating .stars-row .star {
+  width: 20px;
+}
