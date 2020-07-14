@@ -5,16 +5,16 @@ export default function Greetings(props) {
     const determineLang = () => {
         switch (props.lang) {
             case "de": 
-                return "Hallo Freunde!"
+                return "Hallo Freund!"
                 
             case "en":
-                return "Hello friends!"
+                return "Hi friend!"
                 
             case "es":
-                return "Hola amigos!"
+                return "Hola amigo!"
                 
             case "fr":
-                return "Salut les amis!"
+                return "Salut l'ami!"
                 
             default:
                 return "Hola amigos!"
@@ -22,7 +22,7 @@ export default function Greetings(props) {
             }
     }
     return (
-        <div className="container">
+        <div >
             <h3>{determineLang()}</h3>
         </div>
     )

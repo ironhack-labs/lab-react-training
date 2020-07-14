@@ -18,6 +18,7 @@ import FilterButton from './components/FilterButton';
 import {iDCardsData, drivers, creditCardData, carouselImgs} from './data/someData'
 import random from './awesome-tools/random'
 import hideNumbers from "./awesome-tools/replaceNums";
+import SignupPage from './components/SignupPage';
 
 
 function App() {
@@ -79,7 +80,7 @@ function App() {
 
   return (
     <div className="App">
-        {renderIdCard}
+        {/* {renderIdCard}
         <Greetings lang={random.lang()} />
         <RandomNumber min={random.num(10)} max={random.num(5000)} />
         <BoxColor r={random.color()} g={random.color()} b={random.color()} />
@@ -99,7 +100,8 @@ function App() {
           {renderFilterButtons}
           </div>
           {renderFBProfiles}
-        </div>
+        </div> */}
+        <SignupPage />
     </div>
   );
 }
