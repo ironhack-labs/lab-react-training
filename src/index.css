@@ -83,3 +83,13 @@ code {
   width: 30%;
   border-radius: 50%;
 }
+
+.glasses img {
+  width: 10%;
+  margin-top: 10px;
+}
+
+.glasses {
+  display: flex;
+  margin-left: 10px;
+}
