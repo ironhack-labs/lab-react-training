@@ -15,6 +15,7 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
 import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   const idCard = [
@@ -193,6 +194,9 @@ function App() {
 
       <h1>15. Form SignupPage</h1>
       <SignupPage />
+
+      <h1>16. Lifting State Up - RGBColorPicker</h1>
+      <RGBColorPicker />
     </div>
   );
 }
