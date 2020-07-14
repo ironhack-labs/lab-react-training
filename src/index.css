@@ -67,3 +67,19 @@ code {
   font-size: 30px;
   font-weight: 600;
 }
+
+.driver {
+  height: 100px;
+  width: 350px;
+  display: flex;
+  background-color: darkblue;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 0px;
+  margin-left: 10px;
+}
+
+.driver img {
+  width: 30%;
+  border-radius: 50%;
+}
