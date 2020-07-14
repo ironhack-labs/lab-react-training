@@ -12,13 +12,11 @@ import ClickedImg from './components/ClickedImg';
 import Dice from './components/Dice';
 import Caroussel from './components/Caroussel';
 import NumbersTable from './components/NumbersTable';
-import profiles from './data/berlin.json'
-import FbProfiles from './components/FbProfile';
-import FilterButton from './components/FilterButton';
 import {iDCardsData, drivers, creditCardData, carouselImgs} from './data/someData'
 import random from './awesome-tools/random'
 import hideNumbers from "./awesome-tools/replaceNums";
 import SignupPage from './components/SignupPage';
+import Facebook from './components/Facebook';
 
 
 function App() {
@@ -61,23 +59,6 @@ function App() {
     />
   ))
 
-  const renderFBProfiles = profiles.map(user => (
-    <FbProfiles
-      firstName={user.firstName}
-      lastName={user.lastName}
-      country={user.country}
-      isStudent={user.isStudent}
-      img={user.img}
-      key={user.lastName}
-    />
-  ))
-  
-  const uniqueCountries = [...new Set(profiles.map(e => e.country))]
-
-  const renderFilterButtons = uniqueCountries.map(e => (
-    <FilterButton filterName={e} key={e}/>
-  ));
-
   return (
     <div className="App">
         {/* {renderIdCard}
@@ -94,14 +75,8 @@ function App() {
         <Dice />
         <Caroussel images={carouselImgs}/>
         <NumbersTable limit={15}/>
-        <div className="profiles-box">
-          <div className="profile-filters" >
-          <FilterButton filterName='All'/>
-          {renderFilterButtons}
-          </div>
-          {renderFBProfiles}
-        </div> */}
-        <SignupPage />
+        <SignupPage /> */}
+        <Facebook />
     </div>
   );
 }

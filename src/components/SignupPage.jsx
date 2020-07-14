@@ -47,7 +47,8 @@ export default function SignupPage() {
                 name="email" 
                 className="form-control"
                 onChange={e => handleChanges(e.target, emailRegEx, setEmail)}/>
-                {email ? '' : errorMsg()}
+
+            {email ? '' : errorMsg()}
             <label htmlFor="">
                 Password
             </label>

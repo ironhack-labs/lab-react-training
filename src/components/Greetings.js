@@ -18,7 +18,6 @@ export default function Greetings(props) {
                 
             default:
                 return "Hola amigos!"
-                
             }
     }
     return (

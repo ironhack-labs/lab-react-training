@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function FbProfiles({firstName, lastName, country, isStudent, img}) {
+export default function FbProfiles({firstName, lastName, country, isStudent, img, bgColor}) {
 
     const role = isStudent ? 'Student' : 'Teacher'
 
     return (
-        <div className={`container fb-profile ${country}`}>
+        <div className='container fb-profile' style={{backgroundColor: bgColor}}>
             <img src={img} alt=""/>
             <div>
                 <h3>First Name: <span>{firstName}</span></h3>
