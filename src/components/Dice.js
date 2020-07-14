@@ -6,14 +6,6 @@ export default class Dice extends Component {
         super(props)
         this.state = {
             pic: "/img/dice5.png",
-            dice: [
-                '/img/dice1.png',
-                '/img/dice2.png',
-                '/img/dice3.png',
-                '/img/dice4.png',
-                '/img/dice5.png',
-                '/img/dice6.png'
-            ]
         }
     }
     rollDice = () => {
@@ -22,7 +14,8 @@ export default class Dice extends Component {
     }
 
     randomPic = () => {
-        this.setState(({pic}) => ( {pic: this.state.dice[Math.floor(Math.random() * 6)] } ))
+        const randomDice = Math.floor(Math.random() * 6)
+        this.setState(({pic}) => ( {pic: `/img/dice${randomDice}.png` } ))
     }
     
     render() {
