@@ -10,28 +10,35 @@ export default class Facebook extends Component {
         super(props)
         this.state = {
             data: [...profiles],
-            color: green
+            color: 'blue',
+            country: '',
         }
-        this.clicked = this.clicked.bind(this);
+        this.selectCountry = this.selectCountry.bind(this);
     }
 
     getProfile() {
-        return this.state.data.map(ele => (
-            <div style={{ background: this.state.color }} className="profileCard" key={ele.firstName}>
-                <div>
-                    <img className="fbPhoto" src={ele.img} />
-                </div>
-                <div>
-                    <p><strong>First name:</strong> {ele.firstName}</p>
-                    <p><strong>Last name:</strong> {ele.lastName}</p>
-                    <p><strong>Contry:</strong> {ele.country}</p>
-                    {ele.isStudent && <p><strong>Type:</strong> Student</p>}
-                    {!ele.isStudent && <p><strong>Type:</strong> Teacher</p>}
-                </div>
 
-            </div>
-        ))
+
+        return this.state.data.map((ele, i) => {
+            const countrySelected = this.state.country === ele.country ? green : yellow
+            return (
+                <div style={{ background: countrySelected }} className="profileCard" key={i}>
+                    <div>
+                        <img className="fbPhoto" src={ele.img} />
+                    </div>
+                    <div>
+                        <p><strong>First name:</strong> {ele.firstName}</p>
+                        <p><strong>Last name:</strong> {ele.lastName}</p>
+                        <p><strong>Contry:</strong> {ele.country}</p>
+                        {ele.isStudent && <p><strong>Type:</strong> Student</p>}
+                        {!ele.isStudent && <p><strong>Type:</strong> Teacher</p>}
+                    </div>
+
+                </div>
+            )
+        })
     }
+
 
     displayButton() {
         let copy = [...this.state.data]
@@ -41,25 +48,26 @@ export default class Facebook extends Component {
                 allCountries.push(copy[n].country)
             }
         }
-        return allCountries.map(ele => (
+
+        console.log(allCountries)
+        return allCountries.map((ele, i) => (
             <FacebookBtn
+                key={i}
                 text={ele}
-                colored={this.clicked}
+                selectCountry={this.selectCountry}
                 country={ele}
             />
         ))
     }
 
-    clicked() {
+    selectCountry(country) {
         console.log('clicked')
-        console.log(this.props.country)
-        const newColor = this.state.color === green ? yellow : green;
-        this.setState({ color: newColor })
+        this.setState({ ...this.state, country: country })
 
     }
 
     render() {
-
+        console.log(this.state.country)
         return (
             <div>
                 <div className="divBtn">

@@ -6,8 +6,6 @@ export default function BoxColor(props) {
         color: `${props.color}`
     }
 
-
-
     return (
         <div className="box" style={divStyle}>
             <p>rgb({props.r}, {props.g}, {props.b})</p>
@@ -15,3 +13,4 @@ export default function BoxColor(props) {
         </div>
     )
 }
+

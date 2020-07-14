@@ -35,8 +35,9 @@ function App() {
     }
   ];
 
-  const personsCollection = persons.map(persons => (
+  const personsCollection = persons.map((persons, i) => (
     <IdCard
+      key={i}
       img={persons.img}
       firstName={persons.firstName}
       lastName={persons.lastName}
@@ -60,7 +61,7 @@ function App() {
       <h1>Random</h1>
       <div>
         <Random
-          min={2}
+          min={1}
           max={6}
         />
         <Random
@@ -74,15 +75,11 @@ function App() {
           r="255"
           g="0"
           b="0"
-          color="white"
-          hex="#ff0000"
         />
         <BoxColor
           r="128"
           g="255"
           b="0"
-          color="black"
-          hex="#80ff00"
         />
       </div>
       <h1>CreditCard</h1>
@@ -189,6 +186,8 @@ function App() {
       <div>
         <SignupPage/>
       </div>
+      <h1>State Up - RGBColorPicker</h1>
+
     </div>
   );
 }

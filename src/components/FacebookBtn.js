@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default function FacebookBtn(props) {
+export default class FacebookBtn extends Component {
 
-  
-    return (
-        <div>
-            <button className="faceBtn" country={props.country} onClick={props.colored}>{props.text}</button>
-        </div>
-    )
+    render() {
+        return (
+            <div>
+                <button className="faceBtn" country={this.props.country} onClick={() => this.props.selectCountry(this.props.country)}>{this.props.text}</button>
+            </div>
+        )
+    }
 }
+
 
