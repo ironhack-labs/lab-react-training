@@ -13,7 +13,7 @@ export default class Facebook extends Component {
     render() {
 
         const myContacts = this.state.myContacts.map(person => (
-            <div className="card-horizontal mt-3 ml-3">
+            <div className="card-horizontal mt-3 ml-3" key={person.firstName}>
                 <img src={person.img} alt="Person's face" />
                 <div className="card-body">
                     <ul className="card-text">
