@@ -2,21 +2,24 @@ import React, { Component } from 'react'
 
 export default class ClickablePicture extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props)
         this.state = {
             clicked: false
         }
+        this.toggleImg = this.toggleImg.bind(this) 
     }
 
-    changeImg = () => {
-        this.setState(state => ({clicked: !state.clicked}))
+    toggleImg(){
+        this.setState({
+            clicked: !this.state.clicked
+        })
     }
-    
+
     render() {
         return (
             <div>
-                <img onClick={this.changeImg} src={this.state.clicked ? this.props.img : this.props.img2}/>
+                <img onClick={this.toggleImg} src={this.state.clicked ? this.props.img : this.props.img2} />
             </div>
         )
     }
