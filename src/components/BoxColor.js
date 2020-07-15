@@ -12,7 +12,6 @@ export default class BoxColor extends Component {
         }
         let { r, g, b } = this.props
         let color = (this.props.r + this.props.g + this.props.b > 127 * 3) ? 'black' : 'white'
-        console.log(r)
         return (
             <div className='box' style={{ color: color, backgroundColor: `rgb(${r},${g},${b})` }}>
                 <div className='boxInfoColor'>

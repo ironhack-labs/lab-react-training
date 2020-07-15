@@ -22,14 +22,13 @@ export default class Facebook extends Component {
             return (
                 <div style={{ background: countrySelected }} className="profileCard" key={i}>
                     <div>
-                        <img className="fbPhoto" src={ele.img} />
+                        <img className="fbPhoto" src={ele.img} alt={ele.img} key={i} />
                     </div>
                     <div>
                         <p><strong>First name:</strong> {ele.firstName}</p>
                         <p><strong>Last name:</strong> {ele.lastName}</p>
                         <p><strong>Contry:</strong> {ele.country}</p>
-                        {ele.isStudent && <p><strong>Type:</strong> Student</p>}
-                        {!ele.isStudent && <p><strong>Type:</strong> Teacher</p>}
+                        {ele.isStudent ? <p><strong>Type:</strong> Student</p> : <p><strong>Type:</strong> Teacher</p>}
                     </div>
 
                 </div>
@@ -37,6 +36,9 @@ export default class Facebook extends Component {
         })
     }
 
+    selectCountry(country) {
+        this.setState({ country: country })
+    }
 
     displayButton() {
         let copy = [...this.state.data]
@@ -47,7 +49,6 @@ export default class Facebook extends Component {
             }
         }
 
-        console.log(allCountries)
         return allCountries.map((ele, i) => (
             <FacebookBtn
                 key={i}
@@ -58,13 +59,9 @@ export default class Facebook extends Component {
         ))
     }
 
-    selectCountry(country) {
-        console.log('clicked')
-        this.setState({ ...this.state, country: country })
-    }
+
 
     render() {
-        console.log(this.state.country)
         return (
             <div>
                 <div className="divBtn">
