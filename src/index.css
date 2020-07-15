@@ -188,3 +188,16 @@ h1 {
   margin: 15px 10px;
   display: inline-block;
 }
+
+/*ITERATION 12*/
+#NumbersTable .wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+#NumbersTable span {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000;
+  display: inline-block;
+  line-height: 100px;
+}
