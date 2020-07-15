@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function Greetings(props) {
     let hello = "";
-
     if (props.lang === 'fr') {
         hello = "Bonjour"
     } else if (props.lang === 'en') {
@@ -15,8 +14,7 @@ export default function Greetings(props) {
 
     return (
         <div className="greetings">
-        <p>{hello} {props.children}</p>
-
+            <p>{hello} {props.children}</p>
         </div>
     )
 }

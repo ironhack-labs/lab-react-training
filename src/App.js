@@ -23,6 +23,8 @@ function App() {
       <div>
         <Greetings lang="fr">Marcela</Greetings>
         <Greetings lang="es">Roger</Greetings>
+        <Greetings lang="de">Paio</Greetings>
+        <Greetings lang="en">Lucy</Greetings>
       </div>
       <h1>Random</h1>
       <div>
