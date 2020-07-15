@@ -16,7 +16,8 @@ const Greetings = props => {
         }
     }
     return (
-        <div className='greets'>{selectLang(props.lang)} {props.children}</div>
+        <div >
+        <p className='greets'>{selectLang(props.lang)} {props.children}</p></div>
     )
 }
 export default Greetings

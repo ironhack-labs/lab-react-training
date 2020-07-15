@@ -1,4 +1,8 @@
 .greets {
-    text-decoration: line-through;
+    border-color: black;
+    border: 1px solid;
+    padding: 5px;
+    margin: 10px 0;
+    text-align: left;
     
     }
