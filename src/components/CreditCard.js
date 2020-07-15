@@ -8,7 +8,7 @@ export default function CreditCard(props) {
     return (
         <div className="mycard" style={divStyle}>
             <div className="flag">
-                {props.type === "Visa" && <img src="/img/visa.png" />}
+                {props.type === "Visa" && <img src="/img/visa.png"/>}
                 {props.type === "Master Card" && <img src="/img/master-card.svg" />}
             </div>
             <div className="cardInfo">

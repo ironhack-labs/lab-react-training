@@ -5,16 +5,16 @@ export default class LikeButton extends Component {
         super(props)
         this.state = {
             clicks: 0,
-            color: ''
+            color: 'pink',
+            text: 'Like'
         }
-
     }
 
     sum = () => {
         this.setState({
-            clicks: this.state.clicks + 1
+            clicks: this.state.clicks + 1,
+            text: this.state.clicks > 0 ? 'Likes' : 'Like'
         })
-
     }
 
     color = () => {
@@ -22,22 +22,19 @@ export default class LikeButton extends Component {
         this.setState({
             color: colorArray[Math.floor(Math.random() * colorArray.length)]
         })
-
-
-
     }
 
     render() {
         const divStyle = {
             background: this.state.color,
         }
-
         return (
             <div className="buttonsToLike">
                 <button style={divStyle} className="likeButton" onClick={() => {
                     this.sum();
-                    this.color();
-                }}>{this.state.clicks} Likes</button>
+                    this.color();}}>
+                    {this.state.clicks} {this.state.text}
+                </button>
             </div>
         )
     }

@@ -10,7 +10,7 @@ export default function DriveCar(props) {
                 <div className="driverInfo">
                     <h4>{props.name}</h4>
                     <Rating>{props.rate}</Rating>
-                    <p>{props.car.model} {props.car.licensePlate}</p>
+                    <p>{props.car.model} - {props.car.licensePlate}</p>
                 </div>
             </div>
         </div>

@@ -49,7 +49,16 @@ function App() {
           g={255}
           b={0}
         />
-
+         <BoxColor
+          r={89}
+          g={170}
+          b={100}
+        />
+        <BoxColor
+          r={189}
+          g={200}
+          b={9}
+        />
       </div>
       <h1>CreditCard</h1>
       <div className="credit">
