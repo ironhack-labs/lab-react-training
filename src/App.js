@@ -10,6 +10,7 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
+import Carousel from './components/Carousel';
 
 function App() {
   const getBirthDate = (date) => {
@@ -164,6 +165,17 @@ function App() {
       <div id="Dice">
         <h3>Iteration 10</h3>
         <Dice />
+      </div>
+      <div id="Carousel">
+        <h3>Iteration 11</h3>
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
+        />
       </div>
     </div>
   );

@@ -182,3 +182,9 @@ h1 {
 #Dice img {
   width: 300px;
 }
+
+/*ITERATION 11*/
+#Carousel button {
+  margin: 15px 10px;
+  display: inline-block;
+}
