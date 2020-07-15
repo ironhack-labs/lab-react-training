@@ -10,15 +10,13 @@ export default class Facebook extends Component {
         super(props)
         this.state = {
             data: [...profiles],
-            color: 'blue',
+            color: '',
             country: '',
         }
         this.selectCountry = this.selectCountry.bind(this);
     }
 
     getProfile() {
-
-
         return this.state.data.map((ele, i) => {
             const countrySelected = this.state.country === ele.country ? green : yellow
             return (
@@ -63,7 +61,6 @@ export default class Facebook extends Component {
     selectCountry(country) {
         console.log('clicked')
         this.setState({ ...this.state, country: country })
-
     }
 
     render() {
