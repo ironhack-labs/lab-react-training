@@ -162,3 +162,18 @@ h1 {
 #DriverCard .card #emptyStar {
   stroke: white;
 }
+
+/*ITERATION 8*/
+#LikeButton {
+  margin-bottom: 15px;
+}
+#LikeButton button {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2em;
+  display: inline-block;
+  margin: 0 10px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}

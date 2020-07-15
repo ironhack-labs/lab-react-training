@@ -5,8 +5,9 @@ import IdCard from './components/IdCard';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
-import Rating from './components/Rating';
+import Rating from './components/rating/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 function App() {
   const getBirthDate = (date) => {
@@ -145,6 +146,11 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
+      </div>
+      <div id="LikeButton">
+        <h3>Iteration 8</h3>
+        <LikeButton />
+        <LikeButton />
       </div>
     </div>
   );

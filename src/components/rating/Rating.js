@@ -7,8 +7,8 @@ const Rating = (props) => {
   let starsArr = [];
   for (let i = 0; i < 5; i++) {
     rate < i + 1
-      ? starsArr.push(<BorderedStar />)
-      : starsArr.push(<SolidStar />);
+      ? starsArr.push(<BorderedStar key={i} />)
+      : starsArr.push(<SolidStar key={i} />);
   }
   return <div className="stars-row">{starsArr}</div>;
 };
