@@ -17,6 +17,7 @@ import random from './awesome-tools/random'
 import hideNumbers from "./awesome-tools/replaceNums";
 import SignupPage from './components/SignupPage';
 import Facebook from './components/Facebook';
+import RGBColorPicker from './components/colorPicker/RGBColorPicker';
 
 
 function App() {
@@ -75,9 +76,10 @@ function App() {
         <Dice />
         <Caroussel images={carouselImgs}/>
         <NumbersTable limit={15}/>
-        <Facebook /> */}
-        
+        <Facebook /> 
         <SignupPage />
+        */}
+        <RGBColorPicker />
     </div>
   );
 }
