@@ -1,76 +1,142 @@
-import React, { useState } from 'react'
-import Greetings from './Greetings';
+import React, { Component } from 'react'
+import Greetings from './Greetings'
 
-export default function SignupPage() {
+export default class SignupPage extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            form: {
+                email: '',
+                password: '',
+                nationality: ''
+            },
+            users: [],
+            validForm: null,
+            errorMessage: false
 
-    const [email, setEmail] = useState('');
-    const [pwd, setPwd] = useState('');
-    const [nationality, setNationality] = useState('');
+        }
+        this.initialForm = {...this.state.form}
+    }
 
-    const emailRegEx = /^\S+@\S+\.\S+$/;    
-    const pwdRegEx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/
+    handleChange = ({target}) => {
 
-    const handleChanges = (path, type, updateFn) => {
-        if (path.value.match(type)) {
-            updateFn(path.value)
-            path.className = "form-control is-valid"
-        } else if (path.value.length > 5) {
-            path.className = "form-control is-invalid"
+        const isValid = target.name === 'email' ? 
+        this.checkEmail(target.value) : 
+        this.checkPassword(target.value);
+
+        if (isValid) {
+            this.setState({
+                form: {
+                    ...this.state.form,
+                    [target.name]: target.value},
+                ...this.state.users,
+                validForm: 'is-valid'
+                })    
         } else {
-            path.className = "form-control"
+            this.setState({
+                form: {...this.state.form,
+                    [target.name]: target.value},
+                users: [...this.state.users],
+                validForm: 'is-invalid'
+            })
+        }
+        
+    }
+
+    checkEmail = (value) => {
+        const regEx = /^\S+@\S+\.\S+$/
+        return value.match(regEx)
+    }
+
+    checkPassword = (value) => {
+        const regEx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/
+        return value.match(regEx)
+    }
+
+
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        if (this.state.validForm === 'is-valid') {
+            const copyData = {...this.state.form}
+            const copyUsers = [...this.state.users]
+            copyUsers.push(copyData)
+            this.setState({
+            form: {...this.initialForm},
+            users: copyUsers,
+            validForm: null,
+            errorMessage: false
+        })
+        } else {
+            this.setState({
+                form: {...this.state.form},
+                users: [...this.state.users],
+                validForm: 'is-invalid',
+                errorMessage: true
+            })
         }
     }
 
-    const errorMsg = (field) => {
-        const pwdError = <p className="text-danger">
-        The password must contain a lowercase letter, a capital letter, a number and at least 6 characters
-        </p>
-        const emailError = <p className="text-danger">
-        Wrong email
-        </p>
-        switch (field) {
-            case 'pwd':
-                return pwdError;
-            default:
-                return emailError;
+
+
+    render() {
+
+        const {email, password} = this.state.form;
+        const {validForm, errorMessage} = this.state;
+        const errorObjects = {
+            email: !errorMessage ? null : (
+                <p>Please, type a valid email</p>
+            ),
+            password: !errorMessage ? null : (
+                <p>The password must include at least 6 characters, a lowercase letter, a capital letter and a number.</p>
+            )
         }
+        
+        const renderUsers = this.state.users.map(user => {
+            return  <div key={user.email}>
+                        <p>Email: {user.email}</p>
+                        <p>Password: {user.password}</p>
+                        <Greetings lang={user.nationality}/>
+                    </div>
+        })
+
+
+
+        return (
+            <div className="col-4" onSubmit={this.handleSubmit}>
+                <form className="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="example@example.com" 
+                        className={`form-control ${validForm}`} 
+                        onChange={this.handleChange}
+                        value={email}
+                        /
+                        >
+                    {errorObjects.email}
+                    <label htmlFor="password">Password</label>
+                    <input 
+                        type="password" 
+                        name="password" 
+                        className={`form-control ${validForm}`}
+                        placeholder="Your password here" 
+                        onChange={this.handleChange}
+                        value={password}/
+                        >
+                    {errorObjects.password}
+                    <label htmlFor="nationality">Nationality</label>
+                    <select name="nationality" onChange={this.handleChange}>
+                        <option value="es" selected>Spain</option>
+                        <option value="de">Germany</option>
+                        <option value="fr">France</option>
+                        <option value="en">United Kingdom</option>
+                    </select>
+                    <input type="submit" value="Submit"/>
+                </form>
+                {renderUsers}
+            </div>
+        )
     }
-
-    return (
-        <form className="col-4 d-flex flex-column ">
-            <label htmlFor="">
-                Email
-            </label>
-            <input 
-                type="email" 
-                placeholder="example@example.com" 
-                name="email" 
-                className="form-control"
-                onChange={e => handleChanges(e.target, emailRegEx, setEmail)}/>
-
-            {email ? '' : errorMsg()}
-            <label htmlFor="">
-                Password
-            </label>
-            <input 
-                type="password" 
-                name="pwd"  
-                placeholder="Type your password here"
-                className="form-control"
-                onChange={e => handleChanges(e.target, pwdRegEx, setPwd)}/>
-            {pwd ? '' : errorMsg('pwd')}
-
-            <select name="nationality" onChange={e => setNationality(e.target.value)} className="form-control">
-                <option value="es">España</option>
-                <option value="de">Alemania</option>
-                <option value="fr">Francia</option>
-                <option value="en">Reino Unido</option>
-            </select>
-            <input type="submit" value="Save" className="form-control btn btn-success mt-2"/>
-            
-            <p>Your email is {email}</p>
-            <p>Your password is {pwd}</p>
-            <Greetings lang={nationality}/>
-        </form>
-    )
 }

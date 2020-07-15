@@ -8,7 +8,7 @@ export default function Facebook() {
 
   const renderFBProfiles = profiles.map((user, idx) => {
     const isSelectedCountry = currentCountry === user.country;
-    const bgColor = isSelectedCountry ? '#9e9ecc' : '#fff';
+    const bgColor = isSelectedCountry ? 'lightblue' : 'white';
     return (
       <FbProfile
         firstName={user.firstName}
@@ -26,7 +26,7 @@ export default function Facebook() {
 
   const renderFilterButtons = uniqueCountries.map((e) => {
     const isSelectedCountry = currentCountry === e;
-    const bgColor = isSelectedCountry ? '#9e9ecc' : '#fff';
+    const bgColor = isSelectedCountry ? 'lightblue' : 'white';
     return (
     <FilterButton 
         filterName={e} 
@@ -38,6 +38,7 @@ export default function Facebook() {
 
   return (
     <div>
+      <FilterButton filterName={"Disable"} filter={setCurrentCountry}/>
       {renderFilterButtons}
       {renderFBProfiles}
     </div>

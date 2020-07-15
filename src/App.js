@@ -75,8 +75,9 @@ function App() {
         <Dice />
         <Caroussel images={carouselImgs}/>
         <NumbersTable limit={15}/>
-        <SignupPage /> */}
-        <Facebook />
+        <Facebook /> */}
+        
+        <SignupPage />
     </div>
   );
 }
