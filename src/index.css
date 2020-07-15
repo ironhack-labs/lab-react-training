@@ -101,3 +101,8 @@ code {
 .number {
   border: 2px solid black;
 }
+
+.form {
+  width: 250px;
+  margin-left: 10px;
+}
