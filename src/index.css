@@ -106,7 +106,59 @@ h1 {
 }
 
 /*ITERATION 6*/
-#Rating .stars-row img {
+#Rating .stars-row svg {
   width: 35px;
   margin: 0 3px;
+}
+
+/*ITERATION 7*/
+#DriverCard .card {
+  background-color: #455eb5;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  margin-bottom: 15px;
+}
+
+#DriverCard .card .profilePicture {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center center;
+}
+
+#DriverCard .card ul {
+  list-style: none;
+  margin: 0 0 0 15px;
+  padding: 0;
+  color: #fff;
+  text-align: left;
+}
+
+#DriverCard .card li {
+  padding: 3px 0;
+}
+
+#DriverCard .card .name {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#DriverCard .card svg {
+  margin: 0 3px;
+  width: 20px;
+  height: 20px;
+}
+
+#DriverCard .card #fullStar {
+  fill: white;
+}
+
+#DriverCard .card #emptyStar {
+  stroke: white;
 }
