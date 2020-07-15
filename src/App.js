@@ -40,15 +40,16 @@ function App() {
       <h1>BoxColor</h1>
       <div>
         <BoxColor
-          r="255"
-          g="0"
-          b="0"
+          r={255}
+          g={0}
+          b={0}
         />
         <BoxColor
-          r="128"
-          g="255"
-          b="0"
+          r={128}
+          g={255}
+          b={0}
         />
+
       </div>
       <h1>CreditCard</h1>
       <div className="credit">

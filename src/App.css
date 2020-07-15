@@ -60,9 +60,16 @@
 }
 
 .box p {
-  margin: 0
+  font-size: 22px;
+  margin: 5px
 }
 
+.boxInfoColor {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
 .credit {
   display: flex;
 }
