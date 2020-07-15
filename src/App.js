@@ -13,12 +13,13 @@ import Dice from './components/Dice';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
 import SignupPage from './components/SignupPage';
+import Carrousel from './components/Carrousel';
 
 function App() {
   return (
     <div className="App">
       <h1>IdCard</h1>
-      <IdCard/>
+      <IdCard />
       <h1>Greetings</h1>
       <div>
         <Greetings lang="fr">Marcela</Greetings>
@@ -49,7 +50,7 @@ function App() {
           g={255}
           b={0}
         />
-         <BoxColor
+        <BoxColor
           r={89}
           g={170}
           b={100}
@@ -156,13 +157,27 @@ function App() {
       <NumbersTable
         limit={12}
       />
+      <NumbersTable
+        limit={20}
+      />
+      <h1>Carrousel</h1>
+      <div>
+        <Carrousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+      </div>
       <h1>Facebook</h1>
       <div>
-        <Facebook/>
+        <Facebook />
       </div>
       <h1>Signup Page</h1>
       <div>
-        <SignupPage/>
+        <SignupPage />
       </div>
       <h1>State Up - RGBColorPicker</h1>
 

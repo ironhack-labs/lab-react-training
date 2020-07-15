@@ -5,7 +5,7 @@ export default class NumbersTable extends Component {
         let list = [];
         for(let i = 1; i<=this.props.limit; i++){
             let style = {
-                backgroundColor: i%2?'red': 'white'
+                backgroundColor: i % 2 ? 'red': 'white'
             }
             list.push(<li className="table" style={style} key={i}>{i}</li>)
         }

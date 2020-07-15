@@ -19,7 +19,7 @@ export default class ClickablePicture extends Component {
     render() {
         return (
             <div>
-                <img onClick={this.toggleImg} src={this.state.clicked ? this.props.img : this.props.img2} />
+                <img onClick={this.toggleImg} src={this.state.clicked ? this.props.img : this.props.img2} alt={this.props.img} />
             </div>
         )
     }

@@ -1,38 +1,37 @@
 import React, { Component } from 'react'
-
 export default class Dice extends Component {
     constructor(props) {
         super(props)
         this.state = {
             diceNumber: this.randomDice()
         }
-        this.changeDice = this.changeDice.bind(this)//El valor de this es ignorado cuando la función es llamada con el operador new.
+        this.changeDice = this.changeDice.bind(this)
     }
 
-    randomDice = () => {
-        return 1 + Math.floor(6 * Math.random())
+    randomDice() {
+        return 1 + Math.floor(Math.random() * 6)
     }
-
 
     changeDice() {
         if (this.state.diceNumber) {
-            this.setState(number => ({
+            this.setState({
                 diceNumber: null
-            }))
+            })
+
             setTimeout(() => {
-                this.setState(number => ({
+                this.setState({
                     diceNumber: this.randomDice()
-                }))
+                })
             }, 1000)
         }
     }
 
     render() {
         let imgSrc = '';
-        if(this.state.diceNumber){
-            imgSrc=`/img/dice${this.state.diceNumber}.png`
+        if (this.state.diceNumber) {
+            imgSrc = `/img/dice${this.state.diceNumber}.png`
         } else {
-            imgSrc=`/img/dice-empty.png`
+            imgSrc = `/img/dice-empty.png`
 
         }
         return (

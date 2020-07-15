@@ -227,6 +227,25 @@
   border: none !important
 }
 
+.carrouselDiv {
+  display: flex;
+  align-items: center;
+}
+
+.carrouselDiv img {
+  width: 180px;
+}
+
+.carrouselDiv button {
+  border: none;
+  background-color: teal;
+  border-radius: 5%;
+  margin: 0 20px;
+  height: 50px;
+  width: 90px;
+  color: wheat
+}
+
 
 @keyframes App-logo-spin {
   from {
