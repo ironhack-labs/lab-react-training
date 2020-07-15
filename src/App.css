@@ -41,3 +41,31 @@
   display: flex;
   border: solid 1px black;
 }
+
+.credit-card{
+  border-radius: 5px;
+  width: 230px;
+
+}
+
+.imagen-icono{
+  width: 70px;
+}
+
+.driver-img{
+  width: 150px;
+  border-radius: 100px;
+}
+
+.driver{
+  display: flex;
+  background-color: blue;
+  width: 70%;
+  justify-content: center;
+  color: aliceblue;
+  border-radius: 20px;
+}
+
+.button-like{
+  padding: 15px;
+}

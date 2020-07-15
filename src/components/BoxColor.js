@@ -7,7 +7,7 @@ function BoxColor(props) {
     }
 
     return (
-        <div style={divStyle}>
+        <div style={divStyle} >
             <p>RGB ({props.r}, {props.g},{props.b})</p>
             <p>{props.hex}</p>
         </div>
