@@ -9,6 +9,7 @@ import Rating from './components/rating/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 function App() {
   const getBirthDate = (date) => {
@@ -159,6 +160,10 @@ function App() {
           img="./img/persons/maxence.png"
           imgClicked="./img/persons/maxence-glasses.png"
         />
+      </div>
+      <div id="Dice">
+        <h3>Iteration 10</h3>
+        <Dice />
       </div>
     </div>
   );
