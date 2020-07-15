@@ -12,6 +12,7 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
 
 function App() {
   const getBirthDate = (date) => {
@@ -181,6 +182,10 @@ function App() {
       <div id="NumbersTable">
         <h3>Iteration 12</h3>
         <NumbersTable limit={12} />
+      </div>
+      <div id="FaceBook">
+        <h3>Iteration 13</h3>
+        <FaceBook />
       </div>
     </div>
   );

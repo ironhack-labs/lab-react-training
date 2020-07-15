@@ -9,9 +9,13 @@ const NumbersTable = (props) => {
   }
   const numbersList = arrNumbers.map((el, index) => {
     if (index % 2 !== 0) {
-      return <span style={{ backgroundColor: 'red' }}>{el}</span>;
+      return (
+        <span key={el} style={{ backgroundColor: 'red' }}>
+          {el}
+        </span>
+      );
     } else {
-      return <span>{el}</span>;
+      return <span key={el}>{el}</span>;
     }
   });
   return <div className="wrapper">{numbersList}</div>;

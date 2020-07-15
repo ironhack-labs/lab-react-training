@@ -28,21 +28,30 @@ h1 {
   text-align: left;
 }
 
-/*ITERATION 1*/
+/*ITERATION 1 + 13*/
 
-#IdCard .box {
+#IdCard .box,
+#FaceBook .box {
   display: flex;
 }
 
-#IdCard ul {
+#IdCard ul,
+#FaceBook ul {
   list-style: none;
   margin-left: 10px;
   padding: 0;
   text-align: left;
 }
 
-#IdCard ul .tag {
+#IdCard ul .tag,
+#FaceBook ul .tag {
   font-weight: bold;
+}
+
+#IdCard img,
+#FaceBook img {
+  width: 128px;
+  height: 128px;
 }
 
 /*ITERATION 4*/
