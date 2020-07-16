@@ -210,3 +210,10 @@ h1 {
   display: inline-block;
   line-height: 100px;
 }
+
+/*ITERATION 14*/
+#Facebook .buttons-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
