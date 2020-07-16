@@ -10,11 +10,17 @@ class Facebook extends Component {
 
     }
 
+    filtrarPais=(evento)=>{
+        if(evento.target.value === this.state.profilesFB.country){
+
+        }
+    }
+
 
     render() {
         const lista = this.state.profilesFB.map(contact => {
             return <div>
-                <img src={contact.img} />
+                <img src={contact.img} alt="imag"/>
                 <h3>{contact.firstName}</h3>
                 <h3>{contact.lastName}</h3>
                 <h3>{contact.country}</h3>
@@ -22,8 +28,18 @@ class Facebook extends Component {
             </div>
         })
 
+
         return (
             <div>
+                <button value="All"></button>
+                <button value="England"></button>
+                <button value="Usa"></button>
+                <button value="Malaysia"></button>
+                <button value="Germany"></button>
+                <button value="Sweden"></button>
+                <button value="Nigeria"></button>
+                <button value="Scotland"></button>
+                <button value="Russia"></button>
                 {lista}
             </div>
         )

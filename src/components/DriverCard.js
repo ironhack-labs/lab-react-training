@@ -1,5 +1,5 @@
 import React from 'react'
-//import Rating from './Rating'
+import Rating from './Rating'
 
 export default function DriverCard(props) {
 
@@ -10,7 +10,7 @@ export default function DriverCard(props) {
             </div>
             <div>
                 <h3>{props.name}</h3>
-                {/* <Rating /> {props.rate}</Rating>*/}
+                 <Rating>{props.rating}</Rating>
                 <p>{props.car.model} {props.car.licensePlate}</p>
             </div>
 
