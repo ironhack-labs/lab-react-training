@@ -13,6 +13,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage';
 
 function App() {
   const getBirthDate = (date) => {
@@ -186,6 +187,10 @@ function App() {
       <div id="FaceBook">
         <h3>Iteration 13 & 14</h3>
         <FaceBook />
+      </div>
+      <div id="SignupPage">
+        <h3>Iteration 15</h3>
+        <SignupPage />
       </div>
     </div>
   );

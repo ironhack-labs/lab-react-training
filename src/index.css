@@ -217,3 +217,14 @@ h1 {
   flex-flow: row wrap;
   justify-content: center;
 }
+
+/*ITERATION 15*/
+#SignupPage .wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#SignupPage .wrapper button {
+  width: 100%;
+}
