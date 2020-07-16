@@ -6,14 +6,17 @@ export default class RGBColorPicker extends Component {
     constructor(props){
         super(props)
         this.state = {
-            rValue: 100,
-            gValue: 256,
+            rValue: 0,
+            gValue: 0,
             bValue: 0
         }
     }
+
+    handleChange = ({target}) => {
+        this.setState({...this.state, [target.name]: target.value})
+    }
     
     render() {
-
         const {rValue, gValue, bValue} = this.state
         const rgbStyle = {
             fullrgb: {backgroundColor: `rgb(${rValue}, ${gValue}, ${bValue})`},
@@ -25,9 +28,9 @@ export default class RGBColorPicker extends Component {
 
         return (
             <div className="col-4">
-                <SingleColorPicker name={rValue} bgColor={rgbStyle.red}/>
-                <SingleColorPicker name={gValue} bgColor={rgbStyle.green}/>
-                <SingleColorPicker name={bValue} bgColor={rgbStyle.blue}/>
+                <SingleColorPicker name="rValue" value={rValue} bgColor={rgbStyle.red} changeFn={this.handleChange} />
+                <SingleColorPicker name="gValue" value={gValue} bgColor={rgbStyle.green} changeFn={this.handleChange}/>
+                <SingleColorPicker name="bValue" value={bValue} bgColor={rgbStyle.blue} changeFn={this.handleChange}/>
                 <div>
                     <div style={rgbStyle.fullrgb} className="rgb-box"></div>
                     <p>rgb({rValue}, {gValue}, {bValue})</p>

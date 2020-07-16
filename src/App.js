@@ -62,23 +62,6 @@ function App() {
 
   return (
     <div className="App">
-        {/* {renderIdCard}
-        <Greetings lang={random.lang()} />
-        <RandomNumber min={random.num(10)} max={random.num(5000)} />
-        <BoxColor r={random.color()} g={random.color()} b={random.color()} />
-        <div className="c-card-container" >
-        {renderCCard}
-        </div>
-        <Rating value={2}/>
-        {renderDrivers}
-        <LikeButton />
-        <ClickedImg />
-        <Dice />
-        <Caroussel images={carouselImgs}/>
-        <NumbersTable limit={15}/>
-        <Facebook /> 
-        <SignupPage />
-        */}
         <RGBColorPicker />
     </div>
   );
