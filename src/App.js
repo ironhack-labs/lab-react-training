@@ -14,6 +14,7 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
 import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   const getBirthDate = (date) => {
@@ -191,6 +192,10 @@ function App() {
       <div id="SignupPage">
         <h3>Iteration 15</h3>
         <SignupPage />
+      </div>
+      <div id="RGBColorPicker">
+        <h3>Iteration 16</h3>
+        <RGBColorPicker />
       </div>
     </div>
   );
