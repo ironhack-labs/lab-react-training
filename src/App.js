@@ -12,6 +12,8 @@ import ClickablePicture from './components/ClickablePicture';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -86,6 +88,7 @@ function App() {
       <LikeButton />
       <ClickablePicture img='/img/persons/maxence.png'
         imgClicked='/img/persons/maxence-glasses.png' />
+      <Dice />  
       <Carousel
         imgs={[
           'https://randomuser.me/api/portraits/women/1.jpg',
@@ -95,6 +98,7 @@ function App() {
         ]} />
       <NumbersTable limit={12} />
       <Facebook />
+      <SignupPage />
     </div>
   );
 }

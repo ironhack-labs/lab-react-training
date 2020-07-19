@@ -31,15 +31,6 @@ class Facebook extends Component {
 
         return (
             <div>
-                <button value="All"></button>
-                <button value="England"></button>
-                <button value="Usa"></button>
-                <button value="Malaysia"></button>
-                <button value="Germany"></button>
-                <button value="Sweden"></button>
-                <button value="Nigeria"></button>
-                <button value="Scotland"></button>
-                <button value="Russia"></button>
                 {lista}
             </div>
         )
