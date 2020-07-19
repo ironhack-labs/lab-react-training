@@ -28,11 +28,46 @@
   color: #61dafb;
 }
 
+/*Driver Card*/
+.driverCard {
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  color: white;
+  border-radius: 10px;
+  background-color: steelblue;
+  text-align: left;
+}
+
+.driverCardDetails > * {
+  margin: 0;
+}
+
+/*Dice*/
+.dado {
+  width: 200px;
+  height: 200px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
   }
 }
