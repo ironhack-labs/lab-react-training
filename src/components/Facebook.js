@@ -10,17 +10,28 @@ class Facebook extends Component {
 
     }
 
-    filtrarPais=(evento)=>{
-        if(evento.target.value === this.state.profilesFB.country){
 
+    filtrarPais = (evento) => {
+
+        for (let i = 0; i < this.state.profilesFB.length; i++) {
+            let bgcolor = ""
+            if (evento.target.value === this.state.profilesFB[i].country) {
+                bgcolor = 'blue'
+            }
+            else {
+                bgcolor = 'white'
+            }
         }
     }
 
 
+
+
     render() {
         const lista = this.state.profilesFB.map(contact => {
-            return <div>
-                <img src={contact.img} alt="imag"/>
+            const style = { background: contact.bgcolor };
+            return <div style={style}>
+                <img src={contact.img} alt="imag" />
                 <h3>{contact.firstName}</h3>
                 <h3>{contact.lastName}</h3>
                 <h3>{contact.country}</h3>
@@ -28,9 +39,22 @@ class Facebook extends Component {
             </div>
         })
 
+        let obj = {};
+        let paises = []
+        for (let i = 0; i < this.state.profilesFB.length; i++) {
+            obj[this.state.profilesFB[i]['country']] = paises[i];
+        }
+        for (let key in obj) {
+            paises.push(key);
+        }
+
+        const botones = paises.map(pais => {
+            return <button type="submit" onClick={this.filtrarPais} value={pais}>{pais}</button>
+        })
 
         return (
             <div>
+                {botones}
                 {lista}
             </div>
         )

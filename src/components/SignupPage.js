@@ -12,17 +12,10 @@ class SignupPage extends Component {
     }
 
     handleChange = (evento) => {
-
-        if (evento.target.type === "checkbox") {
-            this.setState({
-                [evento.target.name]: evento.target.checked
-            })
-        } else {
-            this.setState({
-                [evento.target.name]: evento.target.value
-            })
-        }
-
+        this.setState({
+            [evento.target.name]: evento.target.value
+        })
+        
     }
 
 
@@ -43,15 +36,15 @@ class SignupPage extends Component {
                     <input type="password" name="password"
                         value={this.state.password}
                         onChange={this.handleChange} />
-                    <select name="selectInputValue"
-                        value={this.state.selectInputValue}
+                    <select name="nationality"
+                        value={this.state.nationality}
                         onChange={this.handleChange}>
                         <option selected value="en">English</option>
                         <option value="de">Deusch</option>
                         <option value="fr">Frances</option>
                     </select>
                     <input type="submit" value="Sign up" />
-                    <Greetings />
+                    <Greetings lang={this.state.nationality}/>
                     <p>Your email address is {this.state.email}</p>
                 </form>
             </div>
