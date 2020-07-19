@@ -17,18 +17,10 @@ class Dice extends Component {
   }
 
   clickImage = () => {
-    const allDices = [
-      '/img/dice1.png',
-      '/img/dice2.png',
-      '/img/dice3.png',
-      '/img/dice4.png',
-      '/img/dice5.png',
-      '/img/dice6.png',
-    ];
     this.setState({ dice: '/img/dice-empty.png' });
     setTimeout(() => {
       this.setState({
-        dice: allDices[Math.floor(Math.random() * allDices.length)],
+        dice: this.allDices[Math.floor(Math.random() * this.allDices.length)],
       });
     }, 1000);
   };

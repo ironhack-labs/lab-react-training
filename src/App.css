@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -53,6 +58,10 @@
   text-align: left;
   margin: 0;
   padding-left: 20px;
+}
+
+.id-card img {
+  width: 100px;
 }
 
 .greetings {
@@ -112,7 +121,6 @@
   padding: 20px;
 }
 
-
 .driver-card {
   border-radius: 10px;
   display: flex;
@@ -129,13 +137,14 @@
   border-radius: 100px;
 }
 
-.driver-card h1, .driver-card p {
+.driver-card h1,
+.driver-card p {
   padding-left: 20px;
   margin: 0;
   text-align: left;
 }
 
-.driver-card h1{
+.driver-card h1 {
   font-size: 22px;
 }
 
@@ -149,4 +158,36 @@
 
 .dices {
   width: 100px;
+}
+
+.color-square {
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px 10px 0;
+}
+
+.colorpicker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.allNumbers {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.allNumbers li {
+  font-size: 30px;
+  width: 20%;
+  padding: 28px 0;
+  border: 2px solid black;
+}
+
+.allNumbers li:nth-child(even) {
+  background-color: red;
 }

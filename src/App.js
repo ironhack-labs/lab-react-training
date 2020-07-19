@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import Random from './components/Random';
@@ -11,6 +12,11 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import RGBColorPicker from './components/RGBColorPicker';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
@@ -129,6 +135,33 @@ function App() {
       <div className="divider"></div>
 
       <Dice />
+
+      <div className="divider"></div>
+
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      <div className="divider"></div>
+
+      <NumbersTable limit={12} />
+
+      <div className="divider"></div>
+
+      <FaceBook />
+
+      <div className="divider"></div>
+
+      <SignupPage />
+
+      <div className="divider"></div>
+
+      <RGBColorPicker />
 
       <div className="divider"></div>
     </div>
