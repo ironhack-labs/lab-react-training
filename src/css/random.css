@@ -1,0 +1,9 @@
+
+.random {
+    height: 4vh;
+    border: 1px solid black;
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
+    display: flex;
+    align-items: center;
+}

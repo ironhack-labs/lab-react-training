@@ -1,0 +1,8 @@
+.greetings {
+   text-align: left;
+   box-sizing: border-box;
+   height: 5vh;
+   padding: 1vh 1vw;
+   margin: 1vh 1vw;
+   border: 1px black solid;
+}
