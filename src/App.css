@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.myCard{
+width: 100%;
+border: 3px solid black;
+}
+.myCard > .imgPart{
+  padding: 10px;
+}
+
+ .info{
+display: flex;
+}
+.infPart{
+  font-size: small;
+}
+.myCardGre{
+  width: 90%;
+  border: 3px solid black;
+  margin: 5%;  
+}
+.randomNumber{
+  width: 90%;
+  border: 3px solid black;
+  margin: 5%;  
+}
