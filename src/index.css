@@ -11,3 +11,92 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.idCard {
+  border: 1px solid black;
+  padding: 3px;
+  margin: 5px;
+  display: flex;
+}
+
+.idCard img {
+  float: left;
+  margin: 5px;
+}
+
+.idCard span {
+  font-weight: bold;
+}
+
+.idCard ul {
+  text-align: left;
+  list-style-type: none;
+  margin: 5px 0 0;
+  padding: 0;
+}
+
+.greetings {
+  border: 1px solid black;
+  margin: 5px;
+  text-align: left;
+  padding: 3px;
+  font-size: 1.5rem;
+}
+
+.random {
+  border: 1px solid black;
+  margin: 5px;
+  text-align: left;
+  padding: 3px;
+  font-size: 1.5rem;
+}
+
+.boxColor {
+  border: 1px solid black;
+  font-size: 1.5rem;
+  height: 150px;
+  margin: 10px;
+  width: calc(100% - 2 * 10px);
+  display: table;
+}
+
+.boxColor span {
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.allcards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.creditCard {
+  width: 32%;
+  margin: 5px;
+  border-radius: 10px;
+  height: 150px;
+  padding-bottom: 15px;
+}
+
+.creditCard img {
+  height: 15px;
+  margin: 20px 20px 30px;
+  float: right;
+}
+
+.creditCard span {
+  margin-left: 20px;
+}
+
+.creditCard .number {
+  font-size: 1.5rem;
+  clear: right;
+}
+
+.creditCard .details {
+  font-size: 0.8rem;
+  text-align: left;
+  padding-left: 20px;
+  margin: 0;
+}
