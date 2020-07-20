@@ -36,3 +36,117 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.App {
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+}
+
+.idCard {
+  display:flex;
+  flex-direction: row;
+  width: 600px;
+  height: 128px;
+  border: 2px solid black;
+  margin: 5px 5px 5px 10px;
+  padding: 5px;
+
+}
+
+.info-idcard {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 5px;
+}
+
+p {
+  margin:0;
+  padding:0;
+}
+
+.greetings {
+  border : 2px solid black;
+  margin: 5px 5px 5px 10px;
+  padding: 5px;
+
+}
+
+.random {
+  border : 2px solid black;
+  margin: 5px 5px 5px 10px;
+  padding: 5px;
+}
+
+.box {
+  width: 500px; 
+  height:100px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  margin: 5px 5px 5px 10px;
+}
+
+.cbs {
+  display:flex;
+}
+
+.credit-card {
+  display:flex;
+  flex-direction: column;
+  margin: 5px 5px 5px 10px;
+  border-radius: 10px;
+  width: 300px;
+  height: 150px;
+
+}
+
+.cb-img {
+  width: 40px;
+  height: 15px;
+  padding: 5px;
+}
+
+.image{
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.expiration {
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.name {
+  display:flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.padding {
+  padding: 5px;
+}
+
+.bank {
+  margin-left: 10px;
+}
