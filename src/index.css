@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.rectangle {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card-type {
+  margin-left: 80%;
+
+  width: 60px;
+  height: 35px;
+}
+
+.card-text {
+  font-size: 1.5em;
+  text-align: left;
+  line-height: 0em;
+  margin-left: 3px;
+}
+
+.card-numero {
+  font-size: 3em;
+  align-items: center;
+}
