@@ -1,0 +1,27 @@
+.bold-key {
+  font-weight: bold;
+}
+
+.interation2 {
+  border: 1px solid black;
+}
+
+.ccLogo {
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.ccInfo {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+}
+
+.creditCard {
+  width: 320px;
+  height: 160px;
+  border-radius: 20px;
+  position: relative;
+}
