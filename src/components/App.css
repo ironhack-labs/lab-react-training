@@ -5,5 +5,112 @@
 }
 
 .IdCard {
+  display: -webkit-flex;
   display: flex;
+}
+
+.IdCard img {
+  margin-right: 5px;
+}
+
+.BoxColor {
+  text-align: center;
+  padding: 20px;
+}
+
+.CreditCard {
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.CreditCard .type {
+  text-align: right;
+}
+
+.CreditCard .type img {
+  height: 20px;
+}
+
+.CreditCard .number {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.CreditCard .bank {
+  margin-left: 20px;
+}
+
+.Rating {
+  font-size: 2rem;
+}
+
+.DriverCard {
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 10px;
+}
+
+.DriverCard > * {
+  margin: 5px;
+}
+
+.DriverCard img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.DriverCard .right > * {
+  margin: 0;
+}
+
+.Dice {
+  height: 100px;
+  width: 100px;
+}
+
+.ClickablePicture {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.Dice {
+  cursor: pointer;
+}
+
+.NumbersTable {
+  display: -webkit-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.NumbersTable li {
+  margin: 0;
+  list-style-type: none;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
