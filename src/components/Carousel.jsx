@@ -8,15 +8,19 @@ class Carousel extends Component {
       position: 0,
     };
   }
-  previousImage = ({ target }) => {
-    (this.state.position > 0) === (this.state.position)
-    }
+  previousImage = () => {
+    if (this.state.counter > 0) {
+      this.setState({ counter: this.state.counter - 1 });
+    } else this.setState({ counter: this.props.imgs.length - 1 });
+    
   };
+
   nextImage = () => {
-    if (this.state.position < 3) {
-      this.setState((state) => ({ position: state.position++ }));
-    }
+    if (this.state.counter >= 0 && this.state.counter < this.props.imgs.length - 1) {
+      this.setState({ counter: this.state.counter + 1 });
+    } else this.setState({ counter: 0 });
   };
+
   render() {
     return (
       <div className="carousel">
@@ -28,6 +32,6 @@ class Carousel extends Component {
       </div>
     );
   }
-}
 
+}
 export default Carousel;

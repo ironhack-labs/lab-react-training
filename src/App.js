@@ -1,4 +1,5 @@
 import React from 'react';
+import "/bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -12,6 +13,10 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import RGBColorPicker from './components/RGBColorPicker';
+import SignupPage from './components/SignupPage';
+
 
 function App() {
   
@@ -22,7 +27,7 @@ function App() {
       lastName: 'Doe',
       genger: 'male',
       height: '1.78m',
-      birth={new Date("1992-07-14")},
+      birth:"1992-07-14",
      
     },
     {
@@ -31,7 +36,7 @@ function App() {
       lastName: 'DoLORES',
       genger: 'Female',
       height: '1.72m',
-      birth={new Date("1988-05-11")},
+      birth:"1988-05-11",
     },
   ];
 
@@ -156,6 +161,9 @@ function App() {
       <div>
         <NumbersTable limit={24} />
       </div>
+      <div><FaceBook /></div>
+      <div><SignupPage /></div>
+      <div><RGBColorPicker /></div>
     </div>
   );
 }

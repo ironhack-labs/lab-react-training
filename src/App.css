@@ -98,3 +98,34 @@ numbers-table {
   margin: 0;
 }
 
+.color-square {
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px 10px 0;
+}
+
+.colorpicker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.allNumbers {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.allNumbers li {
+  font-size: 30px;
+  width: 20%;
+  padding: 28px 0;
+  border: 2px solid black;
+}
+
+.allNumbers li:nth-child(even) {
+  background-color: red;
+}
