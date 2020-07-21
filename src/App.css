@@ -1,3 +1,116 @@
+/* edits to CSS*/
+
+h1 {
+  margin: 2%;
+}
+
+/* idcards */
+
+.IdCard {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px black;
+  width: 96vw;
+  padding: 0;
+  margin: 2%;
+}
+
+.IdCard .pic {
+  margin: 5px;
+}
+
+.IdCard p {
+  margin: 0;
+}
+
+.IdCard .infos {
+  margin-top: 5px;
+}
+
+.IdCard .bold{
+  font-weight: 600;
+}
+
+/* greetings */
+
+.greeting {
+  border: solid 1px black;
+  width: 96vw;
+  padding: 0;
+  margin: 2%;
+}
+
+.greeting span {
+  margin: 1%;
+}
+
+/* random */
+
+.random {
+  border: solid 1px black;
+  width: 96vw;
+  padding: 1%;
+  margin: 2%;
+}
+
+/* box color*/
+
+.box-color {
+  margin: 2%;
+  border: solid 1px black;
+color:black;
+padding:5%;
+text-align: center;
+}
+
+/* credit card */
+
+.cbs {
+  display:flex;
+}
+.credit-card {
+  display:flex;
+  flex-direction: column;
+  margin: 5px 5px 5px 10px;
+  border-radius: 10px;
+  width: 300px;
+  height: 150px;
+}
+.cb-img {
+  width: 40px;
+  height: 15px;
+  padding: 5px;
+}
+.image{
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.expiration {
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.name {
+  display:flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.bank {
+  margin-left: 10px;
+}
+
+/* end edits */
+
 .App {
   text-align: center;
 }
@@ -36,3 +149,4 @@
     transform: rotate(360deg);
   }
 }
+
