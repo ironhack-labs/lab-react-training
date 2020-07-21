@@ -21,11 +21,9 @@ const CreditCard = (props) => {
           <p>
             Expires {props.expirationMonth}/{props.expirationYear}
           </p>
-
           <p className="bank">{props.bank}</p>
+          <p>{props.owner}</p>
         </div>
-
-        <p>{props.owner}</p>
       </div>
     </div>
   );

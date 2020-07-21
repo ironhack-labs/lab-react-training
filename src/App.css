@@ -109,6 +109,30 @@ text-align: center;
   margin-left: 10px;
 }
 
+/* likes button */
+
+.likes{
+  padding: 1%;
+  margin: 2%;
+}
+
+/* dice button */
+
+
+.dice-img {
+  height: 100px;
+  width: 100px;
+  float: center;
+  margin: 20px;
+}
+
+/* number table */
+
+.cases {
+  display: flex;
+  flex-direction: row;
+}
+
 /* end edits */
 
 .App {
