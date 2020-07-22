@@ -1,0 +1,20 @@
+.driverText{
+    color: #ffffff;
+    background-color : #0366d6 ;
+
+
+    }
+
+.driverCard{
+    display: table-row;
+    width: 6500px;
+    height: 280px;
+    background-color : #0366d6 ;
+
+    }
+
+.driverImg{
+    width: 250px;
+    border-radius:50%;
+
+}
