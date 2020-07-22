@@ -7,6 +7,14 @@ import BoxColor from './BoxColor';
 import CreditCard from './CreditCard';
 import Rating from './Rating';
 import DriverCard from './DriverCard'
+import LikeButton from './LikeButton';
+import ClickablePicture from './ClickablePicture';
+import Dice from './Dice';
+import Carousel from './Carousel';
+import NumbersTable from './NumbersTable';
+
+
+
 
 function App() {
   return (
@@ -77,6 +85,25 @@ function App() {
         model: "Charger R/T 1970",
         licensePlate: "F45TFUR1"
           }} />
+
+        <h1>Like Button</h1>
+        <LikeButton /> <LikeButton />  
+
+        <h1>ClickablePicture</h1>
+        <ClickablePicture
+          img="https://scontent.fcgh37-1.fna.fbcdn.net/v/t1.0-0/p206x206/75223831_2574866019203215_806700497204412416_o.jpg?_nc_cat=110&_nc_sid=e33968&_nc_ohc=erjCEpNwA0gAX-7_W1Z&_nc_ht=scontent.fcgh37-1.fna&_nc_tp=6&oh=9eef0585dc1c870c93f707551a4ca22f&oe=5F3E927B" 
+          imgClicked="https://imagehost7.online-image-editor.com/oie_upload/images/22183323HyTwREj4v/NWSUmdmIb99W.jpg"
+        />
+
+        <h1>Dice</h1>
+        <Dice />
+
+        <h1>Carousel</h1>
+        <Carousel
+          imgs={["https://randomuser.me/api/portraits/women/1.jpg", "https://randomuser.me/api/portraits/men/1.jpg", "https://randomuser.me/api/portraits/women/2.jpg", "https://randomuser.me/api/portraits/men/2.jpg"]} />
+
+        <h1>NumbersTable</h1>
+        <NumbersTable limit={12} />  
       
         </div>
 

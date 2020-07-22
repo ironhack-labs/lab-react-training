@@ -14,5 +14,4 @@ function DriverCard(props){
       );
     }
 
-//https://scontent.fcgh37-1.fna.fbcdn.net/v/t1.0-0/p206x206/75223831_2574866019203215_806700497204412416_o.jpg?_nc_cat=110&_nc_sid=e33968&_nc_ohc=erjCEpNwA0gAX-7_W1Z&_nc_ht=scontent.fcgh37-1.fna&_nc_tp=6&oh=9eef0585dc1c870c93f707551a4ca22f&oe=5F3E927B
 export default DriverCard;

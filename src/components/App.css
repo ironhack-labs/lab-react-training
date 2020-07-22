@@ -2,6 +2,7 @@
   border: 1px solid black;
   padding: 5px;
   margin: 10px 0;
+  width: 70rem;
 }
 
 .IdCard {
@@ -60,6 +61,7 @@
   -webkit-align-items: center;
           align-items: center;
   margin: 10px;
+  width: 70rem;
 }
 
 .DriverCard > * {
@@ -77,40 +79,39 @@
   margin: 0;
 }
 
-.Dice {
-  height: 100px;
-  width: 100px;
-}
-
 .ClickablePicture {
-  height: 100px;
-  width: 100px;
+  height: 2rem;
+  width: 2rem;
   cursor: pointer;
 }
 
-.Dice {
-  cursor: pointer;
+.like-btn-container{
+  display: inline;
+}
+.like-btn{
+  width: 10rem;
+  margin: 1rem;
 }
 
-.NumbersTable {
-  display: -webkit-flex;
+.dice-img{
+  width: 10rem;
+}
+.carousel-container{
   display: flex;
-  margin: 0;
-  padding: 0;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+}
+.square{
+  border: 2px solid black;
+  width: 6rem;
+  height: 6rem;
+  display: inline-flex;
+  align-items: center;
+}
+.square>p{
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
 }
 
-.NumbersTable li {
-  margin: 0;
-  list-style-type: none;
-  height: 50px;
-  width: 50px;
-  border: 1px solid black;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-          justify-content: center;
-  -webkit-align-items: center;
-          align-items: center;
+.arrow-left{
+  width: 10rem;
 }
