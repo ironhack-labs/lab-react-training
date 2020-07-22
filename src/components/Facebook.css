@@ -1,0 +1,12 @@
+.card{
+    width: 600px;
+    display: flex;
+    border-color: black;
+}
+.userimg{
+    width: 40%;
+    
+}
+.card-text{
+    font-size: larger;
+}
