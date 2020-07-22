@@ -13,8 +13,7 @@ import Dice from './components/Dice'
 import Carousel from './components/Carousel'
 import NumbersTable from './components/NumbersTable'
 import FaceBook from './components/FaceBook'
-
-
+import SignupPage from './components/SignupPage'
 
 
 
@@ -150,6 +149,11 @@ function App() {
       <div>
         <h1>FaceBook</h1>
         <FaceBook />
+      </div>
+
+      <div>
+        <h1>Signup Page</h1>
+        <SignupPage />
 
       </div>
 
