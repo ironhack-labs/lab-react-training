@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
+import './Random.css';
 
-export default class Random extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
-}
+export default function Random(props) {
+    const randomNumber =
+    props.min + Math.floor(Math.random() * (props.max - props.min));
+  return (
+      <p className='randomCard'>
+          <h1>Random value between {props.min} and {props.max} {"=>"} {randomNumber}</h1>
+      </p>
+    
+  )}
+
