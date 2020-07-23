@@ -61,3 +61,30 @@ display: flex;
   border: 3px solid black;
   margin: 5%;  
 }
+.myCardColor{
+  width: 100%;
+  border: 3px solid black;
+  }
+  .DriverCard{
+    width:90%;
+    margin:5%;
+    background-color: rgb(78, 78, 209);
+    border-radius: 20px;
+    display: flex;  
+    color: white;
+
+  }
+  .DriverCard img{
+      border-radius: 60px;
+      height: 120px;
+      width: 120px;
+      margin-top: 10%;
+  }
+  .profileDriver{
+    margin-left:30%;
+
+  }
+  .DriverCard ul{
+    list-style: none;
+  }
+  

@@ -3,7 +3,6 @@ import '../App.css';
 
 export default class IdCard extends Component {
     render() {
-        /*cons Date*/
         return (
             <div>
                 <div  className="myCard"> 
