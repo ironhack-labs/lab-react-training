@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +17,106 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Cardsd */
+.idCard {
+  margin: 10px;
+  display: flex;
+  border-color: black;
+  border-width: 100vh;
+}
+
+.idCard {
+  display: flex;
+  border: 2px solid black;
+}
+
+.idCard div {
+  margin: 10px;
+}
+
+.idCard p {
+  text-align: left;
+  height: 5px;
+}
+
+.textoCard {
+  height: 50px;
+}
+
+.hello {
+  padding-left: 1%;
+  text-align: left;
+  border: 2px solid black;
+}
+
+.boxColor {
+  margin: 10px;
+
+  border: 2px solid black;
+  width: 50%;
+  height: 200px;
+}
+
+.CreditCard {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.type img {
+  display: block;
+  margin-left: 320px;
+  margin-bottom: 20px;
+  width: 50px;
+  height: 30px;
+  text-align: right;
+  margin-top: 15px;
+}
+
+.number {
+  font-size: 32px;
+  text-align: center;
+  margin: 10px;
+}
+
+.data {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.owner {
+  margin-left: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.lastDivCard {
+  display: flex;
+}
+
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
   }
-  to {
-    transform: rotate(360deg);
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
   }
+}
+
+/* Card Drive */
+
+.cardDriver {
+  display: flex;
+}
+.cardDriver img {
+  width: 20%;
+}
+
+/* Dice */
+
+.dice {
+  width: 20%;
 }
