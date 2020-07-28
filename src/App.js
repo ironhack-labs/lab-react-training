@@ -105,7 +105,7 @@ function App() {
        <h3>ClickablePicture</h3>
            <ClickablePicture
           img='/img/persons/maxence.png'
-          imgClicked='/img/persons/maxence-glasses.png'
+          change='/img/persons/maxence-glasses.png'
         />
         <h3>Dice</h3>
         {/*<Dice />
