@@ -16,17 +16,17 @@ export default function CreditCard(props) {
 
     return (
         <div className="card" style={{backgroundColor: props.bgColor, color: props.color}}>
-            <div className="logo">
+            <div>
                 <img src={props.cardImg} alt="img-logo" />
             </div>
-            <span className="number">{hiddenNumbers(props.number)}</span>
-            <div className="flex-row">
-                <span className="expiration-date">
+            <span>{hiddenNumbers(props.number)}</span>
+            <div>
+                <span>
                     Expires {props.expirationMonth}/{props.expirationYear}
                 </span>
-                <span className="bank">{props.bank}</span>
+                <span>{props.bank}</span>
             </div>
-            <span className="owner">{props.owner}</span>
+            <span>{props.owner}</span>
         </div>
     )
 }
