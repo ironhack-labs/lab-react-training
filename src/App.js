@@ -3,8 +3,56 @@ import IdCard from './components/Idcard/IdCard'
 import Greetings from './components/Greetings/Greetings'
 import Random from './components/RandomNum/RandomNum'
 import BoxColor from './components/Boxcolor/BoxColor'
+import CreditCard from './components/Creditcard/CreditCard'
 
 function App() {
+
+  const creditCards = 
+  [{
+      cardImg: "./img/visa.png",
+      number: "0123456789018845",
+      expirationMonth: 3,
+      expirationYear: 2021,
+      bank: "BNP",
+      owner: "Maxence Bouret",
+      bgColor: "#11aa99",
+      color: "white"
+    },
+    {
+      cardImg: "./img/master-card.svg",
+      number: "0123456789010995",
+      expirationMonth: 3,
+      expirationYear: 2021,
+      bank: "N26",
+      owner: "Maxence Bouret",
+      bgColor: "#eeeeee",
+      color: "white"
+    },
+    {
+      cardImg: "./img/visa.png",
+      number: "0123456789016984",
+      expirationMonth: 12,
+      expirationYear: 2019,
+      bank: "Firstname Lastname",
+      owner: "Maxence Bouret",
+      bgColor: "#ddbb55",
+      color: "white"
+    }];
+
+  const creditCardList = creditCards.map((elem, index) => (
+    <CreditCard 
+      key={index}
+      cardImg={elem.cardImg}
+      number={elem.number}
+      expirationMonth={elem.expirationMonth}
+      expirationYear={elem.expirationYear}
+      bank={elem.bank}
+      owner={elem.owner}
+      bgColor={elem.bgColor}
+      color={elem.color}
+    />
+  ));
+
   return (
     <div className="App">
       <IdCard
@@ -34,6 +82,7 @@ function App() {
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
+      {creditCardList}
     </div>
   );
 }
