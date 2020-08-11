@@ -75,3 +75,12 @@ h2 {
   padding-bottom: 1rem;
   margin: 0;
 }
+
+.rating {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.stars {
+  font-size: 2rem;
+}
