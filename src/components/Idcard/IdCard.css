@@ -1,0 +1,16 @@
+.card {
+    border: solid black 1px;
+    display: flex;
+    margin: 10px
+}
+
+.card img{
+    width: 128px;
+    height: 128px;
+    margin: 5px
+}
+
+.info p{
+    margin: 0rem;
+}
+
