@@ -8,6 +8,7 @@ import Rating from './components/Rating/Rating'
 import DriverCard from './components/DriverCard/DriverCard'
 import LikeButton from './components/Likebutton/LikeButton'
 import ClickablePicture from './components/Clickablepicture/ClickablePicture'
+import Dice from './components/Dice/Dice'
 
 function App() {
 
@@ -172,6 +173,10 @@ function App() {
           img='./img/persons/maxence.png'
           imgClicked='/img/persons/maxence-glasses.png'
         />
+
+        <hr></hr>
+
+        <Dice />
 
         <hr></hr>
     </div>

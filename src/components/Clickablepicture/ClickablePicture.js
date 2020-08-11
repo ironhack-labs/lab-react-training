@@ -7,6 +7,12 @@ const ClickablePicture = (props) => {
 
     const [stateImage, setStateImage] = useState(noGlassesImg);
     const changeHandler = () => {
+        /**
+         * stateImage === noGlassesImg 
+         * ? setStateImage(glassesImg)
+         * : setStateImage(noGlassesImg)
+         * **/
+
         let newImg = stateImage;
         if (newImg === noGlassesImg){
             newImg = glassesImg;
@@ -15,6 +21,7 @@ const ClickablePicture = (props) => {
             newImg = noGlassesImg;
             setStateImage(newImg)
         }
+        
     };
     return <img src={stateImage} alt="" onClick={changeHandler} />
 }
