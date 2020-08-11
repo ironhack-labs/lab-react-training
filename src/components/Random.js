@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Random = () => {
+const Random = (props) => {
+    const randomNum = () => Math.floor(Math.random() * (props.max) + props.min);
+    
     return (
         <div>
-            
+            <p class="box">Random value between {props.min} and {props.max} => {randomNum()}</p>
         </div>
     )
 }
