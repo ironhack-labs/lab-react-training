@@ -1,0 +1,11 @@
+.boxcolor {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: 1px solid black;
+  margin: 10px;
+  line-height: 0;
+}

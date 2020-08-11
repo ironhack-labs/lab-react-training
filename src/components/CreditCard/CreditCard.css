@@ -1,0 +1,38 @@
+.container-credit-card {
+  width: 25%;
+  border-radius: 8px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.visaimg {
+  width: 20%;
+  align-self: flex-end;
+  margin: 10px;
+}
+.visaimg img {
+  width: 100%;
+}
+
+.number {
+  font-size: 30px;
+  line-height: 0;
+  padding: 0;
+}
+
+.info {
+  line-height: 0;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.owner{
+    width: 80%;
+    line-height: 0;
+    margin: 10px;
+}
