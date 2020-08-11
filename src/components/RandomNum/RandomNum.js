@@ -11,7 +11,7 @@ export default function RandomNum(props) {
 
     return (
         <div>
-            <h2 className="random">Random value between {props.min} and {props.max} => {getRandomNumber(min, max)}</h2>
+            <h2 className="random">A random value between {props.min} and {props.max} is {getRandomNumber(min, max)}</h2>
         </div>
     )
 }
