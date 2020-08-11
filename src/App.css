@@ -34,3 +34,9 @@ h2 {
   padding: 0.2rem;
   margin: 1rem;
 }
+
+.center {
+  text-align: center;
+  line-height: 0;
+  padding: 1rem;
+}

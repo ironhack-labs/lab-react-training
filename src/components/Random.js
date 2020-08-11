@@ -5,7 +5,7 @@ const Random = (props) => {
     
     return (
         <div>
-            <p class="box">Random value between {props.min} and {props.max} => {randomNum()}</p>
+            <p className="box">Random value between {props.min} and {props.max} => {randomNum()}</p>
         </div>
     )
 }

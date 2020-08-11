@@ -3,9 +3,9 @@ import moment from 'moment'
 
 const IdCard = props => {
     return (
-        <article class="card">
-            <img class="card-pic" src={props.picture} alt="pic" />
-            <div class="card-details">
+        <article className="card">
+            <img className="card-pic" src={props.picture} alt="pic" />
+            <div className="card-details">
                <p><b>First name: </b>{props.firstName}</p>
                <p><b>Last name: </b>{props.lastName}</p>
                <p><b>Gender: </b>{props.gender}</p>

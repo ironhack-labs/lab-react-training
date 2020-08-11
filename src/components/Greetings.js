@@ -13,7 +13,7 @@ const Greetings = (props) => {
 
     return (
         <div>
-            <p class="box" lang={props.lang}>{greeting} {props.children}</p>
+            <p className="box" lang={props.lang}>{greeting} {props.children}</p>
         </div>
     )
 }
