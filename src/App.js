@@ -1,5 +1,6 @@
 import React from 'react'
 import IdCard from './components/Idcard/IdCard'
+import Greetings from './components/Greetings/Greetings'
 
 function App() {
   return (
@@ -18,8 +19,12 @@ function App() {
         gender='female'
         height={172}
         birth="1988-05-11"
-        img="https://randomuser.me/api/portraits/women/44.jpg"
-/>
+        img="https://randomuser.me/api/portraits/women/44.jpg"/>
+
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="es">Carlos</Greetings>
+      <Greetings lang="en">Peter</Greetings>
+      <Greetings lang="fr">JB</Greetings>
 
     </div>
   );
