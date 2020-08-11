@@ -1,0 +1,20 @@
+.blue-container {
+    background-color: #465EB5;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.img-container {
+    padding-right: 15px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
