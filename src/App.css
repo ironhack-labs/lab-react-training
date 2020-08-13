@@ -148,3 +148,7 @@ h3 {
 .picBtn:focus {
   outline: none;
 }
+
+.dice {
+  height: 8rem;
+}
