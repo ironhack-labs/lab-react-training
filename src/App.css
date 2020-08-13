@@ -133,3 +133,18 @@ h3 {
 .likes:focus {
   box-shadow: 0px 0px 6px 6px rgb(0, 195, 255);
 }
+
+.clickablePic {
+  height: 10rem;
+}
+
+.picBtn {
+  border: none;
+  background-color: white;
+  display: flex;
+  margin-left: 1rem;
+}
+
+.picBtn:focus {
+  outline: none;
+}
