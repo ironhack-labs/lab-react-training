@@ -107,7 +107,7 @@
   font-weight: bolder;
 }
 
-
+/* Iteration 12 */
 .numbersTable{
   display: flex;
   flex-wrap: wrap;
@@ -119,4 +119,28 @@
   border: solid 1px black;
   text-align: center;
   vertical-align: middle
+}
+
+/* Iteration 13 */
+.profile{
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.profile img{
+  height: 200px;
+  margin-right: 10px;
+}
+
+.profile .infos{
+  font-size: 1.7rem;
+}
+
+.profile .infos p{
+  margin: 0px;
+}
+
+.isActive{
+  background-color: lightblue;
 }

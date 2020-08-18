@@ -8,8 +8,8 @@ const NumbersTable = (props) => {
     }
     return (
         <div className="numbersTable">
-            {numbersArr.map(num => {
-                return <div className="square">{num}</div>
+            {numbersArr.map((num, i) => {
+                return <div key={i} className="square" style={num%2 === 0? {backgroundColor: "red"} : {backgroundColor: "white"}}>{num}</div>
             })}
         </div>
     )

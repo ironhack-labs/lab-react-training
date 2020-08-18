@@ -12,6 +12,8 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+
 
 function App() {
   return (
@@ -140,6 +142,16 @@ function App() {
       <div className="iteration12">
         <h2>NumbersTable</h2>
         <NumbersTable limit={12} />
+      </div>
+      <div className="iteration13">
+        <h2>FaceBook</h2>
+        <FaceBook />
+      </div>
+      <div className="iteration15">
+        <h2>SingupPage</h2>
+      </div>
+      <div className="iteration16">
+        <h2>RGBColorPicker</h2>
       </div>
     </div>
   );
