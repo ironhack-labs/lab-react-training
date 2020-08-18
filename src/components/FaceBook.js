@@ -7,27 +7,52 @@ class FaceBook extends React.Component {
         this.state = {
             profiles: profiles,
             countries: ["All",...new Set(profiles.map((profile) => profile.country))],
-            isActive: false
+            activeCountry: ""
         }
     }
     handleClick = (country) => {
         if(country === "All"){
             this.setState({
-                isActive: true
+                activeCountry: ""
+            })
+        } else {
+            this.setState({
+                activeCountry: country
             })
         }
     }
+
+    handleSort = (sorting) => {
+        let cloneProfiles = [...this.state.profiles]
+        cloneProfiles.sort((a, b) => {
+            if (a[sorting] < b[sorting]) {
+                return -1
+            } else if (a[sorting] > b[sorting]){
+                return 1
+            }
+            return 0
+        })
+        this.setState({
+            profiles: cloneProfiles
+        })
+    }
+
     render () {
         return (
             <div>
-            {this.state.countries.map((country, i) => {
-                return (
-                    <button onClick={() => this.handleClick(country)} key={"country"+i} className={this.state.isActive? "isActive" : ""}>{country}</button>
-                )
-            })}
+                <button onClick={() => this.handleSort("firstName")}>Sort by First Name</button>
+                <button onClick={() => this.handleSort("lastName")}>Sort by Last Name</button>
+                <button onClick={() => this.handleSort("country")}>Sort by Country</button>
+                <div>
+                {this.state.countries.map((country, i) => {
+                    return (
+                        <button onClick={() => this.handleClick(country)} key={"country"+i} className={this.state.activeCountry === country? "isActive" : ""}>{country}</button>
+                    )
+                })}
+                </div>
             {this.state.profiles.map((profile, i) => {
                 return (
-                    <div key={"profile"+i} className={this.state.isActive? "isActive profile" : "profile"} >
+                    <div key={"profile"+i} className={this.state.activeCountry === profile.country? "profile isActive" : "profile"} >
                         <div className="picture">
                             <img src={profile.img} alt={profile.firstName} />
                         </div>
