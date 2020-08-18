@@ -1,0 +1,24 @@
+.main {
+    margin: 15px;
+    align-content: center;
+}
+
+.id-card-container {
+    display: flex;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+img {
+    width: 150px;
+    height: 100%
+}
+
+.Id-card-info {
+    margin-left: 10px;
+    text-align: left;
+    line-height: 0.7;
+}
