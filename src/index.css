@@ -11,3 +11,95 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.id-card {
+  display: flex;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.id-card > img {
+  width: 150px;
+  object-fit: contain;
+}
+
+.id-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5px;
+}
+
+.id-card-info p {
+  margin: 0;
+}
+
+.id-card-info p > span {
+  font-weight: bold;
+}
+
+.container {
+  text-align: left;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.credit-card {
+  width: 300px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.credit-card-logo {
+  width: 50px;
+  align-self: flex-end;
+}
+
+.driver-card {
+  width: 500px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #0366d6;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.driver-card > img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.driver-card-info {
+  text-align: left;
+  margin-left: 5px;
+  width: 250px;
+}
+
+.driver-card-info > p {
+  margin: 0;
+}
+
+.dice {
+  width: 100px;
+  margin: 20px;
+}
+
+.numbers-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numbers-table-item {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
