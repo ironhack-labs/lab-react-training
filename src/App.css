@@ -121,7 +121,7 @@
   vertical-align: middle
 }
 
-/* Iteration 13 */
+/* Iteration 13 and 14 */
 .profile{
   display: flex;
   border: 1px solid black;
@@ -143,4 +143,17 @@
 
 .isActive{
   background-color: lightblue;
+}
+
+/* Iteration 16 */
+
+.colorPicker{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.colorPicker * {
+  margin-right: 5px;
 }

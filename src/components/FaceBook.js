@@ -7,7 +7,7 @@ class FaceBook extends React.Component {
         this.state = {
             profiles: profiles,
             countries: ["All",...new Set(profiles.map((profile) => profile.country))],
-            activeCountry: ""
+            activeCountry: "",
         }
     }
     handleClick = (country) => {
@@ -33,7 +33,7 @@ class FaceBook extends React.Component {
             return 0
         })
         this.setState({
-            profiles: cloneProfiles
+            profiles: cloneProfiles,
         })
     }
 

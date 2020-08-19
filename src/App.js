@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css'
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -13,6 +14,8 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker'
 
 
 function App() {
@@ -148,10 +151,12 @@ function App() {
         <FaceBook />
       </div>
       <div className="iteration15">
-        <h2>SingupPage</h2>
+        <h2>SignupPage</h2>
+        <SignupPage />
       </div>
       <div className="iteration16">
         <h2>RGBColorPicker</h2>
+        <RGBColorPicker />
       </div>
     </div>
   );
