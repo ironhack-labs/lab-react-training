@@ -145,6 +145,10 @@
   background-color: lightblue;
 }
 
+.isHidden{
+  display: none;
+}
+
 /* Iteration 16 */
 
 .colorPicker{
