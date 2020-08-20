@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+body {
+    margin: 0px 10px;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.id-card {
+    display: flex;
+    border: 1px solid black;
+    margin: 10px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.id-img {
+    padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.id-text {
+    line-height: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+.greetings {
+    border: 1px solid black;
+    line-height: 1px;
+    padding: 5px;
+    margin: 10px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-color {
+    border: 1px solid black;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.box-p {
+    margin: 0px;
+}
+
+.creditcard {
+    width: 300px;
+    height: 180px;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.creditcard img {
+    width: 45px;
+    padding: 15px;   
+    padding-bottom: 0px; 
+    margin: 0;
+    text-align: right;
+}
+
+.cc-nr {
+    margin: 0px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.nr {
+    margin: 15px;
+    font-weight: 600;
+}
+
+.cc-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cc-text p {
+    line-height: 1;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.creditcard-con {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.drivercard {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.drivercard-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 5px;
+}
+
+.nrtable {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.fb-img img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+.fb-list {
+    padding-inline-start: 0px;
+}
+
+.fb-card {
+    list-style-type: none;
+    margin: 10px 0px;
+    border: 1px solid black;
+    display: flex;
+    line-height: 1px;
+}
+
+.colorbox {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
 }
