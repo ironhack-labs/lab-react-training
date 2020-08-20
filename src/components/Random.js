@@ -1,29 +1,20 @@
 import React from 'react'
-import PropTypes from 'prop-types';
 import './components.css'
 
 
-export default function Random(props){
+function Random(props){
 
-    Random.propTypes = {
-        min: PropTypes.number,
-        max: PropTypes.number,
-        randomNumber: PropTypes.number
-    }
-
-   
-    function randomValue(){
-        return props.randomNumber = Math.floor((Math.random() * (props.max - props.min)) + props.min) 
-    }
+   let randomValue = Math.floor((Math.random() * (props.max - props.min)) + props.min)
+    
 
     return ( 
         <div className = "random-container">
             
-            <p>Random value between {props.min} and {props.max} => {() => props.randomValue()}</p>
+            <p>Random value between {props.min} and {props.max} => {randomValue}</p>
             
           
         </div>
     )
 }
 
-
+export default Random;

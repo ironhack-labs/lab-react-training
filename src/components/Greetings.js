@@ -1,39 +1,36 @@
 import React from 'react'
-import PropTypes from 'prop-types';
-import './components.css'
 
 
 
+function Greetings(props) {
 
-export default function Greetings(props){
+    let chosenLang;
 
-    Greetings.propTypes = {
-        name: PropTypes.string,
-        lang: PropTypes.oneOf([
-            {"de": "Hallo"},
-            {"en": "Hello"},
-            {"es": "Hola"},
-            {"fr": "Bonjour"}
-        ])
+    if (props.lang === "de"){
+        chosenLang = "Hallo"
+    } else if (props.lang === "en"){
+        chosenLang = "Hello"
+    } else if (props.lang === "es"){
+        chosenLang = "Hola"
+    } else if (props.lang === "fr"){
+        chosenLang = "Bonjour"
     }
 
-
-    function countryGreeting () => {
-        props.lang.filter(function() {
-            return 
-        })
-
+    let myStyle = {
+        border: "2px solid black",
+        margin: "5px",
+        padding: "0px 5px"
     }
 
-    return ( 
-        <div className = "greetings-container">
-                
-            <p>{props.lang} {props.name}</p>
-          
-
-
+    return (        
+        <div style={myStyle}>
+            <p>{chosenLang} {props.children}</p>
         </div>
     )
+
+
+    
+
 }
 
-
+export default Greetings;
