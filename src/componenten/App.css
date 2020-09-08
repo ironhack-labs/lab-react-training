@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.box {
+  display: -webkit-flex;
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.IdCard-box {
+  display: -webkit-flex;
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.greetings-box {
+  display: -webkit-flex;
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.IdCard img {
+  margin-right: 5px;
+}
+
+.BoxColor {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+}
