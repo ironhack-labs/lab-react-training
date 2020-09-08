@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import IdCard from './Components/IdCard';
+import Greetings from './Components/Greetings';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      
         
         <p>
          <IdCard  
@@ -18,7 +18,10 @@ function App() {
           picture="https://randomuser.me/api/portraits/men/44.jpg" />
 
         </p>
-      </header>
+        <h1>Greetings</h1>
+        <Greetings lang="en">Alex</Greetings>
+        <Greetings lang="fr">Jacques</Greetings>
+     
     </div>
   );
 }
