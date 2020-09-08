@@ -5,6 +5,7 @@ import Greetings from './Components/Greetings';
 import Random from './Components/Random';
 import BoxColor from './Components/BoxColor';
 import CreditCard from './Components/CreditCard';
+import Rating from './Components/Rating';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <h1>Greetings</h1>
         <Greetings lang="en">Alex</Greetings>
         <Greetings lang="fr">Jacques</Greetings>
+        
         <h1>Random</h1>
         <Random min={1} max={20}/>
         <h1>BoxColor</h1>
@@ -49,6 +51,14 @@ function App() {
           owner="Alexandros Anthopoulos"
           bgColor="#800080"
           color="#222222" />
+
+         <h1>Rating</h1>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
 
 
     </div>
