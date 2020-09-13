@@ -17,7 +17,7 @@ function CreditCard(props) {
                 </div>
 
                 <div className="number">
-                    <p>{props.number}</p>
+                    <p>•••• •••• •••• {props.number.substr(-4)}</p>
                 </div>
 
                 <div clasName="bank-information">

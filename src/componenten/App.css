@@ -127,3 +127,27 @@ h1 {
 .card-info > p {
   margin: 0;
 }
+
+.CreditCard {
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+
+.nrtable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
