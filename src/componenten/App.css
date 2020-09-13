@@ -77,3 +77,53 @@ h1 {
   padding: 5px;
   margin: 10px 0;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.bank-information {
+  display: flex;
+  flex-direction: row;
+}
+
+.DriverCard {
+  background-color: #455EB5;
+  display: flex;
+  flex-direction: column;
+}
+
+.DriverCard img {
+  width: 100px;
+}
+
+
+.DriverCard {
+  width: 1000px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 5px;
+  background-color: #455EB5;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.DriverCard > img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.card-info {
+  text-align: left;
+  margin-left: 5px;
+  width: 250px;
+}
+
+.card-info > p {
+  margin: 0;
+}
