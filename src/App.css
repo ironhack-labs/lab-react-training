@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  width: 700px;
+  margin-left: 10px;
+  padding-left: 10px;
+  font-size: 1rem;
+  border: solid 2px black;
+  display: flex;
+  justify-content: flex-start;
+}
+.credit-card {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+}
+.credit-card img {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 70px;
+  border-radius: 20px;
+}
+.driver-card {
+  margin-bottom: 10px;
+  align-content: flex-start;
+  color: white;
+  background-color: royalblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 200px;
+  border-radius: 10px;
+}
+.driver-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
