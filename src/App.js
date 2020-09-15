@@ -10,6 +10,10 @@ import DriverCard from './components/driverCard'
 import LikeButton from './components/LikeButton'
 import Dice from './components/Dice'
 import Carousel from './components/Carousel'
+import NumbersTable from './components/NumbersTable'
+import ClickablePicture from './components/ClickablePicture'
+import Facebook from './components/Facebook'
+import SignupPage from './components/SignupPage'
 
 function App() {
   return (
@@ -128,7 +132,19 @@ function App() {
         />
 
         {/* NumbersTable */}
-        
+        <NumbersTable limit={12}/>
+
+        {/* ClickablePicture */}
+        <ClickablePicture
+          img='/img/persons/maxence.png'
+          imgClicked='/img/persons/maxence-glasses.png'
+        />
+
+        {/* Facebook */}
+        <Facebook/>
+
+        {/* SignupPage */}
+        {/* <SignupPage/> */}
       </header>
     </div>
   );
