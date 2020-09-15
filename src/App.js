@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
 import IdCard from './components/idCard'
 import Greetings from './components/greeting'
 import Random from './components/random'
@@ -8,6 +7,9 @@ import BoxColor from './components/boxColor'
 import CreditCard from './components/creditCard'
 import Rating from './components/rating'
 import DriverCard from './components/driverCard'
+import LikeButton from './components/LikeButton'
+import Dice from './components/Dice'
+import Carousel from './components/Carousel'
 
 function App() {
   return (
@@ -106,6 +108,27 @@ function App() {
             licensePlate: "BE33ER"
           }} />
 
+          {/* Like Button */}
+
+          <LikeButton></LikeButton>
+          <LikeButton></LikeButton>
+
+          {/* Dice */}
+          <Dice></Dice>
+
+          {/* Carousel  */}
+
+          <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+
+        {/* NumbersTable */}
+        
       </header>
     </div>
   );
