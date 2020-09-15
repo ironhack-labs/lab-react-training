@@ -1,5 +1,14 @@
 .App {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
   text-align: center;
+
+}
+
+em {
+    font-size: 32px;
 }
 
 .App-logo {
@@ -36,3 +45,158 @@
     transform: rotate(360deg);
   }
 }
+/* iteracion 1 */
+
+.IdCard {
+    display: flex;
+    flex-direction: row;
+    border: 2px black solid;
+    padding: 5px;
+    margin: 15px;
+}
+
+.IdCard > .IdCardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+/* iteracion 2 */
+
+.Greetings {
+    border: 2px black solid;
+    padding: 10px;
+    margin: 10px;
+    font-size: 32px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* iteracion 3 */
+
+.Random {
+    border: 2px black solid;
+    padding: 10px;
+    margin: 10px;
+    font-size: 32px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* iteracion 4 */
+
+.BoxColor {
+    margin: 20px;
+    width: 100vw;
+    height: 20vh;
+    border: 2px  black solid;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* iteracion 5 */
+
+.CreditCard {
+    width: 320px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.DisplayCreditCard {
+    display: flex;
+    flex-direction: row;
+}
+
+.type {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.Visa {
+    width: 40px;
+    height: auto;
+}
+
+.MasterCard{
+    width: 40px;
+    height: auto;
+}
+
+.numbers {
+    font-size: 32px;
+    padding: 5px 5px;
+}
+
+.expire {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 10px;
+
+}
+
+.name {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 10px;
+}
+
+/* iteracion 7 */
+
+.Rating{
+    margin: 5px;
+}
+
+/* iteracion 7 */
+
+.DriverCard {
+    color: white;
+    background-color:#455EB5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 800px;
+    border-radius: 15px;
+
+}
+
+h2,p {
+    margin: 0;
+    padding: 0 5px 0 0;
+}
+
+.DriverCard > .img {
+    height: 50%;
+}
+
+.DriverCard > .img >img {
+    width: 100px;
+    height: 100px;
+    padding: 10px 0;
+    border-radius: 100%;
+}
+
+.DriverCard > .DriverInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 0 15px;
+}
+
+
+
+
+   
+
+
+
