@@ -36,3 +36,73 @@
     transform: rotate(360deg);
   }
 }
+
+.IdCard{
+  display: flex;
+}
+
+.box{
+  border: 1px solid black;
+  margin:10px 0;
+  padding: 5px;
+  text-align: left;
+}
+
+h1{
+  text-align: left;
+}
+
+.color{
+  text-align: center;
+}
+
+.creditCard{
+  margin:10px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.type{
+  text-align: right;
+}
+
+.type img{
+  height: 20px;
+}
+
+.left{
+  text-align: left;
+}
+
+.number{
+  font-size:28px;
+}
+
+.driverCard{
+  display: flex; 
+  background-color: #425cbb;
+  border-radius: 30px;
+  justify-content: center;
+  padding: 15px;
+  color:white;
+  margin:10px;
+}
+
+.driverCard img{
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.right{
+  margin-top: 10px;
+  margin-left: 25px;
+  text-align: left;
+}
+
+.right h2{
+  margin: 0;
+}
