@@ -8,10 +8,15 @@ import BoxColor from './Components/BoxColor';
 import CreditCard from './Components/CreditCard'
 import Rating from './Components/Rating'
 import DriverCard from './Components/DriverCard'
+import LikeButton from './Components/LikeButton';
+import Dice from './Components/Dice';
+import Carousel from './Components/Carousel';
+import NumbersTable from './Components/NumbersTable';
+import FaceBook from './Components/FaceBook';
 
 function App() {
   return (<div className="App" >
-    <header className="App-header">
+    {/* <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>
         Edit <code>src/App.js</code> and save to reload.
@@ -24,7 +29,7 @@ function App() {
       >
         Learn React
             </a>
-    </header>
+    </header> */}
 
     {/* <IdCard lastName="Doe"
       firstName="John"
@@ -68,6 +73,23 @@ function App() {
         model: "Toyota Corolla Altis",
         licensePlate: "CO42DE"
       }} /> */}
+
+    {/* <LikeButton></LikeButton> */}
+
+    {/* <Dice></Dice> */}
+
+    {/* <Carousel
+      imgs={[
+        'https://randomuser.me/api/portraits/women/1.jpg',
+        'https://randomuser.me/api/portraits/men/1.jpg',
+        'https://randomuser.me/api/portraits/women/2.jpg',
+        'https://randomuser.me/api/portraits/men/2.jpg'
+      ]}
+    /> */}
+
+    {/* <NumbersTable limit={12}></NumbersTable> */}
+
+    <FaceBook></FaceBook>
 
   </div>
   );
