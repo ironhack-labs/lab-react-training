@@ -15,12 +15,13 @@ class Greetings extends Component {
             case "es":
                 greetings = "Hola"
                 break;
-            case "en":
+            default:
                 greetings = "Hello"
                 break;
+
         }
         return (
-            < div className="Greetings" >
+            <div className="Greetings">
                 <p>{greetings} {this.props.children}</p>
             </div>
         )

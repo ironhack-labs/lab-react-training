@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from "styled-components"
 
 const StyledNumber = styled.div`
@@ -23,7 +23,7 @@ const NumbersTable = (props) => {
     return (
         <StyledNumber>
             {numbers.map((num, i) => {
-                return <div style={{ backgroundColor: num % 2 === 0 ? "red" : "white" }}>{num}</div>
+                return <div key={i} style={{ backgroundColor: num % 2 === 0 ? "red" : "white" }}>{num}</div>
             })}
         </StyledNumber>
     )

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styled from "styled-components"
 
 const LikeButton = () => {
     let [clickCount, setClickCount] = useState(0);

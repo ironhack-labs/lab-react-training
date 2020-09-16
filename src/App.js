@@ -13,6 +13,10 @@ import Dice from './Components/Dice';
 import Carousel from './Components/Carousel';
 import NumbersTable from './Components/NumbersTable';
 import FaceBook from './Components/FaceBook';
+import ClickablePicture from './Components/ClickablePicture';
+import SignupPage from './Components/SignupPage';
+import SingleColorPicker from './Components/SingleColorPicker';
+import RGBColorPicker from './Components/RGBColorPicker';
 
 function App() {
   return (<div className="App" >
@@ -31,6 +35,7 @@ function App() {
             </a>
     </header> */}
 
+
     {/* <IdCard lastName="Doe"
       firstName="John"
       gender="male"
@@ -42,11 +47,15 @@ function App() {
       }
       picture="https://randomuser.me/api/portraits/men/44.jpg" /> */}
 
+
     {/* <Greetings lang="fr">François</Greetings> */}
+
 
     {/* <Random min={1} max={3} /> */}
 
+
     {/* <BoxColor r={255} g={0} b={0} /> */}
+
 
     {/* <CreditCard
       type="Visa"
@@ -58,12 +67,14 @@ function App() {
       bgColor="#11aa99"
       color="white" /> */}
 
+
     {/* <Rating>0</Rating>
     <Rating>1.49</Rating>
     <Rating>1.5</Rating>
     <Rating>3</Rating>
     <Rating>4</Rating>
     <Rating>5</Rating> */}
+
 
     {/* <DriverCard
       name="Travis Kalanick"
@@ -74,9 +85,18 @@ function App() {
         licensePlate: "CO42DE"
       }} /> */}
 
+
     {/* <LikeButton></LikeButton> */}
 
+
+    {/* <ClickablePicture
+      img='/img/persons/maxence.png'
+      imgClicked='/img/persons/maxence-glasses.png'
+    /> */}
+
+
     {/* <Dice></Dice> */}
+
 
     {/* <Carousel
       imgs={[
@@ -87,9 +107,24 @@ function App() {
       ]}
     /> */}
 
+
     {/* <NumbersTable limit={12}></NumbersTable> */}
 
-    <FaceBook></FaceBook>
+
+    {/* <FaceBook></FaceBook> */}
+
+
+    {/* <SignupPage></SignupPage> */}
+
+
+    {/* <SingleColorPicker
+      color='r'
+      value={212}
+      onChange={() => console.log("change")}
+    /> */}
+
+
+    <RGBColorPicker />
 
   </div>
   );
