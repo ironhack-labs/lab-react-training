@@ -195,6 +195,91 @@ h2,p {
 
 
 
+/* iteracion 8 */
+
+
+
+
+
+/* iteracion 9 */
+
+
+
+
+
+/* iteracion 10 */
+
+
+
+
+
+
+/* iteracion 11 */
+
+
+
+
+
+
+/* iteracion 12 */
+
+.numbersTable{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px
+  }
+  .square{
+    width: 50px;
+    height: 50px;
+    border: solid 1px black;
+    text-align: center;
+    vertical-align: middle
+  }
+
+
+/* iteracion 13 */
+
+.FaceBookCard{
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    margin:20px 40px;
+}
+
+.FaceBookCard>.info {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding-left: 20px;
+font-size: 24px;
+}
+
+.FaceBookCard>div>img {
+    width: 150px;
+    height: auto;
+}
+
+
+
+
+
+/* iteracion 14 */
+
+
+
+
+
+
+/* iteracion 15 */
+
+
+
+
+
+
+/* iteracion 16 */
+
 
    
 
