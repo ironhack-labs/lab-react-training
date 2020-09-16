@@ -4,11 +4,16 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
-import DriverCard from './components/DriverCard';
-import logo from './logo.svg';
+import ClickablePicture from './components/ClickablePicture';
+import Carousel from './components/Carousel';
 import './App.css';
+import Dice from './components/Dice';
+import LikeButton from './components/LikeButton';
+import NumbersTable from './components/numbersTable';
+import FacebookProfiles from './components/FacebookProfiles';
 
-
+/* import profiles from '../data/berlin.json';
+ */
 class App extends Component {
     render() {
         return ( 
@@ -70,34 +75,51 @@ class App extends Component {
              bank="Name of the Bank"
              owner="Firstname Lastname"
              bgColor="#ddbb55"
-             color="white" />  
-            
-            <h1>Rating</h1>
+             color="white" /> 
 
-            <p>☆☆☆☆☆</p>
-            <p>★☆☆☆☆</p>
-            <p>★★☆☆☆</p>
-            <p>★★★☆☆</p>
-            <p>★★★★☆</p>
-            <p>★★★★★</p>
+            <h1>Clickable Picture</h1>
 
-            <h1>Driver Card</h1>
-            
-            <DriverCard 
-            name = "Travis Kalanick" 
-            rating = { 4.2 } 
-            picture = "https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
-            modelo = "Toyota Corolla Altis"
-            licencia = "CO42DE" /> 
+            <ClickablePicture
+              img='/img/persons/maxence.png'
+              imgClicked='/img/persons/maxence-glasses.png'
+            />
 
-            <DriverCard 
-            name = "Dara Khosrowshahi" 
-            rating = { 4.9 } 
-            picture ="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg" 
-            modelo = "Audi A3"  
-            licensePlate = "BE33ER" />
+            <h1>Carousel</h1>
+
+            <Carousel
+              imgs={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg'
+              ]}
+            />
+
+
+<center>
+              <h1>Like Button</h1>
+              <LikeButton/>
+              <br></br>
+              <LikeButton/>
+              </center>
+
+
+             <h1>Dice</h1>
+              <Dice/> 
+
+              <h1>NumbersTable</h1>
+              <NumbersTable limit={28} />
+               
+
+              <h1>Facebook profiles</h1>
+              <FacebookProfiles/>
+ 
+              
+
 
         </div>
+
+        
 
 
 
