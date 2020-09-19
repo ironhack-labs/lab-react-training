@@ -105,10 +105,10 @@ function App() {
             img='/img/persons/maxence.png'
             imgClicked='/img/persons/maxence-glasses.png'
           />
+          */}
 
-{/* +++++++++++++++ MISSING iterations 10 & 11 ++++++++++++++ */}
+{/* +++++++++++++++ MISSING iterations 10 (Jo) & 11 (Andrea) ++++++++++++++ */}
 
- */}
     </div>
       );
 }
