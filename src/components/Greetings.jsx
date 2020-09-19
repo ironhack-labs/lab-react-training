@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Greetings(props) {
-    const languaje = {
+    const languages = {
         en: 'Hello',
         es: 'Hola',
         fr: 'Bonjour',
@@ -10,7 +10,7 @@ function Greetings(props) {
     return (
         <div className="greetings">
             <p>
-                {languaje[props.lang]} {props.children}
+                {languages[props.lang]} {props.children}
             </p>
         </div>
     )
