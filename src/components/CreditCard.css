@@ -1,0 +1,20 @@
+.container-card {
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.img-card  img{
+    width: 70px;
+    float: right;
+    margin: 20px 20px 0 0; 
+}
+
+.card-number {
+    color: white;
+    font-size: 32px;
+    padding: 30px 30px 10px 30px;
+}
