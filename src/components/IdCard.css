@@ -1,0 +1,5 @@
+.container {
+    border: 2px solid black;
+    display: flex;
+    justify-content: flex-start;
+}
