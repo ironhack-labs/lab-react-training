@@ -28,6 +28,31 @@
   color: #61dafb;
 }
 
+.title {
+  margin-left: 0.2em;
+}
+
+.id-card {
+  margin: 0.5em;
+  border: solid black 1px;
+  display:flex;
+}
+
+.image-card {
+  padding: 0.3em;
+}
+
+.text-card {
+  padding-top: 0.1em;
+  line-height: 0.3em;
+}
+
+.greetings-card {
+  margin: 0.5em;
+  border: solid black 1px;
+  display:flex;
+  padding-left: 0.3em;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
