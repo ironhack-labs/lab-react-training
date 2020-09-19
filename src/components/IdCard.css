@@ -1,0 +1,22 @@
+.IdCard {
+    display: flex;
+    flex-direction: row;
+    border: 2px black solid;
+    padding: 5px;
+}
+
+.IdCard>img {
+    margin-right: 20px;
+}
+
+.infoDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.infoDiv p {
+    margin: 0px
+}

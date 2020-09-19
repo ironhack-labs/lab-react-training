@@ -1,0 +1,8 @@
+.diceImg {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.diceImg img{
+    width: 200px;
+}

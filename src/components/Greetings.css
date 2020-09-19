@@ -1,0 +1,9 @@
+.Greetings {
+    border: 2px black solid;
+    display: flex;
+    padding: 0;
+}
+
+.Greetings p {
+    margin: 6px
+}

@@ -1,0 +1,9 @@
+.Random {
+    border: 2px black solid;
+    display: flex;
+    padding: 0;
+}
+
+.Random p {
+    margin: 6px
+}
