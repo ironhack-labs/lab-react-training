@@ -1,0 +1,11 @@
+.image-id {
+  height: 200px;
+}
+
+.idcard {
+  border: 2px solid black;
+  display: flex;
+}
+.id-items {
+  text-align: start;
+}
