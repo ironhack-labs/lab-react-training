@@ -2,12 +2,13 @@ import React from 'react';
 import IdCard from './data/components/IdCard/IdCard';
 import Greetings from './data/components/Greetings/Greetings';
 import Random from './data/components/Random/Random';
+import BoxColor from './data/components/BoxColor/BoxColor';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-       <IdCard
+      {/*  <IdCard
             lastName='Doe'
             firstName='John'
             gender='male'
@@ -26,10 +27,13 @@ function App() {
         />
          
         <Greetings lang="de">Ludwig</Greetings>
-        <Greetings lang="fr">François</Greetings>
+        <Greetings lang="fr">François</Greetings> */}
 
         <Random min={1} max={6}/>
         <Random min={1} max={100}/>
+
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />    
     </div>
   );
 }
