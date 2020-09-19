@@ -1,0 +1,35 @@
+.credit-card {
+  margin: 10px;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-card-img img {
+  width: 40px;
+  height: 25px;
+}
+
+.c-card-img {
+  text-align: right;
+  padding: 20px 20px 0 0;
+}
+
+.c-card-num {
+  text-align: center;
+  font-size: xxx-large;
+  margin: -20px;
+}
+
+.expire-sec {
+  float: left;
+  margin: -20px 0 -20px 0;
+}
+
+.c-card-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+}

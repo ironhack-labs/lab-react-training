@@ -1,0 +1,9 @@
+.box-color {
+  border: 2px solid black;
+  padding-left: 20px;
+  text-align: center;
+  color: black;
+  font-size: xx-large;
+  font-style: normal;
+  margin: 10px;
+}

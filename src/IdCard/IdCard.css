@@ -1,0 +1,28 @@
+.id-card {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  align-content: space-between;
+  margin: 10px;
+}
+.id-card img {
+  width: 200px;
+  height: 200px;
+}
+
+.content-card {
+  margin-left: 20px;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.content-card span {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.content-card p {
+  margin: 0px;
+  padding: 0px;
+}
