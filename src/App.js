@@ -23,8 +23,8 @@ function App() {
         height="172"
         birth="1988-05-11"
       />
-      <Greetings lang="de" children="Ludwig" />
-      <Greetings lang="fr" children="François" />
+      <Greetings lang="de">Hallo Ludwig</Greetings>
+      <Greetings lang="fr">Bonjour François</Greetings>
     </div>
   );
 }
