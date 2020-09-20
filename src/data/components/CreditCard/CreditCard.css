@@ -1,0 +1,33 @@
+.Credit-card-iteration {
+    border-radius: 10px;
+    width: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column ;
+    padding: 15px;
+}
+.visa-master {
+    align-self: flex-end;
+    width: 100px; 
+    height: 35px !important;
+}
+
+.card-num {
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+.expiration-bank {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.expiration-date {
+    margin-right: 40px;
+}
+
+.owner-card {
+    align-self: flex-start;
+    margin-left: 20px;
+}

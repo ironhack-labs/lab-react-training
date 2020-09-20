@@ -1,0 +1,16 @@
+.Driver-card {
+    background-color: #0366d6;
+    color: white;
+    width: 700px;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.Driver-info {
+    margin-left: 20px;
+    text-align: left;
+    padding-top: 12px;
+}

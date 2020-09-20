@@ -1,0 +1,27 @@
+.Carousel-iteration {
+    border: 2px solid rgb(6, 10, 57);
+    width: 500px;
+    height: 300px;
+    margin: 15px auto;
+    padding-top: 100px;
+}
+
+.left-Carousel {
+    border-radius: 10px;
+    /* padding: 5px 10px; */
+    background-color: rgb(121, 137, 254);
+    color: white;
+    font-weight: bold;
+}
+
+.right-Carousel {
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: rgb(121, 137, 254);
+    color: white;
+    font-weight: bold;
+}
+
+.Carousel-img {
+    width: 200px;
+}

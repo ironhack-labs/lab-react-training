@@ -8,12 +8,13 @@ import Rating from './data/components/Rating/Rating';
 import DriverCard from './data/components/DriverCard/DriverCard';
 import LikeButton from './data/components/LikeButton/LikeButton';
 import ClickablePicture from './data/components/ClickablePicture/ClickablePicture';
+import Carousel from './data/components/Carousel/Carousel';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      {/*  <IdCard
+       <IdCard
             lastName='Doe'
             firstName='John'
             gender='male'
@@ -32,17 +33,16 @@ function App() {
         />
          
         <Greetings lang="de">Ludwig</Greetings>
-        <Greetings lang="fr">François</Greetings> */}
+        <Greetings lang="fr">François</Greetings>
 
-        {/* <Random min={1} max={6}/>
-        <Random min={1} max={100}/> */}
+        <Random min={1} max={6}/>
+        <Random min={1} max={100}/>
 
-        {/* <BoxColor r={255} g={0} b={0} />
-        <BoxColor r={128} g={255} b={0} /> */}
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
 
 
- {/*  *************** STYLES MISSING **************** */}
-       {/*  <CreditCard
+        <CreditCard
           type="Visa"
           number="0123456789018845"
           expirationMonth={3}
@@ -68,19 +68,17 @@ function App() {
           bank="Name of the Bank"
           owner="Firstname Lastname"
           bgColor="#ddbb55"
-          color="white" />    */} 
+          color="white" />    
           
 
-        {/* <Rating>0</Rating>
+        <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
         <Rating>3</Rating>
         <Rating>4</Rating>
-        <Rating>5</Rating> */}
+        <Rating>5</Rating>
 
-
-{/*  *************** STYLES MISSING **************** */}
-        {/* <DriverCard
+        <DriverCard
           name="Travis Kalanick"
           rating={4.2}
           img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
@@ -95,19 +93,28 @@ function App() {
           car={{
             model: "Audi A3",
             licensePlate: "BE33ER"
-          }} /> */}
+          }} />
 
 
-{/* +++++++++++++++ MISSING BACKGROUND COLOR CHANGE ++++++++++++++ */}
+{/* +++++++++++++++ MISSING BONUS BACKGROUND COLOR CHANGE ++++++++++++++ */}
           <LikeButton /> <LikeButton />
 
-          {/* <ClickablePicture
+          <ClickablePicture
             img='/img/persons/maxence.png'
             imgClicked='/img/persons/maxence-glasses.png'
           />
-          */}
+         
 
-{/* +++++++++++++++ MISSING iterations 10 (Jo) & 11 (Andrea) ++++++++++++++ */}
+{/* +++++++++++++++ MISSING iteration 10 (Jo)++++++++++++++ */}
+
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
 
     </div>
       );

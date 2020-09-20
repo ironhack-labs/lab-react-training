@@ -1,0 +1,12 @@
+.Clickable-pic {
+    border: 2px solid rgb(6, 10, 57);
+    width: 500px;
+    height: 300px;
+    margin: 15px auto;
+    padding-top: 100px;
+}
+
+.Clickable-pic-img {
+    width: 300px;
+    margin-top: -50px;
+}

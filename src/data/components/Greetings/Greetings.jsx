@@ -10,6 +10,8 @@ export default function Greetings(props) {
         }
 
         return (
-            <p>{greetings[`${props.lang}`]} , {props.children}</p>
+            <div className="Greetings-iteration">
+                <p>{greetings[`${props.lang}`]} , {props.children}</p>
+            </div>
         )
 }

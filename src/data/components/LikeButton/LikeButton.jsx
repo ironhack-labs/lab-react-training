@@ -1,4 +1,6 @@
 import React from 'react';
+import './LikeButton.css';
+
 
 export default class LikeButton extends React.Component {
     state = {
@@ -13,7 +15,7 @@ export default class LikeButton extends React.Component {
 
     render() {
         return (
-            <button /* style={{backgroundColor: this.state.color[0]}} */ onClick={this.likeCount}>{this.state.likeNum} likes</button>
+                <button className="Like-btn" /* style={{backgroundColor: this.state.color[0]}} */ onClick={this.likeCount}>{this.state.likeNum} likes</button>
         )
     }
 }

@@ -5,17 +5,19 @@ export default function CreditCard(props) {
 
 
         return (
-            <div style={{ backgroundColor: props.bgColor , color: props.color, width: '400px', margin: '50px auto', }}>
+            <div className="Credit-card-iteration" style={{ backgroundColor: props.bgColor , color: props.color, }}>
 
-                    <img style={{width: '100px', height: '70px'}}  src={`${props.type == 'Visa'? '/img/visa.png' : '/img/master-card.svg'}`} alt=""/>
+
+                <img className="visa-master" src={`${props.type == 'Visa'? '/img/visa.png' : '/img/master-card.svg'}`} alt=""/>
     
-                <div>•••• •••• •••• {props.number.slice(-4)}</div>
+                <div className="card-num">•••• •••• •••• {props.number.slice(-4)}</div>
 
-                <div>{Number(props.expirationMonth) > 9 ? props.expirationMonth : '0'+ props.expirationMonth}/{props.expirationYear.toString().slice(-2)}</div>
+                <div className="expiration-bank">
+                    <div className="expiration-date">Expires: {Number(props.expirationMonth) > 9 ? props.expirationMonth : '0'+ props.expirationMonth}/{props.expirationYear.toString().slice(-2)}</div>
+                    <div>{props.bank}</div>
+                </div>
 
-                <div>{props.bank}</div>
-                <div>{props.owner}</div>
-
+                <div className="owner-card">{props.owner}</div>
 
             </div>
         )

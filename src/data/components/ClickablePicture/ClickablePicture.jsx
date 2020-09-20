@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import './ClickablePicture.css';
 
 export default class ClickablePicture extends React.Component {
     constructor(props) {
@@ -19,9 +20,9 @@ export default class ClickablePicture extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="Clickable-pic">
                 <a href="#" onClick={this.toggleImg}>
-                    <img src={this.state.image} alt=""/>
+                    <img className="Clickable-pic-img" src={this.state.image} alt=""/>
                 </a>
             </div>
         )
