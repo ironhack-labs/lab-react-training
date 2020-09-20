@@ -1,0 +1,7 @@
+.Rating {
+    padding: 2rem;
+}
+
+.Rating i + i{
+    padding: 0 0.2rem;
+}

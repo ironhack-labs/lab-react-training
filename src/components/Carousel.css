@@ -1,0 +1,21 @@
+.Carousel {
+    margin: 1.7rem auto;
+    height: 250px;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Carousel button {
+    height: 2rem;
+    font-size: large;
+    font-weight: 800;
+    border: none;
+    color: white;
+    background-color: blue;
+    border-radius: 8px;
+}
