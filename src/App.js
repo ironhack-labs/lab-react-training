@@ -6,26 +6,28 @@ import Greetings from './components/greetings/Greetings.jsx';
 import Random from './components/random/Random.jsx';
 import BoxColor from './components/boxColor/BoxColor.jsx';
 import CreditCard from './components/creditcard/CreditCard.jsx';
-
 function App() {
   return (
     <div className="App">
-      <IdCard
-        picture="https://randomuser.me/api/portraits/men/44.jpg"
-        firstName="John"
-        lastName="Doe"
-        gender="male"
-        height="178"
-        birth=" 1992-07-14"
-      />
-      <IdCard
-        picture="https://randomuser.me/api/portraits/women/44.jpg"
-        lastName="Delores"
-        firstName="Obrien"
-        gender="female"
-        height="172"
-        birth="1988-05-11"
-      />
+      <div className="Cards">
+        <IdCard
+          picture="https://randomuser.me/api/portraits/men/44.jpg"
+          firstName="John"
+          lastName="Doe"
+          gender="male"
+          height="178"
+          birth=" 1992-07-14"
+        />
+        <IdCard
+          picture="https://randomuser.me/api/portraits/women/44.jpg"
+          lastName="Delores"
+          firstName="Obrien"
+          gender="female"
+          height="172"
+          birth="1988-05-11"
+        />
+      </div>
+
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
       <Greetings lang="es">Carol</Greetings>
