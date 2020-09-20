@@ -1,5 +1,7 @@
 import React from 'react'
 
+// import logoVIsa from '../img/visa.png'
+// import logoMasterCard from '../img/master-card.svg'
 
 function hideNumbers(number) {
   return number.slice(-4)
@@ -13,8 +15,8 @@ function expiresDate(year) {
 
 const CreditCard = (props) => {
   const types = {
-    Visa: "https://upload.wikimedia.org/wikipedia/commons/7/72/MasterCard_early_1990s_logo.png",
-    "Master Card": "https://www.seekpng.com/png/detail/336-3364024_visa-logo-png-visa-money-bags-tanktop.png"
+    Visa: "../img/visa.png",
+    "Master Card": "../img/master-card.svg"
 }
     return (
         <div className="CreditCard" style={{backgroundColor: props.bgColor, color: props.color }}>

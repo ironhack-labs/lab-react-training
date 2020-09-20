@@ -10,12 +10,16 @@ import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
 import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture'
+import Title from './components/Title';
 
 
 function App() {
   return (
     <div className="App">
-            <IdCard
+
+      <Title title="IdCard" />
+
+      <IdCard
         lastName='Doe'
         firstName='John'
         gender='male'
@@ -33,19 +37,20 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
 
-
+      <Title title="Greetings" />
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
 
 
-
+      <Title title="Random" />
       <Random min={1} max={6}/>
       <Random min={1} max={100}/>
 
+      <Title title="BoxColor" />
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
-
+      <Title title="CreditCard" />
             <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -75,7 +80,7 @@ function App() {
         color="white" />
 
 
-
+      <Title title="Rating" />
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
@@ -83,7 +88,7 @@ function App() {
       <Rating>4</Rating>
       <Rating>5</Rating>
 
-
+      <Title title="DriverCard" />
           <DriverCard
       name="Travis Kalanick"
       rating={4.2}
@@ -102,16 +107,26 @@ function App() {
       }} />
 
       
-
+    <Title title="LikeButton" />
     <LikeButton /> <LikeButton />
 
 
-
+    <Title title="CLickablePicture" />
         <ClickablePicture
       img='/img/persons/maxence.png'
       imgClicked='/img/persons/maxence-glasses.png'
     />
 
+
+    {/* <Title title="Dice" />
+
+    <Dice />
+
+    <Title title="Carousel" />
+
+
+
+    <Title title="NumbersTable" /> */}
     </div>
   );
 }

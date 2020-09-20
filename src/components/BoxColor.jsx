@@ -17,7 +17,7 @@ const BoxColor = (props) => {
 
     return (
         <div className="BoxColor" style={bgColor}>
-              <div>
+              <div className="BoxColorWhite">
               rgb({props.r}, {props.g}, {props.b})
               </div>
              <div>
