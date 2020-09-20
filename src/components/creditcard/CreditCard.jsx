@@ -14,7 +14,9 @@ export default class CreditCard extends React.Component {
 
   hideNumber() {
     const number = this.props.number;
-    return `···· ···· ···· ${number.slice(12, 16)}`;
+    const bulletGroup = `\u2022 \u2022 \u2022 \u2022 \u2007`;
+    return `
+      ${bulletGroup} ${bulletGroup} ${bulletGroup} ${number.slice(12, 16)}`;
   }
 
   setMonthNumber() {
@@ -28,15 +30,22 @@ export default class CreditCard extends React.Component {
   render() {
     return (
       <div
+        className="CreditCard"
         style={{ backgroundColor: this.props.bgColor, color: this.props.color }}
       >
-        <img className="Image" src={this.getLogoSrc()} />
+        <img className="Logo" src={this.getLogoSrc()} />
         <div className="Number">{this.hideNumber()}</div>
-        <div className="Expiration">
-          {this.setMonthNumber()}/{this.props.expirationYear}
+        <div className="Row">
+          <div className="Expiration">
+            <span>
+              Expires {this.setMonthNumber()}/{this.props.expirationYear}
+            </span>
+          </div>
+          <span>
+            <div className="Bank">{this.props.bank}</div>
+          </span>
         </div>
-        <div className="Bank">{this.props.bank}</div>
-        <div className="Owner">{this.props.owner}</div>
+        <div className="Owner Row">{this.props.owner}</div>
       </div>
     );
   }
