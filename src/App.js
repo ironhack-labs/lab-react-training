@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import IdCard from './components/IdCard.js';
 import Greetings from './components/Greetings.js';
-// import Random from './components/Random.js';
+import Random from './components/Random.js';
 class App extends React.Component {
   state = {
     IdCardA: {
@@ -66,8 +66,8 @@ class App extends React.Component {
         </div>
         <div>
           <h1>Random</h1>
-          {/* <Random min={1} max={6} />
-          <Random min={1} max={100} /> */}
+          <Random min={1} max={6} />
+          <Random min={1} max={100} />
         </div>
       </div>
     );
