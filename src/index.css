@@ -16,14 +16,17 @@ h1 {
   text-align: start;
 }
 
-.IdCard {
-  display: flex;
+.box {
   border: 1px solid black;
   padding: 5px;
   margin-top: 10px;
+  text-align: start;
+}
+
+.IdCard {
+  display: flex;
 }
 
 .IdCard p {
   margin: 0 5px;
-  text-align: start;
 }

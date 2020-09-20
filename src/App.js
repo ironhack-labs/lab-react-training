@@ -1,8 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard.js';
-
+import Greetings from './components/Greetings.js';
+// import Random from './components/Random.js';
 class App extends React.Component {
   state = {
     IdCardA: {
@@ -39,7 +40,7 @@ class App extends React.Component {
             Learn React
           </a>
         </header> */}
-        <div className="IdCards box">
+        <div>
           <h1>IdCard</h1>
           <IdCard
             firstName={this.state.IdCardA.firstName}
@@ -57,6 +58,16 @@ class App extends React.Component {
             birth={this.state.IdCardB.birth}
             picture={this.state.IdCardB.picture}
           />
+        </div>
+        <div>
+          <h1>Greetings</h1>
+          <Greetings lang="de">Ludwig</Greetings>
+          <Greetings lang="fr">François</Greetings>
+        </div>
+        <div>
+          <h1>Random</h1>
+          {/* <Random min={1} max={6} />
+          <Random min={1} max={100} /> */}
         </div>
       </div>
     );
