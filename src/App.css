@@ -2,28 +2,3 @@
   display: block;
   margin: 8px;
 }
-
-.IdCard {
-  border: 1px solid black;
-  display: flex;
-  padding: 5px;
-  margin: 10px 0;
-}
-
-.Greetings {
-  border: 1px solid black;
-  margin: 10px 0;
-}
-
-.Random {
-  border: 1px solid black;
-  margin: 10px 0;
-}
-
-.BoxColor {
-  color: white;
-  text-align: center;
-  border: 1px solid black;
-  margin: 10px 0;
-}
-

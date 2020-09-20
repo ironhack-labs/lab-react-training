@@ -1,4 +1,5 @@
 import React from 'react'
+import './Random.css'
 
 
 const randomNumber = (min, max) => {

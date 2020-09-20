@@ -1,4 +1,5 @@
 import React from 'react'
+import './Greetings.css'
 
 const Greetings = (props) => {
 
