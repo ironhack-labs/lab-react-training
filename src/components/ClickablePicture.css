@@ -1,0 +1,16 @@
+.ClickablePicture {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 30px;
+}
+
+
+.ClickablePicture img {
+    width: 220px;
+    border-radius: 50%;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}

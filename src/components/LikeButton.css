@@ -1,0 +1,9 @@
+.ButtonLike {
+    padding: 18px 30px;
+    margin: 30px 30px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 18px;
+}
+

@@ -24,11 +24,11 @@ function CreditCard(props) {
             <div className='card-number'>
                 <span>•••• •••• •••• {props.number.substr(-4)}</span>
             </div>
-            <div className='card-text1'>
-                <p> Expires {props.expirationMonth}/{props.expirationYear}<span>{props.bank}</span></p>
+            <div className='card-text'>
+                <span> Expires {props.expirationMonth}/{props.expirationYear}<span className='bank'>{props.bank}</span></span>
             </div>
-            <div className='card-text2'>
-                <p>{props.owner}</p>
+            <div className='card-text'>
+                <span>{props.owner}</span>
             </div>
         </div>
     )

@@ -1,0 +1,31 @@
+.container-drive-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(69,94,181);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.container-drive-card img {
+    width: 150px;
+    height: 150px;
+    padding: 25px 0;
+    border-radius: 100%;
+}
+
+.drive-card-text {
+    padding-left: 20px;
+}
+
+.drive-card-text p {
+    font-size: 32px;
+    margin: 6px 0;
+}
+
+.drive-card-text span {
+    font-size: 20px;
+    margin: 6px 0;
+}
