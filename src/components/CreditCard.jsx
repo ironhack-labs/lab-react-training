@@ -1,4 +1,5 @@
 import React from 'react'
+import './CreditCard.css'
 
 // import logoVIsa from '../img/visa.png'
 // import logoMasterCard from '../img/master-card.svg'
@@ -20,11 +21,13 @@ const CreditCard = (props) => {
 }
     return (
         <div className="CreditCard" style={{backgroundColor: props.bgColor, color: props.color }}>
+              <div className="type">
               <img src={types[props.type]} alt=""/>
-              <p>•••• •••• •••• {hideNumbers(props.number)}</p>
+              </div>
+              <div className="number">•••• •••• •••• {hideNumbers(props.number)}</div>
               <div>
               Expires {props.expirationMonth}/{expiresDate(props.expirationYear)}
-              <span>{props.bank}</span>
+              <span className="bank">{props.bank}</span>
               </div>
               <div>
                 {props.owner}

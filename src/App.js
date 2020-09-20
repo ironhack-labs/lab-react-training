@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import Title from './components/Title';
 import IdCard from './components/idCard';
 import Greetings from './components/Greetings'
 import Random from './components/Random'
@@ -10,7 +11,8 @@ import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
 import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture'
-import Title from './components/Title';
+import Dice from './components/Dice'
+import Carousel from './components/Carousel'
 
 
 function App() {
@@ -118,15 +120,22 @@ function App() {
     />
 
 
-    {/* <Title title="Dice" />
+    <Title title="Dice" />
 
     <Dice />
 
     <Title title="Carousel" />
 
+      <Carousel
+    imgs={[
+      'https://randomuser.me/api/portraits/women/1.jpg',
+      'https://randomuser.me/api/portraits/men/1.jpg',
+      'https://randomuser.me/api/portraits/women/2.jpg',
+      'https://randomuser.me/api/portraits/men/2.jpg'
+    ]}
+  />
 
-
-    <Title title="NumbersTable" /> */}
+    
     </div>
   );
 }

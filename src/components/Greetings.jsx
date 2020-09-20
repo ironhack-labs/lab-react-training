@@ -11,7 +11,7 @@ const greetings = {
      }
      return(
          <div className="Greetings">
-            <p>{greetings[props.lang]} {props.children}</p>
+            {greetings[props.lang]} {props.children}
          </div>
 
     )

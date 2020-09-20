@@ -1,4 +1,5 @@
 import React from 'react'
+import './ClickablePicture.css'
 
 export default class ClickablePicture extends React.Component {
   constructor(props) {

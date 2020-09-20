@@ -1,15 +1,16 @@
 import React from 'react'
 import Rating from './Rating'
+import './DriverCard.css'
 
 const DriverCard = (props) => {
   
   return(
       <div className = "DriverCard">
       <img src={props.img} alt=""/>
-        <div>
-       <div> {props.name} </div> 
+        <div className="right">
+       <h2> {props.name} </h2> 
         <div><Rating>{props.rating}</Rating></div>
-        <div>{props.car.model} - {props.car.licensePlate}</div>
+        <p>{props.car.model} - {props.car.licensePlate}</p>
         </div>
 
       </div>

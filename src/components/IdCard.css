@@ -13,3 +13,7 @@
   align-items: flex-start;
   margin-left: 10px;
 }
+
+.IdCard img {
+  margin-right: 5px;
+}
