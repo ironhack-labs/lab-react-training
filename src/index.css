@@ -30,3 +30,38 @@ h1 {
 .IdCard p {
   margin: 0 5px;
 }
+
+.color {
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.card {
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.card img {
+  height: 20px;
+}
+
+.type {
+  text-align: right;
+}
+
+.number {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.details {
+  text-align: left;
+}
