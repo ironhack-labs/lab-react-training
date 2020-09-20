@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+.title {
+  padding-top: 6rem;
+  border-top: solid 0.1rem #ddd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.id-card,
+.color-box {
   display: flex;
+  justify-content: flex-start;
+  margin: 3rem auto;
+  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+
+.greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.greeting strong {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.id-card p {
+  margin: 0;
+}
+
+.greeting {
+  padding: 0.5rem;
+}
+
+.image {
+  margin-right: 3rem;
+}
+
+.color-box {
+  padding: 5rem;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.8rem;
   flex-direction: column;
   align-items: center;
+}
+
+.credit-card {
+  padding: 6rem 2rem 2rem 2rem;
+  border-radius: 1rem;
+  margin: 4rem auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.credit-card img {
+  position: absolute;
+  right: 1rem;
+  top: -4rem;
+}
+
+.card-number {
+  font-size: 3rem;
+}
+
+.rating-card {
+  margin: 3rem 0;
+  font-size: 2.4rem;
+}
+
+.rating-card p {
+  margin-top: 0;
+}
+
+.license {
+  background: #455eb4;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.license .profile {
+  border-radius: 10rem;
+  width: 10rem;
+  display: block;
+  border: solid 0.3rem white;
+}
+
+.avatar {
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 6rem;
+}
+
+.carousel {
+  height: 40rem;
+  margin-top: 6rem;
+}
+
+svg {
+  height: 3rem;
+}
+
+.carousel-img {
+  border-radius: 2.4rem;
+}
+
+.like-btn-row {
+  margin-bottom: 6rem;
+}
+
+.like-me {
+  border: 0;
+  padding: 0.8rem 3.2rem;
   color: white;
+  font-size: 1.8rem;
+  border-radius: 4rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
