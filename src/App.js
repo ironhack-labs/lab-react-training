@@ -9,7 +9,7 @@ import CreditCard from './components/creditcard/CreditCard.jsx';
 function App() {
   return (
     <div className="App">
-      <div className="Cards">
+      <div className="container">
         <IdCard
           picture="https://randomuser.me/api/portraits/men/44.jpg"
           firstName="John"
@@ -27,15 +27,16 @@ function App() {
           birth="1988-05-11"
         />
       </div>
-
-      <Greetings lang="de">Ludwig</Greetings>
-      <Greetings lang="fr">François</Greetings>
-      <Greetings lang="es">Carol</Greetings>
-      <Greetings lang="en">Henri</Greetings>
+      <div className="container">
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
+        <Greetings lang="es">Carol</Greetings>
+        <Greetings lang="en">Henri</Greetings>
+      </div>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-      <BoxColor r={255} g={0} b={0} />
-      <BoxColor r={128} g={255} b={0} />
+      <BoxColor r={255} g={0} b={0} color="#fff" />
+      <BoxColor r={128} g={255} b={0} color="#000" />
       <CreditCard
         type="Visa"
         number="0123456789018845"
