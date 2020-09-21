@@ -1,0 +1,36 @@
+#creditcards {
+  display: flex;
+}
+
+.creditcard__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 150px;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.creditcard__img {
+  float: right;
+  width: 40px;
+  height: auto;
+}
+
+.creditcard__number {
+  margin-left: 20px;
+}
+
+.creditcard__info {
+  font-size: 0.8rem;
+}
+
+.creditcard__info--line {
+  display: flex;
+}
+
+.creditcard__info--exp {
+  margin-right: 20px;
+}

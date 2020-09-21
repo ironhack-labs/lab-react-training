@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+}
+
+.card__info {
+  margin-left: 10px;
+}
+
+.card_info-line {
+  display: flex;
+}
+
+.card__info-strong {
+  margin-right: 5px;
+}

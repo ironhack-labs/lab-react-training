@@ -1,0 +1,7 @@
+.greeting__box {
+  font-size: 1.3rem;
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #000;
+}

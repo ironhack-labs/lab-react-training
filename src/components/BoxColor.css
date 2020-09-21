@@ -1,0 +1,11 @@
+.boxcolor__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 2px solid #000;
+  width: 700px;
+  height: 150px;
+  font-size: 1.5rem;
+  text-align: center;
+}
