@@ -5,13 +5,13 @@ import { filledStars } from '../rating/Rating';
 export default class DriverCard extends React.Component {
   render() {
     return (
-      <div className="Card">
+      <div className="Card2">
         <div className="UserImage">
-          <img className="Image" src={this.props.img} />
+          <img className="Image2" src={this.props.img} />
         </div>
-        <div className="UserInfo">
+        <div className="UserInfo2">
           <div className="userinfo-container">
-            <span className="label">First Name: </span>
+            <span className="label2">First Name: </span>
             <span className="data">{this.props.name}</span>
           </div>
           <div>
