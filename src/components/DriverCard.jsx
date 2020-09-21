@@ -1,22 +1,5 @@
 import React from 'react'
-
-const starLine = (rate) => {
-    const floorNum = Math.round(rate)
-
-    if (floorNum === 1) {
-        return '★ ☆ ☆ ☆ ☆'
-    } else if (floorNum === 2) {
-        return '★ ★ ☆ ☆ ☆'
-    } else if (floorNum === 3) {
-        return '★ ★ ★ ☆ ☆'
-    } else if (floorNum === 4) {
-        return '★ ★ ★ ★ ☆'
-    } else if (floorNum === 5){
-        return '★ ★ ★ ★ ★'
-    } else {
-        return '☆ ☆ ☆ ☆ ☆'
-    }
-}
+import { starLine } from './Rating'
 
 const DriverCard = (props) => {
     return (
