@@ -29,7 +29,7 @@ export default class LikeButton extends React.Component {
 
     render() {
         return (
-            <button className="like-me" style={{background: this.state.background}} onClick={this.addLikes}> {this.state.count} Likes</button>
+            <button className="like-me" style={{background: this.state.background}} onClick={() => this.addLikes}> {this.state.count} Likes</button>
         )
     }
 

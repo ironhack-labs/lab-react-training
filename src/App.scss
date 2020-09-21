@@ -1,0 +1,191 @@
+.title {
+  padding-top: 6rem;
+  border-top: solid 0.1rem #ddd;
+}
+
+.id-card,
+.color-box {
+  display: flex;
+  justify-content: flex-start;
+  margin: 3rem auto;
+  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+  padding: 0.5rem;
+
+  strong {
+    font-size: 2rem;
+    margin: 0 1rem;
+  }
+}
+
+.id-card {
+  padding: 0.5rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+.image {
+  margin-right: 2rem;
+
+  img {
+    border-radius: 1rem;
+  }
+}
+
+.color-box {
+  padding: 5rem;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.credit-card {
+  padding: 6rem 2rem 2rem 2rem;
+  border-radius: 1rem;
+  margin: 4rem auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+
+  img {
+    position: absolute;
+    right: 1rem;
+    top: -4rem;
+  }
+}
+
+.card-number {
+  font-size: 3rem;
+}
+
+.rating-card {
+  margin: 3rem 0;
+  font-size: 2.4rem;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.license {
+  background: #455eb4;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+
+  .profile {
+    border-radius: 10rem;
+    width: 10rem;
+    display: block;
+    border: solid 0.3rem white;
+  }
+}
+
+.avatar {
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 6rem;
+  border-radius: 2.4rem;
+  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+  height: 20rem;
+  margin: 6rem auto;
+}
+
+svg {
+  height: 3rem;
+}
+
+.carousel-img {
+  border-radius: 2.4rem;
+}
+
+.like-btn-row {
+  margin-bottom: 6rem;
+}
+
+.like-me {
+  border: 0;
+  padding: 0.8rem 3.2rem;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 4rem;
+}
+
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  margin: 6rem auto;
+  div {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+}
+
+.red {
+  background: red;
+  color: white;
+  border-radius: 1.6rem;
+}
+
+.facebook-page {
+  margin: 6rem 0;
+
+  .id-card {
+    margin: 1.6rem;
+  }
+
+  .profiles {
+    margin-top: 4rem;
+    .image {
+      img {
+        width: 10rem;
+      }
+    }
+  }
+
+  button {
+    background: #455eb4;
+    border: 0;
+    color: white;
+    padding: 0.8rem 3.2rem;
+    border-radius: 4rem;
+    border: solid 0.2rem #455eb4;
+    transition: all 200ms ease;
+    margin: 0.4rem;
+
+    &:hover {
+      color: #455eb4;
+      background: white;
+    }
+  }
+}

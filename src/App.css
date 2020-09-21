@@ -5,19 +5,33 @@
 
 .id-card,
 .color-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 3rem auto;
-  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .greeting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 4rem 0;
+  padding: 0.5rem;
 }
 
 .greeting strong {
@@ -33,10 +47,6 @@
   margin: 0;
 }
 
-.greeting {
-  padding: 0.5rem;
-}
-
 .image {
   margin-right: 2rem;
 }
@@ -47,22 +57,34 @@
 
 .color-box {
   padding: 5rem;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   font-weight: bolder;
   font-size: 1.8rem;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .credit-card {
   padding: 6rem 2rem 2rem 2rem;
   border-radius: 1rem;
   margin: 4rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .credit-card img {
@@ -89,11 +111,18 @@
   color: #fff;
   border-radius: 2rem;
   padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 2rem auto;
-  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .license .profile {
@@ -108,12 +137,13 @@
   height: 20rem;
   margin-bottom: 6rem;
   border-radius: 2.4rem;
-  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .carousel {
   height: 20rem;
-  margin-top: 6rem;
+  margin: 6rem auto;
 }
 
 svg {
@@ -138,7 +168,71 @@ svg {
 
 .left,
 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
+.box {
+  margin: 6rem auto;
+}
+
+.box div {
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.red {
+  background: red;
+  color: white;
+  border-radius: 1.6rem;
+}
+
+.facebook-page {
+  margin: 6rem 0;
+}
+
+.facebook-page .id-card {
+  margin: 1.6rem;
+}
+
+.facebook-page .profiles {
+  margin-top: 4rem;
+}
+
+.facebook-page .profiles .image img {
+  width: 10rem;
+}
+
+.facebook-page button {
+  background: #455eb4;
+  border: 0;
+  color: white;
+  padding: 0.8rem 3.2rem;
+  border-radius: 4rem;
+  border: solid 0.2rem #455eb4;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  margin: 0.4rem;
+}
+
+.facebook-page button:hover {
+  color: #455eb4;
+  background: white;
+}
+/*# sourceMappingURL=App.css.map */

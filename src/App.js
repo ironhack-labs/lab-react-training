@@ -6,15 +6,19 @@ import ClickablePicture from './components/ClickablePicture'
 import CreditCard from './components/CreditCard'
 import Dice from './components/Dice'
 import DriverCard from './components/DriverCard'
+import Facebook from './components/Facebook'
 import Greetings from './components/Greetings'
 import IdCard from './components/IdCard'
 import LikeButton from './components/LikeButton'
+import NumbersTable from './components/NumbersTable'
 import Random from './components/Random'
 import Rating from './components/Rating'
 import Title from './components/Title'
 
 
 function App() {
+
+
   return (
     <div className="App">
 
@@ -179,6 +183,17 @@ function App() {
             />
           </div>
 
+          <div className="col-12">
+            <Title>NumbersTable</Title>
+            <NumbersTable limit={12} />
+          </div>
+
+
+
+          <div className="col-12">
+            <Title>Facebook</Title>
+            <Facebook />
+          </div>
 
         </div>
       </div>

@@ -22,7 +22,7 @@ export default class Dice extends React.Component {
 
     render() {
         return (
-            <div className="avatar" style={{background: `url(${this.state.backPic}) no-repeat center center / cover`}} onClick={this.changeDice}></div>
+            <div className="avatar" style={{background: `url(${this.state.backPic}) no-repeat center center / cover`}} onClick={() => this.changeDice}></div>
         )
     }
 
