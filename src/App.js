@@ -8,6 +8,7 @@ import Rating from './data/components/Rating/Rating';
 import DriverCard from './data/components/DriverCard/DriverCard';
 import LikeButton from './data/components/LikeButton/LikeButton';
 import ClickablePicture from './data/components/ClickablePicture/ClickablePicture';
+import Dice from './data/components/Dice/Dice';
 import Carousel from './data/components/Carousel/Carousel';
 import './App.css';
 
@@ -95,8 +96,6 @@ function App() {
             licensePlate: "BE33ER"
           }} />
 
-
-{/* +++++++++++++++ MISSING BONUS BACKGROUND COLOR CHANGE ++++++++++++++ */}
           <LikeButton /> <LikeButton />
 
           <ClickablePicture
@@ -104,8 +103,7 @@ function App() {
             imgClicked='/img/persons/maxence-glasses.png'
           />
          
-
-{/* +++++++++++++++ MISSING iteration 10 (Jo)++++++++++++++ */}
+        <Dice />
 
         <Carousel
           imgs={[
