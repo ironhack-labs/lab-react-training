@@ -35,4 +35,46 @@
   to {
     transform: rotate(360deg);
   }
+
+  .id-card {
+    margin: 15px;
+    border: solid black 1px;
+    display:flex;
+  }
+  .image-card {
+    padding: 1em;
+  }
+
+  .BoxColor {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+
+  .text-card {
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    line-height: 0.6em;
+  }
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.bank-information {
+  display: flex;
+  flex-direction: row;
+}
+
+.DriverCard {
+  background-color: #455EB5;
+  display: flex;
+  flex-direction: column;
+}
+
 }
