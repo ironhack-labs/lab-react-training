@@ -10,12 +10,14 @@ import LikeButton from './data/components/LikeButton/LikeButton';
 import ClickablePicture from './data/components/ClickablePicture/ClickablePicture';
 import Dice from './data/components/Dice/Dice';
 import Carousel from './data/components/Carousel/Carousel';
+import NumbersTable from './data/components/NumbersTable/NumbersTable';
+import FaceBook from './data/components/FaceBook/FaceBook';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-       <IdCard
+       {/* <IdCard
             lastName='Doe'
             firstName='John'
             gender='male'
@@ -112,7 +114,10 @@ function App() {
             'https://randomuser.me/api/portraits/women/2.jpg',
             'https://randomuser.me/api/portraits/men/2.jpg'
           ]}
-        />
+        /> */}
+        <NumbersTable limit={12}></NumbersTable>
+
+        <FaceBook />
 
     </div>
       );
