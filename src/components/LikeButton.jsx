@@ -11,10 +11,10 @@ const setLikes = (e) => {
   clickedBtn.innerText = `${stringToArr[0]} ${stringToArr[0] === 1 ? 'Like' : 'Likes'}` 
 }
 
-function DriverCard() {
+function LikeButton() {
     return (
       <Button onClick={setLikes} size="lg" style={{marginBottom: '10px'}}>0 Likes</Button>
     )
 }
 
-export default DriverCard
+export default LikeButton

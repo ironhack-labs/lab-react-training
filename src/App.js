@@ -10,7 +10,8 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickableImage from './components/ClickableImage';
 import Dice from './components/Dice';
-import Slider from './components/Slider';
+// import Slider from './components/Slider';
+import Carousel from './components/Carousel';
 
 
 
@@ -90,6 +91,7 @@ function App() {
             model: "Toyota Corolla Altis",
             licensePlate: "CO42DE"
           }} />
+
         <DriverCard
           name="Dara Khosrowshahi"
           rating={4.9}
@@ -99,19 +101,20 @@ function App() {
             licensePlate: "BE33ER"
           }} />
 
-        <LikeButton /> <LikeButton />
+        <LikeButton />
+        <LikeButton />
 
         <ClickableImage
           img='/img/persons/maxence.png'
           imgClicked='/img/persons/maxence-glasses.png'
         />
         <Dice />
-        <Slider
+        <Carousel
           imgs={[
-            'https://randomuser.me/api/portraits/women/1.jpg',
-            'https://randomuser.me/api/portraits/men/1.jpg',
-            'https://randomuser.me/api/portraits/women/2.jpg',
-            'https://randomuser.me/api/portraits/men/2.jpg'
+            'http://lorempixel.com/output/animals-q-c-1244-835-10.jpg',
+            'http://lorempixel.com/output/food-q-c-1244-835-3.jpg',
+            'http://lorempixel.com/output/nightlife-q-c-1244-835-8.jpg',
+            'http://lorempixel.com/output/technics-q-c-1244-835-5.jpg'
           ]}
         />
       </header>

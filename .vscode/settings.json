@@ -1,0 +1,26 @@
+{
+  "beautify.language": {
+
+    "js": {
+      "type": [
+        "javascriptreact",
+        "javascript",
+        "json",
+        "jsonc"
+      ],
+      "filename": [
+        ".jshintrc",
+        ".jsbeautifyrc"
+      ]
+    },
+    "css": [
+      "css",
+      "less",
+      "scss"
+    ],
+    "html": [
+      "htm",
+      "html"
+    ]
+  }
+}
