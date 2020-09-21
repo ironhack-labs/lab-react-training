@@ -1,0 +1,16 @@
+.img-pr {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 460px;
+    width: 460px;
+    margin-bottom: 20px;
+}
+
+.img-over {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
