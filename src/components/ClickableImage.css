@@ -1,4 +1,5 @@
 .img-pr {
+    cursor: pointer;
     background-position: center;
     background-size: cover;
     position: relative;
