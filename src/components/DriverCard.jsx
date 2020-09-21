@@ -11,7 +11,9 @@ function DriverCard(props) {
         <div className="driver-card">
             <Container>
                 <Row>
-                    <Col className="avatar-container" md="4"><Avatar img={props.img} /></Col>
+                    <Col className="avatar-container" md="4">
+                        <Avatar img={props.img} />
+                    </Col>
                     <Col className="info-container" md="8">
                         <h3>{props.name}</h3>
                         <Rating rating={props.rating}></Rating>
@@ -19,8 +21,6 @@ function DriverCard(props) {
                     </Col>
                 </Row>
             </Container>
-
-
         </div>
     )
 }
