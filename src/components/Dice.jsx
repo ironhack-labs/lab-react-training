@@ -14,12 +14,8 @@ export default class Dice extends React.Component {
     changeDice = () => {
         this.setState({backPic: `/img/dice-empty.png`})
 
-        const intervalId = setInterval(() => {
+        setTimeout(() => {
             this.setState({backPic: this.setInitDice()})
-        }, 1000)
-        
-        setInterval(() => {
-            clearInterval(intervalId)
         }, 1000)
         
     }
