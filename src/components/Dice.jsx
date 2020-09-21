@@ -15,7 +15,7 @@ function Dice() {
       <Container>
         <Row>
         <Col md={{ span: 4, offset: 4 }} >
-          <img style={{cursor: 'pointer', backgroundColor: 'white', borderRadius: '30px'}} onClick={changeDice} className="img-fluid" src="/img/dice3.png" alt="Dice"/>
+          <img style={{cursor: 'pointer', backgroundColor: 'white', borderRadius: '40px'}} onClick={changeDice} className="img-fluid" src="/img/dice3.png" alt="Dice"/>
         </Col>
         </Row>
       </Container>

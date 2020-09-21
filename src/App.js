@@ -10,6 +10,7 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickableImage from './components/ClickableImage';
 import Dice from './components/Dice';
+import Slider from './components/Slider';
 
 
 
@@ -105,6 +106,14 @@ function App() {
           imgClicked='/img/persons/maxence-glasses.png'
         />
         <Dice />
+        <Slider
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
       </header>
     </div>
   );
