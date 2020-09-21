@@ -36,3 +36,102 @@
     transform: rotate(360deg);
   }
 }
+
+h1{
+  text-align: left;
+}
+
+/* IT 1 - IdCard*/
+
+.idInfo{
+  text-align: left;
+}
+
+/* IT 2 - Greetings*/
+
+
+
+/* IT 5 - Credit Card*/
+
+.inline {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  
+  
+
+}
+
+.CreditCard {
+  border-radius: 10px;
+  width: 300px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column ;
+  padding: 15px;
+}
+.type {
+  align-self: flex-end;
+  width: 100px; 
+  height: 35px !important;
+}
+
+.type img{
+  width: 60%;
+  margin-right: 0.1vw;
+
+}
+
+.number {
+  margin: 20px 0px;
+  font-size: 30px;
+}
+
+.expires-bank {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.expiration-date {
+  margin-right: 40px;
+}
+
+.owner {
+  align-self: flex-start;
+  margin-left: 20px;
+} 
+
+/* IT 6 - Rating*/
+.Rating {
+  display: flex;
+  align-content: flex-start;
+}
+
+
+/* IT 7 - Driver Card*/
+
+.DriverCard {
+  background-color: #425CBB;
+  color: white;
+  width: 100%;
+  height: 10vw;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.DriverCard img{
+  border-radius: 100%;
+  width: 10%;
+}
+
+.DriverInfo {
+  margin-left: 20px;
+  text-align: left;
+  padding-top: 12px;
+}

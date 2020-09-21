@@ -5,9 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.box {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+  text-align: left
+}
+
+ .IdCard {
+  display: flex;
+} 
+
+
+
