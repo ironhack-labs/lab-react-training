@@ -10,6 +10,7 @@
   margin: 3rem auto;
   box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
+  align-items: center;
 }
 
 .greeting {

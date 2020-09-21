@@ -20,7 +20,7 @@ function starLine(rate) {
 
 const DriverCard = (props) => {
     return (
-        <div className="col-12 col-sm-5 license">
+        <div className="col-11 col-sm-5 license">
             <div className="row">
                 <div className="col-4 profile" style={{background: `url(${props.img}) no-repeat center center / cover`}}></div>
                 <div className="col-8">

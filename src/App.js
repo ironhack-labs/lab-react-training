@@ -24,8 +24,23 @@ function App() {
             <Title>IdCard</Title>
 
             <div className="row">
-              <IdCard lastName="Doe" firstName="John" gender="male" height='178' birth='Tue Jul 14 1992' picture="https://randomuser.me/api/portraits/men/44.jpg" />
-              <IdCard lastName="Delores" firstName="Obrien" gender="female" height='172' birth='Tue May 11 1993' picture="https://randomuser.me/api/portraits/women/44.jpg" />
+              <IdCard
+                lastName='Doe'
+                firstName='John'
+                gender='male'
+                height={178}
+                birth={new Date("1992-07-14")}
+                picture="https://randomuser.me/api/portraits/men/44.jpg"
+              />
+
+              <IdCard
+                lastName='Delores '
+                firstName='Obrien'
+                gender='female'
+                height={172}
+                birth={new Date("1988-05-11")}
+                picture="https://randomuser.me/api/portraits/women/44.jpg"
+              />
             </div>
 
           </div>
@@ -152,15 +167,15 @@ function App() {
 
           <div className="col-12">
             <Title>Carousel</Title>
-              <Carousel
-                imgs={[
-                  'https://randomuser.me/api/portraits/women/1.jpg',
-                  'https://randomuser.me/api/portraits/men/1.jpg',
-                  'https://randomuser.me/api/portraits/women/2.jpg',
-                  'https://randomuser.me/api/portraits/men/2.jpg'
-                ]}
-              />
-            </div>
+            <Carousel
+              imgs={[
+                'https://randomuser.me/api/portraits/women/1.jpg',
+                'https://randomuser.me/api/portraits/men/1.jpg',
+                'https://randomuser.me/api/portraits/women/2.jpg',
+                'https://randomuser.me/api/portraits/men/2.jpg'
+              ]}
+            />
+          </div>
 
 
         </div>
