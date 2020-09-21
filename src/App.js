@@ -9,10 +9,7 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickableImage from './components/ClickableImage';
-<<<<<<< HEAD
-=======
 import Dice from './components/Dice';
->>>>>>> 086254ac0badf963babf38220414f5cd30ae81ca
 
 
 
@@ -107,10 +104,7 @@ function App() {
           img='/img/persons/maxence.png'
           imgClicked='/img/persons/maxence-glasses.png'
         />
-<<<<<<< HEAD
-=======
         <Dice />
->>>>>>> 086254ac0badf963babf38220414f5cd30ae81ca
       </header>
     </div>
   );
