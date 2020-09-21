@@ -2,7 +2,6 @@ import React from 'react'
 import {Button} from 'react-bootstrap'
 
 const setLikes = (e) => {
-  e.preventDefault();
   const colorsBg = ['purple','blue','green','yellow','orange','red']
   const stringToArr = e.target.innerText.split(' ')
   const clickedBtn = e.target
