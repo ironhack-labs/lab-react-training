@@ -13,7 +13,7 @@ function ratingStars(number) {
 function Rating(props) {
   return (
     <div className="rating">
-      <p>{props.children} - {ratingStars(Math.round(props.children))}</p>
+      {!props.children ? <p className="stars">{ratingStars(Math.round(props.rating))}</p> : <p>{props.children} - {ratingStars(Math.round(props.children))}</p>}
     </div>
   )
 }
