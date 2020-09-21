@@ -12,7 +12,7 @@ export default class Random extends React.Component {
     return (
       <div className="Random">
         <p>
-          Random value between {this.props.min} and {this.props.max} =>{' '}
+          Random value between {this.props.min} and {this.props.max} => {' '}
           {this.getRandomArbitrary()}
         </p>
       </div>

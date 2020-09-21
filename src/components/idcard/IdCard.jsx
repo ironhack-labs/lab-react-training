@@ -23,12 +23,12 @@ export default class IdCard extends React.Component {
           </div>
           <div className="userinfo-container">
             <span className="label">Height: </span>
-            <span className="data">{this.props.height}</span>
+            <span className="data">{this.props.height/100}m</span>
           </div>
           <div className="userinfo-container">
             <span className="label">Birth Date: </span>
             <span className="data">
-              {new Date(this.props.birth).toUTCString().toString()}
+              {this.props.birth.toDateString()}
             </span>
           </div>
         </div>

@@ -6,13 +6,17 @@ export default class Greetings extends React.Component {
     let greeting = '';
     switch (this.props.lang) {
       case 'de':
-        return 'Hallo';
+        return 'Hallo'
+        break;
       case 'fr':
         return 'Bonjour';
+        break;
       case 'es':
         return 'Holi';
+        break;
       case 'en':
         return 'Hello';
+        break;
     }
   }
 

@@ -6,6 +6,8 @@ import Greetings from './components/greetings/Greetings.jsx';
 import Random from './components/random/Random.jsx';
 import BoxColor from './components/boxColor/BoxColor.jsx';
 import CreditCard from './components/creditcard/CreditCard.jsx';
+import Rating from './components/rating/Rating.jsx';
+
 function App() {
   return (
     <div className="App">
@@ -15,16 +17,16 @@ function App() {
           firstName="John"
           lastName="Doe"
           gender="male"
-          height="178"
-          birth=" 1992-07-14"
+          height={178}
+          birth={new Date('1992-07-14')}
         />
         <IdCard
           picture="https://randomuser.me/api/portraits/women/44.jpg"
           lastName="Delores"
           firstName="Obrien"
           gender="female"
-          height="172"
-          birth="1988-05-11"
+          height={172}
+          birth={new Date('1988-05-11')}
         />
       </div>
       <div className="container">
@@ -72,6 +74,14 @@ function App() {
           bgColor="#ddbb55"
           color="white"
         />
+      </div>
+      <div className="container">
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
       </div>
     </div>
   );
