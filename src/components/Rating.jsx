@@ -6,11 +6,7 @@ const Rating = (props) => {
   
   let rating = ""
   for (let i=0; i < 5; i++){
-      if(Math.round(props.children)>i){
-          rating += "★"
-      }else{
-          rating +="☆"
-      }
+      Math.round(props.children) > i ?   rating += "★" : rating +="☆"
   }
   return(
       <div className = "Rating">

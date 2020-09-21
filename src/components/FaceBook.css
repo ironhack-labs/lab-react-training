@@ -1,11 +1,13 @@
-.IdCard {
-  border: 1px solid black;
+.FaceBook {
+  border: 2px solid black;
   display: flex;
   flex-direction: row;
   padding: 5px;
   margin: 10px 0;
 }
 
-.IdCard img {
+.FaceBook img {
   margin-right: 5px;
+  width: 120px;
+  height: auto;
 }

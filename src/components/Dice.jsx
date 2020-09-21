@@ -28,6 +28,7 @@ export default class Dice extends React.Component {
         src={this.state.img} 
         className="Dice"
         onClick={() => this.getRandomeImg()}
+        alt="Dice"
       />
     );
   }

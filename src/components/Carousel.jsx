@@ -28,7 +28,7 @@ export default class Carousel extends React.Component {
     return (
       <div className="Carousel">
         <button onClick={() => this.left()}>Left</button>
-        <img src={this.state.img} />
+        <img src={this.state.img} alt="Carousel"/>
         <button onClick={() => this.right()}>Right</button>
       </div>
     );
