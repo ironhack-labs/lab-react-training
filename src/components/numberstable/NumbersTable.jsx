@@ -3,34 +3,24 @@ import './NumbersTable.css';
 
 export default class NumbersTable extends React.Component {
   getBgColor(square) {
-    if (square % 2 === 0) {
-      return 'red';
-    }
+    return square % 2 === 0 ? 'red' : 'white';
   }
+
   getTableSize() {
     const size = this.props.limit;
     let list = [];
     for (let i = 1; i <= size; i++) {
-      if (i % 2 === 0) {
-        console.log(`${i} is even`);
-      } else {
-        console.log(`${i} is odd`);
-      }
       list.push(i);
     }
     return list;
   }
-  //   const numbers = [1, 2, 3, 4, 5];
-  // const listItems = numbers.map((number) =>
-  //   <li>{number}</li>
-  // );
 
   render() {
-    console.log(this.getTableSize());
     const board = this.getTableSize();
 
-    return board.map((square, key) => (
+    const squareList = board.map((square, key) => (
       <li
+        className="list-item"
         key={key}
         style={{
           backgroundColor: this.getBgColor(square),
@@ -39,5 +29,7 @@ export default class NumbersTable extends React.Component {
         {square}
       </li>
     ));
+
+    return <ul className="list">{squareList}</ul>;
   }
 }

@@ -3,7 +3,7 @@ import './Dice.css';
 
 export default class Dice extends React.Component {
   getRandomDice() {
-    return `/img/dice${Math.floor(Math.random() * (6)) + 1}.png`;
+    return `/img/dice${Math.floor(Math.random() * 6) + 1}.png`;
   }
 
   constructor(props) {
@@ -12,13 +12,19 @@ export default class Dice extends React.Component {
   }
 
   modifiedDice() {
-    this.setState({img: '/img/dice-empty.png'})
-    setTimeout(() => {this.setState({img: this.getRandomDice()})}, 1000)
+    this.setState({ img: '/img/dice-empty.png' });
+    setTimeout(() => {
+      this.setState({ img: this.getRandomDice() });
+    }, 1000);
   }
 
   render() {
     return (
-      <img src={this.state.img} onClick={() => this.modifiedDice()} />
+      <img
+        className="dice-img"
+        src={this.state.img}
+        onClick={() => this.modifiedDice()}
+      />
     );
   }
 }

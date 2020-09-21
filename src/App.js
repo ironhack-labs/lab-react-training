@@ -109,20 +109,22 @@ function App() {
           }}
         />
       </div>
-      <div>
+      <div className="container">
         <LikeButton /> <LikeButton />
       </div>
-      <div>
+      <div className="container">
         <ClickablePicture
+          className="clickable-picture"
           img="/img/persons/maxence.png"
           imgClicked="/img/persons/maxence-glasses.png"
         />
       </div>
       <div className="container">
-        <Dice />
+        <Dice className="dice" />
       </div>
-      <div>
+      <div className="container">
         <Carousel
+          className="carousel"
           imgs={[
             'https://randomuser.me/api/portraits/women/1.jpg',
             'https://randomuser.me/api/portraits/men/1.jpg',
@@ -132,7 +134,7 @@ function App() {
         />
       </div>
       <div className="container">
-        <NumbersTable limit={12} />
+        <NumbersTable className="numbers-table" limit={12} />
       </div>
     </div>
   );
