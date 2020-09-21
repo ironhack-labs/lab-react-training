@@ -1,6 +1,6 @@
 import React from 'react'
 
-function starLine(rate) {
+const starLine = (rate) => {
     const floorNum = Math.round(rate)
 
     if (floorNum === 1) {
@@ -18,7 +18,7 @@ function starLine(rate) {
     }
 }
 
-function roundNum(rate) {
+const roundNum = (rate) => {
     return Math.round(rate)
 }
 

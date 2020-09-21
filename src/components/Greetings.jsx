@@ -1,6 +1,6 @@
 import React from 'react'
 
-    function greetingText(lang) {
+    const greetingText = (lang) => {
         if (lang === 'de') {
             return 'Hallo'
         } else if ( lang === 'es') {
@@ -15,7 +15,7 @@ import React from 'react'
 
 const Greetings = (props) => {
     return (
-        <div className="greeting col-12 col-sm-6"> <strong>{greetingText(props.lang)}</strong> {props.children}!</div>
+        <div className="greeting col-12 col-sm-3"> <strong>{greetingText(props.lang)}</strong> {props.children}!</div>
     )
 }
 export default Greetings

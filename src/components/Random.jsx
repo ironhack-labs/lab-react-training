@@ -1,6 +1,6 @@
 import React from 'react'
 
-function randomNum(min, max) {
+const randomNum = (min, max) => {
 return Math.floor(Math.random() * (max - min + 1))
 }
 

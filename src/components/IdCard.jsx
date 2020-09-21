@@ -1,7 +1,8 @@
 import React from 'react';
+
 const IdCard = (props) => {
   return (
-    <div className='id-card col-11 col-sm-5 p-0'>
+    <div className='id-card col-11 col-sm-5'>
       <div className='image'>
         <img src={props.picture} />
       </div>
@@ -20,7 +21,7 @@ const IdCard = (props) => {
         </p>
         <p>
           <strong> Height </strong>
-          {props.height}m
+          {props.height/100}m
         </p>
         <p>
           <strong> Birthday </strong>

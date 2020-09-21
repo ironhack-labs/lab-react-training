@@ -50,6 +50,8 @@ function App() {
             <div className="row">
               <Greetings lang="de">Ludwig</Greetings>
               <Greetings lang="fr">François</Greetings>
+              <Greetings lang="es">Andrés</Greetings>
+              <Greetings lang="en">Martha</Greetings>
             </div>
           </div>
 

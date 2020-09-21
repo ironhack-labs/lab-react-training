@@ -25,6 +25,10 @@
   margin: 0 1rem;
 }
 
+.id-card {
+  padding: 0.5rem;
+}
+
 .id-card p {
   margin: 0;
 }
@@ -34,7 +38,11 @@
 }
 
 .image {
-  margin-right: 3rem;
+  margin-right: 2rem;
+}
+
+.image img {
+  border-radius: 1rem;
 }
 
 .color-box {

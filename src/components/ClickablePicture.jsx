@@ -11,8 +11,6 @@ export default class ClickablePicture extends React.Component {
         }
     }
 
-
-
     changeBack = () => {
         if (this.state.clickedBg) {
             this.setState({backPic: this.props.imgClicked, clickedBg: false})

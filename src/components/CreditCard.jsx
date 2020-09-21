@@ -1,6 +1,6 @@
 import React from 'react'
 
-function logoImg(type) {
+const logoImg = (type) => {
     if (type === 'Visa') {
         return './img/visa.png'
     } else {
@@ -8,7 +8,7 @@ function logoImg(type) {
     } 
 }
 
-function numberToDots(string) {
+const numberToDots = (string) => {
     return string.slice(11,15)
 }
 
