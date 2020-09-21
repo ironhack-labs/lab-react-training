@@ -1,0 +1,45 @@
+#driver-card {
+  background-color: rgb(69, 94, 181);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+#img-container {
+}
+
+#img-container img {
+  border-radius: 180px;
+  width: 80px;
+  height: 80px;
+}
+
+#user-container {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3px;
+}
+
+#name,
+#rating,
+#car {
+  color: white;
+}
+
+#name {
+  font-weight: bold;
+  font-size: large;
+}
+
+#rating {
+  padding: 2px 0;
+}
+
+#car {
+  font-size: smaller;
+}

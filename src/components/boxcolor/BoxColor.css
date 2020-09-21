@@ -1,0 +1,16 @@
+.box-color {
+  border: 1px solid black;
+  margin: 20px;
+}
+
+#rgb,
+#hex {
+  margin: 10px auto;
+  width: 80%;
+  height: 75px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}

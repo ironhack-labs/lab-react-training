@@ -1,0 +1,21 @@
+.IdCard {
+  margin: 5px;
+  height: 106px;
+  border: 1px solid black;
+  display: flex;
+}
+
+#idcard-img {
+  border: 1 px solid red;
+  height: 100px;
+  width: 100px;
+  padding: 3px;
+}
+
+.personal-info {
+  padding-top: 2px;
+  font-size: smaller;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
