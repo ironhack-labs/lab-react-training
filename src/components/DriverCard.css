@@ -31,6 +31,6 @@
     align-items: center;
 }
 
-.stars {
+.rating > p {
     margin-bottom: 0px;
 }
