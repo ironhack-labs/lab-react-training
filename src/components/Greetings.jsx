@@ -9,11 +9,10 @@ const greetings = {
          es: 'Hola',
          en: 'Hello'
      }
-     return(
+     return (
          <div className="Greetings">
             {greetings[props.lang]} {props.children}
          </div>
-
     )
 }
 

@@ -21,6 +21,7 @@ export default class ClickablePicture extends React.Component {
         src={this.state.mood ? this.props.img : this.props.imgClicked} 
         className="ClickablePicture"
         onClick={() => this.changeImg()}
+        alt="User glasses"
       />
     );
   }
