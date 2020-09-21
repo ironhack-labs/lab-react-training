@@ -1,3 +1,8 @@
 .ClickablePicture {
     width: 200px;
 }
+
+.addGlasses {
+    background-color: transparent;
+    border-color: transparent;
+}

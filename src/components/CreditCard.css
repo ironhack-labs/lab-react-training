@@ -1,8 +1,22 @@
 .CreditCard {
     width: 360px;
     border-radius: 20px;
+    padding: 20px;
+}
+
+.containImg {
+    display: flex;
+    justify-content: flex-end
 }
 
 .ccImg {
-    width: 30px;
+    width: 80px;
+}
+
+.bigNumbers {
+    font-size: 32px;
+}
+
+.paddingLeft {
+    padding-left: 20px
 }
