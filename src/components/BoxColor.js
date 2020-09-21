@@ -11,6 +11,17 @@ const BoxColor = props => {
     }
     return hex;
   };
+
+  if(rgbValue === 'rgb(255,0,0)') {
+    return (
+      <article className='boxcolor__box' style={{ backgroundColor: rgbValue, color: 'white' }}>
+        <div className='rgb'>
+          <p>{rgbValue}</p>
+          <p>#{rgbToHex(props.r)}{rgbToHex(props.g)}{rgbToHex(props.b)}</p>
+        </div>
+      </article>  
+    ) 
+  }
   
 
   return (
