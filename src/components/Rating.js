@@ -1,4 +1,5 @@
 import React from 'react'
+import './Rating.css'
 
 function Rating(props) {
     let star=""
@@ -11,7 +12,7 @@ function Rating(props) {
             }
         }
         return ( 
-    <div>{star}</div>
+    <div className="star">{star}</div>
     )
 }
 export default Rating;

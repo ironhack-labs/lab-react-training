@@ -1,0 +1,11 @@
+.Random{
+    text-align: left;
+    margin-left: 5px;
+}
+
+.Random p {
+    display: flex;
+    border :1px black solid;
+    margin: 10px auto;
+    padding: 5px;
+}

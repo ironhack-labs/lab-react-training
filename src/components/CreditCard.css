@@ -1,0 +1,30 @@
+.CreditCard {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.CreditCardContainer {
+    width: 360px;
+    height: 210px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+
+}
+.creditCardNumbers{
+    
+    text-align: left;
+}
+.creditCardImg {
+    display: flex;
+    justify-content: flex-end
+}
+.img2 {
+    width: 80px;
+}
+.bigNumbers{
+    font-size: 32px;
+}
+.bankCreditCard{
+    text-align:right
+}

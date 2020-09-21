@@ -11,15 +11,17 @@ function CreditCard(props) {
     }
 
     return (
-        <div className="CreditCard" style={{color: `${props.color}`,  backgroundColor: `${props.bgColor}` }}>
-        <img className="ccImg" src={img} alt="credit card"></img>
-        <p>{props.number}</p>
-        <p>{props.expirationMonth} / {props.expirationYear} </p>
-        <p>{props.bank} </p>
-        <p>{props.owner} </p>
-        
+        <div className="CreditCardContainer" style={{color: `${props.color}`,  backgroundColor: `${props.bgColor}` }}>
+            <div className="creditCardImg">
+              <img className="img2" src={img} alt="credit card"></img>
+            </div>
+                <p className="bigNumbers">•••• •••• •••• {props.number.substr(-4)}</p>
+            <div className="creditCardNumbers">
+                <p>Expires {props.expirationMonth} / {props.expirationYear} </p>
+                <p className="bankCreditCard">{props.bank} </p>
+                <p>{props.owner} </p>
+            </div>
         </div>
-        
 
     );
 };

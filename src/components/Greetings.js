@@ -19,7 +19,7 @@ function Greetings(props) {
             break;
     }
     return (
-        <div>
+        <div className ="languageGreetings">
            <p>{greetings} {props.children}</p>
         </div>
     )

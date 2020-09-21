@@ -1,0 +1,37 @@
+ .DriverCard {
+    text-align: left;
+    margin-left: 10px;
+   }
+ .driverCardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1a3ec2;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.infoDriverCard{
+    justify-content: center;
+    padding :10px
+}
+.driverCardContainer img {
+    width: 100px;
+    height: 100px;
+    padding: 10px 0;
+    border-radius: 100%;
+}
+
+.driverCardRating  {
+    width: 100px;
+    height: 100px;
+    padding: 10px 0;
+    border-radius: 100%;
+}
+
+.driverCardName  {
+    max-width: 500px;
+    padding: 50px
+}

@@ -14,7 +14,7 @@ function rgbConversor(r,g,b) {
 function BoxColor(props) {
     const hex =  rgbConversor(props.r, props.g, props.b)
        return (
-        <div className="BoxColor" style={{ backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})`}}>
+        <div className="BoxColorContainer" style={{ backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})`,color: "white"}}>
             <p>rgb ({props.r},{props.g}, {props.b})</p>
             <p>{hex}</p>
         </div>
