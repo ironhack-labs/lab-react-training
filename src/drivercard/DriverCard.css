@@ -1,0 +1,39 @@
+.driver-card {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    background-color: #485bb5;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.driver-img {
+    height: 110px;
+    width: 110px;
+}
+
+.driver-img img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.driver-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.driver-info h4 {
+    font-size: 24px;
+    margin: 0 0 0 0;
+}
+
+.driver-info p {
+    margin: 0;
+}

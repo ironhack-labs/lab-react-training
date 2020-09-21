@@ -1,0 +1,10 @@
+.random-card {
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.random-card p {
+    margin-left: 20px;
+}

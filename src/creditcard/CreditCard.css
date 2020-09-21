@@ -1,0 +1,39 @@
+.credit-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 320px;
+    height: 160px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#logo-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#logo-box img {
+    width: 50px;
+}
+
+#number-box {
+    display: inline-block;
+    height: 33%;
+}
+
+#number-box p {
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 30px;
+}
+
+#details-box {
+    display: inline-block;
+    height: 33%;
+}
+
+#details-box p {
+    line-height: 0.5em;
+}

@@ -1,0 +1,12 @@
+.greetings {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.greetings p {
+    margin-left: 20px;
+}
