@@ -10,10 +10,6 @@ return (
 <p>Height: {props.height} </p>
 <p>Birth:{props.birth.toDateString()} </p>
 
-
-
-
-
 </div>
 )
 };
