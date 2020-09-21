@@ -53,6 +53,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .credit-card img {
@@ -83,6 +84,7 @@
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
+  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .license .profile {
@@ -96,10 +98,12 @@
   width: 20rem;
   height: 20rem;
   margin-bottom: 6rem;
+  border-radius: 2.4rem;
+  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .carousel {
-  height: 40rem;
+  height: 20rem;
   margin-top: 6rem;
 }
 
