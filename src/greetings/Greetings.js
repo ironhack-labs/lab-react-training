@@ -31,7 +31,6 @@ const Greetings = (props) => {
   // console.log(`This is the switch result ${text}`);
   return (
     <div className="greetings">
-      <h1>Greetings</h1>
       <p>
         {text} {props.name}
       </p>

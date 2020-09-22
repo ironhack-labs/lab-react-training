@@ -8,7 +8,6 @@ const Random = (props) => {
 
   return (
     <div className="random">
-      <h1>Random</h1>
       <p>
         Random value between {props.min} and {props.max} = {random}
       </p>

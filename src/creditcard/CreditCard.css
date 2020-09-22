@@ -1,0 +1,32 @@
+.each-card {
+  max-height: 165px;
+  max-width: 320px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+}
+
+.each-card > section1 {
+  text-align: right;
+}
+
+.each-card > section2 {
+  text-align: center;
+}
+
+.each-card > section3,
+section4 {
+  text-align: left;
+}
+
+.visaMaster {
+  width: 15%;
+}
+
+/* .each-card > section1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+} */

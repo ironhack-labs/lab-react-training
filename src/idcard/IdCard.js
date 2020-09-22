@@ -4,7 +4,6 @@ import './IdCard.css';
 const IdCard = (props) => {
   return (
     <div>
-      <h2>ID Card</h2>
       <div className="idcard">
         <div>
           <img className="image-id" src={props.imgId} />
