@@ -4,8 +4,8 @@ import './Greetings.css';
 const Greetings = (props) => {
   let text = '';
   let language = props.lang;
-  console.log(language);
-  console.log(props.lang);
+  // console.log(language);
+  // console.log(props.lang);
   const checkLanguage = (language) => {
     switch (language) {
       case 'en':
@@ -28,9 +28,10 @@ const Greetings = (props) => {
     }
   };
   checkLanguage(language);
-  console.log(`This is the switch result ${text}`);
+  // console.log(`This is the switch result ${text}`);
   return (
     <div className="greetings">
+      <h1>Greetings</h1>
       <p>
         {text} {props.name}
       </p>
