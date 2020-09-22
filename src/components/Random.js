@@ -5,7 +5,7 @@ export default function Random(props) {
     const randomNumber = Math.floor(Math.random() * (max - 1) +min)
 
     return (
-        <div>
+        <div className="random">
             Random value betwen {min} and {max} =&gt; {randomNumber}
         </div>
     )

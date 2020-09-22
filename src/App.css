@@ -37,13 +37,67 @@
   }
 }
 
+.greeting {
+  border: 1px solid black;
+  height: 50px;
+  margin: 10px;
+}
+
+.random {
+  border: 1px solid black;
+  height: 50px;
+  margin: 10px;
+}
+
 .boxColor {
-  width: 200px;
+  display: block;
   height: 50px;
   border: 1px solid black;
+  margin: 10px;
+  
 }
 
 .id-card {
   display: flex;
   border: 1px solid black;
+  margin: 10px;
+}
+
+.id-card p {
+  margin: 10px;
+}
+
+h1, p {
+  text-align: left;
+  margin: 10px;
+}
+
+.credit-card {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 10px;
+
+}
+
+.credit-cards {
+  display: flex;
+}
+
+.credit-card img {
+  height: 20px;
+  align-self: flex-end;
+}
+​
+.credit-card p {
+  margin: 0;
+  text-align: left;
+}
+
+.credit-card h1 {
+  font-size: 1.1rem;
 }

@@ -9,7 +9,7 @@ export default function Greetings(props) {
         case "es": greet = "Buenos Dias"; break;
         default: greet = "Hello";
     }
-return (<div> {greet} {props.children}</div>
+return (<div className="greeting"> {greet} {props.children}</div>
     );
 }
 
