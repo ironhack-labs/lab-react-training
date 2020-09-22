@@ -14,7 +14,7 @@ function BoxColor(props) {
 
   return (
     <div className="boxColor" style={{backgroundColor: `rgb(${r}, ${g}, ${b}`}}>
-      rgb({r},{g},{b});
+      rgb({r},{g},{b});<br/>
       {rgbToHex(r,g,b)}
     </div>
   );

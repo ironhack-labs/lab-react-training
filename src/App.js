@@ -11,6 +11,9 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
 
 function App() {
   return (
@@ -123,6 +126,29 @@ function App() {
       <hr/>
 
       <Dice />
+
+      <hr/>
+
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <hr/>
+
+      <NumbersTable limit={12} />
+
+      <hr/>
+
+      <Facebook />
+
+      <hr/>
+
+
     </div>
   );
 }

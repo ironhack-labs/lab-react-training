@@ -12,7 +12,7 @@ function CreditCard(props) {
     color
   } = props;
 
-  const hashed_number = number.replace(/(?=.{5})\d/gi, "*");
+  const hashed_number = "•••• •••• •••• " + number.slice(-4);
 
   let imgUrl = (type === 'Master Card') ? 
     '../img/master-card.svg' : 

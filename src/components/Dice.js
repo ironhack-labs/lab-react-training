@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 class Dice extends Component {
 
-  shuffleDice = () => {
+  shuffleDice = (e) => {
+    e.preventDefault();
     this.setState({dice: this.getRandomDice('-empty')})
     setTimeout(()=>{
       this.setState({dice: this.getRandomDice()})
