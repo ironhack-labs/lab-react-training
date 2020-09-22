@@ -1,0 +1,7 @@
+.star-rating {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+    font-size: 2em;
+}
+
