@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.boxColor {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.id-card {
+  display: flex;
+  border: 1px solid black;
+}
