@@ -5,6 +5,10 @@ import Random from "./components/Random";
 import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
 import Rating from "./components/Rating";
+import DriverCard from "./components/DriverCard"
+import ClickablePicture from "./components/ClickablePicture";
+import Dice from "./components/Dice";
+import Carousel from "./components/Carousel";
 import './App.css';
 
 function App() {
@@ -29,9 +33,7 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
        <h1>Greetings</h1>
-      <Greetings 
-      lang="de"
-      children="Ludwig" />
+      <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr" children="François" />
       <h1>Random</h1>
       <Random min={1} max={6}/>
@@ -74,6 +76,39 @@ function App() {
 <Rating children="3"/>
 <Rating children="4"/>
 <Rating children="5"/>
+<h1>Driver Card</h1>
+<DriverCard
+  name="Travis Kalanick"
+  rating={4.2}
+  img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+  car={{
+    model: "Toyota Corolla Altis",
+    licensePlate: "CO42DE"
+  }} />
+<DriverCard
+  name="Dara Khosrowshahi"
+  rating={4.9}
+  img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+  car={{
+    model: "Audi A3",
+    licensePlate: "BE33ER"
+  }} />
+  <h1>Clickable Picture</h1>
+  <ClickablePicture
+  img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'
+/>
+<h1>Dice</h1>
+<Dice />
+<h1>Carousel</h1>
+<Carousel
+  imgs={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]}
+/>
     </Fragment>
   );
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 export default class CreditCard extends Component {
     render() {
+        
         const card = {
             color: this.props.color,
             backgroundColor: this.props.bgColor,
