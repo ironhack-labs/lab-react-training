@@ -23,7 +23,7 @@ export default class CreditCard extends Component {
 
             <h2>**** **** **** **** {this.props.number.slice(-4)}</h2>
             <br/>
-            Expires: {this.props.expirationMonth}/{this.props.expirationYear.toString().slice(-2)}
+            Expires: {this.props.expirationMonth < 10 ? '0' + this.props.expirationMonth : this.props.expirationMonth}/{this.props.expirationYear.toString().slice(-2)}
             <br/>
             {this.props.bank}
             <br/>
