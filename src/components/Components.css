@@ -1,6 +1,48 @@
 .profile {
     display: flex;
     justify-content: left;
-    border-color: black;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.profile-textinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-left: 20px;
+
+   
 }
 
+.profile-text{
+   margin: 2px;
+ 
+}
+
+.greeting-div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.random-div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.boxcolor{
+    height: 60px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.creditCard {
+    border: 1px solid black;
+    border-radius: 5%;
+}

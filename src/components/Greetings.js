@@ -14,7 +14,7 @@ if (props.lang === "de"){
     Greeting = "Hola"
 }
     return (
-        <div>
+        <div className="greeting-div">
            <p>{Greeting} {props.children}</p>
         </div>
     )

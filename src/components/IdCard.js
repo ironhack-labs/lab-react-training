@@ -6,12 +6,12 @@ export default function IdCard(props) {
     return (
         <div className="profile">
             <div className="profile-pic"><img src={props.picture} alt={props.firstName}picture/></div>
-            <div>
-            <p>First name: {props.firstName}</p>
-            <p>Last name: {props.lastName}</p>
-            <p>Gender: {props.gender}</p>
-            <p>Height: {props.height}</p>
-            <p>Birthdate: {props.birth.toDateString()}</p> 
+            <div className="profile-textinfo">
+            <p class="profile-text"><b>First name:</b> {props.firstName}</p>
+            <p class="profile-text"> <b>Last name:</b> {props.lastName}</p>
+            <p class="profile-text"><b>Gender:</b> {props.gender}</p>
+            <p class="profile-text"> <b>Height:</b> {props.height}</p>
+            <p class="profile-text"> <b>Birthdate:</b> {props.birth.toDateString()}</p> 
             </div>
         </div>
     )
