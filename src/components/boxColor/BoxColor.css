@@ -1,0 +1,22 @@
+.card.box.color{
+    border: 1px solid black;
+    display: flex;
+    height: 100px;
+    color: white;
+    justify-content: center;
+    width: 100%;
+   
+
+}
+.card.box.color + .card.box.color{
+    margin-left: 0;
+}
+.card img{
+    margin-right: 10px;
+    
+}
+
+p{
+    display: block;
+    
+}

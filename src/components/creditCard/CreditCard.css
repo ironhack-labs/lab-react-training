@@ -1,0 +1,50 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card.box{
+    height: unset;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    color: white;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 10px
+
+}
+.card.box + .card.box{
+    margin-left: 30px;
+
+
+}
+.card img{
+    width: 50px;
+    object-fit: contain;
+    align-self: flex-end;
+    
+}
+.card.box h2{
+    font-size: 1.9em;
+    text-align: center;
+
+}
+
+
+p{
+    display: inline-block;
+    
+}
+
+p.bank{
+    margin-left: 20px;
+    
+}
+p.owner{
+    display: block
+    
+}

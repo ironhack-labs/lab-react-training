@@ -1,0 +1,15 @@
+.busterCards{
+    color: black;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    line-height: 2em;
+
+}
+
+.busterCards.red{
+    background-color: red;
+    
+}

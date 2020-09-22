@@ -1,0 +1,13 @@
+.card{
+    border: 1px solid black;
+    display: flex;
+
+}
+.card img{
+    margin-right: 10px;
+    
+}
+
+p{
+    display: block;
+}
