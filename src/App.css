@@ -53,6 +53,28 @@
   display:flex;
   padding-left: 0.3em;
 }
+
+.random-card {
+  margin: 0.5em;
+  border: solid black 1px;
+  display:flex;
+  padding-left: 0.3em;
+}
+
+.boxcolor-card {
+  margin: 0.5em;
+  border: solid black 1px;
+  text-align: center;
+  height: 5em;
+}
+
+.credit-card-display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

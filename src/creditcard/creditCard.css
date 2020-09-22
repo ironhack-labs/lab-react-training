@@ -1,0 +1,31 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22em;
+  height: 11em;
+  margin: 1em;
+  padding: 1em 1em 4em 1em;
+  border-radius: 1em;
+}
+
+.image {
+  float:right;
+}
+
+.number {
+  font-size: 2em;
+  text-align: center;
+}
+
+.bank-information{
+    display: flex;
+}
+
+.exp-date {
+  margin-left: 1em;
+}
+
+.owner {
+  margin-left: 1em;
+}
