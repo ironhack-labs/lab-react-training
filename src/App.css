@@ -36,3 +36,91 @@
     transform: rotate(360deg);
   }
 }
+
+.boxColor {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.id-card {
+  display: flex;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.credit-cards {
+  display: flex;
+}
+
+.credit-card {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.credit-card img {
+  height: 20px;
+  align-self: flex-end;
+}
+
+.credit-card p {
+  margin: 0;
+  text-align: left;
+}
+
+.credit-card h1 {
+  font-size: 1.3rem;
+}
+
+.driver-card {
+  display: flex;
+  border-radius: 0.5rem;
+  background-color: #455eb5;
+  color: white;
+  height: 5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  justify-content:center;
+}
+
+.driver-card img {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.driver-card .info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 1rem;
+  min-width: 300px;
+}
+
+.driver-card .info h1 {
+  font-size: 1.2rem;
+}
+
+.driver-card .info h1+p {
+  font-size: 1.5rem;
+}
+
+.driver-card .info p:last-child {
+  font-size: 1rem;
+}
+
+.driver-card .info h1, .driver-card .info p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button.like {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: none;
+  color: white;
+}
