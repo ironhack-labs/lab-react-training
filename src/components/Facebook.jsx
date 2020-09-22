@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import profiles from '../data/berlin.json';
+import FacebookProfile from './FacebookProfile'
 import './Facebook.css'
 
 
@@ -11,17 +12,23 @@ class Facebook extends Component {
         this.mapCountries = profiles.map(el => el.country)
         this.countries = Array.from(new Set(this.mapCountries));
         this.state = {
-            selected: null
+            selected: null,
+            imgClick: false
         }
     }
 
-
-
     changeColor(country) {
-        this.setState(pevState => ({
+        this.setState(prevState => ({
             selected: country
         }))
     }
+    handleImgClick() {
+        this.setState(currentState => ({
+            imgClick: !currentState.imgClick
+        }))
+    }
+
+
     render() {
         return (
             <>
@@ -40,15 +47,15 @@ class Facebook extends Component {
                         <div className='container-facebook'
                             key={profile.img}
                             style={{ backgroundColor: this.state.selected === profile.country ? 'lightblue' : 'white' }}>
-                            <div className='profilePic'>
+                            <div className='profilePic' onClick={() => this.handleImgClick()}>
                                 <img src={profile.img} />
                             </div>
-                            <div>
-                                <p><b>First name:</b> {profile.firstName}</p>
-                                <p><b>Last name:</b> {profile.lastName}</p>
-                                <p><b>Country</b> {profile.country}</p>
-                                <p><b>Type:</b> {profile.isStudent ? 'Student' : 'Teacher'}</p>
-                            </div>
+                            {this.state.imgClick && <FacebookProfile
+                                firstName={profile.firstName}
+                                lastName={profile.lastName}
+                                country={profile.country}
+                            />}
+                            
                         </div>
                     )
                 })}</div>
