@@ -1,6 +1,9 @@
 import React, { Fragment } from 'react';
 import './App.css';
 import IdCard from './components/IdCard'
+import Greetings from './components/Greetings'
+import Random from './components/Random'
+
 
 
 function App() {
@@ -24,7 +27,16 @@ function App() {
       birth={new Date("1988-05-11")}
       picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+      
+      <h1>Greetings</h1>
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="es">Javier</Greetings>
+      <Greetings lang="fr">François</Greetings>
+      <Greetings lang="en">Danny</Greetings>
 
+      <h1>Random</h1>
+      <Random min={1} max={10}/>
+      <Random min={20} max={100}/>
   </Fragment>
   );
 }
