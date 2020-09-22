@@ -1,0 +1,22 @@
+.id-container {
+    margin-left: 50px;
+    margin-top: 50px;
+    border-style: solid;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.data-container{
+    margin-left: 20px;
+}
+
+.imagesId{
+    width: 150px;
+}
+
+.images-container {
+    margin-top: 20px;
+    margin-left: 20px;
+}

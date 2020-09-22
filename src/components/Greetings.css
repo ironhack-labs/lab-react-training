@@ -1,0 +1,8 @@
+.greetings-container{
+    margin-left: 50px;
+    margin-top: 50px;
+    border-style: solid;
+    width: 500px;
+    padding-left: 50px;
+    font-size: large;
+}
