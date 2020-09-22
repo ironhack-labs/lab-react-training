@@ -3,23 +3,25 @@ import './Components.css'
 export default function CreditCard(props) {
     console.log(props)
 let creditCardNumber = '•••• •••• ••••' + props.number.slice(-4);
+let year = props.expirationYear.toString().slice(2)
+
+let month = (props.expirationMonth.toString().length === 1 ? '0' + props.expirationMonth : props.expirationMonth)
+
+let divStyleCreditCard = {
+    'background-color': props.bgColor,
+    color: props.color
+     };
+ 
 
     return (
-        <div className="creditCard">
+        <div className="creditCard" style={divStyleCreditCard}>
         <p>{props.type}</p>
-        <p>{creditCardNumber}</p>
-        <p>{props.expirationMonth}/ {props.expirationYear}</p>
-        <p>{props.owner}</p>
+        <p id="creditNumber">{creditCardNumber}</p>
+        <div className="creditCardText">
+        <p className="creditCardPtag">Expires {month}/{year}  {props.bank}</p>
+        <p className="creditCardPtag">{props.owner}</p>
+        </div>
         </div>
     )
 }
 
-
-// type: A string that can be "Visa" or "Master Card"
-// number: A string that is a number of the credit card. You will only display the 4 last digits for security reasons 😉
-// expirationMonth: A number that represents the month, between 1 and 12
-// expirationYear: A number that represents the year
-// bank: A string that represents the name of the bank
-// owner: A string that represents the name of the owner
-// bgColor: A string for the background color of the card
-// color: A string for the text color of the card

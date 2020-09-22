@@ -45,6 +45,7 @@ function App() {
 </div>
 
 <h1>CreditCard</h1>
+<div class="appCreditCard">
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -72,8 +73,9 @@ function App() {
         owner="Firstname Lastname"
         bgColor="#ddbb55"
         color="white" />
-
+        </div>
            
+           <h1>Rating</h1>
     </div>
 
   );

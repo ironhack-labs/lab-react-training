@@ -16,7 +16,7 @@
 }
 
 .profile-text{
-   margin: 2px;
+   margin: 4px;
  
 }
 
@@ -40,9 +40,35 @@
     height: 60px;
     border: 1px solid black;
     margin: 10px;
+    align-items: center;
+}
+
+.boxspan {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 10px 10px
 }
 
 .creditCard {
     border: 1px solid black;
-    border-radius: 5%;
+    border-radius: 3%;
+    margin-right:50px;
+    margin-left: 50px;
+    width: 40vw;
+    height: 15vw;
+
+}
+
+#creditNumber {
+    font-size: 30px;
+}
+.creditCardText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px;
+}
+
+.creditCardPtag {
+    margin: 2px;
 }
