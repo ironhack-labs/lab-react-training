@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.BoxColor {
+  width: 200px;
+  height: 70px;
+  border: 1px solid gray;
+}
