@@ -1,0 +1,14 @@
+.container-facebook {
+    display: flex;
+    border: 1px solid black;
+    width: 50%;
+    margin: 15px;
+    font-size: 22px;
+}
+
+
+
+.profilePic img {
+    width: 200px;
+    padding-right: 15px;
+}
