@@ -4,7 +4,7 @@ import './CreditCard.css';
 const CreditCard = (props) => {
   console.log(' credit card: ');
 
-  const ccNumber = '.... .... .... ' + props.number.slice(12, 17);
+  const ccNumber = '.... .... .... ' + props.number.slice(-4);
 
   const expiresMonth =
     props.expirationMonth.toString().length > 1

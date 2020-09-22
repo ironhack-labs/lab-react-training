@@ -1,0 +1,42 @@
+.driver-card {
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: #455eb5;
+    color: white;
+    height: 8rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    justify-content:center;
+  }
+  ​
+  ​
+  .driver-card .info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 1rem;
+    min-width: 300px;
+  }
+  ​
+  .driver-card .info h1 {
+    font-size: 1.2rem;
+  }
+  ​
+  .driver-card .info h1+p {
+    font-size: 1.5rem;
+  }
+  ​
+  .driver-card .info p:last-child {
+    font-size: 1rem;
+  }
+  ​
+  .driver-card .info h1, .driver-card .info p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .drive-img {
+      width:5rem;
+      border-radius: 50%;
+
+  }
