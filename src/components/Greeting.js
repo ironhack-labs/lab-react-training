@@ -8,7 +8,7 @@ function Greeting(props) {
         case 'es': greet = "Hola"; break;
         default: greet = "hi"; break;
     } 
-    return ( <div> {greet} {props.children}</div>
+    return (<div> {greet} {props.children}</div>
     
         
     )};
