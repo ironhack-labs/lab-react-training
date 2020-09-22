@@ -4,7 +4,7 @@ export default class IdCard extends Component {
     render() {
         return (
         
-            <div className="app">
+            <div className="IdCard">
             
                 <div className="IdCard box">
                 <img src={this.props.picture} alt=""/>
