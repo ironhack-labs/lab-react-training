@@ -11,7 +11,7 @@ export default function IdCard(props) {
         <p> gender: {props.gender}</p>
         <p>height: {props.height}</p>
         <p> birth: {props.birth.toString()}</p>
-        <p>picture: {props.picture}</p>
+        <p>{props.picture}</p>
         </article>
         </div>
     );
