@@ -70,3 +70,7 @@ code {
   border-radius: 50%;
   margin-left: 500px;
 }
+
+.dice img {
+  width: 100px
+}

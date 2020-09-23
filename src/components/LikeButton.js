@@ -1,14 +1,27 @@
-import React, { Component } from 'react'
 
-export default class LikeButton extends Component {
-    render() {
-        return (
-            <div>
-                <div className='LikeButton'>
-        <button onClick={this.LikeButton}>{0} Likes</button>
+import React, { Component } from 'react';
 
-      </div>
-            </div>
-        )
-    }
+class LikeButton extends Component {
+  state = {
+    likes: 0,
+    bgColor: 'purple'
+  }
+
+  handleClick = () => {
+    this.setState({
+      likes: this.state.likes + 1,
+      bgColor: ['blue','green','yellow','orange','red','purple'][this.state.likes % 6],
+    });
+  }
+
+
+  render() {
+    return (
+      <button className="like" style={{backgroundColor: this.state.bgColor}} c={this.state.bgColor} onClick={this.handleClick}>
+        {this.state.likes} Button    
+      </button>
+    );
+  }
 }
+
+export default LikeButton;
