@@ -33,7 +33,13 @@ class Facebook extends Component {
     }
     countries = countries
       .sort((a,b)=>a.localeCompare(b))
-      .map(country => (<li onClick={this.handleClick}>{country}</li>));
+      .map(country => (
+        <li 
+          onClick={this.handleClick}
+          className={country === this.state.currCountry ? 'active':''}>
+          {country}
+        </li>
+      ));
 
       return (
       <div className="facebook">

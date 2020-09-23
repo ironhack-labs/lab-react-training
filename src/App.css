@@ -186,13 +186,18 @@ button.like {
   font-weight: bold;
 }
 
+.facebook {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .facebook>div {
   display: flex;
   justify-content: flex-start;
   align-self: center;
-  margin: 1rem auto;
+  margin: 0.25rem;
   padding: 0.5rem;
-  max-width: 500px;
+  width: 350px;
   border: 1px solid black;
 }
 
@@ -224,6 +229,11 @@ button.like {
   border-radius: 3px;
 }
 
-.facebook div.active {
+.facebook li:hover {
+  background-color:lightgray;
+  cursor: pointer;
+}
+
+.facebook .active {
   background-color: lightskyblue;
 }
