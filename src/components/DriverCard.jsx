@@ -5,7 +5,7 @@ import './DriverCard.css'
 const DriverCard = (props) => {
   return (
       <div className = "DriverCard">
-        <img src={props.img} alt=""/>
+        <img src={props.img} alt={props.name}/>
         <div className="right">
           <h2> {props.name} </h2> 
           <div><Rating>{props.rating}</Rating></div>

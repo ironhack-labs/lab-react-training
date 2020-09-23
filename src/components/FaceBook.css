@@ -11,3 +11,10 @@
   width: 120px;
   height: auto;
 }
+
+.ButtonGroup .Button {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid gray;
+  font-size: 1.2em;
+}
