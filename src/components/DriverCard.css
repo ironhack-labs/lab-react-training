@@ -1,0 +1,25 @@
+.driverCardDiv {
+    background-color:blue;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: space-between;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.driverPic {
+    width:100px;
+  height: 100px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+.driverInfo {
+    color: white;
+    text-align: left;
+  margin-left: 20px;
+}
