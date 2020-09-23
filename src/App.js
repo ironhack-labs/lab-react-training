@@ -53,7 +53,7 @@ function App() {
       <BoxColor r={128} g={255} b={0} />
 
       <Title title="CreditCard" />
-            <CreditCard
+      <CreditCard
         type="Visa"
         number="0123456789018845"
         expirationMonth={3}
@@ -91,22 +91,22 @@ function App() {
       <Rating>5</Rating>
 
       <Title title="DriverCard" />
-          <DriverCard
-      name="Travis Kalanick"
-      rating={4.2}
-      img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
-      car={{
-        model: "Toyota Corolla Altis",
-        licensePlate: "CO42DE"
-      }} />
-    <DriverCard
-      name="Dara Khosrowshahi"
-      rating={4.9}
-      img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
-      car={{
-        model: "Audi A3",
-        licensePlate: "BE33ER"
-      }} />
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE"
+        }} />
+     <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
+        }} />
 
       
     <Title title="LikeButton" />
@@ -114,26 +114,24 @@ function App() {
 
 
     <Title title="CLickablePicture" />
-        <ClickablePicture
-      img='/img/persons/maxence.png'
-      imgClicked='/img/persons/maxence-glasses.png'
-    />
+      <ClickablePicture
+        img='/img/persons/maxence.png'
+        imgClicked='/img/persons/maxence-glasses.png'
+      />
 
 
     <Title title="Dice" />
-
     <Dice />
 
     <Title title="Carousel" />
-
       <Carousel
-    imgs={[
-      'https://randomuser.me/api/portraits/women/1.jpg',
-      'https://randomuser.me/api/portraits/men/1.jpg',
-      'https://randomuser.me/api/portraits/women/2.jpg',
-      'https://randomuser.me/api/portraits/men/2.jpg'
-    ]}
-  />
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+     />
 
     
     </div>
