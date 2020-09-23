@@ -1,0 +1,12 @@
+.greeting {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.greeting p {
+  display: flex;
+  flex-direction: row;
+  border: 1px black solid;
+  margin: 10px auto;
+  padding: 5px;
+}

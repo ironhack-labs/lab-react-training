@@ -1,0 +1,14 @@
+.CreditCard {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.CreditCardImg {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+}
+
+.imgCC {
+  width: 30px;
+}

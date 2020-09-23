@@ -1,0 +1,9 @@
+.DriverCard {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.driverCardContainer {
+  display: flex;
+  flex-direction: row;
+}

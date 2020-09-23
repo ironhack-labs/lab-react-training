@@ -1,0 +1,12 @@
+.CreditCard {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.CreditCardContainer {
+  width: 300px;
+
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+}

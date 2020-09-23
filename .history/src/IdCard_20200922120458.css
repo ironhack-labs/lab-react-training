@@ -1,0 +1,21 @@
+.IdCard {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.pictureCard {
+  display: flex;
+  flex-direction: row;
+  border: 1px black solid;
+  padding: 5px;
+  margin: 10px 5px;
+}
+
+.infoCard {
+  align-items: flex-start;
+  margin-left: 5px;
+}
+
+.infoCard p {
+  margin: 120px;
+}

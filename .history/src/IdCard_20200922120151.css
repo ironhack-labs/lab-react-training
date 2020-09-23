@@ -1,0 +1,8 @@
+.IdCard {
+  text-align: left;
+  margin-left: 25px;
+}
+.pictureCard {
+  display: flex;
+  /* flex-direction: row; */
+}

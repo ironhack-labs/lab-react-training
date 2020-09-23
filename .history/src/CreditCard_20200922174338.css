@@ -1,0 +1,18 @@
+.CreditCard {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.CreditCardContainer {
+  width: 360px;
+  height: 210px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.CreditCardImg {
+  display: flex;
+  justify-content: flex-end;
+  width: 30px;
+}

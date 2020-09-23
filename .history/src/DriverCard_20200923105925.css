@@ -1,0 +1,14 @@
+.DriverCard {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.driverCardContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.driverCardContainer img {
+  width: 100px;
+  height: 100px;
+}

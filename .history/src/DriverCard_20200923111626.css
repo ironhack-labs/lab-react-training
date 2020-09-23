@@ -1,0 +1,39 @@
+.DriverCard {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.driverCardContainer {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #425cbb;
+  margin: 10px;
+}
+
+.infoDriverCard {
+  justify-content: center;
+}
+
+.driverCardContainer img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 100%;
+}
+
+.driverStars {
+  font-size: 32px;
+  /* width: 100px; */
+  /* height: 100px; */
+  /* padding: 10px 0; */
+  /* border-radius: 100%; */
+}
+
+.driverName {
+  max-width: 500px;
+  padding: 50px;
+}

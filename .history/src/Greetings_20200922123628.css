@@ -1,0 +1,16 @@
+.Greetings {
+  text-align: left;
+  margin-left: 5px;
+
+  h1 {
+    text-align: left;
+  }
+}
+
+.Greetings p {
+  display: flex;
+  flex-direction: row;
+  border: 1px black solid;
+  margin: 10px auto;
+  padding: 5px;
+}
