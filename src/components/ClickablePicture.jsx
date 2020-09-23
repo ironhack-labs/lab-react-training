@@ -2,7 +2,8 @@ import React from 'react';
 import './ClickablePicture.css';
 
 export default class ClickablePicture extends React.Component {
-    contructor(props) {
+    constructor(props) {
+        super()
         this.props = props
     }
     state = {

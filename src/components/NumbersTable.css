@@ -1,0 +1,22 @@
+.white {
+    background-color: white;
+}
+
+.red {
+    background-color: red;
+}
+
+li {
+    list-style: none;
+    height: 90px;
+    width: 90px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
