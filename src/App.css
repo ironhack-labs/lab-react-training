@@ -36,3 +36,94 @@
     transform: rotate(360deg);
   }
 }
+
+.profile-card {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: left;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+
+.profile-text {
+  margin: 0px;
+}
+
+.random-div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.box-color {
+  height: 60px;
+  border: 1px solid black;
+  margin: 10px;
+}
+.box-text {
+  display: inline-block;
+  /* color: white; */
+  margin: 10px 10px 0 0;
+  padding: 10px 10px;
+}
+
+.Credits {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.credit-card {
+  border: 1px solid black;
+  border-radius: 3%;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 40vw;
+  height: 15vw;
+  margin-right: 50px;
+}
+
+#creditNum {
+  font-size: 35px;
+}
+
+.credit-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px;
+}
+
+.creditCardPtag {
+  margin: 2px;
+}
+
+.Driver-card-div {
+  background-color: blue;
+  width: 100%;
+}
+
+#driverCardImg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#driverCardText {
+  color: white;
+}
