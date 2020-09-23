@@ -10,8 +10,8 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickableImage from './components/ClickableImage';
 import Dice from './components/Dice';
-// import Slider from './components/Slider';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 
 
@@ -117,6 +117,7 @@ function App() {
             'http://lorempixel.com/output/technics-q-c-1244-835-5.jpg'
           ]}
         />
+        <NumbersTable limit={12}/>
       </header>
     </div>
   );
