@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.creditCards-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
