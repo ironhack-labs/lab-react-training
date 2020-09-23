@@ -123,7 +123,7 @@ function App() {
   <Dice />
 </div>
 
-{/* <div className="carousel">
+<div className="carousel">
 <Carousel
   imgs={[
     'https://randomuser.me/api/portraits/women/1.jpg',
@@ -132,7 +132,7 @@ function App() {
     'https://randomuser.me/api/portraits/men/2.jpg'
   ]}
 />
-</div> */}
+</div>
 <div>
   <NumbersTable limit={12} />
 </div>
