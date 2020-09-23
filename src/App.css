@@ -46,3 +46,17 @@
 	align-content: center;
 
 }
+
+.ratingDiv {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+  align-content: stretch;
+  margin-left: 20px;
+}
+h1 {
+  text-align: left;
+  margin-left: 20px;
+}
