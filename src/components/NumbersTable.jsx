@@ -11,7 +11,7 @@ const genSquares = (max) => {
 
 export default function NumbersTable(props) {
   return (
-    <ul>
+    <ul style={{ marginTop: '20px' }}>
       {genSquares(props.limit)}
     </ul>
   )

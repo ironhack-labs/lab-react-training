@@ -31,6 +31,17 @@
     align-items: center;
 }
 
-.rating > p {
+.rating>p {
     margin-bottom: 0px;
+}
+
+.square-li {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    border: 1px solid;
 }
