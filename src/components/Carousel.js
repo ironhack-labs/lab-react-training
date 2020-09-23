@@ -24,9 +24,9 @@ export default class Carousel extends Component {
         console.log(this.state);
         return (
             <div>
-                <button onClick={this.nextImg("left")}>left</button>
+                <button onClick={()=>this.nextImg("left")}>left</button>
                 <img alt="" style={{width: "100px"}}src={this.state.img}/>
-                <button onClick={this.nextImg("right")}>right</button>
+                <button onClick={()=>this.nextImg("right")}>right</button>
             </div>
         )
     }
