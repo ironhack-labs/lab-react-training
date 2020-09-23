@@ -11,7 +11,7 @@ class LikeButton extends React.Component {
   click = () => {
     this.setState({ clicks: this.state.clicks + 1 });
 
-    if (this.state.counter == this.state.colors.length - 1) {
+    if (this.state.counter === this.state.colors.length - 1) {
       this.setState({ counter: 0 });
     } else {
       this.setState({ counter: this.state.counter + 1 });

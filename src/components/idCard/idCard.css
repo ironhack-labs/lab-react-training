@@ -7,7 +7,7 @@
 }
 
 .cardImg img{
-    margin-right: 10px;
+   
     width: 125px;
     height: 125px;
 }
@@ -17,5 +17,6 @@
     width: 100%;
     line-height: 1.5rem;
     margin: 0;
+    margin-left: 10px
 
 }

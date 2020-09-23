@@ -6,7 +6,7 @@ class BoxColor extends React.Component {
    componentToHex(c) {
     var hex = c.toString(16);
     
-    return hex.length == 1 ? "0" + hex : hex;
+    return hex.length === 1 ? "0" + hex : hex;
   }
   
   rgbToHex() {
@@ -20,7 +20,6 @@ class BoxColor extends React.Component {
     var g = parseInt(hexcolor.substr(2,2),16);
     var b = parseInt(hexcolor.substr(4,2),16);
     var yiq = ((r*299)+(g*587)+(b*114))/1000;
-    console.log((yiq >= 128) ? 'black' : 'white')
     return (yiq >= 128) ? 'black' : 'white';
   }
     

@@ -1,0 +1,23 @@
+.cardImg{
+  width: fit-content;
+  
+}
+.cardImg img{
+  margin: 0
+}
+
+
+.textCardFacebook {
+  display: none
+}
+.cardImg.active{
+  width: 100%;
+  
+
+}
+
+
+.cardImg.active .textCardFacebook{
+    display: block;
+  
+}

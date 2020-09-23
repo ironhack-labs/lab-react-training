@@ -1,64 +1,83 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './FaceBook.css';
 import profiles from '../../data/berlin.json';
 
-const FaceBook = () => {
-  const [color, setColor] = useState('white');
-  const [country, setCountry] = useState('');
+class FaceBook extends React.Component {
+  constructor(props) {
+    super(props);
+    this.arrayCountries = profiles.map((profile) => profile.country);
+    this.countries = [...new Set(this.arrayCountries)];
 
-  const countries = [];
-  profiles.map((ele) => countries.push(ele.country));
+    this.state = {
+      selected: null,
+      active: false,
+    }
+    this.toggleClass = this.toggleClass.bind(this)
+  }
+  toggleClass() {
+    const currentState = this.state.active;
+    this.setState({ active: !currentState });
+  }
 
-  const uniqueCountries = [...new Set(countries)];
-
-  const setCountryy = () => {
-    setCountry({country})
-    
-  };
-
-  const buttons = uniqueCountries.map((country, i) => {
+  render() {
     return (
-      <button className="ButtonFacebook" key={i} onClick={setCountryy}>
-        {country}
-      </button>
-    );
-  });
+      <div className="superCard">
+        <div>
+          {this.countries.map((country, i) => {
+            return (
+              <button
+                className="ButtonFacebook"
+                key={i}
+                onClick={() => this.setState({ selected: country })}
+                style={{
+                  backgroundColor:
+                    this.state.selected === country ? 'lightblue' : 'white',
+                }}
+              >
+                {country}
+              </button>
+            );
+          })}
+        </div>
+        <div>
+          {profiles.map((ele, i) => {
+            return (
+              <div
+               onClick={this.toggleClass}
+                className={this.state.active ? 'cardImg active' : 'cardImg'}
+                key={i}
+                style={{
+                  backgroundColor:
+                    this.state.selected === ele.country ? 'lightblue' : 'white',
+                }}
+              >
+                <img src={ele.img} alt="" />
+                <div className="textCardFacebook" >
+                  <p>
+                    <strong>First Name: </strong>
+                    {ele.firstName}
+                  </p>
 
- 
-  
-
-  const cards = [...profiles].map(function (ele, i) {
-    return (
-      <div className="cardImg" key={i}>
-        <img src={ele.img} alt="" />
-        <div className="text">
-          <p>
-            <strong>First Name: </strong>
-            {ele.firstName}
-          </p>
-          <p>
-            <strong>Last Name: </strong>
-            {ele.lastName}
-          </p>
-          <p>
-            <strong>Country: </strong>
-            {ele.country}
-          </p>
-          <p>
-            <strong>Type: </strong>
-            {ele.isStudent ? 'Student' : 'Teacher'}
-          </p>
+                  <p>
+                    <strong>Last Name: </strong>
+                    {ele.lastName}
+                  </p>
+                  <p>
+                    <strong>Country: </strong>
+                    {ele.country}
+                  </p>
+                  <p>
+                    <strong>Type: </strong>
+                    {ele.isStudent ? 'Student' : 'Teacher'}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     );
-  });
-
-  return (
-    <div>
-      {buttons}
-      {cards}
-    </div>
-  );
-};
+  }
+}
 export default FaceBook;
