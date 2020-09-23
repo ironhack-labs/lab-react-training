@@ -13,6 +13,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import LikeState from './components/LikeState';
+import Facebook from './components/Facebook'
 
 
 
@@ -117,7 +118,11 @@ function App() {
             'http://lorempixel.com/output/technics-q-c-1244-835-5.jpg'
           ]}
         />
-        <NumbersTable limit={12}/>
+
+        <NumbersTable limit={12} />
+        
+        <Facebook />
+
       </header>
     </div>
   );

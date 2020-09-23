@@ -45,3 +45,24 @@
     float: left;
     border: 1px solid;
 }
+
+ul {
+    list-style: none;
+}
+
+.facebook-img {
+    max-height: 200px;
+}
+
+.facebook-card {
+    background-color: #fff;
+    color: black;
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.facebook-data {
+    padding-left: 80px;
+    font-size: 24px;
+}
