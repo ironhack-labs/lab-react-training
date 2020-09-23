@@ -101,3 +101,7 @@ h1, p {
 .credit-card h1 {
   font-size: 1.1rem;
 }
+
+.title {
+  font-weight: bold;
+} 

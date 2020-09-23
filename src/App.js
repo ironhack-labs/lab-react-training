@@ -7,7 +7,7 @@ import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import Random from './components/Random';
 import CreditCard from './components/CreditCard';
-
+import Rating from './components/Rating';
 
 function App() {
   return (
@@ -19,8 +19,7 @@ function App() {
   gender='male'
   height={178}
   birth={new Date("1992-07-14")}
-  picture="https://randomuser.me/api/portraits/men/44.jpg"
-/>
+  picture="https://randomuser.me/api/portraits/men/44.jpg"/>
 <br/>
 
 <IdCard
@@ -87,8 +86,20 @@ function App() {
   color="white" />
 
 </div>
+<h1>Rating</h1>
+<div>
 
-    </div>
+<p><Rating>0</Rating></p>
+<p><Rating>1.4</Rating></p>
+<p><Rating>3</Rating></p>
+<p><Rating>4</Rating></p>
+<p><Rating>5</Rating></p>
+</div>
+</div>
+
+
+
+
 
   );
 }
