@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 
 export default class Rating extends Component {
     render() {
+        function stars(num) {
+            return '★'.repeat(Math.round(num)) + '☆'.repeat(5 - Math.round(num));
+        }
         return (
             <div>
-                <p>{this.props.type}</p>
-                <p>{this.props.number}</p>
-                <div>
-                    <p>Expires {this.props.expirationMonth}/{this.props.expirationMonth}   {this.props.bank}</p>
-                    <p>{this.props.owner}</p>
-                </div>
+                {stars(Number(this.props.children))}
             </div>
         )
     }

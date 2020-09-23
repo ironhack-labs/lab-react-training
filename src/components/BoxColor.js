@@ -13,7 +13,7 @@ export default class BoxColor extends Component {
         }
 
         function hexFormat(item) {
-            str = hexLetter(Math.floor(item / 16)) + hexLetter(item % 16);
+            let str = hexLetter(Math.floor(item / 16)) + hexLetter(item % 16);
             return str;
         }
 
