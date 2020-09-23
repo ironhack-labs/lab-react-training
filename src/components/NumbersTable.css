@@ -1,0 +1,16 @@
+.NumbersTable {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.NumbersTable > li {
+  padding: 20px;
+  border: 1px solid black;
+  list-style: none;
+}
+
+.NumbersTable > li:nth-child(even) {
+  background-color: red;
+}
