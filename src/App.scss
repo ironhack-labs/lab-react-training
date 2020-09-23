@@ -1,6 +1,11 @@
+$red: #cf3737;
+$blue: #455eb4;
+$light-grey: #ddd;
+$white: #fff;
+
 .title {
   padding-top: 6rem;
-  border-top: solid 0.1rem #ddd;
+  border-top: solid 0.1rem $light-grey;
 }
 
 .id-card,
@@ -8,7 +13,7 @@
   display: flex;
   justify-content: flex-start;
   margin: 3rem auto;
-  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0rem 2rem 0 rgba($blue, 0.3);
   border-radius: 1rem;
   align-items: center;
 }
@@ -32,6 +37,11 @@
   p {
     margin: 0;
   }
+
+  &.display {
+    background: $blue;
+    color: $white;
+  }
 }
 
 .image {
@@ -45,7 +55,7 @@
 .color-box {
   padding: 5rem;
   justify-content: center;
-  color: white;
+  color: $white;
   font-weight: bolder;
   font-size: 1.8rem;
   flex-direction: column;
@@ -59,7 +69,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0rem 2rem 0 rgba($blue, 0.3);
 
   img {
     position: absolute;
@@ -82,21 +92,21 @@
 }
 
 .license {
-  background: #455eb4;
-  color: #fff;
+  background: $blue;
+  color: $white;
   border-radius: 2rem;
   padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
-  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0rem 2rem 0 rgba($blue, 0.3);
 
   .profile {
     border-radius: 10rem;
     width: 10rem;
     display: block;
-    border: solid 0.3rem white;
+    border: solid 0.3rem $white;
   }
 }
 
@@ -105,7 +115,7 @@
   height: 20rem;
   margin-bottom: 6rem;
   border-radius: 2.4rem;
-  box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0rem 2rem 0 rgba($blue, 0.3);
 }
 
 .carousel {
@@ -128,7 +138,7 @@ svg {
 .like-me {
   border: 0;
   padding: 0.8rem 3.2rem;
-  color: white;
+  color: $white;
   font-size: 1.8rem;
   border-radius: 4rem;
 }
@@ -152,9 +162,10 @@ svg {
 }
 
 .red {
-  background: red;
-  color: white;
+  color: $white;
   border-radius: 1.6rem;
+  background: $red;
+  font-size: 2rem;
 }
 
 .facebook-page {
@@ -174,18 +185,17 @@ svg {
   }
 
   button {
-    background: #455eb4;
-    border: 0;
-    color: white;
     padding: 0.8rem 3.2rem;
     border-radius: 4rem;
-    border: solid 0.2rem #455eb4;
+    border: solid 0.2rem $blue;
     transition: all 200ms ease;
     margin: 0.4rem;
+    color: $blue;
+    background: $white;
 
     &:hover {
-      color: #455eb4;
-      background: white;
+      background: $blue;
+      color: $white;
     }
   }
 }

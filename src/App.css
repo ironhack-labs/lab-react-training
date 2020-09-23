@@ -12,8 +12,8 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 3rem auto;
-  -webkit-box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0rem 2rem 0 rgba(69, 94, 180, 0.3);
+          box-shadow: 0 0rem 2rem 0 rgba(69, 94, 180, 0.3);
   border-radius: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -47,6 +47,11 @@
   margin: 0;
 }
 
+.id-card.display {
+  background: #455eb4;
+  color: #fff;
+}
+
 .image {
   margin-right: 2rem;
 }
@@ -60,7 +65,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
+  color: #fff;
   font-weight: bolder;
   font-size: 1.8rem;
   -webkit-box-orient: vertical;
@@ -83,8 +88,8 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  -webkit-box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0rem 2rem 0 rgba(69, 94, 180, 0.3);
+          box-shadow: 0 0rem 2rem 0 rgba(69, 94, 180, 0.3);
 }
 
 .credit-card img {
@@ -121,15 +126,15 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 2rem auto;
-  -webkit-box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0rem 2rem 0 rgba(69, 94, 180, 0.3);
+          box-shadow: 0 0rem 2rem 0 rgba(69, 94, 180, 0.3);
 }
 
 .license .profile {
   border-radius: 10rem;
   width: 10rem;
   display: block;
-  border: solid 0.3rem white;
+  border: solid 0.3rem #fff;
 }
 
 .avatar {
@@ -137,8 +142,8 @@
   height: 20rem;
   margin-bottom: 6rem;
   border-radius: 2.4rem;
-  -webkit-box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0rem 2rem 0 rgba(69, 94, 180, 0.3);
+          box-shadow: 0 0rem 2rem 0 rgba(69, 94, 180, 0.3);
 }
 
 .carousel {
@@ -161,7 +166,7 @@ svg {
 .like-me {
   border: 0;
   padding: 0.8rem 3.2rem;
-  color: white;
+  color: #fff;
   font-size: 1.8rem;
   border-radius: 4rem;
 }
@@ -198,9 +203,10 @@ svg {
 }
 
 .red {
-  background: red;
-  color: white;
+  color: #fff;
   border-radius: 1.6rem;
+  background: #cf3737;
+  font-size: 2rem;
 }
 
 .facebook-page {
@@ -220,19 +226,18 @@ svg {
 }
 
 .facebook-page button {
-  background: #455eb4;
-  border: 0;
-  color: white;
   padding: 0.8rem 3.2rem;
   border-radius: 4rem;
   border: solid 0.2rem #455eb4;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   margin: 0.4rem;
+  color: #455eb4;
+  background: #fff;
 }
 
 .facebook-page button:hover {
-  color: #455eb4;
-  background: white;
+  background: #455eb4;
+  color: #fff;
 }
 /*# sourceMappingURL=App.css.map */

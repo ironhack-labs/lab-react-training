@@ -16,7 +16,7 @@ const CreditCard = (props) => {
     return (
         <div className="col-sm-3 col-11 credit-card" style={{background: `${props.bgColor}`, color: `${props.color}`}}>
             <div className="col-12">
-                <span><img src={logoImg(props.type)} width="50" /></span>
+                <span><img src={logoImg(props.type)} width="50" alt="credit card" /></span>
                 <div className="card-number">•••• •••• •••• {numberToDots(props.number)}</div>
                 <div className="row">
                     <div className="col-8">Expires {props.expirationMonth} / {props.expirationYear}</div>

@@ -9,13 +9,26 @@ const Facebook = () => {
         countriesArr.push(el.country)
     })
 
-    const uniqueCountries = [...new Set(countriesArr)]
-    const countriesBtns = uniqueCountries.map((country, i) => 
-        <button className="col-2" key={i}>{country}</button>
+    const displayCountry = (country) => {
+        const displayed = document.querySelectorAll('.display')
+
+        if (displayed) {
+            displayed.forEach(el => el.classList.remove('display'))
+            document.querySelectorAll(`.${country}`).forEach(el => {el.classList.add('display')})
+        } else {
+            document.querySelectorAll(`.${country}`).forEach(el => {el.classList.add('display')})
+        }
+
+    }
+
+    const uniqueCountries = [...new Set(countriesArr)].sort()
+
+    const countriesBtns = uniqueCountries.map((country, i) =>
+        <button className="col-2" key={i} onClick={() => displayCountry(country)}>{country}</button>
     )
 
     const renderProfiles = profiles.map((profile, i) =>
-        <div className='id-card col-11 col-sm-5' key={i}>
+        <div className={`id-card col-11 col-sm-5 ${profile.country}`} key={i}>
             <div className='image'>
                 <img src={profile.img} alt="" />
             </div>
@@ -39,9 +52,15 @@ const Facebook = () => {
             </div>
         </div>)
 
+    const orderByFirstName = () => {
+        console.log('true')
+       return true
+    }
+
     return (
         <div className="facebook-page row justify-content-around">
             {countriesBtns}
+            <button onClick={() => orderByFirstName()}>Order by First Name</button>
             <div className="profiles row justify-content-around">
                 {renderProfiles}
             </div>

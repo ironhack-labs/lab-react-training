@@ -4,7 +4,7 @@ const IdCard = (props) => {
   return (
     <div className='id-card col-11 col-sm-5'>
       <div className='image'>
-        <img src={props.picture} />
+        <img src={props.picture} alt="id card" />
       </div>
       <div>
         <p>

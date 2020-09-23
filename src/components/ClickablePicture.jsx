@@ -20,7 +20,6 @@ export default class ClickablePicture extends React.Component {
     }
 
     render() {
-        console.log(this.props.img)
         return (
             <div className="avatar" style={{background: `url(${this.state.backPic}) no-repeat center center / cover`}} onClick={() => this.changeBack}></div>
         )
