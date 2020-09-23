@@ -1,4 +1,5 @@
 import React from 'react';
+import Rating from './Rating';
 
 export default function DriverCard(props) {
   console.log(props);
@@ -7,8 +8,9 @@ export default function DriverCard(props) {
       <div>
         <img id="driverCardImg" src={props.img} alt="" />
       </div>
-      <div id="driverCardText">
+      <div id="driverCardInfo">
         <h2>{props.name}</h2>
+        <Rating>{props.rating}</Rating>
         <p>
           {props.car.model} - {props.car.licensePlate}
         </p>

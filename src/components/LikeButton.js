@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../App.css';
 
 export default class LikeButton extends Component {
   //   let buttonStyle= {
@@ -11,6 +12,7 @@ export default class LikeButton extends Component {
   handleClick = () => {
     console.log('click');
     // this.setState({ clickCount: this.state.clickCount + 1 });
+    //we use this because of the asynchronus updating!:
     this.setState((state) => ({
       clickCount: state.clickCount + 1,
     }));

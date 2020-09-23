@@ -80,7 +80,7 @@ function App() {
         />
       </div>
       <h1>Rating</h1>
-      <div>
+      <div className="ratingDiv">
         <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>

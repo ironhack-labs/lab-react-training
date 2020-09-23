@@ -12,16 +12,13 @@ export default class ClickablePicture extends Component {
   render(props) {
     console.log(this.props);
     return (
-      <div>
-        <img
-          className="imgClicked"
-          onClick={this.handlePictureClick}
-          src={
-            this.state.clickedPicture ? this.props.imgClicked : this.props.img
-          }
-          alt=""
-        />
-      </div>
+      // console.log('this is clickable picture props', this.props)
+      <img
+        className="imgClicked"
+        onClick={this.handlePictureClick}
+        src={this.state.clickedPicture ? this.props.imgClicked : this.props.img}
+        alt=""
+      />
     );
   }
 }

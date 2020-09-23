@@ -1,3 +1,7 @@
+* {
+  margin-left: 3px;
+}
+
 .App {
   text-align: center;
 }
@@ -116,6 +120,14 @@ h1 {
 .Driver-card-div {
   background-color: blue;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  border-radius: 3px;
+  margin: 5px;
 }
 
 #driverCardImg {
@@ -124,11 +136,23 @@ h1 {
   object-fit: cover;
   border-radius: 50%;
 }
-#driverCardText {
+#driverCardInfo {
   color: white;
+  text-align: left;
+  margin-left: 20px;
 }
 
 .imgClicked {
   float: left;
-  width: 40vw;
+  width: 20vw;
+  margin-left: 10px;
+}
+.ratingDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  margin-left: 20px;
 }

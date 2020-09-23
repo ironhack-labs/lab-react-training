@@ -13,7 +13,7 @@ export default function Greetings(props) {
   }
   return (
     <div>
-      <div>
+      <div className="profile-card">
         <p>
           {Greeting} {props.children}
         </p>
