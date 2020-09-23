@@ -7,6 +7,7 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 import './App.css';
 
@@ -109,6 +110,13 @@ function App() {
       <h1>LikeButton</h1>
       <div>
         <LikeButton /> <LikeButton />
+      </div>
+      <h1>ClickablePicture</h1>
+      <div>
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
       </div>
     </div>
   );

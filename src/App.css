@@ -127,3 +127,8 @@ h1 {
 #driverCardText {
   color: white;
 }
+
+.imgClicked {
+  float: left;
+  width: 40vw;
+}
