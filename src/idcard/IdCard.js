@@ -2,8 +2,7 @@ import React from 'react'
 
 export default function IdCard(props) {
     return (
-        <div className="id-card">
-
+        <div>
            <img src={props.picture} />
             <div>
                 First Name: {props.firstName}<br/>
