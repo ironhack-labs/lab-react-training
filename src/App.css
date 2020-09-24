@@ -137,13 +137,19 @@
   border: solid 0.3rem #fff;
 }
 
-.avatar {
+.avatar,
+.glasses {
   width: 20rem;
   height: 20rem;
   margin-bottom: 6rem;
   border-radius: 2.4rem;
   -webkit-box-shadow: 0 0rem 2rem 0 rgba(69, 94, 180, 0.3);
           box-shadow: 0 0rem 2rem 0 rgba(69, 94, 180, 0.3);
+}
+
+.avatar:hover,
+.glasses:hover {
+  cursor: pointer;
 }
 
 .carousel {
@@ -182,6 +188,12 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+}
+
+.left:hover,
+.right:hover {
+  color: #cf3737;
 }
 
 .box {
@@ -221,8 +233,40 @@ svg {
   margin-top: 4rem;
 }
 
+.facebook-page .profiles .image {
+  position: relative;
+}
+
 .facebook-page .profiles .image img {
   width: 10rem;
+}
+
+.facebook-page .profiles .image .show-info {
+  background: #455eb4;
+  font-size: 3rem;
+  color: #fff;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: -2rem;
+  border: solid 0.3rem #fff;
+  border-radius: 50%;
+  outline: none;
+}
+
+.facebook-page .profiles .image .show-info:hover {
+  background: #cf3737;
 }
 
 .facebook-page button {
@@ -236,7 +280,7 @@ svg {
   background: #fff;
 }
 
-.facebook-page button:hover {
+.facebook-page button:hover, .facebook-page button.active {
   background: #455eb4;
   color: #fff;
 }

@@ -11,7 +11,6 @@ export default class Carousel extends React.Component {
     }
 
     changeCarouselRight = () => {
-        console.log(carouselCount)
         carouselCount++
         if (carouselCount === 4) {
             this.setState({backPic: this.props.imgs[0]})
@@ -29,7 +28,6 @@ export default class Carousel extends React.Component {
         } else {
             this.setState({backPic: this.props.imgs[carouselCount]})
         }
-        console.log(carouselCount)
     }
 
     render() {
