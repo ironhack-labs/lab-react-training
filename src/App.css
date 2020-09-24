@@ -36,3 +36,101 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* INFO CARD STYLES */
+
+.App h1 {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 45px;
+}
+
+.id-card {
+  border: solid 1px black;
+  margin: 20px 10px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.user-txt {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.user-txt p {
+  margin: 0px;
+}
+
+/* GREETINGS BOX */
+
+.greetings-box {
+  border: solid 1px black;
+  margin: 10px 10px;
+}
+
+.greetings-box h2 {
+  text-align: left;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+/*  RANDOM BOX  */
+
+.random-box {
+  border: solid 1px black;
+  margin: 10px 10px;
+}
+
+.random-box h2 {
+  text-align: left;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+.color-box {
+  border: solid 1px black;
+  margin: 10px 10px;
+}
+
+.color-box h2 {
+  color: white;
+  font-weight: 500;
+}
+
+/*  CREDIT BOX  */
+
+.credit-boxes {
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-start; 
+}
+
+.card-type {
+  text-align: right;
+}
+
+.credit-box {
+  margin: 10px 15px;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+.exp-and-bank {
+  display: flex;
+  flex-direction: row;
+}
+
+.exp-and-bank p {
+  margin-right: 25px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.card-owner {
+  text-align: left;
+  font-size: 20px;
+}
