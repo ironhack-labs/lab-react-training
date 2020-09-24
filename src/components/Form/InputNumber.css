@@ -1,0 +1,21 @@
+.R {
+  background-color: red;
+}
+
+.G {
+  background-color: green;
+}
+.R, .G, .B {
+  padding: 3px 13px;
+  border: 1px solid black;
+  display: inline;
+  margin-right: 5px;
+}
+
+.B {
+  background-color: blue;
+  display: inline;
+}
+.box {
+margin: 10px 0;
+}

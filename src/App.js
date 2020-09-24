@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import './App.css';
 import Title from './components/Title';
@@ -15,6 +16,8 @@ import Dice from './components/Dice'
 import Carousel from './components/Carousel'
 import NumbersTable from './components/NumbersTable'
 import FaceBook from './components/FaceBook'
+import SignupPage from './components/SignupPage'
+import RGBColorPicker from './components/RGBColorPicker'
 
 
 function App() {
@@ -141,6 +144,11 @@ function App() {
     <Title title="FaceBook" />
     <FaceBook />
     
+    <Title title="SignupPage" />
+    <SignupPage />
+
+    <Title title="RGBColorPicker" />
+    <RGBColorPicker />
     </div>
   );
 }

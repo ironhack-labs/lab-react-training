@@ -1,0 +1,10 @@
+.FinalBox {
+  padding: 3px 13px;
+  border: 1px solid black;
+  display: inline;
+}
+
+.ResultColor {
+  margin-left: 5px;
+  font-weight: 600;
+}

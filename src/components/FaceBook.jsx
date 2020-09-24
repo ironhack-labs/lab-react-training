@@ -9,19 +9,6 @@ export default class FaceBook extends React.Component {
   constructor(props) {
     super(props);
     this.state = { country : "paris" };
-    // this.userProfile = profiles.map((user, i) => {
-    //   return (
-    //     <div className="FaceBook" key={i}>
-    //       <img src={user.img} alt={user.firstName}/>
-    //       <div className="right">
-    //       <div><b>First Name: </b>{user.firstName}</div>
-    //       <div><b>Last Name: </b>{user.lastName}</div>
-    //       <div><b>Country: </b>{user.country}</div>
-    //       <div><b>Type: </b>{user.isStudent ? "Student": "Teacher"}</div>
-    //       </div>
-    //     </div>
-    //         )
-    // })
     this.countries = profiles.map(user => user.country)
     this.countries = this.countries.filter((country, index) => this.countries.indexOf(country) === index)
   }
