@@ -1,0 +1,16 @@
+.NumbersTable {
+    height: 510px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.NumbersTable > div {
+    height: 100px;
+    border: 1px solid black;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
