@@ -1,11 +1,14 @@
-import React from 'react';
-import IdCard from './components/IdCard';
-import Greetings from './components/Greeting';
-import Random from './components/Random';
-import BoxColor from './components/BoxColor';
-import CreditCard from './components/CreditCard';
-import Rating from './components/Rating';
-import DriverCard from './components/DriverCard';
+import React from 'react'
+import IdCard from './components/IdCard'
+import Greetings from './components/Greeting'
+import Random from './components/Random'
+import BoxColor from './components/BoxColor'
+import CreditCard from './components/CreditCard'
+import Rating from './components/Rating'
+import DriverCard from './components/DriverCard'
+import LikeButton from './components/LikeButton'
+import ClickablePicture from './components/ClickablePicture'
+import Dice from './components/Dice'
 // import './App.css';
 
 function App() {
@@ -96,6 +99,18 @@ function App() {
             model: "Audi A3",
             licensePlate: "BE33ER"
           }} />
+
+        <h1>LikeButton</h1>
+        <LikeButton/> <LikeButton/>
+
+        <h1>Clickable Picture</h1>
+        <ClickablePicture
+          img='/img/persons/maxence.png'
+          imgClicked='/img/persons/maxence-glasses.png'
+        />
+
+        <h1>Dice</h1>
+        <Dice />
     </div>
   );
 }

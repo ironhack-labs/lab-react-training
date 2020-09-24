@@ -9,3 +9,12 @@
     padding: 20px;
 }
 
+.clickable:hover {
+    cursor: pointer;
+}
+
+.ClickablePicture, .Dice {
+    height: 100px;
+    width: 100px;
+}
+
