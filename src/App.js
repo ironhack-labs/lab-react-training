@@ -124,8 +124,8 @@ function App() {
         
         <Facebook />
 
-        <SignupPage />
-        
+        {/* <SignupPage /> */}
+
       </header>
     </div>
   );

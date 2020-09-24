@@ -25,7 +25,7 @@ export default class SignupPage extends React.Component {
                     <Form.Label>First name</Form.Label>
                     <Form.Control
                         required
-                        type="text"
+                        type="email"
                         placeholder="First name"
                         defaultValue="Mark"
                     />
