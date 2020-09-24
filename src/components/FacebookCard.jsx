@@ -4,7 +4,7 @@ import './DriverCard.css'
 
 export default function FacebookCard(props) {
     return (
-        <li className="facebook-card">
+        <li className={`facebook-card ${props.className}`}>
             <Container>
                 <Row>
                     <Col md="4">
