@@ -7,13 +7,14 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
-// import LikeButton from './components/LikeButton';
+
 import ClickableImage from './components/ClickableImage';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import LikeState from './components/LikeState';
 import Facebook from './components/Facebook'
+import SignupPage from './components/SignupPage'
 
 
 
@@ -123,6 +124,8 @@ function App() {
         
         <Facebook />
 
+        <SignupPage />
+        
       </header>
     </div>
   );
