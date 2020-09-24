@@ -1,0 +1,102 @@
+.container{
+    display:flex;
+    border: solid 1px black;
+    align-items: center;
+    margin: 2px;
+    width:50%;
+}
+.container > p{ 
+    padding-left: 3px;
+}
+.descriptionContainer{
+    padding-left: 5px;
+}
+.descriptionContainer > p{
+    margin: 1px 0px;
+}
+.imageContainer{
+    display:flex;
+    align-items: center;
+    padding: 4px;;
+}
+.containerColor{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+.cardContainer{
+    width: 300px;
+    height: 170px;
+    margin: 5px;
+    border-radius: 25px;
+}
+.creditCardsContainer{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+}
+.cardLogo{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 15px;
+    height: 30x;
+    margin-top: 3px;
+}
+.cardLogo >img{
+    height: 30px;
+}
+.cardNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+}
+.creditCardLetters{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.creditCardLetters > p{
+    margin: 1px;
+    padding-left: 5px;
+}
+.starContainer > img{
+    height: 30px;
+    width: 30px;
+}
+.driverPicCont{
+    height: 100px;
+    width: 100px;
+    border-radius: 200px ;
+}
+.driverPicCont > img{
+    width: 100px;
+    height: 100%;
+    border-radius: 100px ;
+    margin-right: 10px;
+}
+.dlContainer{
+    display: flex;
+    align-items: center;
+    background-color: rgb(69,94,181);
+    margin: 2px;
+    width: 50%;
+    height: 130px;
+    justify-content: center;
+    border-radius: 25px;
+    color: white;
+}
+.dlText{
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    justify-content: center;
+    margin: 0px 10px;
+}
+.dlText > h2 {
+    margin: 2px 0px;
+}
+.dlText > p {
+    margin: 2px 0px;
+}
