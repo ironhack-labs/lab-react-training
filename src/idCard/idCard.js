@@ -3,7 +3,6 @@ import React from 'react';
 function IdCard(props) {
   return (
     <div>
-      User is:
       <div>Last Name: {props.lastName}</div>
       <div>First Name: {props.firstName}</div>
       <div>Gender: {props.gender}</div>
