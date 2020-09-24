@@ -1,18 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import IdCard from './idCard/idCard';
+import Greetings from './greetings/Greetings';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <h1>IdCard</h1>
         <p>
           <IdCard
             lastName="Doe"
             firstName="John"
-            gender="male"
+            gender="Male"
             height={178 / 100}
             birth={new Date('1992-07-14').toDateString()}
             picture={
@@ -22,10 +23,12 @@ function App() {
               />
             }
           />
+        </p>
+        <p>
           <IdCard
             lastName="Delores "
             firstName="Obrien"
-            gender="female"
+            gender="Female"
             height={172 / 100}
             birth={new Date('1988-05-11').toDateString()}
             picture={
@@ -35,6 +38,11 @@ function App() {
               />
             }
           />
+        </p>
+        <h1>Greetings</h1>
+        <p>
+          <Greetings lang="de">Ludwig</Greetings>
+          <Greetings lang="fr">François</Greetings>
         </p>
       </header>
     </div>

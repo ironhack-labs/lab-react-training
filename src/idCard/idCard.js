@@ -4,11 +4,11 @@ function IdCard(props) {
   return (
     <div>
       User is:
-      <div>{props.lastName}</div>
-      <div>{props.firstName}</div>
-      <div>{props.gender}</div>
-      <div>{props.height}m</div>
-      <div>{props.birth}</div>
+      <div>Last Name: {props.lastName}</div>
+      <div>First Name: {props.firstName}</div>
+      <div>Gender: {props.gender}</div>
+      <div>Height: {props.height}m</div>
+      <div>Birthday: {props.birth}</div>
       <div>{props.picture}</div>
     </div>
   );
