@@ -1,0 +1,9 @@
+.BoxColor-container {
+    margin-left: 5px;
+    margin-top: 50px;
+    border-style: solid;
+    width: 1380px;
+    padding: 20px 20px 20px;
+
+    font-size: large;
+}       

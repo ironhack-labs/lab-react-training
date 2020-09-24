@@ -1,0 +1,24 @@
+.id-container {
+    margin-left: 5px;
+    margin-top: 50px;
+    border-style: solid;
+    width: 1420px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-weight: bold;
+}
+
+.data-container {
+    width: 200px;
+    line-height: 1px;
+}
+
+.images-container {
+    margin: 0px 5px 5px 5px;
+}
+
+.imagesId {
+    padding-top: 10px;
+    padding-right: 10px;
+}
