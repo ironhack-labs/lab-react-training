@@ -4,7 +4,7 @@ import Square from './Square'
 const genSquares = (max) => {
   const listArr = []
   for (let index = 0; index < max; index++) {
-    listArr.push(<Square key={index} index={index}>{index}</Square>)
+    listArr.push(<Square key={index} index={index}>{index+1}</Square>)
   }
   return listArr
 }

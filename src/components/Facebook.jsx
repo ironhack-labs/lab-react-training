@@ -1,25 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import profiles from '../data/berlin.json';
 import FacebookCard from './FacebookCard';
 import { Button } from 'react-bootstrap'
 import './DriverCard.css'
 
-let allCountries = []
-let resultArr = []
-
-
-class Facebook extends Component {
+export default class Facebook extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            country: 'England'
+            country: ''
         }
+        this.allCountries = profiles.map(profile => profile.country)
 
-        //Country Array
-        profiles.map(c => (allCountries.push(c.country)))
-        resultArr = allCountries.filter((data,index)=>{
-            return allCountries.indexOf(data) === index;
-          })
+        this.resultArr = this.allCountries.filter(
+            (country,index) => {
+                return this.allCountries.indexOf(country) === index;
+            }
+        )
     }
 
     selectCountry = (e) => {
@@ -28,26 +25,24 @@ class Facebook extends Component {
           });
     }
 
-    
     render() {
-        console.log(this.state.country);
         return (
-            <ul>
-                {resultArr.map(r => 
-                    <Button onClick={this.selectCountry}>{r}</Button>)}
-                    
-                {profiles.map(p =>  
-                    <FacebookCard 
-                    className={this.state.country === p.country ? 'card-blue' : ''}
-                    firstName= {p.firstName} 
-                    lastName= {p.lastName} 
-                    country= {p.country} 
-                    img={p.img} 
-                    isStudent={p.isStudent}>
-                </FacebookCard>)}
-            </ul>
+            <div>
+                {this.resultArr.map(conutryName => <Button onClick={this.selectCountry} key={conutryName} >{conutryName}</Button>)}
+                {
+                    profiles.map((profile, index) =>  
+                        <FacebookCard 
+                            key={`${index}-${profile.name}`}
+                            className={this.state.country === profile.country ? 'card-blue' : ''}
+                            firstName= {profile.firstName} 
+                            lastName= {profile.lastName} 
+                            country= {profile.country} 
+                            img={profile.img} 
+                            isStudent={profile.isStudent}>
+                        </FacebookCard>
+                    )
+                }
+            </div>
         );
     }
 }
-
-export default Facebook
