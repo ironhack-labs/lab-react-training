@@ -135,4 +135,46 @@
   font-size: 20px;
 }
 
-/*adding*/
+/*  STARS  */
+
+.stars-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  font-size: 50px;
+}
+
+/*  DRIVERS  */
+
+.driver-box {
+  background-color: rgb(66,92,187);
+  margin: 20px 20px;
+  padding: 30px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.driver-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.driver-info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 10px;
+  font-size: 1.5vw;
+}
+
+.driver-info h2, h3, p {
+  margin: 5px;
+}
+
