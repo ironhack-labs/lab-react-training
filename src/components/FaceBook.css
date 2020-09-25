@@ -4,6 +4,7 @@
   flex-direction: row;
   padding: 5px;
   margin: 10px 0;
+  width: fit-content;
 }
 
 .FaceBook img {

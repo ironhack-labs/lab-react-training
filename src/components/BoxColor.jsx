@@ -1,5 +1,5 @@
 import React from 'react'
-import './BoxCOlor.css'
+import './BoxColor.css'
 
 
 function componentToHex(c) {

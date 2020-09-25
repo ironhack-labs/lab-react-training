@@ -45,16 +45,18 @@ export default class Form extends React.Component {
     return (
       <div>
 
-        <form  onSubmit={this.handleSubmit}>
+        <form className="was-validated"  onSubmit={this.handleSubmit}>
           <InputWithLabel
             name="Email"
             value={this.state.email}
             onChange={this.handleChange}
+            message= "You must complete the Email"
           />
           <InputWithLabel
             name="Password"
             value={this.state.password}
             onChange={this.handleChange}
+            message= "You must complete the password"
           />
           <SelectWithLabel
             name="Nationality"
@@ -62,10 +64,11 @@ export default class Form extends React.Component {
             onChange={this.handleChange}
             options={nationality}
           />
-          <button type="submit">Enviar</button>
+          <button className="btn btn-primary mt-3 mb-2" type="submit">Enviar</button>
         </form>
+        <hr/>
         {this.state.submit && 
-        <div>
+        <div className="mb-5 sing-up">
           <Greetings lang={this.state.Nationality}/>
           <div>
             Your email address is : {this.state.Email}
@@ -75,7 +78,9 @@ export default class Form extends React.Component {
           </div>
         </div>
           }
+     
       </div>
+      
     );
   }
 }

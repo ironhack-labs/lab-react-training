@@ -6,8 +6,8 @@ export default class RGBColorPicker extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      R: 0,
-      G: 0,
+      R: 255,
+      G: 150,
       B: 0,
     };
     this.handleChange = this.handleChange.bind(this);
