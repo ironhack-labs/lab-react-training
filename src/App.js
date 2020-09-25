@@ -2,6 +2,7 @@ import React from 'react';
 // import logo from './logo.svg';
 import IdCard from './idCard/idCard';
 import Greetings from './greetings/Greetings';
+import Random from './random/Random';
 import './App.css';
 
 function App() {
@@ -43,6 +44,14 @@ function App() {
         <p>
           <Greetings lang="de">Ludwig</Greetings>
           <Greetings lang="fr">François</Greetings>
+        </p>
+
+        <h1>Random</h1>
+        <p>
+          <Random min={1} max={6} />
+        </p>
+        <p>
+          <Random min={1} max={100} />
         </p>
       </header>
     </div>
