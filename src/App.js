@@ -3,6 +3,7 @@ import React from 'react';
 import IdCard from './idCard/idCard';
 import Greetings from './greetings/Greetings';
 import Random from './random/Random';
+import BoxColor from './boxColor/BoxColor';
 import './App.css';
 
 function App() {
@@ -45,13 +46,17 @@ function App() {
           <Greetings lang="de">Ludwig</Greetings>
           <Greetings lang="fr">François</Greetings>
         </p>
-
         <h1>Random</h1>
         <p>
           <Random min={1} max={6} />
         </p>
         <p>
           <Random min={1} max={100} />
+        </p>
+        <h1>BoxColor</h1>
+        <p>
+          <BoxColor r={255} g={0} b={0} />
+          <BoxColor r={128} g={255} b={0} />
         </p>
       </header>
     </div>
