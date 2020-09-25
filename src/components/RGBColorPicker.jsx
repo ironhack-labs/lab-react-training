@@ -21,7 +21,7 @@ export default class RGBColorPicker extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="mb-5 mt-4">
         <InputNumber
           name="R"
           value={this.state.R}
