@@ -7,6 +7,7 @@ import BoxColor from './components/BoxColor.js';
 import CreditCard from './components/CreditCard.js';
 import Rating from './components/Rating.js';
 import DriverCard from './components/DriverCard.js';
+import LikeButton from './components/LikeButton';
 class App extends React.Component {
   state = {
     IdCardA: {
@@ -127,6 +128,10 @@ class App extends React.Component {
               licensePlate: 'BE33ER',
             }}
           />
+        </div>
+        <div>
+          <h1>LikeButton</h1>
+          <LikeButton />
         </div>
       </div>
     );
