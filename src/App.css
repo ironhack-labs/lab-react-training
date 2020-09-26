@@ -73,6 +73,20 @@
   flex-wrap: wrap;
 }
 
+.like-button {
+  background-color: purple;
+  color: white;
+  font-size: 1em;
+  width: 10em;
+  height: 4em;
+  border-radius: 0.5em;
+  margin: 1em;
+}
+
+.like-button-box {
+  display: flex;
+}
+
 
 
 @keyframes App-logo-spin {

@@ -3,6 +3,7 @@ import './App.css';
 import CreditCard from './creditcard/creditCard.js';
 import Rating from './Rating/rating.js';
 import DriverCard from './drivercard/driverCard.js';
+import LikeButton from './likeButton';
 
 function IdCard(props) {
   let height = props.height / 100;
@@ -201,6 +202,13 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
+      </div>
+      <div>
+        <h1 className="title">LikeButton</h1>
+        <div className="like-button-box">
+        <LikeButton/>
+        <LikeButton/>
+        </div>
       </div>
     </div>
   );
