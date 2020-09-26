@@ -8,6 +8,7 @@ import CreditCard from './components/CreditCard.js';
 import Rating from './components/Rating.js';
 import DriverCard from './components/DriverCard.js';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture'
 class App extends React.Component {
   state = {
     IdCardA: {
@@ -132,6 +133,13 @@ class App extends React.Component {
         <div>
           <h1>LikeButton</h1>
           <LikeButton />
+        </div>
+        <div>
+          <h1>ClickablePicture</h1>
+          <ClickablePicture
+  img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'
+/>
         </div>
       </div>
     );
