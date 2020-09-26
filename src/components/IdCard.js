@@ -14,7 +14,7 @@ const IdCard = (props) => {
                 <p><strong>Last Name: </strong>{lastName}</p>
                 <p><strong>Gender: </strong>{gender}</p>
                 <p><strong>Height: </strong>{height}</p>
-                <p><strong>Birth: </strong>{birth.toString().slice(0, 15)}</p>
+                <p><strong>Birth: </strong>{birth.toDateString()}</p>
             </div>
         </div>
     )
