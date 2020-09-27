@@ -135,7 +135,7 @@ class FaceBook extends Component {
 
     this.formProfile();
     return (
-      <div>
+      <div className="fb-sec">
         <div className="fb-ctry-btn-sec"> {this.countriesBtns} </div>
         <div className="action-btn-sec">
           <button className="sort-btn" onClick={this.sortProfiles}>
