@@ -158,10 +158,10 @@ class App extends React.Component {
           <h1>NumbersTable</h1>
           <NumbersTable limit={12} />
         </div>
-        <div>
+     <div>
           <h1>Facebook</h1>
-          <Facebook />
-        </div>
+          <Facebook className='container' />
+          </div>
       </div>
     );
   }

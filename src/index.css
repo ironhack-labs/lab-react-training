@@ -123,10 +123,11 @@ h1 {
   text-align: center;
   padding: 15px;
 }
-
+.container {
+  display: flex;
+}
 .profile-card {
-  padding:15px;
-  width: 80%;
+  padding: 15px;
   display: flex;
   margin: 20px;
   border: 2px solid black;
@@ -136,4 +137,41 @@ h1 {
   margin: 5px;
   font-size: 24px;
   text-align: start;
+  width: 300px;
+}
+
+.sort {
+ 
+  padding: 5px;
+  background-color: salmon;
+  border: 1px solid gray;
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.sort:hover{
+  cursor: pointer;
+}
+.profile-card img:hover {
+  cursor: pointer;
+}
+
+.country {
+  margin: 5px;
+  padding: 5px 7px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid gray;
+}
+
+.country:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+input {
+
+  width: 300px;
+  padding: 5px;
 }
