@@ -10,6 +10,8 @@ import Rating from './components/rating/Rating';
 import DriverCard from './components/drivercard/DriverCard';
 import LikeButton from './components/likebutton/LikeButton';
 import ClickablePicture from './components/clickablepicture/ClickablePicture';
+import Dice from './components/dice/dice';
+
 function App() {
   return (
     <div className="App">
@@ -83,6 +85,15 @@ function App() {
       <ClickablePicture
         img="/img/persons/maxence.png"
         imgClicked="/img/persons/maxence-glasses.png"
+      />
+      <Dice
+        diceEmpty="/img/dice-empty.png"
+        dice1="/img/dice1.png"
+        dice2="/img/dice2.png"
+        dice3="/img/dice3.png"
+        dice4="/img/dice4.png"
+        dice5="/img/dice5.png"
+        dice6="/img/dice6.png"
       />
     </div>
   );
