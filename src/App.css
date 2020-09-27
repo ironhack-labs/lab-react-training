@@ -135,3 +135,19 @@ h1{
   text-align: left;
   padding-top: 12px;
 }
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}

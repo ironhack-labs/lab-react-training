@@ -7,6 +7,11 @@ import BoxColor from './Components/BoxColor';
 import CreditCard from './Components/CreditCard';
 import Rating from './Components/Rating';
 import DriverCard from './Components/DriverCard';
+import LikeButton from './Components/LikeButton';
+import ClickablePicture from './Components/ClickablePicture';
+import Dice from './Components/Dice';
+import Carousel from './Components/Carousel';
+import NumbersTable from './Components/NumbersTable'
 
 function App() {
   return (
@@ -93,7 +98,27 @@ function App() {
             car={{
               model: "Audi A3",
               licensePlate: "BE33ER"
-            }} />  
+            }} />
+        <h1>Like Button</h1>  
+          <LikeButton />
+        <h1>Clickable Picture</h1>
+          <ClickablePicture
+            img='/img/persons/maxence.png'
+            imgClicked='/img/persons/maxence-glasses.png'
+          />
+        <h1>Dice</h1>
+            <Dice />
+        <h1>Carousel</h1>
+            <Carousel
+         imgs={[
+           'https://randomuser.me/api/portraits/women/1.jpg',
+           'https://randomuser.me/api/portraits/men/1.jpg',
+           'https://randomuser.me/api/portraits/women/2.jpg',
+           'https://randomuser.me/api/portraits/men/2.jpg'
+         ]}
+         />
+        <h1>NumberTable</h1>
+        <NumbersTable limit={12} />
     </div>
   );
 }
