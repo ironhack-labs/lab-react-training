@@ -46,3 +46,9 @@ h1 {
   flex-flow: row;
   flex-wrap: inherit;
 }
+
+.like-btn-sec {
+  display: flex;
+  flex-direction: row;
+  padding: 5% 0 5% 5%;
+}

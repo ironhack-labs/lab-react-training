@@ -1,32 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import IdCard from './IdCard/IdCard.js';
-import Greetings from './Greetings/Greetings.js';
-import Random from './Random/Random.js';
-import BoxColor from './BoxColor/BoxColor.js';
-import CreditCard from './CreditCard/CreditCard.js';
-import Rating from './Rating/Rating.js';
-import DriverCard from './DriverCard/DriverCard.js';
+import IdCard from './components/IdCard/IdCard';
+import Greetings from './components/Greetings/Greetings';
+import Random from './components/Random/Random';
+import BoxColor from './components/BoxColor/BoxColor';
+import CreditCard from './components/CreditCard/CreditCard';
+import Rating from './components/Rating/Rating';
+import DriverCard from './components/DriverCard/DriverCard';
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import FaceBook from './components/FaceBook/FaceBook';
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-
       {/* ===========  ID CARD ===========   */}
       <h1> IdCard</h1>
       <IdCard
@@ -45,22 +36,22 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-
-      {/* ===========  Greetings  ===========   */}
+      <br /> <br /> <hr /> <hr /> <br /> <br />
+      {/* =========== Greetings =========== */}
       <h1> Greetings </h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-
+      <br /> <br /> <hr /> <hr /> <br /> <br />
       {/* ===========  Random  ===========   */}
       <h1> Random </h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
+      <br /> <br /> <hr /> <hr /> <br /> <br />
       {/* ===========  BoxColor  ===========   */}
       <h1> BoxColor </h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
+      <br /> <br /> <hr /> <hr /> <br /> <br />
       {/* ===========  CreditCard  ===========   */}
       <h1> CreditCard </h1>
       <div className="credit-card-section">
@@ -95,7 +86,7 @@ function App() {
           color="white"
         />
       </div>
-
+      <br /> <br /> <hr /> <hr /> <br /> <br />
       {/* ===========  Rating  ===========   */}
       <h1> Rating </h1>
       <Rating>0</Rating>
@@ -104,7 +95,7 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
+      <br /> <br /> <hr /> <hr /> <br /> <br />
       {/* ===========  DriverCard  ===========   */}
       <h1> DriverCard </h1>
       <DriverCard
@@ -125,6 +116,38 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <br /> <br /> <hr /> <hr /> <br /> <br />
+      {/* ===========  LIKE BUTTON ===========   */}
+      <div className="like-btn-sec">
+        <LikeButton />
+        <LikeButton />
+      </div>
+      <br /> <br /> <hr /> <hr /> <br /> <br />
+      {/* ===========  CLICKABLE PICTURE ===========   */}
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+      <br /> <br /> <hr /> <hr /> <br /> <br />
+      {/* ===========  CLICKABLE PICTURE ===========   */}
+      <div></div>
+      <Dice />
+      <br /> <br /> <hr /> <hr /> <br /> <br />
+      {/* ===========  CAROUSEL ===========   */}
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+      <br /> <br /> <hr /> <hr /> <br /> <br />
+      {/* ===========  Numbers Table ===========   */}
+      <NumbersTable limit={12} />
+      <br /> <br /> <hr /> <hr /> <br /> <br />
+      {/* ===========  FACE BOOK ===========   */}
+      <FaceBook />
     </div>
   );
 }

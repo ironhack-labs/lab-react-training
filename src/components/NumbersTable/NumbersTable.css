@@ -1,0 +1,24 @@
+.red-square {
+  width: 150px;
+  height: 100px;
+  background-color: red;
+  border: solid 3px black;
+  font-size: xxx-large;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.white-square {
+  width: 150px;
+  height: 100px;
+  background-color: white;
+  border: solid 3px black;
+  font-size: xxx-large;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.num-tbl-sec {
+  display: inline-grid;
+  grid-template-columns: 150px 150px 150px 150px 150px;
+}

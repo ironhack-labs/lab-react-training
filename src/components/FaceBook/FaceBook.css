@@ -1,0 +1,61 @@
+.fb-profile {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  align-content: space-between;
+  margin: 10px;
+}
+
+.fb-profiles-sec {
+  display: block;
+  float: left;
+}
+
+.fb-profiles-sec-expand {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fb-profile-bg-none {
+  background-color: none;
+}
+
+.fb-profile-bg-color {
+  background-color: cadetblue;
+}
+
+.fb-profile img {
+  width: 250px;
+  height: 250px;
+}
+
+.fb-profile-content {
+  margin-left: 20px;
+  text-align: left;
+  padding-top: 10px;
+  padding-right: 300px;
+}
+
+.fb-profile-content span {
+  font-size: xx-large;
+  font-weight: 500;
+  margin: -5px;
+}
+
+.fb-profile-content p {
+  font-size: x-large;
+  font-weight: 500;
+  margin: -5px;
+}
+
+.fb-ctry-btn-sec {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row;
+}
+.btn-country {
+  font-size: large;
+  margin: 0 3px 0 3px;
+  font-weight: bold;
+}
