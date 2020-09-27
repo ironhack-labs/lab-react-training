@@ -4,7 +4,7 @@ import Rating from '../components/Rating';
 function DriverCard(props) {
   return (
     <div className="driverCard">
-      <img src={props.img} />
+      <img src={props.img} alt="driver" />
       <div className="info">
         <h2>{props.name}</h2>
         <Rating>{props.rating}</Rating>

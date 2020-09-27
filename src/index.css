@@ -103,4 +103,37 @@ h1 {
   border: 4px solid rgb(120, 120, 238);
 }
 
+.numbers-table {
+  display: flex;
+  height: 50px;
+}
 
+.even-red-square {
+  background-color: red;
+  border: 1px solid black;
+  width: 50px;
+  text-align: center;
+  padding: 15px;
+}
+
+.odd-white-square {
+  background-color: white;
+  border: 1px solid black;
+  width: 50px;
+  text-align: center;
+  padding: 15px;
+}
+
+.profile-card {
+  padding:15px;
+  width: 80%;
+  display: flex;
+  margin: 20px;
+  border: 2px solid black;
+}
+
+.profile-details p {
+  margin: 5px;
+  font-size: 24px;
+  text-align: start;
+}

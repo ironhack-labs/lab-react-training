@@ -19,14 +19,14 @@ export default class ClickablePicture extends Component {
             onClick={this.handleImageSwitch}
             style={{ width: '200px' }}
             src={this.props.imgClicked}
-            alt="image"
+            alt="glasses"
           />
         ) : (
           <img
             onClick={this.handleImageSwitch}
             style={{ width: '200px' }}
             src={this.props.img}
-            alt="image"
+            alt="no-glasses"
           />
         )}
       </div>

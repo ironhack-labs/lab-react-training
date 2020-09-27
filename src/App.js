@@ -11,6 +11,8 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
 class App extends React.Component {
   state = {
     IdCardA: {
@@ -123,6 +125,7 @@ class App extends React.Component {
             }}
           />
           <DriverCard
+           
             name="Dara Khosrowshahi"
             rating={4.9}
             img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
@@ -150,6 +153,14 @@ class App extends React.Component {
         <div>
           <h1>Carousel</h1>
           <Carousel />
+        </div>
+        <div>
+          <h1>NumbersTable</h1>
+          <NumbersTable limit={12} />
+        </div>
+        <div>
+          <h1>Facebook</h1>
+          <Facebook />
         </div>
       </div>
     );
