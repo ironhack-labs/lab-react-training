@@ -8,7 +8,9 @@ import CreditCard from './components/CreditCard.js';
 import Rating from './components/Rating.js';
 import DriverCard from './components/DriverCard.js';
 import LikeButton from './components/LikeButton';
-import ClickablePicture from './components/ClickablePicture'
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
 class App extends React.Component {
   state = {
     IdCardA: {
@@ -137,9 +139,17 @@ class App extends React.Component {
         <div>
           <h1>ClickablePicture</h1>
           <ClickablePicture
-  img='/img/persons/maxence.png'
-  imgClicked='/img/persons/maxence-glasses.png'
-/>
+            img="/img/persons/maxence.png"
+            imgClicked="/img/persons/maxence-glasses.png"
+          />
+        </div>
+        <div>
+          <h1>Dice</h1>
+          <Dice />
+        </div>
+        <div>
+          <h1>Carousel</h1>
+          <Carousel />
         </div>
       </div>
     );

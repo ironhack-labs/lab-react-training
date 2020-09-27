@@ -37,13 +37,4 @@
   }
 }
 
-.like {
-  width: 100px;
-  height: 30px;
-  color: white;
-  font-size: 18px;
-}
 
-.like:hover {
-  border: 4px solid rgb(120, 120, 238);
-}
