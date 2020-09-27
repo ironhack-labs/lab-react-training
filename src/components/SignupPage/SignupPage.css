@@ -1,0 +1,22 @@
+.sign-form-sec {
+  padding: 0 250px 0 250px;
+  font-size: x-large;
+}
+
+label {
+  float: left;
+}
+
+.error-font {
+  color: red;
+}
+.error-border {
+  border: solid 3px red;
+}
+
+.go-font {
+  color: green;
+}
+.go-border {
+  border: solid 3px green;
+}

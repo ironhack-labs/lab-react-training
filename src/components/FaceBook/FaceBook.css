@@ -1,6 +1,6 @@
 .fb-profile {
   border: 5px solid black;
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   padding: 15px;
   align-content: space-between;

@@ -1,0 +1,6 @@
+.rgb-box {
+  width: 45px;
+  height: 45px;
+  background: rgb(250, 0, 0);
+  border: solid 4px black;
+}

@@ -7,7 +7,11 @@ class FaceBook extends Component {
   countriesBtns = [];
 
   state = {
-    profileList: profiles.map((ele) => ({ ...ele, bg: 'none' })),
+    profileList: profiles.map((ele, idx) => ({
+      ...ele,
+      id: idx,
+      isExpand: false,
+    })),
     selectCountry: '',
     expandProfile: false,
     sortProfile: false,
@@ -45,9 +49,15 @@ class FaceBook extends Component {
   };
 
   /** */
-  toggleProfile = () => {
-    console.log(' toggle expand clicked ...');
-    this.setState({ expandProfile: !this.state.sortProfile });
+  toggleProfile = (id) => {
+    console.log(' toggle expand clicked ...', id);
+    let tempList = this.state.profileList;
+    tempList = tempList.map((ele) => {
+      if (ele.id === id) ele.isExpand = !ele.isExpand;
+      return ele;
+    });
+
+    this.setState({ profileList: tempList });
   };
 
   /** search profiles */
@@ -92,6 +102,7 @@ class FaceBook extends Component {
     tempList = tempList.filter((ele) =>
       ele.firstName.includes(this.state.srchWord.toLocaleLowerCase().trim())
     );
+    console.log(' formProfile: ', tempList);
 
     tempList.forEach((profile) => {
       let eachHtml = (
@@ -103,8 +114,12 @@ class FaceBook extends Component {
               : 'fb-profile  fb-profile-bg-none '
           }
         >
-          <img src={profile.img} onClick={this.toggleProfile} />
-          {expandProfile && (
+          <img
+            src={profile.img}
+            onClick={() => this.toggleProfile(profile.id)}
+          />
+
+          {profile.isExpand && (
             <div className="fb-profile-content">
               <p>
                 <span> First name: </span> {profile.firstName}
@@ -131,7 +146,7 @@ class FaceBook extends Component {
   /** */
   render() {
     console.log(' render called --- ');
-    console.log(this.state.profileList);
+    // console.log(this.state.profileList);
 
     this.formProfile();
     return (
