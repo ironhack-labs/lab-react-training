@@ -1,6 +1,17 @@
 .rgb-box {
   width: 45px;
   height: 45px;
-  background: rgb(250, 0, 0);
+  /* background: rgb(250, 0, 0); */
   border: solid 4px black;
+}
+
+.rgb-picker {
+  display: inline-grid;
+}
+
+.rgb-picker-row {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px 20px 20px;
+  justify-content: space-evenly;
 }
