@@ -3,7 +3,7 @@ import React from 'react'
 
 function FacebookInfo(props) {
     return (
-        <div className="facebook-info">
+        <div className="facebook-info col-8">
             <p>
                 <strong> First Name </strong>
                 {props.firstName}

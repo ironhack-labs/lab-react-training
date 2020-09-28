@@ -45,8 +45,6 @@ $white: #fff;
 }
 
 .image {
-  margin-right: 2rem;
-
   img {
     border-radius: 1rem;
   }
@@ -170,6 +168,14 @@ svg {
   }
 }
 
+.ordered {
+  border-top: solid 1px $light-grey;
+  border-bottom: solid 1px $light-grey;
+  margin: 4rem auto;
+  padding: 4rem 0;
+  display: block;
+}
+
 .red {
   color: $white;
   border-radius: 1.6rem;
@@ -187,11 +193,13 @@ svg {
   .profiles {
     margin-top: 4rem;
 
-    .image {
+    .fb-card {
       position: relative;
+      .image {
 
-      img {
-        width: 10rem;
+        img {
+          width: 10rem;
+        }
       }
 
       .show-info {
@@ -206,14 +214,34 @@ svg {
         align-items: center;
         position: absolute;
         bottom: 0;
-        right: -2rem;
+        right: -3.6rem;
         border: solid 0.3rem $white;
         border-radius: 50%;
         outline: none;
+        z-index: 1;
 
         &:hover {
           background: $red;
         }
+      }
+    }
+  }
+
+  .input-group {
+    .form-control {
+      border: solid 0.2rem $blue;
+      font-size: 1.4rem;
+      padding: 2rem;
+      border-radius: 0 4rem 4rem 0;
+    }
+    .input-group-text {
+      background: $blue;
+      border-radius: 4rem 0 0 4rem;
+      border: solid 0.2rem $blue;
+      svg {
+        width: 2rem;
+        color: $white;
+        margin-left: 1rem;
       }
     }
   }

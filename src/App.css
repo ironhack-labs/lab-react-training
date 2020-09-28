@@ -52,10 +52,6 @@
   color: #fff;
 }
 
-.image {
-  margin-right: 2rem;
-}
-
 .image img {
   border-radius: 1rem;
 }
@@ -214,6 +210,14 @@ svg {
   font-weight: bold;
 }
 
+.ordered {
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  margin: 4rem auto;
+  padding: 4rem 0;
+  display: block;
+}
+
 .red {
   color: #fff;
   border-radius: 1.6rem;
@@ -233,15 +237,15 @@ svg {
   margin-top: 4rem;
 }
 
-.facebook-page .profiles .image {
+.facebook-page .profiles .fb-card {
   position: relative;
 }
 
-.facebook-page .profiles .image img {
+.facebook-page .profiles .fb-card .image img {
   width: 10rem;
 }
 
-.facebook-page .profiles .image .show-info {
+.facebook-page .profiles .fb-card .show-info {
   background: #455eb4;
   font-size: 3rem;
   color: #fff;
@@ -259,14 +263,34 @@ svg {
           align-items: center;
   position: absolute;
   bottom: 0;
-  right: -2rem;
+  right: -3.6rem;
   border: solid 0.3rem #fff;
   border-radius: 50%;
   outline: none;
+  z-index: 1;
 }
 
-.facebook-page .profiles .image .show-info:hover {
+.facebook-page .profiles .fb-card .show-info:hover {
   background: #cf3737;
+}
+
+.facebook-page .input-group .form-control {
+  border: solid 0.2rem #455eb4;
+  font-size: 1.4rem;
+  padding: 2rem;
+  border-radius: 0 4rem 4rem 0;
+}
+
+.facebook-page .input-group .input-group-text {
+  background: #455eb4;
+  border-radius: 4rem 0 0 4rem;
+  border: solid 0.2rem #455eb4;
+}
+
+.facebook-page .input-group .input-group-text svg {
+  width: 2rem;
+  color: #fff;
+  margin-left: 1rem;
 }
 
 .facebook-page button {
