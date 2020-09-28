@@ -15,6 +15,8 @@ import Carousel from './components/carousel/Carousel';
 import NumbersTable from './components/numberstable/NumbersTable';
 import FaceBook from './components/facebook/Facebook';
 import SignupPage from './components/signup/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
+import RGBSingleColorPicker from './components/RGBColorPicker/RGBSingleColorPicker';
 
 function App() {
   return (
@@ -110,6 +112,11 @@ function App() {
       <NumbersTable limit={15} />
       <FaceBook />
       <SignupPage />
+
+      <RGBSingleColorPicker color="R" value={255} />
+      <RGBSingleColorPicker color="G" value={0} />
+      <RGBSingleColorPicker color="B" value={23} />
+      <RGBColorPicker />
     </div>
   );
 }

@@ -25,12 +25,15 @@ export default class ClickablePicture extends Component {
 
   render() {
     return (
-      <div id="img-container">
-        <img
-          onClick={this.handleOnClick}
-          src={this.state.imgUrl}
-          alt="Head Shot"
-        />
+      <div>
+        <h1>Clickable Picture</h1>
+        <div id="img-container">
+          <img
+            onClick={this.handleOnClick}
+            src={this.state.imgUrl}
+            alt="Head Shot"
+          />
+        </div>
       </div>
     );
   }

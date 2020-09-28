@@ -15,6 +15,7 @@ export default class LikeButton extends Component {
   render() {
     return (
       <div>
+        <h1>Like Button</h1>
         <button onClick={this.handleCount}>{this.state.count} Likes</button>
       </div>
     );

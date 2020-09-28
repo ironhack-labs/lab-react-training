@@ -55,13 +55,16 @@ export default class Carousel extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.clickLeft}>Left</button>
-        <button onClick={this.clickRight}>Right</button>
-        <img
-          //   onClick={this.Carousel}
-          src={this.state.imageDisplayed}
-          alt="Person"
-        />
+        <h1>Carousel</h1>
+        <div>
+          <button onClick={this.clickLeft}>Left</button>
+          <button onClick={this.clickRight}>Right</button>
+          <img
+            //   onClick={this.Carousel}
+            src={this.state.imageDisplayed}
+            alt="Person"
+          />
+        </div>
       </div>
     );
   }

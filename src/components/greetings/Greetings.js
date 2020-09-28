@@ -20,6 +20,7 @@ const Greetings = (props) => {
 
   return (
     <div className="greetings">
+      <h1>Greeting</h1>
       <p>
         {checkLanguage(language)} {props.name}
       </p>

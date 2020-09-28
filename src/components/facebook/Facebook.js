@@ -45,6 +45,7 @@ export default class FaceBook extends Component {
   render() {
     return (
       <div className="facebook-container">
+        <h1>Facebook</h1>
         <button
           onClick={this.handleOnClick}
           style={{

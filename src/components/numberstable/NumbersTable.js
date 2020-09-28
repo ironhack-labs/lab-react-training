@@ -30,22 +30,25 @@ export default class NumbersTable extends Component {
       background: `red`,
     };
     return (
-      <div className="container">
-        <button onClick={this.createArr}> Click for Boxes </button>
-        <div className="numbers-container">
-          {this.state.arr.map((index) => {
-            return (
-              <div key={index}>
-                {this.isEven(index + 1) ? (
-                  <div className="box" style={divStyle}>
-                    {index + 1}
-                  </div>
-                ) : (
-                  <div className="box">{index + 1}</div>
-                )}
-              </div>
-            );
-          })}
+      <div>
+        <h1>Numbers Table</h1>
+        <div className="container">
+          <button onClick={this.createArr}> Click for Boxes </button>
+          <div className="numbers-container">
+            {this.state.arr.map((index) => {
+              return (
+                <div key={index}>
+                  {this.isEven(index + 1) ? (
+                    <div className="box" style={divStyle}>
+                      {index + 1}
+                    </div>
+                  ) : (
+                    <div className="box">{index + 1}</div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     );

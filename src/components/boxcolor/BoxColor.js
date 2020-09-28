@@ -7,13 +7,16 @@ const BoxColor = (props) => {
   };
 
   return (
-    <div className="box-color">
-      <p id="rgb">
-        rgb({props.r},{props.g},{props.b})
-      </p>
-      <p id="hex" style={divStyle}>
-        Hex
-      </p>
+    <div>
+      <h1>Box Color</h1>
+      <div className="box-color">
+        <p id="rgb">
+          rgb({props.r},{props.g},{props.b})
+        </p>
+        <p id="hex" style={divStyle}>
+          Hex
+        </p>
+      </div>
     </div>
   );
 };

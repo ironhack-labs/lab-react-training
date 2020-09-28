@@ -39,7 +39,8 @@ export default class Dice extends Component {
   render() {
     return (
       <div id="dice-container">
-        <h3>Click the Dice</h3>
+        <h1>Dice</h1>
+        <h3>Click the Die</h3>
         <img onClick={this.handleOnClick} src={this.state.dice} alt="Dice" />
       </div>
     );
