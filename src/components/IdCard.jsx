@@ -3,7 +3,7 @@ import React from 'react';
 const IdCard = (props) => {
   return (
     <div className='id-card col-11 col-sm-5'>
-      <div className='image'>
+      <div className='image mr-5'>
         <img src={props.picture} alt="id card" />
       </div>
       <div>
