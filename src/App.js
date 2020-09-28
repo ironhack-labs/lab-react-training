@@ -7,6 +7,10 @@ import BoxColor from './components/BoxColor'
 import CreditCard from './components/CreditCard'
 import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
+import LikeButton from './components/LikeButton'
+import ClickablePicture from './components/ClickablePicture'
+import Dice from './components/Dice'
+import NumbersTable from './components/NumbersTable'
 
 function App() {
   return (
@@ -39,6 +43,7 @@ function App() {
     <BoxColor r={255} g={0} b={0} />
     <BoxColor r={128} g={255} b={0} />
 
+
     <CreditCard
   type="Visa"
   number="0123456789018845"
@@ -67,7 +72,6 @@ function App() {
   bgColor="#ddbb55"
   color="white" />
 
-
 <Rating>0</Rating>
 <Rating>1.49</Rating>
 <Rating>1.5</Rating>
@@ -82,7 +86,8 @@ function App() {
   car={{
     model: "Toyota Corolla Altis",
     licensePlate: "CO42DE"
-  }} />
+  }}
+  backCol="#455eb5" />
 <DriverCard
   name="Dara Khosrowshahi"
   rating={4.9}
@@ -90,7 +95,20 @@ function App() {
   car={{
     model: "Audi A3",
     licensePlate: "BE33ER"
-  }} />
+    
+  }}
+  backCol="#455eb5"  />
+
+<LikeButton /> 
+
+<ClickablePicture
+  img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'
+/>
+
+<Dice />
+
+<NumbersTable limit={12} />
 
     </div>
   );

@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
 .creditCard {
   display: flex;
   flex-direction: row;
@@ -64,4 +65,4 @@
 }
 .card-info > p {
   margin: 0;
-} 
+}
