@@ -4,7 +4,7 @@
     justify-content: space-between;
     border-radius: 10px;
     width: 320px;
-    height: 160px;
+    height: 180px;
     padding: 20px;
     margin-bottom: 10px;
 }
@@ -19,6 +19,7 @@
 }
 
 #number-box {
+    margin-top: 20px;
     display: inline-block;
     height: 33%;
 }
@@ -26,12 +27,13 @@
 #number-box p {
     text-align: center;
     letter-spacing: 0.1em;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 #details-box {
     display: inline-block;
     height: 33%;
+    margin-bottom: -10px;
 }
 
 #details-box p {

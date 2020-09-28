@@ -1,0 +1,30 @@
+.single-color-picker-box, .color-picker-box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.single-picker-card p {
+    display: block;
+    margin-top: 12px;
+}
+
+.single-picker-card {
+    display: flex;
+    flex-direction: row;
+    width: 280px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rgb-text {
+    display: block;
+    margin-top: 12px;
+}
+
+.rgb-box {
+    display: flex;
+    width: 185px;
+    justify-content: space-between;
+    align-items: center;
+}

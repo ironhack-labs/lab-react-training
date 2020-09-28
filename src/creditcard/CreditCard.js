@@ -26,7 +26,7 @@ const CreditCard = (props) => {
   for (let i = 0; i < number.length; i++) {
       if (i >= 12) {
         ccNumber += number[i];
-      } else if (i == 3 || i == 7 || i == 11) {
+      } else if (i === 3 || i === 7 || i === 11) {
         ccNumber += '• ';
       } else {
         ccNumber += '•'
