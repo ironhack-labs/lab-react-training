@@ -87,9 +87,19 @@
   display: flex;
 }
 
-.click-image {
-  width: 5em;
+.carousel-button {
+  background-color: cornflowerblue;
+  border: 0.2em solid darkblue;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 3em;
 }
+
+.carousel-pic {
+  border: 0.2em solid darkblue;
+  border-radius: 0.5em;
+}
+
 
 
 

@@ -6,6 +6,7 @@ import DriverCard from './drivercard/driverCard.js';
 import LikeButton from './likeButton';
 import ClickablePicture from './clickablePicture';
 import Dice from './dice.js';
+import Carousel from './carousel.js';
 
 function IdCard(props) {
   let height = props.height / 100;
@@ -219,6 +220,17 @@ function App() {
       <div>
         <h1 className="title">Dice</h1>
         <Dice/>
+      </div>
+      <div>
+        <h1 className="title">Carousel</h1>
+        <Carousel
+          imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
       </div>
       <div>
         <p></p>
