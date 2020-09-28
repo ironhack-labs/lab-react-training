@@ -4,13 +4,14 @@ import CreditCard from './creditcard/creditCard.js';
 import Rating from './Rating/rating.js';
 import DriverCard from './drivercard/driverCard.js';
 import LikeButton from './likeButton';
+import ClickablePicture from './clickablePicture';
 
 function IdCard(props) {
   let height = props.height / 100;
   return (
     <div className="id-card">
       <div className="image-card">
-        <img src={props.picture}></img>
+        <img src={props.picture} alt=""></img>
       </div>
       <div className="text-card">
         <p>
@@ -209,6 +210,10 @@ function App() {
         <LikeButton/>
         <LikeButton/>
         </div>
+      </div>
+      <div>
+        <h1 className="title">Clickable Picture</h1>
+        <ClickablePicture img="/img/persons/maxence.png" imgClicked="/img/persons/maxence-glasses.png"/>
       </div>
     </div>
   );

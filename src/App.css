@@ -87,6 +87,10 @@
   display: flex;
 }
 
+.click-image {
+  width: 5em;
+}
+
 
 
 @keyframes App-logo-spin {

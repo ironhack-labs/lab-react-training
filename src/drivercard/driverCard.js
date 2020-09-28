@@ -6,7 +6,7 @@ function DriverCard (props) {
     return (
         <div className="driver-card">
             <div className="driver-pic">
-                <img style={{ width:100, height:100, borderRadius:50 }} src={props.img}/>
+                <img style={{ width:100, height:100, borderRadius:50 }} src={props.img} alt=""/>
             </div>
             <div className="driver-info">
                 <h2>{props.name}</h2>
