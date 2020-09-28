@@ -3,54 +3,39 @@ import React, { Component } from 'react';
 export default class Carousel extends Component {
   state = {
     imageDisplayed: this.props.imgs[0],
-    index: 1,
+    index: 0,
   };
 
   clickLeft = () => {
     let newIndex = this.state.index;
-    console.log(`newIndex`, newIndex);
-    newIndex--;
-    console.log(`newIndex after ++`, newIndex);
-    const imageArr = [this.props.imgs[this.state.index]];
-    console.log(`imageArr`, imageArr);
+    newIndex > 0 ? newIndex-- : (newIndex = this.props.imgs.length - 1);
 
     this.setState(
       {
         index: newIndex,
-        imageDisplayed: imageArr,
       },
-      console.log('click left')
+      () => this.displayImage()
     );
   };
+
   clickRight = () => {
     let newIndex = this.state.index;
-    console.log(`newIndex`, newIndex);
-    newIndex++;
-    console.log(`newIndex after ++`, newIndex);
-    const imageArr = [this.props.imgs[this.state.index]];
-    console.log(`imageArr`, imageArr);
+    newIndex < this.props.imgs.length - 1 ? newIndex++ : (newIndex = 0);
 
     this.setState(
       {
         index: newIndex,
-        imageDisplayed: imageArr,
       },
-      console.log('click right')
+      () => this.displayImage()
     );
   };
 
-  //   Carousel = () => {
-  //     // this.state.index++;
-  //     this.clickRight();
-  //     const imageArr = [this.props.imgs[this.state.newIndex]];
-
-  //     this.setState(
-  //       {
-  //         imageDisplayed: imageArr,
-  //       },
-  //       () => console.log(this.state.imageDisplayed)
-  //     );
-  //   };
+  displayImage = () => {
+    const imageArr = [this.props.imgs[this.state.index]];
+    this.setState({
+      imageDisplayed: imageArr,
+    });
+  };
 
   render() {
     return (
@@ -59,11 +44,7 @@ export default class Carousel extends Component {
         <div>
           <button onClick={this.clickLeft}>Left</button>
           <button onClick={this.clickRight}>Right</button>
-          <img
-            //   onClick={this.Carousel}
-            src={this.state.imageDisplayed}
-            alt="Person"
-          />
+          <img src={this.state.imageDisplayed} alt="Person" />
         </div>
       </div>
     );
