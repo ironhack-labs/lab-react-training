@@ -8,7 +8,7 @@ const BoxColor = (props) => {
 
   return (
     <div className="box-color">
-      <p id="rgb" style={divStyle}>
+      <p id="rgb">
         rgb({props.r},{props.g},{props.b})
       </p>
       <p id="hex" style={divStyle}>

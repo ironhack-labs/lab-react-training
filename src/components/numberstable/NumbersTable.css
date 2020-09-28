@@ -1,0 +1,21 @@
+.container {
+  margin: 100px;
+  padding: 50px;
+  border: 2px solid black;
+}
+
+.numbers-container {
+  margin: 100px auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}

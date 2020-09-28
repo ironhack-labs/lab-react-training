@@ -11,6 +11,8 @@ import DriverCard from './components/drivercard/DriverCard';
 import LikeButton from './components/likebutton/LikeButton';
 import ClickablePicture from './components/clickablepicture/ClickablePicture';
 import Dice from './components/dice/dice';
+import Carousel from './components/carousel/Carousel';
+import NumbersTable from './components/numberstable/NumbersTable';
 
 function App() {
   return (
@@ -95,6 +97,15 @@ function App() {
         dice5="/img/dice5.png"
         dice6="/img/dice6.png"
       />
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+      <NumbersTable limit={15} />
     </div>
   );
 }
