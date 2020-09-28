@@ -16,7 +16,7 @@ export default class NumbersTable extends Component {
         arr: newArr,
       },
       //this lets us know immediately what the state is
-      () => console.log(this.state.arr, this.state.clicked)
+      () => console.log(this.state.arr)
     );
   };
 
