@@ -151,3 +151,13 @@ h1{
   align-items: center;
   list-style-type: none;
 }
+
+.card {
+  width: 700px;
+  margin-left: 10px;
+  padding-left: 10px;
+  font-size: 1rem;
+  border: solid 2px black;
+  display: flex;
+  justify-content: flex-start;
+}
