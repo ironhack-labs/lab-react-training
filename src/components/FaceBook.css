@@ -1,0 +1,46 @@
+li {
+  border-color: transparent;
+  width: 120px;
+  height: 60px;
+}
+
+.profiles {
+  width: 600px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.Facebook {
+  display: flex;
+  flex-direction: row;
+  border: 2px black solid;
+  padding: 5px;
+}
+
+.Facebook > img {
+  margin-right: 20px;
+}
+
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.infoDiv p {
+  margin: 0px;
+}
+
+img {
+  width: 100px;
+}
+
+.buttonsFilter {
+  display: flex;
+}
+
+.blue {
+  background-color: rgb(126, 126, 233);
+}

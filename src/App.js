@@ -12,6 +12,9 @@ import LikeButton from './components/Like';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import profiles from './data/berlin.json';
+import FaceBook from './components/FaceBook';
 
 function App() {
   return (
@@ -142,6 +145,14 @@ function App() {
             'https://randomuser.me/api/portraits/men/2.jpg',
           ]}
         />
+      </div>
+      <div>
+        <h3>NUMBERS TABLE</h3>
+        <NumbersTable limit={12} />
+      </div>
+      <div>
+        <h3>FACEBOOK</h3>
+        <FaceBook profiles={profiles} />
       </div>
     </div>
   );
