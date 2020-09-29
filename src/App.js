@@ -11,6 +11,8 @@ import LikeButton from './likeButton/LikeButton';
 import ClickablePicture from './clickable-picture/ClickablePicture';
 import Dice from './dice/Dice';
 import Carrousel from './carrousel/Carrousel';
+import NumbersTable from './ numbers-table/NumbersTable';
+
 import './App.css';
 
 function App() {
@@ -100,6 +102,8 @@ function App() {
       <Dice />
       <br />
       <Carrousel />
+      <br />
+      <NumbersTable limit={20} />
     </div>
   );
 }
