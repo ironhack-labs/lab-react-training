@@ -1,16 +1,19 @@
-import React from 'react'
-function Rating(props) {
+import React from 'react';
+import './rating.css';
+
+function Rating (props) {
     let star=""
     for (let i=0; i < 5; i++) {
             if (Math.round(props.children) > i) {
-                star += '★'
+                star += 'â˜…'
             }
             else {
-                star += '☆'
+                star += 'â˜†'
             }
         }
         return ( 
-    <div>{star}</div>
+    <div className="star-rating">{star}</div>
     )
 }
-export default Rating;
+
+export default Rating
