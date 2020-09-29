@@ -40,9 +40,9 @@ const CreditCard = (props) => {
 
   return (
     <div className="credit-card">
-      <div class="each-card" style={divStyle}>
+      <div className="each-card" style={divStyle}>
         <section1>
-          <img class="visaMaster" src={text} />
+          <img className="visaMaster" src={text} />
         </section1>
         <section2>
           <h2>

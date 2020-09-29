@@ -7,6 +7,10 @@ import BoxColor from './boxcolor/BoxColor';
 import CreditCard from './creditcard/CreditCard';
 import Rating from './rating/Rating';
 import DriverCard from './drivercard/DriverCard';
+import LikeButton from './likeButton/LikeButton';
+import ClickablePicture from './clickable-picture/ClickablePicture';
+import Dice from './dice/Dice';
+import Carrousel from './carrousel/Carrousel';
 import './App.css';
 
 function App() {
@@ -32,7 +36,7 @@ function App() {
       <BoxColor r={58} g={123} b={50} color="white" />
       <br />
       <h1>Credit Cards</h1>
-      <div class="credit-cards">
+      <div className="credit-cards">
         <CreditCard
           number="0123456789018845"
           year="2021"
@@ -88,6 +92,14 @@ function App() {
           licensePlate: 'CO42DE',
         }}
       />
+      <br />
+      <LikeButton />
+      <br />
+      <ClickablePicture picture="../img/persons/maxence-glasses.png" />
+      <br />
+      <Dice />
+      <br />
+      <Carrousel />
     </div>
   );
 }

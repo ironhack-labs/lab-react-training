@@ -9,9 +9,9 @@ const DriverCard = (props) => {
   };
 
   return (
-    <div class="driver-card">
-      <div style={divStyle} class="driver-image"></div>
-      <div class="driver-details">
+    <div className="driver-card">
+      <div style={divStyle} className="driver-image"></div>
+      <div className="driver-details">
         <h2>{props.name}</h2>
         <div className="rating">
           {rate <= 0.5 ? '☆' : '★'}
