@@ -7,6 +7,7 @@ import LikeButton from './likeButton';
 import ClickablePicture from './clickablePicture';
 import Dice from './dice.js';
 import Carousel from './carousel.js';
+import NumbersTable from './numberstable';
 
 function IdCard(props) {
   let height = props.height / 100;
@@ -232,6 +233,10 @@ function App() {
           ]}
         />
       </div>
+      <div>
+        <h1 className="title">Numbers Table</h1>
+        <NumbersTable limit={12}/>
+        </div>
       <div>
         <p></p>
         <p></p>

@@ -100,7 +100,35 @@
   border-radius: 0.5em;
 }
 
+.number-table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
+.red-box {
+  background-color: red;
+  color: black;
+  border: 0.1em solid black;
+  width: 3em;
+  height: 1em;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 3em;
+}
+
+.white-box{
+  background-color: white;
+  color: black;
+  border: 0.1em solid black;
+  width: 3em;
+  height: 1em;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 3em;
+}
 
 
 @keyframes App-logo-spin {
