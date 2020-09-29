@@ -1,0 +1,19 @@
+.image-id {
+  height: 150px;
+}
+
+.idcard-teacher {
+  border: 2px solid black;
+  display: flex;
+}
+
+.idcard-student {
+  border: 2px solid black;
+  display: flex;
+  background-color: aqua;
+}
+
+.id-items {
+  text-align: start;
+  padding: 9px;
+}
