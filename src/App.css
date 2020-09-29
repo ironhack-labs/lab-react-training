@@ -130,6 +130,25 @@
   font-size: 3em;
 }
 
+.fb-card {
+  margin: 1em 3em 1em 2em;
+  border: solid black 2px;
+  display:flex;
+}
+
+.image-fb-card {
+  padding: 0.3em;
+  height: fit-content;
+  margin-right: 1em;
+}
+
+.text-fb-card {
+  padding-top: 0.1em;
+  padding-left: 1em;
+  line-height: 0.3em;
+  font-size: 1.5em;
+}
+
 
 @keyframes App-logo-spin {
   from {
