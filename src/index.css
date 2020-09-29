@@ -141,7 +141,6 @@ h1 {
 }
 
 .sort {
- 
   padding: 5px;
   background-color: salmon;
   border: 1px solid gray;
@@ -150,7 +149,7 @@ h1 {
   margin: 10px;
 }
 
-.sort:hover{
+.sort:hover {
   cursor: pointer;
 }
 .profile-card img:hover {
@@ -171,7 +170,18 @@ h1 {
 }
 
 input {
-
   width: 300px;
   padding: 5px;
+}
+
+.signup {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  align-items: center;
+}
+
+.signup button {
+  max-width: 200px;
 }
