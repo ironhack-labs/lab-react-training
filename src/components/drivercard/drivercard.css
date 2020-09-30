@@ -1,0 +1,43 @@
+.driver-card {
+  margin: 15px 5px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.driver-info {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.driver-info h2 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.driver-info p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.driver-info Rating {
+  margin: 0;
+  padding: 0;
+  height: 10px;
+  color: white;
+}
+
+.driver-img {
+  padding-left: 30%;
+  align-self: center;
+}
+
+.driver-img img {
+  border-radius: 50%;
+  padding: 5px;
+  width: 110px;
+  height: 110px;
+}

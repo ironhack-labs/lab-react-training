@@ -1,0 +1,15 @@
+.box-color {
+  margin: 30px 20px;
+  width: 50vw;
+}
+
+.box-div {
+  margin: 2% 5%;
+  padding: 1% 50px;
+  text-align: center;
+}
+
+.box-div h3 {
+  margin: 0;
+  padding: 0;
+}

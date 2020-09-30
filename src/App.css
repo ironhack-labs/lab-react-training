@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.the-border {
+  border-radius: 15px;
+  border: 1px solid #318adb;
+  box-shadow: 7px 7px 15px -8px #000000;
+}
+
+.card-flex {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
