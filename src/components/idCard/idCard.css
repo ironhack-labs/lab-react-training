@@ -1,0 +1,19 @@
+.cardImg {
+  border: 1px solid black;
+  display: flex;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.cardImg img {
+  width: 125px;
+  height: 125px;
+}
+
+.cardImg p {
+  display: block;
+  width: 100%;
+  line-height: 1.5rem;
+  margin: 0;
+  margin-left: 10px;
+}

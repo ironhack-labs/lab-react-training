@@ -1,0 +1,9 @@
+.randomNum-container {
+  margin-left: 5px;
+  margin-top: 20px;
+  border: 2px solid pink;
+  width: 100%;
+  padding-left: 50px;
+  margin-right: 10px;
+  font-size: large;
+}

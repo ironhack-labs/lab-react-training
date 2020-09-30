@@ -1,0 +1,14 @@
+.greetings {
+  border: 1px solid black;
+  display: flex;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.greetings img {
+  margin-right: 10px;
+}
+
+p {
+  display: block;
+  margin: 0;
+}
