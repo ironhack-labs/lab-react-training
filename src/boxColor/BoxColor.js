@@ -5,7 +5,7 @@ function BoxColor(props) {
     height: 50,
     border: 1,
     margin: 10,
-    'background-color': `rgb(${props.r}, ${props.g}, ${props.b}`,
+    backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b}`,
   };
 
   return (
