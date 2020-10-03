@@ -1,0 +1,15 @@
+.numbersTable {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.numbersTable li {
+    display: flex;
+    list-style-type: none;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+}

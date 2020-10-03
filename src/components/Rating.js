@@ -3,7 +3,6 @@ import './Rating.css';
 
 const Rating = (props) => {
     let stars = ['☆', '☆', '☆', '☆', '☆'];
-
     const score = Math.round(props.children);
 
     for (let i = 0; i < score; i++) {
