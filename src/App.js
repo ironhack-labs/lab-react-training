@@ -5,6 +5,7 @@ import Greetings from "./greetings/Greetings";
 import Random from "./random/Random"
 import BoxColor from "./boxcolor/BoxColor"
 import CreditCard from "./creditcard/CreditCard"
+import LikeButton from "./likebutton/LikeButton";
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
         bgColor="#ddbb55"
         color="white" />
 
+      <LikeButton /> <LikeButton />
     </div>
 
 
