@@ -6,7 +6,8 @@ import Random from "./random/Random"
 import BoxColor from "./boxcolor/BoxColor"
 import CreditCard from "./creditcard/CreditCard"
 import LikeButton from "./likebutton/LikeButton";
-import ClickablePicture from "./ClickablePicture/ClickablePicture"
+import ClickablePicture from "./clickablepicture/ClickablePicture"
+import Dice from "./dice/Dice"
 
 function App() {
   return (
@@ -76,6 +77,9 @@ function App() {
         img='/img/persons/maxence.png'
         imgClicked='/img/persons/maxence-glasses.png'
       />
+
+      <Dice />
+
     </div>
 
 

@@ -14,7 +14,7 @@ export default class ClickablePicture extends Component {
     render() {
         return (
             <div>
-                <img onClick={this.handleToggle} src={this.state.clicked ? this.props.imgClicked : this.props.img} />
+                <img onClick={this.handleToggle} src={this.state.clicked ? this.props.imgClicked : this.props.img} width="200"/>
             </div>
         )
     }
