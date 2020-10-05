@@ -1,0 +1,23 @@
+#main-cb {
+    display: flex;
+}
+
+#img-cb {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#num-cb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#cb-exp-bank {
+    display: flex;
+}
+
+#bank {
+    margin-left: 20px;
+}

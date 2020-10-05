@@ -1,11 +1,16 @@
 import React from 'react'
+import './creditcard.css'
 
 const CreditCard = (props) => {
 
     const divStyleCard = {
         color: `${props.color}`,
-        border: '1px solid black',
-        backgroundColor: `${props.bgColor}`
+        borderRadius: '10px',
+        backgroundColor: `${props.bgColor}`,
+        margin: '20px',
+        padding: '20px',
+        width: '280px',
+        height: '180px'
       };
 
     let str = `${props.number}`;
@@ -22,11 +27,15 @@ const CreditCard = (props) => {
 
     return (
         <div style={divStyleCard}>
-            <img src={imgSrc} alt="" width="10%"/>
-            <p>{props.number}</p>
-            <p>************{chars[length-3]}{chars[length-2]}{chars[length-1]}{chars[length]}</p>
-            <p>expire {props.expirationMonth}/{props.expirationYear}</p>
-            <p>{props.bank}</p>
+            <div id="img-cb">
+            <img src={imgSrc} alt="" width="20%"/>
+            </div>
+            {/* <p>{props.number}</p> */}
+            <p id="num-cb">**** **** **** {chars[length-3]}{chars[length-2]}{chars[length-1]}{chars[length]}</p>
+            <div id="cb-exp-bank">
+                <p>expire {props.expirationMonth}/{props.expirationYear}</p>
+                <p id="bank">{props.bank}</p>
+            </div>
             <p>{props.owner}</p>
         </div>
     )

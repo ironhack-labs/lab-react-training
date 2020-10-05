@@ -1,17 +1,16 @@
 import React from 'react'
 
-
-
-
-
 const BoxColor = ({r,g,b}) => {
 
     const divStyle = {
         color: 'black',
         border: '1px solid black',
-        width: '600px',
-        height: '50px',
-        backgroundColor: `rgb(${r}, ${g}, ${b})`
+        height: '100px',
+        backgroundColor: `rgb(${r}, ${g}, ${b})`,
+        margin: '20px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
       };
 
     return (

@@ -1,0 +1,6 @@
+.container-id-card {
+    border: 1px solid black;
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+}
