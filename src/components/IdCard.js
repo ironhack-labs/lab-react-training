@@ -1,18 +1,26 @@
 import React from 'react';
-import '../assets/styles/IdCardStyle.css'
 
 function IdCard(props) {
-  console.log(props.birth)
   return (
     <div className="id-card">
-      <img src={props.picture} alt={`${props.firstName}`} />
-      <div className="details">
-        <p><span className='bold'>First name:</span> {props.firstName}</p>
-        <p><span className='bold'>Last name:</span> {props.lastName}</p>
-        <p><span className='bold'>Gender:</span> {props.gender}</p>
-        <p><span className='bold'>Height:</span> {`${props.height/100} m `}</p>
-        <p><span className='bold'>Birth:</span> {`${props.birth.getDate()}/${props.birth.getMonth()}/${props.birth.getYear()}`}</p> 
-      </div>
+      <img src={props.picture} alt="A person" />
+      <ul>
+        <li>
+          <strong>First Name: </strong> {props.firstName}
+        </li>
+        <li>
+          <strong>Last Name: </strong> {props.lastName}
+        </li>
+        <li>
+          <strong>Gender: </strong> {props.gender}
+        </li>
+        <li>
+          <strong>Height: </strong> {props.height / 100} m
+        </li>
+        <li>
+          <strong>Birth: </strong> {props.birth.toDateString()}
+        </li>
+      </ul>
     </div>
   );
 }
