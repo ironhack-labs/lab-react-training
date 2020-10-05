@@ -2,7 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Greetings from "./components/Greetings";
+import Greetings from './components/Greetings';
+import Random from './components/Random';
 
 function IdCard(props) {
   return (
@@ -16,7 +17,6 @@ function IdCard(props) {
     </div>
   );
 }
-
 
 const people = [
   {
@@ -56,6 +56,11 @@ function App() {
         <h2>Greetings</h2>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
+
+        <h2>Random</h2>
+        Random value between 1 and 6 => <Random min={1} max={6} /><br />
+        Random value between 1 and 100 => <Random min={1} max={100} />
+       
       </header>
     </div>
   );
