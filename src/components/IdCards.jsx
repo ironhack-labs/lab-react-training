@@ -22,4 +22,3 @@ const IdCards = (props) => {
 }
 
 export default IdCards;
-
