@@ -28,3 +28,15 @@
   padding: 15px;
   text-align: center;
 }
+
+.cards-container {
+  display: flex;
+}
+
+.credit-card {
+  margin: 20px;
+  border: none;
+  border-radius: 25px;
+  padding: 20px;
+  width: 25%;
+}
