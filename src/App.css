@@ -1,11 +1,17 @@
 .id-card {
   border: 2px solid black;
-  margin: 50px;
+  margin: 20px;
   display: flex;
 }
 
 .id-card img {
   width: 15%;
   margin-right: 20px;
+  padding: 5px;
+}
+
+.greetings {
+  border: 2px solid black;
+  margin: 20px;
   padding: 5px;
 }
