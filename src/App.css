@@ -50,3 +50,25 @@
   font-size: 2rem;
   margin: 5px;
 }
+
+.driver-card {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: lightseagreen;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+
+}
+
+.driver-card img {
+  width: 15%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.about-driver {
+  margin-left: 20px;
+}
