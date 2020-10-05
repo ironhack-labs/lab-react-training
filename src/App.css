@@ -2,6 +2,81 @@
   text-align: center;
 }
 
+.picture {
+  margin-top: 50px;
+
+}
+
+.box-color-container {
+  padding: 0.5rem;
+  border: 2px solid #000;
+  margin: 1rem;
+  width: 50%;
+}
+
+.box-color {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit-card {
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.credit-card span {
+  margin-right: 1rem;
+}
+
+.credit-card-flag {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.credit-card-flag img {
+  width: auto;
+  height: 20px;
+}
+
+.credit-card-owner {
+  margin: 0;
+}
+
+.credit-card-number {
+  display: flex;
+  font-size: 1.7rem;
+  margin: 2.8rem 0;
+}
+
+.credit-card-number p {
+  margin: 0;
+}
+
+.credit-card-number p small {
+  vertical-align: middle;
+  font-size: 0.72rem;
+  letter-spacing: 2.5px;
+  margin-bottom: 1rem;
+}
+
+.card-picture {
+  display: flex;
+  flex-direction: row;
+}
+
+.Card {
+  margin-top: 20px;
+  width: 80%;
+  border: 1px solid black;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,6 +87,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -32,6 +108,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
