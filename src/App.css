@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -18,10 +14,11 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 16px;
 }
 
 .App-link {
@@ -35,6 +32,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Card {
+  border:1px solid black;
+  margin-bottom:10px;
+  padding:6px;
+  display: flex;
+}
+
+.data-people {
+  margin-left: 10px;
+}
+
+.props {
+  border: 1px solid black;
+  margin-top: 10px;
+  padding: 6px;
 }
 
 .cards {
@@ -62,4 +76,9 @@
   flex-direction: column;
   align-items: flex-start;
   margin-left: 20px;
+}
+
+.cardNb {
+  font-size: 26px;
+  align-self: center;
 }

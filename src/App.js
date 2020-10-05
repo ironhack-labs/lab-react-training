@@ -2,23 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 
-function IdCard(props) {
-  return (
-    <div className="Card">
-      <img src={props.picture} alt="picture" />
-      <p>First name: {props.firstName}</p>
-      <p>Last name: {props.lastName}</p>
-      <p>Gender: {props.gender}</p>
-      <p>Height: {props.height}</p>
-      <p>Birth: {props.birth}</p>
-    </div>
-  );
-}
 
 const people = [
   {
@@ -26,7 +15,7 @@ const people = [
     lastName: 'Doe',
     gender: 'male',
     height: 1.78,
-    birth: new Date('1992-07-14').toString(),
+    birth: new Date('1992-07-14').toString().slice(0,15),
     picture: 'https://randomuser.me/api/portraits/men/44.jpg',
   },
   {
@@ -34,7 +23,7 @@ const people = [
     lastName: 'Delores',
     gender: 'female',
     height: 1.72,
-    birth: new Date('1993-05-11').toString(),
+    birth: new Date('1993-05-11').toString().slice(0,15),
     picture: 'https://randomuser.me/api/portraits/women/8.jpg',
   },
 ];
@@ -92,9 +81,8 @@ function App() {
         <Greetings lang="fr">François</Greetings>
 
         <h2>Random</h2>
-        Random value between 1 and 6 => <Random min={1} max={6} />
-        <br />
-        Random value between 1 and 100 => <Random min={1} max={100} />
+        <div className="props">Random value between 1 and 6 => <Random min={1} max={6} /></div>
+        <div className="props">Random value between 1 and 100 => <Random min={1} max={100} /></div>
 
         <h2>BoxColor</h2>
         <BoxColor r={255} g={0} b={0} /><br />

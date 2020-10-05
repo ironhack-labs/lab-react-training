@@ -23,7 +23,7 @@ const CreditCard = (props) => {
   return (
       <div className="card" style={divStyle}>
         <img className="card-logo" src={cardType} alt="" />
-        <p>•••• •••• •••• {props.number}</p>
+        <p className="cardNb">•••• •••• •••• {props.number}</p>
         <div className="card-data">
         Expires {formatMonth}/{props.expirationYear} {props.bank}
         <p>{props.owner}</p>
