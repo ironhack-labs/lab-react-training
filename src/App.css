@@ -40,3 +40,13 @@
   padding: 20px;
   width: 25%;
 }
+
+.rates-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rates-container p {
+  font-size: 2rem;
+  margin: 5px;
+}
