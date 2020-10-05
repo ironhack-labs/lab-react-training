@@ -5,7 +5,7 @@ const BoxColor = (props) => {
     background: `rgb(${props.r},${props.g},${props.b})`
   };
 
-  return <div style={divStyle}>rgb({props.r},{props.g},{props.b})</div>;
+  return <div style={divStyle}>rgb({props.r},{props.g},{props.b})</div>
 };
 
 export default BoxColor;
