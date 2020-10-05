@@ -1,10 +1,10 @@
 import React from 'react';
-import IdCard from './components/IdCard';
-import Greetings from './components/Greetings';
-import Random from './components/Random';
-import BoxColor from './components/BoxColor';
-import CreditCard from './components/CreditCard';
-import './App.css';
+import IdCard from './components/IdCard/IdCard';
+import Greetings from './components/greetings/Greetings';
+import Random from './components/random/Random';
+import BoxColor from './components/boxColor/BoxColor';
+import CreditCard from './components/creditCard/CreditCard';
+// import './App.css';
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
         lastName="Doe"
         firstName="John"
         gender="male"
-        height="1.78m"
+        height={178}
         birth={new Date('1992-07-14')}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
@@ -21,7 +21,7 @@ const App = () => {
         lastName="Obrien"
         firstName="Delores"
         gender="female"
-        height="1.72m"
+        height={172}
         birth={new Date('1992-07-14')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />

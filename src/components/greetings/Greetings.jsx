@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import './greetings.css';
 
 const Greetings = (props) => {
   let greeting;

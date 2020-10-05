@@ -1,6 +1,5 @@
 import React from 'react';
-import '../App.css';
-// import visa from './img/visa.png'
+import './creditCard.css';
 
 const CreditCard = (props) => {
   const divStyle = {
@@ -44,7 +43,7 @@ const CreditCard = (props) => {
               case 'Visa':
                 return 'white';
               case 'Master Card':
-                return 'black';
+                return '#222222';
               default:
             }
           })(),
@@ -59,7 +58,7 @@ const CreditCard = (props) => {
               case 'Visa':
                 return 'white';
               case 'Master Card':
-                return 'black';
+                return '#222222';
               default:
             }
           })(),

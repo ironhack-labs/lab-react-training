@@ -1,0 +1,8 @@
+.greetings {
+    height: 5vh;
+    margin: 20px;
+    border: 2px solid black;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+  }

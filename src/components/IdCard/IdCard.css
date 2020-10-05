@@ -1,0 +1,13 @@
+.idCard {
+    margin: 10px;
+    border: 2px solid black;
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .innerCard {
+    margin: 4px;
+  }
