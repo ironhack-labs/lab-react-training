@@ -62,3 +62,31 @@
   padding: 0.3em;
  text-align: center;
 }
+
+.credit-card {
+  width: 350px;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.cc-logo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;  
+}
+
+.cc-logo>img{
+  width: auto;
+  height: 20px;
+  margin-bottom: 0.3em;
+  display: flex;
+  justify-content: flex-end;  
+}
+
+.cc-number {
+  display: flex;
+  font-size: 1.7rem;
+  margin: 2.3rem 0;
+}
