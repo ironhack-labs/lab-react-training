@@ -21,5 +21,5 @@ const IdCards = (props) => {
     )
 }
 
-export default IdCards
+export default IdCards;
 
