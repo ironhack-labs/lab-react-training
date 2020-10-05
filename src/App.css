@@ -36,29 +36,69 @@
     transform: rotate(360deg);
   }
 }
+/*css iteration 1*/
+
+.idCard{
+  display: flex;
+  flex-direction: row;
+  border: solid 1px black;
+  margin: 5px;
+
+}
+
+.idCard ul {
+  list-style: none;
+  text-align: left;
+
+}
+
+/*css iteration 2*/
+
+.greeting{
+  border: solid 2px black;
+  margin: 10px;
+  height: 50px;
+  text-align: left;
+  align-content: center;
+}
+.greeting p{
+  margin-left: 10px;
+}
+
+
+
+
+/*css iteration 5*/
+.container-card{
+  display: flex;
+  flex-direction: row;
+}
 
 .cardShape {
   background-color: #11aa99;
-  height: 30vh;
-  width: 30%;
+  height: 20vh;
+  width: 20%;
   border-radius: 20px;
-  padding: 20px;
-
+  padding: 15px;
+  margin: 20px;
 }
 
-/* .card-bottom{
+.card-bottom{
+  text-align: left;
   
-} */
-
-.visa-div{
-  width: 100%;
-  object-position: right top;
- 
 }
 
-.logo-visa{
-  height: 30px;
+.numberCard{
+ word-spacing: 10px;
+ letter-spacing: 5px;
+  
+}
+.logo-visa {
+  height: 20px;
   width: 50px;
-  
-  
+  margin-left: 200px;
+}
+
+.bank{
+  margin-left: 30px;
 }

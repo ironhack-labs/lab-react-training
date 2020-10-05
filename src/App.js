@@ -2,92 +2,40 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { findByLabelText } from '@testing-library/react';
+import Greetings from './components/iteration2.jsx';
+import Random from './components/iteration3.jsx';
+import BoxColor from './components/iteration4.jsx';
+import CreditCard from './components/iteration5.jsx';
+
 //ITERATION 1
 function IdCard(props) {
   return (
     <div className="idCard">
+       <img src={props.picture} alt="profil pic"/>
       <ul>
-        <li>First Name: {props.firstName}</li>
-        <li>Last Name: {props.lastName}</li>
-        <li>Gender: {props.gender}</li>
-        <li>Height: {props.height}</li>
-        <li>Birth: {props.birth}</li>
-        <li>
-          <img src={props.picture} />
-        </li>
+        <li><strong>First Name:</strong> {props.firstName}</li>
+        <li><strong>Last Name:</strong> {props.lastName}</li>
+        <li><strong>Gender:</strong> {props.gender}</li>
+        <li><strong>Height:</strong> {props.height}</li>
+        <li><strong>Birth:</strong> {props.birth}</li>  
       </ul>
+     
     </div>
   );
 }
 
-//ITERATION 2
-const Greetings = (props) => {
-  if (props.lang === 'de') {
-    return <div>Hallo {props.children}</div>;
-  } else if (props.lang === 'fr') {
-    return <div>Bonjour {props.children}</div>;
-  } else {
-    return <div>Hello {props.children}</div>;
-  }
-};
-
-//ITERATION 3
-function Random(min, max) {
-  var max = 6;
-  var min = 0;
-  var randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
-  return <div>{randomNumber}</div>;
-}
-
-//ITERATION 4
-
-function BoxColor(props) {
-  return (
-    <div>
-    <div
-        style={{
-          backgroundColor: `rgb(${props.r},${props.g},${props.b})`,
-          height: props.height,
-          width: props.width, color: props.color
-        }}>
-          <p>RGB ({props.r}, {props.g}, {props.b})</p>
-        </div>
-      <div
-        style={{
-          backgroundColor: `rgb(${props.r},${props.g},${props.b})`,
-          height: props.height,
-          width: props.width,
-          
-        }}
-      ></div>
-      
-    </div>
-  );
-}
-
+//ITERATION 4 bonus
 function BoxColor2(props) {
   const redColor = '#ff0000';
   return (
-    <div style={{ backgroundColor: redColor, height: props.height, color: "white" }}>
+    <div
+      style={{
+        backgroundColor: redColor,
+        height: props.height,
+        color: 'white',
+      }}
+    >
       <p>RGB ({redColor})</p>
-    </div>
-  );
-}
-
-//ITERATION 5
-function CreditCard(props) {
-  return (
-    <div className="cardShape" style={{backgroundColor: `${props.bgColor}`, color: `${props.color}`}}>
-      <div className="visa-div">
-        <img src={props.type} alt="visa logo" className="logo-visa" />
-      </div>
-      <h3> **** **** ****{props.number.split("").slice(12)}</h3>
-      <div className="card-bottom">
-        <p>
-          Expires {props.expirationMonth}/{props.expirationYear} {props.bank}
-        </p>
-        <p>{props.owner}</p>
-      </div>
     </div>
   );
 }
@@ -115,22 +63,44 @@ function App(props) {
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">Marcel</Greetings>
       <Greetings lang="en">Peter</Greetings>
-      <Random />
+      <Random min={1} max={6}/>
+      <Random min= {1} max={100}/>
       <BoxColor r={255} g={0} b={0} height={100} width={500} color="white" />
       <BoxColor r={128} g={255} b={0} height={100} width={500} />
       <BoxColor2 redColor height={100} />
       <br />
-
-      <CreditCard
-        type="./img/visa.png"
-        number="0123456789018845"
-        expirationMonth="03"
-        expirationYear={21}
-        bank="BNP"
-        owner="Maxence Bouret"
-        bgColor= "#11aa99"
-        color="white"
-      />
+      <div className="container-card">
+        <CreditCard
+          type="./img/visa.png"
+          number="0123456789018845"
+          expirationMonth="03"
+          expirationYear={21}
+          bank="BNP"
+          owner="Maxence Bouret"
+          bgColor="#11aa99"
+          color="white"
+        />
+        <CreditCard
+          type="./img/master-card.svg"
+          number="0123456789010995"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="N26"
+          owner="Maxence Bouret"
+          bgColor="#eeeeee"
+          color="#222222"
+        />
+        <CreditCard
+          type="./img/visa.png"
+          number="0123456789016984"
+          expirationMonth={12}
+          expirationYear={2019}
+          bank="Name of the Bank"
+          owner="Firstname Lastname"
+          bgColor="#ddbb55"
+          color="white"
+        />
+      </div>
     </div>
   );
 }
