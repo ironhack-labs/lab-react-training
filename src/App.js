@@ -4,6 +4,7 @@ import './App.css';
 
 import Greetings from './components/Greetings';
 import Random from './components/Random';
+import BoxColor from './components/BoxColor';
 
 function IdCard(props) {
   return (
@@ -52,15 +53,18 @@ function App() {
             birth={person.birth}
           />
         ))}
-
         <h2>Greetings</h2>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
 
         <h2>Random</h2>
-        Random value between 1 and 6 => <Random min={1} max={6} /><br />
+        Random value between 1 and 6 => <Random min={1} max={6} />
+        <br />
         Random value between 1 and 100 => <Random min={1} max={100} />
-       
+
+        <h2>BoxColor</h2>
+        <BoxColor r={255} g={0} b={0} /><br />
+        <BoxColor r={128} g={255} b={0} />
       </header>
     </div>
   );
