@@ -40,3 +40,40 @@
   height: 30vh;
   border: 1px solid black;
 }
+
+.cardContainer {
+  margin: 5vh 5vw;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.creditCard {
+  margin: 5%;
+  border-radius: 10px;
+  width: 350px;
+  height: 190px;
+  border: 1px solid none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1% 1%;
+
+}
+.logo img {
+  display: block;
+  width: 20%;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cardNumber {
+  font-size: 200%;
+}
+
+
