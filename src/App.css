@@ -72,3 +72,12 @@
 .about-driver {
   margin-left: 20px;
 }
+
+.like-btn {
+  padding: 10px;
+  border: none;
+  background-color: lightslategray;
+  border-radius: 5px;
+  color: white;
+  margin-left: 20px;
+}
