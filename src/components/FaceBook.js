@@ -5,38 +5,33 @@ import profiles from '../data/berlin.json'
 
 export default class FaceBook extends Component {
     state = {
-        countriesSelected: ["usa"]
+        countrySelected: ""
     }
-    
-    // const countryArray = [];
-
-        // profiles.forEach(profile => {
-        //     !countryArray.includes(profile.country) && countryArray.push(profile.country);
-        // })
-
-        // this.setState((preState) => ({
-        //     countriesBtns: countryArray
-        // }))
 
     getCountries = () => [...new Set(profiles.map(profile => profile.country))];
 
-    countriesBtnToggle = (country) => {
-        // this.setState((preState) => ({
-        //     countriesSelected: !preState.countriesSelected.includes(country) && preState.countriesSelected.push(country)
-        // }))
+    countriesBtnToggle = async (country) => {
+        await this.setState(() => ({
+            countrySelected: country
+        }))
     }
 
     render() {
-        const btnStyle = {
-            backgroundColor: "lightblue"
-        }
         return (
             <div>
                 {this.getCountries()?.map((country, index) => 
-                    <button key={index} onClick={() => this.countriesBtnToggle(country)} name={country}>{country}</button>
+                    <button 
+                        className="btn btn-outline-primary"
+                        style={{backgroundColor: this.state.countrySelected === country && "lightblue"}}
+                        key={index} 
+                        onClick={() => this.countriesBtnToggle(country)} 
+                        name={country}>
+                            {country}
+                        </button>
                 )}
                 {profiles.map((profile, index) =>
                     <IdCard
+                        selectedCountry={this.state.countrySelected}
                         key={profile.firstName + index}
                         lastName={profile.lastName}
                         firstName={profile.firstName}

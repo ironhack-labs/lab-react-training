@@ -3,14 +3,17 @@ import './components.css';
 import './IdCard.css';
 
 const IdCard = (props) => {
-    const {firstName, lastName, country, type, picture} = props;
+    const {firstName, lastName, country, type, picture, selectedCountry} = props;
     const imgStyle = {
         height: "150px",
         width: "150px"
     }
+    const divStyle = {
+        backgroundColor: selectedCountry === country && "lightblue"
+    }
 
     return (
-        <div className="id-card box">
+        <div style={divStyle} className="id-card box">
             <img style={imgStyle} src={picture} alt={`${firstName} ${lastName}`}/>
             <div className="person-info">
                 <p><strong>First Name: </strong>{firstName}</p>
