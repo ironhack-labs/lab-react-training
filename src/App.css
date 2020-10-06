@@ -102,3 +102,41 @@
 .bank{
   margin-left: 30px;
 }
+
+/*iteration 7*/
+.DriverCard {
+  background-color: #455eb5;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+
+.DriverCard .image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.DriverCard .image img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.DriverCard .content {
+  margin-left: 10px;
+}
+
+.DriverCard .name {
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.DriverCard .content > * {
+  margin-bottom: 5px;
+}

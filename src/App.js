@@ -2,47 +2,21 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { findByLabelText } from '@testing-library/react';
+import IdCard from './components/iteration1.jsx';
 import Greetings from './components/iteration2.jsx';
 import Random from './components/iteration3.jsx';
 import BoxColor from './components/iteration4.jsx';
 import CreditCard from './components/iteration5.jsx';
+import Rating from './components/iteration6.jsx';
+import DriverCard from './components/iteration7.jsx';
+import LikeButton from './components/iteration8.jsx';
+import ClickablePicture from './components/iteration9.jsx';
 
-//ITERATION 1
-function IdCard(props) {
-  return (
-    <div className="idCard">
-       <img src={props.picture} alt="profil pic"/>
-      <ul>
-        <li><strong>First Name:</strong> {props.firstName}</li>
-        <li><strong>Last Name:</strong> {props.lastName}</li>
-        <li><strong>Gender:</strong> {props.gender}</li>
-        <li><strong>Height:</strong> {props.height}</li>
-        <li><strong>Birth:</strong> {props.birth}</li>  
-      </ul>
-     
-    </div>
-  );
-}
-
-//ITERATION 4 bonus
-function BoxColor2(props) {
-  const redColor = '#ff0000';
-  return (
-    <div
-      style={{
-        backgroundColor: redColor,
-        height: props.height,
-        color: 'white',
-      }}
-    >
-      <p>RGB ({redColor})</p>
-    </div>
-  );
-}
 
 function App(props) {
   return (
     <div className="App">
+      <h1>Iteration 1</h1>
       <IdCard
         name="Bidule"
         firstName="Joe"
@@ -59,16 +33,18 @@ function App(props) {
         // birth={new Date('10/05/1998')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-      <hr />
+      <h1>Iteration 2</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">Marcel</Greetings>
       <Greetings lang="en">Peter</Greetings>
-      <Random min={1} max={6}/>
-      <Random min= {1} max={100}/>
+      <h1>Iteration 3</h1>
+      <Random min={1} max={6} />
+      <Random min={1} max={100} />
+      <h1>Iteration 4</h1>
       <BoxColor r={255} g={0} b={0} height={100} width={500} color="white" />
       <BoxColor r={128} g={255} b={0} height={100} width={500} />
-      <BoxColor2 redColor height={100} />
-      <br />
+
+      <h1>Iteration 5</h1>
       <div className="container-card">
         <CreditCard
           type="./img/visa.png"
@@ -101,6 +77,41 @@ function App(props) {
           color="white"
         />
       </div>
+      <h1>Iteration 6</h1>
+      <Rating>0</Rating>
+      <Rating>0.60</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
+      <h1>Iteration 7</h1>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
+        }}
+      />
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
+      />
+      <h1>Iteration 8</h1>
+      <div>
+        <LikeButton /> <LikeButton />
+      </div>
+      {/* <h1>Iteration 9</h1>
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      /> */}
     </div>
   );
 }

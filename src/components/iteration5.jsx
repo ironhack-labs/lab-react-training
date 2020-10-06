@@ -10,7 +10,7 @@ function CreditCard(props) {
         <img src={props.type} alt="visa logo" className="logo-visa" />
   
         <h2 className="numberCard">
-          {' '}
+          
           .... .... .... {props.number.split('').slice(12)}
         </h2>
         <div className="card-bottom">
