@@ -7,6 +7,7 @@ import Random from "./component/Random";
 import BoxColor from "./component/BoxColor";
 import CreditCard from "./component/CreditCard";
 import LikeButton from "./component/LikeButton";
+import ClickablePicture from "./component/ClickablePicture";
 
 
 function App() {
@@ -81,9 +82,17 @@ function App() {
       </div>
 
       <h1>Like Button</h1>
+      <div id="mainlikebtn">
+        <LikeButton />
+        <LikeButton />
+      </div>
+
+      <h1>Clickable picture</h1>
       <div>
-        <LikeButton />
-        <LikeButton />
+        <ClickablePicture
+        img='/img/persons/maxence.png'
+        imgClicked='/img/persons/maxence-glasses.png'
+        />
       </div>
 
 

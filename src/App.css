@@ -40,3 +40,12 @@
 h1 {
   margin: 20px;
 }
+
+#mainlikebtn {
+  display: flex;
+  margin: 20px;
+}
+
+#like-btn {
+  margin: 10px;
+}
