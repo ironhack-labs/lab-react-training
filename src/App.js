@@ -6,6 +6,8 @@ import BoxColor from './components/boxColor/BoxColor';
 import CreditCard from './components/creditCard/CreditCard';
 import './App.css';
 import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+
 const App = () => {
   return (
     <div>
@@ -71,6 +73,11 @@ const App = () => {
       <div className="button">
         <LikeButton /> <LikeButton />
       </div>
+
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
     </div>
   );
 };
