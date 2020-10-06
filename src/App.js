@@ -4,8 +4,8 @@ import Greetings from './components/greetings/Greetings';
 import Random from './components/random/Random';
 import BoxColor from './components/boxColor/BoxColor';
 import CreditCard from './components/creditCard/CreditCard';
-// import './App.css';
-
+import './App.css';
+import LikeButton from './components/LikeButton/LikeButton';
 const App = () => {
   return (
     <div>
@@ -66,6 +66,10 @@ const App = () => {
           bgColor="#ddbb55"
           color="white"
         />
+      </div>
+
+      <div className="button">
+        <LikeButton /> <LikeButton />
       </div>
     </div>
   );

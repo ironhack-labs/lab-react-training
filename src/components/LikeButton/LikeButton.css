@@ -1,0 +1,10 @@
+.LikeButton {
+  margin: 1vh;
+ 
+}
+
+.LikeButton button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid bisque;
+}
