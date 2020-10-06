@@ -6,6 +6,7 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function IdCard(props) {
   return (
@@ -58,13 +59,10 @@ function App(props) {
       ))}
       <Greeting lang="de">Ludwig</Greeting>
       <Greeting lang="fr">François</Greeting>
-
       <Random min={1} max={6}></Random>
       <Random min={1} max={100}></Random>
-
       <BoxColor r={255} g={0} b={0}></BoxColor>
       <BoxColor r={128} g={255} b={0}></BoxColor>
-
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -96,6 +94,9 @@ function App(props) {
         color="white"
       />
       <LikeButton></LikeButton>
+
+      <ClickablePicture></ClickablePicture>
+      
     </div>
   );
 }

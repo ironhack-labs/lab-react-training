@@ -13,7 +13,10 @@ class LikeButton extends Component {
 
   render() {
     return (
-      <div>
+      <div className="like-button">
+        <button onClick={this.increment}>
+          {this.state.counterValue} Likes
+        </button>
         <button onClick={this.increment}>
           {this.state.counterValue} Likes
         </button>

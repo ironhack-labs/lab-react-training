@@ -4,7 +4,11 @@
 
 .picture {
   margin-top: 50px;
+}
 
+.like-button {
+  display: flex;
+  flex-direction: row;
 }
 
 .box-color-container {
