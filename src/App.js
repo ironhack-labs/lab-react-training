@@ -6,6 +6,7 @@ import Greetings from "./component/Greetings";
 import Random from "./component/Random";
 import BoxColor from "./component/BoxColor";
 import CreditCard from "./component/CreditCard";
+import LikeButton from "./component/LikeButton";
 
 
 function App() {
@@ -78,6 +79,13 @@ function App() {
           bgColor="#ddbb55"
           color="white" />
       </div>
+
+      <h1>Like Button</h1>
+      <div>
+        <LikeButton />
+        <LikeButton />
+      </div>
+
 
   </div>
   );

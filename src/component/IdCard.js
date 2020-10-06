@@ -6,11 +6,11 @@ const IdCard = (props) => {
         <div className="container-id-card">
             <div><img src={props.picture} alt=""/></div>
             <ul>     
-                <li>First name: {props.firstName}</li>
+                <li><b>First name:</b> {props.firstName}</li>
                 <li>Last name: {props.lastName}</li>
                 <li>Gender: {props.gender}</li>
                 <li>Height: {props.height}</li>
-                <li>Birth: {props.birth.toString()}</li>
+                <li>Birth: {props.birth.toString().substring(0,15)}</li>
             </ul>  
         </div>
     )
