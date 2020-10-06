@@ -178,3 +178,28 @@
   margin: 5px;
 }
 
+/*  LIKES  */
+
+.like-btn button {
+  padding: 30px;
+  font-size: 25px;
+  margin: 10px 10px 10px 20px;
+}
+
+.like-btns {
+  display: flex;
+  flex-direction: row;
+
+}
+
+/*  DICE  */
+
+.dice-img img {
+  width: 300px;
+  height: 300px;
+}
+
+.dice-img {
+  text-align: left;
+  margin-left: 20px;
+}
