@@ -9,7 +9,6 @@ const Greetings = (props) => {
     if (props.lang ==="fr") {
         return <div>Bonjour {props.children}</div>
     }
-    return <div>toto</div>
 }
 
 export default Greetings;
