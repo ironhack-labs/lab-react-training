@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 
-class ClickablePicture extends React.Component {
+class ClickablePicture extends Component {
   state = {
-    img: false,
+    img: true,
   };
 
   changeImage = () => {
     this.setState((prevState) => ({
       img: !prevState.img,
     }));
-    console.log(this.state);
   };
 
   render() {
