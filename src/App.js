@@ -5,6 +5,7 @@ import Greeting from './components/Greeting';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import LikeButton from './components/LikeButton';
 
 function IdCard(props) {
   return (
@@ -94,6 +95,7 @@ function App(props) {
         bgColor="#ddbb55"
         color="white"
       />
+      <LikeButton></LikeButton>
     </div>
   );
 }
