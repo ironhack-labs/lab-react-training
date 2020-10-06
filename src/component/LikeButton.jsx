@@ -11,10 +11,8 @@ class LikeButton extends Component {
         colorValue : `${arrayColor[Math.floor(Math.random()*(arrayColor.length-1))]}`,
     };
 
-
     increment = () => {
-        console.log("je suis cliqué");
-
+        // console.log("je suis cliqué");
         this.setState({
           counterValue: this.state.counterValue + 1,
           colorValue: `${arrayColor[Math.floor(Math.random()*(arrayColor.length-1))]}`
