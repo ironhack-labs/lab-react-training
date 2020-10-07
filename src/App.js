@@ -6,7 +6,10 @@ import Greetings from './components/Greetings.jsx';
 import Random from './components/Random.jsx';
 import BoxColor from './components/BoxColor.jsx';
 import CreditCard from './components/CreditCard';
-
+import LikeButton from './components/LikeButton.jsx';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Facebook from './components/Facebook';
 function App() {
   return (
     <div>
@@ -64,6 +67,15 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+
+      <LikeButton /> <LikeButton />
+      <ClickablePicture
+      img='/img/persons/maxence.png'
+      imgClicked='/img/persons/maxence-glasses.png'/>
+
+      <Dice />
+
+      <Facebook />
     </div>
   );
 }

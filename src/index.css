@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+ 
+
+.main-wrap-facebook{
+  margin-top: 7vh;
+  width: 800px;
+}
+
+.Profile {
+  display: flex; 
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.Profile img {
+  height: 100px;
+}
