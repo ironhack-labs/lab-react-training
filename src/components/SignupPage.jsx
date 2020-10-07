@@ -15,16 +15,12 @@ export default class SignupPage extends Component {
     });
   };
 
-  greetUser = () => {
-    let lang = ['Bonjour', 'Hello', 'Hallo'];
-    if (this.state.nationality === 'fr') {
-      return lang[0];
-    } else if (this.state.nationality === 'en') {
-      return lang[1];
-    } else {
-      return lang[2];
-    }
-  };
+  greetUser = {
+      en: 'Hello',
+      fr: 'Bonjour',
+      de: "Hallo"
+  }
+
 
   handleSubmit = (event) => {
     event.preventDefault();
@@ -61,7 +57,7 @@ export default class SignupPage extends Component {
           </select>
           <button>submit</button>
           <p>
-            {this.greetUser()}, your email is {this.state.email}
+            {this.greetUser[this.state.nationality]}, your email is {this.state.email}
           </p>
         </form>
       </div>

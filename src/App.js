@@ -13,6 +13,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import Facebook from './components/Facebook';
 import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 import './App.css';
 
@@ -118,6 +119,7 @@ function App() {
       <br />
       <Facebook />
       <SignupPage />
+      <RGBColorPicker />
     </div>
   );
 }
