@@ -4,7 +4,6 @@ import React from 'react';
 function CreditCard(props) {
   function hideCardNumber(cardNumber) {
     const securityArray = [...Array(4)].map((el) => String.fromCharCode(9899));
-    console.log(securityArray);
     return (
       <p>
         <small>
