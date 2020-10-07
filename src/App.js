@@ -12,6 +12,7 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
 
 import './App.css';
 
@@ -116,6 +117,7 @@ function App() {
       <hr />
       <br />
       <Facebook />
+      <SignupPage />
     </div>
   );
 }
