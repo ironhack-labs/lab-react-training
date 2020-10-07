@@ -60,7 +60,6 @@
   color: white;
   border-radius: 20px;
   padding: 20px;
-
 }
 
 .driver-card img {
@@ -85,4 +84,15 @@
 .dice img {
   margin-top: 20px;
   max-width: 100px;
+}
+
+.profile {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.profile img {
+  height: 100px;
 }
