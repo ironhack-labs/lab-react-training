@@ -8,6 +8,7 @@ import BoxColor from "./component/BoxColor";
 import CreditCard from "./component/CreditCard";
 import LikeButton from "./component/LikeButton";
 import ClickablePicture from "./component/ClickablePicture";
+import FaceBook from "./component/FaceBook";
 
 
 function App() {
@@ -95,6 +96,10 @@ function App() {
         />
       </div>
 
+      <h1>Facebook</h1>
+      <div>
+        <FaceBook />
+      </div>
 
   </div>
   );
