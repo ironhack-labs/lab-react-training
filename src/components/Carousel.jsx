@@ -6,27 +6,15 @@ export default class Carousel extends Component {
   };
 
   previousImage = () => {
-    if (this.state.imgIndex > 1) {
-      this.setState({
-        imgIndex: this.state.imgIndex - 1,
-      });
-    } else {
-      this.setState({
-        imgIndex: 3,
-      });
-    }
+    this.state.imgIndex > 1
+      ? this.setState({ imgIndex: this.state.imgIndex - 1 })
+      : this.setState({ imgIndex: 3 });
   };
 
   nextImage = () => {
-    if (this.state.imgIndex < 3) {
-      this.setState({
-        imgIndex: this.state.imgIndex + 1,
-      });
-    } else {
-      this.setState({
-        imgIndex: 0,
-      });
-    }
+    this.state.imgIndex < 3
+      ? this.setState({ imgIndex: this.state.imgIndex + 1 })
+      : this.setState({ imgIndex: 0 });
   };
 
   render() {
