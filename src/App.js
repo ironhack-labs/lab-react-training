@@ -8,6 +8,7 @@ import CreditCard from "./creditcard/CreditCard"
 import LikeButton from "./likebutton/LikeButton";
 import ClickablePicture from "./clickablepicture/ClickablePicture"
 import Dice from "./dice/Dice"
+import Carousel from "./carousel/Carousel"
 
 function App() {
   return (
@@ -80,8 +81,16 @@ function App() {
 
       <Dice />
 
-    </div>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
 
+    </div>
 
   );
 }
