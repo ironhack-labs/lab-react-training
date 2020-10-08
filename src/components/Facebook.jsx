@@ -24,7 +24,7 @@ class Facebook extends Component {
             <button
               style={{
                 backgroundColor:
-                  this.state.countrySelected === country ? 'lightblue' : 'none',
+                  this.state.countrySelected === country ? 'lightblue' : 'white',
               }}
               key={country}
               onClick={(event) => this.handleClick(event, country)}
@@ -40,7 +40,7 @@ class Facebook extends Component {
               backgroundColor:
                 this.state.countrySelected === student.country
                   ? 'lightblue'
-                  : 'none',
+                  : 'white',
             }}
             className="profile"
             key={i}
