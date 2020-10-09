@@ -1,5 +1,4 @@
 import React from 'react';
-import customData from '../data/berlin.json';
 
 function IdCard(props) {
   return (
