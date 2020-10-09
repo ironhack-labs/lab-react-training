@@ -1,0 +1,20 @@
+.id-card {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem;
+  width: 50%;
+}
+
+.id-card img {
+  /* height:  */
+  width: auto;
+}
+
+.id-card ul {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0 0 0 0.5rem;
+}
