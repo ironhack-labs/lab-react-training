@@ -17,7 +17,6 @@
   {"firstName": "Malte", "lastName": "Felmy", "country": "Germany", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550164955/Ironclass/IH_Jan1932.jpg.jpg", "isStudent": true},
   {"firstName": "Marvin", "lastName": "Artioli", "country": "Italy", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550167631/Ironclass/IH_Jan1953.jpg.jpg", "isStudent": true},
   {"firstName": "Matt", "lastName": "Harrison", "country": "USA", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550166114/Ironclass/IH_Jan1949.jpg.jpg", "isStudent": true},
-  {"firstName": "Maxence", "lastName": "Bouret", "country": "France", "img": "https://i.imgur.com/8P2xl9sb.jpg", "isStudent": false},
   {"firstName": "Min", "lastName": "Sheng", "country": "Malaysia", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550167221/Ironclass/IH_Jan1951.jpg.jpg", "isStudent": true},
   {"firstName": "Moritz", "lastName": "Opitz", "country": "Germany", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550167694/Ironclass/IH_Jan1941.jpg.jpg", "isStudent": true},
   {"firstName": "Na'aman", "lastName": "Hirschfeld", "country": "Israel", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550166075/Ironclass/IH_Jan1936.jpg.jpg", "isStudent": true},
