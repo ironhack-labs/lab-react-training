@@ -1,0 +1,17 @@
+.CreditCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.oneCard {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    
+}
+
+.cardImg {
+    margin-left: 230px;
+    padding-top: 10px;
+}
