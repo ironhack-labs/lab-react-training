@@ -1,5 +1,28 @@
+.idcard{
+  border: 1px solid black;
+  width:50%;
+  display:flex;
+  flex-direction:row;
+  margin:5px;
+}
+
+.greeting{
+  border: 1px solid black;
+  margin:3px;
+}
+
+.random{
+  border: 1px solid black;
+  margin:3px;
+}
+
+.BoxColor{
+  border: 1px solid;
+  margin:5px;
+}
+
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -36,3 +59,4 @@
     transform: rotate(360deg);
   }
 }
+
