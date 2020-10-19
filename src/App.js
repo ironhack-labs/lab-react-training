@@ -7,9 +7,12 @@ import BoxColor from './components/boxcolor/BoxColor';
 import CreditCard from './components/creditCard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/drivercard/DriverCard'
-import styled from "styled-components";
+
+
+
 
 export default class App extends Component {
+
   render() {
       const style = {
       WebkitTransition: 'all', // note the capital 'W' here

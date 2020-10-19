@@ -1,5 +1,6 @@
 import React from 'react';
 import './CreditCard.css'
+//import classes from './CreditCard.module.css'
 
 export default function CreditCard(props) {
   const cardIcon = props.type === 'Visa' ? 'visa.png' : 'master-card.svg';
@@ -15,7 +16,7 @@ export default function CreditCard(props) {
 
   console.log(privateCardNumber)
   return (
-    <div >
+    <div>
       <div className="oneCard"
         style={{
           backgroundColor: `${props.bgColor}`,

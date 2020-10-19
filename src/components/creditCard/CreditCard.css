@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    color: red;
 }
 
 .oneCard {
@@ -15,3 +16,4 @@
     margin-left: 230px;
     padding-top: 10px;
 }
+

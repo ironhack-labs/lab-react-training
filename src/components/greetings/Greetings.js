@@ -1,19 +1,6 @@
 import React from 'react';
 
 export default function Greetings(props) {
-/*   if (props.lang === 'de') {
-    return (
-        <div>
-             Hallo {props.children}
-        </div>
-       
-    )
-  } else if (props.lang === 'fr') {
-    return `Bonjour ${props.children}`;
-  } */
-
-  //const welcomeMessage = props.lang === 'de' ? 'Hallo' : 'Bonjour'
-
    let welcomeMessage;
   if (props.lang === 'de') {
       welcomeMessage = "Hallo"
@@ -26,10 +13,10 @@ export default function Greetings(props) {
   }
 
     return (
-        <div>
-           <div>
-               <p>{welcomeMessage} {props.children}</p>
+        
+           <div className="greet">
+               <p className="red">{welcomeMessage} {props.children}</p>
            </div>
-        </div>
+        
     ) 
 }

@@ -11,6 +11,7 @@ export default function Rating(props) {
             <FullStar /> 
             <EmptyStar />
             <img scr="img/dice1.png" alt="empty" />
+           
         </div>
     )
 }
