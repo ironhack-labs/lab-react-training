@@ -7,7 +7,7 @@ export default function Random(props) {
       }
 
     return (
-        <div>
+        <div className='border'>
             <p>Random value between {props.min} and {props.max} => {randomInteger(props)}</p>
         </div>
     )

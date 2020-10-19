@@ -1,0 +1,11 @@
+.id-card{
+    border: 1px solid black;
+    line-height: 3px;
+    margin: 0 0 10px 0;
+    height: 140px;
+}
+
+.id-card img {
+    float:left;
+    padding: 5px 5px;
+}

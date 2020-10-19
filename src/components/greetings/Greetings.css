@@ -1,0 +1,9 @@
+.border{
+    border: 1px solid black;
+    line-height: 3px;
+    margin: 0 0 10px 0;
+}
+
+.border p{
+    padding-left: 5px;
+}

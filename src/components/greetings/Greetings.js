@@ -1,4 +1,5 @@
 import React from 'react'
+import './Greetings.css'
 
 export default function Greetings(props) {
     console.log(props)
@@ -18,7 +19,7 @@ export default function Greetings(props) {
 
     return (
 
-        <div>
+        <div className='border'>
             <p> {greetingByLanguage(props)} {props.children}</p>
         </div>
     )
