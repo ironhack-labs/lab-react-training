@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function Random(props) {
-    console.log(props)
 
     function randomInteger(props) {
         return Math.floor(Math.random() * (props.max - props.min)) + props.min;
