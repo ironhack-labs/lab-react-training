@@ -1,13 +1,20 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
 export default function BoxColor(props) {
-    return (
-        <div>
-            <div style={{backgroundColor: `rgba(${props.r}, ${ props.g}, ${props.b})`}}>
-                <p>rgb({props.r}, {props.g}, {props.b} )</p>
-            </div>
-        </div>
-    )
+  const backgrStyle = {
+    backgroundColor: `rgba(${props.r}, ${props.g}, ${props.b})`,
+  };
+
+  return (
+    <div style={backgrStyle}>
+      <div style={props.style}>
+        <p>
+          rgb({props.r}, {props.g}, {props.b} )
+        </p>
+      </div>
+    </div>
+  );
 }
 
-/* style = {props.style} */
+

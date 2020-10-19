@@ -7,16 +7,19 @@ import BoxColor from './components/boxcolor/BoxColor';
 import CreditCard from './components/creditCard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/drivercard/DriverCard'
+import styled from "styled-components";
 
 export default class App extends Component {
   render() {
-    /*  const style = {
+      const style = {
       WebkitTransition: 'all', // note the capital 'W' here
       msTransition: 'all',
       marginTop: 50,
-
+      padding: 16,
+      height: 60,
       border: '2px solid black',
-    }; */
+      textAlign: "center" 
+    }; 
     return (
       <div className="App">
         <div>
@@ -53,13 +56,12 @@ export default class App extends Component {
         <div>
           <h3>BoxColor</h3>
           <BoxColor
-            // style={style}
-
+            style={style}
             r={255}
             g={0}
             b={0}
           />
-          <BoxColor style={{ height: 60 }} r={128} g={255} b={0} />
+          <BoxColor style={ style } r={128} g={255} b={0} />
         </div>
         <div>
           <h3>Credit Card</h3>
