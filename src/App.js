@@ -6,26 +6,24 @@ import Random from './components/random/Random';
 import BoxColor from './components/boxcolor/BoxColor';
 import CreditCard from './components/creditCard/CreditCard';
 import Rating from './components/rating/Rating';
-import DriverCard from './components/drivercard/DriverCard'
-import LikeButton from './components/likebutton/LikeButton'
-import ClickablePicture from './components/clickablepicture/ClickablePicture'
-import Dice from './components/dice/Dice'
-import Carousel from './components/carusel/Carousel'
-
-
+import DriverCard from './components/drivercard/DriverCard';
+import LikeButton from './components/likebutton/LikeButton';
+import ClickablePicture from './components/clickablepicture/ClickablePicture';
+import Dice from './components/dice/Dice';
+import Carousel from './components/carusel/Carousel';
+import NumbersTable from './components/numberstable/NumbersTable';
 
 export default class App extends Component {
-
   render() {
-      const style = {
+    const style = {
       WebkitTransition: 'all', // note the capital 'W' here
       msTransition: 'all',
       marginTop: 50,
       padding: 16,
       height: 60,
       border: '2px solid black',
-      textAlign: "center" 
-    }; 
+      textAlign: 'center',
+    };
     return (
       <div className="App">
         <div>
@@ -61,13 +59,8 @@ export default class App extends Component {
         </div>
         <div>
           <h3>BoxColor</h3>
-          <BoxColor
-            style={style}
-            r={255}
-            g={0}
-            b={0}
-          />
-          <BoxColor style={ style } r={128} g={255} b={0} />
+          <BoxColor style={style} r={255} g={0} b={0} />
+          <BoxColor style={style} r={128} g={255} b={0} />
         </div>
         <div>
           <h3>Credit Card</h3>
@@ -116,7 +109,7 @@ export default class App extends Component {
           </div>
         </div>
         <div>
-        <h3>DriverCard</h3>
+          <h3>DriverCard</h3>
           <DriverCard
             name="Travis Kalanick"
             rating={4.2}
@@ -137,13 +130,13 @@ export default class App extends Component {
           />
         </div>
         <div>
-        <h3>Like buttons</h3>
-            <LikeButton />
-            <LikeButton />
+          <h3>Like buttons</h3>
+          <LikeButton />
+          <LikeButton />
         </div>
         <div>
-        <h3>ClickablePicture</h3>
-            <ClickablePicture />
+          <h3>ClickablePicture</h3>
+          <ClickablePicture />
         </div>
         <div>
           <h3>Dice</h3>
@@ -151,7 +144,18 @@ export default class App extends Component {
         </div>
         <div>
           <h3>Carousel</h3>
-          <Carousel />
+          <Carousel
+            imgs={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg',
+            ]}
+          />
+        </div>
+        <div>
+          <h3>NumbersTable</h3>
+              <NumbersTable limit={12} />
         </div>
       </div>
     );
