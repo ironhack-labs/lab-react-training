@@ -11,10 +11,7 @@ export default function CreditCard(props) {
   const year = props.expirationYear - 2000;
   let privateCardNumber = props.number.replace(/\d(?=\d{4})/g, "*");
    
-  
 
-
-  console.log(privateCardNumber)
   return (
     <div>
       <div className="oneCard"

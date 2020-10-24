@@ -13,6 +13,8 @@ import Dice from './components/dice/Dice';
 import Carousel from './components/carusel/Carousel';
 import NumbersTable from './components/numberstable/NumbersTable';
 
+import FaceBook from './components/facebook/FaceBook'
+
 export default class App extends Component {
   render() {
     const style = {
@@ -155,7 +157,11 @@ export default class App extends Component {
         </div>
         <div>
           <h3>NumbersTable</h3>
-              <NumbersTable limit={12} />
+              <NumbersTable limit={12}  />
+        </div>
+        <div>
+        <h3>FaceBook (Simple)</h3>
+          <FaceBook  />
         </div>
       </div>
     );
