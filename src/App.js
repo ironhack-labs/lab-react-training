@@ -7,6 +7,7 @@ import BoxColor from './components/boxcolor/BoxColor';
 import CreditCard from './components/creditCard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/drivercard/DriverCard'
+import LikeButton from './components/likebutton/LikeButton'
 
 
 
@@ -131,6 +132,10 @@ export default class App extends Component {
               licensePlate: 'BE33ER',
             }}
           />
+        </div>
+        <div>
+            <LikeButton />
+            <LikeButton />
         </div>
       </div>
     );
