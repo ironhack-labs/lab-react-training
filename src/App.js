@@ -12,6 +12,7 @@ import ClickablePicture from './components/clickablepicture/ClickablePicture';
 import Dice from './components/dice/Dice';
 import Carousel from './components/carusel/Carousel';
 import NumbersTable from './components/numberstable/NumbersTable';
+import SignupPage from './components/signupform/SignupPage'
 
 import FaceBook from './components/facebook/FaceBook'
 
@@ -160,8 +161,12 @@ export default class App extends Component {
               <NumbersTable limit={12}  />
         </div>
         <div>
-        <h3>FaceBook (Simple)</h3>
+        <h3>FaceBook</h3>
           <FaceBook  />
+        </div>
+        <div>
+        <h3>SignupPage</h3>
+              <SignupPage />  
         </div>
       </div>
     );

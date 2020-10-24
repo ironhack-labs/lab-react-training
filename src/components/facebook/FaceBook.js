@@ -8,14 +8,7 @@ export default class FaceBook extends Component {
 
 
   render() {
-/*     let type
-    if (this.state.data.isStudent) {
-        type = <p><b>Type: </b>Student</p>
-    } else {
-        type = <p><b>Type: </b>Teacher</p>
-    } */
 
-   
     return (
       <div className="flex-face">
         {this.state.data.map((item) => {
@@ -39,7 +32,3 @@ export default class FaceBook extends Component {
   }
 }
 
-/* return {item.isStudent} ?
-                
-<p>Type: Student</p>:
-<p>Type: Teacher</p> */
