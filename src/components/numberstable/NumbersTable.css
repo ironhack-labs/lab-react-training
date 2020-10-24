@@ -1,0 +1,12 @@
+.square {
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.square  p {
+    text-align: center;
+    width: 100%;
+}

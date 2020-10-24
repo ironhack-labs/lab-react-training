@@ -1,4 +1,5 @@
 import React from 'react'
+import './BoxColor.css'
 
 export default function BoxColor(props) {
     console.log(props)
@@ -11,7 +12,7 @@ export default function BoxColor(props) {
     }
     return (
         <div style={divStyle}>
-            <p>rgb({props.r},{props.g},{props.b})</p>
+            <p className="box-info">rgb({props.r},{props.g},{props.b})</p>
         </div>
     )
 }
