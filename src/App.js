@@ -10,6 +10,7 @@ import DriverCard from './components/drivercard/DriverCard'
 import LikeButton from './components/likebutton/LikeButton'
 import ClickablePicture from './components/clickablepicture/ClickablePicture'
 import Dice from './components/dice/Dice'
+import Carousel from './components/carusel/Carousel'
 
 
 
@@ -147,6 +148,10 @@ export default class App extends Component {
         <div>
           <h3>Dice</h3>
           <Dice />
+        </div>
+        <div>
+          <h3>Carousel</h3>
+          <Carousel />
         </div>
       </div>
     );
