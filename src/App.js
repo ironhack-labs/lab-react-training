@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
 import BoxColor from './components/boxcolor/BoxColor';
+import ClickablePicture from './components/clickablepicture/ClickablePicture';
 import CreditCard from './components/creditcard/CreditCard';
 import DriverCard from './components/drivercard/DriverCard';
 import Greetings from './components/greetings/Greetings';
 import IdCard from './components/idcard/IdCard';
+import LikeButton from './components/likebutton/LikeButton';
 import Random from './components/random/Random';
 import Rating from './components/Rating/Rating';
 
@@ -103,6 +105,15 @@ function App() {
           licensePlate: "BE33ER"
         }} />
       
+      <h2>LikeButton</h2>
+      <LikeButton />
+      <LikeButton />
+
+      <h2>ClickablePicture</h2>
+      <ClickablePicture 
+         img='/img/persons/maxence.png'
+         imgClicked='/img/persons/maxence-glasses.png'
+      />
     </div>
   );
 }
