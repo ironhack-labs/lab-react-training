@@ -9,7 +9,7 @@ import Rating from './components/rating/Rating';
 import DriverCard from './components/drivercard/DriverCard'
 import LikeButton from './components/likebutton/LikeButton'
 import ClickablePicture from './components/clickablepicture/ClickablePicture'
-
+import Dice from './components/dice/Dice'
 
 
 
@@ -115,6 +115,7 @@ export default class App extends Component {
           </div>
         </div>
         <div>
+        <h3>DriverCard</h3>
           <DriverCard
             name="Travis Kalanick"
             rating={4.2}
@@ -135,11 +136,17 @@ export default class App extends Component {
           />
         </div>
         <div>
+        <h3>Like buttons</h3>
             <LikeButton />
             <LikeButton />
         </div>
         <div>
+        <h3>ClickablePicture</h3>
             <ClickablePicture />
+        </div>
+        <div>
+          <h3>Dice</h3>
+          <Dice />
         </div>
       </div>
     );

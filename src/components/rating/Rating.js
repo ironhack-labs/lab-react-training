@@ -4,8 +4,6 @@ import EmptyStar from './EmptyStar.js'
 
 export default function Rating(props) {
     
-
-
     return (
         <div>
             <FullStar /> 
