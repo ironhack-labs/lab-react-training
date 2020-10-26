@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './ClickablePicture.css'
 
 
 export default class ClickablePicture extends Component {
@@ -23,9 +24,9 @@ export default class ClickablePicture extends Component {
     
         return (
             <div>
-                <img 
+                <img className="clickable-photo"
                     src={this.state.image[this.state.clicked ? 1 : 0]} 
-                    alt='Picture of Max' 
+                    alt='Max' 
                     onClick={this.changeImg}></img>
             </div>
         )

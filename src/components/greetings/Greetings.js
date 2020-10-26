@@ -2,7 +2,7 @@ import React from 'react'
 import './Greetings.css'
 
 export default function Greetings(props) {
-    console.log(props)
+
 
     function greetingByLanguage(props){
         if(props.lang === 'de') {

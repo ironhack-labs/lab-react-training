@@ -2,7 +2,7 @@ import React from 'react'
 import './BoxColor.css'
 
 export default function BoxColor(props) {
-    console.log(props)
+
 
     function rgbToHex(props) {
         return "#" + ((1 << 24) + (props.r << 16) + ([props.g] << 8) + props.b).toString(16).slice(1);

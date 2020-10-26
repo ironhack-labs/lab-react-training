@@ -1,23 +1,24 @@
 .creditcard {
 
     border-radius: 15px;
-    width: 320px;
-    height: 180px;
+    min-width: 20vw;
+    height: 13vw;
     padding: 20px 20px;
     margin-right: 20px;
 }
 
 .creditcard img {
-    height: 20px;
+    height: 1.5vw;
     float: right;
 }
 
 
 h3 {
     text-align: center;
-    font-size: 35px;
+    font-size: 2.2vw;
     font-weight: 400;
-    margin-top: 50px;
+    margin-top: 4vw;
+    margin-bottom: 2vw;
 }
 
 .creditcard p:nth-child(3),
@@ -28,4 +29,5 @@ h3 {
 
 .creditcard p {
     line-height: 0.8px;
+    font-size: 1vw;
 }
