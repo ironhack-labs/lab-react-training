@@ -168,6 +168,9 @@ export default class App extends Component {
         <h3>SignupPage</h3>
               <SignupPage />  
         </div>
+        <div>
+          <h3>RGBColorPicker</h3>
+        </div>
       </div>
     );
   }
