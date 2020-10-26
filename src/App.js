@@ -13,6 +13,7 @@ import LikeButton from './components/likebutton/LikeButton';
 import NumbersTable from './components/numberstable/NumbersTable';
 import Random from './components/random/Random';
 import Rating from './components/Rating/Rating';
+import SignupPage from './components/signuppage/SignupPage';
 
 
 function App() {
@@ -136,6 +137,9 @@ function App() {
 
       <h2>Facebook</h2>
       <Facebook />
+
+      <h2>SigupPage</h2>
+      <SignupPage />
 
     </div>
   );

@@ -2,11 +2,13 @@
     border: 1px solid black;
     line-height: 3px;
     margin: 0 0 10px 0;
+    padding-top: 20px;
     height: 140px;
 }
 
 .id-card img {
     float:left;
-    padding: 5px 5px;
+    padding: 0 5px;
     width: 120px;
 }
+
