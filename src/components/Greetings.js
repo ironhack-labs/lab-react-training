@@ -1,31 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react';
 
 const Greetings = (props) => {
-   return (
+  return (
     <div>
-        {props.lang == 'de' &&
-            <div>
-                Hallo {props.children}
-                </div>
-        }
-        {props.lang == 'fr' &&
-            <div>
-                Bonjour {props.children}
-                </div>
-        }
-        {props.lang == 'bg' &&
-            <div>
-                 Drasti {props.children}
-                </div>
-        }
-        {props.lang == 'en' &&
-            <div>
-                Hello {props.children}
-                </div>
-        }
+      {props.lang === 'de' && <div>Hallo {props.children}</div>}
+      {props.lang === 'fr' && <div>Bonjour {props.children}</div>}
+      {props.lang === 'bg' && <div>Drasti {props.children}</div>}
+      {props.lang === 'en' && <div>Hello {props.children}</div>}
     </div>
-   )
-}
+  );
+};
 
-
-export default Greetings
+export default Greetings;

@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react';
 
 const IdCard = (props) => {
-    return (
-        <div className="card">
-          <li>Last Name {props.lastName}</li>  
-        <li>First Name {props.firstName}</li>    
-    <li>Height {props.height}</li>  
-     {/* <li>Birth {props.birth}</li>   */}
-    <img src={props.picture}/>   
-        </div>
-    )
-}
+  return (
+    <div className="card">
+      <li>Last Name {props.lastName}</li>
+      <li>First Name {props.firstName}</li>
+      <li>Height {props.height}</li>
+      <img src={props.picture} alt="card-logo" />
+    </div>
+  );
+};
 
-export default IdCard
+export default IdCard;

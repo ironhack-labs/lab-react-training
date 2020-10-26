@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+#swipe-it {
+  height: 20px;
+  width: 30px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
