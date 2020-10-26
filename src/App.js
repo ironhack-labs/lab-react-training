@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import BoxColor from './components/boxcolor/BoxColor';
+import Carousel from './components/carousel/Carousel';
 import ClickablePicture from './components/clickablepicture/ClickablePicture';
 import CreditCard from './components/creditcard/CreditCard';
 import Dice from './components/dice/Dice';
@@ -8,6 +9,7 @@ import DriverCard from './components/drivercard/DriverCard';
 import Greetings from './components/greetings/Greetings';
 import IdCard from './components/idcard/IdCard';
 import LikeButton from './components/likebutton/LikeButton';
+import NumbersTable from './components/numberstable/NumbersTable';
 import Random from './components/random/Random';
 import Rating from './components/Rating/Rating';
 
@@ -118,6 +120,18 @@ function App() {
 
       <h2>Dice</h2>
       <Dice />
+
+      <h2>Carousel</h2>
+      <Carousel imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <h2>NumbersTable</h2>
+      <NumbersTable limit={12} />
     </div>
   );
 }
