@@ -22,10 +22,11 @@ export default class NumbersTable extends Component {
                     <tbody>
                         <tr>
                         {tableArr.map(number =>  
-                             <td 
+                             <td key={number}
                                 className='table-cell' 
                                 style={{ backgroundColor: number % 2 === 0 && 'red' }}  
-                                >{number}</td>
+                                >{number}
+                                </td>
                         )} 
                         </tr>
                     </tbody>

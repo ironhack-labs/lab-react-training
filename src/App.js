@@ -6,6 +6,7 @@ import ClickablePicture from './components/clickablepicture/ClickablePicture';
 import CreditCard from './components/creditcard/CreditCard';
 import Dice from './components/dice/Dice';
 import DriverCard from './components/drivercard/DriverCard';
+import Facebook from './components/facebook/Facebook';
 import Greetings from './components/greetings/Greetings';
 import IdCard from './components/idcard/IdCard';
 import LikeButton from './components/likebutton/LikeButton';
@@ -132,6 +133,10 @@ function App() {
 
       <h2>NumbersTable</h2>
       <NumbersTable limit={12} />
+
+      <h2>Facebook</h2>
+      <Facebook />
+
     </div>
   );
 }
