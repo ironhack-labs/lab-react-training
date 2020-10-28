@@ -2,7 +2,7 @@ import React from 'react';
 import './IdCard.css'
 
 const handleBirth = (date) => {
-    const returnString = date.toUTCString().split(' ').splice(0, 4);
+    const returnString = date.toUTCString().split(' ', 4);
     returnString[0] = returnString[0].split('').splice(0, 3).join('');
     return returnString.join(' ');
 }
