@@ -1,0 +1,38 @@
+.ccard-container {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.card-header img {
+    margin-top: 20px;
+    max-width: 100px;
+    margin-left: 75%;
+}
+
+.card-body {
+    font-size: 55px;
+    margin-top: 30px;
+    margin-left: 8%;
+    letter-spacing: 1px;
+}
+
+.card-footer {
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.upper-footer {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.upper-footer span {
+    margin-left: 78px;
+}
+
