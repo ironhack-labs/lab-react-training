@@ -1,0 +1,12 @@
+.container {
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 700px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    margin: 15px;
+}
