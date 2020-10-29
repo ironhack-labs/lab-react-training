@@ -1,0 +1,22 @@
+.id-card-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid #000;
+  margin: 20px 0;
+}
+
+.id-card-container > div {
+  margin-left: 15px;
+}
+
+.id-card-container > div > p {
+  margin: 0px;
+}
+
+.id-card-container > div > p + p {
+  margin-top: 5px;
+}
