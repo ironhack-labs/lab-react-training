@@ -11,13 +11,15 @@ const BoxColor = ({ r, g, b }) => {
     return `#${rHex}${gHex}${bHex}`
   };
 
-  const textColor = (r, g, b) => {
-    if ((r * 0.299 + g * 0.587 + b * 0.114) > 186) {
-      return 'black';
-    } else {
-      return 'white';
-    }
-  };
+  // const textColor = (r, g, b) => {
+  //   if ((r * 0.299 + g * 0.587 + b * 0.114) > 186) {
+  //     return 'black';
+  //   } else {
+  //     return 'white';
+  //   }
+  // };
+
+  const textColor = (r, g, b) => ((r * 0.299 + g * 0.587 + b * 0.114) > 186) ? 'black' : 'white';
 
   const boxColor = {
     backgroundColor: hexColor(r, g, b),

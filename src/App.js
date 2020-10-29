@@ -38,6 +38,11 @@ function App() {
 
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+      <BoxColor r={255} g={255} b={0} />
+      <BoxColor r={0} g={255} b={255} />
+      <BoxColor r={255} g={0} b={255} />
+      <BoxColor r={0} g={0} b={0} />
+      <BoxColor r={255} g={255} b={255} />
     </div>
   );
 }
