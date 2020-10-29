@@ -1,7 +1,7 @@
 .card-container {
   display: flex;
   padding: 2px;
-  margin: 2px;
+  margin: 5px;
   border: 2px solid black;
   text-align: left;
 }
