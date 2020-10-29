@@ -9,7 +9,7 @@ const genderEnum = {
 
 const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
 
-  const birthCard = date => date.toString().split(' ', 4).join(' ');
+  const birthCard = date => date.toUTCString().split(' ', 4).join(' ');
 
   const genderCard = gender => genderEnum[gender] ? gender : 'unknown';
 
