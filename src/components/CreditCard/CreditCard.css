@@ -1,0 +1,46 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.creditcard-container {
+  width: 540px;
+  height: 280px;
+  border-radius: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.creditcard-container img {
+  height: 30px;
+  margin: 25px;
+  align-self: flex-end;
+}
+
+.creditcard-container h2,
+h3 {
+  margin-bottom: 10px;
+}
+
+.creditcard-container h2 {
+  font-size: 50px;
+  margin-top: auto;
+  text-align: center;
+}
+
+.creditcard-container h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+  margin-left: 25px;
+  text-align: start;
+  font-weight: normal;
+}
+
+.creditcard-container span {
+  margin-left: 50px;
+}
+
+.creditcard-name {
+  padding-bottom: 10px;
+}
