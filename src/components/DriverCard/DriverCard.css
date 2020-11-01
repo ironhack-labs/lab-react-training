@@ -1,0 +1,26 @@
+.drivercard-container {
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: left;
+  background-color: #385db7;
+  color: white;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.drivercard-container p,
+h1,
+h3 {
+  margin-left: 10px;
+}
+
+.drivercard-container h1 {
+  font-size: 50px;
+}
+
+.drivercard-container h3 {
+  font-size: 30px;
+  font-weight: normal;
+}
