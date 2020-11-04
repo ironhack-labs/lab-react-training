@@ -1,0 +1,9 @@
+.random-container {
+    border: 2px solid black;
+    text-align: start;
+    padding: 10px;
+}
+
+.random-container > p {
+    font-size: 25px;
+}

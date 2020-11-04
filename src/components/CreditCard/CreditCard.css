@@ -1,0 +1,11 @@
+.credit-card-container {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.flex-credit-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 300px;
+}

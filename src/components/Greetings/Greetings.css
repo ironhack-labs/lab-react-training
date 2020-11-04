@@ -1,0 +1,9 @@
+.greeting-container {
+    border: 2px solid black;
+    text-align: start;
+    padding: 10px;
+}
+
+.greeting-container > p {
+    font-size: 30px;
+}
