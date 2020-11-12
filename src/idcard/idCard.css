@@ -1,0 +1,17 @@
+
+.profile {
+    display: flex;
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid black;
+    text-align: left;
+}
+
+.profile-data {
+    margin-left: 10px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+}
