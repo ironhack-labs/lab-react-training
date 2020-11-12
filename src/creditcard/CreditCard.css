@@ -1,0 +1,37 @@
+.creditcard {
+  width: 25rem;
+  border-radius: 20px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.expires {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+
+.expires h4 {
+  margin: 0 0 0 1rem;
+  margin-right: 15px;
+}
+
+.number {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-right: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.owner h4 {
+  margin: 0 0 1.5rem 1rem;
+}

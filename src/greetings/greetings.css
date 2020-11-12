@@ -1,0 +1,9 @@
+.greetings {
+  border: 3px solid black;
+  margin: 0.5rem;
+}
+
+.greetings h1 {
+  font-weight: 400;
+  margin: 0.5rem;
+}
