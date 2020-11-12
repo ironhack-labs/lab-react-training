@@ -10,7 +10,7 @@ function DriverCard(props) {
       <img className="img" src={props.img} alt="Avatar" />
 
       <p>
-        {props.car.model} - {props.car.licensePlate}{' '}
+        {props.car.model} - {props.car.licensePlate}
       </p>
     </div>
   );
