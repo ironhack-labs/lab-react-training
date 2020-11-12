@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.profile{
+  display: flex;
+  flex-direction: row;
+  border: #282c34 solid 2px;
+  margin: 25px;
+  padding: 10px;
+}
+
+.title{
+  display: flex;
+  align-items: flex-start;
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: larger;
+}
+
+.infos{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
