@@ -1,3 +1,26 @@
+.info span {
+  font-weight: bold;
+}
+
 .info {
-  /* font-weight: bold; */
+  width: 700px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  margin: 32px;
+  align-items: flex-start;
+}
+
+.info p {
+  align-content: flex-start;
+  display: block;
+  height: 5px;
+  padding-right: 1rem;
+  margin-top: 5px;
+}
+
+.info img {
+  width: auto;
+  height: 140px;
+  padding: 0.5rem;
 }

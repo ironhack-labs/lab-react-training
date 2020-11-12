@@ -2,7 +2,7 @@ import React from 'react';
 import './DriverCard.css';
 function DriverCard(props) {
   return (
-    <div className="info">
+    <div className="drivercard">
       <p>{props.name} </p>
 
       <p>{props.rating} </p>
