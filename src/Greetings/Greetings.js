@@ -1,10 +1,7 @@
 import React from 'react';
 
 function Greetings(props) {
-  const language = { de: 'Hallo', en: 'Hello', es: 'Holla', fr: 'Bonjour' };
-  function renderClassNames(props) {
-    return language[props];
-  }
+  const language = { de: 'Hallo', en: 'Hello', es: 'Hola', fr: 'Bonjour' };
 
   return (
     <div
@@ -14,7 +11,7 @@ function Greetings(props) {
         padding: '0.4%',
       }}
     >
-      {renderClassNames(props.lang)} {props.children}
+      {language[props.lang]} {props.children}
     </div>
   );
 }

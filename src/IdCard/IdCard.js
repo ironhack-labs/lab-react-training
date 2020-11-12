@@ -3,26 +3,18 @@ import './IdCard.css';
 
 function IdCard(props) {
   return (
-    <div
-      className="borderContainer"
-      style={{
-        border: 'solid 1px',
-        margin: '0.8% auto',
-        padding: '0.3%',
-        display: 'flex',
-      }}
-    >
+    <div className="borderContainer">
       <img src={props.picture} />
       <div style={{ margin: '0 0.5%' }}>
-        <b>First name</b>: {props.firstName}
+        <strong>First name</strong>: {props.firstName}
         <br />
-        <b>Last name</b>: {props.lastName}
+        <strong>Last name</strong>: {props.lastName}
         <br />
-        <b>Gender</b>: {props.gender}
+        <strong>Gender</strong>: {props.gender}
         <br />
-        <b>Height</b>: {props.height / 100}m
+        <strong>Height</strong>: {props.height / 100}m
         <br />
-        <b>Birth</b>: {props.birth}
+        <strong>Birth</strong>: {props.birth.toDateString()}
         <br />
       </div>
     </div>

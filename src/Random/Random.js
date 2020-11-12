@@ -1,10 +1,6 @@
 import React from 'react';
 
 function Random(props) {
-  function randomValue(min, max) {
-    return Math.round(Math.random() * max + min);
-  }
-
   return (
     <div
       style={{
@@ -14,7 +10,7 @@ function Random(props) {
       }}
     >
       Random value between {props.min} and {props.max} =>
-      {randomValue(props.min, props.max)}
+      {Math.ceil(Math.random() * props.max - props.min) + props.min}
     </div>
   );
 }

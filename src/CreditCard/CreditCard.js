@@ -5,17 +5,6 @@ function CreditCard(props) {
     Visa: './img/visa.png',
     'Master Card': './img/master-card.svg',
   };
-  function cardImage(card) {
-    return cards[card];
-  }
-
-  function nardNumber(num) {
-    let finalNumbers = '';
-    let numArr = [...num].map((num, idx, arr) =>
-      idx >= arr.length - 4 ? (finalNumbers += num) : null
-    );
-    return `•••• •••• •••• ${finalNumbers}`;
-  }
 
   return (
     <div
@@ -38,7 +27,7 @@ function CreditCard(props) {
           justifyContent: 'flex-end',
         }}
       >
-        <img src={cardImage(props.type)} style={{ width: '50px' }} />
+        <img src={cards[props.type]} style={{ width: '50px' }} />
       </div>
       <div
         style={{
@@ -47,11 +36,14 @@ function CreditCard(props) {
           margin: '20px 0',
         }}
       >
-        {nardNumber(props.number)}
+        •••• •••• •••• {props.number.substr(-4)}
       </div>
       <div style={{ flexDirection: 'column' }}>
-        Expires {props.expirationMonth}/{props.expirationYear % 2000}{' '}
-        {props.bank}
+        Expires{' '}
+        {props.expirationMonth < 10
+          ? `0${props.expirationMonth}`
+          : props.expirationMonth}
+        /{props.expirationYear % 2000} {props.bank}
         <br />
         {props.owner}
       </div>
