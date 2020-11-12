@@ -1,0 +1,6 @@
+.stars {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 30px;
+  margin: 10px 32px;
+}

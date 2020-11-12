@@ -1,0 +1,20 @@
+.allCards {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10px 30px;
+  padding-left: 15px;
+}
+
+.info {
+  line-height: 10px;
+}
+
+.number {
+  font-size: 30px;
+}

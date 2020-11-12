@@ -1,0 +1,25 @@
+.IdCard {
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  align-items: center;
+  border: 1px solid black;
+  margin: 32px;
+}
+
+.IdCard img {
+  width: auto;
+  height: 140px;
+  padding: 0.5rem;
+}
+
+.IdCard p {
+  display: block;
+  padding-right: 1rem;
+  height: 5px;
+  align-items: flex-start;
+}
+
+.informations {
+  margin-bottom: 50px;
+}
