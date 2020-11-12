@@ -24,6 +24,7 @@ function CreditCard(props) {
         width: '300px',
         height: '140px',
         borderRadius: '12px',
+        margin: '0 0.8% 0 0.8%',
         padding: '1.6%',
         display: 'flex',
         flexDirection: 'column',
