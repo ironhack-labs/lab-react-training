@@ -1,0 +1,19 @@
+.allCards {
+display: flex;
+flex-direction: row;
+}
+
+.card {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.info {
+    line-height: 1px;
+}
+
+.number {
+    font-size: 30px;
+}

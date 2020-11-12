@@ -1,0 +1,11 @@
+.greetings {
+    border: 1.5px solid black;
+    padding-left: 3px;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.greetings p {
+    margin: 5px 5px;
+}

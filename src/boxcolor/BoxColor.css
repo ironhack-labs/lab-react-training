@@ -1,0 +1,10 @@
+.boxcolor  {
+    border: 1.5px solid black;
+    padding-left: 3px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.boxcolor p {
+    margin: 0px;
+}
