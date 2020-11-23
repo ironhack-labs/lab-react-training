@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.id-card, .greeting {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5%;
+  width: 50%;
+  display: flex;
+}
+
+.id-card ul {
+  text-align: left;
+}
