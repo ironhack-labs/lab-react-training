@@ -1,0 +1,12 @@
+
+.BoxColor p{
+    width: 700px;
+    height: 100px;
+    border: solid black;
+    text-align: center;
+    margin-left:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+}
