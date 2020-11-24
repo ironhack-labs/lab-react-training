@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.id-container {
+  line-height: 0.8em;
+  display: flex;
+  border: solid 1px black;
+  padding: 20px;
+  margin: 10px;
+}
