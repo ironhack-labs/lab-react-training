@@ -22,7 +22,7 @@ function App() {
         birth="1983-06-06"
         picture="https://cdn.mos.cms.futurecdn.net/4xnGvCxSExkxBeBgYbRQfj-1024-80.jpg.webp"
       />
-      <Greetings lang="en">Nora</Greetings>
+      <Greetings lang="it">Nora</Greetings>
       <Greetings lang="de">Arielle</Greetings>
     </div>
   );

@@ -1,9 +1,17 @@
 import React from 'react';
 
 const Greetings = (props) => {
+  let greeting;
+  if (props.lang === 'de') {
+    greeting = 'Hallo';
+  } else {
+    greeting = 'Ciao';
+  }
   return (
-    <div className="Id">
-      <h2>{props.lang}</h2>
+    <div className="Greetings">
+      <p>
+        {greeting}, {props.children}
+      </p>
     </div>
   );
 };
