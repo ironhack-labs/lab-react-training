@@ -18,7 +18,7 @@ const IdCard = (props) => {
     return (
         <div style={cardStyle}>
             <div style={{textAlign: 'right'}}>
-                <img style={{height:'150px', padding: '3px'}} src={props.picture}/>
+                <img style={{height:'150px', padding: '3px'}} src={props.picture} alt='Profile'/>
             </div>
             <div style={letterStyle}>
                 <p><strong>First Name:</strong> {props.firstName}</p>

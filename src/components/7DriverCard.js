@@ -34,7 +34,7 @@ const DriverCard = (props) => {
     return (
         <div style={cardStyle}>
             <div style={profileStyle}>
-                <img style={imgStyle} src={props.img} />
+                <img style={imgStyle} src={props.img} alt='profile' />
             </div>
             <div style = {leftStyle}>
                 <p style={{fontSize: '1.5em', fontWeight: 'bold'}}>{props.name}</p>

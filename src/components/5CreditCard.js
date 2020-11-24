@@ -20,9 +20,9 @@ const CreditCard = (props) => {
     let year = props.expirationYear
     let number = (props.number).toString().slice(-4)
 
-    if (props.type == "Visa") {
+    if (props.type === "Visa") {
         img = './img/visa.png'
-    } else if (props.type == "Master Card") {
+    } else if (props.type === "Master Card") {
         img = './img/master-card.svg'
     }
 
@@ -34,7 +34,7 @@ const CreditCard = (props) => {
 
     if (year.toString().length > 4) {
         return <p>Invalid input</p>
-    } else if (year.toString().length == 4) {
+    } else if (year.toString().length === 4) {
         year = year.toString().slice(-2)
     }
 
@@ -43,7 +43,7 @@ const CreditCard = (props) => {
     return (
         <div style={cardStyle}>
             <div style={{textAlign: 'right'}}>
-                <img style={{height:'20px'}} src={img}/>
+                <img style={{height:'20px'}} src={img} alt='Credit card logo'/>
             </div>
             
             <div style= {{marginTop: '30px', textAlign: 'center'}}>

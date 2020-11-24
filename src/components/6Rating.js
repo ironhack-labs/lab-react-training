@@ -3,7 +3,7 @@ import React from 'react'
 
 const Rating = (props) => {
     let roundedRating = Math.round(props.children)
-    let emptyStars = 5 - roundedRating 
+    // let emptyStars = 5 - roundedRating 
     let stars
     switch (roundedRating) {
         case 0:
@@ -23,8 +23,9 @@ const Rating = (props) => {
             break
         case 5:
             stars = '★★★★★'
-
-
+            break
+        default:
+            break
     }
     return <h2>{stars}</h2>
     

@@ -1,13 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/1IdCard.js'
+import Counter from './components/Counter.js'
 import Greetings from './components/2Greetings.js'
 import Random from './components/3Random.js'
 import Color from './components/4BoxColor.js'
 import CreditCard from './components/5CreditCard.js'
 import Rating from './components/6Rating.js'
 import DriverCard from './components/7DriverCard.js'
+import LikeButton from './components/8LikeButton.js'
+// import - from './components/9ClickablePicture.js'
+// import - from './components/10Dice.js'
+// import - from './components/11Carousel.js'
+// import - from './components/12NumberTable.js'
+// import - from './components/13Facebook.js'
+// import - from './components/14FacebookAdvance.js'
+// import - from './components/15SignupPage.js'
 
 
 
@@ -87,8 +96,11 @@ function App() {
         }} 
       />
 
-      <h1>Iteration 8</h1>
+      <h1>Counter Extra (in-class)</h1>
+      <Counter initialValue={0}/>
 
+      <h1>Iteration 8</h1>
+      <LikeButton /> <LikeButton />
 
       <h1>Iteration 9</h1>
 

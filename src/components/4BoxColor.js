@@ -25,11 +25,11 @@ const Color = (props) => {
         green = (props.green).toString(16)
         blue = (props.blue).toString(16)
 
-        if (red.length == 1) 
+        if (red.length === 1) 
             red = "0" + red
-        if (green.length == 1)
+        if (green.length === 1)
             green = "0" + green
-        if (blue.length == 1)
+        if (blue.length === 1)
             blue = "0" + blue
         
         hex = "#" + red + green + blue
