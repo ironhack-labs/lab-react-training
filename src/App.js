@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import IdCard from './idcard/IdCard';
-import Greetings from './greetings/Greetings';
-import Random from './random/Random';
-import BoxColor from './boxcolor/BoxColor';
-import CreditCard from './creditcard/CreditCard';
+import IdCard from './compenents/IdCard';
+import Greetings from './compenents/Greetings';
+import Random from './compenents/Random';
+import BoxColor from './compenents/BoxColor';
+import CreditCard from './compenents/CreditCard';
 
 function App() {
   return (
@@ -77,6 +77,12 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+      {/* <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating> */}
     </div>
   );
 }
