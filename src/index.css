@@ -34,5 +34,11 @@ code {
   padding: 3px;
   border: solid 1px black;
   margin-top: 5px;
-  padding: 3px;
+}
+
+.div-boxcolor{
+  text-align: center;
+  padding: 50px;
+  border: solid 1px black;
+  margin: 20px 20px;
 }
