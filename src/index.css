@@ -28,3 +28,11 @@ code {
   margin-top: 5px;
   padding: 3px;
 }
+
+.div-random{
+  text-align: left;
+  padding: 3px;
+  border: solid 1px black;
+  margin-top: 5px;
+  padding: 3px;
+}
