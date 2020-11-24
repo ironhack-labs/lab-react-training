@@ -7,6 +7,7 @@ import BoxColor from './components/boxcolor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/rating';
 import DriverCard from './components/drivercard';
+import LikeButton from './components/likebutton';
 
 function App() {
   return (
@@ -29,13 +30,10 @@ function App() {
       />
       <Greeting lang="de">Ludwig</Greeting>
       <Greeting lang="fr">François</Greeting>
-
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -46,7 +44,6 @@ function App() {
         bgColor="#11aa99"
         color="white"
       />
-
       <CreditCard
         type="Master Card"
         number="0123456789010995"
@@ -57,7 +54,6 @@ function App() {
         bgColor="#eeeeee"
         color="#222222"
       />
-
       <CreditCard
         type="Visa"
         number="0123456789016984"
@@ -74,7 +70,6 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -84,7 +79,6 @@ function App() {
           licensePlate: 'CO42DE',
         }}
       />
-      
       <DriverCard
         name="Dara Khosrowshahi"
         rating={4.9}
@@ -94,6 +88,8 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <LikeButton />
+      <LikeButton />
     </div>
   );
 }
