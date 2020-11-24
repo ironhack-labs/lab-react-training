@@ -6,8 +6,87 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+h2{
+  font-size: 15px;
+  margin:0px;
+  font-weight: 200;
+  
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.box{
+  padding: 50px;
+  display: flex;
+  justify-content: center;  
+}
+
+.stars-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.img-card{
+  width: 150px;
+  height: 100%;
+}
+.box-card{
+  margin-top: 10px;
+  margin-right: 250px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row; 
+  border: solid black 0.5px;
+}
+.border{
+  border: solid black 1.5px; 
+  margin: 20px;
+}
+.img-card{
+  width: 100px;
+  height: 100%;
+}
+.card-container{
+  width: 550px;
+  height: 100%; 
+  border-radius: 20px;
+ 
+}
+.content-card{
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  margin: 20px;
+ 
+}
+.type-card{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+.img-driver{
+  width: 100px;
+  height: 100%; 
+  border-radius: 50%;
+  margin-top:20px;
+
+}
+
+.driver-container{
+  display: flex;
+  flex-direction: row; 
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+  background-color: rgb(76, 77, 160);
+  border-radius: 10px;
+  color: white;
+}
+.driver-content{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
 }
