@@ -17,7 +17,7 @@ export default function Greeting(props) {
       break;
   }
   return (
-    <div className="greeting">
+    <div className="container">
       <p>
         {greeting} {props.children}
       </p>

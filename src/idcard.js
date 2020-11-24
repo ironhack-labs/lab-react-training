@@ -4,7 +4,7 @@ export default function IdCard(props) {
   let date = props.birth.toDateString();
 
   return (
-    <div className="id-card">
+    <div className="container">
       <img src={props.picture} alt={props.firstName} />
       <ul>
         <li>First Name: {props.firstName}</li>

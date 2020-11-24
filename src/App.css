@@ -5,8 +5,7 @@
   pointer-events: none;
 }
 
-.id-card,
-.greeting {
+.container {
   display: flex;
   width: 50%;
   margin: 5px;
