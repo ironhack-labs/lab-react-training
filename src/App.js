@@ -38,7 +38,6 @@ function App() {
         birth="1992-07-14"
         picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
-
           <IdCard
           lastName='Delores '
           firstName='Obrien'
@@ -48,36 +47,27 @@ function App() {
           picture="https://randomuser.me/api/portraits/women/44.jpg"
           />
       </div>
-
       <hr/>
-
       <div>
         <h1>Greetings</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
       </div>
-
       <hr/>
-
       <div>
         <h1>Random</h1>
         <Random min={1} max={6}/>
         <Random min={1} max={100}/>
       </div>
-
       <hr/>
-
       <div>
         <h1>BoxColor</h1>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
       </div>
-
       <hr/>
-
       <div>
         <h1>CreditCard</h1>
-
       <CreditCard
         type="public/img/visa.png"
         number="0123456789018845"
@@ -106,9 +96,7 @@ function App() {
         bgColor="#ddbb55"
         color="white" />
       </div>
-
       <hr/>
-
       <div>
         <h1>Rating</h1>
         <Rating>0</Rating>
@@ -118,9 +106,7 @@ function App() {
         <Rating>4</Rating>
         <Rating>5</Rating>
       </div>
-
       <hr/>
-
       <div>
         <h1>DriverCard</h1>
         <DriverCard
