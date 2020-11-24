@@ -1,0 +1,26 @@
+.driver-card-div{
+    color: white;
+    background-color: royalblue;
+    padding: 20px;
+    margin: 15px;
+    border: 0px;
+    border-radius: 20px;
+    justify-content: center;
+    width: 600px;
+    display: flex;
+}
+.driver-img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+    align-content: flex-end;
+}
+.card-el-2{
+    padding-left: 15px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    line-height: 1px;
+    font-size: 1.5rem;
+}
