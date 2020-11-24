@@ -1,9 +1,6 @@
-* {
-  margin: 2px;
-  padding: 2px;
-}
 
-.container {
+
+.idcard {
   display: flex;
   flex-direction: row;
   align-items: center;
