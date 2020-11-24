@@ -3,6 +3,8 @@ import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture'
 
 function App() {
   return (
@@ -43,6 +45,16 @@ function App() {
       <BoxColor r={255} g={0} b={0} color="rgb(255,0,0)" />
       <BoxColor r={128} g={255} b={0} color="rgb(128,255,0)"/>
 
+      {/* Iteration 8 */}
+      <h1>LikeButton</h1>
+      <LikeButton /> <LikeButton />
+
+      {/* Iterarion 9 */}
+      <h1>ClickablePicture</h1>
+      <ClickablePicture
+          img='img/persons/maxence.png'
+          imgClicked='img/persons/maxence-glasses.png'
+      />
     </div>
   );
 }
