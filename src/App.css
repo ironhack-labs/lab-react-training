@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.IdCard{
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+}
+
+.IdCard img{
+  margin: .5em;
+}
+
+.Idcol{
+  display: flex;
+  flex-direction: column;
+}
+
+.Idrow{
+  text-align: left;
+  line-height: 0px;
+}
+
+.greetings{
+  border-style: solid;
+  text-align: left;
+  margin: 1em;
+}
+
+.random{
+  margin: 1em;
+  border-style: solid;
+  text-align: left;
+}
