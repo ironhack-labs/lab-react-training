@@ -1,0 +1,22 @@
+.idCard {
+  max-height: 400px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  margin-top: 30px;
+}
+
+.picture {
+  max-height: 250px;
+  padding: 10px;
+}
+
+.info {
+  padding: 10px 150px 10px 10px;
+  
+}
+
+.info h5 {
+  text-align: left;
+  margin: 5px;
+}
