@@ -1,5 +1,5 @@
 
-.Greetings{
+.Random{
     height: 170px;
     width: 700px;
     display:flex;
@@ -8,8 +8,4 @@
     border:solid black;
     margin:10px;
     justify-content: center;
-    font-weight: 900;  
-    font-size: 1.5em;
-
 }
-
