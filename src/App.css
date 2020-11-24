@@ -13,6 +13,19 @@
   border: 1px solid black;
 }
 
+.creditcard-container {
+  display: flex;
+  justify-content: center;
+}
+
+.creditcard {
+  height: 150px;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
