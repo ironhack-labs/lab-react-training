@@ -86,7 +86,44 @@ code {
   height: 300px;
 }
 
-.dice img  {
+.dice img {
   margin: 4%;
   width: 50px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid black 1px;
+  height: 150px;
+  width: 150px;
+}
+
+.carousel img {
+  width: 90%;
+}
+
+.carousel > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbersTable {
+  border: 2px solid black;
+  margin: 5%;
+  width: 210px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.numbersTable div {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
 }
