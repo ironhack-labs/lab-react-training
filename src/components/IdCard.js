@@ -1,7 +1,6 @@
 //Conceptualmente, los componentes son como las funciones de JavaScript. Aceptan entradas arbitrarias (llamadas “props”) y devuelven a React elementos que describen lo que debe aparecer en la pantalla.
 import React from 'react';
 
-import "./IdCard.css"
 
 function IdCard(props){
 return(
