@@ -2,7 +2,7 @@ import React from 'react';
 
 
 export default function IdCard(props){
-   let birth =  new Date(props.date).toDateString();
+   let birth =  props.date.toDateString();
 
     return (
       <div className="id-card">
