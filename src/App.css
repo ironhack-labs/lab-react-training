@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+
+.iteracion1{
+ width:500px;
+ height:140px;
+ border:1px solid black  ;
+ display:flex;
+ flex-direction: row;
+padding-bottom: 5px;
+margin-top: 3px;
+margin-bottom: 3px;
+}
+
+.cards ul li{
+  list-style: none;
+}
+
+.greetings{
+  width: 500px;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.random p {
+  font-size: 1.3em;
+  border: solid 1px black;
+  padding: 5px;
+  width: 600px;
+}
+
+.boxColor p{
+  width: auto;
+  height: 100px;
+  color: white;
+  font-size: 20px;
+  border: 1px solid black;
+  padding-bottom: 10px;
+}
+
+
+.creditcard-container{
+  display: flex;
+  justify-content: center;
+}
+
+.creditcard {
+  height: 150px;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.likeButton {
+  color: white;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+} 
