@@ -6,7 +6,7 @@ export default function Random(props) {
   return (
     <div className="container">
       <p>
-        Random value between {props.min} and {props.max} => {randomNum}
+        Random value between {props.min} and {props.max}: {randomNum}
       </p>
     </div>
   );
