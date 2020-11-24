@@ -140,3 +140,13 @@ body {
   line-height: 1em;
   margin-left: 50px;
 }
+
+.color-btn button {
+  border: none;
+  width: 200px;
+  height: 50px;
+  font-size: 2em;
+  margin: 10px;
+  color: white;
+  border-radius: 20px;
+}
