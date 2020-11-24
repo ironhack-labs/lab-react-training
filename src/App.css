@@ -59,3 +59,10 @@ body {
   padding: 5px;
   width: 300px;
 }
+
+.random-container p {
+  font-size: 1.3em;
+  border: solid 1px black;
+  padding: 5px;
+  width: 600px;
+}
