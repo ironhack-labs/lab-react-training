@@ -1,0 +1,18 @@
+.dc-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.dc-container {
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    background-color: #425cbb;
+    color: white;
+}

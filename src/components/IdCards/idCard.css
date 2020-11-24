@@ -1,0 +1,16 @@
+.card-container{
+    display: flex;
+    display: row;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.id-p-tag {
+    margin-left: 5px;
+}
+
+.id-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
