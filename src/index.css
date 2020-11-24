@@ -61,3 +61,20 @@ code {
   width: 50px;
   padding-left: 250px;
 }
+
+.img-driver{
+  margin-top: 20px;
+  width: 85px;
+  height: 85px;
+  border-radius: 50px
+}
+.div-drivercard{
+  height: 200px;
+  background-color: rgb(127,112,219);
+  border-radius: 30px;
+  padding: 1px;
+  display:flex;
+  margin: 20px;
+  justify-content: center;
+  color: white;
+}
