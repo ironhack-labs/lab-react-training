@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard'
+import Greetings from './components/Greetings'
 
 
 function App() {
@@ -13,46 +14,54 @@ function App() {
           gender='male'
           height={178}
           birth={new Date("1992-07-14")}
-          picture="https://randomuser.me/api/portraits/men/44.jpg"/>
+          picture="https://randomuser.me/api/portraits/men/84.jpg"/>
         />
       <IdCard
-          lastName='Delores '
+          lastName='1 '
           firstName='Obrien'
           gender='female'
           height={172}
           birth={new Date("1988-05-11")}
-          picture="https://randomuser.me/api/portraits/women/44.jpg"
+          picture="https://randomuser.me/api/portraits/women/54.jpg"
         />
-      <IdCard lastName='Doe'
+      <IdCard lastName='2'
           firstName='John'
           gender='male'
           height={178}
           birth={new Date("1992-07-14")}
-          picture="https://randomuser.me/api/portraits/men/44.jpg"/>
+          picture="https://randomuser.me/api/portraits/men/47.jpg"/>
         />
       <IdCard
-          lastName='Delores '
+          lastName='3 '
           firstName='Obrien'
           gender='female'
           height={172}
           birth={new Date("1988-05-11")}
-          picture="https://randomuser.me/api/portraits/women/44.jpg"
+          picture="https://randomuser.me/api/portraits/women/24.jpg"
         />
-      <IdCard lastName='Doe'
+      <IdCard lastName='4'
           firstName='John'
           gender='male'
           height={178}
           birth={new Date("1992-07-14")}
-          picture="https://randomuser.me/api/portraits/men/44.jpg"/>
+          picture="https://randomuser.me/api/portraits/men/4.jpg"
         />
       <IdCard
-          lastName='Delores '
+          lastName='5 '
           firstName='Obrien'
           gender='female'
           height={172}
           birth={new Date("1988-05-11")}
-          picture="https://randomuser.me/api/portraits/women/44.jpg"
+          picture="https://randomuser.me/api/portraits/women/43.jpg"
         />
+        <IdCard
+            lastName='6 '
+            firstName='Obrien'
+            gender='female'
+            height={172}
+            birth={new Date("1988-05-11")}
+            picture="https://randomuser.me/api/portraits/women/34.jpg"
+          />
 
     </div>
 
