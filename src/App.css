@@ -52,6 +52,7 @@
 
 .creditCard {
   display: flex;
+  border-radius: 3em;
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
