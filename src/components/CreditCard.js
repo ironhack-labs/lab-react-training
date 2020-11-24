@@ -2,18 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CreditCard = (props) => {
-  const Card = styled.div`
-    display: inline-block;
-    background-color: ${props.bgColor};
-    color: ${props.color};
-    width: 17rem;
-    height: 9rem;
-    border-radius: 0.8rem;
-  `;
-
   return (
-    <Card className="p-3 m-3">
-      <div className="">
+    <div
+      className="p-3 m-3"
+      style={{
+        display: 'inline-block',
+        backgroundColor: props.bgColor,
+        color: props.color,
+        width: '20rem',
+        height: '11rem',
+        borderRadius: '0.8rem',
+      }}
+    >
+      <div className="my-2 text-right">
         <img
           src={props.type === 'Visa' ? '/img/visa.png' : '/img/master-card.svg'}
           alt="franchise"
@@ -21,13 +22,15 @@ const CreditCard = (props) => {
           style={{ width: '3rem', height: 'auto' }}
         />
       </div>
-      <div className="">•••• •••• •••• {props.number.slice(12)}</div>
-      <div className="">
-        Expires {props.expirationMonth}/{props.expirationYear} {props.bank}{' '}
-        <br />
+      <div className="my-2 text-center" style={{ fontSize: '1.9rem' }}>
+        •••• •••• •••• {props.number.slice(12)}
+      </div>
+      <div className="my-2">
+        Expires {props.expirationMonth}/{props.expirationYear}{' '}
+        <span className="ml-4">{props.bank}</span> <br />
         {props.owner}
       </div>
-    </Card>
+    </div>
   );
 };
 
