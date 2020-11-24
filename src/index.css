@@ -42,3 +42,22 @@ code {
   border: solid 1px black;
   margin: 20px 20px;
 }
+
+.div-creditcard{
+  padding: 50px;
+  height: 150px;
+  width: 300px;
+  margin: 30px;
+  border-radius: 50px;
+}
+
+.div-creditflex{
+  display: flex;
+  flex-direction: row;
+}
+
+.credit-img{
+  height: 25px;
+  width: 50px;
+  padding-left: 250px;
+}
