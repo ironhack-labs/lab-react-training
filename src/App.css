@@ -110,5 +110,33 @@ body {
 }
 
 .stars {
-  font-size: 3em;
+  font-size: 1.5em;
+}
+
+.stars-container {
+  font-size: 2em;
+}
+
+.driver-card {
+  background-color: midnightblue;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+}
+
+.img-container img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+}
+
+.info-driver {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-left: 50px;
 }
