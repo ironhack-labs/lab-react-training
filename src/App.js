@@ -7,6 +7,7 @@ import BoxColor from "./BoxColor";
 import CreditCard from "./CreditCard";
 import LikeButton from "./LikeButtom";
 import ClickablePicture from "./ClickablePicture"
+import Carousel from "./Carousel"
 
   
  
@@ -95,7 +96,16 @@ function App() {
       <ClickablePicture initialImage="/img/persons/maxence.png" clickedImage="/img/persons/maxence-glasses.png" />
       </div>
 
-
+      <h1>Iteracion 11</h1>
+      <div className="carrosul">
+      <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}/>
+      </div>
 
       
       </div>
