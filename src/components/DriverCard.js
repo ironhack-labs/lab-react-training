@@ -1,12 +1,12 @@
 import React from 'react';
 
 const DriverCard = (props) => {
-  const roundedRate = Math.round(props.rate);
+  const roundedRate = Math.round(props.rating);
 
   return (
     <div
       className="my-2 justify-content-center row text-center py-4 rounded"
-      style={{ backgroundColor: '#455EB5' }}
+      style={{ backgroundColor: '#455EB5', color: 'white' }}
     >
       <div
         className="overflow-hidden rounded-circle my-auto"
@@ -19,6 +19,7 @@ const DriverCard = (props) => {
           className="img-fluid"
           style={{ height: '100%', width: '100%' }}
           src={props.img}
+          alt={props.name}
         />
       </div>
       <div className="my-auto text-left ml-2">

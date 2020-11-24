@@ -2,7 +2,7 @@ import React from 'react';
 
 const BoxColor = (props) => {
   const toHEX = (color) => {
-    return color.toString(16).length == 1
+    return color.toString(16).length === 1
       ? '0' + color.toString(16)
       : color.toString(16);
   };
