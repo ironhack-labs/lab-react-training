@@ -13,17 +13,22 @@
   border: 1px solid black;
 }
 
-.creditcard-container {
+.card-container {
   display: flex;
   justify-content: center;
 }
 
-.creditcard {
+.card {
   height: 150px;
   width: 300px;
   margin: 10px;
   padding: 20px;
   border-radius: 10px;
+}
+
+.drivercard {
+  background-color: navy;
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
