@@ -108,3 +108,7 @@ body {
 .cardInfo span {
   margin-left: 20px;
 }
+
+.stars {
+  font-size: 3em;
+}
