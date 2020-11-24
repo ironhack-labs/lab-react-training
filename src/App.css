@@ -81,3 +81,12 @@ code {
   font-weight: 600;
   border-radius: 5px;
 }
+
+.clickImage img {
+  height: 300px;
+}
+
+.dice img  {
+  margin: 4%;
+  width: 50px;
+}
