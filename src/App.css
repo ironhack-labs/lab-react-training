@@ -12,16 +12,28 @@ code {
     monospace;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: skyblue;
+}
+
+div {
+  border-radius: 10px;
+}
+
 .id-card,
 .greeting,
 .random,
 .boxColor,
 .rating,
 .driverCard {
+  background-color: white;
   border: 1px solid black;
   padding: 10px;
-  margin: 5%;
-  width: 50%;
+  margin: 3%;
+  width: 350px;
   display: flex;
 }
 
@@ -87,11 +99,14 @@ code {
 }
 
 .dice img {
+  background-color: white;
   margin: 4%;
   width: 50px;
 }
 
 .carousel {
+  padding: 2%;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,6 +117,7 @@ code {
 }
 
 .carousel img {
+  margin: 5%;
   width: 90%;
 }
 
@@ -111,14 +127,16 @@ code {
 }
 
 .numbersTable {
+  background-color: white;
   border: 2px solid black;
-  margin: 5%;
+  margin: 2%;
   width: 210px;
   display: flex;
   flex-flow: row wrap;
 }
 
 .numbersTable div {
+  border-radius: 50%;
   border: 1px solid black;
   display: flex;
   align-items: center;

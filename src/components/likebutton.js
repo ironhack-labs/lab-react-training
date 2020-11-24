@@ -8,14 +8,14 @@ export default function LikeButton() {
   const colors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
 
   const style = {
-    backgroundColor: `${colors[likes]}`,
+    backgroundColor: `${colors[likes % 6]}`,
   };
 
   return (
-  <div className="likes">
-    <button style={style} onClick={handleLike}>
-      Likes: {likes}
-    </button>
-  </div>
+    <div className="likes">
+      <button style={style} onClick={handleLike}>
+        Likes: {likes}
+      </button>
+    </div>
   );
 }

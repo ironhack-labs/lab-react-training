@@ -16,6 +16,7 @@ import NumbersTable from './components/numberstable';
 function App() {
   return (
     <div className="App">
+      <h3>Iteration #1</h3>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -32,12 +33,16 @@ function App() {
         date={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+      <h3>Iteration #2</h3>
       <Greeting lang="de">Ludwig</Greeting>
       <Greeting lang="fr">François</Greeting>
+      <h3>Iteration #3</h3>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
+      <h3>Iteration #4</h3>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+      <h3>Iteration #5</h3>
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -68,12 +73,14 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+      <h3>Iteration #6</h3>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+      <h3>Iteration #7</h3>
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -92,13 +99,17 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <h3>Iteration #8</h3>
       <LikeButton />
       <LikeButton />
+      <h3>Iteration #9</h3>
       <ClickablePicture
         img="/img/persons/maxence.png"
         imgClicked="/img/persons/maxence-glasses.png"
       />
+      <h3>Iteration #10</h3>
       <Dice />
+      <h3>Iteration #11</h3>
       <Carousel
         imgs={[
           'https://randomuser.me/api/portraits/women/1.jpg',
@@ -107,7 +118,8 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
-      <NumbersTable limit={12} />
+      <h3>Iteration #12</h3>
+      <NumbersTable limit={15} />
     </div>
   );
 }
