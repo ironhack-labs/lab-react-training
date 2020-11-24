@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.div-card{
+  text-align: align;
+  border: solid black 2px;
+  margin-top: 5px;
+  padding: 5px;
+  display:flex;
+  flex-direction: row;
+}
+
+.div-greetings{
+  text-align: left;
+  padding: 3px;
+  border: solid 1px black;
+  margin-top: 5px;
+  padding: 3px;
+}
