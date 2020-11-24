@@ -1,10 +1,17 @@
-.App {
-  text-align: center;
-}
+.App {}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.id-card,
+.greeting {
+  display: flex;
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +39,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
