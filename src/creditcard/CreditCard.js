@@ -1,13 +1,13 @@
 import React from 'react';
 
 function CreditCard(props) {
-  const cardColor = {
+  const color = {
     backgroundColor: props.bgColor,
     color: props.color,
   };
-  const number = `**** **** **** ` + props.number.slice(-4);
+  const number = `**** **** **** ` + props.number.slice(12, 16);
   return (
-    <div className="creditcard" style={cardColor}>
+    <div className="creditcard" style={color}>
       <div className="card">
         <p>{props.type}</p>
       </div>
