@@ -1,0 +1,17 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.CreditCard {
+    height: 220px;
+    width: 400px;
+    border-radius: 16px;
+    margin: 15px;
+}
+
+.CreditCard h4 {
+    margin-left: 320px;
+    width: 60px;
+}
+
