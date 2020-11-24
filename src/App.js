@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import IdCard from './compenents/IdCard';
 import Greetings from './compenents/Greetings';
@@ -13,21 +12,6 @@ import DriverCard from './compenents/DriverCard';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-
       <h1>IdCard</h1>
       <IdCard
         lastName="Doe"
@@ -58,8 +42,8 @@ function App() {
       <h1>BoxColor</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
-      <h1>CreditCard</h1>
+      
+      <div className="creditContainer">
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -90,14 +74,17 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+      </div>
 
-      <h1>DriverCard</h1>
+      <h1>Rating</h1>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+
+      <h1>DriverCard</h1>
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}

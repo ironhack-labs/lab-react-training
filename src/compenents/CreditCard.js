@@ -14,7 +14,7 @@ function CreditCard(props) {
       <div className="number">
         <p>{number}</p>
       </div>
-      <div class="expiry">
+      <div className="expiry">
         <p>
           Expires {props.expirationMonth}/ {props.expirationYear}
         </p>

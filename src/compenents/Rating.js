@@ -25,7 +25,7 @@ function Rating(props) {
     }
   
     return (
-      <div>
+      <div className="ratings">
         <p>{stars(props.children)}</p>
       </div>
     );

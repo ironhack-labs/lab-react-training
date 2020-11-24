@@ -40,3 +40,96 @@
 .driverCard img {
   width: 130px;
 }
+
+.idCard {
+  display: flex;
+  border: 1px solid black;
+  font-size: 15px;
+  margin: 10px; 
+}
+
+.idCard img {
+  width: 250px;
+  height: 250px;
+  padding: 3px;
+}
+
+.idDesc {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+ 
+}
+
+.App h1 {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.greetings {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 10px;
+  border: 1px solid black;
+  margin: 10px; 
+}
+
+.greetings p {
+  margin-left: 10px;
+}
+
+.randomNumber {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 10px;
+  border: 1px solid black;
+  margin: 10px; 
+}
+
+.randomNumber p {
+  margin-left: 10px;
+}
+
+.boxcolor {
+  height: 100px;
+}
+
+.creditcard {
+  width: 350px;
+  height: 170px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.ratings {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 10px; 
+}
+
+.driverCard {
+  display: flex;
+  justify-content: center;
+  background-color: #216ba8;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.driverCard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.creditContainer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 70px;
+}
+

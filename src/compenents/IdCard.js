@@ -2,8 +2,9 @@ import React from 'react';
 
 function IdCard(props) {
   return (
-    <div className="IdCard">
+    <div className="idCard">
       <img src={props.picture} alt="profile pic" />
+      <div className="idDesc">
         <p>
           <strong> First Name: </strong>
           {props.firstName}
@@ -24,6 +25,7 @@ function IdCard(props) {
           <strong> Birth: </strong>
           {props.birth.toDateString()}
         </p>
+      </div>
       </div>
   );
 }
