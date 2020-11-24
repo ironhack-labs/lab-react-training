@@ -15,7 +15,9 @@ code {
 .id-card,
 .greeting,
 .random,
-.boxColor {
+.boxColor,
+.rating,
+.driverCard {
   border: 1px solid black;
   padding: 10px;
   margin: 5%;
@@ -27,4 +29,44 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.creditCard {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 150px;
+  padding: 4%;
+  margin: 4%;
+  border-radius: 5%;
+  justify-content: space-between;
+}
+
+.creditCard > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.creditPersonal {
+  height: 40%;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.creditPersonal p {
+  padding: 0;
+  margin: 0;
+}
+
+.rating {
+  font-size: 30px;
+}
+
+.driverCard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }

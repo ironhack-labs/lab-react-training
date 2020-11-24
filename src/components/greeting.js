@@ -16,5 +16,5 @@ export default function Greeting(props) {
             <p>{greeting} {props.children}</p>
         </div>
 
-    )
+    );
 }

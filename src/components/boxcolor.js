@@ -6,7 +6,7 @@ export default function BoxColor(props) {
      let hex = Number(rgb).toString(16);
       if (hex.length < 2) {
         hex = '0' + hex;
-      }
+      };
       return hex;
     };
 
@@ -19,12 +19,11 @@ export default function BoxColor(props) {
 
 let fullHex = fullColorHex(props.r,props.g,props.b);
 
-let style = { backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})` };
 
 
   return (
     <div
-      style={style}
+      style={{ backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})` }}
       className="boxColor"
     >
       <p>
