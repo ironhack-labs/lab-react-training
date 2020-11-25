@@ -1,4 +1,5 @@
 import React from 'react';
+import {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -129,9 +130,96 @@ const DriverCard = (props) => {
   </div>
 }
 
+const LikeButton = () => {
+  const [count, setCount] = useState(0)
+
+  function add() {
+    setCount(count+1)
+  }
+
+  return (<button className='like-button' onClick={add}>
+    {count} Likes
+  </button>)
+}
+
+const ClickablePicture = (props) => {
+  const [image, setImage] = useState(props.img)
+
+  function clickImg(){
+    console.log('hello')
+    if (image == "/img/persons/maxence.png") {
+      setImage(props.imgClicked)
+    } else {
+      setImage(props.img)
+    }
+  }
+
+  return (
+    <img className='clickable-picture' src={image} onClick={clickImg}/>
+  )
+}
+
+const Dice = () => {
+  let random = Math.floor((Math.random() * 6) + 1);
+  const [image, setImage] = useState(`/img/dice${random}.png`)
+
+  function randomPic(){
+    setImage('/img/dice-empty.png')
+    setTimeout(()=> setImage (`/img/dice${random}.png`), 1000)
+  }
+
+  return (
+    <img className='dice' src={image} onClick={randomPic}/>
+  )
+}
+
+const Carousel = (props) => {
+  const images = [...props.imgs]
+  const [counter, setCounter] = useState(0)
+
+  function right() {
+    if (counter < images.length-1) {
+      setCounter(counter+1)
+    } else {
+      setCounter(0)
+    }
+  }
+
+  function left() {
+    if (counter > 0) {
+      setCounter(counter-1)
+    } else {
+      setCounter(images.length-1)
+    }
+  }
+
+  return (<div>
+    <button onClick={left}>left</button>
+    <img src={images[counter]}/>
+    <button onClick={right}>right</button>
+  </div>)
+}
+
+const NumbersTable = (props) => {
+  const table = []
+  for (let i = 1; i < props.limit+1; i++) {
+    if (i % 2 === 0) {
+      table.push({odd: "red", num: i})
+    } else {
+      table.push({odd: "", num: i})
+    }
+  }
+  
+const listItems = table.map((elm, index) => <li className={elm.odd}>{elm.num}</li>)
+
+  return (<ul className="table">
+    {listItems}
+  </ul>)
+}
+
 function App() {
   return (
-    <div>
+    <div className="container">
     <h1>IdCard</h1>
     <IdCard
       lastName='Doe'
@@ -223,6 +311,36 @@ function App() {
         model: "Audi A3",
         licensePlate: "BE33ER"
       }} />
+
+    <h1>Like Button</h1>
+
+    <LikeButton />
+
+    <h1>Clickable Picture</h1>
+
+    <ClickablePicture
+      img='/img/persons/maxence.png'
+      imgClicked='/img/persons/maxence-glasses.png'
+    />
+
+    <h1>Dice</h1>
+
+    <Dice />
+
+    <h1>Carousel</h1>
+
+    <Carousel
+      imgs={[
+        'https://randomuser.me/api/portraits/women/1.jpg',
+        'https://randomuser.me/api/portraits/men/1.jpg',
+        'https://randomuser.me/api/portraits/women/2.jpg',
+        'https://randomuser.me/api/portraits/men/2.jpg'
+      ]}
+    />
+
+    <h1>Number Table</h1>
+    
+    <NumbersTable limit={12} />
     </div>
   );
 }
