@@ -9,12 +9,14 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture'
+import Dice from './components/Dice'
+import Carousel from './components/Carousel'
+import NumbersTable from './components/NumbersTable'
 
 const IdCard = (props) => <div className="div-card">
   <img src={props.picture} alt="imagen"/>
   FirstName: {props.firstName}<br/> LastName: {props.lastName}<br/> Gender: {props.gender}<br/> Height: {props.height}<br/>  Birth{props.birth}<br/>
 </div>
-
 
 
 function App() {
@@ -84,6 +86,16 @@ function App() {
           img="/img/persons/maxence.png"
           imgClicked="/img/persons/maxence-glasses.png"
         />
+        <Dice/>
+        <Carousel
+            imgs={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg'
+            ]}
+        />
+        <NumbersTable limit={12}/>
     </div>
   );
 }

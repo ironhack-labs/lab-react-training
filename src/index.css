@@ -79,3 +79,8 @@ code {
   color: white;
 }
 
+.div-numberstable{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

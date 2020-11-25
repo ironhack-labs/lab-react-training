@@ -1,8 +1,4 @@
 import { useState } from 'react'
-
-
-
-
     const ClickablePicture = (props) => {
         const [noGlasses, setGlasses] = useState(true);
     
