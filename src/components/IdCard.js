@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/IdCart.css'
+import '../style/IdCart.css';
 
 function IdCard(props) {
   return (
@@ -7,19 +7,35 @@ function IdCard(props) {
       <img className="profile-pic" src={props.picture} alt="" />
       <div>
         <p>
-         <span> <b>First name:</b> {props.lastName}</span>
+          <span>
+            {' '}
+            <b>First name:</b> {props.lastName}
+          </span>
         </p>
         <p>
-          <span> <b>Last name:</b> {props.firstName}</span>
+          <span>
+            {' '}
+            <b>Last name:</b> {props.firstName}
+          </span>
         </p>
         <p>
-          <span> <b>Gender:</b> {props.gender}</span>
+          <span>
+            {' '}
+            <b>Gender:</b> {props.gender}
+          </span>
         </p>
         <p>
-          <span> <b>Height:</b> {props.height}</span>
+          <span>
+            {' '}
+            <b>Height:</b> {props.height}
+          </span>
         </p>
         <p>
-          <span> <b>Birth: </b>{props.birth.toDateString()}</span>
+          <span>
+            {' '}
+            <b>Birth: </b>
+            {props.birth.toDateString()}
+          </span>
         </p>
       </div>
     </div>
