@@ -1,10 +1,10 @@
 import React from "react";
 
 const Greetings = (props) => {
-    
-    let welcoming ="";
 
-    switch (props.lang){
+    let welcoming = "";
+    
+    switch (props.lang) {
         case 'de':
             welcoming = 'Hallo';
             break;
@@ -18,9 +18,10 @@ const Greetings = (props) => {
             welcoming = 'Bonjour';
     };
 
-return (<div className="Greetings-container">
-    <p>{welcoming} {props.children}</p>
-</div>)
+    return (
+        <div className="Greetings-container">
+            <p>{welcoming} {props.children}</p>
+        </div>)
 };
 
 export default Greetings;
