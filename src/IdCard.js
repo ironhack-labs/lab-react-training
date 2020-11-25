@@ -1,24 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class IdCard extends Component {
-    render() {
-        return (
-            <div className="iteracion1">
-            <img src={this.props.picture}/>
-             <div className="cards">
-                <ul>
-                    <li> <b>Last Name:</b>{this.props.lastName}</li>
-                    <li> <b> First Name:</b> {this.props.firstName}</li>
-                    <li> <b>Gender:</b>{this.props.gender}</li>
-                    <li> <b>Height:</b>{this.props.height}</li>
-                    <li> <b>Birth :</b>{this.props.date}</li>
-                </ul>
-            </div>
-            </div>
-            
-        )
-    }
-    }
-
+ function IdCard(props) {
+    return (
+        <div>
+            <p>First name: {props.firstName}</p>
+            <p>Last name: {props.lastName}</p>
+            <p>Gender: {props.gender}</p>
+            <p>Height: {props.height/100}m</p>
+            <p>Birth: {props.date}</p>
+            <img src={props.picture} alt='' />
+        </div>
+    )
+             
+}
 
 export default IdCard

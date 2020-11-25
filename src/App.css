@@ -37,7 +37,7 @@
   }
 }
 
-.iteracion1{
+/* .iteracion1{
  width:500px;
  height:140px;
  border:1px solid black  ;
@@ -50,7 +50,7 @@ margin-bottom: 3px;
 
 .cards ul li{
   list-style: none;
-}
+} */
 
 .greetings{
   width: 500px;
@@ -94,3 +94,4 @@ margin-bottom: 3px;
   height: 50px;
   font-size: 20px;
 } 
+

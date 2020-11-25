@@ -8,6 +8,7 @@ import CreditCard from "./CreditCard";
 import LikeButton from "./LikeButtom";
 import ClickablePicture from "./ClickablePicture"
 import Carousel from "./Carousel"
+import FaceBook from "./FaceBook"
 
   
  
@@ -106,7 +107,11 @@ function App() {
             'https://randomuser.me/api/portraits/men/2.jpg'
           ]}/>
       </div>
-
+    
+    <h1> Iteracion 13 y 14</h1>
+    <div className= "facebook">
+    <FaceBook/>
+    </div>
       
       </div>
 
