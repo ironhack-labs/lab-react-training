@@ -1,0 +1,11 @@
+.Greetings {
+    font-size: 25px;
+    border: solid black;
+    width: 700px;
+    height: 40px;
+    margin:10px;
+    padding:20px;
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+}
