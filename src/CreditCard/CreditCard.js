@@ -7,7 +7,7 @@ const CreditCard = (prop) => {
   var lastFourDigits = prop.number.slice(12, 16)
 
   return (
-    <div className='creditCard' style={{backgroundColor:prop.bgColor, color:prop.color}}>
+    <div className='creditCard' style={{backgroundColor:prop.bgColor, color: prop.color}}>
       <h5 className='ccType'>{prop.type}</h5>
       <h4 className='ccNumber'>**** **** **** {lastFourDigits}</h4>
       <div className='ccLow'>
@@ -16,9 +16,8 @@ const CreditCard = (prop) => {
         </div>
         <p>{prop.owner}</p>
       </div>
-      
     </div>
   );
 };
 
-export default CreditCard
+export default CreditCard;
