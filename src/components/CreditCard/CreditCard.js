@@ -14,7 +14,7 @@ const CreditCard = (props) => {
             <span className="card"> {props.type} </span>
             <span className="number"> {'**** **** ****' + props.number.slice(-4)} </span>
             <span className="expiration"> Express: {props.expirationMonth} / </span>
-            <span className="expiration"> {props.expirationYear} </span>
+            <span className="expiration"> {(props.expirationYear+ '').slice(-2)} </span>
             <span className="expiration"> {props.bank} </span>
             <span className="owner"> {props.owner} </span>
 
