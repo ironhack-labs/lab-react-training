@@ -27,7 +27,6 @@ div {
 .greeting,
 .random,
 .boxColor,
-.rating,
 .driverCard,
 .faceBook {
   background-color: white;
@@ -75,7 +74,7 @@ div {
 }
 
 .rating {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .driverCard img {

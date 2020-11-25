@@ -10,9 +10,9 @@ import DriverCard from './components/drivercard';
 import LikeButton from './components/likebutton';
 import ClickablePicture from './components/clickablepicture';
 import Dice from './components/dice';
-import Carousel from './components/Carousel'
+import Carousel from './components/Carousel';
 import NumbersTable from './components/numberstable';
-import Facebook from './components/facebook1'
+import Facebook from './components/facebook1';
 
 function App() {
   return (
@@ -121,6 +121,7 @@ function App() {
       />
       <h3>Iteration #12</h3>
       <NumbersTable limit={15} />
+      <h3>Iteration #13</h3>
       <Facebook />
     </div>
   );

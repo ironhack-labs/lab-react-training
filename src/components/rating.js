@@ -22,7 +22,10 @@ export default function Rating(props) {
       break;
     case 5:
       displayStars = `★★★★★`;
+      break;
+    default:
+      displayStars = `Too many stars to handle`;
   }
 
-  return (<div className='rating'>{displayStars}</div>);
+  return <div className="rating">{displayStars}</div>;
 }

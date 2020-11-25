@@ -6,12 +6,14 @@ export default function NumbersTable(props) {
     numberArr.push(i);
   }
 
-let colors = ['Red', 'White']
+  let colors = ['Red', 'White'];
 
   return (
     <div className="numbersTable">
-      {numberArr.map((item) => (
-        <div style={{backgroundColor: colors[item%2]}} >{item}</div>
+      {numberArr.map((item, index) => (
+        <div key={index} style={{ backgroundColor: colors[item % 2] }}>
+          {item}
+        </div>
       ))}
     </div>
   );

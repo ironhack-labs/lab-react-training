@@ -21,7 +21,7 @@ export default function Carousel(props) {
 
   return (
     <div className="carousel">
-      <img src={props.imgs[arrayNum]} alt="carousel image" />
+      <img src={props.imgs[arrayNum]} alt="carousel" />
       <div className="buttonDiv">
         <button onClick={clickLeft}>Left</button>
         <button onClick={clickRight}>Right</button>
