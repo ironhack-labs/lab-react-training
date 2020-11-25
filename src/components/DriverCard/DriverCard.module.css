@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    background-color: #0090ff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+}
+
+.imgContainer {
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    display: flex;
+}
+
+.infoContainer {
+    margin-left: 20px;
+}
+
+.infoContainer h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.infoContainer p {
+    margin: 5px 0;
+}

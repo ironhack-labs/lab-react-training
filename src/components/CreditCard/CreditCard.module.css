@@ -1,0 +1,34 @@
+.container {
+    width: 250px;
+    height: 140px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.imgContainer {
+    justify-content: flex-end;
+}
+
+.container img {
+    height: 20px;
+}
+
+.creditCardContainer {
+    justify-content: center;
+}
+
+.creditCardNumber {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.infoContainer p{
+    font-size: 13px;
+    flex: 1;
+}

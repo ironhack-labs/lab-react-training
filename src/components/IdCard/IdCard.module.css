@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    height: 150px;
+    line-height: 0.3;
+    padding: 15px;
+    margin: 20px 0px;
+    border: 2px solid black;
+}
+
+.container img {
+    object-fit: cover;
+}
+
+.container div {
+    margin-left: 20px;
+}
