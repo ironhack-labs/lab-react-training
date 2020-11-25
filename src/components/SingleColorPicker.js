@@ -1,26 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const ColorDiv = styled.div`
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  margin: 0 0.5rem;
-  border: 2px solid black;
-  background-color: rgb(${(props) => '#' + props.color.toString(16)});
-`;
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5rem;
-`;
+import { ColorDiv, Container } from './styles/index';
 
 const SingleColorPicker = ({ section, value, HandleNewValue, rgb }) => {
   return (
     <Container>
-      <ColorDiv section={section} color={value} />
+      {section === 'R' ? (
+        <ColorDiv R={value} />
+      ) : section === 'G' ? (
+        <ColorDiv G={value} />
+      ) : (
+        <ColorDiv B={value} />
+      )}
       <label htmlFor="number">{section}:</label>
       <input
         onChange={HandleNewValue(section)}

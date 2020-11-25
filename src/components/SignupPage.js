@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  FormFeedback,
-  FormText,
-} from 'reactstrap';
+import { Form, FormGroup, Label, Input, FormFeedback } from 'reactstrap';
 
 const SignupPage = (props) => {
   let [isValid, setIsValid] = useState({ email: false, password: true });

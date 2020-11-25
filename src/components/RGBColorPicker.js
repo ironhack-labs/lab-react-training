@@ -1,15 +1,7 @@
 import React, { useState } from 'react';
 import SingleColorPicker from './SingleColorPicker';
-import styled from 'styled-components';
+import { ColorDiv, Container } from './styles/index';
 
-const ColorDiv = styled.div`
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  margin: 0 0.5rem;
-  border: 2px solid black;
-  background-color: rgb(${(props) => [...props.color]});
-`;
 const RGBColorPicker = () => {
   let [value, setValue] = useState({
     R: 255,
@@ -45,7 +37,7 @@ const RGBColorPicker = () => {
   };
 
   return (
-    <div>
+    <Container column={true}>
       <SingleColorPicker
         key={1}
         section="R"
@@ -64,8 +56,11 @@ const RGBColorPicker = () => {
         HandleNewValue={HandleNewValue}
         value={value.B}
       />
-      <ColorDiv color={value.rgb} />
-    </div>
+      <Container>
+        <ColorDiv R={value.R} G={value.G} B={value.B} />
+        rgb({value.R},{value.G},{value.B})
+      </Container>
+    </Container>
   );
 };
 

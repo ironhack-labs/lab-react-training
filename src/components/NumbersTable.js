@@ -22,18 +22,6 @@ const DivStyled = styled.div`
 `;
 
 const NumbersTable = ({ limit }) => {
-  const genNumbers = (limit) => {
-    let numbers = [];
-    for (let i = 1; i <= limit; i++) {
-      numbers.push(
-        <Number i={i}>
-          <p>{i}</p>
-        </Number>
-      );
-    }
-    return numbers;
-  };
-
   return (
     <DivStyled>
       {new Array(limit).fill(false).map((e, i) => (
