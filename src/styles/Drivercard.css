@@ -1,0 +1,24 @@
+.drcard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(3, 102, 214);
+    margin: 10px;
+    width: 700px;
+    height: 150px;
+    border-radius: 20px;
+
+}
+
+.driver-img{
+width: 100px;
+height: 100px;
+border-radius: 100px;
+margin-right: 20px;
+
+}
+
+.rbox{
+    float: right;
+}
+

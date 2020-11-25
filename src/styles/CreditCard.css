@@ -1,11 +1,16 @@
-.card-container{
+.card-container {
     height: 170px;
-    width: 700px;
-    display:flex;
+    width: 900px;
+    display: flex;
     flex-direction: row;
     align-items: center;
-    border:solid black;
-    margin:10px;
-    justify-content: center;
+    border: solid black;
+    margin: 0 auto;
+}
 
+.card{
+    margin: 0 18px;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
 }
