@@ -28,7 +28,8 @@ div {
 .random,
 .boxColor,
 .rating,
-.driverCard {
+.driverCard,
+.faceBook {
   background-color: white;
   border: 1px solid black;
   padding: 10px;
@@ -144,4 +145,8 @@ div {
   font-weight: 700;
   width: 40px;
   height: 40px;
+}
+
+.faceBook img {
+  width: 100px;
 }
