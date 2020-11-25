@@ -91,3 +91,28 @@ body {
 .stars {
   font-size: 3em;
 }
+.stars-container {
+  font-size: 2em;
+}
+.driver-card {
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.img-container img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.info-driver {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-left: 50px;
+} 
