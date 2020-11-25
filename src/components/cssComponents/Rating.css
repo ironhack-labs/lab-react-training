@@ -1,0 +1,14 @@
+.stars{
+    margin-bottom: 100px;
+    font-size: 50px;
+    -webkit-text-fill-color: red;
+    stroke: black;
+    font-weight:50px;
+    content: "\2605";
+    color: "blue";
+    font-family: 'Font Awesome 5 Free';
+    font-size: 30px;
+    position: absolute;
+    border: black solid 1px
+    
+}

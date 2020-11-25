@@ -4,7 +4,7 @@ function Random(props) {
     let randomNumber = Math.floor(Math.random() * props.max) + props.min
     return (
         <div>
-            <h>Random value between {props.min} and {props.max} => {randomNumber}</h>
+            <h1>Random value between {props.min} and {props.max} => {randomNumber}</h1>
         </div>
     )
 }
