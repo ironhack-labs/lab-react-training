@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+body {
+  padding: 30px;
+}
+.id-container {
+  line-height: 0.8em;
+  display: flex;
+  border: solid 1px black;
+  padding: 20px;
+  margin: 10px;
+}
+.id-container img {
+  width: 150px;
+  margin-right: 10px;
+}
+.greetings-container p {
+  font-size: 1.3em;
+  border: solid 1px black;
+  padding: 5px;
+  width: 300px;
+}
+.random-container p {
+  font-size: 1.3em;
+  border: solid 1px black;
+  padding: 5px;
+  width: 600px;
+}
+.box-container {
+  width: 600px;
+  height: 100px;
+  border: solid 1px black;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 5px;
+} 
+
