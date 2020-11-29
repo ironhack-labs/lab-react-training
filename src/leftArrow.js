@@ -1,3 +1,5 @@
+import React from 'react';
+
 class LeftArrow extends Component.React{
     render()  {
         return(

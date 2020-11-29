@@ -1,0 +1,29 @@
+.CreditCard{
+    display:flex;
+    height:220px;
+    width:320px;
+    border-radius: 6px;
+}
+
+.type{
+    position:relative;
+    font-size:25px;
+    text-align:right;
+    color:white;
+    padding-left:220px;
+}
+.number{
+    position: relative;
+    text-align:center;
+    font-size:30px;
+    color:white;
+}
+.expirationDate{
+    position:relative;
+    font-size:15px
+}
+.owner{
+    position:relative;
+    font-size:15px;
+    color:white
+}
