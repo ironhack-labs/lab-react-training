@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: left;
+  margin-left: 5%;
 }
 
 .App-logo {
@@ -26,6 +27,63 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.IdCard{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  border: black;
+  border-style: solid;
+  margin-top:2%;
+  margin-bottom: 2%;
+  width: 37%;
+  margin-left:5%;
+  text-align: left;
+}
+
+.IdCard ul{
+  list-style: none;
+}
+
+.greets, .random, .box-color{
+  border: black;
+  border-style: solid;
+  width: 40%;
+  margin-top:2%;
+  margin-bottom: 2%;
+  text-align: left;
+}
+
+.credit-card-div{
+  width: 30%;
+  border: 0px;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ddbb55;
+  color: white;
+  margin: 10px;
+}
+.card-el-1{
+  font-size: 2rem;
+}
+.card-el-2{
+  justify-self: flex-start;
+} 
+
+.credit-card-div img {
+  margin-left:80%;
+}
+
+.CardContainer {
+  display: flex;
+  flex-direction: row;
+  
 }
 
 @keyframes App-logo-spin {
