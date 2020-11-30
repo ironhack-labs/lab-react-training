@@ -10,13 +10,13 @@ import CreditCard from './components/5CreditCard.js'
 import Rating from './components/6Rating.js'
 import DriverCard from './components/7DriverCard.js'
 import LikeButton from './components/8LikeButton.js'
-// import - from './components/9ClickablePicture.js'
-// import - from './components/10Dice.js'
-// import - from './components/11Carousel.js'
-// import - from './components/12NumberTable.js'
-// import - from './components/13Facebook.js'
-// import - from './components/14FacebookAdvance.js'
-// import - from './components/15SignupPage.js'
+import ClickablePicture from './components/9ClickablePicture.js'
+import Dice from './components/10Dice.js'
+import Carousel from './components/11Carousel.js'
+import NumbersTable from './components/12NumbersTable.js'
+import FaceBookSimple from './components/13Facebook.js'
+import FaceBook from './components/14FacebookAdvanced.js'
+import SignupPage from './components/15SignupPage.js'
 
 
 
@@ -100,28 +100,40 @@ function App() {
       <Counter initialValue={0}/>
 
       <h1>Iteration 8</h1>
-      <LikeButton /> <LikeButton />
-
+      <div>
+        <LikeButton /> <LikeButton />  
+      </div>
+      
       <h1>Iteration 9</h1>
-
+      <ClickablePicture
+        img='/img/persons/maxence.png'
+        imgClicked='/img/persons/maxence-glasses.png'
+      />
 
       <h1>Iteration 10</h1>
-
+      <Dice />
 
       <h1>Iteration 11</h1>
-
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/3.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
 
       <h1>Iteration 12</h1>
-
+      <NumbersTable limit={12} />
 
       <h1>Iteration 13</h1>
-
+      <FaceBookSimple />
 
       <h1>Iteration 14</h1>
-
+      <FaceBook />
 
       <h1>Iteration 15</h1>
-
+      <SignupPage />
 
       <h1>Iteration 16</h1>
 
