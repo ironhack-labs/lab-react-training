@@ -1,0 +1,10 @@
+.id-card {
+  border: 2px solid black;
+  display: flex;
+  margin: 2px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
