@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+.card p {
+  flex-direction: row;
+}
