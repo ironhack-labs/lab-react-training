@@ -1,0 +1,16 @@
+.driver-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.driver-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid cornflowerblue;
+    background-color: cornflowerblue;
+    margin: 10px 200px;
+    border-radius: 20px;
+}

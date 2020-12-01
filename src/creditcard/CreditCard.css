@@ -1,0 +1,46 @@
+.card-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.credit-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 400px;
+    height: 200px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.credit-card-logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.credit-card-number {
+    font-size: 2.2em;
+}
+
+.credit-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.credit-card-info-expiry{
+    display: flex;
+    flex-direction: row;
+}
+
+.credit-card-info-expiry div {
+    padding-right: 20px;
+}
+
+.credit-card-logo img {
+    width: 50px;
+}
