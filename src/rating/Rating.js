@@ -2,7 +2,7 @@ import React from 'react';
 
 const Rating = ({ children }) => {
   let round = Math.round(children);
-
+  
   let starsNum = () => {
     let stars = '';
 
