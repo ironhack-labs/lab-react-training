@@ -1,0 +1,16 @@
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 140px;
+    border-radius: 12px;
+    text-align: left;
+    justify-content: center;
+    padding-left: 15px;
+}

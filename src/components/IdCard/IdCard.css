@@ -1,0 +1,11 @@
+article {
+    border: solid black 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    padding: 1%;
+    margin: 1%;
+}
+.details {
+    text-align: left;
+}
