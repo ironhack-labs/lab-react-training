@@ -1,4 +1,3 @@
-import { findByPlaceholderText } from '@testing-library/react';
 import React from 'react';
 // Create a IdCard component with 6 props:
 
@@ -9,30 +8,29 @@ import React from 'react';
 // birth: A date
 // picture: A string
 
-const IdCard = (props) => {
-  console.log(props);
+const IdCard = ({ picture, lastName, firstName, gender, height, birth }) => {
   return (
     <>
-      <img src={props.picture} alt="profile-picture" />
+      <img src={picture} alt="profile-picture" />
       <p>
         <strong>Last name: </strong>
-        {props.lastName}
+        {lastName}
       </p>
       <p>
         <strong>First name: </strong>
-        {props.firstName}
+        {firstName}
       </p>
       <p>
         <strong>Gender: </strong>
-        {props.gender}
+        {gender}
       </p>
       <p>
         <strong>Height: </strong>
-        {props.height}
+        {height}
       </p>
       <p>
         <strong>Birth: </strong>
-        {props.birth.toDateString()}
+        {birth.toDateString()}
       </p>
     </>
   );
