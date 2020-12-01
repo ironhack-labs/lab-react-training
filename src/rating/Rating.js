@@ -3,23 +3,26 @@ import React from 'react';
 const Rating = ({ children }) => {
   let round = Math.round(children);
 
-  let stars = '';
-  switch (round) {
-    case 0:
-      stars = '☆☆☆☆☆';
-    case 1:
-      stars = '★☆☆☆☆';
-    case 2:
-      stars = '★★☆☆☆';
-    case 3:
-      stars = '★★★☆☆';
-    case 4:
-      stars = '★★★★☆';
-    case 5:
-      stars = '★★★★★';
-  }
+  let starsNum = () => {
+    let stars = '';
 
-  return <p>{stars}</p>;
+    switch (round) {
+      case 0:
+        return (stars = '☆☆☆☆☆');
+      case 1:
+        return (stars = '★☆☆☆☆');
+      case 2:
+        return (stars = '★★☆☆☆');
+      case 3:
+        return (stars = '★★★☆☆');
+      case 4:
+        return (stars = '★★★★☆');
+      case 5:
+        return (stars = '★★★★★');
+    }
+  };
+
+  return <p>{starsNum()}</p>;
 };
 
 export default Rating;
