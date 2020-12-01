@@ -1,0 +1,16 @@
+.card-container{
+    display: flex;
+    border: 1px solid black;
+    align-content: center;
+}
+.picture-container{
+    margin: 0.5em;
+}
+
+.info-container{
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}

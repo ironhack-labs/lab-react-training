@@ -1,0 +1,11 @@
+.color-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+    margin-bottom: 0.5em;
+    /* color: white; */
+    /* backgroundColor: rgb(red, green, blue); */
+
+}

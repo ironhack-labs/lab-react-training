@@ -1,0 +1,9 @@
+.box{
+    border:1px solid black;
+    margin-bottom: 0.5em;
+    display: flex;
+}
+
+.box p{
+    margin: 0.3em;
+}
