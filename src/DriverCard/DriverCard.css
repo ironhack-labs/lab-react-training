@@ -27,4 +27,5 @@ h2 {
 }
 
 .car {
+  display: flex;
 }

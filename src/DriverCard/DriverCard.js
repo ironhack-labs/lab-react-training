@@ -16,8 +16,9 @@ const DriverCard = (props) => {
         <h2>{props.name}</h2>
         <Rating>{props.rating}</Rating>
         <div class="car">
-          <p>{props.car.model}</p>
-          <p>props.car.licensePlate</p>
+          <p>
+            {props.car.model} - {props.car.licensePlate}
+          </p>
         </div>
       </div>
     </div>
