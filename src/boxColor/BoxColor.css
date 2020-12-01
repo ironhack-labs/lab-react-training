@@ -1,0 +1,12 @@
+.BoxColor {
+  border: solid black;
+  max-width: 500px;
+  margin: 20px;
+  height: 100px;
+}
+
+.BoxColor p {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}

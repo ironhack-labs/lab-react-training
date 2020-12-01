@@ -1,0 +1,12 @@
+.CreditCart{
+    margin: 20px;
+    padding: 20px;
+    max-width: 350px;
+    border-radius: 0.7rem;
+}
+
+.CreditCart img{
+    width: 100px;
+    float:right;
+    margin-left:20px
+}
