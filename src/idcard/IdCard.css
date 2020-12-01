@@ -1,0 +1,15 @@
+.idCard {
+  border: 1px solid black;
+  display: flex;
+  text-align: left;
+  padding: 5px;
+  margin: 10px;
+}
+
+.idCard li {
+  list-style: none;
+}
+
+.idCard ul {
+  margin: 0px 0px 0px -30px;
+}
