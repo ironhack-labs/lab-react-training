@@ -36,3 +36,106 @@
     transform: rotate(360deg);
   }
 }
+
+/* my additions ==================================================== */
+
+.idCard, .greetingBox, .randomNumbers {
+  display: flex;
+  flex-direction: row;
+  margin: 3vh;
+  padding: 1vh;
+  border: 2px solid black;
+}
+
+.idCardText, .boxColor {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2vw;
+  line-height: .01;
+    /* border: 2px solid green; */
+}
+
+.greetingBox,.randomNumbers, .boxColor  {
+  border: 1px solid black;
+}
+
+.boxColor {
+  text-align:center;
+  justify-content: center;
+  height: 10vh;
+  margin: 1vh 3vw;
+}
+
+.creditCardmargin {
+  margin: 1vh;
+  padding: 1vh;
+}
+.creditCard, .driverCard {
+  text-align: left;
+  border-radius: 25px;
+  max-width: 33vw;;
+}
+
+.creditCardLogo {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.creditCardLogo img{
+  padding-top: 2vh;
+  width: 60px;
+}
+
+.creditCardNumber{
+  font-size: 3em;
+}
+
+.creditCardAppjs {
+  display: flex;
+  flex-direction: row;
+  /* align-content: center; */
+  justify-content: center;
+}
+
+.stars {
+  font-size: 2em;
+}
+
+.driverCard {
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+  width: 100%;
+  line-height: 12px;
+  /* border: 5px solid green; */
+
+}
+.driverCard img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+  padding-right: 20px;
+}
+
+.driverCardAppjs {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  padding: 10px;
+  
+  /* border: 2px solid green; */
+  /* justify-content: center; */
+}
+
+.driverCardName {
+  font-size: 1.5em;
+}
