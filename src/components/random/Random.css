@@ -1,0 +1,8 @@
+
+
+.randomContainer h1 {
+    border: 2px solid black;
+    margin: 2vw;
+    max-width: 50vw;
+    padding: 1vw
+}

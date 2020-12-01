@@ -1,0 +1,35 @@
+.creditCardContainer {
+    margin: 2vw;
+    width: 450px;
+    border-radius: 12px;
+}
+
+.creditCardDataContainer {
+    padding: 1vw;
+}
+
+.creditCardDataContainer img {
+    width: 5vw;
+    padding: 1vw;
+    
+}
+
+.creditCardDataContainer p {
+    
+}
+
+.creditCardDataImgContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.creditCardExpirationContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+

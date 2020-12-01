@@ -1,0 +1,10 @@
+.greetingContanier  {
+    margin-top: 5vw;
+}
+
+.greetingContanier h1 {
+    border: 2px solid black;
+    margin: 2vw;
+    max-width: 20vw;
+    padding: 1vw
+}

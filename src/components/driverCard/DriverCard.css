@@ -1,0 +1,32 @@
+.driverCardContainer {
+    background-color: rgb(102, 102, 202);
+    margin: 5vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.driverCardImgContainer {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.driverCardImgContainer img{
+    display: inline;
+    margin: 0 auto;
+    margin-left: -25%; 
+    height: 100%;
+    width: auto;
+}
+
+
+
+
+.driverCardDataContainer {
+   
+}
