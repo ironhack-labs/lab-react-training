@@ -24,10 +24,19 @@ export default class Dice extends Component {
             if(this.state.clicked) {
                 random = Math.floor(Math.random()*6)
                 this.setState({
-                    randomIndex: random
+                    randomIndex: 0,
                 })
             }
-        }, 1);   
+        }, 1);
+        setTimeout(() => {
+            if(this.state.clicked) {
+                random = Math.floor(Math.random()*6)
+                this.setState({
+                    randomIndex: random,
+                    clicked: !this.state.clicked
+                })
+            }
+        }, 1000);    
     }
     
 
