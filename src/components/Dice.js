@@ -18,19 +18,16 @@ export default class Dice extends React.Component {
                 number: Math.floor(Math.random()*6)
             }))    
         }, 1000)
-        // return value: false
     };
-
-// setToTrue = () => {
-
-// }
 
 
     render() {
         return (
             <div className="dice">
                 <img onClick = {this.clickHandler} alt="dice"
-                src={this.state.rolled ? `/img/dice${this.state.number}.png` : '/img/dice-empty.png' }/>
+                src={this.state.rolled 
+                ? `/img/dice${this.state.number}.png` 
+                : '/img/dice-empty.png' }/>
             </div>
         )
     }
