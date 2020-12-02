@@ -71,7 +71,7 @@
   margin: 1vh;
   padding: 1vh;
 }
-.creditCard, .driverCard {
+.creditCard {
   text-align: left;
   border-radius: 25px;
   max-width: 33vw;;
@@ -112,7 +112,7 @@
   justify-content: center;
   align-items: center;
   margin: 1px;
-  width: 100%;
+  width: 75%;
   line-height: 12px;
   /* border: 5px solid green; */
 
@@ -125,7 +125,7 @@
   padding-right: 20px;
 }
 
-.driverCardAppjs {
+.driverCardAppjs, .diceAppjs {
   display: flex;
   justify-content:center;
   align-items:center;
@@ -138,4 +138,24 @@
 
 .driverCardName {
   font-size: 1.5em;
+}
+.likeButton {
+  font-size : 1.5em;
+  padding: 10px 10px;
+  margin: 0px 10px;
+  /* background-color: purple; */
+}
+
+.clickedPicture img {
+  height: 200px;
+}
+
+/* .diceAppjs {
+  display: flex;
+  justify-content: center;
+  width: 5vw;
+} */
+
+.dice img {
+  height: 100px;
 }

@@ -2,7 +2,10 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import BoxColor from './components/BoxColor';
+import Carousel from './components/Carousel';
+import ClickablePicture from './components/ClickablePicture';
 import CreditCard from './components/CreditCard';
+import Dice from './components/Dice';
 import DriverCard from './components/DriverCard';
 import Greeting from './components/Greeting';
 import IdCard from './components/IdCard';
@@ -16,6 +19,28 @@ function App() {
       {/* <header className="App-header">
       new header
       </header> */}
+      <h1>Iteration 11- State: Carousel</h1>
+      <Carousel 
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+      />
+
+
+      <h1>Iteration 10- State: Dice</h1>
+      <div class="diceAppjs">
+        <Dice/>
+      </div>
+
+      <h1>Iteration 9- State: Clickable Picture</h1>
+      <ClickablePicture 
+        img='/img/persons/maxence.png'
+        imgClicked='/img/persons/maxence-glasses.png'
+      />
+
       <h1>Iteration 8- LikeButton</h1>
       <LikeButton /> 
       {/* <LikeButton /> */}
@@ -59,7 +84,7 @@ function App() {
       <div class="creditCardAppjs">
       <CreditCard
         type="./img/visa.png"
-        number=".... .... .... 8845"
+        number="0123456789018845"
         expirationMonth={3}
         expirationYear={2021}
         bank="BNP"
@@ -69,7 +94,7 @@ function App() {
         />
       <CreditCard
         type="./img/master-card.svg"
-        number="... .... .... 0995"
+        number= "0123456789010995"
         expirationMonth={3}
         expirationYear={2021}
         bank="N26"
@@ -80,7 +105,7 @@ function App() {
 
       <CreditCard
         type="./img/visa.png"
-        number="... .... .... 6984"
+        number= "0123456789016984"
         expirationMonth={12}
         expirationYear={2019}
         bank="Name of the Bank"
