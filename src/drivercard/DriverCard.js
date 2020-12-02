@@ -5,8 +5,7 @@ const DriverCard = ({ name, rating, img, car }) => {
   console.log(name, rating, img, car);
   return (
     <>
-      {/* <img src={img} alt="" /> */}
-
+      <img src={img} width="80px" alt="" />
       <h3>{name}</h3>
       <Rating>{rating}</Rating>
       <h4>

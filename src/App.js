@@ -8,6 +8,7 @@ import BoxColor from '../src/boxcolor/BoxColor';
 import CreditCard from '../src/creditcard/CreditCard';
 import Rating from '../src/rating/Rating';
 import DriverCard from '../src/drivercard/DriverCard';
+import LikeButton from '../src/likebutton/LikeButton';
 
 function App() {
   return (
@@ -32,12 +33,9 @@ function App() {
       <h1>Greetings</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-
       <h1>Random</h1>
-
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
       <h1>BoxColor</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
@@ -98,6 +96,8 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <h1>LikeButton</h1>
+      <LikeButton /> <LikeButton />
     </div>
   );
 }
