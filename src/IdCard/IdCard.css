@@ -1,0 +1,15 @@
+.id-card {
+    height: 150px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 10px
+}

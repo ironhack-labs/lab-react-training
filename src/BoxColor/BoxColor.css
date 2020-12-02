@@ -1,0 +1,9 @@
+.box-color {
+    height: 150px;
+    border: 2px solid black;
+    margin: 10px 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
