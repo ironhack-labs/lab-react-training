@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.driverCard img {
+  width: 150px;
+  height: 150px;
+  border-radius: 60%;
+}
