@@ -1,0 +1,21 @@
+.DriverCard {
+  display: flex;
+  justify-content: center;
+  background-color: #425cbb;
+  border-radius: 20px;
+  margin: 10px;
+  color: white;
+  text-align: left;
+}
+
+.DriverCard img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.DriverCardText {
+  text-align: justify;
+}
