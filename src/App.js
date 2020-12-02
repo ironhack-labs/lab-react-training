@@ -9,6 +9,9 @@ import CreditCard from './creditcard/CreditCard'
 import Rating from './rating/Rating'
 import DriverCard from './drivercard/DriverCard'
 import LikeButton from './likebutton/LikeButton'
+import ClickablePicture from './clickablepicture/ClicklablePicture'
+import Dice from './dice/Dice'
+import Carousel from './carousel/Carousel'
 
 function App() {
   return (
@@ -113,12 +116,25 @@ function App() {
 
         <br/>
         <h1>ClickablePicture</h1>
+        <ClickablePicture
+          img='/img/persons/maxence.png'
+          imgClicked='/img/persons/maxence-glasses.png'
+        />
 
         <br/>
         <h1>Dice</h1>
+        <Dice />
 
         <br/>
         <h1>Carusel</h1>
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
 
         <br/>
         <h1>NumbersTable</h1>
