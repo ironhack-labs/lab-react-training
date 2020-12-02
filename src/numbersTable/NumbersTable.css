@@ -1,0 +1,13 @@
+.Number ul {
+    display: flex;
+    max-width: 100px;
+   
+}
+
+.Number li {
+    max-width: 100px;
+    padding: 5px;
+    font-size: larger;
+    list-style-type: none;
+    border: solid black;
+}

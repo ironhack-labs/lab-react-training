@@ -15,7 +15,7 @@ class ClickablePicture extends Component {
  render() {
     return (
      <div className="Click">
-     {this.state.click? 
+     {this.state.click ? 
         <img src='/img/persons/maxence-glasses.png' alt="person" onClick={this.handleClick}></img> :
         <img src='img/persons/maxence.png' alt="person" onClick={this.handleClick}></img> 
         }    

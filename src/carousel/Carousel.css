@@ -1,0 +1,9 @@
+.Carousel {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.Carousel img {
+    max-width: 200px;
+}
