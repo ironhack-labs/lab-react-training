@@ -1,0 +1,22 @@
+.card {
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1px solid black;
+}
+
+.card-img {
+    height: 100%;
+}
+
+.card-text {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.card-text p {
+    margin: 0;
+}

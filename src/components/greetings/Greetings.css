@@ -1,0 +1,12 @@
+.border { 
+    margin: 15px;
+    padding: 5px;
+    max-width: 250px;
+    /* width: auto; */
+    border: 1px solid black;
+    text-align: center;
+}
+
+.border h3 {
+    margin: 0;
+}
