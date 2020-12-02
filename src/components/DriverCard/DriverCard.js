@@ -1,5 +1,4 @@
 import React from 'react';
-import IdCard from '../IdCard/IdCard';
 import Rating from '../Rating/Rating';
 import './DriverCard.css';
 

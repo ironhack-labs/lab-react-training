@@ -1,0 +1,12 @@
+.like-button {
+  color: #fff;
+  padding: 5px 10px;
+  border: none; 
+  outline: none;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.like-button:active {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 255, 0.2); 
+}
