@@ -1,5 +1,5 @@
-import React, {Fragment} from 'react';
-import logo from './logo.svg';
+import React from 'react';
+// import logo from './logo.svg';
 import './App.css';
 import IdCard from './idcard/IdCard'
 import './idcard/IdCard.css'
@@ -15,6 +15,7 @@ import DriverCard from './drivercard/DriverCard'
 import './drivercard/DriverCard.css'
 import LikeButton from './likebutton/LikeButton'
 import './likebutton/LikeButton.css'
+import ClickablePicture from './clickablePicture/ClickablePicture'
 
 function App() {
   return (
@@ -104,6 +105,12 @@ function App() {
         }} />
       <h1>Like Button</h1>
       <LikeButton /> <LikeButton />
+
+      <h1>Clickable Picture</h1>
+      <ClickablePicture
+        img='/img/persons/maxence.png'
+        imgClicked='/img/persons/maxence-glasses.png'
+      />
 
     </div>
     

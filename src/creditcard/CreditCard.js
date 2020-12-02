@@ -20,7 +20,7 @@ export default function CreditCard(props) {
         <div className="card-box">
         <div className="credit-card" style={cardStyle}>
             <div className="credit-card-logo">
-                <img className="logo" src={srcImg}/>
+                <img className="logo" src={srcImg} alt="logo"/>
             </div>
             <div className="credit-card-number">{number}</div>
             <div className="credit-card-info">

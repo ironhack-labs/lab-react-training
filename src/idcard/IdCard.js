@@ -3,7 +3,7 @@ import React from 'react'
 export default function IdCard(props) {
     return (
         <div className="idCard">
-            <img src={props.picture}/>
+            <img src={props.picture} alt="person"/>
             <div className="infos">
                 <p>
                     <strong>First Name: </strong> {props.firstName}

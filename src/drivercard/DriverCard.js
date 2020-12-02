@@ -5,7 +5,7 @@ export default function DriverCard(props) {
     return (
         <div className="driver-card">
             <div className="driver-image">
-                <img src={props.img}/>
+                <img src={props.img} alt="driver"/>
             </div>
             
             <div className="driver-info">
