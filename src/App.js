@@ -10,6 +10,8 @@ import DriverCard from './components/DriverCard/DriverCard.js'
 import LikeButton from './components/LikeButton/LikeButton.js'
 import ClickablePicture from './components/ClickablePicture/ClickablePicture.js'
 import Dice from './components/Dice/Dice.js'
+import Carousel from './components/Carousel/Carousel.js'
+import NumbersTable from './components/NumbersTable/NumbersTable.js'
 
 import './App.css';
 function App() {
@@ -104,6 +106,15 @@ function App() {
 />
 </div>
 <Dice/>
+<Carousel
+  imgs={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]}
+/>
+<NumbersTable limit={12} />
     </div>
   );
 }

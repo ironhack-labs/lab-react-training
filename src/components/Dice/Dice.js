@@ -4,7 +4,7 @@ import './Dice.css';
 export default class Dice extends Component {
     state = {
         value: true,
-        number: Math.floor(Math.random()*6)
+        number: Math.round(Math.random()*6)+1
     }
 
     clickHandler = () => {
@@ -15,15 +15,12 @@ export default class Dice extends Component {
             console.log('off')
             this.setState((state,props) => ({
                 value: true,
-                number: Math.floor(Math.random()*6)
+                number: Math.round(Math.random()*6)+1
             }))    
         }, 3000)
         // return value: false
     };
 
-    setToTrue = () => {
-
-    }
 
     render() {
         return (

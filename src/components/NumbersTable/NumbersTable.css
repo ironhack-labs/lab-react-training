@@ -1,0 +1,13 @@
+.box-container {
+    display: flex;
+}
+.Box {
+    border: solid 2px black;
+    width: 20px;
+    height: 20px;
+}
+
+.Even {
+    color: white;
+    background-color: red;
+}
