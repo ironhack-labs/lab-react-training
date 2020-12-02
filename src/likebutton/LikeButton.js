@@ -12,13 +12,6 @@ class LikeButton extends Component {
     }));
   };
 
-  // clickHandler = () => {
-  //   // console.log('clicked');
-  //   this.setState((state, props) => ({
-  //     counter: state.clickCount + 1
-  //   }));
-  // }
-
   render() {
     let colors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
     let randomColor = Math.floor(Math.random() * 6);
