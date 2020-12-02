@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import BoxColor from './components/boxColor/BoxColor';
-import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+// import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import CreditCard from './components/CreditCard/CreditCard';
 import DriverCard from './components/DirverCard/DriverCard';
 import Greetings from './components/greetings/Greetings';
@@ -75,7 +75,7 @@ function App() {
 
       <DriverCard
         name="Travis Kalanick"
-        rating={<Rating>4.2</Rating>}
+        rating={4.2}
         img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
         car={{
           model: 'Toyota Corolla Altis',
@@ -84,7 +84,7 @@ function App() {
       />
       <DriverCard
         name="Dara Khosrowshahi"
-        rating={<Rating>4.9</Rating>}
+        rating={4.9}
         img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
         car={{
           model: 'Audi A3',
@@ -93,10 +93,10 @@ function App() {
       />
       <LikeButton />
       <LikeButton />
-      <ClickablePicture
+      {/* <ClickablePicture
         img="/img/persons/maxence.png"
         imgClicked="/img/persons/maxence-glasses.png"
-      />
+      /> */}
     </div>
   );
 }
