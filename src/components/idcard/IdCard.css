@@ -1,0 +1,20 @@
+.wrapper {
+    outline:1px solid black;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: stretch;
+    margin: 10px;
+    padding: 10px;
+}
+
+p {
+    margin: 5px 0 5px 10px;
+
+}
+
+h1 {
+    margin-left: 10px;
+}

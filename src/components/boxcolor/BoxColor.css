@@ -1,0 +1,10 @@
+.boxcolor {
+    outline: 1px solid black;
+    margin: 10px;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+.centered {
+    text-align: center;
+}
