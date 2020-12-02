@@ -13,11 +13,15 @@ import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
 import FaceBook from './components/FaceBook/FaceBook';
 import SignupPage from './components/SignupPage/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+
+      <h1 className='title'>Iteration 1</h1>
+
       <IdCard
         lastName='Doe'
         firstName='John'
@@ -36,14 +40,22 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
 
+      <h1 className='title'>Iteration 2</h1>
+
       <Greeting lang="de">Ludwig</Greeting>
       <Greeting lang="fr">François</Greeting>
+
+      <h1 className='title'>Iteration 3</h1>
 
       <Random min={1} max={6}/>
       <Random min={1} max={100}/>
 
+      <h1 className='title'>Iteration 4</h1>
+
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+
+      <h1 className='title'>Iteration 5</h1>
 
       <div style={{display: 'flex'}}>
         <CreditCard
@@ -78,12 +90,16 @@ function App() {
         />
       </div>
 
+      <h1 className='title'>Iteration 6</h1>
+
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+
+      <h1 className='title'>Iteration 7</h1>
 
       <DriverCard
         name="Travis Kalanick"
@@ -104,14 +120,22 @@ function App() {
         }} 
       />
 
+      <h1 className='title'>Iteration 8</h1>
+
       <LikeButton /> <LikeButton />
+
+      <h1 className='title'>Iteration 9</h1>
 
       <ClickablePicture
         img='/img/persons/maxence.png'
         imgClicked='/img/persons/maxence-glasses.png'
       />
 
+      <h1 className='title'>Iteration 10</h1>
+
       <Dice />
+
+      <h1 className='title'>Iteration 11</h1>
 
       <Carousel
         imgs={[
@@ -122,11 +146,21 @@ function App() {
         ]}
       />
 
+      <h1 className='title'>Iteration 12</h1>
+
       <NumbersTable limit={12} />
+
+      <h1 className='title'>Iteration 13 and 14</h1>
 
       <FaceBook />
 
+      <h1 className='title'>Iteration 15</h1>
+
       <SignupPage />
+
+      <h1 className='title'>Iteration 16</h1>
+
+      <RGBColorPicker />
 
     </div>
   );
