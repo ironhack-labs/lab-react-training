@@ -16,6 +16,12 @@ import './drivercard/DriverCard.css'
 import LikeButton from './likebutton/LikeButton'
 import './likebutton/LikeButton.css'
 import ClickablePicture from './clickablePicture/ClickablePicture'
+import Dice from './dice/Dice'
+import './dice/Dice.css'
+import Carousel from './carousel/Carousel'
+import NumbersTable from './numberstable/NumbersTable'
+import './numberstable/NumbersTable.css'
+import FaceBook from './facebook/FaceBook';
 
 function App() {
   return (
@@ -111,6 +117,25 @@ function App() {
         img='/img/persons/maxence.png'
         imgClicked='/img/persons/maxence-glasses.png'
       />
+
+      <h1>Dice</h1>
+      <Dice/>
+
+      <h1>Carousel</h1>
+      
+      <Carousel
+      imgs={[
+        'https://randomuser.me/api/portraits/women/1.jpg',
+        'https://randomuser.me/api/portraits/men/1.jpg',
+        'https://randomuser.me/api/portraits/women/2.jpg',
+        'https://randomuser.me/api/portraits/men/2.jpg'
+      ]}
+      />
+    
+    <h1>NumbersTable</h1>
+    <NumbersTable limit={12} />
+    <h1>FaceBook</h1>
+    <FaceBook/>
 
     </div>
     

@@ -18,7 +18,7 @@ export default class ClickablePicture extends Component {
     render() {
         return (
             <div>
-                <img src={this.state.img} onClick={this.clickHandler} alt="person"/>
+                <img src={this.state.img} onClick={this.clickHandler} style={{width:"100px"}}alt="person"/>
             </div>
         )
     }

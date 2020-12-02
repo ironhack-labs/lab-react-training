@@ -1,0 +1,15 @@
+.numbers-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.numbers-box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+/* .numbers-odd {
+    background-color: tomato;
+} */
