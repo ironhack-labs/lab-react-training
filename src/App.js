@@ -10,6 +10,7 @@ import DriverCard from './components/DriverCard';
 import Greeting from './components/Greeting';
 import IdCard from './components/IdCard';
 import LikeButton from './components/LikeButton';
+import NumbersTable from './components/NumbersTable';
 import Random from './components/Random';
 import Rating from './components/Rating';
 
@@ -19,6 +20,12 @@ function App() {
       {/* <header className="App-header">
       new header
       </header> */}
+      <h1>Iteration 12- State: List and Keys</h1>
+      <NumbersTable 
+        limit={12}
+      />
+
+
       <h1>Iteration 11- State: Carousel</h1>
       <Carousel 
           imgs={[
