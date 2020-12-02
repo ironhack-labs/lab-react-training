@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import BoxColor from './components/boxColor/BoxColor';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import CreditCard from './components/CreditCard/CreditCard';
 import DriverCard from './components/DirverCard/DriverCard';
 import Greetings from './components/greetings/Greetings';
@@ -92,6 +93,10 @@ function App() {
       />
       <LikeButton />
       <LikeButton />
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
     </div>
   );
 }

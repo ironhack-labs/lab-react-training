@@ -8,7 +8,7 @@ const {name, rating, img, car:{model, licensePlate}} = props
         <div>
         <img className="driver" src={img} alt="mugshot"/>
         <h3>{name}</h3>
-        <p>{rating}</p>
+        <div>{rating}</div>
             <p>{model} - {licensePlate}</p>
         </div>
     )
