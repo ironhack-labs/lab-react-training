@@ -16,7 +16,7 @@ import Dice from './components/dice/Dice';
 function App() {
   return (
     <>
-    <h1>IdCard</h1>
+    <h1>Iteration 1: IdCard</h1>
     <IdCard
       lastName='Doe'
       firstName='John'
@@ -35,19 +35,19 @@ function App() {
       picture="https://randomuser.me/api/portraits/women/44.jpg"
     />
 
-    <h1>Greetings</h1>
+    <h1>Iteration 2: Greetings</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
 
-    <h1>Random</h1>
+    <h1>Iteration 3: Random</h1>
       <Random min={1} max={6}/>
       <Random min={1} max={100}/>
 
-    <h1>BoxColor</h1>
+    <h1>Iteration 4: BoxColor</h1>
       <BoxColor fontColor="white" r={255} g={0} b={0} />
       <BoxColor fontColor="black" r={128} g={255} b={0} />
 
-    <h1>CreditCard</h1>
+    <h1>Iteration 5: CreditCard</h1>
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -76,7 +76,7 @@ function App() {
         bgColor="#ddbb55"
         color="white" />
 
-        <h1>Iteration 6</h1>
+        <h1>Iteration 6: Rating</h1>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
@@ -84,7 +84,7 @@ function App() {
         <Rating>4</Rating>
         <Rating>5</Rating>
 
-        <h1>Iteration 8</h1>
+        <h1>Iteration 7: DriverCard</h1>
         <DriverCard
           name="Travis Kalanick"
           rating={4.2}
@@ -102,16 +102,16 @@ function App() {
             licensePlate: "BE33ER"
           }} />
 
-          <h1>Iteration 8</h1>
+          <h1>Iteration 8: LikeButton</h1>
           <LikeButton /> <LikeButton />
 
-          <h1>Iteration 9</h1>
+          <h1>Iteration 9: ClickablePicture</h1>
           <ClickablePicture
             img='/img/persons/maxence.png'
             imgClicked='/img/persons/maxence-glasses.png'
           />
 
-          <h1>Iteration 10</h1>
+          <h1>Iteration 10: Dice</h1>
           <Dice />
     </>
   );
