@@ -23,13 +23,13 @@ export default class Dice extends Component {
                     randomIndex:random
                 })
                 console.log(random)
-        },500)
+        },10)
 
     }
 
     render() {
         return (
-            <div>
+            <div style={{display:'flex'}}>
                 <img onClick={this.clickedRandomPic} style={{width:'100px',height:'100px'}}src={this.state.randomPictures[this.state.randomIndex]} alt=""/>
             </div>
         )

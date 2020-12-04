@@ -12,6 +12,9 @@ import LikeButton from './likebutton/LikeButton'
 import ClickablePicture from './clickablepicture/ClicklablePicture'
 import Dice from './dice/Dice'
 import Carousel from './carousel/Carousel'
+import NumbersTable from './numberstable/NumbersTable'
+import FaceBook from './facebook/FaceBook'
+import SignupPage from './signup/SignupPage'
 
 function App() {
   return (
@@ -138,8 +141,15 @@ function App() {
 
         <br/>
         <h1>NumbersTable</h1>
+        <NumbersTable limit={12} />
 
+        <br/>
+        <h1>Simple Facebook</h1>
+        <FaceBook />
 
+        <br/>
+        <h1>Signup Page</h1>
+        <SignupPage />
       </div>
   );
 }

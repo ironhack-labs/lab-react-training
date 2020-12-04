@@ -14,3 +14,7 @@
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+.blueBtn{
+    background-color: lightblue;
+}
