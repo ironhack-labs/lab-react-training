@@ -10,8 +10,8 @@ export default function NumbersTable(props) {
 
     const display = numbers.map(number => {
         return number % 2 === 0 ? 
-        <div className="cell" style={{backgroundColor: 'red'}}> { number }</div> : 
-        <div className="cell" > { number }</div>
+        <div key={number} className="cell" style={{backgroundColor: 'red'}}> { number }</div> : 
+        <div key={number} className="cell" > { number }</div>
     })
 
     return (

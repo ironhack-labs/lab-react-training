@@ -7,7 +7,7 @@ export default class DriverCard extends Component {
         return (
             <div>
                 <div>
-                    <img src={ this.props.img }  alt="picture"/>
+                    <img src={ this.props.img }  alt="driver"/>
                 </div>
                 <div>
                     <p>{ this.props.name }</p>

@@ -26,7 +26,7 @@ export default class Carousel extends Component {
         return (
             <div>
                 <button onClick={ this.leftClickHandler }>Left</button>
-                <img src={this.props.imgs[this.state.index]} alt="picture"/>
+                <img src={this.props.imgs[this.state.index]} alt="random"/>
                 <button onClick={ this.rightClickHandler }>Right</button>
             </div>
         )

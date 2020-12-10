@@ -8,7 +8,7 @@ export default class IdCard extends Component {
             <>
                 <div className="card">
                     <div className="card-img">
-                        <img src={this.props.picture} alt="profile picture" />
+                        <img src={this.props.picture} alt="profile" />
                     </div>
                     <div className="card-text">
                         <p><strong>First name:</strong> {this.props.firstName} </p>

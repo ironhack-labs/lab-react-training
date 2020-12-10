@@ -13,7 +13,7 @@ export default class ClickablePicture extends Component {
     render() {
         return (
             <div>
-                <img src={ this.state.clicked ? this.props.img : this.props.imgClicked } onClick={this.onclickHandler} alt="profile image"/>
+                <img src={ this.state.clicked ? this.props.img : this.props.imgClicked } onClick={this.onclickHandler} alt="profile"/>
             </div>
         )
     }

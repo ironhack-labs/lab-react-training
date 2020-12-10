@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './BoxColor.css'
 
 export default function BoxColor(props) {
