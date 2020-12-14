@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.cardContainer {
+  border: 2px solid black;
+  display: flex;
+  margin-top: 10px;
+}
+
+.cardContainer img {
+  width: 150px;
+  height: 150px;
+}
+
+.cardContainer div{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+#iterationTwo div, #iterationThree div, #iterationFour div {
+  border: 2px solid black;
+  margin-top: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: left; 
+}
+
+#iterationFive div {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left; 
+}
+
+.creditLogo img{
+  width: 50px;
+  height: 30px;
+  align-self: flex-end;
+  padding-right: 20px;
+  
+}
+
+.pCreditNumber {
+  font-size: 30px;
+}
+
+.infoCard{
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+
+#iterationSix div {
+  font-size: 40px;
+  justify-content: left; 
+}
+
+#iterationSeven img {
+  height: 100px;
+  width: 100px; 
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
+}
+
+#iterationSeven {
+  margin-top: 10px;
+}
+
+.driverCont {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+
+#iterationEight {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#iterationEight button{
+  width: 80px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 10px 10px 10px ;
+  color: white;
+  font-size: 20px;
+}
