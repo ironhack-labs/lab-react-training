@@ -1,0 +1,25 @@
+card-img img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+  
+.card-profile {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 20px;
+}
+  
+  .country-btn {
+    padding: 5px 10px;
+    border: 1px solid #CBCACB;
+    background: none;
+    outline: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #A3D2E2;
+  } 
