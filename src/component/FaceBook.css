@@ -1,0 +1,58 @@
+.FaceBook-section{
+        display: flex;
+        flex-direction: column;
+}
+.listFaceBook{
+        margin: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+       
+}
+.profile-cart{
+        padding: 5px;
+        margin: 5px;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        justify-content: center;
+}
+.profile-cart img {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+}
+.profile-cart div{
+        display: none;
+}
+.profile-cart:hover > div
+{
+        display: block;
+}
+.show{
+        display: block;
+}
+.listCountry{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+}
+.btnSort{
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        margin: 10px auto;
+}
+#search{
+        margin: 10px auto;
+        padding: 10px 30px;
+        width: 200px;
+        border-radius: 20px;
+        background-color: lightblue;
+        border: none;
+        outline: none;
+}
+#search:focus{
+        transition: all 1s;
+        width: 350px;
+}

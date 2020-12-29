@@ -1,0 +1,24 @@
+.CreditCard {
+        max-width: 300px;
+        width: 100%;
+        padding: 8px;
+        border-radius: 10px;
+        margin:20px;
+}
+
+.CreditCard h3:first-child {
+        text-transform: uppercase;
+        text-align: right;
+}
+
+.CreditCard h3:first-child+h3 {
+        text-align: center;
+        letter-spacing: 4px;
+}
+
+.CreditCard p{
+        font-size: 13px;
+}
+.CreditCard span {
+        margin-left: 10px;
+}

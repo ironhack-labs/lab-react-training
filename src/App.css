@@ -1,38 +1,67 @@
 .App {
+  text-align: left;
+  line-height: 0.8;
+}
+
+section > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.border {
+  border: 1px solid black;
+  text-align: left;
+  padding: 5px;
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.idCard {
+  border: 1px solid black;
+  display: flex;
+  padding: 10px;
+}
+
+.idCard img {
+  width: 30%;
+  height: auto;
+  padding-right: 20px;
+}
+
+.boxColor.border {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.5;
+}
+
+.Rating {
+  letter-spacing: 5px;
+  font-size: 3vw;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Carousel{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1000px) {
+  .border {
+    width: 80%;
+    margin: 10px auto;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 600px) {
+  .border {
+    width: 90%;
+    margin: 10px auto;
   }
 }

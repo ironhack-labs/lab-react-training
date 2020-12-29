@@ -1,0 +1,14 @@
+.LikeButton{
+        padding: 3px 10px;
+        margin: 20px 50px;
+        color: white;
+        font-size: 1.2rem;
+        border: none;
+}
+
+.LikeButton:active,
+.LikeButton:focus {
+        box-shadow: 0px 0px 2px 5px gray;
+        border-radius: 5px;
+        transition: all 0.5s;
+}

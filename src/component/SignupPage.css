@@ -1,0 +1,28 @@
+.flex-column{
+        display: flex;
+        flex-direction: column;
+}
+.SignupPage{  
+        align-items: center;
+}
+.SignupForm{
+        width: 50%;
+}
+.SignupForm *{
+        margin: 5px 0;
+}
+.SignupForm input, .SignupForm select{
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid rgb(37, 172, 218);
+}
+.SignupForm button{
+        width: 100px;
+        padding: 5px;
+        align-self: center;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        background-color: rgb(37, 172, 218);
+
+}
