@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ******Common Styles****** */
+.sameStyle {
+  border: 3px solid;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* **********GREATINGS*********** */
+.idCart {
+  display: flex;
+}
+.idCart img {
+  width: 150px;
+  margin-right: 1rem;
+}
+.idCart div span {
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* **********GREATINGS*********** */
+.greatings {
+  font-size: 3rem;
+}
+
+/* **********RANDOM*********** */
+.random {
+  font-size: 2rem;
+}
+
+/* **********BOXCOLOR******* */
+.colorBox {
+  width: 50%;
+  height: 150px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* ********CREDIT CARD********** */
+.creditCardConatiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.creditCard {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  overflow: hidden;
+  height: 10rem;
+  border-radius: 1rem;
+  font-size: 2.8rem;
+}
+.creditCard div {
+  font-size: 1rem;
+}
+.creditCard div span {
+  margin-left: 2rem;
+}
+.creditCard img {
+  width: 2rem;
 }
