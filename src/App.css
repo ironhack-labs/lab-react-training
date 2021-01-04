@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -27,6 +27,53 @@
 .App-link {
   color: #61dafb;
 }
+.IdCard {
+  box-sizing:content-box;
+  display:flex;
+  flex-direction: row;
+  width:80%;
+  padding: 10px;
+  margin: 25px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 4px;
+}
+.userImage{
+ height: auto;
+}
+.userInfo{
+  display:flex;
+  flex-direction:column;
+  line-height:normal;
+  padding: 25px;
+}
+.Greetings {
+  border: 1px solid black;
+  background-color: white;
+  box-sizing:content-box;
+  width:80%;
+  padding: 10px;
+  margin: 25px;
+}
+
+.Random {
+  border: 1px solid black;
+  background-color: white;
+  box-sizing:content-box;
+  width:80%;
+  padding: 10px;
+  margin: 25px;
+}
+
+.BoxColor {
+  padding: 15px;
+  width: 150px;
+  border: 1px solid black;
+  align-content: center;
+  color:white;
+} 
+
 
 @keyframes App-logo-spin {
   from {
