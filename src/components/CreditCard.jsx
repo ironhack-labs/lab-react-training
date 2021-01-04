@@ -23,7 +23,7 @@ function CreditCard(props) {
         <img src={getLogo(props.type)} />
       </div>
       <div className="number">
-        •••• •••• ••••{props.number.toString().slice(12, 16)}
+        •••• •••• •••• {props.number.toString().slice(12, 16)}
       </div>
       <div className="expire">
         <div>
