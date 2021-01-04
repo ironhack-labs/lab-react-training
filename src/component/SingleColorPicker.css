@@ -10,13 +10,25 @@
         height: 50px;
         border: 2px solid black;
 }
-.singlePicker-color{
+
+.singlePicker-color {
         text-transform: uppercase;
-       
+
 }
-.singlePicker-input{
+
+.singlePicker-input {
         height: 30px;
 }
-#rgb{
+
+#rgb {
         display: none;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+input[type=number] {
+        -moz-appearance: textfield;
+      }

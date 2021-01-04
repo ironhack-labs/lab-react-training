@@ -6,7 +6,7 @@ export class FaceBook extends Component {
         state = {
                 selectedCountry: '',
                 selectedProfiles: profiles,
-                search:''
+                search: ''
 
         };
 
@@ -26,11 +26,16 @@ export class FaceBook extends Component {
 
         };
 
-        // search = (event) => {
-                // event.preventDefault();
-                // console.log(event.target.value)
-                // this.setState({search:event.target.value});
-        // }
+        handleSearch = (event) => {
+                event.preventDefault();
+                const searchedValue = (event.target.value).toLowerCase();
+                this.setState({ search: searchedValue });
+
+                const keys = Object.keys(profiles[0]);
+                const list = [...profiles].filter(profile => keys.some(column => profile[column].toString().toLowerCase().indexOf(searchedValue) > -1))
+        
+                this.setState({selectedProfiles : list})
+        }
 
         render() {
                 // const listCountry = [...profiles].map(per => per.country).reduce((list, country) => {
@@ -39,7 +44,6 @@ export class FaceBook extends Component {
                 // }, []);
 
                 const listCountry = [...new Set([...profiles].map(per => per.country))];
-
 
                 return (
                         <div className="FaceBook-section">
@@ -66,7 +70,7 @@ export class FaceBook extends Component {
 
                                         <button onClick={this.sortList} className="btnSort">Sort by Country</button>
 
-                                        <input type="text" name="search" id="search" value={this.state.input} placeholder="Search profile" onChange={this.search}></input>
+                                        <input type="text" name="search" id="search" value={this.state.input} placeholder="Search profile" onChange={this.handleSearch}></input>
 
 
                                 </div>
