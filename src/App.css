@@ -36,3 +36,74 @@
     transform: rotate(360deg);
   }
 }
+
+.id-card {
+  display: flex;
+  border: 1px solid;
+  margin: 10px;
+  padding: 10px;
+}
+.id-card img {
+  width: 150px;
+  height: 150px;
+}
+.id-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.id-details p {
+  margin: 0px 10px;
+}
+
+.greetings-card {
+  border: 1px solid;
+  margin: 10px;
+  padding: 10px;
+  text-align: start;
+}
+
+.random {
+  border: 1px solid;
+  margin: 10px;
+  padding: 10px;
+  text-align: start;
+}
+.box-color {
+  border: 1px solid;
+  margin: 10px;
+  padding: 10px;
+}
+
+.CreditCard {
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.CreditCard .type img {
+  height: 20px;
+}
+
+.CreditCard .type {
+  text-align: right;
+}
+
+.CreditCard .number {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.CreditCard .bank {
+  margin-left: 20px;
+}
+
+.expires-bank {
+  display: flex;
+}
+.owner {
+  display: flex;
+}
