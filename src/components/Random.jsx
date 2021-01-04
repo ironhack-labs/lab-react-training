@@ -8,7 +8,7 @@ function Random(props) {
   }
 
   return (
-    <div>
+    <div className="box">
       Random value between {props.min} and {props.max} {'=>'}{' '}
       {getRandomInt(props.min, props.max)}
     </div>

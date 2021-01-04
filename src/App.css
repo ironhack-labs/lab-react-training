@@ -1,3 +1,8 @@
+* {
+  text-align: left;
+  margin: 2px;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.box {
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.creditCard {
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.idCard {
+  display: flex;
+}
+
+.creditCard .type {
+  text-align: right;
+}
+
+.creditCard .type img {
+  height: 20px;
+}
+
+.boxColor {
+  text-align: center;
 }

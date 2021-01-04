@@ -17,9 +17,12 @@ function CreditCard(props) {
         backgroundColor: `${props.bgColor}`,
         color: `${props.color}`,
       }}
+      className="creditCard"
     >
-      <img src={getLogo(props.type)} />
-      <div>{props.number}</div>
+      <div className="type">
+        <img src={getLogo(props.type)} />
+      </div>
+      <div>•••• •••• ••••{props.number.toString().slice(12, 16)}</div>
       <div>
         Expires {month(props.expirationMonth)}/
         {props.expirationYear.toString().slice(2, 4)}

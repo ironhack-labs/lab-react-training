@@ -2,7 +2,7 @@ import React from 'react';
 
 function IdCard(props) {
   return (
-    <div>
+    <div className="box idCard">
       <img src={props.picture} />
       <div>
         <div>Firstname: {props.firstName}</div>
