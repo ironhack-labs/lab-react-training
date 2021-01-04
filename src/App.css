@@ -68,6 +68,41 @@
   height: 20px;
 }
 
+.creditCard .number {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.creditCard .expire {
+  display: flex;
+}
+
+.creditCard .expire .bank {
+  margin-left: 5vw;
+}
 .boxColor {
   text-align: center;
+}
+
+.driverCard {
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.driverCard img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.driverCard > * {
+  margin: 8px;
 }

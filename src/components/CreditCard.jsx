@@ -22,12 +22,16 @@ function CreditCard(props) {
       <div className="type">
         <img src={getLogo(props.type)} />
       </div>
-      <div>•••• •••• ••••{props.number.toString().slice(12, 16)}</div>
-      <div>
-        Expires {month(props.expirationMonth)}/
-        {props.expirationYear.toString().slice(2, 4)}
+      <div className="number">
+        •••• •••• ••••{props.number.toString().slice(12, 16)}
       </div>
-      <div>{props.bank}</div>
+      <div className="expire">
+        <div>
+          Expires {month(props.expirationMonth)}/
+          {props.expirationYear.toString().slice(2, 4)}
+        </div>
+        <div className="bank">{props.bank}</div>
+      </div>
       <div>{props.owner}</div>
     </div>
   );
