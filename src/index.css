@@ -95,3 +95,7 @@ code {
 .DriverCard .right > * {
   margin: 0;
 }
+
+.dice {
+  width: 150px;
+}

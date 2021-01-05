@@ -5,14 +5,15 @@ const IdCard = (props) => {
     <div className="IdCard box">
       <img src={props.picture} alt={props.firstName} />
       <div className="right">
-      <p>First name: {props.firstName}</p>
-      <p>Last name: {props.lastName}</p>
-      <p>Gender: {props.gender}</p>
-      <p>
-        Height: {props.height.toString().charAt(0)}.
-        {props.height.toString().slice(1, 3)}m
-      </p>
-      <p>Birth: {props.birth.toString().slice(0, 15)}</p></div>
+        <p>First name: {props.firstName}</p>
+        <p>Last name: {props.lastName}</p>
+        <p>Gender: {props.gender}</p>
+        <p>
+          Height: {props.height.toString().charAt(0)}.
+          {props.height.toString().slice(1, 3)}m
+        </p>
+        <p>Birth: {props.birth.toDateString()}</p>
+      </div>
     </div>
   );
 };
