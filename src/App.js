@@ -5,6 +5,8 @@ import Greetings from './components/greetings/Greetings';
 import Random from './components/random/Random';
 import BoxColor from './components/boxcolor/BoxColor';
 import { CreditCard, WrapContainer } from './components/creditcard/CreditCard';
+import Rating from './components/rating/Rating';
+import DriverCard from './components/drivercard/DriverCard';
 
 const dateOption = {
   weekday: 'long', 
@@ -86,6 +88,28 @@ function App() {
         <CreditCard card={cards[1]}/>
         <CreditCard card={cards[2]}/>
       </WrapContainer>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE"
+        }} />
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
+        }} />
     </>
   );
 }

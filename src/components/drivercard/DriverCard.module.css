@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 91, 190);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.card h3,
+.card span {
+    margin: 0 1rem;
+}
+
+.avatar {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+}
+
+.driverInfo {
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    justify-content: space-between;
+}
+
+.rating {
+    font-size: 2rem;
+}
