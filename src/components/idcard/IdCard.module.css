@@ -1,0 +1,7 @@
+.card__id {
+    display: flex;
+    border: 1px solid;
+    margin: 1rem;
+    height: 200px;
+}
+

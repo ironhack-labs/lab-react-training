@@ -1,25 +1,92 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import IdCard from './components/idcard/IdCard';
+import Greetings from './components/greetings/Greetings';
+import Random from './components/random/Random';
+import BoxColor from './components/boxcolor/BoxColor';
+import { CreditCard, WrapContainer } from './components/creditcard/CreditCard';
+
+const dateOption = {
+  weekday: 'long', 
+  year:'numeric', 
+  month:'long', 
+  day:'numeric'
+};
+
+const users = [
+  {
+    lastName: 'Doe',
+    firstName: 'John',
+    gender: 'male',
+    height: 178,
+    birth: (new Date("1992-07-14")).toLocaleDateString(undefined, dateOption),
+    picture: "https://randomuser.me/api/portraits/men/44.jpg",
+  },
+  {
+    lastName: 'Delores',
+    firstName: 'Obrien',
+    gender: 'female',
+    height: 172,
+    birth: (new Date("1988-05-11")).toLocaleDateString(undefined, dateOption),
+    picture: "https://randomuser.me/api/portraits/women/44.jpg",
+  }
+];
+
+const cards = [
+  {
+      type: "Visa",
+      number: "0123456789018845",
+      expirationMonth: 3,
+      expirationYear: 2021,
+      bank: "BNP",
+      owner: "Maxence Bouret",
+      bgColor: "#11aa99",
+      color: "white",
+  },
+  {
+      type: "Master Card",
+      number: "0123456789010995",
+      expirationMonth: 3,
+      expirationYear: 2021,
+      bank: "N26",
+      owner: "Maxence Bouret",
+      bgColor: "#eeeeee",
+      color: "#222222",
+  },
+  {
+      type: "Visa",
+      number: "0123456789016984",
+      expirationMonth: 12,
+      expirationYear: 2019,
+      bank: "Name of the Bank",
+      owner: "Firstname Lastname",
+      bgColor: "#ddbb55",
+      color: "white",
+  }
+];
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <IdCard user={users[0]} />
+      <IdCard user={users[1]} />
+      <Greetings lang="de">
+        Ludwig
+      </Greetings>
+      <Greetings lang="fr">
+        François
+      </Greetings>
+      <Random min='1' max='6' />
+      <Random min='1' max='100' />
+      <BoxColor r="255" g="173" b="173" />
+      <BoxColor r="160" g="196" b="255" />
+      <WrapContainer>
+        <CreditCard card={cards[0]}/>
+        <CreditCard card={cards[1]}/>
+        <CreditCard card={cards[2]}/>
+      </WrapContainer>
+    </>
   );
 }
 

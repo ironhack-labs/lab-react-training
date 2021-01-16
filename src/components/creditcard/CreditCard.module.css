@@ -1,0 +1,33 @@
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+    height: 200px;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.logo {
+    height: 30px;
+    align-self: flex-end;
+}
+
+.number {
+    font-size: 2rem;
+}
+
+.textinfo {
+    align-self: flex-start;
+}
+
+.bank {
+    margin-left: 20px;
+}
