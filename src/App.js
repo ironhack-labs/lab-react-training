@@ -7,6 +7,7 @@ import BoxColor from './components/boxcolor/BoxColor';
 import { CreditCard, WrapContainer } from './components/creditcard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/drivercard/DriverCard';
+import LikeButton from './components/likebutton/LikeButton';
 
 const dateOption = {
   weekday: 'long', 
@@ -110,6 +111,8 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} />
+      <LikeButton />
+      <LikeButton />
     </>
   );
 }

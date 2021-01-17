@@ -23,7 +23,7 @@ function CreditCard(props) {
 
     return (
         <div className={style.card} style={creditCardStyle}>
-            <img className={style.logo} src={getCardLogo(props.card.type)} />
+            <img className={style.logo} src={getCardLogo(props.card.type)} alt={props.card.type} />
             <span className={style.number}>•••• •••• •••• {showCardLastDigits(props.card.number)}</span>
             <div className={style.textinfo}>
                 <div>
