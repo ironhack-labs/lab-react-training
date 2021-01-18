@@ -21,7 +21,7 @@ class Greetings extends React.Component {
         }
 
         return (
-            <div>
+            <div className="Greeting">
                 <p>{`${greeting}, ${this.props.children}`}</p>
             </div>
         );
