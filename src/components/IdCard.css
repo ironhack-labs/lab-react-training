@@ -1,0 +1,15 @@
+.id-card {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 20px 0 0 20px;
+	border: 2px solid black;
+}
+
+.id-card img {
+	margin: 5px 0 5px 5px;
+}
+
+.id-card ul li {
+	list-style: none;
+}

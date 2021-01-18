@@ -1,0 +1,32 @@
+.credit-card {
+	position: relative;
+	margin: 10px;
+	padding: 10px;
+	width: 350px;
+	height: 180px;
+	border-radius: 10px;
+}
+
+.credit-card img {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 70px;
+}
+
+.number {
+	padding: 20px 0 0 0;
+	font-family: Arial;
+	font-size: 35px;
+	text-align: center;
+}
+
+.bank .owner {
+	font-family: Arial;
+	font-size: 16px;
+	text-align: left;
+}
+
+.bank > span {
+	padding: 0 0 0 100px;
+}

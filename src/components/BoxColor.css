@@ -1,0 +1,19 @@
+.box-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+
+.box-color {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 800px;
+	height: 80px;
+}
+
+.box-color p {
+	font: bold 20px Arial, sans-serif;
+	color: black;
+}

@@ -1,0 +1,34 @@
+.driver-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 500px;
+	background-color: #425cbb;
+	border-radius: 10px;
+	margin: 10px;
+
+}
+
+.driver-card img {
+	margin: 10px;
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+}
+
+.driver-card-name, .rating {
+	font-weight: bold;
+}
+
+.driver-card p {
+	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	font-family: Arial;
+	color: white;
+	font-size: 16px;
+}
+
+
+

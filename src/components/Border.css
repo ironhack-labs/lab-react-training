@@ -1,0 +1,8 @@
+.border {
+	margin: 20px 10px 0 10px;
+	border: 2px solid black;
+}
+
+.border p {
+	margin: 10px 10px 10px 10px;
+}
