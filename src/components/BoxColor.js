@@ -2,11 +2,10 @@ import React from 'react'
 import '../components/BoxColor.css'
 
 
-
 class BoxColor extends React.Component {
     render() {
         let myStyle = {
-            'background-color': `rgb(${this.props.r}, ${this.props.g}, ${this.props.b})`
+            'backgroundColor': `rgb(${this.props.r}, ${this.props.g}, ${this.props.b})`
         }
 
         let hex = (r,g,b) => {
