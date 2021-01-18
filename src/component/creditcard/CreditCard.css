@@ -1,0 +1,16 @@
+.card{
+    width: 25% !important;
+    margin-bottom: 30px;
+}
+
+#bank{
+    margin-left: 40px;
+}
+
+.columns{
+    margin-bottom: 1px !important;
+}
+
+.bigText{
+    font-size: 2.5em;
+}
