@@ -1,5 +1,6 @@
 import React from 'react';
 import IdCard from './components/IdCard'
+import Greeting from './components/Greeting'
 import logo from './logo.svg';
 import './App.css';
 
@@ -27,6 +28,12 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
     </div>
+
+    <Greeting lang="de">Ludwig</Greeting>
+    <Greeting lang="fr">François</Greeting>
+    <Greeting lang="es">Bella</Greeting>
+    <Greeting lang="en">Adam</Greeting>
+
   </React.Fragment>
   );
 }
