@@ -8,8 +8,6 @@ class BoxColor extends React.Component {
         let g = (this.props.g >= 0 && this.props.g <255 ) 
         let b = (this.props.b >= 0 && this.props.b <255 ) 
 
-        //let myColor = <p>`rgb(${this.props.r},${this.props.g},${this.props.b})`</p>
-
         const divStyle = {
             "backgroundColor": `rgb(${this.props.r},${this.props.g},${this.props.b})`,
             "width": "250px",

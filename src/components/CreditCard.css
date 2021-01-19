@@ -1,0 +1,27 @@
+
+.CardNum{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-height: 90%;
+}
+
+.CardNum > h1 {
+    margin-top: 130px;
+}
+
+.CardInfo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+    
+}
+
+.Exp {
+    margin-right: 20px;
+}
+
+.Owner {
+    margin-left: 30px;
+    margin-top: -12px;
+}
