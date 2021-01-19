@@ -22,7 +22,7 @@ class Greeting extends React.Component {
             }
 
          return (
-             <div>
+             <div className="Greetings">
                 <p>{`${greet}, ${this.props.children}`}</p>
              </div>
          )

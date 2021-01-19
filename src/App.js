@@ -1,13 +1,14 @@
 import React from 'react';
 import IdCard from './components/IdCard'
 import Greeting from './components/Greeting'
+import Random from './components/Random'
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
   <React.Fragment>
-    <div className="App">
+    <div>
       <IdCard
         lastName='Doe'
         firstName='John'
@@ -18,7 +19,7 @@ function App() {
       />
     </div>
 
-    <div className="App">
+    <div>
       <IdCard
         lastName='Delores '
         firstName='Obrien'
@@ -28,12 +29,19 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
     </div>
+    <div>
+      <h4>Greetings</h4>
+      <Greeting lang="de">Ludwig</Greeting>
+      <Greeting lang="fr">François</Greeting>
+      <Greeting lang="es">Bella</Greeting>
+      <Greeting lang="en">Adam</Greeting>
+    </div>
 
-    <Greeting lang="de">Ludwig</Greeting>
-    <Greeting lang="fr">François</Greeting>
-    <Greeting lang="es">Bella</Greeting>
-    <Greeting lang="en">Adam</Greeting>
-
+    <div>
+      <h4>Random number</h4>
+      <Random min={1} max={6}/>
+      <Random min={5} max={100}/>
+    </div>
   </React.Fragment>
   );
 }
