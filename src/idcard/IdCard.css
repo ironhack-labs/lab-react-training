@@ -1,0 +1,24 @@
+.App {
+    padding: 10px;
+}
+
+.App h1 {
+    text-align: left;
+}
+
+.box {
+    border: 1px solid black;
+    display: flex;
+    width: 99%;
+    margin-top: 10px;
+}
+
+.box-text {
+    text-align: left;
+}
+
+.box img {
+    padding: 10px;
+    object-fit: cover;
+}
+
