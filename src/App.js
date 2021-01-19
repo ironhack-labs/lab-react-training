@@ -3,6 +3,7 @@ import './App.css';
 import {IdCard} from './components/IdCard/IdCard';
 import {Greetings} from './components/Greetings/Greetings';
 import {Random} from './components/Random/Random';
+import {BoxColor} from './components/BoxColor/BoxColor';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       <h1>Random</h1>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
+      <h1>BoxColor</h1>
+        <BoxColor r={254} g={127} b={156} />
+        <BoxColor r={177} g={156} b={217} />
     </React.Fragment>
 
   );
