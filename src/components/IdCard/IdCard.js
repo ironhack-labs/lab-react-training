@@ -12,9 +12,9 @@ class IdCard extends React.Component {
                     <div className="card-description">
                         <p>First name: {this.props.firstName}</p>
                         <p>Last name: {this.props.lastName}</p>
-                        <p>Gender: {this.props.gender}</p>
-                        <p>Height: {this.props.height}</p>
-                        <p>Birthday: {this.props.birthday}</p>
+                        <p gender={'male' || 'female'}>Gender: {this.props.gender}</p>
+                        <p>Height: {this.props.height + 'm'}</p>
+                        <p>Birthday: {this.props.birthday.toString().slice(0, 15)}</p>
                     </div>
                 </div>
             </div>

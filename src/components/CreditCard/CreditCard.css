@@ -1,0 +1,9 @@
+.cards-collection {
+    display: flex;
+}
+
+.credit-card {
+    border-radius: 10px;
+    width: 300px;
+    margin-right: 20px;
+}

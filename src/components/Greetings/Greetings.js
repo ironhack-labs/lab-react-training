@@ -18,7 +18,7 @@ function Greetings(props) {
 
     return (
         <div>
-            <p className="border-box" lang={props.lang}>{hello} {props.children}</p>
+            <p className="border-box" lang={'en' || 'de' || 'es' || 'fr'}>{hello} {props.children}</p>
         </div>
     )
 }
