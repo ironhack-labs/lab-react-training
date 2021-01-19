@@ -2,6 +2,7 @@ import React from 'react';
 import IdCard from './components/IdCard'
 import Greeting from './components/Greeting'
 import Random from './components/Random'
+import BoxColor from './components/BoxColor'
 import logo from './logo.svg';
 import './App.css';
 
@@ -42,6 +43,13 @@ function App() {
       <Random min={1} max={6}/>
       <Random min={5} max={100}/>
     </div>
+
+    <div>
+      <h4>Box Color</h4>
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
+    </div>
+
   </React.Fragment>
   );
 }
