@@ -5,11 +5,11 @@
     margin: 15px;
 }
 
-.profileImg{
+.ProfileImg{
     min-width: 28%;
 }
 
-.profileInfo {
+.ProfileInfo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;

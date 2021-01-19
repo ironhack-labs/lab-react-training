@@ -1,0 +1,35 @@
+.DriverImg {
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.DriverImg img {
+    width: 100%;
+}
+
+.DriverCard {
+    background-color: rgb(81, 105, 238);
+    border-radius: 15px;
+    margin: 15px;
+    display: flex;
+    color: white;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DriverInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+h2 {
+    margin-top: -50px;
+    margin-bottom: -40px;
+}
