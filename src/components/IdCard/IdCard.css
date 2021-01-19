@@ -1,0 +1,14 @@
+#card {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    display: flex;
+    padding: 5px;
+}
+
+.card-description {
+    padding-left: 10px;
+    line-height: 0.35em;
+}
