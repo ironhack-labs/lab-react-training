@@ -4,6 +4,7 @@ import Greeting from './components/Greeting'
 import Random from './components/Random'
 import BoxColor from './components/BoxColor'
 import CreditCard from './components/CreditCard'
+import Rating from './components/Rating'
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,6 +12,7 @@ function App() {
   return (
   <React.Fragment>
     <div>
+      <h4>IDs</h4>
       <IdCard
         lastName='Doe'
         firstName='John'
@@ -52,6 +54,7 @@ function App() {
     </div>
 
     <div>
+    <h4>Credit Cards</h4>
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -79,6 +82,16 @@ function App() {
         owner="Firstname Lastname"
         bgColor="#ddbb55"
         color="white" />
+    </div>
+
+    <div>
+      <h4>Ratings</h4>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
     </div>
 
   </React.Fragment>

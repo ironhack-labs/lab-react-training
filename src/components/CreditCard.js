@@ -28,18 +28,20 @@ class CreditCard extends React.Component {
         let imgCard = ""
 
         if (this.props.type === 'Visa') {
-            imgCard = <img src = {'../public/img/visa.png'} />
+            imgCard = <img className = "CardLogo" src = {'../img/visa.png'} />
         } else {
-            imgCard = <img src = {'../public/img/master-card.svg'}/>
+            imgCard = <img className = "CardLogo" src = {'../img/master-card.svg'}/>
         }
 
         let visibleCardNum = this.props.number.slice(12,16)
 
         return (
         <div style={myStyle}>
-    
+                <div className = "ImageContainer">
+                    {imgCard}
+                </div>
             <div>
-               {/* <imgCard/> */}
+                
                 <div className = "CardNum">
                     <h1><b>•••• •••• •••• {visibleCardNum}</b></h1>
                 </div>

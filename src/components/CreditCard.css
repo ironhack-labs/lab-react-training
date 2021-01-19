@@ -7,13 +7,14 @@
 }
 
 .CardNum > h1 {
-    margin-top: 130px;
+    margin-top: 50px;
 }
 
 .CardInfo {
     display: flex;
     justify-content: flex-start;
     margin-left: 30px;
+    margin-top:40px;
     
 }
 
@@ -24,4 +25,16 @@
 .Owner {
     margin-left: 30px;
     margin-top: -12px;
+}
+
+.CardLogo {
+    width: 90px;
+
+}
+
+.ImageContainer {
+    display:flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 78%;
 }
