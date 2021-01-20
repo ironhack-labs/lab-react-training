@@ -2,13 +2,12 @@
 import React from 'react';
 import './App.css';
 import DriverCard from './components/DriverCard';
-import Rating from './components/Rating';
+import LikeButton from './components/LikeButton';
 
 // 2. Function || Class & Export
 export default function App() {
   return (
     <div className="App">
-
       <h1>DriverCard</h1>
 
       <DriverCard
@@ -20,6 +19,7 @@ export default function App() {
           licensePlate: 'CO42DE',
         }}
       />
+
       <DriverCard
         name="Dara Khosrowshahi"
         rating={4.9}
@@ -29,6 +29,8 @@ export default function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <LikeButton initialCounter={0} />
+      <LikeButton initialCounter={4} />
     </div>
   );
 }
