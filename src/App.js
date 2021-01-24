@@ -8,6 +8,10 @@ import { CreditCard, WrapContainer } from './components/creditcard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/drivercard/DriverCard';
 import LikeButton from './components/likebutton/LikeButton';
+import ClickablePicture from './components/clickablepicture/ClickablePicture';
+import Dice from './components/dice/Dice';
+import Carousel from './components/carousel/Carousel';
+import NumbersTable from './components/numberstable/NumbersTable';
 
 const dateOption = {
   weekday: 'long', 
@@ -113,6 +117,17 @@ function App() {
         }} />
       <LikeButton />
       <LikeButton />
+      <ClickablePicture />
+      <Dice />
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <NumbersTable limit={12} />
     </>
   );
 }
