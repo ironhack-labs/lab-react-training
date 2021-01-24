@@ -1,0 +1,16 @@
+.colorBlock {
+  height: 50px;
+  width: 50px;
+  border: 2px solid;
+}
+
+.container div {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+}
+
+.singleColorPicker {
+  display: flex;
+  align-items: center;
+}

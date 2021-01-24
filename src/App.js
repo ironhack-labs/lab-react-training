@@ -12,6 +12,12 @@ import ClickablePicture from './components/clickablepicture/ClickablePicture';
 import Dice from './components/dice/Dice';
 import Carousel from './components/carousel/Carousel';
 import NumbersTable from './components/numberstable/NumbersTable';
+import FaceBook from './components/facebook/FaceBook';
+import SignupPage from './components/signuppage/SignupPage';
+import RGBColorPicker from './components/colorpicker/RGBColorPicker';
+
+
+import profiles from './data/berlin.json';
 
 const dateOption = {
   weekday: 'long', 
@@ -128,6 +134,9 @@ function App() {
         ]}
       />
       <NumbersTable limit={12} />
+      <FaceBook profiles={profiles} />
+      <SignupPage />
+      <RGBColorPicker />
     </>
   );
 }

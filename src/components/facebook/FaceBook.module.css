@@ -1,0 +1,28 @@
+.container {
+  margin: 1rem;
+}
+
+.profiles {
+  margin-top: 1rem;
+  display:flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  border: 2px solid;
+  margin: 1rem 0;
+}
+
+.card__img {
+  width: 150px;
+  height: auto;
+  margin: 0.5rem;
+}
+
+.card__texts {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding: 1rem;
+}

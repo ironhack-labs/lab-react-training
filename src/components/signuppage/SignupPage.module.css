@@ -1,0 +1,41 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin: 1rem;
+}
+
+.container div {
+  margin: 0.5rem 0;
+}
+
+.email,
+.password {
+  display:flex;
+  flex-direction: column;
+}
+
+span {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.validInput input {
+  border-color: green;
+}
+
+.validInput span {
+  color: green;
+}
+
+.invalidInput input {
+  border-color: red;
+}
+
+.invalidInput span {
+  color: red;
+}
