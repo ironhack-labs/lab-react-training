@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import img from './maxence.png'
+import imgClicked from './maxence-glasses.png'
 
 export class ClickablePicture extends Component {
 
@@ -14,9 +16,6 @@ export class ClickablePicture extends Component {
     }
 
     render() {
-        const img = '/public/img/persons/maxence.png'
-        const imgClicked = '/public/img/persons/maxence-glasses.png'
-
         return (
             <div>
                 <img src={this.state.imgClicked ? img : imgClicked} onClick={this.handleImage} alt='Maxence'/>
