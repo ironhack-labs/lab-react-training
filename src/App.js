@@ -8,6 +8,7 @@ import {CreditCard} from './components/CreditCard/CreditCard';
 import {Rating} from './components/Rating/Rating';
 import {DriverCard} from './components/DriverCard/DriverCard';
 import {LikeButton} from './components/LikeButton/LikeButton';
+import {ClickablePicture} from './components/ClickablePicture/ClickablePicture';
 
 function App() {
   return (
@@ -80,6 +81,9 @@ function App() {
         }} />
         <h2>LikeButton</h2>
         <LikeButton />
+        <h2>ClickablePicture</h2>
+        <ClickablePicture img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png" />
     </React.Fragment>
   );
 }
