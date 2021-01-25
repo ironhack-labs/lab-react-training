@@ -2,27 +2,34 @@ import React from 'react';
 
 
 function Rating(props) {
-    const ratings = Math.round(props.children)
-    let stars = ''  
 
-if (ratings < 1) {
-    stars = '\u2606 \u2606 \u2606 \u2606 \u2606'
- } else if (ratings < 2) {
-    stars = '\u2605 \u2606 \u2606 \u2606 \u2606'
- } else if (ratings < 3) {
-    stars = '\u2605 \u2605 \u2606 \u2606 \u2606'
- } else if (ratings < 4) {
-    stars = '\u2605 \u2605 \u2605 \u2606 \u2606'
- } else if (ratings < 5) {
-    stars = '\u2605 \u2605 \u2605 \u2605 \u2606'
- } else if (ratings >= 5) {
-    stars = '\u2605 \u2605 \u2605 \u2605 \u2605'
+   let num = Math.round(props.children);
+   let star = ''  
+
+       switch (num) {
+         case 0:
+           star = "☆☆☆☆☆";
+           break;
+         case 1:
+           star = "★☆☆☆☆";
+           break;
+         case 2:
+           star = "★★☆☆☆";
+           break;
+         case 3:
+           star = "★★★☆☆";
+           break;
+         case 4:
+           star = "★★★★☆";
+           break;
+         case 5:
+           star = "★★★★★";
+           break;
+         default:
+           break;
+       }
+     
+       return <div style={{fontSize: "200%"}}>{star}</div>;
  }
- return(
-     <div style={{fontSize: "300%"}}>
-         <p>{stars}</p>
-     </div>
- ) 
-}
 
-export {Rating}
+export default Rating
