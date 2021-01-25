@@ -9,6 +9,7 @@ import {CreditCard} from './components/creditcard/CreditCard.js'
 import Rating from './components/rating/Rating.js'
 import {DriverCard} from './components/drivercard/DriverCard'
 import LikeButton from './components/likebutton/LikeButton'
+import ClickablePicture from './components/clickablepicture/ClickablePicture'
 
 function App() {
   return (
@@ -92,7 +93,7 @@ function App() {
         }}
       />
       <LikeButton /> <LikeButton />
-
+      <ClickablePicture />
     </div>
   );
 }
