@@ -1,3 +1,29 @@
-.driver-img {
+#driver-card {
+    background-color: #425cbb;
+    border-radius: 10px;
+    padding: 15px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+} 
+
+#driver-card > * {
+    margin: 5px;
+}
+
+
+#driver-card img {
+    height: 100px;
     width: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+#driver-card .driver-card-text > * {
+    margin: 0
 }
