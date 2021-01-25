@@ -1,20 +1,29 @@
-import React from "react",
+import React from "react"
 import '../components/ClickablePicture.css'
 
-class LikeButton extends React.Component {
+class ClickablePicture extends React.Component {
 
-state = {
-    img = "",
-}
+    state={
+        cklickedImg : false,
+    }
 
-handleImg = () => {
-    
-}
+    handlePic = () => {
+
+        this.setState = ({
+            cklickedImg : !this.state.cklickedImg
+        })
+    }
+
 
 render() {
     return (
-
+        <div>
+            <img src={this.state.cklickedImg ? this.props.imgClicked : this.props.img}
+                 onClick={this.handlePic}/>
+        </div>
     )
 }
 
 }
+
+ export default ClickablePicture

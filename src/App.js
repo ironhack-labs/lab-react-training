@@ -7,6 +7,7 @@ import CreditCard from './components/CreditCard'
 import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
 import LikeButton from './components/LikeButton'
+import ClickablePicture from './components/ClickablePicture'
 import logo from './logo.svg';
 import './App.css';
 
@@ -123,12 +124,13 @@ function App() {
     <LikeButton />
     </div>
     
-    {/* <div>
+    <div>
+    <h4>Clickable Picture</h4>
     <ClickablePicture
       img='/img/persons/maxence.png'
       imgClicked='/img/persons/maxence-glasses.png'
     />
-    </div> */}
+    </div>
 
   </React.Fragment>
   );

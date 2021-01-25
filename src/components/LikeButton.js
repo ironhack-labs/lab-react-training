@@ -37,7 +37,7 @@ class LikeButton extends React.Component {
         render() {
 
             //  buttonStyle = {
-            //      "backgroundColor": `${color[randomIndex]}`
+            //      "backgroundColor": `$randomCol}`
             //  }
         
         return (
