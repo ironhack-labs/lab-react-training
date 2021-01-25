@@ -1,44 +1,45 @@
-import React, { Component } from "react";
-import './App.css';
-import IdCard from "./components/IdCard";
-import Greetings from './Components/Greetings';
+import React, { useState } from 'react';
+import "./index.css"
 
-export default class App extends Component{
+function LikeButton() {
+  // Declara una nueva variable de estado, que llamaremos "count".
+  const [count, setCount] = useState(0);
+  const [count_1,setCount_1] = useState(0);
 
-render (){
+//   const colors =['purple','blue','green','yellow','orange','red'];
+
 
   return (
+
     <div>
-            <div className="App">
-            <h1> Say hello to ReactJS</h1>
-            </div>
-          <header className="App-header" />
-                    
-            <IdCard
-            lastName='Doe'
-            firstName='John'
-            gender='male'
-            height={178}
-            birth={"1992-07-14"}
-            picture="https://randomuser.me/api/portraits/men/44.jpg"
-          />
+       <div className="It"> 
+      <p>Iteration 8 </p>
+      </div>
+      <button className="color"onClick={()=> setCount(count + 1 )}>
+        Likes {count}
+      </button>
+      <button className="color_1"onClick={()=> setCount_1(count_1 + 1 )}>
+        Likes {count_1}
+      </button>
+      <div className="It_1"> 
+      <p>Iteration 9 </p>
+      </div>
+     
+      </div>
 
-          <IdCard
-            lastName='Delores '
-            firstName='Obrien'
-            gender='female'
-            height={172}
-            birth={"1988-05-11"}
-            picture="https://randomuser.me/api/portraits/women/44.jpg"
-            />
-  </div>
-// iteracion #2
-
-
-
+   
   );
-  
-}
 }
 
+export default LikeButton;
 
+function ClickablePicture() {
+
+
+  return (
+    <div >
+      <img src="https://mecheng.ucl.ac.uk/wp-content/uploads/2018/07/Cossin-Estelle-200px-x-300px.jpg"/>
+    </div>
+  )
+}
+// export default ClickablePicture;
