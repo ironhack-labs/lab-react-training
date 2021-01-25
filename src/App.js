@@ -7,6 +7,7 @@ import {BoxColor} from './components/BoxColor/BoxColor';
 import {CreditCard} from './components/CreditCard/CreditCard';
 import {Rating} from './components/Rating/Rating';
 import {DriverCard} from './components/DriverCard/DriverCard';
+import {LikeButton} from './components/LikeButton/LikeButton';
 
 function App() {
   return (
@@ -77,6 +78,8 @@ function App() {
             model: "Audi A3",
             licensePlate: "BE33ER"
         }} />
+        <h2>LikeButton</h2>
+        <LikeButton />
     </React.Fragment>
   );
 }
