@@ -1,0 +1,11 @@
+.likeButton {
+    padding: 10px;
+    width: 80px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+.buttonContainer{
+    display: inline;
+}
