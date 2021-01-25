@@ -9,6 +9,8 @@ import {Rating} from './components/Rating/Rating';
 import {DriverCard} from './components/DriverCard/DriverCard';
 import {LikeButton} from './components/LikeButton/LikeButton';
 import {ClickablePicture} from './components/ClickablePicture/ClickablePicture';
+import {Dice} from './components/Dice/Dice';
+import {Carousel} from './components/Carousel/Carousel';
 
 function App() {
   return (
@@ -82,8 +84,20 @@ function App() {
         <h2>LikeButton</h2>
         <LikeButton />
         <h2>ClickablePicture</h2>
-        <ClickablePicture img="/img/persons/maxence.png"
+        <ClickablePicture
+        img="/img/persons/maxence.png"
         imgClicked="/img/persons/maxence-glasses.png" />
+        <h2>Dice</h2>
+        <Dice />
+        <h2>Carousel</h2>
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
     </React.Fragment>
   );
 }

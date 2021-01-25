@@ -22,7 +22,7 @@ class LikeButton extends Component {
     render() {
         return (
             <div>
-                <button style={{backgroundColor: this.state.backgroundColor}} onClick={this.changeCounterAndColor}>{this.state.counter} likes</button>
+                <button className='like-button' style={{backgroundColor: this.state.backgroundColor}} onClick={this.changeCounterAndColor}>{this.state.counter} likes</button>
             </div>
         )
     }
