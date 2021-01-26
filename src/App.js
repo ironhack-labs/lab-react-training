@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import './Box.css';
-import IdCard from './idcard/IdCard';
-import Greetings from './greetings/Greetings';
-import Random from './random/Random';
-import BoxColor from './boxcolor/BoxColor';
-import CreditCard from './creditcard/CreditCard';
-import Rating from './rating/Rating';
-import DriverCard from './drivercard/DriverCard';
+import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
+import Random from './components/Random';
+import BoxColor from './components/BoxColor';
+import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
 
 function App() {
   return (

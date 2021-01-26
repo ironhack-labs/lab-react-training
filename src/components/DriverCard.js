@@ -1,5 +1,5 @@
 import React from 'react';
-import Rating from '../rating/Rating';
+import Rating from './Rating';
 import './DriverCard.css';
 
 const DriverCard = props => {
