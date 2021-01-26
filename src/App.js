@@ -134,10 +134,10 @@ function App() {
     />
     </div>
 
-    {/* <div>
+   <div>
     <h4>Dice</h4>
       <Dice />
-    </div> */}
+    </div> 
 
     <div>
     <h4>Carousel</h4>

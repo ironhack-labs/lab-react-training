@@ -1,31 +1,24 @@
 import React from "react"
 import '../components/Dice.css'
 
-// class Dice extends React.Component {
-//     render () {
+class Dice extends React.Component {
+    state = {
+        dice: "-empty"
+    }
 
-//         state = {
-//             randNumber : this.randomNumber,
-//             cklickedDice : false,
-//         }
+    handleClick = () => {
+        let randomDice = Math.floor(Math.random() * 6) 
+        this.setState({dice: "-empty"})
+        setTimeout(() => {this.setState({dice: randomDice})}, 1000)
+    }
 
-//         randomNumber = () => {
-//             let randNum = Math.floor(Math.random()*6)
-//         }
+    render () {
+        return (
+            <div className = "diceContainer" >
+                <img className = "dice" onClick={this.handleClick} src={"./img/dice" + this.state.dice + ".png"}/>
+            </div>
+        )
+    }
+}
 
-//         handleDice = () => {
-//             if (!this.state.cklickedDice) {
-//                 this.setState = ({
-//                     cklickedDice : false
-//                 })
-//                 setTimeout(() => ({clickedDice :}))
-//             }
-//         }
-
-//         return (
-
-//         )
-//     }
-// }
-
-// export default Dice
+export default Dice

@@ -3,60 +3,48 @@ import '../components/Carousel.css'
 
 class Carousel extends React.Component {
 
-    state={
-        img : 0,
+    state = {
+        img: 0
     }
 
-    rightImg = () => {
+    nextImg = () => {
 
         let { img } = this.state;
 
-        if (this.img < 3) {
-            this.img++
+        if (img < 3) {
+            img++
         } else {
-            this.img = 0
+            img = 0
         }
 
-        this.setState = ({
-            img,
-        })
+        this.setState({img})
     }
 
-    leftImg = () => {
-
+    prevImg = () => {
         let { img } = this.state;
 
-        if (!this.img<1) {
-            this.img--
+        if (!img < 1) {
+            img--
         } else {
-            this.img=3
+            img = 3
         }
 
-        this.setState = ({
-            img,
-        })
-
+        this.setState({img})
     }
 
     render () {
-
-    
         return (
-            <div>
-                <button onClick={this.rightImg}>←</button>
+            <div className="carouselContainer">
+                <button onClick={this.prevImg}>←</button>
 
                 <div>
                     <img src={this.props.imgs[this.state.img]} />
                 </div>
 
-                <button onClick={this.leftImg}>→</button>
+                <button onClick={this.nextImg}>→</button>
             </div>
         )
     }
-
 }
-
-
-
 
 export default Carousel
