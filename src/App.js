@@ -12,6 +12,7 @@ import {ClickablePicture} from './components/ClickablePicture/ClickablePicture';
 import {Dice} from './components/Dice/Dice';
 import {Carousel} from './components/Carousel/Carousel';
 import {NumbersTable} from './components/NumbersTable/NumbersTable';
+import {Facebook} from './components/Facebook/Facebook';
 
 function App() {
   return (
@@ -100,7 +101,9 @@ function App() {
           ]}
         />
         <h2>NumbersTable</h2>
-        <NumbersTable limit={12} />
+        <NumbersTable limit={18} />
+        <h2>Facebook</h2>
+        <Facebook />
     </React.Fragment>
   );
 }

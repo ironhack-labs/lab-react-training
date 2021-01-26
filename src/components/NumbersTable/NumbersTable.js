@@ -14,7 +14,7 @@ class NumbersTable extends Component {
 
 
         const listNumbers = numbers.map(number => {
-            return number % 2 === 0 ? <li className='grid-item'>{number}</li> : <li className='grid-item red'>{number}</li> 
+            return number % 2 === 0 ? <li key={number} className='grid-item red'>{number}</li> : <li key={number} className='grid-item'>{number}</li> 
         })
 
         return (

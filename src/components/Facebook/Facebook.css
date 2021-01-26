@@ -1,0 +1,17 @@
+.facebook-profile img {
+    width: 100px;
+    margin-right: 5px;
+}
+
+.facebook-profile {
+    border: 1px solid;
+    display: -webkit-flex;
+    display: flex;
+    padding: 5px;
+    margin: 10px 0;
+    width: 300px;
+}
+
+.profile-text > * {
+    margin: 0;
+}
