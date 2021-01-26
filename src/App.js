@@ -11,6 +11,7 @@ import {DriverCard} from './components/drivercard/DriverCard'
 import LikeButton from './components/likebutton/LikeButton'
 import ClickablePicture from './components/clickablepicture/ClickablePicture'
 import Dice from './components/dice/Dice'
+import Carousel from './components/carousel/Carousel'
 
 function App() {
   return (
@@ -23,7 +24,6 @@ function App() {
         birth={new Date('1992-07-14')}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
-
       <IdCard
         lastName="Delores "
         firstName="Obrien"
@@ -32,7 +32,6 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
       <Random min={1} max={6} />
@@ -96,6 +95,14 @@ function App() {
       <LikeButton /> <LikeButton />
       <ClickablePicture />
       <Dice />
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
     </div>
   );
 }
