@@ -15,3 +15,9 @@
 .profile-text > * {
     margin: 0;
 }
+
+.country-button {
+    border: 1px solid;
+    background-color: white;
+    margin-right: 5px;
+}
