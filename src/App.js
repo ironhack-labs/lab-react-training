@@ -14,6 +14,7 @@ import Dice from './components/dice/Dice'
 import Carousel from './components/carousel/Carousel'
 import NumbersTable from './components/numberstable/NumbersTable'
 import FaceBook from './components/facebook/FaceBook'
+import SignupPage from './components/signup/SignupPage'
 
 function App() {
   return (
@@ -107,6 +108,7 @@ function App() {
       />
       <NumbersTable limit={12} />
       <FaceBook />
+      <SignupPage />
     </div>
   );
 }
