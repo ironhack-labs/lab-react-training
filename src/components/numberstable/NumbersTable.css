@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.numbersTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black
+}
