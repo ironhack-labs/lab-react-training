@@ -10,6 +10,7 @@ import Rating from './components/rating/Rating.js'
 import {DriverCard} from './components/drivercard/DriverCard'
 import LikeButton from './components/likebutton/LikeButton'
 import ClickablePicture from './components/clickablepicture/ClickablePicture'
+import Dice from './components/dice/Dice'
 
 function App() {
   return (
@@ -94,6 +95,7 @@ function App() {
       />
       <LikeButton /> <LikeButton />
       <ClickablePicture />
+      <Dice />
     </div>
   );
 }
