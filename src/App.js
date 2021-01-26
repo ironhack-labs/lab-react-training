@@ -13,6 +13,7 @@ import {Dice} from './components/Dice/Dice';
 import {Carousel} from './components/Carousel/Carousel';
 import {NumbersTable} from './components/NumbersTable/NumbersTable';
 import {Facebook} from './components/Facebook/Facebook';
+import {SignupPage} from './components/SignupPage/SignupPage';
 
 function App() {
   return (
@@ -104,6 +105,8 @@ function App() {
         <NumbersTable limit={18} />
         <h2>Facebook</h2>
         <Facebook />
+        <h2>SignupPage</h2>
+        <SignupPage />
     </React.Fragment>
   );
 }
