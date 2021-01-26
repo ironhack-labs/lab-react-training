@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './NumbersTable.css'
 
 const NumbersTable = (props) => {
