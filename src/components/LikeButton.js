@@ -2,9 +2,6 @@ import React from 'react'
 import '../components/LikeButton.css'
 
 
-
-
-
 class LikeButton extends React.Component {
 
     color = ['purple','blue','green','yellow','orange','red']

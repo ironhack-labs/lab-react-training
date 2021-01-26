@@ -4,13 +4,13 @@ import '../components/ClickablePicture.css'
 class ClickablePicture extends React.Component {
 
     state={
-        cklickedImg : false,
+        clickedImg : false,
     }
 
     handlePic = () => {
 
         this.setState = ({
-            cklickedImg : !this.state.cklickedImg
+            clickedImg : !this.state.clickedImg
         })
     }
 
@@ -18,8 +18,11 @@ class ClickablePicture extends React.Component {
 render() {
     return (
         <div>
-            <img src={this.state.cklickedImg ? this.props.imgClicked : this.props.img}
-                 onClick={this.handlePic}/>
+            <img onClick={() => {
+                this.setState({clickedImg: !this.state.clickedImg})
+            }}
+             src={this.state.clickedImg ? this.props.img : this.props.imgClicked}
+                 />
         </div>
     )
 }

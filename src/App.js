@@ -8,6 +8,8 @@ import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
 import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture'
+import Dice from './components/Dice'
+import Carousel from './components/Carousel'
 import logo from './logo.svg';
 import './App.css';
 
@@ -130,6 +132,23 @@ function App() {
       img='/img/persons/maxence.png'
       imgClicked='/img/persons/maxence-glasses.png'
     />
+    </div>
+
+    {/* <div>
+    <h4>Dice</h4>
+      <Dice />
+    </div> */}
+
+    <div>
+    <h4>Carousel</h4>
+    <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+        />
     </div>
 
   </React.Fragment>
