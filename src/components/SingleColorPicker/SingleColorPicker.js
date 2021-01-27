@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {RGBColorPicker} from '../RGBColorPicker/RGBColorPicker';
 
 class SingleColorPicker extends Component {
 
@@ -21,7 +20,7 @@ class SingleColorPicker extends Component {
         return (
             <div>
                 <label>{this.props.color}</label>
-                <input type='number' name='colorInput' value={this.state.color} onChange={this.updateValue} /> 
+                <input type='number' name='colorInput' value={this.state.color} onChange={this.updateValue} min='0' max='255' /> 
             </div>
         )
     }

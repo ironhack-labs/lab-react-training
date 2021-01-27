@@ -34,9 +34,9 @@ class RGBColorPicker extends Component {
 
         return (
             <div>
-               <SingleColorPicker color='R:' value={this.state.rValue} changeColor={this.updateR} />
-               <SingleColorPicker color='G:' value={this.state.gValue} changeColor={this.updateG} />
-               <SingleColorPicker color='B:' value={this.state.bValue} changeColor={this.updateB} />
+               <SingleColorPicker color='R:' changeColor={this.updateR} />
+               <SingleColorPicker color='G:' changeColor={this.updateG} />
+               <SingleColorPicker color='B:' changeColor={this.updateB} />
                <div>rgb({this.state.rValue},{this.state.gValue},{this.state.bValue})</div>
             </div>
         )
