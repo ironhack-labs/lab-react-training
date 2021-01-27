@@ -14,6 +14,7 @@ import {Carousel} from './components/Carousel/Carousel';
 import {NumbersTable} from './components/NumbersTable/NumbersTable';
 import {Facebook} from './components/Facebook/Facebook';
 import {SignupPage} from './components/SignupPage/SignupPage';
+import {RGBColorPicker} from './components/RGBColorPicker/RGBColorPicker';
 
 function App() {
   return (
@@ -107,6 +108,8 @@ function App() {
         <Facebook />
         <h2>SignupPage</h2>
         <SignupPage />
+        <h2>RGBColorPicker</h2>
+        <RGBColorPicker />
     </React.Fragment>
   );
 }
