@@ -121,11 +121,11 @@ function App() {
       <SignupPage />
 
       <h1>Lifting State Up - RGBColorPicker</h1>
-      {/* <RGBColorPicker > */}
+      <RGBColorPicker >
         <SingleColorPicker color="r"/>
         <SingleColorPicker color="g"/>
         <SingleColorPicker color="b"/>
-      {/* </RGBColorPicker> */}
+      </RGBColorPicker>
       
     </div>
   );

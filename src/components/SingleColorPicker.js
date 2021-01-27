@@ -32,7 +32,7 @@ class SingleColorPicker extends React.Component {
                 <div style={{ backgroundColor: this.selectColor(), width: 50, height: 50 }}></div>
                 <form>
                     <label>{this.props.color}</label>
-                    <input type="number" min="0" max="255" onChange={this.handleChange} value={this.state.number} name="number" />
+                    <input type="number" min="0" max="255" onChange={this.handleChange} value={this.state.number} name={this.props.color} />
                 </form>
             </div>
         )
