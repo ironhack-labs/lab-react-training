@@ -1,0 +1,8 @@
+td:nth-child(even){
+background-color: red;
+color: black;
+}
+
+td{
+    font-size: 19px;
+}

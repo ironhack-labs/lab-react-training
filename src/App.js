@@ -6,6 +6,13 @@ import {BoxColour} from './component/boxcolour/BoxColour'
 import {CreditCard} from './component/creditcard/CreditCard'
 import {Rating} from './component/rating/Rating'
 import {DriverCard} from './component/drivercard/DriverCard'
+import {LikeButton} from './component/likebutton/LikeButton'
+import {ClickablePicture} from './component/clickablepicture/ClickablePicture'
+import {Dice} from './component/dice/Dice'
+import {Carousel} from './component/carousel/Carousel'
+import {NumbersTable} from './component/numberstable/NumbersTable'
+// import {Carousel} from './component/carousel/Carousel'
+
 import './App.css';
 
 function App() {
@@ -88,6 +95,28 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} />
+      <hr/>
+      <div className="field is-grouped">
+        <LikeButton /><LikeButton />
+      </div>
+      <hr />
+      <ClickablePicture
+        img='/img/persons/maxence.png'
+        imgClicked='/img/persons/maxence-glasses.png'
+      />
+      <hr />
+      <Dice />
+      <hr />
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <hr />
+      <NumbersTable limit={12} />
   </div>
   );
 }
