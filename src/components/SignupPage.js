@@ -14,16 +14,16 @@ class SignupPage extends React.Component {
     handleChange = (e) => {
         const propertyName = e.target.name
 
-        this.setState({[propertyName]: e.target.value})
+        this.setState({ [propertyName]: e.target.value })
     }
 
-    handleSubmit(e){
+    handleSubmit(e) {
         e.preventDefault()
     }
 
     render() {
         let greeting = ''
-        switch (this.state.nationality){
+        switch (this.state.nationality) {
             case "en":
                 greeting = 'Hello';
                 break;
@@ -41,10 +41,10 @@ class SignupPage extends React.Component {
             <div>
                 <form>
                     <label>Email</label>
-                    <input type="email" name="email" placeholder="Your email" value={this.state.email} onChange={this.handleChange}/>
+                    <input type="email" name="email" placeholder="Your email" value={this.state.email} onChange={this.handleChange} />
 
                     <label>Password</label>
-                    <input type="password" name="password" placeholder="****" value={this.state.password} onChange={this.handleChange}/>
+                    <input type="password" name="password" placeholder="****" value={this.state.password} onChange={this.handleChange} />
 
                     <label>Nationality</label>
                     <select name="nationality" value={this.state.nationality} onChange={this.handleChange}>
@@ -54,7 +54,7 @@ class SignupPage extends React.Component {
                     </select>
                     <button onClick={this.handleSubmit}>Submit</button>
                 </form>
-                
+
                 <hr />
                 <p>{greeting}</p>
                 <p>Your email address is: {this.state.email}</p>
