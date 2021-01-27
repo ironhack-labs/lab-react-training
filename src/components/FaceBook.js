@@ -3,14 +3,6 @@ import profiles from '../data/berlin.json';
 import '../Box.css';
 
 const FaceBook = () => {
-    const countries = [];
-
-    
-    
-    function checkIfStudent(type) {
-        return (type ? 'Student' : 'Teacher');
-    }
-
     const users = profiles.map(profile => {
         return <div className='box'> 
         <img src={profile.img} alt={profile.name}/>
@@ -18,7 +10,7 @@ const FaceBook = () => {
         <p><strong>First name:</strong> {profile.firstName}</p>
         <p><strong>Last name:</strong> {profile.lastName}</p>
         <p><strong>Country:</strong> {profile.country}</p>
-        <p><strong>Type:</strong>{checkIfStudent(profile.type)}</p>
+        <p><strong>Type:</strong>{profile.isStudent ? ' Student' : ' Teacher'}</p>
         </div>
         </div>
     })
