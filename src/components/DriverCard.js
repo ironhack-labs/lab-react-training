@@ -6,7 +6,7 @@ const DriverCard = props => {
     
     return(
         <div className="driverCard">
-            <img src={props.img} />
+            <img src={props.img} alt={props.name}/>
 
             <div className="driverCard-text">
             <p>{props.name}</p>

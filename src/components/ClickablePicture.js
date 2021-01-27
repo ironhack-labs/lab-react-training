@@ -13,7 +13,7 @@ class ClickablePicture extends React.Component {
 
     render() {
         return (
-            <img src={!this.state.clicked ? this.props.img : this.props.imgClicked} onClick={() => this.toggleImg()} />
+            <img alt="person" src={!this.state.clicked ? this.props.img : this.props.imgClicked} onClick={() => this.toggleImg()} />
         )
     }
 }
