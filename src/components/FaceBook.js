@@ -3,6 +3,10 @@ import profiles from '../data/berlin.json';
 import '../Box.css';
 
 const FaceBook = () => {
+    const countries = [];
+
+    
+    
     function checkIfStudent(type) {
         return (type ? 'Student' : 'Teacher');
     }
@@ -13,7 +17,7 @@ const FaceBook = () => {
         <div className='box-text'>
         <p><strong>First name:</strong> {profile.firstName}</p>
         <p><strong>Last name:</strong> {profile.lastName}</p>
-        <p><strong>Counter:</strong> {profile.counter}</p>
+        <p><strong>Country:</strong> {profile.country}</p>
         <p><strong>Type:</strong>{checkIfStudent(profile.type)}</p>
         </div>
         </div>
