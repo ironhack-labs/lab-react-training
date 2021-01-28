@@ -11,9 +11,11 @@ import {ClickablePicture} from './component/clickablepicture/ClickablePicture'
 import {Dice} from './component/dice/Dice'
 import {Carousel} from './component/carousel/Carousel'
 import {NumbersTable} from './component/numberstable/NumbersTable'
-// import {Carousel} from './component/carousel/Carousel'
+import {RGBColourPicker} from './component/rgbcolourpicker/RGBColourPicker'
+import { FaceBook } from './component/facebook/FaceBook';
 
 import './App.css';
+
 
 function App() {
   return (
@@ -117,6 +119,10 @@ function App() {
       />
       <hr />
       <NumbersTable limit={12} />
+      <hr />
+      <FaceBook />
+      <hr />
+      <RGBColourPicker />
   </div>
   );
 }
