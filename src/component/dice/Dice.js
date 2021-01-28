@@ -27,7 +27,6 @@ class Dice extends Component {
 
     componentDidMount() {
         this.getRandomImage()
-        console.log(this.state.diceImg);
       }
 
     handleDiceClick = () =>{

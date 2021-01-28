@@ -56,11 +56,9 @@ class FaceBook extends Component {
                 </div>
             )
         })
-
         return fbProfiles
     }
     
-
     showDetails = (e) =>{
         let name = e.target.name
         if(this.state.isVisible === name){
