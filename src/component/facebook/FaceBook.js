@@ -22,7 +22,7 @@ class FaceBook extends Component {
 
     createCountryButtons = () => {
         const countries =  [...new Set(this.state.fbProfiles.map(profile => profile.country))];
-        const countryFilters = countries.map(country => <button className='button' onClick={this.selectProfile}>{country}</button>)
+        const countryFilters = countries.map(country => < button key={country} className='button' onClick={this.selectProfile}>{country}</button>)
         return countryFilters
     }
 
@@ -35,7 +35,7 @@ class FaceBook extends Component {
     
             const hidden = (this.state.isVisible !== (profile.firstName+' '+profile.lastName))
             return (
-                <div className="box fbProfile" style={{backgroundColor: this.state.countryFilter === profile.country ? '#A3D2E2' : ''}}>
+                <div key={profile.state+'-'+profile.firstName+'-'+profile.lastName} className="box fbProfile" style={{backgroundColor: this.state.countryFilter === profile.country ? '#A3D2E2' : ''}}>
                     <div className='columns'>
                         <div className='column is-half'>
                             <div className="media-left">
