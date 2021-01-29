@@ -1,5 +1,4 @@
 import React from 'react'
-
 import '../components/DriverCard.css'
 
 import Rating from './Rating';
@@ -8,7 +7,7 @@ class DriverCard extends React.Component {
     render() {
         return(
             <div className="DriverCard">
-                <img src={this.props.img} alt={this.props.name}/>
+                <img src={this.props.img} alt={this.props.name} className="driver-img"/>
                 <div>
                     <h2>{this.props.name}</h2>
                     <Rating>{this.props.rating}</Rating>
