@@ -40,7 +40,7 @@ class Dice extends React.Component {
     render() {
         return(
             <div className="img-container">
-                <img src={this.state.img} className="dice" onClick={this.setRandomPic}/>
+                <img src={this.state.img} className="dice" onClick={this.setRandomPic} alt=''/>
             </div>
         );
     }

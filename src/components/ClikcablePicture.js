@@ -28,7 +28,7 @@ class ClickablePicture extends React.Component {
     render() {
         return (
             <div className='img-container'>
-                <img src={this.state.img} className='clickable-picture' onClick={this.togglePic}/>
+                <img src={this.state.img} className='clickable-picture' onClick={this.togglePic} alt=''/>
             </div>
         );
     }
