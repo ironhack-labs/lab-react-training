@@ -18,7 +18,6 @@ const Rating = props => {
 		}
 	};
 
-	console.log(rating(props.children));
 	return (
 		<div className="rating">
 			<p>{rating(props.children)}</p>
