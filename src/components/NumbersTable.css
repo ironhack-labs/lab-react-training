@@ -1,0 +1,18 @@
+.ContainerNumTable{
+    display: flex;
+    margin: 20px;
+}
+
+.Even {
+    color: white;
+    background-color: red;
+}
+
+.Box {
+    border: solid 1px black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
