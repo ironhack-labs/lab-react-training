@@ -67,15 +67,15 @@ class SignupPage extends React.Component{
             <React.Fragment>
                 <Form onSubmit={this.handleSubmit}>
                     <FormGroup>
-                        <Label for="exampleEmail">Email</Label>
+                        <Label>Email</Label>
                         <Input type="email" name="email" placeholder="e.g. john@doe.com" onChange={e => this.handleChange(e)}/>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="examplePassword">Password</Label>
+                        <Label >Password</Label>
                         <Input type="password" name="password" placeholder="Password" onChange={e => this.handleChange(e)}/>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="exampleSelect">Select nationality</Label>
+                        <Label >Select nationality</Label>
                         <Input type="select" name="nationality" onChange={e => this.handleChange(e)}>
                             <option>en</option>
                             <option>de</option>
