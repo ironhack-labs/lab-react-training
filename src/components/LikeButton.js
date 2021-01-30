@@ -1,35 +1,25 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class LikeButton extends Component {
+export default function LikeButton() {
 
-    state = {
-        index: 0
+    const [index, setIndex] = useState(0);
+
+    const colors = ['purple','blue','green','yellow','orange','red'];
+
+    const buttonStyle = {
+        backgroundColor: colors[index > 4 ? 5 : index]
     }
 
-    render() {
-
-        const colors = ['purple','blue','green','yellow','orange','red'];
-
-        const buttonStyle = {
-            backgroundColor: colors[this.state.index > 4 ? 5 : this.state.index]
-        }
-
-        return (
-            <div className='likeCont'>
-                <button style={buttonStyle} onClick={
-                    (e) => {
-                        return this.setState({
-                            index: this.state.index + 1
-                        })
-                    }
-                }>
-                {this.state.index} Likes
-                </button>
-            </div>
-        )
-
+    function increment() {
+        setIndex(index + 1);
     }
+
+    return (
+        <div className='likeCont'>
+            <button style={buttonStyle} onClick={increment}>
+            {index} Likes
+            </button>
+        </div>
+    )
 
 }
-
-export default LikeButton;

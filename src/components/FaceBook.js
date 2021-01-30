@@ -1,30 +1,25 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import profiles from '../data/berlin.json';
 
-class FaceBook extends Component {
+export default function FaceBook() {
 
-    state = {
-        clicked: ''
-    }
+    const [clicked, setClicked] = useState('')
 
-    setClicked(country) {
+    function setClickedCountry(country) {
 
+        let clickedTemp = '';
 
-        let clicked = '';
-
-        if(this.state.clicked === country) {
-            clicked = '';
+        if(clicked === country) {
+            clickedTemp = '';
         } else {
-            clicked = country;
+            clickedTemp = country;
         }
 
-        return this.setState({
-            clicked: clicked
-        })
+        setClicked(clickedTemp);
 
     }
 
-    getCountries(allProfiles)  {
+    function getCountries(allProfiles)  {
 
         const countries = allProfiles.map(obj => {
             return obj.country;
@@ -33,54 +28,50 @@ class FaceBook extends Component {
         return countries.filter((item, index) => countries.indexOf(item) === index);
 
     }
+    
+    const countriesList = getCountries(profiles);
 
-    render() {
+    const countries = countriesList.map(element => {
+        if (clicked === element) {
+            return <button className='blueBack' onClick={e => setClickedCountry(element)}>{element}</button>
+        } else {
+            return <button onClick={e => setClickedCountry(element)}>{element}</button>
+        }
+    })
 
-        const countriesList = this.getCountries(profiles);
-
-        const countries = countriesList.map(element => {
-            if (this.state.clicked === element) {
-                return <button className='blueBack' onClick={e => this.setClicked(element)}>{element}</button>
-            } else {
-                return <button onClick={e => this.setClicked(element)}>{element}</button>
-            }
-        })
-
-        const users = profiles.map(obj => {
-            if (this.state.clicked === obj.country) {
-                return (
-                    <div className='cardCont blueBack'>
-                        <img src={obj.img}/>
-                        <p><strong>First name:</strong> {obj.firstName}</p>
-                        <p><strong>Last name:</strong> {obj.lastName}</p>
-                        <p><strong>Country:</strong> {obj.country}</p>
-                        <p><strong>Type:</strong> {(obj.isStudent) ? 'Student' : 'Teacher'}</p>
-                    </div>
-                )
-            } else {
-                return (
-                    <div className='cardCont'>
-                        <img src={obj.img}/>
-                        <p><strong>First name:</strong> {obj.firstName}</p>
-                        <p><strong>Last name:</strong> {obj.lastName}</p>
-                        <p><strong>Country:</strong> {obj.country}</p>
-                        <p><strong>Type:</strong> {(obj.isStudent) ? 'Student' : 'Teacher'}</p>
-                    </div>
-                )
-            }
-        })
-
-        return (
-            <div className='facebookCont'>
-                <div>
-                    {countries}
+    const users = profiles.map(obj => {
+        if (clicked === obj.country) {
+            return (
+                <div className='cardCont blueBack'>
+                    <img src={obj.img}/>
+                    <p><strong>First name:</strong> {obj.firstName}</p>
+                    <p><strong>Last name:</strong> {obj.lastName}</p>
+                    <p><strong>Country:</strong> {obj.country}</p>
+                    <p><strong>Type:</strong> {(obj.isStudent) ? 'Student' : 'Teacher'}</p>
                 </div>
+            )
+        } else {
+            return (
+                <div className='cardCont'>
+                    <img src={obj.img}/>
+                    <p><strong>First name:</strong> {obj.firstName}</p>
+                    <p><strong>Last name:</strong> {obj.lastName}</p>
+                    <p><strong>Country:</strong> {obj.country}</p>
+                    <p><strong>Type:</strong> {(obj.isStudent) ? 'Student' : 'Teacher'}</p>
+                </div>
+            )
+        }
+    })
+
+    return (
+        <div className='facebookCont'>
+            <div className='countries'>
+                {countries}
+            </div>
+            <div className='users'>
                 {users}
             </div>
-        )
-
-    }
+        </div>
+    )
 
 }
-
-export default FaceBook;

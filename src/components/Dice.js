@@ -1,36 +1,24 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class Dice extends Component {
+export default function Dice() {
 
-    state = {
-        dice: this.getRandomDice()
-    }
+    const [dice, setDice] = useState(getRandomDice);
 
-    getRandomDice() {
+    function getRandomDice() {
         return `./img/dice${Math.round(Math.random() * (6 - 1) + 1)}.png`
     }
 
-    render() {
-
-        return (
-            <div className='diceCont'>
-                <img src={this.state.dice} onClick={
-                    (e) => {
-                        this.setState({
-                            dice: './img/dice-empty.png'
-                        });
-                        setTimeout(() => {
-                            this.setState({
-                                dice: this.getRandomDice()
-                            });
-                        }, 1000);
-                    }
-                }/>
-            </div>
-        )
-
-    }
+    return (
+        <div className='diceCont'>
+            <img src={dice} onClick={
+                (e) => {
+                    setDice('./img/dice-empty.png');
+                    setTimeout(() => {
+                        setDice(getRandomDice);
+                    }, 1000);
+                }
+            }/>
+        </div>
+    )
 
 }
-
-export default Dice;

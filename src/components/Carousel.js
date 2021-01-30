@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class Carousel extends Component {
+export default function Carousel ({imgs}) {
 
-    state = {
-        img: 0
-    }
+    const [img, setImg] = useState(0);
 
-    moveCarousel(direction) {
-        let pos = this.state.img + direction;
+    function moveCarousel(direction) {
+        let pos = img + direction;
 
         if (pos > 3) {
             pos = 0
@@ -15,35 +13,26 @@ class Carousel extends Component {
             pos = 3
         }
 
-        return this.setState({
-            img: pos
-        })
+        setImg(pos);
     }
 
-    render({imgs}=this.props) {
-
-        return (
-            <div className='carouselCont'>
-                <button onClick={
-                    (e) => {
-                        this.moveCarousel(-1)
-                    }
-                }>
+    return (
+        <div className='carouselCont'>
+            <button onClick={
+                (e) => {
+                    moveCarousel(-1)
+                }
+            }>
                 Left
-                </button>
-                <img src={imgs[this.state.img]}/>
-                <button onClick={
-                    (e) => {
-                        this.moveCarousel(1)
-                    }
-                }>
+            </button>
+            <img src={imgs[img]}/>
+            <button onClick={
+                (e) => {
+                    moveCarousel(1)
+                }
+            }>
                 Right
-                </button>
-            </div>
-        )
-
-    }
-
+            </button>
+        </div>
+    )
 }
-
-export default Carousel;

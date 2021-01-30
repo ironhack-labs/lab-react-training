@@ -1,42 +1,28 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class ClickablePicture extends Component {
+export default function ClickablePicture({img, imgClicked}) {
 
-    state = {
-        clicked: false,
-        pic: 'empty'
+    const [clicked, setClicked] = useState(false);
+    const [pic, setPic] = useState('empty');
+
+    if (pic === 'empty') {
+        setPic(img);
     }
 
-    render({img, imgClicked}=this.props) {
-
-        if (this.state.pic === 'empty') {
-            this.setState({
-                pic: img
-            })
-        }
-
-        return (
-            <div className='picCont'>
-                <img src={this.state.pic} onClick={
-                    (e) => {
-                        if(this.state.clicked) {
-                            return this.setState({
-                                clicked: false,
-                                pic: img
-                            })
-                        } else {
-                            return this.setState({
-                                clicked: true,
-                                pic: imgClicked
-                            })
-                        }
+    return (
+        <div className='picCont'>
+            <img src={pic} onClick={
+                (e) => {
+                    if(clicked) {
+                        setClicked(false);
+                        setPic(img);
+                    } else {
+                        setClicked(true);
+                        setPic(imgClicked);
                     }
-                }/>
-            </div>
-        )
-
-    }
+                }
+            }/>
+        </div>
+    )
 
 }
-
-export default ClickablePicture;
