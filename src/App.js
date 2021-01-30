@@ -11,6 +11,9 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClikcablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
 
 
 function App() {
@@ -80,7 +83,7 @@ function App() {
       <br/>
       <br/>
       <h1>Like Buttons</h1>
-      <LikeButton />
+      <LikeButton /><LikeButton />
 
       <br/>
       <br/>
@@ -112,6 +115,25 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
       />
+
+      <br/>
+      <br/>
+      <br/>
+      <h1>NumbersTable</h1>
+      <NumbersTable limit={12} />
+
+      <br/>
+      <br/>
+      <br/>
+      <h1>Facebook</h1>
+      <Facebook />
+
+      <br/>
+      <br/>
+      <br/>
+      <h1>SignupPage</h1>
+      <SignupPage />
+
 
     </div>
   );

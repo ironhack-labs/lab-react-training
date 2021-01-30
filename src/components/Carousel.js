@@ -15,7 +15,6 @@ constructor(props) {
 
 handleClick(n) {
 
-    console.log(n)
     let ind = this.state.i + n
     const l = this.props.imgs.length - 1;
 
@@ -26,8 +25,6 @@ handleClick(n) {
     if (ind < 0) {
         ind = l
     }
-
-    console.log(ind)
 
     this.setState({
         img: this.props.imgs[ind],

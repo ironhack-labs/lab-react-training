@@ -1,0 +1,7 @@
+.submitted{
+    display: initial;
+}
+
+.not-submitted{
+    display:none;
+}

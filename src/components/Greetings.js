@@ -18,6 +18,8 @@ class Greetings extends React.Component {
             case 'fr':
                 greeting = 'Bonjour';
                 break;
+            default:
+                greeting = 'Bonjour/Hola/Hello/Hallo';
         }
 
         return (

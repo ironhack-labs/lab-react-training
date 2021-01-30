@@ -1,0 +1,33 @@
+.profile{
+    border: 1px solid black;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.profile-img {
+    width: 300px;
+}
+
+.profie-info {
+    width: 300px;
+    align-self: initial;
+} 
+
+.profile-active {
+    background-color: lightblue;
+}
+
+.profile-not-active {
+    background-color: white;
+}
+
+.button-active {
+    background-color: lightblue;
+}
+
+.button-not-active {
+    background-color: white;
+}
