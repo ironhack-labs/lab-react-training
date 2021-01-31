@@ -22,11 +22,11 @@ class ClickablePicture extends Component {
 
 	render() {
 		return (
-			<React.Fragment>
+			<div>
 				<img src={this.state.clicked ? this.props.imgClickable : this.props.img}
 					 onClick={this.changeImg}
 					 alt=""/>
-			</React.Fragment>
+			</div>
 		);
 	}
 }
