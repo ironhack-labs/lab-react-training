@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 import IdCard from './IdCard';
 import Greetings from './Greetings.js';
+import Random from './Random.js';
+import BoxColor from './BoxColor';
+import CreditCard from './CreditCard';
 
 function App() {
   return (
@@ -25,6 +28,12 @@ function App() {
       />
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+      <Random min={1} max={6} />
+      <Random min={1} max={100} />
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
+
+      <CreditCard></CreditCard>
     </div>
   );
 }
