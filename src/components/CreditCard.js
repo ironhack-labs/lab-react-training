@@ -1,22 +1,37 @@
 import React from 'react';
+import BoxColor from './BoxColor';
+import mastercard from '../imgs/master-card.svg';
+import visa from '../imgs/visa.png';
+import './CreditCard.css';
 
 function CreditCard(props) {
   return (
-    <div class="payment-card">
-      <i class="fa fa-cc-visa payment-icon-big text-success"></i>
-      <h2>**** **** **** 1060</h2>
-      <div class="row">
-        <div class="col-sm-6">
-          <small>
-            <strong>Expiry date:</strong> 10/16
-          </small>
+    <div className="card-size m-2">
+      <BoxColor hex={props.bgColor} class="rounded-3">
+        <div className="card-body" style={{ color: props.color }}>
+          <header className="d-flex flex-row-reverse">
+            <img
+              className="img-size mb-1"
+              src={props.type === 'Visa' ? visa : mastercard}
+              alt="Credit-card logo"
+            />
+          </header>
+          <h2>•••• •••• •••• {props.number.substr(-4)}</h2>
+          <div className="row">
+            <div className="text-truncate">
+              <small>
+                Expires: {props.expirationMonth}/{props.expirationYear}
+              </small>
+              <span className="ms-5">
+                <small>{props.bank}</small>
+              </span>
+            </div>
+            <div>
+              <small>{props.owner}</small>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-6 text-right">
-          <small>
-            <strong>Name:</strong> David
-          </small>
-        </div>
-      </div>
+      </BoxColor>
     </div>
   );
 }
