@@ -1,9 +1,14 @@
 import { render } from '@testing-library/react';
 import React from 'react';
 import './App.css';
+import Rating from './components/Rating'
+import DriverCard from './components/DriverCard'
+import LikeButton from './components/LikeButton'
+
 
 import visaLogo from './img/visa.png';
 import masterCardLogo from './img/master-card.svg';
+import ClickablePicture from './components/ClickablePicture';
 
 
 //////Iteration1//////
@@ -100,7 +105,7 @@ function CreditCard (props) {
 
     
   return(
-    <div className='credit-card' style={{backgroundColor: [props.bgColor]}}>
+    <div className='credit-card {props.bgColor}' style={{backgroundColor: [props.bgColor]}}>
     <div className='credit-card__logo'>
         <img className='cardlogo' src={cardTypeToLogo[props.type]} width="30px"/>
     </div>
@@ -121,8 +126,15 @@ function CreditCard (props) {
     </div>
   )
 }
+/////////////////////
+
+
+
+//////Iteration7//////
+
 
 /////////////////////
+
 
 function App() {
   return (
@@ -190,7 +202,43 @@ function App() {
         bgColor="#ddbb55"
         color="white" />
       </div>
+      <div>
+       <Rating ratingNr={0}/>
+       <Rating ratingNr={1}/>
+       <Rating ratingNr={2.2}/>
+       <Rating ratingNr={4.8}/>
+      </div>
 
+      <div>
+      <div>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE"
+        }} />
+        </div>
+        <div>
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
+        }} />
+        </div>
+      </div>
+
+      <div>
+      <p><LikeButton /> <LikeButton /></p>
+      </div>
+
+      <div>
+      <ClickablePicture />
+      </div>
   </div>
   );
 }
