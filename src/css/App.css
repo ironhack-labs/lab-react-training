@@ -37,7 +37,6 @@
   }
 }
 
-
 .cardContainer {
   border: 2px solid black;
   display: flex;
@@ -49,19 +48,21 @@
   height: 150px;
 }
 
-.cardContainer div{
+.cardContainer div {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: space-around;
 }
 
-#iterationTwo div, #iterationThree div, #iterationFour div {
+#iterationTwo div,
+#iterationThree div,
+#iterationFour div {
   border: 2px solid black;
   margin-top: 10px;
   font-size: 20px;
   display: flex;
-  justify-content: left; 
+  justify-content: left;
 }
 
 #iterationFive div {
@@ -71,22 +72,21 @@
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: left; 
+  justify-content: left;
 }
 
-.creditLogo img{
+.creditLogo img {
   width: 50px;
   height: 30px;
   align-self: flex-end;
   padding-right: 20px;
-  
 }
 
 .pCreditNumber {
   font-size: 30px;
 }
 
-.infoCard{
+.infoCard {
   display: flex;
   align-self: flex-start;
   justify-content: flex-start;
@@ -94,12 +94,12 @@
 
 #iterationSix div {
   font-size: 40px;
-  justify-content: left; 
+  justify-content: left;
 }
 
 #iterationSeven img {
   height: 100px;
-  width: 100px; 
+  width: 100px;
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
@@ -111,17 +111,16 @@
 }
 
 .driverCont {
-  display: flex; 
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   border: 2px solid black;
   border-radius: 5px;
 }
-
 
 #iterationEight {
-  display: flex; 
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -129,12 +128,27 @@
   border-radius: 5px;
 }
 
-#iterationEight button{
+#iterationEight button {
   width: 80px;
   height: 30px;
   border: 1px solid black;
   border-radius: 5px;
-  margin: 10px 10px 10px 10px ;
+  margin: 10px 10px 10px 10px;
   color: white;
   font-size: 20px;
+}
+
+#iterationNTenwithHooks img {
+  width: 60px;
+  height: 60px;
+}
+
+#iterationNElevenwithHooks  button {
+  width: 60px;
+  height: 40px;
+}
+
+#iterationNTwelvewithHooks  {
+  width: 60px;
+  height: 40px;
 }
