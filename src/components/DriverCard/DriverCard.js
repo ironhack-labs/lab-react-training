@@ -2,7 +2,6 @@ import React from 'react';
 import Rating from '../Rating/Rating';
 
 const DriverCard = ({ name, rating, img, car: { model, licensePlate } }) => {
-  console.log('Ratingdriver', rating);
   return (
     <article className="driver">
       <div className="container">

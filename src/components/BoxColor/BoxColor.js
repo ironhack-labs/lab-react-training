@@ -6,9 +6,9 @@ const BoxColor = ({ r, g, b, txtcolor }) => {
     let g2 = g.toString(16);
     let b2 = b.toString(16);
 
-    if (r2.length === 1) r2 = '0' + r;
-    if (g2.length === 1) g2 = '0' + g;
-    if (b2.length === 1) b2 = '0' + b;
+    if (r2.length === 1) r2 = '0' + r2;
+    if (g2.length === 1) g2 = '0' + g2;
+    if (b2.length === 1) b2 = '0' + b2;
 
     return '#' + r2 + g2 + b2;
   };

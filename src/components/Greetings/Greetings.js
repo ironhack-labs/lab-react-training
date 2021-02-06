@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Greetings = ({ children, lang }) => {
-  console.log(children);
   let hello = '';
   if (lang === 'es') {
     hello = 'Hola';
