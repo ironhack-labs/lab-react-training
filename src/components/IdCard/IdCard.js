@@ -18,7 +18,7 @@ const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
           <span>Height:</span> {height}
         </p>
         <p>
-          <span>Birth:</span>
+          <span>Birth:</span> {birth}
         </p>
       </div>
     </article>
