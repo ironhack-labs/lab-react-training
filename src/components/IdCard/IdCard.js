@@ -3,7 +3,9 @@ import React from 'react';
 const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
   return (
     <article className="idCard">
-      <img src={picture} alt="profile" />
+      <div>
+        <img src={picture} alt="profile" />
+      </div>
       <div>
         <p>
           <span>First Name:</span> {firstName}{' '}

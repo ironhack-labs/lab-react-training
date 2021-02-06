@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BoxColor = ({ r, g, b }) => {
+const BoxColor = ({ r, g, b, txtcolor }) => {
   const rgbToHex = (r, g, b) => {
     let r2 = r.toString(16);
     let g2 = g.toString(16);
@@ -16,7 +16,7 @@ const BoxColor = ({ r, g, b }) => {
   return (
     <div
       className="boxColor"
-      style={{ backgroundColor: `rgb(${r}, ${g}, ${b})` }}
+      style={{ backgroundColor: `rgb(${r}, ${g}, ${b})`, color: txtcolor }}
     >
       <p>{`rgb(${r}, ${g}, ${b})`}</p>
       <p>{rgbToHex(r, g, b)}</p>

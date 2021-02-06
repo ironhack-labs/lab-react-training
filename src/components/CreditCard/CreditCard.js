@@ -17,6 +17,13 @@ const CreditCard = ({
     }
     return cardLogo;
   };
+  const setExpirationMonth = (expirationMonth) => {
+    let month = expirationMonth;
+    if (month < 10) {
+      month = '0' + month;
+    }
+    return month;
+  };
 
   const secretNum = (number) => {
     let count = 1;
@@ -38,7 +45,9 @@ const CreditCard = ({
     >
       <img src={selectLogo(type)} alt="card logo" />
       <p className="cardNumber">{secretNum(number)}</p>
-      <p>{`Expires ${expirationMonth}/${expirationYear}      ${bank}`}</p>
+      <p>{`Expires ${setExpirationMonth(expirationMonth)}/${
+        expirationYear - 2000
+      }      ${bank}`}</p>
       <p>{owner}</p>
     </div>
   );

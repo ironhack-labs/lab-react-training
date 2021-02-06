@@ -15,7 +15,7 @@ const Greetings = ({ children, lang }) => {
 
   return (
     <article className="greeting">
-      <p>
+      <p className="withBorder">
         <span>{hello}</span> {children}
       </p>
     </article>
