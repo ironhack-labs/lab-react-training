@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { IdCard } from './components/IdCard/IdCard';
 import { Greetings } from './components/Greetings/Greetings';
@@ -18,17 +17,16 @@ function App() {
         birth={'1992-07-14'}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
-       <h2>iteracion 2</h2>
-      <Greetings lang={"es"}>
-        Tomás
-      </Greetings>
+      <h2>iteracion 2</h2>
+      <Greetings lang={'es'}>Tomás</Greetings>
       <h2>iteracion 3</h2>
-      <Random Min={0} max={500}/>
+      <Random min={0} max={255} />
       <h2>iteracion 4</h2>
       <BoxColor
-        r={50} g={20} b={60}>
-          
-      </BoxColor>
+        r={Math.floor(Math.random() * 255)}
+        g={Math.floor(Math.random() * 255)}
+        b={Math.floor(Math.random() * 255)}
+      ></BoxColor>
     </div>
   );
 }

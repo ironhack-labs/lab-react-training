@@ -1,8 +1,9 @@
 
 import React from 'react';
 
-export function IdCard({firstName, lastName, gender, height, birth, picture}) {
-    return (
+export function IdCard({firstName, lastName, gender, height, birth, picture , children}) {
+  
+  return (
         <div className="card">
           <p>{firstName}</p>
           <p>{lastName}</p>
@@ -12,4 +13,4 @@ export function IdCard({firstName, lastName, gender, height, birth, picture}) {
           <img src={picture} alt="alt"/>
         </div>
     )
-}
+} 
