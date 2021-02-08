@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid black;
+  margin: 15px 15px;
+  font-size: 1.5rem;
+}
+.margin-top{
+  margin-top: 0px;
+  font-size: 1.5rem;
+}
+
+.credit-card {
+  border-radius: 20px;
+  max-width: 300px;
+  height: auto;
+  padding: 1.5em;
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.credit-card img{
+  width: 15%;
+  float: right;
+}
+
+.cardNumber {
+  text-align: start;
+  padding-top: 15%;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.driverCard{
+  margin-left: 15px;
+  width: 50%;
+  display: flex;
+  border-radius: 15px;
+  padding-left: 20%;
+  background-color: rgba(18, 18, 201, 0.808);
+  color: white;
+  margin-bottom: 15px;
+  align-items: center;
+}
+/* .driverCard div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.driverImg{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.container-column{
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  font-weight: 200;
+  align-items: flex-start;
+}
+.driver-name{
+  font-weight: 700;
+}
