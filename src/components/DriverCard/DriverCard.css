@@ -1,0 +1,22 @@
+.card{
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: darkblue;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cardContent{
+    width:400px;
+    margin-left: 15px;
+    padding:10px;
+}
+
+.imgCard{
+    width:150px;
+    height:150px;
+    border-radius:100px;
+}
