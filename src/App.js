@@ -6,16 +6,17 @@ import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
-import RandomClass from './classComponents/RandomClass/RandomClass';
-
+import LikeButton from './components/LikeButton/LikeButton';
 /*        Class     */
 
 import IdCardClass from './classComponents/IdCard/IdCardClass';
 import GreetingsClass from './classComponents/GreetingsClass/GreetingsClass';
+import RandomClass from './classComponents/RandomClass/RandomClass';
 import BoxColorClass from './classComponents/BoxColorClass/BoxColorClass';
 import CreditCardClass from './classComponents/CreditCardClass/CreditCardClass';
 import RatingClass from './classComponents/RatingClass/RatingClass';
 import DriverCardClass from './classComponents/DriverCardClass/DriverCardClass';
+import LikeButtonClass from './classComponents/LikeButtonClass/LikeButtonClass';
 
 function App() {
   return (
@@ -106,7 +107,7 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
-
+      <LikeButton /> <LikeButton />
       <hr />
       <h1>Class components</h1>
       <h2>IdCards</h2>
@@ -175,7 +176,6 @@ function App() {
       <RatingClass>3</RatingClass>
       <RatingClass>4</RatingClass>
       <RatingClass>5</RatingClass>
-
       <h2>Driver Card</h2>
       <DriverCardClass
         name="Travis Kalanick"
@@ -195,6 +195,7 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <LikeButtonClass /> <LikeButtonClass />
     </main>
   );
 }
