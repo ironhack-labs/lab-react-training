@@ -1,10 +1,10 @@
 import React from 'react';
 // import logo from './logo.svg';
-import IdCard from './Components/IdCard/IdCard'
-import Greetings from './Components/Greetings/Greetings'
-import Random from './Components/Random/Random'
+import IdCard from './Components/BoxColor/IdCard/IdCard'
+import Greetings from './Components/BoxColor/Greetings/Greetings'
+import Random from './Components/BoxColor/Random/Random'
 import BoxColor from './Components/BoxColor/BoxColor'
-import CreditCard from './Components/CreditCard/CreditCard'
+import CreditCard from './Components/BoxColor/CreditCard/CreditCard'
 import './App.css';
 
 function App() {
