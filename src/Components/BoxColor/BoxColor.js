@@ -13,4 +13,4 @@ function BoxColor({r,g,b}){
     </div>
     )
 }
-export default BoxColor 
+export default BoxColor
