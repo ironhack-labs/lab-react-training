@@ -22,7 +22,6 @@ import React from 'react';
 
 
 
-
 class IdCard extends React.Component {
     constructor(props) {
       super(props);
@@ -33,11 +32,15 @@ class IdCard extends React.Component {
       this.birth = this.props.birth;
       this.picture = this.props.picture;
     }
+
+    getDate(){
+        return this.birth.getFullYear() + "-"+(this.birth.getMonth() + 1) + "-" + this.birth.getDate();
+    }
   
     render() {
       return (
     <article className="idCard">
-      <img src={picture} alt="picture" />
+      <img src={this.picture} alt="picture" />
       <div>
         <p><span>First Name:</span> {this.firstName}{' '}</p>
 
@@ -47,7 +50,7 @@ class IdCard extends React.Component {
           
         <p> <span>Height:</span> {this.height}</p>
          
-        <p><span>Birth:</span>{this.birth}</p>     
+        <p><span>Birth:</span>{this.getDate()}</p>     
         
       </div>
     </article>

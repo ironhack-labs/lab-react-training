@@ -36,7 +36,7 @@ class Greetings extends React.Component {
       es: 'Hola',
       fr: 'Bonjour',
     };
-    this.hello = this.greetings(props.lang);
+    this.hello = this.greetings[props.lang];
     this.children = this.props.children;
   }
 
