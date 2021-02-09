@@ -13,7 +13,7 @@ import React from 'react';
           
 //         <p> <span>Height:</span> {height}</p>
          
-//         <p><span>Birth:</span>{birth}</p>     
+//         <p><span>Birth:</span>{birth.getFullYear() + "-"+(birth.getMonth() + 1) + "-" + birth.getDate();}</p>     
         
 //       </div>
 //     </article>
