@@ -79,3 +79,7 @@ code {
 .driver-name{
   font-weight: 700;
 }
+
+.margin{
+  margin-left: 15px;
+}

@@ -13,7 +13,6 @@ function IdCard({lastName, firstName, gender, height, birth, picture}){
         <p><strong>Height:</strong> {height}</p>
         <p><strong>Birth:</strong> {birth}</p>
       </div>
-
     </div>
   );
 }

@@ -15,11 +15,10 @@ function Rating({children}){
   const ratingUser = ratingStar[stars]
 
 return (
-  <div className='container-row'>{ratingUser}</div>
+  <div className='margin'>{ratingUser}</div>
 )
 }
 
 export default Rating
-
 
 

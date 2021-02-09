@@ -31,7 +31,6 @@ function CreditCard({
       <span> {bank}</span>
       <div>{owner}</div>
     </article>
-    
   )
 }
 
