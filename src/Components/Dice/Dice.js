@@ -22,7 +22,7 @@ class Dice extends React.Component {
         />
       </div>
     );
-  };
+  }
 }
 
 export default Dice;
