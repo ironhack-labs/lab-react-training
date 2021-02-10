@@ -54,10 +54,36 @@
 }
 
 .creditCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: .5em;
-  border: 1px solid black;
-  margin: 10px;
+    border: 0px;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ddbb55;
+    color: white;
+    margin: 10px;
+}
+
+.card{
+  display:flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: rgb(110, 110, 253);
+  color: whitesmoke;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.cardContent{
+  width:400px;
+  margin-left: 15px;
+  padding:10px;
+}
+
+.imgCard{
+  width:150px;
+  height:150px;
+  border-radius:100px;
 }
