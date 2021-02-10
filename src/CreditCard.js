@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { Component } from 'react';
 
 class CreditCard extends Component {
@@ -10,9 +8,8 @@ class CreditCard extends Component {
         color: this.props.color,
       }}>
         <div className="type">
-          // eslint-disable-next-line jsx-a11y/alt-text
-          {this.props.type === "Visa" && <img src="/img/visa.png" />}
-          {this.props.type === "Master Card" && <img src="/img/master-card.svg" />}
+          {this.props.type === "Visa" && <img src="/img/visa.png" alt="visa card"/>}
+          {this.props.type === "Master Card" && <img src="/img/master-card.svg" alt="master card"/>}
         </div>
         <div className="number">•••• •••• •••• {this.props.number.substr(-4)}</div>
         <div className="expires-bank">

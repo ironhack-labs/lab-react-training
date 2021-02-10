@@ -6,6 +6,13 @@ import Random from './Random';
 import CreditCard from './CreditCard'
 import Rating from './Rating'
 import DriverCard from './DriverCard'
+import LikeButton from './LikeButton.js';
+import ClickablePicture from './ClickablePicture'
+import Dice from './Dice';
+import Carousel from './Carousel'
+import NumbersTable from './NumbersTable'
+import Facebook from './Facebook'
+import RGBColorPicker from './RGBColorPicker'
 import './App.css';
 
 class App extends Component {
@@ -92,6 +99,19 @@ class App extends Component {
                 model: "Audi A3",
                 licensePlate: "BE33ER"
               }} />
+              <section >
+					  <LikeButton />
+					  <LikeButton />
+				   </section>
+           <ClickablePicture
+              img='/img/persons/maxence.png'
+              imgClicked='/img/persons/maxence-glasses.png'
+            />
+          <Dice /> 
+          <Carousel imgs={["https://randomuser.me/api/portraits/women/1.jpg", "https://randomuser.me/api/portraits/men/1.jpg", "https://randomuser.me/api/portraits/women/2.jpg", "https://randomuser.me/api/portraits/men/2.jpg"]} />
+          <NumbersTable limit={12} />
+          <Facebook />
+          <RGBColorPicker />
         </div>
     );
   }
