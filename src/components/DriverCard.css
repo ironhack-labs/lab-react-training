@@ -1,0 +1,16 @@
+.driver {
+    background-color: dodgerblue;
+    border-radius: 5%;
+    width: 50%;
+}
+
+.driver img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.driver p {
+    color: floralwhite;
+}
