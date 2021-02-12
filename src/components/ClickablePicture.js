@@ -1,13 +1,13 @@
-// import React, { useState } from 'react';
 
 
-// function picture(){
-//     const [image, setImage] = useState(0);
-
-//     return(
-        
-  
-//     );
+// function ClickablePicture(linkpic) {
+//     return (
+//         <div>
+//             <h2> Image </h2>
+//             <h1> {linkpic} </h1>
+            
+//         </div>
+//     )
 // }
 
-// export default picture;
+// export default ClickablePicture;
