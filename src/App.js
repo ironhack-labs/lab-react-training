@@ -8,6 +8,7 @@ import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import Dice from './components/Dice/Dice';
 
 /*        Class     */
 
@@ -117,6 +118,8 @@ function App() {
         img="/img/persons/maxence.png"
         imgClicked="/img/persons/maxence-glasses.png"
       />
+      <h2>Dice</h2>
+      <Dice />
       <hr />
       <h1>Class components</h1>
       <h2>IdCards</h2>
