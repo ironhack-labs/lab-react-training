@@ -7,6 +7,8 @@ import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+
 /*        Class     */
 
 import IdCardClass from './classComponents/IdCard/IdCardClass';
@@ -17,6 +19,7 @@ import CreditCardClass from './classComponents/CreditCardClass/CreditCardClass';
 import RatingClass from './classComponents/RatingClass/RatingClass';
 import DriverCardClass from './classComponents/DriverCardClass/DriverCardClass';
 import LikeButtonClass from './classComponents/LikeButtonClass/LikeButtonClass';
+import ClickablePictureClass from './classComponents/ClickablePictureClass/ClickablePictureClass';
 
 function App() {
   return (
@@ -107,7 +110,13 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <h2>Like Button</h2>
       <LikeButton /> <LikeButton />
+      <h2>Clickable Picture</h2>
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
       <hr />
       <h1>Class components</h1>
       <h2>IdCards</h2>
@@ -196,6 +205,11 @@ function App() {
         }}
       />
       <LikeButtonClass /> <LikeButtonClass />
+      <h2>Clickable Picture</h2>
+      <ClickablePictureClass
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
     </main>
   );
 }
