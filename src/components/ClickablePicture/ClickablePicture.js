@@ -1,0 +1,25 @@
+import React from 'react';
+
+class ClickablePicture extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { image: this.props.img };
+  }
+
+  handleClick = () =>{
+    this.setState({ image: this.props.imgClicked });
+  }
+
+  render() {
+    return (
+      <img
+        src={this.state.image}
+        alt="profile picture"
+        onClick={this.handleClick}
+      ></img>
+    );
+  }
+}
+
+export default ClickablePicture;
