@@ -1,0 +1,23 @@
+.square {
+    background-color: red;
+    width: 59px;
+    height: 70px;
+    border: solid;
+}
+
+.container-squares {   
+    display: inline-flex;
+    margin-top: 15px;
+}
+
+.square-number {
+    color: white;
+    font-size: larger;
+}
+
+.odd-square {
+    background-color:white;
+    width: 59px;
+    height: 70px;
+    border: solid;
+}

@@ -1,0 +1,14 @@
+.img-driver {
+    border-radius: 100px;
+}
+.driver-container {
+    border: solid;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: blue;
+    margin-bottom: 2%;
+    border-radius: 15px;
+}
+.drive-text {
+    color: white;
+}
