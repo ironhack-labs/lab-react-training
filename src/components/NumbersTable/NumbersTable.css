@@ -1,0 +1,15 @@
+.par,
+.impar {
+  padding: 2em;
+  border: 1px solid black;
+  width: fit-content;
+}
+
+.par {
+  background-color: red;
+}
+
+.numberContainer {
+  display: flex;
+  wrap: wrap;
+}

@@ -9,7 +9,7 @@ import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import Dice from './components/Dice/Dice';
-
+import NumbersTable from './components/NumbersTable/NumbersTable';
 /*        Class     */
 
 import IdCardClass from './classComponents/IdCard/IdCardClass';
@@ -21,6 +21,7 @@ import RatingClass from './classComponents/RatingClass/RatingClass';
 import DriverCardClass from './classComponents/DriverCardClass/DriverCardClass';
 import LikeButtonClass from './classComponents/LikeButtonClass/LikeButtonClass';
 import ClickablePictureClass from './classComponents/ClickablePictureClass/ClickablePictureClass';
+import NumbersTableClass from './classComponents/NumbersTableClass/NumbersTableClass';
 
 function App() {
   return (
@@ -120,6 +121,8 @@ function App() {
       />
       <h2>Dice</h2>
       <Dice />
+      <h2>Numbers Table</h2>
+      <NumbersTable limit={12} />
       <hr />
       <h1>Class components</h1>
       <h2>IdCards</h2>
@@ -213,6 +216,8 @@ function App() {
         img="/img/persons/maxence.png"
         imgClicked="/img/persons/maxence-glasses.png"
       />
+      <h2>Numbers Table</h2>
+      <NumbersTableClass limit={12} />
     </main>
   );
 }
