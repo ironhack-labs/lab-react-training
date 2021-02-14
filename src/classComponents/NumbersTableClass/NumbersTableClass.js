@@ -9,7 +9,6 @@ class NumbersTableClass extends React.Component {
 
   addItems = () => {
     for (let i = 1; i <= this.props.limit; i++) {
-      console.log(i);
       const checkNum =
         i % 2 === 0
           ? this.items.push(
@@ -23,8 +22,6 @@ class NumbersTableClass extends React.Component {
               </div>
             );
     }
-    console.log(this.items);
-    //return this.items;
   };
 
   componentWillMount() {

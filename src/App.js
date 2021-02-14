@@ -10,6 +10,10 @@ import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import Dice from './components/Dice/Dice';
 import NumbersTable from './components/NumbersTable/NumbersTable';
+import FaceBook from './components/FaceBook/Facebook';
+import SignupPage from './components/SignupPage/SignupPage';
+import RgbColorPicker from './components/RgbColorPicker/RgbColorPicker';
+
 /*        Class     */
 
 import IdCardClass from './classComponents/IdCard/IdCardClass';
@@ -123,6 +127,12 @@ function App() {
       <Dice />
       <h2>Numbers Table</h2>
       <NumbersTable limit={12} />
+      <h2>FaceBook</h2>
+      <FaceBook />
+      <h2>Signup Page</h2>
+      <SignupPage />
+      <h2>RGB Color Picker</h2>
+      <RgbColorPicker />
       <hr />
       <h1>Class components</h1>
       <h2>IdCards</h2>
