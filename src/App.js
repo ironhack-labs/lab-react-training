@@ -8,6 +8,7 @@ import BoxColor from './components/BoxColor/BoxColor';
 import { CreditCard } from './components/CreditCard';
 import { Rating } from './components/Rating/Rating';
 import { DriverCard } from './components/DriverCard/DriverCard';
+import { LikeButton } from './components/LikeButton';
 
 function App() {
   return (
@@ -32,11 +33,9 @@ function App() {
       <h1>Iteration 2 Greetings</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-
       <h1>Iteration 3 Random</h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
       <h1>Iteration 4 BoxColor</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
@@ -68,7 +67,6 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
       <h1>Iteration 7 Rating</h1>
       <DriverCard
         name="Travis Kalanick"
@@ -88,6 +86,8 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <h1>Iteration 8 LikeButton</h1>
+      <LikeButton /> <LikeButton />
     </main>
   );
 }
