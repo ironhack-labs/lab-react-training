@@ -21,14 +21,15 @@ class Random extends React.Component {
     }
 
     getRandom(){
-        return Math.floor(Math.random() * this.max) + this.min;
+        const {min, max} = this.props;
+        return Math.floor(Math.random() * max) + min;
     }
 
 
     render(){
           return (
                 <p>
-                Random value between {this.min} and {this.max} =&gt; {this.getRandom()};
+                Random value between {this.props.min} and {this.props.max} =&gt; {this.getRandom()};
                 </p>
             );
     }

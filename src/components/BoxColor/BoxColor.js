@@ -18,19 +18,17 @@ class BoxColor extends React.Component {
 
     constructor(props) {
         super(props);
-        this.r = props.r;
-        this.g = props.g;
-        this.b = props.b;
-
-    }
+}
 
     render(){
     return (
         <div
           className="boxColor"
-          style={{ backgroundColor: `rgb(${this.r}, ${this.g}, ${this.b})` }}
+          style={{ backgroundColor: `rgb(${this.props.r}, ${this.props.g}, ${this.props.b})`,
+          width: 150,
+          height: 200 }}
         >
-          <p>{`rgb(${this.r}, ${this.g}, ${this.b})`}</p>
+          <p>{`rgb(${this.props.r}, ${this.props.g}, ${this.props.b})`}</p>
         
         </div>
       );
