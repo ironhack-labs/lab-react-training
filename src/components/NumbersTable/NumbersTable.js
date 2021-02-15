@@ -6,7 +6,7 @@ function NumbersTable(props) {
 
   for (let i = 1; i <= props.limit; i++) {
     arrayNumber.push(
-      <div style={{ backgroundColor: `${color[i % 2]}`, padding: "10px"}}>{i}</div>
+      <div key= {i} style={{ backgroundColor: `${color[i % 2]}`, padding: "10px"}}>{i}</div>
     );
   }
 
