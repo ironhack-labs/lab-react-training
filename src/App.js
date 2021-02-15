@@ -18,6 +18,12 @@ import BoxColorClass from './classesComponents/BoxColor/BoxColor'
 import CreditCardClass from './classesComponents/CreditCard/CreditCard'
 import RatingClass from './classesComponents/Rating/Rating'
 
+//Iteration 8 to 16
+import LikeButton from "./components/LikeButton/LikeButton"
+import ClickablePicture from "./components/ClickablePicture/ClickablePicture"
+import Dice from "./components/Dice/Dice"
+import Carousel from "./components/Carousel/Carousel"
+import NumbersList from "./components/NumbersList/NumbersList"
 
 function App() {
   
@@ -102,7 +108,28 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} />
+      <h2>Iteration 8</h2>
+      <LikeButton textcolor="white"/>
+      <h2>Iteration 9</h2>
+      <ClickablePicture
+        img='/img/persons/maxence.png'
+        imgClicked='/img/persons/maxence-glasses.png'
+      />
+      <h2>Iteration 10</h2>
+      <Dice />
+      <h2>Iteration 11</h2>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <h2>Iteration 12</h2>
+      <NumbersList limit={12} />
     </div>
+    
   );
 }
 

@@ -83,3 +83,48 @@ code {
 .margin{
   margin-left: 15px;
 }
+
+.slideshow-container {
+  max-width: 50%;
+  height: auto;
+  position: relative;
+
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border: none;
+  user-select: none;
+  background-color: transparent;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.number-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+
+}
+.even,.odd {
+  padding: 2em;
+  border: 1px solid black;
+  width: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.even{
+  background-color: red;
+  color: black;
+}
