@@ -15,7 +15,7 @@ function LikeButton() {
     let likes = numberLikes + 1;
 
     if (color > 5) color = 0;
-
+ 
     setLikes(likes);
     setbgColor(color);
   };
