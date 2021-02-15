@@ -2,18 +2,28 @@ import React from 'react'
 
 function IdCard({lastName, firstName, gender, height, birth, picture}){
   return (
-    <div className='container-row fit-content'>
+    <article className="idCard">
       <div>
-        <img className='margin' src={picture}></img>
+        <img src={picture} alt="profile" />
       </div>
-      <div className='text-person'>
-        <p><strong>First Name:</strong> {firstName}</p>
-        <p><strong>Last Name:</strong> {lastName}</p>
-        <p><strong>Gender:</strong>{gender}</p>
-        <p><strong>Height:</strong> {height}</p>
-        <p><strong>Birth:</strong> {birth}</p>
+      <div>
+        <p>
+          <span>First Name:</span> {firstName}{' '}
+        </p>
+        <p>
+          <span>Last Name:</span> {lastName}
+        </p>
+        <p>
+          <span>Gender:</span> {gender}
+        </p>
+        <p>
+          <span>Height:</span> {height}
+        </p>
+        <p>
+          <span>Birth:</span> {birth}
+        </p>
       </div>
-    </div>
+    </article>
   );
 }
 

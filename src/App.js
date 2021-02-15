@@ -24,9 +24,10 @@ import ClickablePicture from "./components/ClickablePicture/ClickablePicture"
 import Dice from "./components/Dice/Dice"
 import Carousel from "./components/Carousel/Carousel"
 import NumbersList from "./components/NumbersList/NumbersList"
+import Facebook from "./components/Facebook/Facebook"
+
 
 function App() {
-  
   return (
     <div className="App">
       <h2>Iteration 1</h2>
@@ -128,6 +129,8 @@ function App() {
       />
       <h2>Iteration 12</h2>
       <NumbersList limit={12} />
+      <h2>Iteration 13</h2>
+      <Facebook />
     </div>
     
   );

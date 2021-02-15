@@ -12,6 +12,28 @@ code {
     monospace;
 }
 
+.idCard {
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid black;
+  margin: 1em 0;
+  padding: 0.5em;
+  align-items: flex-start;
+  width: 400px;
+}
+
+.idCard img {
+  width: 10em;
+}
+
+.idCard p {
+  margin: 0.5em;
+}
+
+.idCard span {
+  font-weight: 700;
+}
+
 .container-col {
   display: flex;
   flex-direction: column;
