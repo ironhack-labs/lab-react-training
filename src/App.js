@@ -6,6 +6,10 @@ import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/clickablePicture/ClickablePicture'
+import Dice  from './components/Dice/Dice'
+import Carousel from './components/Carousel/Carousel'
 import './App.css';
 
 function App() {
@@ -95,7 +99,20 @@ function App() {
             model: "Audi A3",
             licensePlate: "BE33ER"
           }} />
+          <h2>Iteration 8</h2>
+          <LikeButton />
 
+          <h2>Iteration 9</h2>
+          <ClickablePicture
+            img='/img/persons/maxence.png'
+            imgClicked='/img/persons/maxence-glasses.png'
+          />
+
+          <h2>Iteration 10. Dice</h2>
+          <Dice />
+
+          <h2>Iteration 11</h2>
+          <Carousel />
     </div>
   );
 }

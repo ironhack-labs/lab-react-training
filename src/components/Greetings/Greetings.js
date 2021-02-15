@@ -8,6 +8,14 @@ import React from 'react';
 //         return `Bonjour ${children}`
 //     } 
 
+        //otra forma de pasarle lang de forma dinámica. 
+        //const greetings = {
+        //     en: "Hello", 
+        //     fr: "Bonjour",
+        // }
+        // constr greet = greetings[lang]
+        // return `{greet}{children}`
+
 //     return (
 //         <div>
 //             <p>{lang}</p>
