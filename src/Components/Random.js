@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const names = {
     border :"1px solid black",
     margin: 10,

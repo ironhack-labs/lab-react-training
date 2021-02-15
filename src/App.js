@@ -1,45 +1,49 @@
 import React from 'react';
-// import logo from './logo.svg';
-import IdCard from './Components/BoxColor/IdCard/IdCard'
-import Greetings from './Components/BoxColor/Greetings/Greetings'
-import Random from './Components/BoxColor/Random/Random'
-import BoxColor from './Components/BoxColor/BoxColor'
-import CreditCard from './Components/BoxColor/CreditCard/CreditCard'
+import IdCard from './Components/IdCard';
+import Greetings from './Components/Greetings';
+import Random from './Components/Random';
+import BoxColor from './Components/BoxColor';
+import CreditCard from './Components/CreditCard';
+import Rating from './Components/Rating';
+import DriverCard from './Components/DriverCard';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h2>Interation 1</h2>
-      <h1>IdCard</h1>
-      <IdCard
-        picture="https://randomuser.me/api/portraits/men/44.jpg"
-        lastName="Doe"
-        firstName="John"
-        gender="male"
-        height={178}
-        birth={'1992-07-14'}
-      />
 
+    <div>
+      <h2>Interaction 1</h2>
       <IdCard
-        lastName="Delores "
-        firstName="Obrien"
-        gender="female"
-        height={172}
-        birth={'1988-05-11'}
-        picture="https://randomuser.me/api/portraits/women/44.jpg"
-      />
+  lastName='Doe'
+  firstName='John'
+  gender='male'
+  height={178}
+  birth="1992-07-14"
+  picture="https://randomuser.me/api/portraits/men/44.jpg"
+/>
+<IdCard
+  lastName='Delores '
+  firstName='Obrien'
+  gender='female'
+  height={172}
+  birth="1988-05-11"
+  picture="https://randomuser.me/api/portraits/women/44.jpg"
+/>
+
+
 <h2>Interaction 2</h2>
 <Greetings lang="de">Ludwig</Greetings>
 <Greetings lang="fr">François</Greetings>
-
 <h2>Interaction 3</h2>
 <Random min={1} max={6}/>
 <Random min={1} max={100}/>
 
+
 <h2>Interaction 4</h2>
 <BoxColor r={255} g={0} b={0} />
 <BoxColor r={128} g={255} b={0} />
+
+
 
 <h2>Interaction 5</h2>
 <CreditCard
@@ -71,10 +75,36 @@ function App() {
   color="white" />
 
 
+  <h2>Interaction 6</h2>
+  <Rating>0</Rating>
+<Rating>1.49</Rating>
+<Rating>1.5</Rating>
+<Rating>3</Rating>
+<Rating>4</Rating>
+<Rating>5</Rating>
+
+
+
+
+<h2>Interaction 7</h2>
+<DriverCard
+  name="Travis Kalanick"
+  rating={4.2}
+  img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+  car={{
+    model: "Toyota Corolla Altis",
+    licensePlate: "CO42DE"
+  }} />
+<DriverCard
+  name="Dara Khosrowshahi"
+  rating={4.9}
+  img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+  car={{
+    model: "Audi A3",
+    licensePlate: "BE33ER"
+  }} />
     </div>
   );
 }
-
-
 
 export default App;
