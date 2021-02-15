@@ -2,7 +2,7 @@ import React from 'react';
 
 function Greetings({ lang, children}) {
    
-    if(lang === "en"){
+     if(lang === "en"){
         return "Hello " + children
     }else if (lang === "de"){
         return "Hallo " + children
