@@ -12,8 +12,11 @@ import { ClickablePicture } from './components/ClickablePicture/ClickablePicture
 import { Dice } from './components/Dice/Dice';
 import { Carousel } from './components/Carousel/Carousel';
 import { NumbersTable } from './components/NumbersTable/NumbersTable';
+import { FaceBook } from './components/FaceBook/FaceBook';
+
 
 function App() {
+
   return (
     <div className="App">
       <h2>iteracion 1</h2>
@@ -119,7 +122,10 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+      <h2>iteracion 12</h2>
       <NumbersTable limit={12}/>
+      <h2>iteracion 13</h2>
+      <FaceBook/>
     </div>
   );
 }

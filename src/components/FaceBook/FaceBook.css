@@ -1,0 +1,16 @@
+
+.ironhacker-container {
+    display: flex;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 20px 0px;
+}
+
+
+.ironhacker-container img {
+   width: 150px;
+   margin: 21px;
+   box-shadow: 5px 5px 20px 0px;
+ }
+ 
