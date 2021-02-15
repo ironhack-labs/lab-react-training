@@ -6,13 +6,17 @@ import BoxColor from './Components/BoxColor';
 import CreditCard from './Components/CreditCard';
 import Rating from './Components/Rating';
 import DriverCard from './Components/DriverCard';
+import LikeButton from './Components/LikeButton';
+import ClickablePicture from './Components/ClickablePicture';
+// import Dice from './Components/Dice';
+// import Carousel from './Components/Carousel'
 import './App.css';
 
 function App() {
   return (
 
     <div>
-      <h2>Interaction 1</h2>
+      <h2>Iteration 1</h2>
       <IdCard
   lastName='Doe'
   firstName='John'
@@ -31,21 +35,21 @@ function App() {
 />
 
 
-<h2>Interaction 2</h2>
+<h2>Iteration 2</h2>
 <Greetings lang="de">Ludwig</Greetings>
 <Greetings lang="fr">François</Greetings>
-<h2>Interaction 3</h2>
+<h2>Iteration 3</h2>
 <Random min={1} max={6}/>
 <Random min={1} max={100}/>
 
 
-<h2>Interaction 4</h2>
+<h2>Iteration 4</h2>
 <BoxColor r={255} g={0} b={0} />
 <BoxColor r={128} g={255} b={0} />
 
 
 
-<h2>Interaction 5</h2>
+<h2>Iteration 5</h2>
 <CreditCard
   type="Visa"
   number="0123456789018845"
@@ -75,7 +79,7 @@ function App() {
   color="white" />
 
 
-  <h2>Interaction 6</h2>
+  <h2>Iteration 6</h2>
   <Rating>0</Rating>
 <Rating>1.49</Rating>
 <Rating>1.5</Rating>
@@ -86,7 +90,7 @@ function App() {
 
 
 
-<h2>Interaction 7</h2>
+<h2>Iteration 7</h2>
 <DriverCard
   name="Travis Kalanick"
   rating={4.2}
@@ -103,7 +107,27 @@ function App() {
     model: "Audi A3",
     licensePlate: "BE33ER"
   }} />
+
+
+
+<h2>Iteration 8</h2>
+
+<LikeButton /> <LikeButton />
+
+
+<h2>Iteration 9</h2>
+<ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+
+<h2>Iteration 10</h2>
+    {/* <Dice /> */}
+
+
     </div>
+
+    
   );
 }
 
