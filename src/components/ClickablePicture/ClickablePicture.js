@@ -17,6 +17,7 @@ class ClickablePicture extends React.Component {
         src={this.state.image}
         alt="profile picture"
         onClick={this.handleClick}
+        style ={{height:"100px"}}
       ></img>
     );
   }

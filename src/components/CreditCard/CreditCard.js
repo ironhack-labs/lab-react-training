@@ -16,12 +16,14 @@ function CreditCard({
 
   const divStyle = {
     backgroundColor: bgColor,
-    color: color
+    color: color,
+    width: "30%",
+    
   }
 
   return (
     <div style={divStyle}>
-      <img src={imageUrls(type)} alt="visa o mastercard" />
+      <img src={imageUrls(type)} alt="visa o mastercard" style ={{height:"20px"}}/>
       <h2>{`${hashNumbers} ${lastFourDigits}`}</h2>
       <p>
         Expires <span>{formatNumber(expirationMonth)}</span>/
