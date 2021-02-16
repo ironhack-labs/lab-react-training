@@ -14,6 +14,7 @@ import { Dice } from './components/Dice';
 import { Carousel } from './components/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
 import Facebook from './components/Facebook/Facebook';
+import SignupPage from './components/SignupPage/SignupPage';
 
 function App() {
   return (
@@ -113,6 +114,8 @@ function App() {
       <NumbersTable limit={12} />
       <h1>Iteration 13 and 14 Facebook</h1>
       <Facebook />
+      <h1>Iteration 15 SignupPage</h1>
+      <SignupPage />
     </main>
   );
 }
