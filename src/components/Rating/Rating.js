@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import React from "react";
 
 function Rating({children}){
