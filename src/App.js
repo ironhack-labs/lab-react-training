@@ -26,6 +26,7 @@ import Carousel from "./components/Carousel/Carousel"
 import NumbersList from "./components/NumbersList/NumbersList"
 import Facebook from "./components/Facebook/Facebook"
 import SignupPage from './components/SignupPage/SignupPage'
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker'
 
 
 function App() {
@@ -134,6 +135,8 @@ function App() {
       <Facebook />
       <h2>Iteration 15</h2>
       <SignupPage />
+      <h2>Iteration 16</h2>
+      <RGBColorPicker />
     </div>
     
   );
