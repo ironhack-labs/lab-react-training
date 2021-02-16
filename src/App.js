@@ -25,6 +25,7 @@ import Dice from "./components/Dice/Dice"
 import Carousel from "./components/Carousel/Carousel"
 import NumbersList from "./components/NumbersList/NumbersList"
 import Facebook from "./components/Facebook/Facebook"
+import SignupPage from './components/SignupPage/SignupPage'
 
 
 function App() {
@@ -129,8 +130,10 @@ function App() {
       />
       <h2>Iteration 12</h2>
       <NumbersList limit={12} />
-      <h2>Iteration 13</h2>
+      <h2>Iteration 13-14</h2>
       <Facebook />
+      <h2>Iteration 15</h2>
+      <SignupPage />
     </div>
     
   );

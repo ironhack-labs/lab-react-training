@@ -8,8 +8,9 @@ function Facebook(){
   const [showInfo, setInfo] = React.useState("none")
   const [buttons, setButtons] = React.useState(countries)
   const [showByCountry, setCountry] = React.useState("All")
-
-  const buttonsArr = ["All", ...buttons]
+  const notDuplicate = new Set(buttons)
+  console.log(notDuplicate)
+  const buttonsArr = ["All", ...notDuplicate]
   console.log(buttonsArr)
 
   
@@ -43,7 +44,7 @@ function Facebook(){
     }
     {
       profile.map((contact)=>(
-      <article  style={{backgroundColor: contact.country === showByCountry ? "blue" : ""}} className="idCard">
+      <article  style={{backgroundColor: contact.country === showByCountry ? "#04d9ff" : ""}} className="idCard">
         <div>
           <img onClick={clickImage} src={contact.img} alt="profile" />
         </div>

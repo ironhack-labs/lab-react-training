@@ -150,3 +150,19 @@ code {
   background-color: red;
   color: black;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  
+}
+
+form button {
+  width: 20%;
+  align-items: center;
+  margin-top: 5%;
+  border-radius: 40px;
+  background-color: cornflowerblue;
+  border: none;
+}
