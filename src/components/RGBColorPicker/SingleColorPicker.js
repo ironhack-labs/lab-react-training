@@ -5,7 +5,13 @@ const [colorRGB, setColor] = React.useState(0);
 
 const handleChange = (e) => {
 let {value} = e.target;
+if(value >=255){
+  value = 255;
+} else if ( value <=0){
+  value = 0
+}
 setColor(value)
+console.log("colorRGB",colorRGB)
 onChange(color, value)
 }
 
@@ -17,6 +23,7 @@ onChange(color, value)
       type='number'
       max='255'
       min='0'
+      value={colorRGB}
       onChange={handleChange}
     />
 
