@@ -8,6 +8,7 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 import Test from './components/Test/Test';
 import './components/CreditCard.css';
 import './components/DriverCard.css';
@@ -111,6 +112,9 @@ function App() {
         img='/img/persons/maxence.png'
         imgClicked='/img/persons/maxence-glasses.png'
       />
+
+      <h1>Iteration 10</h1>
+      <Dice />
     </div>
   );
 }
