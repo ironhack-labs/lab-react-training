@@ -11,7 +11,9 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
-import NumbersTable from './components/NumbersTable'
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import profiles from './data/berlin.json';
 import './App.css';
 
 function App() {
@@ -115,6 +117,8 @@ function App() {
 />
 <h2>Interation 12</h2>
 <NumbersTable limit={12} />
+<h2>Interation 13</h2>
+<FaceBook {...profiles}/>
     </div>
   );
 }
