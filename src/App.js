@@ -11,6 +11,7 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
 import Test from './components/Test/Test';
 import './components/CreditCard.css';
 import './components/DriverCard.css';
@@ -130,6 +131,10 @@ function App() {
 
       <h1>Iteration 12</h1>
       <NumbersTable limit={12} />
+
+      <h1>Iteration 13 and 14</h1>
+      <FaceBook />
+
     </div>
   );
 }
