@@ -8,8 +8,10 @@ import Rating from './Components/Rating';
 import DriverCard from './Components/DriverCard';
 import LikeButton from './Components/LikeButton';
 import ClickablePicture from './Components/ClickablePicture';
-// import Dice from './Components/Dice';
-// import Carousel from './Components/Carousel'
+import Dice from './Components/Dice';
+import Carousel from './Components/Carousel';
+// import NumbersTable from './Components/NumbersTable';
+
 import './App.css';
 
 function App() {
@@ -122,8 +124,23 @@ function App() {
       />
 
 <h2>Iteration 10</h2>
-    {/* <Dice /> */}
+    <Dice />
 
+
+<h2>Interation 11</h2>
+<Carousel cellPadding={5}
+  imgs={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]}
+/>
+
+<h2>Interation 12</h2>
+{/* <NumbersTable limit={12} /> */}
+
+<h2>Interation 13</h2>
 
     </div>
 

@@ -14,7 +14,7 @@ export default function ClickablePicture(props) {
 
     return (
         <div>
-            <img src={image} onClick={handleOnClick} />
+            <img src={image} onClick={handleOnClick} alt='imagen'/>
         </div>
     )
 }

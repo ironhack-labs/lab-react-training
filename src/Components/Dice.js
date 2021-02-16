@@ -1,13 +1,23 @@
-// import React, { useState } from 'react';
-// import dice from '../assets/dice-empty.png'
+import React, { useState } from 'react';
 
-// export default function Dice() {
-//   const zero = require('../assets/dice-empty.png')
-//   const one = require('../assets/dice1.png')
-//   const two = require('../assets/dice2.png')
-//   const three = require('../assets/dice3.png')
-//   const four = require('../assets/dice4.png')
-//   const five = require('../assets/dice5.png')
-//   const six = require('../assets/dice6.png')
+const styles = {
+    width : 200,
+    height: 200
+}
+function Dice(){
+    const [random, setRandom] = useState('/img/dice-empty.png');
+    var images = ['/img/dice3.png','/img/dice-empty.png','/img/dice6.png'];
+    const randomImage = () =>{
+        var randomDice = Math.floor(Math.random() *  images.length)
+        
+        setRandom(images[randomDice])
+
+    }
+    return(
+       <img style={styles} alt="random" src={random} onClick={randomImage} />
+    )
+}
+
+export default Dice
 
   
