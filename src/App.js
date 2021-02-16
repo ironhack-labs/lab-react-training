@@ -8,9 +8,13 @@ import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/clickablePicture/ClickablePicture'
-import Dice  from './components/Dice/Dice'
-import Carousel from './components/Carousel/Carousel'
+import Dice  from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import Facebook from './components/Facebook/Facebook'
 import './App.css';
+import profiles from './data/berlin.json';
+
 
 function App() {
   return (
@@ -112,7 +116,20 @@ function App() {
           <Dice />
 
           <h2>Iteration 11</h2>
-          <Carousel />
+          <Carousel
+            imgs={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg'
+            ]}
+          />
+
+          <h2>Iteration 12</h2>
+          <NumbersTable limit={12} />
+
+          <h2>Iteration 13</h2>
+          <Facebook data={profiles} />
     </div>
   );
 }
