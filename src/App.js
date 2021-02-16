@@ -6,6 +6,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton'
 import Test from './components/Test/Test';
 import './components/CreditCard.css';
 import './components/DriverCard.css';
@@ -99,6 +100,9 @@ function App() {
       model: "Audi A3",
       licensePlate: "BE33ER"
       }} />
+
+      <h1>Iteration 8</h1>
+      <LikeButton /> <LikeButton />
     </div>
   );
 }
