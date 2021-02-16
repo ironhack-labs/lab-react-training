@@ -12,6 +12,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage'
 import Test from './components/Test/Test';
 import './components/CreditCard.css';
 import './components/DriverCard.css';
@@ -134,6 +135,9 @@ function App() {
 
       <h1>Iteration 13 and 14</h1>
       <FaceBook />
+
+      <h1>Iteration 15</h1>
+      <SignupPage />
 
     </div>
   );

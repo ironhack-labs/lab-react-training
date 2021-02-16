@@ -37,3 +37,13 @@
   }
 }
 
+.driver-container img{
+  height: 100px;
+}
+
+input#email:focus{
+  outline-width: 0;
+}
+input#password:focus{
+  outline-width: 0;
+}
