@@ -6,14 +6,19 @@ const styles ={
     padding: 10,
     margin: 10
 }
+const sButton = {
+    display: "inline-block"
+}
 function FaceBook(){
 //const [profile, setProfiles] = React.useState(profiles)
     return (
+        <div>
+        {countriesSearch()}
         <div style={{display: "flex",flexWrap: "wrap",justifyContent: "center",
         alignItems: "center"}}>
             {listProfiles()}
         </div>
-    
+        </div>
     )
     
 }
@@ -31,6 +36,16 @@ console.log("PERFILES: ",profiles)
         <b>Type</b>: {n.isStudent ? "Student" : "Teacher"}
     </p>
 </div>
+    ))
+}
+
+function countriesSearch(){
+    return profiles.map((c) =>(
+        <div style={sButton}>
+        <button type="button" onClick={{
+            
+        }}>{c.country}</button>
+        </div>
     ))
 }
 

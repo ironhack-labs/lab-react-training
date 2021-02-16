@@ -117,7 +117,7 @@ function App() {
 />
 <h2>Interation 12</h2>
 <NumbersTable limit={12} />
-<h2>Interation 13</h2>
+<h2>Interation 13 / 14</h2>
 <FaceBook {...profiles}/>
     </div>
   );
