@@ -7,28 +7,38 @@ function CreditCard({type,number,expirationMonth,expirationYear,bank,owner,bgCol
         display: 'inline-block',
         borderRadius: 10,
         width: 350,
-        "align-content": "center",
+        alignContent: "center",
         margin: 10,
         padding: 10,
         background: `${bgColor}`,
         color:`${color}`
     }
+    // encriptar numeros
+    const lastFourDigits = number.substr(-4,4);
+    const hashNumbers = '**** **** **** '
     return (
     <div style={card}>
-        <h3 style={{ "text-align": "right","padding-right": 10}}>{type}</h3>
-		<p style={{ "text-align": "center", "font-size": 30, margin: 1,}}>{number}</p>
-        <div style={{ "text-align": "left",margin:1}}>
-        <p>Expires {expirationMonth}/{expirationYear}
-        <p  style={{display: 'inline-block',"padding-left": 10,margin:1}}>{bank}</p>
-        <br/>{owner}</p>
+        <img src={imagesUrls(type)} alt="visa o master" width="50" align="right" />
+		<p style={{textAlign: "center", fontSize: 30}}>{`${hashNumbers} ${lastFourDigits}`}</p>
+        <div style={{textAlign: "left",margin:1}}>
+        <div>Expires {formatNumber(expirationMonth)}/{expirationYear}
+        <p  style={{display: 'inline-block',paddingLeft: 10,margin:1}}>{bank}</p>
+        <br/>{owner}</div>
         </div>
     </div>
     )
     
 }
+ // dos digitos
+const formatNumber = number => `0${number}`.slice(0,2)
+// importar imagenes
+const imagesUrls = (type) => {
+    const urls = {
+        "Visa": '..//img/visa.png',
+        "Master Card": '../img/master-card.svg'
+    }
+    return urls[type]
+}
  
-
-
-
 
 export default CreditCard

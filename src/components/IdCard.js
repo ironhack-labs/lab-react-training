@@ -2,12 +2,12 @@ import React from 'react';
 const styles = {
     display: 'inline-block',
     margin: 20,
-    "text-align": "left"
+    textAlign: "left"
 }
 const border ={
     display: 'inline-block',
     border :"1px solid black",
-    "align-content": "center",
+    alignContent: "center",
     margin: 10,
     padding: 10,
 }

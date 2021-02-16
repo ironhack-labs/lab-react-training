@@ -3,7 +3,7 @@ import React from 'react';
 const names = {
     margin: 10,
     padding: 10,
-    "font-size": 50
+    fontSize: 50
 }
 
 function Rating({children}){
@@ -34,5 +34,18 @@ function stars({children}){
     return "☆☆☆☆☆"
     
 }
+// class
+//class Rating extends React.Component {
+//    render(){
+//        const ratings = ['☆☆☆☆☆','★☆☆☆☆','★★☆☆☆','★★★☆☆','★★★★☆','★★★★★']
+//        // redondear
+//        const rating = Math.round(this.props.children);
+//        
+//        const stars = ratings[rating];
+//        return <div>
+//            {stars}
+//        </div>
+//    }
+//}
 
 export default Rating

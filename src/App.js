@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
@@ -7,12 +6,18 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+// interation 8 - 16
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h2>Interaction 1</h2>
+      <h2>Interation 1</h2>
       <IdCard
   lastName='Doe'
   firstName='John'
@@ -29,16 +34,16 @@ function App() {
   birth="1988-05-11"
   picture="https://randomuser.me/api/portraits/women/44.jpg"
 />
-<h2>Interaction 2</h2>
+<h2>Interation 2</h2>
 <Greetings lang="de">Ludwig</Greetings>
 <Greetings lang="fr">François</Greetings>
-<h2>Interaction 3</h2>
+<h2>Interation 3</h2>
 <Random min={1} max={6}/>
 <Random min={1} max={100}/>
-<h2>Interaction 4</h2>
+<h2>Interation 4</h2>
 <BoxColor r={255} g={0} b={0} />
 <BoxColor r={128} g={255} b={0} />
-<h2>Interaction 5</h2>
+<h2>Interation 5</h2>
 <CreditCard
   type="Visa"
   number="0123456789018845"
@@ -66,18 +71,18 @@ function App() {
   owner="Firstname Lastname"
   bgColor="#ddbb55"
   color="white" />
-  <h2>Interaction 6</h2>
+  <h2>Interation 6</h2>
   <Rating>0</Rating>
 <Rating>1.49</Rating>
 <Rating>1.5</Rating>
 <Rating>3</Rating>
 <Rating>4</Rating>
 <Rating>5</Rating>
-<h2>Interaction 7</h2>
+<h2>Interation 7</h2>
 <DriverCard
   name="Travis Kalanick"
   rating={4.2}
-  img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+  img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg"
   car={{
     model: "Toyota Corolla Altis",
     licensePlate: "CO42DE"
@@ -90,6 +95,26 @@ function App() {
     model: "Audi A3",
     licensePlate: "BE33ER"
   }} />
+  <h2>Interation 8</h2>
+  <LikeButton /> <LikeButton />
+  <h2>Interation 9</h2>
+  <ClickablePicture
+  img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'
+/>
+<h2>Interation 10</h2>
+<Dice />
+<h2>Interation 11</h2>
+<Carousel cellPadding={5}
+  imgs={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]}
+/>
+<h2>Interation 12</h2>
+<NumbersTable limit={12} />
     </div>
   );
 }

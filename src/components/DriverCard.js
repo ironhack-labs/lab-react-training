@@ -1,20 +1,20 @@
-import { findByLabelText } from '@testing-library/react';
+
 import React from 'react';
 
 const names = {
     margin: 10,
     padding: 10,
-    "background-color": "#362bcf",
+    backgroundColor: "#362bcf",
     borderRadius: 10,
     color: "white",
     display: "flex",
-    "justify-content": "center",
-    "align-items": "center",
+    justifyContent: "center",
+    alignItems: "center",
 }
 
 function DriverCard({name,rating,img,car:{model,licensePlate}}){
     return <div style={names} >
-        <img alt={name} src={img} style={{"border-radius": 200,width:100, height: 100,margin: 10}} />
+        <img alt={name} src={img} style={{borderRadius: 200,width:100, height: 100,margin: 10}} />
         <div style={{
             margin:10,textAlign:'left',
         }}>
