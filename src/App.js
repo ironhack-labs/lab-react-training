@@ -2,7 +2,8 @@ import React from 'react';
 import Idcard from './components/Idcard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
-
+import BoxColor from './components/BoxColor';
+import CreditCard from './components/CreditCard';
 
 function App() {
   return (
@@ -25,6 +26,26 @@ function App() {
     <hr />
     <Random min={20} max={25} />
     <Random min={50} max={200} />
+    <hr />
+    <BoxColor r={255} g={0} b={0} />
+    <BoxColor r={66} g={4} b={32} />
+    <hr />
+    <CreditCard type='Visa'
+                number='1234123412341234'
+                expirationMonth={3}
+                expirationYear={25}
+                bank='Suntrust'
+                owner='Sebastian Montoya'
+                bgColor='#11aa99'
+                />
+    <CreditCard type='Mastercard'
+          number='1234123412349876'
+          expirationMonth={7}
+          expirationYear={27}
+          bank='PNC'
+          owner='SpongeBob Squarepants'
+          bgColor='black'
+          />           
   </div>
   );
 }
