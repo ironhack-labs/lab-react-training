@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.creditCard {
+  display: flex;
+  justify-content: space-around;
+}
+
+.creditCard img{
+  padding-left: 20vw ;
+}
+
+.creditCard p {
+  display: flex;
+  justify-content: center;
+}
+
+.ratingContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+.driverCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7em;
+}
