@@ -18,7 +18,7 @@ const CreditCard = ({
         backgroundColor: `${bgColor}`,
         color: `${color}`
     };
-    console.log(styles);
+
     return (
         <div className="CreditCard" style={styles}>
             <div className="type">

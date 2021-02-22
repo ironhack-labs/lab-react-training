@@ -57,3 +57,7 @@ body {
 .CreditCard .expire-date .bank {
   margin-left: 20px;
 }
+
+.Rating {
+  font-size: 2em;
+}
