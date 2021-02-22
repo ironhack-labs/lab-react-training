@@ -1,8 +1,16 @@
 import React from 'react';
+import Rating from './Rating';
 
-const DriverCard = () => {
+const DriverCard = ({name, rating, img, car}) => {
     return (
-        <h1>Haha</h1>
+        <div className="DriverCard">
+            <img src={img} alt={name} />
+            <div>
+                <h2>{name}</h2>
+                <Rating>{rating}</Rating>
+                <p>{car.model} - {car.licensePlate}</p>
+            </div>
+        </div>
     )
 }
 
