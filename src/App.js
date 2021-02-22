@@ -2,18 +2,42 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import IdCard from './IdCard'
+import  Greetings from './Greetings'
+import  Random from './Random'
+
+
 
 const App = () => {
   return (
     <div className="App">
         <IdCard
-        lastName='Grewning'
-        firstName='Marc'
-        gender='male'
-        height={178}
-        birth={new Date("1995-11-02")}
-        picture="https://randomuser.me/api/portraits/men/44.jpg"
-    />
+            lastName='Grewning'
+            firstName='Marc'
+            gender='male'
+            height={178}
+            birth={new Date("1995-11-02")}
+            picture="https://randomuser.me/api/portraits/men/44.jpg"
+        /><br />
+        <IdCard
+            lastName='Ulbrich'
+            firstName='Max'
+            gender='male'
+            height={183}
+            birth={new Date("1992-08-12")}
+            picture="https://randomuser.me/api/portraits/men/44.jpg"
+        />
+        <hr/>
+
+        <Greetings lang="hr">Max</Greetings>
+        <Greetings lang="de">Marc</Greetings>
+
+        <hr/>
+
+        <Random min={1} max={6}/>
+        <Random min={1} max={100}/>
+
+        <hr/>
+
 
 
 
