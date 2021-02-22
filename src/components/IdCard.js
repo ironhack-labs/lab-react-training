@@ -13,7 +13,8 @@ const IdCard = ({lastName, firstName, gender, height, birth, picture}) => {
                 <br />
                 <strong>Height</strong>: {height}m
                 <br />
-                <strong>Birth</strong>: {birth.getDate()}/{birth.getMonth()}/{birth.getFullYear()}
+                <strong>Birth</strong>: {birth.toLocaleDateString()}
+                {/* <strong>Birth</strong>: {birth.getDate()}/{birth.getMonth()}/{birth.getFullYear()} */}
             </div>
         </div>
     );

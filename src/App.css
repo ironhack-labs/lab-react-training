@@ -27,3 +27,33 @@ body {
   text-align: center;
   padding: 16px;
 }
+
+.CreditCard {
+  display: inline-block;
+  border-radius: 12px;
+  margin: 12px;
+  padding: 18px;
+  width: 300px;
+}
+
+.CreditCard .type {
+  text-align: right;
+}
+
+.CreditCard .type img {
+  height: 20px;
+}
+
+.CreditCard .number {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.CreditCard .expire-date {
+  display: block;
+}
+
+.CreditCard .expire-date .bank {
+  margin-left: 20px;
+}
