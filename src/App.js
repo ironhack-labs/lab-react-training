@@ -1,11 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import IdCard from './IdCard'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
+        <IdCard
+        lastName='Grewning'
+        firstName='Marc'
+        gender='male'
+        height={178}
+        birth={new Date("1995-11-02")}
+        picture="https://randomuser.me/api/portraits/men/44.jpg"
+    />
+
+
+
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +30,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
