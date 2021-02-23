@@ -7,5 +7,3 @@ export default function BoxColor(props) {
         <div style={{backgroundColor: color, width: "30%", height: "15vh"}}>{color}</div>
     )
 }
-
-// Have to style this somehow in a rectangle 
