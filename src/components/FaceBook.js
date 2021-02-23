@@ -5,9 +5,9 @@ let countries = profiles.map((profile)=> profile.country);
 
 export default function FaceBook() {
 
-    let [profile, setProfile] = React.useState(profiles);
+    let [profile] = React.useState(profiles);
     let [showInfo, setInfo] = React.useState("none");
-    let [buttons, setButtons] = React.useState(countries);
+    let [buttons] = React.useState(countries);
     let [showByCountry, setCountry] = React.useState("All");
     let buttonsArr = ["All", ...buttons];
 
