@@ -84,7 +84,6 @@ const users =
           <LikeButton />  
           <LikeButton />
     </div>
-    
   );
 }
 
