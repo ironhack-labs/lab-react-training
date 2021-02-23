@@ -1,9 +1,6 @@
 import React from 'react';
 
 class NumbersTable extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const numList = [...Array(this.props.limit + 1).keys()].slice(1);

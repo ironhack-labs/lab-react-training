@@ -22,7 +22,7 @@ class ClickablePicture extends React.Component {
         <img
             onClick={this.clickHandler}
             src={this.state.clicked ? this.imgClicked : this.img}
-            alt="clickable picture"
+            alt="clickable"
         />
       </div>
     );

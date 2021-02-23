@@ -11,6 +11,8 @@ const Greetings = (props) => {
                 return "Hola";
             case "fr":
                 return "Bonjour";
+            default:
+                return "No available";
         }
     };
     return (

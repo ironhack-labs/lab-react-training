@@ -11,6 +11,8 @@ const CreditCard = ({
                 return "/img/visa.png";
             case "Master Card":
                 return "/img/master-card.svg";
+            default:
+                return "/img/visa.png";
         }
     }
 

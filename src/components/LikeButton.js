@@ -10,10 +10,6 @@ class LikeButton extends React.Component {
     this.colors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
   }
 
-  backgroundColorChange = () => {
-    const colorIndex = this.state.likes % this.colors.length;
-  };
-
   likeHandler = () => {
     const nextColor = this.colors[(this.state.likes + 1) % this.colors.length];
     this.setState(() => ({

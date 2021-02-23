@@ -5,16 +5,11 @@ const IdCard = ({lastName, firstName, gender, height, birth, picture}) => {
         <div className="IdCard border">
             <img src={picture} alt=""/>
             <div className="card-content">
-                <strong>First name</strong>: {firstName}
-                <br />
-                <strong>Last name</strong>: {lastName}
-                <br />
-                <strong>Gender</strong>: {gender}
-                <br />
-                <strong>Height</strong>: {height}m
-                <br />
-                <strong>Birth</strong>: {birth.toLocaleDateString()}
-                {/* <strong>Birth</strong>: {birth.getDate()}/{birth.getMonth()}/{birth.getFullYear()} */}
+                <span><strong>First name</strong>: {firstName}</span>
+                <span><strong>Last name</strong>: {lastName}</span>
+                <span><strong>Gender</strong>: {gender}</span>
+                <span><strong>Height</strong>: {height}</span>
+                <span><strong>Birth</strong>: {birth.toLocaleDateString()}</span>
             </div>
         </div>
     );
