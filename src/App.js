@@ -8,6 +8,11 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel'; 
+import NumbersTable from './components/NumbersTable';
 
 function App() {
 
@@ -91,28 +96,29 @@ const user2={
         model: "Audi A3",
         licensePlate: "BE33ER"
         }} />
+        <LikeButton /> <LikeButton />
+        <h1>ClickablePicture</h1>
+        <ClickablePicture
+        img='/img/persons/maxence.png'
+        imgClicked='/img/persons/maxence-glasses.png'
+        />
+        <h1>Dice</h1>
+        <Dice />
+        <Carousel
+         imgs={[
+        'https://randomuser.me/api/portraits/women/1.jpg',
+        'https://randomuser.me/api/portraits/men/1.jpg',
+        'https://randomuser.me/api/portraits/women/2.jpg',
+        'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+        />
+        <h1>Numbers Table</h1>
+        <NumbersTable limit={12}/>
+
       </div>
     ); 
 }
 
 export default App;
 
-// export default App;
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+
