@@ -9,6 +9,7 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
@@ -52,7 +53,7 @@ function App() {
         owner="Maxence Bouret"
         bgColor="#11aa99"
         color="white" 
-        />
+      />
 
       <CreditCard
         type="Master Card"
@@ -63,7 +64,7 @@ function App() {
         owner="Maxence Bouret"
         bgColor="#eeeeee"
         color="#222222" 
-        />
+      />
 
       <CreditCard
         type="Visa"
@@ -74,7 +75,7 @@ function App() {
         owner="Firstname Lastname"
         bgColor="#ddbb55"
         color="white" 
-        />
+      />
 
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -91,7 +92,7 @@ function App() {
           model: "Toyota Corolla Altis",
           licensePlate: "CO42DE"
         }} 
-        />
+      />
 
       <DriverCard
         name="Dara Khosrowshahi"
@@ -101,12 +102,15 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} 
-        />
+      />
 
-        <LikeButton />
-        <LikeButton />
+      <LikeButton />
+      <LikeButton />
 
-        
+      <ClickablePicture
+        img='/img/persons/maxence.png'
+        imgClicked='/img/persons/maxence-glasses.png'
+      />
     </div>
     
   );
