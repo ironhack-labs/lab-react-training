@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import IdCard from './components/IdCard'
 import Greetings from './components/Greetings'
+import Random from './components/Random'
 
 function App() {
   const divStyle = {
@@ -11,7 +12,7 @@ function App() {
   }
   
   return (
-    <div style={{margin: "10px"}}>
+<div style={{margin: "10px"}}>
   <br/>
   <h1>IdCard</h1>
    <div>
@@ -24,30 +25,41 @@ function App() {
     birth={new Date("1992-07-14")}
     picture="https://randomuser.me/api/portraits/men/44.jpg"
     />
-  </div>
-    <br/>
-  <div style={divStyle}>
-    <IdCard
-  lastName='Delores '
-  firstName='Obrien'
-  gender='female'
-  height={172}
-  birth={new Date("1988-05-11")}
-  picture="https://randomuser.me/api/portraits/women/44.jpg"
-/>
-</div>
-</div>
-<br/>
-<h1>Greetings</h1>
-<div style={divStyle} >
-<Greetings lang="de">Ludwig</Greetings>
-</div>
-
-<br/>
-<div style={divStyle} >
-<Greetings lang="fr">François</Greetings>
-</div>
     </div>
+      <br/>
+    <div style={divStyle}>
+      <IdCard
+    lastName='Delores '
+    firstName='Obrien'
+    gender='female'
+    height={172}
+    birth={new Date("1988-05-11")}
+    picture="https://randomuser.me/api/portraits/women/44.jpg"/>
+    </div>
+  </div>
+
+  <br/>
+  <h1>Greetings</h1>
+  <div style={divStyle} >
+  <Greetings lang="de">Ludwig</Greetings>
+  </div>
+  <br/>
+  <div style={divStyle} >
+  <Greetings lang="fr">François</Greetings>
+  </div>
+  <br/>
+  <h1>Random</h1>
+  <div  style={divStyle} >
+  <Random min={1} max={6}/>
+  </div>
+  <br/>
+  <div  style={divStyle} >
+   <Random min={1} max={100}/>
+  </div>
+
+
+  {/* lat div */}
+</div> 
   );
 }
 
