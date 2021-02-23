@@ -1,0 +1,28 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    width: 40vw;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 10px;
+}
+.picture {
+    width: 30%;
+    padding: .5rem;
+}
+.info {
+    width: 70%;
+    text-align: left;
+    padding: .5rem;
+}
+.info p {
+    margin: .1rem;
+    padding: .3rem;
+}
+.info p span {
+    font-weight: bold;
+}

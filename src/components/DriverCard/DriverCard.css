@@ -1,0 +1,42 @@
+.driverCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 40vw;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: #69553A;
+    color: azure;
+}
+.driverCard.pic {
+    height: 120px;
+    background-color: #444;
+   
+}
+img {
+    width: 10rem;
+    height: 10rem; 
+    padding: 1rem;
+}
+.pic img {
+    -o-object-fit: cover;
+     object-fit: cover;
+  
+}
+.driverCard.driverInfo {
+    margin: 1rem;
+    width: 75%;
+}
+
+.driverInfo h2 {
+    font-size: 2rem;
+}
+
+.driverInfo p {
+    font-size: 1rem;
+}

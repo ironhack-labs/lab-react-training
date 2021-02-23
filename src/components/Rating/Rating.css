@@ -1,0 +1,33 @@
+.stars {
+    margin: 1rem;
+}
+.star {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 20vw;
+    /* margin: 1rem; */
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.rating {
+    cursor: pointer;
+    color: #ccc;
+    position: relative;
+}
+
+.rating.isActive {
+    color: #FFDA55;
+}
+.rating.isActiveHalf:before {
+    color: #FFDA55;
+    content: '\2605';
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+}

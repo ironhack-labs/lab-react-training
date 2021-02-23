@@ -1,0 +1,10 @@
+.creditCards {
+   padding: 1rem;
+   display: flex;
+   align-items: flex-start;
+   flex-direction: row;
+}
+
+.rccs {
+    margin: 0 1rem !important;
+}
