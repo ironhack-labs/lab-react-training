@@ -85,3 +85,24 @@ body {
   padding: 0;
   margin: 0 5px;
 }
+
+.LikeButton {
+  display: flex;
+  justify-content: center;
+}
+
+.likeBtn {
+  font-size: 1.5em;
+  color: white;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.clickablePicture {
+  display: flex;
+  justify-content: center;
+}
+
+.clickablePicture img {
+  width: 300px;
+}
