@@ -143,3 +143,15 @@ body {
 .hide {
   display: none;
 }
+
+.SingleColorPicker {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.colorBox {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}

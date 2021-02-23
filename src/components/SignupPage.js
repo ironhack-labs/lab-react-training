@@ -72,9 +72,9 @@ class SignupPage extends React.Component {
                     <input type="password" name="password" className="form-control" value={this.state.password} id="password" placeholder="Password" onChange={e => this.handleChange(e)} aria-describedby="passwordHelp"/>
                     <small id="passwordHelp" className="form-text">{this.state.inputInfo.password}</small>
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                     <label htmlFor="nationality">Nationality</label>
-                    <select class="form-control" id="nationality" name="nationality" value={this.state.nationality} onChange={e => this.handleChange(e)}>
+                    <select className="form-control" id="nationality" name="nationality" value={this.state.nationality} onChange={e => this.handleChange(e)}>
                         <option value="en">English</option>
                         <option value="de">German</option>
                         <option value="fr">French</option>
