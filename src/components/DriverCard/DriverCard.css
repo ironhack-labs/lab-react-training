@@ -13,20 +13,14 @@
     background-color: #69553A;
     color: azure;
 }
-.driverCard.pic {
-    height: 120px;
-    background-color: #444;
-   
-}
-img {
+.driverCard .pic {
     width: 10rem;
-    height: 10rem; 
-    padding: 1rem;
-}
-.pic img {
-    -o-object-fit: cover;
-     object-fit: cover;
-  
+    height: 10rem;
+    background-color: #444;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 1rem;
+   
 }
 .driverCard.driverInfo {
     margin: 1rem;

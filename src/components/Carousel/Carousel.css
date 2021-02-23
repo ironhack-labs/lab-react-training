@@ -1,0 +1,21 @@
+.carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    width: fit-content;
+    padding: 1rem;
+}
+.carousel img {
+    margin: 0.5rem;
+    width: 15rem;
+}
+
+.carousel .carBtn {
+    background-color:lightslategray;
+    height: 4rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}

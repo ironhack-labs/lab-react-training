@@ -3,7 +3,5 @@
     border: 1px solid black;
     margin: 1rem;
     border-radius: 10px;
-}
-.greeting h2 {
-    padding: .5rem;
+    padding: 1rem;
 }

@@ -1,0 +1,13 @@
+.dice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    width: fit-content;
+    padding: 1rem;
+}
+.dice img {
+    width: 10rem;
+}

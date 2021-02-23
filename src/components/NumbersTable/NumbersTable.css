@@ -1,0 +1,28 @@
+.numbersBoxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 40rem;
+    height: min-content;
+    padding: 2rem;
+}
+.whiteBox {
+    border-radius: 10px;
+    border: 1px solid silver;
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+    margin: .2rem;
+}
+.redBox {
+    background-color: firebrick;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+    margin: .2rem;
+    color: ivory;
+}

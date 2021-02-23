@@ -1,8 +1,11 @@
 .creditCards {
    padding: 1rem;
    display: flex;
-   align-items: flex-start;
-   flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
 }
 
 .rccs {

@@ -24,5 +24,4 @@ export default function Rating(props) {
               {starNodes}
             </div> 
         )
-    
 }

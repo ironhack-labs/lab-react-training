@@ -1,0 +1,16 @@
+@import "tailwind.css";
+
+.facebook {
+    padding: 2rem;
+}
+.profiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+}
+.profileCard {
+    margin: 0.5rem;
+}
