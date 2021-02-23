@@ -135,3 +135,11 @@ body {
 .profile {
   list-style-type: none;
 }
+
+.country-btn {
+  margin: 3px;
+}
+
+.hide {
+  display: none;
+}
