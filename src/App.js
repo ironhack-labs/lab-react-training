@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import IdCard from './components/IdCard'
+import Greetings from './components/Greetings'
 
 function App() {
   const divStyle = {
@@ -19,8 +20,8 @@ function App() {
     lastName='Doe'
     firstName='John'
     gender='male'
-    height={1.78}
-    birth={new Date("1992-07-14").toDateString()}
+    height={178}
+    birth={new Date("1992-07-14")}
     picture="https://randomuser.me/api/portraits/men/44.jpg"
     />
   </div>
@@ -30,15 +31,22 @@ function App() {
   lastName='Delores '
   firstName='Obrien'
   gender='female'
-  height={1.72}
-  birth={new Date("1988-05-11").toDateString()}
+  height={172}
+  birth={new Date("1988-05-11")}
   picture="https://randomuser.me/api/portraits/women/44.jpg"
 />
 </div>
 </div>
 <br/>
 <h1>Greetings</h1>
+<div style={divStyle} >
+<Greetings lang="de">Ludwig</Greetings>
+</div>
 
+<br/>
+<div style={divStyle} >
+<Greetings lang="fr">François</Greetings>
+</div>
     </div>
   );
 }
