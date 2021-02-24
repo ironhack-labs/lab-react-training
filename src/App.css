@@ -7,6 +7,45 @@
   pointer-events: none;
 }
 
+.idCard {
+  border:solid 1px black;
+
+}
+
+.card {
+  width: 300px;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}
+
+.card img {
+  display:flex;
+  justify-content: flex-end;  
+  width: 40px;
+
+}
+
+.box {
+  width: 300px;
+  border: 1px solid black;
+  margin-bottom: 50px;
+}
+
+.number {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-text {
+  text-align: left;
+}
+
+.driver-card {
+  width:60px;
+}
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
