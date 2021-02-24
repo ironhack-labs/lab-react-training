@@ -28,6 +28,38 @@
   color: #61dafb;
 }
 
+.idCards{
+  padding: 15px;
+  border : solid black 1px;
+  margin: 10px ;
+  text-align: left;
+  display: flex;
+}
+
+.idCards p, h1, h2{
+  margin: 0px;
+}
+
+.card{
+  width: 300px;
+  border-radius: 7px;
+  padding: 15px;
+
+}
+
+.card img {
+  width: 30px;
+  display: flex;
+}
+
+.number{
+  font-size: 20px;
+}
+
+.cardText{
+  text-align: left;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
