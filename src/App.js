@@ -15,6 +15,7 @@ import NumbersTable from './components/NumbersTable/NumbersTable'
 import FaceBook from './components/FaceBook/FaceBook'
 import Container from './components/Container/Container'
 import SignUpPage from './components/SignUpPage/SignUpPage'
+import Intro from './components/Intro/Intro'
 
 function App() {
   const users =
@@ -37,17 +38,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="p-5">
-      <a className="flex items-center" href="/">
-          <img className="h-12 w-auto sm:h-12" src="./img/rocket.svg" alt="site"/>
-          <p className="text-indigo-600 ml-2 text-6xl font-bold">
-                Lab React Training <span className="text-yellow-600 ml-2 text-2xl font-bold">
-                coded by Patrick Lehmann
-          </span>
-          </p>
-          
-      </a>
-      </div>
+      <Intro />
       <Container title='IdCard' content={<IdCard data={users} />} />
       <Container title='Greetings' content={[<Greetings lang='de' name='Jana' number={1} />, <Greetings lang='pt' name='Kimmie' number={2} />]} />
       <Container title='Random Number' content={[<Random min={1} max={6} />, <Random min={1} max={100} />]} />

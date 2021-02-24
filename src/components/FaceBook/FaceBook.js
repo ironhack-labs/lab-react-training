@@ -11,10 +11,10 @@ export default class FaceBook extends Component {
         this.setState(() => ({country: Country}))
     }
     render() {
-        let countryList = profiles.map((profile, index) => {
+        let countryList = [...new Set(profiles.map(profile => profile.country))].map((country, index) => {
             return (
                 <button type="button" onClick={(event) => this.setCountry(event)} className="border text-base font-medium m-1 text-black bg-white hover:bg-gray-100 px-4 py-2" key={index}>
-                    {profile.country}
+                    {country}
                 </button>
             )
         })
@@ -54,7 +54,6 @@ export default class FaceBook extends Component {
                         <h1 className="font-bebas-neue uppercase mb-4 text-2xl sm:text-1xl font-black flex flex-col leading-none dark:text-white text-gray-800">
                             FaceBook
                         </h1>
-                        
                             <div className="flex flex-column flex-wrap content-start">
                             {countryList}
                             </div>
