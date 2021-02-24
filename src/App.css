@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.idCards{
+  border : solid black 1px;
+  margin: 10px ;
+  text-align: left;
+  display: flex;
+}
+
+.idCards p, h1, h2{
+  margin: 0px;
+}
+
+.card{
+  width: 300px;
+  border-radius: 7px;
+  padding: 15px;
+}
+
+.card img{
+  width: 45px;
+  display: flex;
+}
+
+.number{
+  font-size: 20px;
+}
+
+.cardText{
+  font-size: 13px;
+  text-align: left;
+}
