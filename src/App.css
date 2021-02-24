@@ -7,6 +7,37 @@
   pointer-events: none;
 }
 
+.idCards{
+  border : solid black 1px;
+  margin: 10px ;
+  text-align: left;
+  display: flex;
+}
+
+.idCards p, h1, h2{
+  margin: 0px;
+}
+
+.card {
+  width: 300px;
+  border-radius: 7px;
+  padding: 15px;
+}
+
+.card img {
+  width: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.number {
+  font-size: 20px;
+}
+
+.cardText {
+  text-align: left;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
