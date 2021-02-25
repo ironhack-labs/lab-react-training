@@ -60,6 +60,28 @@
   text-align: left;
 }
 
+.red{
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  border: 2px solid black;
+}
+.white{
+  background-color: white;
+  color: black;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  border: 2px solid black;
+}
+.contenedor{
+  display:flex;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

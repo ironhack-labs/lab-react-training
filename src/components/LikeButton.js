@@ -9,6 +9,8 @@ const finalLikes = ()=> {
     setLikes(numberOfLikes+1)
 }
 
+const color = ['purple','blue','green','yellow','orange','red']
+
     
     return (
         <div>
