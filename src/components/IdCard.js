@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function IdCard(props) {
-    console.log(props)
 
     return (
         <div className="idCard">

@@ -18,6 +18,8 @@ export default function Rating(props) {
                 return "★☆☆☆☆"
             case 0:
                 return "☆☆☆☆☆"
+            default:
+                return "☆☆☆☆☆"
         }
     }
     

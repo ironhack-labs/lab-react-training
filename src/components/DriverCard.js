@@ -23,8 +23,8 @@ export default function DriverCard(props) {
     
     
     return (
-        <div>
-        <img className="driver-card" src={props.img}/>
+        <div className="driver-card">
+        <img  src={props.img}/>
             <div>
                 <p>{props.name}</p>
                 <p>{printStars()}</p>

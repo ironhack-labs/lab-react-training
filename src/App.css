@@ -16,6 +16,7 @@
   width: 300px;
   padding: 20px 10px;
   margin-bottom: 10px;
+  border-radius: 7px;
 }
 
 .card img {
@@ -23,6 +24,15 @@
   justify-content: flex-end;  
   width: 40px;
 
+}
+
+.driver-card {
+  width: 700px;
+  background-color:purple;
+}
+
+.driver-card img {
+  width: 50px;
 }
 
 .box {
@@ -44,6 +54,31 @@
   width:60px;
 }
 
+.dice img{
+  width: 100px;
+}
+
+.red{
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  border: 2px solid black;
+}
+.white{
+  background-color: white;
+  color: black;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  border: 2px solid black;
+}
+.contenedor{
+  display:flex;
+  flex-wrap: wrap;
+  width: 350px;
+}
 
 
 @media (prefers-reduced-motion: no-preference) {

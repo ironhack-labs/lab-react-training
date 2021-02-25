@@ -14,6 +14,7 @@ export default function Carousel(props) {
         setImages(props.imgs[index])
         console.log(index)
     }
+    
     function changeL(){
         setIndex(index-1)
         if (index <= 0){

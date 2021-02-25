@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './App.css';
 import IdCard from './components/IdCard'
 import Greetings from './components/Greetings'
@@ -11,6 +12,7 @@ import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
 import Carousel from './components/Carousel'
+import NumbersTable from './components/NumbersTable'
 
 function App() {
   return (
@@ -35,15 +37,10 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"/>
    </div>
 
-      <Greetings 
-        lang="de"
-        children="Ludwig"
-      />
+      <Greetings lang="de">Ludwig</Greetings>
 
-        <Greetings 
-        lang="fr"
-        children="François"
-      />
+        <Greetings lang="fr">François</Greetings>
+      
 
         <Random min={10} max={40} />
 
@@ -85,6 +82,8 @@ function App() {
 <Rating>3</Rating>
 <Rating>4</Rating>
 <Rating>5</Rating>
+<Rating>6</Rating>
+
 
 <DriverCard
   name="Travis Kalanick"
@@ -112,14 +111,16 @@ function App() {
 
 <Dice />
 
-<Carousel
+{/* <Carousel
   imgs={[
     'https://randomuser.me/api/portraits/women/1.jpg',
     'https://randomuser.me/api/portraits/men/1.jpg',
     'https://randomuser.me/api/portraits/women/2.jpg',
     'https://randomuser.me/api/portraits/men/2.jpg'
   ]}
-/>
+/> */}
+
+<NumbersTable limit={12} />
 
     </div>
     
