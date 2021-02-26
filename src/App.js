@@ -1,24 +1,26 @@
 import React from 'react';
 import './App.css';
-import IdCards from './components/IdCards';
-import Greetings from "./components/Greetings"
-import Random from './components/Random';
-import BoxColor from './components/BoxColor';
-import CreditCard from './components/CreditCard';
-import Rating from './components/Rating';
-import DriverCard from './components/DriverCar';
-import LikeButton from './components/LikeButton';
-import ClickablePicture from './components/ClickablePicture';
-import Dice from './components/Dice';
-import Carousel from './components/Carousel';
-import NumbersTable from './components/NumbersTable';
-import FaceBook from './components/Facebook';
+// import IdCards from './components/IdCards';
+// import Greetings from "./components/Greetings"
+// import Random from './components/Random';
+// import BoxColor from './components/BoxColor';
+// import CreditCard from './components/CreditCard';
+// import Rating from './components/Rating';
+// import DriverCard from './components/DriverCar';
+// import LikeButton from './components/LikeButton';
+// import ClickablePicture from './components/ClickablePicture';
+// import Dice from './components/Dice';
+// import Carousel from './components/Carousel';
+// import NumbersTable from './components/NumbersTable';
+// import FaceBook from './components/Facebook';
+// import SignupPage from './components/SignupPage';
+import RGBColorpicker from './components/RGBColorpicker';
 
 
 function App() {
   return (
     <div className="App">
-      <IdCards
+      {/* <IdCards
         lastName='Doe'
         firstName='John'
         gender='male'
@@ -105,6 +107,8 @@ function App() {
   ]}/>
   <NumbersTable limit="12"/>
   <FaceBook />
+  <SignupPage /> */}
+  <RGBColorpicker />
 </div>
   );
 }
