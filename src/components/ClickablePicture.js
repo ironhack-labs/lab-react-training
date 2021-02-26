@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+
 export default function ClickablePicture(data) {
     const [image, setImage] = useState(data.img)
     function changeImg(){
