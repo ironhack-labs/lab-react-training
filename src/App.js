@@ -6,11 +6,16 @@ import ClickablePicture from './components/ClickablePicture';
 import CreditCard from './components/CreditCard';
 import Dice from './components/Dice';
 import DriverCard from './components/DriverCard';
+import Facebook from './components/Facebook'
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard'
 import LikeButton from './components/LikeButton';
+import NumbersTable from './components/NumbersTable'
 import Random from './components/Random';
 import Rating from './components/Rating';
+import RGBColorPicker from './components/RGBColorPicker';
+import SignUp from './components/SignUp';
+import SingleColorPicker from './components/SingleColorPicker';
 
 function App() {
   return (
@@ -27,12 +32,12 @@ function App() {
       </div>
       <div>
       <IdCard
-      lastName='Delores'
-      firstName='Obrien'
-      gender='female'
-      height={172}
-      birth={new Date("1988-05-11")}
-      picture="https://randomuser.me/api/portraits/women/44.jpg"
+        lastName='Delores'
+        firstName='Obrien'
+        gender='female'
+        height={172}
+        birth={new Date("1988-05-11")}
+        picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
       </div>
       <div>
@@ -123,6 +128,18 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
       />
+      </div>
+      <div>
+      <NumbersTable limit={12} />
+      </div>
+      <div>
+      <Facebook />
+      </div>
+      <div>
+        <SignUp />
+      </div>
+      <div>
+        <RGBColorPicker />
       </div>
     </div>
   );
