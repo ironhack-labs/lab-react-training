@@ -14,6 +14,7 @@ export default function Greetings(props) {
         return 'Bonjour'
       } else {return 'Hola'}
     }
+    
   return (
     <div style={{border: '1px solid', marginBottom: '10px'}}>
     

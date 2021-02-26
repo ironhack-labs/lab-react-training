@@ -11,6 +11,10 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
+import Facebook from './components/Facebook'
+import SignUp from './components/SignUp'
+import RGBColorPicker from './components/RGBColorPicker'
+import SingleColorPicker from './components/SingleColorPicker'
 
 
 function App() {
@@ -76,7 +80,7 @@ function App() {
   expirationMonth={12}
   expirationYear={2019}
   bank="Name of the Bank"
-  owner="Firstname Lastname"
+  owner="Juan "
   bgColor="#ddbb55"
   color="white" />
 </div>
@@ -132,6 +136,12 @@ function App() {
     'https://randomuser.me/api/portraits/men/2.jpg'
   ]}
   />
+</div>
+<Facebook />
+<SignUp />
+
+<div>
+  <RGBColorPicker/ > 
 </div>
 </div>
 
