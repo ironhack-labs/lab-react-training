@@ -234,7 +234,7 @@ It takes 1 prop:
 
 ![image](https://user-images.githubusercontent.com/5306791/52972847-66054380-33bc-11e9-92e0-8e48d1ab0212.png)
 
-### Iteration 8 | Component: `LikeButton`
+### Iteration 8 | State: `LikeButton`
 
 Create a component `LikeButton` that displays a button "0 Likes" and with a number increases when the user clicks on it.
 
