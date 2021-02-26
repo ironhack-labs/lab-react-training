@@ -38,6 +38,28 @@
   text-align: left;
 }
 
+.red{
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  border: 2px solid black;
+}
+.white{
+  background-color: white;
+  color: black;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  border: 2px solid black;
+}
+.contenedor{
+  display:flex;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -19,8 +19,8 @@ export default function Greetings(props) {
 
     return (
         <div>
-        <p>{texto()} {props.children}</p>
-
+        <p>{texto()} </p>
+        {props.children}
         </div>
     )
 }

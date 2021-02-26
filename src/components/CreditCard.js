@@ -35,7 +35,7 @@ export default function CreditCard(props) {
                 <h4>{tokenNumber()}</h4>
             </div>
             <div className="cardText">
-                <p>Expires {digitMode()}/{props.expirationMonth}/{props.expirationYear}  {props.bank}</p>
+                <p>Expires {digitMode()}/{props.expirationYear}  {props.bank}</p>
                 <p>{props.owner}</p>
             </div>    
         </div>

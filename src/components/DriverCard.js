@@ -16,10 +16,12 @@ export default function DriverCard(props) {
                 return '★☆☆☆☆'
             case 0:
                 return '☆☆☆☆☆'
+            default:
+                return '☆'
         }
     }
     return (
-        <div>
+        <div className="idCards">
         <img width='150' src={props.img}/>
         <p>{props.name}</p>
         <p>{printStars()}</p>
