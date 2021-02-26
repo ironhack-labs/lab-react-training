@@ -10,6 +10,9 @@ import Rating from './Rating';
 import DriverCard from './DriverCard';
 import LikeButton from './LikeButton';
 import ClickableImage from './ClickableImage';
+import Dice from './Dice';
+import Carousel from './Carousel';
+import NumbersTable from './NumbersTable';
 
 const App = () => {
   return (
@@ -132,12 +135,33 @@ const App = () => {
           padding: '50px',
         }}
       >
-        <LikeButton />
+        <LikeButton /> <LikeButton />
       </div>
 
       <hr />
 
-      <ClickableImage />
+      <ClickableImage
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+
+      <hr />
+
+      <Dice />
+
+      <hr />
+
+      <Carousel imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+        />
+
+      <hr />
+
+      <NumbersTable limit={12} />
 
       <hr />
 

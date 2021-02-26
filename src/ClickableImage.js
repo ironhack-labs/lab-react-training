@@ -3,19 +3,23 @@ import React, { Component } from 'react'
 export default class ClickableImage extends Component {
 
     state = {
-        imgUrl: "/img/persons/maxence.png"
+        image: this.props.img
       }
 
     clickHandler = () => {
         this.setState((state, props) => ({
-            imgUrl: state.imgUrl('/img/persons/maxence-glasses.png')
+            image: this.props.imgClicked
             }))
     }
 
     render() {
         return (
             <div>
-                <img onClick={this.clickHandler} src={`{imgUrl}`} style={{height:'200px'}} alt="" />
+                <img
+                onClick={this.clickHandler}
+                src={this.state.image}
+                style={{height:'200px'}}
+                alt="" />
             </div>
         )
     }
