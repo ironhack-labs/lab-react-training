@@ -16,21 +16,22 @@ const CreditCard = ({
   } else {
     type = './../../img/master-card.svg';
   }
-  //   console.log(type);
   return (
     <div class="creditCard" style={{ backgroundColor: bgColor }}>
       <div class="imageContainer">
         <img src={type} alt="logoCreditCard" class="cardLogo" />
       </div>
       <div class="cardCode" style={{ color: color }}>
-        {number}
+        •••• •••• •••• {number.toString().slice(-4)}
       </div>
       <div class="cardInfo" style={{ color: color }}>
-        <div>
+        <span class="expiryDate">
           Expires {expirationMonth} / {expirationYear}
-        </div>
-        <div class="bankName">{bank}</div>
-        <div class="owner">{owner}</div>
+        </span>
+        <span class="bankName">{bank}</span>
+      </div>
+      <div class="owner" style={{ color }}>
+        {owner}
       </div>
     </div>
   );

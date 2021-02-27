@@ -82,17 +82,20 @@ li {
 }
 
 .creditCard {
-  width: 350px;
+  width: 300px;
   margin-right: 15px;
-  padding: 0;
-  border-radius: 5%;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .imageContainer {
   max-width: 50px;
+  padding: 0;
   height: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 15px;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
 .cardLogo {
@@ -101,6 +104,50 @@ li {
 }
 
 .cardCode {
-  position: relative;
+  /* position: relative; */
   text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.expiryDate {
+  margin-right: 20px;
+}
+
+.cardInfo {
+  display: flex;
+}
+
+.owner {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* Iteration 7 - DriverCard */
+
+.driverCard {
+  background-color: #425cbb;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
 }
