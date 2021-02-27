@@ -18,10 +18,20 @@ const CreditCard = ({
   }
   //   console.log(type);
   return (
-    <div class="creditCard">
-        <div class="imageContainer">
-            <img src={type} alt="logoCreditCard" class="cardLogo" />
+    <div class="creditCard" style={{ backgroundColor: bgColor }}>
+      <div class="imageContainer">
+        <img src={type} alt="logoCreditCard" class="cardLogo" />
+      </div>
+      <div class="cardCode" style={{ color: color }}>
+        {number}
+      </div>
+      <div class="cardInfo" style={{ color: color }}>
+        <div>
+          Expires {expirationMonth} / {expirationYear}
         </div>
+        <div class="bankName">{bank}</div>
+        <div class="owner">{owner}</div>
+      </div>
     </div>
   );
 };

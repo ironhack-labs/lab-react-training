@@ -48,7 +48,7 @@ function App() {
         <BoxColor r={128} g={255} b={0} />
       </div>
       <h1>CreditCard</h1>
-      <div>
+      <div class="creditCards">
         <CreditCard
           type="Visa"
           number="0123456789018845"
