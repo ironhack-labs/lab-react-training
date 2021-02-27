@@ -12,3 +12,7 @@
 .creditCard p {
     line-height: 0;
 }
+
+.like-btn {
+    cursor: pointer;
+}

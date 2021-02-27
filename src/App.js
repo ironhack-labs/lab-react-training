@@ -5,6 +5,7 @@ import CreditCard from './components/credit-card/CreditCard';
 import DriverCard from './components/driver-card/DriverCard';
 import Greetings from './components/greetings/Greetings';
 import IdCard from './components/id-card/IdCard';
+import LikeButton from './components/like-button/LikeButton';
 import Random from './components/random/Random'
 import Rating from './components/rating/Rating';
 
@@ -13,27 +14,28 @@ function App() {
         <div className="d-flex flex-column align-items-center justify-content-center">
             <div>
                 <IdCard
-                    picture='https://pbs.twimg.com/profile_images/1347118337122127872/HR7mPBgg.jpg'
-                    firstName='Asier'
-                    lastName='Bayón'
+                    lastName='Doe'
+                    firstName='John'
                     gender='male'
-                    height={1.77}
-                    birth={new Date('October 1, 1995')}
+                    height={178}
+                    birth={new Date("1992-07-14")}
+                    picture="https://randomuser.me/api/portraits/men/44.jpg"
                 />
+
                 <IdCard
-                    picture='https://img6.custompublish.com/getfile.php/4774463.1046.zlnmmlttupjlsw/Jornet.jpg?return=www.ski-nordique.net'
-                    firstName='Kilian'
-                    lastName='Jornet'
-                    gender='male'
-                    height={1.70}
-                    birth={new Date('October 1, 1995')}
+                    lastName='Delores '
+                    firstName='Obrien'
+                    gender='female'
+                    height={172}
+                    birth={new Date("1988-05-11")}
+                    picture="https://randomuser.me/api/portraits/women/44.jpg"
                 />
             </div>
             <hr />
-            <Greetings lang='es'>Asier</Greetings>
-            <Greetings lang='de'>Asier</Greetings>
+            <Greetings lang="de">Ludwig</Greetings>
+            <Greetings lang="fr">François</Greetings>
             <hr />
-            <Random min={3} max={6} />
+            <Random min={1} max={6} />
             <Random min={1} max={100} />
             <hr />
             <BoxColor r={255} g={0} b={0} />
@@ -97,6 +99,9 @@ function App() {
                     model: "Audi A3",
                     licensePlate: "BE33ER"
                 }} />
+            <div className="d-flex my-5">
+                <LikeButton className="me-3"/> <LikeButton />
+            </div>
         </div>
     );
 }
