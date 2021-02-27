@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import BoxColor from './components/box-color/BoxColor';
+import ClickablePicture from './components/clickable-picture/ClickablePicture';
 import CreditCard from './components/credit-card/CreditCard';
 import DriverCard from './components/driver-card/DriverCard';
 import Greetings from './components/greetings/Greetings';
@@ -100,8 +101,13 @@ function App() {
                     licensePlate: "BE33ER"
                 }} />
             <div className="d-flex my-5">
-                <LikeButton className="me-3"/> <LikeButton />
+                <LikeButton className="me-3" /> <LikeButton />
             </div>
+            <ClickablePicture
+                className="mb-5"
+                img='/img/persons/maxence.png'
+                imgClicked='/img/persons/maxence-glasses.png'
+            />
         </div>
     );
 }
