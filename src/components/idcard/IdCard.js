@@ -3,7 +3,7 @@ function IdCard({ lastName, firstName, gender, height, birth, picture }) {
     return (
         <div className="container">
             <div className="card">
-                <div className={$lastName} {$firstName} {$gender} {$height} {$birth} {$picture}></div>
+                <div className={{$lastName}, {$firstName}, {$gender}, {$height}, {$birth}, {$picture}}></div>
             </div>
         </div>
     )
