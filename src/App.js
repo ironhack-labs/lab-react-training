@@ -3,6 +3,7 @@ import './App.css';
 import BoxColor from './components/box-color/BoxColor';
 import ClickablePicture from './components/clickable-picture/ClickablePicture';
 import CreditCard from './components/credit-card/CreditCard';
+import Dice from './components/dice/Dice';
 import DriverCard from './components/driver-card/DriverCard';
 import Greetings from './components/greetings/Greetings';
 import IdCard from './components/id-card/IdCard';
@@ -108,6 +109,7 @@ function App() {
                 img='/img/persons/maxence.png'
                 imgClicked='/img/persons/maxence-glasses.png'
             />
+            <Dice className="mb-5"/>
         </div>
     );
 }
