@@ -27,3 +27,7 @@
     height: 200px;
     cursor: pointer;
 }
+
+.carousel {
+    width: 300px;
+}
