@@ -3,3 +3,12 @@
     border: 1px solid grey;
     border-radius: 0.3rem;
 }
+
+.creditCard {
+    height: 180px;
+    border-radius: 0.25rem;
+}
+
+.creditCard p {
+    line-height: 0;
+}
