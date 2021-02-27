@@ -36,3 +36,49 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin-left: 1em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.profileContent {
+  display: flex;
+}
+
+.profilecontent li {
+  text-decoration: none;
+  margin: 0.5em;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+li {
+  list-style-type: none;
+}
+
+.centerStyle {
+  text-align: center;
+}
+
+.boxFrame {
+  border: 1px solid black;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+/* Iteration 5 - CreditCard */
+
+.imageContainer {
+  width: 50px;
+}
+
+.creditCard {
+  max-width: 100%;
+  height: auto;
+}
