@@ -4,12 +4,16 @@ import IdCard from './components/id-cards/IdCard';
 import Picture1 from './images/IdCard1.jpg';
 import Picture2 from './images/IdCard2.jpg';
 import Greetings from './components/greetings/Greeting';
+import Random from './components/randoms/Random';
 
 import './App.css';
+
+
+
 function App() {
   return (
     <div className="App">
-      
+
       <Section title="IdCard" >
 
         <IdCard
@@ -21,7 +25,7 @@ function App() {
           picture={Picture1}
         />
 
-        <IdCard          
+        <IdCard
           firstName="Obrien"
           lastName="Delores"
           gender="female"
@@ -34,12 +38,15 @@ function App() {
 
       <Section title="Greetings">
 
-      <Greetings lang="de">Ludwig</Greetings>
-      <Greetings lang="fr">François</Greetings>
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
 
       </Section>
 
       <Section title="Random">
+
+      <Random min={1} max={6}/>
+      <Random min={1} max={100}/> 
 
       </Section>
 

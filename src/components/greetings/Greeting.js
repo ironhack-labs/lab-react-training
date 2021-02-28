@@ -1,5 +1,4 @@
-function Greetings({ lang, children }) {    
-
+function Greetings({ lang, children }) {
 
     return (
         <div className="card text-start">
@@ -9,14 +8,13 @@ function Greetings({ lang, children }) {
                         case 'fr':
                             return (
                                 <div>Bonjour {children}</div>
-                                
                             )
                         case 'es':
                             return (
                                 <div>Buenos Días {children}</div>
                             )
                         case 'en':
-                             return (
+                            return (
                                 <div>Hello {children}</div>
                             )
                         default:
