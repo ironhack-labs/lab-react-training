@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 
 import Section from './components/section/Section';
 import IdCard from './components/idcard/IdCard';
+import Greetings from './components/greetings/Greetings';
 
 import './App.css';
 
@@ -9,8 +10,8 @@ function App() {
   return (
     <Fragment>
       <div className="container pt-5">
-          <Section title="IdCard">
-          <div className="idCard mb-3">
+        <Section title="IdCard">
+          <div className="idcard mb-3">
             <IdCard 
               firstName= 'Silvia'
               lastName= 'Guerola'
@@ -31,25 +32,41 @@ function App() {
             </div>
         </Section>
 
-        <Section title="Greetings">
-        
+    <hr className="my-5"/>
+
+        <Section title="Greeting">
+          <div className="greeting mb-3">
+            <Greetings greetings= 'es'>Hola Silvia</Greetings>
+            <Greetings greetings= 'sv'>Hallå Silvia</Greetings>
+            <Greetings greetings= 'fr'>Salut Silvia</Greetings>
+          </div>
         </Section>
+
+    <hr className="my-5"/>
 
         <Section title="Random">
 
         </Section>
 
+    <hr className="my-5"/>
+
         <Section title="BoxColor">
 
         </Section>
+
+    <hr className="my-5"/>
 
         <Section title="CreditCard">
 
         </Section>
 
+    <hr className="my-5"/>
+
         <Section title="Rating">
 
         </Section>
+
+    <hr className="my-5"/>
 
         <Section title="DriverCard">
 

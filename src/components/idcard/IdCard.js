@@ -1,4 +1,4 @@
-const IdCard = ({ lastName, firstName, gender, height, birth, picture}) => {
+const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
     
     let formattedBirth = birth.getDate()+"/"+(birth.getMonth()+1)+"/"+birth.getFullYear()
     return (
