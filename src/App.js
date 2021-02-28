@@ -1,8 +1,9 @@
 import React from 'react';
 import Section from './components/sections/Section';
 import IdCard from './components/id-cards/IdCard';
-import Picture1 from './images/IdCard1.jpg'
-import Picture2 from './images/IdCard2.jpg'
+import Picture1 from './images/IdCard1.jpg';
+import Picture2 from './images/IdCard2.jpg';
+import Greetings from './components/greetings/Greeting';
 
 import './App.css';
 function App() {
@@ -32,6 +33,9 @@ function App() {
       </Section>
 
       <Section title="Greetings">
+
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
 
       </Section>
 
