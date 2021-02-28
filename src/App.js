@@ -9,21 +9,30 @@ function App() {
   return (
     <Fragment>
       <div className="container pt-5">
-        <Section title="IdCard">
-          <div className="card">
-            <div className="card-body">
-              <IdCard lastName="Guerola"></IdCard>
-              <IdCard firstName="Silvia"></IdCard>
-              <IdCard gender="Female"></IdCard>
-              <IdCard height="156"></IdCard>
-              <IdCard birth={Date}></IdCard>
-              <IdCard picture="./../public/img/persons/maxence-glasses.png"></IdCard>
+          <Section title="IdCard">
+          <div className="idCard mb-3">
+            <IdCard 
+              firstName= 'Silvia'
+              lastName= 'Guerola'
+              gender= 'Female'
+              height= {156}
+              birth= {new Date("1976-06-10")}
+              picture= 'img/persons/silvia.jpg'
+            />
+
+            <IdCard 
+              firstName= 'Leia'
+              lastName= 'Organa'
+              gender= 'Female'
+              height= {155}
+              birth= {new Date("1956-10-21")}
+              picture= 'img/persons/leia.jpg'
+            />
             </div>
-          </div>
         </Section>
 
         <Section title="Greetings">
-
+        
         </Section>
 
         <Section title="Random">
