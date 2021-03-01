@@ -1,12 +1,12 @@
 const DriveCard = ({ name, rating, car, model, licensePlate, picture }) => {
     
     return (
-        <div className="card mb-3">
-            <div className="row g-0">
-                <div className="col-md-2">
-                    <img className="driver" src={picture}></img>
+        <div className="card mb-3 bg-primary">
+            <div className="row g-0 align-items-center">
+                <div className="col-md-5">
+                    <img className="driver float-end" src={picture}></img>
                 </div>
-                <div className="col-md-10">
+                <div className="col-md-5">
                     <div className="card-body">
                         <h3 className="card-title">{name}</h3>
                         <h3 className="card-subtitle mb-2 text-muted">{rating}</h3>
