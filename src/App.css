@@ -81,6 +81,9 @@ h1 {
   color: black;
   margin: 0px 10px 10px 10px;
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .credit-card {
@@ -121,9 +124,35 @@ h1 {
 }
 
 .Rating {
-  float: left;
+  text-align: left;
   padding: 10px;
   font-size: 35px;
+  display: block;
+}
+
+.Driver-Card {
+  padding: 5px;
+  margin: 15px;
+  height: 140px;
+  border-radius: 5%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  background-color: blueviolet;
+}
+
+.driver-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.driverCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
