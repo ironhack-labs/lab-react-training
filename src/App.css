@@ -28,6 +28,105 @@
   color: #61dafb;
 }
 
+h1 {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 5px 24px 10px;
+}
+
+.Id-Card {
+  border: 1px solid black;
+  display: flex;
+  text-align: left;
+  padding: 0px 5px 0px 5px;
+  margin: 0px 10px 5px;
+}
+
+.Id-Card {
+  border: 1px solid black;
+  display: flex;
+  text-align: left;
+  padding: 5px;
+  margin: 0px 10px 10px 10px;
+}
+
+.Id-Card p {
+  float: right;
+  margin-left: 5px;
+
+}
+
+.Id-Card img {
+  float: left;
+}
+
+.greetings-box {
+  border: 1px solid black;
+  display: flex;
+  text-align: left;
+  padding: 5px;
+  margin: 0px 10px 10px 10px;
+}
+
+.random-box {
+  border: 1px solid black;
+  display: flex;
+  text-align: left;
+  padding: 5px;
+  margin: 0px 10px 10px 10px;
+}
+
+.box-color {
+  border: 1px solid black;
+  color: black;
+  margin: 0px 10px 10px 10px;
+  height: 80px;
+}
+
+.credit-card {
+  display: flex;
+}
+
+.imageContainer {
+  width: 350px;
+  height: 180px;
+  border-radius: 5%;
+  margin: 20px;
+
+}
+
+.imageContainer img {
+  width: 50px;
+  height: 20px;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+}
+
+.cardCode {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.cardInfo, 
+.bankName,
+.owner {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.expiryDate {
+  padding-right: 20px;
+}
+
+.Rating {
+  float: left;
+  padding: 10px;
+  font-size: 35px;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
