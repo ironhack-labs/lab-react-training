@@ -1,12 +1,12 @@
 import React from 'react';
 import Section from './components/sections/Section';
+import './App.css';
 import IdCard from './components/id-cards/IdCard';
 import Picture1 from './images/IdCard1.jpg';
 import Picture2 from './images/IdCard2.jpg';
 import Greetings from './components/greetings/Greeting';
 import Random from './components/randoms/Random';
-
-import './App.css';
+import BoxColor from './components/box-color/BoxColor';
 
 
 
@@ -51,6 +51,9 @@ function App() {
       </Section>
 
       <Section title="BoxColor">
+
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
 
       </Section>
 
