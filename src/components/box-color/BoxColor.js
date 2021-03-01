@@ -4,6 +4,10 @@ function BoxColor({ r, g, b, className }) {
         backgroundColor: `rgb(${r},${g},${b})`,
     }
 
+    
+
+
+
     return (
 
         <div className={`card text-center border ${className}`} >
