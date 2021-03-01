@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.creditCard {
+  width: 350px;
+  height: 220px;
+  margin: 10px;
+  padding: 20px;
+  background-color: rgba(92, 80, 255, 0.301);
+}
+.driver {
+  margin: 2rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+}
