@@ -1,5 +1,4 @@
 import Panel from '../panel/Panel';
-
 function Greetings({ lang, className, children }) {
   let greet;
   switch (lang) {
@@ -18,10 +17,8 @@ function Greetings({ lang, className, children }) {
     default:
       greet = 'Hello';
   }
-
   return (
     <Panel className={className}>{greet} {children}</Panel>
   )
 }
-
 export default Greetings;

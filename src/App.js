@@ -8,7 +8,7 @@ import Random from './components/random/Random';
 import BoxColor from './components/box-color/BoxColor';
 import CreditCard from './components/credit-card/CreditCard';
 import Rating from './components/rating/Rating';
-import DriverCard from './components/driver-card/Driver-Card';
+import DriverCard from './components/driver-card/DriverCard';
 
 
 function App() {
@@ -104,10 +104,6 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} />
-
-
-
-
 
     </div>
 
