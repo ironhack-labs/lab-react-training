@@ -1,32 +1,54 @@
-import React from 'react';
+import React, { Component } from 'react'
 
- class Dice extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          active: false,
-        };
-    }
+ export default class Dice extends Component {
+     state = {
+         display: (Math.floor(Math.random() * (6 - 1)) + 1),
+         img: '/img/dice3.png'
+     }
 
-    toggleDice = () => {
-        this.setState({
-          active: !this.state.active
-        });
-      };
+     random = (min, max) => {
+         return Math.floor(Math.random() * (max - min)) + min
+     }
+     
+     rollDice = () => {
+         this.setState({ img: '/img/dice-empty.png' })
+         let newDisplay = (Math.floor(Math.random() * (6 - 1)) + 1)
+         this.setState({ display: newDisplay })
+         setInterval(() => {
+             this.setImage()
+         }, 1000);
 
-   render() {
-    const emptyDice = '/img/dice-empty.png';
-    const diceImagesArray = ['/img/dice1.png', '/img/dice2.png', '/img/dice3.png', '/img/dice4.png', '/img/dice5.png', '/img/dice6.png' ];
-     return (
-       <div class="dice">
-         <img 
-         src={this.state.active ? this.props.imgClicked : this.props.img} 
-         alt="picture" 
-         onClick={this.toggleDice}
-        />
-        </div>
-     );
-   }
+     }
+     setImage = () => {
+         if (this.state.display === 1) {
+             this.setState({ img: '/img/dice1.png' })
+         }
+         if (this.state.display === 2) {
+             this.setState({ img: '/img/dice2.png' })
+         }
+         if (this.state.display === 3) {
+             this.setState({ img: '/img/dice3.png' })
+         }
+         if (this.state.display === 4) {
+             this.setState({ img: '/img/dice4.png' })
+         }
+         if (this.state.display === 5) {
+             this.setState({ img: '/img/dice5.png' })
+         }
+         if (this.state.display === 6) {
+             this.setState({ img: '/img/dice6.png' })
+         }
+     }
+     state = {
+         display: (Math.floor(Math.random() * (6 - 1)) + 1),
+         img: '/img/dice3.png'
+     }
+
+     render() {
+         return (
+             <div className='dice' onClick={this.rollDice}>
+                 <img src={this.state.img} alt="Dice" />
+             </div>
+         )
+     }
  }
-
- export default Dice;

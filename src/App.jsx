@@ -11,6 +11,13 @@ import DriverCard from './component/DriverCard';
 import LikeButton from './component/LikeButton';
 import ClickablePicture from './component/ClickablePicture';
 import Dice from './component/Dice';
+import Carousel from './component/Carousel';
+import NumbersTable from './component/NumbersTable';
+// import Facebook from './component/Facebook';
+import SignupPage from './component/SignupPage';
+// import RGBColorPicker from './component/RGBColorPicker';
+// import SingleColorPicker from './component/SingleColorPicker';
+
 
 function App() {
   return (
@@ -118,15 +125,26 @@ function App() {
        <LikeButton />
        </div>
        <h1>ClickablePicture</h1>
-       <div>
        <ClickablePicture
           img='/img/persons/maxence.png'
           imgClicked='/img/persons/maxence-glasses.png' />
-       </div>
        <h1>Dice</h1>
-       <div>
        <Dice />
-       </div>
+       <h1>Carousel</h1>
+       <Carousel
+         imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+       <h1>NumbersTable</h1>
+       <NumbersTable limit={12} />
+       <h1>Facebook</h1>
+       {/* <FaceBook /> */}
+       <h1>SignupPage</h1>
+       <SignupPage />
     </div>
   );
 }

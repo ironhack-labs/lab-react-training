@@ -139,7 +139,7 @@ h1 {
   display: flex;
   justify-content: center;
   font-weight: 600;
-  background-color: blueviolet;
+  background-color: royalblue;
 }
 
 .driver-image {
@@ -160,6 +160,51 @@ h1 {
   font-size: 15px;
   font-weight: 500;
   background-color: red;
+}
+
+.dice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: stretch;
+  width: fit-content;
+  padding: 1rem;
+}
+
+.dice img {
+  width: 5rem;
+  height: 5rem;
+} 
+
+.numbersBoxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  width: 60rem;
+  height: min-content;
+  padding: 2rem;
+}
+
+.redBox {
+  border: 1px solid black;
+  background-color: firebrick;
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  color: black;
+}
+
+.whiteBox {
+  border: 1px solid black;
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  color: black;
 }
 
 @keyframes App-logo-spin {
