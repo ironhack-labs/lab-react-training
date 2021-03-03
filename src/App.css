@@ -155,6 +155,12 @@ h1 {
   justify-content: center;
 }
 
+.LikeButton {
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: red;
+}
 
 @keyframes App-logo-spin {
   from {
