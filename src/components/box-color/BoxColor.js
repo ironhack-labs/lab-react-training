@@ -4,15 +4,10 @@ function BoxColor({ r, g, b, className }) {
         backgroundColor: `rgb(${r},${g},${b})`,
     }
 
-    
-
-
-
     return (
-
-        <div className={`card text-center border ${className}`} >
-            <div className="card-body" >
-                <div style={style}> rgb({r},{g},{b})</div>
+        <div className={`card text-center mb-3 border-dark ${className}`} style={style}>  
+            <div className="card-body" > 
+            <div>rgb({r},{g},{b})</div>            
             </div>
         </div>
     )

@@ -2,8 +2,6 @@ function Rating({ children }) {
 
   const stars = () => {
    let  roundedNumber = Math.round(children)
-   console.log(roundedNumber)
-
 
   if (roundedNumber === 0) {
     return <div>00000</div> 
@@ -16,8 +14,7 @@ function Rating({ children }) {
   } else if (roundedNumber ===  4) {
     return <div>****0</div>
   } else  
-    return <div>*****</div>
-  
+    return <div>*****</div>  
 }
 
     return (

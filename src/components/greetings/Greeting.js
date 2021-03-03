@@ -1,8 +1,8 @@
 function Greetings({ lang, children }) {
 
     return (
-        <div className="card text-start">
-            <div className="card-body">
+        <div className="card border-dark mb-3 text-start">
+            <div className="card-body ">
                 {(() => {
                     switch (lang) {
                         case 'fr':

@@ -1,10 +1,12 @@
 import visa from '../../images/visa.png'
 import master from '../../images/master-card.svg'
 
-function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color, className }) {
+function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color }) {
     const style = {
         backgroundColor: bgColor,
         color: color,
+        width: '45'
+
     }
 
     const logoCompany = () => {
@@ -25,17 +27,17 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
 
 
     return (
-        <div className="row">
-            <div className="text-center  p-3 mt-2" style={style} >
-                <div className="text-end me-2 align-right" >
+        <div className=" mb-3 "style={{ width: 450 }} >
+            <div className="text-center p-1 rounded "  style={style} >
+                <div className="text-end me-2 align-right"  >
 
-                    <div>{logoCompany()}</div>
+                    <div className="mb-5 mt-3 me-2">{logoCompany()}</div>
 
                 </div>
-                <div className="card-number fs-2">{number.replace(/.{1,12}/, '************')}</div>
-                <div className="card-body fs-5">
-                    <p className="card-number text-start mb-0">Expires {twoDigits()}/{expirationYear} {bank}</p>
-                    <p className="card-info text-start">{owner}</p>
+                <div className="card-number mb-4 fs-3">{number.replace(/.{1,12}/, '**** **** **** ')}</div>
+                <div className="card-body ms-0 fs-6">
+                    <p className="card-number text-start mb-0">Expires {twoDigits()}/{expirationYear} <span> {bank} </span></p>
+                    <p className="card-info text-start mb-0">{owner}</p>
                 </div>
             </div>
         </div>
