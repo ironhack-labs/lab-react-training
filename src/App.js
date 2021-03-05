@@ -5,6 +5,7 @@ import BoxColor from './components/box-color/BoxColor';
 import Random from './components/random/Random';
 import Greeting from './components/greeting/Greeting';
 import IdCard from './components/id-card/IdCard';
+import CreditCard from './components/credit-card/CreditCard';
 
 function App() {
   return (
@@ -27,8 +28,21 @@ function App() {
         <Random min={25} max={50} />
       </div>
 
-      <BoxColor r="255" g="0" b="0" />
+      <div className="mb-3">
+        <BoxColor r={255} g={0} b={0} />
+      </div>
+      
+      <div className="mb-3">
+      <BoxColor r={50} g={200} b={50} />
+      </div>
+      
+      <div className="mb-3">
+      <BoxColor r={0} g={51} b={255} />
+      </div>
 
+      <div>
+        <CreditCard type="Visa" number="0123456789018845" expirationMonth={3} expirationYear={2021} bank="BPN" owner="Kiko Quesada" />
+      </div>
 
 
     </div>
