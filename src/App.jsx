@@ -13,7 +13,7 @@ import ClickablePicture from './component/ClickablePicture';
 import Dice from './component/Dice';
 import Carousel from './component/Carousel';
 import NumbersTable from './component/NumbersTable';
-// import Facebook from './component/Facebook';
+import FaceBook from './component/FaceBook';
 import SignupPage from './component/SignupPage';
 // import RGBColorPicker from './component/RGBColorPicker';
 // import SingleColorPicker from './component/SingleColorPicker';
@@ -141,8 +141,8 @@ function App() {
         />
        <h1>NumbersTable</h1>
        <NumbersTable limit={12} />
-       <h1>Facebook</h1>
-       {/* <FaceBook /> */}
+       <h1>FaceBook</h1>
+       <FaceBook />
        <h1>SignupPage</h1>
        <SignupPage />
     </div>
