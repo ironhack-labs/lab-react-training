@@ -6,10 +6,11 @@ import Random from './components/random/Random';
 import Greeting from './components/greeting/Greeting';
 import IdCard from './components/id-card/IdCard';
 import CreditCard from './components/credit-card/CreditCard';
+import Rating from './components/rating/Rating';
 
 function App() {
   return (
-    <div className="App container row">
+    <div className="App container">
 
       <div className="mx-4 my-4">
         <IdCard lastName="Doe" firstName="John" gender="Male" height={`${1.78}m`} birth={new Date("1992-07-14")} picture="https://randomuser.me/api/portraits/men/44.jpg" />
@@ -40,9 +41,40 @@ function App() {
       <BoxColor r={0} g={51} b={255} />
       </div>
 
-      <div>
-        <CreditCard type="Visa" number="0123456789018845" expirationMonth={3} expirationYear={2021} bank="BPN" owner="Kiko Quesada" />
+      <div className="row justify-content-center">
+        <CreditCard 
+        type="Visa" 
+        number="0123456789018845" 
+        expirationMonth={3} 
+        expirationYear={21} 
+        bank="BPN" 
+        owner="Kiko Quesada" 
+        bgColor="#11aa99" 
+        color="white" 
+        />
+        <CreditCard 
+        type="Master Card" 
+        number="0123456789010995" 
+        expirationMonth={3} 
+        expirationYear={21} 
+        bank="N26" 
+        owner="Kiko Quesada" 
+        bgColor="#eeeeee" 
+        color="black" 
+        />
+        <CreditCard 
+        type="Visa" 
+        number="0123456789016984" 
+        expirationMonth={12} 
+        expirationYear={19} 
+        bank="N26" 
+        owner="Kiko Quesada" 
+        bgColor="#ddbb55" 
+        color="white" 
+        />
       </div>
+
+      <Rating />
 
 
     </div>

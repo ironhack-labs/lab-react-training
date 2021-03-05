@@ -1,27 +1,31 @@
 
 function CreditCard({type, number, expirationMonth, expirationYear, bank, owner, bgColor, color}) {
-
-    function brandCard(type) {
-        if(type === 'Visa'){
-            return 'visa.png'
-        } else {
-            return '../../../public/img/master-card.svg'
-        }
+    
+    let logo;
+    switch (type) {
+        case 'Visa':
+            logo = 'visa.png';
+            break;
+        case 'Master Card':
+            logo = 'master-card.svg';
+            break;
+        default:
+            logo = 'visa.png'; 
     }
 
     return (
-        <div className="creditCard" >
+        <div className="creditCard d-flex justify-content-around p-3" style={{ backgroundColor: bgColor }}>
             <div className="d-flex justify-content-end">
-                <img src={`img/${brandCard}`} alt={type} />
+                <img src={`${logo}`} alt={type} />
             </div>
             
-            <h5 className="text-center fs-3">{number}</h5>
+            <h5 className="text-center fs-4">{number.replace(/.(?=.{4})/g, '●')}</h5>
             <div className="row d-flex justify-content-between">
-                <p className="col-8">Expires: {expirationMonth}/{expirationYear}</p>
-                <p className="col-4">{bank}</p>
+                <p className="col-8" style={{ color }}>Expires: {expirationMonth}/{expirationYear}</p>
+                <p style={{ color }} className="col-4">{bank}</p>
             </div>
             
-            <p>{owner}</p>
+            <p style={{ color }}>{owner}</p>
         </div>
     );
 }

@@ -2,8 +2,8 @@
 .creditCard {
   display: flex;
   flex-direction: column;
-  width: 30rem;
-  height: 15rem;
+  width: 21rem;
+  height: 11rem;
   border-radius: 20px;
   margin: 2rem;
 }
