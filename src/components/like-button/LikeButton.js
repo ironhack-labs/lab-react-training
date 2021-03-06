@@ -18,7 +18,7 @@ class LikeButton extends Component {
         const { likes, color } = this.state;
         const { className } = this.props;
         return (
-            <span style={{backgroundColor: color}} class={`like-btn badge p-2 ${className}`} onClick={() => this.onCount()}>{likes} Like{likes !== 1 && 's'}</span>
+            <span style={{backgroundColor: color}} className={`like-btn badge p-2 ${className}`} onClick={() => this.onCount()}>{likes} Like{likes !== 1 && 's'}</span>
         );
     }
 }
