@@ -6,6 +6,7 @@ import ClickablePicture from './components/clickable-picture/ClickablePicture';
 import CreditCard from './components/credit-card/CreditCard';
 import Dice from './components/dice/Dice';
 import DriverCard from './components/driver-card/DriverCard';
+import Facebook from './components/facebook/Facebook';
 import Greetings from './components/greetings/Greetings';
 import IdCard from './components/id-card/IdCard';
 import LikeButton from './components/like-button/LikeButton';
@@ -121,6 +122,7 @@ function App() {
                 ]}
             />
             <NumbersTable limit={12} className="mb-5" />
+            <Facebook />
         </div>
     );
 }
