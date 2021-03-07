@@ -38,3 +38,15 @@
   }
 }
 */
+
+.max-card-width {
+  max-width: 18rem;
+}
+
+.icon-width {
+  width: 50px;
+}
+
+.circle-img-width {
+  max-width: 100px;
+}

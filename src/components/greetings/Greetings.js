@@ -23,7 +23,7 @@ function Greetings({ lang, children }) {
     }
 
     return (
-        <div className="card" >
+        <div className="card max-card-width" >
             <div className="card-body">
                 <h5 className="card-title">{greeting} {children}</h5>
             </div>

@@ -10,7 +10,7 @@ function BoxColor({ r, g, b }) {
     const hexCode = "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 
     return (
-        <div className="card" style={{ backgroundColor: hexCode }} >
+        <div className="card max-card-width" style={{ backgroundColor: hexCode }} >
             <div className="card-body">
                 <h5 className="card-title">rgb({r},{g},{b})</h5>
                 <p className="card-text">{hexCode}</p>
