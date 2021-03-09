@@ -14,7 +14,7 @@ function DriverCard({ name, rating, img, car, className }) {
     <div className=" d-flex justify-content-center rounded-3" style={style} >
      
         <div className="col-md-1 ms-1 mt-2 mb-2">
-          <img className="me-5" width="80" src={img} className="rounded-circle" alt="..." style={{ backgroundSize: 'cover', width: '85px', height: '85px' }}/>
+          <img className="me-5" src={img} className="rounded-circle" alt="..." style={{ backgroundSize: 'cover', height: '85px' }}/>
         </div>
         <div className="col-md-6 text-start ">
           <div className="card-body mt-1 ps-5 fs-6">

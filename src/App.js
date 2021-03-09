@@ -10,7 +10,10 @@ import CreditCard from './components/credit-card/CreditCard';
 import Rating from './components/ratings/Rating';
 import DriverCard from './components/driver-card/DriverCard';
 
+
 import './App.css';
+import LikeButton from './components/like-button/LikeButton';
+import ClickablePicture from './components/clickable-picture/ClickablePicture';
 
 
 
@@ -103,7 +106,7 @@ function App() {
 
       </Section>
 
-      <Section title="Drivercard">
+      <Section title="DriverCard">
         <div className="row row-cols-1 row-cols-lg-2">
           <div className="col mb-2">
             <DriverCard
@@ -127,6 +130,58 @@ function App() {
           </div>
         </div>
       </Section>
+
+      <Section title="LikeButton">
+
+    <LikeButton />
+
+      </Section>
+
+      <Section title="ClickablePicture">
+
+      <ClickablePicture
+      
+      img='/img/persons/maxence.png'
+      imgClicked='/img/persons/maxence-glasses.png'
+    
+      />        
+
+      </Section>
+
+      <Section title="Dice">
+
+
+
+      </Section>
+
+      <Section title="Carousel">
+
+
+
+      </Section>
+
+      <Section title="NumbersTable">
+
+
+      </Section>
+
+      <Section title="List and Keys - Simple">
+
+
+
+      </Section>
+
+      <Section title="List and Keys - Advanced">
+
+
+      </Section>
+
+      <Section title="Form - SignupPage">
+
+
+      </Section>    
+
+
 
 
     </div>
