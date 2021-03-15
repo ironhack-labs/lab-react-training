@@ -1,0 +1,14 @@
+.idcard-box{
+    border: black 1px solid;
+    display: flex;
+}
+.idcard-box img {
+    width: 200px;
+    padding: 5px;
+}
+.id-info {
+    text-align: start;
+}
+.bold {
+    font-weight: bolder;
+  }
