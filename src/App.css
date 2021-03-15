@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.idCard > div {
+  margin: 1vh;
+  border: black 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
