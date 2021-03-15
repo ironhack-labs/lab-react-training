@@ -8,6 +8,7 @@ import Greeting from './components/greeting' ;
 import Random from './components/Random' ;
 import BoxColor from './components/BoxColor'
 import CreditCard from './components/CreditCard'
+import Rating from './components/Rating'
 
 const dateFormat = require("dateformat");
 
@@ -34,7 +35,7 @@ function App() {
       picture="https://randomuser.me/api/portraits/women/44.jpg"
     />
 
-    <h2>Iteration 2</h2>
+    <h1>Iteration 2</h1>
 
       <Greeting
         lang="de"
@@ -45,7 +46,7 @@ function App() {
         children="Benji"
       />
 
-      <h3>Iteration 3</h3>
+      <h1>Iteration 3</h1>
       <Random
         min={4}
         max={10}
@@ -56,7 +57,7 @@ function App() {
       <BoxColor r={255-100} g={255-2} b={255-3}/>
       <BoxColor r={100} g={200} b={33}/>
 
-      <h5>Iteration 5</h5>
+      <h1>Iteration 5</h1>
 
       <div id="credit-card">
       <CreditCard
@@ -88,9 +89,18 @@ function App() {
       color="white" />
       </div>
 
+      <h1>Iteration 6</h1>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
 
     </div>
   );
 }
+
+
 
 export default App;
