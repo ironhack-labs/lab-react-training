@@ -1,0 +1,18 @@
+.creditCard{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.eachCreditCard{
+    width: 300px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    
+      
+}
