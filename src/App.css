@@ -1,4 +1,9 @@
+* {
+  margin: 5px;
+}
+
 .App {
+  
   text-align: center;
 }
 
@@ -36,3 +41,5 @@
     transform: rotate(360deg);
   }
 }
+
+
