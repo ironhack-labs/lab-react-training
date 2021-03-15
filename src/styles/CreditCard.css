@@ -1,0 +1,35 @@
+#creditCard {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 350px;
+}
+
+#cardType {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+}
+
+#cardNumber {
+    font-size: x-large;
+    margin: 10px;
+}
+
+#cardInfo {
+display: flex;
+flex-direction: row;
+margin-bottom: 0;
+}
+
+#cardInfo p{
+margin-bottom: 0px;
+margin-left: 20px;
+}
+
+#cardInfo1 {
+    display: flex;
+    margin: 20px ;
+    margin-top: 0;
+}

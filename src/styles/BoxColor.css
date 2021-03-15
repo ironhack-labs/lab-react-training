@@ -1,0 +1,7 @@
+#BoxColor {
+    height: 15vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

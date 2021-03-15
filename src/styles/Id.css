@@ -1,0 +1,16 @@
+#idCard {
+    display: flex;
+    flex-direction: row;
+    border: solid black 1px;
+    margin: 5px;
+}
+
+#idCard img {
+    width: 100px;
+    margin : 3px;
+}
+
+#idInfos p{
+    margin : 0;
+    font-size: small;
+}

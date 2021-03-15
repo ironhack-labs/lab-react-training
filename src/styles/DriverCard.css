@@ -1,0 +1,22 @@
+#driverCard {
+border-radius: 15px;
+background-color: #455EB5;
+margin : 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 120px;
+color: whitesmoke;
+}
+
+#driverCard img {
+    width : 95px;
+    height: 95px;
+    border-radius: 50%;
+}
+
+#driverInfo {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
