@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.OneCard {
+  max-width: 30%;
+  max-height: 45%;
+}
+
+.CardInfo {
+  list-style: none;
+}
+
+.IdCard {
+  border: 1px solid black;
+}
+
+.ColorBox {
+  width: 500px;
+  height: 100px;
+}
+
+.CreditCard {
+  border-radius: 10%;
+  width: 350px;
+  height: 150px;
+}
