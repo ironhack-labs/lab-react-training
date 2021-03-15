@@ -1,0 +1,8 @@
+.user {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
