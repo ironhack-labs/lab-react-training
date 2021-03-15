@@ -1,0 +1,46 @@
+.CreditCard {
+  margin: 10px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+  border-radius: 15px;
+}
+
+@media(min-width: 769px) {
+  .CreditCard {
+    width: 25%;
+  }
+}
+
+.CreditCard__type {
+  margin: 10px;
+  align-self: flex-end;
+}
+
+.CreditCard__number {
+  font-size: 2.5em;
+}
+
+.CreditCard__bankInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.CreditCard__bankInfo div {
+  height: 1.5em;
+}
+
+.CreditCard__bank {
+  display: flex;
+  width: 100%;
+}
+
+.CreditCard__bankInfo span {
+  width: 10%;
+}
+
+.CreditCard__owner {
+  align-self: flex-start;
+}

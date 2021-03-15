@@ -1,0 +1,56 @@
+.DriverCard__box {
+  width: 60%;
+  height: 120px;
+  background: #455EB5;
+  color: white;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.DriverCard__box img {
+  min-width: 20%;
+  max-width: 25%;
+  min-height: 90%;
+  max-height: 90%;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media(min-width: 769px) {
+  .DriverCard__box img {
+    min-width: 8%;
+    max-width: 8%;
+    min-height: 90%;
+    max-height: 90%;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+
+.DriverCard__box > div {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  line-height: 0.8em;
+  align-items: flex-start;
+}
+
+.DriverCard__box h3 {
+  font-size: 1.3em;
+  margin: 8px;
+}
+
+.DriverCard__car-info {
+  font-size: 0.9em;
+  margin: 8px;
+}
+
+.DriverCard__rating {
+  font-size: 0.5em;
+  margin: 8px;
+}
