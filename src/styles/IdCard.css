@@ -1,0 +1,19 @@
+.box {
+    width: 600px;
+    border: 1px black solid;
+    padding: 5px;
+    margin: 40px;
+    display: flex; 
+    
+}
+
+.picture {
+    height: 200px;
+    width: 200px;
+}
+
+.list {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+}

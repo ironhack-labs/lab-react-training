@@ -1,0 +1,14 @@
+.box__boxColor {
+    width: 600px;
+    border: 1px black solid;
+    padding: 5px;
+    margin: 40px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box__boxColor p {
+    margin: 5px 0;
+}

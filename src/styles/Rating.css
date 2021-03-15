@@ -1,0 +1,9 @@
+.star__box {
+    height: 30px;
+    width: 100px;
+    margin: 0 40px;
+}
+
+.empty {
+    color: lightgrey; 
+  }

@@ -1,0 +1,65 @@
+.card {
+    margin: 40px;
+    padding: 15px;
+    width: 375px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.type {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 15px;
+    font-size: 1.2rem;
+    
+}
+
+.number {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.dot {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+}
+
+.dots {
+    width: 70px;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.numEnd {
+    width: 60px;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+
+.exp {
+    display: flex;
+    margin: 12px;
+    height: 30px;
+    
+}
+
+.expDate {
+    margin-right: 25px;
+}
+
+.owner {
+    display: flex;
+    margin: 12px;
+    height: 30px;
+}
