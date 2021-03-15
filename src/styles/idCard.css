@@ -1,0 +1,11 @@
+.Box {
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    width: 80%;
+    margin-top: 10px;
+}
+.Box li {
+    list-style-type: none;
+    text-align: left;
+}
