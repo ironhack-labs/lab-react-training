@@ -1,0 +1,33 @@
+.card {
+  height: 200px;
+  width: 300px;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100px;
+  position: relative;
+  top: 20px;
+  left: 180px;
+  align-self: flex-end;
+}
+
+.card .number {
+  font-size: 1.3em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#firstLine,
+#secondLine {
+  margin-left: 20px;
+  max-height: 30px;
+}
+
+#firstLine {
+  display: flex;
+  gap: 30px;
+}
