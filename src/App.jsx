@@ -8,15 +8,20 @@ import BoxColor from './components/BoxColor.jsx';
 import CreditCard from './components/CreditCard.jsx';
 import Rating from './components/Rating.jsx';
 import DriverCard from './components/DriverCard.jsx';
+import LikeButton from './components/LikeButton.jsx';
+import ClickablePicture from './components/ClickablePicture.jsx';
+import Dice from './components/Dice.jsx';
+import Carousel from './components/Carousel.jsx';
 
 //* Import CSS
 import './App.css';
 import './styles/CreditCard.css';
+import './styles/Dice.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>IdCard</h1>
+      <h1>1. IdCard</h1>
       <Id
         lastName="Doe"
         firstName="John"
@@ -33,16 +38,16 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-      <h1>Greetings</h1>
+      <h1>2. Greetings</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-      <h1>Random</h1>
+      <h1>3. Random</h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-      <h1>BoxColor</h1>
+      <h1>4. BoxColor</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-      <h1>CreditCart</h1>
+      <h1>5. CreditCart</h1>
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -73,15 +78,14 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
-      <h1>Ratings</h1>
+      <h1>6. Ratings</h1>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
-      <h1>DriverCard</h1>
+      <h1>7. DriverCard</h1>
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -99,6 +103,24 @@ function App() {
           model: 'Audi A3',
           licensePlate: 'BE33ER',
         }}
+      />
+      <h1>8. LikeButton</h1>
+      <LikeButton /> <LikeButton />
+      <h1>9. ClickablePicture</h1>
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+      <h1>10 Dice</h1>
+      <Dice />
+      <h1>11 Carousel</h1>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
       />
     </div>
   );

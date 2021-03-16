@@ -1,0 +1,10 @@
+.dice {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dice img {
+  width: 200px;
+  height: 200px;
+}
