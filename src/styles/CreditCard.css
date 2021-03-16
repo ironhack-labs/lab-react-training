@@ -15,6 +15,7 @@
 }
 
 .CreditCard__type {
+  width: 15%;
   margin: 10px;
   align-self: flex-end;
 }
