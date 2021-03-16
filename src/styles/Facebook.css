@@ -1,0 +1,23 @@
+.Facebook {
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    width: 50%;
+    margin-top: 10px;
+}
+.Facebook li {
+    margin-left: 10px;
+    list-style-type: none;
+    text-align: left;
+}
+
+.Facebook img {
+    width: 100px;
+}
+.BtnCountry {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    margin: 3px;
+}

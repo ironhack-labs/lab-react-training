@@ -1,0 +1,18 @@
+.NumbersTable {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.NumbersTable td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: white;
+}
+.NumbersTable td:nth-child(2n) {
+    background-color: red;
+}

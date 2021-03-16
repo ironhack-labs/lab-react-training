@@ -25,7 +25,7 @@ function Rating(props) {
     //         totalStars = "☆☆☆☆☆";
     // }
 
-    for (let i = 0; i <= 5; i++ ) {
+    for (let i = 0; i < 5; i++ ) {
         i < (Number(props.children)).toFixed() ? totalStars += "★" : totalStars += "☆";
     }
     

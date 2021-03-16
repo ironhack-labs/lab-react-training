@@ -6,13 +6,11 @@ function BoxColor(props) {
     let hexValue = "";
     function rgbToHex(value) {
         const hexTable = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"]
-        // convert the value of each color in this hex symbol (2 value)
+        // convert the value of each color in its hex symbol (2 values)
         const firstSymbol= Math.floor((value / 16)); 
         const secondSymbol= Math.floor((((value / 16)- firstSymbol))*16);
         //Report the value in the hexTable and create the hexPair
-        const hexPair = hexTable[firstSymbol] + hexTable[secondSymbol];
-        //add the pair to the final hexValue
-        hexValue += hexPair;
+        hexValue += hexTable[firstSymbol] + hexTable[secondSymbol];
     }
     rgbToHex(props.r)
     rgbToHex(props.g)

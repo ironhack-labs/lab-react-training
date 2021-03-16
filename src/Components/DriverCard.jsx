@@ -5,7 +5,7 @@ import "../styles/DriverCard.css"
 function DriverCard(props) {
 
     let ratings="";
-    for (let i = 0; i <= 5; i++ ) {
+    for (let i = 0; i < 5; i++ ) {
         i < props.rating.toFixed() ? ratings += "★" : ratings += "☆";
     }
 
