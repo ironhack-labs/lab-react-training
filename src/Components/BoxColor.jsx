@@ -1,13 +1,7 @@
-import React from 'react'
+// import React from 'react'
 
-const BoxColor = (props) => {
-    return (
-        <div>
-            <div className="BoxColor">
-                
-            </div>
-        </div>
-    )
-}
+// const BoxColor = (props) => {
+//     return (<div className="BoxColor"  style={{backgroundColor: "rgb(props.r,props.g,props.b)"}} />);
+// }
 
-export default BoxColor
+// export default BoxColor
