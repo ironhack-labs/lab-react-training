@@ -2,6 +2,7 @@ import React from 'react';
 import './../views/IdCard.css'
 
 const IdCard = (props) => {
+    
     return (
         <div className="IdCard">
             <img src={props.picture} alt=""/>
@@ -10,7 +11,7 @@ const IdCard = (props) => {
                 <p>Last Name: {props.lastName}</p>
                 <p>Gender: {props.gender}</p>
                 <p>Height:  {props.height}</p>
-                <p>Birth: {props.birth.getDate()} {props.birth.getFullYear()}</p>
+                <p>Birth: {props.birth.toDateString()}</p>
             </aside>
         </div>
     )

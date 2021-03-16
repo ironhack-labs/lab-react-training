@@ -1,7 +1,7 @@
 import React from 'react';
 import './../views/Blackborder.css';
 
-const Greetings = (props) => {
+const Greetings = ({lang, children}) => {
     const languages = {
         fr: "Bonjour",
         en: "Hello",
@@ -11,7 +11,7 @@ const Greetings = (props) => {
 
     return (
         <div className="Greetings">
-            <p>{languages[props.lang]} {props.children}</p>
+            <p>{languages[lang]} {children}</p>
         </div>
     )
 }

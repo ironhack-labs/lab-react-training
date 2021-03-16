@@ -1,0 +1,10 @@
+.LikeButton button {
+    border: none;
+    margin: 20px;
+    padding: 15px 30px;
+    color: cornsilk;
+}
+
+.LikeButton button:focus {
+    outline: none;
+}

@@ -1,0 +1,31 @@
+.Carousel {
+    position: relative;
+    width: 150px;
+    margin: 20px;
+}
+
+.Carousel button {
+    position: absolute;
+    border: none;
+    background-color: rgb(59, 59, 59);
+    color: whitesmoke;
+    width: 15px;
+    height: 30px;
+}
+
+.Carousel button:focus {
+    outline: none;
+}
+
+.Carousel button:nth-child(1) {
+    top: calc(75px - 8px);
+}
+
+.Carousel button:nth-child(3) {
+    top: calc(75px - 8px);
+    right: 0;
+}
+
+.Carousel img {
+    width: 100%;
+}

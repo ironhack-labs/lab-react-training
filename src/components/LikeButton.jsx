@@ -13,6 +13,7 @@
 // export default LikeButton
 
 import React, { Component } from 'react';
+import './../views/LikeButton.css'
 
 class LikeButton extends Component {
     state = {
@@ -23,10 +24,9 @@ class LikeButton extends Component {
         const {likeNumber} = this.state;
         const colors = ['purple','blue','green','yellow','orange','red'];
         const color = colors[likeNumber % colors.length];
-        console.log(color);
 
         return (
-            <div>
+            <div className="LikeButton">
                <button 
                     style={
                         {backgroundColor : color}

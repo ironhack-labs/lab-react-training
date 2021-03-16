@@ -1,0 +1,18 @@
+.NumbersTable {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.NumbersTable div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.NumbersTable div:nth-child(2n) {
+    background-color: rgb(214, 38, 38);
+}
