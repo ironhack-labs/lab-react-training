@@ -1,0 +1,5 @@
+.BoxColor, .Random, .Greetings {
+    border: 1px black solid;
+    width: 500px;
+    margin: 20px
+}
