@@ -4,14 +4,13 @@ import IdCard from '../src/Components/IdCard';
 import Greetings from '../src/Components/Greetings';
 import Random from '../src/Components/Random';
 import BoxColor from '../src/Components/BoxColor';
-
-
+import LikeButton from './Components/LikeButton';
 
 import './App.css';
 
 function App() {
   return (
-    /*IT1*/
+    // /*IT1*/
     <div className="idCard">
       <div>
         <IdCard
@@ -44,8 +43,14 @@ function App() {
         <Random min={1} max={100} />
       </div>
       /*IT4*/
-      <BoxColor r={255} g={0} b={0} />
-      <BoxColor r={128} g={255} b={0} />
+      <div>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
+      </div>
+      /*IT8*/
+      <div>
+      <LikeButton /> <LikeButton />
+      </div>
     </div>
   );
 }
