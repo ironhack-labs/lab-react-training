@@ -6,6 +6,8 @@ import Greetings from "./components/greetings.jsx";
 import Random from "./components/Random.jsx";
 import BoxColor from "./components/BoxColor.jsx";
 import CreditCard from "./components/CreditCard.jsx";
+import Likebutton from "./components/LikeButton.jsx";
+import ClickablePicture from "./components/ClickablePicture.jsx";
 
 function App() {
   return (
@@ -86,6 +88,13 @@ min={1} max ={100}
   bgColor="#ddbb55"
   color="white" 
   logo="img/visa.png"/>
+
+  <Likebutton></Likebutton>
+
+  <ClickablePicture
+  img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'
+/>
 
     </div>
   );
