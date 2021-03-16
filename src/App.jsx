@@ -14,6 +14,8 @@ import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
 import Carousel from './components/Carousel'
+import NumbersTable from './components/NumbersTable'
+import FaceBook from './components/FaceBook'
 
 const dateFormat = require("dateformat");
 
@@ -127,7 +129,13 @@ function App() {
           'https://randomuser.me/api/portraits/women/2.jpg',
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
-      />
+        />
+
+        <h1>Iteration 12</h1>
+        <NumbersTable limit={12} />
+
+        <h1>Iteration 13</h1>
+        <FaceBook />
 
 
     </div>
