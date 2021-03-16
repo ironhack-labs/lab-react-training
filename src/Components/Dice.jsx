@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class Dice extends Component {
+class Dice extends Component {
   state = {
     imgSrc: `/img/dice${this.getRandom()}.png` 
   }
@@ -25,4 +25,4 @@ export class Dice extends Component {
   }
 }
 
-export default Dice
+export default Dice;
