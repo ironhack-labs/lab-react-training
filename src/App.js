@@ -6,6 +6,10 @@ import Greetings from "./components/Greetings.jsx";
 import Random from "./components/Random.jsx";
 import BoxColor from "./components/BoxColor.jsx";
 import CreditCard from "./components/CreditCard.jsx";
+import LikeButton from "./components/LikeButton.jsx";
+import ClickablePicture from "./components/ClickablePicture.jsx";
+import Dice from "./components/Dice.jsx";
+import Carousel from "./components/Carousel.jsx";
 
 function App() {
   return (
@@ -88,6 +92,31 @@ function App() {
           owner="Firstname Lastname"
           bgColor="#ddbb55"
           color="white" />
+      </div>
+      <h1>like button</h1>
+      <div>
+      <LikeButton black="black" />  <LikeButton />
+      </div>
+      <h1>clickable picture</h1>
+      <div>
+      <ClickablePicture
+     img='/img/persons/maxence.png'
+      imgClicked='/img/persons/maxence-glasses.png'/>
+      </div>
+      <h1>dice</h1>
+      <div>
+      <Dice />
+      </div>
+      <h1>Carousel</h1>
+      <div>
+      <Carousel
+  imgs={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]}
+/>
       </div>
     </div>
 

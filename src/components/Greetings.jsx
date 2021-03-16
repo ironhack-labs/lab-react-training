@@ -22,3 +22,18 @@ import React, {Component} from 'react';
      }
  }
  export default Greetings 
+
+// const langs = {
+//     de: 'guten tag',
+//     en: 'hello',
+//     fr: 'bonjour',
+//     es: 'ola',
+// };
+// langs corresponding to de en fr es and children corresponding to greetings..
+// function Greetings ({lang, children}) {
+//     return (
+//         <div className="Greetings">
+//             {langs[lang]} {children}
+//         </div>
+//     );
+// }
