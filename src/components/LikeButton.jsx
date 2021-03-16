@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 
+const colors=['purple','blue','green','yellow','orange','red'] ;
+
 export default class LikeButton extends Component {
 
 
     state = {
         counter: 0,
-        colors: ['purple','blue','green','yellow','orange','red'],
         currentColor: 0
     }
 
@@ -19,7 +20,7 @@ export default class LikeButton extends Component {
             <div>
                 <button 
                     onClick={this.increment}
-                    style={{backgroundColor: this.state.colors[this.state.currentColor]}}
+                    style={{backgroundColor: colors[this.state.currentColor]}}
                 >
                     {this.state.counter} {this.state.counter > 1 ? "likes" : "like"}
                 </button>

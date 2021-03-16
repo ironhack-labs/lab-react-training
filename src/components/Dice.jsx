@@ -3,16 +3,17 @@ import './../styles/iteration10.css'
 
 export default class Dice extends Component {
 
-    randomValue = () => {
-        return Math.floor(Math.random() * 6+1)
-    }
-
     state = {
         value: this.randomValue()
     }
 
+    randomValue() {
+        return Math.floor(Math.random() * 6+1)
+    }
+
     nextValue = () => {
-        this.setState({value: this.randomValue()})
+        this.setState({value: '-empty'})
+        setTimeout(() => this.setState({value: this.randomValue()}), 1000)
     }
 
     render() {
