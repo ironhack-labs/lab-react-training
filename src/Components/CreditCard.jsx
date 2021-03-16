@@ -20,7 +20,7 @@ const CreditCard = (props) => {
         <p className="CreditCard__number"><b>&bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull;</b> {props.number.slice(12)}</p>
         <div className="CreditCard__bankInfo">
           <div className="CreditCard__bank">
-            <p>Expires {month}/{props.expirationYear}</p>
+            <p>Expires {month}/{props.expirationYear.toString().slice(2)}</p>
             <span></span>
             <p>{props.bank}</p>
           </div> 
