@@ -4,6 +4,8 @@ import Greetings from "./components/Greeting";
 import Random from "./components/Random";
 import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
+import LikeButton from "./components/LikeButton";
+import ClickablePicture from './components/ClickablePicture'
 import './App.css';
 
 function App() {
@@ -64,7 +66,20 @@ function App() {
   owner="Firstname Lastname"
   bgColor="#ddbb55"
   color="white" />
+
+
+
+
+    <LikeButton /> <LikeButton /> 
+
+    <ClickablePicture
+  img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'
+/>
     </div>
+
+
+
   );
 }
 

@@ -6,12 +6,12 @@ let cardStyle={
   color: `${props.color}`,
   backgroundColor:`${props.bgColor}`
 }
-const cardContainer ={
-  display: flex,
-  justifyContent: center,
-}
+// const cardContainer ={
+//   display: flex,
+//   justifyContent: center,
+// }
   return (
-    <section className={cardContainer}>
+
       <div style={cardStyle}>
       <p>{props.number}</p>
       <p>{props.expirationMonth}</p>
@@ -20,7 +20,6 @@ const cardContainer ={
       <p>{props.bank}</p>
      
       </div>
-      </section>
       
   );
 }

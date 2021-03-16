@@ -5,7 +5,6 @@ function BoxColor(props) {
   let backGround ={
     backgroundColor: `rgb(${props.r},${props.g},${props.b})`,
     height:200,
-
   }
 
   return (
