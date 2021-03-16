@@ -8,6 +8,10 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard.jsx';
+import LikeButton from './components/LikeButton.jsx';
+import ClickablePicture from './components/ClickablePicture.jsx';
+import Dice from './components/Dice.jsx';
+import Carousel from './components/Carousel.jsx';
 
 function App() {
   return (
@@ -29,19 +33,15 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-
       <h1>Iteration 2</h1>
       <Greeting lang="de">Ludwig</Greeting>
       <Greeting lang="fr">François</Greeting>
-
       <h1>Iteration 3</h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
       <h1>Iteration 4</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
       <h1>Iteration 5</h1>
       <CreditCard
         type="Visa"
@@ -73,7 +73,6 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
-
       <h1>Iteration 6</h1>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -81,7 +80,6 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
       <h1>Iteration 7</h1>
       <DriverCard
         name="Travis Kalanick"
@@ -102,18 +100,28 @@ function App() {
         }}
       />
       <h1>Iteration 8</h1>
-
+      <LikeButton /> <LikeButton />
       <h1>Iteration 9</h1>
-
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
       <h1>Iteration 10</h1>
-
+      <Dice />
       <h1>Iteration 11</h1>
-
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
       <h1>Iteration 12</h1>
-
       <h1>Iteration 13</h1>
-
       <h1>Iteration 14</h1>
+      <h1>Iteration 15</h1>
+      <h1>Iteration 16</h1>
     </div>
   );
 }
