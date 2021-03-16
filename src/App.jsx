@@ -1,6 +1,8 @@
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -47,6 +49,14 @@ function App() {
       </div>
       <div>
         <h1>BoxColor</h1>
+      </div>
+      <div>
+        <h1>Like Button</h1>
+        <LikeButton/>
+      </div>
+      <div>
+      <h1>Clickable Picture</h1>
+        <ClickablePicture img='/img/persons/maxence.png' imgClicked='/img/persons/maxence-glasses.png'/>
       </div>
     </div>
   );
