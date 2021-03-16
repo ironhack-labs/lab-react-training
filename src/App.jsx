@@ -7,6 +7,9 @@ import BoxColor from './Components/BoxColor';
 import CreditCard from "./Components/CreditCard";
 import Rating from "./Components/Rating";
 import DriverCard from "./Components/DriverCard";
+import LikeButton from "./Components/LikeButton";
+import ClickablePicture from "./Components/ClickablePicture";
+import Dice from "./Components/Dice";
 
 function App() {
   return (
@@ -84,36 +87,56 @@ function App() {
         bgColor="#ddbb55"
         color="white" />
 
-        <br/>
+      <br/>
 
-        <h2>Iteration 6 | Rating</h2>
-        <Rating>0</Rating>
-        <Rating>1.49</Rating>
-        <Rating>1.5</Rating>
-        <Rating>3</Rating>
-        <Rating>4</Rating>
-        <Rating>5</Rating>
+      <h2>Iteration 6 | Rating</h2>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
 
-        <br/>
+      <br/>
 
-        <h2>Iteration 7 | Driver's card</h2>
-        <DriverCard
-          name="Travis Kalanick"
-          rating={4.2}
-          img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
-          car={{
-            model: "Toyota Corolla Altis",
-            licensePlate: "CO42DE"
-          }} />
+      <h2>Iteration 7 | Driver's card</h2>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE"
+        }} />
 
-        <DriverCard
-          name="Dara Khosrowshahi"
-          rating={4.9}
-          img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
-          car={{
-            model: "Audi A3",
-            licensePlate: "BE33ER"
-          }} />
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
+        }} />
+
+      <br/>
+
+      <h2>Iteration 8 | State: Like buttons</h2>
+      <LikeButton />
+      <LikeButton />
+
+      <br />
+
+      <h2>Iteration 9 | State: clickable picture</h2>
+      <ClickablePicture
+        img='/img/persons/maxence.png'
+        imgClicked='/img/persons/maxence-glasses.png'
+      />  
+
+      <br/>
+
+      <h2>Iteration 10 | State: dice</h2>
+      <Dice />
+
     </div>
   );
 }
