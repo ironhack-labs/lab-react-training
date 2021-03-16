@@ -1,0 +1,35 @@
+.card { 
+border: 1px solid black; 
+display: flex; 
+margin-top: 3vw;
+margin-left: 3vw;
+margin-right: 3vw;
+}
+
+
+.img-div > .foto {  
+margin-left: 2vw;
+margin-top: 1vw; 
+weight: auto;
+height: 170px;
+
+}
+
+.list-information > ul { 
+
+align-items: left;
+
+}
+
+.list-information > ul > li { 
+list-style: none;
+align-items: left;
+justify-content: left;
+}
+.list-information > ul > li> p { 
+
+align-items: left;
+justify-content: left;
+text-align: left;
+
+}
