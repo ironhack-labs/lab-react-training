@@ -1,0 +1,14 @@
+.creditcard {
+    width:350px;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+
+    margin :10px;
+}
+
+.bankInfos{
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+}
