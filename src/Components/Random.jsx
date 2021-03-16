@@ -3,7 +3,7 @@ import React from "react";
 
 const Random = (props) => {
     function generateRandomNum(min, max) {
-        return Math.floor(Math.random()*props.max)
+        return Math.floor(Math.random() * (props.max - props.min) + props.min)
     };
 
     return (

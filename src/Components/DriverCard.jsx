@@ -3,22 +3,6 @@ import Rating from './../Components/Rating';
 // import "../styles/DriverCard.css";
 
 const DriverCard = (props) => {
-    // function stars(note) {
-       
-    //    let rating = Math.round(note);
-    //    let text = ''; 
-    //    for (let i = 0; i < rating; i++) {
-    //        text+='★';
-    //    }
-    //    while (text.length < 5) {
-    //     text+='☆';
-    //    }
-    // return text;
-    // }
-
-
-
-
     return (
         <div className="DriverCard" >
             {
@@ -27,7 +11,6 @@ const DriverCard = (props) => {
                         <img src={props.img} alt="picture" style={{width: 150}}/><br />
                 
                         {props.name} <br />
-                        {/* {stars(props.rating)} <br /> */}
                         <Rating>
                             {props.rating}
                         </Rating><br />
