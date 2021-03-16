@@ -1,0 +1,23 @@
+.DriverCard__card {
+    background-color: purple;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px 0 ;
+    justify-content: center;
+    align-items: center;
+}
+
+.DriverCard__card img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.DriverCard__identity-img {
+    height: 150px ;
+    width: 150px ;
+    background-color: purple;
+
+}
