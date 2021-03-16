@@ -5,6 +5,7 @@ import Greetings from '../src/Components/Greetings';
 import Random from '../src/Components/Random';
 import BoxColor from '../src/Components/BoxColor';
 import LikeButton from './Components/LikeButton';
+import ClickablePicture from './Components/ClickablePicture';
 
 import './App.css';
 
@@ -49,8 +50,13 @@ function App() {
       </div>
       /*IT8*/
       <div>
-      <LikeButton /> <LikeButton />
+        <LikeButton /> <LikeButton />
       </div>
+      /*IT9*/
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
     </div>
   );
 }
