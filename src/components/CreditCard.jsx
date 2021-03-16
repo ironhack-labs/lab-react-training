@@ -8,9 +8,9 @@ function cardNumber(){
 }
 function cardImage(){
     if(props.type==="Visa"){
-return props.type==="/assets/visa.png"
+return props.type==="/img/visa.png"
     }else {
-       return props.type==="/assets/mastercard.png"
+       return props.type==="/img/mastercard.svg"
     }
 }
 
