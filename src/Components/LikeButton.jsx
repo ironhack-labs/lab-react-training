@@ -3,10 +3,10 @@ import React from "react";
 
 const LikeButton = (props) => {
     
-function countLikes(clicks){
-    // add event listener?
-  return nbOfLikes;
-}
+// function countLikes(clicks){
+//     // add event listener?
+// //   return nbOfLikes;
+// }
 
 
     return (
