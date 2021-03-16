@@ -36,7 +36,11 @@ function App() {
 
 <div>
 <Random min={1} max={6}/>
-<Random min={1} max={100}/>
+<Random min={1} max={100}/> </div>;
+
+<div>;
+BoxColor r={255} g={0} b={0}
+BoxColor r={128} g={255} b={0}
 </div>
 
 
