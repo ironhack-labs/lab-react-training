@@ -37,7 +37,12 @@
   }
 }
 
-.IdCard, .Greetings {
+.IdCard, .Greetings, .BoxColor {
   line-height: 0.5rem;
   max-width: 400px;
+}
+
+.CreditCard {
+  line-height: 1rem;
+  max-width: 300px;
 }
