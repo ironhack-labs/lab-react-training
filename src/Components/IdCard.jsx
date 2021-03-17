@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/IdCard.css"
 
-const IdCard = (props) => {
+const Icard = (props) => {
 return (
     <div class="boxes">
         <div><img src={props.picture} alt=""/></div>
@@ -16,4 +16,4 @@ return (
 );
 }
 
-export default IdCard;
+export default Icard;

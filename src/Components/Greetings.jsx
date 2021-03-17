@@ -10,15 +10,15 @@ const langs = {
 };
 
 function Greetings({lang, children}) {
-
     if (lang === "de") {
-        return <div>Hallo {children}</div>
+        return <div class = "boxes">Hallo {children}</div>
     } else if (lang === "fr") {
-        return <div>Bonjour {children}</div>
+        return <div class = "boxes">Bonjour {children}</div>
     } else if (lang === "en") {
-        return <div>Hello {children}</div>
+        return <div class = "boxes">Hello {children}</div>
     } else if (lang === "es") {
-        return <div>Ola {children}</div>
-}
+        return <div class = "boxes">Ola {children}</div>
+    }
+};
 
 export default Greetings;
