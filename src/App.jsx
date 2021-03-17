@@ -11,7 +11,7 @@ import DriverCard from './components/DriverCard.jsx';
 import LikeButton from './components/LikeButton.jsx';
 import ClickablePicture from './components/ClickablePicture.jsx';
 import Dice from './components/Dice.jsx';
-import Carousel from './components/Carousel.jsx';
+// import Carousel from './components/Carousel.jsx';
 
 //* Import CSS
 import './App.css';
@@ -114,14 +114,14 @@ function App() {
       <h1>10 Dice</h1>
       <Dice />
       <h1>11 Carousel</h1>
-      <Carousel
+      {/* <Carousel
         imgs={[
           'https://randomuser.me/api/portraits/women/1.jpg',
           'https://randomuser.me/api/portraits/men/1.jpg',
           'https://randomuser.me/api/portraits/women/2.jpg',
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
-      />
+      /> */}
     </div>
   );
 }

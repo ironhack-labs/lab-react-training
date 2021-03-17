@@ -11,7 +11,9 @@ export class Carousel extends Component {
   handleNext = (imgs) => {
     this.setState({
       imgsIndex:
-        this.state.imgsIndex > imgs.length ? 0 : this.state.imgsIndex + 1,
+        // this.state.imgsIndex > imgs.length
+        //   ? this.state.imgsIndex % img
+        //   : this.state.imgsIndex + 1,
     });
   };
 
@@ -33,4 +35,4 @@ export class Carousel extends Component {
   }
 }
 
-export default Carousel;
+// export default Carousel;
