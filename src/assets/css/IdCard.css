@@ -1,0 +1,11 @@
+.IdCard {
+    border: 0.2rem solid gray;
+    border-radius: 1rem;
+    margin: 2rem;
+    text-align: left;
+    padding: 2rem;
+}
+
+.IdCard .IdCarImage {
+    float: left
+}

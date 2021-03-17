@@ -1,0 +1,7 @@
+.Greeting {
+    border: 0.2rem solid gray;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 1rem 2rem;
+    text-align: left;
+}
