@@ -3,7 +3,9 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor'
 import CreditCard from './components/CreditCard';
-import Rating from './components/Rating'
+import Rating from './components/Rating';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 import './App.css';
 
 function App() {
@@ -16,10 +18,9 @@ function App() {
           firstName='John'
           gender='male'
           height={178}
-          birth={new Date("1992-07-14").toString()}
+          birth={new Date("1992-07-14").toDateString()}
           picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
-
         <IdCard
           lastName='Delores '
           firstName='Obrien'
@@ -84,7 +85,18 @@ function App() {
         <Rating>5</Rating>
       </div>
       <div>
-        <h1>BoxColor</h1>
+        <h1>DriverCard</h1>
+      </div>
+      <div>
+        <h1>LikeButton</h1>
+        <LikeButton /> <LikeButton />
+      </div>
+      <div>
+        <h1>ClickablePicture</h1>
+        <ClickablePicture
+          img='/img/persons/maxence.png'
+          imgClicked='/img/persons/maxence-glasses.png'
+        />
       </div>
     </div>
   );
