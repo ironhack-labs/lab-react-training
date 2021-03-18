@@ -1,3 +1,7 @@
+hr{
+  margin: 40px;
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +30,15 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.card__container{
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+
+  border: solid black 2px;
+  margin: 10px;
 }
 
 @keyframes App-logo-spin {
