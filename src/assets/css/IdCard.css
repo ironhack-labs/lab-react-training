@@ -1,0 +1,27 @@
+.card {
+display: flex;
+margin: 8px;
+border: 1px solid black;
+
+}
+
+.card-img {
+width: 128px;
+height: 128px;
+margin: 5px; 
+}
+
+.card-data {
+    display: flex;
+    flex-direction: column;
+    line-height: 2px;
+    margin-top: 10px;
+
+}
+
+.card-info {
+    display:flex;
+    margin-top: 1px;
+    font-size: 16px;
+}
+
