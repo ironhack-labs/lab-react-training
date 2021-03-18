@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
+import Random from './components/Random';
 
 function App() {
   return (
     <div className="App">
+      <h1>IdCard</h1>
       <IdCard
         lastName='Doe'
         firstName='John'
@@ -24,10 +26,15 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
 
+      <h1>Greetings</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
       <Greetings lang="es">Paco</Greetings>
       <Greetings lang="en">Tom</Greetings>
+
+      <h1>Random</h1>
+      <Random min={1} max={6}/>
+      <Random min={1} max={100}/>   
       
     </div>
   );
