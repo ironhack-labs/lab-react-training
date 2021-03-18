@@ -1,12 +1,18 @@
 import React from 'react';
 import './App.css';
 import IdCard from './components/IdCard'
+import Greetings from './components/Greetings'
+import Title from './components/Title'
+import Random from './components/Random'
+import BoxColor from './components/BoxColor'
 
 function App() {
   return (
     <div className="App">
 
-    <h1 className='title'>IdCard</h1>
+<div>
+  <Title edit='IdCard'/>
+</div>
 
 <IdCard
   lastName='Doe'
@@ -14,7 +20,7 @@ function App() {
   gender='male'
   height='178'
   birth="1992-07-14"
-  picture= 'src=/img/persons/maxence.png'
+  picture="https://randomuser.me/api/portraits/men/44.jpg"
 />
 
 <IdCard
@@ -26,7 +32,39 @@ function App() {
   picture="https://randomuser.me/api/portraits/women/44.jpg"
 />
       
-    </div>
+
+  <Title edit='Greetings'/>
+
+
+  
+  <div>
+
+  <Greetings lang='de' children='Ludwig'/>
+  <Greetings lang="fr" children = 'François'/>
+
+  </div>
+
+  <Title edit='Random'/>
+
+  <div>
+
+  <Random min={1} max={6}/>
+  <Random min={1} max={100}/>
+  </div>
+
+  <Title edit='BoxColor'/>
+
+
+    <div>
+  <BoxColor r={255} g={0} b={0} />
+  <BoxColor r={128} g={255} b={0} />
+  </div>
+  
+
+
+
+
+</div>
   );
 }
 

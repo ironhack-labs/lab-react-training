@@ -1,5 +1,5 @@
 import React from 'react'
-import './assets/css/IdCard.css'
+import '../assets/css/IdCard.css'
 
 
 

@@ -5,13 +5,19 @@
 }
 
 .IdCard > img {
-    width: 250px;
+    width: 200px;
+    height: 180px;
     margin: 20px
 }
 
 .IdCard .Data {
     display: flex;
     flex-direction: column;
-    line-height: 5px;
+    text-align: left;
+    line-height: 3px;
     margin-top: 25px;
+}
+.Data > p > strong{
+    font-weight: 30px;
+   
 }
