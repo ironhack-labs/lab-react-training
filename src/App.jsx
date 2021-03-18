@@ -16,6 +16,7 @@ import Dice from './components/Dice'
 import Carousel from './components/Carousel'
 import NumbersTable from './components/NumbersTable'
 import FaceBook from './components/FaceBook'
+import SignupPage from './components/SignupPage'
 
 const dateFormat = require("dateformat");
 
@@ -136,6 +137,9 @@ function App() {
 
         <h1>Iteration 13</h1>
         <FaceBook />
+
+        <h1>iteration 14</h1>
+        <SignupPage />
 
 
     </div>
