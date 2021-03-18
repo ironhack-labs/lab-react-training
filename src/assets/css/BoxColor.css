@@ -1,8 +1,7 @@
-.Random {
-    background-color: #c8eed9;
+.BoxColor {
     border: 0.2rem solid #4e3620;
     border-radius: 1rem;
     margin: 2rem;
-    text-align: left;
+    text-align: center;
     padding: 2rem;
 }

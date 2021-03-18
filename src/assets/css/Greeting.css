@@ -1,7 +1,8 @@
 .Greeting {
-    border: 0.2rem solid gray;
+    background-color: #c8eed9;
+    border: 0.2rem solid #4e3620;
     border-radius: 1rem;
     margin: 2rem;
-    padding: 1rem 2rem;
     text-align: left;
+    padding: 2rem;
 }

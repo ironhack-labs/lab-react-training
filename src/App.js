@@ -4,11 +4,12 @@ import './App.css';
 import IdCard from './components/IdCard';
 import Greeting from './components/Greeting';
 import Random from './components/Random';
+import BoxColor from './components/BoxColor';
 
 function App() {
   return (
     <div className="App">
-      <h1>Id Cards</h1>
+      <h1>It.1 - Id Cards</h1>
       <IdCard
         firstName='Javier'
         lastName='Repilado'
@@ -20,15 +21,21 @@ function App() {
 
       <hr/>
 
-      <h1>Greetings</h1>
+      <h1>It.2 - Greetings</h1>
       <Greeting lang='de' />
       <Greeting lang='fr' />
 
       <hr/>
 
-      <h1>Random</h1>
+      <h1>It.3 - Random</h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
+
+      <hr/>
+
+      <h1>It.4 - Box Color</h1>
+      <BoxColor r={200} g={238} b={217} />
+      <BoxColor r={137} g={120} b={84} />
 
     </div>
   );
