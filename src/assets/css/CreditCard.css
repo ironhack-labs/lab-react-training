@@ -1,0 +1,51 @@
+.CreditCard{
+    height: 280px;
+    max-width: 500px;
+
+    margin: 5px;
+
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+
+
+.brand__card__visa{
+    width: 20%;
+}
+
+.brand__card__master{
+    width: 20%;
+}
+
+.header__card{
+    display: flex;
+    justify-content: end;
+    height: 76px;
+}
+
+.body__card{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__card{
+    margin: 30px;
+}
+
+
+.dot {
+    height: 18px;
+    width: 18px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;
+}
+.white{
+    background-color: white;
+}
+.space__dot{
+    margin-right: 15px ;
+}
+
