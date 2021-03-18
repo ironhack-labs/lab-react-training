@@ -23,7 +23,7 @@ const cardInfo = [
 
 const ListCard = () => {
     return(
-        <div classname="ListCard">
+        <div className="ListCard">
             {cardInfo.map(info => {
                 return(
                     <IdCard {...info} />

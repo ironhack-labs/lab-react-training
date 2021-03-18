@@ -4,7 +4,7 @@ import '../assets/css/IdCard.scss'
 
 const IdCard = ({ lastName, firstName, gender, height, birth, img }) => {
     return(
-        <div class="IdCard">
+        <div className="IdCard">
         <div>
             <img src={img.src} alt={img.alt}/>
         </div>
