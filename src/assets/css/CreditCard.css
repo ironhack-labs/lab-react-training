@@ -1,0 +1,43 @@
+.CreditCard{
+    border-radius: 20px;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px ;
+
+}
+
+.CardLogo{
+    align-self: flex-end;
+    padding-right: 50px;
+}
+
+.CardPoints{
+    margin-right: 7px;
+    font-size: 0.5em ;
+}
+
+.CardNumber{
+    font-size: 2em;
+    height: 15px;
+}
+.CardExpiration{
+    display: flex;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin-top:80px;
+    height: 15px;
+    font-size: 1.6em;
+}
+
+.BankSpace{
+    padding-left: 30px;
+}
+
+.CardOwner{
+    align-self: flex-start;
+    padding-left: 30px;
+    font-size: 1.6em;
+}

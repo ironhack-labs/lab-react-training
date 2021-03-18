@@ -9,7 +9,7 @@ const BoxColor = ({r,g,b}) => {
     }).join('')
 
     return (
-      <div className='BoxColor' style={{ backgroundColor: `rgb(${r},${g},${b})` }}>
+      <div className='BoxColor' style={{ backgroundColor: `rgb(${r},${g},${b})`}}>
         <h4>rgb({r},{g},{b})</h4>
         <h4>{rgbToHex(r,g,b)}</h4>
       </div>
