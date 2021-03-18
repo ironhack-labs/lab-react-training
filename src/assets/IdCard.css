@@ -1,0 +1,17 @@
+.IdCard {
+    display: flex;
+    border: 3px solid #000;
+    margin: 10px;
+}
+
+.IdCard > img {
+    width: 250px;
+    margin: 20px
+}
+
+.IdCard .Data {
+    display: flex;
+    flex-direction: column;
+    line-height: 5px;
+    margin-top: 25px;
+}
