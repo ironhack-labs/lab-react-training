@@ -7,6 +7,8 @@
     padding: 2rem;
 }
 
-.IdCard .IdCarImage {
-    float: left
+.IdCard .IdCardImage {
+    border-radius: 50%;
+    float: left;
+    margin-right: 2rem;
 }

@@ -15,8 +15,8 @@ function App() {
         lastName='Repilado'
         gender='male'
         height={173}
-        // birth={new Date('1990-03-16')}
-        picture='https://media-exp1.licdn.com/dms/image/C4D03AQE0hSqrZcgBRw/profile-displayphoto-shrink_200_200/0/1583432189215?e=1621468800&v=beta&t=yhxhudaYfGQqW_U1AoxPHPplwGTYHhko2s5uQMU1Bmg'
+        birth={new Date('1990-03-16')}
+        picture={{src: 'https://media-exp1.licdn.com/dms/image/C4D03AQE0hSqrZcgBRw/profile-displayphoto-shrink_200_200/0/1583432189215?e=1621468800&v=beta&t=yhxhudaYfGQqW_U1AoxPHPplwGTYHhko2s5uQMU1Bmg', alt: 'Profile Picture'}}
       />
 
       <hr/>
