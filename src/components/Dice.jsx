@@ -9,12 +9,12 @@ export class Dice extends Component {
     }
 
     randomIndex() {
-        return dices[Math.round(Math.random() * dices.length)];
-    }
+        return dices[Math.round((Math.random() * 5))];
+    }   
 
     handleClick = () => {
         this.setState({imgSrc : '/img/dice-empty.png'});
-        setTimeout(() => this.setState({imgSrc : this.randomIndex()}), 1000)
+        setTimeout(() => this.setState({imgSrc : this.randomIndex()}), 1000);
     }
 
     render() {
