@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top: 25px;
 }
 
 .App-logo {
@@ -24,6 +25,12 @@
   color: white;
 }
 
+.title-greetings {
+  text-align: left;
+  padding: 0px 8px;
+}
+
+
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +43,5 @@
     transform: rotate(360deg);
   }
 }
+
+
