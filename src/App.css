@@ -30,6 +30,11 @@
   padding: 0px 8px;
 }
 
+/*Estoy intentando poner el color de la letra en blanco en el recuadro rojo*/
+.App-boxcolor {
+  color:white;
+}
+
 
 .App-link {
   color: #61dafb;
