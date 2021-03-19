@@ -1,0 +1,26 @@
+  .credit-card {
+    border-radius: 15px;
+    max-width: 300px;
+    max-height: 139px;
+    padding: 20px;
+    display: inline-block;
+    margin: 10px;
+  }
+  .credit-card img{
+    width: 15%;
+    float: right;
+  }
+ 
+  .cardNumber{
+    text-align: start;
+    padding-top: 15%;
+    font-size: 1.5em;
+    font-weight: 500;
+  } 
+ 
+ .credit-data {
+     text-align: left;
+     margin: 0px;
+ }
+ 
+ 
