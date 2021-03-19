@@ -1,0 +1,9 @@
+.random {
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+    font-size:medium;
+    align-items: center;
+    height: 30px;
+    line-height: 2px;
+}

@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
 import IdCard from './components/IdCard';
-import Greetings from './components/Greetings'
+import Greetings from './components/Greetings';
+import Random from './components/Random';
 
 function App() {
   return (
     <div className="App">
+
+<h1 className="title-greetings"><strong>IdCard</strong></h1>
+
       <IdCard
   lastName='Doe'
   firstName='John'
@@ -28,6 +32,13 @@ function App() {
 
 <Greetings lang="de">Ludwig</Greetings>
 <Greetings lang="fr">François</Greetings>
+
+<h1 className="title-greetings"><strong>Random</strong></h1>
+
+
+
+<Random min={1} max={6}/>
+<Random min={1} max={100}/>
     
     </div>
   );
