@@ -1,0 +1,10 @@
+.BoxColor{
+    height: 200px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+.BoxColor > h4{
+    color: white;
+    padding-top: 50px;
+}

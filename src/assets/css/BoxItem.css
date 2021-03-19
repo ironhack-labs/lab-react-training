@@ -1,0 +1,18 @@
+.BoxItem{
+    border: 1px solid #000;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px;
+}
+
+.Box{
+    padding: 25px 10px 25px;
+}
+
+.BoxItem img{
+    float: left;
+}
+
+.BoxItem h4{
+    text-align: left;
+}
