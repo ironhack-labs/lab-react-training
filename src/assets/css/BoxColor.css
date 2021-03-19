@@ -1,0 +1,14 @@
+.box__boxColor {
+    width: 600px;
+    border: 1px black solid;
+    padding: 5px;
+    margin: 40px;
+    display: flex; 
+    flex-direction: column;
+    display: inline-block;
+}
+.codeColor{
+    align-items: center;
+    justify-content: center;
+
+}

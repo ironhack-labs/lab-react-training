@@ -1,0 +1,10 @@
+.Random {
+    display: inline-block;
+    justify-content: space-between;
+    margin: 20px;
+}
+.RandomBox{
+    border: 1px solid black;
+    margin: 40px;
+
+}
