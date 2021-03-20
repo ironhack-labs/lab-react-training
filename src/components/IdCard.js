@@ -4,7 +4,7 @@ import '../assets/css/IdCard.css'
 const IdCard = ({lastName, firstName, gender, height, birth, picture}) => {
     return (
         <div className="IdCard">
-            <img src={ picture }></img>
+            <img src={ picture } alt={ picture }></img>
             <div className="Data">
                 <p><strong>First name</strong>: { firstName }</p>
                 <p><strong>Last name</strong>: { lastName }</p>

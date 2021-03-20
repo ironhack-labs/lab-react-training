@@ -4,13 +4,13 @@ import '../assets/css/Greetings.css'
 const Greetings = ({lang, children}) => {
     let greetings = ""
      
-    if (lang == "de") {
+    if (lang === "de") {
         greetings = "Hallo"
-    } else if (lang == "en") {
+    } else if (lang === "en") {
         greetings = "Hello"
-    } else if (lang == "es") {
+    } else if (lang === "es") {
         greetings= "Hola"
-    } else if (lang == "fr") {
+    } else if (lang === "fr") {
         greetings = "Bonjour"
     }
 
