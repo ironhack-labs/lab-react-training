@@ -6,11 +6,14 @@ import Random from '../src/Components/Random';
 import BoxColor from '../src/Components/BoxColor';
 import LikeButton from './Components/LikeButton';
 import ClickablePicture from './Components/ClickablePicture';
+import Dice from './Components/Dice';
+
 
 import './App.css';
 
 function App() {
   return (
+    
     // /*IT1*/
     <div className="idCard">
       <div>
@@ -57,6 +60,10 @@ function App() {
         img="/img/persons/maxence.png"
         imgClicked="/img/persons/maxence-glasses.png"
       />
+      /*IT10*/
+      <div>
+        
+      </div>
     </div>
   );
 }
