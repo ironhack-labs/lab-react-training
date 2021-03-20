@@ -7,16 +7,15 @@ import BoxColor from '../src/Components/BoxColor';
 import LikeButton from './Components/LikeButton';
 import ClickablePicture from './Components/ClickablePicture';
 import Dice from './Components/Dice';
-
+import CreditCard from './Components/CreditCard';
 
 import './App.css';
 
 function App() {
   return (
-    
-    // /*IT1*/
     <div className="idCard">
       <div>
+        // /*IT1*/
         <IdCard
           lastName="Doe"
           firstName="John"
@@ -51,6 +50,37 @@ function App() {
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
       </div>
+      /*IT5*/
+      <CreditCard
+        type="Visa"
+        number="0123456789018845"
+        expirationMonth={3}
+        expirationYear={2021}
+        bank="BNP"
+        owner="Maxence Bouret"
+        bgColor="#11aa99"
+        color="white"
+      />
+      <CreditCard
+        type="Master Card"
+        number="0123456789010995"
+        expirationMonth={3}
+        expirationYear={2021}
+        bank="N26"
+        owner="Maxence Bouret"
+        bgColor="#eeeeee"
+        color="#222222"
+      />
+      <CreditCard
+        type="Visa"
+        number="0123456789016984"
+        expirationMonth={12}
+        expirationYear={2019}
+        bank="Speed"
+        owner="Neanu Reeves"
+        bgColor="#ddbb55"
+        color="white"
+      />
       /*IT8*/
       <div>
         <LikeButton /> <LikeButton />
@@ -61,9 +91,7 @@ function App() {
         imgClicked="/img/persons/maxence-glasses.png"
       />
       /*IT10*/
-      <div>
-        
-      </div>
+      <div></div>
     </div>
   );
 }
