@@ -8,6 +8,7 @@ import LikeButton from './Components/LikeButton';
 import ClickablePicture from './Components/ClickablePicture';
 import Dice from './Components/Dice';
 import CreditCard from './Components/CreditCard';
+import Rating from './Components/Rating';
 
 import './App.css';
 
@@ -81,6 +82,13 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+      /*IT 6*/
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
       /*IT8*/
       <div>
         <LikeButton /> <LikeButton />
