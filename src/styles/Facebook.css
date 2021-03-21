@@ -1,0 +1,16 @@
+.profile-box {
+    border: 3px solid black;
+    display: flex;
+    padding: 10px;
+    margin: 5px 0;
+    width: 450px;
+}
+.profile-box img {
+    width: 150px;
+}
+.profile-info {
+    padding-left: 10px;
+}
+.profile-info p{
+    text-align: left;
+}
