@@ -10,7 +10,7 @@ import CreditCard from './components/CreditCard.jsx';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <IdCard
   lastName='Doe'
   firstName='John'
