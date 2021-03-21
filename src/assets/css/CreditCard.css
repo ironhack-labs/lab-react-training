@@ -1,0 +1,31 @@
+.CreditCard {
+  border-radius: 10px;
+  padding: 0px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.CreditCard > h1 {
+padding: 0px 30px 16px 30px
+
+}
+
+.CreditCardType {
+  text-align: right;
+  padding-top: 5px;
+}
+
+.CreditCardOwner {
+  text-align: left;
+  margin: 0;
+}
+
+.CreditCardExpires {
+  text-align: left;
+  display: flex;
+}
+
+.CreditCardExpires > P {
+  margin: 0;
+}
