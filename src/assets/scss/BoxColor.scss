@@ -1,0 +1,14 @@
+.BoxColor {
+    padding: 10px 15px;
+    border-radius: 2px;
+    margin: 5px 10px 5px 0;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #000;
+
+    span {
+        display: block;
+        margin-bottom: 2px;
+    }
+}

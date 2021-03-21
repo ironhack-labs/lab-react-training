@@ -1,0 +1,27 @@
+.IdCard {
+    border: 1px solid #000;
+    border-radius: 2px;
+    padding: 1rem;
+    min-width: 350px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    transition: .1s;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+
+    .cardText{
+        margin-left: 15px;
+
+        span{
+            display: block;
+            margin-bottom: 5.5px;
+        }
+    }
+
+    &:hover {
+        box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+    }
+}
