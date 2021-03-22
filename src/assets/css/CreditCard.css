@@ -1,0 +1,28 @@
+.CreditCard {
+  height: 9rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.CredirCard-type {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.CredirCard-type img {
+  height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.CredirCard-number {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.CredirCard-expires-bank {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
