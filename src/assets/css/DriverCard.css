@@ -1,0 +1,13 @@
+
+.DriverCard{
+    background-color: #445eb5;
+    border-radius: 20px;
+    margin: 20px;
+    height: 200px;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.round__image{
+    border-radius: 50%;
+}
