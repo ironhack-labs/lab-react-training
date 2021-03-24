@@ -1,0 +1,15 @@
+@import "./assets/css/constants";
+
+.GreetItem  {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 30%;
+    height: 28px;
+    background-color: $secondary-color;
+
+    > p {
+        margin: 0px;
+    }
+}

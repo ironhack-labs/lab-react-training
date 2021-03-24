@@ -1,0 +1,6 @@
+@import './assets/css/mixins';
+
+.ListCard {
+    @include container;
+    margin: 30px;
+}

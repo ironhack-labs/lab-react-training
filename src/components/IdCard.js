@@ -1,5 +1,5 @@
 import React from 'react';
-import helperDates, { bDay } from '../assets/helpers/helperDates'
+import { bDay } from '../assets/helpers/helperDates'
 import '../assets/css/IdCard.scss'
 
 const IdCard = ({ lastName, firstName, gender, height, birth, img }) => {
@@ -10,11 +10,10 @@ const IdCard = ({ lastName, firstName, gender, height, birth, img }) => {
         </div>
         <div>
             <ul>
-                <li><b>Last name</b>: { lastName }</li>
-                <li><b>First name</b>: { firstName }</li>
+                <li className="name">{ lastName }, { firstName }</li>
                 <li><b>Gender</b>: { gender }</li>
                 <li><b>Height</b>: { height }</li>
-                <li><b>Date of birth</b>: { bDay(birth) }</li>
+                <li><b>Birth</b>: { bDay(birth) }</li>
             </ul>
         </div>
         </div>

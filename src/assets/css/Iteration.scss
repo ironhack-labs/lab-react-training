@@ -1,0 +1,18 @@
+@import "./assets/css/constants";
+
+.Iteration {
+    border-top: 2px solid $secondary-color;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    > h1 {
+        font-size: 1.7rem;
+        font-weight: 300;
+        margin: auto {
+            top: 10px;
+            bottom: 10px;
+        }
+    }
+}

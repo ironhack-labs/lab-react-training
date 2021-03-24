@@ -1,0 +1,18 @@
+@mixin container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin container-ext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin container-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
