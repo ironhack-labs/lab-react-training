@@ -5,7 +5,7 @@ const Rating = ({children}) => {
     
     const getStars = () => {
         const rate = Math.round(Number(children))
-        console.log(rate)
+        
         switch(rate) {
             case 1:
               return '★☆☆☆☆'
