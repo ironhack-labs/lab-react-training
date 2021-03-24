@@ -14,10 +14,10 @@ const CreditCard = ({type, number, expirationMonth, expirationYear, bank, owner,
 
     const cardNumber = () => {
         if(type==='Visa'){
-            return <h4 class='CardNum'><span className='CardPoints'>⚪ ⚪ ⚪ ⚪ </span><span className='CardPoints' >⚪ ⚪ ⚪ ⚪ </span><span className='CardPoints'>⚪ ⚪ ⚪ ⚪ </span> {number.slice(number.length - 4)}</h4>
+            return <h4 className='CardNum'><span className='CardPoints'>⚪ ⚪ ⚪ ⚪ </span><span className='CardPoints' >⚪ ⚪ ⚪ ⚪ </span><span className='CardPoints'>⚪ ⚪ ⚪ ⚪ </span> {number.slice(number.length - 4)}</h4>
         }
         else{
-            return <h4 class='CardNum'><span className='CardPoints'>⚫ ⚫ ⚫ ⚫ </span><span className='CardPoints' >⚫ ⚫ ⚫ ⚫ </span><span className='CardPoints'>⚫ ⚫ ⚫ ⚫ </span> {number.slice(number.length - 4)}</h4>
+            return <h4 className='CardNum'><span className='CardPoints'>⚫ ⚫ ⚫ ⚫ </span><span className='CardPoints' >⚫ ⚫ ⚫ ⚫ </span><span className='CardPoints'>⚫ ⚫ ⚫ ⚫ </span> {number.slice(number.length - 4)}</h4>
         }
     }
 
@@ -32,7 +32,7 @@ const CreditCard = ({type, number, expirationMonth, expirationYear, bank, owner,
          </div>
          <div className='CardExpiration'>
             <p>Expires {expirationMonth} / {expirationYear}</p> 
-            <p class='BankSpace'>{bank}</p>
+            <p className='BankSpace'>{bank}</p>
          </div>
          <div className='CardOwner'>
             <p>{owner}</p> 
