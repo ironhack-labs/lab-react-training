@@ -17,7 +17,7 @@ const CreditCard = ({
     width: '20%',
   };
 
-  const srcImage = type == 'Visa' ? '/img/visa.png' : '/img/master-card.svg';
+  const srcImage = type === 'Visa' ? '/img/visa.png' : '/img/master-card.svg';
 
   return (
     <div className="CreditCard" style={divStyle}>
