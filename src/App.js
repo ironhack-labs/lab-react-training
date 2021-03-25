@@ -4,8 +4,8 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
-// import Rating from './components/Rating';
-// import DriverCard from './components/DriverCard';
+import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
 import './App.css';
 
 function App() {
@@ -74,13 +74,13 @@ function App() {
           expirationMonth={12}
           expirationYear={2019}
           bank="CTT"
-          owner="Paulo Duarte"
+          owner="Kleber Bastos"
           bgColor="#ddbb55"
           color="white"
         />
       </div>
 
-      {/*<h1>Rating</h1>
+      <h1>Rating</h1>
       <div className="Rating">
         <Rating>0</Rating>
         <Rating>1.49</Rating>
@@ -89,6 +89,7 @@ function App() {
         <Rating>4</Rating>
         <Rating>5</Rating>
       </div>
+
       <div>
         <h1>DriverCard</h1>
         <DriverCard
@@ -109,7 +110,7 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
-      </div> */}
+      </div>
     </div>
   );
 }
