@@ -2,6 +2,7 @@ import React from 'react';
 import IdCard from './components/IdCard'
 import Greetings from './components/Gretings'
 import Random from './components/Random'
+import BoxColor from './components/BoxColor'
 import './App.css';
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
         lastName="Doe"
         firstName="John"
         gender="male"
-        height={178}
-        birth={new Date('1992-07-14')}
+        height={ 178 }
+        birth={ new Date('1992-07-14') }
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
 
@@ -22,8 +23,8 @@ function App() {
         lastName="Delores "
         firstName="Obrien"
         gender="female"
-        height={172}
-        birth={new Date('1988-05-11')}
+        height={ 172 }
+        birth={ new Date('1988-05-11') }
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
 
@@ -37,14 +38,15 @@ function App() {
 
       <h2 className="m-5">Iteration 3️⃣</h2>
 
-      <Random min={1} max={6} />
-      <Random min={1} max={100} />
-      <Random min={0} max={2} />
+      <Random min={ 1 } max={ 6 } />
+      <Random min={ 1 } max={ 100 } />
+      <Random min={ 0 } max={ 2 } />
 
       <h2 className="m-5">Iteration 4️⃣</h2>
-      
-      
 
+      <BoxColor r={ 255 } g={ 0 } b={ 0 } />
+      <BoxColor r={ 128 } g={ 255 } b={ 0 } />
+      <BoxColor r={ 120 } g={ 15 } b={ 100 } />
     </div>
   );
 }
