@@ -20,7 +20,7 @@ export default class App extends Component {
     buttonColor: 'purple',
     pictureClicked: false,
     diceNumber: 1,
-    diceLoaded: false
+    diceLoaded: true
   }
 
   //Iteration 8 Methods
@@ -56,6 +56,9 @@ export default class App extends Component {
   }
 
   throwDice = () => {
+    this.setState({
+      diceLoaded: false
+    })
     this.loaded()
     let diceNum = this.state.diceNumber
     diceNum = Math.floor((Math.random() * 6) + 1)
