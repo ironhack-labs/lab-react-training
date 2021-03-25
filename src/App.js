@@ -10,6 +10,7 @@ import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
 import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture'
+import Dice from './components/Dice'
 
 export default class App extends Component {
 
@@ -17,7 +18,9 @@ export default class App extends Component {
     clickCounter: 0,
     colorCounter: 0,
     buttonColor: 'purple',
-    pictureClicked: false
+    pictureClicked: false,
+    diceNumber: 1,
+    diceLoaded: false
   }
 
   //Iteration 8 Methods
@@ -52,7 +55,24 @@ export default class App extends Component {
 
   }
 
+  throwDice = () => {
+    this.loaded()
+    let diceNum = this.state.diceNumber
+    diceNum = Math.floor((Math.random() * 6) + 1)
+    this.setState({
+      diceNumber: diceNum
+    })
+  }
 
+//Iteration 10 Methods
+
+ loaded = () => {
+  setTimeout(() => {
+    this.setState({
+      diceLoaded: true
+    })
+ }, 1000)
+}
 
 
   render(){
@@ -156,6 +176,9 @@ export default class App extends Component {
           clickImage={this.clickImage}
           isClicked={this.state.pictureClicked}
         />
+
+        <h1>Iteration 10</h1>
+        <Dice num= {this.state.diceNumber} clickDice = {this.throwDice}  isLoaded={this.state.diceLoaded}/>
       </div>
     );
   }
