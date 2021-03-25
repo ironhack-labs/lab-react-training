@@ -2,11 +2,11 @@
 import React from 'react'
 import '../assets/css/LikeButton.css'
 
-const LikeButton = ({counter, onClick}) => {
+const LikeButton = ({counter, addLike, buttonColor}) => {
 
     return (
-      <div className='LikeButton'>
-          <button type="button" className="btn btn-primary" onClick={onClick}>{counter} Likes</button>
+      <div className='LikeButton px-3 py-3'>
+          <button type="button" className="btn " onClick={addLike} style={{backgroundColor:buttonColor, color:'white'}}>{counter} Likes</button>
       </div>
     )
   }

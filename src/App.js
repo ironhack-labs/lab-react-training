@@ -13,16 +13,36 @@ import LikeButton from './components/LikeButton'
 export default class App extends Component {
 
   state = {
-    clickCounter: 0
+    clickCounter: 0,
+    colorCounter: 0,
+    buttonColor: 'purple'
   }
 
+  //Iteration 8 Methods
   addLike = () => {
-    console.log('click!')
     const counter = Number(this.state.clickCounter) + 1;
+    
     this.setState({
-      clickCounter: counter
+      clickCounter: counter,
+      buttonColor: this.changeColor()
     })
   }
+
+  changeColor = () => {
+    const colorPalette = ['purple','blue','green','yellow','orange','red']
+    let counter = this.state.colorCounter
+
+    counter > 4 ? counter = 0 : counter = counter + 1
+    
+    this.setState({
+      colorCounter: counter
+    })
+
+    return colorPalette[counter]
+  }
+
+
+
 
   render(){
     return (
@@ -114,9 +134,10 @@ export default class App extends Component {
           }} />
 
         <h1>Iteration 8</h1> 
-          <LikeButton counter={this.state.clickCounter} onClik={this.addLike}/> 
-          <LikeButton />
-          
+        <div className='d-flex justify-content-center'>
+          <LikeButton counter={this.state.clickCounter} addLike={this.addLike} buttonColor={this.state.buttonColor}/> 
+          <LikeButton counter={this.state.clickCounter} addLike={this.addLike} buttonColor={this.state.buttonColor}/> 
+        </div>  
       </div>
     );
   }
