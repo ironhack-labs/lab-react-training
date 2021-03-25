@@ -9,13 +9,15 @@ import CreditCard from './components/CreditCard'
 import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
 import LikeButton from './components/LikeButton'
+import ClickablePicture from './components/ClickablePicture'
 
 export default class App extends Component {
 
   state = {
     clickCounter: 0,
     colorCounter: 0,
-    buttonColor: 'purple'
+    buttonColor: 'purple',
+    pictureClicked: false
   }
 
   //Iteration 8 Methods
@@ -39,6 +41,15 @@ export default class App extends Component {
     })
 
     return colorPalette[counter]
+  }
+
+  //Iteration 9 Methods
+
+  clickImage = () => {
+    this.setState({
+      pictureClicked: !this.state.pictureClicked
+    })
+
   }
 
 
@@ -135,9 +146,16 @@ export default class App extends Component {
 
         <h1>Iteration 8</h1> 
         <div className='d-flex justify-content-center'>
-          <LikeButton counter={this.state.clickCounter} addLike={this.addLike} buttonColor={this.state.buttonColor}/> 
-          <LikeButton counter={this.state.clickCounter} addLike={this.addLike} buttonColor={this.state.buttonColor}/> 
-        </div>  
+          <LikeButton counter={this.state.clickCounter} addLike={this.addLike} buttonColor={this.state.buttonColor}/>  
+        </div> 
+
+        <h1>Iteration 9</h1>  
+        <ClickablePicture
+          img='/img/persons/maxence.png'
+          imgClicked='/img/persons/maxence-glasses.png'
+          clickImage={this.clickImage}
+          isClicked={this.state.pictureClicked}
+        />
       </div>
     );
   }
