@@ -1,6 +1,7 @@
 import React from 'react';
 import IdCard from './components/IdCard'
 import Greetings from './components/Gretings'
+import Random from './components/Random'
 import './App.css';
 
 function App() {
@@ -33,6 +34,16 @@ function App() {
       <Greetings lang="en">Mike</Greetings>
       <Greetings lang="es">Manolo</Greetings>
       <Greetings lang="ve">Pedro</Greetings>
+
+      <h2 className="m-5">Iteration 3️⃣</h2>
+
+      <Random min={1} max={6} />
+      <Random min={1} max={100} />
+      <Random min={0} max={2} />
+
+      <h2 className="m-5">Iteration 4️⃣</h2>
+      
+      
 
     </div>
   );
