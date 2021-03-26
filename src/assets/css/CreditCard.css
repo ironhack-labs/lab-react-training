@@ -1,0 +1,35 @@
+.CreditCard {
+    border-radius: 0.5rem;
+    display: inline-block;
+    font-family: 'Roboto';
+    height: 11rem;
+    margin: auto 1rem;
+    position: relative;
+    width: 29%;
+}
+
+.CreditCard .CardNumber {
+    display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    height: 50%;
+    font-weight: 400;
+}
+
+.CreditCard .CardLogo {
+    position: absolute;
+        right: 1rem;
+        top: 1rem;
+    width: 20%;
+}
+
+.CreditCard .CardData {
+    line-height: 0.1rem;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+.CreditCard .CardDate {
+    margin-right: 1.5rem;
+}
+
