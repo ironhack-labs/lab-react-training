@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import '../assets/css/LikeButton.css'
-import Random from './Random'
 
 class LikeButton extends Component {
     state = {

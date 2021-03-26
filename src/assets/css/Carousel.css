@@ -1,0 +1,15 @@
+.Carousel {
+    margin-left: 20px;
+}
+
+.Carousel > button {
+    margin: 10px;
+    border-radius: 20px;
+    background-color: aqua;
+    border: none;
+    padding: 10px 20px;
+}
+
+.Carousel > img {
+    width: 300px;
+}
