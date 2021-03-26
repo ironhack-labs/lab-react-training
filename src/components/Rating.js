@@ -23,7 +23,7 @@ const Rating = ({children}) => {
                 return '★★★★★'
                 break;
             default:
-                return 'No rating' 
+                return 'No rating';
         }
     }
 

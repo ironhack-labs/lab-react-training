@@ -1,0 +1,27 @@
+.DriverCard {
+    background-color: #415cbb;
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+        justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.DriverCard .DriverImg {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 20%;
+}
+
+.DriverCard .DriverInfo {
+    display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-around;
+    margin-left: 1rem;
+}
+
+.DriverCard .DriverRating {
+    font-size: 2rem;
+}
