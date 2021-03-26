@@ -1,0 +1,18 @@
+.CreditCard {
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.CreditCard > div {
+    margin: 10px 0;
+}
+
+.logoImg {
+  text-align: end;
+}
+
+.cardNumber,
+.bankCard {
+    margin-left: 10px;
+}
