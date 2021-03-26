@@ -14,7 +14,7 @@ class Carousel extends Component {
 
     nextPicture = () => {
         this.setState({
-            imgIndex: this.state.imgIndex + 1 > this.props.imgs.length ? this.state.props.length - this.state.props.length : this.state.imgIndex +1
+            imgIndex: this.state.imgIndex + 1 > this.props.imgs.length - 1 ? (this.props.imgs.length + 1) - this.props.imgs.length : this.state.imgIndex +1
         })
     }
 
