@@ -1,0 +1,18 @@
+.profile__container{
+    display: flex;
+    justify-content: left;
+
+    text-align: left;
+
+    width: 150%;
+    height: 250px;
+    margin: 10px;
+
+    border: 2px solid black;
+}
+
+img{
+    margin: 20px;
+    height: auto;
+    width: 200px;
+}

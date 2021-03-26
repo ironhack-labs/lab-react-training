@@ -49,3 +49,10 @@ hr{
     transform: rotate(360deg);
   }
 }
+
+
+.container__iteration__13{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

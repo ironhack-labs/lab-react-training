@@ -1,0 +1,18 @@
+.number__container{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+
+    max-width: 550px;
+}
+
+.box__number{
+    width: 100px;
+    height: 100px;
+
+    border: 2px solid black;
+}
+
+.red{
+    background-color: red;
+}
