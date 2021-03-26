@@ -1,0 +1,12 @@
+.Dice img {
+    height: 200px;
+}
+
+.Dice {
+    background-color: transparent;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+.Dice button:active { outline: none; border: none; }

@@ -1,0 +1,9 @@
+.LikeButton > button {
+    padding: 10px 20px;
+    margin: 5px 20px;
+    color:white;
+    border-radius: 10px;
+    border: transparent;
+    font-size: 2rem;
+    float: left;
+}

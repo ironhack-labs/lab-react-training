@@ -1,0 +1,9 @@
+.carousel {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel button {
+  background-color: aqua;
+}

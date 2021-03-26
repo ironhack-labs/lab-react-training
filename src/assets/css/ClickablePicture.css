@@ -1,0 +1,10 @@
+.ClickablePicture img {
+  height: 200px;
+}
+
+.ClickablePicture button {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0;
+}
