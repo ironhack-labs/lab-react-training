@@ -1,0 +1,18 @@
+
+.NumbersTable{
+    max-width: 550px;
+}
+.numberSquare{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+   
+}
+
+.numberSquareRed{
+    background-color:red;
+}
+
+.numberSquareWhite{
+    background-color: white;
+}

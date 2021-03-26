@@ -12,6 +12,7 @@ import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
 import DemoCarousel from './components/Carousel'
+import NumbersTable from './components/NumbersTable'
 
 export default class App extends Component {
 
@@ -193,6 +194,11 @@ export default class App extends Component {
         'https://randomuser.me/api/portraits/women/2.jpg',
         'https://randomuser.me/api/portraits/men/2.jpg'
         ]}/>
+
+        <h1>Iteration 12</h1>
+        <ul>
+        <NumbersTable limit={12} />
+        </ul>
       </div>
     );
   }
