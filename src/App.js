@@ -13,6 +13,8 @@ import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
 import DemoCarousel from './components/Carousel'
 import NumbersTable from './components/NumbersTable'
+import FaceBook from './components/FaceBook'
+import data from './data/berlin.json'
 
 export default class App extends Component {
 
@@ -23,7 +25,9 @@ export default class App extends Component {
     pictureClicked: false,
     diceNumber: 1,
     diceLoaded: true,
-    carouselCounter: 0
+    carouselCounter: 0,
+    profiles: [...data]
+    
   }
 
   //Iteration 8 Methods
@@ -196,9 +200,13 @@ export default class App extends Component {
         ]}/>
 
         <h1>Iteration 12</h1>
-        <ul>
+        <div>
         <NumbersTable limit={12} />
-        </ul>
+        </div>
+
+        <h1>Iteration 13</h1>
+        <FaceBook profiles= {this.state.profiles}/>
+
       </div>
     );
   }
