@@ -2,10 +2,10 @@
     border-radius: 0.5rem;
     display: inline-block;
     font-family: 'Roboto';
-    height: 11rem;
-    margin: auto 1rem;
+    height: 185.71px; /* Golden Ratio --> width / 1.75 */
+    margin: 1rem 1rem;
     position: relative;
-    width: 29%;
+    width: 325px;
 }
 
 .CreditCard .CardNumber {
@@ -14,6 +14,7 @@
         justify-content: center;
     height: 50%;
     font-weight: 400;
+    letter-spacing: 0.18rem;
 }
 
 .CreditCard .CardLogo {

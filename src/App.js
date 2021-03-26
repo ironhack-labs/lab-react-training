@@ -6,6 +6,7 @@ import Greeting from './components/Greeting';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
       <BoxColor r={137} g={120} b={84} />
 
       <hr/>
-      
+
       <h1>It.5 - Credit Cards</h1>
       <CreditCard
         type="Visa"
@@ -68,6 +69,16 @@ function App() {
         owner="Firstname Lastname"
         bgColor="#ddbb55"
         color="white" />
+
+      <hr/>
+
+      <h1>It.6 - Rating</h1>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
     </div>
   );
 }
