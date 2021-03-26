@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "clerobee": "^1.0.5",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "react-responsive-carousel": "^3.2.16",
     "react-scripts": "4.0.0"
   },
   "scripts": {

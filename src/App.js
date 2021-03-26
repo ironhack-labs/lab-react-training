@@ -11,6 +11,7 @@ import DriverCard from './components/DriverCard'
 import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
+import DemoCarousel from './components/Carousel'
 
 export default class App extends Component {
 
@@ -20,7 +21,8 @@ export default class App extends Component {
     buttonColor: 'purple',
     pictureClicked: false,
     diceNumber: 1,
-    diceLoaded: true
+    diceLoaded: true,
+    carouselCounter: 0
   }
 
   //Iteration 8 Methods
@@ -55,6 +57,7 @@ export default class App extends Component {
 
   }
 
+  //Iteration 10 Methods
   throwDice = () => {
     this.setState({
       diceLoaded: false
@@ -67,8 +70,6 @@ export default class App extends Component {
     })
   }
 
-//Iteration 10 Methods
-
  loaded = () => {
   setTimeout(() => {
     this.setState({
@@ -76,6 +77,8 @@ export default class App extends Component {
     })
  }, 1000)
 }
+
+//Iteration 11 Methods
 
 
   render(){
@@ -182,6 +185,14 @@ export default class App extends Component {
 
         <h1>Iteration 10</h1>
         <Dice num= {this.state.diceNumber} clickDice = {this.throwDice}  isLoaded={this.state.diceLoaded}/>
+
+        <h1>Iteration 11</h1>
+        <DemoCarousel imgs={[
+        'https://randomuser.me/api/portraits/women/1.jpg',
+        'https://randomuser.me/api/portraits/men/1.jpg',
+        'https://randomuser.me/api/portraits/women/2.jpg',
+        'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}/>
       </div>
     );
   }

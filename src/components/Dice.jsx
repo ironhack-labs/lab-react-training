@@ -26,9 +26,9 @@ const diceImage = (number) => {
 const Dice = ({num, clickDice, isLoaded}) => {
 
     return (
-      <div className='Dice px-3 py-3' onClick={clickDice} >
+      <div className='Dice px-3 py-3'  >
           
-          {isLoaded ? <img src={diceImage(num)} alt='Dice Number' width='100'/> : <img src='../img/dice-empty.png' alt='Dice Number' width='100'/>}
+          {isLoaded ? <img src={diceImage(num)} onClick={clickDice} alt='Dice Number' width='100'/> : <img src='../img/dice-empty.png' alt='Dice Number' width='100'/>}
           
       </div>
     )
