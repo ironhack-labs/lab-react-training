@@ -1,0 +1,21 @@
+@import "./assets/css/mixins";
+
+.LikeButton {
+    outline: none;
+    border: none;
+    border: 15px;
+    padding: 5px 8px;
+    opacity: 90%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-left: 10px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+
+    &hover {
+        opacity: 100%;
+    }
+}
+
+.LikeContainer {
+    @include container;
+}

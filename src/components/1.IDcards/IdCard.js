@@ -1,6 +1,6 @@
 import React from 'react';
-import { bDay } from '../assets/helpers/helperDates'
-import '../assets/css/IdCard.scss'
+import { bDay } from '../../assets/helpers/helperDates'
+import './IdCard.scss'
 
 const IdCard = ({ lastName, firstName, gender, height, birth, img }) => {
     return(

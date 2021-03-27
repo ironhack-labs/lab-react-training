@@ -1,0 +1,16 @@
+@import "./assets/css/mixins";
+
+.DriverdCard {
+    @include container-col;
+    background-color: #455eb5;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    border-radius: 15px;
+    > img {
+        width: 90px;
+        margin: 0px;
+        height: 100px;
+        object-fit: cover;
+    }
+}

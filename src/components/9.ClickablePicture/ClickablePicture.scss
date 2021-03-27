@@ -1,0 +1,8 @@
+@import "./assets/css/mixins";
+
+.ClickablePicture {
+    @include container;
+    > img {
+        width: 30%;
+    }
+}

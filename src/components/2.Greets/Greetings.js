@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import GreetItem from './GreetItem'
-import '../assets/css/Greetings.scss'
-import { langs } from '../assets/data'
+import './Greetings.scss'
+import { langs } from '../../assets/data'
 
 class Greetings extends Component {
     constructor(props) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/css/GreetItem.scss'
+import './GreetItem.scss'
 
 const GreetItem = ({text}) => {
     return (

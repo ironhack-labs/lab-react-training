@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/css/Random.scss'
+import './Random.scss'
 
 const Random = ({min, max}) => {
     return (

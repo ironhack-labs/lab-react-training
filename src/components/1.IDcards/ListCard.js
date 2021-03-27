@@ -1,7 +1,7 @@
 import React from 'react'
 import IdCard from './IdCard'
-import '../assets/css/ListCard.scss'
-import { cardInfo } from '../assets/data'
+import './ListCard.scss'
+import { cardInfo } from '../../assets/data'
 
 const ListCard = () => {
     return(

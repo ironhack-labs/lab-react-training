@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/css/Iteration.scss'
+import './Iteration.scss'
 
 const Iteration = ({num}) => {
     return (
