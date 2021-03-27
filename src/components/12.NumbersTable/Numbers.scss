@@ -1,8 +1,14 @@
 @import "./assets/css/mixins";
 
 .NumbersTable {
-    @include container;
-    > img {
-        width: 30%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Number {
+    border: 2px solid #f542dd;
+    padding: 10px;
+    border:grey;
 }
