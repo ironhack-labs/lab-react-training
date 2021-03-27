@@ -12,6 +12,7 @@ import ClickablePicture from './components/9.ClickablePicture/ClickablePicture';
 import Dice from './components/10.Dice/Dice';
 import Carousel from './components/11.Carousel/Carousel';
 import NumbersTable from './components/12.NumbersTable/NumbersTable';
+import FacebookContainer from './components/13.14.Fb/FacebookContainer';
 import './App.scss';
 
 function App() {
@@ -42,6 +43,8 @@ function App() {
      <Carousel />
      <Iteration num={12}/>
      <NumbersTable limit={16}/>
+     <Iteration num={13.14}/>
+     <FacebookContainer />
     </div>
   );
 }

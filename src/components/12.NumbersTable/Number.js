@@ -9,6 +9,7 @@ const Number = ({i}) => {
             return '#ffffff'
         }
     }
+    
     return (
         <div className="Number" style={{backgroundColor: styling(i)}}>
             {i}

@@ -1,0 +1,67 @@
+@import "./assets/css/mixins";
+$primary-color: #333;
+$secondary-color: rgba(212, 209, 209, 0.212);
+
+.FacebookContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FacebookCard {
+    color: $primary-color;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    border-radius: 15px;
+    width: 35%;
+    margin: 10px;
+}
+
+img {
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+}
+
+.nameFB {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.StudentsFilter {
+    @include container;
+    padding: 10px 50px;
+    flex-wrap: wrap;
+    > button {
+        opacity: 90%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        padding: 2px 7px;
+        border: 1px solid rgb(214, 70, 70);
+        color: black;
+        background-color: #ffff;
+
+        &:hover {
+            border-style: none;
+            outline: none;
+            color: #ffff;
+            background-color: rgb(214, 70, 70);
+            padding: 3px 8px;
+        }
+
+        &:focus {
+            color: #ffff;
+            background-color: rgb(214, 70, 70);
+            border-style: none;
+            outline: none;
+            padding: 3px 8px;
+        }
+    }
+}

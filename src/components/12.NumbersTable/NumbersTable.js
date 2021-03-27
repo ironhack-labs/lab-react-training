@@ -9,7 +9,7 @@ const NumbersTable = ({ limit }) => {
         for (let i = 1; i<= l; i ++) {
            nums.push(i)
         }
-        return nums.map((n) => <Number i={n}/>)
+        return nums.map((n) => <Number i={n} key={n}/>)
     }
     return (
         <div className="NumbersTable">
