@@ -8,6 +8,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
@@ -92,7 +93,7 @@ function App() {
           model: "Toyota Corolla Altis",
           licensePlate: "CO42DE"
         }} />
-        
+
       <DriverCard
         name="Dara Khosrowshahi"
         rating={4.9}
@@ -101,7 +102,11 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} />
+        
+      <hr/>
 
+      <h1>It.8 - Like Button</h1>
+      <LikeButton />
 
     </div>
   );
