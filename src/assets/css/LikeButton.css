@@ -1,0 +1,11 @@
+.likeButton{
+    display: inline;
+    margin-left: 20px;
+    padding-bottom: 30px;
+    align-items: flex-start;
+}
+.button__like{
+    padding: 10px 40px;
+    background-color: blueviolet;
+    color: white;
+}

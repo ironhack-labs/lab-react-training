@@ -1,0 +1,45 @@
+
+.DriverCard__box {
+    width: 95%;
+    height: 200px;
+    background: #455EB5;
+    color: white;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .DriverCard__box img {
+    width: 160px;
+    border-radius: 50%;
+    
+  }
+  
+  
+  .DriverCard__box > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    line-height: 0.8em;
+    align-items: flex-start;
+  }
+  
+  .DriverCard__box h2 {
+    
+    margin: 8px;
+  }
+  
+  .DriverCard__car-info {
+    padding-top: 20px;
+    font-size: 20px;
+    margin: 8px;
+  }
+  
+  .DriverCard__rating {
+    font-size: 0.5em;
+    margin: 8px;
+  } 
