@@ -14,6 +14,7 @@ import Dice from './components/Dice'
 import DemoCarousel from './components/Carousel'
 import NumbersTable from './components/NumbersTable'
 import FaceBook from './components/FaceBook'
+import SignupPage from './components/SignupPage'
 import data from './data/berlin.json'
 
 export default class App extends Component {
@@ -211,8 +212,11 @@ handleCountrieClick = (event) => {
         <NumbersTable limit={12} />
         </div>
 
-        <h1>Iteration 13</h1>
+        <h1>Iteration 13 and 14</h1>
         <FaceBook profiles= {this.state.profiles} clickCountrie = {this.handleCountrieClick} choosenCountry = {this.state.selectedCountrie}/>
+
+        <h1>Iteration 15</h1>
+        <SignupPage />
 
       </div>
     );
