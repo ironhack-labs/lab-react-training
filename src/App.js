@@ -26,7 +26,8 @@ export default class App extends Component {
     diceNumber: 1,
     diceLoaded: true,
     carouselCounter: 0,
-    profiles: [...data]
+    profiles: [...data],
+    selectedCountrie: ''
     
   }
 
@@ -83,8 +84,14 @@ export default class App extends Component {
  }, 1000)
 }
 
-//Iteration 11 Methods
+handleCountrieClick = (event) => {
+  const choosenCountry = event.target.innerText
+  this.setState({
+    selectedCountrie: choosenCountry
+  })
+}
 
+//Iteration 14 Methods
 
   render(){
     return (
@@ -205,7 +212,7 @@ export default class App extends Component {
         </div>
 
         <h1>Iteration 13</h1>
-        <FaceBook profiles= {this.state.profiles}/>
+        <FaceBook profiles= {this.state.profiles} clickCountrie = {this.handleCountrieClick} choosenCountry = {this.state.selectedCountrie}/>
 
       </div>
     );

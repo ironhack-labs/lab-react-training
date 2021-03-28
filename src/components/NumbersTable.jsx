@@ -12,9 +12,9 @@ const NumbersTable = ({limit}) => {
 
     const numsList =  numsArr.map((num) => {
         if(num % 2 === 0){
-            return <div className='numberSquare numberSquareRed'>{num}</div>
+            return <div key={num} className='numberSquare numberSquareRed'>{num}</div>
         }else{
-            return <div className='numberSquare numberSquareWhite'>{num}</div>
+            return <div key={num} className='numberSquare numberSquareWhite'>{num}</div>
         }
     })
 
