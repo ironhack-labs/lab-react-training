@@ -16,9 +16,11 @@ class LikeButton extends Component {
 
     render() {
         return(
-        // <div className="Button">
-            <button className="LikeButton" style={{backgroundColor: `${this.state.color}`, color: 'white'}} onClick={this.changeButton}>{this.state.value} {this.state.value !== 1 ? 'Likes' : 'Like'}</button>
-        // </div>
+            <button 
+                className="LikeButton" 
+                style={{backgroundColor: `${this.state.color}`, color: 'white'}} 
+                onClick={this.changeButton}>{this.state.value} {this.state.value !== 1 ? 'Likes' : 'Like'}
+            </button>
         )
     }
 }

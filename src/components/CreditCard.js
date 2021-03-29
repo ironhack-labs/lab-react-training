@@ -29,7 +29,7 @@ const CreditCard = ({
 
     return (
         <div className='CreditCard' style={{backgroundColor: `${bgColor}`, color: `${color}`}}>
-            <img className='CardLogo' src={cardLogo()} />
+            <img className='CardLogo' src={cardLogo()} alt='card-logo'/>
             <h1 className='CardNumber'>{hashedNumber()}</h1>
             <div className='CardData'>
                 <p><span className="CardDate">{expirationMonth}/{expirationYear}</span>{bank}</p>
