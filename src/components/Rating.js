@@ -15,7 +15,7 @@ const Rating = ({ children, color }) => {
         strokeWidth="1px"
         stroke={color}
         fill={color}
-        fill-opacity={fillOpacity}
+        fillOpacity={fillOpacity}
         className="bi bi-star-fill"
         viewBox="-5 -5 25 25"
       >
