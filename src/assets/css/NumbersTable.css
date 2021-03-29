@@ -1,0 +1,13 @@
+.NumbersTable{
+    width: 80%;
+    margin-left: 20px;
+}
+
+.numbers {
+    font-size: 100px;
+    width: 200px;
+    height: 200px;
+    padding: 20px 60px;
+    border: 1px solid #000;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+.card {
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+.avatar {
+    width: 200px;
+    margin: 30px;
+}
+
+.info {
+    margin-top: 30px;
+    font-size: 20px;
+}
