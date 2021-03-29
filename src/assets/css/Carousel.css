@@ -1,0 +1,28 @@
+.Carousel {
+    display: flex;
+        justify-content: center;
+}
+
+.Carousel img {
+    width: 25%;
+}
+
+.Carousel 
+.RightArrow,
+.LeftArrow {
+    align-self: center;
+    background-color: gainsboro;
+    border:  0.1rem solid gray;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin: 1rem;
+    padding: 2.5rem 0.5rem;
+}
+
+.Carousel 
+.RightArrow:hover,
+.LeftArrow:hover {
+    background-color: darkgoldenrod;
+    color: white;
+}
+

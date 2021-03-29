@@ -1,0 +1,13 @@
+.NumbersTable {
+    display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+.NumbersTable .Number {
+    font-size: large;
+    border: 0.1rem solid;
+    height: 2rem;
+    padding: 1rem;
+    width: 5%;
+}
