@@ -1,0 +1,11 @@
+.LikeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 2rem;
+}
+
+.LikeButton:hover {
+  cursor: pointer;
+}

@@ -8,6 +8,7 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import ClickablePicture from './components/ClickablePicture';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
@@ -102,6 +103,9 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+
+      <h1>LikeButton</h1>
+      <LikeButton />
 
       <h1>ClickablePicture</h1>
       <ClickablePicture
