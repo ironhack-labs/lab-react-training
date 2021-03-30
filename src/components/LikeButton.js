@@ -9,13 +9,13 @@ class LikeButton extends Component {
 
   colors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
 
-  incleaseCounter = () => {
+  increaseCounter = () => {
     this.setState((state) =>
       this.state.colorIndex >= this.colors.length - 1
-        ? { counter: this.state.counter + 1, colorIndex: 0 }
+        ? { counter: state.counter + 1, colorIndex: 0 }
         : {
-            counter: this.state.counter + 1,
-            colorIndex: this.state.colorIndex + 1,
+            counter: state.counter + 1,
+            colorIndex: state.colorIndex + 1,
           }
     );
   };
@@ -29,7 +29,7 @@ class LikeButton extends Component {
       <div
         className="LikeButton"
         style={divStyle}
-        onClick={this.incleaseCounter}
+        onClick={this.increaseCounter}
       >
         {this.state.counter} Likes
       </div>

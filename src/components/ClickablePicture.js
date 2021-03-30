@@ -6,7 +6,7 @@ class ClickablePicture extends Component {
   };
 
   toggleImage = () => {
-    this.setState((state) => ({ toggle: !state.toggle }));
+    this.setState({ toggle: !this.state.toggle });
   };
 
   render() {
