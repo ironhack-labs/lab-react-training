@@ -1,0 +1,11 @@
+.SignupPage {
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        input, select, button{
+            max-width: 350px;
+        }
+    }
+}

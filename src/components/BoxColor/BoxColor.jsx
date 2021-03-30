@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/scss/BoxColor.scss'
+import './BoxColor.scss'
 
 const BoxColor = ({ r, g, b, color}) => {
     const divStyle = {
@@ -8,8 +8,8 @@ const BoxColor = ({ r, g, b, color}) => {
     };
 
     const componentToHex = (c) => {
-        var hex = c.toString(16);
-        return hex.length == 1 ? "0" + hex : hex;
+        let hex = c.toString(16);
+        return hex.length === 1 ? "0" + hex : hex;
     }
 
     const rgbToHex = (r, g, b) => {

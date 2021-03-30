@@ -1,0 +1,32 @@
+.FaceBook {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    border: 1px solid black;
+    width: 350px;
+    margin-bottom: 10px;
+
+    img {
+        margin-right: 20px;
+    }
+
+    span {
+        display: block;
+    }
+}
+
+.blue-facebook {
+    background-color: #a3d2e2 !important;
+}
+
+.Nav{
+    margin-bottom: 15px;
+
+    button{
+        border: 1px solid black;
+        background-color: #fff;
+        padding: 0.4rem 0.8rem;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+}

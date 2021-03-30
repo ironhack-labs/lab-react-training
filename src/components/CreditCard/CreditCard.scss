@@ -1,0 +1,27 @@
+.CreditCard {
+    width: 350px;
+    height: 170px;
+    border-radius: 12px;
+    padding: 15px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+
+    .cardNumber {
+        font-size: 1.7rem;
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        transform: translate(0, -50%);
+    }
+
+    .cardFooter {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+
+        span {
+            margin-left: 25px;
+        }
+    }
+}

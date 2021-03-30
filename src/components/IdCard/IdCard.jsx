@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/scss/IdCard.scss'
+import './IdCard.scss'
 
 const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
 
