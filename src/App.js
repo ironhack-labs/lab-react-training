@@ -15,7 +15,9 @@ import DemoCarousel from './components/Carousel'
 import NumbersTable from './components/NumbersTable'
 import FaceBook from './components/FaceBook'
 import SignupPage from './components/SignupPage'
+import RGBColorPicker from './components/RGBColorPicker'
 import data from './data/berlin.json'
+
 
 export default class App extends Component {
 
@@ -217,6 +219,9 @@ handleCountrieClick = (event) => {
 
         <h1>Iteration 15</h1>
         <SignupPage />
+
+        <h1>Iteration 16</h1>
+        <RGBColorPicker/>
 
       </div>
     );
