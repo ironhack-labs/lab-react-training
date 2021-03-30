@@ -14,8 +14,8 @@ class LikeButton extends Component {
   render() {
 
     return (
-        <div className="Like">
-            <button onClick={() => this.setState({ like: this.state.like + 1})}> {this.state.like} Likes</button>
+        <div className="like">
+            <button className="btn-like" onClick={() => this.setState({ like: this.state.like + 1})}> {this.state.like} Likes</button>
         </div>
     )
   }
