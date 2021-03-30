@@ -8,6 +8,11 @@
     border: 1px solid black;
 }
 
+.container__center{
+    display: flex;
+    justify-content: center;
+}
+  
 .brand__card__visa{
     width: 20%;
 }

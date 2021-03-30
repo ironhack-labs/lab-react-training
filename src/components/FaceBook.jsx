@@ -16,7 +16,7 @@ const FaceBook = ({data}) => {
                 <h3>First name: {item.firstName}</h3> 
                 <h3>Last name: {item.lastName}</h3> 
                 <h3>Country: {item.country}</h3> 
-                <h3>Type: {item.isStudent ? 'True' : 'False'}</h3> 
+                <h3>Type: {item.isStudent ? 'Student' : 'Teacher'}</h3> 
             </div>
         </div>
       )

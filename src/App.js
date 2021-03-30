@@ -8,10 +8,13 @@ import Greetings from './components/Greetings'
 import Random from './components/Random'
 import BoxColor from './components/BoxColor'
 import CreditCard from './components/CreditCard'
+import Rating from './components/Rating'
+import DriverCard from './components/DriverCard'
 
 import Carousel from './components/Carousel'
 import NumbersTable from './components/NumbersTable'
 import FaceBook from './components/FaceBook'
+import SignupPage from './components/SignupPage'
 
 //data
 import profiles from './data/berlin.json';
@@ -50,6 +53,30 @@ function App() {
         <CreditCard type="Visa" number="0123456789016984" expirationMonth={12} expirationYear={2019} bank="Name of the Bank" owner="Firstname Lastname" bgColor="#ddbb55" color="white" />
       </div>
 
+      <h1>Iteration-6</h1>
+
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
+
+      <h1>Iteration-7</h1>
+      
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
+        }} />
+
+      <h1>Iteration-8</h1>
+      <h1>Iteration-9</h1>
+      <h1>Iteration-10</h1>
+
       <h1>Iteration-11</h1>
       <div className="container__center">
         <Carousel
@@ -68,10 +95,13 @@ function App() {
         <NumbersTable limit={12} />
       </div>
 
-      <h1>Iteration-13</h1>
+      <h1>Iteration-13,14</h1>
       <div className="container__iteration__13">
         <FaceBook data={profiles}/>  
       </div>
+
+      <h1>Iteration-15</h1>
+      <SignupPage />
 
     </div>
   )

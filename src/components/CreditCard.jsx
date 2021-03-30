@@ -1,4 +1,3 @@
-import React from 'react'
 import '../assets/css/CreditCard.css'
 
 const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color}) => {
@@ -6,10 +5,10 @@ const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner
 
   const getBrand = () => {
     if (type ==="Visa"){
-      return <img className="brand__card__visa" src="../../img/visa.png"></img>
+      return <img className="brand__card__visa" src="../../img/visa.png" alt=""></img>
     }
     else{
-      return <img className="brand__card__master" src="../../img/master-card.svg"></img>
+      return <img className="brand__card__master" src="../../img/master-card.svg" alt=""></img>
     }
   }
 
