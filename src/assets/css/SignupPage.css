@@ -1,0 +1,20 @@
+input {
+  margin: 10px;
+  width: 400px;
+  height: 24px;
+}
+
+select {
+  margin: 10px;
+  width: 410px;
+  height: 32px;
+}
+
+button {
+}
+
+/* .SignupPageForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */

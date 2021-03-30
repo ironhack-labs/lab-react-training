@@ -12,12 +12,17 @@ import Dice from './components/Dice'
 import Carousel from './components/Carousel'
 import NumbersTable from './components/NumbersTable'
 import Facebook from './components/Facebook'
+import SignupPage from './components/SignupPage'
+
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+       <br />
+      <SignupPage />
+      <br/>
       <IdCard
         lastName='Doe'
         firstName='John'
@@ -124,7 +129,7 @@ function App() {
       <NumbersTable limit={12} />
       <br />
       <Facebook />
-      <br />
+     
     </div>
   );
 }
