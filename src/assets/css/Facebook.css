@@ -1,0 +1,18 @@
+.Facebook {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.divButtonCountries {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttonCountries {
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}

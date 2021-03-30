@@ -1,0 +1,25 @@
+.FacebookItem {
+  border: 2px solid black;
+  margin: 20px;
+  display: flex;
+  width: 32rem;
+}
+
+.FacebookItem > img {
+  height: 12rem;
+  width: 12rem;
+  margin: 5px
+}
+
+h1 {
+  margin: 5px;
+  padding: 0;
+  text-align: left;
+  font-size: 25px;
+}
+
+.FacebookSpan {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}

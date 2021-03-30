@@ -7,7 +7,7 @@ const NumbersTable = ({ limit }) => {
         {
             Array.apply(null, { length: limit }).map((a, i) => {
                 return (
-                    <h1 className={i % 2 === 0 ? 'NumbersTableItem' : 'NumbersTableItemB NumbersTableItem'}>
+                    <h1 key={i} className={i % 2 === 0 ? 'NumbersTableItem' : 'NumbersTableItemB NumbersTableItem'}>
                         {i + 1}
                     </h1>
                 )
