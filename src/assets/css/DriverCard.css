@@ -1,0 +1,29 @@
+.driverCard {
+display: flex;
+background-color: #425cbb;
+justify-content: center;
+color:white;
+margin: 10px;
+align-items: center;
+border-radius: 15px;
+}
+
+.name-driverCard {
+    font: 24px;
+    font-weight: bolder;
+    margin: 0px;
+}
+
+
+
+.img-driverCard {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.info-driverCard {
+    text-align: left;
+    
+}
+

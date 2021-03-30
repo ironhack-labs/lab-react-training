@@ -35,7 +35,12 @@
   color:white;
 }
 
-.title-Rating {
+.title-rating {
+  text-align: left; 
+  padding: 0px 8px;
+}
+
+.title-driverCard {
   text-align: left; 
   padding: 0px 8px;
 }
