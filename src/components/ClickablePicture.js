@@ -17,6 +17,7 @@ class ClickablePicture extends Component {
         <img
           style={{ maxWidth: '100px' }}
           src={imgPath}
+          alt="Clickable pic"
           onClick={this.toggleImage}
         />
       </div>

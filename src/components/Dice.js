@@ -17,13 +17,12 @@ class Dice extends Component {
   };
 
   render() {
-    const imgPath = this.state.toggle ? this.props.imgClicked : this.props.img;
-
     return (
       <div className="Dice">
         <img
           style={{ maxWidth: '100px' }}
           src={`/img/dice${this.state.side}.png`}
+          alt={this.state.side}
           onClick={this.rollDice}
         />
       </div>
