@@ -1,0 +1,18 @@
+.NumbersTable {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.NumbersTableItemB {
+background-color: red;
+}
+
+.NumbersTableItem {
+    width: 100px;
+    padding: 50px 50px;
+    margin: 0;
+    border: 2px solid black;
+    }
