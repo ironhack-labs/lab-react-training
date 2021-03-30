@@ -25,6 +25,7 @@ class Dice extends Component {
                 <img
                     src={this.state.img}
                     onClick={this.onClickImg}
+                    alt="dice"
                 />
             </div>
         )

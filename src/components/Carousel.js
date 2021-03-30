@@ -22,9 +22,7 @@ class Carousel extends Component {
         return (
             <div className="Carousel">
                 <button onClick={this.previousPicture}>Previous</button>
-                <img
-                    src={this.props.imgs[this.state.imgIndex]}
-                />
+                <img src={this.props.imgs[this.state.imgIndex]} alt="image"></img>
                 <button onClick={this.nextPicture}>Next</button>
            </div> 
         )

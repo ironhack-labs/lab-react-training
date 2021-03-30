@@ -13,10 +13,7 @@ class ClickablePicture extends Component {
     render() {
         return (
             <div className="ClicklablePicture">
-                <img
-                    src={this.state.showPicture ? this.props.imgClicked : this.props.img}
-                    onClick={this.showGlasses}
-                />
+                <img src={this.state.showPicture ? this.props.imgClicked : this.props.img} alt="picture" onClick={this.showGlasses}></img>
             </div>
         )
     }
