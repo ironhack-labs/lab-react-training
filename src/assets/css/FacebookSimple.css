@@ -1,0 +1,45 @@
+.FacebookSimple .Profile {
+    background-color: white;
+    border: 0.1rem solid;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: left;
+    line-height: 0.75;
+    min-height: 15rem;
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.FacebookSimple img {
+    /* float: left; */
+    margin-right: 2rem;
+    width: 25%;
+}
+
+.FacebookSimple .ProfileInfo span {
+    font-weight: lighter;
+}
+
+.FacebookSimple .CountryCard {
+    display: inline-block;
+    background-color: gainsboro;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.CountryCard:hover {
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+button {
+    border: none;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+}

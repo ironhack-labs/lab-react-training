@@ -1,5 +1,6 @@
 import React from 'react';
-import '../assets/css/NumbersTable.css'
+import '../assets/css/NumbersTable.css';
+import uuid from 'react-uuid';
 
 class NumbersTable extends React.Component {
 
@@ -8,9 +9,9 @@ class NumbersTable extends React.Component {
 
         for (let number=1; number<=this.props.limit; number++) {
             if (number%2 !== 0) {
-                newTable.push(<div className='Number' style={{backgroundColor: 'white'}}>{number}</div>)
+                newTable.push(<div className='Number'  key={uuid()} style={{backgroundColor: 'white'}}>{number}</div>)
             } else {
-                newTable.push(<div className='Number' style={{backgroundColor: 'red'}}>{number}</div>)
+                newTable.push(<div className='Number'  key={uuid()} style={{backgroundColor: 'red'}}>{number}</div>)
             }
         }
 

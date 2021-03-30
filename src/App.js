@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import profiles from './data/berlin.json';
 import IdCard from './components/IdCard';
 import Greeting from './components/Greeting';
 import Random from './components/Random';
@@ -13,6 +14,8 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FacebookSimple from './components/FacebookSimple';
+import Facebook from './components/Facebook';
 
 function App() {
   return (
@@ -138,6 +141,16 @@ function App() {
 
       <h1>It.12 - NumbersTable</h1>
       <NumbersTable limit={12}/>
+
+      <hr/>
+
+      <h1>It.13 - Facebook (Simple)</h1>
+      {/* <FacebookSimple profiles={profiles} /> */}
+
+      <hr/>
+
+      <h1>It.13 - Facebook (Advanced)</h1>
+      <Facebook profiles={profiles} />
 
     </div>
   );
