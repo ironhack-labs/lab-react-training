@@ -5,11 +5,15 @@ import './Driver.scss'
 const DriverdCard = ({name, rating, img, car}) => {
     return (
         <div className="DriverdCard">
-            <img src={img} alt={name} />
-            <p>{name}</p>
-            <Rating>{rating}</Rating>
-            <p>{car.licensePlate}</p>
-            <p>{car.model}</p>
+            <div>
+                <img className="driverCardimg" src={img} alt={name} />
+            </div>
+            <div>
+                <h1>{name}</h1>
+                <p>{car.licensePlate}</p>
+                <p>{car.model}</p>
+                <Rating>{rating}</Rating>
+            </div>
         </div>
     )
 }

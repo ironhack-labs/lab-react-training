@@ -1,1 +1,17 @@
 @import './assets/css/mixins';
+
+.CreditCard {
+    padding: 5px 15px;
+    border-radius: 15px;
+    width: 25%;
+}
+
+.logo-credit {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mumber-credit {
+    width: 100%;
+    font-size: 1.4rem;
+}

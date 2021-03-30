@@ -3,6 +3,7 @@
 .Dice {
     @include container;
     > img {
-        width: 30%;
+        width: 100px;
+        height: 100px;
     }
 }

@@ -1,7 +1,9 @@
 @import "./assets/css/mixins";
 
 .Rating {
+    @include container-col;
     > img {
-        width: 30%;
+        width: 220px;
+        height: 35px;
     }
 }

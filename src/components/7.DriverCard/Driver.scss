@@ -1,16 +1,21 @@
 @import "./assets/css/mixins";
 
-.DriverdCard {
+.DriverContainer {
     @include container-col;
-    background-color: #455eb5;
-    padding: 20px;
+}
+
+.DriverdCard {
+    @include container;
+    border: 1px solid #455eb5;
+    padding: 10px;
     margin-bottom: 20px;
-    width: 50%;
+    width: 40%;
     border-radius: 15px;
-    > img {
-        width: 90px;
-        margin: 0px;
-        height: 100px;
-        object-fit: cover;
-    }
+}
+
+.driverCardimg {
+    width: 150px;
+    margin: 0px;
+    height: 140px;
+    object-fit: cover;
 }
