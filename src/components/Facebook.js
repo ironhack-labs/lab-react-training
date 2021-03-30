@@ -4,7 +4,9 @@ import uuid from 'react-uuid';
 
 class Facebook extends React.Component {
     state = {
-        limit: 5
+        limit: 5,
+        profiles: [...this.props.profiles],
+        cardBGColor: ''
     }
 
     showCountries = () => {
@@ -13,23 +15,32 @@ class Facebook extends React.Component {
         })
     }
 
-    setBGColor = (country) => {
-        const profiles = [...this.props.profiles]
-        profiles.map(profile => {
-            if (profile.country == country) {
-                let cardBGColor = 'blue';
+    setBGColor = (clickedCountry) => {
+        const allCountries = this.state.profiles.map(profile => profile.country);
+        allCountries.map(country => {
+            if (country == clickedCountry) {
+                this.setState({
+                    cardBGColor: '#a3d2e2'
+                })
             }
         })
     }
 
+    sortByLastName = () => {
+        this.state.profiles
+            .sort((a, b) => b - a)
+            .map(profile => profile.lastName);
+
+    }
+
     render() {
         const profiles = [...this.props.profiles];
-        let cardBGColor = '';
 
         return(
             <div className='FacebookSimple'>
+            <button className='Sort' onClick={this.sortByLastName}>Sort by last name</button>
             {
-                profiles.slice(0, this.state.limit).map((profile, idx, profiles) => {
+                profiles.slice(0, this.state.limit).map((profile) => {
                     return (
                         <div className='CountryCard' key={uuid()} onClick={() => this.setBGColor(profile.country)}>
                             {
@@ -40,13 +51,12 @@ class Facebook extends React.Component {
                     })
             }
             {
-            //profiles.length
             <button className='CountryCard' onClick={this.showCountries}>...</button>
             }
             {
                 this.props.profiles.map(profile => {
                     return(
-                        <div className='Profile' key={uuid()} style={{backgroundColor: cardBGColor}}>
+                        <div className='Profile' key={uuid()} style={{backgroundColor: this.state.cardBGColor}}>
                             <img src={profile.img} alt='profile-img' />
                             <div className='ProfileInfo' key={uuid()}>
                                 <h1>First name: <span>{profile.firstName}</span></h1>
