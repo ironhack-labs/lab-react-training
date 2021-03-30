@@ -15,7 +15,7 @@ export default class ClickablePicture extends Component {
 
     render() {
         return(
-            <div>
+            <div className='box__img'>
                 <img onClick={this.handleImgClick} src={this.state.imgSrc} alt='change image'></img>
             </div>
         )

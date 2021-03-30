@@ -1,0 +1,13 @@
+.button__left{
+    margin-right: 10px;
+    padding: 1px 20px;
+}
+
+.button__right{
+    margin-left: 10px;
+    padding: 1px 20px;
+}
+
+.box__img{
+    text-align: left;
+}

@@ -1,0 +1,8 @@
+.box__img{
+    text-align: left;
+   
+}
+.box__img img{
+    width: 250px;
+    padding: 30px 30px;
+}
