@@ -1,7 +1,6 @@
 import React from 'react'
 
 const IdCard = ({lastName, firstName, gender, height, birth, picture}) => {
-    console.log(birth)
     return (
         <div className="IdCard card mb-3">
             <div className="row g-0">
