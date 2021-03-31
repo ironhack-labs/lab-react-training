@@ -1,0 +1,7 @@
+.colorSquare {
+  height: 25px;
+  width: 25px;
+  border: 2px solid black;
+  display: inline-block;
+  margin-right: 5px;
+}
