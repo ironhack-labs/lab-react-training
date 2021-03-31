@@ -3,7 +3,7 @@ import './CreditCard.scss'
 
 const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color}) => {
     const secretNumber = (number) => {
-        return `oooo  oooo  oooo  ${number.slice(12)}`
+        return `****  ****  ****  ${number.slice(12)}`
     }
     return (
         <div className="CreditCard" style={{backgroundColor: bgColor, color}}>
@@ -19,10 +19,7 @@ const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner
             </div>
             <div>
                 <p>Expires {expirationMonth} / {expirationYear}</p>
-                <p>{bank}</p>
-            </div>
-            <div>
-                {owner}
+                <p>{bank} - {owner}</p>
             </div>
         </div>
     )

@@ -2,7 +2,8 @@
 
 .Carousel {
     @include container;
-    > img {
-        width: 30%;
+    .CarouselImg > img {
+        width: 150px;
+        height: 150px;
     }
 }

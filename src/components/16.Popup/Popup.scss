@@ -1,0 +1,32 @@
+.Popup {
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.252);
+
+    .contentPopup {
+        background-color: white;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        width: 40%;
+        padding: 50px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .btn-popup {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .textPopup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

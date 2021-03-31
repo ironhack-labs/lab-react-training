@@ -13,6 +13,7 @@ import Dice from './components/10.Dice/Dice';
 import Carousel from './components/11.Carousel/Carousel';
 import NumbersTable from './components/12.NumbersTable/NumbersTable';
 import FacebookContainer from './components/13.14.Fb/FacebookContainer';
+import SignupPage from './components/15.SignUp/SignupPage';
 import './App.scss';
 
 function App() {
@@ -45,6 +46,8 @@ function App() {
      <NumbersTable limit={16}/>
      <Iteration num={13.14}/>
      <FacebookContainer />
+     <Iteration num={15}/>
+     <SignupPage />
     </div>
   );
 }
