@@ -1,20 +1,33 @@
+label {
+  text-align: left;
+}
 input {
   margin: 10px;
   width: 400px;
   height: 24px;
+  box-shadow: none;
 }
+
+input:focus {
+  outline:none!important;
+  box-shadow: none;
+ }
+
+
 
 select {
   margin: 10px;
-  width: 410px;
+  width: 200px;
   height: 32px;
 }
 
 button {
+  padding: 10px;
+  width: 100px;
 }
 
-/* .SignupPageForm {
+.SignupPageForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
-} */
+}
