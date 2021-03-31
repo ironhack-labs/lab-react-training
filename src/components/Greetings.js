@@ -1,7 +1,6 @@
 import React from 'react';
 import '../assets/css/Greetings.css'
 
-
 const Greetings = ({ lang, children }) => {
     const language = () => {
         switch (lang) {
