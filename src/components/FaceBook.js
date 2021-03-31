@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../assets/css/Facebook.css';
 import profiles from '../data/berlin.json';
 
 class Facebook extends Component {
@@ -8,7 +9,9 @@ class Facebook extends Component {
   };
 
   onClickHandler = (country) => {
-    this.setState({ country });
+    this.state.country === country
+      ? this.setState({ country: '' })
+      : this.setState({ country });
   };
 
   render() {
@@ -19,10 +22,12 @@ class Facebook extends Component {
     const displayedCountries = ['All', ...uniqueCountries].map((country) => {
       const divStyle = {
         border: '1px solid black',
-        backgroundColor: this.state.country === country ? 'cyan' : 'white',
+        backgroundColor:
+          this.state.country === country || this.state.country === 'All'
+            ? 'LightSkyBlue'
+            : 'white',
         width: 'auto',
         height: '50px',
-        display: 'inline-block',
         textAlign: 'center',
       };
       return (
@@ -37,12 +42,47 @@ class Facebook extends Component {
       );
     });
 
-    const imgPath = this.state.toggle ? this.props.imgClicked : this.props.img;
-
     return (
       <div className="Facebook">
         <div className="CitiesList">{displayedCountries}</div>
-        <div className="CitiesList">{displayedCountries}</div>
+        <div className="ProfilesList">
+          {this.state.profiles.map(
+            ({ img, firstName, lastName, country, isStudent }) => {
+              const divStyle = {
+                border: '2px solid black',
+                backgroundColor:
+                  this.state.country === country || this.state.country === 'All'
+                    ? 'LightSkyBlue'
+                    : 'white',
+              };
+              return (
+                <div
+                  className="profile-element"
+                  style={divStyle}
+                  key={firstName + lastName}
+                >
+                  <div className="profile-picture">
+                    <img src={img} alt={lastName + firstName}></img>
+                  </div>
+                  <div className="profile-info">
+                    <p>
+                      <strong>First name:</strong> {firstName}
+                    </p>
+                    <p>
+                      <strong>Last name:</strong> {lastName}
+                    </p>
+                    <p>
+                      <strong>Country:</strong> {country}
+                    </p>
+                    <p>
+                      <strong>Type:</strong> {isStudent ? 'Student' : 'Teacher'}
+                    </p>
+                  </div>
+                </div>
+              );
+            }
+          )}
+        </div>
       </div>
     );
   }

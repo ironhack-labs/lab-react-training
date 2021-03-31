@@ -1,0 +1,36 @@
+.profile-element {
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.profile-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-picture {
+  margin-right: 1rem;
+}
+
+.profile-picture img {
+  max-width: 100px;
+}
+.CitiesList {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.country-element {
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.country-element:hover {
+  cursor: pointer;
+}
