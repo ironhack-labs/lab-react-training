@@ -9,6 +9,8 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice'
+import Carousel from './components/Carousel';
 
 
 
@@ -17,7 +19,7 @@ function App() {
   return (
     <div className="App">
 
-      <h1 className="title-greetings"><strong>IdCard</strong></h1>
+      <h1 className="title"><strong>IdCard</strong></h1>
 
       <IdCard
         lastName='Doe'
@@ -37,12 +39,12 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
 
-      <h1 className="title-greetings"><strong>Grettings</strong></h1>
+      <h1 className="title"><strong>Grettings</strong></h1>
 
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
 
-      <h1 className="title-greetings"><strong>Random</strong></h1>
+      <h1 className="title"><strong>Random</strong></h1>
 
 
 
@@ -50,13 +52,13 @@ function App() {
       <Random min={1} max={100} />
 
 
-      <h1 className="title-greetings"><strong>BoxColor</strong></h1>
+      <h1 className="title"><strong>BoxColor</strong></h1>
 
       <BoxColor className="App-boxcolor" r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
 
-      <h1 className="title-greetings"><strong>CreditCard</strong></h1>
+      <h1 className="title"><strong>CreditCard</strong></h1>
 
       <CreditCard
         type="Visa"
@@ -87,7 +89,7 @@ function App() {
         color="white" />
 
 
-      <h1 className="title-rating"><strong>Rating</strong></h1>
+      <h1 className="title"><strong>Rating</strong></h1>
 
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -96,7 +98,7 @@ function App() {
       <Rating>4</Rating>
       <Rating>5</Rating>
 
-      <h1 className="title-driverCard"><strong>DriverCard</strong></h1>
+      <h1 className="title"><strong>DriverCard</strong></h1>
 
       <DriverCard
         name="Travis Kalanick"
@@ -116,20 +118,31 @@ function App() {
         }} />
 
 
-      <h1 className="title-likeButton"><strong>LikeButton</strong></h1>
+      <h1 className="title"><strong>LikeButton</strong></h1>
 
       < LikeButton /> < LikeButton />
 
-      <h1 className="title-clickablePicture"><strong>clickablePicture</strong></h1>
+      <h1 className="title"><strong>clickablePicture</strong></h1>
 
       <ClickablePicture
-        img='/img/persons/maxence.png' 
+        img='/img/persons/maxence.png'
         imgClicked='/img/persons/maxence-glasses.png'
       />
 
+      <h1 className="title"><strong>Dice</strong></h1>
 
+      <Dice />
 
+      <h1 className="title"><strong>Carousel</strong></h1>
 
+      < Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https: / /randomuser.me/api/portraits/women/2.jpg ',
+          ' https://randomuser.me/api/portraits/men/2.jpg '
+        ]}
+      />
 
     </div>
   );

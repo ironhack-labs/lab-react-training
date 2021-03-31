@@ -25,7 +25,7 @@
   color: white;
 }
 
-.title-greetings {
+.title {
   text-align: left;
   padding: 0px 8px;
 }
@@ -33,25 +33,6 @@
 /*Estoy intentando poner el color de la letra en blanco en el recuadro rojo*/
 .App-boxcolor {
   color:white;
-}
-
-.title-rating {
-  text-align: left; 
-  padding: 0px 8px;
-}
-
-.title-driverCard {
-  text-align: left; 
-  padding: 0px 8px;
-}
-.title-likeButton {
-  text-align: left; 
-  padding: 0px 8px;
-}
-
-.title-clickablePicture {
-  text-align: left; 
-  padding: 0px 8px;
 }
 
 .App-link {
