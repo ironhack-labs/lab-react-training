@@ -25,7 +25,7 @@ class Facebook extends Component {
         return (
             <div className="Facebook">
                 <div className="container">
-                {this.state.countries.map((country, index) => <button onClick={() => this.handleFilterCountry(country)} key={index}>{country}</button>)}
+                {this.state.countries.map((country, index) => <button className="buttonCountry" onClick={() => this.handleFilterCountry(country)} key={index}>{country}</button>)}
                     <div className="row">
                         {
                             this.state.profiles.map((profile) =>      

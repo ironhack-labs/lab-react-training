@@ -21,9 +21,9 @@ class Carousel extends Component {
     render() {
         return (
             <div className="Carousel">
-                <button onClick={this.previousPicture}>Previous</button>
+                <button onClick={this.previousPicture} style={{color: "#fff"}}><b>PREVIOUS</b></button>
                 <img src={this.props.imgs[this.state.imgIndex]} alt="image"></img>
-                <button onClick={this.nextPicture}>Next</button>
+                <button onClick={this.nextPicture} style={{color: "#fff"}}><b>NEXT</b></button>
            </div> 
         )
     }
