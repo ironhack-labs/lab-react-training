@@ -1,7 +1,6 @@
 import React from 'react';
 
 const NumbersTable = ({ limit }) => {
-  console.log('limit', limit);
   const elements = [];
 
   for (let i = 0; i < limit; i++) {
