@@ -1,0 +1,12 @@
+.card{
+    width: 400px;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+.card-header{
+    text-align: right;
+}
+
+.owner{
+    text-align: left;
+}

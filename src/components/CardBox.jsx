@@ -1,9 +1,9 @@
 import React from 'react';
-import '../assets/css/CardBox.css'
 import BoxItem from '../components/BoxItem'
 
 const Card = [
     {
+        id: '1',
         lastName: 'Doe',
         firstName: 'John',
         gender: 'Male',
@@ -13,6 +13,7 @@ const Card = [
     },
 
     {
+        id: '2',
         lastName: 'Delores',
         firstName: 'Obrien',
         gender: 'female',
@@ -28,7 +29,7 @@ const CardBox = () => {
         <div className="CardBox">
             {Card.map(card => {
                 return (
-                  <BoxItem {...card}/>
+                  <BoxItem {...card} key={card.id}/>
                 )
             })}
         </div>

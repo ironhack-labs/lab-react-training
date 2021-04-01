@@ -5,7 +5,7 @@ const BoxItem = ({lastName, firstName, gender, height, birth, picture}) => {
     return (
         <div className="BoxItem">
             <div className="Box">
-                <img src= {picture}/>
+                <img src= {picture} alt={firstName}/>
             </div>
             <div className="Box">
                 <h4>First name: {firstName}</h4>
