@@ -12,21 +12,6 @@ const RGBColorPicker = () => {
     const { name, value } = event.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
-  const [rValue, setrValue] = useState(255);
-  const [gValue, setgValue] = useState(150);
-  const [bValue, setbValue] = useState(0);
-
-  const handleR = (e) => {
-    setrValue(e.target.value);
-  };
-
-  const handleG = (e) => {
-    setgValue(e.target.value);
-  };
-
-  const handleB = (e) => {
-    setbValue(e.target.value);
-  };
 
   return (
     <div className="RGBColorPicker">
