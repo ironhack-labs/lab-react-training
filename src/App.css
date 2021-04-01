@@ -42,7 +42,7 @@
   max-width: 400px;
 }
 
-.CreditCard {
+.CreditCard, .Dice, .ClickablePicture {
   line-height: 1rem;
   max-width: 300px;
 }
@@ -92,4 +92,20 @@
 
 .btnLike:hover {
   border-color: rgba(255,255,255,1);
+}
+
+.clickableImg {
+  width: 100%;
+  height: 100%;
+}
+
+.Carousel {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+}
+
+.Carousel .row {
+  display: flex;
+  align-items: center;
 }
