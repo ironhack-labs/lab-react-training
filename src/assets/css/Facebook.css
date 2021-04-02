@@ -1,4 +1,4 @@
-.FacebookSimple .Profile {
+.FacebookCard .Profile {
     background-color: white;
     border: 0.1rem solid;
     margin: 1rem;
@@ -11,17 +11,17 @@
     flex-wrap: wrap;
 }
 
-.FacebookSimple img {
+.FacebookCard img {
     /* float: left; */
     margin-right: 2rem;
     width: 25%;
 }
 
-.FacebookSimple .ProfileInfo span {
+.FacebookCard .ProfileInfo span {
     font-weight: lighter;
 }
 
-.FacebookSimple .CountryCard {
+.FacebookCard .CountryCard {
     display: inline-block;
     background-color: gainsboro;
     border-radius: 0.5rem;

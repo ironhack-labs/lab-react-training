@@ -1,12 +1,13 @@
 import React from 'react';
-import '../assets/css/FacebookSimple.css';
+// import '../assets/css/FacebookCard.css';
+import '../assets/css/Facebook.css';
 import uuid from 'react-uuid';
 
 class Facebook extends React.Component {
     state = {
         limit: 5,
         profiles: [...this.props.profiles],
-        cardBGColor: ''
+        bgColor: ''
     }
 
     showCountries = () => {
@@ -15,29 +16,31 @@ class Facebook extends React.Component {
         })
     }
 
+    
+    sortByLastName = () => {
+        this.state.profiles
+        .sort((a, b) => b - a)
+        .map(profile => profile.lastName);
+        
+    }
+    
     setBGColor = (clickedCountry) => {
+        let bgColor;
         const allCountries = this.state.profiles.map(profile => profile.country);
         allCountries.map(country => {
             if (country == clickedCountry) {
                 this.setState({
-                    cardBGColor: '#a3d2e2'
+                    bgColor: '#a3d2e2'
                 })
             }
         })
     }
 
-    sortByLastName = () => {
-        this.state.profiles
-            .sort((a, b) => b - a)
-            .map(profile => profile.lastName);
-
-    }
-
     render() {
-        const profiles = [...this.props.profiles];
-
+        const profiles = [...this.state.profiles];
+        
         return(
-            <div className='FacebookSimple'>
+            <div className='FacebookCard'>
             <button className='Sort' onClick={this.sortByLastName}>Sort by last name</button>
             {
                 profiles.slice(0, this.state.limit).map((profile) => {
@@ -56,7 +59,7 @@ class Facebook extends React.Component {
             {
                 this.props.profiles.map(profile => {
                     return(
-                        <div className='Profile' key={uuid()} style={{backgroundColor: this.state.cardBGColor}}>
+                        <div className='Profile' key={uuid()} style={{backgroundColor: this.state.bgColor}}>
                             <img src={profile.img} alt='profile-img' />
                             <div className='ProfileInfo' key={uuid()}>
                                 <h1>First name: <span>{profile.firstName}</span></h1>

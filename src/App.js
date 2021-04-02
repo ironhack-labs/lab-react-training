@@ -14,8 +14,9 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
-import FacebookSimple from './components/FacebookSimple';
+//import FacebookSimple from './components/FacebookSimple';
 import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
@@ -142,15 +143,25 @@ function App() {
       <h1>It.12 - NumbersTable</h1>
       <NumbersTable limit={12}/>
 
-      <hr/>
+      {/* <hr/> */}
 
-      <h1>It.13 - Facebook (Simple)</h1>
+      {/* <h1>It.13 - Facebook (Simple)</h1> */}
       {/* <FacebookSimple profiles={profiles} /> */}
 
       <hr/>
 
-      <h1>It.13 - Facebook (Advanced)</h1>
-      <Facebook profiles={profiles} />
+      <h1>It.13/14 - Facebook</h1>
+      {/* <Facebook profiles={profiles} /> */}
+
+      <hr/>
+
+      <h1>It.15 - Signup Page </h1>
+      <SignupPage />
+
+      <hr/>
+
+      <h1>It.16 - RGB Color Picker </h1>
+      {/* <Facebook profiles={profiles} /> */}
 
     </div>
   );

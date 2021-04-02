@@ -7,7 +7,6 @@ class Carousel extends React.Component {
     }    
 
     moveCarousel = (direction) => {
-        
         if (direction === 'left') {
             this.setState({
                 idx: (this.state.idx - 1) % this.props.imgs.length
