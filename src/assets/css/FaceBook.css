@@ -1,0 +1,17 @@
+.image-profile {
+    width:150px;
+    height: 100px;
+
+}
+
+.info-profile {
+    display:flex;
+    width:200px;
+    margin: 5px 0px;
+    padding: 10px;
+}
+
+.info-student {
+    padding-left: 12px;
+
+}
