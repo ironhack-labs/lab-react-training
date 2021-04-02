@@ -9,6 +9,9 @@ import Rating from './Rating';
 import DriverCard from './DriverCard'
 import LikeButton from './LikeButton';
 import ClickablePicture from './ClickablePicture'
+import Dice from './Dice'
+import Carousel from './Carousel'
+import NumbersTable from './NumbersTable';
 
 const Intro = () => {
     return (
@@ -117,6 +120,19 @@ const Intro = () => {
                     img='/img/persons/maxence.png'
                     imgClicked='/img/persons/maxence-glasses.png'
                 />
+                <h1>Iteration 10</h1>
+                <Dice/>
+                <h1>Iteration 11</h1>
+                <Carousel
+                    imgs={[
+                        'https://randomuser.me/api/portraits/women/1.jpg',
+                        'https://randomuser.me/api/portraits/men/1.jpg',
+                        'https://randomuser.me/api/portraits/women/2.jpg',
+                        'https://randomuser.me/api/portraits/men/2.jpg'
+                    ]}
+                />
+                <h1>Iteration 12</h1>
+                <NumbersTable/>
             </div>
         </div>
     )
