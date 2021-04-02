@@ -1,0 +1,17 @@
+.DriverCard{
+    background-color: #455EB5;
+    color:white;
+    margin: 10px;
+}
+
+.DriverCard img{
+    width:200px;
+    height:200px;
+    border-radius:150px;
+    margin: 10px;
+}
+
+.DriverDes{
+    margin-left: 20px;
+    margin-top: 5px;
+}
