@@ -37,7 +37,7 @@
   }
 }
 
-.IdCard, .Greetings, .BoxColor, .StarsSpan {
+.IdCard, .Greetings, .BoxColor, .StarsSpan, .Facebook {
   line-height: 0.5rem;
   max-width: 400px;
 }
@@ -99,7 +99,7 @@
   height: 100%;
 }
 
-.Carousel {
+.Carousel, .NumbersTable {
   display: flex;
   align-items: center;
   max-width: 400px;
@@ -108,4 +108,77 @@
 .Carousel .row {
   display: flex;
   align-items: center;
+}
+
+.numbersItem {
+  border:1px solid black;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+.Facebook img {
+  max-width: 120x;
+  max-height: 120px;
+}
+
+.FacebookBtn {
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+}
+
+.FacebookWrapper {
+  max-width: 400px;
+}
+
+.FacebookBtnClicked {
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+  background-color: black;
+  color: white
+}
+
+.FacebookBg {
+  background-color: skyblue;
+}
+
+.hidden {
+  display: none;
+}
+
+.colorPicker {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.colorDiv {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+}
+.colorDivRed {
+  border: 1px solid black;
+  background-color: rgb(255,0,0);
+  width: 30px;
+  height: 30px;
+}
+
+.colorDivGreen {
+  border: 1px solid black;
+  background-color: rgb(0,255,0);
+  width: 30px;
+  height: 30px;
+}
+
+.colorDivBlue {
+  border: 1px solid black;
+  background-color: rgb(0,0,255);
+  width: 30px;
+  height: 30px;
+}
+
+.colorInput {
+  width: 100px;
 }

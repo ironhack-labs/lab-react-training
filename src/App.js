@@ -11,6 +11,10 @@ import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
 import Carousel from './components/Carousel'
+import NumbersTable from './components/NumbersTable'
+import Facebook from './components/Facebook'
+import SignupPage from './components/SignupPage'
+import RGBColorPicker from './components/RGBColorPicker'
 
 function App() {
   return (
@@ -139,6 +143,22 @@ function App() {
             'https://randomuser.me/api/portraits/men/2.jpg'
           ]}
         />
+      </div>
+      <div className="container text-left my-4 pb-1">
+        <h1>NumbersTable</h1>
+          <NumbersTable limit={12} />
+      </div>
+      <div className="container text-left my-4 pb-1">
+        <h1>Facebook</h1>
+          <Facebook />
+      </div>
+      <div className="container text-left my-4 pb-1">
+        <h1>Form - SignupPage</h1>
+          <SignupPage />
+      </div>
+      <div className="container text-left my-4 pb-1">
+        <h1>RGBColorPicker</h1>
+          <RGBColorPicker />
       </div>
     </div>
   );
