@@ -17,6 +17,7 @@ import NumbersTable from './components/NumbersTable';
 //import FacebookSimple from './components/FacebookSimple';
 import Facebook from './components/Facebook';
 import SignupPage from './components/SignupPage';
+import SingleColorPicker from './components/SingleColorPicker';
 
 function App() {
   return (
@@ -151,17 +152,17 @@ function App() {
       <hr/>
 
       <h1>It.13/14 - Facebook</h1>
-      {/* <Facebook profiles={profiles} /> */}
+      <Facebook profiles={profiles} />
 
       <hr/>
 
       <h1>It.15 - Signup Page </h1>
       <SignupPage />
 
-      <hr/>
+      {/* <hr/>
 
       <h1>It.16 - RGB Color Picker </h1>
-      {/* <Facebook profiles={profiles} /> */}
+      <SingleColorPicker /> */}
 
     </div>
   );

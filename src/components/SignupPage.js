@@ -38,15 +38,15 @@ class SignupPage extends React.Component {
                 <form onSubmit={this.handleSubmit} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                     <input className="input mb-2" placeholder="Email" name="email" 
                         value={this.state.email} type="email" onChange={(e) => this.handleChange(e)} 
-                        style={{marginBottom: '0.5rem', width: '75%', height: '1.5rem'}} autoComplete="off"
+                        style={{marginBottom: '0.5rem', width: '75%', height: '1.5rem'}} autoComplete="off" required
                     />
                     <input className="input mb-2" placeholder="Password" name="password" 
                         value={this.state.password} type="password" onChange={(e) => this.handleChange(e)} 
-                        style={{marginBottom: '0.5rem', width: '75%', height: '1.5rem'}} autoComplete="off"
+                        style={{marginBottom: '0.5rem', width: '75%', height: '1.5rem'}} autoComplete="off" required
                     />
                     <select name="nationality" id="nationality" onChange={(e) => this.handleChange(e)}
-                        style={{marginBottom: '0.5rem', width: '76%', height: '1.8rem'}}>
-                        <option>Choose a nationality</option>
+                        style={{marginBottom: '0.5rem', width: '76%', height: '1.8rem'}} required>
+                        <option value="">Choose a nationality</option>
                         <option value="Hola">Spanish</option>
                         <option value="Olá">Portuguese</option>
                         <option value="Ciao">Italian</option>

@@ -41,7 +41,7 @@ class Facebook extends React.Component {
         
         return(
             <div className='FacebookCard'>
-            <button className='Sort' onClick={this.sortByLastName}>Sort by last name</button>
+            {/* <button className='Sort' onClick={this.sortByLastName}>Sort by last name</button> */}
             {
                 profiles.slice(0, this.state.limit).map((profile) => {
                     return (
