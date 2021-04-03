@@ -1,0 +1,31 @@
+.CreditCard {
+    position: relative;
+}
+
+.CreditCard img {
+    position: absolute;
+    top:10%;
+    right: 5%;
+}
+
+#number {
+    font-size: 28px;
+    position: relative;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+
+#date {
+    font-size: 16px;
+    position: absolute;
+    bottom: 12%;
+    left: 5%;
+}
+
+#owner {
+    font-size: 16px;
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+}
+
