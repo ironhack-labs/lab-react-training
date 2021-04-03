@@ -1,14 +1,15 @@
 .box__boxColor {
-    width: 600px;
+    width: 80%;
+    height: 80px;
     border: 1px black solid;
     padding: 5px;
-    margin: 40px;
+    margin: 4px;
     display: flex; 
     flex-direction: column;
     display: inline-block;
 }
 .codeColor{
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding: 20px;
 
 }

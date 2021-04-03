@@ -1,8 +1,7 @@
 import React from 'react';
-import "../assets/css/Greetings.css"
+import "../2. Greetings/Greetings.css"
 
 const Greeting = (props) => {
-  console.log(props);
 
   function language(language) {
     if (language === 'fr') return '¡Bonjour';

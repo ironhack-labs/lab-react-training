@@ -1,0 +1,59 @@
+.CreditCard {
+    max-width: 400px;
+    width: 350px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 40px;
+    border-radius: 10px;
+
+}
+
+.logo {
+    float: right;
+    margin-right: 16px;
+}
+
+.Visa {
+    max-height: 20px;
+    max-width: 70px;
+    margin-top: 20px;
+    
+}
+
+.Master {
+    max-height: 40px;
+    max-width: 70px;
+    margin-top: 12px;
+}
+
+.digits {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.inlineCard {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 15px;
+
+
+}
+.namebank {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.expires {
+    display: flex;
+}
+
+.owner {
+    display: flex;
+    justify-content: start;
+    margin-left: 25px;
+}

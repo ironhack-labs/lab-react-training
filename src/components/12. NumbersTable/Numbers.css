@@ -1,0 +1,13 @@
+.table {
+    max-width: 30%;
+    display: inline-block;
+    flex: auto;
+}
+
+.singletable {
+    width: 30px;
+    display: inline-block;
+    border: 1px solid black;
+    margin: 5px;
+
+}
