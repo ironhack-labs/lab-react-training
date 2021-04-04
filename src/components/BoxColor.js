@@ -18,7 +18,7 @@ const BoxColor = ({ r, g, b }) => {
     };
 
     return (
-        <div className="BoxColor border my-2 p-3" style={{ 'max-width': '800px', margin: '0 auto', 'background-color': `${fullColorHex(r, g, b)}` }}>
+        <div className="BoxColor border my-2 p-3" style={{ 'maxWidth': '800px', margin: '0 auto', 'backgroundColor': `${fullColorHex(r, g, b)}` }}>
 
             <h3 className="fw-light">rgb({r},{g},{b})</h3>
             <h3 className="fw-light">{fullColorHex(r, g, b)}</h3>

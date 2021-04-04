@@ -3,7 +3,7 @@ import moment from 'moment';
 
 const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
   return (
-      <div className="IdCard card mt-3 mb-3" style={{ 'max-width': '800px', 'margin': '0 auto' }}>
+      <div className="IdCard card mt-3 mb-3" style={{ 'maxWidth': '800px', 'margin': '0 auto' }}>
         <div className="row g-0">
           <div className="col-md-4 d-flex p-1">
             <img className="img-fluid" src={picture} alt={picture} />

@@ -3,8 +3,9 @@ import IdCard from './components/IdCard'
 import Greetings from './components/Gretings'
 import Random from './components/Random'
 import BoxColor from './components/BoxColor'
-import './App.css';
 import CardWrapper from './components/CardWrapper';
+import Rating from './components/Rating';
+import './App.css';
 
 function App() {
   return (
@@ -50,7 +51,18 @@ function App() {
       <BoxColor r={120} g={15} b={100} />
 
       <h2 className="m-5">Iteration 5️⃣</h2>
-      <CardWrapper/>
+      <CardWrapper />
+
+      <h2 className="m-5">Iteration 6️⃣</h2>
+
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
+      <Rating>6</Rating>
+      <Rating>7</Rating>
     </div>
   );
 }

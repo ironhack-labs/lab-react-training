@@ -7,7 +7,7 @@ const Random = ({ min, max }) => {
     }
 
     return (
-        <div className="Random border my-2 p-1" style={{ 'max-width': '800px', margin: '0 auto' }}>
+        <div className="Random border my-2 p-1" style={{ 'maxWidth': '800px', margin: '0 auto' }}>
 
             <h3 className="fw-light">
                 Random value between {min} and {max} ➡️ {random(min, max)}

@@ -13,7 +13,7 @@ const CreditCard = ({ number, expirationMonth, expirationYear, bank, owner, type
     return (
       <div
         className="CreditCard border  border-light rounded-3 m-3"
-        style={{ height: '190px', 'background-color': bgColor, color: color }}
+        style={{ height: '190px', 'backgroundColor': bgColor, color: color }}
       >
         <img
           src={'/img/' + `${cardLogo(type)}`}

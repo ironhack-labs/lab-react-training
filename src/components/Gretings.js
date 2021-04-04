@@ -14,7 +14,7 @@ const Gretings = ({ lang, children }) => {
     }
 
     return(
-        <div className="Gretings border my-2 p-1" style={{ 'max-width': '800px', 'margin': '0 auto' }}>
+        <div className="Gretings border my-2 p-1" style={{ 'maxWidth': '800px', 'margin': '0 auto' }}>
 
             <h3 className="fw-light"> 
                 { traslation(lang) } { children }
