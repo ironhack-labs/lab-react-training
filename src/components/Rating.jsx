@@ -17,7 +17,7 @@ const Rating = ({ children }) => {
 
     return(
         <div className="Raiting">
-            <h2 className="display-2">
+            <h2>
                 {starsRate(children)}           
             </h2>
         </div>
