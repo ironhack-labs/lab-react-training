@@ -1,0 +1,35 @@
+.SignupPage__form {
+    width: 50%
+}
+
+.SignupPage__form  > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px
+} 
+
+.SignupPage__form .SignupPage__input, select {
+    width: 70%
+}
+
+div.SignupPage__input {
+    display: flex;
+    justify-self: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.SignupPage__input input {
+    width: 100%
+}
+
+.SignupPage__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select {
+    height: 30px
+}

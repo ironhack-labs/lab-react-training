@@ -1,0 +1,12 @@
+.Lifting__color-box {
+    width: 30px;
+    height: 30px;
+}
+
+.Lifting__color-picker {
+    display: flex;
+}
+
+.Lifting__box {
+    width: 30%
+}
