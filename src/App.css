@@ -1,38 +1,79 @@
-.App {
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ITERATION 1 */
+.ids {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ITERATION 2 */
+.language {
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* ITERATION 4 */
+.box-color {
+  display: block;
+  text-align: center;
+}
+
+/* ITERATION 5 */
+.credit-card {
+  display: inline-flex;
+  justify-content: center;
+  width: auto;
+  margin-left: 2%;
+}
+.card {
+  border-radius: 10px;
+}
+.card-title {
+  margin-left: 70%;
+}
+.bank {
+  margin-left: 20%;
+}
+
+/* ITERATION 7 */
+.driver-card span {
+  background-color: rgb(76, 98, 196);
+  color: white;
+  display: inline-block;
+  justify-content: center;
+  width: 70%;
+  margin-left: 2%;
+  border-radius: 20px;
+}
+.driver-card img {
+  display: flex;
+  top: 40px;
+  margin-top: 10px;
+  margin-left: 200px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  align-items: flex-start;
+}
+.driver-card h3 {
+  display: flex;
+  left: 100px;
+  justify-content: flex-start;
+}
+.driver-card p {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
