@@ -77,3 +77,37 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
+/* ITERATION 8 */
+.like-button {
+  font-size: 20px;
+  background-color: purple;
+  color: white;
+  margin: 5px;
+}
+
+/* ITERATION 9 */
+.glass {
+  width: 200px;
+  height: 200px;
+}
+
+/* ITERATION 10 */
+.dice {
+  width: 20%;
+  height: 20%;
+}
+
+/* ITERATION 12 */
+.numbers-container {
+  display: flex;
+}
+
+.box {
+  padding: 30px;
+  border: solid 1px black;
+}
+
+.red-box {
+  background-color: red;
+}

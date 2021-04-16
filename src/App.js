@@ -9,6 +9,12 @@ import BoxColor from '../src/components/BoxColor';
 import CreditCard from '../src/components/CreditCard';
 import Rating from '../src/components/Rating';
 import DriverCard from '../src/components/DriverCard';
+import LikeButton from '../src/components/LikeButton';
+import ClickablePicture from '../src/components/ClickablePicture';
+import Dice from '../src/components/Dice';
+import Carousel from '../src/components/Carousel';
+import NumbersTable from '../src/components/NumbersTable';
+import FacebookSimple from '../src/components/FacebookSimple';
 
 // APP
 function App() {
@@ -127,6 +133,41 @@ function App() {
           }}
         />
       </div>
+
+      {/* ITERATION 8 */}
+      <h1>LikeButton</h1>
+      <LikeButton />
+      <LikeButton />
+
+      {/* ITERATION 9 */}
+      <h1>ClickablePicture</h1>
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+
+      {/* ITERATION 10 */}
+      <h1>Dice</h1>
+      <Dice />
+
+      {/* ITERATION 11 */}
+      <h1>Carousel</h1>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      {/* ITERATION 12 */}
+      <h1>NumbersTable</h1>
+      <NumbersTable limit={12} />
+
+      {/* ITERATION 13 */}
+      <h1>FacebookSimple</h1>
+      <FacebookSimple />
     </div>
   );
 }
