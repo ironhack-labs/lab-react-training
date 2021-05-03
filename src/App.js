@@ -1,9 +1,12 @@
 import React, { useReducer } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import IdCard from './IdCard';
 import Greetings from './Greetings';
 import Random from './Random';
+import BoxColour from './BoxColour';
+import CreditCard from './CreditCard';
+import Stars from './Stars';
 
 function App() {
   const peter = {
@@ -15,7 +18,7 @@ function App() {
     picture: 'https://randomuser.me/api/portraits/men/44.jpg',
   };
   const it2 = {
-    lang: 'de'
+    lang: 'de',
   };
   return (
     <div className="App">
@@ -32,7 +35,24 @@ function App() {
         <h1>GREETINGS</h1>
         <Greetings lang={it2.lang}>Simon</Greetings>
         <h1>Random</h1>
-        <Random min={1} max={100}/>
+        <Random min={1} max={100} />
+        <h1>BOX COLOUR</h1>
+        <BoxColour r={12} g={233} b={145} />
+        <BoxColour r={222} g={2} b={100} />
+        <h1>CREDIT CARD</h1>
+        <CreditCard
+          type="Visa"
+          number="123456789101112"
+          expirationMonth={2}
+          expirationYear={12}
+          bank="Commerzbank"
+          bgColor="purple"
+          color="green"
+          firstName="Bert"
+          lastName="Dingle"
+        />
+        <h1>RATING</h1>
+        <Stars>2</Stars>
       </header>
     </div>
   );
