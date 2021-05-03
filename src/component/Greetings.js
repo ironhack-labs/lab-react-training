@@ -4,7 +4,7 @@ const App = (props) => {
   const greetingsLang = { de: 'Hello', fr: 'Bonjour' };
   const greeting = greetingsLang[props.lang];
   return (
-    <div class="box">
+    <div className="box">
       {greeting} {props.children}
     </div>
   );
