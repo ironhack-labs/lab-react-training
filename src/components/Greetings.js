@@ -8,8 +8,10 @@ class Greetings extends React.Component {
         })
         const {lang,children} = this.props
         return (
-            <p>{pickLang(lang)} {children}</p>
-      );
+            <div className="greetings">
+                <p>{pickLang(lang)} {children}</p>
+            </div>
+      );    
     }
   }
   

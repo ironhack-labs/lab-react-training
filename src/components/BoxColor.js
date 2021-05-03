@@ -11,10 +11,9 @@ class BoxColor extends React.Component {
         };
         const {r,g,b} = this.props
         const divStyle = {
-        backgroundColor: `rgb(${r},${g},${b})`,
-        width:`100vw`}
+        backgroundColor: `rgb(${r},${g},${b})`}
         return (
-            <div style={divStyle}> <p>{`rgb(${r},${g},${b})`}</p><p>{rgbToHex(r)+rgbToHex(g)+rgbToHex(b)}</p></div>
+            <div style={divStyle} className="boxColor"> <p>{`rgb(${r},${g},${b})`}</p><p>{rgbToHex(r)+rgbToHex(g)+rgbToHex(b)}</p></div>
       );
     }
   }

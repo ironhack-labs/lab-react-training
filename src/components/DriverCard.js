@@ -22,13 +22,14 @@ class DriverCard extends React.Component {
                 return('error')
             }
         })
-        const divStyle={width:`150px`, borderRadius: `50%`}
         return (
-            <div>
-            <img src={img} alt={name} style={divStyle}/>
-            <p>{name}</p>
-            <p>{countStars(rating)}</p>
-            <p>{model}{licensePlate}</p>
+            <div className="driverCard">
+            <img src={img} alt={name}/>
+                <div className="driverCardText">
+                    <p>{name}</p>
+                    <p>{countStars(rating)}</p>
+                    <p>{model}-{licensePlate}</p>
+                </div>
             </div>
       );
     }

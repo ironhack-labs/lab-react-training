@@ -22,7 +22,7 @@ class Rating extends React.Component {
             }
         })
         return (
-            <div>{countStars(children)}</div>
+            <div className="rating">{countStars(children)}</div>
       );
     }
   }

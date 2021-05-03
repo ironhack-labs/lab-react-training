@@ -7,7 +7,9 @@ class Random extends React.Component {
         })
         const {min,max} = this.props
         return (
-            <p>Random value between {min} and {max} => {randomize(min,max)}</p>
+            <div className="random">
+                <p>Random value between {min} and {max} => {randomize(min,max)}</p>
+            </div>
       );
     }
   }
