@@ -5,6 +5,7 @@ import IdCard from './components/IdCard.js'
 import Greetings from './components/Greetings.js'
 import Random from './components/Random.js'
 import BoxColor from './components/BoxColor.js'
+import Rating from './components/Rating.js'
 
 
 function App() {
@@ -38,6 +39,13 @@ function App() {
 
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
+
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
 
 
     </div>
