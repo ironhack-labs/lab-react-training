@@ -7,7 +7,55 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+img{
+  margin: 5px;
+  width: 220px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.card{
+  margin: 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-rgb{
+  text-align: center;
+  margin: 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-driver{
+  width: 100vw;
+  margin: 10px;
+  color: white;
+  border-radius: 30px;
+  background-color:rgb(79, 94, 177);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card-driver-text{
+  width:20vw;
+}
+.card-driver-name{
+  font-size: 2rem;
+}
+.card-driver-p{
+  font-size: 1.5rem;
+}
+
+.img-driver{
+  margin: 15px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
