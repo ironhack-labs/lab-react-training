@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.box{
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.card {
+  display: flex;
+}
+
+.card img {
+  width: 200px;
+  margin-right: 30px;
+}
+
+.greet{
+  margin-left: 5px;
+  padding: 0;
+}
+
+.bluebox {
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.bluebox img {
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
