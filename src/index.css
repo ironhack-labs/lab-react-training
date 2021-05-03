@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.profileContainer{
+  display: flex;
+  flex-direction: row;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  width: 800px;
+  margin: 10px;
+}
+
+.profileContainer img{
+  padding: 20px;
+}
+.information{
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  padding: 10px;
+}
+
+.information p{
+  margin: 2px;
+}
