@@ -1,4 +1,8 @@
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +14,53 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid black;
+  background-color: beige;
+  width: 600px;
+  height: 150px;
+  margin: 10px 50px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.card-data{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 0;
+  padding: 0 20px;
+}
+.random{
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin: 10px;
+  border: 1px solid black;
+  height: 50px;
+}
+.driver-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: cornflowerblue;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.driver-card-objects{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 400px;
+  
+}
+.card-img{
+  width: 100px;
+  border-radius: 100%;
 }
