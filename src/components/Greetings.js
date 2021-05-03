@@ -4,7 +4,7 @@ class Greetings extends React.Component {
     
   traslation(langChoice) {
     let options = {
-      de: 'hallo',
+      de: 'Hallo',
       fr: 'Bonjour',
       es: 'Hola',
       en: 'Hello',
@@ -15,8 +15,8 @@ class Greetings extends React.Component {
   render() {
     const { lang, children } = this.props;
     return (
-      <div>
-        <h3 className="fw-light">
+      <div className='greetings'>
+        <h3>
           {this.traslation(lang)} {children}
         </h3>
       </div>
