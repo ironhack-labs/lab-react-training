@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    justify-content: left;
+    width: 500px;
+    margin: 10px;
+    border:solid;
+    padding: 10px;
+}
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;  
+}
+img{
+width: 150px;
+padding: 10px;
+}
+
+p{
+    font-size: 10px; 
+}
+
+
+.colors{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    margin: 10px;
+    border:solid;
+    padding: 10px;
+}
+
+.carddiv{
+ border-radius: 10px;
+ width: 160px
+}
