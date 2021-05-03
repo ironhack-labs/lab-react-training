@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -94,6 +94,7 @@
   width: 80vw;
   margin: 0 auto;
   margin-bottom: 5px;
+  text-align: center;
 }
 .boxColor p{
   margin: 0
@@ -101,6 +102,7 @@
 
 .rating{
   text-align: left;
+  font-size: 3rem;
 }
 
 .driverCard{
@@ -113,6 +115,8 @@
   margin-bottom: 15px;
   background-color: rgb(79, 94, 177);
   border-radius: 30px;
+  color: white;
+  font-size: 1.5rem;
 }
 .driverCard img{
   width: 150px;
