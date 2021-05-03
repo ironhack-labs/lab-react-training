@@ -1,0 +1,29 @@
+.credit-card {
+  width: 400px;
+  border-radius: 30px;
+  padding: 20px;
+}
+.type {
+  font-size: 1rem;
+  text-align: right;
+}
+
+.card-number {
+  width: 100%;
+  font-size: 2.5rem;
+  padding-top: 10%;
+}
+
+.details {
+  display: flex;
+}
+
+.details p {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.credit-card img {
+  width: 15%;
+  float: right;
+}
