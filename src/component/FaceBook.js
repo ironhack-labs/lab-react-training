@@ -1,7 +1,5 @@
 import React from 'react';
 import profiles from '../data/berlin.json';
-const countries = ['ALL', ...new Set(profiles.map((item) => item.country))];
-let chosenCountry = 'ALL';
 
 class App extends React.Component {
   createList = (profile, i) => {
@@ -25,31 +23,36 @@ class App extends React.Component {
     <button
       onClick={() => this.clickHandler(country)}
       key={'faceclick' + i}
-      className={chosenCountry === country ? 'butactive' : 'butnormal'}
+      className={this.chosenCountry === country ? 'butactive' : 'butnormal'}
     >
       {country}
     </button>
   );
 
-  state = {
-    list: profiles.map(this.createList),
-    buttons: countries.map(this.createButton),
-  };
+  constructor(props) {
+    super(props);
+    this.countries = ['ALL', ...new Set(profiles.map((item) => item.country))];
+    this.chosenCountry = 'ALL';
+    this.state = {
+      list: profiles.map(this.createList),
+      buttons: this.countries.map(this.createButton),
+    };
+  }
 
   clickHandler = (passedCountry) => {
-    chosenCountry = passedCountry;
+    this.chosenCountry = passedCountry;
     this.setState((state, props) => {
-      if (chosenCountry !== 'ALL') {
+      if (this.chosenCountry !== 'ALL') {
         return {
           list: profiles
-            .filter((profile) => profile.country === chosenCountry)
+            .filter((profile) => profile.country === this.chosenCountry)
             .map(this.createList),
-          buttons: countries.map(this.createButton),
+          buttons: this.countries.map(this.createButton),
         };
       } else {
         return {
           list: profiles.map(this.createList),
-          buttons: countries.map(this.createButton),
+          buttons: this.countries.map(this.createButton),
         };
       }
     });
