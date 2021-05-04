@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import BoxColor from './components/boxcolor/BoxColor';
+import ClickablePicture from './components/clickablepicture/ClickablePicture';
 import CreditCard from './components/creditcard/CreditCard';
 import Dice from './components/dice/Dice';
 import DriverCard from './components/drivercard/DriverCard';
@@ -109,6 +110,12 @@ function App() {
 
       <h2>Iteration 8 - LikeButton</h2>
       <LikeButton></LikeButton>
+
+      <h2>Iteration 9 - ClickablePicture</h2>
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
 
       <h2>Iteration 10 - Dice</h2>
       <Dice />
