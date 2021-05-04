@@ -7,8 +7,17 @@ import BoxColor from './Components/BoxColor';
 import CreditCard from './Components/CreditCard';
 import Rating from './Components/Rating';
 import DriverCard from './Components/DriverCard';
+import LikeButton from './Components/LikeButton';
 
 class App extends React.Component {
+  state = {
+    like: 0,
+  };
+
+  addLike = () => {
+    this.setState({ like: this.state.like + 1 });
+  };
+
   render() {
     return (
       <div className="App">
@@ -21,7 +30,6 @@ class App extends React.Component {
           birth={new Date('1992-07-14').toDateString()}
           picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
-
         <IdCard
           lastName="Delores "
           firstName="Obrien"
@@ -30,19 +38,15 @@ class App extends React.Component {
           birth={new Date('1988-05-11').toDateString()}
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
-
         <h1>Iteration 2</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
-
         <h1>Iteration 3</h1>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
-
         <h1>Iteration 4</h1>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
-
         <h1>Iteration 5</h1>
         <CreditCard
           type="Visa"
@@ -74,7 +78,6 @@ class App extends React.Component {
           bgColor="#ddbb55"
           color="white"
         />
-
         <h1>Iteration 6</h1>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
@@ -82,7 +85,6 @@ class App extends React.Component {
         <Rating>3</Rating>
         <Rating>4</Rating>
         <Rating>5</Rating>
-
         <h1>Iteration 7</h1>
         <DriverCard
           name="Travis Kalanick"
@@ -102,6 +104,8 @@ class App extends React.Component {
             licensePlate: 'BE33ER',
           }}
         />
+        <h1>Iteration 8</h1>
+        <LikeButton /> <LikeButton />
       </div>
     );
   }
