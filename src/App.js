@@ -2,9 +2,31 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import IdCard from './components/idcard/IdCard';
+
+
 function App() {
   return (
     <div className="App">
+
+      <IdCard
+        lastName='Doe'
+        firstName='John'
+        gender='male'
+        height={178}
+        birth={new Date("1992-07-14")}
+        picture="https://randomuser.me/api/portraits/men/44.jpg"
+      />
+
+      <IdCard
+        lastName='Delores '
+        firstName='Obrien'
+        gender='female'
+        height={172}
+        birth={new Date("1988-05-11")}
+        picture="https://randomuser.me/api/portraits/women/44.jpg"
+      />
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -26,42 +48,16 @@ function App() {
 export default App;
 
 
-function IdCard(lastName, firstName, gender, height, birth, picture) {
-  return (
-  <img src=picture/>
-  <div>
-    First name: {firstName}
-    Last name: {lastName}
-    Gender: {gender}
-    Height: {height}
-    Birth: {birth}
-  </div>; )
-
-}
 
 
-function Greetings(lang, children) {
-  if (lang == "de") {
-    return <div>Hallo {children}</div>
-  }
-
-  if (lang == "en") {
-    return <div>Hello {children}</div>
-  }
-
-  if (lang == "es") {
-    return <div>Hola {children}</div>
-  }
-
-  if (lang == "fr") {
-    return <div>Salut {children}</div>
-  }
-
-}
 
 
-function Random(min, max) {
-  let value = Math.floor(Math.random() * max)
 
-  return <div>Random value between {min} and {max} =>  </div>
-}
+
+
+
+const divStyle = {
+  color: rgb(r,g,b),
+  backgroundImage: 'url(' + imgUrl + ')',
+};
+
