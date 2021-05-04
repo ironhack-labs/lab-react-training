@@ -24,6 +24,13 @@
   color: white;
 }
 
+.cardContainer {
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -32,6 +39,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
