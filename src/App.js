@@ -11,6 +11,7 @@ import DriverCard from './component/DriverCard';
 import LikeButton from './component/LikeButton';
 import ClickablePicture from './component/ClickablePicture';
 import Dice from './component/Dice';
+import Carousel from './component/Carousel';
 
 function App() {
   return (
@@ -111,6 +112,19 @@ function App() {
 
       <h1>Dice</h1>
       <Dice />
+      <Dice />
+      <Dice />
+
+      <h1>Carousel</h1>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
       <br />
       <br />
       <br />
