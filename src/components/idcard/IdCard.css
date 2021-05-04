@@ -1,0 +1,9 @@
+.id-card{
+    border: 1px solid black;
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+.card-picture{
+    margin-right: 5px;
+}
