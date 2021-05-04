@@ -9,13 +9,13 @@ export default class Carousel extends React.Component {
   }
   clickUp = () => {
     this.setState({
-        img: clamp((this.state.img +1),0,3) 
-    })
+      img: clamp(this.state.img + 1, 0, 3),
+    });
   };
   clickDown = () => {
     this.setState({
-        img: clamp((this.state.img -1),0,3) 
-    })
+      img: clamp(this.state.img - 1, 0, 3),
+    });
   };
 
   render() {
@@ -30,5 +30,5 @@ export default class Carousel extends React.Component {
 }
 
 function clamp(val, min, max) {
-    return val > max ? min : val < min ? max : val;
+  return val > max ? min : val < min ? max : val;
 }

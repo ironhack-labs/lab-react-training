@@ -97,7 +97,7 @@ function App() {
           ]}
         ></Carousel>
         <h1>NUMBERS TABLE</h1>
-        <NumbersTable limit={12} />
+        <NumbersTable limit={50} />
       </header>
     </div>
   );
