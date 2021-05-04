@@ -8,6 +8,10 @@ import CreditCard from './Components/CreditCard';
 import Rating from './Components/Rating';
 import DriverCard from './Components/DriverCard';
 import LikeButton from './Components/LikeButton';
+import ClickablePicture from './Components/ClickablePicture';
+import Dice from './Components/Dice';
+import NumbersTable from './Components/NumbersTable';
+import FaceBook from './Components/FaceBook';
 
 class App extends React.Component {
   state = {
@@ -106,6 +110,17 @@ class App extends React.Component {
         />
         <h1>Iteration 8</h1>
         <LikeButton /> <LikeButton />
+        <h1>Iteration 9</h1>
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
+        <h1>Iteration 10</h1>
+        <Dice />
+        <h1>Iteration 12</h1>
+        <NumbersTable limit={12} />
+        <h1>Iteration 13</h1>
+        <FaceBook />
       </div>
     );
   }
