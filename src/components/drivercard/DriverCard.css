@@ -1,0 +1,27 @@
+.drivercard-container{
+    background-color: #455EB5;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    border-radius: 15px;
+    width: 50%;
+}
+.img-box > img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.info-box{
+    color: white;
+}
+.name-label{
+    font-weight: 600;
+    font-size: 26px;
+}
+.rating-label{
+    
+}

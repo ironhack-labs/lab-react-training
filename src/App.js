@@ -3,6 +3,7 @@ import './App.css';
 import BoxColor from './components/boxcolor/BoxColor';
 import CreditCard from './components/creditcard/CreditCard';
 import Dice from './components/dice/Dice';
+import DriverCard from './components/drivercard/DriverCard';
 import Greetings from './components/greetings/Greetings';
 import IdCard from './components/idcard/IdCard';
 import Random from './components/random/Random';
@@ -11,7 +12,7 @@ import Rating from './components/rating/Rating';
 function App() {
   return (
     <div className="main-container">
-    <h2>Iteration 1 - ID Cards</h2>
+      <h2>Iteration 1 - ID Cards</h2>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -28,7 +29,7 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-      
+
       <h2>Iteration 2 - Greetings</h2>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
@@ -36,11 +37,11 @@ function App() {
       <h2>Iteration 3 - Random numbers</h2>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-      
+
       <h2>Iteration 4 - Box color</h2>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-      
+
       <h2>Iteration 5 - Credit Cards</h2>
       <section id="credit-cards">
         <CreditCard
@@ -74,7 +75,7 @@ function App() {
           color="white"
         />
       </section>
-      
+
       <h2>Iteration 6 - Ratings</h2>
       <section id="ratings">
         <Rating>0</Rating>
@@ -84,6 +85,26 @@ function App() {
         <Rating>4</Rating>
         <Rating>5</Rating>
       </section>
+
+      <h2>Iteration 7 - DriverCard</h2>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
+        }}
+      />
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
+      />
 
       <h2>Iteration 10 - Dice</h2>
       <Dice />
