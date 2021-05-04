@@ -1,0 +1,8 @@
+button.like-button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  margin: 5px;
+  color: white;
+  border-radius: 5px;
+}

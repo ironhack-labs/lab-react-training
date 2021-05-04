@@ -1,0 +1,47 @@
+/* <div className="driver-card">
+<div className="avatar">
+  <img src={props.img} alt={props.name} />
+</div>
+<div className="driver-card-details">
+  <div className="name">{props.name}</div>
+  <div className="rating">
+    <Rating>{props.rating}</Rating>
+  </div>
+  <div className="car">
+    {props.car.model} {props.car.licensePlate}
+  </div>
+</div>
+</div> */
+
+.driver-card {
+  display: flex;
+  width: 300px;
+  height: 150px;
+  flex-direction: row;
+  background-color: #455eb5;
+  border-radius: 25px;
+  color: white;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+/* improve proportions -> https://stackoverflow.com/questions/26681059/create-a-circle-avatar-from-a-rectangle-image-keeping-proportions-and-just-using */
+.avatar {
+  width: 50%;
+}
+
+.avatar img {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.rating,
+.car {
+  font-size: 0.5rem;
+}
+
+.driver-card-details {
+  text-align: left;
+}

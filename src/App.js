@@ -7,6 +7,13 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
 
 function App() {
   return (
@@ -80,6 +87,54 @@ function App() {
         <Rating>3</Rating>
         <Rating>4</Rating>
         <Rating>5</Rating>
+        <br />
+        <br />
+        <DriverCard
+          name="Travis Kalanick"
+          rating={4.2}
+          img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+          car={{
+            model: 'Toyota Corolla Altis',
+            licensePlate: 'CO42DE',
+          }}
+        />
+        <DriverCard
+          name="Dara Khosrowshahi"
+          rating={4.9}
+          img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+          car={{
+            model: 'Audi A3',
+            licensePlate: 'BE33ER',
+          }}
+        />
+        <br />
+        <br />
+        <LikeButton /> <LikeButton />
+        <br />
+        <br />
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
+        <br />
+        <br />
+        <Dice />
+        <br />
+        <br />
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
+        />
+        <br />
+        <br />
+        <NumbersTable limit={12} />
+        <br />
+        <br />
+        <FaceBook />
       </header>
     </div>
   );
