@@ -1,10 +1,11 @@
 import React from 'react'
+import styled from 'styled-components'
 
 class Random extends React.Component{
 
     randomNumber(){
         const {min, max}=this.props
-        return Math.floor(Math.random()*(max-min+1))+1
+        return Math.floor(Math.random()*(max-min+1))+min
     }
 
     render(){
