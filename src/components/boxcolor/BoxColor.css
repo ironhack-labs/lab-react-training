@@ -1,0 +1,11 @@
+.boxcolor-container{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-color{
+    color: white;
+}
