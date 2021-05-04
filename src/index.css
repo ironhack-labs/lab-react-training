@@ -119,3 +119,12 @@ code {
   justify-content: center;
   align-items: center;
 }
+.boxred {
+  background-color: red;
+}
+.boxblue {
+  background-color: #425cbb;
+}
+.faceBook .IdCard img {
+  max-height: 128px;
+}
