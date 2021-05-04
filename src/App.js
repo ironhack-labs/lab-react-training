@@ -8,6 +8,14 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import dude from './img/persons/maxence.png';
+import dudeGlasses from './img/persons/maxence-glasses.png';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
 
 export default class App extends Component {
   render() {
@@ -91,6 +99,27 @@ export default class App extends Component {
             model: "Audi A3",
             licensePlate: "BE33ER"
           }} />
+        <LikeButton />
+
+        <ClickablePicture
+          img={dude}
+          imgClicked={dudeGlasses}
+        />
+
+        <Dice />
+
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+
+        <NumbersTable limit={12} />
+        
+        <FaceBook />
       </div>
     )
   }

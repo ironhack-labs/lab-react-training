@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.Numbers{
+  display: flex;
+  padding-top: 20px;
+}
+
+.NumberTile{
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.profile{
+  display: flex;
+  border: 1px solid black;
+  width: 50%;
+  margin: 20px;
+}
+
+.profile > img{
+  width: 200px;
+}
+
+.randomDice > img{
+  width: 200px;
+}

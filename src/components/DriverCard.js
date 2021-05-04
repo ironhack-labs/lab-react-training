@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function DriverCard(props) {
-    console.log(props);
     let rating = Math.round(props.rating)
     let full = String.fromCharCode(9733);
     let empty= String.fromCharCode(9734);
