@@ -19,7 +19,7 @@ class Rating extends React.Component {
     render() {
         const {children} = this.props
      return (
-         <div className='greetings'>
+         <div className='Rating'>
         <h2>{this.starsRate(children)}</h2>
          </div>
      )

@@ -12,21 +12,40 @@ code {
     monospace;
 }
 
-.card {
+.IdCard {
   display: flex;
   max-width: 900px;
   margin: 0 auto;
   border: 1px solid black;
-  padding: 10px;
+  padding: 7px;
   margin-bottom: 20px;
+  .list {
+    list-style: none;
+    text-align: start;
+  }
 }
 
-.list {
-  list-style: none;
+.Greetings{
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding-left: 9px;
   text-align: start;
+  margin-bottom: 10px;
 }
-
-.greetings{
+.Random{
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding-left: 9px;
+  text-align: start;
+  margin-bottom: 10px; 
+}
+/* .BoxColor {
+  max-width: 800px;
+  margin: 0 auto;
+} */
+.Rating {
   max-width: 900px;
   margin: 0 auto;
   border: 1px solid black;
@@ -35,31 +54,31 @@ code {
   margin-bottom: 10px;
 }
 
-.boxColor {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.driverCard{
+.DriverCard{
   display: flex;
   background-color: rgb(79, 94, 177);
   border-radius: 30px;
-  padding: 30px;
+  padding: 20px;
   color: white;
   max-width: 900px;
   margin: 0 auto;
   margin-bottom: 20px;
   justify-content: center;
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  .driverCardInfo{
+    text-align: start;
+    width: 225px;
+  }
 }
 
-.driverCardImg > img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-right: 30px;
+.ClickablePicture {
+  img {
+    width: 150px;
+  }
 }
 
-.driverCardInfo{
-  text-align: start;
-  width: 225px;
-}

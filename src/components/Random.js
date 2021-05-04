@@ -7,7 +7,7 @@ class Random extends React.Component {
     render() {
     const {min, max} = this.props
      return (
-     <div className='greetings'>
+     <div className='Random'>
          <h4>Random number between {min} and {max} : {this.randomNumber(min, max)}</h4>
      </div>
      )
