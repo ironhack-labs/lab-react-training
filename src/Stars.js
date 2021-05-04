@@ -7,6 +7,6 @@ export default function Greetings(props) {
 function stars(amount) {
   var fullSt = String.fromCharCode(9733);
   var emptySt = String.fromCharCode(9734);
-  var empty = 5 - amount;
-  return fullSt.repeat(amount)+emptySt.repeat(empty);
+  var empty = 5 - Math.round(amount);
+  return fullSt.repeat(Math.round(amount))+emptySt.repeat(empty);
 }

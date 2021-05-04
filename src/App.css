@@ -44,3 +44,28 @@ body{
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.DriverCard{
+  border: solid black 2px;
+  padding: 5px;
+}
+
+.DriverCard>img{
+  height:150px;
+  border-radius: 50%;
+}
+
+.LikeButton>button{
+  height: 60px;
+  width: 120px;
+  background-color: blueviolet;
+}
+
+.ClickablePicture{
+  border: solid black 2px;
+  padding: 5px;
+}
+
+.ClickablePicture>img{
+  height: 100px;
+}
