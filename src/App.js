@@ -6,6 +6,7 @@ import Dice from './components/dice/Dice';
 import DriverCard from './components/drivercard/DriverCard';
 import Greetings from './components/greetings/Greetings';
 import IdCard from './components/idcard/IdCard';
+import LikeButton from './components/likebutton/LikeButton';
 import Random from './components/random/Random';
 import Rating from './components/rating/Rating';
 
@@ -105,6 +106,9 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+
+      <h2>Iteration 8 - LikeButton</h2>
+      <LikeButton></LikeButton>
 
       <h2>Iteration 10 - Dice</h2>
       <Dice />
