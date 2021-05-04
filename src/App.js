@@ -7,11 +7,15 @@ import BoxColor from './components/BoxColor'
 import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
 import CreditCard from './components/CreditCard'
+import Dice from './components/Dice'
+import LikeButton from './components/LikeButton'
+import ClickablePicture from './components/ClickablePicture'
+import Carousel from './components/Carousel'
 
 function App() {
   return (
     <div>
-      <h1>Id Card</h1>
+      {/* <h1>Id Card</h1>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -99,6 +103,24 @@ function App() {
         owner="Firstname Lastname"
         bgColor="#ddbb55"
         color="white"
+      /> */}
+      <h1>LikeButton</h1>
+      <LikeButton /> <LikeButton />
+      <h1>ClickablePicture</h1>
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+      <h1>Dice</h1>
+      <Dice />
+      <h1>Carousel</h1>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
       />
     </div>
   )

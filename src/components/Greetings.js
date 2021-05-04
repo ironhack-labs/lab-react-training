@@ -11,6 +11,8 @@ class Greetings extends React.Component{
                 return "Bonjour"
             case "en": 
                 return "Hello"
+            default:
+                return "Hola que ase"
         }
     }
 
