@@ -1,0 +1,8 @@
+#IdCard {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    border: 5px black solid;
+    padding: 10px;
+    margin: 10px;
+}

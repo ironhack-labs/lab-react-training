@@ -1,0 +1,28 @@
+#creditCardDiv {
+    width: 375px;
+    height: 215px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+#creditCardDiv > img {
+    width: 90px;
+    align-self: flex-end;
+}
+
+#creditCardDiv > h2 {
+    align-self: center;
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+#creditCardDiv div {
+    padding: 4px 10px ;
+}
+
+#creditCardDiv span {
+    margin-left: 25px;
+}
