@@ -8,7 +8,9 @@ import BoxColor from './components/BoxColor.js';
 import Rating from './components/Rating.js';
 import DriverCard from './components/DriverCard.js';
 import CreditCard from './components/CreditCard.js';
-
+import LikeButton from './components/LikeButton.js';
+import ClickablePicture from './components/ClickablePicture.js';
+import Dice from './components/Dice.js';
 function App() {
   return (
     <header className="App-header">
@@ -101,6 +103,21 @@ function App() {
   owner="Firstname Lastname"
   bgColor="#ddbb55"
   color="white" />
+
+<h1>LikeButton</h1>
+<LikeButton /> <LikeButton />
+
+<h1>ClickablePicture</h1>
+<ClickablePicture
+  img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'
+/>
+
+<h1>Dice</h1>
+
+<Dice />
+
+
       </div>
     </header>
   );
