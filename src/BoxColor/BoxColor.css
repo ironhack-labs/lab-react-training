@@ -1,0 +1,13 @@
+.boxcolor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.boxcolor-container h4 {
+  font-weight: normal;
+  margin: 5px 0;
+}

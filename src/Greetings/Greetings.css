@@ -1,0 +1,13 @@
+.greeting-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.greeting-container h2 {
+  margin-left: 10px;
+  font-weight: normal;
+}
