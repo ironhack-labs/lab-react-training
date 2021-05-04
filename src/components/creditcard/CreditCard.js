@@ -12,7 +12,7 @@ function CreditCard({type, number, expirationMonth, expirationYear, bank, owner,
     return(
         <article className="credit-card-container" style={{backgroundColor: bgColor}}>
             <div className="logo-container">
-                <img className="card-logo" src={'/img/' + type + ext}></img>
+                <img className="card-logo" src={'/img/' + type + ext} alt=""></img>
             </div>
             <div className="number-container">
                 <p className="card-number" style={{color}}>{visaHidden + number.slice(-4)}</p>

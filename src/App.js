@@ -2,13 +2,16 @@ import React from 'react';
 import './App.css';
 import BoxColor from './components/boxcolor/BoxColor';
 import CreditCard from './components/creditcard/CreditCard';
+import Dice from './components/dice/Dice';
 import Greetings from './components/greetings/Greetings';
 import IdCard from './components/idcard/IdCard';
 import Random from './components/random/Random';
+import Rating from './components/rating/Rating';
 
 function App() {
   return (
     <div className="main-container">
+    <h2>Iteration 1 - ID Cards</h2>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -25,16 +28,20 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-
+      
+      <h2>Iteration 2 - Greetings</h2>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
 
+      <h2>Iteration 3 - Random numbers</h2>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
+      
+      <h2>Iteration 4 - Box color</h2>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
+      
+      <h2>Iteration 5 - Credit Cards</h2>
       <section id="credit-cards">
         <CreditCard
           type="Visa"
@@ -67,6 +74,19 @@ function App() {
           color="white"
         />
       </section>
+      
+      <h2>Iteration 6 - Ratings</h2>
+      <section id="ratings">
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+      </section>
+
+      <h2>Iteration 10 - Dice</h2>
+      <Dice />
     </div>
   );
 }
