@@ -7,6 +7,12 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import Rating from './components/Rating.js';
 import DriverCard from './components/DriverCard.js';
+// import CreditCard from './components/CreditCard.js'
+import LikeButton from './components/LikeButton.js'
+import ClickablePicture from './components/ClickablePicture.js'
+import Dice from './components/Dice.js'
+import Carousel from './components/Carousel.js'
+
 
 // const users = [
 //   {lastName:'Doe', firstName:'John', gender:'male', height:178, birth:new Date("1992-07-14"), picture:"https://randomuser.me/api/portraits/men/44.jpg"},
@@ -16,6 +22,24 @@ import DriverCard from './components/DriverCard.js';
 function App() {
   return (
     <div className="App">
+
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <Dice />
+
+      <ClickablePicture
+        img='/img/persons/maxence.png'
+        imgClicked='/img/persons/maxence-glasses.png'
+      />
+
+      <LikeButton /> <LikeButton />
 
       <DriverCard
         name="Travis Kalanick"
