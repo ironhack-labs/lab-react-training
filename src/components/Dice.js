@@ -2,19 +2,25 @@ import React from 'react';
 
 class Dice extends React.Component {
 
-    state = {
-        image: this.props.img
-    }
-    setImage(){
-      if(this.state.image === this.props.img){this.setState({image: this.props.imgClicked})}
-      else{this.setState({image: this.props.img})}
-    }
-   
+  state = {
+    dice: 1,
+  };
+
+  setDice() {
+    this.setState({dice: `-empty`})
+    setTimeout(() => {
+    this.setState({dice:Math.floor(Math.random() * 6 + 1)}); 
+    }, 1000);
+  }
+
   render() {
-    console.log(this.state.image)
     return (
-      <div className="Dice">
-        <img src= {process.env.PUBLIC_URL + this.state.image} alt="" onClick={()=>this.setImage()}/>
+      <div className="dice">
+        <img
+          src={process.env.PUBLIC_URL + `/img/dice${this.state.dice}.png`}
+          alt=""
+          onClick={()=>this.setDice()}
+        />
       </div>
     );
   }

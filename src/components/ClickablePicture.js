@@ -13,7 +13,7 @@ class ClickablePicture extends React.Component {
   render() {
     console.log(this.state.image)
     return (
-      <div className="ClickablePicture">
+      <div className="clickablePicture">
         <img src= {process.env.PUBLIC_URL + this.state.image} alt="" onClick={()=>this.setImage()}/>
       </div>
     );
