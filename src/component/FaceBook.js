@@ -1,6 +1,7 @@
 import React from 'react';
 import profiles from '../data/berlin.json';
-const countries = [...new Set(profiles.map((item) => item.country))];
+const countries = ['ALL', ...new Set(profiles.map((item) => item.country))];
+let chosenCountry = 'ALL';
 
 class App extends React.Component {
   createList = (profile, i) => {
@@ -21,7 +22,11 @@ class App extends React.Component {
     );
   };
   createButton = (country, i) => (
-    <button onClick={() => this.clickHandler(country)} key={'faceclick' + i}>
+    <button
+      onClick={() => this.clickHandler(country)}
+      key={'faceclick' + i}
+      className={chosenCountry === country ? 'butactive' : 'butnormal'}
+    >
       {country}
     </button>
   );
@@ -31,22 +36,15 @@ class App extends React.Component {
     buttons: countries.map(this.createButton),
   };
 
-  clickHandler = (info) => {
+  clickHandler = (passedCountry) => {
+    chosenCountry = passedCountry;
     this.setState((state, props) => {
-      if (typeof info === 'string') {
+      if (chosenCountry !== 'ALL') {
         return {
           list: profiles
-            .filter((profile) => profile.country === info)
+            .filter((profile) => profile.country === chosenCountry)
             .map(this.createList),
-          buttons: countries.map((country, i) => (
-            <button
-              onClick={() => this.clickHandler(country)}
-              key={'faceclick' + i}
-              className={info === country ? 'butactive' : ''}
-            >
-              {country}
-            </button>
-          )),
+          buttons: countries.map(this.createButton),
         };
       } else {
         return {
@@ -60,12 +58,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="faceBookAdvanced">
-        <div className="faceBookButtons">
-          <button key="faceclickall" onClick={this.clickHandler}>
-            ALL
-          </button>
-          {this.state.buttons}
-        </div>
+        <div className="faceBookButtons">{this.state.buttons}</div>
         <div className="faceBook">{this.state.list}</div>
       </div>
     );

@@ -128,3 +128,7 @@ code {
 .faceBook .IdCard img {
   max-height: 128px;
 }
+
+.butactive {
+  background-color: #425cbb;
+}
