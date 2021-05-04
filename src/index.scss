@@ -7,9 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-img{
-  margin: 5px;
-  width: 220px;
+img {
+  width: 140px;
 }
 
 code {
@@ -17,14 +16,23 @@ code {
     monospace;
 }
 
-.card{
+.card {
+  padding: 5px;
   margin: 10px;
   border: 2px solid black;
+  line-height: 1.3;
   display: flex;
   flex-direction: row;
+  p {
+    margin: 0px;
+    font-weight: bold;
+    span {
+      font-weight: lighter;
+    }
+  }
 }
 
-.card-rgb{
+.card-rgb {
   text-align: center;
   margin: 10px;
   border: 2px solid black;
@@ -32,28 +40,28 @@ code {
   flex-direction: row;
 }
 
-.card-driver{
+.card-driver {
   width: 100vw;
   margin: 10px;
   color: white;
   border-radius: 30px;
-  background-color:rgb(79, 94, 177);
+  background-color: rgb(79, 94, 177);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.card-driver-text{
-  width:20vw;
+.card-driver-text {
+  width: 20vw;
 }
-.card-driver-name{
+.card-driver-name {
   font-size: 2rem;
 }
-.card-driver-p{
+.card-driver-p {
   font-size: 1.5rem;
 }
 
-.img-driver{
+.img-driver {
   margin: 15px;
   width: 200px;
   height: 200px;
