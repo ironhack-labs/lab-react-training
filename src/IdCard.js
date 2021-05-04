@@ -1,5 +1,5 @@
 import React from 'react';
-import './IdCard.css';
+
 
 export default function (props) {
     return (

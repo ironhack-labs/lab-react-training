@@ -1,4 +1,4 @@
-import './IdCard.css'
+
 
 export default function (props) {
 
@@ -14,10 +14,10 @@ export default function (props) {
 
     return (
         <div className='carddiv' style={{ backgroundColor: `${props.bgColor}` }}>
-            <div>
-                <p style={{ color: `${props.color}` }}> {result}</p>
+            <div className='logoC'>
+                {props.type === 'Visa' ? <img src='/img/visa.png' alt="" /> : <img src='/img/master-card.svg' alt="" />}
             </div>
-            <p style={{ color: `${props.color}` }}>{props.number}</p>
+            <p style={{ color: `${props.color}` }}>{result}</p>
             <div>
                 <p style={{ color: `${props.color}` }}>Expires: {props.expirationMonth}/{props.expirationYear}     {props.bank}</p>
                 <p style={{ color: `${props.color}` }}>{props.owner}</p>

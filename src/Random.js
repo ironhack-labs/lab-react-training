@@ -1,4 +1,4 @@
-import './IdCard.css'
+
 
 export default function (props) {
     let result = Math.floor(Math.random() * (props.max - props.min) + props.min);
