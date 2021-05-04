@@ -7,17 +7,17 @@ class State extends React.Component {
     name: 'German',
     numberImg: 1,
   };
-  changeName = () => {
+  changeName() {
     if (this.state.name === 'German') {
       this.setState({ name: 'Pedro' });
     } else if (this.state.name === 'Pedro') {
       this.setState({ name: 'German' });
     }
-  };
-  changeGif = () => {
+  }
+  changeGif() {
     const randomNum = Math.floor(Math.random() * 5) + 1;
     this.setState({ numberImg: randomNum });
-  };
+  }
   render() {
     return (
       <div className="State">

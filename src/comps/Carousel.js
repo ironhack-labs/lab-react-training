@@ -6,20 +6,20 @@ class Carousel extends React.Component {
   state = {
     counter: 0,
   };
-  nextPhoto = () => {
+  nextPhoto() {
     if (this.state.counter === 3) {
       this.setState({ counter: 0 });
     } else {
       this.setState({ ...this.state, counter: this.state.counter + 1 });
     }
-  };
-  prevPhoto = () => {
+  }
+  prevPhoto() {
     if (this.state.counter === 0) {
       this.setState({ counter: 3 });
     } else {
       this.setState({ ...this.state, counter: this.state.counter - 1 });
     }
-  };
+  }
   render() {
     return (
       <div className="card">

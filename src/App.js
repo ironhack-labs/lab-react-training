@@ -7,7 +7,7 @@ import BoxColor from './comps/BoxColor';
 import Rating from './comps/Rating';
 import DriverCard from './comps/DriverCard';
 import CreditCard from './comps/CreditCard';
-import State from './comps/State';
+//import State from './comps/State';
 import LikeButton from './comps/LikeButton';
 import ClickablePicture from './comps/ClickablePicture';
 import Dice from './comps/Dice';
