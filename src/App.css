@@ -36,3 +36,69 @@
     transform: rotate(360deg);
   }
 }
+
+.id {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  border: 1px solid black;
+  text-align: left;
+}
+
+.greeting {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+.random {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+.box {
+  margin: 5px;
+  padding: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.card {
+  margin: 10px;
+  padding: 20px;
+  height: 200px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.rating {
+  margin: 0;
+  padding: 5px;
+}
+
+.driver {
+  margin: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.driver img {
+  margin: 5px;
+  padding: 5px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
