@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import BoxColor from './components/boxcolor/BoxColor';
+import Carousel from './components/carousel/Carousel';
 import ClickablePicture from './components/clickablepicture/ClickablePicture';
 import CreditCard from './components/creditcard/CreditCard';
 import Dice from './components/dice/Dice';
@@ -119,6 +120,16 @@ function App() {
 
       <h2>Iteration 10 - Dice</h2>
       <Dice />
+
+      <h2>Iteration 11 - Carousel</h2>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
     </div>
   );
 }
