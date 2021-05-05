@@ -20,9 +20,10 @@ export default class NumbersTable extends React.Component {
 
     var numArr = numbers(this.props.limit);
 
-    const boxes = numArr.map((num) =>
-      <div className="NumBox" key={num.toString()}>{num}</div>
-    );
+    const boxes = numArr.map((num) =>{
+    if(num%2===0){return <div className="NumBoxRed" key={num.toString()}>{num}</div>}
+    else{return <div className="NumBoxWhite" key={num.toString()}>{num}</div>} 
+    });
     console.log(boxes);
 
     return (<div className="NumbersTable">{boxes}</div>);

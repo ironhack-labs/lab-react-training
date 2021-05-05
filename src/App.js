@@ -13,6 +13,7 @@ import ClickablePicture from './ClickablePicture';
 import Dice from './Dice';
 import Carousel from './Carousel';
 import NumbersTable from './NumbersTable';
+// import Facebook from './Facebook'
 
 function App() {
   const peter = {
@@ -98,6 +99,8 @@ function App() {
         ></Carousel>
         <h1>NUMBERS TABLE</h1>
         <NumbersTable limit={50} />
+        <h1>FACEBOOK</h1>
+        {/* <FaceBook /> */}
       </header>
     </div>
   );
