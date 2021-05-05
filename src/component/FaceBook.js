@@ -1,71 +1,58 @@
 import React from 'react';
 import profiles from '../data/berlin.json';
-
-class App extends React.Component {
-  createList = (profile, i) => {
-    const classFix = 'IdCard box ';
-    const classtext = classFix + (i % 2 ? 'boxblue' : '');
-
-    return (
-      <div className={classtext} key={'facebook' + i}>
-        <img src={profile.img} alt={profile.lastName} />
-        <div className="right">
-          <strong>First name</strong>: {profile.firstName} <br />
-          <strong>Last name</strong>: {profile.lastName} <br />
-          <strong>Country</strong>: {profile.country} <br />
-          <strong>Type</strong>: {profile.isStudent ? 'Student' : 'Teacher'}{' '}
-          <br />
-        </div>
-      </div>
-    );
+class FaceBook extends React.Component {
+  // this is THE solution. Making the state as small as possible
+  state = {
+    country: 'All',
   };
-  createButton = (country, i) => (
-    <button
-      onClick={() => this.clickHandler(country)}
-      key={'faceclick' + i}
-      className={this.chosenCountry === country ? 'butactive' : 'butnormal'}
-    >
-      {country}
-    </button>
-  );
-
-  constructor(props) {
-    super(props);
-    this.countries = ['ALL', ...new Set(profiles.map((item) => item.country))];
-    this.chosenCountry = 'ALL';
-    this.state = {
-      list: profiles.map(this.createList),
-      buttons: this.countries.map(this.createButton),
-    };
-  }
-
-  clickHandler = (passedCountry) => {
-    this.setState((state, props) => {
-      this.chosenCountry = passedCountry;
-      if (this.chosenCountry !== 'ALL') {
-        return {
-          list: profiles
-            .filter((profile) => profile.country === this.chosenCountry)
-            .map(this.createList),
-          buttons: this.countries.map(this.createButton),
-        };
-      } else {
-        return {
-          list: profiles.map(this.createList),
-          buttons: this.countries.map(this.createButton),
-        };
-      }
-    });
+  clickHandler = (e) => {
+    this.setState({ country: e.currentTarget.innerHTML });
   };
-
   render() {
+    // Helper
+    const allCountries = profiles.map((profile) => profile.country);
+    const uniqueCountries = allCountries.filter(
+      (country, idx) => allCountries.indexOf(country) === idx
+    );
+    const classFix = 'IdCard box ';
+    // HTML elements
+    const uniqueCountryButtons = uniqueCountries.map((country, idx) => (
+      <button
+        onClick={this.clickHandler}
+        key={'country_' + idx}
+        className={this.state.country === country ? 'butactive' : 'butnormal'}
+      >
+        {country}
+      </button>
+    ));
+    const selectedProfiles =
+      this.state.country === 'All'
+        ? profiles
+        : profiles.filter((profile) => profile.country === this.state.country);
+    const profileElements = selectedProfiles.map((profile, idx) => {
+      const classtext = classFix + (idx % 2 ? 'boxblue' : '');
+      return (
+        <div className={classtext} key={'profile_' + idx}>
+          <img src={profile.img} alt={profile.lastName} />
+          <div className="right">
+            <strong>First name</strong>: {profile.firstName} <br />
+            <strong>Last name</strong>: {profile.lastName} <br />
+            <strong>Country</strong>: {profile.country} <br />
+            <strong>Type</strong>: {profile.isStudent ? 'Student' : 'Teacher'}{' '}
+            <br />
+          </div>
+        </div>
+      );
+    });
     return (
       <div className="faceBookAdvanced">
-        <div className="faceBookButtons">{this.state.buttons}</div>
-        <div className="faceBook">{this.state.list}</div>
+        <div className="faceBookButtons">
+          <button onClick={this.clickHandler}>All</button>
+          {uniqueCountryButtons}
+        </div>
+        <div className="faceBook">{profileElements}</div>
       </div>
     );
   }
 }
-
-export default App;
+export default FaceBook;
