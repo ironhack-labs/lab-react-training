@@ -1,6 +1,7 @@
 .App {
   display: flex;
   flex-flow: column;
+  padding: 5%;
 }
 
 .Row {

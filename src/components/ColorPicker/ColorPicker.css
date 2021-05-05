@@ -1,0 +1,19 @@
+.color-picker {
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+label {
+  margin: 0px;
+}
+
+input {
+  margin-bottom: 20px;
+}

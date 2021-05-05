@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import IdCardSection from './components/IdCardSection/IdCardSection';
 import BoxColorSection from './components/BoxColorSection/BoxColorSection';
 import GreetingsSection from './components/GreetingsSection/GreetingsSection';
@@ -13,6 +14,8 @@ import ClickablePictureSection from './components/ClickablePictureSection/Clicka
 import CarouselSection from './components/CarouselSection/CarouselSection';
 import NumbersTableSection from './components/NumbersTableSection/NumbersTableSection';
 import ListAndKeysSection from './components/ListAndKeysSection/ListAndKeysSection';
+import SignUpPage from './components/SignUpPage/SignUpPage';
+import ColorPicker from './components/ColorPicker/ColorPicker';
 
 function App() {
   return (
@@ -29,6 +32,8 @@ function App() {
       <CarouselSection />
       <NumbersTableSection />
       <ListAndKeysSection />
+      <SignUpPage />
+      <ColorPicker />
     </div>
   );
 }
