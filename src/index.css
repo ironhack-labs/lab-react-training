@@ -35,3 +35,52 @@ code {
 .information p{
   margin: 2px;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.expireDate {
+  display: flex;
+  justify-content: left;
+}
+
+.owner{
+  display: flex;
+  justify-content: left;
+}
+
+.logoCreditCard > img{
+  width: 90px;
+  align-self: flex-end;
+}
+
+.driverCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 14px;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 14px;
+  width: 800px; 
+  background-color: blue;
+}
+.imgPerson{
+  padding: 30px;
+  border-radius: 50%;
+}
+.detailsDriver {
+ padding: 0px;
+}
+
+.likeButton{
+  background-color: crimson;
+  width: 100px;
+  height: 50px;
+  padding: 20px;
+}
+
+
