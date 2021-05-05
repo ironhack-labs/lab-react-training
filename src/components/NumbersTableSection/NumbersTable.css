@@ -1,0 +1,15 @@
+.NumbersTable {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50vw;
+  margin: auto;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}

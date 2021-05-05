@@ -1,0 +1,22 @@
+.creditCard {
+  border-radius: 5px;
+  border: 0px;
+  padding: 1em;
+}
+
+.creditCard p {
+  margin: 0;
+}
+
+.creditCard h2 {
+  margin: 15px;
+}
+
+.cardLogo {
+  height: 30px;
+}
+
+.cardLogoWrapper {
+  display: flex;
+  justify-content: flex-end;
+}

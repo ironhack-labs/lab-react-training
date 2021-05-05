@@ -1,0 +1,17 @@
+.profile-list {
+  width: 50vw;
+  margin: auto;
+}
+
+.country-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.sort-button {
+  background: lightblue;
+  margin: 5px;
+  padding: 5px 30px;
+  border: 0px;
+}

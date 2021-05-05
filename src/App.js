@@ -1,24 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import IdCardSection from './components/IdCardSection/IdCardSection';
+import BoxColorSection from './components/BoxColorSection/BoxColorSection';
+import GreetingsSection from './components/GreetingsSection/GreetingsSection';
+import RandomSection from './components/RandomSection/RandomSection';
+import CreditCardSection from './components/CreditCardSection/CreditCardSection';
+import RatingSection from './components/RatingSection/RatingSection';
+import DriverCardSection from './components/DriverCardSection/DriverCardSection';
+import LikeButtonSection from './components/LikeButtonSection/LikeButtonSection';
+import ClickablePictureSection from './components/ClickablePictureSection/ClickablePictureSection';
+// import DiceSection from './components/DiceSection/DiceSection';
+import CarouselSection from './components/CarouselSection/CarouselSection';
+import NumbersTableSection from './components/NumbersTableSection/NumbersTableSection';
+import ListAndKeysSection from './components/ListAndKeysSection/ListAndKeysSection';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <IdCardSection />
+      <GreetingsSection />
+      <RandomSection />
+      <BoxColorSection />
+      <CreditCardSection />
+      <RatingSection />
+      <DriverCardSection />
+      <LikeButtonSection />
+      <ClickablePictureSection />
+      <CarouselSection />
+      <NumbersTableSection />
+      <ListAndKeysSection />
     </div>
   );
 }
