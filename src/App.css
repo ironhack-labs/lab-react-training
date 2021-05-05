@@ -36,3 +36,106 @@
     transform: rotate(360deg);
   }
 }
+
+.id-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 5px;
+  border: 2px solid #000;
+}
+
+.id-card img {
+  padding: 5px;
+  align-content: center;
+}
+
+.id-card div {
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+  align-items: flex-start;
+  text-align: left;
+  padding: 5px;
+}
+
+.counter-container {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #000;
+}
+
+.greeting {
+  margin: 5px;
+  padding: 10px;
+  text-align: left;
+  font-size: 2em;
+  border: 2px solid #000;
+}
+
+.color-box {
+  margin: 5px;
+  padding: 20px;
+  border: 2px solid #000000;
+}
+
+.creditcard-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+h1 h2 h3 h4 p {
+  margin: 0;
+}
+
+.creditcard-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+  height: 180px;
+  text-align: left;
+  padding: 30px;
+  border-radius: 18px;
+  margin: 10px;
+}
+
+.creditcard-body h2 {
+  margin: 0;
+  text-align: right;
+}
+
+.card-number {
+  margin: 20px 0px;
+  padding: 0;
+  text-align: center;
+  font-size: 35px;
+}
+
+.stars-container {
+  height:fit-content;
+  width: fit-content;
+}
+
+.driver-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(88, 132, 255);
+  margin: 5px;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+.driver-container div {
+  padding: 10px;
+  text-align: left;
+}
+
+.driver-container img {
+  border-radius: 50%;
+}
