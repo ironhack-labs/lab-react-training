@@ -12,6 +12,8 @@ import LikeButton from './comps/LikeButton';
 import ClickablePicture from './comps/ClickablePicture';
 import Dice from './comps/Dice';
 import Carousel from './comps/Carousel';
+import NumbersTable from './comps/NumbersTable';
+import FaceBook from './comps/FaceBook';
 
 function App() {
   return (
@@ -107,6 +109,8 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+      <NumbersTable limit={24} />
+      <FaceBook />
     </div>
   );
 }

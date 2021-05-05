@@ -12,7 +12,6 @@ class Greetings extends React.Component {
     }[lang];
   }
   render() {
-    console.log(this.props);
     const { lang, children } = this.props;
     return (
       <div className="card">

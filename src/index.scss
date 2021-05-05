@@ -67,3 +67,26 @@ code {
   height: 200px;
   border-radius: 50%;
 }
+.squares {
+  display: flex;
+  flex-flow: row wrap;
+}
+.card-facebook {
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid black;
+  line-height: 1.3;
+  display: flex;
+  flex-flow: row wrap;
+  p {
+    font-size: 18px;
+    margin: 5px;
+    font-weight: bold;
+    span {
+      font-weight: lighter;
+    }
+  }
+  img {
+    width: 150px;
+  }
+}

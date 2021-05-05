@@ -11,7 +11,6 @@ class LikeButton extends React.Component {
   };
   sumCounter() {
     this.setState({ ...this.state, counter: this.state.counter + 1 });
-    console.log(this.state.counter);
     this.changeColor();
   }
   changeColor() {
