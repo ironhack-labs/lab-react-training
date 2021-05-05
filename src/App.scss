@@ -11,7 +11,9 @@
 	width: 80%;
 	margin: 3px auto;
 	img {
-		margin: 3px;
+		margin: 6px;
+		width: 200px;
+		height: 200px;
 	}
 }
 .IdCardText {
@@ -102,4 +104,11 @@
   img{
     width: 100px;
   }
+}
+
+.numberTableDiv{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 50%;
 }

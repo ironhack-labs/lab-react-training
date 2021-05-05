@@ -12,6 +12,8 @@ import LikeButton from './components/LikeButton.js';
 import ClickablePicture from './components/ClickablePicture.js';
 import Dice from './components/Dice.js';
 import Carousel from './components/Carousel.js';
+import NumbersTable from './components/NumbersTable.js';
+import FaceBook from './components/FaceBook.js';
 
 
 
@@ -133,6 +135,13 @@ function App() {
   ]}
 />
 
+<h1>NumbersTable</h1>
+
+<NumbersTable limit={12} />
+
+<h1>FaceBook</h1>
+
+<FaceBook />
 
 
 
