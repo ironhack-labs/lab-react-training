@@ -8,12 +8,14 @@ const App = (props) => {
   const imgSrc =
     props.type === 'Visa' ? '/img/visa.png' : '/img/master-card.svg';
 
+  const last4Digits = props.number.substr(-4);
+
   return (
     <div className="CreditCard" style={divStyle}>
       <div className="type">
         <img src={imgSrc} alt={props.type} />
       </div>
-      <div className="number">•••• •••• •••• 8845</div>
+      <div className="number">•••• •••• •••• {last4Digits}</div>
       <div className="expires-bank">
         <span>
           Expires {props.expirationMonth}/{props.expirationYear}

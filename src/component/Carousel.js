@@ -3,31 +3,28 @@ import React from 'react';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    const ini = Math.floor(Math.random() * props.imgs.length);
+    this.imgsLgth = props.imgs.length;
     this.state = {
-      img: props.imgs[ini],
-      index: ini,
+      index: Math.floor(Math.random() * this.imgsLgth),
     };
   }
-
   clickHandler = (direction) => {
-    this.setState((state, props) => {
-      const nextIndex = (state.index + direction) % props.imgs.length;
-      return {
-        img: props.imgs[nextIndex],
-        index: nextIndex,
-      };
-    });
+    this.setState((state, props) => ({
+      index:
+        (((state.index + direction) % this.imgsLgth) + this.imgsLgth) %
+        this.imgsLgth,
+    }));
   };
 
   clickLeft = () => this.clickHandler(-1);
   clickRight = () => this.clickHandler(1);
 
   render() {
+    const selectedImg = this.props.imgs[this.state.index];
     return (
       <div className="Carousel">
         <button onClick={this.clickLeft}>Left</button>
-        <img src={this.state.img} alt="carousel" />
+        <img src={selectedImg} alt="carousel" />
         <button onClick={this.clickRight}>Right</button>
       </div>
     );

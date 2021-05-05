@@ -1,38 +1,19 @@
-/*
-      <ClickablePicture
-        img="/img/persons/maxence.png"
-        imgClicked="/img/persons/maxence-glasses.png"
-      />
-*/
-
 import React from 'react';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      img: props.img,
-    };
-  }
-
-  /* 
-  state = {
-    counter: 0
-  }
-  */
+  state = { status: 0 };
 
   clickHandler = () => {
-    this.setState((state, props) => ({
-      img: props.imgClicked,
-    }));
+    this.setState({ status: 1 });
   };
 
   render() {
+    const img = this.state.status > 0 ? this.props.imgClicked : this.props.img;
     return (
       <img
         className="ClickablePicture"
         onClick={this.clickHandler}
-        src={this.state.img}
+        src={img}
         alt="ClickablePicture"
       />
     );
