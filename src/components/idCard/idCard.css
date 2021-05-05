@@ -1,0 +1,9 @@
+.card {
+    display: flex;
+    width: 70%;
+    border: 1px solid black;
+}
+
+.card p {
+    margin: 0 10px;
+}
