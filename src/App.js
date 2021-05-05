@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.scss'
 
+
 import IdCard from './components/IdCard'
 import Greetings from './components/Greetings'
 import Random from './components/Random'
@@ -14,8 +15,11 @@ import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
 import Carousel from './components/Carousel'
+import NumbersTable from './components/NumbersTable'
+import FaceBook from './components/FaceBook'
 
 class App extends React.Component {
+ 
   render() {
     return (
       <div className="App">
@@ -124,6 +128,11 @@ class App extends React.Component {
             'https://randomuser.me/api/portraits/men/2.jpg',
           ]}
         />
+        <h2>Iteration 1️⃣ 2️⃣</h2>
+        <NumbersTable limit={12} />
+
+        <h2>Iteration 1️⃣ 3️⃣</h2>
+        <FaceBook />
       </div>
     )
   }

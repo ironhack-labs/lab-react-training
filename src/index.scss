@@ -82,3 +82,31 @@ code {
   }
 }
 
+
+.NumbersTable {
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  .NumBoxRed{
+    border: 1px solid black;
+    background-color: red;
+    padding: 70px;
+    color: white;
+  }
+  
+  .NumBoxWhite {
+    border: 1px solid black;
+    background-color: white;
+    padding: 70px;
+  }
+  
+}
+.FaceBook{
+  display: flex;
+  justify-content: start;
+}
+
+.image-profile {
+  width: 90px;
+}

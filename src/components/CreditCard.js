@@ -22,7 +22,7 @@ class CreditCard extends React.Component {
       margin: 0 auto;
       color: ${color};
     `
-    const logoDiv = styled.div`
+    const LogoDiv = styled.div`
       heigth: 150px;
     `
     const LogoImg = styled.img`
@@ -56,7 +56,7 @@ class CreditCard extends React.Component {
 
     return (
       <CreditCardDiv>
-        <logoDiv>{renderImage()}</logoDiv>
+        <LogoDiv>{renderImage()}</LogoDiv>
         <NumberDiv>
           <p>{'∙∙∙∙ ∙∙∙∙ ∙∙∙∙' + number.slice(12)}</p>
         </NumberDiv>
