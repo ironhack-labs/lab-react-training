@@ -4,7 +4,7 @@ import './IdCard.css';
 function IdCard({lastName, firstName, gender, height, birth, picture}){
     return(
         <article className="id-card">
-            <img className="card-picture" src={picture}></img>
+            <img className="card-picture" src={picture} alt=""></img>
             <div>
                 <p><strong>First name:</strong>{firstName}</p>
                 <p><strong>Last name:</strong>{lastName}</p>
