@@ -5,9 +5,147 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 5px 0;
+}
+
+#id-card-wrapper,
+#facebook-wrapper {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  padding: 20px;
+}
+.id-card,
+.facebook-card {
+  display: flex;
+  width: 100%;
+  border: 2px solid #fff;
+  padding: 10px;
+  margin: 10px 0;
+  height: 200px;
+}
+.id-card img,
+.facebook-card img {
+  width: 30%;
+  height: 100%;
+  object-fit: contain;
+}
+.id-card-description,
+.facebook-card-description {
+  width: 70%;
+  text-align: left;
+  margin: 0 10px;
+}
+.id-card-description span,
+.facebook-card-description span {
+  font-weight: bold;
+}
+
+#greetings-wrapper,
+#random-wrapper,
+#box-color-wrapper,
+#driver-card-wrapper,
+#numbers-table-wrapper,
+#facebook-wrapper {
+  width: 100%;
+}
+.greetings-card,
+.random-card,
+.box-color-card {
+  border: 2px solid #fff;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.credit-card {
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: left;
+}
+.card-type {
+  height: 30px;
+  text-align: right;
+}
+.card-type img {
+  height: 100%;
+  width: auto;
+}
+p.card-number {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+p.expiration-date span {
+  padding-left: 20px;
+}
+
+.driver-card {
+  max-width: 600px;
+  background-color: #405dbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px auto;
+}
+.driver-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+.driver-card .text {
+  text-align: left;
+}
+.driver-card .text p:first-of-type {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+#clickable-picture-wrapper {
+  margin: 10px;
+}
+#clickable-picture-wrapper img {
+  max-width: 400px;
+  height: auto;
+  border: 5px solid #fff;
+}
+#dice-wrapper {
+}
+#dice-wrapper img {
+  height: 200px;
+  width: auto;
+}
+#carousel-wrapper {
+  margin: 10px;
+}
+#carousel-wrapper img {
+  height: 200px;
+  width: auto;
+}
+#numbers-table-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.numbers-card {
+  color: #000;
+  width: calc(100% / 5);
+  padding: 40px;
+  border: 1px solid #000;
+  font-size: 2rem;
+  font-weight: bold;
 }
