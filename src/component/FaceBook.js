@@ -40,20 +40,22 @@ class App extends React.Component {
   }
 
   clickHandler = (passedCountry) => {
-    this.chosenCountry = passedCountry;
-    if (this.chosenCountry !== 'ALL') {
-      this.setState((state, props) => ({
-        list: profiles
-          .filter((profile) => profile.country === this.chosenCountry)
-          .map(this.createList),
-        buttons: this.countries.map(this.createButton),
-      }));
-    } else {
-      this.setState((state, props) => ({
-        list: profiles.map(this.createList),
-        buttons: this.countries.map(this.createButton),
-      }));
-    }
+    this.setState((state, props) => {
+      this.chosenCountry = passedCountry;
+      if (this.chosenCountry !== 'ALL') {
+        return {
+          list: profiles
+            .filter((profile) => profile.country === this.chosenCountry)
+            .map(this.createList),
+          buttons: this.countries.map(this.createButton),
+        };
+      } else {
+        return {
+          list: profiles.map(this.createList),
+          buttons: this.countries.map(this.createButton),
+        };
+      }
+    });
   };
 
   render() {
