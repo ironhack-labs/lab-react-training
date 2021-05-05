@@ -64,3 +64,15 @@ code {
   width: 100px;
   border-radius: 100%;
 }
+.numbersTable{
+  display: flex;
+  flex-flow: row wrap;
+  width: 350px;
+  margin: 50px;
+}
+.card img{
+  width: 150px;
+}
+.card-col{
+  padding: 0 20px;
+}

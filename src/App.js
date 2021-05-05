@@ -12,7 +12,8 @@ import LikeButton from './components/LikeButton.js'
 import ClickablePicture from './components/ClickablePicture.js'
 import Dice from './components/Dice.js'
 import Carousel from './components/Carousel.js'
-
+import NumbersTable from './components/NumbersTable.js'
+import FaceBook from './components/FaceBook.js'
 
 // const users = [
 //   {lastName:'Doe', firstName:'John', gender:'male', height:178, birth:new Date("1992-07-14"), picture:"https://randomuser.me/api/portraits/men/44.jpg"},
@@ -22,6 +23,12 @@ import Carousel from './components/Carousel.js'
 function App() {
   return (
     <div className="App">
+
+      <SignupPage />
+
+      <FaceBook />
+
+      <NumbersTable limit={12} />
 
       <Carousel
         imgs={[
