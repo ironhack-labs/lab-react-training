@@ -11,6 +11,8 @@ import LikeButton from './LikeButton'
 import ClickablePicture from './ClickablePicture'
 import Dice from './Dice'
 import Carousel from './Carousel'
+import NumbersTable from './NumbersTable'
+import FaceBook from './FaceBook';
 
 
 ReactDOM.render(
@@ -104,6 +106,12 @@ ReactDOM.render(
         'https://randomuser.me/api/portraits/men/2.jpg'
       ] }
     />
+
+    <h1>Numbers Table</h1>
+    <NumbersTable limit={ 12 } />
+
+    <h1>FaceBook</h1>
+    <FaceBook />
 
   </React.StrictMode>,
   document.getElementById('root')

@@ -19,7 +19,19 @@ code {
 
 .cardContainer {
   display: flex;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 5px;
   margin-bottom: 10px;
+}
+
+.boxContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+}
+
+.box1 {
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  text-align: center;
 }

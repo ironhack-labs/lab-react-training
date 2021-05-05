@@ -3,35 +3,30 @@ import './index.css';
 
 class Carousel extends React.Component {
   state = {
-    imgCounter: 0,
-    img: this.props.imgs[0]
+    imgIndex: 0
   }
+
   nextPicture = () => {
-    if (this.state.imgCounter < 3) {
-      this.state.imgCounter++
-      this.setState((state, props) => {
-        return {
-          img: this.props.imgs[state.imgCounter]
-        }
-      })
-    }
+    this.setState((state, props) => {
+      return {
+        imgIndex: state.imgIndex < 3 ? state.imgIndex + 1 : state.imgIndex
+      }
+    })
   }
 
   prevPicture = () => {
-    if (this.state.imgCounter > 0) { this.state.imgCounter-- }
     this.setState((state, props) => {
       return {
-        img: this.props.imgs[state.imgCounter]
+        imgIndex: state.imgIndex > 0 ? state.imgIndex - 1 : state.imgIndex
       }
     })
   }
 
   render() {
-    console.log(this.props.imgs[0])
     return (
       <div>
-        <img src={ this.state.img } alt="" />
         <button onClick={ this.prevPicture }>Previous</button>
+        <img src={ this.props.imgs[this.state.imgIndex] } alt="profilepicture " />
         <button onClick={ this.nextPicture }>Next</button>
       </div>
     )
