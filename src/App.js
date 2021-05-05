@@ -14,10 +14,14 @@ import Dice from './component/Dice';
 import Carousel from './component/Carousel';
 import NumbersTable from './component/NumbersTable';
 import FaceBook from './component/FaceBook';
+import SignupPage from './component/SignupPage';
 
 function App() {
   return (
     <div className="App">
+      <h1>SignupPage</h1>
+      <SignupPage />
+
       <h1>IdCard</h1>
       <IdCard
         lastName="Doe"
