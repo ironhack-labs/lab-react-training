@@ -2,7 +2,7 @@ import React from 'react';
 import './Rating.css';
 
 function Rating(props) {
-  const updatedRating = Math.ceil(props.children);
+  const updatedRating = Math.round(props.children);
   return (
     <div>
       {'★'.repeat(updatedRating)}
