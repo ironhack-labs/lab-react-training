@@ -3,9 +3,30 @@
   width: 300px;
   height: 150px;
   margin: 3px;
+  display: flex;
+  flex-direction: column;
 }
 
 .CreditCard p {
   margin: 0;
-  padding-left: 5px;
+}
+
+.CreditCard-type {
+  text-align: end;
+  padding: 10px;
+}
+
+.CreditCard-number {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.CreditCard-expiration {
+  padding: 10px 0 0 10px;
+  font-size: 12px;
+}
+
+.CreditCard-owner {
+  font-size: 12px;
+  padding-left: 10px;
 }

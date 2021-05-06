@@ -4,7 +4,7 @@ import './Rating.css';
 function Rating(props) {
   const updatedRating = Math.round(props.children);
   return (
-    <div>
+    <div className="Rating">
       {'★'.repeat(updatedRating)}
       {'☆'.repeat(5 - updatedRating)}
     </div>

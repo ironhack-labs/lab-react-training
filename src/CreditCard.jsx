@@ -19,13 +19,13 @@ function CreditCard(props) {
       className="CreditCard"
       style={{ backgroundColor: `${bgColor}`, color: `${color}` }}
     >
-      <p>{type}</p>
-      <p>**** **** **** {editedNumber}</p>
-      <p>
+      <p className="CreditCard-type">{type}</p>
+      <p className="CreditCard-number">●●●● ●●●● ●●●● {editedNumber}</p>
+      <p className="CreditCard-expiration">
         Expires {expirationMonth}/{expirationYear}
+        &nbsp;&nbsp;&nbsp;&nbsp;{bank}
       </p>
-      <p>{bank}</p>
-      <p>{owner}</p>
+      <p className="CreditCard-owner">{owner}</p>
     </div>
   );
 }
