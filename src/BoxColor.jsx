@@ -2,18 +2,22 @@ import React from 'react';
 import './BoxColor.css';
 
 function BoxColor(props) {
-  const { a, b, c } = props;
+  const { r, g, b } = props;
   return (
     <div
       className="BoxColor"
       style={{
-        backgroundColor: `rgb(${a}, ${b}, ${c})`,
+        backgroundColor: `rgb(${r}, ${g}, ${b})`,
         border: '1px solid black',
         margin: '3px',
         width: '100%',
         height: '150px',
       }}
-    ></div>
+    >
+      <p>
+        rgb({r}, {g}, {b})
+      </p>
+    </div>
   );
 }
 
