@@ -10,7 +10,7 @@ function Greetings({lang, children}) {
     }
   
     return (
-        <div className="greetings-container">
+        <div>
             <p>{languages[lang] + ' ' + children}</p>
         </div>
     );

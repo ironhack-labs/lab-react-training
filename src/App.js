@@ -1,18 +1,10 @@
 import React from 'react'
 import './App.css'
-import IdCard from './components/idCard.js'
-import Greetings from './components/greetings.js'
-import Random from './components/random.js'
-import BoxColor from './components/boxColor.js'
-import CreditCard from './components/creditCard.js'
-import Rating from './components/rating.js'
-import DriverCard from './components/driverCard.js'
+import { IdCard, Greetings, Random, BoxColor, CreditCard, Rating, DriverCard } from './components/modules.js';
 
 function App() {
   return (
     <div className="main-container">
-
-      <h2>Iteration 1 - ID Cards</h2>
 
       <IdCard
         lastName="Doe"

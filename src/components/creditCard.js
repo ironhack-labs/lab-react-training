@@ -8,16 +8,16 @@ function CreditCard({type, number, expirationMonth, expirationYear, bank, owner,
     let visaHidden = '•••• •••• •••• '
 
     return(
-        <article className="credit-card-container" style={{backgroundColor: bgColor}}>
-            <div className="logo-container">
-                <img className="card-logo" src={'/img/' + type + ext} alt=""></img>
+        <article style={{backgroundColor: bgColor}}>
+            <div>
+                <img src={'/img/' + type + ext} alt=""></img>
             </div>
-            <div className="number-container">
-                <p className="card-number" style={{color}}>{visaHidden + number.slice(-4)}</p>
+            <div>
+                <p style={{color}}>{visaHidden + number.slice(-4)}</p>
             </div>
-            <div className="details-container" style={{color}}>
-                <p className="card-expiration">Expires {expirationMonth}/{expirationYear} <span className="card-bank">{bank}</span></p>
-                <p className="card-owner">{owner}</p>
+            <div style={{color}}>
+                <p>Expires {expirationMonth}/{expirationYear} <span className="card-bank">{bank}</span></p>
+                <p>{owner}</p>
             </div>
 
 

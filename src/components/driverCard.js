@@ -3,14 +3,14 @@ import Rating from '../components/rating.js';
 
 const DriverCard = ({name, rating, img, car}) => {
     return (
-        <article className="drivercard-container">
-            <div className="img-box">
+        <article>
+            <div>
                 <img src={img} alt=""/>
             </div>
-            <div className="info-box">
-                <p className="name-label">{name}</p>
-                <Rating className="rating-label">{rating}</Rating>
-                <p className="car-label">{car.model} - {car.licensePlate}</p>
+            <div>
+                <p>{name}</p>
+                <Rating>{rating}</Rating>
+                <p>{car.model} - {car.licensePlate}</p>
             </div>
             
         </article>

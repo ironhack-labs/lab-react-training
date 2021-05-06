@@ -8,7 +8,7 @@ function Rating({children}){
        
     }
     return(
-        <p className="rating-stars">{empty.join('')}</p>
+        <p>{empty.join('')}</p>
     )
 }
 
