@@ -1,0 +1,29 @@
+.facebook-card{
+    border: 1px solid black;
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    width: fit-content;
+}
+.card-picture{
+    margin: 0px 5px;
+}
+.facebook-details-card{
+    width: 500px;
+}
+#search-bar{
+    width: 900px;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 5px;
+    margin: 5px;
+}
+#filter-btns-container{
+    width: 1000px;
+    margin: 5px;
+}
+.country-btn{
+    color: black;
+    background-color: white;
+    margin: 0px 6px 6px 0px;
+}
