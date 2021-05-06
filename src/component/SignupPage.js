@@ -27,11 +27,19 @@ class App extends React.Component {
   }
 
   render() {
+    const baseFormClass = 'form-control ';
     const greeting = this.greetings[this.state.nationality];
-    const emailready =
-      this.state.email && this.state.email.indexOf('@') > -1
-        ? 'Your email address is correct'
-        : '';
+    const emailRegexTest =
+      this.state.email && /^[^@]+@\w+(\.\w+)+\w$/.test(this.state.email);
+
+    const emailready = emailRegexTest ? 'Your email address is correct' : '';
+    const emailClass = emailRegexTest
+      ? 'is-valid'
+      : this.state.email && 'is-invalid';
+    const passClass =
+      this.state.password.length > 8
+        ? 'is-valid'
+        : this.state.password && 'is-invalid';
     return (
       <div>
         <form>
@@ -39,7 +47,7 @@ class App extends React.Component {
             <label htmlFor="exampleInputEmail1">Email address</label>
             <input
               type="email"
-              className="form-control"
+              className={baseFormClass + emailClass}
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Enter email"
@@ -47,6 +55,7 @@ class App extends React.Component {
               onChange={this.handleChange}
               value={this.state.email}
             />
+            <div class="valid-feedback">You typed a valid email</div>
             <small id="emailHelp" className="form-text text-muted">
               We'll never share your email with anyone else.
             </small>
@@ -55,13 +64,14 @@ class App extends React.Component {
             <label htmlFor="exampleInputPassword1">Password</label>
             <input
               type="password"
-              className="form-control"
+              className={baseFormClass + passClass}
               id="exampleInputPassword1"
               placeholder="Password"
               name="password"
               onChange={this.handleChange}
               value={this.state.password}
             />
+            <div class="invalid-feedback">Your password is too weak</div>
           </div>
           <div className="form-group">
             <label htmlFor="exampleFormControlSelect1">Example select</label>
