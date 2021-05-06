@@ -1,0 +1,11 @@
+.CreditCard {
+  border-radius: 10px;
+  width: 300px;
+  height: 150px;
+  margin: 3px;
+}
+
+.CreditCard p {
+  margin: 0;
+  padding-left: 5px;
+}
