@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.credit-card{
+  border-radius: 15px;
+  padding: 20px;
+  margin-right: 20px;
+  text-align: right;
+  height: 50%;
+  width: 30%;
+
+}
+
+.credit-card img {
+
+  height: 20%;
+  width: 20%;
+}
+
