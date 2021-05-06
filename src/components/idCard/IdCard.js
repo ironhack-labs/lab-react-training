@@ -1,6 +1,6 @@
 import './idCard.css'
 
-const IdCard = (props) => {
+const IdCard = props => {
     const getHeigth = height => height / 100 + 'm';
 
     const getBirthDate = birthDate => birthDate.toDateString();
