@@ -27,6 +27,7 @@ function App() {
       <Greetings lang="fr">François</Greetings>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
+      <Random min={50} max={100} />
     </div>
   );
 }

@@ -7,7 +7,7 @@ function Random(props) {
     <div className="Random">
       <p>
         Random value between {min} and {max} =&gt;{' '}
-        {Math.floor(Math.random() * max)}{' '}
+        {Math.floor(Math.random() * (max - min)) + min}{' '}
       </p>
     </div>
   );
