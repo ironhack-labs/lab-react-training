@@ -1,6 +1,10 @@
-* {
-  margin: 0px;
+body {
+  margin-left: 10px;
   padding: 0px;
+}
+
+h1 {
+  margin: 20px 0px;
 }
 
 .id-card {
@@ -9,5 +13,23 @@
   justify-content: flex-start;
   border: solid black 1px;
   padding: 5px;
+}
+
+/* Credit Card */
+
+.single-card img {
+  height: 20px;
+}
+
+.single-card {
+  height: 160px;
+  width: 280px;
+  border-radius: 10px;
   margin: 10px;
+}
+
+.credit-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
