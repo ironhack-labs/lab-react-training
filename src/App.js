@@ -8,6 +8,9 @@ import BoxColor from "./boxcolor/BoxColor";
 import CreditCard from "./creditcard/CreditCard";
 import Rating from './rating/Rating';
 import DriverCard from './drivercard/DriverCard';
+import LikeButton from './likeButton/LikeButton';
+import ClickablePicture from './ClickablePicture/ClickablePicture';
+import Dice from "./Dice/Dice";
 
 function App() {
   return (
@@ -100,6 +103,9 @@ function App() {
             licensePlate: "BE33ER"
           }} />
       </div>
+      <LikeButton />
+      <ClickablePicture />
+      <Dice />
     </div>
   );
 }
