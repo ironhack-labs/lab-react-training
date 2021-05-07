@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Rating = (props) =>{
+const DriverCard = (props) =>{
 
     const stars = (rating) => {
         let result = '';
@@ -14,10 +14,15 @@ const Rating = (props) =>{
         return result;
     }
     return(
-        <div>
-         <p>{stars(props.children)}</p>
+        <div className='driver-card'>
+        <img src={props.img}/>
+        <article className='driver-details'>
+        <p>{props.name}</p>
+         <p>{stars(props.rating)}</p>
+         <p>{props.car.model} - {props.car.licensePlate}</p>
+         </article>
         </div>
     )
 }
 
-export default Rating;
+export default DriverCard;

@@ -45,6 +45,9 @@
   text-align: left;
   height: 50%;
   width: 30%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+
 
 }
 .card-number{
@@ -59,4 +62,29 @@
 
 .card-details{
   align-content: left;
+}
+
+.driver-card{
+  background-color: rgb(93, 93, 211);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  width: 60%;
+  padding-top: 10px;
+
+}
+.driver-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.driver-details{
+  
+  color: white;
 }
