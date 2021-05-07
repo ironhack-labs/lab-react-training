@@ -33,3 +33,23 @@ h1 {
   flex-direction: row;
   justify-content: flex-start;
 }
+
+/* Driver Card */
+
+.driver-card {
+  background-color: #425cbb;
+  color: white;
+  height: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.driver-card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}

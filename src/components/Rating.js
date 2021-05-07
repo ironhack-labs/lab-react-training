@@ -1,7 +1,6 @@
 import React from 'react';
-import '../App.css';
-
 import Parser from 'html-react-parser';
+import '../App.css';
 
 function Rating(props) {
   let star1, star2, star3, star4, star5;
