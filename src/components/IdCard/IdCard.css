@@ -1,0 +1,10 @@
+section > div {
+    display: flex;
+    border: 1px solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+div > li{
+    list-style-type: none;
+}

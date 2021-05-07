@@ -1,0 +1,11 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    border: 2px solid red;
+}
+
+.logo{
+    width: 100px;
+    border: 2px solid red;
+}
