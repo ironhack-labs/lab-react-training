@@ -9,6 +9,7 @@ export default class FaceBook extends React.Component {
     this.state = {
       search: '',
       profilesList: profiles,
+      displayInfo: false,
     };
   }
 
@@ -21,18 +22,39 @@ export default class FaceBook extends React.Component {
     return countries;
   }
 
+  //Gets a new profile list filtered by country and updates 'profilesList' state
   filterByCountry(country) {
     let newProfileList = this.state.profilesList.filter(
       (profile) => profile.country === country
     );
-    if (country == 'All') newProfileList = profiles;
+    if (country === 'All') newProfileList = profiles;
     this.setState({ profilesList: newProfileList });
+  }
+
+  //Updates the 'search' state with input value
+  handleSearch(event) {
+    //Calling the searchByName as second parameter, when the setState is done
+    this.setState({ search: event.target.value }, () => {
+      this.searchByName(this.state.search);
+    });
+  }
+
+  //Gets a new profiles list filtered by name and updates 'profilesList' state.
+  searchByName(name) {
+    const newProfilesList = profiles.filter((profile) => {
+      return profile.firstName.includes(name);
+    });
+    this.setState({ profilesList: newProfilesList });
   }
 
   render() {
     return (
       <div id="facebook-container">
-        <input placeholder="Search by name..." id="search-bar"></input>
+        <input
+          placeholder="Search by name..."
+          id="search-bar"
+          onChange={(e) => this.handleSearch(e)}
+        ></input>
         <div id="filter-btns-container">
           <button
             key="btn-all"
@@ -58,25 +80,34 @@ export default class FaceBook extends React.Component {
           ({ firstName, lastName, country, img, isStudent }, index) => {
             return (
               <article key={index} className="facebook-card">
-                <img className="card-picture" src={img} alt=""></img>
-                <div className="facebook-details-card">
-                  <p>
-                    <strong>First name:</strong>
-                    {firstName}
-                  </p>
-                  <p>
-                    <strong>Last name:</strong>
-                    {lastName}
-                  </p>
-                  <p>
-                    <strong>Country:</strong>
-                    {country}
-                  </p>
-                  <p>
-                    <strong>Type:</strong>
-                    {isStudent ? 'Student' : 'Teacher'}
-                  </p>
-                </div>
+                <img
+                  className="card-picture"
+                  src={img}
+                  alt=""
+                  onClick={() => {
+                    this.setState({ displayInfo: !this.state.displayInfo });
+                  }}
+                ></img>
+                {this.state.displayInfo &&
+                  <div className="facebook-details-card">
+                    <p>
+                      <strong>First name:</strong>
+                      {firstName}
+                    </p>
+                    <p>
+                      <strong>Last name:</strong>
+                      {lastName}
+                    </p>
+                    <p>
+                      <strong>Country:</strong>
+                      {country}
+                    </p>
+                    <p>
+                      <strong>Type:</strong>
+                      {isStudent ? 'Student' : 'Teacher'}
+                    </p>
+                  </div>
+                }
               </article>
             );
           }

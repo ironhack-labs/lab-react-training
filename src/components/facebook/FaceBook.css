@@ -11,6 +11,9 @@
 .facebook-details-card{
     width: 500px;
 }
+.hidden{
+    display: none;
+}
 #search-bar{
     width: 900px;
     height: 30px;
