@@ -1,4 +1,5 @@
 import React from 'react';
+import './CreditCard.css';
 
 export default function CreditCard(props) {
   const last4Digits = props.number.slice(12);
@@ -15,12 +16,18 @@ export default function CreditCard(props) {
 
   return (
     <div className="creditCard" style={cardColor}>
-      <img src={cardType[props.type]} alt="logoCard" />
-      <p className="cardNumber">**** **** **** {last4Digits}</p>
-      <p className="expirationDate">
-        Expires {props.expirationMonth}/{props.expirationYear} {props.bank}
-      </p>
-      <p className="owner">{props.owner}</p>
+      <div className="logo">
+        <img src={cardType[props.type]} alt="logoCard" />
+      </div>
+      <div className="number">
+        <p>**** **** **** {last4Digits}</p>
+      </div>
+      <div className="name">
+        <p>
+          Expires {props.expirationMonth}/{props.expirationYear} {props.bank}
+        </p>
+        <div>{props.owner}</div>
+      </div>
     </div>
   );
 }

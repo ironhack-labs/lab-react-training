@@ -1,4 +1,5 @@
 import React from 'react';
+import './DriverCard.css';
 
 export default function DriverCard(props) {
   const rating = (stars) => {
@@ -15,7 +16,7 @@ export default function DriverCard(props) {
     <div className="drivercard">
       <img src={props.img} alt="driver" />
       <div className="drivercardtext">
-        <p>{props.name}</p>
+        <h2>{props.name}</h2>
         <p>{rating(props.stars)}</p>
         <p>
           {props.car.model} - {props.car.license}
