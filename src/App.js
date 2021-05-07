@@ -6,6 +6,7 @@ import Random from './components/random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 
 
@@ -89,6 +90,10 @@ function App() {
   }} />
   </div>  
 
+<div>
+<LikeButton />
+
+</div>
 
 
     </div>

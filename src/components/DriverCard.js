@@ -17,7 +17,7 @@ const DriverCard = (props) =>{
         <div className='driver-card'>
         <img src={props.img}/>
         <article className='driver-details'>
-        <p>{props.name}</p>
+        <p style={{fontWeight: 'bold'}}>{props.name}</p>
          <p>{stars(props.rating)}</p>
          <p>{props.car.model} - {props.car.licensePlate}</p>
          </article>
