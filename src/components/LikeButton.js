@@ -4,9 +4,7 @@ class LikeButton extends React.Component {
     
     state = {
       count: 0,
-      color: 0
     };
-colors = ['purple','blue','green','yellow','orange','red']
 
     handleIncrementClick = () => {
         this.setState({
