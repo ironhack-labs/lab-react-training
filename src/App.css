@@ -37,19 +37,26 @@
   }
 }
 
-.credit-card{
+.card-container{
+  display: flex;
+  flex-direction: column;
   border-radius: 15px;
   padding: 20px;
-  margin-right: 20px;
-  text-align: right;
+  text-align: left;
   height: 50%;
   width: 30%;
 
 }
+.card-number{
+  text-align: center;
+  font-size: 2rem;
 
-.credit-card img {
-
+}
+.card-container img {
   height: 20%;
   width: 20%;
 }
 
+.card-details{
+  align-content: left;
+}
