@@ -2,31 +2,33 @@ import React from 'react';
 import '../App.css';
 
 function IdCard(props) {
+  const { lastName, firstName, gender, height, birth, picture } = props;
+
   return (
     <div className="id-card">
       <div>
-        <img src={props.picture}></img>
+        <img src={picture}></img>
       </div>
       <div>
         <p>
           <b>First name: </b>
-          {props.firstName}
+          {firstName}
         </p>
         <p>
           <b>Last name: </b>
-          {props.lastName}
+          {lastName}
         </p>
         <p>
           <b>Gender: </b>
-          {props.gender}
+          {gender}
         </p>
         <p>
           <b>Height: </b>
-          {props.height / 100}m
+          {height / 100}m
         </p>
         <p>
           <b>Birth: </b>
-          {props.birth.toDateString()}
+          {birth.toDateString()}
         </p>
       </div>
     </div>

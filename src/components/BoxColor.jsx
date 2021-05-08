@@ -1,8 +1,30 @@
 import React from 'react';
 import '../App.css';
 
+function componentToHex(c) {
+  let hex = c.toString(16);
+  return hex.length == 1 ? '0' + hex : hex;
+}
+function rgbToHex(r, g, b) {
+  return '#' + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
 function BoxColor(props) {
-  return <div></div>;
+  const { r, g, b } = props;
+  const style = {
+    border: '1px solid black',
+    background: `rgb(${r},${g},${b})`,
+    height: '100px',
+  };
+
+  return (
+    <div className="boxcolor" style={style}>
+      <p>
+        rgb({r},{g},{b})
+      </p>
+      <p>rgbToHex(r, g, b)</p>
+    </div>
+  );
 }
 
 export default BoxColor;
