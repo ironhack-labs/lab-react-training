@@ -1,5 +1,13 @@
 import React from 'react';
 
-function Random(props) {}
+function Random(props) {
+  const { min, max } = props;
+  return (
+    <div>
+      Random value between {min} and {max}{' '}
+      {`=> ${Math.floor(Math.random() * max + min)}`};
+    </div>
+  );
+}
 
 export default Random;
