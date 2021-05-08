@@ -1,0 +1,21 @@
+.image {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.drivercardbox {
+  background-color: rgb(60, 83, 172);
+  border-radius: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+  align-items: center;
+  line-height: 0.7em;
+  padding: 30px;
+}
