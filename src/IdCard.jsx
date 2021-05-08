@@ -17,7 +17,7 @@ function IdCard(props) {
           <strong>Gender:</strong> {gender}
         </p>
         <p>
-          <strong>Height:</strong> {height}
+          <strong>Height:</strong> {height / 100}m
         </p>
         <p>
           <strong>Birth:</strong> {birth.toDateString()}
