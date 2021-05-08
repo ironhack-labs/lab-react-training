@@ -22,7 +22,7 @@ function CreditCard(props) {
       <p className="CreditCard-type">{type}</p>
       <p className="CreditCard-number">●●●● ●●●● ●●●● {editedNumber}</p>
       <p className="CreditCard-expiration">
-        Expires {expirationMonth}/{expirationYear}
+        Expires {expirationMonth}/{expirationYear - 2000}
         &nbsp;&nbsp;&nbsp;&nbsp;{bank}
       </p>
       <p className="CreditCard-owner">{owner}</p>
