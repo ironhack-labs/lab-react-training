@@ -20,7 +20,9 @@ export default function CreditCard(props) {
         <img src={cardType[props.type]} alt="logoCard" />
       </div>
       <div className="number">
-        <p>**** **** **** {last4Digits}</p>
+        <p>
+          {'*'.repeat(12)} {last4Digits}
+        </p>
       </div>
       <div className="name">
         <p>
