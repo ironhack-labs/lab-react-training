@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function CreditCard(props) {
   let number = props.number.slice(-4).padStart(props.number.length, '•');
+
   return (
     <div>
       <div

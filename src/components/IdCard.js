@@ -9,7 +9,7 @@ export default function IdCard(props) {
         <br />
         <strong>Gender:</strong> {props.gender}
         <br />
-        <strong>Height</strong> {props.height}
+        <strong>Height</strong> {props.height / 100}m
         <br />
         <strong>Birthday: </strong> {props.birth.toDateString()}
         <br />
