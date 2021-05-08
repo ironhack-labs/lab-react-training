@@ -1,6 +1,8 @@
 import React from 'react';
 
 function Greetings(props) {
+  // const {children, lang} = props;
+  // let greet = "Hello"
   let hi = '';
   switch (props.lang) {
     case 'de':

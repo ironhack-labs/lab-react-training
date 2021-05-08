@@ -1,6 +1,10 @@
 import React from 'react';
 
 function CreditCard(props) {
+  const cardType = {
+    Visa: '/img/visa.png',
+    'Master Card': 'img/master-card.svg',
+  };
   return (
     <div
       style={{
@@ -8,7 +12,7 @@ function CreditCard(props) {
         color: props.color,
       }}
     >
-      <p>{props.type}</p>
+      <img src={cardType[props.type]} />
       <p>{props.number.replace(/\d(?=\d{4})/g, '*')}</p>
       <p>
         Expires {props.expirationMonth}/{props.expirationYear}
