@@ -1,0 +1,9 @@
+.diceimage{
+    height: 200px;
+}
+
+.dicebox{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}

@@ -2,7 +2,6 @@ import React from 'react';
 import './DriverCard.css';
 
 const DriverCard = (props) => {
-  console.log(props.car.model);
   let emptyStars = 5 - Math.round(props.rating);
   return (
     <div className="drivercardbox">

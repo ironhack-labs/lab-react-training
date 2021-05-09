@@ -1,0 +1,8 @@
+.imagesun{
+    height: 150px;
+}
+
+.imagesundiv{
+    display: flex;
+    justify-content: center;
+}
