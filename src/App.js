@@ -11,6 +11,10 @@ import DriverCard from './drivercard/DriverCard';
 import LikeButton from './likeButton/LikeButton';
 import ClickablePicture from './ClickablePicture/ClickablePicture';
 import Dice from "./Dice/Dice";
+import Carousel from "./Carousel/Carousel";
+import NumbersTable from "./NumbersTable/NumbersTable"
+
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,];
 
 function App() {
   return (
@@ -106,6 +110,15 @@ function App() {
       <LikeButton />
       <ClickablePicture />
       <Dice />
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <NumbersTable limit={12} numberList={numbers}/>
     </div>
   );
 }
