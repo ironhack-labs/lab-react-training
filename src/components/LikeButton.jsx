@@ -13,7 +13,8 @@ function LikeButton() {
       <button
         onClick={addLike}
         style={{
-          backgroundColor: colors[likesCount],
+          backgroundColor:
+            colors[likesCount > 5 ? likesCount - colors.length : likesCount],
         }}
       >
         {likesCount} like{likesCount !== 1 ? 's' : ''}
