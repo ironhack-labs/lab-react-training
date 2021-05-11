@@ -13,3 +13,7 @@
   margin: 10px;
   padding: 5px;
 }
+
+img {
+  max-height: 150px;
+}
