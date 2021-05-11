@@ -5,12 +5,12 @@ function ClickablePicture(props) {
   const { img, imgClicked } = props;
   const [photo, setPhoto] = React.useState(img);
 
-  function clickPicture() {
-    setPhoto(imgClicked);
-  }
+  const clickPicture = () =>
+    photo === img ? setPhoto(imgClicked) : setPhoto(img);
+
   return (
     <div class="ClickablePicture">
-      <img src={photo} alt="Image not found" onClick={clickPicture}></img>
+      <img src={photo} alt="Not found" onClick={clickPicture}></img>
     </div>
   );
 }
