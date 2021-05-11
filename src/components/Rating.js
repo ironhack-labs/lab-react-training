@@ -1,46 +1,24 @@
 import React from 'react';
-import Parser from 'html-react-parser';
 import '../App.css';
 
 function Rating(props) {
-  let star1, star2, star3, star4, star5;
-  star1 = star2 = star3 = star4 = star5 = Parser(`<span>&#9734;</span>`);
+  const { children } = props;
+  const roundedRating = Math.round(children);
 
-  if (props.children >= 0.5) {
-    star1 = Parser(`<span>&#9733;</span>`);
-  }
-
-  if (props.children >= 1.5) {
-    star2 = Parser(`<span>&#9733;</span>`);
-  }
-
-  if (props.children >= 2.5) {
-    star3 = Parser(`<span>&#9733;</span>`);
-  }
-
-  if (props.children >= 3.5) {
-    star4 = Parser(`<span>&#9733;</span>`);
-  }
-
-  if (props.children >= 4.5) {
-    star5 = Parser(`<span>&#9733;</span>`);
-  }
-
+  const starsEmpty = `☆☆☆☆☆`;
+  const starEmpty = `☆`;
+  const starsFull = `★★★★★`;
+  const starFull = `★`;
   return (
     <div>
-      {star1}
-      {star2}
-      {star3}
-      {star4}
-      {star5}
+      {starsFull.slice(0, roundedRating)}
+      {starsEmpty.slice(0, 5 - roundedRating)}
+      {/* <div>
+        {starFull.repeat(roundedRating)}
+        {starEmpty.repeat(5 - roundedRating)}
+      </div> */}
     </div>
   );
 }
 
 export default Rating;
-
-// White star
-// <span>&#9734;</span>
-
-// Black star
-// <span>&#9733;</span>
