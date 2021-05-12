@@ -1,0 +1,37 @@
+.driver-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    width: 70%;
+    background-color: #455EB5;
+}
+
+.driver {
+    display: flex;
+    width: 300px;
+    color: #fff;
+    /* border: 1px solid red; */
+}
+
+.driver .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: space-between;
+    margin: 10px;
+}
+
+.driver h3 {
+    margin: 0;
+}
+
+.driver p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.driver .stars p {
+    font-size: 30px;
+    color: #fff;
+}

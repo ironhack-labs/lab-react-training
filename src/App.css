@@ -3,8 +3,7 @@ body {
 }
 
 .card {
-  margin-bottom: 10px;
   display: flex;
   width: 70%;
-  border: 2px solid black;
+  border: 2px solid #000000;
 }
