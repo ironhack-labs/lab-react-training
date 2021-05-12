@@ -17,11 +17,18 @@ function Dice() {
 
   const randomDice = () => setDiceImage(newDice());
 
+  function emptyDice() {
+    setDiceImage('/img/dice-empty.png');
+    setTimeout(function () {
+      randomDice();
+    }, 1000);
+  }
+
   return (
     <div class="Dice">
       <img
         src={diceImage}
-        onClick={randomDice}
+        onClick={emptyDice}
         alt="not found"
         class="Dice-image"
       />
