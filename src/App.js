@@ -8,6 +8,10 @@ import Rating from './Components/rating/Rating';
 import DriverCard from './Components/driverCard/DriverCard';
 import LikeButton from './Components/likebutton/LikeButton';
 import ClickablePicture from './Components/clicablePicture/ClickablePicture';
+import Dice from './Components/dice/Dice';
+import Carousel from './Components/carousel/Carousel';
+import NumbersTable from './Components/numbersTable/NumbersTable';
+import Facebook from './Components/facebook/Facebook';
 
 function App() {
   return (
@@ -103,7 +107,15 @@ function App() {
           img="/img/persons/maxence.png"
           imgClicked="/img/persons/maxence-glasses.png"
         />
-        <h1>Like Button</h1>
+        <h1>Dice</h1>
+        <Dice />
+        <h1>Carousel</h1>
+        <Carousel />
+        <h1>NumbersTable</h1>
+        <NumbersTable limit={12} />
+        <h1>Facebook (simple)</h1>
+        <Facebook />
+        <h1>Facebook (advanced)</h1>
       </header>
     </div>
   );
