@@ -3,7 +3,7 @@ import '../App.css';
 
 function ClickablePicture(props) {
   const { img, imgClicked } = props;
-  const [image, setImage] = React.useState({ img });
+  const [image, setImage] = React.useState(img);
 
   function changeTheImage() {
     let currentImage;
