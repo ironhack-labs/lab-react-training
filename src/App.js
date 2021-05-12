@@ -10,6 +10,7 @@ import Rating from './Components/Rating';
 import DriverCard from './Components/DriverCard';
 import LikeButton from './Components/LikeButton';
 import ClickablePicture from './Components/ClickablePicture';
+import Dice from './Components/Dice';
 
 function App() {
   return (
@@ -31,15 +32,19 @@ function App() {
         birth={new Date('1988-05-11')}
         image="https://randomuser.me/api/portraits/women/44.jpg"
       />
+      <br />
       {/* Iteration 2 */}
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+      <br />
       {/* Iteration 3 */}
       <Random min={1} max={6} />
       <Random min={1} max={100} />
+      <br />
       {/* Iteration 4 */}
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+      <br />
       {/* Iteration 5 */}
       <CreditCard
         type="Visa"
@@ -71,6 +76,7 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+      <br />
       {/* Iteration 6 */}
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -78,6 +84,7 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+      <br />
       {/* Iteration 7 */}
       <DriverCard
         name="Travis Kalanick"
@@ -97,13 +104,19 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <br />
       {/* Iteration 8 */}
       <LikeButton /> <LikeButton />
+      <br />
       {/* Iteration 9 */}
       <ClickablePicture
       // img="/img/persons/maxence.png"
       // imgClicked="/img/persons/maxence-glasses.png"
       />
+      <br />
+      {/* Iteration 10 */}
+      <Dice />
+      <br />
     </div>
   );
 }
