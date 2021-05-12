@@ -1,0 +1,8 @@
+.card.color {
+    height: 100px;
+    text-align: center;
+}
+
+.card.color h3 {
+    width: 100%;
+}
