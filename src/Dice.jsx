@@ -12,14 +12,19 @@ const diceImages = [
 
 function Dice() {
   const randomNumber = () => Math.floor(Math.random() * diceImages.length);
-  const newDice = diceImages[randomNumber()];
-  const [diceImage, setDiceImage] = React.useState(newDice);
+  const newDice = () => diceImages[randomNumber()];
+  const [diceImage, setDiceImage] = React.useState(newDice());
 
-  const randomDice = () => setDiceImage(newDice);
+  const randomDice = () => setDiceImage(newDice());
 
   return (
     <div class="Dice">
-      <img src={diceImage} onClick={randomDice} alt="not found" />
+      <img
+        src={diceImage}
+        onClick={randomDice}
+        alt="not found"
+        class="Dice-image"
+      />
     </div>
   );
 }

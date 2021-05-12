@@ -1,3 +1,8 @@
 .Dice {
   margin: 7px;
 }
+
+.Dice-image {
+  width: 200px;
+  height: auto;
+}
