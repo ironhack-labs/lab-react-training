@@ -6,7 +6,7 @@ function DriverCard(props) {
   const { model, licensePlate } = car;
   return (
     <div>
-      <img src={img} alt={`${name}'s photo`} />
+      <img className="DriverImg" src={img} alt={`${name}'s photo`} />
       <h4>{name}</h4>
       <Rating>{rating}</Rating>
       <p>

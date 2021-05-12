@@ -12,7 +12,7 @@ function CreditCard(props) {
         color: props.color,
       }}
     >
-      <img src={cardType[props.type]} />
+      <img className="CardImg" src={cardType[props.type]} />
       <p>{props.number.replace(/\d(?=\d{4})/g, '*')}</p>
       <p>
         Expires {props.expirationMonth}/{props.expirationYear}
