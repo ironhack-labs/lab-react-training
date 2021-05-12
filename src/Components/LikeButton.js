@@ -18,7 +18,7 @@ function LikeButton() {
   }
 
   return (
-    <div>
+    <div className="LikeButton">
       <button
         style={{
           background: `${colors[counter]}`,
