@@ -2,14 +2,10 @@ import './BoxColor.css'
 
 const BoxColor = (props) => {
     const getBackground = (red, green, blue) => {
-       const style =  { backgroundColor: getRgbColor(red, green, blue) }
-
-       return style;    
+       return { backgroundColor: getRgbColor(red, green, blue) };
     }
 
-    const getRgbColor = (red, green, blue) => `rgb(${red}, ${green}, ${blue})`
-
-    console.log(props)
+    const getRgbColor = (red, green, blue) => `rgb(${red}, ${green}, ${blue})`;
 
     return (
         <div className="color card" style={getBackground(props.r, props.g, props.b)}>

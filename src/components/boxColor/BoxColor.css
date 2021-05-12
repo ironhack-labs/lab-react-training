@@ -1,8 +1,10 @@
 .card.color {
     height: 100px;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .card.color h3 {
-    width: 100%;
+    margin: auto;
+    color: #fff;
 }

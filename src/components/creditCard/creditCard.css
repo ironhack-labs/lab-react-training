@@ -1,0 +1,36 @@
+.credit-card {
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr;    
+    padding: 20px;
+    width: 340px;
+    height: 170px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.credit-card  .logo {
+    justify-self: end;
+}
+
+.credit-card  h3 {
+    position: relative;
+    justify-self: center;
+    font-size: 32px;
+}
+
+.credit-card img {
+    width: 50px;
+    height: auto;
+}
+
+.credit-card .info {
+    align-self: center;
+}
+
+.credit-card span {
+    margin-right: 30px;
+}
+
+.credit-card p {
+    margin: 0;
+}
