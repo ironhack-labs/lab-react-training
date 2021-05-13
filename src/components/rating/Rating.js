@@ -5,13 +5,17 @@ import React from 'react';
 function Rating(props) {
   const { children } = props;
   const roundedRating = Math.round(children);
-  const starsEmpty = '☆☆☆☆☆';
-  const starsFull = '★★★★★';
+  const starsEmpty = '☆';
+  const starsFull = '★';
 
   return (
     <h2>
+      {starsEmpty.repeat(5 - roundedRating)}
+      {starsFull.repeat(roundedRating)}
+
+      {/*         
       {starsFull.slice(0, roundedRating)}
-      {starsEmpty.slice(0, 5 - roundedRating)}
+      {starsEmpty.slice(0, 5 - roundedRating)} */}
     </h2>
   );
 }

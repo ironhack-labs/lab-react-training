@@ -1,0 +1,10 @@
+.profile-base-style {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  margin: 20px;
+}
+
+.profile-highlight {
+  background-color: #a3d2e2;
+}

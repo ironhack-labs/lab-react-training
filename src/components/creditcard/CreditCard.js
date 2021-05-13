@@ -13,7 +13,7 @@ function CreditCard(props) {
   } = props;
   const divStyle = {
     backgroundColor: bgColor,
-    color: color,
+    color, // since color : color, we can just write color
     borderRadius: '5px',
   };
 
@@ -23,9 +23,12 @@ function CreditCard(props) {
         src={type === 'Visa' ? 'img/visa.png' : 'img/master-card.svg'}
         height="50px"
       />
-      <h1>•••• •••• •••• {number.substring(12, 16)}</h1>
+      <h1>
+        {'•••• '.repeat(3)} {number.slice(-4)}
+      </h1>
       <p>
-        Expired {expirationMonth}/{expirationYear.toString().substring(2, 4)}
+        Expires: {expirationMonth > 9 ? expirationMonth : `0${expirationMonth}`}
+        /{expirationYear.toString().substring(2, 4)}
         {bank}
       </p>
       <p>{owner}</p>
