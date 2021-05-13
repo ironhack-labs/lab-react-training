@@ -5,7 +5,6 @@ function ClickablePicture(props) {
   const [imageToggle, setImageToggle] = React.useState(false);
   const imageClicked = () => {
     setImageToggle(!imageToggle);
-    console.log('kliku');
   };
   return (
     <div>
