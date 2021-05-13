@@ -1,0 +1,15 @@
+.id-card {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  border: solid;
+  margin: 20px;
+}
+
+.id-card ul {
+  list-style: none;
+}
+
+.id-card > * {
+  padding: 5px;
+}

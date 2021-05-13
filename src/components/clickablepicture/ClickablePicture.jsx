@@ -11,7 +11,7 @@ function ClickablePicture(props) {
     return (
         <div>
             <br></br>
-            <img onClick={imageClicked} src={imageChanged} alt="Clickable picture"></img>
+            <img height="200px" onClick={imageClicked} src={imageChanged} alt="Clickable picture"></img>
             <br></br>
        </div>
     )

@@ -1,0 +1,8 @@
+.iteration-container {
+  box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.36);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: grey;
+  margin: 20px;
+  padding: 5px;
+}

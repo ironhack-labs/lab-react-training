@@ -1,10 +1,27 @@
+.profiles {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  margin: 10px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
 .profile-base-style {
   display: flex;
   flex-direction: row;
   border-style: solid;
-  margin: 20px;
+  margin: 10px;
+  text-align: left;
 }
 
 .profile-highlight {
   background-color: #a3d2e2;
+  border-color: blue;
+  border-width: 3px;
+}
+
+.profile-base-style ul {
+  list-style: none;
+  margin: 0;
 }
