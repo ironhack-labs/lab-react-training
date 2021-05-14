@@ -1,0 +1,12 @@
+.FaceBook {
+  width: 500px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+.FaceBook img {
+  width: 175px;
+  height: 175px;
+  margin: 10px;
+}
