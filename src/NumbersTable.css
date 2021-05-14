@@ -1,0 +1,16 @@
+.NumbersTable-div {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  text-align: center;
+  display: inline-block;
+}
+
+.NumbersTable-div:nth-child(even) {
+  background-color: red;
+}
+
+.NumbersTable {
+  width: 260px;
+  margin: 7px;
+}
