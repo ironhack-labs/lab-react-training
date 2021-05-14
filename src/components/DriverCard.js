@@ -7,7 +7,7 @@ function DriverCard(props) {
 
   return (
     <div>
-      <img src={img} alt="photo" />
+      <img src={img} alt="photo" style={{ height: '150px' }} />
       <h4>{name}</h4>
 
       <Rating>{rating}</Rating>
