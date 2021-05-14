@@ -15,23 +15,26 @@ const FaceBookList = (props) => {
   const { firstName, lastName, country, img, isStudent } = props;
   return (
     <div>
-      <img src={img} />,
-      <br />
-      <p>
-        <b>First name</b> {firstName}
-      </p>
-      ,
-      <p>
-        <b>Last name</b> {lastName}
-      </p>
-      ,
-      <p>
-        <b>Country</b> {country}
-      </p>
-      ,
-      <p>
-        <b>Type</b> {isStudent}
-      </p>
+      <div>
+        <img src={img} />
+      </div>
+      <div>
+        <p>
+          <b>First name</b> {firstName}
+        </p>
+
+        <p>
+          <b>Last name</b> {lastName}
+        </p>
+
+        <p>
+          <b>Country</b> {country}
+        </p>
+
+        <p>
+          <b>Type</b> {isStudent ? 'Student' : 'Teacher'}
+        </p>
+      </div>
     </div>
   );
 };
