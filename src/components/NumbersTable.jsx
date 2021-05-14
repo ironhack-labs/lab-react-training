@@ -11,7 +11,7 @@ function NumbersTable(props) {
             height: '50px',
             width: '50px',
             border: '2px solid black',
-            backgroundColor: `${(num + 1) % 2 === 0 ? 'red' : 'white'}`,
+            backgroundColor: (num + 1) % 2 === 0 ? 'red' : 'white',
           }}
           key={num + 1}
         >

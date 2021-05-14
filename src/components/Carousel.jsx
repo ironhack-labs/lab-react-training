@@ -4,11 +4,11 @@ function Carousel(props) {
   const [index, setIndex] = React.useState(0);
 
   if (index < 0) {
-    setIndex(0);
+    setIndex(3);
   }
 
   if (index > 3) {
-    setIndex(3);
+    setIndex(0);
   }
 
   const previousImage = () => {
