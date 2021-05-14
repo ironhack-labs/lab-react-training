@@ -2,36 +2,16 @@ import React from 'react';
 import '../App.css';
 import profiles from '../data/berlin.json';
 
-function CountryButton(props) {
-  const [buttonClicked, setButtonClicked] = React.useState(false);
-
-  const buttonSelected = (event) => {
-    setButtonClicked(!buttonClicked);
-    props.setCountrySelected(event.target.innerText);
-  };
-
-  return (
-    <button
-      style={{
-        backgroundColor: buttonClicked ? 'lightblue' : 'white',
-      }}
-      onClick={buttonSelected}
-      key={props.item}
-      value={props.index}
-    >
-      {props.item}
-    </button>
-  );
-}
-
 function FaceBook() {
-  const [buttonClicked, setButtonClicked] = React.useState('');
+  const [buttonClicked, setButtonClicked] = React.useState(false);
   const [countrySelected, setCountrySelected] = React.useState('');
 
   const countries = [...profiles]
     .map((item) => item.country)
     .filter((item, index, self) => self.indexOf(item) == index);
 
+  console.log(buttonClicked);
+  console.log(countrySelected);
   return (
     <div>
       <div>
@@ -49,7 +29,11 @@ function FaceBook() {
           <div
             key={index}
             style={{
-              backgroundColor: `${buttonClicked} && ${countrySelected} === ${person.country} ? 'lightblue' : 'white'`,
+              backgroundColor: `${
+                buttonClicked && countrySelected === person.country
+                  ? 'lightblue'
+                  : 'white'
+              }`,
             }}
           >
             <img src={person.img}></img>
@@ -73,6 +57,29 @@ function FaceBook() {
         ))}
       </div>
     </div>
+  );
+}
+
+function CountryButton(props) {
+  const [buttonToggler, setButtonToggler] = React.useState(false);
+
+  const clickButton = (event) => {
+    setButtonToggler(!buttonToggler);
+    props.setCountrySelected(event.target.innerText);
+    props.setButtonClicked(buttonToggler), 10;
+  };
+
+  return (
+    <button
+      style={{
+        backgroundColor: buttonToggler ? 'lightblue' : 'white',
+      }}
+      onClick={clickButton}
+      key={props.item}
+      value={props.index}
+    >
+      {props.item}
+    </button>
   );
 }
 
