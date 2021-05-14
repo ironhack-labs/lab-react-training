@@ -3,10 +3,18 @@
   border: 1px solid black;
   display: flex;
   flex-direction: row;
+  margin: 7px;
 }
 
 .FaceBook img {
   width: 175px;
   height: 175px;
   margin: 10px;
+}
+
+.FaceBook-button {
+  margin: 7px;
+  background-color: white;
+  border: 1px solid rgb(143, 141, 141);
+  padding: 3px;
 }

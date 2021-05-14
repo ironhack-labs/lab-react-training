@@ -3,8 +3,17 @@ import './FaceBook.css';
 import profiles from './data/berlin.json';
 
 function FaceBook() {
+  let countryArr = [];
+  profiles.map((profile) => {
+    if (countryArr.indexOf(profile.country) === -1) {
+      countryArr.push(profile.country);
+    }
+  });
   return (
     <div>
+      {countryArr.map((el) => {
+        return <button className="FaceBook-button">{el}</button>;
+      })}
       {profiles.map((person) => {
         const { firstName, lastName, img, isStudent, country } = person;
         return (
