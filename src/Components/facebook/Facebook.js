@@ -4,15 +4,15 @@ import profiles from '../../data/berlin.json';
 export default function Facebook() {
   const [state, setState] = React.useState('');
 
-  const countries = profiles.map((el, index) => {
+  const buttons = profiles.map((el, index) => {
     return (
       <div key={index}>
-        <button onClick={background}>{el.country}</button>
+        <button onClick={selectCountry}>{el.country}</button>
       </div>
     );
   });
 
-  function background(event) {
+  function selectCountry(event) {
     const colorChange = profiles.map((el) => {
       if (el.country === event.target.innerText) {
         setState('lightblue');
@@ -22,7 +22,7 @@ export default function Facebook() {
 
   const allProfiles = profiles.map((el, index) => {
     return (
-      <div key={index} style={{ backgroundColor: background }}>
+      <div key={index} style={{ backgroundColor: state }}>
         <div>
           <img src={el.img} alt="that guy profile" />
         </div>
@@ -36,7 +36,7 @@ export default function Facebook() {
 
   return (
     <div>
-      <div>{countries}</div>
+      <div>{buttons}</div>
       <div>{allProfiles}</div>
     </div>
   );
