@@ -21,6 +21,10 @@ function CountryButton() {
   );
 }
 
+const styleOfProfile = {
+  border: 'black solid 1px',
+};
+
 function FaceBook() {
   return (
     <div>

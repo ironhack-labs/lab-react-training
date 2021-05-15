@@ -3,29 +3,25 @@ import '../App.css';
 
 function Carousel(props) {
   const { imgs } = props;
-  let i = 0;
-  const [image, setImage] = React.useState(imgs[i]);
+  let indexDefault = 0;
+  const [index, setIndex] = React.useState(indexDefault);
 
   function clickLeft() {
-    console.log('Current index: ', i);
-    i <= 0 ? (i = 3) : i--;
-    console.log('New index: ', i);
-    let newImage = imgs[i];
-    setImage(newImage);
+    let newIndex = 0;
+    index === 0 ? (newIndex = 3) : (newIndex = index - 1);
+    setIndex(newIndex);
   }
 
   function clickRight() {
-    console.log('Current index: ', i);
-    i >= 3 ? (i = 0) : i++;
-    console.log('New index: ', i);
-    let newImage = imgs[i];
-    setImage(newImage);
+    let newIndex = 0;
+    index === 3 ? (newIndex = 0) : (newIndex = index + 1);
+    setIndex(newIndex);
   }
 
   return (
     <div>
       <button onClick={clickLeft}>Left</button>
-      <img src={image} alt="Picture of a person"></img>
+      <img src={imgs[index]} alt="Picture of a person"></img>
       <button onClick={clickRight}>Right</button>
     </div>
   );
