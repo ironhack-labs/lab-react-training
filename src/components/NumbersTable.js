@@ -9,30 +9,23 @@ function NumbersTable(props) {
     arrOfNumbers.push(i);
   }
 
-  let color = 'green';
-
-  const style = {
-    backgroundColor: color,
-    borderColor: 'black',
-    borderStyle: 'solid',
-    height: 50,
-    width: 50,
-    fontSize: 20,
-    padding: 0,
-    margin: 0,
-  };
-
   return (
-    <div>
-      <table>
-        <thead>
-          <tr>
-            {arrOfNumbers.map((number) => {
-              return <th style={style}>{number}</th>;
-            })}
-          </tr>
-        </thead>
-      </table>
+    <div style={{ display: 'flex', flexFlow: 'row-wrap' }}>
+      {arrOfNumbers.map((number) => {
+        return (
+          <div
+            style={{
+              border: '1px solid black',
+              height: 50,
+              width: 50,
+              fontSize: 20,
+              backgroundColor: number % 2 === 0 ? 'red' : 'white',
+            }}
+          >
+            {number}
+          </div>
+        );
+      })}
     </div>
   );
 }
