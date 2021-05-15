@@ -33,13 +33,16 @@ function FaceBook(props) {
             setDisplayedProfiles(newProfileArr);
     }
 
+
     return (
         <div>
             <button onClick={()=>setSelectedCountry("All")}>All</button>
             <br></br>
             {uniqueCountries.map((country,index)=> {
                 return (
-                    <button key={index} onClick={()=>setSelectedCountry(country)}>{country}</button>
+                    <button key={index} 
+                    style={{backgroundColor: `${country===selectedCountry?"lightblue":""}`}}
+                    onClick={()=>setSelectedCountry(country)}>{country}</button>
                 )
             })}
             <br></br>
