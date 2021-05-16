@@ -3,15 +3,16 @@ import '../App.css';
 import profiles from '../data/berlin.json';
 
 function FaceBook() {
-  const [buttonClicked, setButtonClicked] = React.useState(false);
   const [countrySelected, setCountrySelected] = React.useState('');
 
   const countries = [...profiles]
     .map((item) => item.country)
     .filter((item, index, self) => self.indexOf(item) == index);
 
-  console.log(buttonClicked);
-  console.log(countrySelected);
+  const handleClick = (value) => {
+    setCountrySelected(value);
+  };
+
   return (
     <div>
       <div>
@@ -19,41 +20,18 @@ function FaceBook() {
           <CountryButton
             item={item}
             index={index}
-            setButtonClicked={setButtonClicked}
-            setCountrySelected={setCountrySelected}
+            selected={countrySelected === item}
+            handleClick={handleClick}
           />
         ))}
       </div>
       <div>
         {profiles.map((person, index) => (
-          <div
+          <StudentCard
+            person={person}
             key={index}
-            style={{
-              backgroundColor: `${
-                buttonClicked && countrySelected === person.country
-                  ? 'lightblue'
-                  : 'white'
-              }`,
-            }}
-          >
-            <img src={person.img}></img>
-            <p>
-              <b>First name: </b>
-              {person.firstName}
-            </p>
-            <p>
-              <b>Last name: </b>
-              {person.lastName}
-            </p>
-            <p>
-              <b>Country: </b>
-              {person.country}
-            </p>
-            <p>
-              <b>Type: </b>
-              {person.isStudent ? 'Student' : 'Teacher'}
-            </p>
-          </div>
+            selected={countrySelected === person.country}
+          />
         ))}
       </div>
     </div>
@@ -61,25 +39,45 @@ function FaceBook() {
 }
 
 function CountryButton(props) {
-  const [buttonToggler, setButtonToggler] = React.useState(false);
-
-  const clickButton = (event) => {
-    setButtonToggler(!buttonToggler);
-    props.setCountrySelected(event.target.innerText);
-    props.setButtonClicked(buttonToggler), 10;
-  };
-
   return (
     <button
       style={{
-        backgroundColor: buttonToggler ? 'lightblue' : 'white',
+        backgroundColor: props.selected ? 'lightblue' : 'white',
       }}
-      onClick={clickButton}
       key={props.item}
       value={props.index}
+      onClick={() => props.handleClick(props.item)}
     >
       {props.item}
     </button>
+  );
+}
+
+function StudentCard(props) {
+  return (
+    <div
+      style={{
+        backgroundColor: `${props.selected ? 'lightblue' : 'white'}`,
+      }}
+    >
+      <img src={props.person.img}></img>
+      <p>
+        <b>First name: </b>
+        {props.person.firstName}
+      </p>
+      <p>
+        <b>Last name: </b>
+        {props.person.lastName}
+      </p>
+      <p>
+        <b>Country: </b>
+        {props.person.country}
+      </p>
+      <p>
+        <b>Type: </b>
+        {props.person.isStudent ? 'Student' : 'Teacher'}
+      </p>
+    </div>
   );
 }
 

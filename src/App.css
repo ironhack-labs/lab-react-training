@@ -17,3 +17,8 @@
 img {
   max-height: 150px;
 }
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+}

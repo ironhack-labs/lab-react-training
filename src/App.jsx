@@ -19,6 +19,8 @@ import SignupPage from './components/SignupPage';
 function App() {
   return (
     <div className="App">
+      <h1>SignupPage</h1>
+      <SignupPage />
       <h1>IdCard</h1>
       <IdCard
         lastName="Doe"
@@ -138,9 +140,6 @@ function App() {
 
       <h1>FaceBook</h1>
       <FaceBook />
-
-      <h1>SignupPage</h1>
-      <SignupPage />
     </div>
   );
 }
