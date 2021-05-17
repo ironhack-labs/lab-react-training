@@ -113,7 +113,7 @@ function App() {
         <Carousel />
         <h1>NumbersTable</h1>
         <NumbersTable limit={12} />
-        <h1>Facebook (simple)</h1>
+        <h1>Facebook</h1>
         <Facebook />
       </header>
     </div>

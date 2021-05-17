@@ -1,30 +1,45 @@
 import React from 'react';
 import profiles from '../../data/berlin.json';
+import './Facebook.css';
 
 export default function Facebook() {
-  const [state, setState] = React.useState('');
+  const [selected, setSelected] = React.useState('');
+  let buttonsArr = [];
 
-  const buttons = profiles.map((el, index) => {
+  profiles.map((el) => {
+    if (!buttonsArr.includes(el.country)) {
+      buttonsArr.push(el.country);
+    }
+  });
+
+  const buttons = buttonsArr.map((el, index) => {
     return (
-      <div key={index}>
-        <button onClick={selectCountry}>{el.country}</button>
+      <div key={index} className="button">
+        <button onClick={selectCountry}>{el}</button>
       </div>
     );
   });
 
   function selectCountry(event) {
-    const colorChange = profiles.map((el) => {
+    profiles.map((el) => {
       if (el.country === event.target.innerText) {
-        setState('lightblue');
+        setSelected(event.target.innerText);
       }
     });
   }
 
   const allProfiles = profiles.map((el, index) => {
     return (
-      <div key={index} style={{ backgroundColor: state }}>
+      <div
+        key={index}
+        style={
+          el.country === selected
+            ? { backgroundColor: 'lightblue' }
+            : { backgroundColor: 'white' }
+        }
+      >
         <div>
-          <img src={el.img} alt="that guy profile" />
+          <img className="profileImage" src={el.img} alt="that guy profile" />
         </div>
         <p>First name: {el.firstName}</p>
         <p>Last name: {el.lastName}</p>
@@ -36,7 +51,7 @@ export default function Facebook() {
 
   return (
     <div>
-      <div>{buttons}</div>
+      <div className="buttonsContainer">{buttons}</div>
       <div>{allProfiles}</div>
     </div>
   );

@@ -22,11 +22,13 @@ export default function Dice() {
   };
 
   return (
-    <img
-      onClick={randomdice}
-      src={diceImg[state]}
-      alt="dice"
-      style={{ cursor: 'pointer' }}
-    />
+    <div className="diceImage">
+      <img
+        onClick={randomdice}
+        src={diceImg[state]}
+        alt="dice"
+        style={{ cursor: 'pointer', width: '200px' }}
+      />
+    </div>
   );
 }
