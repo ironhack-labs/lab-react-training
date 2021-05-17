@@ -6,7 +6,7 @@ export default function Facebook() {
   const [selected, setSelected] = React.useState('');
   let buttonsArr = [];
 
-  profiles.map((el) => {
+  profiles.forEach((el) => {
     if (!buttonsArr.includes(el.country)) {
       buttonsArr.push(el.country);
     }
@@ -21,7 +21,7 @@ export default function Facebook() {
   });
 
   function selectCountry(event) {
-    profiles.map((el) => {
+    profiles.forEach((el) => {
       if (el.country === event.target.innerText) {
         setSelected(event.target.innerText);
       }
