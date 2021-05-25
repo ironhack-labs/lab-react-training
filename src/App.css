@@ -36,3 +36,74 @@
     transform: rotate(360deg);
   }
 }
+
+.tabla{
+  font-size: 30px;
+  border: 2px solid black;
+  width: 100%;
+  min-height: 10vh;
+}
+
+.tabla2{
+  font-size: 30px;
+  border: 2px solid black;
+  width: 100%;
+  min-height: 20vh;
+}
+
+.center{
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.linear{
+  display:flex;
+  justify-content: space-around;
+}
+
+.alinearCuadro{
+  margin: 10px;
+  border-radius: 5px;
+  min-height: 26vh;
+}
+
+.alinearCuadro img{
+  margin-top: 20px;
+  max-width: 50px;
+  margin-left: 80%;
+}
+
+.cuerpo{
+  margin-top: 15px;
+  margin-left: 20% ;
+  font-size: 20px;
+}
+
+.fecha{
+  display: flex;
+}
+
+.letraFecha{
+  font-size: 11px;
+}
+
+.driver{
+  min-height: 30vh;
+  border: solid 2px;
+  border-radius: 10px;
+  background-color: #454eb5;
+}
+
+.centrarDrive{
+  display: flex;
+  justify-content: center;
+  color: white;
+  vertical-align: middle;
+  margin-top: 5%;
+}
+
+.centrarDrive img{
+  max-width: 100px;
+  border-radius: 50px;
+  min-height: 20vh;
+}
