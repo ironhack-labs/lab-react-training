@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+.driver{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border: solid 2px;
+  border-radius: 10px;
+  background-color: #454eb5;
+}
+
+.avatar{
+  display: flex;
+  justify-content: center;
+  color: white;
+  vertical-align: middle;
+  margin-top: 5%;
+}
+
+img{
+  width: 100px;
+  height: auto;
+  border-radius: 50px;
+
+}
+
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
