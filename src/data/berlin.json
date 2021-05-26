@@ -1,4 +1,5 @@
-[
+
+  [
   {"firstName": "Aaron", "lastName": "Newell", "country": "England", "img": "https://i.imgur.com/CFgX3Xx.png", "isStudent": false},
   {"firstName": "Alec", "lastName": "Budd", "country": "USA", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550165485/Ironclass/IH_Jan1950.jpg.jpg", "isStudent": true},
   {"firstName": "Alexander", "lastName": "Burdett", "country": "England", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550166990/Ironclass/alexander.jpeg.jpg", "isStudent": true},
@@ -28,3 +29,4 @@
   {"firstName": "Svenja", "lastName": "Weiler", "country": "Germany", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550167977/Ironclass/IH_Jan1938.jpg.jpg", "isStudent": true},
   {"firstName": "Thor", "lastName": "Flesjo", "country": "Norway", "img": "https://i.imgur.com/O5x4RPrb.jpg", "isStudent": false}
 ]
+
