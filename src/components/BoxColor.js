@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function BoxColor(props) {
-  let clase = `background-color:'rgb(${props.r}, ${props.g}, {props.b})'`;
+
 
   return (
     <>

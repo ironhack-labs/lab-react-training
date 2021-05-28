@@ -8,10 +8,18 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import { ClickablePicture } from './components/ClickablePicture';
+import { Dice } from './components/Dice';
+import { Carousel } from './components/Carousel';
+import { NumbersTable } from './components/NumbersTable';
+import { FaceBook } from './components/FaceBook';
+import { SignupPage } from './components/SignupPage';
+import { RGBColorPicker } from './components/RGBColorPicker';
 
 function App() {
   return (
-    <div>
+    <div className="mb-5">
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -98,6 +106,55 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
+      </div>
+      <div className="container">
+        <div className="row col-md-6">
+          <div className="col-md-6">
+            <LikeButton />
+          </div>
+          <div className="col-md-6">
+            <LikeButton />
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
+      </div>
+
+      <div className="container">
+        <Dice />
+      </div>
+      <div className="container">
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
+        />
+      </div>
+      <div className="container">
+        <NumbersTable limit={120}/>
+      </div>
+
+      <div className="container">
+        <FaceBook/>
+
+
+      </div>
+      <div className="container">
+        <SignupPage/>
+
+
+      </div>
+
+      <div className="container">
+        <RGBColorPicker/>
+
       </div>
     </div>
   );

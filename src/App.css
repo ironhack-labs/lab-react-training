@@ -102,15 +102,69 @@ margin-left: 80%;
 .centrarDrive{
   display: flex;
   justify-content: center;
-
   color: white;
   margin-top: 2%;
 
 }
 .centrarDrive img {
  max-width: 100px;
- border-radius: 50px;
+ min-width: 100px;
+ border-radius: 50%;
  min-height: 20vh;
+ max-height: 20vh;
 
 
+}
+.btnLike{
+  border: solid 1px;
+  width: 40%;
+  min-height: 5vh;
+  cursor: pointer;
+
+}
+
+.randomImagen{
+  max-width: 40vw;
+
+  max-height: 40vh;
+}
+
+.prueba{
+  width: 100%;
+height: 100%;
+  border: solid 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  
+}
+.prueba div{
+  width: 20%;
+
+  height: 100px ;
+  border: solid 2px;
+
+}
+.prueba div h3{
+ padding-top: 5mm;
+}
+.botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.botones2{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.botones button{
+width: 10%;
+
+}
+.cajaColor{
+  height: 40px;
+  width: 40px;
+  border: solid 2px;
 }
