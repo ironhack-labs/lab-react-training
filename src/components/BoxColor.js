@@ -1,8 +1,7 @@
 import React from 'react'
 
-export default function BoxColor(props) {
+export default function BoxColor({ r, g, b, text }) {
 
-    const { r, g, b, text } = props
     const style = {
         background: `rgb(${r},${g},${b})`,
         color: text
