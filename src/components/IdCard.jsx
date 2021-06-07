@@ -4,10 +4,17 @@ const idCard = (props) => {
   console.log(props);
   return (
     <div>
-      {props.lastName} {props.firstName} {props.gender}
+      <div>
+        <p>
+          <img src={props.picture}></img>
+        </p>
+        <p> First name: {props.lastName}</p>
+        <p> Last name: {props.firstName}</p>
+        <p> Gender: {props.gender}</p>
+        <p> Height: {props.height}m</p>
+        <p> Birth: {props.birth.toDateString()}</p>
+      </div>
     </div>
-    //   <p>{props.firstName}</p>;
-    //  <p>{ props.gender}</p>
   );
 };
 
