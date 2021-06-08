@@ -8,7 +8,7 @@ const boxColor = (props) => {
         height: '50px',
         backgroundColor: `rgb(${props.r},${props.g},${props.b})`,
       }}
-    />
+    ></div>
   );
 };
 
