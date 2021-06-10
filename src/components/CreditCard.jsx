@@ -6,7 +6,6 @@ const creditCard = (props) => {
       style={{
         width: '400px',
         height: '350px',
-
         backgroundColor: props.bgColor,
         color: props.color,
       }}
