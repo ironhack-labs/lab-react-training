@@ -1,9 +1,20 @@
 .App {
+margin: 10px;
+margin-left: 20px;
+}
+
+.App-logo2{
+  display: flex;
+  justify-content: center;
+}
+
+h1{
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  margin: 10px;
+  height: 15vmin;
   pointer-events: none;
 }
 
@@ -13,21 +24,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +31,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.id_card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border: 2px solid #000;
+}
+
+.id_card p{
+  margin-left: 15px;
+  margin: 10px;
+}
+
+.greetings{
+  border: 1px solid #000;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.Random{
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
 }
