@@ -1,19 +1,15 @@
 import React from 'react'
 import '../App.css'
 
+function BoxColor(props){
+    const boxStyle = {
+        backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})`
+    }
+    return(
+        <section className='BoxColor' style={boxStyle}>
+            <p>rgb({props.r}, {props.g}, {props.b})</p>
+        </section>
+    )
+    }
 
-
-/* Inline CSS
- * const divStyle = {
-  color: 'blue',
-  backgroundImage: 'url(' + imgUrl + ')',
-};
-
-function HelloWorldComponent() {
-  return <div style={divStyle}>Hello World!</div>;
-}
- */
-
-/*
- * {Math.floor(Math.random() * (props.max - props.min)) + props.min}
- */
+export default BoxColor

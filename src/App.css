@@ -61,3 +61,32 @@ h1{
   border: 1px solid #000;
   margin-bottom: 10px;
 }
+
+.BoxColor{
+  height: 100px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.Cards{
+  display: inline-block;
+}
+
+.credit-card{
+  margin: 20px;
+  width: 300px;
+  border-radius: 10px;
+  height: 160px;
+}
+
+.card-logo{
+  text-align: end;
+  margin: 20px;
+}
+
+.card-content{
+  margin-left: 20px;
+}
