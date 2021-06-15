@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+/*Iteration 1*/
+.idCard {
+  display: flex;
+	flex-direction: row;
+  padding:5px;
+  margin: 10px;
+  border: 1px solid black;
+}
+.idCard .picture img{
+  width: 130px;
+}
+
+.personalData {
+  padding-left: 10px;
+  display: flex;
+	flex-direction: column;
+  text-align: start;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.personalData .data {
+  font-weight: 600;
+}
+
+/*Iteration 2 & 3*/
+.greeting, .random{
+  width: 500px;
+  padding:5px;
+  margin: 10px;
+  border: 2px solid black;
+  text-align: start;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+.boxColor {
+  width: 500px;
+  margin: 10px;
+  border: 2px solid black;
+  font-size: 1.5em;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.boxColor .box {
+  padding:20px;
+  display: flex;
+	flex-direction: column;
+}
