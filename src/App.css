@@ -39,5 +39,19 @@ justify-content: baseline;
   padding: 0.1%;
 }
 
+.colorbox{
+  text-align: center;
+  border: 1px solid black;
+  margin: 10px 0;
+  
+}
+
+.creditCard{
+  display:flex;
+
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
 
 
