@@ -58,4 +58,12 @@ justify-content: baseline;
 }
 
 
+.uk-card{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  border-radius: 25px;
+  height: 300px;
+  width: 300px;
 
+}
