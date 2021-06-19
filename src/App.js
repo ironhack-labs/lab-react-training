@@ -4,6 +4,8 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 //import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
+import NumbersTable from './components/NumbersTable';
 import './App.css';
 
 
@@ -55,6 +57,23 @@ function App() {
 </div>
 <div>
   <h1>Credit Card</h1>
+</div>
+
+<div>
+  <h1>Rating</h1>
+  <Rating>0</Rating>
+<Rating>1.49</Rating>
+<Rating>1.5</Rating>
+<Rating>3</Rating>
+<Rating>4</Rating>
+<Rating>5</Rating>
+</div>
+
+
+<div>
+  <h1>Numbers Table</h1>
+<NumbersTable limit={12} />
+
 </div>
     </div>
   );
