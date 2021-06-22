@@ -36,3 +36,124 @@
     transform: rotate(360deg);
   }
 }
+.idCard {
+  display: flex;
+	flex-direction: row;
+  padding:5px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.data-id {
+  padding-left: 10px;
+  display: flex;
+	flex-direction: column;
+  text-align: start;
+  
+}
+
+.greet {
+  width: 500px;
+  padding:5px;
+  margin: 10px;
+  border: 2px solid black;
+  text-align: start;
+  font-size: 1.5em;
+}
+.random {
+  width: 500px;
+  padding:5px;
+  margin: 10px;
+  border: 2px solid black;
+  text-align: start;
+  font-size: 1.5em;
+}
+
+.boxColor {
+  width: 700px;
+  height: 150px;
+  margin: 10px;
+  border: 2px solid black;
+  font-size: 1.5em;
+}
+.text-box {
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.text-box1 {
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+}
+
+.cardCredit {
+  height: 200px;
+  width: 1300px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+ border-radius: 8px;
+ display: flex;
+}
+.cardCredit1 {
+  height: 200px;
+  width: 100%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+ border-radius: 8px;
+ display: block;
+}
+.p-card{
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.card-logo {
+  width: 80px;
+  padding-right: 25px;
+  padding-top: 25px;
+  display: block;
+  margin-left: auto;
+}
+
+.h4-card {
+  padding-top: 10px;
+  font-size: 20px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+
+
+.rating{
+  display: flex;
+  font-size: 50px;
+}
+
+.driver {
+  border-radius: 10px;
+  width: 800px;
+  background-color: rgb(70, 95, 180);
+  margin:30px;
+  padding: 20px;
+  display: flex;
+	flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.driver-img {
+  object-fit: cover;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  
+}
+
+.h5-driver{
+  color: white;
+}
