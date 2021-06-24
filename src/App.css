@@ -157,3 +157,30 @@
 .h5-driver{
   color: white;
 }
+
+.likeButton{
+  font-size: 50px;
+  margin-left: 10px;
+}
+.div-like{
+  display: flex;
+  
+}
+
+.clickable-img{
+  width: 150px;
+}
+
+.dice-h{
+  width: 200px;
+}
+
+.carousel{
+  width: 200px;
+}
+
+.table{
+  width: 50%;
+  height: 200px;
+  display: flex;
+}
