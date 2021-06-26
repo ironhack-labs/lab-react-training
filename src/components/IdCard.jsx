@@ -6,7 +6,7 @@ const idCard = (props) => {
     <div>
       <div>
         <p>
-          <img src={props.picture}></img>
+          <img src={props.picture} alt="img"></img>
         </p>
         <p> First name: {props.lastName}</p>
         <p> Last name: {props.firstName}</p>

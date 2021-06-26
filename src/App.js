@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -13,8 +12,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>ID Card</h1>
+       
+        <h1>Iteration 1: ID Card</h1>
+
         <p className="idCard_container">
           <IdCard
             lastName="Doe"
@@ -34,10 +34,16 @@ function App() {
             picture="https://randomuser.me/api/portraits/women/44.jpg"
           />
         </p>
+
+        <h1>Iteration 2: Greetings</h1>
+
         <p>
           <Greetings lang="de">Ludwig</Greetings>
           <Greetings lang="fr">François</Greetings>
         </p>
+
+        <h1>Iteration 3: Random</h1>
+
         <p>
           <Random min={1} max={6} />
           <Random min={1} max={100} />
@@ -46,6 +52,9 @@ function App() {
           <BoxColor r={255} g={0} b={0} />
           <BoxColor r={128} g={255} b={0} />
         </p>
+
+        <h1>Iteration 4: Credit Card</h1>
+
         <p>
           <CreditCard
             type="Visa"
@@ -78,6 +87,8 @@ function App() {
             color="white"
           />
         </p>
+
+        <h1>Iteration 5: Ratings</h1>
         <p>
           <Rating>0</Rating>
           <Rating>1.49</Rating>
@@ -86,11 +97,14 @@ function App() {
           <Rating>4</Rating>
           <Rating>5</Rating>
         </p>
+
+        <h1>Iteration 6: Driver Card</h1>
         <p>
+
           <DriverCard
             name="Travis Kalanick"
             rating={4.2}
-            img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+            img ="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428" 
             car={{
               model: 'Toyota Corolla Altis',
               licensePlate: 'CO42DE',
