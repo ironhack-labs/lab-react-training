@@ -1,5 +1,7 @@
 function Random(props){
-return Math.floor(Math.random() * (props.max - props.min) + props.min)
+return (
+    <p>Random value between {props.min} and {props.max} => {Math.floor(Math.random() * (props.max - props.min) + props.min)}</p>
+    )
 }
 
 export default Random;
