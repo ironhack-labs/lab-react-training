@@ -1,5 +1,4 @@
 function Greetings ({children, lang}) {
-
     switch(lang){
         case "de":
             lang = "Hallo";
@@ -21,7 +20,6 @@ function Greetings ({children, lang}) {
         <div className="box">
             {lang} {children}
         </div>
-
     )
 }
 
