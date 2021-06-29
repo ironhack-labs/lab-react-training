@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.teal {
+  background-color: #11aa99;
+}
+
+.lightgrey {
+  background-color: #eeeeee;
+}
+
+.gold {
+  background-color: #ddbb55;
+}

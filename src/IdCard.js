@@ -17,6 +17,7 @@ function IdCard(props) {
   // <div>{student}</div>
   // </div>
   // )
+  
   return (
     <div>
       <div>
