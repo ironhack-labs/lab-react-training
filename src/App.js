@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import IdCard from './IdCard';
@@ -9,6 +9,7 @@ import BoxColor from './BoxColor';
 import CreditCard from './CreditCard';
 import Rating from './Rating';
 import DriverCard from './DriverCard';
+import LikeButton from './LikeButton';
 
 function App() {
   return (
@@ -107,6 +108,9 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
+      </div>
+      <div>
+        <LikeButton /> <LikeButton />
       </div>
     </div>
   );
