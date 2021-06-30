@@ -16,7 +16,7 @@ function Greetings(props) {
       break;
   }
   return (
-    <div>
+    <div className="box">
       {greet} {props.children}
     </div>
   );

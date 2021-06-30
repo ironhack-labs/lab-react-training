@@ -19,17 +19,22 @@ function IdCard(props) {
   // )
 
   return (
-      <div>
-        <div>
+      <div className='IdCard box'>
           <img src={props.picture} alt={''}/>
+        <div>
+          <strong>First name</strong>: {props.firstName}<br/>
+          <strong>Last name</strong>: {props.lastName}<br/>
+          <strong>Gender</strong>: {props.gender}<br/>
+          <strong>Height</strong>: {props.height}<br/>
+          <strong>First name</strong>: {props.birth.toDateString()}<br/>
         </div>
-        <ul>
+        {/* <ul style={{listStyleType: 'none'}}>
           <li>First name: {props.firstName}</li>
           <li>Last name: {props.lastName}</li>
           <li>Gender: {props.gender}</li>
           <li>Height: {props.height}</li>
           <li>Birth: {props.birth.toDateString()}</li>
-        </ul>
+        </ul> */}
       </div>
   );
 }
