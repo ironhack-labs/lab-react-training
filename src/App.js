@@ -10,11 +10,13 @@ import CreditCard from './CreditCard';
 import Rating from './Rating';
 import DriverCard from './DriverCard';
 import LikeButton from './LikeButton';
+import ClickablePicture from './ClickablePicture';
 
 function App() {
   return (
     <div className="App">
       <div>
+        <h1>IdCard</h1>
         {/* <IdCard data={berlin[2]}/>
         <IdCard data={berlin[1]}/> */}
         <IdCard
@@ -25,7 +27,6 @@ function App() {
           birth={new Date('1992-07-14')}
           picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
-
         <IdCard
           lastName="Delores "
           firstName="Obrien"
@@ -35,21 +36,29 @@ function App() {
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
       </div>
+
       <div>
+        <h1>Greetings</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="en">John</Greetings>
         <Greetings lang="es">Jose</Greetings>
         <Greetings lang="fr">Remi</Greetings>
       </div>
+
       <div>
+        <h1>Random</h1>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
       </div>
+
       <div>
+        <h1>BoxColor</h1>
         <BoxColor r={255} g={0} b={255} />
         <BoxColor r={128} g={255} b={0} />
       </div>
+
       <div>
+        <h1>CreditCard</h1>
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -81,7 +90,9 @@ function App() {
           color="white"
         />
       </div>
+
       <div>
+        <h1>Rating</h1>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
@@ -89,7 +100,9 @@ function App() {
         <Rating>4</Rating>
         <Rating>5</Rating>
       </div>
+
       <div>
+        <h1>DriverCard</h1>
         <DriverCard
           name="Travis Kalanick"
           rating={4.2}
@@ -109,9 +122,20 @@ function App() {
           }}
         />
       </div>
+
       <div>
+        <h1>LikeButton</h1>
         <LikeButton /> <LikeButton />
       </div>
+
+      <div>
+        <h1>ClickablePicture</h1>
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
+      </div>
+      
     </div>
   );
 }

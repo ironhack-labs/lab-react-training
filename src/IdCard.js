@@ -19,18 +19,18 @@ function IdCard(props) {
   // )
 
   return (
-    <div>
       <div>
-        <img src={props.picture} />
+        <div>
+          <img src={props.picture} alt={''}/>
+        </div>
+        <ul>
+          <li>First name: {props.firstName}</li>
+          <li>Last name: {props.lastName}</li>
+          <li>Gender: {props.gender}</li>
+          <li>Height: {props.height}</li>
+          <li>Birth: {props.birth.toDateString()}</li>
+        </ul>
       </div>
-      <ul>
-        <li>First name: {props.firstName}</li>
-        <li>Last name: {props.lastName}</li>
-        <li>Gender: {props.gender}</li>
-        <li>Height: {props.height}</li>
-        <li>Birth: {props.birth.toDateString()}</li>
-      </ul>
-    </div>
   );
 }
 
