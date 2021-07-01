@@ -8,6 +8,7 @@ import CreditCard from './components/CreditCard.jsx';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
@@ -112,6 +113,16 @@ function App() {
       <h1 className="font-semibold text-2xl my-4">Iteration 8: Like Button</h1>
       <p>
         <LikeButton />
+      </p>
+
+      <h1 className="font-semibold text-2xl my-4">
+        Iteration 9: Clickable Picture
+      </h1>
+      <p>
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
       </p>
     </div>
   );
