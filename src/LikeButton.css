@@ -1,0 +1,30 @@
+.LikeButton {
+  margin: 3rem 0 3rem;
+}
+
+.LikeButton h2 {
+  font-size: 3rem;
+}
+
+.LikeButton h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: rgba(45, 0, 96, 0.75);
+}
+
+.LikeButton__wrapper {
+  margin: 1rem;
+}
+
+.LikeButton button {
+  margin: 1rem;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.LikeButton button:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  filter: brightness(120%);
+}

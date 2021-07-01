@@ -1,0 +1,24 @@
+.CreditCard {
+  width: 300px;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 1rem 0;
+}
+
+.CreditCard p {
+  margin: 0.25rem;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.CreditCard span {
+  margin-right: 1rem;
+}
+
+.CreditCard__logo {
+  align-self: flex-end;
+}

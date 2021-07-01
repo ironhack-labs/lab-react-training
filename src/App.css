@@ -1,38 +1,26 @@
 .App {
+  margin: 0 auto;
+  margin-top: 4rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App_h1 {
+  position: relative;
+  font-size: 4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.App_h1::after,
+.App_h1::before {
+  /* ::before and ::after are pseudo-elements, and require a content attribute to exist. Often, we make it empty, because we are using these pseudo-elements to do funky little visual UI tricks, that have no content within. Also, mixing content and style feels wrong. */
+  content: '';
+  /* border on the bottom */
+  border-bottom: 1px solid black;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* All the following is positioning stuff. It is absolute, so it is out of the flow, and we can put it wherever we want. We are putting it at the bottom of its (relative) parent, and we position its left-side 50% across the width of its parent (from the left). */
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  left: 50%;
+  /* THEN we use the transform:translate to move it back to the left, but this time, just 50% of its OWN width. The effect of moving it right 50% of its parent, and left 50% of its own width, centers it in its parent. magic! */
+  transform: translate(-50%, 0);
 }

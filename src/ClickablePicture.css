@@ -1,0 +1,24 @@
+.ClickablePicture {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ClickablePicture h2 {
+  margin: 4rem 0 2rem;
+  font-size: 3rem;
+}
+
+.ClickablePicture__wrapper {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.ClickablePicture img {
+  width: 100%;
+  border-radius: 50%;
+}

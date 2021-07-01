@@ -1,0 +1,27 @@
+.Button {
+  cursor: pointer;
+}
+
+.Button.Primary {
+  background-color: lightblue;
+}
+
+.Button.Primary:hover {
+  background-color: slateblue;
+}
+
+.Button.Secondary {
+  background-color: lightpink;
+}
+
+.Button.Secondary:hover {
+  background-color: magenta;
+}
+
+.Button.Selected {
+  background-color: violet;
+}
+
+.Button.Selected:hover {
+  background-color: plum;
+}

@@ -1,0 +1,28 @@
+.ColorCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ColorCard__wrapper {
+  width: 60%;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 0.5rem 0;
+}
+
+.ColorCard_p.ColorCard_rgb {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.ColorCard_p {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 0.1rem;
+}

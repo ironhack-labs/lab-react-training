@@ -1,0 +1,57 @@
+.FbCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.FbCard__content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.FbCard__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: 1px solid rgba(209, 176, 179, 0.3);
+  border-bottom: 1px solid rgba(209, 176, 179, 0.5);
+}
+.FbCard__wrapper:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.FbCard_img__wrapper {
+  width: 200px;
+}
+
+.FbCard img {
+  width: 100%;
+}
+
+.FbCard_body__wrapper {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.25rem;
+  justify-content: center;
+}
+
+.FbCard__wrapper {
+  background-color: white;
+  width: 60%;
+}
+
+.FbCard p {
+  margin: 0.5rem;
+}
+
+.FbCard h3 {
+  margin: 0 0 1rem 0;
+}

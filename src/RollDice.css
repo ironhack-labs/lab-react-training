@@ -1,0 +1,33 @@
+.RollDice {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  margin: 6rem 0 6rem;
+}
+
+.RollDice button {
+  background-color: rgba(145, 100, 133, 1);
+  color: white;
+  font-size: 1.75rem;
+  font-weight: light;
+  width: 175px;
+  height: 75px;
+  border-radius: 1rem;
+  border: none;
+}
+
+.RollDice button:hover {
+  background-color: lightpink;
+  cursor: pointer;
+}
+
+.RollDice button:disabled,
+.RollDice button:hover:disabled {
+  background-color: rgba(145, 100, 133, 0.5);
+  cursor: default;
+}
+
+.RollDice h2 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}

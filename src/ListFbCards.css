@@ -1,0 +1,25 @@
+.ListFbCards_button__wrapper {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  margin: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.ListFbCards button {
+  margin: 1rem 1rem 0;
+}
+
+.ListFbCards {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 2rem;
+  background-color: whitesmoke;
+}
+
+.ListFbCards h2 {
+  margin-top: 2rem;
+}
