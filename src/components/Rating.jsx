@@ -2,6 +2,7 @@ import React from 'react';
 
 const rating = (props) => {
   const number = Math.round(props.children);
+
   if (number === 0) {
     return <p>☆☆☆☆☆</p>;
   } else if (number === 1) {
@@ -16,7 +17,7 @@ const rating = (props) => {
     return <p>★★★★★</p>;
   }
 
-  return <p>{number}</p>;
+  return <p> {number}</p>;
 };
 
 export default rating;
