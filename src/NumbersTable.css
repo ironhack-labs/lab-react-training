@@ -1,0 +1,15 @@
+.NumbersTable {
+  max-width: 1200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.NumbersTable h2 {
+  margin: 1rem;
+}
+
+.NumbersTable__wrapper {
+  width: 40%;
+}

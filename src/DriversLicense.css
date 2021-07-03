@@ -1,0 +1,36 @@
+.DriversLicense {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin-top: 2rem;
+  background-color: #681916;
+  border-radius: 10px;
+}
+
+.DriversLicense_img__wrapper {
+  width: 100px;
+  height: 100px;
+  margin: 2rem;
+}
+
+.DriversLicense img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.DriversLicense_body__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.DriversLicense h5,
+.DriversLicense p {
+  color: white;
+}
+
+.DriversLicense h5 {
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+}

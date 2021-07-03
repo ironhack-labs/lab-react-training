@@ -1,0 +1,11 @@
+.ListRatings {
+  margin: 2rem 0 4rem;
+}
+
+.ListRatings h2 {
+  font-size: 3rem;
+}
+
+.Ratings__wrapper {
+  margin-top: 1rem;
+}

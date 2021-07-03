@@ -1,0 +1,23 @@
+.ListCreditCards {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-evenly;
+}
+
+.ListCreditCards__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.ListCreditCards h2 {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+.ListCreditCards article:last-of-type {
+  margin-bottom: 4rem;
+}

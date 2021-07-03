@@ -1,0 +1,12 @@
+.ListIdCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4rem 8rem;
+  background-color: whitesmoke;
+}
+
+.ListIdCards h2 {
+  font-size: 3rem;
+}

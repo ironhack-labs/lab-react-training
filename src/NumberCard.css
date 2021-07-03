@@ -1,0 +1,18 @@
+.NumberCard {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.NumberCard div {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.NumberCard div {
+  border: solid 1px #2d0060;
+}

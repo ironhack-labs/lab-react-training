@@ -1,0 +1,58 @@
+.IdCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.IdCard__content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.IdCard_header {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.IdCard__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: 1.5px solid rgba(209, 176, 179, 0.3);
+  border-bottom: 1px solid rgba(209, 176, 179, 0.5);
+  background-color: white;
+}
+.IdCard__wrapper:hover {
+  box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.1);
+}
+
+.IdCard_img__wrapper {
+  width: 200px;
+}
+
+.IdCard img {
+  width: 100%;
+}
+
+.IdCard_body__wrapper {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.25rem;
+}
+
+.IdCard p {
+  margin: 0.5rem;
+  padding: 0;
+}
+
+.IdCard h3 {
+  margin: 0 0 1rem 0;
+}
