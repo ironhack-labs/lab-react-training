@@ -1,5 +1,13 @@
+html {
+  /* background-color: #414141; */
+}
+
+body {
+  margin: 8px;
+}
+
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -35,4 +43,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.teal {
+  background-color: #11aa99;
+}
+
+.lightgrey {
+  background-color: #eeeeee;
+}
+
+.gold {
+  background-color: #ddbb55;
+}
+
+
+.IdCard {
+  display: flex;
+}
+
+.IdCard img {
+  margin-right: 5px;
+}
+
+.box {
+  padding: 5px;
+  border: 1px solid #000000;
+  margin: 10px 0;
+}
+
+.BoxColor {
+  text-align: center;
+  padding: 20px;
 }
