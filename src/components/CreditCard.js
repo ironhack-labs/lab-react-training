@@ -33,7 +33,7 @@ function CreditCard({
       <CreditNumber>{creditCardNumber(number)}</CreditNumber>
       <CardText>
         EXPIRES {expirationMonth}/{expirationYear}
-        {'  '} {bank} {'\n'}
+        {'  '} {bank}
       </CardText>
       <CardText>{owner}</CardText>
     </Credit>
@@ -44,7 +44,7 @@ const Credit = styled.div`
   background-color: ${(props) => props.bgColor};
   color: ${(props) => props.color};
   width: 40rem;
-  height: 17rem;
+  height: 20rem;
   margin: 0.5rem;
   margin: 0.9rem;
   border-radius: 10px;
@@ -55,6 +55,7 @@ const CreditNumber = styled.h1`
   text-align: center;
   margin-top: 6rem;
   font-size: 3rem;
+  font-weight: 400;
 `;
 
 const CardType = styled.img`

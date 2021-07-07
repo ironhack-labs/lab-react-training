@@ -1,9 +1,10 @@
 // import { tsPropertySignature } from '@babel/types';
+import { v4 as uuidv4 } from 'uuid';
 import React from 'react';
 
 function IdCard(props) {
   return (
-    <div className="idContainer">
+    <div key={uuidv4} className="idContainer">
       <div>
         <img src={props.picture} alt="profile"></img>
       </div>
