@@ -141,9 +141,13 @@ function App() {
         ]}
       />
       <h1 className="font-semibold text-2xl my-4">
-        Iteratio 11: Numbers Table
+        Iteratio 12: Numbers Table
       </h1>
       <NumbersTable limit={12} />
+
+      <h1 className="font-semibold text-2xl my-4">
+        Iteratio 13: FaceBook (Simple)
+      </h1>
     </div>
   );
 }
