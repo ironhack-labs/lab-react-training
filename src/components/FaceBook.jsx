@@ -10,7 +10,7 @@ class FaceBook extends Component {
   }
 
   render() {
-    console.log('nobres', this.state.contact);
+    console.log('users', this.state.contact);
 
     return (
       <div>

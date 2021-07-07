@@ -14,6 +14,8 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage';
+
 function App() {
   return (
     <div className="App">
@@ -151,6 +153,9 @@ function App() {
         Iteratio 13: FaceBook (Simple)
       </h1>
       <FaceBook></FaceBook>
+
+      <h1 className="font-semibold text-2xl my-4">Iteratio 14: SignupPage</h1>
+      <SignupPage></SignupPage>
     </div>
   );
 }
