@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -12,6 +13,7 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
 function App() {
   return (
     <div className="App">
@@ -148,6 +150,7 @@ function App() {
       <h1 className="font-semibold text-2xl my-4">
         Iteratio 13: FaceBook (Simple)
       </h1>
+      <FaceBook></FaceBook>
     </div>
   );
 }
