@@ -1,10 +1,55 @@
 .App {
+  text-align: left;
+}
+.idContainer {
+  display: flex;
+  margin: 1rem;
+  border: 2px black solid;
+  padding: 5px;
+}
+
+.greetingContainer {
+  border: 2px black solid;
+  margin: 1rem;
+  padding: 5px;
+}
+
+.textAlign {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.RandomContainer {
+  border: 2px black solid;
+  margin: 1rem;
+  padding: 5px;
+}
+
+.randomH1 {
+  margin: 1rem;
+}
+
+.boxColor {
+  height: 5rem;
+  border: 4px solid black;
+  margin: 1rem;
   text-align: center;
 }
 
+/* Initial CCS */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.cardContainer {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.cdCard {
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
