@@ -21,10 +21,12 @@ function CreditCard({
     }
   }
 
-  function creditCardNumber(number) {
+  function creditCardNumber(number, expirationYear) {
     const newNnumber = number.split('').slice(12).join('');
     return `●●●● ●●●● ●●●● ${newNnumber}`;
   }
+
+  const NewYear = expirationYear.toString().split('').slice(2).join('');
 
   creditCardNumber(number);
   return (
@@ -32,7 +34,7 @@ function CreditCard({
       <CardType src={creditCardType(type)} />
       <CreditNumber>{creditCardNumber(number)}</CreditNumber>
       <CardText>
-        EXPIRES {expirationMonth}/{expirationYear}
+        EXPIRES {expirationMonth}/{NewYear}
         {'  '} {bank}
       </CardText>
       <CardText>{owner}</CardText>
