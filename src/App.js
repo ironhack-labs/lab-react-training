@@ -154,8 +154,12 @@ function App() {
       </h1>
       <FaceBook></FaceBook>
 
-      <h1 className="font-semibold text-2xl my-4">Iteratio 14: SignupPage</h1>
+      <h1 className="font-semibold text-2xl my-4">Iteratio 15: SignupPage</h1>
       <SignupPage></SignupPage>
+
+      <h1 className="font-semibold text-2xl my-4">
+        Iteratio 16: RGBColorPicker
+      </h1>
     </div>
   );
 }

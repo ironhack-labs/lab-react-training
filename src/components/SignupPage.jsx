@@ -39,35 +39,45 @@ class SignupPage extends Component {
     return (
       <div>
         <form>
-          <label>Email</label>
+          <label>
+            <strong>Email</strong>
+          </label>
           <input
-            className="border border-black-200 rounded-md mx-4"
+            className="border border-black-200 rounded-md m-2 "
             type="email"
             name="email"
             value={this.state.email}
             onChange={this.handleChange}
           />
-          <label>Password</label>
+          <br></br>
+          <label>
+            <strong>Password</strong>
+          </label>
           <input
-            className="border border-black-200 rounded-md mx-4"
+            className="border border-black-200 rounded-md m-2"
             type="password"
             name="password"
             value={this.state.password}
             onChange={this.handleChange}
           />
-          <label>Nationality</label>
+          <br></br>
+          <label>
+            <strong>Nationality</strong>
+          </label>
           <select
             name="nationality"
             value={this.state.nationality}
             onChange={this.handleChange}
+            className="border border-black-200 rounded-md m-2"
           >
             <option value="en">--</option>
-            <option value="en">EN</option>
-            <option value="de">DE</option>
-            <option value="fr">FR</option>
+            <option value="en">English</option>
+            <option value="de">German</option>
+            <option value="fr">Franch</option>
           </select>
+          <br></br>
           <button
-            className="border border-black-300  bg-green-400 p-2 rounded-md mx-4"
+            className="border border-black-300  bg-green-400 p-2 rounded-md m-4"
             type="submit"
           >
             Submit
