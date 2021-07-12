@@ -3,6 +3,7 @@ import './App.css';
 import Person from './Card';
 import Greetings from './Greetings';
 import Random from './Random';
+import Color from './Color';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
       <Greetings lang="Bonjour" name="François" />
       <Random min="1" max="6" />
       <Random min="1" max="100" />
+      <Color style={{ backgroundColor: 'rgb(255,0,0)' }} name="red" />
+      <Color style={{ backgroundColor: 'rgb(128,255,0)' }} name="green" />
     </div>
   );
 }
