@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Person from './Card';
+import Greetings from './Greetings';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+      <Greetings lang="Hallo" name="Ludwig" />
+      <Greetings lang="Bonjour" name="François" />
     </div>
   );
 }
