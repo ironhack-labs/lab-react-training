@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Person from './Card';
 import Greetings from './Greetings';
+import Random from './Random';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
       />
       <Greetings lang="Hallo" name="Ludwig" />
       <Greetings lang="Bonjour" name="François" />
+      <Random min="1" max="6" />
+      <Random min="1" max="100" />
     </div>
   );
 }
