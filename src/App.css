@@ -36,3 +36,115 @@
     transform: rotate(360deg);
   }
 }
+
+.card-box{
+  border: 2px solid black;
+  display: flex;
+  height: 174px;
+  padding: 10px;
+  width: 900px;
+  margin:5px;
+}
+
+.flex-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-box-2{
+  border: 2px solid black;
+  display: flex;
+  height: 20px;
+  padding: 10px;
+  width: 900px;
+  margin:5px;
+}
+
+.box-color{
+  border: 2px solid black;
+  display: flex;
+  height: 100px;
+  padding: 10px;
+  width: 900px;
+  margin:5px;
+  display:flex;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.credit-color{
+  border: 1px solid black;
+  height: 200px;
+  padding: 10px;
+  width: 400px;
+  margin: 5px;
+  display: flex;
+  align-content: center;
+  align-items: flex-end;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#credit-card{
+  width: 350px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px 10px;
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#title{
+  text-align: right;
+}
+#number{
+  font-size: 30px;
+}
+
+.remove-border{
+  border: 0px !important
+}
+
+.card-box-3{
+  display: flex;
+  height: 20px;
+  padding: 10px;
+  width: 720px;
+  margin:5px;
+}
+
+.test{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+
+.card-box-4{
+  border: 2px solid black;
+  display: flex;
+  height: 174px;
+  padding: 10px;
+  width: 900px;
+  margin:5px;
+  background-color: rgb(93, 93, 207);
+}
+
+.button-like{
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  margin:5px;
+}
