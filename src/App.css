@@ -15,7 +15,9 @@
   border-radius: 15px;
   margin: 15px;
 }
-
+button {
+  margin: 10px;
+}
 .driverCard img {
   width: 120px;
   height: 120px;
@@ -34,4 +36,25 @@
 
 .cardText p {
   color: white;
+}
+
+.profile {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  border: 1px solid black;
+}
+
+.profiles {
+  padding: 20px;
+}
+
+.details {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.profile img {
+  width: 150px;
 }

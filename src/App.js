@@ -1,5 +1,4 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import Greetings from './Greetings'
 import IdCard from './IdCard'
@@ -8,6 +7,10 @@ import BoxColor from './BoxColor'
 import CreditCard from './CreditCard'
 import Rating from './Rating';
 import DriverCard from './DriverCard';
+import LikeButton from './LikeButton';
+import ClickablePicture from './ClickablePicture';
+import FaceBook from './FaceBook';
+
 
 function App() {
   return (
@@ -104,6 +107,12 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} />
+      <h1>LikeButton</h1>
+      <LikeButton /> <LikeButton />
+      <h1>ClickablePicture</h1>
+      <ClickablePicture />
+      <h1>FaceBook</h1>
+      <FaceBook />
   </div>
   );
 }
