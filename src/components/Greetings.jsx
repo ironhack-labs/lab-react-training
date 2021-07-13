@@ -1,7 +1,6 @@
 import React from 'react'
 import '../App.css'
 
-
 function Greetings(props){
     const greetings = {
         fr: 'Bonjour',

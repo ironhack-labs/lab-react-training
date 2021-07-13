@@ -1,11 +1,19 @@
-import React from 'react';
+import React from 'react'
+import '../App.css'
 
-const Rating = ({children}) => (
-    <article>
-        <p>{`${addRate(children)}`}</p>
-    </article>
+const DriverCard = (props) => (
+
+        <article className="driver-card">
+             <div>
+              <img src={props.img} alt="Driver pp" width="80px" className="driver-image"/>
+             </div>
+              <div>
+              <p>{props.name}</p>
+              <p>{`${addRate(props.rating)}`}</p>
+              <p>{props.car.model} - {props.car.licensePlate}</p>
+             </div>
+        </article>
 )
-
 let addRate = (rating) => {
     switch(Math.round(parseFloat(rating))){
         case 5:
@@ -25,4 +33,4 @@ let addRate = (rating) => {
     }
 }
 
-export default Rating
+export default DriverCard

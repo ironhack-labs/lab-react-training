@@ -90,3 +90,46 @@ h1{
 .card-content{
   margin-left: 20px;
 }
+
+.rating{
+  margin: 20px;
+}
+
+.driver-card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  border-radius: 15px;
+  background-color: #455eb5;
+  color: #fff;
+  align-content: center;
+  margin: 40px;
+}
+
+.driver-image{
+  border-radius: 50%;
+}
+
+
+.like-button{
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 40px;
+}
+
+.like-button:hover {background-color: #3e8e41}
+
+.like-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
