@@ -1,0 +1,16 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    border: 1px solid black;
+    padding: 1px;
+    margin: 15px;
+    margin-left: 20px;
+} 
+
+.numbersWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
