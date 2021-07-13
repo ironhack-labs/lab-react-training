@@ -5,6 +5,7 @@ import Greetings from './Greetings';
 import Random from './Random';
 import Color from './Color';
 import Credit from './Credit';
+import Counter from './Counter';
 
 function App() {
   return (
@@ -79,6 +80,7 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+      <Counter />
     </div>
   );
 }
