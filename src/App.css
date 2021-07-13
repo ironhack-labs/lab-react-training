@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.credit-cards{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.driverCards{
+  display: flex;
+  margin: 1rem;
+}
