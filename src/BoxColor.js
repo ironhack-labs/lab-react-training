@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function BoxColor ({r, g, b}){
 
-    const coloreDiv = `rgb(${r}, ${g}, ${b})`
+   const coloreDiv = `rgb(${r}, ${g}, ${b})`
 
    return (
     <div className="coloredBox" style={{ backgroundColor: coloreDiv }}>

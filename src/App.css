@@ -100,3 +100,62 @@
   margin-bottom: 10px;
   height: 100px;
 }
+
+.master-bcards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.bcards {
+  width: 350px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#type {
+  text-align: right;
+}
+
+#number {
+  font-size: 30px;
+}
+
+.ratingSt {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.driver-license {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #497DE1;
+  color: white;
+  font-size: 20px;
+}
+
+.driver-license img {
+  border-radius: 360px;
+  width: 150px;
+  height: 150px;
+  margin-right: 40px;
+}
+
+#btn {
+  width: 100px;
+  height: 40px;
+  box-shadow: 1px solid grey;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
