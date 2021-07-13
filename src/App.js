@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
+import Random from './components/Random';
 
 function App() {
  
   return (
 <div>
-      <h1>IdCard</h1>
+      <h1>IdCard First Iteration</h1>
     
       <IdCard 
         picture="https://randomuser.me/api/portraits/men/44.jpg"
@@ -24,6 +26,15 @@ function App() {
         height={1.72}
         birth={`${new Date("1988-05-11")}`} 
       />
+
+    <h1>Greetings Second Iteration</h1>
+    <Greetings name ="Ludwig"/>
+    <Greetings name ="Francois"/>
+
+    <h1>Random Iteration 3</h1>
+    <Random min={1} max={6}/>
+    <Random min={1} max={100}/>
+
 </div>
   );
     

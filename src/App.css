@@ -37,6 +37,20 @@
 
 }
 
+.greet{
+  padding: 1px;
+  margin-top: 5px;
+  border: 1px solid black;
+
+}
+
+.rand{
+  padding: 1px;
+  margin-top: 5px;
+  border: 1px solid black;
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

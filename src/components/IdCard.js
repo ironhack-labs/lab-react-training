@@ -1,3 +1,5 @@
+import React from 'react';
+
 /* function IdCard ({firstName, lastName, gender, height, birth, picture}) {
     return (
         <div className="IdCard box">
