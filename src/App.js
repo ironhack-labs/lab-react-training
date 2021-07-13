@@ -6,7 +6,7 @@ import Random from './Random';
 import Color from './Color';
 import Credit from './Credit';
 import Counter from './Counter';
-
+import Image from './Image';
 function App() {
   return (
     <div className="App">
@@ -81,6 +81,7 @@ function App() {
         color="white"
       />
       <Counter />
+      <Image />
     </div>
   );
 }
