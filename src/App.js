@@ -7,6 +7,7 @@ import Color from './Color';
 import Credit from './Credit';
 import Counter from './Counter';
 import Image from './Image';
+import Even from './Even';
 function App() {
   return (
     <div className="App">
@@ -82,6 +83,7 @@ function App() {
       />
       <Counter />
       <Image />
+      <Even limit={12} />
     </div>
   );
 }
