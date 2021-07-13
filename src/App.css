@@ -1,11 +1,81 @@
-.App {
+
+
+.frame{
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  
+}
+
+
+.frame p{
+  text-align: left;
+  margin-left: 10px;
+}
+
+.frame img{
+  height: 200px;
+}
+
+.card{
+  font-size: 30px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+  
+}
+
+.card div{
+  height: 200px;
+  color: black;
+  padding-top: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+#credit-card{
+  width: 350px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px 10px;
 }
+
+#title{
+  text-align: right;
+}
+
+#number{
+  font-size: 30px;
+}
+
+#stars{
+  font-size: 60px;
+  margin-left: 10px;
+}
+
+.card-box{
+  border: 2px solid black;
+  display: flex;
+  height: 174px;
+  padding: 10px;
+  width: 900px;
+  margin:5px;
+  background-color: purple;
+}
+
+
+#btn{
+  width: 100px;
+  height: 50px;
+  border: none;
+  margin: 10px;
+
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
