@@ -1,0 +1,9 @@
+.idCardComponent {
+display: flex;
+border-style: solid;
+ margin-bottom: 10px;
+}
+
+.idCardComponent img {
+    height: 190px;
+}

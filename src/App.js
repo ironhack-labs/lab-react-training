@@ -1,25 +1,50 @@
 import React from 'react';
-import logo from './logo.svg';
+import IdCard from './components/IdCard';
+import Greetings from './components/Greetings'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <section>
+        <h1>Cards</h1>
+        <IdCard
+          lastName='Doe'
+          firstName='John'
+          gender='male'
+          height={178}
+          birth="Tue Jul 14 1992"
+          picture="https://randomuser.me/api/portraits/men/44.jpg"
+        />
+
+        <IdCard
+          lastName='Delores '
+          firstName='Obrien'
+          gender='female'
+          height={172}
+          birth="Tue May 11 1988"
+          picture="https://randomuser.me/api/portraits/women/44.jpg"
+        />
+
+      </section>
+      <section>
+
+        <h1>Greetings</h1>
+        <Greetings lang='es'
+          children='Hola Jose!'>
+        </Greetings>
+        <Greetings lang='en'
+          children='Hello Mr Hose!'>
+
+        </Greetings>
+
+
+      </section>
+    </main>
+
+
+
+
   );
 }
 
