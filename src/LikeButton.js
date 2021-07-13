@@ -14,7 +14,7 @@ class LikeButton extends React.Component {
   };
 
   handleIncrementColor = () => {
-    const colors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
+    const colors = ['#8409A4', '#0D2CDF', '#2F971B', '#F6F876', '#ECAE56', '#EE3F3F'];
     let random = Math.floor(Math.random() * (colors.length - 0 + 1) + 0);
     const butts = {
       backgroundColor: `${colors[random]}`,
