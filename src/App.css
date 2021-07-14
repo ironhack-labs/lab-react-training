@@ -77,6 +77,30 @@
  font-size: 50px;
 }
 
+.Drive-Card{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  border-radius: 15px;
+  height: 220px;
+  width: 60%;
+  margin: 0 0 0 400px;
+}
+
+.img-pic img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.card-descript{
+  padding-left: 15px;
+  color: white;
+  font-size: 25px;
+}
+
 
 @keyframes App-logo-spin {
   from {

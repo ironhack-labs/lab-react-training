@@ -6,6 +6,7 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
 
 function App() {
  
@@ -74,7 +75,7 @@ function App() {
       bgColor="#ddbb55"
       color="white" />
 
-<h1>CreditCard Iteration 5</h1>
+<h1>CreditCard Iteration 6</h1>
 
     <Rating>0</Rating>
     <Rating>1.49</Rating>
@@ -82,6 +83,17 @@ function App() {
     <Rating>3</Rating>
     <Rating>4</Rating>
     <Rating>5</Rating>
+
+<h1>CreditCard Iteration 7</h1>
+
+<DriverCard
+  name="Travis Kalanick"
+  rating={4.2}
+  img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+  car={{
+    model: "Toyota Corolla Altis",
+    licensePlate: "CO42DE"
+  }} />
 
 </div>
   );
