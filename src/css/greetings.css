@@ -1,0 +1,11 @@
+.greetings{
+    display:flex ;
+    justify-content: flex-start;
+    width: 90vw;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
