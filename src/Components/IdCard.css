@@ -1,0 +1,18 @@
+.IdCard{
+    border: 1px solid black;
+}
+
+.container {
+    display:flex ;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90vw;
+    border: 1px solid black;
+    margin: 15px;
+}
+
+.info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
