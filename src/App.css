@@ -73,6 +73,11 @@
   
 }
 
+.rate-star{
+ font-size: 50px;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
