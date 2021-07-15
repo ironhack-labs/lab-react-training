@@ -1,0 +1,11 @@
+.id-card-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 2px;
+}
+
+.id-card-container img {
+  width: 200px;
+}
