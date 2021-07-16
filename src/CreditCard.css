@@ -1,0 +1,25 @@
+.credit-card {
+  width: 320px;
+  height: 170px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.credit-card img {
+  margin-left: 250px;
+  margin-top: 20px;
+}
+
+.numbers {
+  font-size: 30px;
+  padding: 40px 40px 0;
+}
+
+.expire {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.bank {
+  margin-left: 20px;
+}
