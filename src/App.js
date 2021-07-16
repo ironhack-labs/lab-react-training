@@ -1,6 +1,7 @@
 import React from 'react';
-import IdCard from './IdCard/IdCard';
-import NavBar from './Navbar/Navbar';
+import IdCard from './IdCard/IdCard.js';
+import NavBar from './Navbar/Navbar.js';
+import Greetings from './Greetings/Greetings.js'
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
         firstName='John'
         gender='male'
         height={172}
-        birth={new Date("1988-05-11")}
-      />
+        birth={new Date("1988-05-11")} />
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
     </>
   );
 }

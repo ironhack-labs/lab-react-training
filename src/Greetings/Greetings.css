@@ -1,0 +1,15 @@
+#container-greetings {
+    height: 60px;
+    width: 300px;
+    margin: 15px;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+#container-greetings p {
+    font-size: 36px;
+}
+
+#container-greetings div {
+    padding-left: 10px;
+}
