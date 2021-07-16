@@ -108,6 +108,14 @@
   border-radius: 10px;
 }
 
+.foro-pic{
+  width: 330px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 0 5px 300px;
+
+}
+
 
 @keyframes App-logo-spin {
   from {
