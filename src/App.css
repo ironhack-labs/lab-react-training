@@ -127,6 +127,32 @@
   height: 250px;
 }
 
+.carousel{
+  width: 350px;
+  height: 250px;
+  margin: 0 0 5px 500px;
+  border: 1px solid black;
+  background-color: rgb(162, 188, 201);
+
+}
+
+.carou-img{
+  width: 200px;
+  height: 200;
+  padding-left: 70px;
+  padding-top: 15px;
+
+}
+
+.buton-caro{
+  width: 150px;
+  height: 25px;
+  margin-left: 15px;
+  background-color: rgb(162, 93, 93);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+}
+
 
 @keyframes App-logo-spin {
   from {
