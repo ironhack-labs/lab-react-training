@@ -7,6 +7,8 @@ const Carousel = ({ imgs }) => {
 
   const handleClickLeft = () => {
 
+    //we neer to do a condition
+
     setIdx(idx < imgs.length - 1 ? idx + 1 : 0);
   };
 
