@@ -112,8 +112,19 @@
   width: 330px;
   height: 250px;
   border-radius: 50%;
-  margin: 0 0 5px 300px;
+  margin: 0 0 5px 500px;
 
+}
+
+.dice-buton{
+  width: 350px;
+  height: 250px;
+  margin: 0 0 5px 500px;
+}
+
+.dice-img{
+  width: 350px;
+  height: 250px;
 }
 
 

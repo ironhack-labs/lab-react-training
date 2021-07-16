@@ -1,33 +1,25 @@
-import React from 'react';
+import React from 'react'
 
 class ClickablePicture extends React.Component {
+    state = {
+        glasses: false,
+        img:'/img/persons/maxence.png'
+      }
+    imageHandler = () => {
+        this.setState(state => ({
+            glasses: !state.glasses
+        }))
+    }
+    render(){
+        return (
+            <>
+                <img src={this.state.glasses ? '/img/persons/maxence-glasses.png' : '/img/persons/maxence.png'} 
+                
+                onClick={this.imageHandler}
 
-state = {
-    isClicked: false
-
-  }
-
-  clickHandler = () => {
-    this.setState((state) => ({
-      isClicked: !state.isClicked 
-
-    }));
-  }    
-
-  render() { 
-
-    return (
-
-        <img src= {this.state.isClicked ? '/img/IMG_20190117_164935.jpg' : 
-            
-            '/img/IMG_20200421_101728.jpg'}
-
-            onClick= {this.clickHandler}
-
-            alt="Brazil donde el tipo se busca" className="foro-pic"/>
-    )
+                alt="This how I feel" className="foro-pic"/>
+            </>
+)}
 }
 
-}
-
-export default ClickablePicture
+export default ClickablePicture; 
