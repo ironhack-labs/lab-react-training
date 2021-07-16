@@ -1,0 +1,33 @@
+.driver-bg {
+  background-color: #425cbb;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  color: whitesmoke;
+  
+}
+
+.driver-bg img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 25px 10px;
+}
+
+.driver-bg span{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.driverRight {
+  width: 250px;
+}
+
+#lastSpan {
+  font-size: 15px;
+}
