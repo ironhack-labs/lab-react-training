@@ -64,7 +64,7 @@
 
   border: 1px solid black;
   border-radius: 10%;
-  margin: 10px 0px 5px 150px;
+  margin: 10px 0px 5px 50px;
   width: 400px;
   height: 200px;  
   display: inline-block;
@@ -82,11 +82,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
+  background-color: rgb(92, 92, 171);
   border-radius: 15px;
   height: 220px;
   width: 60%;
-  margin: 0 0 0 400px;
+  margin: 15px 0 0 200px;
 }
 
 .img-pic img{
@@ -99,6 +99,13 @@
   padding-left: 15px;
   color: white;
   font-size: 25px;
+}
+
+.button-likes{
+  width: 200px;
+  height: 70px;
+  margin: 0 0 5px 600px;
+  border-radius: 10px;
 }
 
 
