@@ -1,0 +1,12 @@
+#container-random{
+    margin-top: 15px;
+    height: 30px;
+    width: 330px;
+    border: 2px solid black;
+}
+
+#container-random div{
+    padding-left: 10px;
+}
+
+    
