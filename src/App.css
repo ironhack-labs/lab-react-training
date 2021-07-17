@@ -1,51 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.idCard {
-  width: 80em;
-  border: 2px solid black;
-  display: flex;
-  margin: 1em;
-}
-
-.idCard img {
-  width: 10em;
-  height: 10em;
-  padding: 0.5vw;
-}
-
-.idCard div {
-  text-align: left;
-  padding-left: 30px;
-}
-
 .box-black-border {
   width: 78em;
   border: 2px solid black;
@@ -58,20 +10,4 @@ h1 {
   display: flex;
   text-align: left;
   margin-left: 10px;
-}
-.boxColor1 {
-  color: white;
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

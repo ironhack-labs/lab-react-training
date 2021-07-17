@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../App.css';
 
 function Random(props) {
   let newValue = props.min + Math.floor(Math.random()) * props.max;

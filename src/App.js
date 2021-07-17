@@ -1,8 +1,8 @@
 import React from 'react';
-import IdCard from './components/IdCard';
-import Greetings from './components/Greetings';
-import Random from './components/Random';
-import BoxColor from './components/BoxColor';
+import IdCard from './components/idCard/IdCard';
+import Greetings from './components/greetings/Greetings';
+import Random from './components/random/Random';
+import BoxColor from './components/boxColor/BoxColor';
 import './App.css';
 
 function App() {
@@ -36,13 +36,8 @@ function App() {
       <Random min={1} max={100} />
 
       <h1>Box Color</h1>
-      <div className="boxColor1">
-        <BoxColor r={255} g={0} b={0} name="rgb(255,0,0) #ff0000" />
-      </div>
-
-      <div className="boxColor2">
-        <BoxColor r={128} g={255} b={0} name="rgb(128,255,0) #80ff00" />
-      </div>
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
     </div>
   );
 }
