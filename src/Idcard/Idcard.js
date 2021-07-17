@@ -8,7 +8,7 @@ class Idcard extends Component{
 render(){
     return(
             <>
-                <p><img id="myImg" scr={img} width="100px" height="50px"alt="foto-img"/></p>
+                <p><img id="myImg" scr={this.props.picture}alt="foto-img"/></p>
                 
                    <p> <b>First Name:</b>{this.props.firstName} </p>
                 

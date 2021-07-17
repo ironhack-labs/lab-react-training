@@ -8,3 +8,8 @@ hr{
     margin-bottom: 50px;
     margin-top: 50px;
 }
+
+#credit-card-div{
+    display: flex;
+    justify-content: space-around;
+}
