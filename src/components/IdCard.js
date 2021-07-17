@@ -6,11 +6,13 @@ class IdCard extends Component{
         return (
             <div className = "IdCard">
               <img src={this.props.picture}></img>
-              <b>First Name:</b>{this.props.firstName}<br/>
-              <b>Last Name:</b>{this.props.lastName}<br/>
-              <b>Gender:</b>{this.props.gender}<br/>
-              <b>Height:</b>{this.props.height/100}<br/>
-              <b>Birth:</b>{this.props.birth.toDateString()};
+                <div>
+                  <strong>First Name:</strong>{this.props.firstName}<br/>
+                  <strong>Last Name:</strong>{this.props.lastName}<br/>
+                  <strong>Gender:</strong>{this.props.gender}<br/>
+                  <strong>Height:</strong>{this.props.height/100}<br/>
+                  <strong>Birth:</strong>{this.props.birth.toDateString()};
+                </div>
             </div>
         )
     }

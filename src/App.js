@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard.js';
 import Greetings from './components/Greetings.js';
+import Random from './components/Random.js';
 import { directive } from '@babel/types';
 
 function App() {
@@ -32,7 +33,15 @@ function App() {
         <Greetings lang="de" name='Ludwig'/>
         <Greetings lang="fr" name='François'/>
       </div>
-    </div>
+      
+      <div className= 'random-div'>
+        <h1>Random</h1>
+        <Random min={1} max={6}/>
+        <Random min={1} max={100}/>
+      </div>
+
+
+  </div>
   );
 }
 
