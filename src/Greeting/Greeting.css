@@ -1,0 +1,7 @@
+.greeting-container{
+    border: 1px solid black;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700
+}
