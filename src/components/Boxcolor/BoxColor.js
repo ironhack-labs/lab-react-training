@@ -1,6 +1,7 @@
 import React from 'react';
-import "./Boxcolor.css";
+import "./BoxColor.css";
 import "../../App.css";
+
 function BoxColor(props) {
     let {r, g, b} = props
     
