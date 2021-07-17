@@ -12,7 +12,7 @@ function CreditCard(props) {
              <div className="BankLogo"><img src={cardType[props.type]}/></div>  
              <h3>···· ···· ···· {props.number.slice(-4)}</h3>
              <div className="CardDetails">
-                <h5>Expires {props.expirationMonth}/{props.expirationYear.toString().slice(-2)}</h5>
+                <h5>Expires {props.expirationMonth > 9 ? props.expirationMonth : `0${props.expirationMonth}` }/{props.expirationYear.toString().slice(-2)}</h5>
                 <h5>{props.bank}</h5>
              </div>
              <h5>{props.owner}</h5>
