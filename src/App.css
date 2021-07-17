@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+.card{
+ display: flex;
+ 
+ border: 2px solid black;
+ width: 30rem;
+}
+.card1{
+  display: inline;
+}
+span{ 
+  margin-top: 2rem;
+}
+.container{
+  border: 2px solid black ;
+  margin-top: 2rem;
+  height: 2rem;
+}
+.colors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: 2px solid black;
+  height: 5rem;
+}
+.cards{
+display: inline;
+width: 9rem;
+height: 6rem;
+background-color: blue;
+}
+.height-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
