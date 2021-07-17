@@ -1,0 +1,14 @@
+.colorBox {
+    color: white;
+    width: 76em;
+    border: 2px solid black;
+    padding: 1vw;
+    margin: 1vh;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
