@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 5%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +10,121 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+section {
+  background-color:ghostwhite;
+  padding: 2%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+section h2 {
+  font-size: 3rem;
+  color: darkslategrey;
+  font-weight: lighter;
+  margin-top: none;
+}
+
+.IdCard {
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+  border: solid thin #666
+}
+
+.IdCard img {
+  height: 100%;
+  display: block;
+  
+}
+
+.IdCard > div {
+  margin: 0 4% 0 0;
+}
+
+.IdCard h3 {
+  color: #666;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.Greetings {
+  padding: 2%;
+  margin: 2%;
+  border: solid thin #666;
+}
+
+.BoxColor {
+  padding: 5%;
+  color: darkslategrey;
+}
+
+.CreditCard {
+  padding: 15px;
+  border-radius: 15px;
+  width: 320px;
+}
+
+.CreditCard img {
+  width: 100%;
+  max-width: 100px;
+}
+
+.CreditCard h3 {
+  font-weight: lighter;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.CreditCard h5 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.BankLogo {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.CardDetails {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.CardDetails h5{
+  margin-right: 5%;
+  margin: none;
+}
+
+.FlexDiv {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.DriverCard {
+  width: 450px;
+  background-color:royalblue;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 15px;
+
+
+}
+
+.DriverCard img {
+  
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  margin-right: 5%;
+ 
+}
+
+.DriverCard h3{
+  font-size: 1rem;
+  
 }
