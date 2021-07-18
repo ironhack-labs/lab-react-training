@@ -44,12 +44,20 @@ border: 1px solid black;
 margin: 10px;
 }
 
-.greetings, .random{
+.greetings, .random {
   border: 1px solid black;
   padding-left: 5px;
   margin-bottom: 10px;
   text-align: left;
 }
+
+.box-color{
+  border: 1px solid black;  
+  text-align: center;
+  padding: 30px;
+}
+
+
 
 
 
