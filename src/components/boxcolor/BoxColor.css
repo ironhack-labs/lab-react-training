@@ -1,0 +1,9 @@
+.BoxColor {
+    border: solid #030324 3px;
+    width: 550px;
+    height: 100px;
+    margin: 15px;
+    padding: 25px;
+    font-size: x-large;
+    text-align: center;
+}
