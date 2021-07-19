@@ -1,30 +1,20 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.tiCard {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #282c34;
   color: white;
 }
-
-
 .CreditCard{
   display: flex;
   justify-content: space-evenly;
@@ -33,5 +23,20 @@
   display: flex;
   margin: 1rem;
 }
+.idCardP1 {
+  width: 30em;
+  border: 2px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 5px;    
+}
+.idCardP2{
+  width: 30em;
+  border: 2px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+}
+
 
 
