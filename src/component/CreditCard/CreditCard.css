@@ -1,0 +1,39 @@
+.credit-card-div {
+    text-align: left;
+    margin: 10px;
+    justify-content: left;
+}
+
+.credit-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.credit-card {
+    width: 350px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.credit-card img {
+    width: 60px;
+    margin: 20px;
+}
+
+.type {
+    text-align: right;
+}
+
+.card-number {
+    font-size: 30px;
+    text-align: center;
+}
+
+.exp-date,
+.owner {
+    margin: 30px 0px 0px 20px;
+    line-height: 0px;
+}
