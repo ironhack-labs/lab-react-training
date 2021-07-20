@@ -1,20 +1,27 @@
 import { Component } from "react";
-import greetingsList from "./GreetingsList";
-import './Greetings.css';
+import './greetings.css'
 
-class Greetings extends Component {
-    render() {
-        const selectLang = this.props.lang;
-        return(
-            <>
-                <div id = 'container-greetings'>
-                    <div>
-                        <p>{greetingsList[selectLang]}, {this.props.children}</p>
-                    </div>
-                </div>
-            </>
-        )
-    }
+
+
+
+function Greetings ({lang, children}){
+  const greeting = {
+    de: 'Guten Tag',
+    fr: 'Bonjour',
+    es: 'Hola',
+    en: 'Hello',
+    pt: 'Olá',
+    jp: 'Konnichiwa'
+  }
+
+  return(
+    <div className = 'container'>
+      <h3 >
+       {`${greeting[lang]} ${children}`}
+      </h3>
+    </div>
+  )
 }
+
 
 export default Greetings

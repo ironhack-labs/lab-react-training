@@ -1,0 +1,39 @@
+.card-div{
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.logo-cartao{ 
+    width: 50px;
+    height: 20px;
+    margin: 13px 230px;
+}
+
+.number-card{
+    margin-left: 50px;
+    font-size: 25px;
+}
+.card-details-user{
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+.card-details-month{
+    font-size: 13px;
+    
+   
+}
+.card-details-year{
+    font-size: 13px;
+    
+}
+
+.card-details-bank{
+    font-size: 13px;
+    
+    margin-left: 15px;
+}
+.card-details-owner {
+    line-height: 0px;
+    
+}

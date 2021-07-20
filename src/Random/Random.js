@@ -1,20 +1,15 @@
-import React, { Component } from 'react';
-import './Random.css';
+import './random.css'
 
-class Random extends Component{
-    render(){
-        return(
-            <>
-                <div id = 'container-random'>
-                    <div>
-                        <p>Random value between {this.props.min} and {this.props.max} => {
-                            Math.floor(Math.random() * (this.props.max - this.props.min) + this.props.min)
-                        }</p>
-                    </div>
-                </div>
-            </>
-        )
-    }
+
+
+function Random ({min, max}){
+    console.log(Number(min+max))
+    const random = Math.floor(Math.random() * (max - min)) + min
+    return(
+        <div className = 'container'>
+           <p>Random value between {min} and {max} => {random}</p>    
+        </div>
+    )
 }
 
 export default Random

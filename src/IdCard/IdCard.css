@@ -1,29 +1,16 @@
-#container {
+.div-card{
     display: flex;
-    margin-top: 10px;
-    height: 140px;
-    border: 1px solid black;
-    width: 40%;
+    margin-right: 30px;
+    align-items: center;
+    
 }
 
-#photo-container{
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: baseline;
-	align-content: center;
+.text-card{
+    margin-left: 10px;
+   
 }
-
-#information-container {
-    padding: 10px;
-    line-height: 1;
-}
-
-.information{
-    display: flex;
-}
-
-.information span {
-    font-weight: bold;
+.container-idcard{
+    border: 2px solid black;
+    align-content: center;
+    margin: 10px 10px;
 }

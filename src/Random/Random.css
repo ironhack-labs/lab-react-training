@@ -1,12 +1,5 @@
-#container-random{
-    margin-top: 15px;
-    height: 30px;
-    width: 330px;
+.container{
     border: 2px solid black;
+    align-content: center;
+    margin: 10px 10px;
 }
-
-#container-random div{
-    padding-left: 10px;
-}
-
-    
