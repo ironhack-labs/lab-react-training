@@ -8,6 +8,8 @@ import BoxColor from './components/box-color/BoxColor';
 import CreditCard from './components/credit-card/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/driver-card/DriverCard';
+import LikeButton from './components/like-button/LikeButton';
+import ClickablePicture from './components/clikable-picture/ClickablePicture';
 
 function App() {
   return (
@@ -119,6 +121,17 @@ function App() {
                 licensePlate: "BE33ER"
               }} />
           </div>
+        </section>
+        <section>
+          <h2>Like Button</h2>
+          <LikeButton /> <LikeButton />
+        </section>
+        <section>
+          <h2>Change portrait</h2>
+        <ClickablePicture
+          img='/img/persons/maxence.png'
+          imgClicked='/img/persons/maxence-glasses.png'
+        />
         </section>
       </div>
 

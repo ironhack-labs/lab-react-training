@@ -128,3 +128,8 @@ section h2 {
   font-size: 1rem;
   
 }
+
+Button {
+  margin: 2%;;
+  padding: 2%;
+}
