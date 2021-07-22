@@ -1,0 +1,6 @@
+.rating {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 5px;
+}

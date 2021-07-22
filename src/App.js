@@ -9,7 +9,10 @@ import './components/random/Random.css';
 import BoxColor from './components/boxcolor/BoxColor';
 import './components/boxcolor/BoxColor.css'
 import CreditCard from './components/creditcard/CreditCard'
-
+import './components/creditcard/CreditCard.css'
+import Rating from './components/rating/Rating';
+import './components/rating/Rating.css';
+import LikeButton from './components/likebutton/LikeButton'
 
 
 function App() {
@@ -38,7 +41,7 @@ function App() {
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
       <CreditCard
-        type="/Users/blancamorenodeluna/Documents/Ironhack/labs/3_module/1_w/React-training/lab-react-training/public/img/visa.png"
+        type="/img/visa.png"
         number="0123456789018845"
         expirationMonth={3}
         expirationYear={2021}
@@ -48,7 +51,7 @@ function App() {
         color="white" 
         />
       <CreditCard
-        type="/Users/blancamorenodeluna/Documents/Ironhack/labs/3_module/1_w/React-training/lab-react-training/public/img/master-card.svg"
+        type="/img/master-card.svg"
         number="0123456789010995"
         expirationMonth={3}
         expirationYear={2021}
@@ -58,7 +61,7 @@ function App() {
         color="#222222" 
         />
       <CreditCard
-        type="Visa"
+        type="/img/visa.png"
         number="0123456789016984"
         expirationMonth={12}
         expirationYear={2019}
@@ -67,6 +70,13 @@ function App() {
         bgColor="#ddbb55"
         color="white" 
         />
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+        <LikeButton /> <LikeButton />
     </div>
   );
 }

@@ -6,7 +6,7 @@ function IdCard(props) {
         <div className="card m-3" >
             <div className="row g-0">
                 <div className="col-md-4">
-                <img src={props.picture} className="img-fluid rounded-start pics" alt="Picture"/>
+                <img src={props.picture} className="img-fluid rounded-start pics" alt="Profile"/>
                 </div>
                 <div className="col-md-8">
                     <div className="card-body">
