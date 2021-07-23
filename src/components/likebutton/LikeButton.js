@@ -6,16 +6,19 @@ class LikeButton extends Component {
         likesCount: 0,
         colors: ['purple','blue','green','yellow','orange','red']
     }
+
+    handleLikes() {
+        this.setState((state) => ({
+            likesCount: state.likesCount + 1
+        }))
+
+    }
     render() {
-
+        const { likesCount } = this.state
         return ( 
-            
-            <button className="btn btn-sm btn-primary"
-            onClick={() => {
-                this.setState({ likesCount: this.state.likesCount + 1})
-            }}>Likes {this.state.likesCount}
-
-            </button>
+            <button className="btn btn-sm btn-primary" 
+            style={{backgroundColor: this.state.colors}}
+            onClick={() => this.handleLikes()}>Like { likesCount }</button>
         )
        
     }
