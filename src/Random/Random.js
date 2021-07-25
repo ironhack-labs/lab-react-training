@@ -1,4 +1,4 @@
-import './random.css'
+import './Random.css'
 
 
 

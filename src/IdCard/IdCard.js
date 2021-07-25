@@ -1,5 +1,5 @@
 import { Component } from "react";
-import './idcard.css'
+import './IdCard.css'
 
 
 

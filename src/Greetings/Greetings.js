@@ -1,5 +1,5 @@
 import { Component } from "react";
-import './greetings.css'
+import './Greetings.css'
 
 
 

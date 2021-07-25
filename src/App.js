@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Idcard from './idcard/Idcard';
-import Greetings from './greetings/Greetings';
-import Random from './random/Random';
+import Idcard from './IdCard/IdCard';
+import Greetings from './Greetings/Greetings';
+import Random from './Random/Random';
 import Boxcolor from './boxcolor/Boxcolor';
 import Creditcard from './creditcard/Creditcard';
 import visa from './creditcard/images/visa.png'
@@ -10,7 +10,9 @@ import NumberFormat from "react-number-format";
 import LogoMastercard from './creditcard/images/master-card.svg'
 import Rating from './rating/Rating'
 import DriverCard from './DriverCard/DriverCard';
-
+import LikeButton from './LikeButton/LikeButton'
+import Photo from './Photo/Photo';
+import Dice from './Dice/Dice';
 
 
 
@@ -40,6 +42,9 @@ function App() {
           model: "Toyota Corolla Altis",
           licensePlate: "CO42DE"
         }} />
+      <LikeButton />
+      <Photo />
+      <Dice />
     </div>
 
 
