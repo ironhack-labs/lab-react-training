@@ -22,25 +22,19 @@ function DriverCard(props) {
         'margin-left': '5px'
     };
 
-    const imgDivStyle = {
+    const imgStyle = {
         'width': '70px',
         'height': '70px',
         'border-radius': '100%',
         'margin-left': '200px'
     };
 
-    const imgStyle = {
-        'width': '70px',
-        'height': '70px',
-        'border-radius': '100%'
-    };
-
     return (
-        <div style={divCardStyle} class="card">
-            <div style={imgDivStyle}>
+        <div style={divCardStyle} className="card">
+            
                 <img style={imgStyle} src={props.img}></img>
-            </div>
-            <div style={textDivStyle} class="card-body">
+           
+            <div style={textDivStyle} className="card-body">
                 <h5>{props.name}</h5>
                 <div>
                     {stars.map(star => (

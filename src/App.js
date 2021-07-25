@@ -8,6 +8,8 @@ import BoxColor from './components/boxColor/BoxColor';
 import CreditCard from './components/creditCard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/driverCard/DriverCard';
+import LikeButton from './components/likeButton/LikeButton';
+import ClickablePicture from './components/clickablePicture/ClickablePicture';
 
 function App() {
   return (
@@ -109,6 +111,20 @@ function App() {
             model: "Audi A3",
             licensePlate: "BE33ER"
           }} />
+      </div>
+
+      <div className="py-5 px-5">
+        <h1>Iteration 8</h1>
+        <LikeButton /> 
+        <LikeButton />
+      </div>
+
+      <div className="py-5 px-5">
+        <h1>Iteration 9</h1>
+        <ClickablePicture
+          img='/img/persons/maxence.png'
+          imgClicked='/img/persons/maxence-glasses.png'
+        />
       </div>
 
 

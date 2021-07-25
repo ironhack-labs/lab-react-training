@@ -52,7 +52,7 @@ function CreditCard(props) {
     const lastFourDigits = props.number.split("").slice(12).join("")
 
     return (
-        <div class="card" style={divStyle}>
+        <div className="card" style={divStyle}>
             <img style={imgStyle} src={ props.type === "Visa" ? "/img/visa.png" : "/img/master-card.svg"}></img>
                 <p style={pStyle}>
                     <span style={spanStyle}>&#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; </span>
