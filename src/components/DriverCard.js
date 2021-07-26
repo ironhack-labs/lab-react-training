@@ -9,7 +9,7 @@ class DriverCard extends Component {
         return (
             <div className='driver-card'>
                 <div className='img'>
-                    <img src={this.props.img}/>
+                    <img src={this.props.img} alt='driver-pic'/>
                 </div>
                 <div className='info'>
                     <p className='driver'>{this.props.name}</p>

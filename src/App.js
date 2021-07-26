@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard.js';
 import Greetings from './components/Greetings.js';
@@ -8,6 +7,12 @@ import BoxColor from './components/BoxColor.js';
 import CreditCard from './components/CreditCard.js';
 import Rating from './components/Rating.js';
 import DriverCard from './components/DriverCard.js';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
 
 function App() {
   return (
@@ -105,6 +110,39 @@ function App() {
             model: "Audi A3",
             licensePlate: "BE33ER"
           }} />
+      </div>
+      <div className='like-button-div'>
+        <h1>LikeButton</h1>
+        <LikeButton/>
+      </div>
+      <div className='clickable-pic-div'>
+        <h1>ClickablePicture</h1>
+        <ClickablePicture
+          img='/img/persons/maxence.png'
+          imgClicked='/img/persons/maxence-glasses.png'
+        />
+      </div>
+      <div className='dice-div'>
+        <h1>Dice</h1>
+          <Dice/>
+      </div>
+      <div className='carousel-div'>
+        <h1>Carousel</h1>
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}/>
+      </div>
+      <div className='numbers-table-div'>
+        <h1>NumbersTable</h1>
+        <NumbersTable limit={12} />
+      </div>
+      <div className='facebook-div'>
+        <h1>Facebook</h1>
+        <Facebook />
       </div>
     </div>
   );

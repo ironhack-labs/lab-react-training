@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,19 +11,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .id-card-div,
@@ -125,8 +101,8 @@
   text-align: left;
 }
 
-.rating-div img {
-  width: 30px;
+.rating {
+  font-size: 30px;
 }
 
 .driver-card-div {
@@ -152,24 +128,144 @@
 }
 
 .driver-card img {
+  height: 100px;
   width: 100px;
+  object-fit: cover;
   border-radius: 100px;
-  text-align: left;
 }
 
 .info {
   text-align: left;
   margin: 20px;
-  line-height: 5px;
+  line-height: 15px;
   padding: 0px;
-}
-.info img {
-  width: 30px;
-  color: white;
-  background-color: white;
 }
 
 .driver {
   font-size: 25px;
   font-weight: bolder;
+}
+
+.like-button-div {
+  text-align: left;
+  margin: 10px;
+}
+
+.button {
+  width: 100px;
+  color: white;
+  font-size: 20px;
+  background-color: red;
+}
+
+.button-red {
+  background-color: red;
+}
+
+.button-purple {
+  background-color: purple;
+}
+
+.button-blue {
+  background-color: blue;
+}
+
+.button-green {
+  background-color: green;
+}
+
+.button-yellow {
+  background-color: yellow;
+}
+
+.button-orange {
+  background-color: orange;
+}
+
+.clickable-pic-div {
+  text-align: left;
+  margin: 10px;
+}
+
+.clickable-pic-div img {
+  height: 100px;
+  width: 100px;
+  border: none;
+  object-fit: cover;
+}
+
+.dice-div {
+  text-align: left;
+  margin: 10px;
+}
+
+.dice-div img {
+  width: 100px;
+}
+
+.carousel-div {
+  text-align: left;
+  margin: 10px;
+}
+
+.numbers-table-div {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.even-number {
+  background-color: red;
+}
+
+.number {
+  border: 1.5px solid black;
+  font-size: 15px;
+  padding: 18px 20px 18px 20px;
+}
+
+.facebook-div {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.facebook-card {
+  border: 3px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  width: 800px;
+}
+
+.facebook-card-blue {
+  background-color: lightblue;
+  border: 3px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  width: 800px;
+}
+
+.card-img {
+  margin-right: 5px;
+  width: 200px;
+}
+
+.background-blue {
+  background-color: lightblue;
+  font-size: 25px;
+  padding: 5px;
+  margin: 5px;
+  border: 2px gray solid;
+}
+
+.background-white {
+  font-size: 18px;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  border: 2px gray solid;
 }

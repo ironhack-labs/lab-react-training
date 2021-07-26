@@ -4,10 +4,13 @@ import '../App.css';
 class CreditCard extends Component {
     render() {
         let src = '';
+        let alt = '';
         if (this.props.type === 'Visa') {
             src = '/img/visa.png'
+            alt = 'visa-pic'
         } else {
             src = '/img/master-card.svg'
+            alt = 'master-pic'
         }
         return (
             <div className="credit-card" style={{
@@ -15,7 +18,7 @@ class CreditCard extends Component {
                 color: this.props.color,
               }}>
                 <div className="type">
-                    <img src={src} />
+                    <img src={src} alt={alt}/>
                 </div>
                 <div className="card-number">
                     •••• •••• •••• {this.props.number.substr(-4)}
