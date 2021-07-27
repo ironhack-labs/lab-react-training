@@ -1,0 +1,31 @@
+.creditCards-box{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    width: 80px;
+    height: 40px;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.all-cards{
+    width: 500px;
+    border-radius: 5%;
+}
+.Visa{
+    color: white;
+    font-size: 40px;
+}
+.Master{
+    font-size: 40px;
+}
+.Visa > div > p {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px;
+}
+.Master> div > p {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px;
+}

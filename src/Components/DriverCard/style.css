@@ -1,0 +1,31 @@
+.driver-img{
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+
+}
+.bg-driver {
+    background-color: rgb(46, 0, 250);
+    width: 1000px;
+    height: 200px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    color:white;
+    display: flex;
+    justify-content: center;
+}  
+.bg-driver > div {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.bg-driver > div > h3 {
+    font-size: 35px;
+    margin-top: 0px;
+}
+.bg-driver > div > p {
+    font-size: 25px;
+}

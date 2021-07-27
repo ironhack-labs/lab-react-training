@@ -1,0 +1,7 @@
+.stars{
+    display: flex;
+    margin-left: 20px;
+}
+.stars > img{
+    width: 40px;
+}
