@@ -1,0 +1,8 @@
+.carousel{
+    width: 50vw;
+    height:50vh;
+  }
+  .img-carousel{
+    background-repeat: no-repeat;
+    background-position:center;
+  }

@@ -62,13 +62,74 @@ span{
   height: 5rem;
 }
 .cards{
-display: inline;
-width: 9rem;
-height: 6rem;
+display: flex;
+flex-direction: column ;
+width: 30rem;
 background-color: blue;
+border-radius:20px 20px 20px ;
 }
 .height-cards{
   display: flex;
-  justify-content: space-between;
+  
   align-items: center;
+  
 }
+.card-center{
+  display: flex;
+  justify-content: space-around;
+}
+.bank{
+  
+text-align: end;
+ font-size: 2rem;
+}
+.number{
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.Stars{
+  font-size: 3.5rem;
+}
+.flex{
+  
+  display: flex;
+  justify-content: center;
+  background-color:cornflowerblue;
+  color: white;
+  align-items: center;
+  margin-top: 2rem;
+  width: 50rem;
+  border-radius: 15px;
+  margin-left: 1rem;
+  height: 14rem;
+}
+.flex p{  
+  font-size:1rem ;
+}
+.img-cartoon{
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+
+}
+.div-img{
+  margin-right: 2rem;
+}
+.bt{
+  width: 8rem;
+  height: 4rem;
+  margin: 2rem;
+}
+.img-Dados{
+  width: 5rem;
+  height: auto;
+  margin: 2rem;
+}
+.box{
+  width: 5rem;
+  height: 5rem;
+  
+  background-color: black;
+}
+

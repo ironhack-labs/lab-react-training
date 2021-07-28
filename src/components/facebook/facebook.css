@@ -1,0 +1,23 @@
+.profile-facebook{
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    height: 25rem;
+    width: 50rem;
+    margin: 5rem;
+}
+.profile-facebook img{
+    width: 20rem;
+    height: auto;
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    
+}
+.profile-info div{
+    display: flex;
+    height: 6rem;
+    margin-top: -2rem;
+}
