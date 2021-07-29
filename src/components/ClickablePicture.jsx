@@ -1,33 +1,29 @@
-import React, { Component } from 'react'
+import {useState, useEffect} from 'react';
 
-class ClickablePicture extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            glasses: false,
-            displayedImg: this.props.img
-        };
-        this.setGlasses = this.setGlasses.bind(this);
+function ClickablePicture() {
+    const [glasses, setGlasses] = useState(false);
+    const [imageUrl, setImageUrl] = useState('/img/persons/maxence.png');
+
+    const toggleGlasses = () => {
+        setGlasses(glasses => !glasses);
     }
 
-    render() {
-        return (
-            <div className="clickablePicture">
-                <img onClick={this.setGlasses} src={this.state.displayedImg} alt="glasses on click"/>
-            </div>
-        );
-    }
-
-    setGlasses() {
-        if(this.state.glasses) {
-            this.setState({glasses:false});
-            this.setState({displayedImg:this.props.img});
+    //Cambiar imagen
+    useEffect(()=>{
+        console.log(imageUrl)
+        if(glasses) {
+            setImageUrl('/img/persons/maxence-glasses.png');
         }
         else {
-            this.setState({glasses:true});
-            this.setState({displayedImg:this.props.imgClicked});
+            setImageUrl('/img/persons/maxence.png');
         }
-    }
+    },[glasses])
+
+    return (
+        <div className="clickablePicture">
+            <img onClick={() => toggleGlasses()} src={imageUrl} alt="glasses on click"/>
+        </div>
+    );
 }
 
 export default ClickablePicture;

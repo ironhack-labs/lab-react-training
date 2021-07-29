@@ -1,12 +1,15 @@
-import React, { Component } from 'react'
+import {useState, useEffect} from 'react';
 
-class NumbersTable extends Component {
-    state = {
-        cells:[]
+function NumbersTable() {
+    const [limit, setLimit] = useState(0);
+
+    const handleChange = (e) =>{
+        const {name, value} = e.target;
+        setLimit(value);
     }
 
-    renderTable = (limit=0) => {
-        let {cells} = this.state;
+    const renderTable = (limit=0) => {
+        let cells = [];
 
         for(let i=0; i<limit; i++) {
             cells.push(i+1);
@@ -23,11 +26,12 @@ class NumbersTable extends Component {
         );
     }
 
-    render({limit}=this.props) {
-        return(
-            this.renderTable(limit)
-        )
-    }
+    return (
+        <div>
+            <input type='number' name="valor" onChange={handleChange}/>
+            {renderTable(limit)}
+        </div>
+    );
 }
 
 export default NumbersTable;

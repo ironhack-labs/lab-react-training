@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^5.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "availity-reactstrap-validation": "^2.7.1",
+    "bootstrap": "^5.0.2",
+    "es6-promise": "^4.2.8",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-scripts": "4.0.0",
     "reactstrap": "^8.9.0"
   },

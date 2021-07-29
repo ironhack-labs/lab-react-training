@@ -146,10 +146,7 @@ export default class App extends Component {
               </section>
               <section className="iteration9">
                 <h1>Iteration 9</h1>
-                <ClickablePicture
-                  img='/img/persons/maxence.png'
-                  imgClicked='/img/persons/maxence-glasses.png'
-                />
+                <ClickablePicture/>
               </section>
               <section className="iteration10">
                 <h1>Iteration 10</h1>
@@ -168,7 +165,7 @@ export default class App extends Component {
               </section>
               <section className="iteration12">
                 <h1>Iteration 12</h1>
-                <NumbersTable limit={12} />
+                <NumbersTable/>
               </section>
               <section className="iteration13">
                 <h1>Iteration 13 and 14</h1>

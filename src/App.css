@@ -182,8 +182,7 @@
 }
 
 .likeButton button {
-  background-color: blue;
-  border: 3px solid white;
+  border: 3px solid black;
   height:50px;
   width:200px;
   font-family : inherit;
@@ -245,6 +244,11 @@
 /*Iteration 15*/
 .signUpPage {
   max-width: 500px;
+}
+
+.signUpWelcome {
+  display: flex;
+	flex-direction: column;
 }
 
 /*Iteration 16*/

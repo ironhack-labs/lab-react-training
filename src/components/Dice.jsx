@@ -1,37 +1,27 @@
-import React, { Component } from 'react'
+import {useState} from 'react';
 
-class Dice extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            interactable: true,
-            displayedImg: "img/dice3.png"
-        };
-        this.diceClick = this.diceClick.bind(this);
-    }
+function Dice() {
+    const [interactable, setInteractable] = useState(true);
+    const [imageUrl, setImageUrl] = useState('img/dice3.png');
 
-    render() {
-        return (
-            <div className="dice">
-                <img onClick={this.diceClick} src={this.state.displayedImg} alt="dice"/>
-            </div>
-        );
-    }
+    const setRandomImage = () => {
+        if(interactable) {
+            setInteractable(false);
+            setImageUrl('img/dice-empty.png');
 
-    diceClick() {
-        console.log(this.state.interactable);
-        if(this.state.interactable) {
-            this.setState({interactable:false});
-            this.setState({displayedImg:"img/dice-empty.png"})
+            setTimeout(() => {
+                const rndInt = Math.floor(Math.random() * 6) + 1;
+                setImageUrl(`img/dice${rndInt}.png`);
+                setInteractable(true);
+            }, 1000);
         }
-        setTimeout(() => {
-            this.setState({interactable:true})
-            const rndInt = Math.floor(Math.random() * 6) + 1;
-            this.setState({displayedImg:`img/dice${rndInt}.png`})
-        }, 1000);
     }
 
-
+    return (
+        <div className="dice">
+            <img onClick={() => setRandomImage()} src={imageUrl} alt="dice"/>
+        </div>
+    );
 }
 
 export default Dice;
