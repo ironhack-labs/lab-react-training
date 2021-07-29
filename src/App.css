@@ -4,45 +4,104 @@
 }
 
 
-.idcard{
+.idCard{
   display:flex;
+  
   border: 1px solid black;
   margin: 10px 0;
 }
 
-
-.idcard > img{
+.idCard > img {
   margin: 5px;
-  width: 120px ;
+  width: 120px;
   height: 120px;
 }
 
-
-.textCard{
+.idText {
   display: flex;
-  flex-direction: column;
-  justify-content: baseline;
+flex-direction: column;
+justify-content: baseline;
 }
 
-.saludos{
+.greetings{
   display:flex;
+  
   border: 1px solid black;
   margin: 10px 0;
+  padding: 0.5%;
 }
 
-.numRandom{
+.random{
   display:flex;
+  
   border: 1px solid black;
   margin: 10px 0;
+  padding: 0.1%;
 }
 
-.Color{
-  border: 1px solid black;
-  margin: 10px 0;
+.colorbox{
   text-align: center;
-  color: white;
+  border: 1px solid black;
+  margin: 10px 0;
+  
 }
+
+.creditCard{
+  display:flex;
+
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
+.rating {
+  font-size: 160%;
+}
+
 
 .uk-card{
-  border-radius: 28px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  border-radius: 25px;
+  height: 300px;
+  width: 300px;
+
+}
+
+
+
+span {
+  font-size: 30px;
+}
+
+.likeB {
+  box-sizing: content-box;
+  display:inline;
+  float:left;
+}
+
+.likeB button {
+  background-color: blue;
+  border: 3px solid white;
+  height:50px;
+  width:200px;
+  font-family : inherit;
+  font-size: 2em;
+  color: white;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.likeB button:active {
+  border: 4px solid gray;
+}
+
+.pic{
+  margin: 10%;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+.dice{
+  width: 75%;
+  height: 75%;
 }
