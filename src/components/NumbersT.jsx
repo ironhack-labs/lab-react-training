@@ -1,12 +1,12 @@
-import {useState} from 'react';
+import React, {Component} from 'react';
 
-function NumbersTable () {
-    const [state] = useState({
+class NumbersTable extends Component{
+    state={
         cells:[]
-    })
-    
-   let renderTable=(limit=0)=>{
-        let {cells} = state;
+    }
+
+    renderTable=(limit=0)=>{
+        let {cells} = this.state;
 
         for(let i=0; i < limit; i ++){
             cells.push(i + 1)
@@ -36,8 +36,12 @@ function NumbersTable () {
         )
     }
 
-    
-    return <div> {renderTable()}</div>
+
+    render({limit}=this.props){
+        return(
+            this.renderTable(limit)
+        )
+    }
 }
 
 export default NumbersTable;

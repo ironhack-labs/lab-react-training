@@ -67,3 +67,37 @@ justify-content: baseline;
   width: 300px;
 
 }
+
+.diceElement {
+  width: 20%;
+  height: 20%;
+}
+
+
+  .likbut {
+  box-sizing: content-box;
+  display:inline;
+  float:left;
+}
+
+.likbut button {
+  background-color: blue;
+  border: 3px solid white;
+  height:50px;
+  width:200px;
+  font-family : inherit;
+  font-size: 2em;
+  color: white;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.likbut button:active {
+  border: 4px solid gray;
+}
+
+.picture{
+  margin: 10%;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}

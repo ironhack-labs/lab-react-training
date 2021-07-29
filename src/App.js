@@ -7,6 +7,9 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import NumbersTable from './components/NumbersTable';
 import './App.css';
+import Dice from './components/Dice';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 
 function App() {
@@ -96,6 +99,25 @@ function App() {
 <Rating>5</Rating>
 </div>
 
+<div>
+  <h1>Like Button</h1>
+  <LikeButton/>
+  
+  <LikeButton/>
+</div>
+
+<div>
+<h1 className="picture">Clickable Picture</h1>
+<ClickablePicture
+  img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'
+/>
+</div>
+
+<div className="diceElement">
+    <h1>Dice</h1>
+      <Dice/>
+</div>
 
 <div>
   <h1>Numbers Table</h1>
