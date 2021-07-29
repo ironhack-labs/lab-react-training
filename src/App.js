@@ -5,7 +5,7 @@ import IdCard from "./components/Iteration1.js";
 import Greetings from "./components/Iteration2.js";
 import Random from "./components/Iteration3.js";
 import BoxColor from './components/Iteration4.js';
-
+import LikeButton from './components/Iteration8.js';
 function App() {
   const cards = [
     {
@@ -53,6 +53,9 @@ function App() {
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
 
+      </div>
+      <div>
+        <LikeButton/><LikeButton/>
       </div>
     </section>
   );
