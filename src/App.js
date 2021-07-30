@@ -6,6 +6,7 @@ import Greetings from "./components/Iteration2.js";
 import Random from "./components/Iteration3.js";
 import BoxColor from './components/Iteration4.js';
 import LikeButton from './components/Iteration8.js';
+import ClickablePicture from './components/Iteration9';
 function App() {
   const cards = [
     {
@@ -56,6 +57,9 @@ function App() {
       </div>
       <div>
         <LikeButton/><LikeButton/>
+      </div>
+      <div>
+        <ClickablePicture imgNormal='/img/persons/maxence.png' imgClicked='/img/persons/maxence-glasses.png'/>
       </div>
     </section>
   );
