@@ -11,7 +11,8 @@ const ClickablePicture = ({imgNormal, imgClicked}) => {
     }
 
     return (
-        <img onClick={handleClick}
+        <img className = "image" 
+        onClick={handleClick}
         src={clicked ? imgClicked : imgNormal}/>
     )
 }
