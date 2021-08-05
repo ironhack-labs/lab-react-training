@@ -98,6 +98,78 @@ margin: 10px;
    line-height: 0px;
  }
 
+ .button {
+  width: 100px;
+  color: white;
+  font-size: 20px;
+  background-color: red;
+}
+
+.button-red {
+  background-color: red;
+}
+
+.button-purple {
+  background-color: purple;
+}
+
+.button-blue {
+  background-color: blue;
+}
+
+.button-green {
+  background-color: green;
+}
+
+.button-yellow {
+  background-color: yellow;
+}
+
+.button-orange {
+  background-color: orange;
+}
+
+.clickable-pic-div {
+  text-align: left;
+  margin: 10px;
+}
+
+.clickable-pic-div img {
+  height: 100px;
+  width: 100px;
+  border: none;
+  object-fit: cover;
+}
+
+.dice-div {
+  text-align: left;
+  margin: 10px;
+}
+
+.dice-div img {
+  width: 100px;
+}
+
+.carousel-div {
+  text-align: left;
+  margin: 10px;
+}
+
+.numbers-table-div {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.even-number {
+  background-color: red;
+}
+
+.number {
+  border: 1.5px solid black;
+  font-size: 15px;
+  padding: 18px 20px 18px 20px;
+}
+
 
 
 

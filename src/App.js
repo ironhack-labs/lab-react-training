@@ -6,6 +6,11 @@ import Greetings from './components/Greetings.js';
 import Random from './components/Random.js';
 import BoxColor from './components/BoxColor.js'
 import CreditCard from './components/CreditCard.js';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 import { directive } from '@babel/types';
 
 function App() {
@@ -79,6 +84,35 @@ function App() {
             bgColor="#ddbb55"
             color="white" />
       </div>
+      </div>
+      <div className='like-button-div'>
+        <h1>LikeButton</h1>
+        <LikeButton/>
+      </div>
+      <div className='clickable-pic-div'>
+        <h1>ClickablePicture</h1>
+        <ClickablePicture
+          img='/img/persons/maxence.png'
+          imgClicked='/img/persons/maxence-glasses.png'
+        />
+      </div>
+      <div className='dice-div'>
+        <h1>Dice</h1>
+          <Dice/>
+      </div>
+      <div className='carousel-div'>
+        <h1>Carousel</h1>
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}/>
+      </div>
+      <div className='numbers-table-div'>
+        <h1>NumbersTable</h1>
+        <NumbersTable limit={12} />
       </div>
 
 
