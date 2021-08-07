@@ -1,4 +1,5 @@
 import React from 'react';
+// import Random from './Random.css';
 
 const Random = (props) => {
     

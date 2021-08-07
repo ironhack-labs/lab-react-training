@@ -7,9 +7,9 @@ class BoxColor extends Component {
         const backgroundColour = `rgb(${this.props.r},${this.props.g},${this.props.b})` 
 
         const divStyle = {
-            height: "150px",
+            height: "100px",
             backgroundColor: `${backgroundColour}`,
-            width: "100vw"                        
+            width: "1330px"                        
         }
 
         return(
