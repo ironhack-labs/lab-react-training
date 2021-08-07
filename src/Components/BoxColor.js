@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './BoxColor.css'
 
 class BoxColor extends Component {
     render(){
@@ -13,7 +14,7 @@ class BoxColor extends Component {
 
         return(
             <>
-                <div className = 'm-3 p-5' style={divStyle}> {backgroundColour} </div>
+                <div className = 'main-boxcolor' style={divStyle}> {backgroundColour} </div>
             </>
         )
     }

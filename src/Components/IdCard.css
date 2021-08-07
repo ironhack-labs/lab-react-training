@@ -1,0 +1,8 @@
+.contact{
+    border: 1px black solid
+}
+
+.contact p{
+    display: flex;
+    text-align: center;
+}
