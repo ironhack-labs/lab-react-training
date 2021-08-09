@@ -5,11 +5,12 @@
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-scripts": "4.0.0"
+    "react-scripts": "4.0.0",
+    "yarn": "^1.22.11"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "PORT=3006 react-scripts start",
+    "build": "PORT=3006 react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
