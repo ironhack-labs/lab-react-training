@@ -1,0 +1,17 @@
+.idCard {
+  border: 1px black solid;
+  text-align: left;
+  padding: 10px 0 0 10px;
+  margin: 0 10px 10px 10px;
+  display: flex;
+}
+
+.idCard h1 {
+  text-align: left;
+}
+
+.idCard-info {
+  margin-left: 10px;
+  font: 16px;
+  line-height: 60%;
+}

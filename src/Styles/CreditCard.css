@@ -1,0 +1,28 @@
+.creditCardWrapper {
+  width: 40%;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.creditCardNumber {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.creditCardType {
+  text-align: right;
+}
+
+.creditCardExpireWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.creditCardBank {
+  margin-left: 20px;
+}
+
+.creditCardOwner {
+  text-align: left;
+}
