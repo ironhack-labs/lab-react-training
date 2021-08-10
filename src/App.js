@@ -6,6 +6,8 @@ import Boxcolor from './components/Boxcolor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard'
+import ClickablePicture from './components/ClickablePicture'
+import LikeButton from './components/LikeButton'
 import './App.css';
 
 
@@ -27,7 +29,7 @@ function App() {
         gender='female'
         height={172}
         birth={new Date("1993-05-11")}
-        picture="https://randomuser.me/api/portraits/women/8.jpg"
+        picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
       {/*Iteration 2*/}
       <Greetings lang="de">Ludwig</Greetings>
@@ -92,6 +94,17 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} />
+        {/*Iteration 8*/}
+          <LikeButton /> <LikeButton />
+        {/*Iteration 9*/}
+        <ClickablePicture
+          img='/img/persons/maxence.png'
+          imgClicked='/img/persons/maxence-glasses.png'
+        />
+        {/*Iteration 12*/}
+
+        {/*Iteration 13*/}
+
     </div>
   );
 }
