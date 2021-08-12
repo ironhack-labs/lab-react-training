@@ -9,6 +9,7 @@ function Rating(props) {
       ? stars.push(<span key={i}>★</span>)
       : stars.push(<span key={i}>☆</span>);
   }
+
   return <div className="ratingStars">{stars}</div>;
 }
 

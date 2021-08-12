@@ -1,0 +1,12 @@
+.numbersBlock {
+  height: 60px;
+  width: 60px;
+  border: 1px black solid;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  /* border: 1px black solid; */
+}

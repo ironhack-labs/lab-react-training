@@ -1,0 +1,15 @@
+.profile {
+  border: 1px black solid;
+  width: 80%;
+  display: flex;
+  margin: 10px;
+}
+
+.profile img {
+  height: 150px;
+}
+
+.profile-info-wrapper {
+  text-align: left;
+  margin-left: 10px;
+}
