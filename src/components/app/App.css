@@ -1,0 +1,20 @@
+.App {
+  padding: 20px 60px;
+}
+
+.idSection {
+  margin-top: 40px;
+  width: 50vw;
+}
+.singleIdCard {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  border: 1px solid grey;
+  margin: 10px 0;
+}
+
+.singleIdCard img {
+  height: 160px;
+  margin-right: 40px;
+}
