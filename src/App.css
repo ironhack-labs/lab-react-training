@@ -28,6 +28,95 @@
   color: #61dafb;
 }
 
+.idCard {
+  display: flex;
+  flex-direction: row;
+  width: 97.5%;
+  border: 2px solid black;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+
+.properties {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1%;
+}
+
+.driverCard {
+  background-color: #455eb5;
+  height: 15vh;
+  margin-bottom: 1vh;
+  padding: 2%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.driverProperties {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1%;
+}
+
+.driverName {
+  font-size: 25px;
+}
+
+.box {
+  height: 5vh;
+  height: 130px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  width: 80%;
+  margin-left: 60px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.random {
+  height: 50px;
+  border: 2px solid black;
+  padding-left: 10px;
+}
+
+.greeting {
+  height: 40px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.photo {
+  height:126px;
+  width: 126px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.likeButton {
+  height: 5%;
+  width: 10%;
+}
+
+.driverImg {
+  height: 80%;
+}
+
+.creditCard {
+  background-color: red;
+  height: 10%;
+  width: 33%;
+  border-radius: 10px;
+}
+
+.creditCards {
+  display: flex;
+  flex-direction: row;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
