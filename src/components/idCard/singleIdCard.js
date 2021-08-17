@@ -7,7 +7,7 @@ class SingleIdCard extends React.Component {
       firstName: 'John',
       gender: 'male',
       height: '178',
-      //   birth: {new Date("1992-07-14")},
+      //   birth: new Date('1992-07-14'),
       picture:
         'https://i.pinimg.com/736x/f8/2f/ba/f82fbac7514f944aacc0257445c1f89e.jpg',
     },
@@ -16,7 +16,7 @@ class SingleIdCard extends React.Component {
       firstName: 'Obrien',
       gender: 'female',
       height: '172',
-      // birth: {new Date("1988-05-11")},
+      //   birth: new Date('1988-05-11'),
       picture:
         'https://cdn3.vectorstock.com/i/1000x1000/52/87/young-beautiful-business-woman-cartoon-character-vector-35865287.jpg',
     },
@@ -26,7 +26,7 @@ class SingleIdCard extends React.Component {
       <>
         {this.idCardsArr.map((elm) => {
           return (
-            <div className="singleIdCard">
+            <div className="singleCard">
               <img src={elm.picture} alt={elm.firstName + 'picture'} />
               <div>
                 <p>
@@ -45,6 +45,10 @@ class SingleIdCard extends React.Component {
                   <strong>Height: </strong>
                   {elm.height + 'cm'}
                 </p>
+                {/* <p>
+                  <strong>DOB: </strong>
+                  {elm.birth}
+                </p> */}
               </div>
             </div>
           );

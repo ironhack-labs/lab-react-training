@@ -2,19 +2,20 @@
   padding: 20px 60px;
 }
 
-.idSection {
-  margin-top: 40px;
+.section {
+  margin: 40px 0;
   width: 50vw;
 }
-.singleIdCard {
+.singleCard {
   display: flex;
   align-items: center;
   line-height: 1;
   border: 1px solid grey;
   margin: 10px 0;
+  padding: 10px;
 }
 
-.singleIdCard img {
+.singleCard img {
   height: 160px;
   margin-right: 40px;
 }

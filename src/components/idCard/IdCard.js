@@ -6,7 +6,7 @@ class IdCard extends React.Component {
     return (
       <div>
         <h1>IdCard</h1>
-        <div className="idSection">
+        <div className="section">
           <SingleIdCard />
         </div>
       </div>
