@@ -23,3 +23,51 @@
   padding-left: 1vh;
 }
 
+.cards {
+  display:flex;
+  justify-content: space-around;
+}
+
+.creditCard {
+  width: 45vh;
+  height: 20vh;
+  border-radius: 10px;
+}
+
+.creditCard img {
+  width: 20%;
+  float:right;
+  margin:2vh;
+}
+
+.cardNumber {
+  font-size: 28px;
+  text-align: center;
+}
+
+.expire, .owner {
+  font-size:16px;
+  margin-left: 2vh;
+}
+
+.driverCard {
+  display:flex;
+  justify-content: center;
+  background-color: #425cbb;
+  border: 1px solid transparent;
+  margin-top: 2vh;
+  color: white;
+  padding: 10px;
+}
+
+.driverCard img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+.driverInfo {
+  text-align:start;
+  margin:20px;
+}
