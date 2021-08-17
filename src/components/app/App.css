@@ -6,16 +6,51 @@
   margin: 40px 0;
   width: 50vw;
 }
+
+.section.credit {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 .singleCard {
   display: flex;
   align-items: center;
   line-height: 1;
   border: 1px solid grey;
   margin: 10px 0;
+  margin-right: 40px;
   padding: 10px;
+}
+
+.singleCard.creditCard {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  position: relative;
+  padding: 50px 0 5px 20px;
+  border-radius: 8px;
+}
+
+.singleCard.creditCard p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.singleCard.creditCard p span {
+  margin-left: 20px;
 }
 
 .singleCard img {
   height: 160px;
   margin-right: 40px;
+}
+
+.singleCard.creditCard img {
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: -20px;
 }
