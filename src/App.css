@@ -106,15 +106,40 @@ h2 {
 }
 
 .creditCard {
-  background-color: red;
-  height: 10%;
-  width: 33%;
+  height: 180px;
+  width: 300px;
   border-radius: 10px;
+  margin-left: 1%;
 }
 
 .creditCards {
   display: flex;
   flex-direction: row;
+}
+
+.creditCard-logo {
+  height: 15px;
+  margin-top: 15px;
+  margin-left: 80%;
+}
+
+.creditCard-number {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.expires {
+  display: flex; 
+  margin-left: 10px;
+}
+
+.bankname {
+  margin-left: 20px;
+}
+
+.owner {
+  margin-left: 10px;
 }
 
 @keyframes App-logo-spin {

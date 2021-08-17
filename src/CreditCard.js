@@ -5,17 +5,39 @@ class CreditCard extends Component {
       return this.props.bgColor;
     }
 
+    getLogo() {
+      if("Visa" == this.props.type) {
+        return "./img/visa.png";
+      }
+      return "./img/master-card.svg";
+    }
+
+    getCreditCardNumber() {
+      return "**** **** **** "+this.props.number.substr(this.props.number.length - 4);;
+    }
+
+    getExpireMonth() {
+      if(this.props.expirationMonth< 10) {
+      return "0"+ this.props.expirationMonth;
+      }
+      return this.props.expirationMonth;
+    }
+
+    getExpireYear() {
+        return this.props.expirationYear;
+    }
+
+    getExpirationDate() {
+      return this.getExpireMonth() +"/" +this.getExpireYear();
+    }
+
     render() {
-      return <div class="creditCard" style={{background: this.getBackgroundColor()}}> 
-          <div>{this.props.type}</div>
-          <div>{this.props.number}</div>
-          <div>{this.props.expirationMonth}</div>
-          <div>{this.props.expirationYear}</div>
-          <div>{this.props.bank}</div>
-          <div>{this.props.owner}</div>
-          <div>{this.props.bgColor}</div>
-          <div>{this.props.color}</div>
-        </div>;
+      return <div class="creditCard" style={{background: this.getBackgroundColor(), color: this.props.color}}> 
+          <img className="creditCard-logo" src={this.getLogo()}></img>
+          <div className="creditCard-number">{this.getCreditCardNumber()}</div>
+          <div class="expires">Expires {this.getExpirationDate()} <div class="bankname">{this.props.bank}</div></div>
+          <div class="owner">{this.props.owner}</div>
+        </div>
     }
 }
 
