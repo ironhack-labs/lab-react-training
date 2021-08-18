@@ -71,3 +71,7 @@
   text-align:start;
   margin:20px;
 }
+
+.clickablePic,.glasses,.noGlasses,.diceImg {
+  width:110px;
+}
