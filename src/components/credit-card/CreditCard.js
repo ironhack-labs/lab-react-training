@@ -1,7 +1,19 @@
 function CreditCard(props) {
-  const cardStyle = {
-    backgroundColor: `${props.bgColor}`,
-    color: `${props.color}`,
+
+  const {
+    bgColor,
+    color,
+    type,
+    number,
+    expirationMonth,
+    expirationYear,
+    bank,
+    owner,
+  } = props;
+  
+    const cardStyle = {
+    backgroundColor: `${bgColor}`,
+    color: `${color}`,
   };
 
   const cardType = {
@@ -15,25 +27,25 @@ function CreditCard(props) {
         <div className="card mb-3" style={cardStyle}>
           <div className="card-body">
             <img
-              src={cardType[props.type]}
+              src={cardType[type]}
               className="cardType"
               alt="Card type"
             />
             <h5 className="card-title m-3">
-              ···· ···· ···· {props.number.slice(-4)}
+              ···· ···· ···· {number.slice(-4)}
             </h5>
             <div className="row">
               <p className="card-text col-6">
               Expires{' '}
-              {props.expirationMonth > 9
-                ? props.expirationMonth
-                : `0${props.expirationMonth}`}
-              /{props.expirationYear.toString().slice(-2)}
+              {expirationMonth > 9
+                ? expirationMonth
+                : `0${expirationMonth}`}
+              /{expirationYear.toString().slice(-2)}
             </p>
-            <p className="col-6">{props.bank}</p>
+            <p className="col-6">{bank}</p>
             </div>
             
-            <p>{props.owner}</p>
+            <p>{owner}</p>
           </div>
         </div>
       </div>
