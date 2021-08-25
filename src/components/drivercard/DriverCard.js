@@ -27,7 +27,7 @@ function DriverCard(props) {
         "width": "70px",
         "height": "70px",
         "border-radius": "100%", 
-        "margin-left": "100px"
+        "margin-left": "10%"
     }
     return (
         <div className="card" style={cardStyle}>
