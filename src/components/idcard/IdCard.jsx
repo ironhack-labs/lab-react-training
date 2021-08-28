@@ -4,7 +4,7 @@ import "./IdCard.css";
 export default class IdCard extends React.Component {
     render() {
     const user = this.props;
-    return (
+    return(
       <div className="IdCard">
         <img class='idCardImage'src={user.picture} alt="user photo" />
         <section>

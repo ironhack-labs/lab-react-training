@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import IdCard from "./components/idcard/IdCard";
+import Greetings from "./components/greetings/Greetings";
 
 const doe = {
   lastName: 'Doe',
@@ -23,8 +24,12 @@ const delores = {
 export default function App() {
   return (
     <div className="App">
-      <IdCard {...doe} />
-      <IdCard {...delores} />
+      <h1>Id Card</h1>
+        <IdCard {...doe} />
+        <IdCard {...delores} />
+      <h1>Greetings, summoner</h1>
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
     </div>
   );
 }
