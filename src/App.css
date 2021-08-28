@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.App-creditCard{
+  display: flex;
+  flex-direction: row;
+}
+
+.iteration {
+  margin-top: 70px;
+  margin-bottom: 0;
+  background-color: black;
+  color: white;
+}

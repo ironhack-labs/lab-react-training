@@ -1,0 +1,42 @@
+.CreditCard {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  border-radius: 20px;
+  margin:20px
+}
+
+.CreditCard-img > img {
+  width: 60px;
+  float: right;
+  margin: 30px 20px 10px 0px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.circleFirst{
+    margin-left: 20px;
+}
+
+.CreditCard-number{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 20px 0 0;
+}
+
+.CreditCrad-expires{
+    display: flex;
+    margin: 0 0 10px 20px;
+}
+
+.CreditCrad-owner{
+    display: flex;
+    margin: 0 0 10px 20px;
+}
