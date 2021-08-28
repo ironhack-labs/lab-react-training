@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import IdCard from "./components/idcard/IdCard";
 import Greetings from "./components/greetings/Greetings";
+import Random from "./components/random/Random";
 
 const doe = {
   lastName: 'Doe',
@@ -30,6 +31,9 @@ export default function App() {
       <h1>Greetings, summoner</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
+      <h1>Random</h1>
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
     </div>
   );
 }
