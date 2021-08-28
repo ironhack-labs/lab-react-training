@@ -22,9 +22,9 @@ export default class IdCard extends React.Component {
           <h3>
             Height: <span>{height}</span>
           </h3>
-          {/* <h3>
-          Birth: <span>{birth}</span>
-        </h3> */}
+          <h3>
+          Birth: <span>{birth.toDateString()}</span>
+        </h3>
         </div>
       </div>
     );

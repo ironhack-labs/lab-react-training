@@ -1,0 +1,9 @@
+.Greetings {
+    display: flex;
+    margin: 10px;
+    border: 1px solid black;
+  }
+
+  h1{
+      margin-left: 20px;
+  }
