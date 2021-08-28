@@ -1,0 +1,26 @@
+.IdCard {
+    display: flex;
+    margin: 10px;
+    border: 1px solid black;
+  }
+  
+  .IdCard-img {
+    display: flex;
+    margin: 10px;
+  }
+  
+  .IdCard-text {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: start;
+  }
+  
+  h3 {
+    margin: 5px;
+  }
+  
+  h3 span {
+    margin-left: 5px;
+    font-size: 15px;
+  }
