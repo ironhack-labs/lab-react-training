@@ -10,7 +10,6 @@ export default class Greetings extends React.Component {
       if (lang === 'es') return 'Hola';
       if (lang === 'fr') return 'Bonjour';
     };
-    console.log(children);
 
     return (
       <div className="Greetings">

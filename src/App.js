@@ -4,6 +4,7 @@ import './App.css';
 import IdCard from './components/idCard/IdCard.jsx';
 import Greetings from './components/greetings/Greetings.jsx';
 import Random from './components/random/Random.jsx';
+import BoxColor from './components/boxColor/BoxColor.jsx';
 
 function App() {
   return (
@@ -35,6 +36,10 @@ function App() {
         <h1>ITERARION 3:</h1>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
+
+        <h1>ITERARION 4:</h1>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
       </div>
     </div>
   );
