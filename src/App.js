@@ -4,6 +4,7 @@ import './App.css';
 import IdCard from "./components/IdCard/IdCard"
 import Gretings from "./components/Greetings/Greetings"
 import Random from "./components/Random/Random"
+import BoxColor from './components/BoxColor/BoxColor';
 
 function App() {
   const dateToArr = (date) => {
@@ -28,6 +29,7 @@ function App() {
       />
       <Gretings lang="es">Marcos</Gretings>
       <Random min="15" max="25"/>
+      <BoxColor r={206} g={218} b={255}/>
     </div>
   );
 }
