@@ -9,25 +9,25 @@ class Greetings extends Component {
     render () {
         if (this.props.lang == "es") {
             return (
-                <div>
+                <div className="greetings">
                     <p>Hola {this.props.children}</p>
                 </div>
             )
         } else if (this.props.lang == "de") {
             return (
-                <div>
+                <div className="greetings">
                     <p>Hallo {this.props.children}</p>
                 </div>
             )
         } else if (this.props.lang =="fr") {
             return (
-                <div>
+                <div className="greetings">
                     <p>Bonjour {this.props.children}</p>
                 </div>
             )
         } else {
             return (
-                <div>
+                <div className="greetings">
                     <p>Hello {this.props.children}</p>
                 </div>
             )

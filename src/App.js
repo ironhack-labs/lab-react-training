@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import IdCard from "./components/IdCard/IdCard"
 import Gretings from "./components/Greetings/Greetings"
+import Random from "./components/Random/Random"
 
 function App() {
   const dateToArr = (date) => {
@@ -25,7 +26,8 @@ function App() {
          birth={dateToArr(new Date("1992-07-14"))}
          picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
-      <Gretings lang="de">Marcos</Gretings>
+      <Gretings lang="es">Marcos</Gretings>
+      <Random min="15" max="25"/>
     </div>
   );
 }
