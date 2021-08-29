@@ -6,6 +6,7 @@ import Greetings from './components/greetings/Greetings.jsx';
 import Random from './components/random/Random.jsx';
 import BoxColor from './components/boxColor/BoxColor.jsx';
 import CreditCard from './components/creditCard/CreditCard.jsx';
+import Rating from './components/rating/Rating.jsx';
 
 function App() {
   return (
@@ -74,6 +75,15 @@ function App() {
             bgColor="#ddbb55"
             color="white"
           />
+        </div>
+        <h1 className="iteration">ITERARION 6:</h1>
+        <div className="App-rating">
+          <Rating>0</Rating>
+          <Rating>1.49</Rating>
+          <Rating>1.5</Rating>
+          <Rating>3</Rating>
+          <Rating>4</Rating>
+          <Rating>5</Rating>
         </div>
       </div>
     </div>
