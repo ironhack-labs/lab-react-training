@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import IdCard from "./components/IdCard/IdCard"
+import Gretings from "./components/Greetings/Greetings"
 
 function App() {
   const dateToArr = (date) => {
@@ -24,6 +25,7 @@ function App() {
          birth={dateToArr(new Date("1992-07-14"))}
          picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
+      <Gretings lang="de">Marcos</Gretings>
     </div>
   );
 }
