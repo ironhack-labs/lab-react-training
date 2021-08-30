@@ -8,6 +8,7 @@ import BoxColor from './components/boxColor/BoxColor.jsx';
 import CreditCard from './components/creditCard/CreditCard.jsx';
 import Rating from './components/rating/Rating.jsx';
 import DriverCard from './components/driverCard/DriverCard.jsx';
+import LikeButton from './components/likeButton/LikeButton.jsx';
 
 function App() {
   return (
@@ -106,6 +107,10 @@ function App() {
               licensePlate: 'BE33ER',
             }}
           />
+        </div>
+        <h1 className="iteration">ITERARION 8:</h1>
+        <div className="App-likeButton">
+          <LikeButton /> <LikeButton />
         </div>
       </div>
     </div>
