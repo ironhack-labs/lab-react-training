@@ -1,0 +1,60 @@
+.dot {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+
+.space {
+    margin-right: 10px;
+}
+
+.card {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.logo {
+    width: 45px;
+    margin: 15px;
+}
+
+.logoDiv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.number {
+    font-size: 25px;
+}
+
+.infoDiv {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.infoDiv > p {
+    width: fit-content;
+    font-size: 13px;
+}
+
+.infoDiv > p > span {
+    margin-left: 15px;
+}
+
+#expire {
+    margin-bottom: 1px;
+    margin-top: 15px;
+}
+
+#owner {
+    margin-top: 1px;
+}
