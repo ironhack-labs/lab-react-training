@@ -6,6 +6,7 @@ import Gretings from "./components/Greetings/Greetings"
 import Random from "./components/Random/Random"
 import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
+import Rating from "./components/Rating/Rating"
 
 function App() {
   const dateToArr = (date) => {
@@ -29,19 +30,23 @@ function App() {
          picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
       <Gretings lang="es">Marcos</Gretings>
+
       <Random min="15" max="25"/>
+
       <BoxColor r={206} g={218} b={255}/>
 
-        <CreditCard
-          type="Master Card"
-          number="0123456789010995"
-          expirationMonth={3}
-          expirationYear={2021}
-          bank="N26"
-          owner="Maxence Bouret"
-          bgColor="#eeeeee"
-          color="#222222" 
-        />
+      <CreditCard
+        type="Master Card"
+        number="0123456789010995"
+        expirationMonth={3}
+        expirationYear={2021}
+        bank="N26"
+        owner="Maxence Bouret"
+        bgColor="#eeeeee"
+        color="#222222" 
+      />
+
+      <Rating>4.6</Rating>
 
     </div>
   );

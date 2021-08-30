@@ -1,0 +1,7 @@
+.starsGroup {
+    display: flex;
+}
+
+.starsGroup > img {
+    width: 20px;
+}
