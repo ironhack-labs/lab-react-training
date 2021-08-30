@@ -1,0 +1,10 @@
+.greeting {
+    line-height: 1;
+    border: 1px solid black;
+    margin: 10px 0;
+    width: 50vw;
+}
+
+.greeting p {
+    margin-left: 5px;
+}

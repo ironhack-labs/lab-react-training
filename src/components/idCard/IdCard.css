@@ -1,10 +1,9 @@
 .idCard {
     display: flex;
-    margin-top: 20px;
     width: 50vw;
     line-height: 1;
     border: 1px solid black;
-    margin: 10px 0;
+    margin: 10px 10px;
 }
 
 .singleCard {
