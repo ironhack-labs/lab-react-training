@@ -10,6 +10,7 @@ import Rating from './components/rating/Rating.jsx';
 import DriverCard from './components/driverCard/DriverCard.jsx';
 import LikeButton from './components/likeButton/LikeButton.jsx';
 import ClickablePicture from './components/clickablePicture/ClickablePicture.jsx';
+import Dice from './components/dice/Dice.jsx';
 
 function App() {
   return (
@@ -118,6 +119,10 @@ function App() {
           img="/img/persons/maxence.png"
           imgClicked="/img/persons/maxence-glasses.png"
         />
+      </div>
+      <h1 className="iteration">ITERARION 10:</h1>
+      <div className="App-dice">
+        <Dice />
       </div>
     </div>
   );
