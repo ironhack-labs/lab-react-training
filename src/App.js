@@ -5,6 +5,7 @@ import IdCard from './IdCard';
 import "./styles/styles-idCard.css"
 import LikeButton from './LikeButton'
 import ClickablePicture from './ClickablePicture'
+import Greetings from './Greetings'
 
 
 export default class App extends React.Component {
@@ -14,6 +15,7 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
+          <h2>Iteration 1: IdCard</h2><br />
           <IdCard 
             lastName='Doe'
             firstName='John'
@@ -31,6 +33,11 @@ export default class App extends React.Component {
             picture="https://randomuser.me/api/portraits/women/44.jpg"
           />
           <br/>
+
+          <h2>Iteration 2: Greetings</h2><br />
+          <Greetings lang="de">Ludwig</Greetings>
+          <Greetings lang="fr">François</Greetings>
+
           <h2>Iteration 8</h2>
           <LikeButton/>
           <br/>
@@ -43,7 +50,7 @@ export default class App extends React.Component {
           />
           <br/>
           <h2>Iteration 10</h2>
-          <Dice/>
+
 
 
         </header>
