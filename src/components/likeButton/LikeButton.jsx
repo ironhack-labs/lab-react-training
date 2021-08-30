@@ -32,7 +32,7 @@ export default class LikeButton extends React.Component {
         onTransitionEnd={this.unClick}
         style={{ backgroundColor: getBackgroundColor() }}
       >
-        {this.state.count} likes
+        {this.state.count} Likes
         {this.props.children}
       </button>
     );
