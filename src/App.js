@@ -11,6 +11,9 @@ import DriverCard from './components/driverCard/DriverCard.jsx';
 import LikeButton from './components/likeButton/LikeButton.jsx';
 import ClickablePicture from './components/clickablePicture/ClickablePicture.jsx';
 import Dice from './components/dice/Dice.jsx';
+import Carousel from './components/carousel/Carousel.jsx';
+
+// import NumbersTable from
 
 function App() {
   return (
@@ -124,6 +127,17 @@ function App() {
       <div className="App-dice">
         <Dice />
       </div>
+      <h1 className="iteration">ITERARION 11:</h1>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      {/* <NumbersTable limit={12} /> */}
     </div>
   );
 }
