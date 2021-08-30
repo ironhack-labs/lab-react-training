@@ -1,0 +1,25 @@
+.CreditCard {
+    width: 18%;
+    padding: 15px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.CreditCard img {
+    display: flex;
+    width: 15%;
+    float:right;
+  }
+  
+  .card-number {
+    display:flex;
+    font-size: 28px;
+    align-self: center;
+  }
+  
+  .expire-date, .owner {
+    display: flex; 
+    font-size:16px;
+    margin: 0px;
+    align-items: baseline;
+  }
