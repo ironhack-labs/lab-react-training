@@ -4,7 +4,8 @@ import IdCard from './components/idcard/IdCard';
 import Greetings from './components/greetings/Greetings';
 import Random from './components/random/Random.jsx';
 import BoxColor from './components/boxcolor/BoxColor.jsx';
-import CreditCard from './components/creditcard/CreditCard.jsx'
+import CreditCard from './components/creditcard/CreditCard.jsx';
+import Rating from './components/rating/Rating.jsx'
 
 function App() {
   return (
@@ -74,7 +75,14 @@ function App() {
       </div>
       <hr/>
 
-      
+      <h1>Rating</h1>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
+      <hr/>
       
     </div>
   );
