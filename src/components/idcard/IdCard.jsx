@@ -6,7 +6,7 @@ export default class IdCard extends React.Component {
     const user = this.props;
     return(
       <div className="IdCard">
-        <img class='idCardImage'src={user.picture} alt="user photo" />
+        <img className='idCardImage'src={user.picture} alt="user photo" />
         <section>
         <p>
            <strong>First name:</strong> {user.firstName}

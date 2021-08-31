@@ -29,6 +29,15 @@
   color: #61dafb;
 }
 
+.cardContainer {
+  display: flex;
+}
+
+.driverCardContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -16,12 +16,12 @@ export default class CreditCard extends React.Component {
        return ( 
           <div className = "CreditCard" style ={cardStyle}>
              <img src = {cardtype} alt={card.type}/>
-             <div class="credit-card-data">
-                <p class="card-number"> ••• ••• ••• ••• {card.number.slice(12, 16)}</p> 
-                <span class="expire-date">
+             <div className="creditCardData">
+                <p className="cardNumber"> ••• ••• ••• ••• {card.number.slice(12, 16)}</p> 
+                <span className="expireDate">
                     Expires {expireMonth} / {expireYear}&emsp;{card.bank} 
                 </span> 
-                <p class="owner">{card.owner}</p> 
+                <p className="owner">{card.owner}</p> 
              </div>
           </div>
        );
