@@ -1,0 +1,82 @@
+.Facebook {
+  min-height: 500px;
+}
+
+.Facebook-profile {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.Facebook-img {
+  width: 25vw;
+  display: flex;
+  margin: 15px;
+}
+
+.Facebook-img img {
+  width: 15vw;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Facebook-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
+}
+
+.Facebook-data h1 {
+  display: flex;
+  align-items: flex-end;
+  margin: 5px;
+  font-size: 30px;
+}
+
+.Facebook-data h1 span {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 15px;
+  font-size: 28px;
+}
+
+.Facebook-buttons {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Facebook-buttons button {
+  margin: 0 5px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.Facebook-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Facebook-sortButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:20px
+}
+
+.Facebook-sortButtons button{
+    margin:5px;
+    width: 10vw
+}
+
+.Facebook-sortButtons input{
+    margin:5px;
+    width: 75vw
+}

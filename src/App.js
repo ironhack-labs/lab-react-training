@@ -13,6 +13,7 @@ import ClickablePicture from './components/clickablePicture/ClickablePicture.jsx
 import Dice from './components/dice/Dice.jsx';
 import Carousel from './components/carousel/Carousel.jsx';
 import NumbersTable from './components/numbersTable/NumbersTable.jsx';
+import Facebook from './components/facebook/Facebook';
 
 function App() {
   return (
@@ -140,6 +141,10 @@ function App() {
       <h1 className="iteration">ITERARION 12:</h1>
       <div className="App-numbersTable">
         <NumbersTable limit={12} />
+      </div>
+      <h1 className="iteration">ITERARION 13 & 14:</h1>
+      <div className="App-facebook">
+        <Facebook />
       </div>
     </div>
   );

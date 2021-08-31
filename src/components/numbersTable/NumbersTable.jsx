@@ -13,7 +13,6 @@ export default class NumbersTable extends React.Component {
       return numbers;
     };
     const numbers = getNumbers(this.props.limit);
-    console.log(numbers);
     return (
       <div className="NumbersTable">
         {numbers.map((number) => (
