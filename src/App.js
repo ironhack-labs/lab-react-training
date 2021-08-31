@@ -6,6 +6,9 @@ import "./styles/styles-idCard.css"
 import LikeButton from './LikeButton'
 import ClickablePicture from './ClickablePicture'
 import Greetings from './Greetings'
+import Random from './Random'
+import BoxColor from './BoxColor'
+
 
 
 export default class App extends React.Component {
@@ -37,6 +40,18 @@ export default class App extends React.Component {
           <h2>Iteration 2: Greetings</h2><br />
           <Greetings lang="de">Ludwig</Greetings>
           <Greetings lang="fr">François</Greetings>
+          <br />
+
+          <h2>Iteration 3: Random</h2><br />
+          <Random min={1} max={6}/>
+          <Random min={1} max={100}/>
+          <br />
+
+          <h2>Iteration 4: Boxcolor</h2><br />
+        
+          <BoxColor r={255} g={0} b={0} />
+          <BoxColor r={128} g={255} b={0} />
+          <br />
 
           <h2>Iteration 8</h2>
           <LikeButton/>
