@@ -1,0 +1,10 @@
+.LikedButton {
+    width: 90px;
+    height: 35px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}

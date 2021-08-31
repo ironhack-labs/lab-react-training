@@ -8,6 +8,7 @@ import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from "./components/Rating/Rating"
 import DriverCard from "./components/DriverCard/DriverCard"
+import LikeButton from "./components/LikeButton/LikeButton"
 
 function App() {
   const dateToArr = (date) => {
@@ -58,6 +59,8 @@ function App() {
           licensePlate: "CO42DE"
         }} 
       />
+
+      <LikeButton />
 
     </div>
   );
