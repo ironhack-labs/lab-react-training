@@ -7,6 +7,8 @@ import BoxColor from "./components/boxcolor/BoxColor";
 import CreditCard from "./components/creditcard/CreditCard";
 import Ratings from "./components/ratings/Ratings";
 import DriverCard from "./components/drivercard/DriverCard";
+import LikeButton from "./components/likebutton/LikeButton";
+
 
 const doe = {
   lastName: 'Doe',
@@ -112,6 +114,8 @@ export default function App() {
           <DriverCard {...driverCard1} />
           <DriverCard {...driverCard2} />
         </div>
+      <h1>Like Button</h1>
+        <LikeButton />
     </div>
   );
 }
