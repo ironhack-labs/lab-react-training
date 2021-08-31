@@ -19,7 +19,7 @@ export default class BoxColor extends React.Component {
         <h1>
           rgb({r},{g},{b})
         </h1>
-        <h1>hex {rgbToHex(r, g, b)}</h1>
+        <h1>{rgbToHex(r, g, b)}</h1>
       </div>
     );
   }

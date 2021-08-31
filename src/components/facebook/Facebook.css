@@ -3,10 +3,11 @@
 }
 
 .Facebook-profile {
-  border: 1px solid black;
+  border: 2px solid black;
   display: flex;
   flex-direction: row;
   margin: 30px;
+  border-radius: 20px;
 }
 
 .Facebook-img {
@@ -47,12 +48,13 @@
   margin: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Facebook-buttons button {
-  margin: 0 5px;
-  padding: 5px;
+  margin: 5px;
+  padding: 1rem;
   font-size: 15px;
   font-weight: bold;
 }
@@ -64,19 +66,19 @@
   text-align: center;
 }
 
-.Facebook-sortButtons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin:20px
+.Facebook-sortButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
 }
 
-.Facebook-sortButtons button{
-    margin:5px;
-    width: 10vw
+.Facebook-sortButtons button {
+  margin: 5px;
+  width: 10vw;
 }
 
-.Facebook-sortButtons input{
-    margin:5px;
-    width: 75vw
+.Facebook-sortButtons input {
+  margin: 5px;
+  width: 75vw;
 }
