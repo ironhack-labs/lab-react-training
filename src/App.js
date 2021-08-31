@@ -7,6 +7,7 @@ import Random from "./components/Random/Random"
 import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from "./components/Rating/Rating"
+import DriverCard from "./components/DriverCard/DriverCard"
 
 function App() {
   const dateToArr = (date) => {
@@ -46,7 +47,17 @@ function App() {
         color="#222222" 
       />
 
-      <Rating>4.6</Rating>
+      <Rating>3.1</Rating>
+
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE"
+        }} 
+      />
 
     </div>
   );
