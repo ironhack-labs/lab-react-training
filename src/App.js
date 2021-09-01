@@ -8,6 +8,7 @@ import CreditCard from './components/creditcard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/drivercard/DriverCard';
 import LikeButton from './components/likebutton/LikeButton';
+import ClickablePicture from './components/clickablepicture/ClickablePicture';
 
 function App() {
   return (
@@ -104,8 +105,20 @@ function App() {
           licensePlate: "BE33ER"
         }} />
         <hr/>
-
+        
+        <h1>LikeButton</h1>
         <LikeButton /> <LikeButton />
+        <hr/>
+
+        <h1> ClickablePicture</h1>
+        <ClickablePicture
+          img='/img/persons/maxence.png'
+          imgClicked='/img/persons/maxence-glasses.png'
+        />
+        <hr/>
+
+        <h1>Dice</h1>
+        
     </div>
   );
 }
