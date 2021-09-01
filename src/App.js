@@ -9,6 +9,7 @@ import Ratings from "./components/ratings/Ratings";
 import DriverCard from "./components/drivercard/DriverCard";
 import LikeButton from "./components/likebutton/LikeButton";
 import ClickablePicture from "./components/clickablepicture/ClickablePicture";
+import Dice from "./components/dice/Dice";
 
 
 const doe = {
@@ -124,6 +125,8 @@ export default function App() {
         <LikeButton />
       <h1>Clickable Picture</h1>
         <ClickablePicture {...clickablePicture} />
+      <h1>Dice</h1>
+        <Dice />
     </div>
   );
 }
