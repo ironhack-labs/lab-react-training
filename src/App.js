@@ -2,11 +2,12 @@ import React from 'react';
 import './App.css';
 import IdCard from './components/idcard/IdCard';
 import Greetings from './components/greetings/Greetings';
-import Random from './components/random/Random.jsx';
-import BoxColor from './components/boxcolor/BoxColor.jsx';
-import CreditCard from './components/creditcard/CreditCard.jsx';
-import Rating from './components/rating/Rating.jsx';
+import Random from './components/random/Random';
+import BoxColor from './components/boxcolor/BoxColor';
+import CreditCard from './components/creditcard/CreditCard';
+import Rating from './components/rating/Rating';
 import DriverCard from './components/drivercard/DriverCard';
+import LikeButton from './components/likebutton/LikeButton';
 
 function App() {
   return (
@@ -102,6 +103,9 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} />
+        <hr/>
+
+        <LikeButton /> <LikeButton />
     </div>
   );
 }
