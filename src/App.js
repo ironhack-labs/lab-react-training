@@ -13,6 +13,7 @@ import LikeButton from "./components/LikeButton/LikeButton"
 import ClickablePicture from "./components/ClickablePicture/ClickablePicture"
 import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
 
 function App() {
   const dateToArr = (date) => {
@@ -81,6 +82,8 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
       />
+
+      <NumbersTable limit={12} />
 
     </div>
   );
