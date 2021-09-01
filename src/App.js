@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 import IdCard from "./components/IdCard/IdCard"
 import Gretings from "./components/Greetings/Greetings"
 import Random from "./components/Random/Random"
@@ -11,6 +12,7 @@ import DriverCard from "./components/DriverCard/DriverCard"
 import LikeButton from "./components/LikeButton/LikeButton"
 import ClickablePicture from "./components/ClickablePicture/ClickablePicture"
 import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
 
 function App() {
   const dateToArr = (date) => {
@@ -70,6 +72,15 @@ function App() {
       />
 
       <Dice />
+
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
 
     </div>
   );

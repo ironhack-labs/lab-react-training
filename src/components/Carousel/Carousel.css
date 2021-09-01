@@ -1,0 +1,19 @@
+.Carousel {
+    width: 60vw;
+    border: solid 1px black;
+    margin-bottom: 20px;
+}
+
+.Carousel > img {
+    width: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Carousel > div {
+    margin-bottom: 10px;
+}
+
+.Carousel > div > button {
+    margin: 0 10px;
+}
