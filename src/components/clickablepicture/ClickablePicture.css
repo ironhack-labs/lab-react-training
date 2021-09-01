@@ -1,0 +1,7 @@
+.ClickablePicture {
+    border: none;
+}
+
+.ClickablePicture img {
+    width: 100px;
+}

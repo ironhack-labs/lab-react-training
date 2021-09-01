@@ -8,6 +8,7 @@ import CreditCard from "./components/creditcard/CreditCard";
 import Ratings from "./components/ratings/Ratings";
 import DriverCard from "./components/drivercard/DriverCard";
 import LikeButton from "./components/likebutton/LikeButton";
+import ClickablePicture from "./components/clickablepicture/ClickablePicture";
 
 
 const doe = {
@@ -81,6 +82,11 @@ const driverCard2 = {
   }
 }
 
+const clickablePicture = {
+  img: '/img/persons/maxence.png',
+  imgClicked: '/img/persons/maxence-glasses.png'
+}
+
 export default function App() {
   return (
     <div className="App">
@@ -116,6 +122,8 @@ export default function App() {
         </div>
       <h1>Like Button</h1>
         <LikeButton />
+      <h1>Clickable Picture</h1>
+        <ClickablePicture {...clickablePicture} />
     </div>
   );
 }
