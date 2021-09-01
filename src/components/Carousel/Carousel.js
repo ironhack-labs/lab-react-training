@@ -11,14 +11,14 @@ class Carousel extends Component {
     }
 
     onLeft = () => {
-        const newPosition = Math.abs((this.state.selectedImgIndex - 1)%this.props.imgs.length)
+        const newPosition = this.state.selectedImgIndex === 0 ? this.props.imgs.length - 1 : Math.abs((this.state.selectedImgIndex - 1))%this.props.imgs.length
         this.setState({
             selectedImgIndex: newPosition
         })
     }
 
     onRight = () => {
-        const newPosition = Math.abs((this.state.selectedImgIndex + 1)%this.props.imgs.length)
+        const newPosition = Math.abs((this.state.selectedImgIndex + 1))%this.props.imgs.length
         this.setState({
             selectedImgIndex: newPosition
         })
