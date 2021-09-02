@@ -35,7 +35,7 @@ class CreditCard extends Component {
 
 
         return (
-            <div style={divStyle}>
+            <div class="creditCard" style={divStyle}>
                 <div style={iconStyle}>
                     <img src={logo[this.props.type]} alt="type of credit card" style={imgStyle}/>
                 </div>

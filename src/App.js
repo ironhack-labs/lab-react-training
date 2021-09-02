@@ -57,6 +57,7 @@ export default class App extends React.Component {
 
           <h2>Iteration 5: Credit Card</h2><br />
 
+          <div className="creditCards">
           <CreditCard
             type="Visa"
             number="0123456789018845"
@@ -85,6 +86,7 @@ export default class App extends React.Component {
             owner="Firstname Lastname"
             bgColor="#ddbb55"
             color="white" />
+          </div>
 
           <h2>Iteration 6: Rating</h2><br />
           <Rating>0</Rating>
@@ -93,6 +95,7 @@ export default class App extends React.Component {
           <Rating>3</Rating>
           <Rating>4</Rating>
           <Rating>5</Rating>
+
 
           <h2>Iteration 8</h2>
           <LikeButton/>

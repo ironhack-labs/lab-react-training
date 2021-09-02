@@ -5,7 +5,7 @@ export default function IdCard(props){
 
     
     return (
-        <div class='divWrapper'>
+        <div class='divWrapper' className="idCard">
             <div>
                 <img src={props.picture} alt="Id picture"/>
             </div>

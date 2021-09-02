@@ -40,3 +40,25 @@
     transform: rotate(360deg);
   }
 }
+
+
+.idCard {
+  display: flex;
+  flex-direction: row;
+  width: 97.5%;
+  border: 2px solid black;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+
+.creditCard {
+  background-color: red;
+  height: 10%;
+  width: 33%;
+  border-radius: 10px;
+}
+
+.creditCards {
+  display: flex;
+  flex-direction: row;
+}
