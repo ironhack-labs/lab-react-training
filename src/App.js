@@ -14,6 +14,7 @@ import ClickablePicture from "./components/ClickablePicture/ClickablePicture"
 import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
+import FaceBook from './components/FaceBook/FaceBook';
 
 function App() {
   const dateToArr = (date) => {
@@ -84,6 +85,8 @@ function App() {
       />
 
       <NumbersTable limit={12} />
+
+      <FaceBook />
 
     </div>
   );

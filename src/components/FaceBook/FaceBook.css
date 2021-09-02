@@ -1,0 +1,24 @@
+.flex {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 5px;
+    border: solid 1px black;
+    width: 60vw;
+}
+
+.flex-start {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+}
+
+p {
+    margin: 5px 10px 5px 10px;
+}
+
+.flex img {
+    width: 130px;
+    border-radius: 0;
+}

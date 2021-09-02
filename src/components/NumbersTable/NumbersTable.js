@@ -27,7 +27,7 @@ class NumbersTable extends Component {
 
         return (
             <div className="NumbersTable">
-                {(jsxArr(this.props.limit)).map((el) => <div className="numberBox" style={el.style}> {el.index} </div>)}
+                {(jsxArr(this.props.limit)).map((el) => <div className="numberBox" key={el.index} style={el.style}> {el.index} </div>)}
             </div>
         )
     }
