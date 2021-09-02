@@ -1,0 +1,21 @@
+.RGBColorPicker {
+  margin: 30px;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+}
+
+.RGBColorPicker-result {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin: 30px;
+}
+
+.RGBColorPicker-result > h2{
+    margin: 0 0.5rem 0 0.3rem;
+  }

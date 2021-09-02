@@ -73,9 +73,9 @@ export default class SignupPage extends React.Component {
           onChange={(e) => this.onChange(e)}
         />
         {this.state.valid.password === true ? (
-          <div class="valid-feedback">You typed a valid email</div>
+          <div className="valid-feedback">You typed a valid email</div>
         ) : (
-          <div class="invalid-feedback">You typed an invalid email</div>
+          <div className="invalid-feedback">You typed an invalid email</div>
         )}
 
         <input
@@ -93,9 +93,9 @@ export default class SignupPage extends React.Component {
           onChange={(e) => this.onChange(e)}
         />
         {this.state.valid.password === true ? (
-          <div class="valid-feedback">Your password is strong</div>
+          <div className="valid-feedback">Your password is strong</div>
         ) : (
-          <div class="invalid-feedback">Your password is too weak</div>
+          <div className="invalid-feedback">Your password is too weak</div>
         )}
 
         <div className="checkbox">

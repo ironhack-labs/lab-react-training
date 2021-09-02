@@ -14,6 +14,7 @@ import Carousel from './components/carousel/Carousel.jsx';
 import NumbersTable from './components/numbersTable/NumbersTable.jsx';
 import Facebook from './components/facebook/Facebook';
 import SignupPage from './components/signupPage/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 
 import './App.css';
 
@@ -151,6 +152,10 @@ function App() {
       <h1 className="iteration">ITERARION 15:</h1>
       <div className="App-signupPage">
         <SignupPage />
+      </div>
+      <h1 className="iteration">ITERARION 16:</h1>
+      <div className="App-RGBColorPicker">
+        <RGBColorPicker />
       </div>
     </div>
   );
