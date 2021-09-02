@@ -13,7 +13,6 @@ class DriverCard extends Component {
 
         const divStyle = {
             borderRadius: 10,
-            width: 1000,
         };
 
         return (

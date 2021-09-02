@@ -100,6 +100,7 @@ export default class App extends React.Component {
 
           <h2>Iteration 7: DriverCard</h2><br />
 
+          <div class="fitToScreen">
           <DriverCard
             name="Travis Kalanick"
             rating={4.2}
@@ -116,6 +117,7 @@ export default class App extends React.Component {
               model: "Audi A3",
               licensePlate: "BE33ER"
             }} />
+            </div>
 
 
           <h2>Iteration 8</h2>

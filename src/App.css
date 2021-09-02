@@ -70,7 +70,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
 }
 
 .driverCardImg {
@@ -78,4 +77,8 @@
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.fitToScreen {
+  width: 100em;
 }
