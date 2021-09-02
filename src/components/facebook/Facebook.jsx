@@ -1,7 +1,6 @@
 import React from 'react';
 import profiles from '../../data/berlin.json';
 import './Facebook.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class Facebook extends React.Component {
   state = {

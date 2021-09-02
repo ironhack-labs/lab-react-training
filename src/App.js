@@ -1,6 +1,5 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.css';
 import IdCard from './components/idCard/IdCard.jsx';
 import Greetings from './components/greetings/Greetings.jsx';
 import Random from './components/random/Random.jsx';
@@ -14,6 +13,9 @@ import Dice from './components/dice/Dice.jsx';
 import Carousel from './components/carousel/Carousel.jsx';
 import NumbersTable from './components/numbersTable/NumbersTable.jsx';
 import Facebook from './components/facebook/Facebook';
+import SignupPage from './components/signupPage/SignupPage';
+
+import './App.css';
 
 function App() {
   return (
@@ -145,6 +147,10 @@ function App() {
       <h1 className="iteration">ITERARION 13 & 14:</h1>
       <div className="App-facebook">
         <Facebook />
+      </div>
+      <h1 className="iteration">ITERARION 15:</h1>
+      <div className="App-signupPage">
+        <SignupPage />
       </div>
     </div>
   );

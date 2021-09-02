@@ -1,0 +1,31 @@
+.SignupPage {
+  margin-top: 40px;
+  height: 300px;
+}
+
+.SignupPage input {
+  margin: 5px;
+  width: 80vw;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox input {
+  width: 4vw;
+  margin: 1rem 0 3rem 0;
+}
+
+.Signin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Signin button {
+  margin: 1px 0 0 50px;
+  padding: 0.6rem;
+}
