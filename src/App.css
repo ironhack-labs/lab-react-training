@@ -62,3 +62,20 @@
   display: flex;
   flex-direction: row;
 }
+
+.driverCard{
+  background-color: #455db5;
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.driverCardImg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}

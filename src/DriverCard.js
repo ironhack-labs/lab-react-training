@@ -7,15 +7,24 @@ class DriverCard extends Component {
         super(props);
     }
 
+
+
     render() {
+
+        const divStyle = {
+            borderRadius: 10,
+            width: 1000,
+        };
+
         return (
-            <div>
-               <div><img src={this.props.img} alt="profile picture" /></div>
+            <div style={divStyle} class="driverCard" >
+
+               <div><img src={this.props.img} alt="profile picture" class="driverCardImg"/></div>
                <div>
                    <p>{this.props.name}</p>
                    <Rating>1.49</Rating>
                    <p>{this.props.car.model} - {this.props.car.licensePlate}</p>
-               </div> 
+               </div>
             </div>
         );
     }
