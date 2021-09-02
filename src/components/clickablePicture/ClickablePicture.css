@@ -1,0 +1,7 @@
+.ClickablePicture{
+    height: 150px;
+    width: fit-content;
+    display: flex;
+    justify-content: left;
+    margin-left: 15px;
+}

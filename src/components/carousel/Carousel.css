@@ -1,0 +1,6 @@
+.carousel{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 15px;
+}
