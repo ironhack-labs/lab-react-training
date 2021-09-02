@@ -1,0 +1,9 @@
+.evenNumber {
+    background-color: red;
+}
+
+.number {
+    font-size: 15px;
+    padding: 20px;
+    border: 2px solid black;
+}

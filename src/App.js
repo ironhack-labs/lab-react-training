@@ -10,7 +10,8 @@ import DriverCard from "./components/drivercard/DriverCard";
 import LikeButton from "./components/likebutton/LikeButton";
 import ClickablePicture from "./components/clickablepicture/ClickablePicture";
 import Dice from "./components/dice/Dice";
-
+// import Carousel from "./components/carousel/Carousel";
+import NumbersTable from "./components/numberstable/NumbersTable";
 
 const doe = {
   lastName: 'Doe',
@@ -88,6 +89,14 @@ const clickablePicture = {
   imgClicked: '/img/persons/maxence-glasses.png'
 }
 
+const carouselImgs = [
+  'https://randomuser.me/api/portraits/women/1.jpg',
+  'https://randomuser.me/api/portraits/men/1.jpg',
+  'https://randomuser.me/api/portraits/women/2.jpg',
+  'https://randomuser.me/api/portraits/men/2.jpg'
+]
+
+
 export default function App() {
   return (
     <div className="App">
@@ -127,6 +136,17 @@ export default function App() {
         <ClickablePicture {...clickablePicture} />
       <h1>Dice</h1>
         <Dice />
+      {/* <h1>Carousel</h1>
+        <Carousel>
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        </Carousel> */}
+      <h1>Numbers Table</h1>
+        <NumbersTable limit={12} />
     </div>
   );
 }
