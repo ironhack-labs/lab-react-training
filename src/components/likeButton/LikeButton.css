@@ -1,0 +1,8 @@
+.LikeButton{
+    background-color: orange;
+    color: white;
+    height: auto;
+    width: auto;
+    font-size: 1.5rem;
+    margin: 10px;
+}

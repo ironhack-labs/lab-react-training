@@ -1,0 +1,9 @@
+.colorBox{
+    border: 1px solid black;
+    margin: 10px;
+    padding-left: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

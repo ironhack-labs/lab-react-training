@@ -1,0 +1,19 @@
+.cardStructure{
+    margin: 10px;
+    display:flex;
+    flex-direction: row;
+    border: solid 1px black;
+    flex-wrap: wrap;
+}
+.cardInfo p{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    margin-left: 3px;
+}
+.cardImage {
+    margin: 5px;
+}
+.cardInfo {
+    margin: 5px;
+}
