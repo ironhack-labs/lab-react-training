@@ -1,0 +1,28 @@
+.profile img {
+    display: flex;
+    width: 20vh;
+}
+
+.profileInfo {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.profile {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+.Facebook button {
+    border: 1px solid gray;
+    font-size: 15px;
+    margin: 5px;
+}

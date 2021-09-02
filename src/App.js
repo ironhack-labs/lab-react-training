@@ -12,6 +12,8 @@ import ClickablePicture from "./components/clickablepicture/ClickablePicture";
 import Dice from "./components/dice/Dice";
 // import Carousel from "./components/carousel/Carousel";
 import NumbersTable from "./components/numberstable/NumbersTable";
+import Facebook from "./components/facebook/Facebook";
+
 
 const doe = {
   lastName: 'Doe',
@@ -147,6 +149,8 @@ export default function App() {
         </Carousel> */}
       <h1>Numbers Table</h1>
         <NumbersTable limit={12} />
+      <h1>Facebook</h1>
+        <Facebook />
     </div>
   );
 }
