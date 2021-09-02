@@ -79,6 +79,12 @@
   border-radius: 50%;
 }
 
-.fitToScreen {
-  width: 100em;
+.dice{
+  border: 1px solid black;
+  border-radius: 10;
+}
+
+.diceImg{
+  width: 100px;
+  background-color: white;
 }

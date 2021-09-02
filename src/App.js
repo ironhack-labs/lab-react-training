@@ -11,6 +11,7 @@ import BoxColor from './BoxColor'
 import CreditCard from './CreditCard'
 import Rating from './Rating'
 import DriverCard from './DriverCard'
+import Dice from './Dice'
 
 
 
@@ -100,7 +101,7 @@ export default class App extends React.Component {
 
           <h2>Iteration 7: DriverCard</h2><br />
 
-          <div class="fitToScreen">
+          <div>
           <DriverCard
             name="Travis Kalanick"
             rating={4.2}
@@ -120,19 +121,20 @@ export default class App extends React.Component {
             </div>
 
 
-          <h2>Iteration 8</h2>
+          <h2>Iteration 8: LikeButton</h2><br />
           <LikeButton/>
           <br/>
 
-          <h2>Iteration 9</h2>
+          <h2>Iteration 9: ClickablePicture</h2><br />
 
           <ClickablePicture
             img='/img/persons/maxence.png'
             imgClicked='/img/persons/maxence-glasses.png'
           />
           <br/>
-          <h2>Iteration 10</h2>
 
+          <h2>Iteration 10: Dice</h2>
+          <Dice />
 
 
         </header>
