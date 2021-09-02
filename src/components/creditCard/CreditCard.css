@@ -1,0 +1,35 @@
+.creditCard {
+    border-radius: 15px;
+    width: 45vh;
+    height: 20vh;
+}
+
+.creditCard img {
+    width: 20%;
+    float: right;
+    margin: 2vh;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.cardNumber {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 34px;
+}
+
+.expire {
+    font-size: 17px;
+    margin-left: 2vh;
+    
+}
+
+.owner {
+    font-size: 17px;
+    margin-left: 2vh;
+    margin-top: 0;
+}
