@@ -1,0 +1,25 @@
+.FaceBook{
+    display: flex;
+    flex-direction: column;
+}
+
+.profileCard{
+    display: flex;
+    flex-direction: row;
+    border: 3px solid black;
+    margin: 15px;
+    padding: 15px;
+}
+
+.dataRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.profileCardImage{
+    height: 300px;
+    width: 300px;
+    
+}

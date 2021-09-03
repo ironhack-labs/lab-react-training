@@ -1,0 +1,22 @@
+.NumbersTable{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tileRed {
+    background-color: red;
+    border: 1px solid black;
+    height:50px;
+    width: 50px;
+}
+.tileWhite {
+    background-color: white;
+    border: 1px solid black;
+    height:50px;
+    width: 50px;
+}
+.Number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
