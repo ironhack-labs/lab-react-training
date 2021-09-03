@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class Dice extends Component {
     state = {
-        counter: 0,
+        counter: 1,
     }
 
     rollDice = () => {
