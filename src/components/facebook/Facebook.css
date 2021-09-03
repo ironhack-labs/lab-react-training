@@ -1,0 +1,15 @@
+.Facebook {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid black;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.Facebook-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  margin: 1rem;
+}
