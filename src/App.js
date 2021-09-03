@@ -12,6 +12,7 @@ import CreditCard from './CreditCard'
 import Rating from './Rating'
 import DriverCard from './DriverCard'
 import Dice from './Dice'
+import Carousel from './Carousel.js'
 
 
 
@@ -135,6 +136,16 @@ export default class App extends React.Component {
 
           <h2>Iteration 10: Dice</h2>
           <Dice />
+
+          <h2>Iteration 11: Carousel</h2>
+          <Carousel
+            imgs={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg'
+            ]}
+          />
 
 
         </header>
