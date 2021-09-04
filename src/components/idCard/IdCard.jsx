@@ -6,6 +6,14 @@ import "./IdCard.css";
 export default class IdCard extends React.Component {
 
     render() {
+
+        /*let birth = () => {
+            let date 
+            date = this.props.birth.toDateString()
+            console.log(date)
+            return date
+        }*/
+
         return (
         <div className="IdCard cardStructure">
             <div className="cardImage">
@@ -15,7 +23,7 @@ export default class IdCard extends React.Component {
                 <p><b>First name: </b>{this.props.firstName}</p>
                 <p><b>Last name: </b>{this.props.lastName}</p>
                 <p><b>Gender: </b>{this.props.gender}</p>
-                <p><b>Height: </b>{this.props.height}</p>
+                <p><b>Height: </b>{this.props.height}</p>                
                 <p><b>Birth: </b>{this.props.birth}</p>
             </div>
         </div>

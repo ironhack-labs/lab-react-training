@@ -6,7 +6,7 @@ export default class Rating extends React.Component {
 
     render() {
 
-        const rating = Math.floor(this.props.children)
+        const rating = Math.round(this.props.children)
 
         return (
         <div className="Rating">

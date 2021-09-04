@@ -6,20 +6,52 @@
 .profileCard{
     display: flex;
     flex-direction: row;
-    border: 3px solid black;
+    border: 1px solid black;
     margin: 15px;
     padding: 15px;
+    height: 200px
+}
+
+.profileCardBlue{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 15px;
+    height: 200px;
+    background-color: #A3D2E2;
 }
 
 .dataRow{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 15px;
+    margin: 0px 0px 0px 15px;
+    padding: 0px;
 }
 
 .profileCardImage{
-    height: 300px;
-    width: 300px;
-    
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.dataColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0px;
+}
+
+.dataColum > p{
+    margin: 0px;
+} 
+
+.buttons{
+    width:5%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
 }
