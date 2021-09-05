@@ -14,6 +14,9 @@ class FaceBook extends Component {
 
     onHighlight = (event) => {
         let countryClicked = event.target.innerHTML
+        if(countryClicked === "All") {
+            this.setState({clickedCountry: ""})
+        }
         this.setState({clickedCountry: countryClicked})
     }
 
@@ -26,6 +29,7 @@ class FaceBook extends Component {
         return (
             <div className="FaceBook">
                 <div>
+                    <button onClick={this.onHighlight} className="btn btn-info" style={{backgroundColor: "transparent"}}>All</button>
                     {countries.map((country) => {
                         return (
                             <button className="btn btn-info" onClick={this.onHighlight} style={{backgroundColor: country==this.state.clickedCountry ? "#caa6f7" : "transparent"}}>
