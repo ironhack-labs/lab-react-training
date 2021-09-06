@@ -1,0 +1,23 @@
+.Facebook {
+    margin: 0 8px;
+  }
+  
+  .Facebook button.active {
+    background-color: #a3d2e2;
+  }
+  
+  .Facebook .InfoCard {
+    display: flex;
+    border: 1px solid black;
+    padding: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .Facebook .InfoCard > img {
+    height: 120px;
+    margin-right: 8px;
+  }
+  
+  .Facebook .InfoCard .InfoCard-data > p {
+    margin: 2px;
+  }

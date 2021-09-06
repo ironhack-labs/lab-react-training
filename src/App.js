@@ -10,6 +10,7 @@ import DriverCard from './components/driverCard/DriverCard';
 import LikeButton from './components/likeButton/LikeButton';
 import ClickablePicture from './components/clickablePicture/ClickablePicture';
 import Dice from './components/dice/Dice';
+import Facebook from "./components/facebook/Facebook"
 
 function App() {
   return (
@@ -108,6 +109,8 @@ function App() {
       />
       <h1>Dice</h1>
       <Dice />
+      <h1>Facebook</h1>
+      <Facebook />
     </div>
   );
 }

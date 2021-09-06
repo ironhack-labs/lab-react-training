@@ -21,4 +21,22 @@ class Greetings extends React.Component {
   }
 }
 
+// const Greetings = ({lang, children}) => {
+//   const getGreetings = () => {
+//     let greeting = ""
+//       switch(lang) {
+//         case "de":
+//           greeting = ""
+//           break;
+//         case "de":
+//             greeting = ""
+//             break;
+//         case "de":
+//               greeting = ""
+//               break;
+//       }
+//   }
+
+// }
+
 export default Greetings;
