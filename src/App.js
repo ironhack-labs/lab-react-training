@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
-import persons from './data/berlin.json'
+// import persons from './data/berlin.json'
 import './App.css';
 import IdCard from './components/IdCard/IdCard'
 import Greetings from './components/greetings/Greetings';
+import Random from './components/random/Random';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       />
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+      <Random/>
 
       {/* <IdCard lastName={persons[0].lastName} firstName={persosn[0].firstName}
         gender={persons[0].gender} height={persons[0].height} birth={persons[0].birth} picture={persons[0].picture}
