@@ -12,7 +12,9 @@ import ClickablePicture from './components/clickablepicture/ClickablePicture';
 import Dice from './components/dice/Dice';
 import Carousel from './components/carousel/Carousel';
 import NumbersTable from './components/numberstable/NumbersTable';
-import Facebook from './components/facebook/Facebook'
+import Facebook from './components/facebook/Facebook';
+import SignupPage from './components/signuppage/SignupPage';
+import RGBColorPicker from './components/rgbcolorpicker/RGBColorPicker';
 
 function App() {
   return (
@@ -142,6 +144,14 @@ function App() {
 
         <h1>Facebook</h1>
         <Facebook />
+        <hr/>
+
+        <h1>Signuppage</h1>
+        <SignupPage />
+        <hr/>
+
+        <h1>RGBColorPicker</h1>
+        <RGBColorPicker />
     </div>
   );
 }
