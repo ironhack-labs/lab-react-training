@@ -1,0 +1,26 @@
+.allCredit{
+    border: 1px solid black;
+    height: 160px;
+    padding: 0px;
+    margin: 15px 0 5px 10px;
+    max-width: 310px;
+    min-width: 300px;
+}
+.thirdBlock{
+    display: flex;
+    border: 1px solid green;
+    margin-left: 10px;
+    font-size: 12px;
+    width: 120px;
+    justify-content:space-between;
+    align-items: right;
+}
+.firstBlock{
+    display: flex;
+    height: 30px;
+    border: 1px solid green;
+}
+.firstBlock img{
+    height: 15px;
+    padding-top: 7px;
+}
