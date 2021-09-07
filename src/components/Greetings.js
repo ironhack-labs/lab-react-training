@@ -12,11 +12,12 @@ function Greetings({ lang, children, className }) {
 			break;
 		default:
 			language = 'Hello';
+			break;
 	}
 	return (
-		<Panel className={className}>
+		<div class="box">
 			{language} {children}
-		</Panel>
+		</div>
 	);
 }
 
