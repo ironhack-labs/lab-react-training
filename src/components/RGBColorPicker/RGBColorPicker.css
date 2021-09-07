@@ -1,0 +1,14 @@
+.SingleColorPicker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.final-rgb {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.RGBColorPicker {
+    margin-top: 25px;
+}
