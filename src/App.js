@@ -5,6 +5,7 @@ import './App.css';
 import IdCard from './components/IdCard/IdCard'
 import Greetings from './components/greetings/Greetings';
 import Random from './components/random/Random';
+import BoxColor from './components/BoxColor/BoxColor';
 
 function App() {
   return (
@@ -14,17 +15,18 @@ function App() {
           gender={person.gender} height={person.height} birth={person.birth}
           picture={person.picture} key={persons.firstName}/>
       ))} */}
-      <IdCard
+      {/* <IdCard
         lastName='Doe'
         firstName='John'
         gender='male'
         height={178}
         birth={new Date("1992-07-14")}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
-      />
+      /> */}
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-      <Random/>
+      {/* <Random min={1} max={6} />
+      <BoxColor r={255} g={0} b={0} /> */}
 
       {/* <IdCard lastName={persons[0].lastName} firstName={persosn[0].firstName}
         gender={persons[0].gender} height={persons[0].height} birth={persons[0].birth} picture={persons[0].picture}
