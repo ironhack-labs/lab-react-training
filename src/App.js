@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.css"
 import IdCard from "./components/IdCard/IdCard"
 import Gretings from "./components/Greetings/Greetings"
 import Random from "./components/Random/Random"
@@ -15,6 +15,7 @@ import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
 import FaceBook from './components/FaceBook/FaceBook';
+import SignupPage from './components/SignupPage/SignupPage';
 
 function App() {
   const dateToArr = (date) => {
@@ -87,6 +88,8 @@ function App() {
       <NumbersTable limit={12} />
 
       <FaceBook />
+
+      <SignupPage />
 
     </div>
   );

@@ -1,0 +1,16 @@
+.SignupPage {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.SignupPage div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.SignupPage button {
+    width: 100px;
+}

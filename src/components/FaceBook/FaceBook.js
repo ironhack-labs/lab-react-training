@@ -32,7 +32,7 @@ class FaceBook extends Component {
                     <button onClick={this.onHighlight} className="btn btn-info" style={{backgroundColor: "transparent"}}>All</button>
                     {countries.map((country) => {
                         return (
-                            <button className="btn btn-info" onClick={this.onHighlight} style={{backgroundColor: country==this.state.clickedCountry ? "#caa6f7" : "transparent"}}>
+                            <button key={country} className="btn btn-info" onClick={this.onHighlight} style={{backgroundColor: country==this.state.clickedCountry ? "#caa6f7" : "transparent"}}>
                                 {country}
                             </button>
                         )
