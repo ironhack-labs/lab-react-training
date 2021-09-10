@@ -1,3 +1,16 @@
 .putingSide{
     display: flex;
 }
+
+.Playing{
+    background-color: blue;
+    color: white;
+    width: 200px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}

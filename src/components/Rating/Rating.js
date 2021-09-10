@@ -2,7 +2,7 @@ import React from 'react';
 import './Rating.css';
 
 const Rating = ({ children }) => {
-  let rounded = Math.round(children);
+/*   let rounded = Math.round(children);
 
   const showStars = (rating) => {
     let full = '/img/Star-Filled.png';
@@ -13,17 +13,18 @@ const Rating = ({ children }) => {
       i < rating ? arr.push(full) : arr.push(empty);
     }
     return arr;
-  };
-
-  console.log(showStars());
+  };  */
+  let star = '★'.repeat(Math.round(children)) + '✰'.repeat(5 - Math.round(children));
+ 
 
   return (
     <div className="RatingAll">
-      <p>
+    <div className="rating"> {star} </div>
+{/*       <p>
         {showStars(rounded).map((x) => (
           <img src={x} width="40px" alt="" />
         ))}
-      </p>
+      </p> */}
     </div>
   );
 };
