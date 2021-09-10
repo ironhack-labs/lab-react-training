@@ -13,6 +13,7 @@ import Rating from './Rating'
 import DriverCard from './DriverCard'
 import Dice from './Dice'
 import Carousel from './Carousel.js'
+import NumbersTable from './NumbersTable'
 
 
 
@@ -146,6 +147,10 @@ export default class App extends React.Component {
               'https://randomuser.me/api/portraits/men/2.jpg'
             ]}
           />
+          <br />
+
+          <h2>Iteration 12: NumbersTable</h2>
+          <NumbersTable limit={12} />
 
 
         </header>
