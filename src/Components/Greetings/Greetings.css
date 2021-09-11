@@ -1,0 +1,10 @@
+.greetings {
+    margin: auto;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+
+.greetings p {
+    margin: 0;
+    padding: 5px;
+}

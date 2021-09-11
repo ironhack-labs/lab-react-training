@@ -1,0 +1,32 @@
+.uber-kkkj{
+    background-color: #455eb5;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 110px;
+}
+
+.uber-kkkj > img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    object-fit:cover;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.info p {
+    margin-top: 0;
+}
+
+.info h2 {
+    margin-bottom: 0;
+}

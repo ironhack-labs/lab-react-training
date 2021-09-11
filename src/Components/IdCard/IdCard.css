@@ -1,0 +1,25 @@
+.id {
+    display:flex;
+    margin: auto;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+
+.id img {
+    display: flex;
+    width: 128px;
+    height: 128px;
+    margin: 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    margin-top: 5px;
+}
+
+.card p {
+    margin: 0;
+}

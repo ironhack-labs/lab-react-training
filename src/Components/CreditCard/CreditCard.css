@@ -1,0 +1,32 @@
+.creditCard {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 174px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.bordinha > img {
+    width: 55px;    
+    float: right;
+}
+
+.card-number {
+    font-size: 28px;
+    text-align: center;
+}
+
+.card-number > p {
+    margin-top: 35px;
+}
+
+.due, .owner {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bordinha {
+    padding: 20px;
+    margin-top: 10px;
+}

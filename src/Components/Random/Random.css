@@ -1,0 +1,10 @@
+.random {
+    margin: auto;
+    border: 1px solid gray;    
+    margin-top: 10px;
+}
+
+.random p {
+    margin: 0;
+    padding: 5px;
+}
