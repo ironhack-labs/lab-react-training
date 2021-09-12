@@ -1,0 +1,10 @@
+.boxcolor-container {
+  margin: 20px;
+  border: 5px solid black;
+  width: 500px;
+  margin: 20px auto;
+}
+
+.boxcolor {
+  padding: 1px;
+}

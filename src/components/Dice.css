@@ -1,0 +1,7 @@
+.dice-container {
+  margin: 20px;
+}
+
+.dice-container > img {
+  width: 300px;
+}

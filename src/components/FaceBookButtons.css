@@ -1,0 +1,23 @@
+.facebook-buttons-container {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 2px solid black;
+}
+
+.facebook-buttons-container > button {
+  height: 25px;
+  width: 100px;
+  background-color: transparent;
+}
+
+.facebook-buttons-container > button:hover {
+  font-weight: bold;
+}
+
+.facebook-buttons-container > button:active {
+  box-shadow: -1px -1px -1px -1px rgb(100, 100, 100, 0.5);
+}

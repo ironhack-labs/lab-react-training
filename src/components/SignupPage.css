@@ -1,0 +1,63 @@
+.signup-page-container {
+  margin: 100px auto;
+  min-width: 500px;
+}
+
+.signup-page-container .signup-page-form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: 0 auto;
+  font-size: 1.5em;
+  min-width: 500px;
+}
+
+.signup-page-container .signup-page-form label {
+  width: 50vw;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.signup-page-container .signup-page-form input {
+  font-size: 1.2em;
+}
+
+.signup-page-container .signup-page-form span {
+  font-size: 1em;
+  text-align: left;
+}
+
+.signup-page-container .signup-page-form select {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.signup-page-container .signup-page-form button {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.signup-page-container .signup-result-container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: 20px auto;
+  text-align: left;
+  min-width: 500px;
+}
+
+.correct-sinup-border {
+  border: 2px solid green;
+}
+
+.incorrect-sinup-border {
+  border: 2px solid red;
+}
+
+.correct-sinup-span {
+  color: green;
+}
+
+.incorrect-sinup-span {
+  color: red;
+}

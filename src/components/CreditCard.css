@@ -1,0 +1,46 @@
+.credit-card-container {
+  width: 375px;
+  height: 175px;
+  margin: 20px auto;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  justify-content: flex-end;
+  display: flex;
+  width: 400px;
+}
+
+.logo-container > img {
+  max-width: 50px;
+  max-height: 20px;
+  margin-top: 15px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+.numbers-container {
+  align-items: center;
+}
+
+.info-container {
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 0px;
+  line-height: 0.1em;
+}
+
+.info-container > p > span {
+  margin-left: 50px;
+}
+
+.numbers-container span {
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+}
+
+.numbers-container > h3 {
+  font-size: 1.5em;
+}

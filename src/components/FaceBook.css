@@ -1,0 +1,52 @@
+.facebook-container {
+  display: flex;
+  height: 124px;
+  width: fit-content;
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+.facebook-container img {
+  width: 120px;
+  height: 120px;
+  margin: 2px;
+}
+
+.facebook-info-container {
+  height: 150px;
+}
+
+.facebook-info-container p {
+  margin: 5px;
+  text-align: left;
+  width: 350px;
+  display: block;
+}
+
+.facebook-big-container .sort {
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(150, 150, 255, 0.75);
+}
+
+.facebook-big-container .sort:active {
+  background-color: rgb(100, 100, 205);
+}
+
+.facebook-big-container .search-bar {
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+}
+.facebook-big-container {
+  min-width: 500px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 2px 2px 5px 5px black;
+}
+.facebook-big-container h1 {
+  letter-spacing: 0.3em;
+  font-weight: bold;
+  color: rgb(100, 100, 205);
+}

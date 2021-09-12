@@ -1,0 +1,46 @@
+.carousel-container {
+  margin: 20px auto;
+  height: 130px;
+}
+
+.carousel-container > img {
+  position: absolute;
+}
+
+.button-one {
+  position: relative;
+  top: 60px;
+  right: 0;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(250, 250, 250, 0.5);
+  cursor: pointer;
+}
+
+.carousel-container > button {
+  color: rgba(50, 50, 50, 0.5);
+}
+
+.button-two {
+  position: relative;
+  top: 60px;
+  left: 98px;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(250, 250, 250, 0.5);
+  cursor: pointer;
+}
+
+.carousel-container > button:hover {
+  border: 1px solid rgba(50, 50, 50, 0.5);
+}
+
+.carousel-container > button:active {
+  color: white;
+}

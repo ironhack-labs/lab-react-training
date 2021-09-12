@@ -1,0 +1,20 @@
+.numbers-table-container {
+  margin: 20px auto;
+  display: flex;
+  width: 50vw;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.numbers-table-container > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 1px;
+  margin-left: 1px;
+}

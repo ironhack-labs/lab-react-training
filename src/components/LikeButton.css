@@ -1,0 +1,6 @@
+.like-button-container > button {
+  font-size: 1.5em;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 50vw;
+  min-width: 300px;
+  border: 1px solid black;
+  margin: 20px auto;
+}
+
+.text-container {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.img-container > img {
+  width: 150px;
+}
