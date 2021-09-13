@@ -1,8 +1,10 @@
 import React from 'react';
 import BoxColor from './components/box-color/BoxColor';
+import ClickablePicture from './components/clickable-picture/ClickablePicture';
 import CreditCard from './components/credit-card/CreditCard';
 import Greetings from './components/greetings/Greetings';
 import IdCard from './components/id-card/IdCard';
+import LikeButton from './components/like-button/LikeButton';
 import Random from './components/random/Random';
 import Rating from './components/rating/Rating';
 
@@ -89,6 +91,19 @@ function App() {
         <Rating>3</Rating>
         <Rating>4</Rating>
         <Rating>5</Rating>
+      </section>
+
+      <section className="like-button m-3">
+        <h2>Like Button</h2>
+        <LikeButton startAt={0} /> <LikeButton startAt={0} />
+      </section>
+
+      <section className="clickable-picture m-3">
+        <h2>Clickable Picture</h2>
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
       </section>
     </div>
   );
