@@ -4,13 +4,12 @@ class LikeButton extends Component {
   state = {
     value: this.props.startAt,
     colors: ['purple', 'blue', 'green', 'yellow', 'orange', 'red'],
-    handleClick: this.handleClick.bind(this),
   };
 
   handleClick() {
     this.setState(prevState => ({
       ...prevState,
-      value: prevState.value + 1,
+      value: prevState.value + 1
     }));
   };
 
@@ -21,7 +20,7 @@ class LikeButton extends Component {
         <button
           type="button"
           className="btn mb-1"
-          onClick={this.handleClick}
+          onClick={this.handleClick.bind(this)}
           style={{
             backgroundColor: this.state.colors[colorIndex],
             color: 'white',

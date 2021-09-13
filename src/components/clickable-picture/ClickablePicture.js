@@ -2,8 +2,7 @@ import { Component } from "react";
 
 class ClickablePicture extends Component {
   state = {
-    isClicked: false,
-    handleClick: this.handleClick.bind(this)
+    isClicked: false
   };
 
   handleClick() {
@@ -15,9 +14,13 @@ class ClickablePicture extends Component {
   render() {
     return (
       <img
-        onClick={this.handleClick}
+        onClick={this.handleClick.bind(this)}
         src={this.state.isClicked ? this.props.imgClicked : this.props.img}
-        alt={this.state.isClicked ? `Person wearing glasses` : `Person without glasses`}
+        alt={
+          this.state.isClicked
+            ? `Person wearing glasses`
+            : `Person without glasses`
+        }
       />
     );
   }
