@@ -4,7 +4,7 @@ class LikeButton extends Component {
   state = {
     value: this.props.startAt,
     colors: ['purple', 'blue', 'green', 'yellow', 'orange', 'red'],
-    handleClick: this.handleClick.bind(this)
+    handleClick: this.handleClick.bind(this),
   };
 
   handleClick() {

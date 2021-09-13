@@ -3,6 +3,7 @@ import { Component } from "react";
 class ClickablePicture extends Component {
   state = {
     isClicked: false,
+    handleClick: this.handleClick.bind(this)
   };
 
   handleClick() {
