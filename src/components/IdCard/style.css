@@ -1,0 +1,16 @@
+.card {
+  width: 100%;
+  border: 1px solid black;
+  margin: 4px;
+  display: flex;
+}
+
+.pic {
+  width: 128px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
