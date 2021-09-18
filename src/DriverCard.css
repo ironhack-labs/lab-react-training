@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  height: 200px;
+}
+
+.main__left--image {
+  width: 100px;
+  height: 100px;
+  border-radius: 5;
+}
+
+.main__right {
+  display: flex;
+  width: 200px;
+}

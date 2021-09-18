@@ -7,7 +7,6 @@ const Rating = (props) => {
 
   const numberOfFilledStars = Math.round(props.children);
   const numberOfEmptyStars = 5 - numberOfFilledStars;
-  console.log(numberOfFilledStars);
 
   if (numberOfFilledStars < 1) {
     return <h1>☆</h1>;
