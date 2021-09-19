@@ -103,7 +103,6 @@ const SignupPage = () => {
 
   return (
     <div className="signup-page-container">
-      {console.log(error)}
       <form
         onSubmit={(e) => handleSubmit(e, error, setForm)}
         className="signup-page-form"

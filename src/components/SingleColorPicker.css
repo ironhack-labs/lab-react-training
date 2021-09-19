@@ -1,0 +1,20 @@
+.color-container {
+  display: flex;
+  align-items: center;
+}
+
+.color-container > p {
+  font-size: 1.5em;
+}
+
+.color-container > input {
+  height: 2em;
+  width: 75px;
+}
+
+.color-box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  margin-right: 25px;
+}
