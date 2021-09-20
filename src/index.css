@@ -11,3 +11,121 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.idCard {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px;
+  width: 180px;
+}
+.flexwrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.border-box {
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 20px;
+  padding: 15px;
+}
+
+.heading {
+  text-align: center;
+  border: 2px solid black;
+  margin: 20px;
+  color: red;
+}
+
+.creditcard {
+  width: 275px;
+  height: 140px;
+}
+
+.rating {
+  height: 100px;
+  background-color: red;
+}
+.dice {
+  height: 400px;
+}
+.chessRed {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  display: inline;
+  text-align: center;
+}
+.chessWhite {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  text-align: center;
+}
+.face-box {
+  display: flex;
+  width: 400px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 15px;
+}
+.face-box img {
+  width: 100px;
+  margin: 0px;
+  margin: 10px;
+}
+.face-box h4 {
+  display: inline;
+  margin: 0;
+  margin: 10px;
+  line-height: 30px;
+}
+.face-box p {
+  display: inline;
+}
+.facebookFilter {
+  margin: 30px;
+  width: 100vw;
+  display: block;
+}
+.filterButton {
+  padding: 10px;
+  margin: 0px 10px;
+  min-width: 80px;
+  background-color: white;
+  border: 2px solid grey;
+}
+
+.filterButton:hover {
+  background: rgb(0, 150, 255, 0.1);
+}
+.selectedOption {
+  background-color: rgb(0, 150, 255, 0.1);
+}
+.validLabel {
+  background-color: rgb(50, 255, 50, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 2px solid green;
+}
+.unvalidLabel {
+  background-color: rgb(255, 50, 50, 0.07);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 2px solid red;
+}
+.password-check {
+  display: inline;
+  list-style-type: none;
+}
+.password-check p {
+  display: inline;
+}
+.fa {
+  margin: 0px 15px 0px 0px;
+}
