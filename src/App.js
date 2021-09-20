@@ -14,6 +14,8 @@ import DriverCard from './DriverCard'
 import Dice from './Dice'
 import Carousel from './Carousel.js'
 import NumbersTable from './NumbersTable'
+import Facebook from './Facebook'
+
 
 
 
@@ -151,6 +153,12 @@ export default class App extends React.Component {
 
           <h2>Iteration 12: NumbersTable</h2>
           <NumbersTable limit={12} />
+          <br />
+
+          <h2>Iteration 13: Facebook</h2>
+          <Facebook />
+          
+          
 
 
         </header>
