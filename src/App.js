@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import IdCard from './components/IdCard'
 import ClickablePicture from './components/ClickablePicture';
-
+import Greetings from './components/Greetings';
 
 function App (props) {
   return (
 
-    <><div className='container'>
+    <><Greetings lang="de">Ludwig</Greetings><Greetings lang="fr">François</Greetings><><div className='container'>
 
       <IdCard
 
@@ -30,7 +30,7 @@ function App (props) {
           img="/img/persons/maxence.png"
           imgClicked="/img/persons/maxence-glasses.png" />
 
-      </div></>
+      </div></></>
 
 
 
