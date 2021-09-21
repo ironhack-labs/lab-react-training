@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.IdCard {
+  display: flex;
+  flex-direction: row;
+}
+
+.IdCard .FirstName {
+  display: flex;
+  flex-direction: row;
+}
+
+.IdCard .LastName {
+  display: flex;
+  flex-direction: row;
+}
+
+.IdCard .Gender {
+  display: flex;
+  flex-direction: row;
+}
+
+.IdCard .Height {
+  display: flex;
+  flex-direction: row;
+}
+
+.IdCard .Birth {
+  display: flex;
+  flex-direction: row;
+}
+
+.IdCard .label {
+  font-weight: 800;
+}
