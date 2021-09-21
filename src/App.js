@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import LikeButton from './componants/LikeButton';
+import ClickablePicture from './componants/ClickablePicture';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +21,14 @@ function App() {
           Learn React
         </a>
       </header>
+      <h4>Iteration 8</h4>
+      <LikeButton />
+
+      <h4>Iteration 9</h4>
+      <ClickablePicture
+        img= '/img/persons/maxence.png'
+        clickedImg= "/img/persons/maxence-glasses.png"
+      />
     </div>
   );
 }
