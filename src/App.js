@@ -3,11 +3,17 @@ import './App.css';
 import IdCard from './components/IdCard'
 import ClickablePicture from './components/ClickablePicture';
 import Greetings from './components/Greetings';
+import Random from './components/Random';
 
 function App (props) {
   return (
 
-    <><Greetings lang="de">Ludwig</Greetings><Greetings lang="fr">François</Greetings><><div className='container'>
+    <><h2>ITERATION 2 COMPLETE</h2><>
+    <Greetings lang="de">Ludwig</Greetings><Greetings lang="fr">François</Greetings><><div className='container'>
+
+
+    <Random min={1} max={6}/><Random min={1} max={100}/>
+
 
       <IdCard
 
@@ -24,13 +30,14 @@ function App (props) {
         height={172}
         imgURL="https://randomuser.me/api/portraits/women/44.jpg" />
 
-    </div><div>
+    </div>
+    <div>
 
         <ClickablePicture
           img="/img/persons/maxence.png"
           imgClicked="/img/persons/maxence-glasses.png" />
 
-      </div></></>
+      </div></></></>
 
 
 
