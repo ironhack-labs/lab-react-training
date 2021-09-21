@@ -4,6 +4,7 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import LikeButton from './components/LikeButton';
 import './App.css';
 
 function App() {
@@ -61,6 +62,9 @@ function App() {
           bgColor="#ddbb55"
           color="white"
         />
+        <div>
+          <LikeButton /> <LikeButton />
+        </div>
     </div>
   );
 }
