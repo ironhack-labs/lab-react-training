@@ -4,6 +4,7 @@ import IdCard from './components/IdCard'
 import ClickablePicture from './components/ClickablePicture';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
+import BoxColor from './components/BoxColor'
 
 function App (props) {
   return (
@@ -13,6 +14,12 @@ function App (props) {
 
 
     <Random min={1} max={6}/><Random min={1} max={100}/>
+
+    <h2>Iteration 4: Boxcolor</h2><br />
+
+<BoxColor r={255} g={0} b={0} />
+<BoxColor r={128} g={255} b={0} />
+<br />
 
 
       <IdCard
@@ -38,6 +45,8 @@ function App (props) {
           imgClicked="/img/persons/maxence-glasses.png" />
 
       </div></></></>
+
+      
 
 
 

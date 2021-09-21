@@ -1,4 +1,9 @@
 
+
+.app{
+  display: flex;
+  flex-direction: column;
+}
 .container{
   background-color: red;
   display: flex;
