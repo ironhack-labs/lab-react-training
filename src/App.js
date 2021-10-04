@@ -5,6 +5,7 @@ import Greetings from './components/greetings/Greetings';
 import Random from './components/random/Random';
 import BoxColor from './components/boxcolor/BoxColor';
 import CreditCard from './components/creditcard/CreditCard';
+import Rating from './components/rating/Rating';
 
 function App() {
   function integerToMeters(num){
@@ -44,6 +45,30 @@ function App() {
       <CreditCard bgColor="#11aa99" type="Visa" number="0123456789018845" expirationMonth="3" expirationYear="2021" bank="BNP" owner="Maxence Bouret"/>
       <CreditCard type="Master Card" number="0123456789010995" expirationMonth={3} expirationYear={2021} bank="N26"owner="Maxence Bouret" bgColor="#eeeeee" color="#222222" />
       <CreditCard type="Visa"number="0123456789016984"expirationMonth={12}expirationYear={2019}bank="Name of the Bank"owner="Firstname Lastname" bgColor="#ddbb55" color="white" />
+    <hr/>
+      <div>
+        <Rating>0</Rating>
+      </div>
+      
+      <div>
+        <Rating>1.49</Rating>
+      </div>
+      
+      <div>
+        <Rating>1.5</Rating>
+      </div>
+      
+      <div>
+        <Rating>3</Rating>
+      </div>
+      
+      <div>
+        <Rating>4</Rating>
+      </div>
+  
+      <div>
+        <Rating>5</Rating>
+      </div>
 
     </div>
   );
