@@ -16,12 +16,12 @@ const BoxColor = (props) => {
     return red + green + blue;
   };
   return (
-    <div
+    <li
       style={{ backgroundColor: `rgb(${r},${g},${b})` }}
       className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200 p-5"
     >
       rgb({r},{g},{b}) # {fullColorHex(r, g, b)}
-    </div>
+    </li>
   );
 };
 

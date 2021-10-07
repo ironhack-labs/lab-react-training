@@ -22,10 +22,10 @@ const Iteration1 = () => {
   ];
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-      <p class="text-5xl mb-12">Iteration 1</p>
+      <p className="text-5xl mb-12">Iteration 1</p>
       <ul className="space-y-3">
-        {idCards.map((person) => (
-          <IdCard {...person} />
+        {idCards.map((person, i) => (
+          <IdCard key={i} {...person} />
         ))}
       </ul>
     </div>

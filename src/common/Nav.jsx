@@ -59,6 +59,20 @@ const Nav = () => {
                   >
                     Iteration 5
                   </NavLink>
+                  <NavLink
+                    to="/iteration6"
+                    activeClassName="border-indigo-500 text-gray-900"
+                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  >
+                    Iteration 6
+                  </NavLink>
+                  <NavLink
+                    to="/iteration7"
+                    activeClassName="border-indigo-500 text-gray-900"
+                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  >
+                    Iteration 7
+                  </NavLink>
                 </div>
               </div>
 

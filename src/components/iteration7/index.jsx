@@ -1,0 +1,37 @@
+import React from 'react';
+import DriverCard from './DriverCard';
+
+const Iteration7 = () => {
+  const drivers = [
+    {
+      name: 'Travis Kalanick',
+      rating: 4.2,
+      img: 'https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428',
+      car: {
+        model: 'Toyota Corolla Altis',
+        licensePlate: 'CO42DE',
+      },
+    },
+    {
+      name: 'Dara Khosrowshahi',
+      rating: 4.9,
+      img: 'https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg',
+      car: {
+        model: 'Audi A3',
+        licensePlate: 'BE33ER',
+      },
+    },
+  ];
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+      <p className="text-5xl mb-12">Iteration 7</p>
+      <div className="space-y-3">
+        {drivers.map((driver) => (
+          <DriverCard {...driver} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Iteration7;

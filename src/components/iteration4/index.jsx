@@ -22,11 +22,11 @@ const Iteration4 = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-      <p class="text-5xl mb-12">Iteration 4</p>
+      <p className="text-5xl mb-12">Iteration 4</p>
 
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {colors.map((color) => (
-          <BoxColor {...color} />
+        {colors.map((color, i) => (
+          <BoxColor key={i} {...color} />
         ))}
       </ul>
     </div>

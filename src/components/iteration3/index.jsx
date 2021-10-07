@@ -9,11 +9,11 @@ const Iteration3 = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-      <p class="text-5xl mb-12">Iteration 3</p>
+      <p className="text-5xl mb-12">Iteration 3</p>
 
       <ul className="space-y-3">
-        {numbers.map((number) => (
-          <Random {...number} />
+        {numbers.map((number, i) => (
+          <Random key={i} {...number} />
         ))}
       </ul>
     </div>
