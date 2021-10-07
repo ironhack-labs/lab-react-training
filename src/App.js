@@ -5,6 +5,8 @@ import Nav from './common/Nav';
 import Iteration1 from './components/Iteration1';
 import Iteration2 from './components/iteration2';
 import Iteration3 from './components/iteration3';
+import Iteration4 from './components/iteration4';
+import Iteration5 from './components/iteration5';
 
 function App() {
   return (
@@ -19,6 +21,12 @@ function App() {
         </Route>
         <Route path="/iteration3">
           <Iteration3 />
+        </Route>
+        <Route path="/iteration4">
+          <Iteration4 />
+        </Route>
+        <Route path="/iteration5">
+          <Iteration5 />
         </Route>
       </Switch>
     </Router>
