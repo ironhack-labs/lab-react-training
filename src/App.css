@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+/* =================================================== */
+
+.id-card {
+  display: flex;
+  align-items: center;
+  width: 50rem;
+  height: 9rem;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.id-card div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.id-card div h3 {
+  margin: 2px;
+}
