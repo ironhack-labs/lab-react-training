@@ -1,0 +1,9 @@
+.container {
+  display: block;
+  border: 1px solid;
+}
+
+.in-line li {
+  margin: 2px;
+  list-style-type: none;
+}
