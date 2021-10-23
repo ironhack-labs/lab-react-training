@@ -34,6 +34,7 @@ function App() {
 
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+      <BoxColor r={142} g={125} b={150} />
     </div>
   );
 }

@@ -2,8 +2,8 @@ import React from "react";
 
 function IdCard(props) {
   return (
-    <div className="id-card">
-      <img src={props.picture} alt="" />
+    <div className="id-card" style={{display:"flex" }}>
+      <div><img src={props.picture} alt="" /></div>
 
       <div>
         <h3>First Name: {props.firstName}</h3>
