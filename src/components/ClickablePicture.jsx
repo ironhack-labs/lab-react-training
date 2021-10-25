@@ -8,7 +8,6 @@ function ClickablePicture(props) {
   function switchToggle() {
     if (toggle === true) {
       setToggle(false);
-      <img onClick={switchToggle} src={props.imgClicked} alt="" />;
       console.log(toggle);
     } else {
       setToggle(true);
@@ -17,7 +16,11 @@ function ClickablePicture(props) {
 
   return (
     <div>
-      <img onClick={switchToggle} src={props.img} alt="" />
+      <img
+        onClick={switchToggle}
+        src={toggle ? props.img : props.imgClicked}
+        alt=""
+      />
     </div>
   );
 }
