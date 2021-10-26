@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import logo from './logo.svg';
 import IdCard from './idcard/IdCard.js';
 import './App.css';
@@ -6,10 +6,19 @@ import Greetings from './greetings/Greetings.js';
 import Random from './random/Random.js';
 import BoxColor from './boxcolor/BoxColor.js';
 import CreditCard from './creditcard/CreditCard.js';
-import Rating from './rating/Rating.js'
-import DriverCard from './drivercard/DriverCard.js'
+import Rating from './rating/Rating.js';
+import DriverCard from './drivercard/DriverCard.js';
 
 function App() {
+  //button
+  const [count, setCount] = useState(0);
+
+  function increment() {
+    setCount(count + 1);
+  }
+
+  const colors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
+
   return (
     <div className="App">
       <header className="App-header">
@@ -95,25 +104,49 @@ function App() {
             />
           </div>
           <div>
-            <p><Rating>0</Rating></p>
-            <p><Rating>1.49</Rating></p>
-            <p><Rating>1.5</Rating></p>
-            <p><Rating>3</Rating></p>
-            <p><Rating>4</Rating></p>
-            <p><Rating>5</Rating></p>
+            <p>
+              <Rating>0</Rating>
+            </p>
+            <p>
+              <Rating>1.49</Rating>
+            </p>
+            <p>
+              <Rating>1.5</Rating>
+            </p>
+            <p>
+              <Rating>3</Rating>
+            </p>
+            <p>
+              <Rating>4</Rating>
+            </p>
+            <p>
+              <Rating>5</Rating>
+            </p>
           </div>
           <div>
             <DriverCard
-            name="Travis Kalanick"
-            rating={4.2}
-            img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
-            car={{model: "Toyota Corolla Altis",licensePlate: "CO42DE"}} />
+              name="Travis Kalanick"
+              rating={4.2}
+              img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+              car={{ model: 'Toyota Corolla Altis', licensePlate: 'CO42DE' }}
+            />
             <DriverCard
-            name="Dara Khosrowshahi"
-            rating={4.9}
-            img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
-            car={{model: "Audi A3", licensePlate: "BE33ER"}} />
+              name="Dara Khosrowshahi"
+              rating={4.9}
+              img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+              car={{ model: 'Audi A3', licensePlate: 'BE33ER' }}
+            />
           </div>
+          <button
+            style={{
+              backgroundColor: colors[count % colors.length],
+              padding: '15px',
+              margin: '12px',
+            }}
+            onClick={increment}
+          >
+            {count} Likes
+          </button>
         </>
       </header>
     </div>
