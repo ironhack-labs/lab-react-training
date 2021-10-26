@@ -1,9 +1,10 @@
 .container {
-  display: block;
+  display: flexbox;
+
   border: 1px solid;
 }
 
-.in-line li {
-  margin: 2px;
+.infoPers li {
+  margin: 1px;
   list-style-type: none;
 }

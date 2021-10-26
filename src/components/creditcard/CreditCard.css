@@ -13,7 +13,11 @@
 .cardContainer header {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: right;
+}
+.cardContainer h2 {
+  display: flex;
+  justify-content: right;
 }
 
 .bankName {

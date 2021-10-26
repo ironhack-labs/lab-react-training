@@ -5,7 +5,7 @@ function IdCard(props) {
   return (
     <div className="container">
       <img src={props.picture} alt="" />
-      <ul className="in-line">
+      <ul className="infoPers">
         <li>
           <strong>First Name: </strong>
           {props.firstName}

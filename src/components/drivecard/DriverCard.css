@@ -1,0 +1,16 @@
+.innerContainer {
+  background-color: #455eb5;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.driver-picture {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
