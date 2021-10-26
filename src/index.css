@@ -20,3 +20,8 @@ div {
 .Rating {
   font-size: 2rem;
 }
+
+.driverCard {
+  width: 32px;
+  border-radius: 16px;
+}
