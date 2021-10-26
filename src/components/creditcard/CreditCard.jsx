@@ -11,7 +11,8 @@ function CreditCard(props) {
           </header>
           <h2>•••• •••• ••••{props.number.substr(-4)}</h2>
           <p>
-            Expires {props.expirationMonth}/{props.expirationYear}
+            Expires {props.expirationMonth}/
+            {props.expirationYear.toString().substr(-2)}
             <span className="bankName">{props.bank}</span>
           </p>
           <p>{props.owner}</p>
