@@ -5,6 +5,7 @@ import Greetings from './components/greetings/Greetings';
 import Random from './components/random/Random';
 import BoxColor from './components/boxcolor/BoxColor';
 import CreditCard from './components/creditcard/CreditCard';
+import Rating from './components/rating/Rating';
 
 function App() {
   return (
@@ -83,6 +84,16 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+      <hr />
+      <h1>Rating</h1>
+      <div>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+      </div>
     </>
   );
 }

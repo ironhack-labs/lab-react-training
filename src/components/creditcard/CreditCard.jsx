@@ -3,11 +3,11 @@ import './CreditCard.css';
 
 function CreditCard(props) {
   return (
-    <div style={{ color: props.color }}>
-      <div hex={props.bgColor}>
-        <div>
+    <div className="container">
+      <div className="cardContainer" hex={props.bgColor}>
+        <div style={{ color: props.color }}>
           <header>
-            <h1>{props.type}</h1>
+            <h2>{props.type}</h2>
           </header>
           <h3>•••• •••• ••••{props.number.substr(-4)}</h3>
           <p>
