@@ -1,10 +1,10 @@
-.container {
+.containerCard {
   display: inline-flex;
 }
 .cardContainer {
   width: 350px;
   height: auto;
-  /* border: 1px solid; */
+
   border-radius: 10px;
   margin: 5px;
   padding: 10px;

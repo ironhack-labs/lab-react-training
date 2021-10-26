@@ -3,8 +3,8 @@ import './CreditCard.css';
 
 function CreditCard(props) {
   return (
-    <div className="container">
-      <div className="cardContainer" hex={props.bgColor}>
+    <div className="containerCard">
+      <div className="cardContainer" style={{ backgroundColor: props.bgColor }}>
         <div style={{ color: props.color }}>
           <header>
             <h2>{props.type}</h2>
