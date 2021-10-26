@@ -8,6 +8,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
@@ -76,7 +77,6 @@ function App() {
       <Rating>4</Rating>
       <Rating>5</Rating>
       <hr></hr>
-
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -94,6 +94,13 @@ function App() {
           model: 'Audi A3',
           licensePlate: 'BE33ER',
         }}
+      />
+      <hr></hr>
+      <LikeButton /> <LikeButton />
+      <hr></hr>
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
       />
     </>
   );
