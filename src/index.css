@@ -25,3 +25,8 @@ div {
   width: 32px;
   border-radius: 16px;
 }
+
+.dice {
+  width: 64px;
+  height: 64px;
+}
