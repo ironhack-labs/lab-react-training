@@ -15,7 +15,7 @@ export default function CreditCard(props) {
 
 
   return (
-    <div className="credit-card" style={{backgroundColor: props.bgcolor, color: props.textcolor, width:}}>
+    <div className="credit-card" style={{backgroundColor: props.bgcolor, color: props.textcolor}}>
       <div>{SwitchType()}</div>
       <div>{props.number}</div>
       <div>{props.expdate}</div>
