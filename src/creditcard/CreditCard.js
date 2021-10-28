@@ -2,7 +2,6 @@ import React from 'react';
 import './CreditCard.css';
 
 function CreditCard(props) {
-
   return (
     <div
       style={{
