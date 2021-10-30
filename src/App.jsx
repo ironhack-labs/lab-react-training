@@ -4,11 +4,15 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <h1>ID CARDS</h1>
       <IdCard
         firstName="John"
         lastName="Doe"
@@ -25,6 +29,7 @@ function App() {
         birth="1988-05-11"
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+      <h1>GREETINGS</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="en">Chris</Greetings>
       <Greetings lang="es">David</Greetings>
@@ -33,6 +38,7 @@ function App() {
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
       <BoxColor r={142} g={125} b={150} />
+      <h1>CREDIT CARDS</h1>
       <CreditCard
         cardtype="visa"
         number="0123456789018845"
@@ -63,6 +69,33 @@ function App() {
         bgcolor="#ddbb55"
         textcolor="white"
       />
+      <h1>RATINGS</h1>
+      <Rating>3</Rating>
+      <Rating>1.59</Rating>
+      <Rating>5</Rating>
+      <Rating>2</Rating>
+
+      <h1>DRIVERS</h1>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={<Rating>4.2</Rating>}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
+        }}
+      />
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={<Rating>4.9</Rating>}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
+      />
+      <h1>LIKE BUTTON</h1>
+      <LikeButton />
     </div>
   );
 }

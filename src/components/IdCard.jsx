@@ -2,7 +2,7 @@ import React from "react";
 
 function IdCard(props) {
   return (
-    <div className="id-card" style={{display:"flex" }}>
+    <div className="id-card" style={{display:"flex", border:"1px solid black", padding: "5px", margin:"10 px 0"}}>
       <div><img src={props.picture} alt="" /></div>
 
       <div>
