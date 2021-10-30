@@ -10,8 +10,7 @@ function BoxColor(props) {
       style={{
         margin: '15px',
         border: 'solid',
-        height: '10vh',
-        width: '20vh',
+        width: '30vh',
         backgroundColor: `rgb(${r}, ${g}, ${b})`,
       }}
     >
