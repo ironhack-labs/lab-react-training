@@ -12,6 +12,7 @@ function CreditCard(props) {
         Expires {props.expirationMonth}/{props.expirationYear}
         <span className="paragraph">{props.bank}</span>
       </p>
+      <p>{props.owner}</p>
     </div>
   );
 }
