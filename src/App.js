@@ -7,6 +7,9 @@ import BoxColor from './components/boxcolor/BoxColor';
 import CreditCard from './components/creditcard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/drivecard/DriverCard';
+import LikeButton from './components/likebutton/LikeButton';
+import ClickablePicture from './components/clickablepicture/ClickablePicture';
+import Dice from './components/dice/Dice';
 
 function App() {
   return (
@@ -117,6 +120,22 @@ function App() {
           }}
         />
       </div>
+      <hr />
+      <h1>Like Button</h1>
+      <div>
+        <LikeButton />
+      </div>
+      <hr />
+      <h1>ClickablePicture</h1>
+      <div>
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
+      </div>
+      <hr />
+      <h1>Dice compo</h1>
+      <Dice />
     </>
   );
 }
