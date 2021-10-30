@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const colors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red', 'cyan'];
+const colors = ['yellow', 'blue', 'green', 'purple', 'orange', 'red', 'cyan'];
 
 function LikeButton() {
   const [count, setCount] = useState({ amountOfLikes: 0 });
