@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.person-info {
+  margin: 1rem;
+  padding: 0.5rem;
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.person-info div p {
+  margin: 0;
+  padding: 0 1rem;
+}
