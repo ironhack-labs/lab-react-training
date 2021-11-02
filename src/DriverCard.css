@@ -1,0 +1,35 @@
+.DriverCard{
+    background: darkblue;
+    color: white;
+    font-weight: bold;
+    border: 3px solid darkblue;
+    border-radius: 20px;
+    width: 600px;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    width: auto;
+    max-height: 70px;
+    margin-right: 5%;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}

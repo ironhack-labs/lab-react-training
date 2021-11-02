@@ -1,0 +1,39 @@
+
+
+.CreditCard{
+border: 3px solid black;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+  min-height: 250px;
+  margin: 15px;
+  padding: 15px;
+  justify-content: space-evenly;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.type{
+display: flex;
+justify-content: flex-end;
+}
+
+.expiration{
+display: flex;
+flex-direction: row;
+
+}
+
+.owner{
+display: flex;
+justify-content: flex-start;
+}
+
+p{
+    margin: 5px;
+}
