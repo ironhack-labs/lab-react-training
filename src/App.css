@@ -1,17 +1,22 @@
 .App {
+
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(212, 255, 255);
+  height: 100%;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+/* 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .idCard {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +40,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.idCard{
+  background-color: rgb(245, 149, 149);
+  margin: 10px;
+  width: 15vw;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.greeting{
+  background-color: rgb(235, 245, 149);
+  margin: 10px;
+  width: 15vw;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
 }
