@@ -28,6 +28,23 @@
   color: #61dafb;
 }
 
+.card {
+  display: flex;
+  border: black 4px solid ;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.card > img {
+  height: 15rem;
+  margin-right: 2rem;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
