@@ -37,6 +37,80 @@ code {
 }
 
 .random-container p {
-  margin: 0 ;
+  margin: 0;
   padding: 0;
+}
+
+.credit-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.credit-card-container {
+  border-radius: 5%;
+  margin: 1rem;
+  padding: 1rem;
+  min-width: 25vw;
+  max-width: 33vw;
+}
+
+.credit-card-logo {
+  display: flex;
+  align-items: flex-end;
+  width: 12%;
+}
+
+.credit-card-number {
+  font-size: 2rem;
+}
+
+.credit-card-inline p {
+  padding-right: 1rem;
+  display: inline;
+}
+
+.driver-card-container {
+  margin: 1rem;
+  color: white;
+  border-radius: 2rem;
+  background-color: rgb(56, 110, 210);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.driver-card-container h4 {
+  font-size: 1.3rem;
+  padding-top: 0.5rem 0;
+  margin: 0;
+}
+
+.driver-card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.driver-card-details h4, h5, p {
+  margin: 0.2rem;
+  padding: 0;
+}
+
+.driver-card-image {
+  padding: 1rem;
+}
+
+.driver-card-image img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.like-button {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
 }
