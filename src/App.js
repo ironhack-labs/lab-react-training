@@ -26,6 +26,34 @@ function Greetings(props1, props2) {
   )
 }
 
+
+class LikeButton extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      numberOfLikes: 0,
+    }
+  }
+
+
+  increaseCounter = () => {
+    console.log("likes")
+    this.setState((prevState, props)=>{
+      return {numberOfLikes: prevState.numberOfLikes + 1}
+    })
+  }
+
+  render() {
+    return (
+      <header>
+        <h1>{this.props.title}</h1>
+        
+        <button onClick={this.increaseCounter}><p>{this.state.numberOfLikes} Likes</p></button>
+      </header>
+    );
+  }
+}
+
 function App() {
   return (
     <div className="App">
@@ -51,6 +79,10 @@ function App() {
       <section className="Iteration 2">
         <Greetings lang="de" name="Ludwig"/>
         <Greetings lang="fr" name="Francois"/>
+      </section>
+
+      <section className="Iteration 8">
+        <LikeButton/>
       </section>
     </div>
     
