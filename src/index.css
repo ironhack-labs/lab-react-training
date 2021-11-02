@@ -114,3 +114,11 @@ code {
   padding: 1rem;
   font-size: 1rem;
 }
+
+.box-color {
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 100vw;
+  height: 10vw;
+  text-align: center;
+}

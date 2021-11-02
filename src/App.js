@@ -5,6 +5,7 @@ import Greetings from './components/Greetings';
 import CreditCard from './components/CreditCard';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import BoxColor from './components/BoxColor';
 import './App.css';
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
       <h1 className="title">Random:</h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
+      <h1 className="title">Box Color:</h1>
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
       <h1 className="title">Credit Card:</h1>
       <div className="credit-card">
         <CreditCard
