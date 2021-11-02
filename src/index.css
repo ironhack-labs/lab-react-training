@@ -122,3 +122,7 @@ code {
   height: 10vw;
   text-align: center;
 }
+
+.rating-container {
+  margin: 1rem;
+}

@@ -6,6 +6,7 @@ import CreditCard from './components/CreditCard';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import BoxColor from './components/BoxColor';
+import Rating from './components/Rating';
 import './App.css';
 
 function App() {
@@ -70,6 +71,13 @@ function App() {
           color="white"
         />
       </div>
+      <h1 className="title">Rating:</h1>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
       <h1 className="title">Driver Card:</h1>
       <DriverCard
         name="Travis Kalanick"
