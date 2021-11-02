@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title {
+  margin: 1rem;
+}
+
+.person-info {
+  margin: 1rem;
+  padding: 0.5rem;
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.person-info div p {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.random-container {
+  margin: 1rem;
+  padding: 0.5rem;
+  outline: 1px solid black;
+}
+
+.random-container p {
+  margin: 0 ;
+  padding: 0;
+}
