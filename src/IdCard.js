@@ -1,7 +1,7 @@
 import React from 'react';
 export default function IdCard(props) {
   return (
-    <section className="recipe">
+    <section className="id-card">
       <p>First name: {props.firstName}</p>
       <p>Last name: {props.firstName}</p>
       <p>Gender: {props.gender}</p>
