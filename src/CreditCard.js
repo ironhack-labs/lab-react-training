@@ -3,16 +3,23 @@ import React from 'react';
 export class CreditCard extends React.Component {
   render() {
     return (
-      <section className="CreditCard">
-        <p>{this.props.type}</p>
-        <p>{this.props.number}</p>
-        <p>{this.props.expirationMonth}</p>
-        <p>{this.props.expirationYear}</p>
+      <div>
+        <div className="type"><p>{this.props.type}</p></div>
+        <div className="number"><p>{this.props.number}</p></div>
+        <div className="expires-bank">
+          <p>
+            Expires
+            {this.props.expirationMonth}/
+            {this.props.expirationYear}
+          </p>
+        </div>
+        <div className="owner"></div>
+        
+        
+        
         <p>{this.props.bank}</p>
         <p>{this.props.owner}</p>
-        <p>{this.props.bgColor}</p>
-        <p>{this.props.color}</p>
-      </section>
+      </div>
     );
   }
 }

@@ -1,3 +1,22 @@
 .credit-card{
-  background-color: #455eb5
+  display: flex;
+  flex-direction: row;
+  margin: auto 20px;
+}
+.credit-card-one{
+  background-color: #11aa99;
+  color: white;
+  padding: 30px;
+}
+
+.credit-card-two{
+  background-color: #eeeeee;
+  color: #222222;
+  padding: 30px;
+}
+
+.credit-card-three{
+  background-color: #ddbb55;
+  color:white;
+  padding: 30px;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './CreditCard.css'
 import IdCard from './IdCard';
 import { LikeButton } from './LikeButton';
 import {CreditCard} from './CreditCard'
@@ -13,8 +14,7 @@ function App() {
           lastName='Doe'
           firstName='John'
           gender='male'
-          height={178}
-          birth={new Date("1992-07-14")}
+          height="178"
           picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
 
@@ -22,45 +22,46 @@ function App() {
           lastName='Delores '
           firstName='Obrien'
           gender='female'
-          height={172}
-          birth={new Date("1988-05-11")}
+          height="172"
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
       </div>
 
+      <h1>Credit Card</h1>
       <div className="credit-card">
-        <h1>Credit Card</h1>
-        <CreditCard
-          type="Visa"
-          number="0123456789018845"
-          expirationMonth={3}
-          expirationYear={2021}
-          bank="BNP"
-          owner="Maxence Bouret"
-          bgColor="#11aa99"
-          color="white" 
-         />
-
-        <CreditCard
-          type="Master Card"
-          number="0123456789010995"
-          expirationMonth={3}
-          expirationYear={2021}
-          bank="N26"
-          owner="Maxence Bouret"
-          bgColor="#eeeeee"
-          color="#222222" 
-         />
-        <CreditCard
-          type="Visa"
-          number="0123456789016984"
-          expirationMonth={12}
-          expirationYear={2019}
-          bank="Name of the Bank"
-          owner="Firstname Lastname"
-          bgColor="#ddbb55"
-          color="white" 
+        <div className="credit-card-one">
+          <CreditCard
+            type="Visa"
+            number="0123456789018845"
+            expirationMonth="3"
+            expirationYear="2021"
+            bank="BNP"
+            owner="Maxence Bouret"
           />
+        </div>
+
+        <div className="credit-card-two">
+          <CreditCard
+            type="Master Card"
+            number="0123456789010995"
+            expirationMonth="3"
+            expirationYear="2021"
+            bank="N26"
+            owner="Maxence Bouret"
+          />
+        </div>
+
+        <div className="credit-card-three">
+          <CreditCard
+            type="Visa"
+            number="0123456789016984"
+            eexpirationMonth="12"
+            expirationYear="2019"
+            bank="Name of the Bank"
+            owner="Firstname Lastname"
+            />
+        </div>
+
 
       </div>
       <br/>
