@@ -30,7 +30,7 @@
 
 .card {
   display: flex;
-  border: black 4px solid ;
+  border: black 4px solid;
   padding: 1rem;
   margin: 2rem;
 }
@@ -43,6 +43,34 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.CreditCard {
+  max-width: 15rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;  
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.type {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.expiration {
+  display: flex;
+  flex-direction: row;
+}
+
+.owner {
+  display: flex;
+  justify-content: flex-start;
+}
+
+p {
+  margin: 5px;
 }
 
 @keyframes App-logo-spin {

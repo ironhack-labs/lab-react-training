@@ -2,56 +2,98 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// ITERATION 1
+
 function IdCard(props) {
   return (
     <div className="card">
       <img src={props.picture} alt="user" />
       <section className="infos">
-        <p><strong>First name:</strong> {props.firstName}</p>
-        <p><strong>Last name:</strong> {props.lastName}</p>
-        <p><strong>Gender:</strong> {props.gender}</p>
-        <p><strong>Height:</strong> {props.height}</p>
-        <p><strong>Birth:</strong> {props.birth}</p>
+        <p>
+          <strong>First name:</strong> {props.firstName}
+        </p>
+        <p>
+          <strong>Last name:</strong> {props.lastName}
+        </p>
+        <p>
+          <strong>Gender:</strong> {props.gender}
+        </p>
+        <p>
+          <strong>Height:</strong> {props.height}
+        </p>
+        <p>
+          <strong>Birth:</strong> {props.birth}
+        </p>
       </section>
     </div>
   );
 }
 
+// ITERATION 2
+
 function Greetings(props1, props2) {
   return (
     <div className="card">
-      <p>{props1.lang} {props2.name}</p>
+      <p>
+        {props1.lang} {props2.name}
+      </p>
     </div>
-    
-  )
+  );
 }
 
+// ITERATION 8
 
 class LikeButton extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       numberOfLikes: 0,
-    }
+    };
   }
-
 
   increaseCounter = () => {
-    console.log("likes")
-    this.setState((prevState, props)=>{
-      return {numberOfLikes: prevState.numberOfLikes + 1}
-    })
-  }
+    console.log('likes');
+    this.setState((prevState, props) => {
+      return { numberOfLikes: prevState.numberOfLikes + 1 };
+    });
+  };
 
   render() {
     return (
       <header>
         <h1>{this.props.title}</h1>
-        
-        <button onClick={this.increaseCounter}><p>{this.state.numberOfLikes} Likes</p></button>
+
+        <button onClick={this.increaseCounter}>
+          <p>{this.state.numberOfLikes} Likes</p>
+        </button>
       </header>
     );
   }
+}
+
+// ITERATION 5
+
+function CreditCard(props) {
+  let styles = {
+    background: props.bgColor,
+    color: props.color,
+  };
+
+  return (
+    <div className="CreditCard" style={styles}>
+      <p className="type">{props.type}</p>
+      <p>{props.number}</p>
+      <div className="row">
+        <div className="expiration">
+          <p>
+            Expires {props.expirationMonth}/{props.expirationYear}
+          </p>
+          <p>{props.bank}</p>
+        </div>
+      </div>
+      <p className="owner">{props.owner}</p>
+    </div>
+  );
 }
 
 function App() {
@@ -63,7 +105,7 @@ function App() {
           firstName="John"
           gender="male"
           height="178"
-          birth='1992-07-14'
+          birth="1992-07-14"
           picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
 
@@ -72,20 +114,53 @@ function App() {
           firstName="Obrien"
           gender="female"
           height="172"
-          birth='1988-05-11'
+          birth="1988-05-11"
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
       </section>
       <section className="Iteration 2">
-        <Greetings lang="de" name="Ludwig"/>
-        <Greetings lang="fr" name="Francois"/>
+        <Greetings lang="de" name="Ludwig" />
+        <Greetings lang="fr" name="Francois" />
       </section>
 
+      <section className="Iteration 5">
+        <div className="creditcard-container">
+          <CreditCard
+            type="Visa"
+            number="0123456789018845"
+            expirationMonth={3}
+            expirationYear={2021}
+            bank="BNP"
+            owner="Maxence Bouret"
+            bgColor="#11aa99"
+            color="white"
+          />
+          <CreditCard
+            type="Master Card"
+            number="0123456789010995"
+            expirationMonth={3}
+            expirationYear={2021}
+            bank="N26"
+            owner="Maxence Bouret"
+            bgColor="#eeeeee"
+            color="#222222"
+          />
+          <CreditCard
+            type="Visa"
+            number="0123456789016984"
+            expirationMonth={12}
+            expirationYear={2019}
+            bank="Name of the Bank"
+            owner="Firstname Lastname"
+            bgColor="#ddbb55"
+            color="white"
+          />
+        </div>
+      </section>
       <section className="Iteration 8">
-        <LikeButton/>
+        <LikeButton />
       </section>
     </div>
-    
   );
 }
 
