@@ -6,9 +6,18 @@ function CreditCard(props) {
       className="credit-card-container"
       style={{ backgroundColor: props.bgColor, color: props.color }}
     >
-      <img className='credit-card-logo' src={props.src} alt='credit card logo'/>
-        <h4 className="credit-card-number">{props.number}</h4>
-      <div className='credit-card-inline'>
+      <div className="credit-card-logo">
+        <img
+          
+          src={props.src}
+          alt="credit card logo"
+        />
+      </div>
+
+      <h4 className="credit-card-number">
+        {props.number.toString().replace(/.(?=.{4})/g, '·')}
+      </h4>
+      <div className="credit-card-inline">
         <p>
           Expires {props.expirationMonth.toString()}/
           {props.expirationYear.toString()}

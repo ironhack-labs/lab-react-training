@@ -36,8 +36,8 @@ function App() {
       <Random min={1} max={6} />
       <Random min={1} max={100} />
       <h1 className="title">Box Color:</h1>
-      <BoxColor r={255} g={0} b={0} />
-      <BoxColor r={128} g={255} b={0} />
+      <BoxColor r={255} g={100} b={50} />
+      <BoxColor r={128} g={200} b={100} />
       <h1 className="title">Credit Card:</h1>
       <div className="credit-card">
         <CreditCard

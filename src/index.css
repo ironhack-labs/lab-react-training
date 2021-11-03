@@ -56,12 +56,15 @@ code {
 
 .credit-card-logo {
   display: flex;
-  align-items: flex-end;
-  width: 12%;
+  justify-content: flex-end;
+}
+
+.credit-card-logo img{
+  width: 15%;
 }
 
 .credit-card-number {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .credit-card-inline p {
@@ -116,6 +119,7 @@ code {
 }
 
 .box-color {
+  outline: 1px solid black;
   padding: 1rem;
   margin: 1rem;
   max-width: 100vw;
