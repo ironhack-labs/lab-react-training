@@ -3,7 +3,7 @@ export class LikeButton extends React.Component{
   constructor (props){
     super(props);
     this.state= {
-      likes=0,
+      likes: 0,
     }
   }
 
