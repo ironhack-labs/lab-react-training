@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 // ITERATION 1
@@ -31,13 +30,35 @@ function IdCard(props) {
 
 // ITERATION 2
 
-function Greetings(props1, props2) {
+// let Greetings = (props) => {
+//   let Greeting = "";
+
+//     if(props.lang === "de"){
+//       Greeting = "Hallo Ludwig"
+//     } else if (props.lang === "en"){
+//       Greeting = "Hello Bob"
+//     } else if (props.lang === "es"){
+//       Greeting = "Hola Pablo"
+//     } else if (props.lang === "fr"){
+//       Greeting = "Bonjour Francois"
+//     }
+
+//   return (
+//     <div className="card">
+//       <p>
+//         <Greetings />
+//       </p>
+//     </div>
+//   );
+// }
+
+// ITERATION 3
+
+function Random(props) {
   return (
-    <div className="card">
-      <p>
-        {props1.lang} {props2.name}
-      </p>
-    </div>
+    <p>
+      Random value between {props.min} and {props.max} is = {Math.floor(Math.random() * (props.max - props.min + 1)) + props.min};
+    </p>
   );
 }
 
@@ -50,7 +71,6 @@ class LikeButton extends React.Component {
       numberOfLikes: 0,
     };
   }
-
   increaseCounter = () => {
     console.log('likes');
     this.setState((prevState, props) => {
@@ -119,8 +139,13 @@ function App() {
         />
       </section>
       <section className="Iteration 2">
-        <Greetings lang="de" name="Ludwig" />
-        <Greetings lang="fr" name="Francois" />
+        {/* <Greetings lang="de" />
+        <Greetings lang="fr" /> */}
+      </section>
+
+      <section className="Iteration 3">
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
       </section>
 
       <section className="Iteration 5">
