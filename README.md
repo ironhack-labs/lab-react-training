@@ -258,8 +258,8 @@ Create a component `ClickablePicture` that displays a picture and toggle to the 
 
 ```js
 <ClickablePicture
-  img='/img/persons/maxence.png'
-  imgClicked='/img/persons/maxence-glasses.png'
+  img='./assets/images/maxence.png'
+  imgClicked='./assets/images/maxence-glasses.png'
 />
 ```
 
@@ -271,10 +271,10 @@ PS: If you want your own picture instead, you can do it yourself with this pictu
 
 ### Iteration 10 | State: `Dice`
 
-Create a `Dice` component that displays a random picture (example: `'/img/dice3.png'`). Then every time the user clicks on the component:
+Create a `Dice` component that displays a random picture (example: `'./assets/images/dice3.png'`). Then every time the user clicks on the component:
 
-- An empty picture is displayed (`'/img/dice-empty.png'`)
-- 1 second later, a new random picture is displayed (example: `'/img/dice6.png'`).
+- An empty picture is displayed (`'./assets/images/dice-empty.png'`)
+- 1 second later, a new random picture is displayed (example: `'./assets/images/dice6.png'`).
 
 **Example**
 
