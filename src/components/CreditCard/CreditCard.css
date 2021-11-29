@@ -1,0 +1,41 @@
+.credit-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  width: 25vw;
+  height: 12vw;
+  border-radius: 10px;
+}
+
+.credit-card .logo {
+  text-align: right;
+}
+
+.credit-card .logo.logo-visa img {
+  height: auto;
+  width: 80px;
+}
+
+.credit-card .logo.logo-master-card img {
+  height: 28px;
+  width: auto;
+}
+
+.credit-card .number {
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+.credit-card .number .hidden {
+  font-size: 1.3em;
+}
+
+.credit-card .info * {
+  font-size: 1.4rem;
+}
+
+.credit-card .info .expires {
+  display: inline-block;
+  margin-right: 2rem;
+}
