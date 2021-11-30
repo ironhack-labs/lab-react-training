@@ -2,14 +2,12 @@
     width: 650px;
     height: 150px;
     border: 1px solid black;
-    border-radius: 5px;
     margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    -webkit-box-shadow: 7px 7px 13px 1px rgba(0,0,0,0.41); 
-    box-shadow: 7px 7px 13px 1px rgba(0,0,0,0.41);
+
 }
 
 .IdPic{
