@@ -1,7 +1,7 @@
 function Rating(props) {
   let numFillStar = Math.round(props.children);
-  let fillStar = '★';
-  let noFillStar = '☆';
+  let fillStar = '\u2605';
+  let noFillStar = '\u2606';
 
   fillStar = fillStar.repeat(numFillStar);
 
