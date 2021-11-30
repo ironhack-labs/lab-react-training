@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Boxcolor from './components/Boxcolor';
 import Greetings from './components/Greetings/Greetings';
 import IdCard from './components/IdCard/IdCard';
 import Random from './components/Random/Random';
@@ -28,6 +29,8 @@ function App() {
       Paco
       </Greetings>
       <Random max={10} min={1}/> 
+      <Boxcolor r={255} g={0} b={0} />
+    
     </div>
   );
 }
