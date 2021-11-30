@@ -1,0 +1,31 @@
+.container {
+    width: 650px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    -webkit-box-shadow: 7px 7px 13px 1px rgba(0,0,0,0.41); 
+    box-shadow: 7px 7px 13px 1px rgba(0,0,0,0.41);
+}
+
+.IdPic{
+    width: 120px;
+    padding: 20px;
+}
+
+.IdData {
+    margin: 0px 15px;
+    text-align: left;
+}
+
+p {
+    line-height: 5px;
+}
+
+span {
+    font-weight: 700;
+}
