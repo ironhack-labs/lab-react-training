@@ -38,7 +38,7 @@
 }
 
 
-.idCard-wrapper {
+.wrapper {
     display: flex;
     margin: 10px;
     border: 2px black solid;
@@ -57,3 +57,15 @@
     justify-content: start;
     margin: 10px;
 }
+
+.wrapper > span {
+    display: grid;
+    justify-content: start;
+}
+.wrapper .boxColor-span {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
