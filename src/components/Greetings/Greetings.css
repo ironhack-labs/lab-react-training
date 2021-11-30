@@ -1,0 +1,11 @@
+.greetings-container{
+    max-width: 450px;
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    margin: 5px auto;
+}
+
+.greetings-container p{
+    margin: 0;
+}

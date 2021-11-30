@@ -1,3 +1,4 @@
+import "./Greetings.css"
 const Greetings = (props) => {
   const getGreetings = (language) => {
     switch (language) {
@@ -15,7 +16,7 @@ const Greetings = (props) => {
   };
   return (
     <div className="Greetings">
-      <div className="card-container">
+      <div className="greetings-container">
         {getGreetings(props.lang)} {props.children}
       </div>
     </div>

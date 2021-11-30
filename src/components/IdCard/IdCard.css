@@ -1,8 +1,21 @@
 
 .card-container {
-    
+    max-width: 450px;
     border: 1px solid black;
     border-radius: 5px;
     display: flex;
+    margin: 5px auto;
+}
+
+.card-container img {
+    object-fit: cover;
     margin: 5px;
+}
+
+.id-content{
+    text-align: left;
+}
+
+.id-content p{
+    margin: 0px;
 }

@@ -1,0 +1,43 @@
+.creditCard-container {
+  max-width: 340px;
+  border-radius: 5px;
+  margin: 5px auto;
+  padding: 1em;
+}
+
+.credit-img {
+  display: flex;
+  justify-content: right;
+}
+.credit-img img {
+  max-width: 50px;
+}
+.credit-number{
+    font-size: 1.5em;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.credit-number span{
+    font-size: 3em;
+    margin-bottom: 8px;
+    line-height: 0.8em;
+}
+
+.credit-date {
+    display: flex;
+}
+
+.credit-date span {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.creditCard-container p {
+    margin: 0px;
+    margin-left: 10px;
+    display: flex;
+}

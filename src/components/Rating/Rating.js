@@ -1,3 +1,4 @@
+import "./Rating.css"
 const Rating = (props) => {
   function getRoundNumber(num) {
     return Math.round(num);
@@ -12,7 +13,7 @@ const Rating = (props) => {
     }
   }
 
-  return <div className="card-container">
+  return <div className="Rating">
     <span>{stars}</span>
   </div>;
 

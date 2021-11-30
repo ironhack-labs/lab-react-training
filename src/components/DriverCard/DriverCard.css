@@ -1,0 +1,29 @@
+.driverCard-container {
+  background-color: #0969da;
+  color: white;
+  max-width: 450px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  margin: 5px auto;
+  padding: 20px;
+}
+
+.driverCard-container img {
+  object-fit: cover;
+  max-width: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.driverCard-container h2 {
+  margin: 0px;
+}
+
+.driverCard-elements {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
