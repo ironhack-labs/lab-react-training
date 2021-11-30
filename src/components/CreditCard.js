@@ -26,12 +26,11 @@ const CreditCard = (props) => {
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     height: '50px',
-    width: '100px',
   };
   return (
-    <div style={divStyle}>
-      <div>
-        <div style={imgStyle}></div>
+    <div style={divStyle} className="creditCard">
+      <div className="creditCardText">
+        <div style={imgStyle} className="creditCardLogoDiv"></div>
         <h4>.... .... .... {lastNumbers}</h4>
       </div>
       <div>

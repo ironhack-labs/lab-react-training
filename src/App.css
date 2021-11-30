@@ -1,38 +1,81 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.idCardContainer {
+  display: flex;
+  width: 1000px;
+  height: fit-content;
+  align-items: center;
+  border: 1px solid black;
+  padding: 8px;
+  margin: 16px 0;
+}
+.idCardContainer p {
+  margin: 0 0 0 16px;
+}
+.idContainerImg {
+  width: auto;
+  height: inherit;
+}
+.greeting,
+.random {
+  width: 1000px;
+  border: 2px solid black;
+  margin: 16px 0;
+  padding-left: 8px;
+}
+.boxColor {
+  width: 1000px;
+  height: 200px;
+  border: 2px solid black;
+  font-size: 48px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin: 16px 0;
+}
+.creditCardContainer {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+}
+.creditCard {
+  height: 216px;
+  width: 296px;
+  border-radius: 20px;
+  padding-left: 48px;
+}
+.creditCard h4 {
+  font-size: 32px;
+  margin: 4px 0 0 0;
+}
+.creditCard span {
+  margin-left: 8px;
+}
+.creditCardLogoDiv {
+  display: flex;
+  justify-content: end;
+  background-position: right;
+}
+.driverCard {
+  width: 1000px;
+  background-color: rgb(75, 75, 202);
+  display: flex;
   color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  border-radius: 20px;
+  margin: 32px 0;
 }
-
-.App-link {
-  color: #61dafb;
+.driverCard h3,
+.driverCard p {
+  margin: 0 0 0 16px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.driverCardImg img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
 }

@@ -19,7 +19,7 @@ const Greetings = (props) => {
       break;
   }
   return (
-    <div>
+    <div className="greeting">
       <p>
         {greetings}, {children}
       </p>
