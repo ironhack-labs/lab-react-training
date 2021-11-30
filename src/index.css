@@ -11,3 +11,83 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.info-card {
+  margin: 1rem;
+  padding: 0.5rem;
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  font-size: 1.3rem;
+}
+
+#photo {
+  height: 170px;
+  width: auto;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.inner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inner-info p {
+  margin: -1px 15px;
+}
+
+.greetings {
+  margin: 1rem;
+  padding: 0.5rem;
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.color-container {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  outline: 3px solid black;
+  height: 8vw;
+  text-align: center;
+}
+
+/* credit card */
+.credit-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card-container {
+  border-radius: 12px;
+  margin: 1rem;
+  padding: 1rem;
+  min-width: 23vw;
+  max-width: 28vw;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+  width: 15%;
+}
+
+.card-number {
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+}
+
+.credit-card-text p {
+  display: flex;
+  padding-right: 1rem;
+  display: inline;
+}
+
+/* ///////////////////// */
