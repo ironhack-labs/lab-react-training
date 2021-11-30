@@ -1,0 +1,19 @@
+.credit-img{
+    height: 20px;
+    margin: 12px;
+}
+.credit-card{
+    width: 330px;
+    height: 190px;
+    border-radius: 5px;
+    margin: 22px;
+    padding: 12px;
+    text-align: right;
+}
+.credit-numb{
+    font-size: 30px;
+    text-align: center;
+}
+.credit-details{
+    text-align: left;
+}
