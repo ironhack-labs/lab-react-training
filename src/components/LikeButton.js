@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 
 export default function LikeButton() {
+    
 const [liked, setLiked] = useState(0)
 const [color, setColor] = useState(0)
 const colors = ['purple','blue','green','yellow','orange','red']
-const randomColor = colors[Math.floor(Math.random()*colors.length-1)];
+const randomColor = colors[Math.floor(Math.random()*colors.length)];
 
 //console.log(randomColor)
 
