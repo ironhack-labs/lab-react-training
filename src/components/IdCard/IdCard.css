@@ -1,0 +1,19 @@
+.idCard{
+    display: flex;
+    position: relative;
+    margin-top:12px;
+    margin-left:12px;
+    margin-right:12px;
+    border: 1px solid black;
+  }
+
+.card-photo{
+    padding: 10px 10px;
+    display:flex;
+}
+
+.card-text{
+    text-align: left;
+}
+
+
