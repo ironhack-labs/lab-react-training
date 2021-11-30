@@ -62,6 +62,7 @@
     display: grid;
     justify-content: start;
 }
+
 .wrapper .boxColor-span {
     display: grid;
     align-items: center;
@@ -69,3 +70,31 @@
     width: 100%;
 }
 
+.credit-card {
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 125px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.CreditCard .number {
+    font-size: 1.9em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.number {
+    font-size: 2rem;
+}
+
+.image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.credit-card > .image-wrapper > img {
+    height: 1rem;
+}
