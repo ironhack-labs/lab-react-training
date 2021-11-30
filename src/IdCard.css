@@ -8,3 +8,7 @@
 .IdCard p{
     margin: 0px;
 }
+
+.IdCard img {
+    margin: 5px;
+}
