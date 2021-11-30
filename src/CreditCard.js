@@ -12,7 +12,7 @@ const CreditCard = (props) => {
                 <img src={image} alt={type}/>
             </div>
             <div className="number">
-                ···· ···· ···· {number.slice(-4)}
+                •••• •••• •••• {number.slice(-4)}
             </div>
             <div className="expires-bank">
                 <span>Expires {expirationMonth}/{expirationYear}</span>
