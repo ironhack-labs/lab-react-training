@@ -1,32 +1,33 @@
 import React from 'react';
 import './App.css';
+import Greetings from './components/Greetings/Greetings';
 import IdCard from './components/IdCard/IdCard';
+import Random from './components/Random/Random';
 
-const idCardsArray = [
-  {
-    firstName: 'Doe',
-    lastName: 'John',
-    gender: 'male',
-    height: 178,
-    birth: '1992-07-14',
-    picture: 'https://randomuser.me/api/portraits/men/44.jpg',
-  }
-];
+const idCard = {
+  firstName: 'Doe',
+  lastName: 'John',
+  gender: 'male',
+  height: 178,
+  birth: '1992-07-14',
+  picture: 'https://randomuser.me/api/portraits/men/44.jpg',
+};
 
 function App() {
   return (
     <div className="App">
-      {idCardsArray.map((card, i) => (
-        <IdCard
-          firstName={card.firstName}
-          lastName={card.lastName}
-          gender={card.gender}
-          height={card.height}
-          birth={card.birth}
-          picture={card.picture}
-          key={i}
-        />
-      ))}
+      <IdCard
+        firstName={idCard.firstName}
+        lastName={idCard.lastName}
+        gender={idCard.gender}
+        height={idCard.height}
+        birth={idCard.birth}
+        picture={idCard.picture}
+      />
+      <Greetings lang="es">
+      Paco
+      </Greetings>
+      <Random max={10} min={1}/> 
     </div>
   );
 }
