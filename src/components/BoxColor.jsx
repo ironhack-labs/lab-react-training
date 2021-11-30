@@ -4,13 +4,13 @@ const BoxColor = (props) => {
 
     var styles = {
         colored: {
-          'background-color': `rgb(${r}, ${g}, ${b})`
+          backgroundColor: `rgb(${r}, ${g}, ${b})`
         }
       }
 
     return (
         <div>
-            <p class="coloredBox" style={styles.colored}>
+            <p className="coloredBox" style={styles.colored}>
                 rgb({r}, {g}, {b})
             </p>
         </div>

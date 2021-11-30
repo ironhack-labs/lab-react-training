@@ -3,7 +3,7 @@ const Greeting = (props) => {
     const {person} = props;
 
     const greeting = (person) => {
-        console.log(person)
+
         switch (person.lang) {
             case 'en': 
                 return "Hello"

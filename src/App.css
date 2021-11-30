@@ -55,3 +55,48 @@ body {
   align-items: center;
   margin-right: 20px;
 }
+
+.list-credit-cards {
+  display: flex;
+}
+.credit-card {
+  width: 230px;
+  height: 120px;
+  padding: 16px;
+  border-radius: 20px;
+  margin: 0 20px 20px 0;
+}
+.credit-card .type {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: flex-end;
+}
+.credit-card .card-number {
+  width: 100%;
+  display: block;
+  font-size: 26px;
+  margin-top: 16px;
+  text-align: center;
+}
+.credit-card .card-number small {
+  font-size: 8px;
+  margin-right: 10px;
+}
+.credit-card .card-info {
+  font-size: 13px;
+  display: block;
+  margin-top: 24px;
+}
+.credit-card .card-owner {
+  font-size: 13px;
+}
+.credit-card .card-info .bank-name{
+  margin-left: 20px;
+}
+.rating {
+  margin: 20px;
+}
+.rating .stars-line {
+  margin-bottom: 6px;
+}
