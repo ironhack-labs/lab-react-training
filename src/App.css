@@ -1,3 +1,8 @@
 .App {
   /* text-align: center; */
 }
+
+
+.credit-cards{
+  display: flex;
+}
