@@ -34,7 +34,7 @@ const CreditCard = (props) => {
     }
 
     return (
-        <div style={divStyle}>
+        <div className="CreditCard" style={divStyle}>
             <div>
                 <div style={imgStyle}></div>
                 <h4>.... .... .... {lastNumbers}</h4>

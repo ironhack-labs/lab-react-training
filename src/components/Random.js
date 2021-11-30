@@ -3,7 +3,7 @@ const Random = (props) => {
     const randomValue = Math.floor(Math.random() * max) + min
 
     return (
-        <div className="randomNumber">
+        <div className="Random">
             <p>
                 Random value between {min} and {max} => {randomValue}
             </p>

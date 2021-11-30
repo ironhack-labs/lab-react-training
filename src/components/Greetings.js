@@ -21,7 +21,7 @@ const Greetings = (props) => {
     }
 
     return (
-        <div>
+        <div className="Greetings">
             <p>
                 {greetings}, {children}
             </p>
