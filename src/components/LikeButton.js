@@ -15,6 +15,7 @@ export default function LikeButton() {
       }
     return (
         <div className='buttons-container'>
+        <h2>Iteration 8</h2>
         <button onClick={likeHandler} style={{backgroundColor: colors[count%6], height: '40px', width:'100px'}}>{count} Likes</button>
             
         </div>
