@@ -1,0 +1,18 @@
+img{
+    height: 20px;
+    margin: 10px;
+}
+.card{
+    max-width: 300px;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    text-align: right;
+}
+.card-numb{
+    font-size: 30px;
+    text-align: center;
+}
+.align-left{
+    text-align: left;
+}
