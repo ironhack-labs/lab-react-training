@@ -1,5 +1,6 @@
 import React from 'react';
 import IdCard from './IdCard'
+import Greetings from './Greetings';
 import './App.css';
 
 function App() {
@@ -26,7 +27,9 @@ function App() {
           />
       </div>
       <div>
-        
+        <h1>Greetings</h1>
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
       </div>
     </div>
   );
