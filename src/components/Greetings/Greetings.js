@@ -2,11 +2,8 @@ import './Greetings.styles.css';
 
 const Greetings = (props) => {
   const { lang, children } = props;
-  return (
-    <div>
-
-    </div>
-  )
-}
+  if (lang === 'de') return <p>Hallo {children}</p>;
+  else if (lang === 'fr') return <p>Bonjour {children}</p>;
+  }
 
 export default Greetings;

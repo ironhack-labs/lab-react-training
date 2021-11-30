@@ -1,4 +1,3 @@
-import React from 'react';
 import './IdCard.styles.css';
 
 const IdCard = (props) => {
