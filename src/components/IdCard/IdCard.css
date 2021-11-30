@@ -1,0 +1,7 @@
+
+.card-container {
+    
+    border: 5px solid black;
+    border-radius: 5px;
+    display: flex;
+}
