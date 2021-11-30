@@ -1,0 +1,12 @@
+img{
+    height: 100px;
+    border-radius: 500px;
+}
+.flex-driver-card{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(47, 67, 135);
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}

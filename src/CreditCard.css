@@ -3,7 +3,8 @@ img{
     margin: 10px;
 }
 .card{
-    max-width: 300px;
+    width: 400px;
+    height: 200px;
     border-radius: 5px;
     margin: 20px;
     padding: 10px;
