@@ -1,15 +1,16 @@
-import './Greetings.css';
-
 const Greetings = (props) => {
   const getGreetings = (language) => {
     switch (language) {
-    
-    case "fr":
-        return "Bonjour";
-    case "de":
-        return "Halo";
-       default:
-           return "Hello"; 
+      case 'en':
+        return 'Hello';
+      case 'fr':
+        return 'Bonjour';
+      case 'de':
+        return 'Halo';
+      case 'es':
+        return 'Hola';
+      default:
+        return 'Salve';
     }
   };
   return (

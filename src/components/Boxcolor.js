@@ -9,7 +9,7 @@ const Boxcolor = (props) => {
   return (
     <div
       className="card-container"
-      style= {divStyle}
+      style={divStyle}
     >
       rgb({r},{g},{b})
     </div>
@@ -18,4 +18,4 @@ const Boxcolor = (props) => {
 
 export default Boxcolor;
 
-// style={{ background: `rgb(${box.color})` }}
+
