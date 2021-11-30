@@ -1,0 +1,9 @@
+.random-text{
+    display: flex;
+    width: 500px;
+    height: 50px;
+    margin-top:12px;
+    margin-left: 12px;
+    border: 1px solid black;
+    padding: 1px 10px;
+}
