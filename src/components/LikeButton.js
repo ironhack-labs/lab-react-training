@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function LikeButton() {
-    
+
 const [liked, setLiked] = useState(0)
 const [color, setColor] = useState(0)
 const colors = ['purple','blue','green','yellow','orange','red']
@@ -17,7 +17,7 @@ setColor(color => randomColor)
 //const buttonColor = colors[color]
 return (
 <div>
-<button style={{backgroundColor: randomColor}} onClick={likeHandler}> {liked} Likes</button>
+<button style={{backgroundColor: randomColor, width:'460px', fontSize: '30px'}} onClick={likeHandler}> {liked} Likes </button>
 </div>
 );
     

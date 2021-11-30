@@ -15,11 +15,11 @@ export default function Dice() {
     const clickHandler = () => {
         setDice(dEmpty)
         setTimeout(function () {
-            setDice(randomDice())
+            setDice(dice => dice = randomDice())
         }, 1000)
     }
 
     return (
-        <img src={dice} onClick={clickHandler} />
+        <img src={dice} onClick={clickHandler} style={{height: '470px'}} />
     )
 }
