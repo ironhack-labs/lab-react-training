@@ -1,0 +1,11 @@
+span{
+    font-weight: bold;
+}
+.IdCard{
+    display: flex;
+    border: 2px solid black;
+    margin: 20px;
+}
+.IdCard p{
+    margin: 2px;
+}
