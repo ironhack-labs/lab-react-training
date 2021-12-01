@@ -43,3 +43,72 @@
   flex-wrap: wrap;
   margin: 30px;
 }
+
+/* .likesBtn {
+  background-color: turquoise;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  border-radius: 10px;
+  margin: 50px;
+  width: 250px;
+  height: 70px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.likesBtn:hover {
+  box-shadow:  0 5px 11px rgb(255, 78, 34) tomato;
+} */
+
+.likesBtn{
+  position: relative;
+  margin: 50px;
+  width: 250px;
+  height: 70px;
+  background-color: turquoise;
+  border-radius: 4em;
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+  cursor:pointer;
+  user-select:none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+}
+
+.likesBtn:hover {
+  transition-duration: 0.1s;
+  background-color: tomato;
+}
+
+.likesBtn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px rgb(255, 89, 89);
+}
+
+.likesBtn:active:after {
+  box-shadow: 0 0 0 0 rgb(48, 255, 100);
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.likesBtn:active {
+  top: 1px;
+}

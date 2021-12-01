@@ -7,12 +7,16 @@ import BoxColor from './components/BoxColor/BoxColor'
 import CreditCard from './components/CreditCard/CreditCard'
 import Rating from './components/Rating/Rating'
 import DriverCard from './components/DriverCard/DriverCard'
+import { useState } from 'react';
 
 
 // const rating = [0, 1.49, 1.5, 3, 4, 5]
 
 function App() {
   // const rating = [0, 1.49, 1.5, 3, 4, 5]
+  const myFirstState = useState(0)
+  const counter = myFirstState[0]
+  const setCounter = myFirstState[1]
 
   return (
     <div className="App">
@@ -94,6 +98,10 @@ function App() {
             model: "Audi A3",
             licensePlate: "BE33ER"
           }} />
+
+
+
+        <button className="likesBtn" onClick={() => setCounter(counter +1)}>{counter} Likes</button>
 
 
     </div>
