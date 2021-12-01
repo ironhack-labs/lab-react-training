@@ -9,9 +9,12 @@ import Rating from "./components/Ratin"
 import DriverCard from "./components/DriverCard";
 import LikeButton from "./components/LikeButton";
 import ClickablePicture from "./components/ClickablePicture";
+import Dice from "./components/Dice";
+
 
 import maxence from './assets/images/maxence.png';
 import maxenceHasSunglasses from './assets/images/maxence-glasses.png';
+
 function App() {
     return (
         <div className="App">
@@ -114,10 +117,14 @@ function App() {
                 img={maxence}
                 imgClicked={maxenceHasSunglasses}
             />
+            <h1 className="iteration-h1">Dice</h1>
+            <Dice/>
+            <Dice/>
+            <Dice/>
+
         </div>
 
-    )
-        ;
+    );
 }
 
 export default App;
