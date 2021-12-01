@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.titleApp{
+  text-align: center;
+  padding-left: 25px;
+}
+
+.fancyborder{
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  
+}
+.columns{
+  flex-direction: column;
+  padding: 15px;
+ 
+}
+.App{
+padding: 20px;
+}
+.columns2{
+  flex-direction: column;
+  padding: 15px;
+  padding-top: 30px;
+ 
+}
+.flexy{
+
+display: flex;
+flex-direction: row;
+line-height: 12px;
+}
+.colors{
+width: 100%;
+height: 100%;
+}
+.tarjeta{
+border-radius: 15px;
+padding: 15px;
+width: 400px;
+height: 200px;
+}
+.tarImg{
+width: 20%;
+}
+.marginTar{
+margin: 15px;
+}
+.rating{
+  width: 500px;
+}
+.imgcar{
+object-fit: cover;
+width: 200px;
+height: 200px;
+border-radius: 150px ;
+}
+.colorCar{
+  text-align: center;
+  width: 700px;
+  background-color: royalblue;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 35px;
+}
+.espacioDriver{
+margin: 30px;
+}
+.btnLikes{
+font-size: 20px;
+border-radius: 10px;
+}
+.rating{
+  font-size: 35px;
+ 
+}
