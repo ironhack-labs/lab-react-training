@@ -10,7 +10,7 @@ import DriverCard from "./components/DriverCard";
 import LikeButton from "./components/LikeButton";
 import ClickablePicture from "./components/ClickablePicture";
 import Dice from "./components/Dice";
-
+import Carousel from "./components/Carousel";
 
 import maxence from './assets/images/maxence.png';
 import maxenceHasSunglasses from './assets/images/maxence-glasses.png';
@@ -122,6 +122,16 @@ function App() {
             <Dice/>
             <Dice/>
 
+            <h1 className="iteration-h1">Carousel</h1>
+
+            <Carousel
+                imgs={[
+                    'https://randomuser.me/api/portraits/women/1.jpg',
+                    'https://randomuser.me/api/portraits/men/1.jpg',
+                    'https://randomuser.me/api/portraits/women/2.jpg',
+                    'https://randomuser.me/api/portraits/men/2.jpg'
+                ]}
+            />
         </div>
 
     );
