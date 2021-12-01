@@ -7,7 +7,11 @@ import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
 import Rating from "./components/Ratin"
 import DriverCard from "./components/DriverCard";
+import LikeButton from "./components/LikeButton";
+import ClickablePicture from "./components/ClickablePicture";
 
+import maxence from './assets/images/maxence.png';
+import maxenceHasSunglasses from './assets/images/maxence-glasses.png';
 function App() {
     return (
         <div className="App">
@@ -101,6 +105,15 @@ function App() {
                     licensePlate: "BE33ER"
                 }}/>
 
+            <h1 className="iteration-h1">Like Button</h1>
+            <LikeButton/> <LikeButton/>
+
+            <h1 className="iteration-h1">ClickablePicture</h1>
+
+            <ClickablePicture
+                img={maxence}
+                imgClicked={maxenceHasSunglasses}
+            />
         </div>
 
     )
