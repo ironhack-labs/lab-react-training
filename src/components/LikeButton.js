@@ -9,7 +9,7 @@ function LikeButton() {
     return (<>
             <button style={
                 {
-                    "background-color": colors[Math.floor(Math.random() * colors.length)],
+                    "background-color": (like < colors.length) && colors[like] || setLike(0),
                     height: '2rem',
                     width: '5rem'
                 }
