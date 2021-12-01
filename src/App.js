@@ -5,6 +5,7 @@ import Greetings from "./components/Greetings";
 import Random from "./components/Random";
 import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
+import Rating from "./components/Ratin"
 
 function App() {
     return (
@@ -71,8 +72,20 @@ function App() {
                 owner="Firstname Lastname"
                 bgColor="#ddbb55"
                 color="white"/>
+
+            <h1 className="iteration-h1">Ratings</h1>
+
+            <Rating children='0'/>
+            <Rating children='1.49'/>
+            <Rating children='1.5'/>
+            <Rating children='3'/>
+            <Rating children='4'/>
+            <Rating children='5'/>
+
         </div>
-    );
+
+    )
+        ;
 }
 
 export default App;
