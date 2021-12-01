@@ -98,3 +98,27 @@
 .credit-card > .image-wrapper > img {
     height: 1rem;
 }
+
+.driver-card > img {
+    height: 4rem;
+    border-radius: 50%;
+    width: 4rem;
+}
+
+.driver-card {
+    color: white;
+    display: flex;
+    margin: 2rem;
+    padding: 1rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #5959c9;
+}
+
+.driver-info {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1rem;
+}
