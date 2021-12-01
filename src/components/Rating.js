@@ -1,8 +1,8 @@
 import './Rating.css'
 
 const Rating = (props)=>{
-    const{children} = props
-    let rating = Math.round(props.children);
+    const {children} = props
+    let rating = Math.round(children);
     
     return(
         <div className= "Rating">
