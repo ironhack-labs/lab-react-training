@@ -6,6 +6,8 @@ import Random from './components/Random/Random'
 import BoxColor from './components/BoxColor/BoxColor'
 import CreditCard from './components/CreditCard/CreditCard'
 import Rating from './components/Rating/Rating'
+import DriverCard from './components/DriverCard/DriverCard'
+
 
 // const rating = [0, 1.49, 1.5, 3, 4, 5]
 
@@ -76,7 +78,7 @@ function App() {
         <Rating>5</Rating>
 
 
-        {/* <DriverCard
+        <DriverCard
           name="Travis Kalanick"
           rating={4.2}
           img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
@@ -91,7 +93,7 @@ function App() {
           car={{
             model: "Audi A3",
             licensePlate: "BE33ER"
-          }} /> */}
+          }} />
 
 
     </div>
