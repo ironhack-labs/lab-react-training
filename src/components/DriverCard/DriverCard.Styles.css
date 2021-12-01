@@ -2,8 +2,18 @@
 width: 10%;
 
 }
-#containerDiv{
+.DriverCard{
 
-display: flex;
+    background-color: #425cbb;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 10px;
 
 }

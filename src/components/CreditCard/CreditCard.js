@@ -10,6 +10,7 @@ const CreditCard =(props)=>{
     return (
        
        <div style={properties}>
+           
            <p>{type}</p>
            <p>.... .... .... {number.slice(-4)}</p>
            <p>Expires: {expirationMonth}/{expirationYear}{bank}</p>
