@@ -1,0 +1,14 @@
+.minilogo{
+    width: 60px;
+}
+
+.cardBox{
+    background-color: goldenrod;
+    width: 300px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #B79D5B;
+
+}
