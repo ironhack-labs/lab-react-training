@@ -1,4 +1,6 @@
 import './CreditCard.styles.css';
+import visa from '../../assets/images/visa.png';
+import masterCard from '../../assets/images/master-card.svg';
 
 const CreditCard = (props) => {
   const {
@@ -13,10 +15,8 @@ const CreditCard = (props) => {
   } = props;
 
   const cardLogo = (type) => {
-    if (type === 'Visa') return '/assets/images/visa.png';
-    else if (type === 'Master Card')
-      return '/assets/images/master-card.svg';
-    else return null;
+    if (type === 'Visa') return visa
+    else return masterCard;
   };
 
   const month = (expirationMonth) => {
