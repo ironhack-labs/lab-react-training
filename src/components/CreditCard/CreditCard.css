@@ -1,0 +1,16 @@
+.container {
+    width: 500px;
+    height: 500px;
+    color: white;
+    font-weight: 500px;
+    font-size: 50px;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+
+.logo {
+    width: 50px;
+    padding-top: 10px;
+    position: absolute;
+    right: 20px;
+}
