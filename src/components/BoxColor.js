@@ -1,13 +1,16 @@
-import './BoxColor.css'
+// import './BoxColor.css'
 
-const BoxColor =(props)=>{
+// const BoxColor =(props)=>{
 
-    const {r, g, b} = props
+//     const {r, g, b} = props
 
-    return(
+//     return(
+//         <div style={style}>
+           
+//         </div>
 
-    )
-}
+//     )
+// }
 
 
-export default BoxColor
+// export default BoxColor
