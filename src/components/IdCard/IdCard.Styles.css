@@ -1,0 +1,9 @@
+#card{
+
+    display: flex;
+    border: solid black 1px;
+    margin: 2px;
+}
+p{
+    margin: 0%;
+}
