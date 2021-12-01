@@ -7,21 +7,18 @@ import masterCard from '../../assets/images/master-card.svg'
 const CreditCard = (props) => {
   const { type, number, expirationMonth, expirationYear, bank, owner, bgColor, color } = props
       return (
-        <div clasName="container" style={{backgroundColor: bgColor, color: color}}>
+        <div className="creditCardContainer" style={{backgroundColor: bgColor, color: color}}>
             <div>
-                <p className="logo">{type === "Visa" ? <img className="logo" src={visa} /> : <img className="logo" src={masterCard} />}</p>
+                <p className="logo">{type === "Visa" ? <img className="logo" src={visa} alt={visa} /> : <img className="logo" src={masterCard}  alt={masterCard} />}</p>
+            </div> 
+            <div className="number">
+                <p>{number}</p>
             </div>
-            <div>
-                <p className="number">{number}</p>
+            <div className="cardText">
+                <p className="expiration">Expires {expirationMonth}/{expirationYear} {bank}</p>
+                <p>{owner}</p>
             </div>
-            <div>
-                <div>
-                    <p className="expiration">Expires {expirationMonth}/{expirationYear} {bank}</p>
-                </div>
-                <div>
-                    <p>{owner}</p>
-                </div>
-            </div>
+
         </div>
     )
 }

@@ -7,7 +7,7 @@ const BoxColor = (props) => {
   const properties = {backgroundColor: `rgb(${r}, ${g}, ${b})`, width: '650px', height: '150px', border: '2px solid black', margin: '10px 40px', paddingLeft: '20px'}
       return (
         <div style={properties}>
-            <p className="boxColor">rgb({r}, {g}, {b})</p>
+            <p className="boxColorContainer">rgb({r}, {g}, {b})</p>
         </div>
     )
 }

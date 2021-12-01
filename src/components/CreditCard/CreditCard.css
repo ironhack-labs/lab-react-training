@@ -1,16 +1,29 @@
-.container {
-    width: 500px;
-    height: 500px;
-    color: white;
-    font-weight: 500px;
-    font-size: 50px;
+.creditCardContainer {
+    margin: 50px;
+    padding: 20px;
+    width: 320px;
+    font-weight: 20px;
+    font-size: 20px;
     margin-top: 50px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    border-radius: 20px;
 }
 
 .logo {
     width: 50px;
-    padding-top: 10px;
-    position: absolute;
+    padding-right: 10px;
+    margin-left: 130px;
+    position: flex;
+    justify-content: flex-end; 
     right: 20px;
+}
+
+.cardText {
+    text-align: left;
+    line-height: 20px;
+}
+
+.number {
+    text-align: center;
+    font-size: 26px;
 }

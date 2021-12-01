@@ -1,5 +1,5 @@
-.boxColor {
-    color: white;
+.boxColorContainer {
+    color: rgb(255, 255, 255);
     font-weight: 500px;
     font-size: 30px;
     margin-top: 50px;
