@@ -1,6 +1,25 @@
-.IdCard{
-    border-style: 5px solid black ;
-   
+h1{
     text-align: left;
+    margin-left: 10px ;
+}
+
+
+.IdCard{
+    border: 1px solid black ;
+    text-align: left;
+    padding: 5px;
+    margin: 10px;
+    height: 128px;
+    
+}
+.idImg{
+    /* padding: 5px; */
+    float: left;
+    padding-right: 5px;
+}
+.idText{
+    flex-direction: row;
+    line-height: 5px;
+    align-items: flex-start;
 
 }

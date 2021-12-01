@@ -8,8 +8,8 @@ const IdCard = (props) => {
     
     return (
         <div className= "IdCard">
-            <img src={picture} alt={firstName} />
-            <div>
+            <img className="idImg" src={picture} alt={firstName} />
+            <div className="idText">
                 <p><b>First name:  </b>{firstName}</p>
                 <p><b>Last name:  </b>{lastName}</p>
                 <p><b>Gender:  </b>{gender}</p>

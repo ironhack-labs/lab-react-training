@@ -1,0 +1,27 @@
+.containerCard{
+display: inline-block;
+}
+.CreditCard{
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 3px;
+    padding-bottom:8px;
+    border-radius: 10px;
+    line-height: 10px;
+}
+.logoCard{
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+    padding: 10px ;
+}
+.Number{
+    font-size: 30px;
+}
+
+.textCard{
+    margin: 0px;
+    text-align: left;
+
+}

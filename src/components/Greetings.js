@@ -1,24 +1,25 @@
-// import './Greetings.css'
+import './Greetings.css'
 
-// function 
+
 function Greetings(props) {
 
     const {lang, children} = props
 
-    let saludo = ''
+    let greetings;
+
     switch(lang){
-        case 'de': saludo = 'hallo';
+        case 'de': greetings = 'Hallo';
         break;
-        case 'en': saludo = 'hello';
+        case 'en': greetings = 'Hello';
         break;
-        case 'es': saludo = 'hola';
+        case 'es': greetings = 'Hola';
         break;
-        case 'fr': saludo = 'salut';
+        case 'fr': greetings = 'Bonjour';
         break;
     }
     return (
-        <div>
-            {lang}
+        <div className="Greetings">
+            {greetings}
             {children}
         </div>
     )
