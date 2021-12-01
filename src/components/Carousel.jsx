@@ -26,8 +26,8 @@ export const Carousel = () => {
   return (
     <div>
       <img src={img} style={{height: '500px'}} alt="potrait" />
-      <button onClick={handleNext}>NEXT</button>
       <button onClick={handlePrev}>PREV</button>
+      <button onClick={handleNext}>NEXT</button>
     </div>
   )
 }
