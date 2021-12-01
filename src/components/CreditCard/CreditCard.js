@@ -28,21 +28,17 @@ const CreditCard = (props) => {
 
   return (
     <div className="CreditCard" style={properties}>
-      <div>
-        <div>
+      <div className='type'>
           <img src={cardLogo(type)} alt={type} />
-          <h4>
-            <span>.... .... ....</span> {number.slice(-4)}
-          </h4>
+      </div>
+        <div className='number'>
+          <p><span className='hide-number'>.... .... ....</span> {number.slice(-4)}</p>
         </div>
+      <div className='expires-bank'>
+        <span>Expires {month(expirationMonth)}/{expirationYear.toString().slice(-2)}</span>
+        <span className='bank'>{bank}</span>
       </div>
-      <div>
-        <p>
-          Expires {month(expirationMonth)}/{expirationYear.toString().slice(-2)}
-        </p>
-        <p>{bank}</p>
-      </div>
-      <p>{owner}</p>
+      <p className='owner'>{owner}</p>
     </div>
   );
 };
