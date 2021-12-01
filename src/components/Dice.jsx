@@ -10,17 +10,19 @@ import dice6 from '../assets/images/dice6.png'
 
 export const Dice = () => {
   const dices = [dice1, dice2, dice3, dice4, dice5, dice6]
-  let randomNum = Math.floor(Math.random() * 6) + 1
 
-  const [src, setSrc] = useState(dices[randomNum])
-  console.log('SRC', src)
+  function randomize() {
+    return dices[Math.floor(Math.random() * 6) + 1]
+  }
+
+  const [src, setSrc] = useState(randomize())
   
   const handleClick = () => {
     setTimeout(() => {
       setSrc(src => src = diceEmpty)
     }, 1)
     setTimeout(() => {
-      setSrc(src => src = dices[randomNum])
+      setSrc(src => src = randomize())
     }, 1000)
   }
 
