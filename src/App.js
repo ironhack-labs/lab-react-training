@@ -8,11 +8,15 @@ import maxenceGlasses from './assets/images/maxence-glasses.png';
 import { Dice } from './components/Dice';
 import { Carousel } from './components/Carousel';
 import IdCard from './components/IdCard'
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <NumbersTable limit={12}/>
         <IdCard
           lastName="Doe"
           firstName="John"
@@ -42,6 +46,7 @@ function App() {
         />
         <ClickablePicture img={maxence} imgClicked={maxenceGlasses} />
         <Dice />
+        <Facebook/>
       </header>
     </div>
   );

@@ -1,16 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 export default function IdCard(props) {
 
-    console.log(props);
-    return (
-        <div>
-            <img src={props.picture} alt="" />
-            <p>First Name : {props.firstName}</p>
-            <p>Last Name : {props.lastName}</p>
-            <p>Gender: {props.gender}</p>
-
-
-        </div>
-    )
+  return (
+    <div style={{ backgroundColor: 'white', color: 'black', display: "flex", width: "33%", margin: "5px" }}>
+      <img src={props.picture} alt="" />
+      <div>
+        <p>First Name : {props.firstName}</p>
+        <p>Last Name : {props.lastName}</p>
+        <p>Gender: {props.gender}</p>
+      </div>
+    </div>
+  );
 }

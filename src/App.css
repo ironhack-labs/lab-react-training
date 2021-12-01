@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.rect {
+  color: black;
+  width: 10vh;
+  height: 10vh;
+  outline: 3px solid black;
+}
+
+.rectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vh;
+}
