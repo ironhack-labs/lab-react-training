@@ -1,0 +1,8 @@
+.BoxColor{
+    border: 1px solid black ;
+    color: #fff;
+    padding: 5px;
+    margin: 10px;
+    height: fit-content;
+    line-height: 8px;
+}

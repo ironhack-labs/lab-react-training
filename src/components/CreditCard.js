@@ -5,6 +5,7 @@ import MasterCard from './images/master-card.svg';
 const CreditCard = (props)=>{
     const {type, number, expirationMonth, expirationYear, bank, owner, bgColor, color} = props
     
+   
     return(
         <div className= "containerCard">
             <div className="CreditCard" style={{backgroundColor: bgColor, color: color}}>
