@@ -9,6 +9,7 @@
     margin: 22px;
     padding: 12px;
     text-align: right;
+    display: inline-block;
 }
 .credit-numb{
     font-size: 30px;

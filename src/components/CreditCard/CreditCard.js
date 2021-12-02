@@ -25,11 +25,7 @@ const CreditCard = (props) => {
     backgroundColor: `${bgColor}`,
   };
 
-  //No supe como centrar las tarjetas probe con flexbox pero nada
-  //   const creditContainer ={
-  //     display: 'flex',
-  //     contentDirection: 'row',
-  //   }
+
 
   function hiddenNumbers(card) {
     let hideNumbers = [];
@@ -44,7 +40,6 @@ const CreditCard = (props) => {
   }
 
   return (
-    // <div style={creditContainer}>
       <div style={divStyle} className="credit-card">
         <img className="credit-img" src={img} alt="credit-img" />
         <p className="credit-numb">{hiddenNumbers(number)}</p>
@@ -53,7 +48,6 @@ const CreditCard = (props) => {
         </p>
         <p className="credit-details">{owner}</p>
       </div>
-    // </div>
   );
 };
 
