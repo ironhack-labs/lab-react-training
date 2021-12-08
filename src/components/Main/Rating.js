@@ -1,7 +1,7 @@
 
 
 
-const Raiting = ({children}) => {
+const Rating = ({children}) => {
 
          
     let redondoNum = Math.round(children)
@@ -43,4 +43,4 @@ const Raiting = ({children}) => {
     )
 }
 
-export default Raiting
+export default Rating
