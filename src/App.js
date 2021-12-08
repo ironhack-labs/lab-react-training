@@ -2,6 +2,7 @@ import './App.css';
 import IdCard from "./components/IdCard"
 import Greetings from "./components/Greetings"
 import DriverCard from "./components/DriverCard"
+import BoxColor from "./components/BoxColor"
 
 function App() {
   return (
@@ -31,6 +32,12 @@ function App() {
         <h1>Greetings</h1>
         <Greetings language="de"> Ludwig</Greetings>
         <Greetings language="fr"> François</Greetings>
+      </>
+
+      <>
+      <h2>Box Color</h2>
+      <BoxColor r={55} g={50} b={130} />
+      <BoxColor r={128} g={45} b={10} />
       </>
 
       <>
