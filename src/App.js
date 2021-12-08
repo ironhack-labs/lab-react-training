@@ -105,7 +105,7 @@ const App = () => {
       />
 
       <h1>LikeButton</h1>
-      <LikeButton />
+      {/* <LikeButton /> */}
     </div>
   );
 };
