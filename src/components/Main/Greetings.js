@@ -1,27 +1,20 @@
-function Greetings(props) {
-  let greeting = '';
-  switch (props.lang) {
-    case 'en':
-      greeting = 'Hello';
-      break;
-    case 'de':
-      greeting = 'Hallo';
-      break;
-    case 'fr':
-      greeting = 'bonjour';
-      break;
-    case 'es':
-      greeting = 'hola';
-      break;
-    default:
-      greeting = 'Hello';
-      break;
-  }
-       return (
-         <div>
-           <h2>{props.lang} {greeting}</h2>
-         </div>
-       );
-}
+const language = ['de', 'en', 'es', 'fr'];
+let hello = ['Hallo', 'Hi', 'Arre', 'Bonjour'];
+let findLang = 0;
+let word = '';
 
-export default Greetings
+const Greetings = ({ lang, children }) => {
+  findLang = language.indexOf(lang);
+  word = hello[findLang];
+  return (
+    <>
+      <div style={{ borderStyle: 'solid', margin: 5, textAlign: 'left' }}>
+        <p>
+          {word}, {children}
+        </p>
+      </div>
+    </>
+  );
+};
+
+export default Greetings;

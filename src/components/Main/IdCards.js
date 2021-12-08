@@ -1,19 +1,36 @@
 function IdCard(props) {
   return (
     <div className="IdCard">
-      <img className= "img" src={props.picture} alt={props.firstName} />
-
-        <strong>First Name:</strong>
-        <p>{props.firstName}</p>
-        <strong>Last Name:</strong>
-        <p>{props.firstName}</p>
-        <strong>Gender:</strong>
-        <p>{props.gender}</p>
-        <strong>Height:</strong>
-        <p>{props.height}</p>
-        <strong>Birth:</strong>
-        <p>{props.birth}</p>
+      <div>
+        <img className="img" src={props.picture} alt={props.firstName} />
       </div>
+      <div>
+        <p>
+          <strong>First Name:</strong>
+          {props.firstName}
+        </p>
+
+        <p>
+          <strong>Last Name:</strong>
+          {props.firstName}
+        </p>
+
+        <p>
+          <strong>Gender:</strong>
+          {props.gender}
+        </p>
+
+        <p>
+          <strong>Height:</strong>
+          {props.height}
+        </p>
+
+        <p>
+          <strong>Birth:</strong>
+          {props.birth}
+        </p>
+      </div>
+    </div>
   );
 }
 
