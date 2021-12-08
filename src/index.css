@@ -26,6 +26,10 @@ code {
   text-align: center;
   padding: 20px;
 }
+.colorLetters {
+  color: white;
+  margin: 35px 180px;
+}
 .CreditCard {
   margin: 10px;
   padding: 20px;
