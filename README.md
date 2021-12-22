@@ -48,7 +48,7 @@ Create and render an `IdCard` component with 6 props:
 
 **Example:**
 
-```js
+```jsx
 <IdCard
   lastName='Doe'
   firstName='John'
@@ -89,7 +89,7 @@ The component should display a greeting text in the chosen language.
 
 **Example:**
 
-```js
+```jsx
 <Greetings lang="de">Ludwig</Greetings>
 <Greetings lang="fr">François</Greetings>
 ```
@@ -115,7 +115,7 @@ The component should display a random integer in the range between the `min` and
 
 **Example:**
 
-```js
+```jsx
 <Random min={1} max={6}/>
 <Random min={1} max={100}/>
 ```
@@ -142,7 +142,7 @@ The component should take 3 props:
 
 **Example:**
 
-```js
+```jsx
 <BoxColor r={255} g={0} b={0} />
 <BoxColor r={128} g={255} b={0} />
 ```
@@ -178,7 +178,7 @@ Take your time to make the component look as close to the *expected output* as p
 
 **Example:**
 
-```js
+```jsx
 <CreditCard
   type="Visa"
   number="0123456789018845"
@@ -233,7 +233,7 @@ The component should take 1 prop:
 
 **Example:**
 
-```js
+```jsx
 <Rating>0</Rating>
 <Rating>1.49</Rating>
 <Rating>1.5</Rating>
@@ -265,7 +265,7 @@ The component should take 4 props:
 
 **Example**
 
-```js
+```jsx
 <DriverCard
   name="Travis Kalanick"
   rating={4.2}
@@ -305,7 +305,7 @@ As a bonus, implement the background color change on each click. You can use the
 
 **Example:**
 
-```js
+```jsx
 <LikeButton />
 ```
 
@@ -325,7 +325,7 @@ Create a `ClickablePicture` component that displays a picture. On each click, th
 
 **Example:**
 
-```js
+```jsx
 <ClickablePicture
   img='./assets/images/maxence.png'
   imgClicked='./assets/images/maxence-glasses.png'
@@ -355,7 +355,7 @@ Every time the user clicks on the component, it should:
 
 **Example:**
 
-```js
+```jsx
 <Dice />
 ```
 
@@ -387,7 +387,7 @@ The component should take 1 prop:
 
 **Example:**
 
-```js
+```jsx
 <Carousel
   images={[
     'https://randomuser.me/api/portraits/women/1.jpg',
@@ -418,7 +418,7 @@ The component should take 1 prop:
 
 **Example:**
 
-```js
+```jsx
 <NumbersTable limit={12} />
 ```
 
@@ -436,13 +436,13 @@ The component should take 1 prop:
 
 Create a `FaceBook` component that displays the list of all profiles coming from the file `src/data/berlin.json`. Remember to import the json data in the component:
 
-```js
+```jsx
 import profiles from './data/berlin.json';
 ```
 
 **Example:**
 
-```js
+```jsx
 <FaceBook />
 ```
 
@@ -462,7 +462,7 @@ Update your `FaceBook` component and add a button for each country the students 
 
 **Example:**
 
-```js
+```jsx
 <FaceBook />
 ```
 
@@ -518,7 +518,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 **Example**
 
-```js
+```jsx
 <SignupPage />
 ```
 
