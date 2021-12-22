@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The purpose of this exercise is to become fluent with the core React concepts such as: creating components, passing the data through props, working with state, rendering lists, and working with forms (controlled components).
+The purpose of this exercise is to practice the core React concepts such as: creating components, passing data through props, working with state, rendering lists, and working with forms (controlled components).
 
 To see the expected result for each iteration, refer to the solution example: [**React Training - solution**](https://5c6c2a0de07b084ce35373ee--determined-aryabhata-a8a833.netlify.com/).
 
