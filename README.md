@@ -557,7 +557,7 @@ Create 2 components:
 
 
 
-The `RGBColorPicker`  should render 3 `SingleColorPicker` components and pass them the state values.
+The `RGBColorPicker` should render 3 `SingleColorPicker` components and send the state values to them.
 
 **Example:**
 
