@@ -4,7 +4,9 @@
 
 ## Introduction
 
-The goal of this repository is to create a lot of React components.
+The purpose of this exercise is to practice the core React concepts such as: creating components, passing data through props, working with state, rendering lists, and working with forms (controlled components).
+
+To see the expected result for each iteration, refer to the solution example: [**React Training - solution**](https://5c6c2a0de07b084ce35373ee--determined-aryabhata-a8a833.netlify.com/).
 
 ## Setup
 
@@ -21,7 +23,7 @@ $ npm start
 
 ## Submission
 
-- Upon completion, run the following commands
+- Upon completion, run the following commands:
 
   ```
   git add .
@@ -29,15 +31,13 @@ $ npm start
   git push origin master
   ```
 
-- Create Pull Request so your TAs can check up your work.
-
-You can preview the solution here: https://5c6c2a0de07b084ce35373ee--determined-aryabhata-a8a833.netlify.com/
+- Create a Pull Request so that your TAs can review your work.
 
 ## Instructions
 
 ### Iteration 1 | Component: `IdCard`
 
-Create a `IdCard` component with 6 props:
+Create and render an `IdCard` component with 6 props:
 
 - `lastName`: A string
 - `firstName`: A string
@@ -46,9 +46,9 @@ Create a `IdCard` component with 6 props:
 - `birth`: A date
 - `picture`: A string
 
-**Example**
+**Example:**
 
-```js
+```jsx
 <IdCard
   lastName='Doe'
   firstName='John'
@@ -68,27 +68,41 @@ Create a `IdCard` component with 6 props:
 />
 ```
 
-**Output**
+**Expected Output:**
 
 ![image](https://user-images.githubusercontent.com/5306791/52976030-22b0d200-33c8-11e9-91fe-e3ce0fa14078.png)
+
+
+
+----
+
+
 
 ### Iteration 2 | Component: `Greetings`
 
 Create a `Greetings` component with 2 props:
 
-- `lang`: A string that could be ,`"de"`,`"en"`,`"es"`,`"fr"`
+- `lang`: A string that can have values: `"de"`, `"en"`, `"es"` or `"fr"`
 - `children`: A text
 
-**Example**
+The component should display a greeting text in the chosen language.
 
-```js
+**Example:**
+
+```jsx
 <Greetings lang="de">Ludwig</Greetings>
 <Greetings lang="fr">François</Greetings>
 ```
 
-**Output**
+**Expected Output:**
 
 ![image](https://user-images.githubusercontent.com/5306791/52957158-57edfd80-3391-11e9-8726-93c1a3389016.png)
+
+
+
+----
+
+
 
 ### Iteration 3 | Component: `Random`
 
@@ -97,48 +111,62 @@ Create a `Random` component with 2 props:
 - `min`: A number
 - `max`: A number
 
-**Example**
+The component should display a random integer in the range between the `min` and the `max` number.
 
-```js
+**Example:**
+
+```jsx
 <Random min={1} max={6}/>
 <Random min={1} max={100}/>
 ```
 
-**Output**
+**Expected Output:**
 
 ![image](https://user-images.githubusercontent.com/5306791/52957202-718f4500-3391-11e9-9b45-d1172067e877.png)
 
+
+
+----
+
+
+
 ### Iteration 4 | Component: `BoxColor`
 
-Create a `BoxColor` component that displays a rectangle with a background color based on props. For this, you will need a inline style ([documentation](https://reactjs.org/docs/dom-elements.html#style)).
+Create a `BoxColor` component that displays a rectangle with a background color based on props. For this, you will need to add inline styles ([documentation](https://reactjs.org/docs/dom-elements.html#style)).
 
-It takes 3 props:
+The component should take 3 props:
 
-- `r`: A number between 0 and 255 representing the amount of red
-- `g`: A number between 0 and 255 representing the amount of green
-- `b`: A number between 0 and 255 representing the amount of blue
+- `r`: A number between `0` and `255` representing the amount of red
+- `g`: A number between `0` and `255` representing the amount of green
+- `b`: A number between `0` and `255` representing the amount of blue
 
-**Example**
+**Example:**
 
-```js
+```jsx
 <BoxColor r={255} g={0} b={0} />
 <BoxColor r={128} g={255} b={0} />
 ```
 
-**Output**
+**Expected Output:**
 
 ![image](https://user-images.githubusercontent.com/5306791/52957816-ec0c9480-3392-11e9-9e00-67094fa2b431.png)
 
-As a bonus, you can also display the hex values of the color (ex: `#ff0000` for red).
+As a bonus, you can also display the hex values of the color (e.g., `#ff0000` for red).
+
+
+
+----
+
+
 
 ### Iteration 5 | Component: `CreditCard`
 
-Create a `CreditCard` component that displays a square with a background color based on props. For this. You will need a styled component.
+Create a `CreditCard` component that displays a rectangle with the information coming from the props. 
 
-It takes 8 props:
+The component should take 8 props:
 
 - `type`: A string that can be `"Visa"` or `"Master Card"`
-- `number`: A string that is a number of the credit card. You will only display the 4 last digits for security reasons 😉
+- `number`: A string that is the number of the credit card. For security reasons, you should only display the 4 last digits 😉
 - `expirationMonth`: A number that represents the month, between 1 and 12
 - `expirationYear`: A number that represents the year
 - `bank`: A string that represents the name of the bank
@@ -146,11 +174,11 @@ It takes 8 props:
 - `bgColor`: A string for the background color of the card
 - `color`: A string for the text color of the card
 
-Take your time to do as close to the output. You probably have to use flexbox.
+Take your time to make the component look as close to the *expected output* as possible. You'll probably want to use flexbox.
 
-**Example**
+**Example:**
 
-```js
+```jsx
 <CreditCard
   type="Visa"
   number="0123456789018845"
@@ -159,7 +187,9 @@ Take your time to do as close to the output. You probably have to use flexbox.
   bank="BNP"
   owner="Maxence Bouret"
   bgColor="#11aa99"
-  color="white" />
+  color="white" 
+/>
+    
 <CreditCard
   type="Master Card"
   number="0123456789010995"
@@ -168,7 +198,9 @@ Take your time to do as close to the output. You probably have to use flexbox.
   bank="N26"
   owner="Maxence Bouret"
   bgColor="#eeeeee"
-  color="#222222" />
+  color="#222222"
+/>
+    
 <CreditCard
   type="Visa"
   number="0123456789016984"
@@ -177,24 +209,31 @@ Take your time to do as close to the output. You probably have to use flexbox.
   bank="Name of the Bank"
   owner="Firstname Lastname"
   bgColor="#ddbb55"
-  color="white" />
+  color="white" 
+/>
 ```
 
-**Output**
+**Expected Output:**
 
 ![image](https://user-images.githubusercontent.com/5306791/52975678-ac5fa000-33c6-11e9-8cbf-7d13a8a0f625.png)
 
+
+
+----
+
+
+
 ### Iteration 6 | Component: `Rating`
 
-Create a `Rating` component that displays 5 stars, some of them must be empty (☆), some must be full (★).
+Create a `Rating` component that displays 5 stars. Depending on the value received, some stars should be empty (☆), and some should be filled (★).
 
-It takes 1 prop:
+The component should take 1 prop:
 
-- `children`: A number between 0 and 5. Be careful, it can be a float number. If it's 3.9, it will display 4 stars.
+- `children`: A number between `0` and `5`. The value can be a floating-point number. If the number received is `3.9`, the component should display 4 stars.
 
-**Example**
+**Example:**
 
-```js
+```jsx
 <Rating>0</Rating>
 <Rating>1.49</Rating>
 <Rating>1.5</Rating>
@@ -203,15 +242,30 @@ It takes 1 prop:
 <Rating>5</Rating>
 ```
 
-**Output**
+**Expected Output:**
 
 ![image](https://user-images.githubusercontent.com/5306791/52972787-39512c00-33bc-11e9-93d8-428d835442fd.png)
 
+
+
+----
+
+
+
 ### Iteration 7 | Component: `DriverCard`
+
+Create a `DriverCard` component that displays a rectangle with content based on the received props. 
+
+The component should take 4 props:
+
+- `name`: A string
+- `rating`: A number between `0` and `5`.  The value can be a floating point number.
+- `img`: A string
+- `car`: An object with properties `model` and `licensePlate`.
 
 **Example**
 
-```js
+```jsx
 <DriverCard
   name="Travis Kalanick"
   rating={4.2}
@@ -219,7 +273,9 @@ It takes 1 prop:
   car={{
     model: "Toyota Corolla Altis",
     licensePlate: "CO42DE"
-  }} />
+  }}
+/>
+
 <DriverCard
   name="Dara Khosrowshahi"
   rating={4.9}
@@ -227,82 +283,113 @@ It takes 1 prop:
   car={{
     model: "Audi A3",
     licensePlate: "BE33ER"
-  }} />
+  }}
+/>
 ```
 
-**Output**
+**Expected Output:**
 
 ![image](https://user-images.githubusercontent.com/5306791/52972847-66054380-33bc-11e9-92e0-8e48d1ab0212.png)
 
+
+
+----
+
+
+
 ### Iteration 8 | State: `LikeButton`
 
-Create a component `LikeButton` that displays a button "0 Likes" and with a number increases when the user clicks on it.
+Create a `LikeButton` component that displays a button with the initial text `"0 Likes"`. With each click, the number of Likes should increase.
 
-As a bonus, you can change the background color and set it to one of these: `['purple','blue','green','yellow','orange','red']`
+As a bonus, implement the background color change on each click. You can use the following array of colors: `['purple','blue','green','yellow','orange','red']`
 
-**Example**
+**Example:**
 
-```js
-<LikeButton /> <LikeButton />
+```jsx
+<LikeButton />
 ```
 
-**Output**
+**Expected Output:**
 
 ![](https://media.giphy.com/media/OQJkfIEkYTUdYkgNP7/giphy.gif)
 
+
+
+----
+
+
+
 ### Iteration 9: State: `ClickablePicture`
 
-Create a component `ClickablePicture` that displays a picture and toggle to the next picture on click.
+Create a `ClickablePicture` component that displays a picture. On each click, the picture should toggle between the two images passed through the props.
 
-**Example**
+**Example:**
 
-```js
+```jsx
 <ClickablePicture
   img='./assets/images/maxence.png'
   imgClicked='./assets/images/maxence-glasses.png'
 />
 ```
 
-**Output**
+**Expected Output:**
 
 ![](https://media.giphy.com/media/9FXwCr2LLLIlgNL2sL/giphy.gif)
 
-PS: If you want your own picture instead, you can do it yourself with this picture: http://www.stickpng.com/assets/images/584999937b7d4d76317f5ffd.png 😎
+PS: If you want to use your picture instead, you can create it using this picture: http://www.stickpng.com/assets/images/584999937b7d4d76317f5ffd.png 😎
+
+
+
+----
+
+
 
 ### Iteration 10 | State: `Dice`
 
-Create a `Dice` component that displays a random picture (example: `'./assets/images/dice3.png'`). Then every time the user clicks on the component:
+Create a `Dice` component that displays a picture with the random dice value (example: `'./assets/images/dice3.png'`).
 
-- An empty picture is displayed (`'./assets/images/dice-empty.png'`)
-- 1 second later, a new random picture is displayed (example: `'./assets/images/dice6.png'`).
+Every time the user clicks on the component, it should:
 
-**Example**
+- First, display an empty picture (`'./assets/images/dice-empty.png'`)
+- 1 second later, display a new random picture (example: `'./assets/images/dice6.png'`).
 
-```js
+**Example:**
+
+```jsx
 <Dice />
 ```
 
-**Output before a click**
+**Expected Output before the click:**
 
 ![image](https://user-images.githubusercontent.com/5306791/52976705-c13e3280-33ca-11e9-8684-f4dbff643b79.png)
 
-**Output 1 millisecond after a click**
+**Expected Output immediately after the click:**
 
 ![image](https://user-images.githubusercontent.com/5306791/52976790-25f98d00-33cb-11e9-864e-ec14b4ec2a31.png)
 
-**Output 1 second after a click**
+**Expected Output 1 second after the click:**
 
 ![image](https://user-images.githubusercontent.com/5306791/52976752-f64a8500-33ca-11e9-98ee-b0b17f5e85b2.png)
 
+
+
+----
+
+
+
 ### Iteration 11 | State: `Carousel`
 
-Create a `Carousel` component that displays an image and two buttons ('left' and 'right'), and that changes the picture every time.
+Create a `Carousel` component that displays an image and two buttons (<kbd>Left</kbd> and <kbd>Right</kbd>), which change the picture on each click, respectively.
 
-**Example**
+The component should take 1 prop:
 
-```js
+- `images`: An array of strings. Each string should be an image URL.
+
+**Example:**
+
+```jsx
 <Carousel
-  imgs={[
+  images={[
     'https://randomuser.me/api/portraits/women/1.jpg',
     'https://randomuser.me/api/portraits/men/1.jpg',
     'https://randomuser.me/api/portraits/women/2.jpg',
@@ -311,77 +398,107 @@ Create a `Carousel` component that displays an image and two buttons ('left' and
 />
 ```
 
-**Output**
+**Expected Output:**
 
 ![](https://media.giphy.com/media/1n7cAJu0MWerLnnohR/giphy.gif)
 
+
+
+----
+
+
+
 ### Iteration 12 | List and Keys | `NumbersTable`
 
-Create a `NumbersTable` component that displays a list of numbers between 1 and a limit. Even numbers must be red.
+Create a `NumbersTable` component that displays a list of numbers between `1` and the `limit`. Even numbers must be colored in red.
 
-It takes 1 prop:
+The component should take 1 prop:
 
 - `limit`: A number.
 
-**Example**
+**Example:**
 
-```js
+```jsx
 <NumbersTable limit={12} />
 ```
 
-**Output**
+**Expected Output:**
 
 ![image](https://user-images.githubusercontent.com/5306791/53028410-13349600-3467-11e9-8199-407375e61ab0.png)
 
+
+
+----
+
+
+
 ### Iteration 13 | List and Keys - `FaceBook` (Simple)
 
-Create a `FaceBook` component that displays the list of all profiles from `src/data/berlin.json`. You will probably have to write:
+Create a `FaceBook` component that displays the list of all profiles coming from the file `src/data/berlin.json`. Remember to import the json data in the component:
 
-```js
+```jsx
 import profiles from './data/berlin.json';
 ```
 
-**Example**
+**Example:**
 
-```js
+```jsx
 <FaceBook />
 ```
 
-**Output** (you should see about 28 profiles)
+**Expected Output:** (you should see about 28 profiles)
 
 ![image](https://user-images.githubusercontent.com/5306791/53018529-e8d8dd80-3452-11e9-9912-1221eef67be6.png)
 
+
+
+----
+
+
+
 ### Iteration 14 | List and Keys - `FaceBook` (Advanced)
 
-On your `FaceBook` component, add as many buttons as you have `country`. Then, when the user clicks on one of the buttons (example: 'USA'), add a blue background to all the profiles where their country is the one selected.
+Update your `FaceBook` component and add a button for each country the students come from; Each student object has a `country` property. When the user clicks on the button with the country name (example: <kbd>USA</kbd>), add a blue background to all the profiles where the `country` is the one selected.
 
-**Example**
+**Example:**
 
-```js
+```jsx
 <FaceBook />
 ```
 
-**Output** (you should see more profiles and more countries)
+**Expected Output:** (note: part of the content in the screenshot was cropped)
 
 ![image](https://user-images.githubusercontent.com/5306791/53018961-f8a4f180-3453-11e9-9c82-1f57a2f66a30.png)
 
-Example of extra iterations:
+**Bonus:**
 
 - By default, only display the picture. Then, when a user clicks on a picture, display more information
 - Add sort buttons
 - Add a search input
 
-### Iteration 15 | Form - SignupPage
+
+
+----
+
+
+
+### Iteration 15 | Form - `SignupPage`
 
 Create a `SignupPage` component with the following elements:
 
-- An input "email" (bonus: make the input green/red when the email is valid/invalid)
-- An input "password" (bonus: make the input green/red when the password is strong/weak)
-- A select input "nationality" (possible values: "en","de","fr")
-- A text "Hello", "Hallo" or "Bonjour" based on the selected nationality
+- An `input` of type `"email"` (bonus: make the input green/red when the email is valid/invalid)
+
+- An `input` of type `"password"` (bonus: make the input green/red when the password is strong/weak)
+
+- A `select` input, used for selecting a nationality, with possible options/values: `"en"`, `"de"`, `"fr"`
+
+- A paragraph displaying `"Hello"`, `"Hallo"` or `"Bonjour"` based on the selected nationality
+
 - A text "Your email is john@doe.com"
 
-For this, you will need 3 states:
+  
+
+For this, you will need 3 state variables:
 
 - `email`
 - `password`
@@ -401,7 +518,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 **Example**
 
-```js
+```jsx
 <SignupPage />
 ```
 
@@ -409,21 +526,67 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ![image](https://user-images.githubusercontent.com/5306791/53089348-9c51d880-350c-11e9-9621-cad9d87bdd48.png)
 
-### Iteration 16 | Lifting State Up - RGBColorPicker
+
+
+----
+
+
+
+### Iteration 16 | Lifting State Up - `RGBColorPicker`
 
 Create 2 components:
 
-- `RGBColorPicker`:
-  - `state.rValue`: A number between 0 and 255, representing the amount of red
-  - `state.gValue`: A number between 0 and 255, representing the amount of green
-  - `state.bValue`: A number between 0 and 255, representing the amount of blue
-- `SingleColorPicker`: A box with an input range to select an amount of a value
-  - `props.color`: A string that is either "r", "g" or "b"
-  - `props.value`: A number between 0 and 255
-  - `props.onChange`: A method that is triggered when the input is changed
+- The `RGBColorPicker` component, that displays a square with an rgb color coming from the state.
+  The component should have the following state variables:
 
-**Output**
+  - `rValue`: A number between `0` and `255`, representing the amount of red
+
+  - `gValue`: A number between `0` and `255`, representing the amount of green
+
+  - `bValue`: A number between `0` and `255`, representing the amount of blue
+
+    
+
+- The `SingleColorPicker` component should have an input field of type `"number"`, and allow the user to select a number between `0` and `255`. 
+
+  The component should take 3 props:
+
+  - `color`: A string that is either `"r"`, `"g"` or `"b"`
+  - `value`: A number between `0` and `255`
+  - `onChange`: A method that is triggered when the input is changed
+
+
+
+The `RGBColorPicker` should render 3 `SingleColorPicker` components and send the state values to them.
+
+**Example:**
+
+```jsx
+<SingleColorPicker 
+  color="r"
+  value={rValue}
+  onChange={ () => { /* ... */ }  }
+/>
+
+<SingleColorPicker 
+  color="g"
+  value={gValue}
+  onChange={ () => { /* ... */ }  }
+/>
+
+<SingleColorPicker 
+  color="b"
+  value={bValue}
+  onChange={ () => { /* ... */ }  }
+/>
+```
+
+
+
+**Expected Output**
 
 ![image](https://user-images.githubusercontent.com/5306791/53166207-f918c600-35d4-11e9-8c47-c58cdc2d05b0.png)
+
+
 
 **Happy coding!** :heart:
