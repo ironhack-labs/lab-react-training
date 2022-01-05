@@ -1,0 +1,10 @@
+.idCard-wrapper {
+    border: 1px solid #545252;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: left;
+}
+
+.idCard-wrapper img {
+    margin: 20px;
+}
