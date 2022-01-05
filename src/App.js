@@ -1,7 +1,8 @@
 import './App.css';
-import IdCard from './components/idCard/IdCard';
-import Greetings from './components/greetings/Greetings';
-import Random from './components/random/Random';
+import IdCard from './components/IdCard/IdCard';
+import Greetings from './components/Greetings/Greetings';
+import Random from './components/Random/Random';
+import BoxColor from './components/BoxColor/BoxColor';
 
 function App() {
   return (
@@ -37,6 +38,11 @@ function App() {
         {/* props.children-> text -> Ludwig< or François*/}
         <Random min={1} max={6}/>
         <Random min={1} max={100}/>
+      </div>
+      <div className='title'>
+        <h1>Box Color</h1>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
       </div>
       
     </div>
