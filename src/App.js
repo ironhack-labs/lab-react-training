@@ -1,11 +1,12 @@
 import './App.css';
 import IdCard from './components/idCard/IdCard';
 import Greetings from './components/greetings/Greetings';
+import Random from './components/random/Random';
 
 function App() {
   return (
     <div className="App">
-      <div className='idCard-title'>
+      <div className='title'>
         <h1>Id Card</h1>
         <IdCard
         lastName='Doe'
@@ -25,10 +26,17 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
       </div>
-      <div className='greetings-title'>
+      <div className='title'>
         <h1>Greetings</h1>
-        <Greetings lang="de">Ludwig</Greetings>
+        {/* props.children-> text -> Ludwig< or François*/}
+        <Greetings lang="de">Ludwig</Greetings> 
         <Greetings lang="fr">François</Greetings>
+      </div>
+      <div className='title'>
+        <h1>Random</h1>
+        {/* props.children-> text -> Ludwig< or François*/}
+        <Random min={1} max={6}/>
+        <Random min={1} max={100}/>
       </div>
       
     </div>
