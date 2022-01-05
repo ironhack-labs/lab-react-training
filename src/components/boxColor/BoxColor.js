@@ -5,8 +5,10 @@ import './BoxColor.css';
 
 
 const BoxColor = (props) => {
+  const {r, g, b} = props;
+  
   const divStyle = {
-    backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})`
+    backgroundColor: `rgb(${r}, ${g}, ${b})`
 };
 //<< is the bitwise left shift operator. Assuming g is a non-zero integer, 
 // g << 8 therefore effectively multiplies g by 256, adding to zeroes to the 
@@ -16,17 +18,31 @@ const BoxColor = (props) => {
 //For example, if r and g were both zero and b was 51, ((r << 16) + (g << 8) + b).toString(16) 
 //would return the string "33"; add 1 << 24 and you get "1000033". 
 //Then strip the 1 and you're there
-const rgb2hex = (red = 0, green = 0, blue = 0) =>
-`#${((1 << 24) + (red << 16) + (green << 8) + blue).toString(16).slice(1)}`;
+// const rgb2hex = (red = 0, green = 0, blue = 0) =>
+// `#${((1 << 24) + (red << 16) + (green << 8) + blue).toString(16).slice(1)}`;
 // {{includes the same as passed, not a string}}
 // {include 'string'}
   //return <div className="boxColor" style={{backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})`}}>Hello World!</div>;
+
+const rgbToHex = (num) => {
+  let hex = Number(num).toString(16);
+  if (hex.length < 2) hex = `0${hex}`
+  return hex;
+}
+const colorHex = (r, g, b) => {
+  let red = rgbToHex(r);
+  let green = rgbToHex(g);
+  let blue = rgbToHex(b);
+  return `${red}${green}${blue}`;
+
+}
+  
   return (
     <div className="boxColor" style={divStyle}>
-      <p>rgb({props.r},{props.g},{props.b})</p>
-      <p>{rgb2hex(props.r,props.g,props.b)}</p>
-  </div>
-
+      <p>rgb({r},{g},{b})</p>
+      {/* <p>{rgb2hex(props.r,props.g,props.b)}</p> */}
+      <p>#{colorHex(r,g,b)}</p>
+    </div>
   )
 }
   

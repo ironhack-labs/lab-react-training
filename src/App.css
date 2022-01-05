@@ -6,3 +6,8 @@
 .title {
   margin: 20px;
 }
+
+.creditCard-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}

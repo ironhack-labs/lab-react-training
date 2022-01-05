@@ -1,0 +1,30 @@
+.creditCard-item {
+    width: 370px;
+    height: 180px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.creditCard-item img {
+    width: 70px;
+    height: auto;
+    align-self: end;
+}
+
+.cardNumber {
+    font-size: 2rem;
+    align-self: center;
+}
+
+.creditCard-item span {
+    margin-left: 20px;
+}
+
+.creditCard-item p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
