@@ -1,0 +1,26 @@
+.driverCar-wrapper {
+    background-color: #425cbb;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.driverCar-wrapper > * {
+    margin: 5px;
+}
+
+
+.driverCar-wrapper div {
+    width: 210px;
+}
+  
+.driverCar-wrapper img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+}
