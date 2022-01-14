@@ -1,0 +1,14 @@
+.id-card{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black ;
+    padding: 5px;
+    height: 150px;
+    margin: 15px;
+}
+.personal-data{
+    margin-left: 8px;
+}
+.personal-data p{
+    margin: 0;
+}
