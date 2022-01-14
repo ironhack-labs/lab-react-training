@@ -4,7 +4,7 @@ const BoxColor = ({ r, g, b }) => {
 
   function ColorToHex(color) {
     var hexadecimal = color.toString(16);
-    return hexadecimal.length == 1 ? "0" + hexadecimal : hexadecimal;
+    return hexadecimal.length === 1 ? "0" + hexadecimal : hexadecimal;
   }
 
   function ConvertRGBtoHex(r, g, b) {
@@ -12,7 +12,7 @@ const BoxColor = ({ r, g, b }) => {
   }
 
   return (
-    <div className="border words columns" style={{backgroundColor: rgb(r, g, b)}}  >
+    <div className="border words columns" style={{backgroundColor: ConvertRGBtoHex(r, g, b)}}  >
       <p className="centered">
         rgb({r},{g},{b})
       </p>
