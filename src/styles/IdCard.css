@@ -1,0 +1,23 @@
+.title{
+    padding-left: 10px;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  .id-card{
+    border: 1px solid black;
+    height:130px;
+    padding: 5px;
+    margin: 10px;
+  }
+  
+  .picture{
+    float: left;
+    padding-right: 10px;
+  }
+  
+  .list-idCard{
+    margin-top: 0;
+  }

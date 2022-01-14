@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/IdCard.css'
 
 const IdCard = ({lastName,firstName,gender,height,birth,picture}) => {
     return (
