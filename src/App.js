@@ -1,12 +1,9 @@
 import React from "react";
-import IdCard from "./idcard/IdCard";
+import Container from "./container/Container";
+import "./App.css"
 
 const App = () => {
-  return (
-    <>
-      <IdCard lastName="Doe" firstName="John" gender="male" height={178} birth={new Date("1992-07-15")} />
-    </>
-  );
+  return <Container />;
 };
 
 export default App;

@@ -1,0 +1,20 @@
+#credit-card {
+    display: flex;
+}
+
+#credit-card > div {
+    width: 300px;
+    height: 135px;
+    margin: 0 8px;
+    border-radius:10px;
+    padding: 20px
+}
+
+.card-flag {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#credit-card > div > h1 {
+    text-align: center;
+}
