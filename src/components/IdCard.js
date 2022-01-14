@@ -5,7 +5,7 @@ const IdCard = ({ lastName, firstName, gender, height, birth , picture }) => {
   
 
   return (
-    <section className="id-card">
+    <section className="border">
       <div className="id-org">
         <img src={picture} alt={lastName} />
         <div className="id-info">
