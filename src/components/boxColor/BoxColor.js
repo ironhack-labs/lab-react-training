@@ -1,15 +1,12 @@
 import React from 'react';
 import './BoxColor.css';
 
-
-
-
 const BoxColor = (props) => {
   const {r, g, b} = props;
   
   const divStyle = {
     backgroundColor: `rgb(${r}, ${g}, ${b})`
-};
+  };
 //<< is the bitwise left shift operator. Assuming g is a non-zero integer, 
 // g << 8 therefore effectively multiplies g by 256, adding to zeroes to the 
 // end of its hex representation. Likewise r << 16 adds 4 zeroes. 
@@ -24,18 +21,17 @@ const BoxColor = (props) => {
 // {include 'string'}
   //return <div className="boxColor" style={{backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})`}}>Hello World!</div>;
 
-const rgbToHex = (num) => {
-  let hex = Number(num).toString(16);
-  if (hex.length < 2) hex = `0${hex}`
-  return hex;
-}
-const colorHex = (r, g, b) => {
-  let red = rgbToHex(r);
-  let green = rgbToHex(g);
-  let blue = rgbToHex(b);
-  return `${red}${green}${blue}`;
-
-}
+  const rgbToHex = (num) => {
+    let hex = Number(num).toString(16);
+    if (hex.length < 2) hex = `0${hex}`
+    return hex;
+  }
+  const colorHex = (r, g, b) => {
+    let red = rgbToHex(r);
+    let green = rgbToHex(g);
+    let blue = rgbToHex(b);
+    return `${red}${green}${blue}`;
+  }
   
   return (
     <div className="boxColor" style={divStyle}>

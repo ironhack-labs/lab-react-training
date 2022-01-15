@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import IdCard from './components/IdCard/IdCard';
 import Greetings from './components/Greetings/Greetings';
@@ -5,11 +6,16 @@ import Random from './components/Random/Random';
 import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
-import DriverCard from './components/DriverCard/DriverCard'
+import DriverCard from './components/DriverCard/DriverCard';
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+
 
 function App() {
+
+
   return (
-    <div className="App">
+    <>
       <div className='title'>
         <h1>IdCard</h1>
         <IdCard
@@ -35,10 +41,11 @@ function App() {
         {/* props.children-> text -> Ludwig< or François*/}
         <Greetings lang="de">Ludwig</Greetings> 
         <Greetings lang="fr">François</Greetings>
+        <Greetings lang="es">Karla</Greetings>
+        <Greetings lang="">Sammy</Greetings>
       </div>
       <div className='title'>
         <h1>Random</h1>
-        {/* props.children-> text -> Ludwig< or François*/}
         <Random min={1} max={6}/>
         <Random min={1} max={100}/>
       </div>
@@ -70,7 +77,6 @@ function App() {
             bgColor="#eeeeee"
             color="#222222"
           />
-              
           <CreditCard
             type="Visa"
             number="0123456789016984"
@@ -94,28 +100,37 @@ function App() {
         <Rating>5</Rating>
       </div>
       <div className="title">
-      <h1>DriverCard</h1>
-      <DriverCard
-        name="Travis Kalanick"
-        rating={4.2}
-        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
-        car={{
-          model: "Toyota Corolla Altis",
-          licensePlate: "CO42DE"
-        }}
-        />
-
+        <h1>DriverCard</h1>
         <DriverCard
-        name="Dara Khosrowshahi"
-        rating={4.9}
-        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
-        car={{
-          model: "Audi A3",
-          licensePlate: "BE33ER"
-        }}
+          name="Travis Kalanick"
+          rating={4.2}
+          img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+          car={{
+            model: "Toyota Corolla Altis",
+            licensePlate: "CO42DE"
+          }}
+        />
+        <DriverCard
+          name="Dara Khosrowshahi"
+          rating={4.9}
+          img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+          car={{
+            model: "Audi A3",
+            licensePlate: "BE33ER"
+          }}
         />
       </div>
-    </div>
+      <div>
+        <LikeButton />
+        <LikeButton />
+      </div>
+      <div>
+      <ClickablePicture
+        img='/assets/images/maxence.png'
+        imgClicked='/assets/images/maxence-glasses.png'
+      />
+      </div>
+    </>
   );
 }
 

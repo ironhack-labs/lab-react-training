@@ -6,15 +6,20 @@ import './Greetings.css';
 // children: A text
 
 const Greetings = (props) => {
-    if (props.lang === "de") return (
-        <div className="greetings-wrapper"><p>Hallo {props.children}</p></div>
-    )
-    if (props.lang === "fr") return (
-        <div className="greetings-wrapper"><p>Bonjour {props.children}</p></div>
-    )
-    return (
-        <div className="greetings-wrapper"><p>Hello {props.children}</p></div>
-    )
+  const {lang, children} = props;
+
+  if (lang === "de") return (
+    <div className="greetings-wrapper"><p>Hallo {children}</p></div>
+  )
+  if (lang === "fr") return (
+    <div className="greetings-wrapper"><p>Bonjour {children}</p></div>
+  )
+  if (lang === "es") return (
+    <div className="greetings-wrapper"><p>Hola {children}</p></div>
+  )
+  return (
+    <div className="greetings-wrapper"><p>Hello {children}</p></div>
+  )
 }
 
 export default Greetings;
