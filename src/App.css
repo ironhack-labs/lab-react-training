@@ -101,10 +101,12 @@
   width: 400px;
   height: 110px;
 }
+
 .driver-id {
   border-radius: 50%;
   width: 120px;
   height: 100%;
+  object-fit: cover;
 }
 
 .driver-info {
