@@ -9,13 +9,13 @@ const BoxColor = ({r,g,b, textColor}) => {
         g = g.toString(16);
         b = b.toString(16);
 
-        if (r.length == 1){
+        if (r.length === 1){
           r = "0" + r;
         }
-        if (g.length == 1){
+        if (g.length === 1){
           g = "0" + g;
         }
-        if (b.length == 1){
+        if (b.length === 1){
           b = "0" + b;
         }
       

@@ -1,0 +1,55 @@
+
+
+.card-style{
+    float: left;
+    padding: 10px;
+    width:350px;
+    height:200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card-img-company{
+    width: 50px;
+    height: 20px;
+    padding: 15px;
+    margin-left: 270px;
+}
+
+.card-number{
+    font-size: 35px;
+    font-weight:500;
+    
+}
+
+.div-number{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.secret-number{
+    font-size: 35px;
+}
+
+.dates{
+    font-size: 18px;
+    float: left;
+    margin-left: 10px;
+    font-weight: medium;
+    margin-top: 20px;
+
+}
+
+.bank-name{
+    font-size: 18px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.owner{
+    font-size: 18px;
+    float: left;
+    margin-left: 10px;
+    font-weight: medium;
+  
+}

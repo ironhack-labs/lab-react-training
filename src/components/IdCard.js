@@ -5,7 +5,7 @@ const IdCard = ({lastName,firstName,gender,height,birth,picture}) => {
     return (
         <div className='id-card'>
             <div className='picture'>
-            <img src={picture} alt='picture'/>
+            <img src={picture} alt='picture-card'/>
             </div>
             <ul className='list-idCard'> 
                 <li><strong>First name:</strong> {firstName}</li>
