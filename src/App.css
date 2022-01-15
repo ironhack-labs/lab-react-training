@@ -98,9 +98,10 @@
   height: 110px;
 }
 .driver-id {
-  width: 120px;
-  height: 120px;
   border-radius: 50%;
+  width: 120px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .driver-info {
