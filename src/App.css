@@ -55,6 +55,10 @@
   justify-content: flex-end;
 }
 
+.width-100{
+  width: 100%;
+}
+
 .card {
   width: 350px;
   height: 180px;
@@ -78,9 +82,9 @@
 }
 
 .asterisco{
-  font-size: 26px;
-  line-height: 35px;
-  align-self: flex-end;
+  font-size: 14px;
+  line-height: 28px;
+  /* align-self: flex-end; */
 }
 
 .card-info {

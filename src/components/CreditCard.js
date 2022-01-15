@@ -15,12 +15,12 @@ const CreditCard = ({
 }) => {
   return (
   <div className={`columns words card`} style={{backgroundColor: bgColor, color: color}} >
-    <div className="end"> 
+    <div className="end width-100"> 
       <img src={(type === 'Visa') ? visa : master } alt='credit card brand' className="card-brand" />
     </div>
     <div className="card-number centered"> 
       <span className="asterisco">
-        **** **** ****
+      ⬤⬤⬤⬤ ⬤⬤⬤⬤ ⬤⬤⬤⬤  
       </span>
       <span>
          {number.slice(-4)}
