@@ -2,6 +2,7 @@
 
 import './App.css';
 import IdCard from './idcard/IdCard';
+import Greetings from './greetings/Greetings';
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
         birth="1988-05-11"
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+       <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
     </div>
   );
 }
