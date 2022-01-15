@@ -1,0 +1,31 @@
+.creditCard{
+    border-radius: 10px;
+    padding: 10px;
+    width: 280px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 10px;
+    
+}
+.type-card{
+    text-align: right; 
+}
+.type-card img{
+    width: 50px;
+    margin: 10px;       
+}
+.cardNumber{
+    font-size: 25px;
+    text-align: center;   
+}
+.exp-and-bank{
+    display: flex;
+    flex-direction: row;
+    height: 18px;
+}
+.exp{
+    margin-right: 20px;
+}
