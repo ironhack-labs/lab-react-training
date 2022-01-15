@@ -2,12 +2,18 @@
 
 .IdCard {
     display: flex;
-    flex-direction: column;
     text-align: left ;
+    align-items: flex-start;
+    
     border: 1px solid black;
-    width: 10rem;
-    padding: 20px;
-    margin: auto;
+    padding: 5px;
     margin-bottom: 10px;
     line-height: .2rem;
+    width: 95vw;
+}
+
+
+
+.IdCard img {
+    margin-right: 5px;
 }

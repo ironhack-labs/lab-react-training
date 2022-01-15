@@ -1,0 +1,8 @@
+.Greetings {
+    display: flex;
+    border: solid;
+    margin: 10px;
+    width: 95vw;
+    height: 70px;
+    font-size: 2rem;
+}

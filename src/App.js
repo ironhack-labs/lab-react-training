@@ -1,7 +1,6 @@
 import './App.css';
 import IdCard from './idcard/IdCard';
-import moment from 'moment'
-
+import Greetings from './greetings/Greetings'
 function App() {
   return (
     <div className="App">
@@ -10,7 +9,9 @@ function App() {
         firstName="John"
         gender="male"
         height={1.78}
-        birth={moment('1992-05-11').format('MMMM Do YYYY').toString()}
+        birth={new Date('1992-07-14').toDateString()}
+        //to remove day
+        //.replace(/^\S+\s/,'')}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
       <IdCard
@@ -18,9 +19,12 @@ function App() {
         firstName="Delores"
         gender="female"
         height={1.72}
-        birth={moment('1993-11-04').format('MMMM Do YYYY').toString()}
+        birth={new Date('1993-05-11').toDateString()}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+
+      <Greetings lang='fr'>Peter</Greetings>
+      <Greetings lang='es'>Johanna</Greetings>
     </div>
   );
 }

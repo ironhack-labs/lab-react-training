@@ -4,29 +4,32 @@ function IdCard(props) {
   console.log(props);
   return (
     <div className="IdCard">
+              <img src={props.picture} alt={`${props.firstName} ${props.lastName}`} />
+    <div className='IdCard-ctn'>
+
       <p>
-        <strong>name: </strong>
+        <strong>First name: </strong>
         {props.lastName}
       </p>
       <p>
-        <strong>firstName: </strong>
+        <strong>Last name: </strong>
         {props.firstName}
       </p>
       <p>
-        <strong>gender: </strong>
+        <strong>Gender: </strong>
         {props.gender}
       </p>
       <p>
-        <strong>height: </strong>
-        {`${props.height} m`}
+        <strong>Height: </strong>
+        {`${props.height}m`}
       </p>
 
       <p>
-        <strong>birth: </strong>
+        <strong>Birth: </strong>
         {props.birth}
       </p>
+    </div>
 
-      <img src={props.picture} alt={`${props.firstName} ${props.lastName}`} />
     </div>
   );
 }
