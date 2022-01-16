@@ -1,0 +1,31 @@
+.DriveCard{
+    background-color: #455eb5;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    height: 200px;
+}
+
+.imgDriver{
+    width: 150px;
+    height: 150px;
+    border-radius: 50% ;
+    margin-right: 30px;
+}
+
+.DriveCard p{
+    color: white;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.DriveCard h1{
+    color: white;
+    font-size: 35px;
+    margin: 10px 0px;
+}
+.ProfileInfo img{
+    width: 200px;
+}
