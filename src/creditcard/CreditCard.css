@@ -1,0 +1,42 @@
+.CreditCard {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 160px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.card {
+  height: 33%;
+}
+.CreditCard-logo {
+  display: flex;
+  justify-content: flex-end;
+  height: 28%;
+}
+.CreditCard-logo img {
+height: 45%;
+}
+
+.CreditCard-number {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 2.4em;
+}
+
+.CreditCard-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  font-size: 1.1em;
+  line-height: 1.5;
+  height: 100%;
+}
+
+.CreditCard-details p {
+    margin: 0;
+}

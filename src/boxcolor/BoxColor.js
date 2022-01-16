@@ -11,13 +11,13 @@ const BoxColor = (props) => {
 
   };
 
-  function ColorToHex(color) {
+  function colorToHex(color) {
     var hexadecimal = color.toString(16);
     return hexadecimal.length === 1 ? "0" + hexadecimal : hexadecimal;
   }
   
-  function ConvertRGBtoHex(red, green, blue) {
-    return "#" + ColorToHex(red) + ColorToHex(green) + ColorToHex(blue);
+  function convertRGBtoHex(red, green, blue) {
+    return "#" + colorToHex(red) + colorToHex(green) + colorToHex(blue);
   }
 
   return (
@@ -26,7 +26,7 @@ const BoxColor = (props) => {
           {styles['background-color']}
          </p>
          <p>
-             {ConvertRGBtoHex(props.r, props.g, props.b)}
+             {convertRGBtoHex(props.r, props.g, props.b)}
          </p>
     </div>
   );
