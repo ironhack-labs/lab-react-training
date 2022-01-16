@@ -1,0 +1,8 @@
+.driver-card {
+    width: 750px;
+    height: 150px;
+    background-color: rgb(31, 123, 243);
+    margin: 25px;
+    border-radius: 10px;
+    color: white;
+}
