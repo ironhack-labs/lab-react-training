@@ -1,6 +1,6 @@
 .Rating{
     display: flex;
     justify-content: flex-start;
+    font-size: 1.8em;
     margin-left: 20px;
-    font-size: 2.5em;
 }
