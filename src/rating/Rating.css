@@ -1,0 +1,6 @@
+.Rating{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    font-size: 2.5em;
+}
