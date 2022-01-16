@@ -26,7 +26,9 @@ function IdCard(props) {
 
       <p>
         <strong>Birth: </strong>
-        {props.birth}
+        {`${new Date(props.birth).toDateString()}`}
+        {/* to remove day
+        .replace(/^\S+\s/,'')} */}
       </p>
     </div>
 

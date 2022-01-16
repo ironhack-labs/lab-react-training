@@ -1,6 +1,4 @@
-
-
-.IdCard {
+.Random {
     display: flex;
     text-align: left ;
     align-items: flex-start;
@@ -12,10 +10,4 @@
     width: 95vw;
     
 
-}
-
-
-
-.IdCard img {
-    margin-right: 5px;
 }
