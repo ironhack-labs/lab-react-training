@@ -1,0 +1,11 @@
+.idCard {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
