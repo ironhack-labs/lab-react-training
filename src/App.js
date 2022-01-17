@@ -1,11 +1,13 @@
 import React from 'react';
 import IdCard from './components/idCard/IdCard.js';
+import Greetings from './components/greetings/Greetings.js';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-    <h1>IdCard</h1>
+      {/* ID Card */}
+      <h1>IdCard</h1>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -22,6 +24,10 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+      {/* Greetings */}
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
+      <Greetings lang="au">Jason</Greetings>
     </div>
   );
 }
