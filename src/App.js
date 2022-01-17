@@ -1,4 +1,6 @@
 import './App.css';
+import './components/id.css'
+import './components/greetings.css'
 
 
 
@@ -6,7 +8,7 @@ const IDcard = ({lastName, firstName, gender, height, birth, picture }) => {
   const birthDate = new Date(birth)
   return(
     <div>
-    <div className="idElements">
+    <div className="card">
     <img src={picture} alt="id"/>
     <h4>First Name: {firstName}</h4>
     <h4>Last Name: {lastName}</h4>
@@ -30,16 +32,17 @@ const Greetings =({lang, children}) => {
   }
   
   return(
-    <div className="Greetings">
+    <div>
+    <div className="greetings">
     <p>{greeting} {children}</p>
     </div>
-    
+    </div>
   )
 }
 const RandomNumber =({min, max}) => {
   let numberRan = Math.floor(Math.random() *max) +min
   return(
-    <div className="RandomNumber">
+    <div className="greetings">
       <p>Random value between {min} and {max} => {numberRan}</p>
     </div>
   )
@@ -77,11 +80,11 @@ function App() {
     <div className="App">
       <h1 className="iDCard">IDcard</h1>
       <IDcard
-        lastName="Reilly"
-        firstName="Lilli"
+        lastName="Obrien"
+        firstName="Delores"
         gender="female"
-        height="5'6"
-        birth={new Date("1996-09-19")}
+        height={172}
+        birth={new Date("1988-05-11")}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
       <IDcard

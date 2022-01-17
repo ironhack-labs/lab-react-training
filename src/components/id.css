@@ -1,0 +1,10 @@
+.card {
+    display: flex;
+    border: #808080 1px solid;
+    padding: 2px;
+  }
+  
+  .profileImg {
+    object-fit: cover;
+    margin-right: 5px;
+  }
