@@ -4,6 +4,7 @@ import Greetings from './components/greetings/Greetings.js';
 import Random from './components/random/Random.js';
 import BoxColor from './components/boxColor/BoxColor.js';
 import CreditCard from './components/creditCard/CreditCard.js';
+import Rating from './components/rating/Rating.js';
 import './App.css';
 
 function App() {
@@ -61,7 +62,6 @@ function App() {
         bgColor="#eeeeee"
         color="#222222"
       />
-
       <CreditCard
         type="Visa"
         number="0123456789016984"
@@ -72,6 +72,13 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+      <h1>Rating</h1>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
     </div>
   );
 }
