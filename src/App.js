@@ -6,6 +6,7 @@ import BoxColor from './components/boxColor/BoxColor.js';
 import CreditCard from './components/creditCard/CreditCard.js';
 import Rating from './components/rating/Rating.js';
 import DriverCard from './components/driverCard/DriverCard.js';
+import LikeButton from './components/likeButton/LikeButton.js';
 import './App.css';
 
 function App() {
@@ -90,7 +91,6 @@ function App() {
           licensePlate: 'CO42DE',
         }}
       />
-
       <DriverCard
         name="Dara Khosrowshahi"
         rating={4.9}
@@ -100,6 +100,9 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <h1>LikeButton</h1>
+      <LikeButton />
+      <LikeButton />
     </div>
   );
 }
