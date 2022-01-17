@@ -1,0 +1,31 @@
+.card {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.card img {
+    width: 50px;
+    align-self: flex-end;
+    padding: 15px;
+}
+
+.number {
+    font-size: 26px;
+    margin: 15px;
+}
+
+.expireAndBank {
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.name {
+    margin: -15px 15px;
+    text-align: left;
+}
