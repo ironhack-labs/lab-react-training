@@ -3,7 +3,7 @@ import React from "react"
 
 function Rating (props) {
     Math.ceil(props.children)
-    let rating = "★".repeat(Math.ceil(props.children)) //"★☆"
+    let rating = "★".repeat(Math.round(props.children,-1))
     rating += "☆".repeat(5)
     rating = rating.slice(0,5)
 
@@ -16,6 +16,7 @@ function Rating (props) {
 
 export default Rating
 
+//"★☆"
 {/* <Rating>0</Rating>
 <Rating>1.49</Rating>
 <Rating>1.5</Rating>
