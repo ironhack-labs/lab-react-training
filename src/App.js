@@ -1,6 +1,7 @@
 import './App.css';
 
 
+
 const IDcard = ({lastName, firstName, gender, height, birth, picture }) => {
   const birthDate = new Date(birth)
   return(
@@ -44,6 +45,33 @@ const RandomNumber =({min, max}) => {
   )
   
 }
+const BoxColor =({r, g, b}) => {
+  return(
+    <div className="BoxColor">
+      <p>rgb({r}, {g}, {b})</p>
+    </div>
+  )
+}
+const CreditCard = (props) => {
+  let cardType = {};
+  if(props.type === 'Visa') {
+    cardType = '../public/visa.png';
+  } if(props.type === 'Master Card') {
+    cardType = '../public/MC.png';
+  }
+  return (
+    <div className="creditCard" style = {{backgroundColor: props.bgColor, color:props.color}}>
+      <div className="card-type">
+        <img src={cardType} alt="credit card"/>
+        <p>0000 0000 0000 {props.number.slice(12)}</p>
+        <p>Expires {props.expirationMonth}{props.expirationYear}</p>
+        <p>{props.bank}</p>
+        <p>{props.owner}</p>
+
+      </div>
+    </div>
+  )
+}
 function App() {
   return (
     <div className="App">
@@ -69,6 +97,39 @@ function App() {
       <h1>Random Number</h1>
       <RandomNumber min={1} max={6}/>
       <RandomNumber min={1} max={100}/>
+      <BoxColor r={100} g={100} b={100}/>
+      <CreditCard
+  type="Visa"
+  number="0123456789018845"
+  expirationMonth={3}
+  expirationYear={2021}
+  bank="BNP"
+  owner="Maxence Bouret"
+  bgColor="#11aa99"
+  color="white" 
+/>
+    
+<CreditCard
+  type="Master Card"
+  number="0123456789010995"
+  expirationMonth={3}
+  expirationYear={2021}
+  bank="N26"
+  owner="Maxence Bouret"
+  bgColor="#eeeeee"
+  color="#222222"
+/>
+    
+<CreditCard
+  type="Visa"
+  number="0123456789016984"
+  expirationMonth={12}
+  expirationYear={2019}
+  bank="Name of the Bank"
+  owner="Firstname Lastname"
+  bgColor="#ddbb55"
+  color="white" 
+/>
     </div>
   );
 }
