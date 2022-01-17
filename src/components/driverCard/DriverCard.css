@@ -1,0 +1,36 @@
+.driverCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    height: 150px;
+    background-color: #455eb5;
+    color: white;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.profileImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.profileImage img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.driverInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.driverInfo h1 {
+    font-weight: 600;
+    font-size: 24px;
+}
