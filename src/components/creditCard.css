@@ -1,0 +1,12 @@
+
+.creditCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 160px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+  }

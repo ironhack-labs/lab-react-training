@@ -1,6 +1,8 @@
 import './App.css';
 import './components/id.css'
 import './components/greetings.css'
+import './components/creditCard.css'
+import './components/driverCard.css'
 
 
 
@@ -16,6 +18,17 @@ const IDcard = ({lastName, firstName, gender, height, birth, picture }) => {
     <h4>Height: {height}</h4>
     <h4>Birthday: {birthDate.toDateString()}</h4>
     </div>
+    </div>
+  )
+}
+const DriverCard = (props) => {
+  return(
+    <div className='DriverCard'>
+      <img src={props.img} alt={props.name}/>
+      <div className= 'driverInfo'>
+        <h2>{props.name}</h2>
+        <h2>{props.car.model} - {props.car.licensePlate}</h2>
+      </div>
     </div>
   )
 }
@@ -48,6 +61,7 @@ const RandomNumber =({min, max}) => {
   )
   
 }
+
 const BoxColor =({r, g, b}) => {
   return(
     <div className="BoxColor">
@@ -102,36 +116,53 @@ function App() {
       <RandomNumber min={1} max={100}/>
       <BoxColor r={100} g={100} b={100}/>
       <CreditCard
-  type="Visa"
-  number="0123456789018845"
-  expirationMonth={3}
-  expirationYear={2021}
-  bank="BNP"
-  owner="Maxence Bouret"
-  bgColor="#11aa99"
-  color="white" 
-/>
+        type="Visa"
+        number="0123456789018845"
+        expirationMonth={3}
+        expirationYear={2021}
+        bank="BNP"
+        owner="Maxence Bouret"
+        bgColor="#11aa99"
+        color="white" 
+      />
     
-<CreditCard
-  type="Master Card"
-  number="0123456789010995"
-  expirationMonth={3}
-  expirationYear={2021}
-  bank="N26"
-  owner="Maxence Bouret"
-  bgColor="#eeeeee"
-  color="#222222"
-/>
+        <CreditCard
+          type="Master Card"
+          number="0123456789010995"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="N26"
+          owner="Maxence Bouret"
+          bgColor="#eeeeee"
+          color="#222222"
+        />
     
-<CreditCard
-  type="Visa"
-  number="0123456789016984"
-  expirationMonth={12}
-  expirationYear={2019}
-  bank="Name of the Bank"
-  owner="Firstname Lastname"
-  bgColor="#ddbb55"
-  color="white" 
+      <CreditCard
+        type="Visa"
+        number="0123456789016984"
+        expirationMonth={12}
+        expirationYear={2019}
+        bank="Name of the Bank"
+        owner="Firstname Lastname"
+        bgColor="#ddbb55"
+        color="white" 
+      />
+      <DriverCard
+  name="Travis Kalanick"
+  img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+  car={{
+    model: "Toyota Corolla Altis",
+    licensePlate: "CO42DE"
+  }}
+/>
+
+<DriverCard
+  name="Dara Khosrowshahi"
+  img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+  car={{
+    model: "Audi A3",
+    licensePlate: "BE33ER"
+  }}
 />
     </div>
   );
