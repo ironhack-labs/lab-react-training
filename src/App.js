@@ -57,7 +57,7 @@ function Random({min, max}) {
 function BoxColor({r, g, b}){
   function componentToHex(c) {
     var hex = c.toString(16);
-    return hex.length == 1 ? "0" + hex : hex;
+    return hex.length === 1 ? "0" + hex : hex;
   }
   
   function rgbToHex(r, g, b) {
@@ -74,6 +74,77 @@ let hexColor = rgbToHex(r,g,b)
     <p>{hexColor}</p>
     </div>;
 }
+
+function CreditCard (props){
+  let logo;
+
+  if (props.type === "Visa"){
+    logo="https://www.freepnglogos.com/uploads/visa-card-logo-9.png"
+  }
+  else if (props.type === "Master Card") {
+    logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png"
+  }
+
+  console.log('Credit Card:', props)
+
+  return (
+    <div
+    className="credit-card"
+    style = {{
+    backgroundColor: `${props.bgColor}`,
+    color: `${props.color}`,
+    width: `50%`,
+    }}>
+      <img
+      src={logo}
+      alt="logo"
+      style = {{
+        width: `30%`
+        }}/>
+
+      <div className="credit-card-informations" >
+      <p>{props.number}</p>
+      <p>{props.expirationMonth}/{props.expirationYear}</p>
+      <p>{props.bank}</p>
+      <p>{props.owner}</p>
+      </div>
+      </div>
+  )
+}
+
+function Rating(children){
+  let star;
+
+  console.log("Rating",children)
+ 
+if (children = '0'){
+star = "☆☆☆☆☆"
+}
+else if(children > "0" && children <= "1" ){
+  star = "★☆☆☆☆"
+}
+else if(children > "1" && children <= "2" ){
+  star = "★★☆☆☆"
+}
+else if(children > "2" && children <= "3" ){
+  star = "★★★☆☆"
+}
+else if(children > "3" && children <= "4" ){
+  star = "★★★★☆"
+}
+else if(children > "4" && children <= "5" ){
+  star = "★★★★★"
+}
+
+
+  return(
+    <div className="Ratings">
+    {star}
+  </div>
+  )
+  
+}
+
 function App() {
   return (
     <div className="App">
@@ -92,7 +163,24 @@ picture="https://randomuser.me/api/portraits/men/44.jpg"
   Ludwig
 </Greetings>
 <Random min={3} max={79}/>
-<BoxColor r={255} g={21} b={0} /></div>
+<BoxColor r={255} g={21} b={0} />
+<CreditCard
+  type="Visa"
+  number="0123456789018845"
+  expirationMonth={3}
+  expirationYear={2021}
+  bank="BNP"
+  owner="Maxence Bouret"
+  bgColor="#11aa99"
+  color="white" 
+/>
+<Rating>0</Rating>
+<Rating>0.49</Rating>
+<Rating>1.5</Rating>
+<Rating>3</Rating>
+<Rating>4</Rating>
+<Rating>5</Rating>
+</div>
   );
 }
 
