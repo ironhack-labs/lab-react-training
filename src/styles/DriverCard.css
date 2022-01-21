@@ -1,8 +1,47 @@
 .driver-card {
     width: 750px;
     height: 150px;
-    background-color: rgb(31, 123, 243);
+    background-color: rgb(69, 94, 181);
     margin: 25px;
     border-radius: 10px;
     color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.img-driver{
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+    border-radius: 75px;  
+        
+}
+
+span {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.model-car{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.rating{
+    font-size: 28px;
+    margin-left: -22px;
+    margin-top: 2px;
+}
+
+
+
+.div-text-perfil{
+    width: 250px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
