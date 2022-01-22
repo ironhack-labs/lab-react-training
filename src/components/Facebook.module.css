@@ -12,3 +12,7 @@
   width: 20%;
   object-fit: cover;
 }
+
+.blue {
+  background-color: blue;
+}
