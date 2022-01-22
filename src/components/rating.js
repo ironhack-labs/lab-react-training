@@ -6,7 +6,7 @@ const Rating = ({children}) => {
         return stars[Math.round(children)]
     }
     return(
-        <div className='Rating'>{getStars()}</div>
+        <div className='Rating'>Rating: {getStars(children)}</div>
     )
 }
 export default Rating 

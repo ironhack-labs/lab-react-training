@@ -6,6 +6,8 @@ import './components/driverCard.css'
 import IDcard from './components/idCard';
 import BoxColor from './components/boxColor'
 import Rating from './components/rating'
+import LikeButton from './components/likeButton';
+import ClickablePic from './components/clickablePic';
 
 
 
@@ -153,7 +155,14 @@ function App() {
     licensePlate: "BE33ER"
   }}
 />
-    </div>
+<LikeButton/>
+
+    
+    <ClickablePic
+  img='./assets/images/maxence.png'
+  imgClicked='./assets/images/maxence-glasses.png'
+/>
+</div>
   );
 }
 
