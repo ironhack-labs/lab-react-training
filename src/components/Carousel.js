@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 
 const Carousel = ({ images }) => {
   const [imgNum, setImgNum] = useState(0);
@@ -17,7 +17,7 @@ const Carousel = ({ images }) => {
     console.log(target.id);
   };
   return (
-    <Fragment>
+    <div>
       <button type="button" id="left" onClick={carouselClickHandler}>
         Left
       </button>
@@ -25,7 +25,7 @@ const Carousel = ({ images }) => {
       <button type="button" id="right" onClick={carouselClickHandler}>
         Right
       </button>
-    </Fragment>
+    </div>
   );
 };
 

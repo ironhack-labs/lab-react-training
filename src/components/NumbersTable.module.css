@@ -1,0 +1,17 @@
+.numSquare {
+  width: 30px;
+  height: 30px;
+}
+
+.white {
+  background-color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
