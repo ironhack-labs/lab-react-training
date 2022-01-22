@@ -6,8 +6,8 @@ const BoxColor = (props) => {
     if((props.r + props.g + props.b)/3 > 100)
         color = 'black'
   let styles = {
-    'background-color': `rgb(${props.r},${props.g},${props.b})`,
-    'color': color
+    backgroundColor: `rgb(${props.r},${props.g},${props.b})`,
+    color: color
 
   };
 

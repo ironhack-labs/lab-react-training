@@ -18,7 +18,7 @@ const LikeButton = () => {
   };
 
   return (
-    <div classname="LikeButton">
+    <div className="LikeButton">
       <button
         style={{
           backgroundColor: `${colors[randomNumber]}`,
