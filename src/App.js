@@ -5,7 +5,8 @@ import Random from './random/Random';
 import BoxColor from './boxcolor/BoxColor';
 import CreditCard from './creditcard/CreditCard';
 import Rating from './rating/Rating';
-import DriverCard from './drivercard/DriverCard'
+import DriverCard from './drivercard/DriverCard';
+import LikeButton from './likebutton/LikeButton';
 
 function App() {
   return (
@@ -93,6 +94,11 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+
+      <LikeButton />
+      <LikeButton />
+      <LikeButton />
+
     </div>
   );
 }
