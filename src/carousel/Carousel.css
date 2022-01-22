@@ -1,0 +1,11 @@
+.Carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.Carousel button {
+    margin: 10px;
+}
