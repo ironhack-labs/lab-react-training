@@ -7,6 +7,35 @@ const Facebook = () => {
   const [selectedCountry, setSelectedCountry] = useState('');
   const [showDetails, setShowDetails] = useState('');
   const [searchState, setSearchState] = useState('');
+  const [sortState, setSortState] = useState('');
+
+  const sortChangeHandler = ({ target }) => {
+    setSortState((sortState) => {
+      if (sortState === '' || sortState === 'asc') {
+        return 'desc';
+      } else if (sortState === 'desc') {
+        return 'asc';
+      }
+    });
+  };
+
+  if (sortState === 'desc') {
+    profiles.sort((a, b) => {
+      const name1 = a.firstName;
+      const name2 = b.firstName;
+      if (name1 > name2) return -1;
+      if (name1 < name2) return 1;
+      return 0;
+    });
+  } else {
+    profiles.sort((a, b) => {
+      const name1 = a.firstName;
+      const name2 = b.firstName;
+      if (name1 > name2) return 1;
+      if (name1 < name2) return -1;
+      return 0;
+    });
+  }
 
   const profilesArr = profiles
     .filter(
@@ -73,6 +102,9 @@ const Facebook = () => {
         value={searchState}
         onChange={searchChangeHandler}
       />
+      <button type="button" onClick={sortChangeHandler}>
+        Sort {!sortState || sortState === 'asc' ? 'Descending' : 'Ascending'}
+      </button>
       {countryButtons}
       {profilesArr}
     </div>
