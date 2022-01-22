@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  border: 1px solid grey;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileImg {
+  width: 20%;
+  object-fit: cover;
+}

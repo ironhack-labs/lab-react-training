@@ -5,6 +5,7 @@ const NumbersTable = ({ limit }) => {
   numberSquares = numberSquares.map((_, i) => (
     <div
       className={`${classes.numSquare} ${i % 2 ? classes.white : classes.red}`}
+      key={i}
     >
       {i + 1}
     </div>
