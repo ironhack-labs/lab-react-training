@@ -3,24 +3,13 @@ import './components/id.css'
 import './components/greetings.css'
 import './components/creditCard.css'
 import './components/driverCard.css'
+import IDcard from './components/idCard';
+import BoxColor from './components/boxColor'
+import Rating from './components/rating'
 
 
 
-const IDcard = ({lastName, firstName, gender, height, birth, picture }) => {
-  const birthDate = new Date(birth)
-  return(
-    <div>
-    <div className="card">
-    <img src={picture} alt="id"/>
-    <h4>First Name: {firstName}</h4>
-    <h4>Last Name: {lastName}</h4>
-    <h4>Gender: {gender}</h4>
-    <h4>Height: {height}</h4>
-    <h4>Birthday: {birthDate.toDateString()}</h4>
-    </div>
-    </div>
-  )
-}
+
 const DriverCard = (props) => {
   return(
     <div className='DriverCard'>
@@ -62,13 +51,6 @@ const RandomNumber =({min, max}) => {
   
 }
 
-const BoxColor =({r, g, b}) => {
-  return(
-    <div className="BoxColor">
-      <p>rgb({r}, {g}, {b})</p>
-    </div>
-  )
-}
 const CreditCard = (props) => {
   let cardType = {};
   if(props.type === 'Visa') {
@@ -114,7 +96,8 @@ function App() {
       <h1>Random Number</h1>
       <RandomNumber min={1} max={6}/>
       <RandomNumber min={1} max={100}/>
-      <BoxColor r={100} g={100} b={100}/>
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -147,6 +130,12 @@ function App() {
         bgColor="#ddbb55"
         color="white" 
       />
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
       <DriverCard
   name="Travis Kalanick"
   img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
