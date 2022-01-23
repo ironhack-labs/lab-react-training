@@ -1,0 +1,14 @@
+.numberBox {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 230px;
+
+}
+
+.numberBox li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 20px;
+    text-align: center;
+}

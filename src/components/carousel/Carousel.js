@@ -31,9 +31,9 @@ const Carousel = (props) => {
   return (
     <>
       <h1>Carousel</h1>
-      <button onClick={leftClick} class="left">Left</button>
+      <button onClick={leftClick} className="left">Left</button>
       <img src={currentImage} alt="" />
-      <button onClick={rightClick} class="right">Right</button>
+      <button onClick={rightClick} className="right">Right</button>
     </>
   )
 }
