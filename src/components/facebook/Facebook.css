@@ -29,3 +29,12 @@
 .displayInfo {
     display: block;
 }
+
+.sortedBtn {
+    margin: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #e38839;
+    width: 20%;
+}
