@@ -5,7 +5,7 @@ const NumbersTable = ({limit}) => {
   // Array.from(Array(10))
   //(10) [undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined]
   const tableArr = Array.from(Array(limit)).map((item, index )=>index +1)
-  console.log(tableArr);
+  //console.log(tableArr);
 
   return (
     <div>

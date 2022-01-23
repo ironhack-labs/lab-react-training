@@ -12,3 +12,20 @@
 .profile-card img {
     object-fit: cover;
 }
+
+.country-card button{
+    margin: 2px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.selectedCountry {
+    background-color: darkturquoise;
+}
+.profile-info {
+    display: none;
+}
+.displayInfo {
+    display: block;
+}
