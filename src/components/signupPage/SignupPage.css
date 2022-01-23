@@ -1,0 +1,15 @@
+.form-control.valid {
+    border: 1px solid rgb(30, 204, 30);
+}
+
+.valid-text{
+    color:  rgb(30, 204, 30);
+}
+
+.form-control.invalid {
+    border: 1px solid rgb(204, 65, 30);
+}
+
+.invalid-text{
+    color:  rgb(204, 65, 30);
+}
