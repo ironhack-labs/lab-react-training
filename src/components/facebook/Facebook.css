@@ -1,0 +1,14 @@
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-card {
+    border: 1px solid #ddd;
+    display: flex;
+    padding: 20px;
+}
+
+.profile-card img {
+    object-fit: cover;
+}

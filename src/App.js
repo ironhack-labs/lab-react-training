@@ -12,6 +12,7 @@ import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
+import Facebook from './components/Facebook/Facebook';
 
 function App() {
 
@@ -142,6 +143,7 @@ function App() {
           ]}
         />
         <NumbersTable limit={12}/>
+        <Facebook/>
     </>
   );
 }
