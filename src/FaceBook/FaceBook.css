@@ -1,0 +1,22 @@
+
+
+.card {
+
+  display: flex;
+  margin: 10px;
+  border: 1px solid black;
+  height: 180px;
+  padding: 3px;
+  text-align: left;
+  line-height: 0.5;
+  font-size: 1.3em;
+
+}
+
+.card span {
+  font-weight: bold;
+}
+
+.card img {
+  padding-right: 10px;
+}
