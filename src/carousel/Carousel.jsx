@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bulma/css/bulma.css';
 import './Carousel.css';
 const Carousel = ({ images }) => {
   const [count, setCount] = React.useState(0);
