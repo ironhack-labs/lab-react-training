@@ -2,17 +2,16 @@ import React from 'react';
 
 const Rating = (props) => {
     // console.log(Math.round(props.children));
-    const star = () =>{
-        for( let i=0;i<5;i++)
-        if(i === 0){
+    const star = (test) =>{
+        if(test === 0){
             return "☆☆☆☆☆"
-        }else if(i===1){
+        }else if(test===1){
             return "★☆☆☆☆"
-        }else if(i===2){
+        }else if(test===2){
             return "★★☆☆☆"
-        }else if(i===3){
+        }else if(test===3){
             return "★★★☆☆"
-        }else if(i===4){
+        }else if(test===4){
             return "★★★★☆"
         }else return "★★★★★"
     }
