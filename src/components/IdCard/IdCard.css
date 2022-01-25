@@ -1,0 +1,11 @@
+.id-card-div{
+    border: 1px solid black; 
+    margin: 10px;
+    display:flex;
+    flex-direction: row;
+
+}
+.id-card-div img{
+    height: 120px;
+    padding: 5px 10px 0px 5px;
+}
