@@ -12,6 +12,7 @@ import img from './assets/images/maxence.png';
 import imgClicked from './assets/images/maxence-glasses.png';
 import Carousel from './carousel/Carousel';
 import Dice from './dice/Dice';
+import NumbersTable from './numberstable/NumbersTable'
 
 function App() {
   return (
@@ -106,6 +107,7 @@ function App() {
           ]}
         />
       </div>
+      <NumbersTable limit={12} />
     </div>
   );
 }

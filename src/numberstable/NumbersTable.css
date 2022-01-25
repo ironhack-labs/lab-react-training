@@ -1,0 +1,15 @@
+.table{
+    text-align: left;
+    margin-left: 10px;
+}
+.even-numb{
+    background-color: red; 
+    border: 1.5px solid black;
+    font-size: 15px;
+    padding: 18px 20px 18px 20px; 
+}
+.numb{
+    border: 1.5px solid black;
+    font-size: 15px;
+    padding: 18px 20px 18px 20px; 
+}
