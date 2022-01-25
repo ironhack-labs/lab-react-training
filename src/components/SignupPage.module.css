@@ -1,0 +1,20 @@
+.invalid {
+  border-bottom: 2px solid red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  width: 50%;
+}
+
+input,
+select,
+button {
+  padding: 20px;
+}
+label,
+button {
+  margin: 5px;
+}
