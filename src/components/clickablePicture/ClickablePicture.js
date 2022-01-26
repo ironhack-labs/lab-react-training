@@ -4,11 +4,10 @@ import "./ClickablePicture.css"
 
 function ClickablePicture (props) {
 
-    let imageA = require("../../assets/images/maxence.png").default
+    // let imageA = require("../../assets/images/maxence.png").default
     return (
         <div>
-            {/* <img src={img}></img> */}
-            <img src={imageA}></img>
+            <img src={props.img} />
         </div>
     )
 }

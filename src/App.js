@@ -9,8 +9,20 @@ import DriverCard from './components/driverCard/DriverCard.js';
 import LikeButton from './components/likeButton/LikeButton.js';
 import ClickablePicture from './components/clickablePicture/ClickablePicture.js';
 import './App.css';
+import Facebook from './components/facebook/Facebook.js';
+import facebookData from '../src/data/berlin.json';
 
 function App() {
+  const [countryClicked, setCountryClicked] = React.useState("")
+  const handleButtonClick = (country) => {
+    // console.log(country.element);
+    setCountryClicked(country.element)
+  }
+  let fbArray = facebookData.map((person) => person.country);
+  const fbSet = new Set(fbArray)
+  fbArray = [...fbSet]
+  // console.log(fbArray);
+
   return (
     <div className="App">
       {/* ID Card */}
@@ -109,6 +121,11 @@ function App() {
         img="./assets/images/maxence.png"
         imgClicked="./assets/images/maxence-glasses.png"
       />
+      <h1>Facebook</h1>
+        {fbArray.map(element => <button onClick={() => handleButtonClick({element})}>{element}</button>)}
+      {facebookData.map((person) => {
+        return <Facebook {...person} countryClicked={countryClicked} />;
+      })}
     </div>
   );
 }
