@@ -1,0 +1,10 @@
+.clickable-picture {
+    background-color: white;
+    padding: 0;
+    border: 0;
+}
+
+.clickable-picture > img {
+    width: 100px;
+    height: 100px;
+}

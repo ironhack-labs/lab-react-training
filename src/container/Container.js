@@ -1,12 +1,19 @@
 import React from "react";
 import BoxColor from "./boxcolor/BoxColor";
+import ClickablePicture from "./clickablepicture/ClickablePicture";
+import img from "./../assets/images/maxence.png";
+import imgClicked from "./../assets/images/maxence-glasses.png";
 import CreditCard from "./creditcard/CreditCard";
+import Dice from "./dice/Dice";
 import DriverCard from "./drivercard/DriverCard";
 import Greetings from "./greetings/Greetings";
 import IdCard from "./idcard/IdCard";
 import LikeButton from "./likebutton/LikeButton";
 import Random from "./random/Random";
 import Rating from "./rating/Rating";
+import Carousel from "./carousel/Carousel";
+import NumbersTable from "./numberstable/NumbersTable";
+import Facebook from "./facebook/Facebook";
 
 const Container = () => {
     return (
@@ -99,6 +106,23 @@ const Container = () => {
             <h1>LikeButton</h1>
             <LikeButton />
             <LikeButton />
+            <h1>ClickablePicture</h1>
+            <ClickablePicture img={img} imgClicked={imgClicked} />
+            <h1>Dice</h1>
+            <Dice />
+            <h1>Carousel</h1>
+            <Carousel 
+                images={[
+                    'https://randomuser.me/api/portraits/women/1.jpg',
+                    'https://randomuser.me/api/portraits/men/1.jpg',
+                    'https://randomuser.me/api/portraits/women/2.jpg',
+                    'https://randomuser.me/api/portraits/men/2.jpg'
+                ]}
+            />
+            <h1>NumbersTable</h1>
+            <NumbersTable limit={12} />
+            <h1>Facebook</h1>
+            <Facebook />
         </>
     );
 };

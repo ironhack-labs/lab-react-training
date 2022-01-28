@@ -1,0 +1,10 @@
+.dice {
+    background-color: white;
+    padding: 0;
+    border: 0;
+}
+
+.dice > img {
+    width: 100px;
+    height: 100px;
+}

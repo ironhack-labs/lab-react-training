@@ -1,0 +1,22 @@
+.facebook-profile {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 8px 0;
+    display: flex;
+}
+
+.facebook-profile > img {
+    width: 150px;
+    height: 150px;
+}
+
+#facebook-profiles > button {
+    background-color: white;
+    padding: 2.5px 10px;
+    border: 1.95px solid rgba(128, 128, 128, 0.5);
+    margin: 3px 3px;
+}
+
+.selected {
+    background-color: #a3d2e2;
+}

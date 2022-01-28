@@ -1,7 +1,7 @@
 import React from "react";
 import "./CreditCard.css";
-import visa from "./visa.png";
-import masterCard from "./master-card.svg";
+import visa from "./../../assets/images/visa.png";
+import masterCard from "./../../assets/images/master-card.svg";
 
 const CreditCard = ( {type, number, expirationMonth, expirationYear, bank, owner, bgColor, color} ) => {
     let cardType;

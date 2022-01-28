@@ -4,7 +4,7 @@ import "./LikeButton.css";
 const LikeButton = () => {
     const [count, setCount] = useState(0);
     const [color, setColor] = useState(0);
-    let [plural, setPlural] = useState("s");
+    const [plural, setPlural] = useState("s");
 
     const colors = ['purple','blue','green','yellow','orange','red'];
 
@@ -12,9 +12,9 @@ const LikeButton = () => {
         setCount(count + 1);
 
         if (count !== 0) {
-            setPlural(plural = "s");
+            setPlural("s");
         } else {
-            setPlural(plural = "");
+            setPlural("");
         };
 
         if ((color >= 0) && (color <= 4)) {
