@@ -1,4 +1,6 @@
 import './App.css';
+import img from './assets/images/maxence.png'
+import imgClicked from './assets/images/maxence-glasses.png'
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
@@ -6,10 +8,26 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import BasicRating from './components/BasicRating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Caroussel from './components/Caroussel';
 
 function App() {
   return (
     <div className="App">
+
+      <Caroussel />
+
+      <Dice />
+
+      {/* <ClickablePicture
+        img={img}
+        imgClicked={imgClicked}
+      />
+
+      <LikeButton />
+      <LikeButton />
 
       <IdCard
         lastName='Doe'
@@ -51,7 +69,7 @@ function App() {
           />
               
           <CreditCard
-            type="Master Card"
+            // type="Master Card"
             number="0123456789010995"
             expirationMonth={3}
             expirationYear={2021}
@@ -75,12 +93,12 @@ function App() {
       </div>
 
      
-      <BasicRating>0</BasicRating>
-      <BasicRating>1.49</BasicRating>
-      <BasicRating>1.9</BasicRating>
-      <BasicRating>3</BasicRating>
-      <BasicRating>4</BasicRating>
-      <BasicRating>5</BasicRating>
+      <BasicRating className="black-bg">0</BasicRating>
+      <BasicRating className="black-bg">1.49</BasicRating>
+      <BasicRating className="black-bg">1.9</BasicRating>
+      <BasicRating className="black-bg">3</BasicRating>
+      <BasicRating className="black-bg">4</BasicRating>
+      <BasicRating className="black-bg">5</BasicRating>
 
       <div className="columns">
         <DriverCard
@@ -101,8 +119,8 @@ function App() {
             model: "Audi A3",
             licensePlate: "BE33ER"
           }}
-        />
-      </div>
+        /> 
+      </div> */}
 
     </div >
   );

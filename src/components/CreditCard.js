@@ -1,6 +1,6 @@
 import React from 'react';
 import visa from "../assets/images/visa.png"
-import master from "../assets/images/master-card.svg"
+// import master from "../assets/images/master-card.svg"
 
 const CreditCard = ({
   type,
@@ -16,7 +16,7 @@ const CreditCard = ({
   return (
   <div className={`columns words card`} style={{backgroundColor: bgColor, color: color}} >
     <div className="end width-100"> 
-      <img src={(type === 'Visa') ? visa : master } alt='credit card brand' className="card-brand" />
+      <img src={(type === 'Visa') ? visa : null } alt='credit card brand' className="card-brand" />
     </div>
     <div className="card-number centered"> 
       <span className="asterisco">
