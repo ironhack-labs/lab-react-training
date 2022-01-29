@@ -3,7 +3,7 @@ import React from 'react'
 const BoxColor = ({ r, g, b, children }) => {
 
   function ColorToHex(color) {
-    var hexadecimal = color.toString(16);
+    let hexadecimal = color.toString(16);
     return hexadecimal.length === 1 ? "0" + hexadecimal : hexadecimal;
   }
 
