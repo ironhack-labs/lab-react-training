@@ -8,15 +8,27 @@ import dice5 from '../assets/images/dice5.png';
 import dice6 from '../assets/images/dice6.png';
 
 const Dice = (props) => {
-    const [Dice, setDice] = useState(true);
-    const randomDice =[dice1,dice2,dice3,dice4,dice5,dice6]
-    const AleaDice = randomDice[Math.floor(Math.random() * randomDice.length)]
-    
+  const [Dice, setDice] = useState(true);
+  const randomDice = [dice1, dice2, dice3, dice4, dice5, dice6];
+  const AleaDice = randomDice[Math.floor(Math.random() * randomDice.length)];
+  const HandleClick = () => {
+    setDice(!Dice);
+    setTimeout(() => {
+      setDice(AleaDice);
+    }, 1000);
+  };
+
   return (
-      <div>
-    <img style={{width:"90px"}} src={Dice ? `${diceEmpty}` : `${AleaDice}`} alt='Dice' onClick={setTimeout(() => {
- setDice(!Dice)}, 1000)}></img>
-  </div>
+    <div>
+      <img
+        style={{ width: '90px' }}
+        src={Dice ? `${AleaDice}` : `${diceEmpty}`}
+        alt="Dice"
+        onClick={() => {
+          HandleClick();
+        }}
+      ></img>
+    </div>
   );
 };
 
