@@ -1,0 +1,10 @@
+.Greetings {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  margin: 20px;
+}
+
+.Greetings p {
+  margin-left: 5px;
+}
