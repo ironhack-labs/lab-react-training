@@ -1,0 +1,10 @@
+.img-dice:hover{
+    cursor:pointer;
+}
+.img-dice{
+    width: 150px;
+    
+}
+.div-dice{
+    text-align: center;
+}

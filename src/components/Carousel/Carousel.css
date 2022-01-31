@@ -1,0 +1,29 @@
+.bt{
+    width: 90px;
+    transition-duration: 0.5s;
+    margin:10px;
+    border-radius: 4px;
+    background-color: slategray;
+    color:white;
+
+    
+
+}
+.bt:hover{
+    cursor: pointer;
+
+}
+.img-people{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid black;
+
+}
+.bt:active{
+    border:5px rosybrown solid;
+    background-color:white;
+    color: slategray;
+
+}

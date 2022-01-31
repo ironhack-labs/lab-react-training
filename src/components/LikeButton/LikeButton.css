@@ -1,0 +1,22 @@
+.button{
+    width: 150px;
+    height: 50px;
+    transition-duration: 0.4s;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+  
+.button:active {
+    border: 5px ridge #e9d2d2;
+    color: white;
+   
+}
+.button:hover{
+    cursor: pointer;
+}
+.like-button{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
