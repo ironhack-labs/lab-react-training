@@ -1,0 +1,14 @@
+.CreditCard{
+display: flex;
+
+} 
+
+.card{
+    border:solid 2px black;
+    border-radius: 10px;
+    width: 280px;
+    height: 180px;
+}
+
+
+

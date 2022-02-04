@@ -27,10 +27,23 @@ function Greetings(props) {
     // }
 
 
-    siwtch (lang){
-        case 'en':
+    switch (lang){
+        case 'de':
             return <small className='lang '>Hallo {children}</small>;
             break;
+
+        case 'en':
+            return <small className='lang '>Hello {children}</small>;
+            break;
+
+        case 'es':
+            return <small className='lang '>Hola {children}</small>;
+            break;
+        
+            case 'fr':
+            return <small className='lang '>Bonjour {children}</small>;
+            break;
+
 
     }
 
