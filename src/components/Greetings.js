@@ -7,25 +7,32 @@ function Greetings(props) {
 
 
 
-    if (lang === 'de') {
-        return <small className='lang'>Hallo {children}
+    // if (lang === 'de') {
+    //     return <small className='lang'>Hallo {children}
 
-        </small>
+    //     </small>
+    // }
+    // if (lang === 'en') {
+    //     return <small className='lang'>Hello {children}
+
+    //     </small>
+    // }if (lang === 'es') {
+    //     return <small className='lang'>Hola {children}
+
+    //     </small>
+    // }if (lang === 'fr') {
+    //     return <small className='lang'>bonjour {children}
+
+    //     </small>
+    // }
+
+
+    siwtch (lang){
+        case 'en':
+            return <small className='lang '>Hallo {children}</small>;
+            break;
+
     }
-    if (lang === 'en') {
-        return <small className='lang'>Hello {children}
-
-        </small>
-    }if (lang === 'es') {
-        return <small className='lang'>Hola {children}
-
-        </small>
-    }if (lang === 'fr') {
-        return <small className='lang'>bonjour {children}
-
-        </small>
-    }
-
 
 
 
