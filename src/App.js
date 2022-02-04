@@ -10,6 +10,7 @@ import './App.css';
 import LikeButton from './LikeButton';
 import ClickablePicture from './ClickablePicture';
 import Dice from './Dice';
+import Carousel from './Carousel';
 
 
 function App() {
@@ -120,7 +121,14 @@ function App() {
             <div>
               <Dice/>
             </div>
-            
+            <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
     </div>
   );
 }
