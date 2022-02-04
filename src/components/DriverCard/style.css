@@ -1,0 +1,9 @@
+.DriverCard{
+    background-color: rgb(123, 123, 248);
+    border-radius: 40px;
+}
+
+img {
+height: 60px;
+border-radius: 120px;
+}
