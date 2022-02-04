@@ -1,0 +1,16 @@
+.IdCard {
+  border: 1px solid black;
+  margin: 10px 0px;
+  padding: 5px;
+
+  display: flex;
+  text-align: left;
+}
+
+.IdCard p {
+    margin: 0px;
+}
+
+.IdCard div:nth-child(1) {
+    margin-right: 5px;
+}

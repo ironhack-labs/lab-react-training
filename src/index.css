@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 10px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,21 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.BoxColor {
+  border: 1px solid black;
+  margin: 10px 0px;
+  text-align: center;
+  height: 70px;
+}
+
+.CardsDiv {
+  display: flex;
+  flex-wrap: wrap;
 }

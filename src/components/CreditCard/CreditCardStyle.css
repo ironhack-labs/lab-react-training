@@ -1,0 +1,42 @@
+.CreditCard {
+    border-radius: 8px;
+    width: 350px;
+    height: 160px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.CreditCard img {
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.CreditCard h2 {
+    margin: 10px 40px 0px 0px;
+    font-weight: 400;
+    text-align: end;
+}
+
+.CreditCard h2 > span {
+    font-size: 55px;
+    text-align: end;
+}
+
+.CreditCard p {
+    font-size: 16px;
+    text-align: start;
+    margin: 0px;
+}
+
+.CreditCard p:nth-child(2) {
+    margin-top: 8px;
+}
+
+.CreditCard p > span {
+    position: absolute;
+    left: 160px;
+}
