@@ -1,0 +1,22 @@
+.idcard-content {
+    display: flex;
+    border-color: black;
+    width: 75%;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.idcard-text {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50%;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 14px;
+}
