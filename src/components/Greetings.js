@@ -26,7 +26,7 @@ function Greetings(props) {
     //     </small>
     // }
 
-
+    
     switch (lang){
         case 'de':
             return <small className='lang '>Hallo {children}</small>;

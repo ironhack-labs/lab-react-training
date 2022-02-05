@@ -1,19 +1,19 @@
 import './IdCard.css'
 
-function IdCard(props) {
+function IdCard( { className, lastName, firstName, gender, height, birth, picture } ) {
 
-    const { lastName, firstName, gender, height, birth, picture } = props
+   
     return (
-        <div className='Idcard'>
+        <div className={`border border-2 border-dark p-2 d-flex ${className}`}>
             <div className='img-card'><img src={picture} alt="picrture"></img></div>
-            <div className='text-card'>
-            <div><p><span>First Name:</span>{firstName}</p></div>
-            <div><p><span>Lasta Name:</span>{lastName}</p></div>
-            <div><p><span>Gender:</span>{gender}</p></div>
-            <div><p><span>Height:</span>{height}</p></div>
-            <div><p><span>Date of Birthay:</span>{birth.toDateString()}</p></div>
-            </div>
-            
+            <ul className='list-unstyled'>
+        <li><strong>First Name:</strong>{firstName}</li>
+        <li><strong>First Name:</strong>{lastName}</li>
+        <li><strong>Gender:</strong>{gender}</li>
+        <li><strong>Height:</strong>{height}</li>
+        <li><strong>Date of Birthay:</strong>{birth.toString()}</li>
+        <li></li>
+            </ul>  
         </div>
     )
 }

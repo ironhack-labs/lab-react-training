@@ -10,12 +10,12 @@ function CreditCard(props) {
             <div>
                 <div className="card">
                     <div className="type">{type}</div>
-                    <div>{number}</div>
-                    <div>{expirationMonth} {'/'} {expirationYear}</div>
-                    <div>{bank}</div>
-                    <div>{owner}</div>
-                    <div>{bgColor}</div>
-                    <div>{color}</div>
+                    <div className=''>{number}</div>
+                    <div className=''>{expirationMonth} {'/'} {expirationYear}</div>
+                    <div className=''>{bank}</div>
+                    <div className=''>{owner}</div>
+                    <div className=''>{bgColor}</div>
+                    <div className=''>{color}</div>
                 </div>
             </div>
         </div>
