@@ -12,7 +12,4 @@ function Rating({ children }) {
 
 }
 
-
-
-
 export default Rating
