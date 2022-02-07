@@ -3,14 +3,19 @@ import './DriverCard.css'
 
 
 
-function DriverCard({ name, rating, img, car }) {
+function DriverCard({ name, rating, img, car,className }) {
 
     return (
-        <div className='DriverCard  rounded rounded-3'>
-            <img className='img-driver rounded-circle' src={img} alt="img" />
-            <h1>{name}</h1>
-            <div><Rating>{rating}</Rating></div>
-            <h2>{car.model} - {car.licesePlate}</h2>
+        <div className='DriverCard d-flex rounded rounded-3 justify-content-center mb-4  p-4'>
+            <div className='img-container mt-4'>
+                <img className={`img-driver rounded-circle mb-4 d-flex ${className} `} src={img} alt="img" />
+            </div>
+            <div  className='p-4'>
+            <h2>{name}</h2>
+            <div><Rating className="">{rating}</Rating></div>
+            <h5 className='text-license fw-light'>{car.model} - {car.licensePlate}</h5>
+            </div>
+            
         </div>
 
 

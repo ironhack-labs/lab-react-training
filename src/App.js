@@ -4,6 +4,7 @@ import CreditCard from './components/CreditCard';
 import DriverCard from './components/DriverCard';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
+import LikeButton from './components/LikeButton';
 import Random from './components/Random';
 import Rating from './components/Rating';
 
@@ -90,7 +91,7 @@ function App() {
         />
 
       </div>
-      <div className='Rating'>
+      <div>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
@@ -99,7 +100,7 @@ function App() {
         <Rating>5</Rating>
       </div>
 
-      <DriverCard
+      <DriverCard className='img-Travis'
         name="Travis Kalanick"
         rating={4.2}
         img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
@@ -118,6 +119,8 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+
+      <LikeButton/>
 
     </div>
 
