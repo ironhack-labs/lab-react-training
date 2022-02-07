@@ -1,17 +1,16 @@
-/* .CreditCard{
-
-margin-bottom: 20px;
-} 
-
-.card{
-    border:solid 2px black;
-    border-radius: 10px;
-    width: 280px;
-    height: 180px;
+.credit-card > img{
+    height: 30px;
 }
- */
 
 
+.credit-card{
+    max-width: 300px;
+}
+
+.credit-card-expires > small{
+    font-size: 20px;
+    font-weight: 500;
+}
 
 
 

@@ -1,9 +1,32 @@
-import './Greetings.css'
+import Box from './Box';
+;
 
-function Greetings(props) {
 
-    const { lang, children } = props
 
+function Greetings({ className, lang, children }) {
+
+    let greet;
+    switch (lang) {
+        case 'de':
+            greet = 'Hallo';
+            break;
+        case 'es':
+            greet = 'Hola';
+            break;
+        case 'fr':
+            greet = 'Bonjour';
+            break;
+        case 'en':
+        default:
+            greet = 'Hello';
+            break;
+    }
+
+    return (
+      
+            <Box className={`m-0 fw-light ${className}`}>{greet} {children}</Box>
+      
+    )
 
 
 
@@ -26,26 +49,27 @@ function Greetings(props) {
     //     </small>
     // }
 
-    
-    switch (lang){
-        case 'de':
-            return <small className='lang '>Hallo {children}</small>;
-            break;
 
-        case 'en':
-            return <small className='lang '>Hello {children}</small>;
-            break;
+    // switch (lang){
 
-        case 'es':
-            return <small className='lang '>Hola {children}</small>;
-            break;
-        
-            case 'fr':
-            return <small className='lang '>Bonjour {children}</small>;
-            break;
+    //     case 'de':
+    //         return <h1 className='lang '>Hallo {children}</h1>;
+    //         break;
+
+    //     case 'en':
+    //         return <h1 className='lang '>Hello {children}</h1>;
+    //         break;
+
+    //     case 'es':
+    //         return <h1 className='lang '>Hola {children}</h1>;
+    //         break;
+
+    //         case 'fr':
+    //         return <h1 className='lang '>Bonjour {children}</h1>;
+    //         break;
 
 
-    }
+    // }
 
 
 

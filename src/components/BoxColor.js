@@ -1,9 +1,5 @@
-import './BoxColor.css'
+function BoxColor({ className, r, g, b }) {
 
-
-function BoxColor(props) {
-
-    const { r, g, b } = props
     const BoxColor = {
         backgroundColor : `rgb(${r}, ${g}, ${b})`
     }
@@ -16,9 +12,4 @@ function BoxColor(props) {
 }
 
 
-
-
-
-
-
-export default BoxColor
+export default BoxColor 

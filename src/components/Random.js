@@ -1,15 +1,16 @@
-import './Random.css'
+import Box from './Box';
 
 
 
-function Random (props) {
-    const {min, max } = props
-    const randomNUmber = Math.floor((Math.random()* max) + min )
+
+function Random({ min, max, className}) {
+
+    const randomNUmber = Math.floor(Math.random() * (max - min + 1) + min)
 
     return (
-        <div className='Random'>
-            <p>Random value between: {min} and {max} {'=>'} {randomNUmber}</p>
-            </div>
+  
+            <Box className={className}><p>Random value between: {min} and {max} {'=>'} {randomNUmber}</p></Box>
+
     )
 }
 
