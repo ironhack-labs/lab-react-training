@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.BoxColor {
+  border: 2px solid black;
+  margin: 30px;
+}
+
+.AllCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CreditCard {
+  margin: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  width: 400px;
+}
+
+.CreditCard span {
+  padding-left: 10px;
+}
