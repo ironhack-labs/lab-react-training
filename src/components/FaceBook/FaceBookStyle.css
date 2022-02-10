@@ -1,0 +1,54 @@
+.FaceBook {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+    display: flex;
+}
+
+.FaceBook img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.infoDiv {
+    margin-left: 20px;
+}
+
+.FaceBook p {
+    margin: 5px;
+}
+
+.FBbutton {
+    width: 90px;
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 4px;
+    color: black;
+}
+
+.isActive {
+    background-color: rgb(30, 164, 168);
+    color: white;
+}
+
+.FacebookContainer input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 3px;
+}
+
+.FacebookContainer input:focus {
+    border: 1px solid rgb(216, 34, 216);
+    outline: none;
+}
+
+.inputContainer {
+    padding: 10px 20px;
+    margin: 10px 0px;
+}

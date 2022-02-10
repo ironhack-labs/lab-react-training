@@ -15,6 +15,9 @@ function Greetings(props) {
       case 'fr':
         greeting = 'Bonjour';
         break;
+      default:
+        greeting = 'Hello';
+        break;
     }
 
 
