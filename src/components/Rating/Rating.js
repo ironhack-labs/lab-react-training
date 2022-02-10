@@ -4,11 +4,11 @@ function Rating({ children }) {
 
     return (
 
-        <div className={'Rating'}>
+        <div className='Rating'>
             {'★'.repeat(stars)}
             {'☆'.repeat(outPut)}
         </div>
-    )
+    ) 
 
 }
 

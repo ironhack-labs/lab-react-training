@@ -1,12 +1,13 @@
-
-import BoxColor from './components/BoxColor';
-import CreditCard from './components/CreditCard';
-import DriverCard from './components/DriverCard';
-import Greetings from './components/Greetings';
-import IdCard from './components/IdCard';
-import LikeButton from './components/LikeButton';
-import Random from './components/Random';
-import Rating from './components/Rating';
+import BoxColor from './components/Boxcolor/BoxColor';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import CreditCard from './components/CreditCard/CreditCard';
+import Dice from './components/Dice/Dice';
+import DriverCard from './components/DriverCard/DriverCard';
+import Greetings from './components/Greetings/Greetings';
+import IdCard from './components/IdCard/IdCard';
+import LikeButton from './components/LikeButton/LikeButton';
+import Random from './components/Random/Random';
+import Rating from './components/Rating/Rating';
 
 function App() {
   return (
@@ -120,10 +121,22 @@ function App() {
         }}
       />
 
-      <LikeButton/>
+      <LikeButton 
+        max={10}
+        min={0}
+      />
 
+      
+      <ClickablePicture
+        img='./assets/images/maxence.png'
+        imgClicked='./assets/images/maxence-glasses.png'
+      />
+
+      <Dice>{'./assets/images/dice1.png'}</Dice>
+      <Dice>{'./assets/images/dice2.png'}</Dice>
+      <Dice>{'./assets/images/dice3.png'}</Dice>
     </div>
-
+    
   );
 }
 

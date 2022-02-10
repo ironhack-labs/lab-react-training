@@ -1,6 +1,4 @@
-import Box from './Box';
-;
-
+import Box from '../Box/Box';
 
 
 function Greetings({ className, lang, children }) {
@@ -27,6 +25,7 @@ function Greetings({ className, lang, children }) {
             <Box className={`m-0 fw-light ${className}`}>{greet} {children}</Box>
       
     )
+
 
 
 
