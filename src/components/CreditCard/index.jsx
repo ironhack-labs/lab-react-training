@@ -1,4 +1,6 @@
 import './CreditCard.css';
+import visaCard from '../../assets/images/visa.png';
+import masterCard from '../../assets/images/master-card.svg';
 
 export default function CreditCard(props) {
   const {
@@ -12,14 +14,10 @@ export default function CreditCard(props) {
     color,
   } = props;
 
-  const creditCardTypeLogo = {
-    Visa: "/../assets/images/visa.png",
-    "Master Card": '/../assets/images/master-card.svg',
-    };
-
   const last4Digits = number.slice(-4);
   const month2Digits =`0${expirationMonth}`.slice(-2);
   const yearLast2Digits = `${expirationYear}`.slice(-2);
+  const creditCardTypeLogo = type === 'Visa' ? visaCard : masterCard;
 
   return (
     <div className='credit-wrapper'>
@@ -27,7 +25,7 @@ export default function CreditCard(props) {
         className="credit-card"
         style={{ backgroundColor: bgColor, color: color }}
       >
-          <img src={creditCardTypeLogo[type]} alt='' />
+          <img src={creditCardTypeLogo} alt='' />
         <div className="credit-card-number">
           <p>•••• •••• •••• {last4Digits}</p>
         </div>

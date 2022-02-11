@@ -1,5 +1,15 @@
 import './App.css';
-import { IdCard, Greetings, Random, BoxColor, CreditCard, Rating, DriverCard } from './components';
+import {
+  IdCard,
+  Greetings,
+  Random,
+  BoxColor,
+  CreditCard,
+  Rating,
+  DriverCard,
+  LikeButton,
+  ClickablePicture,
+} from './components';
 
 function App() {
   return (
@@ -92,29 +102,43 @@ function App() {
       <Rating>5</Rating>
 
       <div className="title">
-      <h1>DriverCard</h1>
+        <h1>DriverCard</h1>
       </div>
 
       <DriverCard
-      name="Travis Kalanick"
-      rating={4.2}
-      img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
-      car={{
-        model: "Toyota Corolla Altis",
-        licensePlate: "CO42DE"
-      }}
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
+        }}
       />
 
       <DriverCard
-      name="Dara Khosrowshahi"
-      rating={4.9}
-      img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
-      car={{
-        model: "Audi A3",
-        licensePlate: "BE33ER"
-      }}
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
       />
 
+      <div className="title">
+        <h1>LikeButton</h1>
+      </div>
+
+      <LikeButton />
+
+      <div className="title">
+        <h1>ClickablePicture</h1>
+      </div>
+
+      <ClickablePicture
+        img='./assets/images/maxence.png'
+        imgClicked='./assets/images/maxence-glasses.png'
+      />
     </div>
   );
 }
