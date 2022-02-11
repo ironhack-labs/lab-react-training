@@ -1,0 +1,23 @@
+.credit-card {
+    width: 300px;
+    height: 125px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.credit-wrapper{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.credit-card-number {
+    font-size: 1.80rem;
+    align-self: center;
+}
