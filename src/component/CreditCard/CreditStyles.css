@@ -9,8 +9,10 @@
 .CreditCard {
     margin: 15px;
     border-radius: 6px;
+    border: 0.5px solid grey;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     height: 180px;
     width: 400px;
