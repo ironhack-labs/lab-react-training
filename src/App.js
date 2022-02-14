@@ -8,7 +8,8 @@ import { IdCard,
     CreditCard,
     Rating,
     DriverCard,
-    LikeButton } from './component';
+    LikeButton,
+    ClickablePicture } from './component';
 
 
 function App() {
@@ -108,6 +109,12 @@ function App() {
 />
         {/* LIKE BUTTON */}
         <LikeButton />
+
+        {/* CLIKABLEPICTURE */}
+        <ClickablePicture
+        img='./assets/images/maxence.png'
+        imgClicked='./assets/images/maxence-glasses.png'
+        />
     </div>
 
 
