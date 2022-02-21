@@ -1,0 +1,19 @@
+
+.DriverCard{
+    font-size: 18px;
+    line-height: 24px;
+    border: 1px solid;
+    text-align: center;
+    border: 3px solid black;
+    margin: 68px;
+    flex-direction: column;
+    background-color: #0969da;
+
+}
+
+.DriverCard img{
+    width: 50%;
+    border-radius: 50%;
+    border: 6px solid white;
+
+}
