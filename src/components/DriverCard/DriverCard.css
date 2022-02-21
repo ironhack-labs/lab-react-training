@@ -1,0 +1,14 @@
+.driver{
+    border-radius: 10px;
+        margin: 20px 20px;
+        padding: 20px 20px;
+        background-color: #455eb5;
+    color: white
+}
+
+.driver img{
+    width: 120px;
+    border-radius: 50%;
+    height: 120px;
+    object-fit: cover;
+}
