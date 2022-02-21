@@ -1,0 +1,9 @@
+.creditCard{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    margin: 2em;
+}
+
+    
