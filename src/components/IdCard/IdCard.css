@@ -1,0 +1,21 @@
+.card{
+    border: 1px solid;
+    display:flex;
+    align-items: center;
+    width: inherit;
+    padding:5px 20px;
+    justify-content: start;
+    line-height: normal;
+}
+
+.card img{
+    margin-right: 30px;
+}
+
+.cardBody p{
+    font-weight: 600;
+}
+
+.bodyIDContent{
+    font-weight: normal;
+}

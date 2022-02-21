@@ -1,0 +1,7 @@
+.greetingCard{
+    display: block;
+    width: 40%;
+    border: 1px solid black;
+    font-weight: normal;
+    padding: 10px;
+}

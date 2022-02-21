@@ -1,0 +1,19 @@
+.creditCard{
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.creditCard img{
+    display: flex;
+    margin-left: auto;
+    width: 75px;
+}
+
+.creditCard span{
+    margin:0 5px;
+}

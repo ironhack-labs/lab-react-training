@@ -1,0 +1,8 @@
+.randomCard{
+    display: inline-block;
+    width: 40%;
+    border: 1px solid black;
+    font-weight: normal;
+    padding: 10px;
+    margin: 10px 0;
+}
