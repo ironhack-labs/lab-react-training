@@ -1,0 +1,11 @@
+
+.greetingDiv {
+    display: flex;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 150px;
+    border: 2px solid black;
+    padding-left: 4px;
+}

@@ -1,0 +1,13 @@
+.creditCard {
+    display: flex;
+    width: 400px;
+    height: 160px;
+    border-radius: 10px;
+    margin-left: 100px;
+    
+}
+
+
+.creditCard footer {
+    display: flex-end;
+}

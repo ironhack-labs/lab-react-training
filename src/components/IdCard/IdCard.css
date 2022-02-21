@@ -1,0 +1,18 @@
+.idCard {
+    display: flex;
+    border: 1px solid #ccc;
+    font-size: .8em;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 150px;
+    border: 2px solid black;
+}
+
+.idCard img {
+    padding: 10px;
+}
+
+.idInfo {
+    text-align: left;
+}
+
