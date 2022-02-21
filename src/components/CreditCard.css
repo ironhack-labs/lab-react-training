@@ -1,0 +1,17 @@
+
+.creditCard{
+  padding: 50px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 30%;
+  display: inline-block;
+}
+.expDate{
+  margin-right: 5px;
+}
+.cardNumber{
+  font-size: 1.5em;
+}
+.typeCard{
+  text-align: end;
+}

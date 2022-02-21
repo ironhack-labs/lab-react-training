@@ -1,0 +1,17 @@
+
+article.bgBlue{
+    height: 200px;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+}
+img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
