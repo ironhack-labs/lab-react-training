@@ -1,0 +1,22 @@
+
+.cardLogo{
+    position: relative;
+    top:12px;
+    left:240px;
+    width: auto;
+    height: 25px;
+}
+.cardInfo{
+    padding: 5px;
+    margin-left: 5px;
+}
+h2{ display: block;
+    text-align: center;
+    padding: 5px
+}
+
+.bankInfo{
+display: flex;
+
+}
+

@@ -1,0 +1,19 @@
+.driverCard{
+    justify-content: center;
+    display: flex;
+    background-color:#455eb5;
+    border: none;
+    border-radius: 10px;
+    color: white
+}
+.driverInfo{
+    margin-left: 20px;
+    display: flex;
+        flex-direction: column;
+}
+.licenseImg{
+    height: 100px;
+    width: 100px;
+   object-fit: cover;
+    border-radius: 50%;
+}
