@@ -1,0 +1,14 @@
+.idCard {
+    display: flex;
+    border: 1px solid black;
+    width: 70%;
+    margin: 10px 10px;
+}
+
+.idCard img {
+    padding-right: 10px;
+}
+
+.idCard div {
+    text-align: left;
+}

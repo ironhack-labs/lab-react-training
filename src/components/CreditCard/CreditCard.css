@@ -1,0 +1,14 @@
+.creditCard {
+    width: 400px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 10px 10px;
+}
+
+.creditCard .type {
+    text-align: right;
+}
+
+.creditCard .creditNumber {
+    font-size: 2em;
+}
