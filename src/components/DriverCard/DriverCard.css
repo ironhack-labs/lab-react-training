@@ -1,0 +1,21 @@
+.driver{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 150px;
+}
+
+.driverCard{
+    background-color: rgb(88, 126, 233);
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.driver-info{
+    color: white;
+margin-left: 30px;
+}
