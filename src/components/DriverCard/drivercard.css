@@ -1,0 +1,13 @@
+.driver img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.driver {
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    background-color: #218bff;
+    width: 50%;
+}

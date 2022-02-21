@@ -1,0 +1,8 @@
+.card {
+    display: flex;
+    align-content: left;
+}
+
+.card img {
+    height: auto;
+}
