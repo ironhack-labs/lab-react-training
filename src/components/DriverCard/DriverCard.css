@@ -1,0 +1,10 @@
+.DriverCard img {
+    width: 200px;
+}
+
+.DriverCard {
+    background-color: blue;
+    color: white;
+    border-radius: 3%;
+    width: 50%;
+}
