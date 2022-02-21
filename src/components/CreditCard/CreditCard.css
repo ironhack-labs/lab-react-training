@@ -1,0 +1,22 @@
+.creditCard{
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.creditCard div{
+    padding: 10px 0px;
+}
+
+.img-container{
+    text-align: end;
+}
+
+.card-numbers{
+    font-size: 35px;
+    text-align: center;
+}
+
+.creditCard img{
+    width: 100px;
+}

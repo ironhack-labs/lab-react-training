@@ -1,0 +1,21 @@
+.idCard {
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    font-size: .8em;
+    margin: 5px;
+}
+
+.idCard ul {
+    text-align: start;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.idCard li {
+    list-style-type: none;
+}
+
+.idCard span{
+    font-weight: bold;
+}
