@@ -1,0 +1,17 @@
+.creditCard {
+    border-radius: 10px;
+    width: 350px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.creditCard img {
+    width: 70px;
+    display: flex;
+    margin-left: auto;
+}
+
+.creditCard .cardInfo {
+    display: flex;
+    justify-content: space-between;
+}
