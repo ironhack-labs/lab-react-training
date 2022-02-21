@@ -1,0 +1,14 @@
+article {
+    display: flex;
+    border: solid 2px black;
+    padding: 20px;
+    margin: 5px;
+}
+
+article img {
+    height: 250px;
+}
+
+article p {
+    margin-left: 20px;
+}

@@ -1,0 +1,31 @@
+.driver img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 150px;
+    margin: 40px;
+}
+
+.driver {
+    background-color: rgb(107, 107, 204);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.stars {
+    border: none;
+    display: inline;
+}
+
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 100px ;
+}

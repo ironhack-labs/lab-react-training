@@ -1,0 +1,10 @@
+.squares {
+    width: 400px;
+    padding: 100px 200px;
+    margin: 20px;
+}
+
+.squares p {
+    font-size: 25px;
+    text-align: center;
+}
