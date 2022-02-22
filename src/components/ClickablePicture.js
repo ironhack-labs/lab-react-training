@@ -1,9 +1,19 @@
 import React from 'react';
 import { useState } from 'react';
 
-export default function ClickablePicture(props) {
-  const image = './assets/images/maxence.png';
-  const [img, setImage] = useState(image);
+export default function ClickablePicture({ img, imgClicked }) {
+  const [clicked, setClicked] = useState(false);
+  const handleClick = () => {
+    setClicked((clicked) => !clicked);
+  };
 
-  return <img src={props.img} alt="imgs" />;
+  return (
+    <div>
+      {!clicked ? (
+        <img src={img} alt="imgs" onClick={handleClick} />
+      ) : (
+        <img src={imgClicked} alt="imgs" onClick={handleClick} />
+      )}
+    </div>
+  );
 }
