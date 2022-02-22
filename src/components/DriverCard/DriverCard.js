@@ -13,7 +13,7 @@ const DriverCard = (props) =>{
 
         <article>
             <div className="driver">
-                <p><img src={img}></img></p>
+                <p><img src={img} alt="profile pic"></img></p>
                 <p>{name}</p>
                 <Rating>{rating}</Rating>
                 
