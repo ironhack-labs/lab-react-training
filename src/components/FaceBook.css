@@ -1,0 +1,12 @@
+.fcbook{
+    display: flex;
+    flex-direction: column;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+}
+.fcbook img{
+    width: 100px;
+    object-fit: cover;
+}

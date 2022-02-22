@@ -1,0 +1,8 @@
+.dice{
+  padding: 20px;
+}
+
+.dice img{
+  width: 200px;
+  object-fit: cover;
+}

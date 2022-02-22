@@ -1,0 +1,12 @@
+.boxes{
+    margin-top:50px ;
+    height: 100px;
+}
+.sqr{
+    width: 100px;
+    height: 100px;
+}
+.sqr.red{
+    border-color: red;
+    background-color: red;
+}

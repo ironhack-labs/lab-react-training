@@ -1,0 +1,11 @@
+.likeBtn{
+    display: inline-block;
+    padding: 50px;
+}
+
+.likeBtn button{
+    background-color: red;
+    border-radius: 5px;
+    border: 2px solid salmon;
+    padding: 10px;
+}

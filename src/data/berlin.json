@@ -13,7 +13,7 @@
   {"firstName": "Jennifer", "lastName": "Roberts", "country": "England", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550167383/Ironclass/IH_Jan1943.jpg.jpg", "isStudent": true},
   {"firstName": "Julia", "lastName": "Miller", "country": "Kazakhstan", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550165074/Ironclass/IH_Jan1937.jpg.jpg", "isStudent": true},
   {"firstName": "Ksenia", "lastName": "Danniker", "country": "Russia", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550165850/Ironclass/IH_Jan1945.jpg.jpg", "isStudent": true},
-  {"firstName": "Laura", "lastName": "Puyol Rigol", "country": "Catalonia", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550165798/Ironclass/IH_Jan1946.jpg.jpg", "isStudent": true},
+  {"firstName": "Laura", "lastName": "Puyol Rigol", "country": "Spain", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550165798/Ironclass/IH_Jan1946.jpg.jpg", "isStudent": true},
   {"firstName": "Malte", "lastName": "Felmy", "country": "Germany", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550164955/Ironclass/IH_Jan1932.jpg.jpg", "isStudent": true},
   {"firstName": "Marvin", "lastName": "Artioli", "country": "Italy", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550167631/Ironclass/IH_Jan1953.jpg.jpg", "isStudent": true},
   {"firstName": "Matt", "lastName": "Harrison", "country": "USA", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550166114/Ironclass/IH_Jan1949.jpg.jpg", "isStudent": true},

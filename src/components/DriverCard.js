@@ -8,7 +8,7 @@ const DriverCard = ({ name, rating, img, car:{ model, licensePlate} }) => {
             <img src={img}/>
             <div className='cardData'>
                 <p>{name}</p>
-            <p><Rating children={rating}/></p>
+            <span><Rating children={rating}/></span>
             <p>{model} - {licensePlate}</p>
             </div>
         </article>
