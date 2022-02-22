@@ -22,7 +22,10 @@ function App() {
               picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
 
-      <Greetings lang="de"/>
+      <Greetings lang="de" children="Leo" />
+      <Greetings lang="en" children="Román" />
+      <Greetings lang="es" children="Emmanuel" />
+      <Greetings lang="fr" children="Joaquín" />
 
       <Random min={1} max={6}/>
       <Random min={1} max={100}/>
