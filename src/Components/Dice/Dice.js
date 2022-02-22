@@ -14,12 +14,12 @@ function Dice() {
     const dicesArr = [dice1, dice2, dice3, dice4, dice5, dice6,]
     const [diceMove, setDiceMove] = useState(dice1)
 
-    const random = Math.floor(Math.random() * 6) + 1
+    const random = dicesArr[Math.floor(Math.random() * dicesArr.length)]
     //console.log(random)
 
     function getRandomDice() {
         setDiceMove(diceEmpty)
-        setTimeout(() => { setDiceMove((`dice${random}`)) }, 1000)
+        setTimeout(() => { setDiceMove(random) }, 1000)
     }
 
 
