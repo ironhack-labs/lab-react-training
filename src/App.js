@@ -9,7 +9,11 @@ import { IdCard,
     Rating,
     DriverCard,
     LikeButton,
-    ClickablePicture } from './component';
+    ClickablePicture,
+    Dice,
+    Carousel,
+    NumbersTable,
+    FaceBook } from './component';
 
 
 function App() {
@@ -115,6 +119,25 @@ function App() {
         img='./assets/images/maxence.png'
         imgClicked='./assets/images/maxence-glasses.png'
         />
+
+        {/* DICE */}
+        <Dice />
+
+        {/* CAROUSEL */}
+        <Carousel
+        images={[
+        'https://randomuser.me/api/portraits/women/1.jpg',
+        'https://randomuser.me/api/portraits/men/1.jpg',
+        'https://randomuser.me/api/portraits/women/2.jpg',
+        'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+        />
+
+        
+        <NumbersTable limit={12} />
+
+        {/* FACEBOOK */}
+        <FaceBook />
     </div>
 
 

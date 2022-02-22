@@ -1,0 +1,18 @@
+
+.Carousel{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Carousel img{
+    width: 200px;
+}
+
+.Carousel button{
+    color: gray;
+    background-color: pink;
+    border: gray 1px;
+    padding: 10px 30px ;
+}

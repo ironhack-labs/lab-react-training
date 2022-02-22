@@ -1,22 +1,20 @@
-import React from "react";
+// import React from "react";
 import './StyleClikable.css'
+import { useState } from 'react';
 
 const ClickablePicture = (props) => {
-    const { img, imgClicked } = props;
+    const [img, setImgClicked ] = useState(false) ;
     console.log("the img", img)
 
-    const [ clickImg, setClickImg ] = React.useState(false);
-
     const toggleClick= () => {
-            setClickImg( !clickImg ? true : false )
-    }
+        setImgClicked(!img ? true : false )
+    };
+
     return(
         <div className="ClickablePicture" onClick={toggleClick}>
-            {clickImg
-            ?
-            <img src={imgClicked} alt="icon-glasses"/>
-            :
-            <img src={img} className="ProfilePictures"  alt="icon-profile"/>
+            {img ? 
+                <img  src={props.img} alt="icon-profile"/>
+            :   <img  src={props.setImgClicked} alt="icon-glasses"/>
             }
         </div>
     )

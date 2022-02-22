@@ -1,0 +1,32 @@
+.FaceBook {
+    margin: 20px;
+    display: flex;
+    flex-direction: wrap;
+}
+
+.CardFb {
+    border: solid 2px black;
+    display: flex;
+    padding: 5px 100px;
+    align-items: center;
+    align-content: flex-start;
+    margin: 10px;
+}
+
+.CardFb img {
+width: 200px;
+margin: 0px;
+padding: 5px 0px;
+}
+
+.CardFbInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-content: center;
+}
+
+.CardFbInfo p{
+    padding: 0px;
+    margin: 5px 0px;
+}
