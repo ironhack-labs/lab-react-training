@@ -6,7 +6,7 @@ let {model, licensePlate} = car
 
     return(
         <article className="driver">
-            <img src={img}></img>
+            <img src={img} alt="driver photo"/>
             <h3>{name}</h3>
             <Rating>{rating}</Rating>
             <p>{model} - {licensePlate}</p>

@@ -15,7 +15,7 @@ const CreditCard = (props) => {
     
     return (
         <div className="creditCard" style={{backgroundColor:`${bgColor}`,color:`${color}`}}>
-            <img src={source} ></img>
+            <img src={source} alt="credit card"></img>
             <h3>···· ···· ···· {lastDigits}</h3>
             <p>Expires {expirationMonth}/{expirationYear} {bank}</p>
             <p>{owner}</p>
