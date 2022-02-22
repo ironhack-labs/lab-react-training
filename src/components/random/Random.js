@@ -2,7 +2,7 @@ import './Random.css'
 
 const Random = ({ min, max }) => {
 
-    const  randomNum= () => Math.floor(Math.random() * (max - min) + min) 
+    const  randomNum = () => Math.floor(Math.random() * (max - min) + min) 
 
 
     return (

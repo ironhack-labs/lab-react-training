@@ -1,0 +1,13 @@
+.likeButtons{
+    display: flex
+
+}
+
+button {
+    background-color: aquamarine;
+    border: none;
+    padding: 100px, 150px;
+    margin: 5px;
+    width: 150px;
+    height: 50px;
+}
