@@ -4,7 +4,7 @@ const IdCard = props =>{
     return(
         <>
           <h2>{lastName}</h2>
-          <h3>{firstName}</h3>
+        <h3>{firstName}</h3>
           <hr/>
           <p>{gender}</p>
             <p>{height}</p>

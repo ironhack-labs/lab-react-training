@@ -1,0 +1,22 @@
+
+
+.red{
+    display: inline-block;
+    width: 50px;
+    padding: 50px;
+    border: 2px solid black;   
+    background-color: red;
+}
+.white{
+    display: inline;
+    width: 50px;
+    padding: 50px;
+    border: 2px solid black;   
+    background-color: rgb(245, 238, 238);
+}
+
+.art{
+    display: flex;
+    margin-top: 50 px;
+    flex-wrap: wrap;
+}
