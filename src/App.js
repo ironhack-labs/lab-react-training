@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import ClickablePicture from './components/ClickablePicture';
+import { useState } from 'react';
 
 function App() {
+  const [count, setCount] = useState(0);
+  const color = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
+  const [background, colorSetter] = useState(color);
+
+  const setCountHandler = () => {
+    colorSetter(background);
+    setCount(count + 1);
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          style={{ backgroundColor: { color } }}
+          onClick={setCountHandler}
         >
-          Learn React
-        </a>
+          {count}Likes
+        </button>
       </header>
+      <ClickablePicture
+        img="./assets/images/maxence.png"
+        imgClicked="./assets/images/maxence-glasses.png"
+      />
     </div>
   );
 }
