@@ -20,7 +20,7 @@ const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner
     //     return Master
     // }
 
-    const bankImage = type === 'visa' ? Visa : Master
+    const bankImage = type === 'Visa' ? Visa : Master
 
     return (
         <div className="card" style={divStyle}>

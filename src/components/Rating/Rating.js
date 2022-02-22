@@ -21,6 +21,8 @@ const Rating = ({ children }) => {
         case 5:
             stars = '★★★★★'
             break
+        default:
+            stars = '☆☆☆☆☆'
     }
     return (
         <article className="rating">
