@@ -1,0 +1,10 @@
+.random {
+    border: 1px solid black;
+    padding: 0 30px;
+    margin: 20px 0px;
+}
+
+.random p {
+    font-weight: bold;
+    font-size: 15px;
+}

@@ -1,0 +1,46 @@
+.creditCard {
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.creditCard img {
+    width: 50px;
+    margin-right: auto;
+
+}
+
+.text-right {
+    text-align: right;
+}
+
+.creditCard p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.number {
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 5px;
+    padding: 20px 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.expiration {
+    display: flex;
+
+}
+
+.expiration p:first-child {
+    margin-right: 20px;
+}
+
+.bank {
+    margin-left: 20px;
+}

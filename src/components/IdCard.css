@@ -1,0 +1,13 @@
+.card {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.card img {
+    margin: 10px 20px;
+}
+
+.card strong {
+    text-transform: capitalize;
+}
