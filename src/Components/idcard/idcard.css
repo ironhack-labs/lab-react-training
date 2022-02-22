@@ -1,0 +1,13 @@
+body{
+    font-family: sans-serif;
+}
+
+.idcard{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.idPic img{
+    width: 100%;
+}
