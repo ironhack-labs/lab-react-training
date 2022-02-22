@@ -1,6 +1,9 @@
 
-export default function Greetings() {
+export default function Greetings(props) {
     return (
-        <div>Greetings</div>
+        <div>
+            <p>Hallo {props.lang}</p>
+        </div>
+
     )
 }
