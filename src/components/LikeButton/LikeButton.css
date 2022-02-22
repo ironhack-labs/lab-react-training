@@ -1,0 +1,13 @@
+.likeButton {
+    display: inline-block;
+    padding: 30px;
+   
+
+}
+
+.likeButton button {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 5px;
+     width: 100px;
+}
