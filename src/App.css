@@ -36,3 +36,108 @@
     transform: rotate(360deg);
   }
 }
+
+.idCardDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.blackBox {
+  border-color: black;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px;
+}
+
+.idCardDiv div {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.idCardDetailsDiv p {
+  margin-bottom: 0;
+  margin-top: 3px;
+}
+
+.creditCardDiv {
+  text-align: left;
+  width: 310px;
+  height: 170px;
+  border-radius: 10px;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.creditCardDiv img {
+  
+  width: 60px;
+  align-self: flex-end;
+}
+
+.cardNum {
+  align-self: center;
+  font-size: 30px;
+}
+
+.otherCardInfo p {
+  margin: 0;
+}
+
+.stars {
+  font-size: 40px;
+  margin: 5px;
+}
+
+.driverCardDiv {
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 20px;
+  height: 140px
+}
+
+.driverCardDiv img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-right: 15px;
+}
+
+.driverInfo {
+  text-align: left;
+}
+
+.driverInfo p {
+  margin: 0
+}
+
+.diceDiv img {
+  width: 100px
+}
+
+.red {
+  background-color: red;
+}
+
+.numTables div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px
+
+}
+.numTables {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
