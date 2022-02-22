@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.idcard,
+.greetings,
+.Random,
+.BoxColor,
+.CreditCard,
+.LikeButton {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.BoxColor {
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.CreditCard {
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.CreditCard img {
+    width: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.date {
+    display: flex;
+}
+
+.date p {
+    margin-left: 5px;
+}
+
+.driverImg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.LikeButton {
+    padding: 1rem 2rem;
+}
+
+.NumbersTable {
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number {
+    padding: 1rem 1.5rem;
+    border: 1px solid black;
+}
+
+.FaceBook {
+    display: flex;
+}
+
+.FaceBook img {
+    width: 150px;
+}
+
+.sideText {
+    display: block;
+}
+
+.blue {
+    background-color: #a3d2e2;
+    display: flex;
+}
+
+.blue img {
+    width: 150px;
 }
