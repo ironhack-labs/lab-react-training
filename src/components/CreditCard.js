@@ -4,7 +4,7 @@ const CreditCard=(props) =>{
 
     return (
         <>
-            <article>
+            <article className='CreditCard'>
                 <p>{props.type}</p>
                 <p>*********{props.number.slice(-4)}</p>
                 <p>{props.expirationMonth}</p>

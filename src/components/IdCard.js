@@ -2,7 +2,7 @@ import './IdCardStyle.css';
 
 const IdCard =(props)=> {
     return ( 
-        <div>
+        <div className='IdCard'>
         <img src={props.picture}/>
         <p>Name: {props.firstName}</p>
         <p>Lastname: {props.lastName}</p>

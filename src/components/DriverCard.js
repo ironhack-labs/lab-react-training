@@ -8,7 +8,7 @@ function DriverCard(props) {
             <article>
                 <img src={props.img} />
                 <p>{props.name}</p>
-                <p>{props.rating}</p>
+                <Rating>{props.rating}</Rating>
                 <p>{props.car.model}</p>
                 <p>{props.licensePlate}</p>
             </article>
