@@ -1,19 +1,32 @@
 import './Rating.css'
 
 const Rating = ({ children }) => {
-
-    if (children <= 2) {
-        return <i className="fa-thin fa-star-sharp"></i>
+    let stars = ''
+    switch (Math.round(children)) {
+        case 0:
+            stars = '☆☆☆☆☆'
+            break
+        case 1:
+            stars = '★☆☆☆☆'
+            break
+        case 2:
+            stars = '★★☆☆☆'
+            break
+        case 3:
+            stars = '★★★☆☆'
+            break
+        case 4:
+            stars = '★★★★☆'
+            break
+        case 5:
+            stars = '★★★★★'
+            break
     }
-
-    if (children = 5) {
-        return <i className="fa-solid fa-star-sharp"></i>
-    }
-
     return (
-        <span>{children}</span>
+        <article className="rating">
+            <h5>{stars}</h5>
+        </article>
     )
-
 }
 
 export default Rating
