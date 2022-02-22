@@ -13,8 +13,8 @@ const CreditCard = (props) => {
 
 
     return (
-        <article>
-            <div style={divStyle} className='credidCard'>
+        <article style={{ width: 200 }} className='credidCard'>
+            <div style={divStyle} >
                 <p>{type}</p>
                 <p>{number}</p>
                 <p>{expirationMonth}/{expirationYear}{bank}</p>

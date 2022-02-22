@@ -1,11 +1,15 @@
 import './App.css';
 import BoxColor from './Components/boxColor/BoxColor';
+import ClickablePicture from './Components/ClickablePicture/ClickablePicture';
 import CreditCard from './Components/creditCard/CreditCard';
-// import DriverCard from './Components/driverCard/DriverCard';
+import Dice from './Components/Dice/Dice';
+import DriverCard from './Components/driverCard/DriverCard';
 import Greetings from './Components/greetings/Greetings';
 import IdCard from './Components/idcard/IdCard';
+import LikeButton from './Components/LikeButton/LikeButton';
 import Random from './Components/random/Random';
 import Rating from './Components/rating/Rating';
+
 
 
 
@@ -83,7 +87,7 @@ function App() {
       <Rating>5</Rating>
 
 
-      {/* <DriverCard
+      <DriverCard
         name="Travis Kalanick"
         rating={4.2}
         img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
@@ -100,8 +104,17 @@ function App() {
         car={{
           model: "Audi A3",
           licensePlate: "BE33ER"
-        }} */}
-      {/* /> */}
+        }}
+      />
+      <LikeButton />
+      <LikeButton />
+
+      <ClickablePicture
+        img='./assets/images/maxence.png'
+        imgClicked='./assets/images/maxence-glasses.png'
+      />
+
+      <Dice />
     </>
   );
 }

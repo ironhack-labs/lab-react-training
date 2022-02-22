@@ -1,12 +1,12 @@
 import './BoxColor.css'
 
-const pStyle = {
-    backgroundColor: `red`,
-}
 
 const BoxColor = (props) => {
 
     const { r, g, b } = props
+    const pStyle = {
+        backgroundColor: `rgb(${r} ${g} ${b})`
+    }
     return (
 
         <p style={pStyle} className='rgb'>rgb ({r}, {g}, {b})</p>
