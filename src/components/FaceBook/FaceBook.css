@@ -1,0 +1,11 @@
+.cardProfileBody p{
+    font-weight: bold;
+}
+.dataProfile{
+    font-weight: normal;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+}

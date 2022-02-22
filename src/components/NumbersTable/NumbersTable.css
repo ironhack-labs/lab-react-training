@@ -1,0 +1,10 @@
+.numberBox{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 40px;
+}
+
+.numberBox.red{
+    background-color: red;
+}
+

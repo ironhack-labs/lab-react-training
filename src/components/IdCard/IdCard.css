@@ -4,7 +4,7 @@
     align-items: center;
     width: inherit;
     padding:5px 20px;
-    justify-content: start;
+    justify-content: flex-start;
     line-height: normal;
 }
 
