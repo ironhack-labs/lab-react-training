@@ -1,0 +1,13 @@
+.carousel img{
+    width: 400px;
+}
+
+.carousel button{
+    width: 150px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.carousel button:hover{
+    background-color: aquamarine;
+}

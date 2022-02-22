@@ -1,0 +1,26 @@
+.facebook-card {
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.facebook-card img{
+    width: 100px;
+    object-fit: cover;
+}
+
+.facebook-card ul {
+    text-align: start;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.facebook-card li {
+    list-style-type: none;
+}
+
+.facebook-card span{
+    font-weight: bold;
+    font-size: 20px;
+}
