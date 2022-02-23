@@ -1,0 +1,17 @@
+.numberstable {
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap;
+}
+
+.numberstable > div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+}

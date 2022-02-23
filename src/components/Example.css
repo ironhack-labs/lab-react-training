@@ -1,0 +1,9 @@
+.example > h1 {
+    display: flex;
+    align-items: center;
+}
+
+.example > button {
+    margin-left: 20px;
+    background-color: white;
+}

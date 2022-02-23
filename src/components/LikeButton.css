@@ -1,0 +1,15 @@
+.LikeButton {
+    display: flex;
+    flex-direction: column;
+}
+
+.LikeButton button {
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(185, 122, 211);
+    border: none;
+    margin: 10px 0px;
+
+}
