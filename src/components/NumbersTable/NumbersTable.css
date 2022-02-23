@@ -1,0 +1,12 @@
+.table {
+    font-size: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.table p {
+    border: 2px solid;
+    padding: 60px;
+    margin: 0;
+} 
