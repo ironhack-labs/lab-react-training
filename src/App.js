@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import LikeButton from './components/LikeButton'
+import withoutGlassesImage from './assets/images/maxence.png'
+import withGlassesImage from './assets/images/maxence-glasses.png'
+import ClickablePicture from './components/ClickablePicture'
+import Dice from './components/Dice'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LikeButton />
+
+      <ClickablePicture img={withoutGlassesImage} imgClicked={withGlassesImage}/>
+
+      <Dice />
+
     </div>
   );
 }
