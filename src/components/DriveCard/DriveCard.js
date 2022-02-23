@@ -11,10 +11,10 @@ const DriveCard = ({
 
     let { model, licensePlate } = car
     // let newRating = Math.round(rating)
-    
-    return(
+
+    return (
         <article className="DriveCard">
-            <img src={img} alt={name}/>
+            <img src={img} alt={name} />
             <p>{name}</p>
             {/* <p>{newRating}</p> */}
             <Rating>{rating}</Rating>
