@@ -1,0 +1,39 @@
+.CreditCard{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 320px;
+    height: 190px;
+    margin: 12px;
+    border-radius: 15px;
+    
+}
+
+
+.logo{
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+
+.creditNumber{
+    display: block;
+    align-items: center;
+    width: 100%;
+    word-spacing: 4px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.creditCardFooter{
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 18px;
+}

@@ -1,0 +1,21 @@
+.BoxColor{
+    font-size: 18px;
+    line-height: 24px;
+    border: 1px solid;
+    text-align: center;
+    border: 3px solid black;
+    margin: 18px;
+    
+}
+
+
+.BoxColor.red {
+    background-color: rgb(255, 0, 0);
+    color: white
+}
+    
+
+.BoxColor.green {
+    background-color:  rgb(128, 255, 0);
+    color: white
+  }
