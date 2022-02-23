@@ -1,38 +1,146 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.id-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border: solid 1px black;
+    padding: 5px 40px;
+    margin: 5px 220px;
+    gap: 15px;
+}
+
+.id-card-info {
+    text-align: left;
+}
+
+.greetings,
+.random {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border: solid 1px black;
+    padding: 5px 40px;
+    margin: 5px 300px;
+    gap: 15px;
+    font-weight: bold
+}
+
+.box-color {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 10px 280px;
+    justify-content: center;
+    border: solid 1px black;
+    font-size: 1.5em;
+}
+
+.credit-card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.credit-card {
+    width: 250px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.credit-card-logo {
+    text-align: right;
+    margin: 12px
+}
+
+.credit-card-number {
+    margin: 6px;
+    font-size: 1.5em;
+}
+
+.bank-name {
+    margin: 20px;
+}
+
+.credit-card-info {
+    font-size: 0.8em;
+    margin: 6px
+}
+
+.rating {
+    font-size: 2em;
+}
+
+.driver-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: solid 1px black;
+    padding: 5px 40px;
+    margin: 5px 120px;
+    gap: 15px;
+    background-color: rgb(66, 66, 216);
+    border-radius: 20px;
+}
+
+.driver-card img {
+    border-radius: 50%;
+}
+
+.driver-card-infor {
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+.carousel-btn button {
+    font-size: 1.2em;
+    margin: 8px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.numbers-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
