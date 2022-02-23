@@ -38,3 +38,11 @@ code {
   width: 400px;
   border: 2px solid gray;
 }
+
+.randomnumber{
+  width: 400px;
+  border: 2px solid gray;
+  text-align: center;
+  padding: 6px;
+  margin: 40px 0 40px 0;
+}

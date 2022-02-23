@@ -32,10 +32,10 @@ export default function Greetings(props) {
       <div>
           <p className="saludouser">{saludo.saludo}</p>
       </div>
-      <button className="btn"  onClick={ () => DeGreeting() }>Alemán</button>
-      <button className="btn" onClick={ () => EsGreeting() }>Español</button>
-      <button className="btn" onClick={ () => FrGreeting() }>Francés</button>
-      <button className="btn" onClick={ () => EnGreeting() }>Inglés</button>
+      <button className="btn"  onClick={ () => DeGreeting() }>German</button>
+      <button className="btn" onClick={ () => EsGreeting() }>Spanish</button>
+      <button className="btn" onClick={ () => FrGreeting() }>French</button>
+      <button className="btn" onClick={ () => EnGreeting() }>English</button>
     </>
   )
 }
