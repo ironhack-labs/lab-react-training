@@ -39,16 +39,15 @@ code {
   justify-content: flex-start;
 }
 
+.cards {
+  display: flex;
+}
 
-
-
-
-
-
-
-
-
-
+.creditCard {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 300px;
+}
 
 
 
