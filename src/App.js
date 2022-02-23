@@ -1,18 +1,22 @@
 
 import './App.css';
 import BoxColor from './components/BoxColor/BoxColor';
+import Carousel from './components/Carousel/Carousel ';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import CreditCard from './components/CreditCard/CreditCard';
+import Dice from './components/Dice/Dice';
 import DriverCard from './components/DriverCard/DriverCard';
 import Greetings from './components/Greetings/Greetings';
 import IdCard from './components/IdCard/IdCard';
+import LikeButton from './components/LikeButton/LikeButton';
 import Random from './components/Random/Random';
 import Rating from './components/Rating/Rating';
 
 function App() {
   return (
     <>
-     <h1>IdCard</h1>
-      <IdCard 
+      <h1>IdCard</h1>
+      <IdCard
         lastName='Doe'
         firstName='John'
         gender='male'
@@ -41,9 +45,9 @@ function App() {
       <Random min={1} max={100} />
 
       <h1>BoxColor</h1>
-      <BoxColor  r={255} g={0} b={0} />
+      <BoxColor r={255} g={0} b={0} />
 
-      <BoxColor  r={128} g={255} b={0} />
+      <BoxColor r={128} g={255} b={0} />
 
       <h1>CreditCard</h1>
       <CreditCard
@@ -112,6 +116,41 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+
+      <h1>State: LikeButton</h1>
+      <LikeButton />
+      <LikeButton />
+
+      <h1>State: ClickablePicture</h1>
+      <ClickablePicture
+        img='./assets/images/maxence.png'
+        imgClicked='./assets/images/maxence-glasses.png'
+      />
+
+
+      <h1>State: Dice</h1>
+      <Dice />
+
+
+      <h1>State: Carousel</h1>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <h1>List and Keys | NumbersTable</h1>
+      {/* <NumbersTable limit={12} /> */}
+
+
+      <h1>List and Keys - FaceBook (simple & advance)</h1>
+
+
+
+
 
     </>
 
