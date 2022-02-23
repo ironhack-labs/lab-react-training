@@ -14,3 +14,21 @@ img{
     justify-content: left;
 }
 
+article{
+display: flex;
+justify-content:center;
+margin: 10px;
+background-color: #455eb5;
+color: white;
+border-radius: 10px;
+
+}
+
+.text{
+    text-align: center;
+    padding: 10px;
+}
+
+h2{
+    display: inline;
+}

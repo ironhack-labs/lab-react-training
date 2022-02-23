@@ -13,7 +13,7 @@ function Random({ min, max }) {
     return (
         <>
 
-            < p > random value between {max} and {min} = {getRandomArbitrary(min, max)} </p >
+            <p> random value between {max} and {min} = {getRandomArbitrary(min, max)} </p >
         </>
 
     )

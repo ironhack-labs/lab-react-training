@@ -16,7 +16,8 @@ function CreditCard(props) {
     return (
 
         <div className='creditCard' style={{ backgroundColor: `${bgColor}`, color: `${color}`, width: '50%', textAlign: "center", margin: '10px', padding: '10px', borderRadius: '10px' }}>
-            <img src={cardType} />
+
+            <img src={cardType} alt="card-pic" />
             <div> {number} </div>
             <div className='expirationDateOwner'> Expires: {expirationMonth}/{expirationYear} <span> </span> {bank}
             </div>
