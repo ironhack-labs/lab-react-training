@@ -11,6 +11,7 @@ import LikeButton from './components/LikeButton/LikeButton'
 import NumbersTable from './components/NumbersTable/NumbersTable'
 import Random from './components/Random/Random'
 import Rating from './components/Rating/Rating'
+import FaceBook from './FaceBook/FaceBook'
 
 function App() {
   return (
@@ -122,7 +123,7 @@ function App() {
       />
 
       <NumbersTable limit={12} />
-
+      <FaceBook />
     </>
   )
 }

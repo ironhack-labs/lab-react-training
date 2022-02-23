@@ -1,24 +1,30 @@
-import { useState } from 'react'
 import './NumbersTable.css'
 
 const NumbersTable = ({ limit }) => {
 
+    const numsArr = []
+    for (let i = 1; i <= limit; i++) {
+        numsArr.push(i)
+    }
+
+    const divStyle = {
+        backgroundColor: 'red'
+    }
+
     return (
-
-        <table className="table">
+        <div className="table">
             {
-                limit.forEach(eachNumber => {
-                    return (
-                        <tbody>
-                            <tr>
-                                <td>{eachNumber}</td>
-                            </tr>
+                numsArr.map((elm, idx) => {
 
-                        </tbody>
-                    )
+                    if (idx % 2 !== 0) {
+                        return <p key={idx} style={divStyle}>{elm}</p>
+                    } else {
+                        return <p key={idx}>{elm}</p>
+                    }
+
                 })
             }
-        </table>
+        </div>
     )
 
 }

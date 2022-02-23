@@ -1,0 +1,14 @@
+.facebook {
+    display:flex;
+    align-items: center;
+    font-size: 1.2em;
+    border: 1px solid;
+    margin: 20px 5px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.facebook img {
+    width: 20%;
+    object-fit: cover;
+    padding-right: 30px;
+}
