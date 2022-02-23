@@ -1,0 +1,16 @@
+.table{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+   
+}
+.tableSquare{
+
+    height: 50px;
+    width: 50px;
+    border: 1px black solid;
+}
+
+.red{
+    background-color: brown;
+}

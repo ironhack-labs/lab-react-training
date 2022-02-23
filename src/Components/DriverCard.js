@@ -9,7 +9,7 @@ function DriverCard(props) {
     return (
         <article className="driverCard">
 
-            <img className="licenseImg" src={img} />
+            <img className="licenseImg" src={img} alt={name} />
             <div className="driverInfo">
                 <div>{name}</div>
                 <Rating>{rating}</Rating>
