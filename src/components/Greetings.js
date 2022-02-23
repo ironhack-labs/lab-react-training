@@ -18,7 +18,7 @@ export default function Greetings(props) {
             break;
     }
     return (
-        <div>
+        <div className="card">
             <p>{word} {props.children}</p>
         </div>
 
