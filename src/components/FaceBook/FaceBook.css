@@ -1,0 +1,14 @@
+.userImg{
+    width: 200px;
+}
+
+.eachProfile {
+    display: flex;
+    margin: 20px 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.profile-info{
+    margin-left: 20px;
+}

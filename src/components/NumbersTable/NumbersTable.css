@@ -1,0 +1,11 @@
+.NumbersTable{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number{
+    width: 30px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
