@@ -9,7 +9,7 @@ function Carousel({ images }) {
             <figure>
                 <img src={actualImage} />
             </figure>
-            <button onClick={() => setImage(actualImage)} src={actualImage ? images[0 + 1]}>Siguiente Foto</button>
+            <button onClick={() => }>Siguiente Foto</button>
             <button>Foto anterior</button>
         </>
     )
@@ -19,4 +19,3 @@ function Carousel({ images }) {
 
 export default Carousel;
 
-{/* <img onClick={() => setShowGlasses(!showGlasses)} src={showGlasses ? img : imgClicked} */ }
