@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import IdCard from './components/IdCard';
 import './App.css';
+import dataArray from './data/berlin.json';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>List of People?!</h1>
+      {
+        dataArray.map(person => {
+          return (
+            <IdCard  
+                lastName={ person.lastName }
+                firstName={ person.firstName }
+                gender={ person.gender }
+                height={ 170 }
+                birth={ '01.01.2007' }
+                picture={ person.img }
+              />
+          )
+        })
+      }
     </div>
   );
 }

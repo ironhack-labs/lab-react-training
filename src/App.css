@@ -1,31 +1,7 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  background-color: antiquewhite;
+  color: black;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +11,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.IdCard {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.IdCard>img {
+  height: 150px;
+}
+
+.IdCard>ul {
+  text-align: left;
+  list-style: none;
+}
+
+.IdCard>ul span {
+  font-weight: bold;
 }
