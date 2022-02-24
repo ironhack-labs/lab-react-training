@@ -5,8 +5,15 @@ import BoxColor from './components/Main/BoxColor';
 import CreditCard from './components/Main/CreditCard';
 import Greetings from './components/Main/Greetings';
 import IdCard from './components/Main/IdCard';
+import LikeButton from './components/Main/LikeButton';
 import Random from './components/Main/Random';
 import Rating from './components/Main/Rating';
+import ClickablePicture from './components/Main/ClickablePicture';
+import Dice from './components/Main/Dice';
+import Carousel from './components/Main/Carousel';
+
+
+
 
 
 const idCards = [{
@@ -71,6 +78,15 @@ const creditCards = [{
 
 const rating = Math.round(Math.random()*5*10)/10
 
+const carouselImages = [
+  'https://randomuser.me/api/portraits/women/1.jpg',
+  'https://randomuser.me/api/portraits/men/1.jpg',
+  'https://randomuser.me/api/portraits/women/2.jpg',
+  'https://randomuser.me/api/portraits/men/2.jpg'
+]
+
+
+
 
 function App() {
   return (
@@ -112,6 +128,21 @@ function App() {
 
     <h1>6. Rating</h1>
     <Rating children={rating}/>
+
+
+    <h1>8. Like Button</h1>
+    <LikeButton/>
+
+    <h1>9.ClickablePicture</h1>
+    <ClickablePicture/>
+
+    <h1>10. Dice</h1>
+    <Dice/>
+
+    <h1>11. Carousel</h1>
+    <Carousel images = {carouselImages}/>
+
+
 
 
 
