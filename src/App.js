@@ -3,6 +3,9 @@ import Icards from './components/Icards';
 import Greetings2 from './components/Greetings2';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor'
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 function App() {
 
@@ -27,10 +30,21 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
     />
 
+     
     
     <Greetings2 />
     <Random min={1} max={100} />
     <BoxColor r={54} g={90} b={86} />
+    <LikeButton/>
+
+    <ClickablePicture
+      img="./assets/images/maxence.png"
+      imgClicked="./assets/images/maxence-glasses.png"
+    />
+
+    <Dice/>
+
+  
 
   </>
   
