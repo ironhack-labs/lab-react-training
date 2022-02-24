@@ -6,10 +6,15 @@ export default function Greetings(props) {
   return (
     
     <>
-      <p className='de'>Hallo</p>
-      <p className='fr'>Bonjour</p>
-       <p className='es'>Hola </p>
-       <p className='en'>Hello</p>
+      {
+        props.lang === "de" ? <p>Hallo {props.children} </p> 
+        :
+        props.lang === "en" ? <p>Hello {props.children} </p> 
+        :
+        props.lang === "es" ? <p>Hola {props.children} </p>
+        :
+        <p>Bonjour {props.children} </p>
+      }
     </>
   )
 }

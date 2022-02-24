@@ -12,7 +12,7 @@ export default function IdCard(props) {
         <p className='lastName'><strong>Last Name: </strong>{props.lastName}</p>
         <p className='gender'><strong>Gender: </strong>{props.gender} </p>
         <p className='height'><strong>Height: </strong>{props.height} </p>
-        {/* birth */}
+        <p className='birth'><strong> Birth:</strong>{props.birth} </p>
         
     </>
   )
