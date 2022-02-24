@@ -3,6 +3,7 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
 import './App.css';
 import dataArray from './data/berlin.json';
 
@@ -44,6 +45,12 @@ function App() {
         color="#222222"
       />
 
+      <Rating stars={0}/>
+      <Rating stars={1.49}/>
+      <Rating stars={1.5}/>
+      <Rating stars={3}/>
+      <Rating stars={4}/>
+      <Rating stars={5}/>
 
     </div>
   );
