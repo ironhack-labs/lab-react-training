@@ -2,11 +2,18 @@
 
 import './App.css';
 import BoxColor from './components/Main/BoxColor';
+import Carousel from './components/Main/Carousel';
+import ClickablePicture from './components/Main/ClickablePicture';
 import CreditCard from './components/Main/CreditCard';
+import Dice from './components/Main/Dice';
+import DriverCard from './components/Main/DriverCard';
 import Greetings from './components/Main/Greetings';
 import IdCard from './components/Main/IdCard';
+import LikeButton from './components/Main/LikeButton';
 import Random from './components/Main/Random';
 import Rating from './components/Main/Rating';
+import maxence from './assets/images/maxence.png'
+import maxenceGlasses from './assets/images/maxence-glasses.png'
 
 
 const idCards = [{
@@ -73,7 +80,35 @@ const creditCards = [
   }
 ]
 
+const driverCards = [
+  {
+  name:"Travis Kalanick",
+  rating: 4.2,
+  img:"https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428",
+  car:{
+    model: "Toyota Corolla Altis",
+    licensePlate: "CO42DE"
+    }
+  },
+  {
+    name:"Dara Khosrowshahi",
+    rating: 4.9,
+    img:"https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg",
+    car:{
+      model: "Audi A3",
+      licensePlate: "BE33ER"
+    }
+  }
+]
+
 const rating = Math.round(Math.random()*5*10) / 10
+
+const carouselImages = [
+  'https://randomuser.me/api/portraits/women/1.jpg',
+  'https://randomuser.me/api/portraits/men/1.jpg',
+  'https://randomuser.me/api/portraits/women/2.jpg',
+  'https://randomuser.me/api/portraits/men/2.jpg'
+]
 
 function App() {
   return (
@@ -106,6 +141,18 @@ function App() {
     </div>
     
     <Rating children={rating} />
+
+    {
+      driverCards.map((driverCard)=>{
+        return <DriverCard driverCardInfo={driverCard}/>
+      })
+    }
+
+    <LikeButton />
+    <ClickablePicture img={maxence} imgClicked={maxenceGlasses} />
+    <Dice />
+    <Carousel images={carouselImages}/>
+
 
     </div>
   );

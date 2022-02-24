@@ -48,3 +48,7 @@ code {
   border-radius: 10px;
   width: 300px;
 }
+
+.driverPicture {
+  height: 200px;
+}
