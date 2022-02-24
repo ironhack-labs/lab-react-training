@@ -5,9 +5,8 @@
 }
 
 .LikeButton>button {
-    background-color: blueviolet;
     border: none;
     border-radius: 5px;
-    color:white;
     padding: 5px 10px;
+    color: black;
 }
