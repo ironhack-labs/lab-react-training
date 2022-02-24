@@ -2,11 +2,19 @@
 
 import './App.css';
 import BoxColor from './components/Main/BoxColor';
+import Carousel from './components/Main/Carousel';
+import ClickablePicture from './components/Main/ClickablePicture';
 import CreditCard from './components/Main/CreditCard';
+import Dice from './components/Main/Dice';
 import Greetings from './components/Main/Greetings';
 import IdCard from './components/Main/IdCard';
+import LikeButton from './components/Main/LikeButton';
 import Random from './components/Main/Random';
 import Rating from './components/Main/Rating';
+import maxence from './assets/images/maxence.png'
+import maxenceGlasses from './assets/images/maxence-glasses.png'
+
+import SignupPage from './components/Main/SignupPage';
 
 
 const idCards = [{
@@ -73,6 +81,13 @@ const creditCards = [{
 
 const rating =  Math.round(Math.random()*5+10)/10
 
+const carouselImages = [
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+]
+
 function App() {
   return (
     <div className="App">
@@ -108,6 +123,11 @@ function App() {
           
       <Rating children={rating} />
 
+      <LikeButton/>
+      <ClickablePicture  img={maxence} imgClicked={maxenceGlasses}/>
+      <Dice />
+      <Carousel images = {carouselImages}/>
+      <SignupPage/>
     </div>
   );
 }
