@@ -1,4 +1,5 @@
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
 import './App.css';
 import dataArray from './data/berlin.json';
 
@@ -6,6 +7,9 @@ function App() {
   return (
     <div className="App">
       <h1>List of People?!</h1>
+      
+      <Greetings lang="es" firstName = { dataArray[0].firstName } />
+      
       {
         dataArray.map(person => {
           return (
@@ -20,6 +24,8 @@ function App() {
           )
         })
       }
+
+
     </div>
   );
 }
