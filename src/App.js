@@ -1,6 +1,7 @@
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
+import BoxColor from './components/BoxColor';
 import './App.css';
 import dataArray from './data/berlin.json';
 
@@ -11,6 +12,7 @@ function App() {
       
       <Greetings lang="es" firstName = { dataArray[0].firstName } />
       <Random min={8} max={12} />
+      <BoxColor r={255} g={255} b={0} />
 
       {
         dataArray.map((person, index) => {

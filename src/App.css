@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: antiquewhite;
   color: black;
 }
@@ -20,6 +24,7 @@
   border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
+  width: 90%;
 }
 
 .IdCard>img {
@@ -33,4 +38,10 @@
 
 .IdCard>ul span {
   font-weight: bold;
+}
+
+.BoxColor {
+  width: 400px;
+  padding: 50px;
+  border-radius: 5px;
 }
