@@ -1,5 +1,6 @@
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
+import Random from './components/Random';
 import './App.css';
 import dataArray from './data/berlin.json';
 
@@ -9,11 +10,13 @@ function App() {
       <h1>List of People?!</h1>
       
       <Greetings lang="es" firstName = { dataArray[0].firstName } />
-      
+      <Random min={8} max={12} />
+
       {
-        dataArray.map(person => {
+        dataArray.map((person, index) => {
           return (
             <IdCard  
+                key={ index }
                 lastName={ person.lastName }
                 firstName={ person.firstName }
                 gender={ person.gender }
