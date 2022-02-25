@@ -19,8 +19,6 @@ $ npm install
 $ npm start
 ```
 
-<!-- You can find the starter code in the starter code folder of this GitHub repo. -->
-
 ## Submission
 
 - Upon completion, run the following commands:
@@ -33,7 +31,23 @@ $ npm start
 
 - Create a Pull Request so that your TAs can review your work.
 
+  
+
 ## Instructions
+
+
+
+### Iteration 0 | Components folder
+
+Inside of the `src/` folder, create a new folder named `components`. 
+
+Use the `components` folder to store all the components that you create in the following iterations.
+
+
+
+----
+
+
 
 ### Iteration 1 | Component: `IdCard`
 
@@ -327,8 +341,8 @@ Create a `ClickablePicture` component that displays a picture. On each click, th
 
 ```jsx
 <ClickablePicture
-  img='./assets/images/maxence.png'
-  imgClicked='./assets/images/maxence-glasses.png'
+  img='../assets/images/maxence.png'
+  imgClicked='../assets/images/maxence-glasses.png'
 />
 ```
 
