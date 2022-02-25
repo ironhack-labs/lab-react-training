@@ -360,12 +360,12 @@ PS: If you want to use your picture instead, you can create it using this pictur
 
 ### Iteration 10 | State: `Dice`
 
-Create a `Dice` component that displays a picture with the random dice value (example: `'./assets/images/dice3.png'`).
+Create a `Dice` component that displays a picture with the random dice value (example: `'../assets/images/dice3.png'`).
 
 Every time the user clicks on the component, it should:
 
-- First, display an empty picture (`'./assets/images/dice-empty.png'`)
-- 1 second later, display a new random picture (example: `'./assets/images/dice6.png'`).
+- First, display an empty picture (`'../assets/images/dice-empty.png'`)
+- 1 second later, display a new random picture (example: `'../assets/images/dice6.png'`).
 
 **Example:**
 
