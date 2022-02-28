@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.profile{
+  width: 50px;
+  height: 50px;
+}
+.card {
+  display: flex;
+  border: 1px solid black;
+  margin: 10px 10px;
+}
+.credit{
+  margin: 10px 10px;
+  border-radius: 5%;
+
+}
+.logo{
+  text-align: right;
+}
+.credit-grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px;
+}
+.fondo{
+  background: blue;
+  color: white;
+  align-content: center;
+  display: flex;
+  margin: 5px;
+  border-radius: 2%;
+  width: 500px;
+  
+
+}
+.imagen{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-right: 40px; 
+  margin-left: 40px;
+  
+}
