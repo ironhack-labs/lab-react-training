@@ -1,4 +1,4 @@
-function IdCard(props) {
+function idCard(props) {
   return (
     <div className="id-card">
       <img src={props.picture}></img>
@@ -17,4 +17,4 @@ function IdCard(props) {
   );
 }
 
-export default IdCard;
+export default idCard;
