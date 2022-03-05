@@ -8,3 +8,25 @@
 .id-card img {
   margin-right: 5px;
 }
+
+.credit-card {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.credit-card .type {
+  text-align: right;
+}
+
+.credit-card .type img {
+  height: 20px;
+}
+
+.credit-card .number {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 20px 0;
+}
