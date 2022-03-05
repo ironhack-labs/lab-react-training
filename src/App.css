@@ -34,3 +34,30 @@
 .rating {
   font-size: 2rem;
 }
+
+.driver-card {
+  color: white;
+  background-color: #425cbb;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.driver-card img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.driver-card h2 {
+  margin: 0;
+}
+
+.right {
+  margin: 0;
+}
