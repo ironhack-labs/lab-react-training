@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -14,14 +18,55 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
+  min-height: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  justify-content: left;
+  font-size: 2vh;
+  color: black;
+  margin-left: 1vh;  
+}
+
+.Titulos {
+  text-align: left;
+  margin-left: 1vh;
+}
+
+.card-box {
+  display: flex;
+  align-items: flex-start;
+  border: solid 0.5px;
+  max-width: 100%;
+  padding: 1vh 1vh;
+  margin: 1vh 1vh 0vh 1vh;
+}
+
+.card-text {
+  color: black;
+  padding: 0%;
+  max-height: 180px;
+}
+
+.card-text ul{
+  text-align: left;
+  margin: 0%;
+  padding-left: 0.5%;
+  width: 50vh;
+}
+
+.card-text li{
+  list-style: none;
+}
+
+
+
+/* iteration 2 */
+
+.it2 {
+  border: solid 1px black;
+  text-align: left;
 }
 
 .App-link {
