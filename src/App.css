@@ -1,7 +1,23 @@
-.App {
-  text-align: center;
+.border {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
+.container {
+  padding: 10px;
+  margin: 10px;
+}
+.container p {
+  margin: 0;
+  margin-left: 5px;
+}
+
+/* .App {
+  text-align: center;
+} */
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +51,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
