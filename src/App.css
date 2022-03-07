@@ -1,3 +1,13 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: blueviolet;
+  margin-top: 65px;
+  margin-bottom: 2px;
+}
+
 .border {
   border: 1px solid black;
   display: flex;
@@ -14,9 +24,44 @@
   margin-left: 5px;
 }
 
-/* .App {
+.card {
+  display: inline-block;
+  margin: 20px;
+  border-radius: 7px;
+  width: 250px;
+  height: 130px;
+  padding: 15px;
+}
+
+.card-img img {
+  text-align: right;
+  height: 18px;
+  width: auto;
+}
+
+.card-number {
+  font-size: 1.2rem;
+  font-weight: bold;
   text-align: center;
-} */
+  margin: 20px 0;
+  padding-bottom: 10px;
+}
+
+.card-expires-and-bank {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.card-bank{
+  margin-left: 15px;
+}
+
+.card-owner {
+  font-size: 0.8rem;
+}
+
+
+
 /* 
 .App-logo {
   height: 40vmin;

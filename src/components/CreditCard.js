@@ -6,14 +6,28 @@ function CreditCard(props) {
   props.type === 'Visa' ? (srcBandeira = visa) : (srcBandeira = master);
 
   return (
-    <div style={{ backgroundColor: props.bgColor, color: props.color }}>
-      <img src={srcBandeira} alt="bandeira do cartão" />
-      <p>•••• •••• •••• {props.number.substr(12)}</p>
-      <p>
-        Expires {props.expirationMonth.toString().padStart(2, '0')}/
-        {props.expirationYear.toString().slice(-2)} {props.bank}
-      </p>
-      <p>{props.owner}</p>
+    <div
+      className="card"
+      style={{ backgroundColor: props.bgColor, color: props.color }}
+    >
+      <div className="card-img">
+        <img src={srcBandeira} alt="bandeira do cartão" />
+      </div>
+
+      <div className="card-number">
+        <p> •••• •••• •••• {props.number.substr(12)}</p>
+      </div>
+
+      <div className="card-expires-and-bank">
+        <span>
+          Expires {props.expirationMonth.toString().padStart(2, '0')}/
+          {props.expirationYear.toString().slice(-2)}
+        </span>
+        <span className='card-bank'>{props.bank}</span>
+      </div>
+      <div className="card-owner">
+        <p>{props.owner}</p>
+      </div>
     </div>
   );
 }
