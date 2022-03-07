@@ -1,0 +1,141 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    border: solid 2px;
+    height: 10em;
+    padding: 5px;
+    margin: 5px;
+    align-content: center;
+}
+
+.allCards {
+    display: flex;
+    flex-direction: column;
+    margin: 5px
+}
+
+.imgProfile {
+    height: 100%;
+}
+
+.text {
+    margin-bottom: 0px;
+    margin-left: 3px;
+}
+
+.box {
+    border: solid 2px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.boxColor { 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px;
+    padding: 20px;
+    margin: 5px;
+}
+
+.containerCard{
+    display:flex;
+    justify-content: space-around;
+}
+
+.creditCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 175px;
+}
+
+.creditCard p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 0;
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3px;
+  }
+
+.containerDot {
+    display: flex;
+    align-items: center;
+}
+
+.cardNumber {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.creditCard h1 {
+    font-size: 26px;  
+    margin: 0;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardInfo p {
+    margin-right: 15px;
+} 
+
+
+
+.imgContainer {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+.imgCard {
+    width: 45px;
+    height: auto;
+}
+
+.star {
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.containerDriverCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+    width: auto;
+    background-color:#455eb5;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 350px;
+    color: white;
+}
+
+.containerDriverCard img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin: 10px;
+}
+
+.containerDriverCard h1 {
+    font-size: 30px;
+    margin: 0   ;
+}
