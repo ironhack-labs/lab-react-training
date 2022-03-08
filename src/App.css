@@ -97,6 +97,10 @@ h1 {
   margin: 1px;
 }
 
+.driver-card-info h2 {
+  margin: 0;
+}
+
 .rating {
   font-size: 25px;
 }
