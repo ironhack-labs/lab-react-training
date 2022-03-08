@@ -1,0 +1,31 @@
+.cards{
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 30px;
+}
+.logo{
+    width: 80px;
+}
+
+.logo-position{
+     display: flex;
+    justify-content: flex-end;
+}
+.number{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom:0px ;
+}
+.date-bank{
+    display: flex;
+}
+.bank{
+    margin-left: 20px;
+}
+.owner{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
