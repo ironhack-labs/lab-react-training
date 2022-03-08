@@ -10,8 +10,6 @@ h1 {
 
 .border {
   border: 1px solid black;
-  display: flex;
-  align-items: center;
   padding: 10px;
 }
 
@@ -19,13 +17,20 @@ h1 {
   padding: 10px;
   margin: 10px;
 }
+
 .container p {
   margin: 0;
   margin-left: 5px;
 }
 
+.idCard {
+  display: flex;
+  align-items: center;
+}
+
 .card {
   display: inline-block;
+  justify-content: space-around;
   margin: 20px;
   border-radius: 7px;
   width: 250px;
@@ -34,7 +39,8 @@ h1 {
 }
 
 .card-img img {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
   height: 18px;
   width: auto;
 }
@@ -52,7 +58,7 @@ h1 {
   font-size: 0.8rem;
 }
 
-.card-bank{
+.card-bank {
   margin-left: 15px;
 }
 
@@ -60,7 +66,30 @@ h1 {
   font-size: 0.8rem;
 }
 
+.driver-card {
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 1rem;
+}
 
+.driver-card img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.driver-card-info {
+  padding: 0;
+  margin: 1px;
+}
 
 /* 
 .App-logo {
