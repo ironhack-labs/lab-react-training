@@ -1,23 +1,24 @@
 function Rating(props) {
   // let rating = '';
+  // let ratingRound = Math.round(props.children);
 
   // switch (rating) {
-  //   case parseInt(props.children) === 0:
+  //   case ratingRound === 0:
   //     rating = '☆☆☆☆☆';
   //     break;
-  //   case Math.round(props.children) === 1:
+  //   case ratingRound === 1:
   //     rating = '★☆☆☆☆';
   //     break;
-  //   case Math.round(props.children) === '2':
+  //   case ratingRound === 2:
   //     rating = '★★☆☆☆';
   //     break;
-  //   case Math.round(props.children) === 3:
+  //   case ratingRound === 3:
   //     rating = '★★★☆☆';
   //     break;
-  //   case Math.round(props.children) === 4:
+  //   case ratingRound === 4:
   //     rating = '★★★★☆';
   //     break;
-  //   case Math.round(props.children) === 5:
+  //   case ratingRound === 5:
   //     rating = '★★★★★';
   //     break;
   //   default:
@@ -32,19 +33,22 @@ function Rating(props) {
   //   }
   //   );
 
-    let grade = '';
-    let gradeRounded = Math.round(props.children);
-    for (let i = 0; i <= 5; i++) {
-      if (i < gradeRounded) {
-        grade =+ '★';
-      } else {
-        grade =+ '☆';
-      }
-    }
-    return <div className="rating">{grade}</div>;
+  // let grade = '';
+  // let gradeRounded = Math.round(props.children);
+  // for (let i = 0; i <= 5; i++) {
+  //   if (i < gradeRounded) {
+  //     grade = +'★';
+  //   } else {
+  //     grade = +'☆';
+  //   }
+  // }
 
-  }
-  
-  // ☆★
+  let grade = Math.round(props.children);
+  let starRating = '★'.repeat(grade) + '☆'.repeat(5 - grade);
+
+  return <p className="rating">{starRating}</p>;
+}
+
+// ☆★
 
 export default Rating;

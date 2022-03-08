@@ -28,25 +28,30 @@ h1 {
   align-items: center;
 }
 
+.box {
+  text-align: center;
+  font-size: large;
+}
+
 .card {
   display: inline-block;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 20px;
   border-radius: 7px;
-  width: 250px;
-  height: 130px;
+  width: 300px;
+  height: auto;
   padding: 15px;
 }
 
 .card-img img {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   height: 18px;
   width: auto;
 }
 
 .card-number {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   text-align: center;
   margin: 20px 0;
@@ -55,15 +60,16 @@ h1 {
 
 .card-expires-and-bank {
   display: block;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .card-bank {
+  font-size: 1rem;
   margin-left: 15px;
 }
 
 .card-owner {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .driver-card {
@@ -91,38 +97,6 @@ h1 {
   margin: 1px;
 }
 
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rating {
+  font-size: 25px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

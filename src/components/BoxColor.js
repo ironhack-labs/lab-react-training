@@ -2,7 +2,7 @@ function BoxColor(props) {
   const divStyle = {
     backgroundColor: `rgb(${props.r},${props.g},${props.b})`,
   };
-  
+
   function componentToHex(color) {
     const hex = color.toString(16);
     return hex.length === 1 ? '0' + hex : hex;
@@ -15,7 +15,7 @@ function BoxColor(props) {
     componentToHex(props.b);
 
   return (
-    <div className="border" style={divStyle}>
+    <div className="border box" style={divStyle}>
       <p>
         rgb({props.r},{props.g},{props.b}){' '}
       </p>

@@ -18,7 +18,7 @@ function Greetings(props) {
   }
 
   return (
-    <h2  className="border">
+    <h2 className="border">
       {greeting}
       {props.children}{' '}
     </h2>

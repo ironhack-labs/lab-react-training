@@ -23,7 +23,7 @@ function CreditCard(props) {
           Expires {props.expirationMonth.toString().padStart(2, '0')}/
           {props.expirationYear.toString().slice(-2)}
         </span>
-        <span className='card-bank'>{props.bank}</span>
+        <span className="card-bank">{props.bank}</span>
       </div>
       <div className="card-owner">
         <p>{props.owner}</p>
