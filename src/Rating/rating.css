@@ -2,5 +2,6 @@
     display: flex;
 }
 .stars{
+    margin-left: 10px;
     font-size: 22px;
 }
