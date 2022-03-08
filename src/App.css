@@ -46,6 +46,7 @@ h1 {
 .card-img img {
   display: flex;
   justify-content: flex-start;
+  float: right;
   height: 18px;
   width: auto;
 }
