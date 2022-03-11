@@ -8,11 +8,7 @@ function ClickablePicture(props) {
     setState(!state);
   }
 
-  if (!state) {
-    return <img src={props.img} onClick={toggleImg} />;
-  } else {
-    return <img src={props.imgClicked} onClick={toggleImg} />;
-  }
+  return <img src={state ? props.imgClicked : props.img} onClick={toggleImg} />;
 }
 
 export default ClickablePicture;
