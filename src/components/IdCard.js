@@ -7,14 +7,14 @@ export const IdCard = ({
   picture,
 }) => {
   return (
-    <div>
+    <div style={{ border: '3px solid black', width: '20%' }}>
       <img src={picture} alt="person" />
 
       <p>{lastName}</p>
       <p>{firstName}</p>
       <p>{gender}</p>
-      <p>{birth}</p>
-      <p>{height}</p>
+      <p>born in: {birth}</p>
+      <p>height: {height}</p>
     </div>
   );
 };
