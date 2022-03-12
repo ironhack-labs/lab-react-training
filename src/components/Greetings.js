@@ -1,9 +1,27 @@
 //jshint esversion:8
-export Greetings = (props) => {
+export const Greetings = (props) => {
+
+    let greeting;
+
+    if(props.lang=== "de") {
+        greeting = "Hallo ";
+    }
+    if(props.lang=== "en") {
+        greeting = "Hello ";
+    }
+    if(props.lang=== "es") {
+        greeting = "Hola ";
+    }
+    if(props.lang=== "fr") {
+        greeting = "Bonjour ";
+    }
 
     return (
-        <div className="Greetings">
+
+        <div className="Greetings"> 
+            {greeting}
             {props.children}
+            
         </div>
     );
 };

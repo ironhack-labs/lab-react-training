@@ -2,9 +2,7 @@
 
 import './App.css';
 import {IdCard} from './components/IdCard';
-import styled from 'styled-components';
-import styledComponents from 'styled-components';
-
+import {Greetings} from './components/Greetings';
 
 const cards = [
   {
@@ -33,6 +31,8 @@ function App() {
         return <IdCard firstName={elem.firstName} lastName={elem.lastName} gender={elem.gender} height={elem.height} birth={elem.birth} picture={elem.picture} />
       })}
       
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
       
     </div>
   );
