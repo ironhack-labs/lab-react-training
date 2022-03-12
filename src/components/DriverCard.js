@@ -14,7 +14,7 @@ function DriverCard (props) {
     return (
         <div className="containerDriverCard"> 
             <img src={props.img} alt="profile"/>
-            <div className="">
+            <div>
             <h1><strong>{props.name}</strong></h1>
                 <section>
                 {stars.map((currentStar) => {
