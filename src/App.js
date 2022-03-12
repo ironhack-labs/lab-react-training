@@ -8,13 +8,17 @@ import { Random } from './components/Random';
 import { BoxColor } from './components/BoxColor';
 import {CreditCard} from './components/CreditCard';
 
+import { Rating } from './components/Rating';
+
+import { DriverCard } from './components/DriverCard';
+
 const cards = [
   {
     lastName: 'Doe',
     firstName: 'John',
     gender: 'male',
     height: 178,
-    birth: new Date("1992-07-14").toLocaleDateString(),
+    birth: new Date("1992-07-14"),
     picture:"https://randomuser.me/api/portraits/men/44.jpg"
   },
   {
@@ -22,7 +26,7 @@ const cards = [
     firstName: 'Obrien',
     gender: 'female',
     height: 172,
-    birth: new Date("1988-05-11").toLocaleDateString(),
+    birth: new Date("1988-05-11"),
     picture:"https://randomuser.me/api/portraits/women/44.jpg"
   }
 ];
@@ -60,8 +64,26 @@ const creditCards = [
   }
 ];
 
-
-
+const driverCard = [
+  {
+    name: "Travis Kalanick",
+    rating: 4.2,
+    img: "https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428",
+    car: {
+      model:"Toyota Corolla Altis",
+      licensePlate: "CO42DE"
+    }
+  },
+  {
+    name: "Dara Khosrowshahi",
+    rating: 4.9,
+    img: "https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg",
+    car: {
+      model:"Audi A3",
+      licensePlate: "BE33ER"
+    }
+  }
+];
 
 function App() {
   return (
@@ -73,16 +95,41 @@ function App() {
       
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+
       
       <Random min={1} max={6}/>
       <Random min={1} max={100}/>
 
+     
+
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
-      {creditCards.map(card => {
-        return <CreditCard type={card.type} number={card.number} expirationMonth={card.expirationMonth} expirationYear={card.expirationYear} bank={card.bank} owner={card.owner} bgColor={card.bgColor} color={card.color}/>
-      })}
+     
+      <div className='credit-card-container'>
+
+        {creditCards.map(card => {
+          return <CreditCard type={card.type} number={card.number.slice(-4).padStart(card.number.length, '*')} expirationMonth={card.expirationMonth} expirationYear={card.expirationYear.toString().substr(-2)} bank={card.bank} owner={card.owner} bgColor={card.bgColor} color={card.color}/>
+        })}
+      </div>
+
+      <div className='ratings'>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+      </div>
+
+
+      <div className='driver-cards'>
+
+        {driverCard.map(card => {
+          return <DriverCard name={card.name} rating={card.rating} img={card.img} car={card.car} />
+        })}
+      </div>
+      
       
     </div>
   );
