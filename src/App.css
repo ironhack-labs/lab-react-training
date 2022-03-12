@@ -7,3 +7,9 @@
   width: auto;
   height: 150px;
 }
+
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
