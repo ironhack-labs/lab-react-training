@@ -7,13 +7,16 @@ function NumbersTable(props) {
       red = true;
     }
     numbers.push(
-      <div style={{ backgroundColor: red ? 'red' : 'white' }} className="block">
+      <div
+        style={{ backgroundColor: red ? 'red' : 'white' }}
+        className="block"
+        key={i}
+      >
         {i}
       </div>
     );
   }
 
-  console.log(numbers);
   return <div className="blocks">{numbers}</div>;
 }
 
