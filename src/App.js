@@ -9,6 +9,10 @@ import DriverCard from './Components/DriverCard/DriverCard';
 import LikeButton from './Components/LikeButton/LikeButton';
 import ClickablePicture from './Components/ClickablePicture/ClickablePicture';
 
+
+import image from "./assets/images/maxence.png"
+import imageClicked from "./assets/images/maxence-glasses.png"
+
 function App() {
   return (
     <>
@@ -102,8 +106,8 @@ function App() {
       <LikeButton />
 
       <ClickablePicture
-        img="/src/assets/images/maxence.png"
-        imgClicked="/src/assets/images/maxence-glasses.png"
+        img={image}
+        imgClicked={imageClicked}
       />
     </>
   );

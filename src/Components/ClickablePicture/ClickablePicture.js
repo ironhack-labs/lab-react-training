@@ -1,18 +1,21 @@
 import { useState } from "react";
-import img from "../../assets/images/maxence.png"
-import imgClicked from "../../assets/images/maxence-glasses.png"
-function ClickablePicture(){
 
-    const[picture, setPicture] = useState(false);
+function ClickablePicture({img, imgClicked}){
+
+    const[picture, setPicture] = useState(img);
 
     function handleClick() {
-        setPicture(picture)
+        if (picture === img){
+            setPicture(imgClicked)
+        } else if (picture === imgClicked){
+            setPicture(img)
+        }
     }
-  return(
-        <div>
-           
-        </div>
-    );
+  return (
+    <div>
+      <img src={picture} onClick={handleClick} />
+    </div>
+  );
 }
 
 export default ClickablePicture;
