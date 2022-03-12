@@ -1,10 +1,25 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.cardTextStyle {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
