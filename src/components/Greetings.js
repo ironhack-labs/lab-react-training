@@ -19,6 +19,7 @@ export const Greetings = (props) => {
     return (
 
         <div className="Greetings"> 
+        
             {greeting}
             {props.children}
             
