@@ -11,6 +11,7 @@ import {CreditCard} from './components/CreditCard';
 import { Rating } from './components/Rating';
 
 import { DriverCard } from './components/DriverCard';
+import { LikeButton } from './components/LikeButton';
 
 const cards = [
   {
@@ -130,7 +131,9 @@ function App() {
         })}
       </div>
       
-      
+      <div className='like-button'>
+        <LikeButton />
+      </div>
     </div>
   );
 }

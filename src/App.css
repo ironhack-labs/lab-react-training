@@ -18,7 +18,8 @@
 .credit-card-container,
 .Box-color,
 .ratings,
-.driver-cards {
+.driver-cards,
+.like-button {
   margin: 5px;
   padding: 5px;
   border: 1px solid #000;
@@ -76,4 +77,16 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+.like-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.like-button button {
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
 }

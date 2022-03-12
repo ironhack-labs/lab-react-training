@@ -15,4 +15,4 @@ export const DriverCard = ({ name, rating, img, car }) => {
             </div>
         </div>
     );
-  };
+};
