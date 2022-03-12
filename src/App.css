@@ -73,3 +73,20 @@
   width: 15px;
   text-align: center;
 }
+
+.filters {
+  list-style-type: none;
+}
+
+.filters li {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.blue-bg {
+  background-color: aqua;
+}
