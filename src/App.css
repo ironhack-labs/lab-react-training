@@ -61,3 +61,15 @@
 .right {
   margin: 0;
 }
+
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  padding: 15px;
+  border: 2px solid black;
+  width: 15px;
+  text-align: center;
+}
