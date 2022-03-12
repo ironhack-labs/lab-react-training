@@ -7,6 +7,12 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
 
 function App() {
   return (
@@ -118,6 +124,44 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
+      </div>
+
+      <h1>Like Button Iteration 8</h1>
+      <div className="like-btn-div">
+        <LikeButton />
+        <LikeButton />
+      </div>
+
+      <div>
+        <h1>Clickable Picture Iteration 9</h1>
+        <ClickablePicture />
+      </div>
+
+      <div>
+        <h1>Dice Iteration 10</h1>
+        <Dice />
+      </div>
+
+      <div>
+        <h1>Carousel Iteration 11</h1>
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
+        />
+      </div>
+
+      <div>
+        <h1>NumbersTable Iteration 12</h1>
+        <NumbersTable limit={12} />
+      </div>
+
+      <div>
+        <h1>FaceBook (Simple) Iteration 13</h1>
+        <Facebook />
       </div>
     </div>
   );

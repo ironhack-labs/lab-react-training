@@ -105,3 +105,30 @@ h1 {
 .rating {
   font-size: 25px;
 }
+
+.like-btn-div {
+  display: flex;
+}
+
+.like-btn button {
+  font-size: 17px;
+  color: white;
+  width: 90px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.numberstable {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.numberstable li {
+  display: flex;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
