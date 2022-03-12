@@ -13,6 +13,8 @@ import { Rating } from './components/Rating';
 import { DriverCard } from './components/DriverCard';
 import { LikeButton } from './components/LikeButton';
 
+import { ClickablePicture } from './components/ClickablePicture';
+
 const cards = [
   {
     lastName: 'Doe',
@@ -131,8 +133,12 @@ function App() {
         })}
       </div>
       
-      <div className='like-button'>
+      <div className='like-button-container'>
         <LikeButton />
+      </div>
+
+      <div className='clickable-picture-container'>
+        <ClickablePicture img='./assets/images/maxence.png' imgClicked='./assets/images/maxence-glasses.png'/>
       </div>
     </div>
   );

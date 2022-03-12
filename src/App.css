@@ -19,7 +19,8 @@
 .Box-color,
 .ratings,
 .driver-cards,
-.like-button {
+.like-button,
+.clickable-picture-container {
   margin: 5px;
   padding: 5px;
   border: 1px solid #000;
@@ -78,15 +79,21 @@
   height: 100px;
   border-radius: 50%;
 }
-.like-button {
+.like-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
 }
 
-.like-button button {
+.like-button-container button {
   height: 35px;
   width: 100px;
   cursor: pointer;
+}
+
+.clickable-picture-container img {
+  border: 1px solid red;
+  height: 100px;
+  
 }

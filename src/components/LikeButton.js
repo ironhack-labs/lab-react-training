@@ -1,7 +1,7 @@
 //jshint esversion:8
 import React, { useState } from "react";
 
-export const LikeButton = ({ name, rating, img, car }) => {
+export const LikeButton = () => {
 
     const [count, setCount] = useState(0);
     const colors = ['purple','blue','green','yellow','orange','red'];
