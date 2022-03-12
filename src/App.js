@@ -6,6 +6,22 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Ratings from './components/Ratings';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
+import SignUpPage from './components/SignUpPage';
+import maxence from './assets/images/maxence.png';
+import maxenceGlasses from './assets/images/maxence-glasses.png';
+import dice from './assets/images/dice-empty.png';
+import dice1 from './assets/images/dice1.png';
+import dice2 from './assets/images/dice2.png';
+import dice3 from './assets/images/dice3.png';
+import dice4 from './assets/images/dice4.png';
+import dice5 from './assets/images/dice5.png';
+import dice6 from './assets/images/dice6.png';
 
 const dataBase = [
   {
@@ -118,39 +134,92 @@ function App() {
         </div>
       </div>
       <div>
-          <h1 className='App'>Ratings</h1>
-          <div>
+        <h1 className='App'>Ratings</h1>
+        <div>
             <Ratings>0</Ratings>
             <Ratings>1.49</Ratings>
             <Ratings>1.5</Ratings>
             <Ratings>3</Ratings>
             <Ratings>4</Ratings>
             <Ratings>5</Ratings>
-          </div>
-        </div>  
+        </div>
+      </div>  
       <div>
-          <h1 className='Titulos'>Driver Card</h1>
-          <div className='driverCard'>
-              <DriverCard
-                  name="Travis Kalanick"
-                  rating={4.2}
-                  img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
-                  car={{
-                    model: "Toyota Corolla Altis",
-                    licensePlate: "CO42DE"
-                  }}
-              ></DriverCard>
-              <DriverCard
-                  name="Dara Khosrowshahi"
-                  rating={4.9}
-                  img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
-                  car={{
-                    model: "Audi A3",
-                    licensePlate: "BE33ER"
-                  }}
-              ></DriverCard>
-          </div>
-        </div>  
+        <h1 className='Titulos'>Driver Card</h1>
+        <div className='driverCard'>
+            <DriverCard
+                name="Travis Kalanick"
+                rating={4.2}
+                img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+                car={{
+                  model: "Toyota Corolla Altis",
+                  licensePlate: "CO42DE"
+                }}
+            ></DriverCard>
+            <DriverCard
+                name="Dara Khosrowshahi"
+                rating={4.9}
+                img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+                car={{
+                  model: "Audi A3",
+                  licensePlate: "BE33ER"
+                }}
+            ></DriverCard>
+        </div>
+      </div>
+      <div>
+        <h1 className='Titulos'>Like Button</h1>
+        <div className='likeButton'>
+          <LikeButton />
+        </div>
+      </div>
+      <div>
+        <h1 className='Titulos'>Clickable Picture</h1>
+        <div className='clickablePicture'>
+          <ClickablePicture
+          semOculos={maxence}
+          comOculos={maxenceGlasses}
+          />
+        </div>
+      </div>
+      <div>
+        <h1 className='Titulos'>Dice</h1>
+        <div className='Dice'>
+          <Dice
+          semLado={dice} 
+          umLado={dice1}
+          doisLados={dice2}
+          tresLados={dice3}
+          quatroLados={dice4}
+          cincoLados={dice5}
+          seisLados={dice6}  
+          />
+        </div>
+      </div> 
+      <div>
+        <h1 className='Titulos'>Carousel</h1>
+        <div className='Carousel'>
+          <Carousel />
+        </div>
+      </div>
+      <div>
+        <h1 className='Titulos'>Numbers Table</h1>
+        <div className='NumbersTable'>
+          <NumbersTable />
+        </div>
+      </div>
+      <div>
+        <h1 className='Titulos'> Facebook </h1>
+        <div className='Facebook'>
+          <Facebook />
+        </div>
+      </div>
+      <div>
+        <h1 className='Titulos'>SignUp Page</h1>
+        <div className='SignUpPage'>
+          <SignUpPage />
+        </div>
+      </div>
     </div>
   );
 }
