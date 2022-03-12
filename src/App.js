@@ -1,11 +1,13 @@
 import './App.css';
-import Greetings from './Greetings/Greetings';
-import IdCard from './Cards/IdCard';
-import Random from './Random/random';
-import BoxColor from './Boxcolor/BoxColor';
-import CreditCard from './CreditCard/CreditCard';
-import Rating from './Rating/rating';
-import DriverCard from './DriverCard/DriverCard';
+import Greetings from './Components/Greetings/Greetings';
+import IdCard from './Components/Cards/IdCard';
+import Random from './Components/Random/random';
+import BoxColor from './Components/Boxcolor/BoxColor';
+import CreditCard from './Components/CreditCard/CreditCard';
+import Rating from './Components/Rating/rating';
+import DriverCard from './Components/DriverCard/DriverCard';
+import LikeButton from './Components/LikeButton/LikeButton';
+import ClickablePicture from './Components/ClickablePicture/ClickablePicture';
 
 function App() {
   return (
@@ -95,6 +97,13 @@ function App() {
           model: 'Audi A3',
           licensePlate: 'BE33ER',
         }}
+      />
+
+      <LikeButton />
+
+      <ClickablePicture
+        img="/src/assets/images/maxence.png"
+        imgClicked="/src/assets/images/maxence-glasses.png"
       />
     </>
   );

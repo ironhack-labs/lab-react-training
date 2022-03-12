@@ -1,6 +1,6 @@
 import './CreditCard.css'
-import visa from '../assets/images/visa.png'
-import mastercard from '../assets/images/master-card.svg';
+import visa from '../../assets/images/visa.png'
+import mastercard from '../../assets/images/master-card.svg';
 
 function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color }) {
 

@@ -6,9 +6,10 @@ function Random(props) {
     }
      return (
       <div className = 'card'>
-        <h1> Random value between {props.min} and {props.max} => {randomValue(props)} </h1>
+        <h1> Random value between {props.min} and {props.max} = {randomValue(props)} </h1>
       </div>
     );
 }
 
 export default Random;
+ 
