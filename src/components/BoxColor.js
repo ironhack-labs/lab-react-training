@@ -13,7 +13,7 @@ export const BoxColor = ({ r, g, b }) => {
     }).join('');
 
   return (
-    <div className="Box-color" style={{ backgroundColor: `rgb(${r}, ${g}, ${b})`, width: "400px",  height: "80px", textAlign: "center", verticalAlign: "bottom" }}>
+    <div className="Box-color containers" style={{ backgroundColor: `rgb(${r}, ${g}, ${b})`, width: "400px",  height: "80px", textAlign: "center", verticalAlign: "bottom" }}>
 
         rgb({r}, {g}, {b}) <br />
         {rgbToHex(r, g, b)}    

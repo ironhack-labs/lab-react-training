@@ -4,21 +4,15 @@ import './App.css';
 import {IdCard} from './components/IdCard';
 import {Greetings} from './components/Greetings';
 import { Random } from './components/Random';
-
 import { BoxColor } from './components/BoxColor';
 import {CreditCard} from './components/CreditCard';
-
 import { Rating } from './components/Rating';
-
 import { DriverCard } from './components/DriverCard';
 import { LikeButton } from './components/LikeButton';
-
 import { ClickablePicture } from './components/ClickablePicture';
-
 import maxence from './assets/images/maxence.png';
-
 import maxenceGlasses from './assets/images/maxence-glasses.png';
-
+import { Dice } from './components/Dice';
 
 const cards = [
   {
@@ -114,14 +108,14 @@ function App() {
       <BoxColor r={128} g={255} b={0} />
 
      
-      <div className='credit-card-container'>
+      <div className='credit-card-container containers'>
 
         {creditCards.map(card => {
           return <CreditCard type={card.type} number={card.number.slice(-4).padStart(card.number.length, '*')} expirationMonth={card.expirationMonth} expirationYear={card.expirationYear.toString().substr(-2)} bank={card.bank} owner={card.owner} bgColor={card.bgColor} color={card.color}/>
         })}
       </div>
 
-      <div className='ratings'>
+      <div className='ratings containers'>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
@@ -131,20 +125,25 @@ function App() {
       </div>
 
 
-      <div className='driver-cards'>
+      <div className='driver-cards containers'>
 
         {driverCard.map(card => {
           return <DriverCard name={card.name} rating={card.rating} img={card.img} car={card.car} />
         })}
       </div>
       
-      <div className='like-button-container'>
+      <div className='like-button-container containers'>
         <LikeButton />
       </div>
 
-      <div className='clickable-picture-container'>
+      <div className='clickable-picture-container containers'>
         
         <ClickablePicture img={maxence} imgClicked={maxenceGlasses}/>
+      </div>
+
+      <div className='dice-container containers'>
+        
+        <Dice />
       </div>
     </div>
   );

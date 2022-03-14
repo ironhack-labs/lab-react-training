@@ -18,7 +18,7 @@ export const Greetings = (props) => {
 
     return (
 
-        <div className="Greetings"> 
+        <div className="Greetings containers"> 
         
             {greeting}
             {props.children}

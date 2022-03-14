@@ -4,7 +4,7 @@ export const Random = ({min, max}) => {
 
     return (
 
-        <div className="Random"> 
+        <div className="Random containers"> 
             <p>Random number between {min} and {max} => {randNum}</p>
         </div>
     );
