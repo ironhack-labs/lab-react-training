@@ -2,26 +2,32 @@ import profiles from '../data/berlin.json';
 import { useState } from 'react';
 
 function Facebook() {
-  let [bgColor, setBgColor] = useState(null);
+  const [country, setCountry] = useState('');
 
   let countryArr = [];
-  let country;
-  profiles.map((currentElement) => {
-    country = currentElement.country;
-    countryArr.push(country);
-    console.log(country);
-  });
+  profiles.map((currentElement) => countryArr.push(currentElement.country));
+
+  const uniqueCountryArr = [...new Set(countryArr)];
+  uniqueCountryArr.sort();
 
   function handleClick(event) {
-    if (event.target.currentCountry === country) console.log(event.target);
-  }
+    setCountry(event.target.innerText);
+  } // Retorna o nome do país dentro do botão
+
   return (
     <div>
-      {countryArr.map((currentCountry) => (
+      {uniqueCountryArr.map((currentCountry) => (
         <button onClick={handleClick}>{currentCountry}</button>
       ))}
       {profiles.map((currentProfile) => (
-        <div className="border idCard">
+        <div
+          key={currentProfile.value}
+          className="border idCard"
+          style={{
+            backgroundColor:
+              country === currentProfile.country ? 'blue' : 'white',
+          }}
+        >
           <img
             style={{ width: '100px' }}
             src={currentProfile.img}
@@ -35,7 +41,7 @@ function Facebook() {
               <strong>Last name:</strong> {currentProfile.lastName}
             </p>
             <p>
-              <strong>Coutry:</strong> {currentProfile.country}
+              <strong>Country:</strong> {currentProfile.country}
             </p>
             <p>
               <strong>Type:</strong>
@@ -44,7 +50,6 @@ function Facebook() {
           </div>
         </div>
       ))}
-      ;
     </div>
   );
 }

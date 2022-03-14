@@ -13,6 +13,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
@@ -160,8 +161,13 @@ function App() {
       </div>
 
       <div>
-        <h1>FaceBook (Simple) Iteration 13</h1>
+        <h1>Facebook Iteration 13 & 14</h1>
         <Facebook />
+      </div>
+
+      <div>
+        <h1>Form - Sign-up Page Iteration 15</h1>
+        <SignupPage />
       </div>
     </div>
   );
