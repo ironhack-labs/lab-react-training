@@ -13,5 +13,7 @@ export const ClickablePicture = ({ img, imgClicked }) => {
         }
     };
     
-    return (<img onClick={imageClick} src={image} alt="Cool pic" />);
+    return (
+        <img onClick={imageClick} src={image} alt="Cool pic" />
+    );
 };

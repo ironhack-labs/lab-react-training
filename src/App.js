@@ -15,6 +15,11 @@ import { LikeButton } from './components/LikeButton';
 
 import { ClickablePicture } from './components/ClickablePicture';
 
+import maxence from './assets/images/maxence.png';
+
+import maxenceGlasses from './assets/images/maxence-glasses.png';
+
+
 const cards = [
   {
     lastName: 'Doe',
@@ -138,7 +143,8 @@ function App() {
       </div>
 
       <div className='clickable-picture-container'>
-        <ClickablePicture img='./assets/images/maxence.png' imgClicked='./assets/images/maxence-glasses.png'/>
+        
+        <ClickablePicture img={maxence} imgClicked={maxenceGlasses}/>
       </div>
     </div>
   );

@@ -31,7 +31,7 @@
   justify-content: space-between;
 }
 .Credit-card {
-  padding: 50px 20px 0px 20px;
+  padding: 30px 20px 0px 20px;
   border: none;
   border-radius: 10px;
   display: flex;
@@ -39,9 +39,8 @@
   justify-content: flex-end;
 }
 
-.Credit-card h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
+.Credit-card img {
+  height: 25px;
   align-self: flex-end;
 }
 
@@ -93,7 +92,7 @@
 }
 
 .clickable-picture-container img {
-  border: 1px solid red;
-  height: 100px;
+  
+  height: 150px;
   
 }
