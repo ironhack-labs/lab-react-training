@@ -17,7 +17,6 @@ export const Dice = () => {
 
     let counter = 0;
 
-
     function randomDice () {
 
         counter ++;

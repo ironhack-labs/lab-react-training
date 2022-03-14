@@ -13,6 +13,7 @@ import { ClickablePicture } from './components/ClickablePicture';
 import maxence from './assets/images/maxence.png';
 import maxenceGlasses from './assets/images/maxence-glasses.png';
 import { Dice } from './components/Dice';
+import { Carousel } from './components/Carousel';
 
 const cards = [
   {
@@ -144,6 +145,19 @@ function App() {
       <div className='dice-container containers'>
         
         <Dice />
+      </div>
+
+      <div className='carousel-container containers'>
+
+        <Carousel 
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+
       </div>
     </div>
   );
