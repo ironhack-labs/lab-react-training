@@ -6,8 +6,6 @@ function NumberTable(props) {
     arrLimit.push(i);
   }
 
-  console.log(arrLimit);
-
   return (
     <div className="numberTablesScript">
       {arrLimit.map((currentNumber) => {

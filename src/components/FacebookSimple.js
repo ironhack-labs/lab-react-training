@@ -3,7 +3,9 @@ import profiles from '../data/berlin.json';
 import './Component.css';
 
 function Facebook() {
-  const [colorCountry, setColorCountry] = useState('white');
+  const [country, setCountry] = useState('');
+  const [disable, setDisable] = useState('false');
+
   let countries = [];
 
   profiles.map((currentProfile) => {
@@ -12,38 +14,31 @@ function Facebook() {
     }
   });
 
-  function handleClick(event) {
-    if (event.target.innerText === profiles[1].country) {
-      setColorCountry('blue');
-    }
+  function handleBtnClick(event) {
+    setCountry(event.target.innerText);
+  }
 
-    function selectedCountry(currentCountry) {
-      if (currentCountry.country === event.target.innerText) {
-        return true;
-      }
-    }
-
-    let blueCountries = profiles.filter(selectedCountry);
-    console.log(blueCountries);
-
-    console.log(colorCountry);
-    console.log(event.target.innerText);
+  function handleImgClick() {
+    setDisable(true);
   }
 
   return (
     <div>
       <div>
         <button
-          style={{ backgroundColor: `${colorCountry}` }}
-          onClick={handleClick}
+          style={{ backgroundColor: 'All' === country ? '#A3D2E2' : 'white' }}
+          onClick={handleBtnClick}
         >
           All
         </button>
         {countries.map((currentCountry) => {
           return (
             <button
-              style={{ backgroundColor: `${colorCountry}` }}
-              onClick={handleClick}
+              style={{
+                backgroundColor:
+                  currentCountry === country ? '#A3D2E2' : 'white',
+              }}
+              onClick={handleBtnClick}
             >
               {currentCountry}
             </button>
@@ -57,17 +52,23 @@ function Facebook() {
           return (
             <div
               className="card"
-              style={{ backgroundColor: `${colorCountry}` }}
+              style={{
+                backgroundColor:
+                  currentInfo.country === country || country === 'All'
+                    ? '#A3D2E2'
+                    : 'white',
+              }}
             >
               <div>
                 <img
                   className="imgProfile"
                   src={currentInfo.img}
                   alt={currentInfo.firstName}
+                  onClick={handleImgClick}
                 />
               </div>
 
-              <div>
+              <div style={{ display: disable ? 'block' : 'none' }}>
                 <p className="text">
                   <strong>First name:</strong> {currentInfo.firstName}
                 </p>
