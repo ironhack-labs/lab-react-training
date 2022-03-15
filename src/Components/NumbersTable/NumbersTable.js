@@ -10,11 +10,13 @@ function NumbersTable(props){
 
     return(
         <table>
-            <tr>
-                {numbersArr.map((num) => (
-                    <td style={{ backgroundColor: num%2 === 0 ? 'red' : 'white' }}>{num}</td>
-                ))}
-            </tr>       
+            <tbody>
+                <tr>
+                    {numbersArr.map((num) => (
+                        <td key={num} style={{ backgroundColor: num%2 === 0 ? 'red' : 'white' }}>{num}</td>
+                    ))}
+                </tr>       
+            </tbody>
     
         </table>
     )

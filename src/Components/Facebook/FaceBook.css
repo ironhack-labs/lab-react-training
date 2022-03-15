@@ -1,0 +1,33 @@
+img {
+    width: 10rem;
+    height: 10rem;
+}
+
+p {
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons > button {
+    margin: 0.6rem;
+}
+
+.card {
+    border: black 2px solid;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.informations {
+    margin-left: 1rem;
+}

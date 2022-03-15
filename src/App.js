@@ -11,7 +11,7 @@ import ClickablePicture from './Components/ClickablePicture/ClickablePicture';
 import Dice from './Components/Dice/Dice';
 import Carousel from './Components/Carousel/Carousel';
 import NumbersTable from './Components/NumbersTable/NumbersTable';
-// import FaceBook from './Components/Facebook/FaceBook';
+import FaceBook from './Components/Facebook/FaceBook';
 
 import image from "./assets/images/maxence.png"
 import imageClicked from "./assets/images/maxence-glasses.png"
@@ -110,6 +110,8 @@ function App() {
       />
       <NumbersTable limit={12} />
 
+      <FaceBook />
+      
     </>
   );
 }
