@@ -5,21 +5,21 @@ function Carousel(props) {
 
     const { images } = props;
 
-    const [image, setImage] = useState(0);
+    const [index, setIndex] = useState(0);
 
     function handleLeftClick() {
-        if (image === 0) {
-            setImage(images.length - 1);
+        if (index === 0) {
+            setIndex(images.length - 1);
         } else {
-            setImage(image - 1)
+            setIndex(index - 1)
         }
     }
 
     function handleRightClick() {
-        if (image === images.length - 1) {
-            setImage(0)
+        if (index === images.length - 1) {
+            setIndex(0)
         } else {
-            setImage(image + 1);
+            setIndex(index + 1);
         }
     }
 
@@ -28,7 +28,7 @@ function Carousel(props) {
     return (
         <div>
             <div>
-                <img className="imgs" src={images[image]} alt="id" />
+                <img className="imgs" src={images[index]} alt="image" />
             </div>
             <div className="buttons-div">
                 <button className="button-left" onClick={handleLeftClick}> {"<"}</button>

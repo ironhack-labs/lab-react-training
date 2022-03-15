@@ -10,6 +10,7 @@ import LikeButton from './Components/LikeButton/LikeButton';
 import ClickablePicture from './Components/ClickablePicture/ClickablePicture';
 import Dice from './Components/Dice/Dice';
 import Carousel from './Components/Carousel/Carousel';
+import NumbersTable from './Components/NumbersTable/NumbersTable';
 // import FaceBook from './Components/Facebook/FaceBook';
 
 import image from "./assets/images/maxence.png"
@@ -107,8 +108,8 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+      <NumbersTable limit={12} />
 
-      {/* <FaceBook /> */}
     </>
   );
 }
