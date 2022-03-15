@@ -14,6 +14,7 @@ import maxence from './assets/images/maxence.png';
 import maxenceGlasses from './assets/images/maxence-glasses.png';
 import { Dice } from './components/Dice';
 import { Carousel } from './components/Carousel';
+import {NumbersTable} from './components/NumbersTable';
 
 const cards = [
   {
@@ -92,8 +93,8 @@ function App() {
   return (
     <div className="App">
 
-      {cards.map(elem => {
-        return <IdCard firstName={elem.firstName} lastName={elem.lastName} gender={elem.gender} height={elem.height} birth={elem.birth} picture={elem.picture} />
+      {cards.map((elem, index) => {
+        return <IdCard key={index} firstName={elem.firstName} lastName={elem.lastName} gender={elem.gender} height={elem.height} birth={elem.birth} picture={elem.picture} />
       })}
       
       <Greetings lang="de">Ludwig</Greetings>
@@ -111,8 +112,8 @@ function App() {
      
       <div className='credit-card-container containers'>
 
-        {creditCards.map(card => {
-          return <CreditCard type={card.type} number={card.number.slice(-4).padStart(card.number.length, '*')} expirationMonth={card.expirationMonth} expirationYear={card.expirationYear.toString().substr(-2)} bank={card.bank} owner={card.owner} bgColor={card.bgColor} color={card.color}/>
+        {creditCards.map((card, index) => {
+          return <CreditCard key={index} type={card.type} number={card.number.slice(-4).padStart(card.number.length, '*')} expirationMonth={card.expirationMonth} expirationYear={card.expirationYear.toString().substr(-2)} bank={card.bank} owner={card.owner} bgColor={card.bgColor} color={card.color}/>
         })}
       </div>
 
@@ -128,8 +129,8 @@ function App() {
 
       <div className='driver-cards containers'>
 
-        {driverCard.map(card => {
-          return <DriverCard name={card.name} rating={card.rating} img={card.img} car={card.car} />
+        {driverCard.map((card, index) => {
+          return <DriverCard key={index} name={card.name} rating={card.rating} img={card.img} car={card.car} />
         })}
       </div>
       
@@ -157,7 +158,10 @@ function App() {
             'https://randomuser.me/api/portraits/men/2.jpg'
           ]}
         />
+      </div>
 
+      <div className='numbers-table-container containers'>
+        <NumbersTable limit={12} />
       </div>
     </div>
   );

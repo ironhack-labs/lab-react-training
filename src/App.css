@@ -93,3 +93,15 @@
 .dice-container img {
   height: 150px;
 }
+
+.numbers-table-container {
+  height: 50px;
+  
+  display: flex;
+  align-items: center;
+}
+
+.numbers-table-container span {
+  padding: 10px 15px;
+  border: 1px solid #000;
+}

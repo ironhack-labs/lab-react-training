@@ -5,8 +5,6 @@ export const Carousel = ({images}) => {
 
     let [image, setImage] = useState(images[0]);
 
-    console.log('the index of actual image =>',images.indexOf(image));
-
     const getImageR = () => {
 
         if(images.indexOf(image) < images.length - 1 ) {
