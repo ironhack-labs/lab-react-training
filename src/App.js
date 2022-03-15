@@ -9,6 +9,8 @@ import DriverCard from './Components/DriverCard/DriverCard';
 import LikeButton from './Components/LikeButton/LikeButton';
 import ClickablePicture from './Components/ClickablePicture/ClickablePicture';
 import Dice from './Components/Dice/Dice';
+import Carousel from './Components/Carousel/Carousel';
+// import FaceBook from './Components/Facebook/FaceBook';
 
 import image from "./assets/images/maxence.png"
 import imageClicked from "./assets/images/maxence-glasses.png"
@@ -96,6 +98,17 @@ function App() {
       <ClickablePicture img={image} imgClicked={imageClicked} />
 
       <Dice />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      {/* <FaceBook /> */}
     </>
   );
 }

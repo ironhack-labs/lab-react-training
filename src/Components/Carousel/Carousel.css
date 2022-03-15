@@ -1,0 +1,16 @@
+
+.buttons-div{
+    display: flex;
+    position: relative;
+    bottom: 10rem;
+}
+.button-rigth{
+    margin-left: 17rem;
+}
+.button-left{
+    margin-left: 1rem;
+}
+.imgs{
+    width: 20rem;
+    margin-left: 1rem;
+}
