@@ -1,0 +1,25 @@
+.card {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.card-body{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.card-body p {
+    margin: 0.2rem;
+}
+
+
+.card img {
+    width: 7rem;
+    height: 7rem;
+}
