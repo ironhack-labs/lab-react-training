@@ -1,0 +1,13 @@
+.container-card {
+  display: flex;
+  
+
+}
+
+.size-img {
+  width: 120px;
+}
+
+.card-contact {
+  width: 500px;
+}
