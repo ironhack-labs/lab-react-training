@@ -1,0 +1,14 @@
+#card {
+    width: 100%;
+    border-radius: 4px;
+}
+
+#card img {
+    width: 200px;
+    object-fit: cover;
+}
+
+.card-info p {
+    margin: 0;
+    margin-bottom: 10px;
+}
