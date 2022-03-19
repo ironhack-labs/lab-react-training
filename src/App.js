@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import IdCard from './components/idCards/IdCards';
-import Greetings from './components/greetings/Greetings';
+import Greeting from './components/greeting/Greeting';
 import Random from './components/random/Random';
 import BoxColor from './components/boxColor/BoxColor';
 
@@ -25,7 +26,8 @@ function App() {
     // </div>
 
     <div>
-      <div>
+    test
+       <div>
         <h1> Iteration 1 </h1>
         <IdCard
           lastName="Doe"
@@ -47,10 +49,10 @@ function App() {
     
       <div>
         <h1> Iteration2</h1>
-        <Greetings lang="de">Ludwig</Greetings>
-        <Greetings lang="en">François</Greetings>
-        <Greetings lang="es">Ludwig</Greetings>
-        <Greetings lang="fr">François</Greetings>
+        <Greeting lang="de">Ludwig</Greeting>
+        <Greeting lang="en">François</Greeting>
+        <Greeting lang="es">Ludwig</Greeting>
+        <Greeting lang="fr">François</Greeting>
       </div>
 
       <div>
@@ -63,7 +65,7 @@ function App() {
         <h1> Iteration4 </h1>
         <BoxColor r={255} g={0} b={0}/>
         <BoxColor r={128} g={255} b={0}/>
-      </div>
+      </div> 
 
     </div>
   );
