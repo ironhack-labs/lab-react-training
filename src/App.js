@@ -1,8 +1,9 @@
 // import logo from './logo.svg';
 import './App.css';
-import IdCard from './components/IdCards';
-import Greetings from './components/Greetings';
-import Random from './random/Random';
+import IdCard from './components/idCards/IdCards';
+import Greetings from './components/greetings/Greetings';
+import Random from './components/random/Random';
+import BoxColor from './components/boxColor/BoxColor';
 
 function App() {
   return (
@@ -46,19 +47,24 @@ function App() {
     
       <div>
         <h1> Iteration2</h1>
-          <Greetings lang="de" />
-          <Greetings lang="en" />
-          <Greetings lang="es" />
-          <Greetings lang="fr" />
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="en">François</Greetings>
+        <Greetings lang="es">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
       </div>
 
       <div>
         <h1> Iteration3</h1>
-          <Random min={1} max={6}/>
-          <Random min={1} max={100}/>
+        <Random min={1} max={6}/>
+        <Random min={1} max={100}/>
       </div>
 
-      
+      <div>
+        <h1> Iteration4 </h1>
+        <BoxColor r={255} g={0} b={0}/>
+        <BoxColor r={128} g={255} b={0}/>
+      </div>
+
     </div>
   );
 }
