@@ -1,0 +1,25 @@
+span {
+    font-weight: bold;
+}
+
+.id-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1.5px solid black;
+    padding: 5px;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.id-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 6px;
+}
+
+.id-card p {
+    margin: 0;
+}
