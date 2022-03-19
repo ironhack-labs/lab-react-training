@@ -1,5 +1,5 @@
 import React from 'react';
-import { BoxColor } from './Boxcolor/BoxColor';
+import { BoxColor } from './BoxColor/BoxColor';
 
 const Iteration4 = () => {
   return (

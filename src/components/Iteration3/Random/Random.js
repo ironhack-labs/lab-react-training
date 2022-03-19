@@ -6,7 +6,7 @@ const getRandomNumber = (min, max) => {
 
 const Random = ({ min, max }) => {
   return (
-    <div class="alert alert-light" role="alert">
+    <div className="alert alert-light" role="alert">
       {`Random value between ${min} and ${max} => ${getRandomNumber(min, max)}`}
     </div>
   );
