@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+/* credit card */
+.rectangle{
+    height: 200px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-right: 30px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rectangle img{
+    height: 30px;
+    float: right;
+    margin: 20px ;
+}
+.serial{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.details{
+    margin-left: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.details p{
+    line-height: 3px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* DICE */
+.dice img{
+    height: 50px;
 }
