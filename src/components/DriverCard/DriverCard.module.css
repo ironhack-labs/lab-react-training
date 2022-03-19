@@ -1,0 +1,31 @@
+.driver_img {
+  border-radius: 100%;
+  background-position: center center;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #455eb5;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 50px;
+}
+
+.driver_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  line-height: 1.7em;
+  color: white;
+}
+
+.car_details {
+  font-size: 13px;
+}

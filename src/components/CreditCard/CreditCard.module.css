@@ -1,0 +1,27 @@
+.background_box {
+  border-radius: 5px;
+  height: 125px;
+  padding: 15px;
+  max-width: 255px;
+  margin: 5px;
+}
+
+.card_number {
+  font-size: 28px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.card_logo_box {
+  display: flex;
+  justify-content: flex-end;
+  height: 20px;
+}
+
+.owner_details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 13px;
+}

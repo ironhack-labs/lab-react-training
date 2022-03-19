@@ -1,0 +1,19 @@
+.paragraph {
+  color: red;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  max-width: max-content;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.userDetails {
+  text-align: left;
+  line-height: 0.5em;
+}
