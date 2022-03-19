@@ -1,0 +1,17 @@
+.card {
+  border: solid 2px darkblue;
+  display: flex;
+  flex-direction: row;
+
+
+  &__img {
+    width: 30%;
+  }
+
+  &__data {
+    width: 70%;
+  }
+
+  
+}
+
