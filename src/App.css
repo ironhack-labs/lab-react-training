@@ -42,3 +42,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.greetings{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
