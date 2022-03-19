@@ -1,0 +1,15 @@
+.box-color {
+    border: 1.5px solid black;
+    padding: 25px;
+    width: 50%;
+    margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-color p {
+    margin: 0;
+}

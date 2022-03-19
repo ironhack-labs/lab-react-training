@@ -1,0 +1,9 @@
+.random {
+    border: 1.5px solid black;
+    padding: 5px;
+    width: 50%;
+    margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+}
