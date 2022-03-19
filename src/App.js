@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCards';
+import Greetings from './components/Greetings';
 
 function App() {
   return (
@@ -20,9 +21,10 @@ function App() {
     //     </a>
     //   </header>
     // </div>
+    
     <div>
       <div>
-        <h1> IdCard - Iteration 1 </h1>
+        <h1> Iteration 1 </h1>
         <IdCard
           lastName="Doe"
           firstName="John"
@@ -40,8 +42,14 @@ function App() {
           picture="https://randomuser.me/api/ retratos/mujeres/44.jpg"
         />
       </div>
-
-
+    
+      <div>
+        <h1> Iteration2</h1>
+          <Greetings lang="de" />
+          <Greetings lang="en" />
+          <Greetings lang="es" />
+          <Greetings lang="fr" />
+      </div>
     </div>
   );
 }
