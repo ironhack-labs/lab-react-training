@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
 class Random extends Component {
-
-randomNumber = () => {
-  return Math.floor(Math.random() * (this.props.max - this.props.min + 1)) + this.props.min
-}
+  randomNumber = () => {
+    return Math.floor(Math.random() * (this.props.max - this.props.min + 1)) + this.props.min
+  }
 
   render() {
     return (
