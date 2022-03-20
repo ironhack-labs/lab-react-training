@@ -1,5 +1,13 @@
-.credit-card {
+.card-credit {
   width: 400px;
   height:200px;
   border: 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 6px;
+}
+
+.logo-card {
+  justify-items: flex-end;
 }
