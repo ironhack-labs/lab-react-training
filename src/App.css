@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.BoxColor{
+  text-align: center;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-color: black;
+  border-width: 1px;
+}
