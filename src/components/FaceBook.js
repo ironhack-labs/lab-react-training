@@ -6,14 +6,13 @@ export const FaceBook = () => {
 
     const [profiles, setProfiles] = useState(profilesData);
    
-
-
     const countryList = [...new Set(profiles.map(person => person.country))];
     const countryListArr = countryList.map(item => {
         return {name: item, color: ""};
     });
     
     const [country, setCountry] = useState(countryListArr);
+    const [showInfo, setShowInfo] = useState(false);
 
     
     const selectProfiles = (countryName) => {
@@ -60,6 +59,40 @@ export const FaceBook = () => {
         setProfiles(faceProfiles);
     };
 
+    const showProfileInfo = () => {
+        setShowInfo(!showInfo);
+    };
+
+    /*
+    
+    //sort string
+    let sortContactsName = () => {
+
+    contacts.sort((a,b) => {
+
+        if ( a.name < b.name ){
+            return -1;
+        }
+        if ( a.name > b.name ){
+            return 1;
+        } 
+        return 0;
+      
+    });
+    setContacts([...contacts]);
+    };
+
+    //sort num
+    const sortContactsPopularity = () => {
+
+        contacts.sort((a,b) => {
+
+        return b.popularity - a.popularity;
+        });
+        setContacts([...contacts]);
+    };
+    
+    */
 
     return(
         <div className='FaceBook containers'>
@@ -72,13 +105,13 @@ export const FaceBook = () => {
                 return(
 
                     <div className={`Id-card ${person.country}`} key={index.toString()} style={{backgroundColor: person.color}}>
-                        <img src={person.img} alt="Profile card" />
-                        <div>
+                        <img src={person.img} onClick={showProfileInfo} alt="Profile card" />
+                        {showInfo && <div>
                             <span><b>First Name:</b> {person.firstName}</span> <br />
                             <span><b>Last Name:</b> {person.lastName}</span> <br />
                             <span><b>Country:</b> {person.country}</span> <br />
-                            <span><b>Type:</b> {person.type}</span>
-                        </div>
+                            <span><b>Type:</b> {person.isStudent?"Student":"Teacher"}</span>
+                        </div>}
                     </div>
 
                 );
