@@ -8,6 +8,7 @@ import DriverCard from './components/DriverCard/DriverCard.js';
 import LikeButton from './components/LikeButton/LikeButton.js';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture.js';
 import Dice from './components/Dice/Dice.js';
+import Carousel from './components/Carousel/Carousel.js';
 
 import img from "../src/assets/images/maxence.png";
 import clickedImg from "../src/assets/images/maxence-glasses.png";
@@ -106,6 +107,16 @@ function App() {
       </div>
       <div className="mt-3 mb-3">
         <Dice />
+      </div>
+      <div className="mt-3 mb-3">
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
       </div>
     </div>
   );
