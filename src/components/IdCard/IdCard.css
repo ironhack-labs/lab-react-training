@@ -1,0 +1,10 @@
+.Card { 
+    display: flex;
+    margin: 5px;
+    border-style: solid;
+}
+
+.CardPicture {
+  
+    object-fit: contain;
+}

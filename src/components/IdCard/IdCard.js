@@ -3,7 +3,7 @@ import './IdCard.css'
 function IdCard({ data }) {
   return (
     <div className="Card">
-      <img src={data.picture} className="card-img top" alt="pic" />
+      <img src={data.picture} className="CardPicture" alt="pic" />
       <div className="CardBody">
         <p className="CardText">First name: {`${data.firstName}`}</p>
         <p className="CardText">Last name: {`${data.lastName}`}</p>
