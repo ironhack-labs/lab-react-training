@@ -14,6 +14,7 @@ function App() {
   return (
     <div>
     <div>
+    <h2>IdCard</h2>
       <IdCard
         lastName='Doe'
         firstName='John'
@@ -32,17 +33,22 @@ function App() {
       />
     </div>
     <div>
+    <h2>Greetings</h2>
       <Greetings lang="de">Luwding</Greetings>  
       <Greetings lang="fr">François</Greetings>
     </div>
     <div>
+    <h2>Random</h2>
       <Random min={1} max={6}/>
       <Random min={1} max={100}/>
     </div>
     <div>
+    <h2>BoxColor</h2>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
     </div>
+    <h2>CreditCard</h2>
+    <div className="container-card-credit">
     <div>
       <CreditCard
         type="Visa"
@@ -54,6 +60,8 @@ function App() {
         bgColor="#11aa99"
         color="white" 
       />
+    </div>
+    <div>
       <CreditCard
         type="Master Card"
         number="0123456789010995"
@@ -64,6 +72,8 @@ function App() {
         bgColor="#eeeeee"
         color="#222222"
       />
+    </div>
+    <div>
       <CreditCard
         type="Visa"
         number="0123456789016984"
@@ -75,7 +85,9 @@ function App() {
         color="white" 
       />
     </div>
+    </div>
     <div>
+    <h2>Rating</h2>
     <Rating>0</Rating>
     <Rating>1.49</Rating>
     <Rating>1.5</Rating>
@@ -84,6 +96,7 @@ function App() {
     <Rating>5</Rating>
     </div>
     <div>
+    <h2>DriverCard</h2>
     <DriverCard
       name="Travis Kalanick"
       rating={4.2}
@@ -93,7 +106,6 @@ function App() {
         licensePlate: "CO42DE"
   }}
 />
-
     <DriverCard
       name="Dara Khosrowshahi"
       rating={4.9}
@@ -105,14 +117,20 @@ function App() {
 />
     </div>
     <div>
+    <h2>LikeButton</h2>
     <LikeButton initialLike={0}
     />
     </div>
     <div>
+    <h2>ClickablePicture</h2>
     <ClickablePicture
-      img='./assets/images/maxence.png'
+      img='../images/maxence.png'
       imgClicked='./assets/images/maxence-glasses.png'
-/>
+    />
+    </div>
+    <div>
+      <h2>Dice</h2>
+      
     </div>
     </div>
   );

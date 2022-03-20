@@ -37,5 +37,12 @@
   }
 }
 
+.container-card-credit {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
