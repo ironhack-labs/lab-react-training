@@ -1,0 +1,9 @@
+.stars-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stars-container p {
+    margin: 0;
+}
