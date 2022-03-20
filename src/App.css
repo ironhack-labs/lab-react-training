@@ -49,3 +49,10 @@
   align-items: center;
   flex-direction: column;
 }
+
+.credit-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}

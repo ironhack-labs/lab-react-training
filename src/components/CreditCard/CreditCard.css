@@ -1,0 +1,39 @@
+.credit-card {
+    padding: 1rem;
+    border-radius: 12px;
+    margin: 1rem;
+}
+
+.credit-card-title{
+    width: 20rem;
+    height: 10rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo img{
+    width: 3rem;
+}
+
+.card-number {
+    font-size: 30px;
+}
+
+.info-card {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.info-card p {
+    margin: 0;
+}
+
+.info-card span {
+    margin-left: 2rem;
+}
