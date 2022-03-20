@@ -1,8 +1,9 @@
 import React from 'react';
+import './Greeting.css';
 
 const Greetings = ({lang, children }) => {
     return (
-      <div>
+      <div className="card-greeting">
         {lang === 'de' && 'Hallo '}
         {lang === 'es' && 'Hola '}
         {lang === 'en' && 'Hi'}
