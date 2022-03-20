@@ -1,5 +1,4 @@
 import React, { Component} from 'react';
-import Greetings from '../Greetings/Greetings';
 import './IdCard.css';
 
 class IdCard extends Component {
@@ -18,7 +17,7 @@ class IdCard extends Component {
               <h5 className="card-title">Last Name: {this.props.lastName}</h5>
               <h5 className="card-title">Gender: {this.props.gender}</h5>
               <h5 className="card-title">Height: {this.props.height}</h5>
-              {/* <h5 className="card-title">Birth: {this.props.birth}</h5> */}
+              <h5 className="card-title">Birth: {this.props.birth.toDateString()}</h5>
             </div>
             </div>
         </div>
