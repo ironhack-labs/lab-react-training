@@ -1,7 +1,6 @@
 import './Random.css'
 
 const Random = ({ min, max }) => {
-
     return(
         <div>
             <div className='card'>
