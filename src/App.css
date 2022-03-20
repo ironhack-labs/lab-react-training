@@ -13,3 +13,16 @@
   justify-content: space-between;
   align-items: center;
 }
+
+#ratings-div {
+  border: 1.5px solid black;
+  padding: 25px;
+  width: 50%;
+  margin-top: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+}
