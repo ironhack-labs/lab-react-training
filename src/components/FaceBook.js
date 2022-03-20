@@ -20,26 +20,42 @@ export const FaceBook = () => {
         let faceProfiles;
         let btns;
 
-        btns = country.map(element => {
-            if (element.name === countryName){
-                element.color = "lightblue";
-                return element;
-            } else {
+        if(countryName === "All"){
+            document.querySelector('.all').style.backgroundColor = 'lightblue';
+            btns = country.map(element => {
                 element.color = "";
                 return element;
-            }
-        });
-        
-        
-        faceProfiles = profiles.map(element => {
-            if (element.country === countryName){
+            });
+
+            faceProfiles = profiles.map(element => {
                 element.color = "lightblue";
                 return element;
-            } else {
-                element.color = "";
-                return element;
-            }
-        });
+            });
+
+
+        } else {
+            document.querySelector('.all').style.backgroundColor = '';
+            btns = country.map(element => {
+                if (element.name === countryName){
+                    element.color = "lightblue";
+                    return element;
+                } else {
+                    element.color = "";
+                    return element;
+                }
+            });
+
+            faceProfiles = profiles.map(element => {
+                if (element.country === countryName){
+                    element.color = "lightblue";
+                    return element;
+                } else {
+                    element.color = "";
+                    return element;
+                }
+            });
+        }
+        
         setCountry(btns);
         setProfiles(faceProfiles);
     };
@@ -48,14 +64,14 @@ export const FaceBook = () => {
     return(
         <div className='FaceBook containers'>
             <div className='listOfCountry'>
-                <button>All</button>
+                <button onClick={() => selectProfiles("All")} className={'all'}>All</button>
                 {country.map((country, index) => <button className={country.name} key={index.toString()} style={{backgroundColor: country.color}} onClick={() => selectProfiles(country.name)}>{country.name} </button>)}
 
             </div>
             {profiles.map((person, index) => {
                 return(
 
-                    <div className={`Id-card facebook-profile ${person.country}`} key={index.toString()} style={{backgroundColor: person.color}}>
+                    <div className={`Id-card ${person.country}`} key={index.toString()} style={{backgroundColor: person.color}}>
                         <img src={person.img} alt="Profile card" />
                         <div>
                             <span><b>First Name:</b> {person.firstName}</span> <br />
