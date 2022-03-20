@@ -1,3 +1,15 @@
 .App {
   text-align: center;
 }
+
+#credit-cards-div {
+  border: 1.5px solid black;
+  padding: 25px;
+  width: 51%;
+  margin-top: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

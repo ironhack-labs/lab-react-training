@@ -1,0 +1,58 @@
+.credit-card {
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+    height: 170px;
+    margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.credit-card-date-bank {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+}
+
+.credit-card-date-bank p:first-child {
+    margin-right: 20px;
+}
+
+.credit-card-info {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 13.5px;
+}
+
+.credit-card-img img {
+    width: 50px;
+}
+
+.credit-card-img {
+    align-self: flex-end;
+}
+
+.credit-card-name {
+    margin-top: -18px;
+    display: flex;
+    align-self: flex-start;
+}
+
+.credit-card-number p {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.credit-card-number {
+    align-self: center;
+    margin-top: 15px;
+}
