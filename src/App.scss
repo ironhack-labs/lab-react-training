@@ -61,3 +61,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+
+
+.credit-cards {
+  @include flex(flex, row, wrap, space-between, center);
+  margin-top: 50px
+}

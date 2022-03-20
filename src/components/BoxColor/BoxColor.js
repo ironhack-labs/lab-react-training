@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "./BoxColor.scss";
 
 class BoxColor extends Component {
-  
   render() {
     return (
       <div className="box"
@@ -14,5 +13,3 @@ class BoxColor extends Component {
 }
 
 export default BoxColor;
-
-/*  */
