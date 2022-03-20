@@ -5,7 +5,7 @@ function IdCard({lastName, firstName, gender, height, birth, picture}){
       <div className="card mb-3">
         <div className="row g-0">
           <div className="col-md-4">
-            <img src={picture} className="img-fluid img-size rounded-start" />
+            <img src={picture} className="img-fluid img-size rounded-start" alt="student"/>
           </div>
           <div className="col-md-8">
             <div className="card-body">

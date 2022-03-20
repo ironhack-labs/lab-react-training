@@ -1,0 +1,11 @@
+.rectangle{
+    height: 120px;
+    width: 280px;
+}
+.row-spacing{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
