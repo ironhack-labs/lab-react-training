@@ -15,6 +15,7 @@ import maxenceGlasses from './assets/images/maxence-glasses.png';
 import { Dice } from './components/Dice';
 import { Carousel } from './components/Carousel';
 import {NumbersTable} from './components/NumbersTable';
+import { FaceBook } from './components/FaceBook';
 
 const cards = [
   {
@@ -163,6 +164,8 @@ function App() {
       <div className='numbers-table-container containers'>
         <NumbersTable limit={12} />
       </div>
+
+      <FaceBook />
     </div>
   );
 }
