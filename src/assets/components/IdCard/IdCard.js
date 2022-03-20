@@ -10,14 +10,16 @@ class IdCard extends Component {
     return (
       <div className="container-card mb-2 mt-2">
         <div className="card-group card-contact">
-          <div className="card">
+          <div className="card container-card">
+          <div>
             <img className="img-thumbnail size-img" src={this.props.picture} alt="Card-contact"/>
+            </div>
             <div className="card-body">
-              <h5 className="card-title">First Name: {this.props.firstName}</h5>
-              <h5 className="card-title">Last Name: {this.props.lastName}</h5>
-              <h5 className="card-title">Gender: {this.props.gender}</h5>
-              <h5 className="card-title">Height: {this.props.height}</h5>
-              <h5 className="card-title">Birth: {this.props.birth.toDateString()}</h5>
+              <h6 className="card-title">First Name: {this.props.firstName}</h6>
+              <h6 className="card-title">Last Name: {this.props.lastName}</h6>
+              <h6 className="card-title">Gender: {this.props.gender}</h6>
+              <h6 className="card-title">Height: {this.props.height}</h6>
+              <h6 className="card-title">Birth: {this.props.birth.toDateString()}</h6>
             </div>
             </div>
         </div>

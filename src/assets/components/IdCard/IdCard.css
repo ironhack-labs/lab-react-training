@@ -1,11 +1,10 @@
 .container-card {
   display: flex;
-  
-
+  flex-direction:row;
 }
 
 .size-img {
-  width: 120px;
+  width: 150px;
 }
 
 .card-contact {

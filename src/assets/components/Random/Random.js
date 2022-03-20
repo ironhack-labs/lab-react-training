@@ -3,10 +3,10 @@ import React from 'react';
 const Random = ( {min , max }) => {
   return (
       <div>
-        <h4>
+        <h5>
           {`Random value between ${min} and ${max} =>`} 
           {Math.floor((Math.random() * (max-min)) +min)}
-        </h4>
+        </h5>
       </div>
   )
 }
