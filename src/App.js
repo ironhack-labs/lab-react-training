@@ -6,6 +6,11 @@ import CreditCard from './components/CreditCard/CreditCard.js';
 import Rating from './components/Rating/Rating.js';
 import DriverCard from './components/DriverCard/DriverCard.js';
 import LikeButton from './components/LikeButton/LikeButton.js';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture.js';
+import Dice from './components/Dice/Dice.js';
+
+import img from "../src/assets/images/maxence.png";
+import clickedImg from "../src/assets/images/maxence-glasses.png";
 import './App.css';
 
 function App() {
@@ -92,6 +97,16 @@ function App() {
         }}
       />
       <LikeButton />
+      <LikeButton />
+      <div className="container">
+        <ClickablePicture
+          img={img}
+          imgClicked={clickedImg}
+        />
+      </div>
+      <div className="mt-3 mb-3">
+        <Dice />
+      </div>
     </div>
   );
 }
