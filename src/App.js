@@ -8,6 +8,8 @@ import BoxColor from './components/boxColor/BoxColor';
 import CreditCard from './components/creditCard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/driverCard/DriverCard';
+import LikeButton from './components/likeButton/LikeButton';
+import ClickablePicture from './components/clickablePicture/ClicklablePicture';
 
 function App() {
   return (
@@ -131,11 +133,18 @@ function App() {
           }} 
         />
       </div>
+
       <div>
         <h1>Iteration8</h1>
+        <LikeButton initialLike={0}/>
       </div>
+
       <div>
         <h1>Iteration9</h1>
+        <ClickablePicture
+          img = '../images/maxence.png' 
+          imgClicked = '../images/maxence-glasses.png' 
+        />
       </div>
       <div>
         <h1>Iteration10</h1>
