@@ -14,14 +14,21 @@ import Dice from '../Dice'
 import Carousel from '../Carousel'
 import NumbersTable from '../NumbersTable'
 import FaceBook from '../FaceBook'
+import SignupPage from '../SignupPage'
 
 export default function LabPage() {
   return (
     <div className='container'>
         <h1>LAB PAGE</h1>
 
+        {/* FORM */}
+        <div>
+        <hr />
+        < SignupPage/>
+        </div>
 
-        {/* DICE */}
+
+        {/* FACEBOOK */}
         <div>
         <hr />
         <FaceBook/>
