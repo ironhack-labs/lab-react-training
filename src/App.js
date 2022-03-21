@@ -17,6 +17,7 @@ import { Carousel } from './components/Carousel';
 import {NumbersTable} from './components/NumbersTable';
 import { FaceBook } from './components/FaceBook';
 import { SignupPage } from './components/SignupPage';
+import { RGBColorPicker } from './components/RGBColorPicker';
 
 const cards = [
   {
@@ -170,11 +171,12 @@ function App() {
 
       <div className='containers'>
         <SignupPage />
-        {/* <>
-          <p>{sayHello}</p>
-          <p> Your email is {newUser.email}</p>
-        </> */}
       </div>
+
+      <div className='containers'>
+        <RGBColorPicker />
+      </div>
+
     </div>
   );
 }

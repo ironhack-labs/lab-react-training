@@ -109,3 +109,14 @@
 .elemLightBlue {
   background-color: lightblue;
 }
+.RGBColorPicker label {
+  display: flex;
+  align-items: center;
+}
+
+.RGBColorPicker label span {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
