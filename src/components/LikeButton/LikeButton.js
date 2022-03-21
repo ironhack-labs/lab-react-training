@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class LikeButton extends Component {
     state = {
         count : 0,
-        backGroundColor: "gray"
+        backGroundColor: "white"
     }
 
     countLikes = () => {
@@ -17,7 +17,9 @@ export default class LikeButton extends Component {
   render() {
     return (
       <div>
-          <button onClick={this.countLikes} style={{backgroundColor: this.state.backGroundColor}}>{this.state.count} Likes</button>
+          <button onClick={this.countLikes} style={{backgroundColor: this.state.backGroundColor}}>
+              {this.state.count} Likes
+              </button>
           </div>
     )
   }
