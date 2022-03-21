@@ -32,7 +32,9 @@ export default class Dice extends Component {
   render() {
     return (
       <div>
-          <img onClick={this.randomDice} src={this.state.randomDice} style={{ width: "100px", height: "100px"}} alt="img" />
+          <img onClick={this.randomDice} src={this.state.randomDice} 
+          style={{ width: "150px", height: "150px"}} 
+          alt="img" />
       </div>
     )
   }
