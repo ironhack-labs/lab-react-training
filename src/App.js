@@ -33,7 +33,7 @@ function App() {
           })}
         </div>
 
-        <div>
+        <div className="GreetingsCard">
           <h3>Greetings</h3>
           <Greetings lang="fr">François</Greetings>
           <Greetings lang="de">Ludwig</Greetings>
