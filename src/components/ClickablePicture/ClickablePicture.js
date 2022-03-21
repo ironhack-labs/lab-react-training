@@ -11,11 +11,10 @@ export default class ClickablePicture extends Component {
     }
 
   render() {
-      const { img, imgGlasses } = this.props
     return (
       <div>
           <img
-            src={this.state.clicked ? img : imgGlasses}
+            src={this.state.clicked ? this.props.img : this.props.imgGlasses}
             onClick={this.toggleState}
             alt="img"
           />
@@ -23,3 +22,7 @@ export default class ClickablePicture extends Component {
     )
   }
 }
+
+
+// const { img, imgGlasses } = props;
+
