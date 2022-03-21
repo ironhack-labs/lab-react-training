@@ -82,11 +82,11 @@ export const FaceBook = () => {
 
         profiles.sort((a,b) => {
 
-            if ( a.country.toLocaleLowerCase() < b.country.toLocaleLowerCase() ){
+            if ( a.country.toLowerCase() < b.country.toLowerCase() ){
 
                 return -1;
             }
-            if ( a.country.toLocaleLowerCase() > b.country.toLocaleLowerCase() ){
+            if ( a.country.toLowerCase() > b.country.toLowerCase() ){
 
                 return 1;
             } 
@@ -100,11 +100,11 @@ export const FaceBook = () => {
 
         profiles.sort((a,b) => {
 
-            if ( a.firstName.toLocaleLowerCase() < b.firstName.toLocaleLowerCase() ){
+            if ( a.firstName.toLowerCase() < b.firstName.toLowerCase() ){
 
                 return -1;
             }
-            if ( a.firstName.toLocaleLowerCase() > b.firstName.toLocaleLowerCase() ){
+            if ( a.firstName.toLowerCase() > b.firstName.toLowerCase() ){
 
                 return 1;
             } 
@@ -115,15 +115,13 @@ export const FaceBook = () => {
     };
 
     const handleFilterProfiles = str => {
-        let filteredProfiles;
-        str = str.toLocaleLowerCase();
+        let filteredProfiles = [];
+        
         if (str === "") {
-            filteredProfiles = [...profiles];
+            filteredProfiles = [...profilesData];
         } else {
-            filteredProfiles = profiles.filter(item => {
-                
-                return item.firstName.toLocaleLowerCase().includes(str);
-            });
+            const typedStr = str.toLowerCase();
+            filteredProfiles = profiles.filter(item => item.firstName.toLowerCase().includes(typedStr));
         }
         setProfiles(filteredProfiles);
     };

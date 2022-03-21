@@ -6,11 +6,10 @@ export const SearchProfile = ({filterProfiles}) => {
 
     const[str, setStr] = useState("");
 
-    const handleSearch = e => {
+    const handleSearch = (e) => {
         setStr(e.target.value);
         filterProfiles(e.target.value);
     };
-
 
     return (
         <div className="SearchProfile">
