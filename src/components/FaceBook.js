@@ -12,7 +12,6 @@ export const FaceBook = () => {
     });
     
     const [country, setCountry] = useState(countryListArr);
-    const [showInfo, setShowInfo] = useState(false);
 
     
     const selectProfiles = (countryName) => {
@@ -59,12 +58,28 @@ export const FaceBook = () => {
         setProfiles(faceProfiles);
     };
 
-    const showProfileInfo = () => {
-        setShowInfo(!showInfo);
+    const showProfileInfo = (personName) => {
+         let filteredProfiles = profiles.map(person => {
+            if (person.firstName !== personName) {
+                person.showInfo = false;
+                return person;
+            } else {
+                if(person.showInfo){
+                    person.showInfo = false;
+                    return person;
+                }
+                person.showInfo = true;
+                return person;
+            }
+        }); 
+        
+        
+
+        setProfiles(filteredProfiles);
     };
 
     /*
-    
+
     //sort string
     let sortContactsName = () => {
 
@@ -105,8 +120,8 @@ export const FaceBook = () => {
                 return(
 
                     <div className={`Id-card ${person.country}`} key={index.toString()} style={{backgroundColor: person.color}}>
-                        <img src={person.img} onClick={showProfileInfo} alt="Profile card" />
-                        {showInfo && <div>
+                        <img src={person.img} onClick={() => showProfileInfo(person.firstName)} alt="Profile card" />
+                        {person.showInfo && <div>
                             <span><b>First Name:</b> {person.firstName}</span> <br />
                             <span><b>Last Name:</b> {person.lastName}</span> <br />
                             <span><b>Country:</b> {person.country}</span> <br />
