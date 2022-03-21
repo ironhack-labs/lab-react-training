@@ -1,0 +1,10 @@
+.like-button {
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.like-button-container {
+    margin: 2rem;
+}
