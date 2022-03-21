@@ -1,14 +1,17 @@
 import React from "react";
+import './CreditCard.css';
 
 const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color }) => {
     const creditCardNumber = '**** **** ****' + number.slice(-4);
     return(
-        <div
+        <div 
+            className = "card"
             style={{
-
+                backgroundColor: `${bgColor}`, 
+                color: `${color}`
             }}>
             <div>
-                <h3>{type}</h3>
+                <h3 className="logoCard">{type}</h3>
                 <p>{creditCardNumber}</p>
             </div>
             <div>
