@@ -3,6 +3,7 @@ import IdCards from '../components/IdCards/IdCards';
 import Random from '../components/Random/Random'
 import BoxColor from '../components/BoxColor/BoxColor'
 import CreditCard from '../components/CreditCard/CreditCard';
+import Rating from '../components/Rating/Rating'
 
 
 function Main() {
@@ -84,6 +85,21 @@ function Main() {
                     color="white"
                 />
             </div>
+
+            {/* RATING */}
+            <h1 className='text-start mt-4'><strong>Rating</strong></h1>
+            <div className='text-start mt-4'>
+                <Rating>0</Rating>
+                <Rating>1.49</Rating>
+                <Rating>1.5</Rating>
+                <Rating>3</Rating>
+                <Rating>4</Rating>
+                <Rating>5</Rating>
+            </div>
+
+
+
+
         </div>
     );
 }
