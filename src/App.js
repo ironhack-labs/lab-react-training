@@ -12,7 +12,7 @@ import LikeButton from './components/likeButton/LikeButton';
 import ClickablePicture from './components/clickablePicture/ClicklablePicture';
 import picture from './assets/images/maxence.png'
 import picture2 from './assets/images/maxence-glasses.png'
-
+import Dice from './components/dice/Dice';
 
 function App() {
   return (
@@ -149,6 +149,8 @@ function App() {
 
       <div>
         <h1>Iteration10</h1>
+        <hr />
+        <Dice />
       </div>
       <div>
         <h1>Iteration11</h1>
