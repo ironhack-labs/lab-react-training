@@ -8,7 +8,7 @@ class ClickablePicture extends Component {
         console.log(props);
         
         this.state = {
-          clicked: true
+          clicked: false
         }
 
     }
@@ -25,7 +25,7 @@ class ClickablePicture extends Component {
 
             <button style={{height:150, width:150, backgroundColor:'transparent', border:'none'}}> 
                 <img style={{height:150, width:150}}
-                src= {this.state.clicked ? this.props.img : this.props.imgClicked} 
+                src= {this.state.clicked ? this.props.imgClicked : this.props.img} 
                 onClick={() => {
                   this.handleClick();
                 }}/>
