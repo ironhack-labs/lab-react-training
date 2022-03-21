@@ -1,6 +1,7 @@
 //jshint esversion:8
 import profilesData from '../data/berlin.json';
 import { useState } from 'react';
+import { SearchProfile } from './SearchProfile';
 
 export const FaceBook = () => {
 
@@ -73,48 +74,73 @@ export const FaceBook = () => {
             }
         }); 
         
-        
-
         setProfiles(filteredProfiles);
     };
 
-    /*
-
-    //sort string
-    let sortContactsName = () => {
-
-    contacts.sort((a,b) => {
-
-        if ( a.name < b.name ){
-            return -1;
-        }
-        if ( a.name > b.name ){
-            return 1;
-        } 
-        return 0;
-      
-    });
-    setContacts([...contacts]);
-    };
-
-    //sort num
-    const sortContactsPopularity = () => {
-
-        contacts.sort((a,b) => {
-
-        return b.popularity - a.popularity;
-        });
-        setContacts([...contacts]);
-    };
     
-    */
+    let sortByCountry = () => {
+
+        profiles.sort((a,b) => {
+
+            if ( a.country.toLocaleLowerCase() < b.country.toLocaleLowerCase() ){
+
+                return -1;
+            }
+            if ( a.country.toLocaleLowerCase() > b.country.toLocaleLowerCase() ){
+
+                return 1;
+            } 
+            return 0;
+        });
+
+    setProfiles([...profiles]);
+    };
+
+    let sortByFirstName = () => {
+
+        profiles.sort((a,b) => {
+
+            if ( a.firstName.toLocaleLowerCase() < b.firstName.toLocaleLowerCase() ){
+
+                return -1;
+            }
+            if ( a.firstName.toLocaleLowerCase() > b.firstName.toLocaleLowerCase() ){
+
+                return 1;
+            } 
+            return 0;
+        });
+
+    setProfiles([...profiles]);
+    };
+
+    const handleFilterProfiles = str => {
+        let filteredProfiles;
+        str = str.toLocaleLowerCase();
+        if (str === "") {
+            filteredProfiles = [...profiles];
+        } else {
+            filteredProfiles = profiles.filter(item => {
+                
+                return item.firstName.toLocaleLowerCase().includes(str);
+            });
+        }
+        setProfiles(filteredProfiles);
+    };
 
     return(
         <div className='FaceBook containers'>
             <div className='listOfCountry'>
-                <button onClick={() => selectProfiles("All")} className={'all'}>All</button>
-                {country.map((country, index) => <button className={country.name} key={index.toString()} style={{backgroundColor: country.color}} onClick={() => selectProfiles(country.name)}>{country.name} </button>)}
 
+                <button onClick={() => selectProfiles("All")} className={'all'}>All</button>
+
+                {country.map((country, index) => <button className={country.name} key={index.toString()} style={{backgroundColor: country.color}} onClick={() => selectProfiles(country.name)}>{country.name} </button>)} <br/>
+
+                <button onClick={sortByCountry}>Sort by Country</button>
+                <button onClick={sortByFirstName}>Sort by First Name</button>
+                
+                <SearchProfile filterProfiles={handleFilterProfiles}/>
+                
             </div>
             {profiles.map((person, index) => {
                 return(
