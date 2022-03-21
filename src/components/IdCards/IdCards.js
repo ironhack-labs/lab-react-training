@@ -1,9 +1,6 @@
 import React from 'react';
 
 const IdCards = (props) => {
-    const parseDate = (date) => {
-        return date.getFullYear()
-    }
     const parseHeight = (height)=> {
         return height/100
     }  
@@ -17,7 +14,7 @@ const IdCards = (props) => {
                             <h5 className="card-title">Last Name: {props.lastName}</h5>
                             <h5 className="card-title">Gender: {props.gender}</h5>
                             <h5 className="card-title">Height: {parseHeight(props.height)}m</h5>
-                            <h5 className="card-title">Birth: {parseDate(props.birth)}</h5>
+                            <h5 className="card-title">Birth: {props.birth.toDateString()}</h5>
                         </div>
                     </div>
                 </div>
