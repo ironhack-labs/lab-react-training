@@ -20,28 +20,56 @@ class FaceBook extends Component {
                 countriesArr.push(profile.country);
             };
         });
+
+        this.setState({
+            countries: countriesArr
+        });
     };
 
-    studentMatchCountry(){
-        //...
+    chooseCountry(country){
+        this.setState({
+            countrySelected: country
+        })
+    }
+
+    clearCountry(){
+        this.setState({
+            countrySelected: ''
+        })
     }
     
     render(){
         return (
             <div className="facebook-div mt-3">
-                {
-                    this.state.countries.map((country, index) => {
-                        return (
-                            <div className="country-button" key={index}>
-                                <button>{country}</button>
-                            </div>
-                        )
-                    })
-                }
+                <div className="country-btns-div container">
+                    <button
+                        style={{backgroundColor: this.state.countrySelected === '' ? "#a3d2e2" : "#fff" }}
+                        onClick={() => this.clearCountry()}
+                        className="country-btn m-1" 
+                        key='all-countries'>
+                            All
+                    </button>
+                    {
+                        this.state.countries.map((country, index) => {
+                            return (
+                                <button
+                                style={{backgroundColor: this.state.countrySelected === country ? "#a3d2e2" : "#fff" }}
+                                onClick={() => this.chooseCountry(country)}
+                                className="country-btn m-1" 
+                                key={index}>
+                                    {country}
+                                </button>
+                            )
+                        })
+                    }
+                </div>
                 {
                     profiles.map((profile, index) => {
                         return (
-                            <div className="facebook-card container" key={index}>
+                            <div 
+                            style={{backgroundColor: this.state.countrySelected === profile.country ? "#a3d2e2" : "#fff" }}
+                            className="facebook-card container"
+                            key={index}>
                                 <img src={`${profile.img}`} alt="" />
                                 <div className="facebook-card-content">
                                     <p><span>First name</span>: {profile.firstName}</p>
