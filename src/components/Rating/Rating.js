@@ -3,7 +3,7 @@ import './Rating.css'
 
 const Rating = ({children}) => {
   return (
-    <div className="d-flex mt-2">
+    <div className="d-flex mt-2 rating">
       {[1,2,3,4,5].map( (star, index) => {
           return (
             <div key={index} 
