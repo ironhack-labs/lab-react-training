@@ -9,7 +9,6 @@ class Dice extends Component {
   state = {
     firstImage: this.randomDiceImage(),
   }
-
   
   changeDiceImage = () => {
     this.setState({
@@ -27,11 +26,9 @@ class Dice extends Component {
     return (
       <div>
         <img className="dice-image" src={require(`../../assets/images/dice${this.state.firstImage}.png`).default} onClick={this.changeDiceImage} alt="dice" />
-      </div>
-      
+      </div>   
     )
   }
-  
 }
 
 export default Dice;
