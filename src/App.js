@@ -16,6 +16,7 @@ import { Dice } from './components/Dice';
 import { Carousel } from './components/Carousel';
 import {NumbersTable} from './components/NumbersTable';
 import { FaceBook } from './components/FaceBook';
+import { SignupPage } from './components/SignupPage';
 
 const cards = [
   {
@@ -91,6 +92,7 @@ const driverCard = [
 ];
 
 function App() {
+
   return (
     <div className="App">
 
@@ -140,7 +142,6 @@ function App() {
       </div>
 
       <div className='clickable-picture-container containers'>
-        
         <ClickablePicture img={maxence} imgClicked={maxenceGlasses}/>
       </div>
 
@@ -166,6 +167,14 @@ function App() {
       </div>
 
       <FaceBook />
+
+      <div className='containers'>
+        <SignupPage />
+        {/* <>
+          <p>{sayHello}</p>
+          <p> Your email is {newUser.email}</p>
+        </> */}
+      </div>
     </div>
   );
 }
