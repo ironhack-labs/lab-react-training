@@ -1,0 +1,22 @@
+.carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    width: 15rem;
+}
+
+.carousel-buttons  button{
+    border:  none;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    background-color: rgb(207, 207, 207);
+    color: rgb(65, 65, 65);
+    cursor: pointer;
+}
