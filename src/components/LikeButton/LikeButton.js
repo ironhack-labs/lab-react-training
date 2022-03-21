@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class LikeButton extends Component {
     state = {
         count : 0,
-        backGroundColor: "white"
+        backGroundColor: 'purple'
     }
 
     countLikes = () => {
