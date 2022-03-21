@@ -36,3 +36,19 @@
 .dice img{
     height: 50px;
 }
+
+/* NumbersTable */
+.squareDiv{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.square{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

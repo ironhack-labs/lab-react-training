@@ -12,12 +12,27 @@ import picture from "../../assets/images/maxence.png"
 import picture2 from "../../assets/images/maxence-glasses.png"
 import Dice from '../Dice'
 import Carousel from '../Carousel'
-
+import NumbersTable from '../NumbersTable'
+import FaceBook from '../FaceBook'
 
 export default function LabPage() {
   return (
     <div className='container'>
         <h1>LAB PAGE</h1>
+
+
+        {/* DICE */}
+        <div>
+        <hr />
+        <FaceBook/>
+        </div>
+
+
+        {/* DICE */}
+        <div>
+        <hr />
+        <NumbersTable limit={12} />
+        </div>
 
         {/* CAROUSEL */}
         <div>

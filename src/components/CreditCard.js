@@ -29,15 +29,3 @@ export default function CreditCard(props) {
     </div>
   )
 }
-
-
-{/* <CreditCard
-  type="Visa"
-  number="0123456789018845"
-  expirationMonth={3}
-  expirationYear={2021}
-  bank="BNP"
-  owner="Maxence Bouret"
-  bgColor="#11aa99"
-  color="white" 
-/> */}
