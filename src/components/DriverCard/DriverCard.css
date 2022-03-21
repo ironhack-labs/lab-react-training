@@ -1,0 +1,45 @@
+.driven-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #455EB5;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 0.7rem;
+    width: 50%;
+}
+
+.card-image img {
+    width: auto;
+    height: 100%;
+}
+
+.card-image {
+    display: inline-block;
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.body-driven-card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    margin-left: 1rem;
+    color: white;
+}
+
+.body-driven-card h2{
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.rating {
+    height: 10rem;
+    font-size: 1000rem;
+    margin-bottom: 1rem;
+}

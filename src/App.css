@@ -37,10 +37,19 @@
   }
 }
 
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+}
+ */
 .cards{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .greetings{
@@ -48,6 +57,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .credit-card {
@@ -55,4 +65,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+
+.driven-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
