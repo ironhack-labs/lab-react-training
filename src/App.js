@@ -110,6 +110,7 @@ function App() {
 
       <div className='mt3'>
         <LikeButton />
+        <LikeButton />
       </div>
 
 

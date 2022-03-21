@@ -20,7 +20,7 @@ class LikeButton extends Component {
   render() {    
     return (
       <button 
-        className='btn btn-primary' 
+        className='btn btn-primary m-2' 
         onClick={ () => this.addLike() }
         style={{ backgroundColor: this.state.backgroundColor }}>
           <span>{this.state.likes}</span> Likes
