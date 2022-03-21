@@ -3,15 +3,11 @@ import React, { Component } from 'react'
 class ClickablePicture extends Component {
 
 
-    constructor(props) {
-        super(props);
-        console.log(props);
-        
-        this.state = {
+        state = {
           clicked: false
         }
 
-    }
+    
     handleClick = ()=> {
         this.setState({
            clicked: !this.state.clicked

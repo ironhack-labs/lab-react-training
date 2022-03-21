@@ -35,7 +35,9 @@ class LikedButton extends Component {
                   this.handleColorAndCounter();
                 }}
               >
-               { this.state.count ===1 ? <div> {this.state.count}Like </div> : <div> {this.state.count} Likes </div>}
+               { this.state.count ===1 
+               ? <div> {this.state.count} Like </div> 
+               : <div> {this.state.count} Likes </div>}
               </button>
             </div>
         )
