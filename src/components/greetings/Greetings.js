@@ -14,7 +14,7 @@ const sayHello = (props) =>{
 }
 const Greetings = ({ lang, children }) => {
      return(
-         <p className>{sayHello(lang)} {children}</p>
+         <p>{sayHello(lang)} {children}</p>
      )
 }
 export default Greetings;

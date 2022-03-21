@@ -1,10 +1,12 @@
 .Card { 
     display: flex;
     margin: 5px;
+    padding: 1px;
     border-style: solid;
+    text-align: left;
 }
 
 .CardPicture {
-  
-    object-fit: contain;
+  width: 200px;
+  height: 200px
 }

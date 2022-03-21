@@ -6,21 +6,21 @@ import Random from './components/random/random';
 function App() {
   const data = [
     {
-      lastName: 'Doe',
-      firstName: 'John',
+      lastName: 'Sponge',
+      firstName: 'Bob',
       gender: 'male',
-      height: 178,
-      birth: new Date('1992-07-14'),
-      picture: 'https://randomuser.me/api/portraits/men/44.jpg',
+      height: 128,
+      birth: new Date('1986-07-14'),
+      picture: 'https://thypix.com/wp-content/uploads/2021/11/sponge-bob-profile-picture-thypix-28.jpg',
     },
 
     {
-      lastName: 'Delores',
-      firstName: 'Obrien',
+      lastName: 'Ciccone',
+      firstName: 'Madonna Louise',
       gender: 'female',
-      height: 172,
-      birth: new Date('1988-05-11'), //ni puta idea de como formatear esto. si uso '.format('MM-DD-YYYY')' peta
-      picture: 'https://randomuser.me/api/portraits/women/44.jpg',
+      height: 161,
+      birth: new Date('1958-08-16'), //ni puta idea de como formatear esto. si uso '.format('MM-DD-YYYY')' peta
+      picture: 'http://1.bp.blogspot.com/_tHQ1gA2brsc/TCO-RLIQXfI/AAAAAAAAFSE/_x3LpZZ261s/s400/madonna-80%27s.jpg',
     },
   ];
 
@@ -39,9 +39,10 @@ function App() {
           <Greetings lang="de">Ludwig</Greetings>
         </div>
       </div>
-      <div>
+      <div className="RandomCard">
         <h3>Random integer</h3>
         <Random min={1} max={6}></Random>
+        <Random min={1} max={100}></Random>
       </div>
     </>
   );
