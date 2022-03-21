@@ -1,9 +1,32 @@
-import React, { Component } from 'react'
+const Rating = ({ children }) => {
 
-export default class Rating extends Component {
-  render() {
+    let starsNumbers = Math.round(Number(children));
+
+    let stars = '';
+
+    if(starsNumbers === 0) {
+        stars = <p>☆☆☆☆☆</p>
+    }
+    if(starsNumbers === 1) {
+        stars = <p>★☆☆☆☆</p>
+    }
+    if(starsNumbers === 2) {
+        stars = <p>★★☆☆☆</p>
+    }
+    if(starsNumbers === 3) {
+        stars = <p>★★★☆☆</p>
+    }
+    if(starsNumbers === 4) {
+        stars = <p>★★★★☆</p>
+    }
+    if(starsNumbers === 5) {
+        stars = <p>★★★★★</p>
+    }
     return (
-      <div>Rating</div>
+      <div>
+          {stars}
+      </div>
     )
   }
-}
+  
+  export default Rating 

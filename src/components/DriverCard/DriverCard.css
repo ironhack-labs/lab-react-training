@@ -1,0 +1,24 @@
+.driverCardContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 130px;
+    background-color: blue;
+}
+
+.driverAvatarContainer{
+    height: 130px;
+    width: 160px;
+}
+
+.driverAvatar {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.driverInfo{
+    color: white;
+    margin-right: 20%;
+}
