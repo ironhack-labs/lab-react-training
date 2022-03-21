@@ -1,0 +1,12 @@
+.start {
+    width: 30px;
+    height: 30px;
+    background: url('./../../assets/images/star.png');
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.bg-Star {
+    background: url('./../../assets/images/star-bg.png');
+}
