@@ -1,0 +1,11 @@
+@import "../../../src/App.scss";
+
+.driver-card {
+  @include flex(flex, row, nowrap, center, center);
+
+  &__img {
+    width: 100px;
+    height: auto;
+    margin: 0px 20px;
+  }
+}
