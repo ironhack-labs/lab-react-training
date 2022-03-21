@@ -10,6 +10,9 @@ import Rating from './components/rating/Rating';
 import DriverCard from './components/driverCard/DriverCard';
 import LikeButton from './components/likeButton/LikeButton';
 import ClickablePicture from './components/clickablePicture/ClicklablePicture';
+import picture from './assets/images/maxence.png'
+import picture2 from './assets/images/maxence-glasses.png'
+
 
 function App() {
   return (
@@ -31,7 +34,6 @@ function App() {
     // </div>
 
     <div>
-      test
       <div>
         <h1> Iteration 1 </h1>
         <IdCard
@@ -133,19 +135,18 @@ function App() {
           }} 
         />
       </div>
-
       <div>
         <h1>Iteration8</h1>
         <LikeButton initialLike={0}/>
       </div>
-
       <div>
         <h1>Iteration9</h1>
-        <ClickablePicture
-          img = '../images/maxence.png' 
-          imgClicked = '../images/maxence-glasses.png' 
-        />
+          <ClickablePicture
+            img={picture}
+            img2={picture2}
+          />
       </div>
+
       <div>
         <h1>Iteration10</h1>
       </div>
