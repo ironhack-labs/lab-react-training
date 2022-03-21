@@ -8,6 +8,9 @@ import CreditCard from './Components/CreditCard/CreditCard';
 import Rating from './Components/Rating/Rating';
 import DriverCard from './Components/DriverCard/DriverCard';
 import LikedButton from './Components/LikedButton/LikedButton';
+import ClickablePicture from './Components/ClickablePicture/ClickablePicture';
+import img from './assets/images/maxence.png'
+import imgClicked from './assets/images/maxence-glasses.png'
 
 const data = [{
   lastName: 'Doe',
@@ -113,7 +116,7 @@ function App() {
             model: "Toyota Corolla Altis",
             licensePlate: "CO42DE"
           }}
-        /> 
+        />
         <DriverCard
           name="Dara Khosrowshahi"
           rating={4.9}
@@ -124,11 +127,21 @@ function App() {
           }}
         />
       </div>
-      <hr/>
-      <div className='LikedButton'>
+      <hr />
+      <div className='row g-0 my-2 mx-2'>
+        <div className='d-flex flex-row- justify-content-between mt-2 px-2'>
           <LikedButton/>
+        </div>
       </div>
-
+      <hr/>
+      <div className='row g-0 my-2 mx-2'>
+        <div className='d-flex flex-row- justify-content-between mt-2 px-2'>
+        <ClickablePicture
+        img={img}
+        imgClicked={imgClicked}
+        />
+        </div>
+      </div>
     </div>
   );
 }

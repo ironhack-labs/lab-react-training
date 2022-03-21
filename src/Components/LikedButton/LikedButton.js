@@ -29,7 +29,7 @@ class LikedButton extends Component {
         return (
             <div>
               <button
-              className='btn btn'
+              className='likedButton'
                 style={{ backgroundColor: `${this.state.color}` }}
                 onClick={() => {
                   this.handleColorAndCounter();
