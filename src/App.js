@@ -7,6 +7,7 @@ import BoxColor from './Components/BoxColor/BoxColor';
 import CreditCard from './Components/CreditCard/CreditCard';
 import Rating from './Components/Rating/Rating';
 import DriverCard from './Components/DriverCard/DriverCard';
+import LikedButton from './Components/LikedButton/LikedButton';
 
 const data = [{
   lastName: 'Doe',
@@ -123,7 +124,11 @@ function App() {
           }}
         />
       </div>
-      
+      <hr/>
+      <div className='LikedButton'>
+          <LikedButton/>
+      </div>
+
     </div>
   );
 }
