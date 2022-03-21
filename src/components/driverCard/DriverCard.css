@@ -1,0 +1,16 @@
+.imgDriver {
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+}
+  
+.containerDriveCard {
+    background-color: rgb(62, 62, 185);
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

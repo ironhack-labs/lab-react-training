@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Rating.css';
 
-class Rating extends Component {
+class Rating extends React.Component {
     constructor(props) {
         super(props);
         this.num = Math.round(props.children)
