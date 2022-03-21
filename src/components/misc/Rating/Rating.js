@@ -2,8 +2,8 @@ import React from 'react';
 
 const Rating = (props) => {
 
-    let number = Math.round(props.children)
-    let stars = '★'.repeat(number) + '☆'.repeat( 5 - number );
+    const numberOfStars = Math.round(props.children)
+    const stars = '★'.repeat(numberOfStars) + '☆'.repeat( 5 - numberOfStars );
 
     return (
         <div>
