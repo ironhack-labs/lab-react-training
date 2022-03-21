@@ -1,0 +1,26 @@
+.facebook-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1.5px solid black;
+    padding: 5px;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.facebook-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 6px;
+}
+
+.facebook-card-content p {
+    margin: 0;
+    font-size: 25px;
+}
+
+span {
+    font-weight: bold;
+}

@@ -1,0 +1,23 @@
+.numbers-table-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 45%;
+}
+
+.numbers-table-item {
+    border: 1.5px solid black;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers-table-item p {
+    margin: 0;
+    font-size: 30px;
+}

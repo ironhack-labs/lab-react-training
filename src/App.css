@@ -5,7 +5,7 @@
 #credit-cards-div {
   border: 1.5px solid black;
   padding: 25px;
-  width: 51%;
+  width: 80%;
   margin-top: 20px;
   font-weight: bold;
   display: flex;
@@ -17,7 +17,7 @@
 #ratings-div {
   border: 1.5px solid black;
   padding: 25px;
-  width: 50%;
+  width: 80%;
   margin-top: 20px;
   font-weight: bold;
   display: flex;
