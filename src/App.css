@@ -93,3 +93,10 @@
   align-items: center;
   margin: 2rem;
 }
+
+.facebook-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
