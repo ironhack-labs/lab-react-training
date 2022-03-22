@@ -31,3 +31,10 @@
     width: 7rem;
     height: 7rem;
 }
+
+.country-buttons {
+    border: 1 solid rgb(199, 199, 199);
+    border-radius: 15px;
+    padding: 0.3rem;
+    margin: 0.1rem;
+}
