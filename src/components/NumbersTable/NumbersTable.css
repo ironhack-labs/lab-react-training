@@ -1,0 +1,17 @@
+.NumbersTable{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+ 
+}
+
+.NumbersTable-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 3rem;
+    border: 1px solid rgb(0, 0, 0);
+}
