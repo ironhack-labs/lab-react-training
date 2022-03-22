@@ -8,6 +8,9 @@ import Rating from './assets/components/Rating/Rating';
 import DriverCard from './assets/components/DriverCard/DriverCard';
 import LikeButton from './assets/components/ButtonLike/LikeButton';
 import ClickablePicture from './assets/components/ClickablePicture/ClickablePicture';
+import img from './assets/images/maxence.png';
+import imgClicked from './assets/images/maxence-glasses.png'
+import Dice from './assets/components/Dice/Dice';
 
 
 function App() {
@@ -124,13 +127,17 @@ function App() {
     <div>
     <h2>ClickablePicture</h2>
     <ClickablePicture
-      img='../images/maxence.png'
-      imgClicked='./assets/images/maxence-glasses.png'
+      img={img}
+      imgClicked={imgClicked}
     />
     </div>
     <div>
-      <h2>Dice</h2>
+    <h2>Dice</h2>
+    <Dice />  
+    <div>
+      <h2>Carousel</h2>
       
+    </div>  
     </div>
     </div>
   );

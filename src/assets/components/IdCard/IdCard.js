@@ -2,10 +2,6 @@ import React, { Component} from 'react';
 import './IdCard.css';
 
 class IdCard extends Component {
-  constructor(props) {
-    super(props);
-  }
-  
   render() {
     return (
       <div className="container-card mb-2 mt-2">

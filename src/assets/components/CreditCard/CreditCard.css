@@ -8,3 +8,7 @@
   flex-direction: row;
   margin-top: 6px;
 }
+
+.logo-card {
+  width: 55px;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-// import visa from '../images/visa.png';
+import visa from '../../images/visa.png';
 // import masterCard from '../images/master-card.svg';
 import './CreditCard.css';
 
@@ -9,6 +9,9 @@ const CreditCard =({ type, number, expirationMonth, expirationYear, bank, owner,
   return (
     <div className="card-credit" style={{ backgroundColor: `${bgColor}`, color: `${color}`}}>
     <div>
+    <div>
+      <img className="logo-card" src={visa} alt="logo-visa"/>
+    </div>
       <h3 className="logo-card">{type}</h3>
       <p>●●●● ●●●● ●●●● {number.slice(-4, 16)}</p>
       <p>Expires: {expirationMonth}/{expirationYear} {bank}</p>
