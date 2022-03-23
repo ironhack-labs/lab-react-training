@@ -1,0 +1,28 @@
+.credit-card {
+    margin: 40px 0px;
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+}
+.credit-logo-div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.credit-logo {
+    width: 50px;
+    padding: 20px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.expire-bank {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}

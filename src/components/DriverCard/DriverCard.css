@@ -1,0 +1,28 @@
+.driver-card {
+    margin-top: 30px;
+    height: 150px;
+    width: 550px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(97, 105, 206);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.driver-card > img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.driver-card > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h4 {
+    margin: 0px;
+}
