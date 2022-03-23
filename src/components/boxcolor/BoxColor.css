@@ -1,10 +1,11 @@
+.BoxColorContainer {
+    margin: 5px;
+    padding-left: 5px;
+}
+
 .BoxColor {
     width: 300px;
     height: 100px;
     text-align: center;
     
-}
-
-.ColorText {
-    padding: 100px;
 }

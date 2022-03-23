@@ -3,6 +3,7 @@ import IdCard from './components/IdCard/IdCard';
 import Greetings from './components/greetings/Greetings';
 import Random from './components/random/random';
 import BoxColor from './components/boxcolor/BoxColor';
+import CreditCard from './components/creditcard/CreditCard';
 
 function App() {
   const data = [
@@ -48,16 +49,50 @@ function App() {
         <Random min={1} max={100}></Random>
       </div>
 
-      <div className="container">
+      <div className="BoxColorContainer">
         <h3>BoxColor</h3>
-        <div className="BoxColor">
-          <BoxColor r={181} g={234} b={215} />
-          <BoxColor r={226} g={240} b={203} />
-          <BoxColor r={199} g={206} b={234} />
-          <BoxColor r={255} g={218} b={193} />
-          <BoxColor r={255} g={183} b={178} />
-        </div>
+
+        <BoxColor r={181} g={234} b={215} />
+        <BoxColor r={226} g={240} b={203} />
+        <BoxColor r={199} g={206} b={234} />
+        <BoxColor r={255} g={218} b={193} />
+        <BoxColor r={255} g={183} b={178} />
       </div>
+      <br />
+      
+      <h3>Credit Cards</h3>
+      <CreditCard
+        type="Visa"
+        number="0123456789018845"
+        expirationMonth="03"
+        expirationYear="2021"
+        bank="BNP"
+        owner="Max Power"
+        bgColor="#11aa99"
+        color="white"
+      ></CreditCard>
+
+      <CreditCard
+        type="Mastercard"
+        number="0123456789010995"
+        expirationMonth="03"
+        expirationYear="2021"
+        bank="N26"
+        owner="Max Power"
+        bgColor="#eeeeee"
+        color="#222222"
+      ></CreditCard>
+
+      <CreditCard
+        type="Mastercard"
+        number="0123456789016984"
+        expirationMonth="12"
+        expirationYear="2019"
+        bank="Name of the Bank"
+        owner="Firstname Lastname"
+        bgColor="#ddbb55"
+        color="white"
+      ></CreditCard>
     </>
   );
 }
