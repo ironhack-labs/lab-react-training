@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Card from './Components/Card/Card';
 import Greeting from './Components/Greeting/Greeting';
@@ -11,6 +10,7 @@ import LikedButton from './Components/LikedButton/LikedButton';
 import ClickablePicture from './Components/ClickablePicture/ClickablePicture';
 import img from './assets/images/maxence.png'
 import imgClicked from './assets/images/maxence-glasses.png'
+import Dice from  './Components/Dice/Dice';
 
 const data = [{
   lastName: 'Doe',
@@ -140,6 +140,12 @@ function App() {
         img={img}
         imgClicked={imgClicked}
         />
+        </div>
+      </div>
+      <hr />
+      <div className='row g-0 my-2 mx-2'>
+        <div className='d-flex flex-row- justify-content-between mt-2 px-2'>
+          <Dice/>
         </div>
       </div>
     </div>
