@@ -13,6 +13,7 @@ import picture from './assets/images/maxence.png';
 import pictureGlasses from './assets/images/maxence-glasses.png';
 import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
+import FaceBookSimple from './components/FaceBookSimple/FaceBookSimple';
 
 function App() {
 
@@ -148,6 +149,10 @@ function App() {
 
       <div>
         <NumbersTable limit={12} />
+      </div>
+
+      <div>
+        <FaceBookSimple />
       </div>
 
     </div>

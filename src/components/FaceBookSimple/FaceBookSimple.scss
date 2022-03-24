@@ -1,0 +1,21 @@
+@import "../../../src/App.scss";
+
+.profile {
+  @include flex(flex, row, wrap, space-evenly, center);
+  border: solid 2px $primary-color;
+  padding: 10px;
+  margin: 15px 0px;
+
+  &__img {
+    width: 20%;
+  }
+
+  &__photo {
+    max-width: 200px;
+    height: auto;
+  }
+
+  &__info {
+    width: 80%;
+  }
+}
