@@ -1,0 +1,16 @@
+.table {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+  &__number {
+    width: 75px;
+    height: 75px;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
