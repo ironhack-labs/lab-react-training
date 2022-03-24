@@ -13,7 +13,7 @@ import picture from './assets/images/maxence.png';
 import pictureGlasses from './assets/images/maxence-glasses.png';
 import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
-import FaceBookSimple from './components/FaceBookSimple/FaceBookSimple';
+import FaceBook from './components/FaceBook/FaceBook';
 
 function App() {
 
@@ -152,7 +152,7 @@ function App() {
       </div>
 
       <div>
-        <FaceBookSimple />
+        <FaceBook />
       </div>
 
     </div>

@@ -24,9 +24,7 @@ class Carousel extends Component {
 
   render() {
     return (
-      
       <div>
-      
         <img src={this.state.fullImage[this.state.image]} alt="random images" />
         <button onClick={this.previousImage}>Previous</button>
         <button onClick={this.nextImage}>Next</button>

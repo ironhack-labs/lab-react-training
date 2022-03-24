@@ -19,3 +19,14 @@
     width: 80%;
   }
 }
+
+.country-btn{
+
+  &__single {
+    @include btn($primary-color, $white-color);
+
+    &:hover {
+      @include btn-border($secondary-color, $white-color);
+    }
+  }
+}
