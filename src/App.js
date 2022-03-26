@@ -106,13 +106,13 @@ function App() {
         img='./assets/images/maxence.png'
         imgClicked='./assets/images/maxence-glasses.png'
       />
-      <Dice/>
+      {/* <Dice/> */}
       <Carousel
         images={[
-          'https://randomuser.me/api/portraits/women/1.jpg',
-          'https://randomuser.me/api/portraits/men/1.jpg',
-          'https://randomuser.me/api/portraits/women/2.jpg',
-          'https://randomuser.me/api/portraits/men/2.jpg'
+          'https://randomuser.me/api/portraits/women/44.jpg',
+          'https://randomuser.me/api/portraits/men/44.jpg',
+          'https://randomuser.me/api/portraits/women/43.jpg',
+          'https://randomuser.me/api/portraits/men/43.jpg'
         ]}
       />
       <NumbersTable limit={12}/>

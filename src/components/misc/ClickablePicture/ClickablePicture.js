@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react'
 
-const ClickablePicture = () => {
+export default class ClickablePicture extends Component {
+
+    state = {
+        clickedPicture: false
+    }
+
+    changeState = () => {
+        this.setState({
+            clickedPicture: !this.state.clicked
+        })
+    }
+
+    
+
+  render() {
+    const {img,imgGlasses} = this.props
+
     return (
-        <div>
-            
-        </div>
-    );
-};
-
-export default ClickablePicture;
+          <img
+            src={this.state.clicked ? img : imgGlasses}
+            onClick={this.changeState}
+            alt="ironhacker"
+          />
+    )
+  }
+}

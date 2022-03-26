@@ -6,9 +6,7 @@ const Rating = (props) => {
     const stars = '★'.repeat(numberOfStars) + '☆'.repeat( 5 - numberOfStars );
 
     return (
-        <div>
             <div>{stars}</div>
-        </div>
     );
 };
 
