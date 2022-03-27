@@ -1,0 +1,32 @@
+.DriverCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 600px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.Img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  
+}
+
+.DriverName {
+    color: white;
+    font-size: 1.5em;
+}
+
+.Rating {
+    color: white;
+   
+}
+
+.CarInfo {
+    color: white;
+   
+}

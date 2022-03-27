@@ -4,6 +4,8 @@ import Greetings from './components/greetings/Greetings';
 import Random from './components/random/random';
 import BoxColor from './components/boxcolor/BoxColor';
 import CreditCard from './components/creditcard/CreditCard';
+import Rating from './components/rating/Rating';
+import DriverCard from './components/driverCard/DriverCard';
 
 function App() {
   const data = [
@@ -59,7 +61,7 @@ function App() {
         <BoxColor r={255} g={183} b={178} />
       </div>
       <br />
-      
+
       <h3>Credit Cards</h3>
       <CreditCard
         type="Visa"
@@ -71,7 +73,7 @@ function App() {
         bgColor="#11aa99"
         color="white"
       ></CreditCard>
-
+      <br />
       <CreditCard
         type="Mastercard"
         number="0123456789010995"
@@ -82,7 +84,7 @@ function App() {
         bgColor="#eeeeee"
         color="#222222"
       ></CreditCard>
-
+      <br />
       <CreditCard
         type="Mastercard"
         number="0123456789016984"
@@ -93,6 +95,39 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       ></CreditCard>
+      <br />
+      <div>
+        <h3>Rating Stars</h3>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+      </div>
+      <br />
+      <div>
+        <h3>Driver Card</h3>
+        <DriverCard
+          name="Travis Kalanick"
+          rating={4.2}
+          img="https://cache.lovethispic.com/uploaded_images/254892-Cute-Angry-Cat.jpg"
+          car={{
+            model: 'Toyota Corolla Altis',
+            licensePlate: 'CO42DE',
+          }}
+        />
+
+        <DriverCard
+          name="Dara Khosrowshahi"
+          rating={4.9}
+          img="https://i.pinimg.com/564x/ab/dc/20/abdc209669da6db92a3525edeb4f0586.jpg"
+          car={{
+            model: 'Audi A3',
+            licensePlate: 'BE33ER',
+          }}
+        />
+      </div>
     </>
   );
 }
