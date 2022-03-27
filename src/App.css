@@ -52,3 +52,34 @@
     align-items: center;
     justify-content: center;
 }
+
+
+/* RGBColorPicker */
+.RGBALL{
+    display: flex;
+    flex-direction: row;
+}
+.RGBSingleColorPicker{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 200px;
+    margin: 10px;
+}
+
+.colorSquare{
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+}
+
+.result{
+    border: 3px solid black;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: large;
+}

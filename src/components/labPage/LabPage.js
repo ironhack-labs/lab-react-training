@@ -15,16 +15,23 @@ import Carousel from '../Carousel'
 import NumbersTable from '../NumbersTable'
 import FaceBook from '../FaceBook'
 import SignupPage from '../SignupPage'
+import {RGBColorPicker} from '../RGBColorPicker'
 
 export default function LabPage() {
   return (
     <div className='container'>
         <h1>LAB PAGE</h1>
 
+        {/* RGBColorPicker */}
+        <div>
+        <hr />
+        <RGBColorPicker/>
+        </div>
+
         {/* FORM */}
         <div>
         <hr />
-        < SignupPage/>
+        <SignupPage/>
         </div>
 
 
