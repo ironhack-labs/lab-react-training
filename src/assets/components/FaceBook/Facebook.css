@@ -1,0 +1,12 @@
+.container-card {
+  display: flex;
+  flex-direction:row;
+}
+
+.size-img {
+  width: 150px;
+}
+
+.card-facebook {
+  width: 500px;
+}
