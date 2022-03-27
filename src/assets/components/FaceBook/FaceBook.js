@@ -1,14 +1,39 @@
-import React from "react";
+import React, { Component } from "react";
 import profiles from '../../../data/berlin.json'
 
 
-const FaceBook = () => {
-  return (
-    <>
+ class FaceBook extends Component  {
+    state = {
+      countries: "",
+      choseCountries: []
+    }
+
+  getCountries = () => {
+    const arrCountries = [];
+      profiles.forEach(profile => {
+        if (!arrCountries.includes(profile.country)) {
+          arrCountries.push(profile.country)
+        }
+      })
+      this.setState({
+        choseCountries: arrCountries
+  })
+ }
+
+  render() {
+
+    return (
+      <>  
+      <div>
+        <div>
+          <button>countries</button>
+        </div>
+      </div>
+    
       {
-        profiles.map(({ img, firstName, lastName, country, isStudent}) => {
+        profiles.map(({ img, firstName, lastName, country, isStudent}, index) => {
           return (
-            <div className="container-card mb-2 mt-2">
+            <div key={index} className="container-card mb-2 mt-2">
         <div className="card-group card-contact">
           <div className="card container-card">
           <div>
@@ -26,8 +51,10 @@ const FaceBook = () => {
           )
         })
       }
+
     </>
   )
+ }
 }
 
 export default FaceBook;
