@@ -1,0 +1,19 @@
+.driver {
+    display: flex;
+    background-color: #455eb5;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.driver > img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.driver > div {
+    color: white;
+}

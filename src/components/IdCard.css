@@ -1,11 +1,11 @@
 .card {
-    width: 80%;
+    width: fit-content;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     border: 0.1rem solid black;
     border-radius: 0.5rem;
-    margin: 10%;
+    margin: 2rem;
     padding: 1rem;
 }
 

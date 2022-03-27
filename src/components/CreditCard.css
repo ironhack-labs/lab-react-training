@@ -1,0 +1,44 @@
+.credit {
+    width:  25%;
+    height: 10rem;
+    border-radius: 1rem;
+    padding: 1%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". . . credit-img"
+        "credit-number credit-number credit-number credit-number"
+        "credit-date credit-date credit-bank credit-bank"
+        "credit-name credit-name credit-name credit-name";
+    row-gap: 0;
+}
+
+.credit-img {
+    grid-area: credit-img;
+    height: auto;
+    width: 75%;
+    max-width: 100%;
+    align-self: right;
+}
+
+.credit-number {
+    grid-area: credit-number;
+    font-size: 2em;
+    align-self: center;
+}
+
+.credit-date {
+    grid-area: credit-date;
+    text-align: left;
+}
+
+.credit-bank {
+    grid-area: credit-bank;
+    text-align: left;
+}
+
+.credit-name {
+    grid-area: credit-name;
+    text-align: left;
+}

@@ -7,20 +7,15 @@ import MasterCard from "../assets/images/master-card.svg";
 
 const CreditCard = (props) => {
     const { type, number, expirationMonth, expirationYear, bank, owner, bgColor, color } = props;
-    const last4 = number.toString().slice(11);
+    const last4 = number.toString().slice(12);
     const url = type === "Visa" ? Visa : MasterCard;
     return (
         <div className="credit" style={{ backgroundColor: bgColor, color: color }} >
-            <img src={url} alt={type} />
-            <h2>···· ···· ···· {last4}</h2>
-            <div>
-                <div>
-                    <span>Expires {expirationMonth}/{expirationYear}</span>
-                    <span>{bank}</span>
-                </div>
-                <span>{owner}</span>
-            </div>
-            
+            <img className="credit-img" src={url} alt={type} />
+            <h2 className="credit-number">···· ···· ···· {last4}</h2>
+            <span className="credit-date">Expires {expirationMonth}/{expirationYear} </span>
+            <span className="credit-bank">{bank}</span>
+            <span className="credit-name">{owner}</span>           
         </div>
     );
 };

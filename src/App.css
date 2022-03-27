@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.credit-card {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  margin: 1%;
+}
