@@ -1,0 +1,22 @@
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    border: 1.5px solid black;
+    padding: 5px;
+}
+
+.signup-form * {
+    margin-top: 10px;
+}
+
+.signup-form input {
+    width: 50%;
+}
+
+.signup-form select {
+    width: 50%;
+    background-color: rgb(200, 255, 237);
+}
