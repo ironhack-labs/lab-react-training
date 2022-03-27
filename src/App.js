@@ -12,6 +12,7 @@ import img from './assets/images/maxence.png';
 import imgClicked from './assets/images/maxence-glasses.png'
 import Dice from './assets/components/Dice/Dice';
 import Carousel from './assets/components/Carousel/Carousel';
+import NumbersTable from './assets/components/NumbersTable/NumbersTable';
 
 
 function App() {
@@ -145,7 +146,11 @@ function App() {
         'https://randomuser.me/api/portraits/men/2.jpg'
       ]}
     />
-    </div>  
+    </div> 
+    <div>
+      <h2>NumbersTable</h2>
+      <NumbersTable limit={12} />
+    </div> 
     </div>
     </div>
   );
