@@ -14,6 +14,7 @@ import pictureGlasses from './assets/images/maxence-glasses.png';
 import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
 import FaceBook from './components/FaceBook/FaceBook';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 
 function App() {
 
@@ -153,6 +154,10 @@ function App() {
 
       <div>
         <FaceBook />
+      </div>
+
+      <div>
+        <RGBColorPicker />
       </div>
 
     </div>
