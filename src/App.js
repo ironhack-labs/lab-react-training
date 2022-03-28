@@ -12,6 +12,7 @@ import Carousel from './components/Carousel/Carousel.js';
 import NumbersTable from './components/NumbersTable/NumbersTable.js';
 import FaceBook from './components/FaceBook/FaceBook.js';
 import SignupPage from './components/SignupPage/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 
 import img from "../src/assets/images/maxence.png";
 import clickedImg from "../src/assets/images/maxence-glasses.png";
@@ -124,6 +125,9 @@ function App() {
       <NumbersTable limit={12} />
       <FaceBook />
       <SignupPage />
+      <div className='color-picker-div container'>
+        <RGBColorPicker />
+      </div>
     </div>
   );
 }

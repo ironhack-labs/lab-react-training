@@ -26,3 +26,13 @@
   align-items: center;
   font-size: 22px;
 }
+
+.color-picker-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid black;
+  margin-bottom: 20px;
+  padding: 20px;
+}

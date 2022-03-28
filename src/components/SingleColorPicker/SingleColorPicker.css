@@ -1,0 +1,22 @@
+.single-color-picker {
+    width: 50px;
+    height: 50px;
+    border: 2.5px solid black;
+    margin-top: 10px;
+}
+
+.single-color-picker-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single-color-picker-div input {
+    width: 100px;
+}
+
+.single-color-picker-div p {
+    margin: 0 10px;
+}
+
