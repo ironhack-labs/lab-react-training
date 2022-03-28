@@ -5,6 +5,10 @@ import BoxColor from '../components/BoxColor/BoxColor'
 import CreditCard from '../components/CreditCard/CreditCard';
 import Rating from '../components/Rating/Rating'
 import DriverCard from '../components/DriverCard/DriverCard'
+import LikeButton from '../components/LikeButton/LikeButton'
+import ClickablePicture from '../components/ClickablePicture/ClickablePicture';
+import img from "../assets/images/maxence.png";
+import imgClicked from "../assets/images/maxence-glasses.png";
 
 
 
@@ -119,6 +123,23 @@ function Main() {
                         model: "Audi A3",
                         licensePlate: "BE33ER"
                     }}
+                />
+            </div>
+
+            {/* LIKE-BUTTON */}
+            <h1 className='text-start mt-4'><strong>LikeButton</strong></h1>
+            <div className='d-flex justify-content-center'>
+                <LikeButton />
+                <LikeButton />
+            </div>
+
+            {/* CLICKABLE-PICTURE */}
+            <h1 className='text-start mt-4'><strong>ClickablePicture</strong></h1>
+            <div className='d-flex justify-content-center'>
+
+                <ClickablePicture
+                    img = {img}
+                    imgClicked = {imgClicked}
                 />
             </div>
 
