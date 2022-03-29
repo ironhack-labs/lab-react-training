@@ -14,7 +14,7 @@ import picture from './assets/images/maxence.png'
 import picture2 from './assets/images/maxence-glasses.png'
 import Dice from './components/dice/Dice';
 import Carousel from './components/carousel/Carousel';
-
+import NumberTable from './components/numberTable/NumberTable';
 function App() {
   
   return (
@@ -161,6 +161,7 @@ function App() {
       </div>
       <div>
         <h1>Iteration12</h1>
+        <NumberTable limit={12}/>
       </div>
       <div>
         <h1>Iteration13</h1>
