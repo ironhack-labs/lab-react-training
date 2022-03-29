@@ -13,6 +13,7 @@ import ClickablePicture from './components/clickablePicture/ClicklablePicture';
 import picture from './assets/images/maxence.png'
 import picture2 from './assets/images/maxence-glasses.png'
 import Dice from './components/dice/Dice';
+import Carousel from './components/carousel/Carousel';
 
 function App() {
   
@@ -150,14 +151,13 @@ function App() {
             img2={picture2}
           />
       </div>
-
       <div>
         <h1>Iteration10</h1>
-        <hr />
         <Dice />
       </div>
       <div>
         <h1>Iteration11</h1>
+        <Carousel />
       </div>
       <div>
         <h1>Iteration12</h1>
