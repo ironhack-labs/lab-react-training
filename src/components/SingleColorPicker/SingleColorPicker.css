@@ -1,0 +1,19 @@
+.single-color {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.box-color {
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+input {
+    height: 30px;
+    width: 100px;
+}

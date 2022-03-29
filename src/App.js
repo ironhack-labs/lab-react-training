@@ -20,6 +20,7 @@ import FaceBook from './components/FaceBook/FaceBook';
 import img from "../src/assets/images/maxence.png";
 import imgClicked from "../src/assets/images/maxence-glasses.png";
 import SignupPage from './components/SignupPage/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 
 function App() {
   return (
@@ -134,6 +135,8 @@ function App() {
       <FaceBook />
 
       <SignupPage />
+
+      <RGBColorPicker />
     </div>
   );
 }
