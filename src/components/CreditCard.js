@@ -1,3 +1,6 @@
+import visacard from '../assets/images/visa.png';
+import mastercard from '../assets/images/master-card.svg';
+
 export const CreditCard = ({
   type,
   number,
@@ -22,9 +25,24 @@ export const CreditCard = ({
       }}
     >
       <div>
-        <h3 style={{ textAlign: 'right' }}>
+        <>
+          {type === 'Visa' ? (
+            <img
+              src={visacard}
+              alt="card"
+              style={{ width: '15%', marginLeft: '240px', paddingTop: '15px' }}
+            />
+          ) : (
+            <img
+              src={mastercard}
+              alt="card"
+              style={{ width: '15%', marginLeft: '240px', paddingTop: '15px' }}
+            />
+          )}
+        </>
+        {/* <h3 style={{ textAlign: 'right' }}>
           <i>{type}</i>
-        </h3>
+        </h3> */}
         <p style={{ textAlign: 'left', fontSize: '30px' }}>{creditCardNum}</p>
       </div>
 

@@ -15,7 +15,14 @@ import imgClicked from './assets/images/maxence-glasses.png';
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
       <IdCard
         lastName="Doe"
         firstName="John"
