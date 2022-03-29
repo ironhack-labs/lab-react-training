@@ -2,6 +2,7 @@
 // default export: export defaul XXX
 
 import './App.css';
+import 'bulma/css/bulma.css'
 import BoxColor from './components/BoxColor/BoxColor';
 import Greeting from './components/Greetings/Greetings';
 import IdCard from './components/IdCard/IdCard';
@@ -18,6 +19,7 @@ import FaceBook from './components/FaceBook/FaceBook';
 
 import img from "../src/assets/images/maxence.png";
 import imgClicked from "../src/assets/images/maxence-glasses.png";
+import SignupPage from './components/SignupPage/SignupPage';
 
 function App() {
   return (
@@ -130,6 +132,8 @@ function App() {
       <NumbersTable limit={20} />
 
       <FaceBook />
+
+      <SignupPage />
     </div>
   );
 }

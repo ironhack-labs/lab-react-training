@@ -1,0 +1,22 @@
+.form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px 0px;
+    align-items: center;
+}
+
+.fields {
+    min-width: 500px;
+}
+
+.message-box {
+    border: 2px;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(209, 209, 209);
+    
+}
+
+
