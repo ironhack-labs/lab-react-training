@@ -106,7 +106,7 @@ function App() {
         img='./assets/images/maxence.png'
         imgClicked='./assets/images/maxence-glasses.png'
       />
-      {/* <Dice/> */}
+       <Dice/>
       <Carousel
         images={[
           'https://randomuser.me/api/portraits/women/44.jpg',
