@@ -12,16 +12,16 @@ class Greetings extends Component {
         let className= ''
         switch (lang) {
             case 'de':
-                className = 'Hola en aleman';
+                className = 'Hallo';
                 break;
             case 'fr':
-                className = 'Hola en frances';
+                className = 'Bonjour';
                 break;
             case 'es':
-                className = 'Hola en hola';
+                className = 'Hola';
                 break;
             default:
-                className = 'Hola en ingles';
+                className = 'Hello';
                 break;
         }
     return className; 
