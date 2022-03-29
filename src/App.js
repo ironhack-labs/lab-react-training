@@ -15,6 +15,7 @@ import picture2 from './assets/images/maxence-glasses.png'
 import Dice from './components/dice/Dice';
 
 function App() {
+  
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -32,6 +33,8 @@ function App() {
     //     </a>
     //   </header>
     // </div>
+
+
 
     <div>
       <div>
@@ -106,13 +109,14 @@ function App() {
         />
       </div>
       <div>
-        <h1>Iteration6</h1>
-        <Rating>0</Rating>
+        <h1>Iteration6</h1>    
+        <Rating />
+        {/* <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
         <Rating>3</Rating>
         <Rating>4</Rating>
-        <Rating>5</Rating>
+        <Rating>5</Rating> */}
       </div>
       <div>
         <h1>Iteration7</h1>
