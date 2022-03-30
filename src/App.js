@@ -15,6 +15,8 @@ import picture2 from './assets/images/maxence-glasses.png'
 import Dice from './components/dice/Dice';
 import Carousel from './components/carousel/Carousel';
 import NumberTable from './components/numberTable/NumberTable';
+import Facebook from './components/facebook/Facebook';
+
 function App() {
   
   return (
@@ -165,9 +167,7 @@ function App() {
       </div>
       <div>
         <h1>Iteration13</h1>
-      </div>
-      <div>
-        <h1>Iteration14</h1>
+        <Facebook />
       </div>
     </div>
   );
