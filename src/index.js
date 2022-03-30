@@ -12,6 +12,7 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice';
+import Carousel1 from './components/Carousel'
 
 function App() {
   return (
@@ -169,7 +170,46 @@ function App() {
       </Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
+          Building a Component: Carousel
+        </Heading>
+      </Center>
+      <Center>
+        <Carousel1
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
+        />
+      </Center>
+      <Center>
+        <Heading as="h2" size="2xl" padding={10}>
           Building a Component: Numbers Table
+        </Heading>
+      </Center>
+      <Center></Center>
+      <Center>
+        <Heading as="h2" size="2xl" padding={10}>
+          Building a Component: List and Keys - Facebook (Simple)
+        </Heading>
+      </Center>
+      <Center></Center>
+      <Center>
+        <Heading as="h2" size="2xl" padding={10}>
+          Building a Component: List and Keys - Facebook (Advanced)
+        </Heading>
+      </Center>
+      <Center></Center>
+      <Center>
+        <Heading as="h2" size="2xl" padding={10}>
+          Building a Component: Form - Signup Page
+        </Heading>
+      </Center>
+      <Center></Center>
+      <Center>
+        <Heading as="h2" size="2xl" padding={10}>
+          Building a Component: Lifting State Up - RGB ColorPicker
         </Heading>
       </Center>
       <Center></Center>
