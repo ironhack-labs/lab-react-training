@@ -1,9 +1,16 @@
 import React from 'react';
 import profiles from '../data/berlin.json';
+import '../App.css';
 
 export const FaceBook = () => {
   return (
     <>
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <button>USA</button>
+        <button>Malaysia</button>
+        <button>England</button>
+        <button>Germany</button>
+      </div>
       {profiles.map((user, index) => {
         return (
           <div
@@ -16,6 +23,7 @@ export const FaceBook = () => {
               border: '1px solid grey',
               width: '600px',
             }}
+            className="card"
           >
             <img
               src={user.img}
