@@ -10,8 +10,17 @@ import { LikeButton } from './components/LikeButton';
 import { ClickablePicture } from './components/ClickablePicture';
 import { Dice } from './components/Dice';
 
+import { Carousel } from './components/Carousel';
+
 import img from './assets/images/maxence.png';
 import imgClicked from './assets/images/maxence-glasses.png';
+
+const carousel1 = 'https://randomuser.me/api/portraits/women/1.jpg';
+const carousel2 = 'https://randomuser.me/api/portraits/men/1.jpg';
+const carousel3 = 'https://randomuser.me/api/portraits/women/2.jpg';
+const carousel4 = 'https://randomuser.me/api/portraits/men/2.jpg';
+
+const carouselImg = [carousel1, carousel2, carousel3, carousel4];
 
 function App() {
   return (
@@ -116,6 +125,8 @@ function App() {
       <ClickablePicture img={img} imgClicked={imgClicked} />
 
       <Dice />
+
+      <Carousel carousel={carouselImg} />
     </div>
   );
 }
