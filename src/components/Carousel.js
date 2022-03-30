@@ -20,10 +20,20 @@ export const Carousel = ({ carousel }) => {
   };
 
   return (
-    <div>
-      <button onClick={leftBtn}>left</button>
-      <img src={image} alt="some" />
-      <button onClick={rightBtn}>right</button>
+    <div style={{ display: 'flex', alignItems: 'center' }}>
+      <button
+        onClick={leftBtn}
+        style={{ width: '50px', backgroundColor: 'lightgreen' }}
+      >
+        Left
+      </button>
+      <img src={image} alt="some" style={{ width: '300px' }} />
+      <button
+        onClick={rightBtn}
+        style={{ width: '50px', backgroundColor: 'lightgreen' }}
+      >
+        Right
+      </button>
     </div>
   );
 };

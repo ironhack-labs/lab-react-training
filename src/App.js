@@ -11,6 +11,7 @@ import { ClickablePicture } from './components/ClickablePicture';
 import { Dice } from './components/Dice';
 
 import { Carousel } from './components/Carousel';
+import { NumbersTable } from './components/NumbersTable';
 
 import img from './assets/images/maxence.png';
 import imgClicked from './assets/images/maxence-glasses.png';
@@ -127,6 +128,8 @@ function App() {
       <Dice />
 
       <Carousel carousel={carouselImg} />
+
+      <NumbersTable limit={12} />
     </div>
   );
 }
