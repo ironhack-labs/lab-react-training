@@ -15,6 +15,7 @@ import { NumbersTable } from './components/NumbersTable';
 
 import img from './assets/images/maxence.png';
 import imgClicked from './assets/images/maxence-glasses.png';
+import { FaceBook } from './components/FaceBook';
 
 const carousel1 = 'https://randomuser.me/api/portraits/women/1.jpg';
 const carousel2 = 'https://randomuser.me/api/portraits/men/1.jpg';
@@ -130,6 +131,8 @@ function App() {
       <Carousel carousel={carouselImg} />
 
       <NumbersTable limit={12} />
+
+      <FaceBook />
     </div>
   );
 }
