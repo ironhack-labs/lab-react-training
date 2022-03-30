@@ -6,6 +6,7 @@ import BoxColor from './components/boxcolor/BoxColor';
 import CreditCard from './components/creditcard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/driverCard/DriverCard';
+import LikeButton from './components/likeButton/LikeButton.js'
 
 function App() {
   const data = [
@@ -127,6 +128,11 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
+      </div>
+      <br/>
+      <div>
+        <h3>Like Button</h3>
+        <LikeButton />  
       </div>
     </>
   );
