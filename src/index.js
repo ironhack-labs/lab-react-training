@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { ChakraProvider, Center, Heading } from '@chakra-ui/react';
+import { ChakraProvider, Center, VStack, Heading } from '@chakra-ui/react';
 import IdCard from './components/IdCard.jsx';
 import Message from './components/Message.jsx';
 import Random from './components/Random.jsx';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture'
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -100,10 +105,48 @@ function App() {
           Building a Component: Rating
         </Heading>
       </Center>
+      {/* <Center display="flex" direction="column"> */}
+      <VStack>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+      </VStack>
+      {/* </Center> */}
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
           Building a Component: Driver Cards
         </Heading>
+      </Center>
+      <VStack>
+        <DriverCard
+          name="Travis Kalanick"
+          rating={4.2}
+          img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+          car={{
+            model: 'Toyota Corolla Altis',
+            licensePlate: 'CO42DE',
+          }}
+        />
+        <DriverCard
+          name="Dara Khosrowshahi"
+          rating={4.9}
+          img="https://static01.nyt.com/images/2021/07/18/fashion/17WITH-UBERCEO1/merlin_189682938_5bb716ba-6386-42a8-85f5-218e119c3917-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+          car={{
+            model: 'Audi A3',
+            licensePlate: 'BE33ER',
+          }}
+        />
+      </VStack>
+      <Center>
+        <Heading as="h2" size="2xl" padding={10}>
+          Building a Component: Like Button
+        </Heading>
+      </Center>
+      <Center>
+        <LikeButton />
       </Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
@@ -111,15 +154,25 @@ function App() {
         </Heading>
       </Center>
       <Center>
+        <ClickablePicture
+          img="./assets/images/maxence.png"
+          imgClicked="./assets/images/maxence-glasses.png"
+        />
+      </Center>
+      <Center>
         <Heading as="h2" size="2xl" padding={10}>
           Building a Component: Dice
         </Heading>
+      </Center>
+      <Center>
+        <Dice />
       </Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
           Building a Component: Numbers Table
         </Heading>
       </Center>
+      <Center></Center>
     </ChakraProvider>
   );
 }
