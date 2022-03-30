@@ -1,0 +1,19 @@
+.SingleColorPicker{
+    display: flex;
+    align-items: ceter;
+    justify-content: center;
+}
+
+.color {
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid black;
+    margin: 0.2rem;
+} 
+
+.RGBpicker{
+    display: flex;
+    justify-content: center;
+    align-items: ceter;
+    flex-direction: column;
+}

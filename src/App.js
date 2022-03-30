@@ -13,6 +13,7 @@ import Carousel from './components/Carousel/Carousel'
 import NumbersTable from './components/NumbersTable/NumbersTable'
 import Facebook from './components/FaceBook/FaceBook';
 import SignupPage from './components/SignupPage/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
       <BoxColor r={128} g={255} b={0} />
     </div>
     <div className='credit-card'>
+
     <CreditCard
       type="Visa"
       number="0123456789018845"
@@ -143,6 +145,9 @@ function App() {
     </div>
     <div className='signupPage-container'>
       <SignupPage />
+    </div>
+    <div className='RGBColorPicker-container'>
+      <RGBColorPicker />
     </div>
     </div>
   );
