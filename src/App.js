@@ -6,7 +6,10 @@ import BoxColor from './components/boxcolor/BoxColor';
 import CreditCard from './components/creditcard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/driverCard/DriverCard';
-import LikeButton from './components/likeButton/LikeButton.js'
+import LikeButton from './components/likeButton/LikeButton.js';
+import ClickablePicture from './components/clickablePicture/ClickablePicture';
+import img from './assets/images/cat-pic.webp';
+import imgClicked from './assets/images/5aafb1cc7603fc558cffc0c6.png';
 
 function App() {
   const data = [
@@ -129,10 +132,18 @@ function App() {
           }}
         />
       </div>
-      <br/>
+      <br />
       <div>
         <h3>Like Button</h3>
-        <LikeButton />  
+        <LikeButton />
+      </div>
+      <br />
+      <div>
+        <h3>Clickable Picture</h3>
+        <ClickablePicture
+          img={img}
+          imgClicked={imgClicked}
+        />
       </div>
     </>
   );
