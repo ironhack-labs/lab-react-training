@@ -13,6 +13,8 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice';
 import Carousel1 from './components/Carousel'
+import NumbersTable from './components/NumbersTable.jsx'
+import FaceBook from './components/FaceBook';
 
 function App() {
   return (
@@ -26,7 +28,12 @@ function App() {
       </Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: ID Card
+          Component Building with Props, States, Lists
+        </Heading>
+      </Center>
+      <Center>
+        <Heading as="h2" size="2xl" padding={10}>
+          ID Card
         </Heading>
       </Center>
       <IdCard
@@ -47,28 +54,28 @@ function App() {
       />
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Banner/Message
+          Banner/Message
         </Heading>
       </Center>
       <Message name="Ludwig" />
       <Message name="Francois" />
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Banner/Message with Random Number
+          Banner/Message with Random Number
         </Heading>
       </Center>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Boxes with Different Colors
+          Boxes with Different Colors
         </Heading>
       </Center>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Credit Cards
+          Credit Cards
         </Heading>
       </Center>
       <CreditCard
@@ -103,7 +110,7 @@ function App() {
       />
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Rating
+          Rating
         </Heading>
       </Center>
       {/* <Center display="flex" direction="column"> */}
@@ -118,7 +125,7 @@ function App() {
       {/* </Center> */}
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Driver Cards
+          Driver Cards
         </Heading>
       </Center>
       <VStack>
@@ -143,7 +150,7 @@ function App() {
       </VStack>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Like Button
+          Like Button
         </Heading>
       </Center>
       <Center>
@@ -151,7 +158,7 @@ function App() {
       </Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Clickable Pictures
+          Clickable Pictures
         </Heading>
       </Center>
       <Center>
@@ -162,7 +169,7 @@ function App() {
       </Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Dice
+          Dice
         </Heading>
       </Center>
       <Center>
@@ -170,7 +177,7 @@ function App() {
       </Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Carousel
+          Carousel
         </Heading>
       </Center>
       <Center>
@@ -185,31 +192,35 @@ function App() {
       </Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Numbers Table
+          Numbers Table
+        </Heading>
+      </Center>
+      <Center>
+        <NumbersTable limit={12} />
+      </Center>
+      <Center>
+        <Heading as="h2" size="2xl" padding={10}>
+          List and Keys - Facebook (Simple)
+        </Heading>
+      </Center>
+      <Center>
+        <FaceBook />
+      </Center>
+      <Center>
+        <Heading as="h2" size="2xl" padding={10}>
+          List and Keys - Facebook (Advanced)
         </Heading>
       </Center>
       <Center></Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: List and Keys - Facebook (Simple)
+          Form - Signup Page
         </Heading>
       </Center>
       <Center></Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: List and Keys - Facebook (Advanced)
-        </Heading>
-      </Center>
-      <Center></Center>
-      <Center>
-        <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Form - Signup Page
-        </Heading>
-      </Center>
-      <Center></Center>
-      <Center>
-        <Heading as="h2" size="2xl" padding={10}>
-          Building a Component: Lifting State Up - RGB ColorPicker
+          Lifting State Up - RGB ColorPicker
         </Heading>
       </Center>
       <Center></Center>

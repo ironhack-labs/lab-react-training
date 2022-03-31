@@ -11,7 +11,7 @@ class Carousel1 extends Component {
 
   render() {
     return (
-      <Carousel width={200} infiniteLoop>
+      <Carousel showThumbs={false} width={200} infiniteLoop>
         {this.slides.map((slide, index) => {
           return (
             <Image src={slide} key={index} width={200} objectFit="cover" />
