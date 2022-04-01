@@ -2,19 +2,38 @@ import React from 'react';
 import profiles from '../data/berlin.json';
 import '../App.css';
 import { useState } from 'react';
+import { Search } from './Search';
 
 export const FaceBook = () => {
   const [userProfiles, setUserProfiles] = useState(profiles);
 
-  // const sortBtn = () => {
-  //   const sortedUsers = userProfiles.sort((a, b) => {
-  //     return b.lastName - a.lastName;
-  //   });
+  const sortCountryBtn = () => {
+    const sortedUsers = userProfiles.sort((a, b) => {
+      if (a.country.toLowerCase() < b.country.toLowerCase()) {
+        return -1;
+      }
+      if (a.country.toLowerCase() > b.country.toLowerCase()) {
+        return 1;
+      }
+      return 0;
+    });
 
-  //   console.log(sortedUsers, 'sorted');
-  //   console.log(userProfiles, 'not sorted');
-  //   setUserProfiles(sortedUsers);
-  // };
+    setUserProfiles([...sortedUsers]);
+  };
+
+  const sortLastNameBtn = () => {
+    const sortedUsers = userProfiles.sort((a, b) => {
+      if (a.lastName.toLowerCase() < b.lastName.toLowerCase()) {
+        return -1;
+      }
+      if (a.lastName.toLowerCase() > b.lastName.toLowerCase()) {
+        return 1;
+      }
+      return 0;
+    });
+
+    setUserProfiles([...sortedUsers]);
+  };
 
   const filterByCountry = (country) => {
     let cards = document.querySelectorAll('.card');
@@ -37,6 +56,20 @@ export const FaceBook = () => {
     setUserClicked(userFound);
   };
 
+  const searchFilter = (str) => {
+    let filterItems = [];
+
+    if (str === '') {
+      filterItems = [...profiles];
+    } else {
+      const inputStr = str.toLowerCase();
+      filterItems = profiles.filter((profile) =>
+        profile.firstName.toLowerCase().includes(inputStr)
+      );
+    }
+    setUserProfiles(filterItems);
+  };
+
   return (
     <>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -45,8 +78,11 @@ export const FaceBook = () => {
         <button onClick={() => filterByCountry('England')}>England</button>
         <button onClick={() => filterByCountry('Germany')}>Germany</button>
 
-        {/* <button onClick={sortBtn}>Sort</button> */}
+        <button onClick={sortCountryBtn}>Sort by country</button>
+        <button onClick={sortLastNameBtn}>Sort by last name</button>
       </div>
+
+      <Search searchFilter={searchFilter} />
 
       {userProfiles.map((user, index) => {
         return (
