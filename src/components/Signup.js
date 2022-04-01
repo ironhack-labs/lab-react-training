@@ -62,6 +62,8 @@ export const Signup = () => {
     document.querySelector('.input-pass').style.border = '1px solid black';
     document.querySelector('.input-email').style.border = '1px solid black';
 
+    setPass(false);
+    setIsEmail(false);
     setEmail('');
     setPassword('');
     setNationality('');
