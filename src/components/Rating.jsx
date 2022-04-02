@@ -18,8 +18,6 @@ const Rating = (props) => {
     const ratingRounded = Math.round(Number(children));
     const stars = CreateRatingStars(ratingRounded);
 
-    console.log (ratingRounded);
-
     return (
         <div>{stars}</div>
     );

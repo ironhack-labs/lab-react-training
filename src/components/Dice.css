@@ -1,0 +1,7 @@
+.dice {
+    width: 5rem;
+}
+
+.dice:hover {
+    cursor: pointer;
+}
