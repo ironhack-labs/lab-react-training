@@ -10,11 +10,13 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
-import ClickablePicture from './components/ClickablePicture'
+import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
-import Carousel1 from './components/Carousel'
-import NumbersTable from './components/NumbersTable.jsx'
+import Carousel1 from './components/Carousel';
+import NumbersTable from './components/NumbersTable.jsx';
 import FaceBook from './components/FaceBook';
+import Form from './components/Form';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   return (
@@ -113,16 +115,16 @@ function App() {
           Rating
         </Heading>
       </Center>
-      {/* <Center display="flex" direction="column"> */}
-      <VStack>
-        <Rating>0</Rating>
-        <Rating>1.49</Rating>
-        <Rating>1.5</Rating>
-        <Rating>3</Rating>
-        <Rating>4</Rating>
-        <Rating>5</Rating>
-      </VStack>
-      {/* </Center> */}
+      <Center display="flex" direction="column">
+        <VStack>
+          <Rating>0</Rating>
+          <Rating>1.49</Rating>
+          <Rating>1.5</Rating>
+          <Rating>3</Rating>
+          <Rating>4</Rating>
+          <Rating>5</Rating>
+        </VStack>
+      </Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
           Driver Cards
@@ -200,16 +202,11 @@ function App() {
       </Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          List and Keys - Facebook (Simple)
+          List and Keys - Facebook (Advanced)
         </Heading>
       </Center>
       <Center>
         <FaceBook />
-      </Center>
-      <Center>
-        <Heading as="h2" size="2xl" padding={10}>
-          List and Keys - Facebook (Advanced)
-        </Heading>
       </Center>
       <Center></Center>
       <Center>
@@ -217,13 +214,17 @@ function App() {
           Form - Signup Page
         </Heading>
       </Center>
-      <Center></Center>
+      <Center>
+        <Form />
+      </Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
           Lifting State Up - RGB ColorPicker
         </Heading>
       </Center>
-      <Center></Center>
+      <Center>
+        <RGBColorPicker />
+      </Center>
     </ChakraProvider>
   );
 }
