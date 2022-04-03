@@ -16,9 +16,6 @@ export default class Form extends Component {
 
   handleFormSubmit = (event) => {
     event.preventDefault();
-    // this.props.addFoodHandler(this.state);
-    // this.setState({
-    // });
   };
 
   render() {

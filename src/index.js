@@ -25,12 +25,12 @@ function App() {
       <br />
       <Center>
         <Heading padding={4} size="4xl">
-          Labs with Chakra
+          Labs with Chakra, Tailwind, and Bulma 
         </Heading>
       </Center>
       <Center>
         <Heading as="h2" size="2xl" padding={10}>
-          Component Building with Props, States, Lists
+          Component Building with Props, States, Lifting States, Conditional Rendering
         </Heading>
       </Center>
       <Center>
