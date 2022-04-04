@@ -8,8 +8,9 @@ import Rating from './components/rating/Rating';
 import DriverCard from './components/driverCard/DriverCard';
 import LikeButton from './components/likeButton/LikeButton.js';
 import ClickablePicture from './components/clickablePicture/ClickablePicture';
-import img from './assets/images/cat-pic.webp';
-import imgClicked from './assets/images/5aafb1cc7603fc558cffc0c6.png';
+import img from './assets/images/maxence.png';
+import imgClicked from './assets/images/maxence-glasses.png';
+import Dice from './components/dice/Dice';
 
 function App() {
   const data = [
@@ -144,6 +145,10 @@ function App() {
           img={img}
           imgClicked={imgClicked}
         />
+      </div>
+      <br />
+      <div>
+        <Dice />
       </div>
     </>
   );

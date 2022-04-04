@@ -20,7 +20,7 @@ class ClickablePicture extends Component {
       <div className="card">
         <img 
         src={this.state.img ? this.props.img: this.props.imgClicked} 
-        className="myCatPic" 
+        className="Maxence" 
         alt="..." 
         onClick={this.changeImage} 
         />
