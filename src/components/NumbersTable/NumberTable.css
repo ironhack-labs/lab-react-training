@@ -1,0 +1,17 @@
+.NumbersTa{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.NumberTables-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 2rem;
+    border: 2px solid rgb(0, 0, 0);
+} 
