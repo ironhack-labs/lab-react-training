@@ -1,0 +1,39 @@
+.iteration7 {
+    display: flex
+}
+
+.driverCard img {
+    /* width: 20%; */
+    border-radius: 50%;
+    width: 70px;
+    height: 70px
+}
+
+.driverCard h5 {
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0
+}
+
+.driverCard {
+    display: flex;
+    width: 45%;
+    background-color: blueviolet;
+    margin: 20px;
+    border-radius: 15px;
+    padding: 10px 20px
+}
+
+.driverInfo {
+    padding-left: 20px;
+}
+
+.driverInfo h6 {
+    padding: 0px;
+    margin: 0px
+}
+
+.driverImg {
+    display: flex;
+    align-items: center;
+}

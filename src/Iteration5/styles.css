@@ -1,0 +1,33 @@
+.iteration5{
+display: flex;
+margin: 20px
+}
+
+.cardNumber {
+    font-size: 1.8em;
+    padding-left: 20px;
+}
+
+.creditCard {
+    /* background-color: aqua; */
+    border-radius: 5px;
+    width: 250px;
+    padding-bottom: 20px;
+    margin-right: 30px
+}
+
+.creditCard img {
+    width: 20%
+}
+
+.cardHeader {
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+.creditCard p {
+    font-size: 0.7em;
+    margin: 2px;
+    padding-left: 15px;
+}
