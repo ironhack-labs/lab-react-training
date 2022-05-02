@@ -1,0 +1,32 @@
+.creditCard {
+    border-radius: 10px;
+    background-color: green;
+    padding: 40px;
+    width: 375px;
+    margin: 10px;
+}
+
+.cardIcon{
+    display: flex;
+    justify-content: right;
+}
+
+.cardNumber {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7em;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.cardInfo p{
+    margin-right: 40px;
+}
+
+/* .fa-circle {
+    size: 10px;
+} */
