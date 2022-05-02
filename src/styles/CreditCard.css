@@ -1,0 +1,45 @@
+.containerCards {
+    display: flex;
+    align-items: flex-start;
+    width: 300px;
+    margin-left: 6%
+}
+
+.creditCard {
+    border-radius: 30px 30px;
+    width: 400px;
+    height: 300px;
+    margin-right: 40px;
+
+}
+
+.creditCard figure {
+    display: flex;
+    justify-content: end;
+
+}
+
+.creditCard img {
+    margin-top: 40px;
+    width: 100px;
+}
+
+.numberCard {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    font-size: 2.5em;
+    width: 500px;
+    height: 10px;
+}
+
+.leftInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.owner {
+    margin-top: -20px;
+}

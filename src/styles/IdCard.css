@@ -1,0 +1,9 @@
+.idCards{
+    display:flex;
+    border:1px black solid;
+    margin-top:5px
+}
+.idCards img{
+    object-fit: cover;
+    height: 200px;
+}

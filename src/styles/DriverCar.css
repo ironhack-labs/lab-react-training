@@ -1,0 +1,22 @@
+.driverImg {
+    height: 100px;
+    width: 100px;
+    border-radius: 50% 50%;
+}
+
+.driverCard {
+    width: 90%;
+    margin-left: 6%;
+    align-items: center;
+    background-color: blue;
+    border-radius: 20px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 220px;
+}
+
+.nameDriver {
+    font-size: 1.7em;
+}
