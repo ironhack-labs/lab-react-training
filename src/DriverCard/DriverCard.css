@@ -1,0 +1,45 @@
+.drivenCard {
+
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(0, 68, 255);
+    margin: 20px;
+    padding: 0 30%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    color: white;
+}
+
+.drivenCard img {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.drivenCard h2 {
+
+    margin: 0;
+    padding: 0;
+}
+
+.drivenCard span {
+
+    font-size: .5em;
+    color: white;
+    font-weight: lighter;
+}
+
+.drivenCard p {
+
+    color: white;
+}
+
+.drivenCard .stars {
+
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
