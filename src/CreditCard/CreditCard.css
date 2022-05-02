@@ -1,0 +1,7 @@
+.creditCard {
+    border: 1px solid;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1em;
+}

@@ -1,0 +1,7 @@
+.greetings {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(28, 124, 13);
+    border: 1px solid;
+    padding: 10px;
+}
