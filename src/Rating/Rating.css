@@ -1,0 +1,8 @@
+.card {
+    border: 1px solid;
+    width: calc(33.33% - 10px);
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    font-size: .8em;
+}
