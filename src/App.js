@@ -6,7 +6,12 @@ import Greetings from './Greetings/Greetings';
 import IdCard from './IdCard/IdCard';
 import Random from './Random/Random';
 import Rating from './Rating/Rating';
-
+import Counter from './Counter/Counter';
+import ClickablePicture from './ClickablePicture/ClickablePicture';
+import Dice from './Dice/Dice';
+import Carousel from './Carousel/Carousel';
+import NumbersTable from './NumbersTable/NumbersTable';
+import Facebook from './Facebook/Facebook';
 
 
 function App() {
@@ -145,7 +150,62 @@ function App() {
     </div>
     
 
+    <hr/>
 
+    <div>
+    <h3>IT.8 _ COUNTER</h3>
+
+      <Counter />
+
+    </div>
+
+    <hr/>
+
+    <div>
+    <h3>IT.9 _ CLICKABLE PICTURE</h3>
+
+    <ClickablePicture
+      img='../assets/images/maxence.png'
+      imgClicked='../assets/images/maxence-glasses.png'
+    />
+
+    </div>
+
+    <hr/>
+
+    <div>
+    <h3>IT.10 _ DICE</h3>
+
+      <Dice />
+
+    </div>
+    <div>
+    <h3>IT.11 _ CAROUSEL</h3>
+
+    <Carousel
+      images={[
+        'https://randomuser.me/api/portraits/women/1.jpg',
+        'https://randomuser.me/api/portraits/men/1.jpg',
+        'https://randomuser.me/api/portraits/women/2.jpg',
+        'https://randomuser.me/api/portraits/men/2.jpg'
+      ]}
+    />
+
+    </div>
+    <div>
+    <h3>IT.12 _ NUMBERS TABLE</h3>
+
+    <NumbersTable limit={12} />
+
+    </div>
+    <div>
+
+    <h3>IT.13 and 14 _ FACEBOOK </h3>
+
+    <Facebook />
+    
+    </div>
+  
 
   </main>
 
