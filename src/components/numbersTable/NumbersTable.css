@@ -1,0 +1,19 @@
+.tableArr{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    flex-wrap: wrap;
+}
+
+.tableArr div{
+    padding: 50px;
+    border: solid;
+}
+
+.redSquare {
+    background-color: red;
+}
+
+.whiteSquare {
+    background-color: rgb(255, 255, 255);
+}

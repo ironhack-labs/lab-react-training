@@ -7,6 +7,12 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/likeButton/LikeButton';
+import ClickablePicture from './components/likeButton/clickablePicture/ClickablePicture';
+import Dice from './components/dice/Dice';
+import Carousel from './components/carousel/Carousel';
+import NumbersTable from './components/numbersTable/NumbersTable';
+import Facebook from './components/facebook/Facebook';
 
 
 function App() {
@@ -37,7 +43,7 @@ function App() {
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
-<div className = "creditCardRow">
+      <div className="creditCardRow">
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -69,7 +75,7 @@ function App() {
           bgColor="#ddbb55"
           color="white"
         />
-</div>
+      </div>
 
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -97,6 +103,22 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      <LikeButton />
+      <ClickablePicture
+        img='../images/maxence.png'
+        imgClicked='../images/maxence-glasses.png'
+      />
+      <Dice />
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <NumbersTable limit={12} />
+      <Facebook />
     </div>
 
   );
