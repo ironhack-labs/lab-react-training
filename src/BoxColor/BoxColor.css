@@ -1,0 +1,17 @@
+.background-red {
+    border: 1px solid black;
+    height: 100px;
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+    background-color: #ff0000;
+}
+
+/* .background-green {
+    border: 1px solid black;
+    height: 100px;
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+    background-color: #80ff00;
+} */
