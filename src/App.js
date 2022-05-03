@@ -1,12 +1,17 @@
 import './App.css';
-import Greetings from './Greetings/Greetings';
-import IdCard from './IdCard/IdCard';
-import Random from './Random/Random';
+import Greetings from './Components/Greetings/Greetings';
+import IdCard from './Components/IdCard/IdCard';
+import Random from './Components/Random/Random';
 import BoxColor from './Components/BoxColor/BoxColor';
-import CreditCard from './CreditCard/CreditCard';
-import Rating from './Rating/Rating';
-import DriverCard from './DriverCard/DriverCard';
-
+import CreditCard from './Components/CreditCard/CreditCard'
+import Rating from './Components/Rating/Rating';
+import DriverCard from './Components/DriverCard/DriverCard';
+import LikeButton from './Components/LikeButton/LikeButton';
+import ClickablePicture from './Components/ClickablePicture/ClickablePicture';
+import Dice from './Components/Dice/Dice';
+import Carousel from './Components/Carousel/Carousel';
+import NumbersTable from './Components/NumbersTable/NumbersTable';
+import FaceBook from './Components/FaceBook/FaceBook';
 
 function App() {
   return (
@@ -99,8 +104,43 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+
+      <hr></hr>
+
+      <LikeButton />
+      <LikeButton />
+
+      <ClickablePicture
+        img='./assets/images/maxence.png'
+        imgClicked='./assets/images/maxence-glasses.png'
+      />
+
+      <hr></hr>
+
+      <Dice />
+
+      <hr></hr>
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+        
+      />
+
+      <hr></hr>
+
+      <NumbersTable limit={12} />
+
+      <hr></hr>
+
+      <FaceBook />
     </div>
   )
 }
+
 
 export default App;
