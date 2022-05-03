@@ -1,0 +1,12 @@
+.credit-card {
+    display: flex;
+    padding: 20px;
+}
+
+.card-elem {
+    width: 30%;
+    border-radius:  13px;
+    margin-left: 20px;
+    padding: 20px;
+
+}

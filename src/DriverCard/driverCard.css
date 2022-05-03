@@ -1,0 +1,13 @@
+.driver {
+    border-radius: 15px;
+    border: 1px solid;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: rgb(144, 113, 173);
+}
+
+.driver img {
+    width: 10%;
+    float: left;
+    padding: 20px;
+}

@@ -1,0 +1,15 @@
+.card {
+    border: 1px solid ;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+.card img {
+    width: 10%;
+    float: left;
+    padding: 20px;
+}
+
+.card p {
+    font-weight: bold;
+}
