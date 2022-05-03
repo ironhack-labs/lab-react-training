@@ -1,0 +1,18 @@
+.card  img{
+    width: 15%;
+    height: 10%;
+}
+
+.card {
+    width: 275px;
+    height: 150px;
+    margin-left:5px;
+    border-radius: 5%;
+}
+
+.cardimage {
+    display:flex;
+    flex-direction: row-reverse;
+    padding-top: 15px;
+    padding-right: 15px
+}

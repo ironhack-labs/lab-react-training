@@ -1,0 +1,9 @@
+.greetings{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 800px;
+    padding-left: 5px;
+}

@@ -1,0 +1,21 @@
+.driverimg>img{
+    object-fit: cover;
+    border-radius: 50%;
+    width:100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.stars>img{
+    width: 10px;
+    height: 10px;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+/* <img class="rounded-circle profile-border" src="{{profileImage}}" style="width: 200px; height: 200px; object-fit: cover;"/> */
