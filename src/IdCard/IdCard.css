@@ -1,0 +1,11 @@
+.it1 img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.it1 .idCard {
+    display: flex;
+    justify-content: flex-start;
+    border: 3px solid black;
+    padding: 10px;
+}

@@ -1,0 +1,17 @@
+.it7 {
+    height: 200px;
+    margin: 20px 300px;
+
+}
+
+.it7 .fila {
+    display: flex;
+    justify-content: center;
+    padding: 30px 220px;
+
+}
+
+.it7 img {
+    width: 150px;
+    border-radius: 50%;
+}

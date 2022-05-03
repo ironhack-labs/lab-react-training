@@ -1,0 +1,18 @@
+img {
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.number {
+    font-size: 3em;
+}
+
+.creditCard {
+    height: 300px;
+    width: 500px;
+    padding: 50px;
+}
