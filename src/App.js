@@ -6,6 +6,15 @@ import Random from './componets/Random';
 import CreditCard from './componets/CreditCard';
 import Rating from './componets/Rating';
 import DriverCard from './componets/DriverCard';
+import ClickablePicture from './componets/ClickablePicture';
+import LikeButton from './componets/LikeButton';
+import max from './assets/images/maxence.png'
+import glasses from './assets/images/maxence-glasses.png'
+import Dice from './componets/Dice';
+import Carousel from './componets/Carousel';
+import NumbersTable from './componets/NumbersTable';
+import FaceBook from './componets/FaceBook';
+
 
 function App() {
     return (
@@ -96,6 +105,30 @@ function App() {
                 licensePlate: "BE33ER"
             }}
             />
+
+            <LikeButton/>
+
+            <ClickablePicture
+            img = {max}
+            imgClicked={glasses}
+            />
+
+            <Dice/>
+            <Carousel
+            images={[
+                    'https://randomuser.me/api/portraits/women/1.jpg',
+                    'https://randomuser.me/api/portraits/men/1.jpg',
+                    'https://randomuser.me/api/portraits/women/2.jpg',
+                    'https://randomuser.me/api/portraits/men/2.jpg'
+            ]}
+            />
+
+           <NumbersTable 
+           limit={12} />
+
+           <FaceBook 
+           
+           />
 
         </main>)
 
