@@ -1,0 +1,13 @@
+.card {
+    padding: 20px;
+    background-color: gray;
+    color: black;
+    border: 1px solid black;
+    margin-bottom: 23px;
+
+
+}
+
+img {
+    float: left;
+}
