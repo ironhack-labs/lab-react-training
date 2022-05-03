@@ -6,6 +6,18 @@ import BoxColor from './BoxColor/BoxColor'
 import CreditCard from './CreditCard/CreditCard';
 import Rating from './Rating/Rating';
 import DriverCard from './DriverCard/DriverCard'
+import LikeButton from './LikeButton/LikeButton'
+import ClickablePicture from './ClickablePicture/ClickablePicture'
+import img from './images/maxence.png'
+import img2 from './images/maxence-glasses.png'
+import Dice from './Dice/Dice'
+import dice1 from './images/dice1.png'
+import dice2 from './images/dice2.png'
+import dice3 from './images/dice3.png'
+import dice4 from './images/dice4.png'
+import dice5 from './images/dice5.png'
+import dice6 from './images/dice6.png'
+
 
 function App() {
   return (
@@ -123,9 +135,40 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      <hr></hr>
+      <h1>LikeButton</h1>
+      <hr></hr>
+
+
+      <LikeButton />
+
+      <hr></hr>
+      <h1>ClickablePicture</h1>
+      <hr></hr>
+
+      <ClickablePicture
+        img={img}
+        imgClicked={img2}
+      />
+
+
+      <hr></hr>
+      <h1>Dice</h1>
+      <hr></hr>
+
+
+      <Dice
+
+        dice1={dice1}
+        dice2={dice2}
+        dice3={dice3}
+        dice4={dice4}
+        dice5={dice5}
+        dice6={dice6}
 
 
 
+      />
 
     </div>
   )
