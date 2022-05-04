@@ -1,0 +1,15 @@
+.blue img {
+    width: 100px;
+}
+
+.white img {
+    width: 100px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.white {
+    background-color: white;
+}

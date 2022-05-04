@@ -1,0 +1,22 @@
+.even {
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    width: 20px;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.odd {
+    color: black;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    width: 20px;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.bigDiv {
+    display: flex;
+}
