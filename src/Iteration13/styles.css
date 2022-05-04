@@ -1,0 +1,42 @@
+.eachProfile {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 10px;
+    width: 400px
+}
+
+.eachProfile h6 {
+    font-weight: 400;
+    margin: 10px;
+    padding: 0
+}
+
+.profilePic img {
+    width: 150px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 20px
+}
+
+.blue {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+        border-radius: 30px;
+    margin: 10px;
+    width: 400px
+}
+
+.white {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+        border-radius: 30px;
+    margin: 10px;
+    width: 400px;
+    height: 200px
+}
