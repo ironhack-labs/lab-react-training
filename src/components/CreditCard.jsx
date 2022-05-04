@@ -5,10 +5,6 @@ import visa from '../assets/images/visa.png'
 function CreditCard(props) {
   const { type, number, expirationMonth, expirationYear, bank, owner, bgColor, color } = props
   
-  //conditional to load logo difference
-
-  //for the card number could do four divs, three with circle images and the final with last four numbers. 
-
   let cardLogo;
 
   if(type =='Visa'){
