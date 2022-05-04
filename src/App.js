@@ -1,9 +1,14 @@
 import './App.css';
 import BoxColor from './BoxColor/BoxColor';
+import Carousel from './Carousel/Carousel';
+import ClickablePicture from './ClickablePicture/ClickablePicture';
 import CreditCard from './CreditCard/CreditCard';
+import Dice from './Dice/Dice';
 import DriverCard from './DriverCard/DriverCard';
+import Facebook from './Facebook/Facebook';
 import Greetings from './Greetings/Greetings';
 import IdCard from './IdCard/IdCard';
+import LikeButton from './LikeButton/LikeButton';
 import Random from './Random/Random';
 import Rating from './Rating/Rating';
 
@@ -97,6 +102,26 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+
+      <LikeButton />
+
+      <ClickablePicture
+        img='./../images/maxence.png'
+        imgClicked='./../images/maxence-glasses.png'
+      />
+
+      <Dice />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <Facebook />
 
     </div>
 
