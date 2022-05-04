@@ -15,7 +15,9 @@ function CreditCard(props) {
                 {props.number.slice(-4)}<br />
                 </p>
                 <p className="card-details">
-                    Expires <span className="card-expiration">{props.expirationMonth}/{props.expirationYear}</span>
+                    Expires <span className="card-expiration">
+                    {props.expirationMonth < 10 ? '0'+props.expirationMonth : props.expirationMonth}/{String(props.expirationYear).slice(-2)}
+                    </span>
                     &emsp; <span className="card-bank">{props.bank}</span>
                 </p>
                 <p className="card-details">
