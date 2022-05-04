@@ -1,0 +1,27 @@
+.dCard {
+    padding-left: 300px;
+    align-items: center;
+    display: flex;
+    margin: 50px;
+    background-color: aqua;
+    border-radius: 20px;
+
+}
+
+.dImg {
+    max-width: 100px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.class4 {
+    display: flex;
+}
+
+.class1 {
+    padding: 0;
+}
+
+.class2 {
+    padding: 30px;
+}
