@@ -1,6 +1,6 @@
 const BoxColor = ({ r, g, b }) => {
     const colorBox = {
-        backgroundColor: (r, g, b)
+        backgroundColor: 'red'
     }
     return (
         <div style={colorBox}>color</div>

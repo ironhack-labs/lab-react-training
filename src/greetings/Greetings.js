@@ -1,22 +1,22 @@
-const Greetings = ({ lang, children }) => {
+// const Greetings = ({ lang, children }) => {
 
-    let text = ''
-    if (lang === 'es') {
-        text = 'hola'
-    } else if (lang === 'fr') {
-        text = 'bonjour'
-    } else if (lang === 'en') {
-        text === 'hello'
-    } else if (lang === 'de') {
-        text = 'hallo'
-    }
+//     let text = ''
+//     if (lang === 'es') {
+//         text = 'hola'
+//     } else if (lang === 'fr') {
+//         text = 'bonjour'
+//     } else if (lang === 'en') {
+//         text === 'hello'
+//     } else if (lang === 'de') {
+//         text = 'hallo'
+//     }
 
-    return (
+//     return (
 
-        <article>
-            <p>{text} {children}</p>
-        </article>
-    )
-}
+//         <article>
+//             <p>{text} {children}</p>
+//         </article>
+//     )
+// }
 
-export default Greetings
+// export default Greetings

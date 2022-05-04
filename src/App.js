@@ -5,6 +5,12 @@ import './idCard/IdCard'
 import IdCard from './idCard/IdCard';
 //import Random from './random/Random';
 import BoxColor from './boxColor/BoxColor';
+import LikeButton from './counter/Counter';
+import ClickPic from './clickable_picture/ClickPic';
+import Dice from './dice/Dice';
+
+
+
 
 function App() {
   return (
@@ -25,8 +31,8 @@ function App() {
         birth={new Date('1995-06-19')}
       />
 
-      <Greetings lang="de">Ludwig</Greetings>
-      <Greetings lang="fr">François</Greetings>
+      {/* <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings> */}
 
       {/* <Random min={1} max={6} />
       <Random min={1} max={100} /> */}
@@ -34,6 +40,14 @@ function App() {
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
+      <LikeButton />
+
+      <ClickPic
+        img='./images/maxence.png'
+        imgClicked='./images/maxence-glasses.png'
+      />
+
+      <Dice />
 
 
 
