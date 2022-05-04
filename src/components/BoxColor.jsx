@@ -5,8 +5,11 @@ function BoxColor(props) {
     }
     const hexValue = toHex(props.r)+toHex(props.g)+toHex(props.b);
     const concatColor = `rgb(${props.r},${props.g},${props.b})`
+    const fontColor = ((0.2126*props.r + 0.7152*props.g + 0.0722*props.b)) <= 150 ? 'white' : 'black'
+
     const boxStyle = {
-        background: concatColor 
+        background: concatColor,
+        color:  fontColor
     }
     return (
         <div className="color-box" style={boxStyle}>
