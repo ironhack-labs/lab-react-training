@@ -5,6 +5,12 @@ import Random from './component/random'
 import BoxColor from './component/boxColor'
 import CreditCard from './component/creditCard';
 import DriverCard from './component/driverCard';
+import LikeButton from './component/likeButton'
+import ClickablePicture from './component/clickablePicture'
+import Photo from '../../images/photo.png'
+// import Glasses from './images/glasses.png'
+import Dice from './component/dice';
+
 
 
 function App() {
@@ -108,6 +114,20 @@ function App() {
       />
 
 
+      <h1>Like Button</h1>
+      <LikeButton />
+
+
+      <h1>ClickablePicture</h1>
+
+      <ClickablePicture
+        img={Photo}
+        imgClicked={Glasses} />
+
+
+
+      <h1>Dice</h1>
+      <Dice />
 
 
 
