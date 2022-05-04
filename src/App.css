@@ -39,4 +39,28 @@
 
 .idCard {
   border: 1px solid black;
+  display: flex;
+  margin: 3%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.idCardInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.idCardPhoto {
+  display: flex;
+
+}
+
+p {
+  margin: 0;
+}
+
+.greetingContainer {
+  border: 1px solid black;
+  padding: 6px;
 }
