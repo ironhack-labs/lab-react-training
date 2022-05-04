@@ -24,6 +24,6 @@ function CreditCard(props) {
             </p>
         </div>
     )
-  }
+  }  
    
   export default CreditCard;

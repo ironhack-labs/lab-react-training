@@ -38,6 +38,8 @@ function App() {
 
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
+        <BoxColor r={0} g={0} b={0} />
+        <BoxColor r={Math.floor(Math.random() * 256)} g={Math.floor(Math.random() * 256)} b={Math.floor(Math.random() * 256)} />
 
         <div className="card-list">
           <CreditCard
@@ -79,7 +81,8 @@ function App() {
         <Rating>3</Rating>
         <Rating>4</Rating>
         <Rating>5</Rating>
-
+    
+    
         <DriverCard
           name="Travis Kalanick"
           rating={4.2}
