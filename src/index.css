@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p {
+  margin: 0;
+}
+
+.app {
+  text-align: left;
+}
+
+.id-card {
+  display: flex;
+  justify-content: flex-start;
+  border: solid 1px black;
+  padding: 2px;
+  margin: 10px;
+}
+
+.id-card img {
+  height: 150px
+}
+
+.id-card-body {
+  text-align: left;
+}
+
+.greeting {
+  display: flex;
+  border: 1px solid black;
+  margin:10px;
+}
+
+.random-number {
+  display: flex;
+  border: 1px solid black;
+  margin:10px;
+}
+
+.box-color {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;  
+  border: 1px solid black;
+  margin:10px;
+  text-align: center;
+}
+
+.credit-card-row {
+
+}
+
+.credit-card {
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.credit-card-type {
+  justify-content: flex-end;
+
+}
+
+.credit-card-number {
+
+}
+
+.credit-card-data {
+  justify-content: flex-start;
+}
