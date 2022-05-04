@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +37,133 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.id-card {
+  border: 1px solid black;
+  display: flex;
+  align-content: center;
+  width: 80%;
+  margin-top: 1rem;
+  /* margin-bottom: 3rem; */
+}
+
+.id-img {
+  margin: .3rem;
+  height: 128px;
+}
+
+.id-info p {
+  margin: 0;
+}
+
+.greeting, .random, .color-box {
+  border: 1px solid black;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.greeting p, .random p {
+  margin-left: .3rem;
+}
+
+.color-box p {
+  text-align: center;
+}
+
+.card-list{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.creditcard {
+  border-radius: 5%;
+  width: 18rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-type {
+  align-self: end;
+  padding-right: .5rem;
+  max-height: 1.5rem;
+}
+
+.card-number{
+  align-self: center;
+}
+
+/* .card-details{
+  display:flex;
+  flex-direction:column;
+} */
+
+.card-details {
+  margin: 0;
+}
+
+.card-owner{
+  margin: 0;
+}
+
+.card-number::before{
+  content: "\2022\2022\2022\2022\00a0\2022\2022\2022\2022\00a0\2022\2022\2022\2022\00a0";
+  font-size: 2rem;
+}
+
+.rating {
+  /* text-align: center; */
+  width: 80%;
+  margin-top: 1rem;
+  padding-left: .5rem;
+  border: 1px solid black;
+}
+
+.driver-card {
+  width: 40rem; 
+  border-radius: 5rem;
+  margin-top: 1rem; 
+}
+
+.driver-card-body {
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #445eb5;    
+  color: white;  
+}
+
+.driver-img {
+  height: 5rem;
+  width: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.driver-info{
+  display:flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  width: 30%;
+}
+
+.driver-info p {
+  margin: 0;
+}
+
+.driver-info .rating {
+  width: auto;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
