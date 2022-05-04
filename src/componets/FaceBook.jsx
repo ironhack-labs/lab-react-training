@@ -7,9 +7,7 @@ const FaceBook = () => {
     const [color, setColor] = useState(false)
 
     return (
-
         <>
-
             {allProfiels.map(elm => <button>{elm.country}</button>)}
             {allProfiels.map(elm => <FaceBookCards {...elm} key={elm._id} />)}
         </>
