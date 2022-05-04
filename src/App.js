@@ -6,6 +6,12 @@ import Greetings from './Greating';
 import Icard from './Icard';
 import Random from './Random';
 import Rating from './Rating';
+import LikeButtom from './LikeButton';
+import ClickAblePicture from './ClickablePicture';
+import Dice from './Dice';
+import Carousel from './Carousel';
+import NumbersTable from './NumbersTable';
+import Facebook from './FaceBook ';
 
 function App() {
   return (
@@ -99,6 +105,34 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+
+      <LikeButtom />
+      <LikeButtom />
+
+      <ClickAblePicture
+        img='../images/maxence.png'
+        imgClicked='../images/maxence-glasses.png'
+      />
+
+      <Dice />
+
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]} />
+
+
+      <NumbersTable
+        limit={12} />
+
+
+
+      <Facebook />
+
     </div>
   );
 }

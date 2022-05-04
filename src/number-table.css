@@ -1,0 +1,12 @@
+.back-style-white {
+    border: 2px solid;
+    font-size: 3em;
+    width: 70px;
+}
+
+.back-style-color {
+    border: 2px solid;
+    font-size: 3em;
+    width: 70px;
+    background-color: rgb(221, 255, 0);
+}

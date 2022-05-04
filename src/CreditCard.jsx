@@ -36,3 +36,4 @@ const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner
 }
 
 export default CreditCard
+

@@ -1,0 +1,28 @@
+.card {
+    margin: 15px;
+    border: 2px solid;
+    display: flex;
+    width: auto;
+}
+
+.card img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 300px;
+    margin-left: 50px;
+    width: 120px;
+
+}
+
+.backgroundCard {
+    background-color: aqua;
+}
+
+.backgroundCard-white {
+    background-color: white;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+}

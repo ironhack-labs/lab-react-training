@@ -1,0 +1,28 @@
+.buttom-style button {
+    font-size: 2em;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.red {
+    background-color: orredange;
+}
