@@ -6,6 +6,13 @@ import BoxColor from './BoxColor/BoxColor';
 import CreditCard from './CreditCard/CreditCard';
 import Rating from './Rating/Rating';
 import DriverCard from './DriverCard/DriverCard';
+import LikeButton from './LikeButton/LikeButton';
+import ClickablePicture from './ClickablePicture/ClickablePicture'
+import Carousel from './Carousel/Carousel';
+import NumbersTable from './NumbersTable/NumbersTable';
+import FaceBook from './FaceBook/FaceBook'
+
+// import Dice from './Dice/Dice';
 
 
 function App() {
@@ -103,6 +110,7 @@ function App() {
       </div>
 
       <div>
+        <h1>DriverCard</h1>
         <DriverCard
           name="Travis Kalanick"
           rating={4.2}
@@ -113,7 +121,7 @@ function App() {
           }}
         />
       </div>
-      
+
       <div>
         <DriverCard
           name="Dara Khosrowshahi"
@@ -126,6 +134,40 @@ function App() {
         />
       </div>
 
+      <div>
+
+        <LikeButton />
+      </div>
+
+      <div>
+        <ClickablePicture
+          img='./images/maxence.png'
+          imgClicked='./images/maxence-glasses.png'
+        />
+      </div>
+
+      {/* <div>
+        <Dice />
+      </div> */}
+
+      <div>
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+      </div>
+
+      <div>
+        <NumbersTable limit={12} />
+      </div>
+
+      <div>
+        <FaceBook />
+      </div>
 
 
     </main>

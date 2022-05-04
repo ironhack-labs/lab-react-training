@@ -1,0 +1,15 @@
+.numbers-table {
+    margin-top: 30px;
+    margin-bottom: 200px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.numbers-table td {
+    flex-wrap: wrap;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 30px;
+}

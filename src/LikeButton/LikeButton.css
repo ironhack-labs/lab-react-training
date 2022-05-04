@@ -1,0 +1,15 @@
+.button-likes {
+    width: 90%;
+    display: flex;
+    margin: auto;
+
+}
+
+.button-likes button {
+    width: 200px;
+    height: 90px;
+    font-size: 30px;
+    display:block;
+
+}
+
