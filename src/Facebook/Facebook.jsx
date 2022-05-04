@@ -1,5 +1,5 @@
 import './Facebook.css'
-import profiles from './data/berlin.json';
+import profiles from '../data/berlin.json';
 import { useState } from 'react'
 
 
