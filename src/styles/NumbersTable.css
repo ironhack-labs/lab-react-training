@@ -1,0 +1,15 @@
+.pairs {
+    background-color: red;
+}
+
+.odds {
+    background-color: white;
+}
+
+.numbers {
+    display: flex;
+    width: 50px;
+}
+
+
+

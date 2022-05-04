@@ -5,6 +5,12 @@ import BoxColor from './components/BoxColor'
 import CreditCard from './components/CreditCard'
 import Rating from './components/Rating'
 import DriverCard from './components/DriverCar'
+import LikeButton from './components/LikeButton'
+import ClickablePicture from './components/ClickablePicture'
+import Dice from './components/DiceC'
+import Carousel from './components/Carousel'
+import NumbersTable from './components/NumbersTable'
+
 
 import './styles/CreditCard.css'
 
@@ -114,8 +120,25 @@ function App() {
         }}
       />
 
+      <LikeButton />
 
+      <ClickablePicture
+        img='../images/maxence.png'
+        imgClicked='../images/maxence-glasses.png'
+      />
 
+       <Dice /> 
+
+      <Carousel
+        images={[
+          'https://i.pinimg.com/originals/2c/9c/20/2c9c20954029da1dec1020493d9b1347.jpg',
+          'https://pbs.twimg.com/media/FD-Y3soVEAE9Sjj?format=jpg&name=900x900',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6SNu4cDTLqsFoMgIORoQfe9izG04yxTJEIA&usqp=CAU',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-TfVTDO2fW25lmTObdGkYxh5rsli2iMuJsg&usqp=CAU'
+        ]}
+      />
+
+      <NumbersTable limit={12} />
 
     </div>
 
