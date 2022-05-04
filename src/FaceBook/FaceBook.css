@@ -1,0 +1,15 @@
+.list {}
+
+.ficha {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    margin: 20px;
+    padding: 10px;
+}
+
+.ficha img {
+
+    width: 150px;
+    margin-right: 20px;
+}

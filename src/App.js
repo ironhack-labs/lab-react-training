@@ -7,7 +7,12 @@ import Greeting from './Greeting/Greeting';
 import IdCard from './IdCard/IdCard';
 import Random from './Random/Random';
 import Rating from './Rating/Rating';
-
+import LikeButton from './LikeButton/LikeButton';
+import ClickablePicture from './ClickablePicture/ClickablePicture';
+import Dice from './Dice/Dice';
+import Carousel from './Carousel/Carousel';
+import NumbersTable from './NumbersTable/NumbersTable';
+import FaceBook from './FaceBook/FaceBook';
 
 
 
@@ -111,6 +116,36 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+
+      <hr />
+      <LikeButton />
+
+      <hr />
+
+      <ClickablePicture
+        img='../images/maxence.png'
+        imgClicked='../images/maxence-glasses.png'
+      />
+
+      <hr />
+
+      <Dice />
+      <hr />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <hr />
+      <NumbersTable limit={12} />
+
+      <hr />
+
+      <FaceBook />
 
     </div>
 
