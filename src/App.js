@@ -1,12 +1,17 @@
 
 import './App.css';
-import IdCard from './IdCard/IdCard';
-import Greetings from './Greetings/greetings';
-import Random from './Random/random';
-import BoxColor from './BoxColor/boxColor';
-import CreditCard from './CreditCard/creditCard';
-import Rating from './Rating/rating';
-import DriverCard from './DriverCard/driverCard';
+import IdCard from './components/IdCard/idCard';
+import Greetings from './components/Greetings/greetings';
+import Random from './components/Random/random';
+import BoxColor from './components/BoxColor/boxColor';
+import CreditCard from './components/CreditCard/creditCard';
+import Rating from './components/Rating/rating';
+import DriverCard from './components/DriverCard/driverCard';
+import LikeButton from './components/LikeButton/likeButton';
+import ClickablePicture from './components/ClickablePic/clickablePic';
+import Dice from './components/Dice/dice';
+import Carousel from './components/Carousel/carousel';
+import NumbersTable from './components/NumbersTable/numbersTable';
 
 function App() {
   return (
@@ -113,6 +118,47 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+
+
+      <br />
+      <h1>LIKE BUTTON</h1>
+
+      <LikeButton />
+
+      <br />
+      <h1>CLICKABLE PICTURE</h1>
+
+      <ClickablePicture
+
+        img='./assets/images/maxence.png'
+        imgClicked='./assets/images/maxence-glasses.png'
+
+
+      />
+
+      <br />
+      <h1>DICE</h1>
+      <Dice />
+
+      <br />
+      <h1>CAROUSEL</h1>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <br />
+      <h1>NUMBERS TABLE</h1>
+      <NumbersTable limit={12} />
+
+      <br />
+      <h1>LIST AND KEYS FACEBOOK SIMPLE</h1>
+
+      <br />
+      <h1>LIST AND KEYS FACEBOOK ADVANCE</h1>
     </main>
   );
 }

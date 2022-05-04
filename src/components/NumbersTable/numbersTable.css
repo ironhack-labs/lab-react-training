@@ -1,0 +1,25 @@
+.square {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+
+}
+
+.containerSquare {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.back-style-color {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    background-color: red;
+    color: white;
+}
+
+.back-style-white {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+}

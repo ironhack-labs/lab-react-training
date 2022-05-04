@@ -1,0 +1,19 @@
+.Counter button {
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid rgb(60, 33, 33);
+    background: rgb(60, 82, 124);
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.Counter button:hover {
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid rgb(19, 20, 18);
+    background: rgb(29, 153, 68);
+    border-radius: 5px;
+    color: aliceblue;
+}
