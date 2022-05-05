@@ -64,3 +64,11 @@ p {
   border: 1px solid black;
   padding: 6px;
 }
+
+.dotContainer {
+  margin-right: 0.5rem;
+}
+
+.dotContainer div {
+  margin-left: 0.25rem;
+}
