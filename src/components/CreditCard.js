@@ -1,6 +1,7 @@
 import masterCard from '../assets/images/master-card.svg';
 import visa from '../assets/images/visa.png';
 
+
 function CreditCard(props) {
 
     const { type, number, expirationMonth, expirationYear, bank, owner, bgColor, color } = props;
@@ -137,7 +138,7 @@ function CreditCard(props) {
                         marginLeft: '2rem'
                     }}>
                     <div> Expires {expirationMonth}/{expirationYear}<span style={{ marginLeft: '2rem' }}>{bank}</span></div>
-                    <div style={{ marginBottom: '1rem' }}>{owner}</div>
+                    <div style={{ paddingBottom: '1rem', marginBottom: '1rem' }}>{owner}</div>
                 </div>
         </div>
     );

@@ -72,3 +72,8 @@ p {
 .dotContainer div {
   margin-left: 0.25rem;
 }
+
+.driverCardInfo {
+  display: flex;
+  text-align: left;
+}
