@@ -1,38 +1,57 @@
-.App {
+.box {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px
+}
+
+.box img{
+  width: 30%;
+  margin: 10px;
+}
+
+.BoxColor {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  width: 320px;
+  height: 180px;
+  border-radius: 8px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 10px;
+  width: 100vw;
+
+}
+
+.driverCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #3951AD;
+  border-radius: 10px;
+  width: 700px;
+  height: 150px;
+  margin: 20px;
+  padding: 5px;
   color: white;
+  padding-left: 30%;
 }
 
-.App-link {
-  color: #61dafb;
+.driverCard img{
+  border-radius: 50px;
+  margin: 20px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
