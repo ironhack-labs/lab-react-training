@@ -1,10 +1,19 @@
 const Random = (props) => {
-  const firstRandom = Math.random() * (props.max - props.min) + props.min;
-  console.log(firstRandom);
+  const myRandomNumber =
+    Math.floor(Math.random() * (props.max - props.min)) + props.min;
+  console.log(myRandomNumber);
   return (
-    <div>
+    <div
+      style={{
+        border: '1px solid black',
+        padding: '6px',
+        textAlign: 'left',
+        fontSize: '2rem',
+      }}
+    >
       <p>
-        Random value between {props.min} and {props.max} {firstRandom}{' '}
+        {/* gt is the arrow */}
+        Random value between {props.min} and {props.max} =&gt; {myRandomNumber}{' '}
       </p>
     </div>
   );
