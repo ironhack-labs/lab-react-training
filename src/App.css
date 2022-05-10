@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+.idCard{
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px 10px;
+  display: flex;
+
+}
+
+.idCard p{
+  margin: 0;
+  padding: 0 5px;
+  text-align: left;
+}
+
+.textCard{
+  border: 1px solid black;
+  text-align: left;
+  padding: 10px;
+  margin: 20px 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.creditCards{
+  display: flex;
+  
+}
+
+.driverCard{
+  background-color: blue;
+  border-radius: 25px;
+  color: white;
+  margin: 20px 10px;
+}
+
+.driverCard img{
+  width: 100px;
+  float: left;
+}
+
+.driverCard p, h3{
+margin: 0;
+}
