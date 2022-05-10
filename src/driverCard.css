@@ -1,0 +1,30 @@
+.Card{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    margin: 80px 5% ;
+    border-radius: 30px;
+    background-color:rgb(36, 76, 171);
+    height: 250px;
+    align-items: center;
+
+}
+.Card img {
+    display: flex;
+    width: 15%;
+    margin-right: 20px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.Card h2{
+    font-size: 40px;
+    color: white;
+    margin: 5px;
+}
+.Card p{
+    font-size: 20px;
+    color: white;
+    margin: 5px 0;
+}
