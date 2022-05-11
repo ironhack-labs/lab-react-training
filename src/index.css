@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.greetings-card{
+  border: 1px solid black;
+  text-align: left;
+  padding: 10px;
+  margin: 20px 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.random-card{
+  border: 1px solid black;
+  text-align: left;
+  padding: 10px;
+  margin: 20px 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.box-color{
+  border: 1px solid black;
+}

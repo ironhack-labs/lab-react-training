@@ -1,0 +1,53 @@
+.IdCard-Main {
+ border: 1px solid black;
+ margin-bottom: 10px;
+ padding: 10px;
+ display: flex;
+}
+
+.IdCard-Info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px; 
+}
+
+.IdCard p{
+    margin: 2px 0px;
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+.greetings-card{
+    border: 1px solid black;
+    text-align: left;
+    padding: 10px;
+    margin: 20px 10px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .creditCards{
+    display: flex;
+  
+  }
+  
+  .driverCard{
+    background-color: rgb(90, 45, 215);
+    border-radius: 25px;
+    color: white;
+    margin: 20px 10px;
+  }
+  
+  .driverCard img{
+    width: 100px;
+    float: center;
+  }
+  
+  .driverCard p, h3{
+  margin: 0;
+  }
+
+  .rating{
+      display: flex;
+  }
