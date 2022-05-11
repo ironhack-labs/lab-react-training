@@ -1,0 +1,160 @@
+
+
+.IdCard-Main {
+border: 2px solid black;
+margin-bottom: 10px;
+padding: 10px;
+display: flex;
+}
+
+.IdCard-Info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.IdCard-Info p {
+    margin: 0px;
+}
+
+
+.iteration-4-box {
+    border: 2px solid black;
+    width: 250px;
+    height: 100px;
+    margin-bottom: 15px;
+    
+}
+
+.iteration-4-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.iteration-5-main {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    
+}
+
+.card {
+    
+    border: 2px solid;
+    width: 340px;
+    height: 160px;
+margin-right: 15px;
+border-radius: 10px ;
+}
+
+.cardLogo {
+max-width: 30px;
+padding: 10px;
+}
+
+.cardFirstSection {
+  display: flex;
+  flex-direction: row;
+justify-content: end;  
+}
+
+.cardSecondSection {
+   margin: 0px;
+}
+
+
+.cardSecondSection p {
+   font-size: 20px;
+}
+
+
+.cardThirdSection {
+    display: flex;
+    flex-direction: column;
+}
+.cardThirdSection div {
+    margin: 0px;
+    padding: 0px;
+    height: 16px;
+}
+
+.cardThirdSection p {
+    font-size: 15px;
+}
+
+.thirdSection-1 {
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.thirdSection-1 div{
+    margin-left: 10px;
+}
+
+.thirdSection-2 {
+    display: flex;
+    flex-direction: row;
+ }
+
+.thirdSection-2 div{
+    margin-left: 10px;
+}
+
+.cardAllSections {
+   margin-left: 10px;
+   margin-right: 10p; 
+}
+
+.license {
+    background-color: #455eb5;
+    width: 700px;
+    height: 120px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.license img {
+    width: 100px;
+    border-radius: 50%;
+    
+    
+}
+
+.licenseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.licenseSection1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.licenseSection2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: flex-start;
+}
+
+.licenseSection2 div {
+    margin: 0;
+    height: 30px;
+}
