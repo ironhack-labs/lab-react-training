@@ -1,0 +1,22 @@
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.creditCard{
+    text-align: left;
+    padding: 15px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.type{
+    text-align: right;
+}
+
+.secretNum{
+    font-size: 2em;
+    text-align: center;
+}

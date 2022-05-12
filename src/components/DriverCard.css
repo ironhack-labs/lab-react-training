@@ -1,0 +1,31 @@
+.driverImg{
+    height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+
+}
+
+.driverInfo{
+    height: 100px;
+    background-color: rgb(69, 44, 234);
+    text-align: left;
+    color: white;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.info{
+    padding: 10px;
+}
+
+
+.card{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+}
