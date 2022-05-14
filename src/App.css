@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +35,62 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.IdCard-info {
+  display: flex;
+  text-align: left;
+}
+
+.IdCard-image {
+  display: flex;
+}
+
+.IdCard-section {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.greetings{
+  border: 2px solid black;
+  text-align: left;
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+.random-card{
+  border: 2px solid black;
+  text-align: left;
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+.box-color {
+  margin: 30px;
+  border: 2px solid black;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.creditCard{
+  text-align: left;
+  padding: 15px;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.type{
+  text-align: right;
+}
+
+.secretNum{
+  font-size: 2em;
+  text-align: center;
 }
