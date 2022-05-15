@@ -22,6 +22,9 @@ code {
   margin: 20px;
   padding: 20px;
 }
+.box img {
+  margin-right: 30px;
+}
 .credit-card {
   display: flex;
   flex-direction: column;
@@ -40,4 +43,9 @@ code {
 }
 .credit-card p {
   margin-right: 30px;
+}
+
+.stars {
+  font-size: 2rem;
+  color: goldenrod;
 }
