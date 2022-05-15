@@ -22,3 +22,22 @@ code {
   margin: 20px;
   padding: 20px;
 }
+.credit-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.credit-card img {
+  width: 80px;
+  float: right;
+}
+.credit-card h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.credit-card p {
+  margin-right: 30px;
+}
