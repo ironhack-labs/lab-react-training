@@ -43,7 +43,7 @@ function App() {
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
       </div>
-      <div>
+      <div className='flex-row'>
         <CreditCard
           type="Visa"
           number="0123456789018845"
