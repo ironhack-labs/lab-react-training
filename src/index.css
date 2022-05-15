@@ -49,3 +49,14 @@ code {
   font-size: 2rem;
   color: goldenrod;
 }
+.driver-card {
+align-items: center;
+display: flex;
+justify-content: center;
+background-color: royalblue;
+}
+.driver-card img{
+  max-width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
