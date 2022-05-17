@@ -1,11 +1,14 @@
 import './App.css';
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
 
 function App() {
   return (
     
     <div className="App">
+
     <h1>IdCard</h1>
+
     <section>
     <div className="cards-info">
       <IdCard 
@@ -19,7 +22,7 @@ function App() {
      </div>
 
      <br></br>
-     
+
      <div className="cards-info">
       <IdCard className="cards-info"
         lastName="Delores "
@@ -31,6 +34,13 @@ function App() {
       />
       </div> 
       </section>
+
+      <section> 
+      <div>
+      
+      </div>
+      </section>
+
     </div>
   );
 }

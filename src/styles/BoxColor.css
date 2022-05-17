@@ -1,0 +1,19 @@
+.title{
+    padding-left: 10px;
+  }
+
+.box-color {
+border: 1px solid black;
+height: 100px;
+padding: 5px;
+margin: 10px;
+text-align: center;
+color: white;
+font-size: 30px;
+font-weight: 100;
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+}

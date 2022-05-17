@@ -1,24 +1,21 @@
-import React from 'react'
+import React from 'react';
+import '../styles/IdCard.css'
 
-const idCard = ({lastName, firstName, gender, height, birth, picture}) => {
-
-return (
-     
-     <div className="id.cards">
-     <div className="id-picture">
-          <img src={picture} alt="user photo"/>
-     </div>
-
-     <div className="id-infos">
-     <p><strong>First Name:</strong> {firstName} </p>
-     <p><strong>Last Name:</strong> {lastName} </p>
-     <p><strong>Gender:</strong> {gender} </p>
-     <p><strong>Height:</strong> {height /100}m </p>
-     <p><strong>Birth:</strong> {birth.toDateString()} </p>
-     </div>
-     </div>
-)
-
+const IdCard = ({lastName,firstName,gender,height,birth,picture}) => {
+    return (
+        <div className='id-card'>
+            <div className='picture'>
+            <img src={picture} alt='card'/>
+            </div>
+            <ul className='list-idCard'> 
+                <li><strong>First name:</strong> {firstName}</li>
+                <li><strong>Last name:</strong> {lastName}</li>
+                <li><strong>Gender:</strong> {gender}</li>
+                <li><strong>Height:</strong> {height}</li>
+                <li><strong>Birth:</strong> {birth.toDateString()}</li>
+            </ul>
+        </div>
+    )
 }
 
-export default idCard;
+export default IdCard; 
