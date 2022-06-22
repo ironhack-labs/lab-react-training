@@ -1,0 +1,13 @@
+.IdCard{
+    display:flex;
+    border:1px solid black;
+    padding:5px;
+}
+
+img{
+    margin-right:10px;
+}
+
+.data-title{
+    text-align:left;
+}
