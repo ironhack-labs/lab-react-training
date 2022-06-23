@@ -32,7 +32,7 @@ export default function CreditCard({
   return <div className="creditCard" style={{backgroundColor:bgColor, color:color}}>
     <img className="logo" src={card[type]}/>
     <p className='number'>{hideNumber(number)}</p>
-    <p>Expires {expirationMonth}/{expirationYear} {bank}</p>
+    <p>Expires {expirationMonth.toString().padStart(2,'0')}/{expirationYear.toString().split('').filter((n,i)=>i>=2).join('')} {bank}</p>
     <p>{owner}</p>
     
   </div>;

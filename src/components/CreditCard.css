@@ -4,9 +4,32 @@
     width: 300px;
     border-radius: 10px;
     display: inline-block;
+    position: relative;
 }
 
 .logo{
     height: 20px;
+    width:56px;
     text-align: right;
+    position:absolute;
+    right:0;
+}
+
+.number{
+    font-size: 1.9em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+p{
+    margin:0;
+}
+
+.starsContainer{
+    display:flex;
+}
+
+.starsContainer div{
+    font-size:2em;
+
 }
