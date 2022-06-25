@@ -2,37 +2,60 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  justify-content: center;
+  border: 2px solid;
+  border-color: black;
+  margin-bottom: 5px;
+  background-color: rgba(113, 113, 199, 0.627);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.idPicture {
+  height: 30vh;
+  border-radius: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info {
+  text-align: left;
+}
+
+.creditCard {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.cardPic {
+  align-self: flex-end;
+  height: 2.5rem;
+  width: 5rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardNumber {
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.cardInfo {
+  align-self: flex-start;
+  text-align: left;
+  margin-left: 1rem;
+  width: 15rem;
+  height: 5rem;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.expire {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  height: 1.5rem
+}
+
+.rating {
+  font-size: 2rem;
 }
