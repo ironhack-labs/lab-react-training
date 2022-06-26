@@ -1,0 +1,30 @@
+.creditCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  min-width: 30%;
+}
+
+.number {
+  font-size: 2rem;
+  align-self: center;
+  letter-spacing: 0.1rem;
+}
+
+.exp-bank {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+span {
+  margin-right: 0.7rem;
+}
+
+.type {
+  align-self: flex-end;
+}
