@@ -3,6 +3,11 @@
   margin: 10px;
 }
 
+.App h1 {
+  text-align: left;
+  margin-top: 30px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -4,6 +4,7 @@ import IdCard from './components/IdCard';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
       <BoxColor r={128} g={255} b={0} />
 
       <h1>Credit card</h1>
-      <div className='credit-card-container'>
+      <div className="credit-card-container">
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -72,6 +73,13 @@ function App() {
           color="white"
         />
       </div>
+      <h1>Ratings</h1>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
     </div>
   );
 }
