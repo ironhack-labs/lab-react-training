@@ -37,3 +37,7 @@
     transform: rotate(360deg);
   }
 }
+
+.credit-card-container {
+  display: flex;
+}
