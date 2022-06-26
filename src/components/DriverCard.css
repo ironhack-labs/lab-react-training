@@ -1,0 +1,27 @@
+.driver-card {
+  background-color: #415cbb;
+  margin-bottom: 20px;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0;
+  padding-left: 30%;
+}
+
+.driver-card img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.driver-car-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: left; */
+  text-align: left;
+}
