@@ -3,7 +3,6 @@ import React from 'react';
 import './IdCard.css';
 
 const IdCard = (props) => {
-  console.log(props);
   return (
     <div className="id-card">
       <div className="pic-container">
