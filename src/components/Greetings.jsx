@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Greetings.css'
+import './GreetingsAndRandom.css'
 
 const Greetings = (props) => {
   const pickLanguage = (lang) => {
@@ -18,7 +18,7 @@ const Greetings = (props) => {
     }
   };
   return (
-    <div className='greeting'>
+    <div className='greeting-random'>
       {pickLanguage(props.lang)} {props.children}
     </div>
   );

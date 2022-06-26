@@ -30,8 +30,6 @@ const IdCard = (props) => {
         <p>
           <b>Birth: </b>
           {props.birth.toString().slice(0, 15)}
-          
-          
         </p>
       </div>
     </div>
@@ -39,10 +37,3 @@ const IdCard = (props) => {
 };
 
 export default IdCard;
-
-// lastName: A string
-// firstName: A string
-// gender: A string, 'male' or 'female'
-// height: A number
-// birth: A date
-// picture: A string
