@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.id-card {
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.pic-container {
+  display: flex;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 3px;
+}
+
+.info-container > * {
+  margin: 2px;
+}
