@@ -1,0 +1,16 @@
+.Button{
+    width:85px;
+    height:35px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display: inline-flex;
+    margin-left:20px;
+}
+
+.Button:active{
+    box-shadow:3px 3px 3px blue;
+    border:1px solid black;
+}
+
