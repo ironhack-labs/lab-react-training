@@ -65,3 +65,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.numberList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3px
+}
