@@ -8,6 +8,6 @@ export default function LikeButton() {
     const [ counter, setCounter ] = useState(0)
 
     return (
-    <div class="Button" style={{backgroundColor:colorsArray[counter%6]}} onClick={()=>{setCounter(counter+1)}}>{counter} Likes</div>
+    <div className="Button" style={{backgroundColor:colorsArray[counter%6]}} onClick={()=>{setCounter(counter+1)}}>{counter} Likes</div>
   )
 }

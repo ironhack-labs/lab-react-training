@@ -7,9 +7,10 @@
     align-items:center;
     display: inline-flex;
     margin-left:20px;
+    user-select:none;
 }
 
-.Button:active{
+.Button:hover{
     box-shadow:3px 3px 3px blue;
     border:1px solid black;
 }
