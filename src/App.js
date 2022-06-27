@@ -6,6 +6,20 @@ import Random from './components/Random';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+
+import img from './assets/images/maxence.png';
+import imgClicked from './assets/images/maxence-glasses.png';
+import face0 from './assets/images/dice-empty.png';
+import face1 from './assets/images/dice1.png';
+import face2 from './assets/images/dice2.png';
+import face3 from './assets/images/dice3.png';
+import face4 from './assets/images/dice4.png';
+import face5 from './assets/images/dice5.png';
+import face6 from './assets/images/dice6.png';
 
 function App() {
   return (
@@ -60,6 +74,25 @@ function App() {
           model: 'Audi A3',
           licensePlate: 'BE33ER',
         }}
+      />
+      <LikeButton />
+      <ClickablePicture img={img} imgClicked={imgClicked} />
+      <Dice
+        face0={face0}
+        face1={face1}
+        face2={face2}
+        face3={face3}
+        face4={face4}
+        face5={face5}
+        face6={face6}
+      />
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
       />
     </div>
   );

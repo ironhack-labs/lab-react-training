@@ -40,8 +40,8 @@ const CreditCard = ({
       style={{
         backgroundColor: bgColor,
         color: color,
-        width: '35vw',
-        height: '33vh',
+        width: '475px',
+        height: '275px',
         borderRadius: '10px',
         marginLeft: '15rem',
       }}
