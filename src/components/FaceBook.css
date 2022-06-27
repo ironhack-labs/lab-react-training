@@ -1,0 +1,10 @@
+.FBCard{
+    border:1px solid black;
+    margin:10px;
+    display:flex;
+    padding:5px;
+}
+
+.FBCard img{
+    border-radius:0;
+}
