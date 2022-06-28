@@ -102,7 +102,7 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
-      <NumbersTable limit={12} />
+      <NumbersTable limit={40} />
       <FaceBook />
     </>
   );
