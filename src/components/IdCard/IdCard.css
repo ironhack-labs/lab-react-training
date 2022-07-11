@@ -1,4 +1,16 @@
 .IdCard {
-    border: solid black 1px;
-    margin-top: 15px;
+    border: solid black 3px;
+    display: flex;
+    margin-top: 40px;
+
+
+}
+
+.text-Id {
+    margin-left: 50px;
+
+}
+
+img {
+    height: 200px;
 }

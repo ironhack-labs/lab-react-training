@@ -4,6 +4,8 @@ import Greetings from './components/Greetings/land'
 import Random from './components/Random/Random'
 import BoxColor from './components/Box-color/Box-color'
 import CreditCard from './components/CreditCard/CreditCard'
+import Rating from './components/Rating/Rating'
+import DriverCard from './components/DriverCar/DriverCar'
 
 
 function App() {
@@ -76,6 +78,34 @@ function App() {
         color="white"
       />
 
+      <h1>Iteración 6</h1>
+      <Rating rating="☆☆☆☆☆">0</Rating>
+      <Rating rating="★☆☆☆☆">1.49</Rating>
+      <Rating rating="★★☆☆☆">1.5</Rating>
+      <Rating rating="★★★☆☆">3</Rating>
+      <Rating rating="★★★★☆">4</Rating>
+      <Rating rating="★★★★★">5</Rating>
+
+      <h1>Iteración 7</h1>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE"
+        }}
+      />
+
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
+        }}
+      />
     </div>
 
   )

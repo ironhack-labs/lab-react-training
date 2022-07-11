@@ -6,11 +6,13 @@ const IdCard = ({ firstName, lastName, gender, height, birth, picture }) => {
 
         <section className="IdCard">
             <img src={picture} alt="Image" />
-            <p>First Name: {firstName}</p>
-            <p>Last Name:{lastName}</p>
-            <p>Gender: {gender}</p>
-            <p>Height: {height}</p>
-            <p>Birth:{birth.toDateString()}</p>
+            <div className="text-Id">
+                <p><strong>First Name:</strong> {firstName}</p>
+                <p><strong>Last Name:</strong>{lastName}</p>
+                <p><strong>Gender:</strong> {gender}</p>
+                <p><strong>Height:</strong> {height}</p>
+                <p><strong>Birth:</strong>{birth.toDateString()}</p>
+            </div>
         </section>
     )
 

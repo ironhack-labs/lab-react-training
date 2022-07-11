@@ -10,6 +10,8 @@ const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner
     if (expirationMonth < 10) {
         expirationMonth = `0${expirationMonth}`
     }
+
+    (type === "Visa") ? true : false
     const hideNumber = number.slice(-4)
 
     return (

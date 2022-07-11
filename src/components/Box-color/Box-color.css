@@ -1,0 +1,8 @@
+.Box-color {
+    padding: 100px;
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 40px;
+    width: 30%;
+    font-size: 3em;
+}
