@@ -1,0 +1,16 @@
+.cCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.creditCard {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+    line-height: .5rem;
+}
+
+.number {
+    font-size: 2.5rem;
+}

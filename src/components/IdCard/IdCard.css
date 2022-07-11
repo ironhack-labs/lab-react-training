@@ -1,0 +1,16 @@
+.card {
+    display: flex;
+    justify-content: left;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: solid;
+}
+
+.card img {
+    width: 20%;
+    margin-right: 2rem;
+}
+
+span {
+    font-weight: bold;
+}

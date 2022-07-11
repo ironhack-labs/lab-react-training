@@ -1,0 +1,6 @@
+.boxColor {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center
+}
