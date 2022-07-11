@@ -1,0 +1,21 @@
+.credit-card {
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 50%;
+}
+
+.credit-card img {
+    width: 50%;
+    height: auto;
+}
+
+.card-div {
+    display: flex;
+}
+
+.cardContainer {
+    display: flex;
+}

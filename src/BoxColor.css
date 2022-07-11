@@ -1,0 +1,16 @@
+.BoxColor {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BoxColor p {
+    color: black;
+    margin: 1px;
+}
