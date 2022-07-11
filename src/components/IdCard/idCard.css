@@ -1,0 +1,16 @@
+.idCard {
+    border: 2px solid;
+    display: flex;
+    margin: 10px;
+}
+
+.idCard>img {
+    width: 200px;
+    height: 200px;
+    padding: 5px
+}
+
+.idCard>article {
+    padding-left: 20px;
+    line-height: 10px;
+}

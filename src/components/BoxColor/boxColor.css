@@ -1,0 +1,12 @@
+.boxColor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.boxColor p {
+    margin: 5px;
+    font-weight: 400;
+}

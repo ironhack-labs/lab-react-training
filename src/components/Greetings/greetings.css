@@ -1,0 +1,9 @@
+.greeting {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.greeting p {
+    font-size: 30px;
+    margin: 5px;
+}

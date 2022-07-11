@@ -1,0 +1,37 @@
+.driverCard {
+    display: flex;
+    justify-content: center;
+    background-color: #455eb5;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+}
+
+.driverCard>img {
+    align-self: end;
+    width: 100px;
+    height: 100px;
+
+    display: inline-block;
+    position: relative;
+
+    overflow: hidden;
+    vertical-align: middle;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.driverCard>article {
+    width: 300px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.driverCard>article>p {
+    margin: 0px;
+}

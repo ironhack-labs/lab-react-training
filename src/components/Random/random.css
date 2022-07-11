@@ -1,0 +1,9 @@
+.random {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.random p {
+    font-size: 30px;
+    margin: 5px;
+}
