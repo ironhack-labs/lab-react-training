@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+.ml-20 {
+  margin-left: 15px;
+}
+.m-5 {
+  margin: 5px;
+}
+.mb-2 {
+  margin-bottom: 2px;
+}
+.pb-5 {
+  padding-bottom: 5px;
+}
+.user {
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* justify-content: space-between; */
+}
+
+.left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+
+.element-block {
+  display: block;
+}
+
+.border {
+  border-style: solid;
+}
+
+.mw-50 {
+  max-width: 50%;
+}
+
+.mw-30 {
+  max-width: 30%;
+}
+
+.py-5 {
+  padding: 5px 0px;
+}
+
+.card-rounder {
+  border: none;
+  border-radius: 7px;
+}
+
+/* .visa {
+  background-image: url('https://de.wikipedia.org/wiki/Datei:Visa_Inc._logo.svg#/media/Datei:Visa_2014.svg');
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
