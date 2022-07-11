@@ -1,0 +1,15 @@
+
+.Card{
+    background-color: blue;
+    width: 70%;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+}
+
+.Card img{
+    width: 10%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}

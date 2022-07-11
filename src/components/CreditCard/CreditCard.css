@@ -1,0 +1,12 @@
+.creditCard {
+    border-radius: 5px;
+    width: 300px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    display: inline-block
+}
+
+.creditCard img {
+    width: 15%;
+    align-items:inherit
+}

@@ -1,0 +1,13 @@
+.border {
+    display: flex;
+    justify-content: start;
+    padding-top: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    width: 71%;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: xx-large;
+    font-weight: 200;
+}
