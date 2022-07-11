@@ -1,0 +1,8 @@
+.BoxColor {
+    padding: 25px;
+    margin: 5px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+}
