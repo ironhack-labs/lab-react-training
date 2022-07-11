@@ -1,0 +1,22 @@
+img {
+    width: 125px;
+    border-radius: 100%;
+}
+
+.driver-card {
+    display: flex;
+    justify-content: center;
+    background-color: #455eb5;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.driver-card img {
+    float: left;
+}
+
+footer {
+    margin-left: 20px;
+    float: left;
+}

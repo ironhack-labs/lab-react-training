@@ -1,0 +1,21 @@
+.credit-card {
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.card-number {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.card-info {
+    font-size: 0.8em;
+}
+
+.card-type {
+    text-align: right;
+}

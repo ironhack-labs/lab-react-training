@@ -1,0 +1,22 @@
+.id-card {
+    border: 2px solid #000;
+    width: 95%;
+    margin: 10px;
+    display: inline-block;
+    padding: 5px;
+    font-size: .8em;
+}
+
+.id-card img {
+    float: left;
+    width: 150px;
+    margin-right: 10px;
+}
+
+footer {
+    float: left;
+}
+
+.warning {
+    color: red
+}
