@@ -40,6 +40,7 @@ function App() {
     <BoxColor r={128} g={255} b={0} />
 
     <LikeButton />
+    <LikeButton />
 
     <ClickablePicture
       img={Maxene}
