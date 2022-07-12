@@ -5,7 +5,15 @@ import Random from './components/iteration3/Random'
 import BoxColor from './components/iteration4/BoxColor'
 import CreditCard from './components/iteration5/CreditCard'
 import Rating from './components/iteration6/Rating'
-import DriverCard from './components/iteration7/DriverCard';
+//import DriverCard from './components/iteration7/DriverCard'
+import LikeButton from './components/iteration8/LikeButton'
+import ClickablePicture from './components/iteration9/ClickablePicture'
+import maxence from './assets/images/maxence.png'
+import maxenceGlasses from './assets/images/maxence-glasses.png'
+// import Dice from './components/iteration10/Dice';
+import Carousel from './components/iteration11/Carousel'
+import NumbersTable from './components/iteration12/NumbersTable'
+import FaceBook from './components/iteration13/FaceBook'
 
 function App() {
   return (
@@ -48,7 +56,7 @@ function App() {
         <BoxColor r={128} g={255} b={0} />
       </div>
 
-      {/* iteration5*/}
+      {/* iteration5 */}
 
       <CreditCard
         type="Visa"
@@ -83,7 +91,7 @@ function App() {
         color="white"
       />
 
-      {/* iteration6*/}
+      {/* iteration6 */}
 
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -92,9 +100,9 @@ function App() {
       <Rating>4</Rating>
       <Rating>5</Rating>
 
-      {/* iteration7*/}
+      {/* iteration7 */}
 
-      <DriverCard
+      {/* <DriverCard
         name="Travis Kalanick"
         rating={4.2}
         img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
@@ -112,7 +120,42 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }}
+      /> */}
+
+      {/* iteration8 */}
+
+      <LikeButton />
+
+      {/* iteration9 */}
+
+      <ClickablePicture
+        img={maxence}
+        imgClicked={maxenceGlasses}
       />
+
+      {/* iteration10 */}
+
+      {/* <Dice /> */}
+
+      {/* iteration11 */}
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      {/* iteration12 */}
+
+      <NumbersTable limit={12} />
+
+      {/* iteration13/14 */}
+
+      <FaceBook />
+
     </>
   );
 }

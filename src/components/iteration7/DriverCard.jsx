@@ -1,6 +1,6 @@
 import Rating from "../iteration6/Rating"
 
-const DriverCard = (name, rating, img, car) => {
+const DriverCard = (name, rating, img) => {
 
     return (
         <div>
@@ -10,7 +10,7 @@ const DriverCard = (name, rating, img, car) => {
             <div >
                 <h5>{name}</h5>
                 <Rating>{rating}</Rating>
-                <p>{car.model} - {car.licensePlate} </p>
+                {/* <p>{car.model} - {car.licensePlate} </p> */}
             </div>
         </div>
     )

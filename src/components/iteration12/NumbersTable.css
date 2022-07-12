@@ -1,0 +1,25 @@
+.table {
+    display: flex;
+}
+
+.red {
+    padding: 10px;
+    background-color: red;
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
