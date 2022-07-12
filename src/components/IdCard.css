@@ -1,0 +1,15 @@
+.id-card {
+  border: 1px solid #000;
+  margin: 1rem;
+  padding: .5rem;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  text-align: left;
+  gap: .5rem;
+  height: 13rem;
+}
+
+span {
+  font-weight: 700;
+} 

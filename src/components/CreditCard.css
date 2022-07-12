@@ -1,0 +1,37 @@
+.credit-card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1.8rem;
+    align-content: center;
+    justify-content: space-between;
+    gap: .3rem;
+    border-radius: 1.5rem;
+    height: 14rem;
+    max-width: 26rem;
+  }
+  
+  img {
+    height: 2rem;
+    margin: 0;
+    margin-left: auto;
+  }
+  
+  .card-number {
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    top: 1rem
+  }
+  
+  .credit-card .info {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+  }
+  
+  .credit-card .owner {
+    text-align: left;
+    position: relative;
+    bottom: 1.7rem;
+  } 
