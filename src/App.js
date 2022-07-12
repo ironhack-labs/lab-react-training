@@ -1,6 +1,11 @@
 import './App.css';
 import IdCard from './components/idCard';
 import Greeting from './components/Greetings';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Maxence from './assets/images/maxence.png';
+import MaxenceGlasses from './assets/images/maxence-glasses.png';
+import Dice from './components/Dice';
 
 const personIDs = [
   {
@@ -29,6 +34,9 @@ function App() {
       <IdCard card={personIDs[0]} />
       <IdCard card={personIDs[1]} />
       <Greeting lang="fr">Alexander</Greeting>
+      <LikeButton />
+      <ClickablePicture img={Maxence} imgClicked={MaxenceGlasses} />
+      <Dice />
     </div>
   );
 }
