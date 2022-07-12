@@ -1,0 +1,22 @@
+.card1 {
+    width: 400px;
+    height: 200px;
+    background-color: aquamarine;
+    border-radius: 7px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+.card1 .number {
+    font-size: 30px;
+}
+
+.card1>img {
+    align-self: end;
+    width: 70px;
+    margin-bottom: 20px;
+}
