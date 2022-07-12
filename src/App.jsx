@@ -6,6 +6,18 @@ import BoxColor from './components/BoxColor'
 import CreditCard from './components/CreditCard'
 import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
+import LikeButton from './components/LikeButton'
+import ClickablePicture from './components/ClickablePicture'
+import Dice from './components/Dice'
+import Carousel from './components/Carousel'
+import NumbersTable from './components/NumbersTable'
+import FaceBook from './components/FaceBook'
+import SignupPage from './components/SignupPage'
+import RGBColorPicker from './components/RGBColorPicker'
+
+
+import maxence from './assets/images/maxence.png'
+import maxence_glasses from './assets/images/maxence-glasses.png'
 
 function App() {
   return (
@@ -115,6 +127,50 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      <hr />
+
+      <h2>Iteration 8</h2>
+      <LikeButton />
+      <LikeButton />
+      <hr />
+
+      <h2>Iteration 9</h2>
+      <ClickablePicture
+        img={maxence}
+        imgClicked={maxence_glasses}
+      />
+      <hr />
+
+      <h2>Iteration 10</h2>
+      <Dice />
+      <hr />
+
+      <h2>Iteration 11</h2>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <hr />
+
+      <h2>Iteration 12</h2>
+      <NumbersTable limit={12} />
+      <hr />
+
+      <h2>Iteration 13</h2>
+      <FaceBook />
+      <hr />
+
+      <h2>Iteration 15</h2>
+      <SignupPage />
+      <hr />
+
+      <h2>Iteration 16</h2>
+      <RGBColorPicker></RGBColorPicker>
+
     </div>
   );
 }

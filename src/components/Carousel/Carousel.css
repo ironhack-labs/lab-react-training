@@ -1,0 +1,18 @@
+.Carousel>img {
+    width: 300px;
+    height: 300px;
+}
+
+.Carousel>button {
+    background-color: #4CAF50;
+
+    height: 300px;
+
+    border: none;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

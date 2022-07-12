@@ -1,0 +1,25 @@
+.FaceBook {
+    padding-left: 0;
+
+}
+
+.FaceBook>li {
+    list-style-type: none;
+}
+
+.subCard {
+    border: 2px solid;
+    display: flex;
+    margin: 10px;
+}
+
+.subCard>img {
+    width: 200px;
+    height: 200px;
+    padding: 5px
+}
+
+.subCard>article {
+    padding-left: 20px;
+    line-height: 10px;
+}
