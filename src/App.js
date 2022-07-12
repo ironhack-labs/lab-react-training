@@ -4,9 +4,14 @@ import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Maxene from './assets/images/maxence.png';
+import MaxeneGlasses from './assets/images/maxence-glasses.png'
+
 
 function App() {
-  return (
+    return (
     <div className="App">
      <IdCard
       lastName='Doe'
@@ -34,6 +39,12 @@ function App() {
     <BoxColor r={255} g={0} b={0} />
     <BoxColor r={128} g={255} b={0} />
 
+    <LikeButton />
+
+    <ClickablePicture
+      img={Maxene}
+      imgClicked={MaxeneGlasses}
+    />
     </div>
     
   );
