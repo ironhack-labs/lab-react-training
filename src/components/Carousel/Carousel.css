@@ -1,0 +1,16 @@
+.Carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.Carousel img {
+    width: 20%;
+    height: 15rem;
+}
+
+.btn {
+    width: 6rem;
+    height: 2rem;
+    margin: 7rem 1rem;
+}

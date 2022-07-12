@@ -7,6 +7,14 @@ import CreditCard from './components/CreditCard/CreditCard'
 import Rating from './components/Rating/Rating'
 import DriverCard from './components/DriverCard/DriverCard'
 
+import LikeButton from './components/LikeButton/LikeButton'
+import ClickablePicture from './components/ClickablePicture/ClickablePicture'
+import image1 from './assets/images/maxence.png'
+import image2 from './assets/images/maxence-glasses.png'
+import Dice from './components/Dice/Dice'
+import Carousel from './components/Carousel/Carousel'
+import NumbersTable from './components/NumbersTable/NumbersTable'
+
 
 function App() {
   return (
@@ -115,6 +123,37 @@ function App() {
             licensePlate: "BE33ER"
           }}
         />
+
+        <div className='likeButton'>
+          <LikeButton />
+          <LikeButton />
+        </div>
+
+        <div className="clickablePicture">
+          <ClickablePicture
+            img={image1}
+            imgClicked={image2}
+          />
+        </div>
+
+        <div className="Dice">
+          <Dice />
+        </div>
+
+        <div className="Carousel">
+          <Carousel
+            images={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg'
+            ]}
+          />
+        </div>
+
+        <div className="NumbersTable">
+          <NumbersTable limit={12} />
+        </div>
       </div>
     </>
   )

@@ -4,8 +4,6 @@ const Rating = ({ children }) => {
 
     const stars = Math.round(children)
 
-    console.log('typeof', children)
-
     const rate = (
         stars === 5 ? <div className='stars'>★★★★★</div> :
             stars === 4 ? <div className='stars'>★★★★☆</div> :

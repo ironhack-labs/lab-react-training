@@ -1,0 +1,11 @@
+.likeButton {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.LikeButton {
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
