@@ -1,0 +1,23 @@
+.creditCard {
+    width: 265px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.creditCard img {
+    width: 20%
+}
+
+.creditCard p {
+    margin: 3px;
+    padding: 12px;
+    font-size: 0.6em;
+}
+
+.cardHead {
+    display: flex;
+    justify-content: end;
+    padding: 15px
+}
