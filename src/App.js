@@ -5,6 +5,13 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard'
 import Rating from './components/Rating'
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import maxence from './assets/images/maxence.png';
+import maxenceGlasses from './assets/images/maxence-glasses.png';
+/* import Dice from './components/Dice'; */
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable'
 
 function App() {
   return (
@@ -130,6 +137,37 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+
+      <h1>ITERACIÓN 8</h1>
+
+      <LikeButton />
+      <LikeButton />
+
+      <h1>ITERACIÓN 9</h1>
+
+      <ClickablePicture
+        img={maxence}
+        imgClicked={maxenceGlasses}
+      />
+
+      <h1>ITERACIÓN 10</h1>
+
+      {/* <Dice /> */}
+
+      <h1>ITERACIÓN 11</h1>
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <h1>ITERACIÓN 11</h1>
+
+      <NumbersTable limit={12} />
 
     </>
 
