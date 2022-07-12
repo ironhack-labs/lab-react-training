@@ -1,0 +1,7 @@
+.carousel {
+    display: flex;
+}
+
+.carouselImg {
+    width: 300px;
+}

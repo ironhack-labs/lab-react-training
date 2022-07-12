@@ -2,7 +2,6 @@ import "./Rating.css"
 
 const Rating = ({ children }) => {
     const rateNum = Math.round(children)
-    console.log(rateNum)
     switch (rateNum) {
         case 0:
             return <p className="rating">☆☆☆☆☆</p>;

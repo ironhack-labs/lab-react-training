@@ -1,0 +1,20 @@
+.tNumber {
+    display: flex;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+}
+
+.numberSquare {
+    padding: 50px;
+    border: 1px solid black;
+}
+
+.numberSquare2 {
+    padding: 50px;
+    background-color: #eb3324;
+    border: 1px solid black;
+}
+
+.square {
+    width: 200px;
+}

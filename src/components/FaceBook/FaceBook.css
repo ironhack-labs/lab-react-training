@@ -1,0 +1,18 @@
+.faceCards {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.faceCard {
+    margin: 10px;
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+
+}
+
+.faceCards img {
+    width: 200px;
+}

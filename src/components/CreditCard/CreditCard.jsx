@@ -19,7 +19,6 @@ const CreditCard = ({ type,
     type === 'Visa' ? cardImage = Visa : cardImage = MasterCard
 
 
-    console.log(twoDigitMonth)
     return (
 
         <>
@@ -27,7 +26,7 @@ const CreditCard = ({ type,
                 backgroundColor: bgColor,
                 color: color
             }}>
-                <img src={cardImage} alt={type} />
+                <img src={cardImage} alt={type} className='cardIcon' />
                 <p className="cardNumber">**** **** **** {lastNumbers}</p>
                 <div className="expiry">
                     <p>Expires: {twoDigitMonth}/{twoYearDigits}</p>

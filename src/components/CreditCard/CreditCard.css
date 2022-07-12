@@ -25,3 +25,9 @@
     display: flex;
     justify-content: space-between;
 }
+
+.cardIcon {
+    width: 125px;
+    border-radius: 100%;
+    margin: 10px;
+}
