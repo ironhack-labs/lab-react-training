@@ -1,7 +1,7 @@
 import './IdCard.css'
 
 const IdCard = ({ firstName, lastName, gender, height, birth, picture }) => {
-    console.log('hola', birth)
+    // console.log('hola', birth)
     return (
         <article className="IdCard">
 

@@ -2,7 +2,7 @@ import './CreditCar.css'
 
 const CreditCar = ({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color }) => {
     const numberPrivate = number.slice(12, 16)
-    console.log(numberPrivate)
+    // console.log(numberPrivate)
     return (
         <article className="CreditCard" style={{ backgroundColor: bgColor }}>
 

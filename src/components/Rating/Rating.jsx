@@ -1,7 +1,7 @@
 import './Rating.css'
 
 const Rating = ({ children, word }) => {
-    console.log('hola', children)
+    // console.log('hola', children)
 
     // switch (children) {
     //     case children > 1:
