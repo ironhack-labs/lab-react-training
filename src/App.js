@@ -7,6 +7,16 @@ import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import Raiting from './components/Raiting/Raiting';
 import DriverCard from './components/DriverCard/DriverCard';
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import Maxence_glasses from './assets/images/maxence-glasses.png'
+import Maxence from './assets/images/maxence.png'
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+
+
+
+
 
 function App() {
 
@@ -102,6 +112,8 @@ function App() {
       <Raiting>4</Raiting>
       <Raiting>5</Raiting>
 
+
+
       <h3>Iteración 7</h3>
       <DriverCard
         name="Travis Kalanick"
@@ -122,10 +134,33 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      <h3>Iteración 8</h3>
+      <LikeButton />
+      <LikeButton />
 
+      <h3>Iteración 9</h3>
+      <ClickablePicture
+        img={Maxence}
+        imgClicked={Maxence_glasses}
+      />
 
+      <h3>Iteración 10</h3>
+
+      <Dice />
+      <h3>Iteración 11</h3>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <h3>Iteración 12</h3>
+      
     </>
-
+ 
+        
 
 
   );
