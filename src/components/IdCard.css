@@ -1,0 +1,9 @@
+
+.idCard {
+    display: flex;
+    border-style: solid;
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 20px 0px 20px 80px;
+    padding: 10px;
+}
