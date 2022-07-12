@@ -1,0 +1,23 @@
+.IDcard img {
+    width: 100%; 
+    height: 100%;
+}
+
+.IDcard p {
+    margin: 2px; 
+    margin-left: 7px;
+    text-align: left;
+}
+
+.IDcard {
+    display: flex; 
+    color: black; 
+    margin: 5px; 
+    width: 80%;
+    padding-top: 5px;
+    padding-left: 25px;
+    border: 2px solid black;
+    justify-content: flex-start; 
+    background-color: white;
+    color: black;
+}

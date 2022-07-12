@@ -1,0 +1,20 @@
+.driver {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-color: rgb(59, 110, 186);
+    color: white;
+    border-radius: 2rem;
+    gap: 3rem;
+    margin: 2rem auto;
+    width: 70%; 
+}
+
+img {
+    height: 12%;
+    width: 12%; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}

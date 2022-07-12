@@ -1,0 +1,11 @@
+.starGrading {
+    display: flex; 
+    justify-content: flex-start; 
+    padding-top: 12px; 
+    padding: 5px; 
+    width: 82%; 
+    margin: 2px; 
+    background-color: white;
+    color: black; 
+    font-size: xx-large;
+}

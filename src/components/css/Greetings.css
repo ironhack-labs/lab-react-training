@@ -1,0 +1,13 @@
+.welcome {
+    display: flex; 
+    justify-content: flex-start;
+    padding-top: 12px; 
+    border: 2px solid black; 
+    padding: 5px; 
+    width: 82%; 
+    margin: 2px; 
+    background-color: white;
+    color: black; 
+    font-size: large;  
+    font-weight: 190;
+} 
