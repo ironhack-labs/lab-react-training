@@ -1,4 +1,4 @@
-img {
+.driver-img {
     width: 125px;
     border-radius: 100%;
 }
@@ -19,4 +19,8 @@ img {
 footer {
     margin-left: 20px;
     float: left;
+}
+
+.driver-card p {
+    color: white;
 }
