@@ -1,0 +1,14 @@
+.dice {
+    width: 50%;
+    display: flex;
+    border-style: solid;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.dice img {
+    width: 10%;
+    height: 10%;    
+    margin-bottom: 20px;
+    margin-top: 20px
+}

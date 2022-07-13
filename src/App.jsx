@@ -1,12 +1,16 @@
 import './App.css'
-import IdCard from './Components/IdCard'
-// import Greetings from './Components/Greetings'
-import Random from './Components/Random'
-import BoxColor from './Components/BoxColor'
+import IdCard from './Components/IdCard/IdCard'
+// import Greetings from './Components/Greetings/Greetings'
+import Random from './Components/Random/Random'
+import BoxColor from './Components/BoxColor/BoxColor'
+import LikeButton from './Components/LikeButton/LikeButton'
+import ClickablePicture from './Components/ClickablePicture/ClickablePicture'
+import Dice from './Components/Dice/Dice'
+
 
 function App() {
   return (
-    
+
     <>
       <h1>React Training</h1>
 
@@ -39,6 +43,17 @@ function App() {
       ITERATION 4
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+
+      ITERATION 8
+      <LikeButton /><LikeButton />
+
+      ITERATION 9
+      <ClickablePicture
+        img='./assets/images/maxence.png'
+        imgClicked='./assets/images/maxence-glasses.png'
+      />
+      ITERATION 10
+      <Dice />
 
     </>
   )

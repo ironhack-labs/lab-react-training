@@ -1,0 +1,5 @@
+.clickablePicture {
+    display: flex;
+    border-style: solid;
+    margin-bottom: 20px;
+}
