@@ -7,6 +7,10 @@ import Maxence from './assets/images/maxence.png';
 import MaxenceGlasses from './assets/images/maxence-glasses.png';
 import Dice from './components/Dice';
 import Random from './components/Random';
+import BoxColor from './components/BoxColor';
+import CreditCard from './components/CreditCard';
+import MasterCard from './assets/images/master-card.svg';
+import Visa from './assets/images/visa.png';
 
 const personIDs = [
   {
@@ -41,6 +45,37 @@ function App() {
       </div>
       <div style={{ fontWeight: 'bold' }}>
         <Random min={1} max={100} />
+      </div>
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <CreditCard
+          number="0123456744"
+          bgColor="#11aa99"
+          expirationMonth={12}
+          expirationYear={2025}
+          bank="N26"
+          owner="Alexander Farmakis"
+          type={MasterCard}
+        />
+        <CreditCard
+          number="0123456744"
+          bgColor="#222222"
+          expirationMonth={12}
+          expirationYear={2025}
+          bank="INGDiba"
+          owner="Alexander Farmakis"
+          type={MasterCard}
+        />
+        <CreditCard
+          number="0123456744"
+          bgColor="#ddbb55"
+          expirationMonth={12}
+          expirationYear={2025}
+          bank="Volksbank Berlin"
+          owner="Alexander Farmakis"
+          type={Visa}
+        />
       </div>
     </div>
   );
