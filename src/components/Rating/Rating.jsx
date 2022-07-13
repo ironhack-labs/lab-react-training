@@ -7,23 +7,24 @@ const Rating = ({ children }) => {
     switch (num) {
         case 0:
             return <div><b>☆☆☆☆☆</b></div>
-            break;
+            // break;
         case 1:
             return <div><b>★☆☆☆☆</b></div>
-            break;
+            // break;
         case 2:
             return <div><b>★★☆☆☆</b></div>
-            break;
+            // break;
         case 3:
             return <div><b>★★★☆☆</b></div>
-            break;
+            // break;
         case 4:
             return <div><b>★★★★☆</b></div>
-            break;
+            // break;
         case 5:
             return <div><b>★★★★★</b></div>
+            // break;
+        default:
             break;
-
     }
 }
 

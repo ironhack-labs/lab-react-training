@@ -5,7 +5,7 @@ const IdCard = ({lastName, firstName, gender, height, birth, picture}) => {
     return (
         <article className="id-card">
 
-            <img src={picture} alt="picture" />
+            <img src={picture} alt="idCard" />
 
             <footer className='data'>
                 <h3><strong> First name: </strong> {firstName}</h3>

@@ -5,12 +5,12 @@ const DriverCard = ({ name, rating, img, car }) => {
     return (
         <div className="driverCard">
             <div className="driverImg">
-                <img src={img} alt='driver picture' />
+                <img src={img} alt='driver' />
             </div>
-            <div>
-                <h5>{name}</h5>
+            <div className='data'>
+                <h4>{name}</h4>
                 <p>{rating}</p>
-                <h6>{car.model} - {car.licensePlate}</h6>
+                <h5>{car.model} - {car.licensePlate}</h5>
             </div>
         </div>
     )

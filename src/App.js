@@ -1,11 +1,18 @@
-import './App.css';
-import IdCard from './components/IdCard/IdCard';
-import Greetings from './components/Greetings/Greetings';
-import Random from './components/Random/Random';
-import BoxColor from './components/BoxColor/BoxColor';
-import CreditCard from './components/CreditCard/CreditCard';
-import Rating from './components/Rating/Rating';
-import DriverCard from './components/DriverCard/DriverCard';
+import './App.css'
+import IdCard from './components/IdCard/IdCard'
+import Greetings from './components/Greetings/Greetings'
+import Random from './components/Random/Random'
+import BoxColor from './components/BoxColor/BoxColor'
+import CreditCard from './components/CreditCard/CreditCard'
+import Rating from './components/Rating/Rating'
+import DriverCard from './components/DriverCard/DriverCard'
+import LikeButton from './components/LikeButton/LikeButton'
+import ClickablePicture from './components/ClickablePicture/ClickablePicture'
+import maxence from './assets/images/maxence.png'
+import maxenceGlasses from './assets/images/maxence-glasses.png'
+import Dice from './components/Dice/Dice'
+import Carousel from './components/Carousel/Carousel'
+// import NumbersTable from './components/NumbersTable/NumbersTable'
 
 function App() {
   return (
@@ -43,7 +50,7 @@ function App() {
       <Random
         min={2}
         max={7}
-        />
+      />
 
       <Random
         min={1}
@@ -52,9 +59,9 @@ function App() {
       <h2>Iterracion 4</h2>
 
       <BoxColor
-      r={255}
-      g={0}
-      b={0}
+        r={255}
+        g={0}
+        b={0}
       />
 
       <h2>Iterracion 5</h2>
@@ -95,45 +102,82 @@ function App() {
       <h2>Iterracion 6</h2>
 
       <Rating
-        children={0} 
-        />
-      <Rating
-        children={1.49} 
-        />
-      <Rating
-      children={1.5}
+        children={0}
       />
       <Rating
-      children={3}
-        />
-      <Rating
-      children={4}
+        children={1.49}
       />
       <Rating
-      children={5}
+        children={1.5}
+      />
+      <Rating
+        children={3}
+      />
+      <Rating
+        children={4}
+      />
+      <Rating
+        children={5}
       />
 
       <h2>Iterracion 7</h2>
 
-       <DriverCard
+      <DriverCard
         name={"Travis Kalanick"}
-        rating={4.2} 
+        rating={4.2}
         img={"https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"}
         car={{
-          model: { "Toyota Corolla Altis"},
-          licensePlate: { "CO42DE"}
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE"
         }}
       />
 
-       <DriverCard
-         name={"Dara Khosrowshahi"}
-         rating={4.9}
-         img={"https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"}
-         car={{
-           model: {"Audi A3"},
-           licensePlate: {"BE33ER"}
-         }}
-       />
+      <DriverCard
+        name={"Dara Khosrowshahi"}
+        rating={4.9}
+        img={"https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"}
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
+        }}
+      />
+
+      <h2>Iterracion 8</h2>
+
+      <LikeButton />
+      <LikeButton />
+
+      <h2>Iterracion 9</h2>
+
+      <ClickablePicture
+        img={maxence}
+        imgClicked={maxenceGlasses}
+      />
+
+      <h2>Iterracion 10</h2>
+
+      <Dice
+
+        />
+
+      <h2>Iterracion 11</h2>
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+
+      <h2>Iterracion 12</h2>
+
+
+      {/* <NumbersTable
+        limit={12}
+      /> */}
 
 
     </>
