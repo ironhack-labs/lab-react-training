@@ -4,11 +4,11 @@ function Rating({ children }) {
     let rating = Math.round(children)
     let stars = ""
 
-    rating === 1 ? stars = '★☆☆☆☆' : undefined
-    rating === 2 ? stars = '★★☆☆☆' : undefined
-    rating === 3 ? stars = '★★★☆☆' : undefined
-    rating === 4 ? stars = '★★★★☆' : undefined
-    rating === 5 ? stars = '★★★★★' : undefined
+    stars = rating === 1 ? '★☆☆☆☆' : undefined
+    stars = rating === 2 ? '★★☆☆☆' : undefined
+    stars = rating === 3 ? '★★★☆☆' : undefined
+    stars = rating === 4 ? '★★★★☆' : undefined
+    stars = rating === 5 ? '★★★★★' : undefined
 
     return (
         <div>

@@ -1,0 +1,18 @@
+.square {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.table {
+    display: flex;
+    width: 250px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.red-square {
+    background-color: red;
+}
