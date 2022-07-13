@@ -1,4 +1,3 @@
-import React from 'react';
 import './IdCard.css';
 
 const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
@@ -9,7 +8,7 @@ const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
       </div>
       <footer>
         <h3>First name: {firstName}</h3>
-        <h3>First name: {lastName}</h3>
+        <h3>Last name: {lastName}</h3>
         <h3>Gender: {gender}</h3>
         <h3>Height: {height / 100}</h3>
         <h3>Birth: {birth.toDateString()}</h3>
@@ -17,7 +16,5 @@ const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
     </article>
   );
 };
-
-
 
 export default IdCard;

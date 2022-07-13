@@ -1,0 +1,19 @@
+.driverPhoto{
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 50%;
+
+}
+
+.container{
+    background-color: lightblue;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 20px;
+    border: 2px black solid;
+}
