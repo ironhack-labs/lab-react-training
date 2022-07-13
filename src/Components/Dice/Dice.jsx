@@ -20,8 +20,8 @@ const Dice = () => {
         <>
             <div className="dice">
 
-                <img src={diceEmpty} alt="Dice Empty" />
-                
+                <img src={diceEmpty} alt="DiceEmpty" />
+
             </div>
         </>
 
