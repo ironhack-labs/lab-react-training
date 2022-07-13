@@ -6,6 +6,7 @@ import ClickablePicture from './components/ClickablePicture';
 import Maxence from './assets/images/maxence.png';
 import MaxenceGlasses from './assets/images/maxence-glasses.png';
 import Dice from './components/Dice';
+import Random from './components/Random';
 
 const personIDs = [
   {
@@ -14,8 +15,6 @@ const personIDs = [
     gender: 'male',
     height: 184,
     birth: '1997-03-29',
-    picture:
-      'https://image.geo.de/30042236/t/HB/v3/w1440/r0/-/giraffe-gross-jpg--17137-.jpg',
   },
   {
     lastName: 'Mustermann, ',
@@ -23,20 +22,26 @@ const personIDs = [
     gender: 'male',
     height: 175,
     birth: '1970-05-05',
-    picture:
-      'https://image.geo.de/30042236/t/HB/v3/w1440/r0/-/giraffe-gross-jpg--17137-.jpg',
   },
 ];
 
 function App() {
   return (
     <div className="App">
-      <IdCard card={personIDs[0]} />
-      <IdCard card={personIDs[1]} />
+      <div style={{ display: 'flex' }}>
+        <IdCard card={personIDs[0]} />
+        <IdCard card={personIDs[1]} />
+      </div>
       <Greeting lang="fr">Alexander</Greeting>
       <LikeButton />
       <ClickablePicture img={Maxence} imgClicked={MaxenceGlasses} />
       <Dice />
+      <div style={{ fontWeight: 'bold' }}>
+        <Random min={1} max={6} />
+      </div>
+      <div style={{ fontWeight: 'bold' }}>
+        <Random min={1} max={100} />
+      </div>
     </div>
   );
 }

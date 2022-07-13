@@ -32,8 +32,7 @@ function LikeButton() {
   } */
 
   return (
-    <>
-      <p>{count}</p>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
       <button
         onClick={handleButtonClick}
         style={{
@@ -46,7 +45,8 @@ function LikeButton() {
       >
         Counting up 🤭
       </button>
-    </>
+      <p style={{ marginLeft: '20px' }}>{count}</p>
+    </div>
   );
 }
 
