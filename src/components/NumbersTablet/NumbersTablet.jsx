@@ -9,10 +9,15 @@ const NumbersTable = ({ limit }) => {
         newArr.push(count)
     }
 
-    // (newArr % 2 === 0) ? "red" : "white"
+    let bgColor = newArr.map(elm => {
+        let newColor = elm % 2 === 0 ? "red" : "white"
+        return (
+            <div className="color">{newColor}{elm}</div>
+        )
+    })
 
     return (
-        <div className="colorNumber">
+        <div className="color">
             {newArr}
         </div>
     )
