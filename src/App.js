@@ -5,6 +5,10 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Maxence from './assets/images/maxence.png';
+import MaxenceGlasses from './assets/images/maxence-glasses.png';
 
 function App() {
   return (
@@ -17,7 +21,6 @@ function App() {
         birth={new Date('1992-07-14')}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
-
       <IdCard
         lastName="Delores "
         firstName="Obrien"
@@ -28,13 +31,10 @@ function App() {
       />
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -45,7 +45,6 @@ function App() {
         bgColor="#11aa99"
         color="white"
       />
-
       <CreditCard
         type="Master Card"
         number="0123456789010995"
@@ -56,7 +55,6 @@ function App() {
         bgColor="#eeeeee"
         color="#222222"
       />
-
       <CreditCard
         type="Visa"
         number="0123456789016984"
@@ -67,6 +65,10 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+
+      <LikeButton />
+
+      <ClickablePicture img={Maxence} imgClicked={MaxenceGlasses} />
     </div>
   );
 }

@@ -40,6 +40,9 @@ html {
     transform: rotate(360deg);
   }
 }
+.mt-50 {
+  margin-top: 50px;
+}
 .ml-20 {
   margin-left: 15px;
 }
@@ -51,6 +54,15 @@ html {
 }
 .pb-5 {
   padding-bottom: 5px;
+}
+
+.py-15 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.px-50 {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .user {
   border-style: solid;
@@ -64,6 +76,12 @@ html {
 .left {
   text-align: left;
 }
+/* .align-left {
+  align-items: left;
+}
+.right {
+  align-items: right;
+} */
 .text-center {
   text-align: center;
 }
@@ -93,11 +111,27 @@ html {
   border-radius: 7px;
 }
 
-/* .visa {
-  background-image: url('https://de.wikipedia.org/wiki/Datei:Visa_Inc._logo.svg#/media/Datei:Visa_2014.svg');
-} */
-
 .container {
   display: flex;
   flex-direction: column;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.logo-banco {
+  float: right;
+  margin: 10px 20px;
+}
+
+h2 {
+  font-size: 30px;
 }

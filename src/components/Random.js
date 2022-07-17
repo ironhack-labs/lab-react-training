@@ -1,4 +1,5 @@
 import React from 'react';
+//import ProtpTypes from 'prop-types';
 
 export default function Random({ min, max }) {
   let random = Math.floor(Math.random() * (max - min + 1) + min);
@@ -13,3 +14,8 @@ export default function Random({ min, max }) {
     </>
   );
 }
+
+// Random.protpTypes = {
+//   min: ProtpTypes.number,
+//   max: ProtpTypes.number,
+// };

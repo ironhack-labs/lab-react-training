@@ -1,4 +1,6 @@
 import React from 'react';
+import visaPic from '../assets/images/visa.png';
+import masterPic from '../assets/images/master-card.svg';
 
 export default function IdCard({
   type,
@@ -10,18 +12,35 @@ export default function IdCard({
   bgColor,
   color,
 }) {
+  let logo = '';
+
+  switch (type) {
+    case 'Visa':
+      logo = visaPic;
+      break;
+    case 'Master Card':
+      logo = masterPic;
+      break;
+  }
+
   let coverNum = '*'.repeat(number.slice(0, -4).length) + number.slice(-4);
   let expiration =
     expirationMonth < 10 ? `0${expirationMonth}` : expirationMonth;
   return (
     <>
       <div className="container m-5">
-        <div id={type}></div>
         <div
           className=" mw-30 card-rounder"
           style={{ backgroundColor: `${bgColor}` }}
         >
-          <h2 style={{ color: `${color}` }}>
+          <img
+            src={logo}
+            alt="bank logo"
+            height="25px"
+            className="logo-banco py-5 right"
+          />
+
+          <h2 style={{ color: `${color}` }} className="mt-50 ml-20">
             {coverNum.slice(0, 4)} {coverNum.slice(4, 8)}{' '}
             {coverNum.slice(8, 12)} {coverNum.slice(12, 16)}
           </h2>
