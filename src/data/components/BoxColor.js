@@ -2,16 +2,18 @@ import React from 'react'
 
 export default function BoxColor({ r, g, b }) {
 
+    // let styleForColor = `rgb(${r}, ${g}, ${b})`;
 
-    let styleForColor = { backgroundColor: `rgb(${r}, ${g}, ${b})` };
+
+    const divStyle = {
+        width: 200,
+        height:70,
+        backgroundColor:  `rgb(${r}, ${g}, ${b})`
+    };
 
     return (
-
-
-        <rect width="300" height="100" style={styleForColor} />
+        <div style={divStyle} />
 
     )
 }
 
-
-{/* <BoxColor r={255} g={123} b={22} /> */ }

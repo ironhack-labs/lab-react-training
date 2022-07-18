@@ -115,3 +115,73 @@
   border-width: 3px;
   border-color: rgb(144, 246, 49);
 }
+.box-color{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+
+/* CreditCard */
+
+#con {
+  font-family: Arial;
+  font-size: 15px;
+  padding-left:2vw;
+  padding-bottom:2vh;
+
+}
+
+.all-cards{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+
+.rectangle {
+  height: 20vh;
+  width: 35vh;
+  border-radius: 10px;
+  /* border: 2px solid red; */
+  /* background-color: pink; */
+margin-top:2vh;
+}
+
+.bank-logo{
+  height:4vh;
+  padding-top: 1vh;
+  /* align-items:right; */
+  position: relative;
+  right: -80px;
+}
+.card-num{
+  padding-top: 3.5vh;
+  font-size:1.1rem;
+}
+
+.card-info{
+  padding-top: 3.5vh;
+  font-size:0.9rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 85%;
+  margin:auto;
+  padding-top: 1.5vh;
+}
+
+.card-holder{
+  padding-top: 3.5vh;
+  font-size:0.9rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 85%;
+  margin:auto;
+  padding-top: 1.5vh;
+}
+
+
