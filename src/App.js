@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import IdCard from './components/IdCard';
+import data from "./infocards";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [infocards] = useState(data);
+  const cardpeople = infocards.map((card) => {
+    return (
+      <IdCard 
+        infocards={card}
+      />
+    );
+  });
+
+  return(
+    <div>
+      {cardpeople}
     </div>
+      
+    
   );
-}
+};
 
 export default App;
