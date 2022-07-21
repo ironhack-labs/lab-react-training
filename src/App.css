@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -35,4 +35,92 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Id {
+  background-color: white;
+  border: 1px solid black;
+  color:black;
+  width: 500px;
+  font-size: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  line-height:0.2px;
+  padding:2px;
+
+}
+
+.Id img {
+  width:90px;
+  height:90px;
+  margin:5px;
+}
+
+.Info{
+display: flex;
+flex-direction: column;
+}
+
+.rectangle {
+width: 300px;
+height: 100px;
+margin: 10px 0;
+border:2px solid black;
+
+}
+
+.creditCard {
+  width: 300px;
+  height: 150px;
+  font-size: 12px;
+  border-radius:10px;
+  display:flex;
+  flex-direction: column;
+  padding:10px;
+  margin:5px;
+  
+}
+
+.driverCard {
+
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:160px;
+background-color:#455EB5;
+color:white;
+width:1000px;
+border-radius:20px;
+margin:10px;
+
+}
+
+.driverCard h2{
+font-size: 1em;
+}
+
+.driverCard p{
+  font-size: 0.65em;
+  }
+
+.driverCard h1{
+font-size: 1em;
+letter-spacing: 5px;
+}
+
+.driverImg {
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  margin-right: 20px;
+
+}
+
+.driverInfo {
+  display:flex;
+  flex-direction:column;
+  text-align:left;
+  line-height: 0.05;
+  letter-spacing: 1px;
 }
