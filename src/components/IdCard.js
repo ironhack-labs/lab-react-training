@@ -19,10 +19,3 @@ function IdCard(props){
 }
 
 export default IdCard;
-
-// lastName: A string
-// firstName: A string
-// gender: A string, 'male' or 'female'
-// height: A number
-// birth: A date
-// picture: A string
