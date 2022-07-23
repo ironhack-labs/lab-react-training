@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.driverCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  gap: 2rem;
+  margin: 1rem auto;
+  width: 40rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: steelblue;
+  color: white;
+}
+img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background-size: auto;
+  background-position: left;
+}
