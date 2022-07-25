@@ -38,3 +38,30 @@ h1{
 .boxColor p{
   font-size: large;
 }
+.creditContainer{
+  display: flex;
+}
+.creditCards{
+  border-radius: 10px;
+  width: 320px;
+  height: 170px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.creditLogo{
+  height: 33%;
+  padding-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.creditNumbers{
+  height: 33%;
+  font-size:x-large;
+  text-align: center;
+}
+.creditInfo{
+  height: 33%;
+  padding-left: 15px;
+}
