@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Greetings from './components/Greetings'
 import IdCard from './components/IdCard'
+import Random from './components/Random'
 
 function App() {
   return (
@@ -31,6 +32,12 @@ function App() {
         <Greetings lang="fr">François</Greetings>
       </Box>
       <h1>Iteration 3:</h1>
+      <Box>
+        <Random min={1} max={6} />
+      </Box>
+      <Box>
+        <Random min={1} max={100} />
+      </Box>
     </>
   )
 }
