@@ -26,3 +26,15 @@ h1{
 .container p{
   margin-left: 5px;
 }
+.boxColor{
+  border: 1px solid black;
+  height: 100px;
+  pad: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxColor p{
+  font-size: large;
+}
