@@ -65,3 +65,7 @@ h1{
   height: 33%;
   padding-left: 15px;
 }
+.ratingContainer p{
+  font-size:xx-large;
+  padding-left: 10px;
+}
