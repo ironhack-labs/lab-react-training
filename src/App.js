@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import BoxColor from './components/BoxColor'
+import CreditCard from './components/CreditCard'
 import Greetings from './components/Greetings'
 import IdCard from './components/IdCard'
 import Random from './components/Random'
@@ -42,6 +43,40 @@ function App() {
       <h1>Iteration 4:</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+      <h1>Iteration 5:</h1>
+      <Cards>
+        <CreditCard
+          type="Visa"
+          number="0123456789018845"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="BNP"
+          owner="Maxence Bouret"
+          bgColor="#11aa99"
+          color="white"
+        />
+        <CreditCard
+          type="Master Card"
+          number="0123456789010995"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="N26"
+          owner="Maxence Bouret"
+          bgColor="#eeeeee"
+          color="#222222"
+        />
+
+        <CreditCard
+          type="Visa"
+          number="0123456789016984"
+          expirationMonth={12}
+          expirationYear={2019}
+          bank="Name of the Bank"
+          owner="Firstname Lastname"
+          bgColor="#ddbb55"
+          color="white"
+        />
+      </Cards>
     </>
   )
 }
@@ -52,4 +87,8 @@ const Box = styled.div`
   width: 60%;
   border: 2px solid black;
   margin: 0.5rem;
+`
+const Cards = styled.div`
+  display: flex;
+  column-gap: 15px;
 `
