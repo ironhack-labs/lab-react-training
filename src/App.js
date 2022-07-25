@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import BoxColor from './components/BoxColor'
 import Greetings from './components/Greetings'
 import IdCard from './components/IdCard'
 import Random from './components/Random'
@@ -38,6 +39,9 @@ function App() {
       <Box>
         <Random min={1} max={100} />
       </Box>
+      <h1>Iteration 4:</h1>
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
     </>
   )
 }
@@ -47,6 +51,5 @@ export default App
 const Box = styled.div`
   width: 60%;
   border: 2px solid black;
-  padding: 0.3rem;
   margin: 0.5rem;
 `
