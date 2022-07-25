@@ -1,13 +1,59 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1{
+  margin: 10px;
+  padding: 5px 0;
+}
+.container{
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+}
+.container p{
+  margin-left: 5px;
+}
+.boxColor{
+  border: 1px solid black;
+  height: 100px;
+  pad: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxColor p{
+  font-size: large;
+}
+.creditContainer{
+  display: flex;
+}
+.creditCards{
+  border-radius: 10px;
+  width: 320px;
+  height: 170px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.creditLogo{
+  height: 33%;
+  padding-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.creditNumbers{
+  height: 33%;
+  font-size:x-large;
+  text-align: center;
+}
+.creditInfo{
+  height: 33%;
+  padding-left: 15px;
+}
+.ratingContainer p{
+  font-size:xx-large;
+  padding-left: 10px;
 }
