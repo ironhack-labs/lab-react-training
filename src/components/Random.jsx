@@ -1,5 +1,4 @@
 
-
 export default function Random(props){
     const {min, max} = props;
     const random = Math.floor(Math.random() * max) + min
