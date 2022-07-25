@@ -1,0 +1,20 @@
+.id-card {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 50%;
+  margin: 10px;
+  padding: 5px;
+}
+
+ .data {
+display: flex;
+flex-direction: column;
+padding-left: 10px;
+}
+
+ p {
+    margin: 0;
+    padding: 0;
+}
