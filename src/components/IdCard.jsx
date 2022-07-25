@@ -1,7 +1,7 @@
 
 const IdCard = (props) => {
   return ( 
-    <div className="idProfile">
+    <div className="container">
       <div>
         <img src={props.picture} alt="" />
       </div>
