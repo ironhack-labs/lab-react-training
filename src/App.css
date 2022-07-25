@@ -14,4 +14,13 @@ h3 {
   margin: 10px;
   padding: 5px;
 }
-
+/* ITERATION #4 */
+.box-color {
+    border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 10px;
+  padding: 5px;
+}
