@@ -13,8 +13,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.idContainer h1{
+h1{
   margin: 10px;
+  padding: 5px 0;
 }
 .container{
   border: 1px solid black;
