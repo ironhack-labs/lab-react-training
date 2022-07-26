@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
+.app {
+  margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.greetings {
+  border: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.id-card {
+  border: 1px solid black;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.id-card li {
+  list-style: none;
+}
+
+.id-card img {
+  width: 150px;
+  margin: 5px;
+}
+
+.box-color {
+  height: 100px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid black;
+}
+
+.box-span {
+  display: block;
+  width: 100px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  align-self: center;
+}
+
+.credit-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.credit-card {
+  display: inline-block;
+  width: 300px;
+  height: 175px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: blue;
+}
+
+.cc-img {
+  width: 50px;
+  position: relative;
+  left: 80%;
+  margin-top: 10px;
+}
+
+.cc-number {
+  display: block;
+  font-size: 26px;
+  position: relative;
+  top: 10%;
+  left: 15%;
+}
+
+.cc-expires {
+  display: block;
+  position: relative;
+  top: 25%;
+  left: 5%;
+}
+
+.cc-name {
+  display: block;
+  position: relative;
+  top: 25%;
+  left: 5%;
+}
+
+.stars-container {
+  border: none;
+  margin: 10px;
+  width: 80px;
+  border-bottom: none;
+}
+.stars-outer {
+  position: relative;
+  display: inline-block;
+  border-bottom: none;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0%;
+  border-bottom: none;
+}
+
+.stars-outer::before {
+  content: '\f005 \f005 \f005 \f005 \f005';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0);
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  /* text-shadow: -1px 0 rgba(255,255,255,0), 0 1px rgba(255,255,255,0), 1px 0 rgba(255,255,255,0), 0 -1px rgba(255,255,255,0); */
+}
+
+.stars-inner::before {
+  content: '\f005 \f005 \f005 \f005 \f005';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
   color: white;
+  /* text-shadow: 0 0 1px #000; */
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
-.App-link {
-  color: #61dafb;
+.driver-card {
+  height: 150px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  background-color: #445eb5;
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.driver-card-container {
+  width: 500px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.driver-card-container ul {
+  width: 250px;
+}
+
+.driver-card-container h2 {
+  margin: 0;
+}
+
+.driver-card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.driver-card li {
+  list-style: none;
+}
+
+.like-button {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.like-button:hover {
+  border: 5px solid grey;
+  border-radius: 5px;
+}
+
+.thug-life-img {
+  width: 150px;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.case {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.color-container span {
+  width: 50px;
+  margin: 0 20px;
+}
+
+.color-box {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
 }
