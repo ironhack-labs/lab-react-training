@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.Card{
+  margin:10px ;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border:solid
+  
+}
+.textCard {
+  padding-left: 5px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  text-align: left;
+  line-height: 5%;
+}
+
+
+.gretting{
+  border: solid;
+  margin: 10px;
+  font-size: 30px;
+  text-align: left;
+
+}
+.boxcolor{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
