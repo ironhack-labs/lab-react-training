@@ -1,0 +1,13 @@
+.cardText {
+  border: solid black 2px;
+  display: flex;
+  margin-top: 40px;
+}
+
+.info {
+  margin-left: 50px;
+}
+
+img {
+  height: 200px;
+}
