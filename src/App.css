@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.IdCard {
+  display: flex;
+  /* padding: 20px; */
+  margin: 20px;
+  border: #282c34;
+}
