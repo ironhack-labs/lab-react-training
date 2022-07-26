@@ -1,10 +1,19 @@
 function Greetings({lang, children}){
+    function languaje(lang){
+        if (lang === 'de'){
+            return "Hallo Ludwig"
+        } else if (lang === 'fr'){
+            return "Bonjour monsieur"
+        } else if (lang === 'en'){
+            return "Hello friend"
+        } else if (lang === 'es'){
+            return "Hola amigo"
+        } return "no hay lenguaje"
+    }
+
     return (
         <>
-            <h3>{lang === 'de' ? `Hallo ${children}` : undefined}</h3>
-            <h3>{lang === 'es' ? `Hola ${children}` : undefined}</h3>
-            <h3>{lang === 'en' ? `Hello ${children}` : undefined}</h3>
-            <h3>{lang === 'fr' ? `Bounjour ${children}` : undefined}</h3>
+            <h3>{languaje(lang)}</h3>
         </>
     )
 }
