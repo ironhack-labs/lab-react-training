@@ -55,3 +55,73 @@ span {
   align-items: center;
   flex-direction: column;
 }
+
+/*CreditCard*/
+.creditCard {
+  width: 300px;
+  padding-bottom: 1px;
+  border-radius: 10px;
+  margin: 20px;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.creditCard img {
+  height: 15px;
+}
+
+.creditCard p {
+  text-align: left;
+  margin: 1px;
+  font-size: 0.8em;
+}
+
+.cardHead {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+}
+
+.cardBody {
+  display: flex;
+  text-align: center;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.cardBottom {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+/*Rating*/
+.rating {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+/*DriverCard*/
+.driverPhoto {
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.driverCard {
+  background-color: rgba(86, 14, 211, 0.986);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 20px;
+  border: 1px black solid;
+  border-radius: 20px;
+}
+
+.driverData {
+  text-align: left;
+  color: white;
+}
