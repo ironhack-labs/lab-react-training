@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  text-align: left;
+  margin-left: 20px;
+}
+
+/*IdCard*/
+.idCard {
+  display: flex;
+  border-style: solid;
+  width: auto;
+  margin: 20px 20px;
+  text-align: left;
+  padding: 10px;
+}
+
+span {
+  font-weight: 700;
+}
+
+.idPic {
+  margin-right: 10px;
+}
+
+/*Greetings and RandomNumber*/
+.greetings,
+.random {
+  border-style: solid;
+  width: auto;
+  margin: 20px 20px;
+  text-align: left;
+  padding: 5px;
+}
+
+/*BoxColor*/
+.boxColor {
+  border-style: solid;
+  width: auto;
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
