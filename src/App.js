@@ -5,6 +5,7 @@ import {Greetings} from './components/Greetings/Greetings';
 import {Random} from './components/Random/Random'
 import {BoxColor} from './components/BoxColor/BoxColor'
 import {CreditCard} from './components/CreditCard'
+import {Rating} from './components/Rating/Rating'
 
 function App() {
   
@@ -44,7 +45,7 @@ function App() {
 <BoxColor r={255} g={0} b={0} />
 <BoxColor r={128} g={255} b={0} />
 
-<h1>Iteration 5</h1>
+<h1>Iteration 5 ☆★</h1>
 <div className="creditCards">
 
 <CreditCard
@@ -84,6 +85,15 @@ function App() {
 </div>
 
 <h1>Iteration 6</h1>
+
+
+<Rating>0</Rating>
+<Rating>1.49</Rating>
+<Rating>1.5</Rating>
+<Rating>3</Rating>
+<Rating>4</Rating>
+<Rating>5</Rating>
+
 
 <h1>Iteration 7</h1>
 
