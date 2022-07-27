@@ -1,0 +1,10 @@
+.gradingStars {
+    border: solid 1px black;
+    padding-top: 12px; 
+    padding: 5px; 
+    width: 82%; 
+    margin: 2px; 
+    background-color: white;
+    color: black; 
+    font-size: xx-large
+}
