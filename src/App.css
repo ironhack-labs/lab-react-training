@@ -1,1 +1,49 @@
+*{
+    margin: 20px;
+}
 
+.border{
+    border: solid 2px;
+    width: 400px;
+    text-align: center;
+}
+
+.rgb {
+    width: 400px;
+}
+
+.card{
+   padding: 20px;
+}
+
+
+.driver{
+    display: flex;
+    border: none;
+    border-radius: 15px;
+    background-color: #607edf;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.driver img{
+    max-width: 7em;
+    min-height: 7em;
+    border-radius: 50%;
+    margin-right: 1.4em;
+}
+
+.visa{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+.visa img{
+    width: 100px;
+    align-self: flex-end;
+}
