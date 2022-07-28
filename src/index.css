@@ -69,3 +69,33 @@ h1{
   font-size:xx-large;
   padding-left: 10px;
 }
+.driverCardContainer{
+  background-color: #425CBB;
+  color: white;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dirverCardImg > img{
+  border-radius: 50%;
+}
+.dirverCardInfo{
+  margin-left: 10px;
+}
+.dirverCardInfo > p {
+  font-size:xx-large;
+}
+.likeButtons{
+  padding: 25px;
+}
+.likeButtons > button{
+  width: 200px;
+  height: 50px;
+  font-size: x-large;
+}
+.likeContainer{
+  display: flex;
+}

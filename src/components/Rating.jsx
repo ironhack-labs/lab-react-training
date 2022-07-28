@@ -1,4 +1,3 @@
-
 const Rating = (props) => {
   let stars = Math.round(props.children)
 
@@ -15,5 +14,5 @@ const Rating = (props) => {
     </div>
   );
 }
-// ★☆
+
 export default Rating;
