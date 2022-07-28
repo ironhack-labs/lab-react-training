@@ -6,7 +6,7 @@ export const Rating = ({children})=>{
 
     function stars(children){
 
-        let rating = Math.round(parseInt(children));
+        let rating = Math.round(parseFloat(children));
         let arrayResult = [];
 
         for (let i=0 ; i<=5 ; i++){
