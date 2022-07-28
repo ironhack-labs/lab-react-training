@@ -99,3 +99,22 @@ h1{
 .likeContainer{
   display: flex;
 }
+.numbersTable > p{
+  border: 1px solid black;
+}
+.listContainer{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: xx-large;
+}
+.listContainer > li {
+  border: 2px solid black;
+  margin: 1px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
