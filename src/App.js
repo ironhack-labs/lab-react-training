@@ -11,6 +11,7 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
 
 function App() {
   return (
@@ -154,6 +155,11 @@ function App() {
         <div>
           <NumbersTable limit={12}/>
         </div>
+      </div>
+
+      <div>
+        <h1>Facebook</h1>
+        <Facebook />
       </div>
     </div>
   );
