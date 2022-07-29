@@ -134,3 +134,15 @@ h1{
 .facebookInfo > p > span {
   font-weight: normal;
 }
+.facebookButtons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+.facebookButtons > button {
+  background-color: white;
+  border: 1px solid black;
+  width: 75px;
+  height: 30px;
+}

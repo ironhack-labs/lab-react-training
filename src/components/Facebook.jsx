@@ -1,9 +1,18 @@
 import profiles from '../data/berlin.json';
 
 const Facebook = () => {
-  console.log(profiles)
   return (
     <div>
+      <div className='facebookButtons' >
+      <button>All</button>
+      <button>USA</button>
+      <button>England</button>
+      <button>Malaysia</button>
+      <button>Germany</button>
+      <button>Sweden</button>
+      <button>Nigeria</button>
+      <button>. . .</button>
+      </div>
       {profiles.map((profile, index) => (
         <div key={index} className="facebookContainer" >
           <div>

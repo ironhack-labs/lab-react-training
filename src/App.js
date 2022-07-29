@@ -153,7 +153,7 @@ function App() {
       <div>
         <h1>List and Keys</h1>
         <div>
-          <NumbersTable limit={12}/>
+          <NumbersTable limit={2}/>
         </div>
       </div>
 
