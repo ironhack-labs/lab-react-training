@@ -1,38 +1,57 @@
 .App {
-  text-align: center;
+  padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Card {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  border: solid;
+  margin: 20px;
+  padding-left: 20px;
+}
+
+.IdCardImage {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 20px 20px 0px;
+}
+
+.BoxColor {
+  text-align: center;
+  border: solid;
+  border-color: black;
+  margin: 20px;
+  padding-left: 20px;
+  color: white;
+  font-size: 30px;
+}
+
+.CreditCard {
+  display: flexbox;
+}
+
+.Rating {
+  display: flex;
+  align-items: flex-start;
+}
+
+.DriverCard {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  background-color: #1d6fc5;
+  border-radius: 15px;
+  margin: 20px;
+  padding-left: 20px;
+  font-size: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CardImage {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 20px 20px 0px;
+  border-radius: 200px;
 }
