@@ -1,7 +1,12 @@
-function Rating(props){
 
-  const rate = Math.round(props.children)
+function DriverCard({name,rating,img,car}){
+    
 
+    const rate = Math.round(rating)
+  
+
+    function ranking(rate){
+    
     if(rate === 0 ){
       return (
         <p>✰✰✰✰✰</p>
@@ -33,4 +38,19 @@ function Rating(props){
       )
     }
 }
-export default Rating;
+    return(
+        <div  className="driverCard">
+          <div className="driverCardImg">
+            <img src={img}></img>
+            </div>
+            <div className="divDriverCard">
+            <p>{name}</p>
+            <p>{ranking(rate)}</p>
+            <p>{car.model} - {car.licensePlate}</p>
+            </div>
+        </div>
+
+    )
+}
+
+export default DriverCard;
