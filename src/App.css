@@ -109,4 +109,22 @@ h6 {
   background-color: #455eb5;
 }
 
-/* Iteration #9 */
+/* Iteration #12 */
+.NumbersTable {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+.box > p {
+  font-size: 30px;
+}
