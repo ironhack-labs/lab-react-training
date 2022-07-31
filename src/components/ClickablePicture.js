@@ -11,7 +11,7 @@ function ClickablePicture({ img, imgClicked }) {
       src={showImage ? { img } : { imgClicked }} //if true shows the first, if false show the second one
       alt="clickable picure"
       onClick={handleClick}
-      style={{width:100px, height: 100px}}
+      style={{ width: 100, height: 100 }}
     />
   );
 }
