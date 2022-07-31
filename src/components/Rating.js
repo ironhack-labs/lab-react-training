@@ -18,7 +18,7 @@ function Rating({ children }) {
 
   return (
     <>
-      <h4>{stars(children)}</h4>
+      <p>{stars(children)}</p>
     </>
   );
 }
