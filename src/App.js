@@ -12,6 +12,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
@@ -151,15 +152,20 @@ function App() {
       </div>
 
       <div>
-        <h1>List and Keys</h1>
+        <h1>NumbersTable</h1>
         <div>
-          <NumbersTable limit={2}/>
+          <NumbersTable limit={32}/>
         </div>
       </div>
 
       <div>
         <h1>Facebook</h1>
-        <Facebook />
+        <Facebook algo={'jose'} />
+      </div>
+
+      <div>
+        <h1>SignupPage</h1>
+        <SignupPage />
       </div>
     </div>
   );
