@@ -98,3 +98,13 @@ h6 {
   padding-left: 10px;
   color: white;
 }
+
+/* Iteration #8 */
+.like-button {
+  width: 100px;
+  height: 50;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: #455eb5;
+}
