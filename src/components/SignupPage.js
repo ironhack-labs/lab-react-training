@@ -17,7 +17,7 @@ function SignupPage () {
     return (
         <div>
             <h3>Iteration 15</h3>
-            <form>
+            <form onSubmit={handleSubmit}>
 
                 <label>Email</label>
                 <input type='text' name='email' value={email} onChange={handleEmail}/>
