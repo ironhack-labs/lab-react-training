@@ -117,21 +117,7 @@ color="white"
 />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<LikeButton />
 );
 }
 
