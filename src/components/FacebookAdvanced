@@ -1,0 +1,39 @@
+/*import profiles from '../data/berlin.json';
+import { useState } from 'react';
+
+const Facebook = (props) => {
+  const [Profiles, setProfiles] = useState(profiles);
+
+  const handleSelectCountry = (country) => {
+    const countryfiltered = profiles.filter(
+      (profile) => profile.country === country.target.value
+    );
+    setProfiles(countryfiltered)
+  };
+
+  return (
+    <div>
+          <div className="facebookButtons">
+        <button>All</button>
+        <button onClick={handleSelectCountry} value="USA">
+          USA
+        </button>
+        <button onClick={handleSelectCountry} value="England">
+          England
+        </button>
+        <button onClick={handleSelectCountry} value="Malaysia">
+          Malaysia
+        </button>
+        <button onClick={handleSelectCountry} value="Germany">
+          Germany
+        </button>
+        <button onClick={handleSelectCountry} value="Sweden">
+          Sweden
+        </button>
+        <button onClick={handleSelectCountry} value="Nigeria">
+          Nigeria
+        </button>
+        <button onClick={handleSelectCountry} value="more">
+          . . .
+        </button>
+      </div>*/

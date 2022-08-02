@@ -125,3 +125,82 @@ span {
   text-align: left;
   color: white;
 }
+
+/*LikeButton*/
+ /*.like-button {
+  width: 100px;
+  height: 50;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: #455eb5;
+}*/
+
+.purple {
+  background-color: purple;
+}
+.blue{
+  background-color: blue;
+}
+.green{
+  background-color: green;
+}
+.yellow{
+  background-color: yellow;
+}
+.orange{
+  background-color: orange;
+}
+.red{
+  background-color: red;
+}
+
+/* ClikablePicture*/ 
+.pic{
+width: 10%;
+height: 15%;
+}
+
+/*Dice*/
+.dice {
+  width: 10%;
+  height: 10%;
+}
+
+/*NumbersTable*/
+.NumbersTable {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+}
+
+.box > p {
+  font-size: 20px;
+}
+
+/*Facebook*/
+.facebookContainer{
+  border: 2px solid black;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+}
+.facebookInfo{
+  margin-left: 10px;
+}
+.facebookInfo > p{
+  font-size: large;
+  font-weight: bolder;
+}
+.facebookInfo > p > span {
+  font-weight: normal;
+}
