@@ -2,7 +2,7 @@ import React from "react";
 
 function IdCard(props) {
     return (
-      <div>
+      <div className="IdCard">
         <p>
         <b>lastName:</b> {props.lastName}
         </p>
