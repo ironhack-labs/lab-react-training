@@ -9,11 +9,19 @@ function CreditCard (props) {
         margin: '1em',
       };
 
+    let numbers = props.number;
+    let hidden = [];
+
+    for (let i=0; i<numbers.length; i++) {
+        if(i<12) hidden.push('*')
+        else hidden.push(numbers[i])
+    }
+
     return (
         <div style={divStyle} className="CreditCard">
-            <p>{props.type}</p>
-            <p>{props.number}</p>
-            <div style={{fontSize: '1em'}}>
+            <p style={{textAlign : 'right'}}>{props.type}</p>
+            <p style={{fontSize: '1.2em'}}>{hidden}</p>
+            <div style={{fontSize: '0.9em', textAlign : 'left'}}>
                 <p>Expires {props.expirationMonth}/{props.expirationYear} {props.bank}</p>
                 <p>{props.owner}</p>
             </div>

@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.boxesStyle {
+  display: flex;
+  border: 1px solid black;
+  text-align: center;
+  align-items: center;
+  /* height: 100px;
+  width: 100px; WHY THE WIDTH DIDN'T WORK?? HAD TO APPLY IT INLINE IN STYLE={{}}*/ 
+}
+
+.profileCard {
+  display: flex;
+  border: 1px solid black;
+  width: 400px;
+  margin: 10px;
+}
