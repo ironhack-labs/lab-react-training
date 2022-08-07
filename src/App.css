@@ -36,3 +36,79 @@
     transform: rotate(360deg);
   }
 }
+
+.cardProfile {
+  border-color: black;
+  border-width: 1px;
+  margin: 5px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dataProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.creditCard{
+  height: 150px;
+  width: 300px;
+  padding-left: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cardLogo {
+  margin-left: 170px;
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.star {
+  width: 50px;
+}
+
+.driverCard {
+  width: 1000px;
+  height: 180px;
+  background-color: royalblue;
+  border-radius: 30px;
+  margin: 20px;
+  color: white;
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.driverCard div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.driverCard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.likeButton {
+  width: 80px;
+  background-color: aquamarine;
+}
