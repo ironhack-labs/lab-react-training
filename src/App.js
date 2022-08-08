@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -9,6 +8,7 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -126,10 +126,14 @@ function App() {
 </div>
 
 <div className='clickPicture'>
-  <ClickablePicture  img='https://previews.123rf.com/images/jemastock/jemastock1705/jemastock170504862/77903166-dibujo-cara-chico-sonriente-ilustraci%C3%B3n-de-vector-de-dise%C3%B1o-de-avatar.jpg'
-        imgClicked="https://previews.123rf.com/images/jemastock/jemastock1705/jemastock170509810/78457957-cara-hombre-arte-pop-estilo-imagen-vector-ilustraci%C3%B3n.jpg"/>
+  <ClickablePicture img='https://cdn-icons-png.flaticon.com/512/64/64572.png' imgClick={'https://us.123rf.com/450wm/kritchanut/kritchanut1406/kritchanut140600069/29035231-rosa-icono-de-foto-de-perfil-avatar-masculino-en-c%C3%ADrculo.jpg'} />
 </div>
 
+<br/>
+
+<div>
+<Dice />
+</div>
 
     </div>
   );

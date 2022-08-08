@@ -1,25 +1,24 @@
 import { useState } from "react";
 
-function ClickablePicture({img,imgClicked}){
+function ClickablePicture({img,imgClick}){
     
+    const img1= img;
+    const img2=imgClick;
+    const together = {img1,img2}
 
-    const[active,setActive]= useState(false)
+
+    const[active,setActive]= useState(together.img1)
 
     const handleClickActive =()=>{
-        setActive((previousImage) =>{
-            return !previousImage
-        });
+        setActive(together.img2)
+      
+        };
 
-   }
 
     return(
-
-      <div>
-        {active ? 
-        (<img src={img} onClick={handleClickActive}></img>):
-        (<img src={imgClicked} onClick={handleClickActive}> </img>)
-        }            
-    </div>
+        <div>
+       <img src={active} onClick={handleClickActive} ></img>
+        </div>
     )
 
 
