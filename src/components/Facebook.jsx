@@ -14,7 +14,7 @@ const Facebook = (props) => {
   return (
     <div>
       <div className="facebookButtons">
-        <button>All</button>
+        <button onClick={handleSelectCountry} value={profiles} >All</button>
         <button onClick={handleSelectCountry} value="USA">
           USA
         </button>
@@ -37,7 +37,6 @@ const Facebook = (props) => {
           . . .
         </button>
       </div>
-      {props.algo !== 'vale' && <p> Aqui va algo </p>}
       {Profiles.map((profile, index) => (
         <div key={index} className="facebookContainer">
           <div>
