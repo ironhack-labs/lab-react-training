@@ -11,7 +11,7 @@ const CreditCard = ({
   color,
 }) => {
   return (
-    <div style={{ backgroundColor: bgColor, color: color }}>
+    <div style={{ backgroundColor: bgColor, color: color }} className="card">
       <img
         style={{ height: '50px' }}
         src={type.toLowerCase() === 'visa' ? visaLogo : masterCardLogo}

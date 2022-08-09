@@ -2,7 +2,7 @@ import Rating from "./Rating";
 
 const DriverCard = ({name, rating, img, car}) => {
     return(
-        <div>
+        <div className="drivercard">
             <img 
             style={{
                 height:100,

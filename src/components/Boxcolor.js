@@ -3,7 +3,7 @@ function Boxcolor (props){
     
     return (
     <div style = {{backgroundColor: rgbToHex}} className="boxcolor">
-    rgb(${props.r}, ${props.g}, ${props.b} <p>{rgbToHex}</p>
+    rgb ${props.r}, ${props.g}, ${props.b} <p>{rgbToHex}</p>
     </div>)
 }
 export default Boxcolor;
