@@ -1,5 +1,5 @@
 import visaLogo from '../assets/images/visa.png';
-import masterCardLogo from '../assets/images/master-card.jsx';
+import masterCardLogo from '../assets/images/master-card.svg';
 const CreditCard = ({
   type,
   number,

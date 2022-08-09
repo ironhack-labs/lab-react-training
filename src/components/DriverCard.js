@@ -14,7 +14,7 @@ const DriverCard = ({name, rating, img, car}) => {
                 <h1>
                     {name}
                 </h1>
-            <Rating> {rating} </Rating>
+            <Rating>{rating}</Rating>
             <p>
                 {car.model} - {car.licensePlate}
             </p>

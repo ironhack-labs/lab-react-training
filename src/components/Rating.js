@@ -1,19 +1,20 @@
 const Rating = ({children}) => {
-    const displayStar = (star) => {
+    const displayStar = () => {
         let starDisplay = '';
+        const value = Math.round(children);
 
         for ( let i=0; i < 5; i++){
-            i < star ? (starDisplay += '★') : (starDisplay += '☆');
+            i < value ? (starDisplay += '★') : (starDisplay += '☆');
         }
         return starDisplay;
     };
 
 
 
-
+    console.log(children);
     return(
         <div>
-            {displayStar(children)}
+            {displayStar()}
 
         </div>
 
