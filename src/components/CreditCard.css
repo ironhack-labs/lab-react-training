@@ -1,0 +1,18 @@
+.creditcard {
+    border-radius: 10px;
+    height: 200px;
+    width: 400px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: center;
+}; 
+
+.type {
+   align-items: right;
+}
