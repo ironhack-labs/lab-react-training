@@ -7,8 +7,12 @@ import {BoxColor} from './components/BoxColor/BoxColor'
 import {CreditCard} from './components/CreditCard'
 import {Rating} from './components/Rating/Rating'
 import {DriverCard} from './components/DriverCard/DriverCard'
+import { LikeButton } from './components/LikeButton/LikeButton';
+import {ClickablePicture} from './components/ClickablePicture';
+
 
 function App() {
+
   
   return (
     <div className="App">
@@ -116,6 +120,11 @@ function App() {
     model: "Audi A3",
     licensePlate: "BE33ER"
   }}
+/>
+
+<LikeButton/>
+
+<ClickablePicture
 />
 
 
