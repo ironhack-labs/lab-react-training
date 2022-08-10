@@ -9,6 +9,7 @@ import {Rating} from './components/Rating/Rating'
 import {DriverCard} from './components/DriverCard/DriverCard'
 import { LikeButton } from './components/LikeButton/LikeButton';
 import {ClickablePicture} from './components/ClickablePicture';
+import {Dice} from './components/Dice'
 
 
 function App() {
@@ -126,6 +127,9 @@ function App() {
 
 <ClickablePicture
 />
+
+<Dice/>
+
 
 
     </div>

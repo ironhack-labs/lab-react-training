@@ -8,11 +8,8 @@ export const ClickablePicture=()=>{
   const [count, setCount]=useState(0)
 
 const handlerClick =(e)=>{
-
     setCount((prevState)=>prevState + 1)
-
     count%2===0?setPic(()=>maxenceGlasses):setPic(()=>maxence)
-    console.log("yo soy el ", count)
 }
 
 return(
