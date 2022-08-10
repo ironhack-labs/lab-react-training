@@ -1,7 +1,7 @@
 .creditcard {
     border-radius: 10px;
-    height: 200px;
-    width: 400px;
+    height: 180px;
+    width: 350px;
 }
 
 .cards {
@@ -11,4 +11,33 @@
 	justify-content: space-evenly;
 	align-items: stretch;
 	align-content: center;
-}; 
+}
+
+.number {
+    font-weight: lighter;
+}
+
+.expiration {
+    text-align: left;
+    margin: 0px;
+    margin-left: 10px; 
+}
+
+.bank {
+    display: inline;
+    margin-left: 15px;
+}
+
+.owner {
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.owner {
+    text-align: left;
+}
+
+.type > img {
+    width: 55px;
+    margin-left: 250px;
+}
