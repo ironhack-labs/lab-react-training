@@ -9,8 +9,25 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
+import img1 from '../src/assets/images/maxence.png'
+import img2 from '../src/assets/images/maxence-glasses.png'
+import Carousel from './components/Carousel';
 
 function App() {
+
+ const slides=[
+    {url:'https://randomuser.me/api/portraits/women/1.jpg'},
+    {url:'https://randomuser.me/api/portraits/men/1.jpg'},
+    {url:'https://randomuser.me/api/portraits/women/2.jpg'},
+    {url:'https://randomuser.me/api/portraits/men/2.jpg'}
+  ]
+
+  const containerStyles={
+    width:"500px",
+    height:"280px",
+    margin: "0 auto",
+  };
+
   return (
     <div className="App">
       {/*** <header className="App-header">
@@ -26,6 +43,9 @@ function App() {
         >
           Learn React
         </a> </header>*/}
+
+
+
 
         <IdCard 
         lastName='Doe'
@@ -126,13 +146,19 @@ function App() {
 </div>
 
 <div className='clickPicture'>
-  <ClickablePicture img='https://cdn-icons-png.flaticon.com/512/64/64572.png' imgClick={'https://us.123rf.com/450wm/kritchanut/kritchanut1406/kritchanut140600069/29035231-rosa-icono-de-foto-de-perfil-avatar-masculino-en-c%C3%ADrculo.jpg'} />
+  <ClickablePicture img={img1} imgClick={img2} />
 </div>
 
 <br/>
 
 <div>
 <Dice />
+</div>
+
+<br/>
+
+<div style={containerStyles}>
+<Carousel images={slides} />
 </div>
 
     </div>

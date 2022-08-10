@@ -2,22 +2,18 @@ import { useState } from "react";
 
 function ClickablePicture({img,imgClick}){
     
-    const img1= img;
-    const img2=imgClick;
-    const together = {img1,img2}
-
-
-    const[active,setActive]= useState(together.img1)
+ 
+    const[active,setActive]= useState(false)
 
     const handleClickActive =()=>{
-        setActive(together.img2)
+        !active ? setActive(true) : setActive(false)
       
         };
 
 
     return(
         <div>
-       <img src={active} onClick={handleClickActive} ></img>
+       <img src={!active ? img : imgClick} onClick={handleClickActive} ></img>
         </div>
     )
 
