@@ -13,3 +13,9 @@
  align-items: inherit;
  width: 12%;
 }
+.cardLogo {
+    margin-left: 170px;
+    margin-bottom: 10px;
+    width: 50px;
+    float: right;
+  }

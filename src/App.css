@@ -50,3 +50,13 @@ h4 {
   display: flex;
   justify-content: space-around;
 }
+
+/* ITERATION 8 */
+.like-buttons {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  width: 300px;
+  margin: 30px;
+  padding: 10px;
+}
