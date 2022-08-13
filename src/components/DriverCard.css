@@ -1,0 +1,27 @@
+.driver-card {
+    background-color: #455eb5;
+    margin: 10px;
+    border-radius: 30px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.driverimg {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.star {
+    font-size: 10px;
+}
+
+.card {
+    color:white;
+    font-size: 20px;
+}
+
+
