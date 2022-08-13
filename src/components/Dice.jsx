@@ -13,7 +13,6 @@ const Dice = () => {
 
   const [dice, SetDice] = useState(diceArray[randomDice])
 
-
   return ( 
     <div>
       <img src={dice} width="150px" alt="dice" onClick={() =>{

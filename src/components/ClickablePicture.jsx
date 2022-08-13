@@ -1,14 +1,14 @@
 import { useState } from "react";
-import clickableImage from '../assets/images/maxence.png'
-import clickableImage2 from '../assets/images/maxence-glasses.png'
+import img1 from '../assets/images/maxence.png'
+import img2 from '../assets/images/maxence-glasses.png'
 
 const ClickablePicture = () => {
-  const [Img, setImg] = useState(false)
-  const imgChangeHandler = () => !Img ? setImg(true) : setImg(false)
+  const [active, setActive] = useState(false)
+  const handleClickActive = () => !active ? setActive(true) : setActive(false)
 
   return ( 
     <div>
-      <img onClick={imgChangeHandler}src={!Img ? clickableImage: clickableImage2} alt="pic" />
+      <img onClick={handleClickActive}src={!active ? img1: img2} alt="pic" />
     </div>
   );
 }
