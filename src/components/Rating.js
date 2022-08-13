@@ -1,5 +1,3 @@
-import './Ratings.css'
-
 function Rating (props) {
     const { children } = props;
 
@@ -13,7 +11,7 @@ function Rating (props) {
     };
 
     return(
-        <div className='stars'>
+        <div>
             {displayStar(children)}
         </div>
     )

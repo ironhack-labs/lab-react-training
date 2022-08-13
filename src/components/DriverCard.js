@@ -9,7 +9,7 @@ function DriverCard (props) {
             <img className="driverimg" src={img} alt="img" />
             <div className="card">
                 <h3>{name}</h3>
-                <Rating children={rating} />
+                <div className='rating'><Rating children={rating} /></div>
                 <p>{car.model} - {car.licensePlate}</p> 
             </div>
         </div>
