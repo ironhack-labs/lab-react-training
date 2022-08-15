@@ -11,7 +11,7 @@ function CreditCard (props) {
         <div className='creditcard' style={{backgroundColor:`${bgColor}`, color:`${color}`}}>
             <p className='type'>{type === "Visa" ? <img src={visaImg} alt='visa'/> : <img src={mastercard} alt='master' />} </p>
             <h2 className='number'>{hideNumbers.join(" ")}</h2>
-            <p className='expiration'>Expires {expirationMonth}/{expirationYear} <p className='bank'>{bank}</p></p>
+            <p className='expiration'>Expires {expirationMonth}/{expirationYear} <span className='bank'>{bank}</span></p>
             <p className='owner'>{owner}</p>
         </div>
     );
