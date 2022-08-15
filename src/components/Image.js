@@ -1,3 +1,5 @@
+import './Image.css'
+
 function Image (props) {
     const { picture } = props; 
     return (

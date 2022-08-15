@@ -1,0 +1,21 @@
+.profile-face {
+    border: 1px solid black; 
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: stretch;
+}
+
+.face-datas {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.face-img > img {
+    width: 200px;
+}
