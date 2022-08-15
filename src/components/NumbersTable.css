@@ -1,0 +1,22 @@
+.numbers {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: center;
+    width: 681px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.num {
+    border: 3px solid black;
+    font-size: 50px;
+    padding: 40px;
+    width: 50px;
+}
+
+.red {
+    background-color: red;
+}
