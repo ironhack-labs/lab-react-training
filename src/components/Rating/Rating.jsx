@@ -3,11 +3,16 @@ import React from 'react';
 function Rating(props) {
   const { children } = props;
   const finalRating = [];
+  const upRating = Math.ceil(reating);
+
   for (let i = 0; i <= children; i++) {
-    finalRating.push(filledStar);
+    i < upRating ? finalRating.push('★') : finalRating.push('☆');
   }
-  finalRating.length <= 5 ? filledStar : emptyStar;
-  return <div>(★)</div>;
 }
+return (
+  <div>
+    <p>{finalRating}</p>
+  </div>
+);
 
 export default Rating;
