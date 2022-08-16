@@ -11,3 +11,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card {
+  border: 2px solid black;
+  display: flex;
+}
+
+.card-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1px;
+}
+
+.helloMessage {
+  border: 2px solid black;
+  display: flex;
+}
+
+.rgb-box {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.creditCard-container {
+  display: flex;
+  justify-content: center;
+}
+
+.creditCard {
+  width: 30vw;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.creditCard-logo {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.creditCard-number {
+  font-size: 2em;
+}
+
+.creditCard-expiry {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+
+.creditCard-bank {
+  padding-left: 20px;
+}
+
+.creditCard-owner {
+  display: flex;
+  padding-left: 40px;
+  position: relative;
+  bottom: 20px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+}
