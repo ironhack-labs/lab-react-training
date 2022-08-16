@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+.idCard {
+  width: 45vw;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #282c34;
+  display: flex;
+}
+
+.cardImage {
+
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.cardBody {
+
+  width: 30vw;
+}
+
+.credit-card {
+
+  width: 25vw;
+  height: 30vh;
+  border-radius: 10px;
+}
+
+.card-type {
+
+  width: 5vw;
+}
+
+.credit-card-number {
+
+  display: flex;
+}
