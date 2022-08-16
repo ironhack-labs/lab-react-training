@@ -1,0 +1,36 @@
+// App.js
+
+import './App.css';
+import IdCard from './components/IdCard/IdCard';
+import studentsData from '../src/data/berlin.json';
+
+function App() {
+  return (
+    <div className="App">
+      <div>
+        <IdCard idInfo={studentsData} />
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+
+// IDCard 
+
+import React from 'react';
+
+function IdCard(props) {
+  const { idInfo } = props;
+
+  return idInfo.map((student, index) => {
+    return (
+      <div key={index}>
+        <p>{student.firstName}</p>
+      </div>
+    );
+  });
+}
+
+export default IdCard;
