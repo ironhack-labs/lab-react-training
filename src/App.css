@@ -28,6 +28,17 @@
   color: #61dafb;
 }
 
+.CreditCard {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: black;
+  font-size: 14px;
+  background-image: #f4f4f5;
+  margin-left: 30px;
+  padding: 25px 50px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
