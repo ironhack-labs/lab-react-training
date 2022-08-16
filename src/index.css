@@ -86,4 +86,44 @@ code {
 .rating {
   display: flex;
   flex-direction: column;
+  line-height: 1px;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.driver-card {
+  background-color: #425cbb;
+  border-radius: 10px;
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.driver-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.driver-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.driver-info {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  line-height: 1px;
+  align-items: flex-start;
+}
+
+h1 {
+  display: flex;
+  padding-left: 10px;
 }

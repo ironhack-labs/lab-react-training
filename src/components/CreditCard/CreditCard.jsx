@@ -1,11 +1,13 @@
 import { type } from "@testing-library/user-event/dist/type"
 
 function CreditCard(props) {
-    const {type, number, expirationMonth, expirationYear, bank, owner, bgColor, color} = props;
+    const {img, type, number, expirationMonth, expirationYear, bank, owner, bgColor, color} = props;
+    
   return (
     <div style={{backgroundColor: `${bgColor}`, color: `${color}`}} class="creditCard">
         <span class="creditCard-logo">
             <h6>{type}</h6>
+            <img src={img} alt="credit card" />
         </span>
         <span className="creditCard-number">
             <h4>{number}</h4>
