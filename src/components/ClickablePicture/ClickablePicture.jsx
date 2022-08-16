@@ -13,7 +13,11 @@ function ClickablePicture() {
   return (
     <div>
       <a onClick={toggleImage}>
-        {image ? <img src={noGlasses} /> : <img src={withGlasses} />}
+        {image ? (
+          <img className="glasses" src={noGlasses} />
+        ) : (
+          <img className="glasses" src={withGlasses} />
+        )}
       </a>
     </div>
   );
