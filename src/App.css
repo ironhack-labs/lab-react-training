@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,22 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.IdCard {
+  border: 2px solid black;
+  margin: 20px;
+  display: flex;
+  padding: 10px
+}
+
+.IdCardInfo{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.IdCardInfo h3 {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
