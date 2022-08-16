@@ -1,0 +1,7 @@
+.random {
+  border: 1px solid black;
+  margin: 10px;
+  display: flex;
+  padding-left: 10px;
+  line-height: 2px;
+}

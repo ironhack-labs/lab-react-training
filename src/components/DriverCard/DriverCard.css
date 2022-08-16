@@ -1,0 +1,57 @@
+.driver-card {
+  box-sizing: border-box;
+  position: relative;
+  margin: 20px;
+  width: 100 vh;
+  height: 150px;
+  background-color: #415cbb;
+  border-radius: 10px;
+  color: white;
+}
+
+.driver-name {
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: bold;
+  left: 50%;
+  top: 20%;
+}
+
+.driver-white-stars {
+  position: absolute;
+  font-size: 2em;
+  left: 50%;
+  top: 40%;
+}
+
+.driver-black-stars {
+  position: absolute;
+  font-size: 2em;
+  left: 50%;
+  top: 40%;
+}
+
+.driver-image {
+  position: absolute;
+  left: 39%;
+  top: 10%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.driver-image img {
+  position: absolute;
+  left: 39%;
+  top: 10%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.driver-details {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+}

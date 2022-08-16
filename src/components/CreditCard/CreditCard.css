@@ -1,0 +1,39 @@
+.credit-card {
+  width: 400px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.credit-card img {
+  float: right;
+  width: 60px;
+  height: auto;
+}
+
+.credit-card-number {
+  position: absolute;
+  top: 40%;
+  right: 25%;
+  font-size: 2em;
+}
+
+.expiration {
+  position: absolute;
+  bottom: 20%;
+}
+
+.bank {
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+}
+
+.owner {
+  position: absolute;
+  bottom: 10%;
+}

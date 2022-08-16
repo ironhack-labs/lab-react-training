@@ -1,0 +1,9 @@
+.white-stars {
+  position: relative;
+  font-size: 2em;
+}
+
+.black-stars {
+  position: absolute;
+  top: 5%;
+}
