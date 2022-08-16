@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.make-row{
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.make-row img{
+  width: 20vw;
+  padding: 1vw;
+}
+.make-columm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.driverImg{
+  width: 20vw;
+}
