@@ -1,15 +1,28 @@
 import React from 'react';
 
 function IdCard(props) {
-  const { firstName, lastName, gender, height, birth, picture } = props;
+  const { lastName, firstName, gender, height, birth, picture } = props;
 
   return (
-    <div>
+    <div className="idCard">
       <img src={picture} alt="..." />
-      <p> FirstName: {firstName}</p>
-      <p> LastName: {lastName}</p>
-      <p> Gender: {gender}</p>
-      <p>Height: {height}</p>
+      <div>
+        <p>
+          <strong>FirstName: </strong> {firstName}
+        </p>
+        <p>
+          <strong>FirstName: </strong> {lastName}
+        </p>
+        <p>
+          <strong>FirstName: </strong> {gender}
+        </p>
+        <p>
+          <strong>FirstName: </strong> {height}
+        </p>
+        <p>
+          <strong>FirstName: </strong> {birth}
+        </p>
+      </div>
     </div>
   );
 }

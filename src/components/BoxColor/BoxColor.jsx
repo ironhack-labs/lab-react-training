@@ -5,6 +5,7 @@ function BoxColor(props) {
 
   return (
     <div
+      className="box-color"
       style={{
         backgroundColor: `rgb(${r}, ${g}, ${b})`,
         height: '50px',
