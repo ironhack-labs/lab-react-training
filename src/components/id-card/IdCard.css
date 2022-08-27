@@ -1,0 +1,11 @@
+
+.id-card {
+  margin: 2rem;
+  border: 1px solid black;
+}
+
+.image {
+  max-width: 200px;
+  width: 100%;
+  object-fit: contain;
+}
