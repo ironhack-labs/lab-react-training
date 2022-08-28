@@ -10,7 +10,7 @@ function Rating({ children }) {
   return(
     <div className="stars">
       <i className={`star fa fa-star${star1} fa-lg`} />
-      <i className={`star fa fa-star${star2} fa-lg`}/>
+      <i className={`star fa fa-star${star2} fa-lg`} />
       <i className={`star fa fa-star${star3} fa-lg`} />
       <i className={`star fa fa-star${star4} fa-lg`} />
       <i className={`star fa fa-star${star5} fa-lg`} />

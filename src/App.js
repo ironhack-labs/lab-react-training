@@ -120,7 +120,7 @@ function App() {
 
       <hr />
 
-      {/* Iteration 6*/ }
+      {/* Iteration 7*/ }
       <div>
         <h2 className="ms-4 my-4">Driver Card</h2>
         <DriverCard
@@ -142,6 +142,10 @@ function App() {
           }}
         />
       </div>
+
+      <hr />
+
+      
     
     </div>
   );
