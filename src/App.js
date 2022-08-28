@@ -1,11 +1,14 @@
 import IdCard from "./components/id-card/IdCard";
 import Greetings from "./components/greetings/Greetings";
+import RandomNum from "./components/random-number/RandomNum";
 
 
 function App() {
   return (
     <div className="App">
+
       <div className="id-cards">
+        <h2 className="ms-4 mt-4">ID Card</h2>
         <IdCard
           lastName='Doe'
           firstName='John'
@@ -23,12 +26,25 @@ function App() {
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
       </div>
-      <div className="greetings">
+
+      <hr />
+    
+      <div className="greetings mb-4">
+        <h2 className="ms-4 my-4">Greetings</h2>
         <Greetings lang="es">Iván</Greetings>
         <Greetings lang="eng">John</Greetings>
         <Greetings lang="fr">FranÇois</Greetings>
         <Greetings >Ludwig</Greetings>
       </div>
+
+      <hr />
+
+      <div className="random">
+        <h2 className="ms-4 my-4">Random Num</h2>  
+        <RandomNum min={1} max={6}/>
+        <RandomNum min={1} max={100}/>
+      </div>
+    
     </div>
   );
 }
