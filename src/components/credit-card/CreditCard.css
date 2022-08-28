@@ -1,0 +1,11 @@
+.credit-card {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.credit-card > img {
+  max-width: 60px;
+  width: 100%;
+  max-height: 30px;
+}

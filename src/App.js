@@ -2,12 +2,15 @@ import IdCard from "./components/id-card/IdCard";
 import Greetings from "./components/greetings/Greetings";
 import RandomNum from "./components/random-number/RandomNum";
 import BoxColor from "./components/box-color/BoxColor";
+import CreditCard from "./components/credit-card/CreditCard";
+import Rating from "./components/rating/Rating";
 
 
 function App() {
   return (
     <div className="App">
 
+      {/* Iteration 1 */ }
       <div className="id-cards">
         <h2 className="ms-4 mt-4">ID Card</h2>
         <IdCard
@@ -29,7 +32,8 @@ function App() {
       </div>
 
       <hr />
-    
+
+      {/* Iteration 2*/ }
       <div className="greetings mb-4">
         <h2 className="ms-4 my-4">Greetings</h2>
         <Greetings lang="es">Iván</Greetings>
@@ -40,7 +44,8 @@ function App() {
 
       <hr />
 
-      <div className="random">
+      {/* Iteration 3*/ }
+      <div className="random my-4">
         <h2 className="ms-4 my-4">Random Num</h2>  
         <RandomNum min={1} max={6}/>
         <RandomNum min={1} max={100}/>
@@ -48,11 +53,68 @@ function App() {
 
       <hr />
 
-      <div className="box.color">
+      {/* Iteration 4*/ }
+      <div className="box.color my-4">
         <h2 className="ms-4 my-4">Box Color</h2>
         <BoxColor/>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
+      </div>
+
+      <hr />
+
+      {/* Iteration 5*/ }
+      <div>
+        <h2 className="ms-4 my-4">Box Color</h2>
+        <div className="cards d-flex gap-5 my-4 mx-5">
+          <CreditCard
+            type="Visa"
+            number="0123456789018845"
+            expirationMonth={3}
+            expirationYear={2021}
+            bank="BNP"
+            owner="Maxence Bouret"
+            bgColor="#11aa99"
+            color="white" 
+          />
+
+          <CreditCard
+            type="Master Card"
+            number="0123456789010995"
+            expirationMonth={3}
+            expirationYear={2021}
+            bank="N26"
+            owner="Maxence Bouret"
+            bgColor="#eeeeee"
+            color="#222222"
+          />
+              
+          <CreditCard
+            type="Visa"
+            number="0123456789016984"
+            expirationMonth={12}
+            expirationYear={2019}
+            bank="Name of the Bank"
+            owner="Firstname Lastname"
+            bgColor="#ddbb55"
+            color="white" 
+          />
+        </div>
+      </div>
+
+      <hr />
+
+      {/* Iteration 6*/ }
+      <div className="container">
+        <h2 className="ms-4 my-4">Rating</h2>
+        <div className="d-flex flex-column align-items-center">
+          <Rating>0</Rating>
+          <Rating>1.49</Rating>
+          <Rating>1.5</Rating>
+          <Rating>3</Rating>
+          <Rating>4</Rating>
+          <Rating>5</Rating>
+        </div>
       </div>
     
     </div>
