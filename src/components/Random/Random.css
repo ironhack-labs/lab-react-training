@@ -1,0 +1,7 @@
+.container-box-random {
+  max-width: 700px;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+  margin-bottom: 20px;
+}
