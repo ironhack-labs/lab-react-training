@@ -5,6 +5,7 @@ import BoxColor from "./components/box-color/BoxColor";
 import CreditCard from "./components/credit-card/CreditCard";
 import Rating from "./components/rating/Rating";
 import DriverCard from "./components/driver-card/DriverCard";
+import LikeButton from "./components/like-button/LikeButton";
 
 
 function App() {
@@ -144,6 +145,15 @@ function App() {
       </div>
 
       <hr />
+
+      {/* Iteration 8*/ }
+      <div>
+        <h2 className="ms-4 my-4">Like Button</h2>
+        <div className="d-flex flex-row gap-5 mb-5 justify-content-center">
+          <LikeButton />
+          <LikeButton />
+        </div>
+      </div>
 
       
     
