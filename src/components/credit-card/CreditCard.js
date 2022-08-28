@@ -26,8 +26,7 @@ function CreditCard({
     month = expirationMonth
   }
 
-  const cardYear = new Date(expirationYear)
-  let year = cardYear.getYear()
+  let year = expirationYear.toString().slice(-2)
 
   return(
     <div className="credit-card d-flex flex-column" style={{

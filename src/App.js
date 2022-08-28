@@ -105,7 +105,7 @@ function App() {
       <hr />
 
       {/* Iteration 6*/ }
-      <div className="container">
+      <div>
         <h2 className="ms-4 my-4">Rating</h2>
         <div className="d-flex flex-column align-items-center">
           <Rating>0</Rating>
