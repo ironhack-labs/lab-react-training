@@ -2,12 +2,13 @@ import './App.css';
 import IdCard from './components/id-card/IdCard';
 import Greetings from './components/greetings/Greetings';
 import Random from './components/random/Random';
+import BoxColor from './components/box-color/BoxColor';
 
 function App() {
   return (
     <div className="App">
       <div className="container-fluid">
-        <h1 className="mt-3 fw-bold">Id Card</h1>
+        <h1 className="mt-3 fw-bold py-2">Id Card</h1>
         <IdCard
           lastName="Doe"
           firstName="John"
@@ -28,13 +29,17 @@ function App() {
           className="mb-2"
         />
 
-        <h1 className="mt-3 fw-bold">Greetings</h1>
+        <h1 className="mt-3 fw-bold py-2">Greetings</h1>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
 
-        <h1 className="mt-3 fw-bold">Random</h1>
+        <h1 className="mt-3 fw-bold py-2">Random</h1>
         <Random min={1} max={6}/>
         <Random min={1} max={100}/>
+
+        <h1 className="mt-3 fw-bold py-2">BoxColor</h1>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
 
 
       </div>
