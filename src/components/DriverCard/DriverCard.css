@@ -1,0 +1,16 @@
+.driver-card {
+  background-color: #405bba;
+  border-radius: 10px;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+.driver-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}

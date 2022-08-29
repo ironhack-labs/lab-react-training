@@ -1,0 +1,22 @@
+.container-credit-card{
+  width: 450px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.container-credit-card-head {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+.container-credit-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.container-credit-footer {
+  padding: 10px;
+}
+.container-credit-footer-top {
+  display: flex;
+}
