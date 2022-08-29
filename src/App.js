@@ -6,6 +6,7 @@ import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
+import LikeButton from './components/LikeButton/LikeButton';
 
 
 function App() {
@@ -109,6 +110,10 @@ function App() {
             licensePlate: "BE33ER"
           }}
         />
+      </div>
+      <div className='m-5'>
+        <h2 className='text-danger'>LikeButton</h2>
+        <LikeButton />  
       </div>
     </div>
   );
