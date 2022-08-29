@@ -2,6 +2,7 @@ import './App.css';
 import IdCard from './components/id-card/IdCard';
 import Greetings from "./components/greetings/Greetings";
 import Random from "./components/random/Random";
+import BoxColor from "./components/boxcolor/BoxColor";
 
 function App() {
   return (
@@ -36,9 +37,16 @@ function App() {
 
       {/* ITERATION 3 - RANDOM */}
       <div className='random'>
-      <h3 className='my-3 mx-2'><b>Random</b></h3>
+        <h3 className='my-3 mx-2'><b>Random</b></h3>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
+      </div>
+
+      {/* ITERATION 4 - BOXCOLOR */}
+      <div className='boxcolor'>
+        <h3 className='my-3 mx-2'><b>Boxcolor</b></h3>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
       </div>
     </div>
   );

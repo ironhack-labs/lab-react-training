@@ -1,7 +1,7 @@
 import "./Random.css";
 
 function Random({ min, max }) {
-  let result = Math.floor(Math.random() * (max - min + min));
+  let result = Math.floor(Math.random() * (max - min) + min);
 
   return (
     <div className="random-box d-flex my-2 mx-2 ps-2">
