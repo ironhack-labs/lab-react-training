@@ -1,11 +1,12 @@
 import './App.css';
 import IdCard from './components/id-card/IdCard';
+import Greetings from './components/greetings/Greetings';
 
 function App() {
   return (
     <div className="App">
       <div className="container-fluid">
-        <h1 className="mt-3">Id Card</h1>
+        <h1 className="mt-3 fw-bold">Id Card</h1>
         <IdCard
           lastName="Doe"
           firstName="John"
@@ -25,6 +26,11 @@ function App() {
           picture="https://randomuser.me/api/portraits/women/44.jpg"
           className="mb-2"
         />
+
+        <h1 className="mt-3 fw-bold">Greetings</h1>
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
+
       </div>
     </div>
   );
