@@ -1,0 +1,20 @@
+.geetings{
+ padding: 10px 10px 10px 10px;
+}
+
+.geetings button{
+ margin: 10px;
+ width: 80px;
+ cursor: pointer;
+
+}
+
+.selectLanguage{
+ display: flex;
+ border: 1px solid black;
+}
+
+.blockSelect{
+ display: none;
+ 
+}

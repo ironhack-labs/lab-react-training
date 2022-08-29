@@ -1,1 +1,6 @@
-export {IdCard} from './IdCard'
+export { IdCard } from './IdCard'
+export { Greetings } from './Greetings'
+export { Random } from './Random'
+export { BoxColor } from './BoxColor'
+export { CreditCard } from './CreditCard'
+export { Rating } from './Rating'
