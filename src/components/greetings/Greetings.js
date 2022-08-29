@@ -1,5 +1,3 @@
-import './Greetings.css'
-
 function Greetings({ lang, children }) {
   let greeting = ""  
   switch(lang) {
