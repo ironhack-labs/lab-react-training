@@ -5,7 +5,7 @@ function LikeButton() {
   const [count, setCount] = useState(0)
   const colors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red']
   let colorLike = "purple"
-  let numRandom = Math.floor((Math.random() * (0 - 5)) + 5);
+  let numRandom = Math.floor((Math.random() * (0 - 5)) + 5)
 
   const countUp = () => setCount(countPrev => countPrev + 1)
 
