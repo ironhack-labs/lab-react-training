@@ -1,0 +1,8 @@
+.greetings .message{
+  border: 3px black solid;
+}
+
+.greetings .message span{
+  font-size: 2em;
+  font-weight: 500;
+}

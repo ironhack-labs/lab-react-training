@@ -1,0 +1,20 @@
+.driver-card .driver-card__detail>span:last-child>span:last-child::before{
+  content: ' - ';
+}
+
+.driver-card{
+  background-color: #455EB5;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.driver-card img{
+  max-width: 100px;
+  max-height: 100px;
+  height: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+}

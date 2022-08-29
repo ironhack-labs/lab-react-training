@@ -1,0 +1,20 @@
+.id-card .id-card__details span::after{
+  content: ': ';
+  font-weight: 'bold';
+}
+
+.id-card .container{
+  border: 2px black solid;
+  margin-bottom: 5px;
+  margin-top: 5px
+}
+
+.id-card .container img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.id-card .id-card__details p {
+  margin: 0;
+}

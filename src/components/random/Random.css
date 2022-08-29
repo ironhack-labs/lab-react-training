@@ -1,0 +1,8 @@
+.random .message{
+  border: 3px black solid;
+}
+
+.random .message span{
+  font-size: 2em;
+  font-weight: 500;
+}

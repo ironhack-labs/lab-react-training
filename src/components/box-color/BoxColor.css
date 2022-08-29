@@ -1,0 +1,9 @@
+.box-color .message {
+  border: 2.5px black solid;
+  margin-bottom: 5px;
+}
+
+.box-color .message span {
+  font-weight: 400;
+  font-size: 2em;
+}

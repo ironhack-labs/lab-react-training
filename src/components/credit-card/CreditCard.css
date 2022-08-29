@@ -1,0 +1,32 @@
+.credit-card{
+  width: 100%;
+  max-width: 275px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.credit-card img{
+  max-width: 45px;
+  max-height: 15px;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.credit-card .credit-card__number{
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.credit-card .credit-card__expire, .credit-card .credit-card__owner{
+  font-size: 0.85em;
+}
+.credit-card .credit-card__expire>span:last-child{
+  margin-left: 15px;
+}
+
+.credit-card .credit-card__month::after {
+  content: '/';
+}
