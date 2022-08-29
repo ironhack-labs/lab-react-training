@@ -92,6 +92,7 @@ function App() {
   for(let i = 0; i < users.length; i++){
     idCardArray.push(
       <IdCard
+        key={i}
         lastName={users[i].lastName}
         firstName={users[i].firstName}
         gender={users[i].gender}
@@ -105,8 +106,9 @@ function App() {
   const creditCardsArray = [];
   for(let i = 0; i < creditCards.length; i++){
     creditCardsArray.push(
-      <div className="col-3">
+      <div key={i} className="col-3">
         <CreditCard
+            key={i}
             type={creditCards[i].type}
             number={creditCards[i].number}
             expirationMonth={creditCards[i].expirationMonth}
@@ -124,6 +126,7 @@ function App() {
   for(let i = 0; i < driverCards.length; i++){
     driverCardsArray.push(
       <DriverCard
+        key={i}
         name={driverCards[i].name}
         rating={driverCards[i].rating}
         img={driverCards[i].img}

@@ -5,7 +5,7 @@ import './FaceBook.css';
 function FaceBook(){
 
   const faceBookArray = profiles.map(profile => 
-    <div className="d-flex">
+    <div key={`${profile.firstName} ${profile.lastName}`} className="d-flex">
       <img src={profile.img} alt={`${profile.firstName} ${profile.lastName}`} />
       <div className="d-flex flex-column face-book__details text-start">
         <span><strong>First name</strong>{profile.firstName}</span>

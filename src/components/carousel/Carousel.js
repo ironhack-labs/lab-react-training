@@ -3,7 +3,7 @@ function Carousel({ images }){
   const imagesCarousel = [];
   for (let i = 0; i < images.length; i++){
     imagesCarousel.push(
-      <div className={`carousel-item ${!i ? 'active' : ''}`}>
+      <div key={images[i]} className={`carousel-item ${!i ? 'active' : ''}`}>
         <img src={images[i]} className="d-block w-100" alt="Imagen 1" />
       </div>
     )

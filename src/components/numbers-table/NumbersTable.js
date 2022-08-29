@@ -5,7 +5,7 @@ function NumbersTable({ limit }){
   const arrayNumbers = [];
   for(let i = 1; i< limit + 1; i++){
     arrayNumbers.push(
-      <div className={`d-flex justify-content-center align-items-center numbers-table__element ${!(i % 2) ? 'bg-white' : 'bg-danger'}`}>{i}</div>
+      <div key={i} className={`d-flex justify-content-center align-items-center numbers-table__element ${!(i % 2) ? 'bg-white' : 'bg-danger'}`}>{i}</div>
     );
   }
 
