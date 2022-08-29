@@ -1,0 +1,17 @@
+.id-card-box {
+  
+}
+
+.id-card-box > img {
+  width: 150px;
+  height: 150px;
+}
+
+.id-card-info{
+  
+}
+.id-card-info > p {
+  line-height: 20%;
+  
+}
+

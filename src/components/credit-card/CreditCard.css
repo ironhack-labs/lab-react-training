@@ -1,0 +1,23 @@
+.credit-box {
+  width: 340px;
+  height: 187px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+
+.img-type {
+  height: 20px;
+}
+
+.number {
+  margin: 20px;
+  
+  font-size: 26px;
+}
+
+.bank {
+  margin-left: 20px;
+}

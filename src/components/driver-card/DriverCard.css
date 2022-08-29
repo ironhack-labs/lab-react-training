@@ -1,0 +1,21 @@
+.driver-img{
+  border-radius: 50%;
+}
+
+.driver-card {
+  background-color: #425cbb;
+  border-radius: 10px;
+}
+
+.driver-info > span{
+  color: white;  
+}
+
+.driver-name {
+  color: white  
+}
+
+.driver-rating{
+  font-size: 30px;
+  color: white;
+}
