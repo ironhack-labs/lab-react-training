@@ -1,9 +1,11 @@
 import './App.css';
-import IdCard from './components/id-card/IdCard.js';
+import IdCard from './components/id-card/IdCard';
+import Greetings from "./components/greetings/Greetings";
 
 function App() {
   return (
     <div className="App">
+      {/* ITERATION 1 - IDCARDS */}
       <div className='id-cards'>
         <h3 className='my-3 mx-2'><b>IdCard</b></h3>
         <IdCard
@@ -12,7 +14,7 @@ function App() {
           gender='male'
           height={178}
           birth={new Date("1992-07-14")}
-          picture="https://randomuser.me/api/portraits/men/44.jpg"
+          picture="https://randomuser.me/api/portraits/men/41.jpg"
         />
         <IdCard
           lastName='Dolores '
@@ -24,6 +26,12 @@ function App() {
         />
       </div>
 
+      {/* ITERATION 2 - GREETINGS */}
+      <div className='greetings'>
+        <h3 className='my-3 mx-2'><b>Greetings</b></h3>
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
+      </div>
     </div>
   );
 }
