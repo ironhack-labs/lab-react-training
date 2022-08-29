@@ -10,6 +10,9 @@ import DriverCard from './components/driver-card/DriverCard';
 import LikeButton from './components/like-button/LikeButton';
 import ClickablePicture from './components/clickable-picture/ClickablePicture';
 import Dice from './components/dice/Dice';
+import Carousel from './components/carousel/Carousel';
+import NumbersTable from './components/numbers-table/NumbersTable';
+import FaceBook from './components/face-book/FaceBook';
 
 const users = [
   {
@@ -182,6 +185,25 @@ function App() {
 
         <h2>Dice</h2>
         <Dice />
+
+        <h2>Carousel</h2>
+        <div className="d-flex justify-content-center">
+          <Carousel
+            images={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg'
+            ]}
+          />
+        </div>
+
+        <h2>NumbersTable</h2>
+        <NumbersTable limit={12} />
+
+
+        <h2>FaceBook</h2>
+        <FaceBook />
       </div>
     </div>
   );

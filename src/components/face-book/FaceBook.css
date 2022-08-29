@@ -1,0 +1,20 @@
+.face-book>div{
+  padding: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 3px solid black;
+}
+
+.face-book .face-book__details strong::after{
+  content: ': ';
+}
+
+.face-book .face-book__details{
+  font-size: 2em;
+}
+
+.face-book img{
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
