@@ -1,0 +1,21 @@
+.CreditCard{
+    width: 350px;
+    height: 170px;
+    border-radius: 10px;
+    margin: 20px;
+}
+#imageCardCredit{
+    width: 60px;
+    height: 20px;
+}
+.dot {
+    height: 9px;
+    width: 9px;
+  background-color: white;
+  border-radius: 50%; 
+  display: inline-block;
+  }
+  .CreditCard p{
+    display: flex;
+    flex-direction: row;
+  }
