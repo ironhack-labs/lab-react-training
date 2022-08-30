@@ -3,9 +3,7 @@ import './Rating.styles.css'
 
 export const Rating = (props) => {
  const { rat } = props
- console.log(rat)
-
-
+ 
  const rating = (val) => {
   switch(true){
    case (val >= 1 && val < 2):

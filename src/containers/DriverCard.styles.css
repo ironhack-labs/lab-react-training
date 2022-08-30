@@ -1,0 +1,27 @@
+.driverCard {
+ background-color: #455EB5;
+ width: 600px;
+ height: 150px;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ line-height: .1rem;
+ margin: 20px 20px 20px 20px;
+}
+
+.content {
+ display: flex;
+ flex-direction: row;
+}
+
+.profilePictureDriver {
+ border-radius: 100%;
+ width: 80px;
+ height: 80px;
+}
+
+.rating{
+ border: 0px;
+}

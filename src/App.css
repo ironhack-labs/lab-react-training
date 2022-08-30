@@ -41,3 +41,12 @@
     transform: rotate(360deg);
   }
 }
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button{
+  margin: 10px 10px 10px 10px;
+}

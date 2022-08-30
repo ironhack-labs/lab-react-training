@@ -1,0 +1,8 @@
+[
+ {"type":"Visa", "bgColor":"red", "number":"2306 8900 5335 5056", "expirationMonth":"05", "expirationYear": "23", "owner":"AMANDA L H PEREIRA", "bank":"Inter"},
+ {"type":"MasterCard", "bgColor":"purple", "number":"2306 5009 5335 3785", "expirationMonth":"07", "expirationYear": "27", "owner":"RENATO P J SIQUEIRA", "bank":"C6"},
+ {"type":"AmericanExpress", "bgColor":"blue", "number":"2306 5009 5335 3566", "expirationMonth":"10", "expirationYear": "30", "owner":"LUANA M SILVA", "bank":"Santander"},
+ {"type":"Visa", "bgColor":"pink", "number":"2306 5009 5335 7777", "expirationMonth":"12", "expirationYear": "32", "owner":"MARTA C ROCHA", "bank":"Nubank"},
+ {"type":"Visa", "bgColor":"#80ff00", "number":"2306 5009 5335 3456", "expirationMonth":"11", "expirationYear": "28", "owner":"JULIA M H NASCIMENTO", "bank":"Bradesco"}
+
+]
