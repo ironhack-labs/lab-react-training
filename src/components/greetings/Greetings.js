@@ -17,7 +17,7 @@ function Greetings({ lang, children }) {
         greeting = "Hi"
     }
   return(
-    <div className="id-card d-flex border border-dark my-2 ps-1">
+    <div className="d-flex border border-dark my-2 ps-1">
       <h6 className='my-1'>{greeting}  {children}</h6>
     </div>
 

@@ -3,6 +3,7 @@ import IdCard from './components/id-card/IdCard';
 import Greetings from './components/greetings/Greetings';
 import Random from './components/random/Random';
 import BoxColor from './components/box-color/BoxColor';
+import CreditCard from './components/credit-card/CreditCard';
 
 function App() {
   return (
@@ -39,7 +40,10 @@ function App() {
 
         <h1 className="mt-3 fw-bold py-2">BoxColor</h1>
         <BoxColor r={255} g={0} b={0} />
-        <BoxColor r={128} g={255} b={0} />
+        <BoxColor r={128} g={255} b={0} className={"text-dark"} />
+
+        <h1 className="mt-3 fw-bold py-2">CreditCard</h1>
+
 
 
       </div>
