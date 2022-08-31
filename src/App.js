@@ -4,6 +4,7 @@ import Greetings from './components/greetings/Greetings';
 import Random from './components/random/Random';
 import BoxColor from './components/box-color/BoxColor';
 import CreditCard from './components/credit-card/CreditCard';
+import Rating from './components/rating/Rating';
 
 function App() {
   return (
@@ -74,6 +75,14 @@ function App() {
           bgColor="#ddbb55"
           color="white"
         />
+
+        <h1 className="mt-3 fw-bold py-2">Rating</h1>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
       </div>
     </div>
   );
