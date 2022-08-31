@@ -37,6 +37,8 @@ function App() {
 <Random min={1} max={100}/>
 
 <h1>BoxColor</h1>
+<BoxColor r={255} g={0} b={0} class="border border-dark w-25 d-flex">rgb(255,0,0)</BoxColor>
+<BoxColor r={128} g={255} b={0} class="border border-dark w-25">rgb(128,255,0)</BoxColor>
 
 
 
