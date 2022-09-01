@@ -3,9 +3,9 @@ function BoxColor(props) {
     return (
       <div
         className="BoxColor"
-         /*style=
-           {
-            `rgb(
+        /*style=
+           {`background-color:
+            rgb(
             ${props.r},
             ${props.g},
             ${props.b}
