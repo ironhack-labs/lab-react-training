@@ -1,9 +1,12 @@
-/*Let maxNumber =
-  function getRandomInt({max}) {
-      return Math.floor(Math.random() * max)
-  }
+function Random({min, max}) {
+  min = Math.ceil(min);
+  max = Math.floor(max); 
 
+  return (
+    <div>
+    {Math.floor(Math.random() * (max - min +1)) + min}
+    </div>
+  )
+}
 
-function getRandomInt(min) {
-    return Math.floor(Math.random() * min);
-}*/
+export default Random;
