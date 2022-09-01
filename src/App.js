@@ -3,6 +3,7 @@ import React from 'react';
 import IdCard from './components/IdCard.js';
 import Greetings from './components/Greetings.js';
 import Random from './components/Random.js';
+import BoxColor from './components/BoxColor.js';
 
 function App() {
   return (
@@ -31,10 +32,13 @@ function App() {
         <Greetings lang="">Knut</Greetings>
       </div>
       <div className='Random'>
-        <Random min={1} max={6}></Random>
-        <Random min={1} max={100}></Random>
+        <Random min={1} max={6}/>
+        <Random min={1} max={100}/>
       </div>
-
+      <div className='BoxColor'>
+        <BoxColor r={255} g={0} b={0} className='RowColor'/>
+        <BoxColor r={128} g={255} b={0} className='RowColor'/>
+      </div>
     </div>
   );
 }
