@@ -1,11 +1,13 @@
-import './LikeButton.css'
+import './Rating.css'
+import Stars from './Stars.js'
 
-function LikeButton(){
+
+function Rating({children}){
   return(
-    <>
-
-    </>
+    <div>
+      <Stars value={children}/>
+    </div>
   )
 }
 
-export default LikeButton
+export default Rating
