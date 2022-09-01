@@ -6,6 +6,7 @@ import BoxColor from './components/BoxColor/BoxColor'
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
+import LikeButton from './components/LikeButton/LikeButton';
 
 function App() {
   return (
@@ -159,6 +160,10 @@ function App() {
         <div>
           <h3 className='text-center mt-5'> Iterarion 8: LikeButton </h3>
           <hr/>  
+        </div>
+        <div className='text-center mb-5'>
+          <LikeButton/>
+          <LikeButton/>
         </div>
       </div>
     </div>
