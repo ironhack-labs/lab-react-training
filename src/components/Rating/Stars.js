@@ -21,7 +21,7 @@ if (stars === 1) {
 }
 
   return(
-    <h3 className="m-0 text-center">
+    <h3 className="m-0">
       {rating} 
     </h3>
   )

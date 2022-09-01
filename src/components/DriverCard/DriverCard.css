@@ -1,0 +1,16 @@
+.driver-card{
+  background-color: #455eb5;
+  border-radius: 10px;
+  color: white;
+}
+
+
+.driver-card-image{
+  width: 80px;
+  height: 80px;
+  background-image: url(https://picsum.photos/seed/a/200/300);
+  background-size: cover;
+  border-radius: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}

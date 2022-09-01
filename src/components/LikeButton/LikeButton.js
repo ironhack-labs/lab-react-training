@@ -1,6 +1,6 @@
-import './Rating.css'
+import './LikeButton.css'
 
-function Rating(){
+function LikeButton(){
   return(
     <>
 
@@ -8,4 +8,4 @@ function Rating(){
   )
 }
 
-export default Rating
+export default LikeButton
