@@ -7,7 +7,8 @@ import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
-
+import ClickablePicture from './components/ClickablePicture/Clickable-picture';
+import Dice from './components/Dice/Dice';
 
 function App() {
   return (
@@ -114,6 +115,14 @@ function App() {
       <div className='m-5'>
         <h2 className='text-danger'>LikeButton</h2>
         <LikeButton />  
+      </div>
+      <div className='m-5'>
+        <h2 className='text-danger'>ClickablePicture</h2>
+        <ClickablePicture />
+      </div>
+      <div className='m-5'>
+        <h2 className='text-danger'>Dice</h2>
+        <Dice />
       </div>
     </div>
   );

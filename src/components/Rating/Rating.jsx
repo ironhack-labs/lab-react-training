@@ -1,9 +1,8 @@
 function Rating({ children }) {
-
-  const startRating = children => {
+  const startRating = (children) => {
     switch (Math.round(children)) {
       case 1:
-        return '★☆☆☆☆'
+        return '★☆☆☆☆';
       case 2:
         return '★★☆☆☆';
       case 3:
@@ -13,13 +12,11 @@ function Rating({ children }) {
       case 5:
         return '★★★★★';
       default:
-        return '☆☆☆☆☆'
+        return '☆☆☆☆☆';
     }
-  }
+  };
 
-  return (
-    <h2>{startRating(children)}</h2>
-  )
+  return <h2>{startRating(children)}</h2>;
 }
 
-export default Rating
+export default Rating;

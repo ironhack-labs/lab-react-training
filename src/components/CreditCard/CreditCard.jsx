@@ -20,8 +20,7 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
 
   let numCard = number.slice(-4)
   let yearCard = expirationYear.toString().slice(-2)
-
-
+  
   return (
     <div className='container-credit-card' style={{ backgroundColor: `${bgColor}`, color: `${color}` }}>
       <div className='container-credit-card-head'>
