@@ -25,8 +25,8 @@ function CreditCard({
   let year = expirationYear.toString().slice(-2);
 
   return (
-    <div className=" my-2">
-    <div className="d-flex flex-row">
+    <div className="container-fluid my-2">
+    <div className="row">
     <div
         className="credit-card d-flex flex-column justify-content-center"
         style={{ backgroundColor: `${bgColor}`, color: `${color}` }}

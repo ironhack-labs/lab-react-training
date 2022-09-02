@@ -9,7 +9,7 @@ function DriverCard({ name, rating, img, car}) {
           <img src={img} alt={name} className="align-self-center"/>
         </div>
   
-        <div className="text-light ">
+        <div className="text-light py-4">
           <h3>{name}</h3>
           <Rating>{rating}</Rating>
           <h6 className='mt-3'>{car.model} - {car.licensePlate}</h6>
