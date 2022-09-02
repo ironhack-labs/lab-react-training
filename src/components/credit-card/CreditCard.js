@@ -28,7 +28,7 @@ function CreditCard({
     <div className=" my-2">
     <div className="d-flex flex-row">
     <div
-        className="credit-card d-flex flex-column"
+        className="credit-card d-flex flex-column justify-content-center"
         style={{ backgroundColor: `${bgColor}`, color: `${color}` }}
       >
         <img src={card} alt={type} className="align-self-end mt-4 me-3" />

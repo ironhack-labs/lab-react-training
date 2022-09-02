@@ -1,0 +1,12 @@
+.driver-card {
+  background-color: darkblue;
+  border-radius: 20px;
+  display: flex;
+}
+
+.driver-img > img {
+  max-width: 100px;
+  height: 100px;
+  border-radius: 70%;
+  background-size: cover;
+}
