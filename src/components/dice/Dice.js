@@ -8,16 +8,21 @@ import dice4 from '../../assets/images/dice4.png'
 import dice5 from '../../assets/images/dice5.png'
 import dice6 from '../../assets/images/dice6.png'
 
+import diceEmpty from '../../assets/images/dice-empty.png'
+
 function Dice(){
   const diceArray = [dice1, dice2, dice3, dice4, dice5, dice6];
 
-  const [randomDice, setRandomDice] = useState(0);
+  const [randomDice, setRandomDice] = useState(dice3);
 
-  const handleRandomDice = () => setRandomDice(randomPrev => randomPrev = Math.floor(Math.random() * diceArray.length));
+  const handleRandomDice = () => {
+    setRandomDice(diceEmpty);
+    setTimeout(() => setRandomDice(randomPrev => randomPrev = diceArray[Math.floor(Math.random() * diceArray.length)]), 1000)
+  };
 
   return (
     <div className="dice">
-      <img className="w-25" src={diceArray[randomDice]} alt="Dado" onClick={handleRandomDice} />
+      <img className="w-25" src={randomDice} alt="Dado" onClick={handleRandomDice} />
     </div>
   );
 }
