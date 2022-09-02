@@ -6,6 +6,7 @@ import BoxColor from './components/box-color/BoxColor';
 import CreditCard from './components/credit-card/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/driver-card/DriverCard';
+import LikeButton from './components/like-button/LikeButton';
 
 function App() {
   return (
@@ -105,6 +106,9 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
+
+        <h1 className="mt-3 fw-bold py-2">LikeButton</h1>
+        <LikeButton />
       </div>
     </div>
   );
