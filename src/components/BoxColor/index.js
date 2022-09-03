@@ -1,19 +1,22 @@
+import './boxcolor.css'
 
-function BoxColor (props) {
 
-    const coloring = props.hex
-      ? props.hex
-      : `rgb(${props.r},${props.g},${props.b})`;
+function BoxColor ({ r, g, b }) {
+
+   
     return (
       <div
-        onChange={props.onChange}
-        className={props.class}
-        style={{ backgroundColor: coloring }}
-      >
-        {props.children}
-      </div>
-    );
-
-};
+      style={{ backgroundColor: `rgb(${r}, ${g}, ${b})` }}
+      className="boxcolor"
+    >
+      <h2>
+        rgb({r}, {g}, {b})
+      </h2>
+      <h2>
+        {'#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}
+      </h2>
+    </div>
+  );
+}
   
   export default BoxColor;

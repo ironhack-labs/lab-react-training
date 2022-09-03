@@ -2,5 +2,7 @@
     display: flex;
     font-size: 24px;
     margin: 0px;
+    border: 1px solid black;
+    margin-bottom: 10px;
 
 }

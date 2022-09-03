@@ -5,7 +5,8 @@ import Random from "./components/Random";
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
-
+import DriverCard from './components/DriverCard';
+ 
 
 
 
@@ -109,6 +110,29 @@ return (
         <Rating>5</Rating>
       </div>
 </div>
+
+        <h3>DriverCard</h3> {/* Iteration 7 - DriverCard */ }
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://i.imgur.com/VlaFSiY.jpg"
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
+        }}
+      />
+
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://i.imgur.com/bPaTbxn.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
+      />
+      <hr />
+      <br />
 
 </div>
 

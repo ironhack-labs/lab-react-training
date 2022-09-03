@@ -1,4 +1,4 @@
-               
+import './random.css'               
 
 function Random (props){
     const random = Math.floor(
