@@ -4,7 +4,7 @@ const Random = ({ min, max }) => {
   return (
     <div className="card">
       <span>
-        Tandom value between {min} and {max} => {randomNumber}
+        Random value between {min} and {max} {`=>`} {randomNumber}
       </span>
     </div>
   );
