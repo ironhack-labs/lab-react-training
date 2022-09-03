@@ -18,4 +18,5 @@
     "localPath": "",
     "disable": false,
     "private_key": "~/.ssh/id_rsa"
-}]
+}
+]

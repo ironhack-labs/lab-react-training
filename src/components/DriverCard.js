@@ -1,6 +1,6 @@
 import './DriverCard.css';
 
-import Rating from './Rating';
+
 const DriverCard = ({ img, name, rating, car }) => {
   let star;
   switch (Math.round(rating)) {
