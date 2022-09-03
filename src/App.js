@@ -41,7 +41,8 @@ function App() {
       <h1>CreditCard</h1>
       <div className="cards">
         <CreditCard
-          type="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/772px-Mastercard-logo.svg.png"
+          logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/772px-Mastercard-logo.svg.png"
+          type="MasterCard"
           number="0123 4567 8901 8845"
           expirationMonth={3}
           expirationYear={2021}
@@ -51,7 +52,8 @@ function App() {
           color="white"
         />
         <CreditCard
-          type="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/772px-Mastercard-logo.svg.png"
+          logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/772px-Mastercard-logo.svg.png"
+          type="MasterCard"
           number="0123 4567 8901 0995"
           expirationMonth={3}
           expirationYear={2021}
@@ -62,7 +64,8 @@ function App() {
         />
 
         <CreditCard
-          type="https://logosmarcas.net/wp-content/uploads/2020/05/Visa-Logo-500x281.png"
+          logo="https://logosmarcas.net/wp-content/uploads/2020/05/Visa-Logo-500x281.png"
+          type="Visa"
           number="0123 4567 8901 6984"
           expirationMonth={12}
           expirationYear={2019}
