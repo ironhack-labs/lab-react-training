@@ -13,6 +13,9 @@ const IdCard = (props) => {
         <p><b>Birth: </b>{props.birth ? props.birth.toDateString() : new Date()}</p>
       </div>
     </div>
+
+
+  
   </>)
 
 }
