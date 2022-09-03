@@ -1,0 +1,18 @@
+#container-Card {
+  display: flex;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f7f7f7;
+  border: 1px solid black;
+}
+
+#item-Card { 
+  text-align: left;
+  line-height: 1px; 
+}
+
+img {
+  width: 160px;
+  height: 160px;
+  margin: 10px;
+}
