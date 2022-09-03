@@ -14,6 +14,8 @@ function App() {
   return (
     <div className="App">
       <h1 className='title'>IdCard</h1>
+      teste
+      
         <IdCard
           lastName='Doe'
           firstName='John'
