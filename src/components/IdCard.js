@@ -2,6 +2,7 @@ import './IdCard.css';
 
 
 const IdCard = ({ picture, firstName, lastName, gender, height, birth }) => {
+ 
   return (
     <div className='card'>
       <img src={picture} alt={firstName} />
@@ -10,7 +11,7 @@ const IdCard = ({ picture, firstName, lastName, gender, height, birth }) => {
         <span><strong>Last name:</strong> {lastName}</span>
         <span><strong>Gender:</strong> {gender}</span>
         <span><strong>Height:</strong> {height}</span>
-        <span><strong>Birth:</strong> </span>
+        <span><strong>Birth:</strong> {birth.toDateString()}</span>
       </p>
     </div>
   );
