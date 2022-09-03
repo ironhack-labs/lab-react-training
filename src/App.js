@@ -1,9 +1,10 @@
-import IdCard from './components/IdCard';
 import './App.css';
+import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
 
 function App() {
   return (
@@ -75,6 +76,44 @@ function App() {
           color="white"
         />
       </div>
+
+      <h1>Rating</h1>
+      <Rating
+        imgOut="https://cdn-icons-png.flaticon.com/512/32/32172.png"
+        imgIn="https://cdn-icons-png.flaticon.com/512/786/786331.png"
+      >
+        0
+      </Rating>
+      <Rating
+        imgOut="https://cdn-icons-png.flaticon.com/512/32/32172.png"
+        imgIn="https://cdn-icons-png.flaticon.com/512/786/786331.png"
+      >
+        1.49
+      </Rating>
+      <Rating
+        imgOut="https://cdn-icons-png.flaticon.com/512/32/32172.png"
+        imgIn="https://cdn-icons-png.flaticon.com/512/786/786331.png"
+      >
+        1.5
+      </Rating>
+      <Rating
+        imgOut="https://cdn-icons-png.flaticon.com/512/32/32172.png"
+        imgIn="https://cdn-icons-png.flaticon.com/512/786/786331.png"
+      >
+        3
+      </Rating>
+      <Rating
+        imgOut="https://cdn-icons-png.flaticon.com/512/32/32172.png"
+        imgIn="https://cdn-icons-png.flaticon.com/512/786/786331.png"
+      >
+        4
+      </Rating>
+      <Rating
+        imgOut="https://cdn-icons-png.flaticon.com/512/32/32172.png"
+        imgIn="https://cdn-icons-png.flaticon.com/512/786/786331.png"
+      >
+        5
+      </Rating>
     </div>
   );
 }

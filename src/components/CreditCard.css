@@ -1,18 +1,20 @@
 .card_CreditCard {
     width: 33%;
+    min-height: 15vw;
     border-radius: 10px;
     margin: 10px;
-    padding: 30px 20px;
+    padding: 30px 30px;
     box-shadow: 2px 2px 2px lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .cards {
     display: flex;
     flex-direction: row;
 }
-.card_CreditCard > div {
 
-}
 img {
-    max-height: 20px;
+    max-height: 50px;
     
 }
