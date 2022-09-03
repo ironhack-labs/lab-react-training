@@ -4,6 +4,7 @@ import Greetings from "./components/Greetings" ;
 import Random from "./components/Random";
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
 
 
 
@@ -11,7 +12,7 @@ import CreditCard from './components/CreditCard';
 function App() {
 return (                               
 <div className="App">
-  <h1>IdCard</h1>  {/*Interation 1 - IdCard*/}
+  <h3>IdCard</h3>  {/*Interation 1 - IdCard*/}
       <IdCard
   lastName='Doe'
   firstName='John'
@@ -32,25 +33,31 @@ return (
 <hr />
 <br />
 
-<div>
   <h3>Greetings</h3> {/*Interation 2 - Greetings*/}
+<div>
 <Greetings lang="de">Ludwig</Greetings>
 <Greetings lang="fr">François</Greetings> 
 </div>
 <hr />
 <br />
 
-<div>
   <h3>Random</h3>  {/* Interation 3 Random */}
+<div>
 <Random min={1} max={6}/>
 <Random min={1} max={100}/>
 </div>
+<hr />
+<br />
 
-<div>
+
   <h3>BoxColor</h3> {/* Iteration 4 - BoxColor */}
+<div>
 <BoxColor r={255} g={0} b={0} class="border border-dark w-25 d-flex">rgb(255,0,0)</BoxColor>
 <BoxColor r={128} g={255} b={0} class="border border-dark w-25">rgb(128,255,0)</BoxColor>
 </div>
+
+<hr />
+<br />
 
 <div>
   <h3>Credit Card</h3> {/* Iteration 5 - CreditCard */ }
@@ -90,6 +97,17 @@ return (
       </div>
       <hr />
       <br />
+
+      
+        <h3>Rating</h3> {/* Iteration 6 - Rating */ }
+      <div className="rating-container">  
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+      </div>
 </div>
 
 </div>
