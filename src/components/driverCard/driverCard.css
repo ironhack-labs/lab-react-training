@@ -1,0 +1,28 @@
+
+
+
+
+
+
+.driver-card-box{
+padding-left: 200px;
+padding-top: 30px;
+border-radius: 15px;
+width: 800px;
+height: 200px;
+margin-bottom: 10px;
+background-color: rgb(93, 93, 229);
+color: white;
+display: flex;
+}
+.driver-card-box-img{
+  height: 100%;
+  max-width: 130px;
+  max-height: 130px;
+  border-radius: 50%;
+  display: inline-block;
+  object-fit: cover;
+}
+.rating-size{
+  width: 990px;
+}
