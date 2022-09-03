@@ -24,7 +24,7 @@ const Greetings = (props) => {
         break;
     }
 
-  }, [lang])
+  }, [])
 
   return (
     <p id='item-name'>{greetings + ' ' + children}</p>
