@@ -6,13 +6,7 @@
   border: 1px solid black;
 }
 
-#item-Card { 
+#item-Card {
   text-align: left;
-  line-height: 1px; 
-}
-
-img {
-  width: 160px;
-  height: 160px;
-  margin: 10px;
+  line-height: 1px;
 }

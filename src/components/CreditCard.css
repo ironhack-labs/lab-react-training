@@ -1,0 +1,40 @@
+#container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 160px;
+  padding: 30px;
+  width: 33%;
+  margin: 5px;
+  background-color: #f7f7f7;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.item-card {
+  flex-direction: row;
+  display: flex;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.item-cardCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.bandeira-card {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.bandeira-card img {
+  height: 25px;
+  width: 30;
+
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+}
