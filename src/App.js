@@ -5,6 +5,7 @@ import Greetings from './components/Greetings';
 function App() {
   return (
     <div className="App">
+      <h1>IdCard</h1>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -21,8 +22,9 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-      <Greetings lang='de' children='Hallo Ludwing' />
-      <Greetings lang='fr' children='Bonjour François'/>
+      <h1>Greetings</h1>
+      <Greetings lang="de">Ludwing</Greetings>
+      <Greetings lang="fr">François</Greetings>
     </div>
   );
 }
