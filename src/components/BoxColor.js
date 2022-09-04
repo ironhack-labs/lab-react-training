@@ -1,16 +1,11 @@
 function BoxColor(props) {
+  const style = {
+    backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})` // attention erreur car en js on écrit pas 'background-color' comme en css
+  };
 
     return (
       <div
-        className="BoxColor"
-        /*style=
-           {`background-color:
-            rgb(
-            ${props.r},
-            ${props.g},
-            ${props.b}
-            )`
-           }*/
+        className="BoxColor" style={style}
       >
       {`rgb(
         ${props.r},
@@ -20,7 +15,6 @@ function BoxColor(props) {
       }
       </div>
     )
-
 }
   
-  export default BoxColor;
+export default BoxColor;
