@@ -7,9 +7,7 @@ const CreditCard = (props) => {
 
   const encryptNumber = (number) => {
     let encrypt = '**** **** **** ' + number.slice(-4);
-
     return encrypt
-
   }
 
   return (
@@ -18,10 +16,10 @@ const CreditCard = (props) => {
       <div className="bandeira-card">
         <img alt="logo" src={props.type == 'Visa' ? visa : mastercard}></img>
       </div>
-
-      <div className="item-cardCenter">
-        <p style={{ margin: 0 }}>{encryptNumber(props.number)}</p>
-      </div>
+      
+        <div className="item-cardCenter">
+          <p style={{ margin: 0 }}>{encryptNumber(props.number)}</p>
+        </div>
 
       <div className="item-card">
         <p>Experies {props.expirationMonth}/{props.expirationYear}   {props.bank}</p>

@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 160px;
   padding: 30px;
-  width: 33%;
+  width: 365px;
   margin: 5px;
   background-color: #f7f7f7;
   border: 1px solid black;
@@ -16,6 +15,10 @@
   display: flex;
   margin: 5px;
   font-size: 16px;
+}
+
+.app-credicard {
+  display: flex;
 }
 
 .item-cardCenter {
@@ -31,7 +34,6 @@
 .bandeira-card img {
   height: 25px;
   width: 30;
-
 }
 
 .cards {

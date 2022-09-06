@@ -22,8 +22,6 @@ const BoxColor = (props) => {
       <p>rgb({r},{g},{b})</p>
       <p>{convertRgbToHex()}</p>
     </div >)
-
-
 }
 
 export default BoxColor
