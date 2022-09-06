@@ -1,0 +1,27 @@
+.container-drivercard {
+
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  display: flex;
+  position: absolute;
+  width: 100px;
+  justify-content: center;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#item-drivercard {
+  color:white;
+  border: 1px solid black;
+  padding: 20px;
+  align-items: center;
+  border-radius: 10px;
+  margin: 5px;
+  height: 150px;
+  background-color: rgb(59, 59, 235);
+  width: 800px;
+  justify-content: center;
+}
