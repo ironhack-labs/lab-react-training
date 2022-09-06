@@ -76,3 +76,23 @@ code {
 .DriverCard * {
     margin: 5px
 }
+
+.LikeButton {
+    width: 75px;
+    color: white;
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.ClickablePicture {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.Dice {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}

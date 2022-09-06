@@ -1,4 +1,4 @@
-import masterCard from '../assets/images/master-card.svg';
+import masterCard from '../assets/images/master-card.png';
 import Visa from '../assets/images/visa.png';
 
 function CreditCard(props) {
