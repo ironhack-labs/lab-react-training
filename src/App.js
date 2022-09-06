@@ -63,7 +63,7 @@ function App() {
         />
 
         <CreditCard
-          type="Visa"
+          type="Master Card"
           number="0123456789010995"
           expirationMonth={3}
           expirationYear={2021}

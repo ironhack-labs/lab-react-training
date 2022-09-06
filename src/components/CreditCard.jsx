@@ -1,4 +1,4 @@
-// import masterCard from '../assets/images/master-card.svg';
+import masterCard from '../assets/images/master-card.svg';
 import Visa from '../assets/images/visa.png';
 
 function CreditCard(props) {
@@ -14,7 +14,7 @@ function CreditCard(props) {
   };
   return (
     <div className="CreditCard" style={style}>
-      <div className="type"><img alt="cardType" src={props.type === 'Visa' ? Visa : Visa}/></div>
+      <div className="type"><img alt="cardType" src={props.type === 'Visa' ? Visa : masterCard}/></div>
       <div className="number">•••• •••• •••• {props.number.slice(-4)}</div>
       <div className="card-info">
         <span>Expires {props.expirationMonth < 10 ? '0' + props.expirationMonth : props.expirationMonth}/{props.expirationYear - 2000}</span>
