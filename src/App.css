@@ -14,3 +14,18 @@
   padding: 15px;
   border-radius: 15px;
 }
+
+.DriverCard{
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  border-radius: 20px;
+  padding: 20px;
+  margin-block: 30px;
+  background-color: rgb(60, 60, 212);
+  color: white;
+}
+.DriverCard img{
+  height: 100px;
+  border-radius: 50%;
+}
