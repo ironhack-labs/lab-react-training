@@ -22,11 +22,11 @@ code {
     padding: 5px;
 }
 
-.IdCard {
+.IdCard, .Facebook {
     display: flex;
 }
 
-.IdCard ul {
+.box ul {
     list-style-type: none;
     margin: 0 0 0 5px;
     padding: 0;
@@ -111,4 +111,19 @@ code {
     width: 50px;
     height: 50px;
     border: 1px solid black;
+}
+
+.Facebook {
+    width: 30%;
+}
+
+.Facebook img {
+    width: 100px;
+    height: 100px;
+}
+
+.countryBtn {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid blue;
 }
