@@ -7,6 +7,8 @@ import BoxColor from './components/BoxColor.js';
 import CreditCard from './components/CreditCards';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
@@ -101,6 +103,15 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      <div>
+        <LikeButton />
+      </div>
+      <div>
+      <ClickablePicture
+        img='https://images.emojiterra.com/google/android-10/512px/1f44d.png '
+        imgClicked='https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f44e.png '
+      />
+      </div>
       </div>
     </div>
   );
