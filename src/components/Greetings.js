@@ -1,7 +1,9 @@
-const Greetings = () => {
+const Greetings = ({ lang, children }) => {
   return (
-    <div>Greetings</div>
-  )
-}
+    <div className="greetings">
+      {lang === 'de' ? 'Hallo' : 'Bonjour'} {children}
+    </div>
+  );
+};
 
-export default Greetings
+export default Greetings;
