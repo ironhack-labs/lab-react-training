@@ -1,0 +1,18 @@
+.number span{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif  
+}
+
+.logo img{
+    height: 15px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.data {
+    margin-left: 20px;
+    margin-top: 50px;
+    text-align: left;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}

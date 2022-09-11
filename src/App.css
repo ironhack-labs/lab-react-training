@@ -18,3 +18,14 @@
 .dados ul li{
   list-style: none;
 }
+
+.card{
+  flex-direction: column;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 5px;
+  height: 180px;
+  width: 300px;
+  text-align: center;
+  
+}
