@@ -6,6 +6,7 @@ import CreditCard from "./components/credit-card/CreditCard";
 import Rating from "./components/rating/Rating";
 import DriverCard from "./components/driver-card/DriverCard";
 import LikeButton from "./components/like-button/LikeButton";
+import ClickablePicture from "./components/clickable-picture/ClickablePicture";
 
 
 function App() {
@@ -153,6 +154,14 @@ function App() {
           <LikeButton />
           <LikeButton />
         </div>
+      </div>
+
+      <hr />
+
+      {/* Iteration 9*/ }
+      <div>
+        <h2 className="ms-4 my-4">Clickable Picture</h2>
+          <ClickablePicture />
       </div>
 
       
