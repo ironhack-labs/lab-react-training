@@ -1,4 +1,3 @@
-import './Random.css'
 
 function Random({min,max}){
 

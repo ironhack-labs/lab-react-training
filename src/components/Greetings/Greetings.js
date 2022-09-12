@@ -1,4 +1,3 @@
-import './Greetings.css'
 
 function Greetings({lang, children}){
   if(lang === 'de' ){

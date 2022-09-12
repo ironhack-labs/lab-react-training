@@ -1,4 +1,3 @@
-import './Rating.css'
 import Stars from './Stars.js'
 
 

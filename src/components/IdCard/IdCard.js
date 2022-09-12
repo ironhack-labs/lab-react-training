@@ -1,4 +1,3 @@
-import './IdCard.css'
 
 function IdCard({firstName,lastName,gender,height,birth,picture, className}) {
 

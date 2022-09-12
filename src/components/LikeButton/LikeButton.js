@@ -1,6 +1,5 @@
 
 import { useState } from 'react'
-import './LikeButton.css'
 
 const colors = ['purple','blue','green','yellow','orange','red'];
 
