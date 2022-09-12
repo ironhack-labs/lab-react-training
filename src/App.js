@@ -10,6 +10,8 @@ import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import FaceBook from './components/FaceBook/FaceBook';
 
 
 
@@ -208,7 +210,26 @@ function App() {
           />
         </div>        
       </div>
+      <div>
+        <div>
+          <h3 className='text-center mt-5'> Iterarion 12: NumbersTable</h3>
+          <hr/>  
+        </div>
+        <div className='text-center mb-5'>
+          <NumbersTable limit={12}/>
+        </div>   
+      </div>
+      <div>
+        <div>
+          <h3 className='text-center mt-5'> Iterarion 13: FaceBook</h3>
+          <hr/>  
+        </div>
+        <div className='mb-5'>
+          <FaceBook/>
+        </div>   
+      </div>
     </div>
+
   );
 }
 
