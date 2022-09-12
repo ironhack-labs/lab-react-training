@@ -31,7 +31,7 @@ const handleClickBefore = () => {
 
   return (
     <>
-      <img className='w-25' src={image} alt="Carousel" />
+      <img className='w-25 mb-3' src={image} alt="Carousel" />
       <br/>
       <button className='btn btn-primary mx-2' onClick={handleClickBefore}> Before</button>
       <button className='btn btn-primary mx-2'  onClick={handleClickAfter}> After</button>
