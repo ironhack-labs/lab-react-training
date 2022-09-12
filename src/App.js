@@ -8,6 +8,7 @@ import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import Dice from './components/Dice/Dice';
 
 
 
@@ -179,6 +180,15 @@ function App() {
           img='maxence.png'
           imgClicked='maxence-glasses.png'
         />
+        </div>
+      </div>
+      <div>
+        <div>
+          <h3 className='text-center mt-5'> Iterarion 10: Dice</h3>
+          <hr/>  
+        </div>
+        <div className='text-center mb-5'>
+          <Dice/>
         </div>
       </div>
     </div>
