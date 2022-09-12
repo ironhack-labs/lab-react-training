@@ -7,6 +7,7 @@ import Rating from "./components/rating/Rating";
 import DriverCard from "./components/driver-card/DriverCard";
 import LikeButton from "./components/like-button/LikeButton";
 import ClickablePicture from "./components/clickable-picture/ClickablePicture";
+import Dice from "./components/dice/Dice";
 
 
 function App() {
@@ -68,7 +69,7 @@ function App() {
 
       {/* Iteration 5*/ }
       <div>
-        <h2 className="ms-4 my-4">Box Color</h2>
+        <h2 className="ms-4 my-4">Credit cards</h2>
         <div className="cards d-flex gap-5 my-4 mx-5">
           <CreditCard
             type="Visa"
@@ -162,6 +163,14 @@ function App() {
       <div>
         <h2 className="ms-4 my-4">Clickable Picture</h2>
           <ClickablePicture />
+      </div>
+
+      <hr />
+
+      {/* Iteration 10*/ }
+      <div>
+        <h2 className="ms-4 my-4">Dice</h2>
+        <Dice />
       </div>
 
       

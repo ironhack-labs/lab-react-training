@@ -1,3 +1,4 @@
+import "./ClickablePicture.css"
 import React from 'react'
 import { useState } from 'react'
 import img1 from "../../assets/images/maxence-glasses.png"
@@ -9,13 +10,12 @@ function ClickablePicture() {
   const handleClick = () => {
     setClick(!click)
   }
-  console.log(click)
 
   return (
     <div className='d-flex justify-content-center my-5'>
       {click ? (
-      <img className='w-25' src={img1} alt="" onClick={handleClick}/>) :       
-      <img className='w-25' src={img2} alt="" onClick={handleClick}/>}
+      <img className='picture' src={img1} alt="" onClick={handleClick}/>) :       
+      <img className='picture' src={img2} alt="" onClick={handleClick}/>}
     </div>
   )
 }
