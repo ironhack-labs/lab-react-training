@@ -8,9 +8,7 @@ const handleClick = () => {
   setImage(imageClicked => imageClicked ? false : true)
 }
 
-console.log(image)
-
-  return (
+return (
     <img className='w-25' src={require ('../../assets/images/'+ ( image ? imgClicked : img ))} alt="Guy with or without glasses"  onClick={handleClick} />
   )
 }

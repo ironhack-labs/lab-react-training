@@ -9,6 +9,7 @@ import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
 
 
 
@@ -190,6 +191,22 @@ function App() {
         <div className='text-center mb-5'>
           <Dice/>
         </div>
+      </div>
+      <div>
+        <div>
+          <h3 className='text-center mt-5'> Iterarion 11: Carousel</h3>
+          <hr/>  
+        </div>
+        <div className='text-center mb-5'>
+          <Carousel
+            images={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg'
+            ]}
+          />
+        </div>        
       </div>
     </div>
   );
