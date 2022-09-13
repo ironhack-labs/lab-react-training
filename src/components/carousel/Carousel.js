@@ -8,11 +8,11 @@ function Carousel({ images }) {
     if (image > 0) {
       setImage( image - 1)
     } else {
-      setImage(image.length - 1)
+      setImage(images.length - 1)
     }
   }
   const handleNext = () => {
-    if (image < image.length - 1) {
+    if (image < images.length - 1) {
       setImage( image + 1)
     } else {
       setImage(0)
