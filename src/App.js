@@ -9,6 +9,7 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -107,10 +108,15 @@ function App() {
         <LikeButton />
       </div>
       <div>
-      <ClickablePicture
-        img='https://images.emojiterra.com/google/android-10/512px/1f44d.png '
-        imgClicked='https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f44e.png '
-      />
+        <ClickablePicture
+          img='https://images.emojiterra.com/google/android-10/512px/1f44d.png '
+          imgClicked='https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f44e.png '
+        />
+      </div>
+      <div>
+        <Dice>
+          <img src={Dice} alt="dice"/>
+        </Dice>
       </div>
       </div>
     </div>
