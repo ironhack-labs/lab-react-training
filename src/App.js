@@ -10,6 +10,7 @@ import ClickablePicture from "./components/clickable-picture/ClickablePicture";
 import Dice from "./components/dice/Dice";
 import Carousel from "./components/carousel/Carousel";
 import NumbersTable from "./components/numbers-table/NumbersTable";
+import Facebook from "./components/facebook/Facebook";
 
 
 function App() {
@@ -196,6 +197,14 @@ function App() {
       <div>
         <h2 className="ms-4 my-4">Numbers Table</h2>
         <NumbersTable limit={20} />
+      </div>
+
+      <hr />
+
+      {/* Iteration 13*/ }
+      <div>
+        <h2 className="ms-4 my-4">Facebook</h2>
+          <Facebook />
       </div>
 
       
