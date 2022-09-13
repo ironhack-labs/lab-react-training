@@ -1,93 +1,66 @@
 import profilesData from '../../data/berlin.json';
 import React, { useState } from 'react'
-import { useEffect } from 'react';
-
 
 
 function countryList (profilesData) {
   const countries = profilesData.map((profiles) => profiles.country)
-  const  uniqueChars = [...new Set(countries)];
-  return  uniqueChars
-}
 
+  const filteredStatus = [];
+
+  const  uniqueChars = [...new Set(countries)];
+  
+  
+  uniqueChars.forEach((element,i) => {
+    filteredStatus[i] = {
+      isActive : false,
+      name : [element],
+    }
+
+  });
+
+  return  filteredStatus
+}
 
 
 function FaceBook() {
 
 
-
 const [profiles, setProfiles] = useState(profilesData)
-const [active, setActive] = useState(false)
-const [countries, setCountries] = useState(countryList (profilesData))
+const [active, setActive] = useState(false) 
+const [countries, setCountries] = useState(countryList (profilesData)) // filtro de botones por pais
 
 
 const handleClick = (e) => {
-  const {value} = e.target
+  const {value, name} = e.currentTarget 
 
-  console.log()
-  
-  if(value === 'All'){
+console.log( name, [name][0], !active)
+
+if(name === 'All'){
+    setActive((prevState) => prevState ? false : true)
+  } 
+  else if(name === [name][0] && !active){
+    const ironHackers = profiles.filter((country) => country.country === [name][0])
+    setActive((prevState) => prevState ? false : true)
+    setProfiles(ironHackers)
+  } else if (name === [name][0] && active){
     setActive((prevState) => prevState ? false : true)
     setProfiles(profilesData)
 
-  } else if(value === "England" && !active){
-    const englandHacks = profiles.filter((country) => country.country === "England")
-    setActive((prevState) => prevState ? false : true)
-    setProfiles(englandHacks)
-  } else if (value === "England" && active){
-    setActive((prevState) => prevState ? false : true)
-    setProfiles(profilesData)
   }
-  
-    else if(value === "USA" && !active){
-    const englandHacks = profiles.filter((country) => country.country === "USA")
-    setActive((prevState) => prevState ? false : true)
-    setProfiles(englandHacks)
-  } else if (value === "USA" && active){
-    setActive((prevState) => prevState ? false : true)
-    setProfiles(profilesData)
-  }
-
-  else if(value === "Germany" && !active){
-    const englandHacks = profiles.filter((country) => country.country === "Germany")
-    setActive((prevState) => prevState ? false : true)
-    setProfiles(englandHacks)
-  } else if (value === "Germany" && active){
-    setActive((prevState) => prevState ? false : true)
-    setProfiles(profilesData)
-  }
-
-  else if(value === "Italy" && !active){
-    const englandHacks = profiles.filter((country) => country.country === "Italy")
-    setActive((prevState) => prevState ? false : true)
-    setProfiles(englandHacks)
-  } else if (value === "Italy" && active){
-    setActive((prevState) => prevState ? false : true)
-    setProfiles(profilesData)
-  }
-
-  else if(value === [value][0] && !active){
-    const englandHacks = profiles.filter((country) => country.country === [value][0])
-    setActive((prevState) => prevState ? false : true)
-    setProfiles(englandHacks)
-  } else if (value === [value][0] && active){
-    setActive((prevState) => prevState ? false : true)
-    setProfiles(profilesData)
-  }
-
 
 }
+
+console.log(countries)
 
 
   return (
     <>
-    <button className={`btn border-dark me-1 mb-1 ${active ? 'btn-primary' : ''}`} value='All' onClick={handleClick}>All</button>
+    <button className={`btn border-dark me-1 mb-1 ${active ? 'btn-primary' : ''}`} value='All' name='All' onClick={handleClick}>All</button>
     {countries.map((country, i) => {
       return (
-        <button key={i} className={`btn border-dark me-1 mb-1 ${active ? 'btn-primary' : ''}`} value={country} onClick={handleClick}>{country}</button>
+        <button key={i} className={`btn border-dark me-1 mb-1 ${active ? 'btn-primary' : ''}`} value={country.isActive} name={country.name} onClick={handleClick}>{country.name}</button>
       )
     })}
-
 
         {profiles.map((profile, i) => {
           return (
