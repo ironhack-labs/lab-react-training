@@ -18,7 +18,7 @@ const diceArray = [
 ];
 
 
-function Dice (props) {
+function Dice () {
 
     const [dice, setDice] = useState (0)
 
