@@ -27,14 +27,14 @@ const setLimiter = (limiter) =>{
 
 return(
     <div className='row d-flex justify-content-center align-items-center mx-5 px-5 '>
-    {numberTables.map((numbers) => {
+    {numberTables.map((numbers,i) => {
       if((numbers % 2) === 0){
         return (
-          <p className='col-4 bg-danger border p-5 m-0'>Pares {numbers}</p>
+          <p className='col-4 bg-danger border p-5 m-0' key={i}>Pares {numbers}</p>
         )
       } else {
         return (
-          <p className='col-4 border p-5 m-0'>{numbers}</p>
+          <p className='col-4 border p-5 m-0' key={i}>{numbers}</p>
         )
       }
     })}
