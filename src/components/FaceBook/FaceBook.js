@@ -1,70 +1,51 @@
 import profilesData from '../../data/berlin.json';
 import React, { useState } from 'react'
 
-
 function countryList (profilesData) {
   const countries = profilesData.map((profiles) => profiles.country)
-
   const filteredStatus = [];
-
-  const  uniqueChars = [...new Set(countries)];
-  
-  
+  const  uniqueChars = [...new Set(countries)];  
   uniqueChars.forEach((element,i) => {
     filteredStatus[i] = {
       isActive : false,
       name : [element],
     }
-
   });
-
   return  filteredStatus
 }
 
-
 function FaceBook() {
+const [search, setSearch] = useState('All') 
 
 
-const [profiles, setProfiles] = useState(profilesData)
-const [active, setActive] = useState(false) 
-const [countries, setCountries] = useState(countryList (profilesData)) // filtro de botones por pais
+const handleClick = (event) => {
+  const {name} = event.currentTarget
 
-
-const handleClick = (e) => {
-  const {value, name} = e.currentTarget 
-
-console.log( name, [name][0], !active)
-
-if(name === 'All'){
-    setActive((prevState) => prevState ? false : true)
-  } 
-  else if(name === [name][0] && !active){
-    const ironHackers = profiles.filter((country) => country.country === [name][0])
-    setActive((prevState) => prevState ? false : true)
-    setProfiles(ironHackers)
-  } else if (name === [name][0] && active){
-    setActive((prevState) => prevState ? false : true)
-    setProfiles(profilesData)
-
+  if(name === 'All'){
+    setSearch('All')
+  } else {
+    setSearch(name)
   }
-
 }
-
-console.log(countries)
-
 
   return (
     <>
-    <button className={`btn border-dark me-1 mb-1 ${active ? 'btn-primary' : ''}`} value='All' name='All' onClick={handleClick}>All</button>
-    {countries.map((country, i) => {
+    <button className={`btn border-dark me-1 mb-1 ${search === 'All' ? 'btn-primary' : ''}`} value='All' name='All' onClick={handleClick}>All</button>
+    {countryList(profilesData).map((country, i) => {
       return (
-        <button key={i} className={`btn border-dark me-1 mb-1 ${active ? 'btn-primary' : ''}`} value={country.isActive} name={country.name} onClick={handleClick}>{country.name}</button>
+        <button key={i} className={`btn border-dark me-1 mb-1 ${(search == country.name)  ? 'btn-primary' : ''}`} name={country.name} onClick={handleClick}>{country.name}</button>
       )
     })}
 
-        {profiles.map((profile, i) => {
+        {profilesData.filter((hackers) => {
+          if (search === hackers.country){
+            return true
+          } else if (search === 'All'){
+            return true
+          }
+          }).map((profile, i) => {
           return (
-          <div className={`row d-flex justify-content-start align-items-center border border-dark m-5  ${active ? 'bg-primary' : ''}`} key={i}>
+          <div className={`row d-flex justify-content-start align-items-center border border-dark m-5  ${true ? 'bg-primary' : ''}`} key={i}>
             <div className='col-2 p-0'>
                 <img src={profile.img} alt={profile.firstName} className='w-100'/>
               </div>
