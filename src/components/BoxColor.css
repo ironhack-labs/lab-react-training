@@ -1,0 +1,11 @@
+.boxcolor {
+    border: 2px solid black;
+    padding: 50px 10px;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 120px;
+    color: white;
+    font-weight: 500;
+  } 
