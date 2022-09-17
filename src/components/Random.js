@@ -1,9 +1,8 @@
 function Random(props) {
   const { min, max } = props;
-  let randomValue = 0;
   return (
     <p>
-      Random value between {props.min} and {props.max} is{' '}
+      Random value between {props.min} and {props.max} {' =>'}
       {Math.floor(Math.random() * (max - min + 1) + min)}
     </p>
   );
