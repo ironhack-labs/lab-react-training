@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* Credit Card */
+.credit-card-img {
+  display: flex;
+  justify-content: right;
+}
