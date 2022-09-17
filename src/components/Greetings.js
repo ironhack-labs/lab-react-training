@@ -2,19 +2,19 @@ function Greetings(props) {
   const { lang, children } = props;
 
   if (lang === 'de') {
-    return `Hallo ${children}`;
+    return <div>Hallo {children}</div>;
   }
 
   if (lang === 'en') {
-    return `Hello ${children}`;
+    return <div>Hello {children}</div>;
   }
 
   if (lang === 'es') {
-    return `Hola ${children}`;
+    return <div>Hola {children}</div>;
   }
 
   if (lang === 'fr') {
-    return `Bonjour ${children}`;
+    return <div>Bonjour {children}</div>;
   }
 }
 

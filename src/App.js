@@ -37,6 +37,8 @@ function App() {
 
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+      <Greetings lang="es">Dani</Greetings>
+      <Greetings lang="en">Maxime</Greetings>
     </div>
   );
 }
