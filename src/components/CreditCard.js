@@ -24,6 +24,7 @@ function CreditCard(props) {
         <h4>{owner}</h4>
       </div>
     </div>
+    // Bonus para el código hex converter
   );
 }
 
