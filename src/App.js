@@ -8,6 +8,9 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import img from './assets/images/maxence.png';
+import imgClicked from './assets/images/maxence-glasses.png';
 
 const delores = {
   lastName: 'Delores ',
@@ -21,6 +24,7 @@ const delores = {
 function App() {
   return (
     <div className="App">
+      {/* Iteration 3 */}
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -41,18 +45,22 @@ function App() {
 
       <IdCard {...delores} />
 
+      {/* Iteration 2 */}
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
       <Greetings lang="es">Dani</Greetings>
       <Greetings lang="en">Maxime</Greetings>
 
+      {/* Iteration 3 */}
       <Random min={1} max={6} />
       <Random min={1} max={100} />
 
+      {/* Iteration 4 */}
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
       <BoxColor r={155} g={100} b={40} />
 
+      {/* Iteration 5 */}
       <div
         style={{
           display: 'flex',
@@ -95,6 +103,7 @@ function App() {
         />
       </div>
 
+      {/* Iteration 6 */}
       <div>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
@@ -104,6 +113,7 @@ function App() {
         <Rating>5</Rating>
       </div>
 
+      {/* Iteration 7 */}
       <div
         style={{
           padding: '15px',
@@ -133,9 +143,20 @@ function App() {
         />
       </div>
 
+      {/* Iteration 8 */}
       <div>
         <LikeButton />
         <LikeButton />
+      </div>
+
+      {/* Iteration 9 */}
+      <div>
+        <ClickablePicture
+          img={img}
+          imgClicked={imgClicked}
+          // img="../assets/images/maxence.png"
+          // imgClicked="../assets/images/maxence-glasses.png"
+        />
       </div>
     </div>
   );
