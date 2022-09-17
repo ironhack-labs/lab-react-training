@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
 
 const delores = {
   lastName: 'Delores ',
@@ -33,6 +34,9 @@ function App() {
       />
 
       <IdCard {...delores} />
+
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
     </div>
   );
 }

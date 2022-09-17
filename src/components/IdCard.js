@@ -1,8 +1,5 @@
 function IdCard(props) {
   const { lastName, firstName, gender, height, birth, picture } = props;
-  console.log('PROPS: ', props);
-  console.log('NAME: ', firstName, '', lastName);
-  console.log('DATE: ', birth);
   return (
     <div>
       <img src={picture} alt=""></img>
