@@ -1,5 +1,6 @@
 import './App.css';
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings.js';
 
 const idArray = [
   {
@@ -23,18 +24,27 @@ const idArray = [
     },
   },
 ];
-
-function sayHello() {
-  console.log('say hello');
-}
-
+const greetingsArray = [
+  {
+    user: {
+      lang: 'de' || 'fr' || 'es' || 'en',
+      children: Text,
+    },
+  },
+  {
+    user: {
+      lang: 'de' || 'fr' || 'es' || 'en',
+      children: Text,
+    },
+  },
+];
 function App() {
   return (
     <div>
       <IdCard idArray={idArray[0]} />
       <IdCard idArray={idArray[1]} />
-      {/* sayHello()
-      sayHello() */}
+      <Greetings greetingsArray={greetingsArray[0]} />
+      <Greetings greetingsArrat={greetingsArray[1]} />
     </div>
   );
 }
