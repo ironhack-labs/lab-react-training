@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,6 +24,9 @@
   color: #61dafb;
 }
 
+section {
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +34,75 @@
   to {
     transform: rotate(360deg);
   }
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+section article {
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 50vw;
+}
+
+section.idcard article,
+section.greetings article,
+section.random article {
+  border: 1px solid black;
+}
+
+section.idcard article {
+  display: flex;
+}
+section.idcard article ul {
+  list-style: none;
+}
+
+section.greetings article > * {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+section.rating {
+  font-size: 5rem;
+}
+
+section.creditcard article {
+  border-radius: 1rem;
+}
+
+section.creditcard img,
+section.creditcard svg {
+  width: 100%;
+}
+section.creditcard svg {
+  height: auto;
+}
+
+section.drivercard article {
+  background-color: #2554ff;
+  color: #ffffff;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+section.drivercard article .image-wrapper {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100vh;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+}
+
+section.dice img {
+  width: 25%;
 }
