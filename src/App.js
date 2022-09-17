@@ -11,6 +11,7 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import img from './assets/images/maxence.png';
 import imgClicked from './assets/images/maxence-glasses.png';
+import Dice from './components/Dice';
 
 const delores = {
   lastName: 'Delores ',
@@ -158,6 +159,9 @@ function App() {
           // imgClicked="../assets/images/maxence-glasses.png"
         />
       </div>
+
+      {/* Iteration 10 */}
+      <Dice />
     </div>
   );
 }
