@@ -12,7 +12,6 @@ function BoxColor(props) {
 
 function componentToHex(c) {
   const hex = c.toString(16);
-  console.log('HEX: ', hex);
   return hex.length === 1 ? '0' + hex : hex;
 }
 
