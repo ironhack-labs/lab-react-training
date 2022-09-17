@@ -8,7 +8,7 @@ function Rating(props) {
     stars += '☆';
   }
 
-  return <div style={{ fontSize: '50px' }}>{stars}</div>;
+  return <div style={{ fontSize: '50px', lineHeight: '50px' }}>{stars}</div>;
 }
 
 export default Rating;
