@@ -1,0 +1,10 @@
+const IdCard = {
+    lastName:String,
+    firstName:String,
+    gender:String{male,female},
+    height:Number,
+    birth:Date,
+    picture:String
+
+
+}
