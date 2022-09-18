@@ -6,6 +6,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
@@ -90,7 +91,7 @@ function App() {
         <Rating>5</Rating>
       </section>
 
-      <section>
+      <section className="driverCard">
         <DriverCard
           name="Travis Kalanick"
           rating={4.2}
@@ -110,6 +111,10 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
+      </section>
+
+      <section>
+        <LikeButton />
       </section>
     </div>
   );

@@ -3,6 +3,7 @@ function DriverCard({ name, rating, img, car }) {
   const roundedRating = Math.round(rating);
   return (
     <div>
+      <img alt="profilePhoto" src={img} />
       <span className="name">{name}</span>
       {(() => {
         switch (roundedRating) {
