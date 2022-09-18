@@ -12,3 +12,7 @@ section {
   height: 100px;
   border-radius: 50%;
 }
+
+.clickablePicture img {
+  height: 200px;
+}

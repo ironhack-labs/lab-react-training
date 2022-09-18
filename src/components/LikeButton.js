@@ -3,7 +3,7 @@ import { useState } from 'react';
 function LikeButton() {
   const colors1 = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
   const colors2 = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
-  const [colorChange, setColorChange] = useState('green');
+  const [colorChange, setColorChange] = useState(0);
   const [index1, setIndex1] = useState(0);
   const theBackGroundColor1 = colors1[index1 % colors1.length];
   const [index2, setIndex2] = useState(0);
