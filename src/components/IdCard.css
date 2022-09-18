@@ -1,0 +1,9 @@
+
+.id-card{
+    border: 1px solid black; 
+    display: flex;
+    margin-top:1rem; 
+  }
+  .card-list{
+    list-style: none;
+  }
