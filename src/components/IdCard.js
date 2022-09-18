@@ -1,6 +1,6 @@
 function IdCard(props) {
   const { lastName, firstName, gender, height, birth, picture } = props;
-  console.log(props.lastName);
+  //console.log(props.lastName);
   return (
     <div className="idCard">
       <span className="lastName">Last Name: {lastName}</span>

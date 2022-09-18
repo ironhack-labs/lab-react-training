@@ -40,3 +40,9 @@
 section {
   margin: 50px 50px;
 }
+
+.rating {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
