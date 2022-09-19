@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
+import Random from './components/Random';
 import './App.css';
 
 function App() {
@@ -23,9 +24,14 @@ function App() {
         birth={new Date("1988-05-11")}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+
       {/* Iteration 2: Greetings */}
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+
+      {/* Iteration 3: Random */}
+      <Random min={1} max={6} />
+      <Random min={1} max={100} />
     </div >
 
   );
