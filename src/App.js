@@ -12,6 +12,8 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 import maxence from './assets/images/maxence.png';
 import maxenceGlasses from './assets/images/maxence-glasses.png';
@@ -124,6 +126,10 @@ function App() {
       <NumbersTable limit={12} />
       <h1>FaceBook</h1>
       <Facebook />
+      <h1>SignupPage</h1>
+      <SignupPage />
+      <h1>RGB Color Picker</h1>
+      <RGBColorPicker />
     </div>
   );
 }

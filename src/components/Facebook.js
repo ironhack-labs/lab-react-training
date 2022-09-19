@@ -1,13 +1,34 @@
 import React, { useState } from 'react';
-import { __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED } from 'react/cjs/react.production.min';
 
 import profiles from '../data/berlin.json';
 
 const Facebook = () => {
     const [profile, setProfile] = useState(profiles);
 
+
   return (
-    <div>
+    <div >
+        <div className='buttons-country'>
+            <button>All</button>
+            <button>England</button>
+            <button>USA</button>
+            <button>Malaysia</button>
+            <button>Germany</button>
+            <button>Sweden</button>
+            <button>Nigeria</button>
+            <button>Italy</button>
+            <button>Scotland</button>
+            <button>Kazakhstan</button>
+            <button>Russia</button>
+            <button>Catalonia</button>
+            <button>France</button>
+            <button>Israel</button>
+            <button>Brazil</button>
+            <button>Taiwan</button>
+            <button>Turkey</button>
+            <button>Norway</button>
+        </div>
+
         {profile.map((oneProfile, index) => {
             console.log(profile)
             return (

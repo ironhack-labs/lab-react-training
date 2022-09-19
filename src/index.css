@@ -15,3 +15,13 @@ code {
 h1{
   margin-left: 10px;
 }
+
+.buttons-country button{
+  margin: 8px;
+  cursor: pointer;
+}
+
+input {
+  height: 50px;
+  margin-bottom: 10px;
+}
