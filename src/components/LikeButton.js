@@ -1,31 +1,38 @@
-import React from 'react';
-import { useState } from 'react';
-import '../styles/LikeButton.css'
+import React, { useState } from 'react';
+
+import '../styles/LikeButton.css';
 
 const LikeButton = () => {
-    const[count, setCount] = useState(0);
-    const[color, setColor] = useState('purple');
-   
+  const [count, setCount] = useState(0);
+  const [color, setColor] = useState('purple');
 
-    const addNumber = () => {    
-    setCount((count) => (count += 1))
-    }
+  const addLikes = () => {
+    setCount(count => count + 1);
+  };
 
-    const changeColor = () => {
-        let colors = ['purple','blue','green','yellow','orange','red'];    //pode ser mudança com condicional ou aleatória também    
-        let newColor = colors[Math.floor(Math.random()* (colors.length - 1))]  //cor aleatória
-        setColor(newColor);
-      }
-        
-    const changesButton = () => {      //função chamando as outras duas funções do meu onClick do button
-        addNumber();
-        changeColor();
-    }
+  const changeColor = () => {
+    let colors = ['purple','blue','green','yellow','orange','red'];
+    let newRandomColor = colors[Math.floor(Math.random() * color.length)];
+    setColor(newRandomColor);
+  }
+
+  //funçao para chamar as duas funçoes do botao, juntas no mesmo click:
+  const allInClick = () => {
+    addLikes();
+    changeColor();
+  }
+
 
   return (
-  <div>
-      <button className='add-number' onClick={changesButton} style={{backgroundColor: color}}>{count} Likes</button>
-  </div>
+    <div>
+      <button
+        className="add-number"
+        onClick={allInClick}
+        style={{ backgroundColor: color }}
+      >
+        {count} Likes
+      </button>
+    </div>
   );
 };
 
