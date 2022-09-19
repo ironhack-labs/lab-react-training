@@ -10,12 +10,17 @@ const IdCard = ({ idCard }) => {
         className="profile-img"
         style={{ margin: 5 }}
       />
-      <div>
+      <div className="right">
         <strong>First name:{idCard.user.firstname}</strong>
+        <br />
         <strong>Last name:{idCard.user.lastname}</strong>
+        <br />
         <strong>Gender:{idCard.user.gender}</strong>
+        <br />
         <strong>Height:{idCard.user.height}</strong>
+        <br />
         <strong>Birth:{idCard.user.birth}</strong>
+        <br />
       </div>
     </div>
   );

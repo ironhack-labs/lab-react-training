@@ -1,4 +1,5 @@
 import React from 'react';
+import './Random.css';
 
 function getRandomNumber(maxNum) {
   return Math.floor(Math.random() * maxNum);
@@ -6,7 +7,7 @@ function getRandomNumber(maxNum) {
 
 const Random = (props) => {
   return (
-    <div>
+    <div className="random-box">
       Random value between 1 and {props.max} : {getRandomNumber(props.max)}
     </div>
   );

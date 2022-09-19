@@ -1,9 +1,13 @@
 import React from 'react';
+import './BoxColors.css';
 
 const BoxColors = (props) => {
   return (
-    <div style={{ backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})` }}>
-      {props.r} {props.g} {props.b} Boxcolors
+    <div
+      className="boxcolor-box"
+      style={{ backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})` }}
+    >
+      {props.r} {props.g} {props.b}
     </div>
   );
 };

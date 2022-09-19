@@ -1,4 +1,5 @@
 import React from 'react';
+import './Greetings.css';
 
 const Greetings = (props) => {
   let message = '';
@@ -15,7 +16,7 @@ const Greetings = (props) => {
     message = `Hello`;
   }
   return (
-    <div style={{ borderStyle: 'solid', padding: 2, maxWidth: 250 }}>
+    <div className="box-container">
       <h1>Greetings:</h1>
       {message} {props.children}
     </div>

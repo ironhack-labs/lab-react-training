@@ -83,12 +83,16 @@ function App() {
     <div className="App">
       <IdCard idCard={idArray[0]} />
       <IdCard idCard={idArray[1]} />
+      <h1>Greetings:</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+      <h1>Random:</h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
+      <h1>Colored Box:</h1>
       <BoxColors r={255} g={0} b={0} />
       <BoxColors r={128} g={255} b={0} />
+      <h1>CreditCard</h1>
       {creditCardArray.map((newCard) => {
         return <CreditCard key={newCard.card.id} newCard={newCard} />;
       })}
