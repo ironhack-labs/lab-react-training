@@ -20,7 +20,7 @@ const Dice = () => {
         const sideDice = () => {
             setDice(diceEmpty)
         }
-        setInterval(sideDice, 4000)      
+        setInterval(sideDice, 2000)      
     }
 
     useEffect(() => {
@@ -28,7 +28,7 @@ const Dice = () => {
             clearInterval(handleSideDice)
             setDice(randomSide)
         }
-    }, [dice])
+    }, [dice, randomSide])
 
 
     
