@@ -1,0 +1,12 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    width: 70%;
+}
+
+.card div {
+    margin-top: 20px;
+}
