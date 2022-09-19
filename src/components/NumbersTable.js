@@ -12,16 +12,16 @@ const NumbersTable = (props) => {
 
   return (
     <div>
-        <table>
-            <body>
+        <table style={{marginLeft: 20}}>
+            <tbody>
                 <tr>
-                    {listNumber.map((number) => {
-                        return  <td style={{backgroundColor: number % 2 === 0 ? 'red' : 'white', border: '2px solid black', width: 50, height: 50, fontSize: 20}}>
+                    {listNumber.map((number, index) => {
+                        return  <td key={index} style={{backgroundColor: number % 2 === 0 ? 'red' : 'white', border: '2px solid black', width: 50, height: 50, fontSize: 20}}>
                                     {number}
                                 </td>
                     })}
                 </tr>
-            </body>
+            </tbody>
         </table>
     </div>
   )

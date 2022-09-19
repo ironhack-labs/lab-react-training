@@ -22,7 +22,7 @@ const Carousel = (props) => {
   return (
     <div style={{marginLeft: 20}}>
         <button onClick={handleLeft} style={{margin: 10}}>Left</button>
-        <img src={image} alt="image" />
+        <img src={image} alt={image} />
         <button onClick={handleRight} style={{margin: 10}}>Right</button>
     </div>
   )
