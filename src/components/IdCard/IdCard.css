@@ -1,0 +1,20 @@
+.IdCard {
+    border: solid 2px black;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 800px
+}
+
+.cardText {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.picture {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 15%;
+}
