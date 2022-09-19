@@ -6,6 +6,7 @@ import IdCard from './components/Idcard/IdCard';
 import Random from './components/Random/Random';
 import masterCardLogo from './assets/images/master-card.png';
 import visaLogo from './assets/images/visa.png';
+import Rating from './components/Rating/Rating';
 
 const idArray = [
   {
@@ -96,6 +97,13 @@ function App() {
       {creditCardArray.map((newCard) => {
         return <CreditCard key={newCard.card.id} newCard={newCard} />;
       })}
+      <h1>Rating:</h1>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
     </div>
   );
 }
