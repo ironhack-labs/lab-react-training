@@ -12,6 +12,7 @@ const Rating = () => {
             type="button"
             key={index}
             className={index <= rating ? 'on' : 'off'}
+            id="starBtn"
             onClick={() => setRating(index)}
           >
             <span>&#9733;</span>

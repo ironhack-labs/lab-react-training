@@ -8,6 +8,7 @@ import masterCardLogo from './assets/images/master-card.png';
 import visaLogo from './assets/images/visa.png';
 import Rating from './components/Rating/Rating';
 import Drivercard from './components/DriverCard/Drivercard';
+import LikeButton from './components/LikeButton/LikeButton';
 
 const idArray = [
   {
@@ -136,6 +137,8 @@ function App() {
       {driverCardArray.map((newDriver) => {
         return <Drivercard key={newDriver.driver.key} newDriver={newDriver} />;
       })}
+      <h1>LikeButton</h1>
+      <LikeButton />
     </div>
   );
 }
