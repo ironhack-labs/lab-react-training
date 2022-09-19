@@ -8,11 +8,12 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 import maxence from './assets/images/maxence.png';
 import maxenceGlasses from './assets/images/maxence-glasses.png';
-import Dice from './components/Dice';
-import Carousel from './components/Carousel';
 
 function App() {
   return (
@@ -118,6 +119,8 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+      <h1>NumbersTable</h1>
+      <NumbersTable limit={12} />
     </div>
   );
 }
