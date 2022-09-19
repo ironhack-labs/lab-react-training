@@ -4,6 +4,8 @@ import CreditCard from './components/Creditcard/CreditCard';
 import Greetings from './components/Greetings/Greetings';
 import IdCard from './components/Idcard/IdCard';
 import Random from './components/Random/Random';
+import masterCardLogo from './assets/images/master-card.png';
+import visaLogo from './assets/images/visa.png';
 
 const idArray = [
   {
@@ -33,42 +35,45 @@ const creditCardArray = [
     card: {
       id: 1,
       type: 'Visa',
-      number: '0123456789018845',
+      // number: '0123456789018845',
+      number: '•••• •••• •••• 8845',
       expirationMonth: 3,
       expirationYear: 2021,
       bank: 'BNP',
       owner: 'Maxence Bouret',
       bgColor: '#11aa99',
       color: '#fff',
-      logo: './assets/images/visa.png',
+      logo: `${visaLogo}`,
     },
   },
   {
     card: {
       id: 2,
       type: 'Master Card',
-      number: '0123456789010995',
+      // number: '0123456789010995',
+      number: '•••• •••• •••• 0995',
       expirationMonth: 3,
       expirationYear: 2021,
       bank: 'N26',
       owner: 'Maxence Bouret',
       bgColor: '#eeeeee',
       color: '#222222',
-      logo: './assets/images/master-card.svg',
+      logo: `${masterCardLogo}`,
     },
   },
   {
     card: {
       id: 3,
       type: 'Visa',
-      number: '0123456789016984',
+      number: '•••• •••• •••• 6984',
+      // number: '0123456789016984',
       expirationMonth: 12,
       expirationYear: 2019,
       bank: 'Name of the bank',
       owner: 'Firstname Lastname',
       bgColor: '#ddbb55',
       color: '#fff',
-      logo: './assets/images/visa.png',
+      logo: `${visaLogo}`,
     },
   },
 ];
