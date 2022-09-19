@@ -9,6 +9,9 @@ import visaLogo from './assets/images/visa.png';
 import Rating from './components/Rating/Rating';
 import Drivercard from './components/DriverCard/Drivercard';
 import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import clickPic from './assets/images/maxence.png';
+import clickPic2 from './assets/images/maxence-glasses.png';
 
 const idArray = [
   {
@@ -139,6 +142,8 @@ function App() {
       })}
       <h1>LikeButton</h1>
       <LikeButton />
+      <h1>Clickable Picture:</h1>
+      <ClickablePicture clickPic={clickPic} clickPicGlasses={clickPic2} />
     </div>
   );
 }
