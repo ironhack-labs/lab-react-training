@@ -1,13 +1,12 @@
-function IdCard({ idArray }) {
-  console.log(idArray);
+function IdCard({ firstname, lastname, gender, height, birth, picture }) {
   return (
     <div>
-      <p>firstName: {idArray.user.firstname} </p>
-      <p>lastName: {idArray.user.lastname}</p>
-      <p>Gender: {idArray.user.lastname}</p>
-      <p>Height:{idArray.user.height}</p>
-      <p>Birth:{idArray.user.birth}</p>
-      <img src={idArray.user.picture} alt="Profile Picture" />
+      <p>firstName: {firstname} </p>
+      <p>lastName: {lastname}</p>
+      <p>Gender: {lastname}</p>
+      <p>Height:{height}</p>
+      <p>Birth:{birth}</p>
+      <img src={picture} alt="Profile Picture" />
     </div>
   );
 }
