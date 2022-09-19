@@ -11,6 +11,7 @@ import ClickablePicture from './components/ClickablePicture';
 
 import maxence from './assets/images/maxence.png';
 import maxenceGlasses from './assets/images/maxence-glasses.png';
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -106,6 +107,10 @@ function App() {
         img={maxence}
         imgClicked={maxenceGlasses}
       />
+      <div style={{marginTop: '300px'}}>
+        <h1>Dice</h1>
+        <Dice />
+      </div>
     </div>
   );
 }

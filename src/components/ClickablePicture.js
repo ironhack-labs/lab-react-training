@@ -20,7 +20,7 @@ const ClickablePicture = (props) => {
 
   return (
     <div className='clickable_picture'>
-      <img src={image} alt='picglasses' onClick={handleClicked} style={{width: 300}}/>
+      <img src={image} alt='picglasses' onClick={handleClicked} style={{width: 300, display:'block'}}/>
     </div>
   );
 };
