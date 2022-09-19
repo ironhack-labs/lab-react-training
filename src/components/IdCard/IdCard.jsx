@@ -1,3 +1,5 @@
+import './IdCard.css';
+
 function IdCard({ lastName, firstName, gender, height, birth, picture }) {
     return (
         <>

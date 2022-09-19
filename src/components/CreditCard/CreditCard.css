@@ -1,0 +1,56 @@
+.credit-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 13vw;
+    width: 30vw;
+}
+
+.card-logo {
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.card-logo img {
+    width: 3vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-number {
+    /* padding-bottom: -2000vw; */
+    /* position: abosolute; */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.card-number p {
+    margin: 0;
+    padding: 0;
+    /* font-weight: 600;
+    font-size: 200%; */
+}
+
+.group-circle {
+    display: flex;
+    padding: 0 0.5vw;
+}
+
+.circle {
+    width: 10px;
+    min-height: 10px;
+    border-radius: 100%;
+    margin: 2px 2px;
+    background-color: black;
+}
+
+#dot {
+    height: 10vw;
+    width: 10vw;
+    background-color: black;
+    border-radius: 50%;
+    color: black;
+}

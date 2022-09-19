@@ -1,3 +1,5 @@
+import './BoxColor.css';
+
 function BoxColor({ r, g, b }) {
     const divStyle = {
         backgroundColor: `rgb(${r}, ${g}, ${b})`,

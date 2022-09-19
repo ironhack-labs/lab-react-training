@@ -1,3 +1,5 @@
+import './Random.css'
+
 function Random({ min, max }) {
     const value = Math.floor(Math.random() * (max - min)) + min;
     return <p className="random border">

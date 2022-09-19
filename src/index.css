@@ -16,48 +16,6 @@ code {
   border: 2px solid black;
   padding: 20px 20px;
   margin: 20px;
-  margin-left: 20px;
-}
-
-.id-card {
-  background-color: #fff;
-  /* border: 2px solid #000; */
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-
-}
-
-.id-card__info p {
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.greetings {
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: flex;
-  justify-content: start;
-}
-
-.greetings p {
-  margin: 0;
-  padding: 0;
-}
-
-.random {
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: flex;
-  justify-content: start;
-}
-
-.boxColor {
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
 }
 
 .credit-cards {
@@ -66,17 +24,4 @@ code {
   justify-content: space-around;
   margin: 0;
   padding: 0;
-}
-
-
-
-.credit-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.card-logo img {
-  width: 3vh;
-  margin: 20px;
 }
