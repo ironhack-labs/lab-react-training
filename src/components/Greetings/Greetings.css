@@ -1,0 +1,14 @@
+.greetings-card {
+    padding: 30px;
+    margin: 30px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.greetings-card h1 {
+    font-size: 20px;
+}

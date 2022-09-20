@@ -1,0 +1,16 @@
+.boxcolor-card {
+    height: 60px;
+    margin: 30px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.rgb-text {
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+}
