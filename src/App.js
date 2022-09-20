@@ -8,6 +8,7 @@ import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import Dice from './components/Dice/Dice';
 import './App.css';
 
 // Images
@@ -129,6 +130,12 @@ function App() {
           imgClicked={imgClicked}
         />
       </div>
+
+      {/* Iteration 10 */}
+      <div className="border">
+        <Dice />
+      </div>
+
     </div >
   );
 }
