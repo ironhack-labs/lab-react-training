@@ -1,38 +1,78 @@
-.App {
+/* Iteration 1 */
+
+.profileCard {
+  display: flex;
+  justify-content: start;
+  border: 3px solid black;
+  margin-top: 10px;
+}
+
+.profileImg {
+  align-self: center;
+  margin: 10px;
+}
+
+.profileImg img {
+  width: 200px;
+}
+
+
+.profileText span {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Iteration 2 */
+
+.greetingBox {
+  border: 3px solid green;
+  padding: 10px;
+}
+
+/* Iteration 3 */
+
+.randomNum {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: red;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Iteration 4 */
+
+.rgbBox {
+  padding: 40px;
+  margin: 20px 25%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Iteration 5 */
+
+.creditCard {
+  margin: 20px 560px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.creditCardImg {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: right;
 }
 
-.App-link {
-  color: #61dafb;
+.creditCardImg img {
+  padding: 10px;
+  width: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.creditCardText {
+  text-align: center;
+}
+
+.secretNumber {
+  font-size: 30px;
+}
+
+/* Iteration 7 */
+
+.driverImg img {
+  width: 200px;
 }
