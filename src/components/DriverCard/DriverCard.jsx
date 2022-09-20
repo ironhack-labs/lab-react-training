@@ -1,9 +1,10 @@
-import './Rating.css'
+import './DriverCard.css'
 
-const Rating = (props) => {
-    // console.log(props)
+const DriverCard = (props) => {
+    // console.log(props);
+    const { model, licensePlate } = props.car
 
-    let numberStart = Math.round(props.children)
+    let numberStart = Math.round(props.rating)
 
     let ratingString
     switch (numberStart) {
@@ -33,17 +34,24 @@ const Rating = (props) => {
 
         default:
             ratingString = ''
-
     }
+
 
     return (
         <>
+            <img></img>
+            <div className>{props.name}</div>
             <p className='rating'>{ratingString}</p>
+            <p className=''>{model} - {licensePlate}</p>
+
         </>
     )
 
 
 
+
+
+
 }
 
-export default Rating;
+export default DriverCard;

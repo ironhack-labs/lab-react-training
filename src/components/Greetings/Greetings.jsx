@@ -1,7 +1,7 @@
 import './Greetings.css'
 
 const Greetings = (props) => {
-    console.log(props);
+    // console.log(props);
 
     let greeting
     switch (props.lang) {

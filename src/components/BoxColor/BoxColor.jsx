@@ -1,7 +1,7 @@
 import './BoxColor.css'
 
 const BoxColor = (props) => {
-    console.log(props);
+    // console.log(props);
     const divStyle = { backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})` }
 
     return (

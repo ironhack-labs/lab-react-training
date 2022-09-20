@@ -5,7 +5,7 @@ import mastercardLogo from '../../assets/images/visa.png'
 
 
 const CreditCard = (props) => {
-    console.log(props);
+    // console.log(props);
 
     const cardColor = {
         backgroundColor: props.bgColor,

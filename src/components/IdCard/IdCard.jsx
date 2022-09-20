@@ -1,7 +1,7 @@
 import './idCard.css'
 
 const IdCard = (props) => {
-    console.log({ props })
+    // console.log({ props })
     return (
         <>
             <section className="idCard" >
