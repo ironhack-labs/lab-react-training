@@ -1,0 +1,8 @@
+.button-div button {
+    font-size: 22px;
+    margin: 40px 0 30px 50px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 0;
+    /* background-color: rgba(196, 179, 211, 0.803); */
+}
