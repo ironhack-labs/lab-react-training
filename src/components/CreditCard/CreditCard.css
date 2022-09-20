@@ -1,0 +1,16 @@
+.creditCard {
+    display: flex;
+    padding: 30px;
+    margin: 5px;
+    flex-direction: column;
+    border-radius: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImg {
+    align-self: flex-end;
+    height: 40px;
+    width: auto;
+    padding: 2%
+}
