@@ -1,0 +1,21 @@
+.IdCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px 5px;
+    border: 2px solid black;
+    background-color: blanchedalmond;
+}
+
+.imgCard{
+    width: 200px;
+    padding: 5px 5px;
+}
+
+.card{
+    margin: 0px 50px;
+}
+
+p{
+    font-size: 20px;
+}
