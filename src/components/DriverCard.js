@@ -1,3 +1,5 @@
+import Rating from './Rating';
+
 function DriverCard(props) {
   const { name, rating, img, car } = props;
   return (
@@ -8,7 +10,9 @@ function DriverCard(props) {
       </div>
       <div>
         <h1>{name}</h1>
-        <div>{rating}</div>
+        <div>
+          <Rating>{rating}</Rating>
+        </div>
         <h4>
           {car.model} {car.plate}
         </h4>
