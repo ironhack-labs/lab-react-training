@@ -1,0 +1,12 @@
+
+.divProfileCard {
+    border: 1px solid;
+    display: flex;
+}
+
+.firstName, .lastName, .gender, .gender, .height, .birth{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
