@@ -17,6 +17,7 @@ import './App.css';
 // Images
 import img from './assets/images/maxence.png';
 import imgClicked from './assets/images/maxence-glasses.png';
+import FacebookAdvanced from './components/FacebookAdvanced/FacebookAdvanced';
 
 function App() {
   return (
@@ -161,6 +162,10 @@ function App() {
         <Facebook />
       </div>
 
+      {/* Iteration 14 */}
+      <div className='border'>
+        <FacebookAdvanced />
+      </div>
     </div >
   );
 }
