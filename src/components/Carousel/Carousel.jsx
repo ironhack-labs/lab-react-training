@@ -11,7 +11,7 @@ const Carousel = (props) => {
   };
 
   const prevImg = () => {
-    setCurrentImage(currentImage === 0 ? imgLength - 1 : currentImage + 1);
+    setCurrentImage(currentImage === 0 ? imgLength - 1 : currentImage - 1);
   };
 
   return (
