@@ -1,0 +1,5 @@
+.rating {
+    border: 2px solid;
+    display: flex;
+    margin: 10px;
+}
