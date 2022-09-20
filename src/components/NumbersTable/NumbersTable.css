@@ -1,0 +1,15 @@
+.styleLiWhite {
+    background-color: white;
+    list-style: none;
+    border: 2px solid black;
+    padding: 30px;
+}
+.ulStyle {
+    display: flex;
+    list-style: none;
+
+}
+.styleLiRed {
+    border: 2px solid black;
+    padding: 30px;
+}
