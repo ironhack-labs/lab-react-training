@@ -1,0 +1,30 @@
+.numbersTable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.number {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.even {
+    background-color: red;
+}
+
+.odd {
+    background-color: white;
+}

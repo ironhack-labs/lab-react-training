@@ -9,8 +9,8 @@ import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import Dice from './components/Dice/Dice';
-import Carousel from './components/Carousel/Carousel'
-
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
 import './App.css';
 
 // Images
@@ -148,6 +148,11 @@ function App() {
             'https://randomuser.me/api/portraits/men/2.jpg'
           ]}
         />
+      </div>
+
+      {/* Iteration 12 */}
+      <div className='border'>
+        <NumbersTable limit={12} />
       </div>
 
     </div >
