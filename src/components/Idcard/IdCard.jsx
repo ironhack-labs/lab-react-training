@@ -10,7 +10,7 @@ const IdCard = ({ idCard }) => {
         className="profile-img"
         style={{ margin: 5 }}
       />
-      <div className="right">
+      <div className="idcard-info">
         <strong>First name:{idCard.user.firstname}</strong>
         <br />
         <strong>Last name:{idCard.user.lastname}</strong>

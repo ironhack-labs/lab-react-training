@@ -14,6 +14,7 @@ import clickPic from './assets/images/maxence.png';
 import clickPic2 from './assets/images/maxence-glasses.png';
 import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
+import Facebook from './components/FaceBook/Facebook';
 
 const idArray = [
   {
@@ -157,6 +158,8 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+      <h1>Facebook</h1>
+      <Facebook />
     </div>
   );
 }
