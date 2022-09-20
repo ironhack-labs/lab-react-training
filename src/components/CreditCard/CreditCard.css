@@ -1,0 +1,38 @@
+.CreditCard {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.CardFlex {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 0;
+}
+
+.cardBank {
+    margin-left: 25px;
+}
+
+.cardOwner {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 0;
+}
+
+.cardNum {
+    font-size: 20px;
+}
+
+.logoVisa {
+    width: 55px;
+    height: 25px;
+    margin-left: auto;
+    margin-top: 8px;
+    margin-right: 8px;
+}

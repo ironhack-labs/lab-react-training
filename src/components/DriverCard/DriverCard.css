@@ -1,0 +1,22 @@
+.driverCard {
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: rgb(95, 95, 230);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    border: solid black 2px;
+    border-radius: 25px;
+    width: 1000px;
+}
+
+.driverImg {
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+.stars {
+    font-size: 25px;
+}

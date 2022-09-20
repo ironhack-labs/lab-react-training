@@ -32,7 +32,52 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.iterationTitle {
+  margin-left: 150px;
+}
+
+.IdCard {
+  border: solid 2px black;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 800px
+}
+
+.cardText {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.picture {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 270px;
+}
+
+.greetings {
+  padding: 5px;
+  width: fit-content;
+  margin-top: 30px;
+  border: solid 2px black;
+}
+
+.minMax {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.rating {
+  margin-left: 20px;
+  border: solid 2px black;
+  width: fit-content;
 }
