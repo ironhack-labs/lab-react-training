@@ -3,6 +3,7 @@ import './DriverCard.css';
 
 function DriverCard({ name, rating, img, car }) {
 
+    //TODO: https://www.w3schools.com/jsref/dom_obj_style.asp
     const divStyle = {
         backgroundImage: `url(${img})`,
     }
