@@ -12,6 +12,8 @@ import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import clickPic from './assets/images/maxence.png';
 import clickPic2 from './assets/images/maxence-glasses.png';
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
 
 const idArray = [
   {
@@ -144,6 +146,17 @@ function App() {
       <LikeButton />
       <h1>Clickable Picture:</h1>
       <ClickablePicture clickPic={clickPic} clickPicGlasses={clickPic2} />
+      <h1>Dice:</h1>
+      <Dice />
+      <h1>Carousel:</h1>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
     </div>
   );
 }
