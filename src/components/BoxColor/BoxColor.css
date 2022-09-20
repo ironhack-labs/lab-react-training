@@ -1,0 +1,15 @@
+.BoxColor p {
+    font-weight: bolder;
+}
+
+.BoxColor {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    width: 500px;
+    position: relative;
+    left: 30%;
+    border: 2px solid black;
+}
