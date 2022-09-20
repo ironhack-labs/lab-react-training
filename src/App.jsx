@@ -11,6 +11,7 @@ import img from './assets/images/maxence.png'
 import imgClicked from './assets/images/maxence-glasses.png'
 import Dice from './components/dice/Dice'
 import Carousel from './components/carousel/Carousel'
+import NumbersTable from './components/numbersTable/NumbersTable';
 
 
 // const users = [
@@ -110,13 +111,17 @@ function App() {
       <Dice />
 
       <Carousel
-        images={[
-          'https://randomuser.me/api/portraits/women/1.jpg',
-          'https://randomuser.me/api/portraits/men/1.jpg',
-          'https://randomuser.me/api/portraits/women/2.jpg',
-          'https://randomuser.me/api/portraits/men/2.jpg'
-        ]}
+        images={
+          [
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]
+        }
       />
+
+      <NumbersTable limit={12} />
     </>
 
 

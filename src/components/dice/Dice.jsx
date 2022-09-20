@@ -25,7 +25,6 @@ function Dice() {
         <img className='dice' onClick={() => Toggle()} src={dice} alt="" />
     )
 
-
 }
 
 
