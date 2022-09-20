@@ -7,7 +7,12 @@ import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import './App.css';
+
+// Images
+import img from './assets/images/maxence.png';
+import imgClicked from './assets/images/maxence-glasses.png';
 
 function App() {
   return (
@@ -115,6 +120,14 @@ function App() {
       <div className="border">
         <LikeButton />
         <LikeButton />
+      </div>
+
+      {/* Iteration 9 */}
+      <div className="border">
+        <ClickablePicture
+          img={img}
+          imgClicked={imgClicked}
+        />
       </div>
     </div >
   );
