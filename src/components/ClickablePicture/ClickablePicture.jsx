@@ -12,7 +12,9 @@ const ClickablePicture = ({ clickPic, clickPicGlasses }) => {
         alt="clickable-img"
         className="click-img"
         onClick={() => {
-          setChangeImg(clickPicGlasses);
+          changeImg === clickPic
+            ? setChangeImg(clickPicGlasses)
+            : setChangeImg(clickPic);
         }}
       />
     </div>
