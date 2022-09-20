@@ -11,6 +11,7 @@ import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
+import Facebook from './components/Facebook/Facebook';
 import './App.css';
 
 // Images
@@ -153,6 +154,11 @@ function App() {
       {/* Iteration 12 */}
       <div className='border'>
         <NumbersTable limit={12} />
+      </div>
+
+      {/* Iteration 13 */}
+      <div className='border'>
+        <Facebook />
       </div>
 
     </div >

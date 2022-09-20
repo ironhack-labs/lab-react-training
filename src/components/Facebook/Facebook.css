@@ -1,0 +1,12 @@
+.facebook-profile {
+    display: flex;
+}
+
+.facebook-profile-img {
+    width: 20vw;
+}
+
+.facebook-info {
+    margin-left: 2vw;
+    text-align: left;
+}
