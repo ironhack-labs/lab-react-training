@@ -12,12 +12,13 @@ import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
 import Facebook from './components/Facebook/Facebook';
+import FacebookAdvanced from './components/FacebookAdvanced/FacebookAdvanced';
+import SignupPage from './components/SignupPage/SignupPage';
 import './App.css';
 
 // Images
 import img from './assets/images/maxence.png';
 import imgClicked from './assets/images/maxence-glasses.png';
-import FacebookAdvanced from './components/FacebookAdvanced/FacebookAdvanced';
 
 function App() {
   return (
@@ -41,8 +42,12 @@ function App() {
       />
 
       {/* Iteration 2: Greetings */}
-      <Greetings lang="de">Ludwig</Greetings>
-      <Greetings lang="fr">François</Greetings>
+      <div className='border'>
+        <Greetings lang="de">Ludwig</Greetings>
+      </div>
+      <div className='border'>
+        <Greetings lang="fr">François</Greetings>
+      </div>
 
       {/* Iteration 3: Random */}
       <Random min={1} max={6} />
@@ -165,6 +170,11 @@ function App() {
       {/* Iteration 14 */}
       <div className='border'>
         <FacebookAdvanced />
+      </div>
+
+      {/* Iteration 15 */}
+      <div className='border'>
+        <SignupPage />
       </div>
     </div >
   );

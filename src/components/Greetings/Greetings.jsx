@@ -1,18 +1,20 @@
 import './Greetings.css';
 
 function Greetings({ lang, children }) {
+
+    // console.log("LANG:",lang);
     let greeting = '';
     switch (lang) {
-        case 'de ':
+        case 'de':
             greeting = 'Hallo';
             break;
-        case 'en ':
+        case 'en':
             greeting = 'Hello';
             break;
-        case 'es ':
+        case 'es':
             greeting = 'Hola';
             break;
-        case 'fr ':
+        case 'fr':
             greeting = 'Bonjour';
             break;
         default:
@@ -21,8 +23,8 @@ function Greetings({ lang, children }) {
     }
     return (
         <>
-            <div className="greetings border">
-                <p>{greeting} {children}</p>
+            <div className="greetings">
+                {greeting} {children}
             </div>
         </>
     )

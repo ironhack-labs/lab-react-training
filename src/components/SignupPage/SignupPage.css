@@ -1,0 +1,13 @@
+.onChange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.onChange>greetings {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+}
