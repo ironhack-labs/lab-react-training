@@ -1,0 +1,11 @@
+.random-container {
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid blue;
+    width: 385px;
+}
+
+.random-container h4{
+    padding: 0;
+    margin: 0;
+}

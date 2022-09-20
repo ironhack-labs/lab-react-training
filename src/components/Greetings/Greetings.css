@@ -1,0 +1,14 @@
+.greeting-container {
+    width: 181px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid red;
+}
+
+.greeting-container h4{
+    padding: 0;
+    margin: 0;
+}

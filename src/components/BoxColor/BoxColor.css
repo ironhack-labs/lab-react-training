@@ -1,0 +1,15 @@
+.boxcolor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    width: 800px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.boxcolor-container h4{
+    margin: 0;
+    padding: 0;
+}
