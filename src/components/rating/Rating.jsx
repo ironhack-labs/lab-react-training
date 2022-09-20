@@ -1,15 +1,39 @@
 function Rating({ children }) {
 
-    let stars = Math.round(children)
-    let starsEmpty = 5 - stars
-    let arr = []
+    const s = {
+        0: "☆☆☆☆☆",
+        1: "★☆☆☆☆",
+        3: "★★☆☆☆",
+        4: "★★★★☆",
+        5: "★★★★★"
+    }
 
-    for (stars; stars > 0; stars--) {
-        arr.push("★")
-    }
-    for (starsEmpty; starsEmpty > 0; starsEmpty--) {
-        arr.push("☆")
-    }
-    return arr
+    let stars = Math.round(children)
+
+
+    // switch (stars) {
+    //     case value:
+
+    //         break;
+
+    //     default:
+    //         break;
+    // }
+
+
+    return (
+        <div className="starts">
+            {s[stars]}
+        </div>
+    )
+    // let starsEmpty = 5 - stars
+    // let arr = []
+
+    // for (stars; stars > 0; stars--) {
+    //     arr.push("★")
+    // }
+    // for (starsEmpty; starsEmpty > 0; starsEmpty--) {
+    //     arr.push("☆")
+    // }
 }
 export default Rating;

@@ -1,0 +1,17 @@
+.card-driver {
+    background-color: #455eb5;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-driver img {
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+}

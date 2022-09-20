@@ -1,7 +1,7 @@
 function IdCard(props) {
     const { picture, lastName, firstName, gender, height, birth } = props
     return (
-        <div className="card">
+        <div className="card-person">
             <div className="img-card">
                 <img src={picture} />
             </div>

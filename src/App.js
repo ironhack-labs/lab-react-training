@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import './components/card/IdCard.css';
 import './components/greetings/Greetings.css'
@@ -6,12 +5,27 @@ import './components/random/Random.css'
 import './components/boxColor/BoxColor.css'
 import './components/creditCard/CreditCard.css'
 import './components/rating/Rating.css'
+import './components/driverCard/DriverCard.css'
+import './components/likeButton/LikeButton.css'
+import './components/likeButton/LikeButton.css'
+import './components/dice/Dice.css'
+import './components/carousel/Carousel.css'
+import './components/numbersTable/NumbersTable.css'
+
 import IdCard from './components/card/IdCard';
 import Greetings from './components/greetings/Greetings'
 import Random from './components/random/Random';
 import BoxColor from './components/boxColor/BoxColor';
 import CreditCard from './components/creditCard/CreditCard'
 import Rating from './components/rating/Rating'
+import DriverCard from './components/driverCard/DriverCard'
+import LikeButton from './components/likeButton/LikeButton'
+import ClickablePicture from './components/clickablePicture/ClickablePicture'
+import glasses from '../src/assets/images/maxence-glasses.png'
+import notGlasses from '../src/assets/images/maxence.png'
+import Dice from './components/dice/Dice'
+import Carousel from './components/carousel/Carousel'
+import NumbersTable from './components/numbersTable/NumbersTable'
 
 
 
@@ -99,6 +113,58 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+
+      <h2>Driver Card</h2>
+
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE"
+        }}
+      />
+
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
+        }}
+      />
+
+      <h2>Like Button</h2>
+
+      <LikeButton />
+
+      <h2>Clickable Picture</h2>
+
+      <ClickablePicture
+        img={glasses}
+        imgClicked={notGlasses}
+      />
+
+      <h2>Dice</h2>
+
+      <Dice />
+
+      <h2>Carousel</h2>
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <h2>NumbersTable</h2>
+
+      <NumbersTable limit={12} />
 
     </div>
   );

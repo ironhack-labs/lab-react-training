@@ -1,5 +1,6 @@
-.card {
+.card-person {
     display: flex;
-    border: 1px solid black;
+    border: 2px solid black;
     margin: 10px;
+    justify-content: flex-start;
 }
