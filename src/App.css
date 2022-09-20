@@ -76,3 +76,42 @@
 .driverImg img {
   width: 200px;
 }
+
+/* Iteration 8 */
+
+.likeButton {
+  margin: 20px;
+  padding: 20px 40px;
+  font-size: 30px;
+}
+
+/* Iteration 9 */
+
+.clickableImg {
+  display: flex;
+  justify-content: center;
+}
+
+.clickableImg img {
+  width: 400px;
+}
+
+/* Iteration 10 */
+
+.dice {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.dice img {
+  width: 400px;
+}
+
+/* Iteration 11 */
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
