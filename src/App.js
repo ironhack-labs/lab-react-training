@@ -1,5 +1,6 @@
 import './App.css';
 import IdCard from "./components/IdCard/IdCard";
+import Greetings from "./components/Greetings/Greeting"
 
 function App() {
 
@@ -29,6 +30,13 @@ function App() {
           return <IdCard picture={picture} lastName={lastName} firstName={firstName}
                   gender={gender} height={height} birth={birth} key={picture} />
         })}
+      </div>
+      <div>
+        <h1>Greeting</h1>
+         <Greetings lang="de">Ludwig</Greetings>
+         <Greetings lang="es">Pelayo</Greetings>
+         <Greetings lang="fr">François</Greetings>
+         <Greetings lang="en">Lizzy</Greetings>
       </div>
     </div>
   );
