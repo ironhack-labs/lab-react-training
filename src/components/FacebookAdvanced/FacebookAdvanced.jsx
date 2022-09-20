@@ -3,9 +3,15 @@ import { useState } from 'react';
 
 function FacebookAdvanced() {
     const [countryProfiles, setCountry] = useState(profiles);
+    const [displayInfo, setDisplayInfo] = useState(false);
+
+    // const handleInfoClick = (index) => {
+    //     setDisplayInfo(!displayInfo);
+    //     setCountry(countryProfiles[index]);
+    // }
 
     const handleCountryChange = (event) => {
-        console.log(event.target.value);
+        // console.log(event.target.value);
         const newList = filterByCountry(event.target.value);
         setCountry(newList);
     }
@@ -20,7 +26,13 @@ function FacebookAdvanced() {
         }
     }
     
+    //TODO - finish this function
+    const handleHideInfo = () => {
+        // setDisplayInfo(!displayInfo);
+    }
+
     return (
+
         <div>
             <div className="facebook-advanced">
                 <div className="facebook-advanced-filter">
@@ -51,9 +63,9 @@ function FacebookAdvanced() {
             {countryProfiles.map((profile, i) => {
                 return (
                     <div className="facebook" key={i}>
-                        <div className="facebook-profile id-card border">
-                            <img src={profile.img} alt="profile" className='facebook-profile-img' />
-                            <div className="facebook-info">
+                        <div className="facebook-profile id-card border" >
+                            <img src={profile.img} alt={`profile ${i}`}className='facebook-profile-img' onClick={handleHideInfo} />
+                            <div className="facebook-info" hidden={displayInfo}>
                                 <p>
                                     <strong>First name:</strong> {profile.firstName}
                                 </p>
