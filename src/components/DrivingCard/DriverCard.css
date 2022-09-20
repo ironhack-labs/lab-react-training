@@ -1,0 +1,24 @@
+.driverCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background-color: rgb(122, 122, 143);
+    border: 1px solid black;
+    color: white;
+}
+
+
+.imgDriver {
+    width: 100px;
+    height: 100px;
+}
+
+.dataDriver {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
