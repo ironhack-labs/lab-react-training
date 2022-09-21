@@ -7,7 +7,14 @@ import BoxColor from './components/BoxColor/BoxColor.jsx'
 import CreditCard from './components/CreditCard/CreditCard.jsx'
 import Rating from './components/Rating/Rating.jsx'
 import DriverCard from './components/DrivingCard/DriverCard';
-
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture'
+import firstImg from './assets/images/maxence.png'
+import secondImg from './assets/images/maxence-glasses.png'
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import FaceBook from './components/Facebook/Facebook';
 
 
 function App() {
@@ -135,9 +142,55 @@ function App() {
         }}
       />
 
+      {/* ITERATION 8 */}
+
+      <h3>Button</h3>
+
+      <div>
+        <LikeButton />
+      </div>
 
 
 
+      {/* ITERATION 9 */}
+
+      <h3>ClickablePicture</h3>
+
+      <ClickablePicture
+        img={firstImg}
+        imgClicked={secondImg}
+
+      />
+
+      {/* ITERATION 10 */}
+
+      <h3>DICE</h3>
+      <Dice />
+
+      {/* ITERATION 11 */}
+
+      <h3>CAROUSEL</h3>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      {/* ITERATION 12 */}
+
+      <h3>Numbers Table</h3>
+
+      <NumbersTable limit={12} />
+
+
+      {/* ITERATION 13 */}
+
+      <h3>FACEBOOK</h3>
+
+      <FaceBook />
     </div >
   );
 }

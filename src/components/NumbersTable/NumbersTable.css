@@ -1,0 +1,18 @@
+.styleLiWhite {
+    background-color: white;
+    list-style: none;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+.ulStyle {
+    display: flex;
+
+}
+
+.styleLiRed {
+    background-color: red;
+    list-style: none;
+    border: 2px solid black;
+    padding: 30px;
+}
