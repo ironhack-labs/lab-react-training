@@ -36,3 +36,86 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*---------------*/
+.d-flex{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.caja{
+  border: 1px solid #000;
+  width: 60%;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.content{
+  margin-top: -10px;
+  text-align: start;
+  margin-left: 10px;
+}
+
+.content p{
+  margin-bottom: -15px;
+}
+
+.strong{
+  font-weight: bold;
+}
+
+.tarjeta{
+  height: 200px;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: start;
+}
+
+.rating{
+  font-size: 100px;
+}
+
+.driverCard{
+  border-radius: 10px;
+  background: blue;
+  width: 80%;
+  margin: 20px auto;
+  color: #fff;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+.driverCard img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.driverCard div{
+  margin: 20px;
+}
+
+.driverCard .content{
+  margin-bottom: -5px;
+}
+
+.driverCard .puntaje{
+  font-size: 20px;
+  margin-top: -25px;
+  margin-left: -20px;
+  margin-bottom: -35px;
+}
+
+.info{
+  justify-content: space-around;
+  margin-bottom: -40px;
+}
+
+.type{
+  text-align: end;
+}
