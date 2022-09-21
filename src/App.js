@@ -5,6 +5,7 @@ import Greetings from "./components/Greetings/Greeting"
 import Random from './components/Random/Random';
 import BoxColor from './components/BoxColor/BoxColor'
 import CreditCard from './components/CreditCard/CreditCard'
+import Rating from './components/Rating/Rating'
 
 function App() {
 
@@ -92,6 +93,15 @@ function App() {
           return <CreditCard type={type} number={number} expirationMonth={expirationMonth} 
                   expirationYear={expirationYear} bank={bank} owner={owner} key={number} />
         })}
+      </div>
+      <div>
+        <h1>Rating</h1>
+          <Rating>0</Rating>
+          <Rating>1.49</Rating>
+          <Rating>1.5</Rating>
+          <Rating>3</Rating>
+          <Rating>4</Rating>
+          <Rating>5</Rating>
       </div>
     </div>
   );
