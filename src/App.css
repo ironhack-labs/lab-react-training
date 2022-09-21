@@ -36,3 +36,94 @@
     transform: rotate(360deg);
   }
 }
+
+.card{
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  border: 1px black solid;
+  text-align: left;
+  align-content: center;
+  margin: 10px auto;
+}
+
+.card-img{
+  margin: 10px;
+}
+
+.card-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.border{
+  border: 1px solid black;
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  font-weight: bold;
+
+}
+
+.box{
+  border: 1px black solid;
+  margin: 10px auto;
+  padding: 10px;
+  width: 50%;
+  
+}
+
+.color{
+  margin: 10px auto;
+  padding: 10px;
+  width: 50%;
+}
+
+.tarjeta{
+  width: 250px;
+  height: 150px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.container{
+  display: flex;
+  margin: auto;
+  width: 50%;
+ }
+
+ .raiting{
+  font-size: 60px;
+ }
+
+ .target{
+  width: 60%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 255, 0.699);
+  margin: 20px auto;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+ }
+
+ .target img{
+  border-radius: 50%;
+ }
+
+ .target .content{
+  margin-left: 40px;
+  margin-top: -20px;
+  text-align: start;
+  width: 60%;
+ }
+
+ .container-img{
+  width: 40%;
+  text-align: end;
+ }
+
+ .target .content h1{
+  margin-bottom: -5px;
+ }
