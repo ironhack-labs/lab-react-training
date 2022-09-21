@@ -47,7 +47,12 @@ const App = () => {
       </div>
       <div className='BoxColor-Container'>
         <h1>Box Color</h1>
-        <BoxColor r={255} g={0} b={0} />
+        <BoxColor red={255} green={0} blue={0} />
+        <BoxColor red={128} green={255} blue={0} />
+      </div>
+      <div className='CreditCard-Container'>
+      <h1>CreditCard</h1>
+      
       </div>
       </div>
     </div>

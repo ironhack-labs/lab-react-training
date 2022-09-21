@@ -1,0 +1,16 @@
+.BoxColor-card {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    border: 1px;
+    border-style: solid;
+    margin-top: 8px;
+    padding: 10px;
+}
+
+.BoxColor-card p {
+    margin: 0;
+    padding: 5px;
+}
