@@ -12,7 +12,6 @@ import ClickablePic from './components/ClickablePic/ClickablePic';
 import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
-import profiles from './data/berlin.json';
 import Facebook from './components/Facebook/Facebook';
 
 const carouselArr = [
@@ -127,13 +126,9 @@ function App() {
       </div>
 
       <div className='app-facebook'>
-        {
-          profiles.map(({ firstName, lastName, country, img, isStudent}) => {
-            return <Facebook firstName={firstName} lastName={lastName} country={country} img={img} isStudent={isStudent} key={img}/>
-          })
-        }
+        <Facebook />
       </div>
-      
+
     </div>
   );
 }
