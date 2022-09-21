@@ -6,10 +6,25 @@ import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
+import image1 from './assets/images/maxence.png';
+import image2 from './assets/images/maxence-glasses.png';
 import ClickablePic from './components/ClickablePic/ClickablePic';
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import profiles from './data/berlin.json';
+import Facebook from './components/Facebook/Facebook';
+
+const carouselArr = [
+  'https://randomuser.me/api/portraits/women/1.jpg',
+  'https://randomuser.me/api/portraits/men/1.jpg',
+  'https://randomuser.me/api/portraits/women/2.jpg',
+  'https://randomuser.me/api/portraits/men/2.jpg'
+]
 
 function App() {
   return (
+
     <div className="app-container">
       <IdCard 
         lastName="Simpson" 
@@ -27,19 +42,23 @@ function App() {
         birth={(new Date("1988-05-11")).toString().slice(0, 15)}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+
       <div className='app-greetings'>
         <Greetings lang='fr'>Marina</Greetings>
         <Greetings lang='de'>Jesus</Greetings>
         <Greetings lang='en'>Amanda</Greetings>
         <Greetings lang='es'>José</Greetings>
       </div>
+
       <div className='app-random'>
         <Random minN={7} maxN={9}/>
         <Random minN={0} maxN={100}/>
       </div>
+
       <div className='app-boxcolor'>
         <BoxColor r={220} g={158} b={183}/>
       </div>
+
       <div className='app-creditcard'>
         <CreditCard
           type="Visa"
@@ -62,6 +81,7 @@ function App() {
           color="#222222"
         />
       </div>
+
       <div className="app-drivercard">
         <DriverCard
           name="Dara Khosrowshahi"
@@ -82,15 +102,38 @@ function App() {
           }}
         />
       </div>
+
       <div className='app-likeBtn'>
           <LikeButton />
       </div>
+
       <div className='app-pic'>
         <ClickablePic 
-        img='https://cdn.shopify.com/s/files/1/1061/1924/products/Flushed_Emoji_Icon_5e6ce936-4add-472b-96ba-9082998adcf7_large.png?v=1571606089'
-        imgClicked='http://cdn.shopify.com/s/files/1/1061/1924/products/Kiss_Emoji_Icon_35d4ca06-0a44-4b16-83c4-626b9cace047_grande.png?v=1571606090'
+        img={image1}
+        imgClicked={image2}
         />
       </div>
+
+      <div className='app-dice'>
+          <Dice />
+      </div>
+
+      <div className='app-carousel'>
+          <Carousel images={carouselArr} />
+      </div>
+
+      <div className='app-ntable'>
+        <NumbersTable limit={8} />
+      </div>
+
+      <div className='app-facebook'>
+        {
+          profiles.map(({ firstName, lastName, country, img, isStudent}) => {
+            return <Facebook firstName={firstName} lastName={lastName} country={country} img={img} isStudent={isStudent} key={img}/>
+          })
+        }
+      </div>
+      
     </div>
   );
 }

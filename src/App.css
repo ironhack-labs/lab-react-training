@@ -6,7 +6,7 @@
   width: 100vw;
 }
 
-.app-greetings, .app-random, .app-creditcard, .app-boxcolor, .app-drivercard, .app-likeBtn, .app-pic {
+.app-greetings, .app-random, .app-creditcard, .app-boxcolor, .app-drivercard, .app-likeBtn, .app-pic, .app-dice, .app-carousel, .app-ntable {
   display: flex;
   margin-top: 20px;
 }

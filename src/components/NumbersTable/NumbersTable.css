@@ -1,0 +1,14 @@
+.numbers-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 510px;
+}
+
+.number-cell {
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: row;
+    width: 18%;
+    height: 100px;
+}

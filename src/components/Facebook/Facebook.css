@@ -1,0 +1,8 @@
+.student-container {
+    border: 1px solid black;
+    justify-content: space-around;
+    margin: 10px;
+    display: flex;
+    width: 400px;
+    padding: 20px;
+}
