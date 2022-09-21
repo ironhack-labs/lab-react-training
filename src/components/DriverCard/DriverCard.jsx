@@ -10,7 +10,7 @@ const DriverCard = (props) => {
     // let car = 
     // let licensePlate = props.car.licensePlate
 
-let stars = Math.ceil(Number(props.rating))
+let stars = Math.ceil(Number(rating))
 
 let starsRating = ""
 

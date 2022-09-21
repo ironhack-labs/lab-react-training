@@ -78,16 +78,13 @@ function App() {
       <DriverCard  
         name="Travis Kalanick"
         rating={3.2}
-        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428">
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
         car={{
         model: "Audi A3",
         licensePlate: "BE33ER"
-        }}
+        }}>
 
       </DriverCard>
-
-
-
 
     </div>
 
