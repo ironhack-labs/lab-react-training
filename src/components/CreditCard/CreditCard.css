@@ -1,0 +1,46 @@
+.logo > img{
+    height: 25px;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    left:70%;
+    
+}
+
+.creditcard-container {
+    background-color:#6363a9;
+    color:white;
+    border-radius: 5px;
+    width: 330px;
+    height: 200px;
+}
+
+.credit {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    margin-top: 40px;
+}
+
+.expires {
+ display: flex;
+ flex-direction: row;
+ gap:5%;
+ justify-content: center;
+ align-items: center;
+ margin-top: -35px;
+
+ 
+}
+
+.number {
+    font-size: 32px;
+    margin-top: -15px;
+}
+
+.name {
+    margin-top: -10px;
+}
