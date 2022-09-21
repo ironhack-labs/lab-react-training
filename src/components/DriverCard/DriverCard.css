@@ -1,0 +1,39 @@
+.driverCard {
+    display: flex;
+    margin-left: 20px;
+    background-color:beige;
+	flex-direction: column;
+	justify-content: center;
+    text-align: left;
+	align-content: center;
+  }
+
+  .sizeAdjust {
+    width: 150px; 
+    border-radius: 100%;
+}
+
+
+.firstOrder{
+    padding: 20px 0 20px 0;
+    border-radius: 25px;
+    width: 35%;
+    margin-left: 35%;
+    background-color:beige;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.secondOrder{
+    background-color:beige;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: left;
+	align-items: center;
+	align-content: center;
+}

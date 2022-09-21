@@ -6,6 +6,9 @@ import Greetings from './components/Greetings/Greetings';
 import Random from './components/Random/Random';
 import Boxcolor from './components/Boxcolor/Boxcolor';
 import Creditcard from './components/Creditcard/Creditcard';
+import Rating from './components/Rating/Rating'
+import DriverCard from './components/DriverCard/DriverCard'
+
 
 function App() {
   return (
@@ -61,6 +64,29 @@ function App() {
           bgColor="#ffc600"
           color="white"
         > </Creditcard>
+
+
+    {/* IT_6 */}
+
+        <Rating rating="1.7">
+
+        </Rating>
+
+
+    {/* IT_7 */}
+
+      <DriverCard  
+        name="Travis Kalanick"
+        rating={3.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428">
+        car={{
+        model: "Audi A3",
+        licensePlate: "BE33ER"
+        }}
+
+      </DriverCard>
+
+
 
 
     </div>
