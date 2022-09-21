@@ -1,0 +1,9 @@
+.greetingSquare {
+    display: flex;
+    font-size: larger;
+    justify-content: start;
+    text-align: left;
+    border: 3px solid black;
+    margin-top: 10px;
+  }
+  
