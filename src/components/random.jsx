@@ -1,10 +1,10 @@
 import './random.css'
-function Random(props){
-const random = Math.floor(Math.random()*(props.max - props.min)+props.min)
+function Random({min, max}){
+const random = Math.floor(Math.random()*(max - min)+min)
 
 return(
     <div className='random'>
-       <p> Random value between {props.min} and {props.max} = {random}</p>
+       <p> Random value between {min} and {max} = {random}</p>
     </div>
 )
 }

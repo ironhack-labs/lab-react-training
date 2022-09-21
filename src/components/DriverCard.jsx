@@ -1,4 +1,5 @@
 import Rating from './Rating.jsx'
+import './DriverCard.css'
 
 function DriverCard({name,rating,img,car}){
     return (
