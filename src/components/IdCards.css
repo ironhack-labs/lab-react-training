@@ -1,0 +1,15 @@
+.Id-Card{
+    
+    width: 450px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-around;
+
+}
+/* .Boxpeople{
+
+    background-color: aqua;
+} */
