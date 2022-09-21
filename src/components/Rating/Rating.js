@@ -1,10 +1,10 @@
-import "./Rating.css";
+import './Rating.css'
 
 function Rating({children}) {
     const rate = Math.round(children); //esto redondea el numero
     const ws = 5 - rate; // -5 xq son 5 estrellas
     return(
-    <div>
+    <div className="stars">
      {'★'.repeat(rate) + '☆'.repeat(ws)}
     </div>
  )

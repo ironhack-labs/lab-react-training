@@ -1,0 +1,27 @@
+.driver-img > img {
+    height:100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-top: 15px;
+  
+}
+
+.driver-container {
+    background-color: #455eb6;
+    color:white;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:700px;
+    position: relative;
+    left:24%
+}
+
+.driver-info {
+   margin-left: 30px;
+   text-align: justify;
+}
+
