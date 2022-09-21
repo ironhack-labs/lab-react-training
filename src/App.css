@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+.iteration5 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  
+}
+.creditCard {
+  
+  width: 250px;
+  height: 150px;
+  /* background-color: yellowgreen; */
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  display: block;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+.imgLogoCard {
+  width: 50px;
+  margin-left:auto ;
+  display: block;
+  
+}
+
+.number {
+  margin: 20px 0 0 0;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.expirationAndBank{
+  display: flex;
+  margin: 0;
+}
+
+.expirationDate{
+  margin: 0 15px 0 0;
+}
+
+.bank{
+  margin: 0;
+}
+.userInformation {
+  margin: 25px 0 0 0;
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  font-size: 15px;
+}
+
+.owner {
+  margin: 0px;
+}
