@@ -11,6 +11,7 @@ import './components/likeButton/LikeButton.css'
 import './components/dice/Dice.css'
 import './components/carousel/Carousel.css'
 import './components/numbersTable/NumbersTable.css'
+import './components/faceBook/FaceBook.css'
 
 import IdCard from './components/card/IdCard';
 import Greetings from './components/greetings/Greetings'
@@ -26,6 +27,7 @@ import notGlasses from '../src/assets/images/maxence.png'
 import Dice from './components/dice/Dice'
 import Carousel from './components/carousel/Carousel'
 import NumbersTable from './components/numbersTable/NumbersTable'
+import FaceBook from './components/faceBook/FaceBook';
 
 
 
@@ -165,6 +167,10 @@ function App() {
       <h2>NumbersTable</h2>
 
       <NumbersTable limit={12} />
+
+      <h2>FaceBook</h2>
+
+      <FaceBook />
 
     </div>
   );
