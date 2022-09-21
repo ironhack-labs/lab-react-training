@@ -18,7 +18,7 @@ class ClickablePic extends Component {
     render() {
         return(
             <div>
-                <img src={this.state.src} onClick={this.changeImg} alt="" width="100px"/>
+                <img src={this.state.src} onClick={this.changeImg} alt="" width="200px"/>
             </div>
         )
     }

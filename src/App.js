@@ -6,7 +6,7 @@ import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
-import image1 from './assets/images/maxence.png';
+import image1 from './assets/images/maxence.jpg';
 import image2 from './assets/images/maxence-glasses.png';
 import ClickablePic from './components/ClickablePic/ClickablePic';
 import Dice from './components/Dice/Dice';
