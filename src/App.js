@@ -8,6 +8,13 @@ import Boxcolor from './components/Boxcolor/Boxcolor';
 import Creditcard from './components/Creditcard/Creditcard';
 import Rating from './components/Rating/Rating'
 import DriverCard from './components/DriverCard/DriverCard'
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickPicture from './components/ClickPicture/ClickPicture';
+
+import image1 from './assets/images/maxence.png';
+import image2 from './assets/images/maxence-glasses.png';
+
+import Dice from './components/Dice/Dice'
 
 
 function App() {
@@ -86,10 +93,31 @@ function App() {
 
       </DriverCard>
 
+
+        {/* IT_8 */}
+
+        <LikeButton></LikeButton>
+        <LikeButton></LikeButton>
+
+
+        {/* IT_9 */}
+                
+        <div className='app-pic'>
+          <ClickPicture 
+            img={image1}
+            imgClicked={image2}
+            />
+         </div>
+
+         {/* IT_10 */}
+
+         <div>
+            <Dice></Dice>
+         </div>
+
     </div>
 
-  
-    
+          
 
   )}
 
