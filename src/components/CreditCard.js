@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CreditCard = ({...props}) => {
+const CreditCard = (props) => {
     const {type, number, expirationMonth, expirationYear, bank, owner, bgColor, color}= props;
     const estilos = {background: bgColor, color: color}
 
