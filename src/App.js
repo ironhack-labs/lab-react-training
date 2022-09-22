@@ -15,6 +15,7 @@ import clickPic2 from './assets/images/maxence-glasses.png';
 import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
 import Facebook from './components/FaceBook/Facebook';
+import SignupPage from './components/SignUpPage/SignupPage';
 
 const idArray = [
   {
@@ -160,6 +161,8 @@ function App() {
       />
       <h1>Facebook</h1>
       <Facebook />
+      <h1>SignupPage</h1>
+      <SignupPage />
     </div>
   );
 }

@@ -3,7 +3,6 @@ import './Facebook.css';
 import profiles from '../../data/berlin.json';
 
 const Facebook = () => {
-  console.log(profiles);
   const allProfiles = profiles;
   return (
     <div>
