@@ -96,7 +96,7 @@ Create and render an `IdCard` component with 6 props:
 
 Create a `Greetings` component with 2 props:
 
-- `lang`: A string that can have values: `"de"`, `"en"`, `"es"` or `"fr"`
+- `lang`: A string that can have values: `  `
 - `children`: A text
 
 The component should display a greeting text in the chosen language.

@@ -1,0 +1,19 @@
+.Card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1px solid black;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 400px;
+
+}
+
+.Card-container img {
+    margin-left: 10px;
+}
+
+.Card-container ul {
+    list-style: none;
+    margin-left: 0;
+}

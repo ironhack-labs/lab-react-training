@@ -1,0 +1,36 @@
+.CreditCard-container {
+    width: 350px;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.Bank-img {
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.Card-img {
+    width: 60px;
+}
+
+.Card-number {
+    text-align: center;
+    font-size: 30px;
+}
+
+.Info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: 80px;
+    width: 225px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.Owner {
+    margin-top: 0;
+}
+

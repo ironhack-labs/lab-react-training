@@ -1,0 +1,14 @@
+.Odd-num {
+    border: 1px solid black;
+    padding: 20px 0px;
+    width: 80px ;
+    text-align: center;
+}
+
+.Even-num {
+    background-color: red;
+    border: 1px solid black;
+    padding: 20px 0px;
+    width: 80px;
+    text-align: center;
+}

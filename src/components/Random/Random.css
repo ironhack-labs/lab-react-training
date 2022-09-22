@@ -1,0 +1,9 @@
+.Random-container {
+    border: 1px solid black;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.Random-container p {
+    margin-left: 10px;
+}

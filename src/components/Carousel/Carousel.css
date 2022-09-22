@@ -1,0 +1,10 @@
+.Btns-container {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    margin-top: 15px;
+}
+
+.Btns-container > button {
+    width: 65px;
+}

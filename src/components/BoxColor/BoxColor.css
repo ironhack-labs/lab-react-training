@@ -1,0 +1,9 @@
+.BoxColor-container {
+    width: 400px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-bottom: 10px;
+}

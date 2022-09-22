@@ -1,0 +1,36 @@
+.DriverCard-container {
+    background-color: #425cbb;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.DriverCard-container img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.Content-container h3 {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Content-container p {
+    margin-top: 0;
+}
