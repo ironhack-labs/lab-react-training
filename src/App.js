@@ -12,6 +12,7 @@ import ClickablePicture from './components/ClickablePicture';
 import img from './assets/images/maxence.png';
 import imgClicked from './assets/images/maxence-glasses.png';
 import Dice from './components/Dice';
+import Carousel from './components/Carousel';
 
 const delores = {
   lastName: 'Delores ',
@@ -162,6 +163,17 @@ function App() {
 
       {/* Iteration 10 */}
       <Dice />
+
+      {/* Iteration 11 */}
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+        style={{ display: 'flex', alignItems: 'center' }}
+      />
     </div>
   );
 }
