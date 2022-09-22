@@ -1,19 +1,29 @@
-function IdCard(props) {
+import React from 'react';
+import './IdCard.css';
+const IdCard = ({ idCard }) => {
   return (
-    <div className="IdCard">
-      <div>
-        <img src={props.picture} alt="" />
+    <div className="Idcard-box">
+      <img
+        src={idCard.user.picture}
+        alt="profile-Img"
+        className="profile-img"
+        style={{ margin: 5 }}
+      />
+
+      <div className="right">
+        <strong>First name:{idCard.user.firstname}</strong>
+        <br />
+        <strong>Last name:{idCard.user.lastname}</strong>
+        <br />
+        <strong>Gender:{idCard.user.gender}</strong>
+        <br />
+        <strong>Height:{idCard.user.height}</strong>
+        <br />
+        <strong>Birth:{idCard.user.birth}</strong>
+        <br />
       </div>
-      <p>First Name: {props.firstName}</p>
-      <p>Last Name: {props.lastName}</p>
-      <p>Gender: {props.gender}</p>
-      <p>Height: {props.height}</p>
-      <p>
-        <b>Birth: </b>
-        {props.birth ? props.birth.toDateString() : new Date()}
-      </p>
     </div>
   );
-}
+};
 
 export default IdCard;

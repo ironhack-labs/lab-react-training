@@ -1,27 +1,25 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
+import './Greetings.css';
 
 const Greetings = (props) => {
-  let { children, lang } = props;
-
-  const [greetings, setGreetings] = useState([]);
-
-  useEffect(() => {
-    switch (lang) {
-      case 'de':
-        setGreetings('Hallo');
-        break;
-      case 'en':
-        setGreetings('Good Morning');
-        break;
-      case 'es':
-        setGreetings('Buen día');
-        break;
-      case 'fr':
-        setGreetings('Bonjour');
-        break;
-    }
-  }, [lang]);
-
-  return <p id="item-name">{greetings + ' ' + children}</p>;
+  let message = '';
+  if (props.lang === 'fr') {
+    message = `Bonjour`;
+  }
+  if (props.lang === 'de') {
+    message = `Hallo`;
+  }
+  if (props.lang === 'es') {
+    message = `Ola`;
+  }
+  if (props.lang === 'en') {
+    message = `Hello`;
+  }
+  return (
+    <div className="box-container">
+      <h1>Greetings:</h1>
+      {message} {props.children}
+    </div>
+  );
 };
 export default Greetings;

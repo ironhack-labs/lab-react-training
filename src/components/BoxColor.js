@@ -1,12 +1,14 @@
-function BoxColor(props) {
-  let divStyle = {
-    backgroundColor: `rgb(${props.r},${props.g},${props.b})`,
-  };
+import React from 'react';
+import './BoxColor.css';
+
+const BoxColors = (props) => {
   return (
-    <div classename="Boxcolor" style={divStyle}>
-      rgb( {props.r},{props.g},{props.b} )
+    <div
+      className="boxcolor-box"
+      style={{ backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})` }}
+    >
+      {props.r} {props.g} {props.b}
     </div>
   );
-}
-
-export default BoxColor;
+};
+export default BoxColors;
