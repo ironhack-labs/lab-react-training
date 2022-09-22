@@ -2,18 +2,21 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+} */
+div {
+  display: block;
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,22 +25,22 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 .iteration5 {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   margin: 20px;
   
@@ -50,9 +53,9 @@
   border-radius: 10px;
   margin: 10px;
   padding: 15px;
-  display: block;
-  flex-direction: column;
-  justify-content: space-evenly;
+  /* display: block; */
+  /* flex-direction: column; */
+  /* justify-content: space-evenly; */
 
 }
 .imgLogoCard {
@@ -94,4 +97,40 @@
 
 .starsRating img{
   width: 200px;
+  height: 40px;
 }
+
+/* Iteration 7 */
+.driverCard {
+  background-color: #425CBB;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.driverCard h2{
+  margin: 5px 0px;
+}
+
+.driverCard p{
+  margin: 5px 0px;
+}
+
+
+.imgDriver {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.driverInfo{
+  /* width: 300px; */
+  margin: 0 10px;
+  text-align: left;
+
+}
+

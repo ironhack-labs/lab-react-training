@@ -6,10 +6,12 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
 
 function App() {
   return (
     <div className="App">
+      <h1>Iteration 1 | IdCard</h1>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -27,16 +29,19 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-
+      <h1>Iteration 2 | Greetings</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
 
+      <h1>Iteration 3 | Random</h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
 
+      <h1>Iteration 4 | BoxColor</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
+      <h1>Iteration 5 | CreditCard</h1>
       <div className="iteration5">
         <CreditCard
           type="Visa"
@@ -73,7 +78,7 @@ function App() {
       </div>
 
       <div className="Iteration-6">
-        <h1>Iteration 6 | Component: Rating </h1>
+        <h1>Iteration 6 | Rating </h1>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
@@ -81,6 +86,27 @@ function App() {
         <Rating>4</Rating>
         <Rating>5</Rating>
       </div>
+
+      <h1>Iteration 7 | DriverCard </h1>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
+        }}
+      />
+
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
+      />
     </div>
   );
 }
