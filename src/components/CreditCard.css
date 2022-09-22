@@ -1,0 +1,6 @@
+.CreditCard{
+          display: 'flex';
+          justify-content: 'center';
+          gap: '15px';
+          padding: '15px';
+        }

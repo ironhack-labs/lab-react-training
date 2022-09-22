@@ -1,0 +1,10 @@
+.boxcolor{
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+  }

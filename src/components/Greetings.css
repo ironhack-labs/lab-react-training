@@ -1,0 +1,11 @@
+.greetings{
+    display: flex;
+    font-size: 18px;
+    line-height: 1pt;
+    border: 3px solid black;
+    margin-bottom: 7px;
+    line-height: 2pt;
+    margin-right: 25%;
+    margin-left: 25%;
+
+}
