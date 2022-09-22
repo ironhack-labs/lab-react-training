@@ -7,9 +7,9 @@ const Facebook = () => {
   const allProfiles = profiles;
   return (
     <div>
-      {allProfiles.map((newProfile) => {
+      {allProfiles.map((newProfile, index) => {
         return (
-          <div className="fbcard fbbox">
+          <div className="fbcard fbbox" key={(newProfile.lastName, index)}>
             <img
               src={newProfile.img}
               alt="fb-profile-img"
