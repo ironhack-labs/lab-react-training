@@ -1,0 +1,19 @@
+.card {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: left;
+    align-content: center;
+    margin: 10px auto;
+  }  
+
+.cardImg {
+    margin-right: 10px;
+  }
+  
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+  }

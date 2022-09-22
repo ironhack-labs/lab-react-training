@@ -1,0 +1,32 @@
+.creditCardConteiner{
+  display: flex;
+  justify-content: space-around;
+}
+.moneyCard{
+  width: 30vw;
+  margin: 10px;
+  border-radius: 5px;
+}
+.infoCard{
+  display: flex;
+}
+.infoCard p{
+  margin: 0;
+  padding: 0;
+}
+.right{
+  text-align: right;
+  padding: 20px 50px;
+  font-weight: bold;
+}
+.left{
+  text-align: left;
+  padding-left: 20px;
+  margin: 0;
+}
+.numberCard{
+  font-size: 30px;
+}
+.bankCard{
+  padding-left: 20px !important;
+}
