@@ -16,6 +16,7 @@ import image2 from './assets/images/maxence-glasses.png';
 
 import Dice from './components/Dice/Dice'
 import Carousel from './components/Carousel/Carousel'
+import NumbersTable from './components/NumbersTable/NumbersTable'
 
 
 function App() {
@@ -128,6 +129,11 @@ function App() {
               ]}
           />
       </div>
+
+        {/* IT_12 */}
+        <div>
+          <NumbersTable limit={32} />
+        </div>
 
     </div>
 
