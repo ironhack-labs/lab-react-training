@@ -13,6 +13,7 @@ import img from './assets/images/maxence.png';
 import imgClicked from './assets/images/maxence-glasses.png';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 const delores = {
   lastName: 'Delores ',
@@ -172,8 +173,10 @@ function App() {
           'https://randomuser.me/api/portraits/women/2.jpg',
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
-        style={{ display: 'flex', alignItems: 'center' }}
       />
+
+      {/* Iteration 12 */}
+      <NumbersTable limit={12} />
     </div>
   );
 }
