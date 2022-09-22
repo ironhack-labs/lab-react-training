@@ -14,6 +14,7 @@ import clickPic from './assets/images/maxence.png';
 import clickPic2 from './assets/images/maxence-glasses.png';
 import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
 import Facebook from './components/FaceBook/Facebook';
 import SignupPage from './components/SignUpPage/SignupPage';
 
@@ -159,6 +160,8 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+      <h1>NumbersTable</h1>
+      <NumbersTable limit={12} />
       <h1>Facebook</h1>
       <Facebook />
       <h1>SignupPage</h1>

@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SignupPage.css';
 
 const SignupPage = () => {
+  const [registerEmail, setRegisterEmail] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  }; // prevent the form from reloading when you submit your account
+
   return (
     <div className="form-outer-container">
-      <form className="form-container">
+      <form className="form-container" onSubmit={handleSubmit}>
         <label htmlFor="email">Email:</label>
         <input
           type="email"

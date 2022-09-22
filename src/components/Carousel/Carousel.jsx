@@ -3,21 +3,25 @@ import './Carousel.css';
 
 const Carousel = (props) => {
   const { images } = props;
-  const [currentImage, setCurrentImage] = useState(0);
-  const imgLength = images.length;
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const imgArrayLength = images.length;
 
   const nextImg = () => {
-    setCurrentImage(currentImage === imgLength - 1 ? 0 : currentImage + 1);
+    setCurrentImageIndex(
+      currentImageIndex === imgArrayLength - 1 ? 0 : currentImageIndex + 1
+    );
   };
 
   const prevImg = () => {
-    setCurrentImage(currentImage === 0 ? imgLength - 1 : currentImage - 1);
+    setCurrentImageIndex(
+      currentImageIndex === 0 ? imgArrayLength - 1 : currentImageIndex - 1
+    );
   };
 
   return (
     <div>
       <button onClick={prevImg}>Left</button>
-      <img src={images[currentImage]} alt="prof-img" />
+      <img src={images[currentImageIndex]} alt="prof-img" />
       <button onClick={nextImg}>Right</button>
     </div>
   );

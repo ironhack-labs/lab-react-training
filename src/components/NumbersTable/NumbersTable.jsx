@@ -1,7 +1,7 @@
 import React from 'react';
 import './NumbersTable.css';
 
-const NumbersTable = () => {
+const NumbersTable = ({ limit }) => {
   return <div>NumbersTable</div>;
 };
 
