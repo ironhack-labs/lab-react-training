@@ -8,9 +8,12 @@ function CreditCard({type, number, expirationMonth, expirationYear, bank , owner
     const onlyFour = number.toString().slice(-4);
     const month = expirationMonth.toString().length === 2 ? expirationMonth : '0' + expirationMonth.toString();
     const year = expirationYear.toString().slice(-2);
-
+    const divStyle = {
+        backgroundColor: bgColor,
+        color: color
+    };
     return(
-        <div className="creditcard-container" style={{ backgroundColor: bgColor, color }}>
+        <div className="creditcard-container" style={divStyle}>
             <div className="logo">
                 <img src={imgUrl} alt={type} /> 
             </div>
