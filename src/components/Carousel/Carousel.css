@@ -1,0 +1,22 @@
+.car-container{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.size-arrows{
+    vertical-align: middle;
+    padding-top: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.size-arrows img{
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
