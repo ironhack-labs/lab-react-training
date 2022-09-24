@@ -1,3 +1,6 @@
+body{
+  padding: 20px;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+.card{
+  border: 2px black solid;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  text-align: left;
+}
+.card-img{
+  margin-right: 20px;
+}
+.card-info{
+  display: flex;
+  flex-direction: column;
 }
