@@ -14,7 +14,8 @@ const Rating = (props) => {
     }
     return (
     <div className='starsRating'>
-    <img src={stars[roundNum]}/></div>
+      <img src={stars[roundNum]}/>
+    </div>
   )
 }
 

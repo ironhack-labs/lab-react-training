@@ -134,3 +134,28 @@ body{
 .starsRating img {
   width: 200px;
 }
+.driverCard{
+  border: none;
+  background-color: rgb(0, 96, 193);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: left;
+  color: white;
+  border-radius: 15px;
+  margin: 20px;
+}
+.driverCardImg{
+ width: 150px; 
+ height: 150px;
+ border-radius: 50%;
+ 
+}
+.driversInfo{
+  align-items: left;
+  margin-left: 20px;
+}
+.driverStars{
+  width: 150px;
+}
