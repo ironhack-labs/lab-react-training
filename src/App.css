@@ -125,3 +125,12 @@ body{
   align-self: flex-start;
   padding-left: 10px;
 }
+
+.starsRating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.starsRating img {
+  width: 200px;
+}
