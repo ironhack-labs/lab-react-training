@@ -1,6 +1,6 @@
 import './Greeting.css';
 
-const Greeting = ({ lang }) => {
+const Greeting = ({ lang, children }) => { // En una constante no puedo hacer un if else, uso ternarios o uso una function normal.
   const sayHi = () => {
     switch (lang) {
       case 'de':
@@ -18,7 +18,9 @@ const Greeting = ({ lang }) => {
 
   return (
     <div className="Greeting-container">
-      <p>{sayHi()}</p>
+      <p>
+        {sayHi()} { children }
+      </p>
     </div>
   );
 };

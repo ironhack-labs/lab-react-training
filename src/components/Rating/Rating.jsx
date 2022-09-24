@@ -25,7 +25,8 @@ const Rating = (props) => {
   function showStars(num) {
     const sobra = 5 - num;
     return black.repeat(num) + white.repeat(sobra);
-  } */
+  } 
+  */
 
   return (
     <div className='Rating-container'>

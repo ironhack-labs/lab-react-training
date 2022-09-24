@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './LikeButton.css';
 
 class LikeButton extends Component {
-  state = {
+  state = { // Como es un atributo no ponemos this.state, eso solo sería si está en el constructor.
     likesCount: 0,
     title: 'Likes',
     backgroundColor: 'purple'

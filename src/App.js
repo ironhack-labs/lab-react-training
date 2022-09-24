@@ -117,8 +117,8 @@ const App = () => {
       {/* ITERATION 2 */}
       <div className="Greetings-container">
         <h2>Greetings</h2>
-        <Greeting lang="de" />
-        <Greeting lang="fr" />
+        <Greeting lang="de"> Ludwig </Greeting>
+        <Greeting lang="fr"> François </Greeting>
       </div>
       {/* ITERATION 3 */}
       <div>
@@ -232,7 +232,7 @@ const App = () => {
       <div>
         <h2>Facebook's profiles</h2>
         <Facebook />
-      </div>  
+      </div>
     </div>
   );
 };

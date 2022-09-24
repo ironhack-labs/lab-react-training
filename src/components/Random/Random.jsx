@@ -1,6 +1,6 @@
 import './Random.css';
 
-const Random = ({ min, max }) => {
+const Random = ({ min, max }) => { 
   const getRandomNum = () => {
     return Math.round(Math.random() * (max - min) + min);
   };

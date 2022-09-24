@@ -28,13 +28,13 @@ class Dice extends Component {
       dice3,
       dice4,
       dice5,
-      dice6,
+      dice6
     ];
 
     this.setState({img: diceEmpty}, () => {
         setTimeout( () => {
             return this.setState({
-              img: Dices[(Math.floor(Math.random() * (Dices.length - 0) + 0))],
+              img: Dices[(Math.floor(Math.random() * Dices.length))],
             });
         }, 1000)
     })    

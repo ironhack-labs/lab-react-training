@@ -18,7 +18,7 @@
     font-size: 30px;
 }
 
-.Info-container {
+.Info-container { /* gap agrega espacios los items hijos en flex y grid */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

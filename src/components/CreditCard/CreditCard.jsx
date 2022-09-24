@@ -12,7 +12,7 @@ const CreditCard = ({
   bgColor,
   color,
 }) => {
-  const bankImg = () => {
+  const bankImg = () => { //Esto podría ser solo una constante, con un ternario dentro.
     if (type === 'Visa') {
       return visaImg
     } else {
@@ -20,12 +20,12 @@ const CreditCard = ({
     }
   };
 
-  const cardNumber = '•••• •••• •••• ' + number.slice(12);
+  const cardNumber = '•••• •••• •••• ' + number.slice(12); // O se puede hacer number.slice(-4)
 
   const expirationDate = expirationMonth + '/' + expirationYear.toString().slice(2);
 
   const creditCardStyle = {
-    color: color,
+    color: color, // Esto se puede resumir a 'color'
     backgroundColor: bgColor,
   };
 

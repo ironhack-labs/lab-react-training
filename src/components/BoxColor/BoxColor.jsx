@@ -1,10 +1,9 @@
 import './BoxColor.css';
-import DriverCard from './../DriverCard/DriverCard';
 
 const BoxColor = ({ r, g, b }) => {
   function ColorToHex(color) {
-    var hexadecimal = color.toString(16);
-    return hexadecimal.length == 1 ? '0' + hexadecimal : hexadecimal;
+    const hexadecimal = color.toString(16);
+    return hexadecimal.length === 1 ? '0' + hexadecimal : hexadecimal;
   }
 
   function ConvertRGBtoHex(r, g, b) {

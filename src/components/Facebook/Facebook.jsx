@@ -8,10 +8,7 @@ class Facebook extends Component {
     }
 
     listCountries = () => {
-        const countriesArr = profiles.map((profile) => {
-            return profile.country
-        });
-        const countries = [...new Set (countriesArr)];        
+        const countries = [...new Set(profiles.map((profile) => profile.country))];     
         return countries;
     }   
 
@@ -22,14 +19,14 @@ class Facebook extends Component {
     render () {     
         return (
           <div className="Facebook-container">
-
+            {/* En el onClick en vez de pasar como paramentro el country mejor recibirlo como el event.target.value en la función, así no llamo la función  */}
             <div className="Btns-countries-container">
               {this.listCountries().map((country) => {
                 return <button onClick={() => this.selectCountry(country)} key={country}>{country}</button>;
-              })}
+              })} 
             </div>
 
-            {profiles.map(({ firstName, lastName, country, img }, i) => {
+            {profiles.map(({ firstName, lastName, country, img, isStudent }, i) => {
               return (
                 <div
                   style={
@@ -46,6 +43,7 @@ class Facebook extends Component {
                       {firstName} {lastName}
                     </h3>
                     <p>{country}</p>
+                    <p>{isStudent ? 'Role: Student' : 'Role: Teacher'}</p>
                   </div>
                 </div>
               );
