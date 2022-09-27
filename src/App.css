@@ -36,3 +36,92 @@
     transform: rotate(360deg);
   }
 }
+
+/* ID CARD COMPONENT */
+.IdCard-container {
+  display: flex;
+  text-align: left;
+  width: 80%;
+  margin: 10px auto 0 auto;
+  padding: 10px;
+  border: 1px solid black;
+}
+.IdCard-container img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+}
+/* GREETING COMPONENT */
+.greeting-text {
+  border: 1px solid black;
+  width: 50%;
+  display: block;
+  margin: 10px auto 0 auto;
+  text-align: left;
+  padding: 5px;
+}
+/* RANDOM COMPONENT */
+.random-number {
+  display: block;
+  border: 1px solid black;
+  width: 50%;
+  margin: 10px auto 0 auto;
+  padding: 5px;
+  text-align: left;
+}
+/* BOX COLOR COMPONENT */
+.box-color {
+  width: 60%;
+  border: 1px solid black;
+  height: 100px;
+  margin: 10px auto 0 auto;
+}
+/* CREDIT CARD COMPONENT */
+.credit-card {
+  width: 400px;
+  height: 180px;
+  border: 1px solid black;
+  border-radius: 5%/10%;
+  margin: 10px auto 0 auto;
+  position: relative;
+}
+.credit-card img {
+  width: 12%;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.credit-card h1 {
+  margin-top: 70px;
+}
+.credit-card p {
+  text-align: left;
+  margin: 0 0 0 20px;
+}
+/* DRIVER CARD COMPONENT */
+.driver-card {
+  width: 70%;
+  background-color: #455eb5;
+  margin: 10px auto 10px auto;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 1%/7%;
+}
+.driver-card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+.driver-card-info {
+  text-align: left;
+  width: 250px;
+  margin-top: 15px;
+  color: white;
+}
+.driver-card h4 {
+  margin: 5px;
+}
+.driver-card p {
+  margin: 5px;
+}
