@@ -16,7 +16,7 @@ function CreditCard(props){
     }else{
         logo = masterLogo
         style = {
-            width: 70, 
+            width: 50, 
             height: 25,
             marginLeft: 250,
             marginTop: 20
