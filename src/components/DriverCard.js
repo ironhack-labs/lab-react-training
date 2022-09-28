@@ -1,12 +1,34 @@
 function DriverCard({ name, rating, img, car }) {
   return (
     <div>
-      <img style={{ width: '100px' }} src={img} />
-      <h3>{name}</h3>
-      <span>{rating}</span>
-      <p>
-        {car.model} {car.licensePlate}
-      </p>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
+          alignItems: 'center',
+          width: '400px',
+        }}
+      >
+        <div>
+          <img
+            style={{
+              width: '100px',
+              height: '100px',
+              borderRadius: '50%',
+              marginRight: '10px',
+            }}
+            src={img}
+          />
+        </div>
+        <div style={{ textAlign: 'left' }}>
+          <h3 style={{ margin: '0' }}>{name}</h3>
+          <span>{rating}</span>
+          <p style={{ margin: '0' }}>
+            {car.model} {car.licensePlate}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -9,17 +9,24 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
-import Icon from './assets/images/master-card';
 import Dice from './components/Dice';
 import clickPic from './assets/images/maxence.png';
 import clickPicGlasses from './assets/images/maxence-glasses.png';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 function App() {
   return (
     <div className="App">
       <div>
-        <div>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
           <IdCard
             lastName="Doe"
             firstName="John"
@@ -38,22 +45,29 @@ function App() {
             picture="https://randomuser.me/api/portraits/women/44.jpg"
           />
         </div>
-        <div>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
           <Greetings lang="de">Ludwig</Greetings>
           <Greetings lang="fr">François</Greetings>
         </div>
 
-        <div>
+        <div className="random-parent">
           <Random min={1} max={6} />
           <Random min={1} max={100} />
         </div>
 
-        <div>
+        <div className="rgb-parent">
           <BoxColor r={255} g={0} b={0} />
           <BoxColor r={128} g={255} b={0} />
         </div>
 
-        <div>
+        <div className="creditCard-parent">
           <CreditCard
             type="Visa"
             number="0123456789018845"
@@ -63,7 +77,6 @@ function App() {
             owner="Maxence Bouret"
             bgColor="#11aa99"
             color="white"
-            img="images/visa.png"
           />
 
           <CreditCard
@@ -75,7 +88,6 @@ function App() {
             owner="Maxence Bouret"
             bgColor="#eeeeee"
             color="#222222"
-            img=<Icon />
           />
 
           <CreditCard
@@ -87,11 +99,10 @@ function App() {
             owner="Firstname Lastname"
             bgColor="#ddbb55"
             color="white"
-            img="images/visa.png"
           />
         </div>
 
-        <div>
+        <div className="rating-parent">
           <Rating>0</Rating>
           <Rating>1.49</Rating>
           <Rating>1.5</Rating>
@@ -100,7 +111,7 @@ function App() {
           <Rating>5</Rating>
         </div>
 
-        <div>
+        <div className="driverCard-parent">
           <DriverCard
             name="Travis Kalanick"
             rating=<Rating>{4.2}</Rating>
@@ -122,20 +133,20 @@ function App() {
           />
         </div>
 
-        <div>
+        <div style={{ marginBottom: '40px' }}>
           <LikeButton />
         </div>
-        <div>
+        <div style={{ marginBottom: '40px' }}>
           <ClickablePicture
             clickPic={clickPic}
             clickPicGlasses={clickPicGlasses}
           />
         </div>
-        <div>
+        <div style={{ marginBottom: '40px' }}>
           <Dice />
         </div>
 
-        <div>
+        <div style={{ marginBottom: '40px' }}>
           <Carousel
             images={[
               'https://randomuser.me/api/portraits/women/1.jpg',
@@ -144,6 +155,10 @@ function App() {
               'https://randomuser.me/api/portraits/men/2.jpg',
             ]}
           />
+        </div>
+
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <NumbersTable limit={12} />
         </div>
       </div>
     </div>

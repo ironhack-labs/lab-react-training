@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +43,99 @@
     transform: rotate(360deg);
   }
 }
+
+
+li:nth-child(2n) {
+  background: red;
+}
+
+.random-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 10px;
+}
+
+.random-parent div {
+    border: 2px solid;
+    width: 50%;
+    padding-left: 6px;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.rgb-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.rgb-parent div {
+  border: 2px solid black;
+  width: 50%;
+  padding-left: 6px;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rgb-parent :nth-child(1) {
+  color: white;
+}
+
+.creditCard-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.creditCard-parent div {
+  justify-content: center;
+  line-height: 0;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 0 1rem;
+
+}
+
+.creditCard-parent img {
+  width: "60px"; align-self: "flex-end"; margin-bottom: 10px;
+}
+.creditCard-parent svg {
+  align-self: end;
+  margin-bottom: 10px;
+}
+
+.rating-parent {
+  font-size: 3rem;
+}
+
+.driverCard-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.driverCard-parent > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: rgb(1, 1, 136);
+  width: 50%;
+  color: white
+}
+
