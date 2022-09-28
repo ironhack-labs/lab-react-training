@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+.rgb{
+  color: white;
+  border: 1px solid black;
+  padding: 2%;
+}
+.cardType{
+  width: 15%
+}
+.driverCard{
+  background-color: #455EB5;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  margin: 1% 0;
+  padding: 2% 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.driverImg{
+  width: 5%;
+  height: 75px;
+  border: 1px solid transparent;
+  border-radius: 36px;
+}
+.driverInfo{
+  text-align: left;
+  margin-left: 1%;
+}

@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 1%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +10,65 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.idCard{
+  border: 1px solid black;
+  display: flex;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+
+.info{
+  flex-direction: column;
+  text-align: left;
+  padding-left: 1%;
+}
+
+.lang{
+  display: flex;
+  border: 1px solid black;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+.rgb{
+  margin-bottom: 1%;
+}
+
+.creditCard{
+  display: flex;
+  width: 275%
+}
+.singleCard{
+  border: 1px solid transparent;
+  border-radius: 12px;
+  justify-content: space-between;
+  margin: 1%;
+  padding: 1%;
+}
+.cardRight{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cardImage{
+  width: 15%;
+  height: 25px;
+  margin: 1% 1% 10% 1%;
+}
+.cardNumber{
+  margin-bottom: 10%;
+  font-size: 2em;
+}
+.cardBottom{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.expAndBank{
+  display: flex;
+}
+.bank{
+  position: relative;
+  left: 20%
 }
