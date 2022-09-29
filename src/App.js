@@ -19,6 +19,8 @@ import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
 import Facebook from './components/Facebook/Facebook';
+import SignupPage from './components/SignupPage/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 
 const App = () => {
   const IdCards = [
@@ -228,10 +230,22 @@ const App = () => {
         </div>
       </div>
 
-      {/* ITERATION 13 */}
+      {/* ITERATION 13 & 14 */}
       <div>
         <h2>Facebook's profiles</h2>
         <Facebook />
+      </div>
+
+      {/* ITERATION 15 */}
+      <div>
+        <h2>Signup Page</h2>
+        <SignupPage></SignupPage>
+      </div>
+
+      {/* ITERATION 16 */}
+      <div>
+        <h2>RGB Color Picker</h2>
+        <RGBColorPicker></RGBColorPicker>
       </div>
     </div>
   );

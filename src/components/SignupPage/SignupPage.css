@@ -1,0 +1,43 @@
+.Form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.Form-container select, input {
+    width: 300px;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+}
+
+.Form-container select {
+    width: 320px;
+    height: 45px;
+}
+
+.Form-container select option {
+    background-color: black;
+    color: white;
+}
+
+.Form-container button {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.Form-container button:hover {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
