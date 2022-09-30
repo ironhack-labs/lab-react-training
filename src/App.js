@@ -1,6 +1,7 @@
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
+import Random from './components/Random';
 import React from 'react';
 
 const idArray = [
@@ -44,8 +45,14 @@ function App() {
         birth="1993-05-11"
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       ></IdCard>
-      <Greetings lang="fr">François</Greetings>
-      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">
+        <b>Bonjour François</b>
+      </Greetings>
+      <Greetings lang="de">
+        <b>Hallo Ludwig</b>
+      </Greetings>
+      <Random min={1} max={6} />
+      <Random min={1} max={10} />
     </div>
   );
 }

@@ -1,12 +1,30 @@
 function IdCard({ firstname, lastname, gender, height, birth, picture }) {
   return (
-    <div>
-      <p>firstName: {firstname} </p>
-      <p>lastName: {lastname}</p>
-      <p>Gender: {lastname}</p>
-      <p>Height:{height}</p>
-      <p>Birth:{birth}</p>
-      <img src={picture} alt="Profile Picture" />
+    <div className="IdCard">
+      <div>
+        <img className="profilePic" src={picture} alt="Profile Picture" />
+      </div>
+
+      <div className="otherInfos">
+        <p className="Infos">
+          <b>firstName: </b> {firstname}
+        </p>
+        <p className="Infos">
+          <b>lastName: </b> {lastname}
+        </p>
+        <p className="Infos">
+          <b>Gender: </b>
+          {gender}
+        </p>
+        <p className="Infos">
+          <b>Height: </b>
+          {height}
+        </p>
+        <p className="Infos">
+          <b>Birth: </b>
+          {birth}
+        </p>
+      </div>
     </div>
   );
 }

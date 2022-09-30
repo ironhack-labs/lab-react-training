@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+.IdCard{
+padding: 50px;
+margin: 50px;
+  display: flex;
+  justify-content: flex-start;
+  gap:5px;
+  border: 1px solid black;
+  width: 30%;
+  
+  
+  
+}
+.otherInfos{
+display: flex;
+flex-direction: column;
+align-content: flex-start;
+padding:1px;
+}
+.Infos{
+  margin:1px;
+  padding:1px;
+}
+.Greetings{
+  border: 1px solid black;
+  width:14%; 
+  margin:10px;
+
+}
+
+
+.Random{
+  border: 1px solid black;
+  width: 20%;
+  margin-left:10px;
+  padding-left:10px;
+}
