@@ -1,0 +1,13 @@
+.idCard {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 10px;
+  border: 1px solid black;
+  width: 500px;
+}
+
+.profileImg {
+  margin-right: 15px;
+  margin-left: 10px;
+}

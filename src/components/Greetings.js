@@ -1,3 +1,5 @@
+import './Greetings.css';
+
 function Greetings(props) {
   let greeting = '';
 
@@ -19,7 +21,7 @@ function Greetings(props) {
   }
 
   return (
-    <div>
+    <div className="greetings">
       <p>
         {greeting} {props.children}
       </p>

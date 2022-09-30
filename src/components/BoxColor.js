@@ -1,3 +1,5 @@
+import './BoxColor.css';
+
 function BoxColor(props) {
   const rgbColor = `rgb(${props.r},${props.g},${props.b})`;
 
@@ -6,7 +8,7 @@ function BoxColor(props) {
   };
 
   return (
-    <div style={divStyle}>
+    <div className="box-color" style={divStyle}>
       <p>{rgbColor}</p>
       {/* <p></p> */}
     </div>

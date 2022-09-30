@@ -1,11 +1,13 @@
+import "./Random.css"
+
 function Random(props) {
   const min = props.min;
   const max = props.max;
 
-  const randomNum = Math.ceil(Math.random() * ((max + 1) - min));
+  const randomNum = Math.ceil(Math.random() * (max - min));
 
   return (
-    <div>
+    <div className="random">
       <p>
         Random value between {min} and {max} => {randomNum}
       </p>
