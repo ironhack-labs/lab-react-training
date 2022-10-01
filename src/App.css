@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,98 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.id-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-style: solid;
+  border-width: 0.1rem;
+  margin: 10px;
+}
+
+.id-card-text {
+  line-height: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.greetings {
+  border-style: solid;
+  border-width: 0.1rem;
+  margin: 10px;
+  padding: 5px;
+}
+
+.random {
+  border-style: solid;
+  border-width: 0.1rem;
+  margin: 10px;
+  padding: 5px;
+}
+
+.box-color {
+  border-style: solid;
+  border-width: 0.1rem;
+  margin: 10px;
+  height: 12vh;
+}
+
+.box-text {
+  display: flex;
+  justify-content: center;
+}
+
+.credit-card {
+  display: inline-block;
+  width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.type-img {
+  text-align: right;
+}
+
+.type-img img {
+  height: 20px;
+  width: 60px;
+}
+
+.number {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.bank {
+  margin-left: 20px;
+}
+
+.rating {
+  font-size: 2rem;
+}
+
+.driver-card {
+  display: flex;
+  justify-content: center;
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+}
+
+.driver-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.driver-text {
+  display: block;
+}
+
+h2 {
+  margin: 0;
 }
