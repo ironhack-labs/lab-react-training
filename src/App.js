@@ -3,6 +3,7 @@ import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
 import React from 'react';
+import BoxColor from './components/BoxColor';
 
 const idArray = [
   {
