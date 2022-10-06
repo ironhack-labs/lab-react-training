@@ -4,6 +4,9 @@ function CreditCard(props) {
 
   return (
     <div>
+      <div>
+        <img src="" alt="card company" />
+      </div>
       <p>{props.type}</p>
       <p>**** **** **** {props.number.slice(-4)}</p>
       <p>
