@@ -1,5 +1,3 @@
-import berlinData from '../data/berlin.json';
-
 const IdCard = (props) => {
     const { firstName, lastName, gender, height, birth, picture } = props
     const img = new Image()

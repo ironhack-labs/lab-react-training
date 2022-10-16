@@ -1,0 +1,42 @@
+.license{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 130px;;
+    justify-content: center;
+    background-color: #4B68BF;
+    border-radius: 3px;
+
+}
+
+.dados h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+}
+
+.dados p{
+    margin-top: 0;
+    margin-bottom: 0; 
+    color: #fff;
+    display: flex;
+    justify-content: left;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    padding-right: 15px;
+    align-items: center;
+}
+
+.image img{
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+    
+}
