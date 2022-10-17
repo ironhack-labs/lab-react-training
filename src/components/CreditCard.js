@@ -1,6 +1,6 @@
 function CreditCard(props) {
   const twoDigitMonth = (expirationMonth) =>
-    expirationMonth < 10 ? 0 + { expirationMonth } : expirationMonth;
+    expirationMonth < 10 ? '0' + expirationMonth : expirationMonth;
 
   return (
     <div>
@@ -10,7 +10,7 @@ function CreditCard(props) {
       <p>{props.type}</p>
       <p>**** **** **** {props.number.slice(-4)}</p>
       <p>
-        Expires: {twoDigitMonth} / {props.expirationYear}
+        Expires: {twoDigitMonth(props.expirationMonth)} / {props.expirationYear}
       </p>
     </div>
   );

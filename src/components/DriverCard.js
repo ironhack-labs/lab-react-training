@@ -1,7 +1,7 @@
 import React from 'react';
 import Rating from './Rating';
 
-const DriverCard = (name, rating, img, car) => {
+const DriverCard = ({ name, rating, img, car }) => {
   const { model, licensePlate } = car;
 
   return (
