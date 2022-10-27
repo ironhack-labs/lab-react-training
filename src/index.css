@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bold {
+  font-weight: 700;
+}
+
+.idCard {
+  border: 1px solid black;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+
+.idCard img {
+  width: auto;
+  height: 100%;
+}
+
+.idCard p {
+  margin: 0;
+}
+
+.description {
+  text-align: start;
+  margin-left: 5px;
+}
