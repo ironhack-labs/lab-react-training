@@ -1,10 +1,11 @@
 import './App.css';
+import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 
 function App() {
   return (
     <div className="App">
-      <p>another test</p>
+      <Greetings lang="de" children="Bernd" />
       <IdCard
         lastName="Doe"
         firstName="John"
