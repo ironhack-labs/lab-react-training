@@ -6,10 +6,11 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       {/* Iteration I */}
       <IdCard
         lastName="Doe"
@@ -77,7 +78,7 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-      {/* Iteration VI */}
+      {/* Iteration VII */}
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -97,6 +98,9 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      {/* Iteration VII */}
+      <LikeButton text="Likes" />
+      <LikeButton text="Yikes" />
     </div>
   );
 }
