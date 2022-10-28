@@ -23,7 +23,7 @@ function Greetings({ lang, children }) {
   // }
   return (
     <div>
-      <p>
+      <p className="idCard">
         {greet} {children}
         {/* or ternary */}
         {/* {lang === 'de'
