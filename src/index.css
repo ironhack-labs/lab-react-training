@@ -44,3 +44,45 @@ code {
   text-align: start;
   margin-left: 5px;
 }
+
+.credit-card {
+  width: 345px;
+  height: 180px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.credit-card p {
+  margin: 0;
+}
+
+.logo {
+  align-self: flex-end;
+}
+
+.number {
+  font-size: 34px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.expired-and-bank {
+  display: flex;
+  flex-direction: row;
+}
+
+.expired {
+  margin-right: 50px;
+}
+
+.bank {
+  padding-left: 25px;
+}
+
+.name {
+  align-self: flex-start;
+}
