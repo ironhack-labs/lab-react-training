@@ -86,3 +86,7 @@ code {
 .name {
   align-self: flex-start;
 }
+
+.star {
+  font-size: 24px;
+}
