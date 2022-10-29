@@ -118,3 +118,34 @@ img.rounded {
   height: 100px;
   width: 100px;
 }
+
+.image-container {
+  width: 200px;
+  position: relative;
+}
+
+.image-btn {
+  background: transparent;
+  border: none;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  color: rgba(255, 0, 255, 0);
+  top: calc(50% - 50px);
+  transition: 0.3s;
+  padding: 50px 0;
+}
+
+.image-btn.left {
+  left: 10px;
+}
+.image-btn.right {
+  left: 160px;
+}
+
+.image-btn:hover {
+  color: rgba(255, 0, 255, 0.5);
+}
+.image-btn:active {
+  color: rgba(255, 255, 255, 0.5);
+}
