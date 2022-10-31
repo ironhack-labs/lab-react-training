@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
 
 function App() {
   return (
@@ -9,7 +10,10 @@ function App() {
 
       <IdCard lastName="Delores" firstName="Obrien" gender="f" height={153} dob="May 25th 1988" 写真="https://randomuser.me/api/portraits/women/8.jpg"/>
 
-      
+      <h1>GREETINGS</h1>
+     <Greetings lang="de" >Lurdvbig </Greetings>
+     <Greetings lang="fr" >Fracious </Greetings>
+     <Greetings lang="en" >Greg </Greetings>
 
     </div>
   );
