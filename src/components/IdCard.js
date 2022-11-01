@@ -1,5 +1,4 @@
-function IdCard(props) {
-  const { lastName, firstName, gender, height, birth, picture } = props;
+function IdCard(props) {  
   return (
     <div className="IdCard">
       <img src={props.picture} alt={`${props.firstName} ${props.lastName}`} />
