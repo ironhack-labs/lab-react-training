@@ -15,7 +15,7 @@ function Rating(props) {
 
         {(props.children >= 3.5 && props.children < 4.5) && starRating[0].FourStars}
 
-        {(props.children >= 4.5 && props.children < 5) && starRating[0].FiveStars}
+        {(props.children >= 4.5 && props.children <= 5) && starRating[0].FiveStars}
 
         <br/>
         {props.children}
