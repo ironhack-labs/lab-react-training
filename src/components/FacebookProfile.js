@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 function FacebookProfile({ profiles, handleClick, selectCountry }) {
   return (
     <div>
