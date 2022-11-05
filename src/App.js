@@ -9,9 +9,10 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
-import img from "./assets/images/maxence.png";
-import imgClicked from "./assets/images/maxence-glasses.png";
-
+import img from './assets/images/maxence.png';
+import imgClicked from './assets/images/maxence-glasses.png';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
@@ -78,7 +79,7 @@ function App() {
       <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
-      <Rating>5</Rating> */}
+      <Rating>5</Rating>
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -97,14 +98,21 @@ function App() {
           model: 'Audi A3',
           licensePlate: 'BE33ER',
         }}
-      />
+      /> */}
 
       <LikeButton />
       <LikeButton />
 
-      <ClickablePicture
-        img={img}
-        imgClicked={imgClicked}
+      <ClickablePicture img={img} imgClicked={imgClicked} />
+      <br />
+      <Dice />
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
       />
     </div>
   );
