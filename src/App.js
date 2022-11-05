@@ -14,6 +14,9 @@ import MaxenceGlasses from './assets/images/maxence-glasses.png';
 //
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import FaceBookAdvanced from './components/FaceBookAdvanced';
 
 function App() {
   return (
@@ -131,6 +134,15 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+      <hr />
+      {/* Iteration XI */}
+      <NumbersTable limit={12} />
+      <hr />
+      {/* Iteration XII */}
+      {/* <FaceBook /> */}
+      {/* Iteration XIII */}
+      <FaceBookAdvanced />
+      <hr />
     </div>
   );
 }

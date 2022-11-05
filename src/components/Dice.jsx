@@ -28,7 +28,7 @@ function Dice() {
     <div>
       <img
         style={{ width: '100px' }}
-        onClick={() => handleClick()}
+        onClick={handleClick}
         src={dice}
         alt="img"
       />

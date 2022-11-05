@@ -120,32 +120,90 @@ img.rounded {
 }
 
 .image-container {
-  width: 200px;
+  height: 200px;
+  margin-left: 10px;
   position: relative;
+  display: inline-block;
+  background-color: green;
+}
+.image-container > img {
+  height: 100%;
 }
 
 .image-btn {
-  background: transparent;
+  background: rgba(255, 255, 255, 0);
+  width: 10%;
+  height: 100%;
   border: none;
-  font-size: 50px;
-  font-weight: bold;
   position: absolute;
-  color: rgba(255, 0, 255, 0);
-  top: calc(50% - 50px);
   transition: 0.3s;
-  padding: 50px 0;
 }
 
 .image-btn.left {
-  left: 10px;
+  left: 0;
+  border-radius: 0 50% 50% 0;
 }
+
 .image-btn.right {
-  left: 160px;
+  right: 0;
+  border-radius: 50% 0 0 50%;
 }
 
 .image-btn:hover {
-  color: rgba(255, 0, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 .image-btn:active {
-  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 0, 255, 0.7);
+}
+
+.div-container {
+  width: 600px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+}
+
+.red {
+  background-color: coral;
+}
+
+.facebook-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  border-radius: 5px;
+  display: flex;
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+}
+.credentials {
+  margin-left: 10px;
+}
+
+.credentials p {
+  margin: 5px;
+}
+
+.btn-container {
+  max-width: 350px;
 }
