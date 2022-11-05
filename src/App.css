@@ -71,3 +71,33 @@
   margin-right: 5px;
   border-radius: 50%;
 }
+
+.numbersTable {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.numbersTableLi {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border: solid thin;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.facebookBox {
+  border: solid thin;
+  display: flex;
+  line-height: 30px;
+}
+
+.bolden {
+  font-weight: bolder;
+}
+
+.facebookData {
+  margin-left: 5px;
+}
