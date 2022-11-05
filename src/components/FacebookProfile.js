@@ -1,4 +1,4 @@
-function FacebookProfile({ profiles, handleClick, selectCountry }) {
+function FacebookProfile({ profiles, selectCountry }) {
   return (
     <div>
       {profiles.map((elem) => {

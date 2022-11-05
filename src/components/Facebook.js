@@ -25,11 +25,7 @@ function Facebook() {
       <button value="Germany" onClick={handleClick}>
         Germany
       </button>
-      <FacebookProfile
-        profiles={profiles}
-        selectCountry={selectCountry}
-        handleClick={handleClick}
-      />
+      <FacebookProfile profiles={profiles} selectCountry={selectCountry} />
     </div>
   );
 }
