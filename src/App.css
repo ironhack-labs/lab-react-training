@@ -101,3 +101,26 @@
 .facebookData {
   margin-left: 5px;
 }
+
+.rgbBox {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.rgbField {
+  display: flex;
+}
+
+.rgbField input {
+  margin-left: 5px;
+}
+
+.rgbColorPicker {
+  display: flex;
+  align-items: center;
+}
+
+.rgbBigBox {
+  margin-left: 50px;
+}

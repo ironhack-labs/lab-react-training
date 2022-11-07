@@ -16,11 +16,12 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
 import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   return (
     <div className="App">
-      {/* <IdCard
+      <IdCard
         lastName="Doe"
         firstName="John"
         gender="male"
@@ -101,7 +102,7 @@ function App() {
           model: 'Audi A3',
           licensePlate: 'BE33ER',
         }}
-      /> */}
+      />
 
       <LikeButton />
       <LikeButton />
@@ -120,6 +121,7 @@ function App() {
       <NumbersTable limit={12} />
       <Facebook />
       <SignupPage />
+      <RGBColorPicker />
     </div>
   );
 }
