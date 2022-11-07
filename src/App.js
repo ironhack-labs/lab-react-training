@@ -7,6 +7,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
@@ -46,7 +47,8 @@ function App() {
       liscensePlate: "K4NY3"                }}
        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg" 
       />
-  
+
+    <LikeButton/>
 
     </div>
   );

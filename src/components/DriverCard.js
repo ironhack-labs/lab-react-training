@@ -25,7 +25,7 @@ import starRating from '../star-rating.json'
 
 
         {/* <p>rating: {props.rating} </p> */}
-        <img src={props.img} alt="" /> 
+        <img src={props.img} alt="" width="72px" /> 
         <p><strong>model</strong> {props.car.model} <strong>plate</strong> {props.car.liscensePlate}</p>
         
     </div>
