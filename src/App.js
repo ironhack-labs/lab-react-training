@@ -8,6 +8,9 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import max from './assets/images/maxence.png'
+import maxGlass from './assets/images/maxence-glasses.png'
 
 function App() {
   return (
@@ -47,9 +50,11 @@ function App() {
       liscensePlate: "K4NY3"                }}
        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg" 
       />
-
+  <div>LIKE BUTTON</div>
     <LikeButton/>
 
+    <div>CLICKABLE PICTURE</div>
+<ClickablePicture img={max} imgClicked ={maxGlass}/>
     </div>
   );
 }
