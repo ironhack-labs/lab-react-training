@@ -9,6 +9,7 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 import max from './assets/images/maxence.png'
 import maxGlass from './assets/images/maxence-glasses.png'
 
@@ -55,7 +56,14 @@ function App() {
 
     <div>CLICKABLE PICTURE</div>
 <ClickablePicture img={max} imgClicked ={maxGlass}/>
+
+<div>DICE</div>
+<Dice />
+
+
     </div>
+
+
   );
 }
 
