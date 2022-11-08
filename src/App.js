@@ -18,6 +18,7 @@ import { NumbersTable } from './components/NumbersTable';
 import { FaceBook} from './components/FaceBook/FaceBook';
 import { FaceBookAdv } from './components/FaceBook/FaceBookAdv';
 import { SignupPage } from './components/SignupPage/SignupPage';
+import { RGBColorPicker } from './components/ColorPicker/RGBColorPicker';
 
 function App() {
   const iteration5={
@@ -170,7 +171,7 @@ function App() {
       </div>
       <div style={{ marginBottom: '40px' }}>
         <h2>Iteration 16</h2>
-        <SignupPage />
+        <RGBColorPicker />
       </div>
     </div>
   );
