@@ -9,13 +9,15 @@ import diceBlank from '../assets/images/dice-empty.png'
 import { useState } from 'react'
 
  function Dice() {
-
+function randDieRes(){
+    return Math.floor(Math.random() * (diceImages.length - 1))
+}
 const diceImages = [ dice1, dice2, dice3, dice4, dice5, dice6, diceBlank]
 
-const [dieState, setDieState] = useState(0)
+const [dieState, setDieState] = useState(randDieRes())
     const handleClick = () => {
     
-        setDieState(6)
+    setDieState(6)
        setTimeout(() => {
         setDieState(Math.floor(Math.random() * (diceImages.length - 1)))
        }, 1000)
