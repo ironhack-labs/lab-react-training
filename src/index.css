@@ -11,3 +11,108 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cardDeck {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  /* 5px rounded corners */
+  width: 200px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.cardImg {
+  border-radius: 5px 5px 0 0;
+  width: 100%
+}
+
+/*Collapsible found in https://www.digitalocean.com/community/tutorials/css-collapsible */
+input[type='checkbox'] {
+  /*set the checkbox element to display: none. The checkbox will be invisible and its label will be used instead to check or uncheck it. 
+  Later, you’ll see that we’ll use the CSS:checked pseudo-selector to style things differently when the hidden checkbox is checked*/
+  display: none;
+}
+
+.wrap-collabsible {
+  margin: 1.2rem 1rem;
+}
+
+.lbl-toggle {
+  display: block;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  color: #DDD;
+  background: #0069ff;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #FFF;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked+.lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked+.lbl-toggle+.collapsible-content {
+  max-height: 100vh;
+  /* overflow-y:scroll; */
+}
+
+.toggle:checked+.lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  background: rgba(0, 0, 0, 0);
+  border-bottom: px solid rgba(0, 105, 255, .45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 1rem 2rem;
+}
+
+.collapsible-content p {
+  margin-bottom: 0;
+}

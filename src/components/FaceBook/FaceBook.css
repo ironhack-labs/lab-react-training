@@ -1,0 +1,18 @@
+.fbcard {
+    display: flex;
+}
+
+.fbbox {
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 10px 0;
+    max-width: 500px;
+}
+
+.fb-profile-img {
+    height: 150px;
+}
+
+.fb-profile-info {
+    margin-left: 5px;
+}
