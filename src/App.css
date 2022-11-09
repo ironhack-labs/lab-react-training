@@ -2,37 +2,97 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.id-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: solid;
+  padding: 0.3em;
+  margin: 1em;
+}
+
+.id-card-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 1em;
+}
+
+.credit-card {
   display: flex;
   flex-direction: column;
+  border-radius: 1em;
+  width: 25vw;
+  /* height: 33vh; */
+  min-width: 350;
+  margin: 0.5em;
+  padding: 1.5em;
+}
+
+.card-logo {
+  display: flex;
+  justify-content: flex-end;
+  max-height: 50px;
+}
+.card-logo img {
+  max-width: 25%;
+}
+
+.card-number {
+  font-size: 1.5em;
+}
+
+.card-info {
+  text-align: start;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: larger;
+}
+
+.driver-card {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: cornflowerblue;
   color: white;
+  border-radius: 1em;
+  /* padding: 1em; */
+  margin: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.driver-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: solid grey;
+  padding: 10px;
+  color: white;
 }
