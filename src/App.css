@@ -4,11 +4,11 @@
 
 .Idcard {
   display: flex;
-    flex-direction: row;
-    line-height: 0.7;
-    padding: 5px;
-    border: solid 1px black;
-    margin: 20px 0;
+  flex-direction: row;
+  line-height: 0.7;
+  padding: 5px;
+  border: solid 1px black;
+  margin: 20px 0;
 }
 
 .Idcard-text {
@@ -19,4 +19,72 @@
   margin-top: 10px;
   border: solid 1px black;
   padding: 5px
+}
+
+.credit-cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  font-size: 14px;
+  font-weight: 600;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 30px 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+.ratings {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.drive-card {
+  background-color: #455EB5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 20px 0;
+  width: 900px;
+}
+
+.drive-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.drive-card-text h3 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.drive-card-text p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.drive-card-picture {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.drive-card-picture img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
 }
