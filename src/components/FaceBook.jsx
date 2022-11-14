@@ -1,13 +1,9 @@
 import profiles from '../data/berlin.json';
+import { v4 as uuidv4 } from 'uuid';
 
-const createId = () => {
-  return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (a) =>
-    (a ^ ((Math.random() * (16 >> a)) / 4)).toString(16)
-  );
-};
 const profilesWithIds = profiles.map((profile) => ({
   ...profile,
-  id: createId(),
+  id: uuidv4(),
 }));
 
 function FaceBook() {

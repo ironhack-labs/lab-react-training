@@ -18,11 +18,13 @@ import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
 import FaceBookAdvanced from './components/FaceBookAdvanced';
 import RGBColorPicker from './components/RGBColorPicker';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
-    <div>
+    <div style={{ padding: '10px' }}>
       {/* Iteration I */}
+      <p>Iteration 1</p>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -143,8 +145,10 @@ function App() {
       {/* <FaceBook /> */}
       {/* Iteration XIII */}
       <FaceBookAdvanced />
+      <hr />
       {/* Iteration XV */}
-      {/* <something /> */}
+      <SignupPage />
+      <hr />
       {/* Iteration XVI */}
       <RGBColorPicker />
       <hr />

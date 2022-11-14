@@ -11,6 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Iteration II -IV */
 
 .bold {
   font-weight: 700;
@@ -19,15 +20,9 @@ code {
 .idCard {
   border: 1px solid black;
   display: flex;
+  width: fit-content;
   margin: 10px;
   padding: 10px;
-}
-.box {
-  border: 2px solid black;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
 }
 
 .idCard img {
@@ -45,6 +40,15 @@ code {
   margin-left: 5px;
 }
 
+.box {
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Iteration V */
 .credit-card {
   width: 345px;
   height: 180px;
@@ -88,10 +92,7 @@ code {
   align-self: flex-start;
 }
 
-.star {
-  font-size: 24px;
-}
-
+/* Iteration VII */
 .driver-card {
   width: 345px;
   height: 100px;
@@ -126,10 +127,12 @@ img.rounded {
   display: inline-block;
   background-color: green;
 }
+
 .image-container > img {
   height: 100%;
 }
 
+/* Iteration XI */
 .image-btn {
   background: rgba(255, 255, 255, 0);
   width: 10%;
@@ -156,15 +159,13 @@ img.rounded {
   background: rgba(255, 0, 255, 0.7);
 }
 
-.div-container {
+.numbers-div-container {
   width: 600px;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   flex-wrap: wrap;
 }
 
-.div {
+.numbers-div {
   display: flex;
   justify-content: center;
   align-items: center;

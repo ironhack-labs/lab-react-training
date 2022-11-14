@@ -1,5 +1,5 @@
 function IdCard({ lastName, firstName, gender, height, birth, picture }) {
-  const addDot = (num) => {
+  const addDotInHeight = (num) => {
     return [num.toString().slice(0, 1), '.', num.toString().slice(1)].join('');
   };
   return (
@@ -16,7 +16,7 @@ function IdCard({ lastName, firstName, gender, height, birth, picture }) {
           <span className="bold">Gender:</span> {gender}
         </p>
         <p>
-          <span className="bold">Height:</span> {addDot(height)}m
+          <span className="bold">Height:</span> {addDotInHeight(height)}m
         </p>
         <p>
           <span className="bold">Birth:</span> {birth.toDateString()}

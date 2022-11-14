@@ -1,4 +1,4 @@
-function SingleColorPicker({ color, onChange, value, onClick }) {
+function SingleColorPicker({ color, onChange, value }) {
   const bg = (color) => {
     if (color === 'r') {
       return 'red';
@@ -20,17 +20,25 @@ function SingleColorPicker({ color, onChange, value, onClick }) {
           height: '50px',
           margin: '5px',
           backgroundColor: bg(color),
-          borderRadius: `${value / 6 + 5}%`,
+          borderRadius: `${value / 10 + 5}px`,
         }}
       ></div>
       <label htmlFor={color}>{color.toUpperCase()} </label>
       <input
         onChange={onChange}
+        value={value}
         style={{ width: '50px', margin: '5px' }}
         type="number"
         min={0}
         max={255}
-        id={color}
+      />
+      <input
+        onChange={onChange}
+        value={value}
+        type="range"
+        min="0"
+        max="255"
+        step="1"
       />
     </div>
   );
