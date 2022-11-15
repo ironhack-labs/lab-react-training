@@ -36,3 +36,74 @@
     transform: rotate(360deg);
   }
 }
+
+.IdCard { 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.IdCard img {
+  margin-right: 1rem;
+}
+
+.IdCard .IdcardInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.IdCard p {
+  margin: 0.8rem 0 0 0;
+}
+
+
+.greetings { 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.greetings .greetingsList p {
+  margin: 0
+}
+
+
+.random { 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.random .generateRandom p {
+  margin: 0
+}
+
+.boxColorText { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 3rem;
+  font-size: 1.3rem;
+}
+
+.boxColorText p {
+  margin: 0
+}
