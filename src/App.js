@@ -15,7 +15,6 @@ import MaxenceGlasses from './assets/images/maxence-glasses.png';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
-import FaceBook from './components/FaceBook';
 import FaceBookAdvanced from './components/FaceBookAdvanced';
 import RGBColorPicker from './components/RGBColorPicker';
 import SignupPage from './components/SignupPage';

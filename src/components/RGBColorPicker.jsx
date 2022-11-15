@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import SingleColorPicker from './SingleColorPicker';
+import { FlexDiv, ColorDiv } from './Styles';
 
 const defaultState = {
   rValue: 0,
@@ -39,18 +40,10 @@ function RGBColorPicker() {
           setRgb(newRgb);
         }}
       />
-      <div style={{ display: 'flex' }}>
-        <div
-          style={{
-            border: '2px solid black',
-            width: '50px',
-            height: '50px',
-            margin: '5px',
-            backgroundColor: rgbColor,
-          }}
-        ></div>
+      <FlexDiv>
+        <ColorDiv {...{ rgbColor }} />
         <p>{rgbColor}</p>
-      </div>
+      </FlexDiv>
     </>
   );
 }

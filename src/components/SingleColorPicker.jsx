@@ -1,3 +1,6 @@
+import styled from 'styled-components';
+import { FlexDiv, ColorDiv, Input } from './Styles';
+
 function SingleColorPicker({ color, onChange, value }) {
   const bg = (color) => {
     if (color === 'r') {
@@ -12,19 +15,10 @@ function SingleColorPicker({ color, onChange, value }) {
   };
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      <div
-        style={{
-          border: '2px solid black',
-          width: '50px',
-          height: '50px',
-          margin: '5px',
-          backgroundColor: bg(color),
-          borderRadius: `${value / 10 + 5}px`,
-        }}
-      ></div>
+    <FlexDiv style={{ display: 'flex', alignItems: 'center' }}>
+      <SingleColorDiv {...{ value, bg, color }} />
       <label htmlFor={color}>{color.toUpperCase()} </label>
-      <input
+      <Input
         onChange={onChange}
         value={value}
         style={{ width: '50px', margin: '5px' }}
@@ -40,7 +34,12 @@ function SingleColorPicker({ color, onChange, value }) {
         max="255"
         step="1"
       />
-    </div>
+    </FlexDiv>
   );
 }
 export default SingleColorPicker;
+
+const SingleColorDiv = styled(ColorDiv)`
+  border-radius: ${(props) => props.value / 10 + 5}px;
+  background-color: ${(props) => props.bg(props.color)};
+`;
