@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.profile-card {
+  min-width: 50vw;
+  display: flex;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.profile-card p {
+  margin: 0 0 0 5px;
+  text-align: left;
+}
+
+.small-image {
+  width: 100px;
+  height: 100px;
+}
+
+.profile-card-2 {
+  min-width: 50vw;
+  display: flex;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(74, 142, 215);
+}
+
+.profile-card-2 p {
+  margin: 0 0 0 5px;
+  text-align: left;
+}
