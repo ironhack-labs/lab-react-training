@@ -1,8 +1,8 @@
 const IdCard = (props) => {
     const myDate = props.birth.toDateString()
     return(
-        <>
-            <img  className="picture" src={props.picture}/>
+        <div className="IdCard">
+            <img alt="pic" className="picture" src={props.picture}/>
             <div className="IdcardInfo">
                 <p><b>First name:</b> {props.firstName}</p>
                 <p><b>Last name:</b> {props.lastName}</p>
@@ -10,7 +10,7 @@ const IdCard = (props) => {
                 <p><b>Height:</b> {props.height}</p>
                 <p><b>Birth:</b> {myDate}</p>
             </div>
-        </>
+        </div>
     )
 }
 

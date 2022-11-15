@@ -4,9 +4,11 @@ const Random = (props) => {
     let randomNumber = Math.floor(Math.random() * (max - min)) + min
     
     return(
-        <div className="generateRandom">
-            <p>Random value between {props.min} and {props.max} => {randomNumber}</p>
-        </div>
+        <div class="random">
+            <div className="generateRandom">
+                <p>Random value between {props.min} and {props.max} => {randomNumber}</p>
+            </div>
+        </div>  
     )
 }
 

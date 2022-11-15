@@ -12,8 +12,10 @@ const Greetings = (props) => {
     }
 
     return(
-        <div className="greetingsList">
-            <p>{language} {props.children}</p>
+        <div className="greetings">
+            <div className="greetingsList">
+              <p>{language} {props.children}</p>
+            </div>
         </div>
     )
 }
