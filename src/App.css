@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+ 
 }
 
 .App-logo {
@@ -35,4 +36,79 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.User1 {
+  text-align: center;
+  border-color: black;
+  border-style: dashed;
+  height: auto;
+  border-width: 3px;
+  margin-left: 500px;
+  margin-right: 400px;
+}
+
+.User2 {
+  text-align: center;
+  border-color: black;
+  border-style: dashed;
+  height: auto;
+  border-width: 3px;
+  margin-left: 500px;
+  margin-right: 400px;
+}
+
+.container1 {
+  background-color: green;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  text-align: center;
+  width: 400px;
+  height: 80px;
+  align-content: center;
+  color: white;
+  border-radius: 30px;
+  margin-left: 500px;
+  margin-right: 400px;
+}
+
+.container2 {
+  background-color: gray;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  text-align: center;
+  width: 400px;
+  height: 80px;
+  align-content: center;
+  color: white;
+  border-radius: 30px;
+  margin-left: 500px;
+  margin-right: 400px;
+}
+
+.container3 {
+  background-color: rgba(218, 165, 32, 0.879);
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  text-align: center;
+  width: 400px;
+  height: 80px;
+  margin-left: 500px;
+  align-content: center;
+  color: white;
+  border-radius: 30px;
+  margin-left: 500px;
+  margin-right: 400px;
 }
