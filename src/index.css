@@ -11,3 +11,92 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.idCard{
+  border: 2px solid black;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: flex-start;
+  margin: 5px;
+  width: 50vw;
+}
+
+.id{
+  padding-left: 10px;
+}
+
+.greetings{
+  border: 2px solid black;
+}
+
+.random{
+  border: 2px solid black;
+}
+
+.datesbank{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    align-content: stretch;
+    margin-left: 10px;
+}
+
+.typecard{
+  width: 100px;
+  padding-left: 250px;
+  padding-top: 10px;
+
+}
+
+.creditCard{
+  width: 400px;
+  border-radius: 10px;
+}
+
+.bank{
+  padding-left: 30px;
+}
+
+.owner{
+  padding-right: 240px;
+  padding-bottom: 20px;
+  margin: 5px;
+}
+
+.datesbank p{
+  margin: 0px;
+}
+
+.allcards{
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+.card{
+  background-color: #0969da;
+  color: white;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: baseline;
+	align-content: stretch;
+  margin: 5px;
+  border-radius: 100px;
+  height: 300px;
+}
+
+.cardimg{
+  width: 150px;
+  border-radius: 50%;
+  height: 150px;
+}
