@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.idCard {
+  border: 2px solid black;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 10px;
+  width: 50vw;
+  height: 20vh;
+  padding: 10px;
+  align-items: center;
+}
+
+.iDp {
+  font-weight: bold;
+  margin: 0;
+}
+
+.greet {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 10px;
+  width: 50vw;
+  height: 5vh;
+  padding: 10px;
+  font-weight: 700;
+  align-items: center;
+}
+
+.random {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 10px;
+  width: 50vw;
+  height: 5vh;
+  padding: 10px;
+  font-weight: 700;
+  align-items: center;
+}
+
+.boxColor {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin: auto;
+  width: 50vw;
+  height: 5vh;
+  padding: 10px;
+  font-weight: 700;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.creditCard > img {
+  width: 50px;
+  padding-top: 10px;
+  float: right;
+}
+
+.creditCard {
+  height: 20vh;
+  width: 20vw;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.drivePhoto > img {
+  width: 60px;
+  border-radius: 50px;
+  padding-left: 10vw;
+}
+
+.drivePhoto {
+  border: 2px solid black;
+  border-radius: 20px;
   color: white;
+  background-color: rgb(103, 103, 248);
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin: auto;
+  width: 50vw;
+  height: 20vh;
+  padding: 10px;
+  font-weight: 700;
+  justify-content: center;
+  justify-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drive > p {
+  margin: 0;
+  padding-left: 19vw;
 }
