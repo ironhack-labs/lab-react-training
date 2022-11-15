@@ -1,11 +1,13 @@
+import { FlexDivWithBorder, P } from './Styles';
+
 function Random({ min, max }) {
   const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
   return (
-    <div>
-      <p className="idCard">
+    <FlexDivWithBorder>
+      <P>
         Random value between {min} and {max} =&gt; {randomNumber}
-      </p>
-    </div>
+      </P>
+    </FlexDivWithBorder>
   );
 }
 export default Random;

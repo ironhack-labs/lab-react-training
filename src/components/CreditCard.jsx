@@ -1,5 +1,7 @@
 import visa from '../assets/images/visa.png';
 import masterCard from '../assets/images/master-card.png';
+import styled from 'styled-components';
+import { FlexDiv, P } from './Styles';
 
 function CreditCard({
   type,
@@ -29,17 +31,41 @@ function CreditCard({
   };
 
   return (
-    <div style={cardBg} className="credit-card">
-      <img className="logo" src={isVisa(type)} alt="visa" height="20px" />
-      <p className="number">{anonymousNumber(number)}</p>
-      <div className="expired-and-bank">
-        <p className="expired">
-          {expiredBlock(expirationMonth, expirationYear)}
-        </p>
-        <p className="bank">{bank}</p>
-      </div>
-      <p className="name">{owner}</p>
-    </div>
+    <CreditCardDiv style={cardBg}>
+      <Logo className="logo" src={isVisa(type)} alt="visa" height="20px" />
+      <CredNumberP>{anonymousNumber(number)}</CredNumberP>
+      <FlexDiv>
+        <ExpiredP>{expiredBlock(expirationMonth, expirationYear)}</ExpiredP>
+        <P>{bank}</P>
+      </FlexDiv>
+      <p>{owner}</p>
+    </CreditCardDiv>
   );
 }
 export default CreditCard;
+
+const CreditCardDiv = styled.div`
+  width: 345px;
+  height: 180px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #455eb5;
+`;
+
+const ExpiredP = styled(P)`
+  margin-right: 75px;
+`;
+
+const CredNumberP = styled(P)`
+  font-size: 34px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+`;
+
+const Logo = styled.img`
+  align-self: flex-end;
+`;

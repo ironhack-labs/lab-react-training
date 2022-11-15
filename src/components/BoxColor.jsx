@@ -1,3 +1,5 @@
+import { P } from './Styles';
+
 function BoxColor({ r, g, b }) {
   const color = (a, b, c) => {
     return `rgb(${a}, ${b}, ${c})`;
@@ -21,15 +23,21 @@ function BoxColor({ r, g, b }) {
     return '#' + toHex(r) + toHex(g) + toHex(b);
   };
 
+  // No styled component here yet, this one I have to figure out :)
   const divStyle = {
     backgroundColor: color(r, g, b),
     color: sum(r, g, b) > 382 ? 'black' : 'white',
+    border: '2px solid black',
+    margin: '10px',
+    padding: '10px',
+    display: 'flex',
+    flexDirection: 'column',
   };
 
   return (
-    <div className="box" style={divStyle}>
-      <p>{color(r, g, b)}</p>
-      <p>{rgbToHex(r, g, b)}</p>
+    <div style={divStyle}>
+      <P>{color(r, g, b)}</P>
+      <P>{rgbToHex(r, g, b)}</P>
     </div>
   );
 }

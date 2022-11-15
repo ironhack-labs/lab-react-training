@@ -1,3 +1,5 @@
+import { FlexDivWithBorder, P } from './Styles';
+
 function Greetings({ lang, children }) {
   let greet;
   if (lang === 'de') greet = 'Hallo';
@@ -22,8 +24,8 @@ function Greetings({ lang, children }) {
   //     greet = 'Hi';
   // }
   return (
-    <div>
-      <p className="idCard">
+    <FlexDivWithBorder>
+      <P>
         {greet} {children}
         {/* or ternary */}
         {/* {lang === 'de'
@@ -36,8 +38,8 @@ function Greetings({ lang, children }) {
           ? 'Hola'
           : 'Hi'}{' '}
         {children} */}
-      </p>
-    </div>
+      </P>
+    </FlexDivWithBorder>
   );
 }
 export default Greetings;

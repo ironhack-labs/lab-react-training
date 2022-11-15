@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styled from 'styled-components';
 
 function LikeButton({ text }) {
   const [count, setCount] = useState(0);
@@ -17,12 +18,15 @@ function LikeButton({ text }) {
   }
 
   return (
-    <button
-      style={{ padding: '5px', margin: '10px', backgroundColor: bgColor }}
-      onClick={handleClick}
-    >
+    <Button backgroundColor={bgColor} onClick={handleClick}>
       {count} {text}
-    </button>
+    </Button>
   );
 }
 export default LikeButton;
+
+const Button = styled.button`
+  padding: 5px;
+  margin: 10px;
+  background-color: ${(props) => props.backgroundColor};
+`;
