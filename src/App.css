@@ -33,6 +33,21 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg);    
   }
 }
+
+.IdCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-style: solid;
+  width: 600px;
+  padding: 10px;
+  text-align: left;
+}
+
+
