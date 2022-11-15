@@ -4,6 +4,18 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import gamer from './assets/images/gamer.jpg';
+import gamerGlasses from './assets/images/gamerGlass.jpg';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable.js';
+import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   return (
@@ -84,12 +96,99 @@ function App() {
           color="white" 
         />
       </div>
-
-      <br />
-      <br />
-      <br />
-
       
+      <br />
+      <br />
+      <br />
+
+      <div className="rating">
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE"
+        }}
+      />
+
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
+        }}
+      />
+
+      <br />
+      <br />
+      <br />
+
+      <LikeButton />
+
+      <br />
+      <br />
+      <br />
+
+      <ClickablePicture img={gamer} imgClicked={gamerGlasses} />
+
+      <br />
+      <br />
+      <br />
+
+      <Dice />
+      
+      <br />
+      <br />
+      <br />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      <br />
+      <br />
+      <br />
+
+      <NumbersTable limit={12} />
+
+      <br />
+      <br />
+      <br />
+
+      <Facebook />
+
+      <br />
+      <br />
+      <br />
+
+      <SignupPage />
+
+      <br />
+      <br />
+      <br />
+      
+      <RGBColorPicker />
+
     </div>
   );
 }
