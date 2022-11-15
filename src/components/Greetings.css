@@ -1,0 +1,10 @@
+.lang{
+    display: flex;
+    width:fit-content;
+    line-height: 0.1px;
+    margin: 5px;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    width: 20vw
+}

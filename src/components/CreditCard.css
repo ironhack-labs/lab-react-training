@@ -1,0 +1,29 @@
+.credit {
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    line-height: 0.1px;
+    margin: 5px;
+    border: 3px;
+    border-radius: 10px;
+    width: 37vw;
+    height: 18vh;
+    padding-left: 25px;
+    
+  }
+  .raw {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+  }
+
+  .visa{
+  display: flex;
+  align-self: flex-end;
+  padding-right: 25px;
+  padding-top: 10px;
+  }
+
+  .push{
+    padding-left: 20px;
+  }
