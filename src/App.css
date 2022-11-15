@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: inline-flex; /* or inline-flex */
+  border: 2px solid black;
+}
+
+.border-line {
+  border: 2px solid black;
+  margin: 40px;
+}
+
+.credit-card {
+  border-radius: 25%;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.small-image {
+  width: 100px;
+  height: 100px;
+}
