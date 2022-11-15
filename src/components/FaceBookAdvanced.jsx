@@ -1,6 +1,6 @@
 import profiles from '../data/berlin.json';
 import { v4 as uuidv4 } from 'uuid';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { BoldSpan } from './Styles';
 import styled from 'styled-components';
@@ -19,7 +19,12 @@ const countriesObject = profilesWithIds.reduce((acc, val) => {
 
 function FaceBookAdvanced() {
   const [user, setUser] = useState(profilesWithIds);
-  const [countries, setCountries] = useState(countriesObject);
+  const [countries, setCountries] = useState({});
+
+  // Not sure if this is necessary here
+  useEffect(() => {
+    setCountries(countriesObject);
+  }, []);
 
   const handleClick = (country) => {
     const updatedUsers = user.map((user) => {
@@ -104,7 +109,7 @@ const Card = styled.div`
   border: 1px solid grey;
   padding: 10px;
   margin: 10px;
-  background-color: ${(props) => (props.checked ? 'lightblue' : 'white')};
+  background-color: ${({ checked }) => (checked ? 'lightblue' : 'white')};
   > img {
     width: 120px;
     height: 120px;

@@ -9,7 +9,7 @@ function LikeButton({ text }) {
     const random255 = () => {
       return Math.floor(Math.random() * 255);
     };
-    return `rgba(${random255()},${random255()},${random255()},0.5)`;
+    return `rgba(${random255()},${random255()},${random255()},0.7)`;
   }
 
   function handleClick() {
@@ -18,7 +18,7 @@ function LikeButton({ text }) {
   }
 
   return (
-    <Button backgroundColor={bgColor} onClick={handleClick}>
+    <Button {...{ bgColor }} onClick={handleClick}>
       {count} {text}
     </Button>
   );
@@ -28,5 +28,5 @@ export default LikeButton;
 const Button = styled.button`
   padding: 5px;
   margin: 10px;
-  background-color: ${(props) => props.backgroundColor};
+  background-color: ${({ bgColor }) => bgColor};
 `;

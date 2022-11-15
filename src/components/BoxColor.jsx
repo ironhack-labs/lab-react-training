@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import { P } from './Styles';
 
 function BoxColor({ r, g, b }) {
@@ -23,22 +24,23 @@ function BoxColor({ r, g, b }) {
     return '#' + toHex(r) + toHex(g) + toHex(b);
   };
 
-  // No styled component here yet, this one I have to figure out :)
-  const divStyle = {
-    backgroundColor: color(r, g, b),
-    color: sum(r, g, b) > 382 ? 'black' : 'white',
-    border: '2px solid black',
-    margin: '10px',
-    padding: '10px',
-    display: 'flex',
-    flexDirection: 'column',
-  };
-
   return (
-    <div style={divStyle}>
+    <ColoredBox {...{ color, sum, r, g, b }}>
       <P>{color(r, g, b)}</P>
       <P>{rgbToHex(r, g, b)}</P>
-    </div>
+    </ColoredBox>
   );
 }
 export default BoxColor;
+
+const ColoredBox = styled.div`
+  width: fit-content;
+  background-color: ${({ color, r, g, b }) => color(r, g, b)};
+  color: ${({ sum, r, g, b }) => (sum(r, g, b) > 382 ? 'black' : 'white')};
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px 50px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+`;

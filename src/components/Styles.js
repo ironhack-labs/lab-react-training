@@ -25,7 +25,7 @@ const ColorDiv = styled.div`
   width: 50px;
   height: 50px;
   margin: 5px;
-  background-color: ${(props) => props.rgbColor};
+  background-color: ${({ rgbColor }) => rgbColor};
 `;
 
 const Input = styled.input`

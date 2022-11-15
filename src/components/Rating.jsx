@@ -7,14 +7,14 @@ function Rating({ children }) {
 
   return (
     <FlexDiv>
-      <BiggerP>
+      <LargerP>
         {starFull.repeat(Math.round(children)).padEnd(5, starEmpty)}
-      </BiggerP>
+      </LargerP>
     </FlexDiv>
   );
 }
 export default Rating;
 
-const BiggerP = styled(P)`
+const LargerP = styled(P)`
   font-size: 24px;
 `;

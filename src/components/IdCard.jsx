@@ -34,6 +34,9 @@ export default IdCard;
 const DescriptionDiv = styled.div`
   text-align: start;
   margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 const Img = styled.img`

@@ -16,6 +16,7 @@ function RGBColorPicker() {
       <SingleColorPicker
         color="r"
         value={rgb.rValue}
+        // TODO:
         onChange={(e) => {
           const newRgb = { ...rgb };
           newRgb.rValue = e.target.value;
