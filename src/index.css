@@ -18,3 +18,23 @@ code {
   padding: 3px;
   margin: 3px;
 }
+
+.driver-img {
+  width: 15%;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.driver-card {
+  background-color: rgb(46, 111, 209);
+  color: white;
+  border-radius: 2%;
+  width: 90%;
+  padding: 3px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

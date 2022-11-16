@@ -14,9 +14,7 @@ function Rating(props) {
     }
   
     return (
-    <div className='info-card'>
         <p>{stars(children)}</p>
-    </div>
   )
 }
 
