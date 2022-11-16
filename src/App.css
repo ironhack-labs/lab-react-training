@@ -1,38 +1,70 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.profile-card,
+.greeting-card,
+.random-card,
+.box-card {
+  min-width: 50vw;
+  display: flex;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.profile-card p,
+.greeting-card p,
+.random-card p {
+  margin: 0 0 0 5px;
+}
+
+.box-card {
+  justify-content: center;
+}
+
+.credit-cards {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+}
+
+.credit-card {
+  width: 20vw;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.credit-card p {
+  margin: 0;
+}
+
+.credit-card p:first-child {
+  text-align: right;
+}
+
+.rating-card p {
+  font-size: 30px;
+}
+
+.driver-card > img {
+  max-width: 199px;
+  border-radius: 100%;
+  margin: 0 25px;
+}
+
+.driver-card {
+  border-radius: 15px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: #4242c1;
+  display: flex;
+  margin-top: 10px;
+  min-width: 50vw;
+  min-height: 30vh;
+  padding: 10px;
+  justify-content: center;
 }
