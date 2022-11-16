@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.profile {
+display: flex;
+flex-direction: row;
+align-items: center;
+
+border: solid black 1px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.cardInfo{
+  text-align: left;
+}
