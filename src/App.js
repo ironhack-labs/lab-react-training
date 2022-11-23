@@ -1,5 +1,6 @@
 import './App.css';
 import IdCard from "./components/IdCard";
+import Greetings from './components/Greetings';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
           <br></br>
         </div>
       </div>
+      <h1>Greetings</h1>
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
     </div>
   );
 }
