@@ -12,23 +12,27 @@ const CreditCard = props => {
     // }
 
 
+
     const numberHidden = number.split('').map((elm, i) => {
-        if (elm[i] < number.length - 4) {
+        if (i < number.length - 4) {
             return elm = '*'
         }
         return elm
     })
 
-    console.log(numberHidden)
 
     const divStyle = {
         backgroundColor: `${bgColor}`,
         color: `${color}`
     }
 
+    let link
 
     return (
         <div className='CreditCard' style={divStyle}>
+            <div>
+                <img src={link} alt="" />
+            </div>
             <p>{numberHidden}</p>
             <div className='ExpireAndBank'>
                 <p>{`Expires ${expirationMonth}/${expirationYear}`}</p>
@@ -42,5 +46,3 @@ const CreditCard = props => {
 }
 
 export default CreditCard
-
-    // **** **** **** { number.slice(12) }

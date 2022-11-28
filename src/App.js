@@ -4,6 +4,7 @@ import CreditCard from './components/CreditCard/CreditCard';
 import Greetings from './components/Greetings/Greetings';
 import IdCard from './components/IdCard/IdCard';
 import Random from './components/Random/Random';
+import Rating from './components/Rating/Rating';
 
 
 
@@ -31,12 +32,16 @@ function App() {
         />
       </div>
 
+      <hr />
+
       <h1>Greetings</h1>
 
       <div>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
       </div>
+
+      <hr />
 
       <h1>Random</h1>
 
@@ -45,6 +50,8 @@ function App() {
         <Random min={1} max={100} />
       </div>
 
+      <hr />
+
       <h1>Box Color</h1>
 
       <div>
@@ -52,9 +59,11 @@ function App() {
         <BoxColor r={128} g={255} b={0} />
       </div>
 
+      <hr />
+
       <h1>CreditCard</h1>
 
-      <div>
+      <div className='CreditDiv'>
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -87,6 +96,19 @@ function App() {
           bgColor="#ddbb55"
           color="white"
         />
+      </div>
+
+      <h1>Rating</h1>
+
+      <hr />
+
+      <div className='RatingDiv'>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
       </div>
 
 
