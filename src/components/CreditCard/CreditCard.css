@@ -1,0 +1,38 @@
+
+
+.creditCard {
+    /* background-color: blue; */
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    display: inline-block;
+    margin: 0px 10px
+
+}
+
+.type {
+    display: flex;
+    margin: 20px;
+    height: 20px;
+    justify-content:flex-end;
+}
+
+.type img {
+    /* background-color: black; */
+    object-fit: cover;
+
+}
+
+.cardNumbers {
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+
+.cardInfo {
+    margin: 0 20px;
+    display: flex;
+    justify-content:flex-start;
+}
