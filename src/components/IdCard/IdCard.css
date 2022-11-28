@@ -1,0 +1,13 @@
+.IdCard {
+    display: flex;
+    background-color: rgb(236, 205, 139);
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.IdCard img {
+    border-radius: 50%;
+}
