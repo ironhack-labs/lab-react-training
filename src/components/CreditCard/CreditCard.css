@@ -1,0 +1,7 @@
+.creditcard {
+    display: inline-block;
+    flex-direction: row;
+    margin: 15px;
+    border: 1px solid;
+    width: 25%;
+}
