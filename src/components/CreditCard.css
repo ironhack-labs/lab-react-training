@@ -1,0 +1,30 @@
+.inline-cards {
+    display: inline-block
+}
+
+.credit-card {
+    width: 300px;
+    height: 140px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.credit-card-number {
+    font-size: 1.50rem;
+    align-self: center;
+}
+
+.credit-card img {
+    width: 55px;
+    height: auto;
+    align-self: end;
+    border-radius: 0px;
+}
+
+.bank {
+    margin-left: 30px;
+}
