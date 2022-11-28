@@ -1,0 +1,12 @@
+.CreditCard {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.ExpireAndBank {
+    display: flex;
+}
+
+.ExpireAndBank p {
+    margin: 5px;
+}
