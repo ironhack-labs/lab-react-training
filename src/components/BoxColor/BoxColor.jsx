@@ -7,8 +7,8 @@ const BoxColor = props => {
     const { r, g, b } = props
 
     return (
-        <div style={{ backgroundColor: `rgb(${r},${g}, ${b})` }} >
-            <p>rgb({r},{g},{b})</p>
+        <div className="container" style={{ backgroundColor: `rgb(${r},${g}, ${b})` }} >
+            <p className="text-center">rgb({r},{g},{b})</p>
         </div>
     )
 }

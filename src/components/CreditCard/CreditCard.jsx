@@ -1,4 +1,6 @@
-
+import MasterCard from './../../assets/images/master-card.svg'
+import VisaLogo from './../../assets/images/visa.png'
+import './CreditCard.css'
 
 
 const CreditCard = props => {
@@ -14,16 +16,26 @@ const CreditCard = props => {
         color
     } = props
 
-    console.log(props)
-
-
     return (
-        <div style={{ backgroundColor: `${bgColor}`, color: `${color}` }}>
-            <p>{type}</p>
-            <p>···· ···· ···· {number.slice(12)}</p>
-            <p>Expires {expirationMonth}/{expirationYear.toString().slice(2)}</p>
-            <p>{bank}</p>
-            <p>{owner}</p>
+        <div className='creditCard' style={{ backgroundColor: `${bgColor}`, color: `${color}` }}>
+
+            <div className="cardLogo">
+                {type === 'Visa' ? (
+                    <img src={VisaLogo} alt="Visa" />
+                ) : (
+                    <img src={MasterCard} alt="Mastercard" className="mastercard" />
+                )}
+            </div>
+            <div className="cardNumber">
+                <p>•••• •••• •••• {number.slice(12)}</p>
+            </div>
+            <div className="cardInfo">
+                <p>
+                    Expires {expirationMonth}/{expirationYear.toString().substring(2)}
+                    <span>{bank}</span>
+                </p>
+                <p>{owner}</p>
+            </div>
         </div>
     )
 

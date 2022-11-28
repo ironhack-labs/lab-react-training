@@ -1,0 +1,41 @@
+.creditCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    width: 30%;
+    min-width: 350px;
+    margin: 8px;
+    padding: 24px;
+}
+
+.cardLogo {
+    display: flex;
+    justify-content: flex-end;
+    max-height: 50px;
+}
+
+.cardLogo img {
+    max-width: 25%;
+}
+
+.cardLogo .mastercard {
+    width: 20%;
+    height: 90%;
+}
+
+.cardNumber {
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 32px;
+    margin-inline: auto;
+    letter-spacing: 2px;
+}
+
+.cardInfo {
+    text-align: start;
+    margin-top: 32px;
+}
+
+.cardInfo span {
+    margin-left: 20px;
+}

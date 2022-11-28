@@ -11,14 +11,14 @@ const idCard = props => {
     } = props
 
     return (
-        <div>
+        <div className='container'>
             <img src={picture} />
-            <div className='IdCard'>
-                <p>First Name: {firstName}</p>
-                <p>Last Name: {lastName}</p>
-                <p>Gender: {gender}</p>
-                <p>Height: {height}</p>
-                <p>Birth: {birth.toDateString()}</p>
+            <div>
+                <p className='text'>First Name: {firstName}</p>
+                <p className='text'>Last Name: {lastName}</p>
+                <p className='text'>Gender: {gender}</p>
+                <p className='text'>Height: {height}</p>
+                <p className='text'>Birth: {birth.toDateString()}</p>
             </div>
         </div>
     )

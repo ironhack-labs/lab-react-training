@@ -1,3 +1,5 @@
+import './DriverCard.css'
+
 const DriverCard = props => {
     const { name, rating, img, car } = props
 
@@ -10,11 +12,13 @@ const DriverCard = props => {
 
 
     return (
-        <div>
-            <p>{name}</p>
-            <p>{fullStar.repeat(roundedRating)}{emptyStar.repeat(5 - roundedRating)}</p>
+        <div className="DriverCard">
             <img src={img} />
-            <p>{car.model} - {car.licensePlate}</p>
+            <div>
+                <p>{name}</p>
+                <p>{fullStar.repeat(roundedRating)}{emptyStar.repeat(5 - roundedRating)}</p>
+                <p>{car.model} - {car.licensePlate}</p>
+            </div>
         </div>
     )
 }

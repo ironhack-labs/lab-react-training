@@ -6,7 +6,7 @@ const Rating = props => {
 
 
     return (
-        <p>{fullStar.repeat(roundedRating)}{emptyStar.repeat(5 - roundedRating)}</p>
+        <p className="container">{fullStar.repeat(roundedRating)}{emptyStar.repeat(5 - roundedRating)}</p>
     )
 
 }
