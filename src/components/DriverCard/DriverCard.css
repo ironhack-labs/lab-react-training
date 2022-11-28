@@ -1,0 +1,14 @@
+.card img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card {
+    display: flex;
+    color: white;
+    justify-content: center;
+    background-color: #455EB5;
+    padding: 20px 10px;
+    border-radius: 20px;
+    align-items: center;
+}

@@ -1,0 +1,18 @@
+.imgContainer>img {
+    width: 60px;
+}
+
+.creditCard p {
+    font-size: 32px;
+}
+
+.creditCard div {
+    text-align: left;
+    padding-left: 1rem
+}
+
+.imgContainer {
+    text-align: right;
+    height: 40px;
+    padding: 1rem 0.5rem;
+}
