@@ -1,0 +1,17 @@
+.CreditCard {
+    border: 1px solid;
+    width: 25%;
+    height: 200px;
+    display: inline-block;
+    border-radius: 2%;
+    justify-content: space-around;
+    margin-right: 2%;
+}
+
+.CreditCard .logoCard {
+    width: 55px;
+    height: auto;
+    justify-content: end;
+    align-items: end;
+
+}
