@@ -1,7 +1,6 @@
 import './DriverCard.css';
 
-const DriverCard = (props) => {
-  const { name, rating, img, car } = props;
+const DriverCard = ({ name, rating, img, car }) => {
   const { model, licensePlate } = car;
 
   let roundedRating = Math.round(rating);

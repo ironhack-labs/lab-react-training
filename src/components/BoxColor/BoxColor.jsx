@@ -1,8 +1,6 @@
 import './BoxColor.css';
 
-const BoxColor = (props) => {
-  const { r, g, b } = props;
-
+const BoxColor = ({ r, g, b }) => {
   function componentToHex(elm) {
     let hex = elm.toString(16);
     return hex.length === 1 ? '0' + hex : hex;

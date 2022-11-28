@@ -2,18 +2,16 @@ import VisaLogo from './../../assets/images/visa.png';
 import Mastercard from './../../assets/images/master-card.svg';
 import './CreditCard.css';
 
-const CreditCard = (props) => {
-  const {
-    type,
-    number,
-    expirationMonth,
-    expirationYear,
-    bank,
-    owner,
-    bgColor,
-    color,
-  } = props;
-
+const CreditCard = ({
+  type,
+  number,
+  expirationMonth,
+  expirationYear,
+  bank,
+  owner,
+  bgColor,
+  color,
+}) => {
   const divStyle = {
     backgroundColor: bgColor,
     color: color,

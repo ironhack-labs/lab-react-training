@@ -1,7 +1,6 @@
 import './Random.css';
 
-const Random = (props) => {
-  const { min, max } = props;
+const Random = ({ min, max }) => {
   let randomNumber = Math.floor(Math.random() * (max - min) + min);
 
   return (
