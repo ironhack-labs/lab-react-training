@@ -1,0 +1,13 @@
+.idcard-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.idcard-container p {
+    margin: 0;
+    text-align: left;
+    margin-left: 5px;
+}

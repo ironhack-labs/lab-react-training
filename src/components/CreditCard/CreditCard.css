@@ -1,0 +1,39 @@
+.creditcard-container {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.type-img-mastercard {
+    background: url('../../assets/images/master-card.svg') no-repeat;
+}
+
+.type-img-visa {
+    background: url('../../assets/images/visa.png') no-repeat;
+}
+
+.type-img {
+    background-position: center;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-right: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.expires-text {
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}

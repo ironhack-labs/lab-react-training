@@ -1,0 +1,14 @@
+.drivercard-container {
+    background-color: #455eb5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 24px;
+    color: white;
+}
+
+.drivercard-container img {
+    width: 100px;
+    border-radius: 50%;
+}
