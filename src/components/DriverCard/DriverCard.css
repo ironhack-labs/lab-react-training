@@ -1,0 +1,13 @@
+.DriverCard {
+    padding: 5px;
+    width: 30%;
+    margin-right: 1%;
+    border: 1px solid;
+    display: inline-block;
+}
+
+.DriverCard img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}

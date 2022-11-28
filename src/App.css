@@ -32,7 +32,18 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.GeetingDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.CreditCardDiv {
+  display: flex;
+  justify-content: center;
 }
