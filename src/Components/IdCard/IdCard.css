@@ -1,0 +1,13 @@
+.IdCard {
+    padding: 5px;
+    width: 30%;
+    margin-right: 1%;
+    border: 1px solid;
+    flex-direction: row;
+}
+
+.IdCard img {
+    flex-direction: column;
+    object-fit: cover;
+    height: 200px;
+}
