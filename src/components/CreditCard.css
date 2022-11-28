@@ -1,0 +1,9 @@
+.CreditCard{
+    padding: 2px;
+    width: 25%;
+    margin-right: 1%;
+    border: 1px solid;
+    display: inline-block;
+    border-radius: 50px;
+
+}
