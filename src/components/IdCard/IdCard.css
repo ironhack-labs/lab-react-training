@@ -1,0 +1,23 @@
+.IdCard {
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 5px;
+}
+
+.Info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    align-self: start;
+    padding-left: 10px;
+}
