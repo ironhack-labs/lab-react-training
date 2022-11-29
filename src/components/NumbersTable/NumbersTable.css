@@ -1,0 +1,11 @@
+.whiteCell {
+    background-color: white;
+    padding: 20px 21px;
+    border: 1px solid black;
+}
+
+.redCell {
+    background-color: red;
+    padding: 20px 21px;
+    border: 1px solid black;
+}

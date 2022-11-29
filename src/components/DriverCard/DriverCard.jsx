@@ -1,4 +1,5 @@
 import './DriverCard.css'
+import Rating from '../Rating/Rating'
 
 const DriverCard = props => {
 
@@ -6,30 +7,6 @@ const DriverCard = props => {
 
     const {model, licensePlate} = car
   
-    let rate = Math.round(rating)
-
-    let stars
-    switch (rate) {
-        case 1:
-            stars = '★☆☆☆☆'
-            break
-        case 2:
-            stars = '★★☆☆☆'
-            break
-        case 3:
-            stars = '★★★☆☆'
-            break
-        case 4:
-            stars = '★★★★☆'
-            break
-        case 5:
-            stars = '★★★★★'
-            break
-        default:
-            stars = '☆☆☆☆☆'
-            break
-    }
-
     return (
         
         <div className='driverCard'>
@@ -37,7 +14,7 @@ const DriverCard = props => {
             <img src={img} alt="img" />
             <div className='driverData'>
                 <h2>{name}</h2>
-                <h2>{stars}</h2>
+                <Rating>{ rating}</Rating>
                 <p>{model} - {licensePlate}</p>
             </div>
 
