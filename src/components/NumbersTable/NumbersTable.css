@@ -1,0 +1,16 @@
+.NumbersTable {
+    display: flex;
+
+}
+
+.styleWhite {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.styleRed {
+    padding: 10px;
+    background-color: red;
+    border: 1px solid black;
+}

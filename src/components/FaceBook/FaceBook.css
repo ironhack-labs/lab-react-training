@@ -1,0 +1,18 @@
+.FaceBook {
+    padding: 5px;
+    width: 30%;
+    margin-right: 1%;
+    margin-bottom: 10px;
+    border: 1px solid;
+    display: inline-block;
+}
+
+.FaceBook img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.TxtBold {
+    font-weight: bold;
+}
