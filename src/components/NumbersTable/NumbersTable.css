@@ -1,0 +1,20 @@
+.NumbersTable ul {
+    display: flex;
+    margin: 0;
+}
+
+.NumbersTable li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #000;
+
+}
+
+.even {
+    background-color: red;
+}
