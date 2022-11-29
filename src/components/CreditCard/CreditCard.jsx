@@ -8,11 +8,16 @@ const CreditCard = props => {
     const { type, number, expirationMonth, expirationYear, bank, owner, bgColor, color } = props
 
     // const numberHidden = number.split('').map((elm, i) => {
-    //     if (i < number.length - 4) {
+
+    //     if (i % 4 === 0) {
+    //         elm + ' '
+    //     }
+
+    //     if (i < number.length - 4 && elm !== ' ') {
     //         return elm = '•'
     //     }
     //     return elm
-    //  }) ================> Se intentó, a falta de añadir los espacios cada 4 digitos. 
+    // })
 
     let month
 
