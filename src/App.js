@@ -5,7 +5,10 @@ import Random from './components/Random';
 import BoxColor from './components/Boxcolor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
-
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
 
 
 function App() {
@@ -71,6 +74,7 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
@@ -78,8 +82,27 @@ function App() {
       <Rating>4</Rating>
       <Rating>5</Rating>
 
+      <LikeButton />
+      <LikeButton />
+
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+
+      <Dice />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
     </div>
-  );
+  )
 }
 
 export default App;
