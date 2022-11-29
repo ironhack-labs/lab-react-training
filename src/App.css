@@ -32,7 +32,20 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.paymentCard {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.rating {
+  border: 1px black solid;
+  margin-top: 20px;
+  font-size: 1.5em;
 }

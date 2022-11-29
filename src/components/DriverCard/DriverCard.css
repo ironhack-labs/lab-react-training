@@ -1,0 +1,13 @@
+.driveCard {
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.driveCard img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}

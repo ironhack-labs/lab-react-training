@@ -1,0 +1,7 @@
+.colorbox {
+    height: 80px;
+    border: 1px black solid;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}

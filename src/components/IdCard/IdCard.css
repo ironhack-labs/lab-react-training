@@ -1,0 +1,10 @@
+.article {
+    border: 1px black solid;
+    display: flex;
+
+}
+
+.article img {
+    height: 100%;
+    margin-right: 150px;
+}
