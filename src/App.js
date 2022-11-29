@@ -1,11 +1,16 @@
 import IdCard from './components/IdCard/Idcard'
 import './App.css'
 import { hydrate } from 'react-dom'
-import Greetings from './components/IdCard/Greetings/Greetings';
-import Random from './components/IdCard/Greetings/Random/Random';
+import Greetings from './components/Greetings/Greetings';
+import Random from './components/Random/Random';
 import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
 
 
 
@@ -97,6 +102,48 @@ function App() {
 
 
       </div>
+
+      <div className='DriverCard'>
+
+
+
+      </div>
+      <div className='LikeButton'>
+        <LikeButton />
+      </div>
+
+
+      <div className='ClickablePicture'>
+
+        <ClickablePicture
+          img='maxence.png'
+          imgClicked='maxence-glasses.png'
+        />
+
+      </div>
+
+      <div className='Dice'>
+        <Dice />
+
+      </div>
+
+      <div className='Carousel'>
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+
+      </div>
+
+      <div className='NumbersTable'>
+
+        <NumbersTable limit={12} />
+      </div>
+
 
     </section>
 
