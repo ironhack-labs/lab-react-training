@@ -7,6 +7,10 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard'
+import Counter from './components/Counter/Counter';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture'
+import Dice from './components/Dice/Dice'
+import Carousel from './components/Carousel/Carousel'
 
 function App() {
   return (
@@ -106,6 +110,30 @@ function App() {
             model: "Audi A3",
             licensePlate: "BE33ER"
           }}
+        />
+      </div>
+      <div>
+        <Counter />
+      </div>
+      <div>
+        <ClickablePicture
+          img='maxence.png'
+          imgClicked='maxence-glasses.png'
+        />
+        <hr />
+      </div>
+      <div>
+        <Dice />
+        <hr />
+      </div>
+      <div>
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
         />
       </div>
     </div>
