@@ -1,17 +1,29 @@
+
+
 const CreditCard = (props) => {
-    const { type, number, expirationMonth, expirationYear, bank, owner, bgColor, color } = props
-    const secretNumber = `*********** ${number[12]}${number[13]}${number[14]}${number[15]}`
-    const year = expirationYear.toString().slice(2)
+    const { type, number, expirationMonth, expirationYear, bank, owner, bgColor, color, } = props;
+
+    const divStyle = {
+        backgroundColor: bgColor,
+        color: color,
+    };
+
     return (
-        <div >
-            <div style={{ backgroundColor: bgColor, color: color }}>
-                <h3>{type}</h3>
-                <p>{secretNumber}</p>
-                <p>Expires: {expirationMonth}/{year} <small>{bank}</small></p>
+        <div style={divStyle} className="credit-card">
+            <div className="card-logo">
+                {type}
+            </div>
+            <div className="card-number">
+                <h2>•••• •••• •••• {number.slice(12)}</h2>
+            </div>
+            <div className="card-info">
+                <p>
+                    Expires {expirationMonth}/{expirationYear} {bank}
+                </p>
                 <p>{owner}</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default CreditCard
