@@ -1,0 +1,10 @@
+.numbertable-container {
+    margin-top: 20px;
+}
+
+.box-table {
+    width: 15%;
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid black;
+}
