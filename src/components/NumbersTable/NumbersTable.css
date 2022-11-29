@@ -1,0 +1,17 @@
+.numberCell {
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tableNumbers {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    justify-content: center;
+}

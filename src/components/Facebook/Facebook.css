@@ -1,0 +1,25 @@
+.profileCard {
+    display: flex;
+    width: 80%;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.profileCard img {
+    width: 80px;
+    height: 100px;
+}
+
+.facebookContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    text-align: left;
+}
