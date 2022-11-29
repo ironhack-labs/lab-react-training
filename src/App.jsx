@@ -7,6 +7,12 @@ import BoxColor from './components/BoxColor/BoxColor'
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import FaceBook from './components/FaceBook/FaceBook';
 
 function App() {
   return (
@@ -105,7 +111,7 @@ function App() {
       <div>
         <DriverCard
           name="Travis Kalanick"
-          rating={4.2}
+          rating={1}
           img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
           car={{
             model: "Toyota Corolla Altis",
@@ -123,9 +129,37 @@ function App() {
           }}
         />
       </div>
+      <h2>Iteration 8 | State: LikeButton</h2>
+      <div className='buttonBox'>
+        <LikeButton />
+        <LikeButton />
+      </div>
+      <hr />
+      <h2>Iteration 9: State: ClickablePicture</h2>
 
-
-
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+      <hr />
+      <h2>Iteration 10 | State: Dice</h2>
+      <Dice />
+      <hr />
+      <h2>Iteration 11 | State: Carousel</h2>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <hr />
+      <h2>Iteration 12 | List and Keys | NumbersTable</h2>
+      <NumbersTable limit={12} />
+      <hr />
+      <h2>Iteration 13 | List and Keys - FaceBook (Simple)</h2>
+      <FaceBook />
     </div>
 
   );

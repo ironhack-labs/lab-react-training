@@ -49,3 +49,9 @@
   margin-top: 20px;
   font-size: 1.5em;
 }
+
+.buttonBox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center
+}
