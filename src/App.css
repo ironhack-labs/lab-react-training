@@ -1,9 +1,9 @@
+body {
+  display: block;
+  margin: 8px;
+}
+
 .CreditDiv {
   display: flex;
   margin: 15px;
-}
-
-.RatingDiv {
-  display: flex;
-  flex-direction: column;
 }

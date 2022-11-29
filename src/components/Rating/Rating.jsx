@@ -7,20 +7,15 @@ const Rating = props => {
 
     let childrenRounded = Math.round(children)
 
-    let stars
+    let Star = '★'
+    let emptyStar = '☆'
 
-    if (childrenRounded === 0) {
-        return stars = '☆'
-    } else {
-        stars = '★'
-        return stars.repeat(childrenRounded)
-    }
-
-
+    const filledStars = Star.repeat(childrenRounded)
+    const emptyStars = emptyStar.repeat(5 - childrenRounded)
 
     return (
         <div className='Rating'>
-
+            {`${filledStars}${emptyStars}`}
         </div>
     )
 }

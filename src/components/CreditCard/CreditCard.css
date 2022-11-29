@@ -6,10 +6,25 @@
     display: inline-block;
 }
 
+.Type {
+    text-align: end;
+}
+
+.Type img {
+    height: 20px;
+}
+
+
 .ExpireAndBank {
     display: flex;
 }
 
 .ExpireAndBank p {
     margin: 5px;
+}
+
+.CreditCard .number {
+    font-size: 1.9em;
+    text-align: center;
+    margin: 20px 0;
 }
