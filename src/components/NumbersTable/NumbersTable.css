@@ -1,0 +1,14 @@
+.NumbersTable {
+  padding: 30px;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+.NumbersTable div {
+  text-align: center;
+  width: 20px;
+}
+
+.red {
+  background-color: red;
+}

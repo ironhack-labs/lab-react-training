@@ -1,0 +1,16 @@
+.fbCard {
+  display: flex;
+  margin: 10px;
+  padding: 4px;
+  border: 1px solid black;
+}
+
+.fbCard img {
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  margin-inline: 6px;
+  font-size: 16px;
+}
