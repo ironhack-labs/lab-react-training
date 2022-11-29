@@ -1,0 +1,13 @@
+.CreditCard {
+    display: flex;
+    padding: 50px;
+    width: 250px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.CreditCard img {
+    width: 100%;
+    object-fit: cover;
+    height: 30px;
+}

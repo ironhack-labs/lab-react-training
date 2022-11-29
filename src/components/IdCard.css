@@ -1,0 +1,9 @@
+.IdCard {
+    display: flex;
+    border: 1px black solid;
+}
+
+.PictureCard {
+    height: 80%;
+    margin-right: 100px;
+}
