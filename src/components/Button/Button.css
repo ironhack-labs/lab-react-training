@@ -1,0 +1,13 @@
+a {
+    text-decoration: none;
+    display: block;
+    width: 5px;
+    height: 5px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: rgb(33, 199, 33);
+    border-radius: 50%;
+    color: white;
+}
