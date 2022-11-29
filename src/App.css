@@ -1,19 +1,19 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,9 +22,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 }
 
@@ -35,4 +35,65 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.IdCard{
+display: flex;
+height: 200px;
+border-style: solid;
+padding: 6px;
+margin: 10px;
+}
+
+.BoxColor{
+  border-style: solid ;
+  margin: 10px;
+}
+
+.style-box{
+color: white;
+}
+
+.IdCardInfo{
+font-size: 12px;
+padding-left: 5px;
+}
+.IdCardInfo h2{
+margin:0;
+}
+
+.CreditCard{
+  display: flex;
+  border-style: solid;
+  height: 200px;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.CreditCard h2{ 
+    margin:0;
+}
+
+.DriverCard {
+  background-color: #445cb3;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+
+}
+
+.DriverCard img {
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+
+}
+
+.img-driver{
+padding: 25px;
 }
