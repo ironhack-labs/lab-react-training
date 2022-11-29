@@ -2,7 +2,6 @@ import './CreditCard.css'
 
 const CreditCard = props => {
 
-  console.log(props)
 
   const {
     type,

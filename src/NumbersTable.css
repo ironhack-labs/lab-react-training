@@ -1,0 +1,22 @@
+.NumbersTable,
+.NumbersTable li {
+  display: flex;
+  margin: 0;
+
+}
+
+ul {
+  display: flex;
+}
+
+.white {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid;
+}
+
+.red {
+  padding: 15px;
+  background-color: red;
+  border: 1px solid;
+}

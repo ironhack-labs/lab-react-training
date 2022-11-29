@@ -2,7 +2,6 @@ import './DriverCard.css'
 import Rating from './Rating'
 
 const DriverCard = props => {
-  console.log(props)
   const {
     name,
     rating,
