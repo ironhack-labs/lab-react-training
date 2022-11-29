@@ -1,0 +1,8 @@
+.LikeButton {
+    border: 4px solid rgb(0, 0, 161);
+    border-radius: 10px;
+    background-color: rgb(97, 97, 227);
+    color: beige;
+    width: 200px;
+    margin: 30px;
+}
