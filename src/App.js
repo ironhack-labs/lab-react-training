@@ -1,6 +1,7 @@
 import './App.css';
-import Greetings from './Components/Greetings/Greetings';
 import IdCard from './Components/IdCard/IdCard'
+import LikeButton from './Components/LikeButton/LikeButton'
+import ClickablePicture from './Components/ClickablePicture/ClickablePicture'
 
 function App() {
 
@@ -16,11 +17,12 @@ function App() {
         details={{ lastName: 'Delores', firstName: 'Obrien', gender: 'female', height: 172, birth: "1988-05-11" }}
       />
 
-
-      <Greetings
-
-
+      <LikeButton
       />
+
+      <ClickablePicture
+      />
+
     </section>
   );
 }
