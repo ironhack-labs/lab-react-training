@@ -1,0 +1,17 @@
+.credit-cards {
+    display: flex;
+    width: 100vw;
+    height: 29vh;
+}
+
+.credit-card {
+    width: 25%;
+    margin: 1em 5em;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.credit-card img {
+    padding: 1em;
+    width: 75px;
+}
