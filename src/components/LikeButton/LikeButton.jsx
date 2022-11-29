@@ -11,7 +11,7 @@ const LikeButton = () => {
 
 
     const bgColorStyle = {
-        backgroundColor: likeCounter < colors.length ? colors[likeCounter] : colors[0]
+        backgroundColor: likeCounter === colors.length ? colors[0] : colors[likeCounter]
     }
 
     return (

@@ -1,0 +1,16 @@
+.Facebook-Card {
+    border: 1px solid black;
+    margin: 20px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.Facebook-Card img {
+    width: 10%;
+}
+
+.Facebook-Card ul {
+    list-style: none;
+
+}
