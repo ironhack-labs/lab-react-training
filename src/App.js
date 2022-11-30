@@ -6,6 +6,11 @@ import Random from './components/Random/Random'
 import BoxColor from './components/BoxColor/BoxColor'
 import CreditCard from './components/CreditCard/CreditCard'
 import Rating from './components/Rating/Rating'
+import LikeButton from './components/LikeButton/likeButton'
+import ClickablePicture from './components/ClickablePicture/ClickablePicture'
+import Dice from './components/Dice/Dice'
+import Carousel from './components/Carousel/Carousel'
+import NumbersTable from './components/NumbersTable/NumbesTable'
 
 function App() {
   return (
@@ -92,12 +97,46 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+
+      <div className="LikeButton">
+        <h2>Like Button</h2>
+      </div>
+      <LikeButton />
+
+      <div className="ClickablePicture">
+        <h2>Clickable Pictures</h2>
+      </div>
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+
+      <div className="Dice">
+        <h2>Dice</h2>
+      </div>
+
+      <Dice />
+
+      <div className="Carousel">
+        <h2>Carousel</h2>
+      </div>
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <div className="NumbersTable">
+        <h2>NumbersTable</h2>
+      </div>
+
+      <NumbersTable limit={12} />
     </div>
 
-
-
-
-  );
+  )
 }
 
 

@@ -1,0 +1,38 @@
+.Counter {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: cornflowerblue;
+    border-radius: 5px;
+}
+
+button,
+select {
+    padding: 3px 10px;
+    min-width: 50px;
+    margin: 5px;
+}
+
+.WeatherWidget {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid grey;
+    border-radius: 120px;
+    background: lightgoldenrodyellow;
+    color: black;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.WeatherWidget span {
+    font-size: 36px;
+}
+
+.WeatherWidget.dark {
+    background: #2a3c60;
+    color: white;
+}

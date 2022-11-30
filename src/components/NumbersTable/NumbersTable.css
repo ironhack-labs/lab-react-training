@@ -1,0 +1,19 @@
+.numbers-table {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    margin: 5px;
+
+}
+
+.numbers-table>div {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.numbers-table>div:nth-child(2n) {
+    background-color: red;
+}
