@@ -7,6 +7,10 @@ import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
 
 function App() {
   return (
@@ -102,7 +106,6 @@ function App() {
               licensePlate: "CO42DE"
             }}
           />
-
           <DriverCard
             name="Dara Khosrowshahi"
             rating={4.9}
@@ -113,10 +116,35 @@ function App() {
             }}
           />
         </section>
-
         <section>
           <h2>Like Button</h2>
           <LikeButton />
+        </section>
+        <section>
+          <h2>Clickable Picture</h2>
+          <ClickablePicture
+            img='maxence.png'
+            imgClicked='maxence-glasses.png'
+          />
+        </section>
+        <section>
+          <h2>Random Dice</h2>
+          <Dice />
+        </section>
+        <section>
+          <h2>Carrousel</h2>
+          <Carousel
+            images={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg'
+            ]}
+          />
+        </section>
+        <section>
+          <h2>Numbers Table</h2>
+          <NumbersTable limit={12} />
         </section>
       </main>
     </div>

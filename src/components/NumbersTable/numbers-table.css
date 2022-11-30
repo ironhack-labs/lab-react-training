@@ -1,0 +1,10 @@
+.numbers-table {
+    display: flex;
+}
+
+.numbers-table-list {
+    padding-top: 50px;
+    list-style: none;
+    width: 300px;
+    height: 100px;
+}

@@ -1,12 +1,15 @@
+import { useEffect, useState } from 'react'
 import('./like-button.css')
 
-const LikeButton = (props) => {
-    let count = 0
+const LikeButton = () => {
+    const [counter, setCounter] = useState(0)
 
+    const increase = () => {
+        setCounter(counter + 1)
+    }
     return (
-        <button id='like-button' className='like-button' onClick={() =>
-            count++}>
-            {count} Like
+        <button className='like-button' onClick={increase}>
+            {counter}
         </button >
     )
 }
