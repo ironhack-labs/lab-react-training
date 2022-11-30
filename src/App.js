@@ -7,7 +7,11 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
-
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';.
+import Facebook from './components/Facebook';
 function App() {
   return (
     <>
@@ -82,7 +86,7 @@ function App() {
           color="white"
         />
       </div>
-
+      <hr />
       <h1>Rating</h1>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -90,7 +94,7 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
+      <hr />
       <h1>DriverCard</h1>
       <DriverCard
         name="Travis Kalanick"
@@ -111,10 +115,34 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
-
+      <hr />
       <h1>Like Button</h1>
       <LikeButton />
-
+      <hr />
+      <h1>Clickable Picture</h1>
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+      <hr />
+      <h1>Dice</h1>
+      <Dice />
+      <hr />
+      <h1>Carousel</h1>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <hr />
+      <h1>NumbersTable</h1>
+      <NumbersTable limit={12} />
+      <hr />
+      <h1>Facebook</h1>
+      <FaceBook />
     </>
   );
 }
