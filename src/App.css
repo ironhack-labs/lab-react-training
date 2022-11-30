@@ -60,3 +60,34 @@
 .box-color {
   text-align: center;
 }
+
+.cards {
+  display: flex;
+}
+
+.credit-card {
+  margin: 1vw;
+  width: 20vw;
+  height: 12.61vw;
+  border-radius: 0.74vw;
+}
+
+.cc-logo {
+  text-align: right;
+}
+
+.cc-logo img{
+  height: 1.5vw;
+  margin: 1vw 1vw 0 0;
+}
+
+.cc-num {
+  margin: 2vw 0;
+  font-size: 2vw;
+}
+
+.cc-info {
+  text-align: left;
+  margin: 0 0 1vw 1vw;
+  font-size: 0.8vw;
+}
