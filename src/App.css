@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,65 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
+.IdCard{
+  display: flex;
+  height: 200px;
+  border-style: solid;
+  padding: 6px;
+  margin: 10px;
+  }
+  
+  .BoxColor{
+    border-style: solid ;
+    margin: 10px;
+  }
+  
+  .style-box{
+  color: white;
+  }
+  
+  .IdCardInfo{
+  font-size: 12px;
+  padding-left: 5px;
+  }
+  .IdCardInfo h2{
+  margin:0;
+  }
+  
+  .CreditCard{
+    display: flex;
+    border-style: solid;
+    height: 200px;
+    flex-direction: column;
+    margin: 10px;
+  }
+  
+  .CreditCard h2{ 
+      margin:0;
+  }
+  
+  .DriverCard {
+    background-color: #445cb3;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+  
+  }
+  
+  .DriverCard img {
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  
+  }
+  
+  .img-driver{
+  padding: 25px;
+  }
