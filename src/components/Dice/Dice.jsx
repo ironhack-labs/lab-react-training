@@ -23,16 +23,14 @@ const Dice = () => {
     return allDice[Math.floor(Math.random() * 6)];
   };
 
-  const [diceScore, setDiceScore] = useState(getRandomDice());
+  const [dice, setDice] = useState(getRandomDice());
 
   const handleClick = () => {
-    setDiceScore(diceEmpty);
-    setTimeout(() => setDiceScore(getRandomDice()), 1000);
+    setDice(diceEmpty);
+    setTimeout(() => setDice(getRandomDice()), 1000);
   };
 
-  return (
-    <img src={diceScore} width={100} alt="random Dice" onClick={handleClick} />
-  );
+  return <img src={dice} width={100} alt="random Dice" onClick={handleClick} />;
 };
 
 export default Dice;
