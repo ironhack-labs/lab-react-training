@@ -1,0 +1,10 @@
+.likeButton {
+    padding: 3px 10px;
+    min-width: 50px;
+    margin: 5px;
+    border: 1px solid;
+    padding: 15px;
+    display: flex;
+    text-align: left;
+    margin-left: 20px;
+}

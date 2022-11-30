@@ -7,7 +7,7 @@ const Random = props => {
 
     return (
         <div className='random'>
-            Random value between {min} and {max} {index}
+            {`Random value between ${min} and ${max} => ${index}`}
         </div>)
 
 }
