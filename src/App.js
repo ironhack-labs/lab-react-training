@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import IdCard from './data/components/Student/IdCard';
 import Random from './data/components/Student/random/random';
@@ -6,6 +7,9 @@ import BoxColor from './data/components/Student/boxcolor/boxcolor';
 import CreditCard from './data/components/CreditCard/CreditCard';
 import Rating from './data/components/rating/rating';
 import DriverCard from './data/components/DriverCard/DriverCard';
+import LikeButton from './data/components/LikeButton/LikeButton';
+import ClickablePicture from './data/components/ClickablePicture/ClickablePicture';
+import Dice from './data/components/Dice/Dice';
 
 
 function App() {
@@ -96,6 +100,23 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }}
+      />
+      <LikeButton />
+
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+
+      <Dice />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
       />
 
     </div>
