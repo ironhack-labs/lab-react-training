@@ -1,13 +1,102 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.idCard {
+  display: flex;
+  align-items: center;
+  border: 2px solid;
+  padding: 5px;
+  height: 160px;
+  margin-bottom: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.idCard img {
+  height: 160px;
+  width: 160px;
+  margin-right: 10px;
 }
+
+.greetings, .random {
+  border: 2px solid;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.boxColor {
+  height: 80px;
+  border: 2px solid;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.creditCard {
+  height: 180px;
+  width: 350px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.creditCard img {
+  height: 20px;
+  width: auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 20px 0 0;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  margin-top: 30px;
+  font-size: x-large;
+}
+
+.info {
+  width: 170px;
+  margin: 30px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info p {
+  margin: 0;
+}
+
+.driverCard {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #355da8;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.driverCard img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.driverInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.driverInfo p, .driverInfo h3 {
+  margin: 2px;
+}
+
