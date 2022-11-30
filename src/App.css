@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.comp {
+  border: 1px solid black;
+  margin: 1vh;
+  padding: 1vh;
+  text-align: left;
+}
+
+.id-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.id-card img {
+  align-self: start;
+}
+
+.id-card p {
+  margin: 0 0 0 1vw;
+}
+
+.box-color {
+  text-align: center;
+}
