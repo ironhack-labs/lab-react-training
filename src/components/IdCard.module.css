@@ -1,0 +1,12 @@
+.id-card {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  border: 2px solid black;
+  padding: 1.5%;
+  grid-gap: 10px;
+}
+
+.id-img {
+  width: 200px;
+  height: 200px;
+}
