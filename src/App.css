@@ -91,3 +91,43 @@
   margin: 0 0 1vw 1vw;
   font-size: 0.8vw;
 }
+
+.stars {
+  font-size: 210%;
+  text-align: left;
+  margin: 0;
+}
+
+.driver-card {
+  background-color: #455EB5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin: 1vw;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+.driver-card-content {
+  display: flex;
+}
+
+.card-info {
+  margin: 0 0 0 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.driver-card img {
+  width: 10vw;
+  height: 10vw;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.driver-card strong {
+  font-size: 1.5em;
+}

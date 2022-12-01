@@ -20,12 +20,12 @@ const CreditCard = ({type,
   let numsDots = "";
 
   for (let i = 0; i < number.length; i++) {
-    let val = i >= number.length - 5 ? number[i] : "•";
+    let val = i >= number.length - 4 ? number[i] : "•";
     numsDots += val;
   }
 
   const numsFormat = `
-    ${numsDots.slice(0, 3)} ${numsDots.slice(3, 7)} ${numsDots.slice(7, 11)} ${numsDots.slice(11, -1)}`
+    ${numsDots.slice(0, 4)} ${numsDots.slice(4, 8)} ${numsDots.slice(8, 12)} ${numsDots.slice(12, 16)}`
 
 
   return (
