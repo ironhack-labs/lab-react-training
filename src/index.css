@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* Estilos para IdCard */
+.IdCard{
+  border: 1px solid black;
+  height: 25vh;
+  display: flex;
+}
+.IdCard > img{
+  width: 150px;
+  height: 150px;
+}
+.IdCardInfo > h2{
+  font-size: 15px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Estilos para Greetings */
+.greetingDiv{
+  padding: 10px;
+  border: 1px solid black;
+  height: 50px;
+  text-align: left;
+  font-size: 20px;
+}
+
+/* Estilos para Random */
+.randomDiv{
+  border: 1px solid black;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Estilos para BoxColor */
+.boxColorDiv{
+  border: 1px solid black;
 }

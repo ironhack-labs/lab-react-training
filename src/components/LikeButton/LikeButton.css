@@ -1,0 +1,10 @@
+.LikeButton {
+    background-color: blueviolet;
+    border-radius: 20px;
+    width: 120px;
+    height: 60px;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    margin: 20px;
+}
