@@ -1,4 +1,5 @@
-const Greetings = (lang, children) =>{
+const Greetings = (props) =>{
+    const {lang, children} = props
     const languageVariableGreeting = {
         "de": "Hallo",
         "en": "Hello",
@@ -9,7 +10,7 @@ const Greetings = (lang, children) =>{
     return (
 
     <div className="greeting">
-        <p>{languageVariableGreeting[props.lang]} {props.children}</p>
+        <p>{languageVariableGreeting[lang]} {children}</p>
     </div>
     )
 }

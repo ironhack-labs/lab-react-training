@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
+
 
 function App() {
   return (
