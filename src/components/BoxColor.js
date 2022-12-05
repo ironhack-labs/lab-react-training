@@ -1,28 +1,34 @@
-const BoxColor = (r, g, b) => {
-    
-    function rgbToHex(r, g, b) {
-        function valueToHex(value){
-            let convertToHex = value.toString(16);
-            return value.length == 1 ? "0" + convertToHex : convertToHex;
-        };
-        return "#" + valueToHex(r) + valueToHex(g) + valueToHex(b);
-      }
-    
-    const hexValue = rgbToHex(r, g, b)
+const BoxColor = (props) => {
+    const {r, g, b} = props
+    function valueToHex(c) {
+        var hex = c.toString(16);
+        if(hex.length === 1)
+            {return "0"+ hex 
+            } else  {return hex 
+        }
+      }  
+      let rgbHex = "#"+valueToHex(r)+valueToHex(g)+valueToHex(b)
+
     const boxStyle = {
-        "background-color": {hexValue},
+        "display" : "flex",
+        "flexDirection" : "Column",
+        "backgroundColor": `${rgbHex}`,
         "color": "white",
-        height : 200,
-        border : "Solid",
-        "margin-top": 20, 
-        "text-align": "center",
-        "font-size": 50
+        'height' : '10%',
+        'width' : '600',
+        'border' : "Solid",
+        "marginTop": '20px',
+        "marginLeft": '20%',
+        "marginRight": '20%',
+        "textAlign": "center",
+        "fontSize": '25px',
+        "border" : "Solid 4px black",
 }
     return (
-        <div className="color-box boxed-border" style={boxStyle}>
+        <div className="colorBox" style={boxStyle}>
             <p>rgb{"("}{r},{g},{b}{")"}</p>
-            <br/>
-            <p>{hexValue}</p>
+
+            <p>{rgbHex}</p>
         </div>
     )
 }

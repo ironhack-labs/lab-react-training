@@ -4,28 +4,28 @@ import defaultProfile from "../assets/images/blankprofile.png"
 const DriverCard = (props) => {
     const {name, rating, img, car:{model, licensePlate}} = props
     let cardDisplay = {
-        display: flex,
-        'flex-direction': row,
-        'justify-content': center,
-        'align-items': center,
+        'display': 'flex',
+        'flexDirection': 'row',
+        'justifyContent': 'center',
+        'alignItems': 'center',
         'border-radius': '10px',
-        'background-color': '#455EB5',
-        color: white,
-        margin: '10px',
-        padding: '40px',
+        'backgroundColor': '#455EB5',
+        'color': 'white',
+        'margin': '10px',
+        'padding': '40px',
     };
 
     let cardImage = {
-        width : '150px',
-        height: '150px',
-        'border-radius': '50%'
+        'width' : '150px',
+        'height': '150px',
+        'borderRadius': '50%'
     };
 
     let driverInfo = {
-        display : flex,
-        'flex-direction' : column,
-        'text-align' : left,
-        'margin-left' : '50px'
+        'display' : 'flex',
+        'flexDirection' : 'column',
+        'textAlign' : 'left',
+        'marginLeft' : '50px'
     };
 
     return(

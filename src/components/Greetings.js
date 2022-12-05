@@ -10,7 +10,7 @@ const Greetings = (props) =>{
     return (
 
     <div className="greeting">
-        <p>{languageVariableGreeting[lang]} {children}</p>
+        <h3 style={{'border':'solid', 'fontSize': '2em'}}>{languageVariableGreeting[lang]} {children}</h3>
     </div>
     )
 }
