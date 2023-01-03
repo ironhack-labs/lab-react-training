@@ -1,0 +1,42 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    
+ border-width:1px;
+ border-style:groove;
+ border-color:black;
+}
+
+.userDoe {
+    border-width:1px;
+    border-style:groove;
+    border-color:black;
+    margin: 10px;
+   }
+.userDel {
+ border-width:1px;
+ border-style:groove;
+ border-color:black;
+ margin: 10px;
+}
+p {
+    line-height:1;
+}
+.userDoe img {
+    padding: 20px;
+    
+}
+.userDel img {
+    
+    padding: 20px;
+}
+
+.box {
+    border-width:3px;
+    border-style:groove;
+    border-color:black;
+    margin: 5px;
+   }
+.box p {
+    text-align: center;
+}
