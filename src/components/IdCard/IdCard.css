@@ -1,0 +1,24 @@
+.small{
+    
+}
+
+.card{
+    width: 350px;
+        border:1px blue solid
+
+}
+
+.persons{
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.margin-top{
+    margin-top: 25px;
+}

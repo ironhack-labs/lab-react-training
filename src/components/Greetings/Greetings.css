@@ -1,0 +1,13 @@
+
+.elegant{
+    
+    margin: 0 auto;
+    width: 35%;
+    font-weight: bold;
+    font-size: 35px;
+    border-radius: 25px;
+    border:1px blue solid;
+    margin-top: 55px;
+    padding: 5px;
+
+}

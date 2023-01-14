@@ -1,0 +1,22 @@
+[{
+    "lastName":"Doe",
+  "firstName":"John",
+  "gender":"male",
+  "height":"178",
+  "birth":"1992-07-14",
+  "picture":"https://randomuser.me/api/portraits/men/44.jpg",
+  "description" : "A smart young lad who likes to go out with friends on weekends!"
+},
+{
+    "lastName":"Obrien",
+  "firstName":"Dolores",
+  "gender":"female",
+  "height":"172",
+  "birth":"1993-05-11",
+  "picture":"https://randomuser.me/api/portraits/women/44.jpg",
+  "description" : "A happy  young lady who likes to study hard to improve her lifestyle!"
+}
+
+
+
+]
