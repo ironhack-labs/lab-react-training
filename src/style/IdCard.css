@@ -1,0 +1,17 @@
+
+.box-id {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 12px;
+    padding: 10px 70% 10px 0px;
+    border: black 2px solid;
+    width: 400px;
+    margin: 10px;
+  
+  }
+  
+  .profile-pic {
+    width:200px;
+  }

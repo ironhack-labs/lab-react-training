@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+
+}
+
+.CarCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}

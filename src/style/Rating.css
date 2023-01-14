@@ -1,0 +1,18 @@
+.fa-star {
+  color: white;
+  -webkit-text-stroke: 2px black
+}
+
+.checked {
+  color: black;
+}
+
+.rating-section span {
+  font-size: 30px;
+}
+
+.rating-section {
+  width: 300px;
+  font-size: 30px;
+}
+

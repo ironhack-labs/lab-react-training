@@ -1,0 +1,37 @@
+.CreditCard {
+    position: relative;
+    width: 400px;
+    border-radius: 5px;
+    height:200px;
+
+}
+
+
+.CreditCard img {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.CreditCard h1 {
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+.DatesExpiration {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 200px;
+    padding-left: 40px;
+}
+
+
+.DatesExpiration p {
+    margin-bottom: 0px;
+}
+.Name {
+    text-align: left;
+    padding-left: 40px;
+    margin-top: 0px;
+}

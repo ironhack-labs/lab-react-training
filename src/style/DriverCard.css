@@ -1,0 +1,48 @@
+.image-cropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image-cropper img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    /* position: relative;
+    right: 10px; */
+
+}
+
+
+.DriverCard {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(86, 86, 193);
+    margin: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+} 
+
+.DriverCard .info {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+h1 {
+    margin: 0px 0px 10px 0px;
+    padding-top: 10px;
+}
+
+p {
+    margin: 0px;
+}
