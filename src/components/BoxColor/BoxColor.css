@@ -5,3 +5,13 @@
     border: 1px solid blue;
     margin-bottom: 25px;
 }
+
+.alligned{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
