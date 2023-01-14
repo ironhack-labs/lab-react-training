@@ -1,0 +1,24 @@
+
+.small{
+    width: 150px;
+    border-radius: 155px;
+}
+
+.driver-card{
+    color: aliceblue;
+    display: flex;
+    margin: 0 auto;
+    width: 650px;
+    border: 1px blue solid;
+    background-color: rgb(52, 116, 236);
+    outline: 5px rgb(238, 111, 27) solid;
+    outline-offset: 5px;
+    margin-top: 25px;
+    margin-bottom: 55px;
+    text-align: left;
+}
+
+.margin-left{
+    margin-left: 25px;
+    margin-top: 10px;
+}

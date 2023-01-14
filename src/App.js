@@ -9,6 +9,12 @@ import CreditCard from './components/CreditCard/CreditCard';
 import creditCardArray from './CreditCard.json'
 import Ratings from './components/Ratings/Ratings';
 import DriverCard from './components/DriverCard/DriverCard';
+import driversArray from "./DriversArray.json"
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import picture from './assets/images/maxence.png'
+import pictureWithGlasses from './assets/images/maxence-glasses.png'
+import Dice from './components/Dice/Dice';
 
 
 function App() {
@@ -44,9 +50,15 @@ function App() {
       <Ratings> 4.3</Ratings>
       <Ratings> 1</Ratings>
       <Ratings> 0</Ratings>
-      <Divider>Iteration 7: Driver Card</Divider>
-      <DriverCard/>
       
+      <Divider>Iteration 7: Driver Card</Divider>
+      <DriverCard driversArray={driversArray}/>
+      <Divider>Iteration 8: State Like Button</Divider>
+      <LikeButton/>
+      <Divider>Iteration 9: Click the Picture!</Divider>
+      <ClickablePicture picture={picture} pictureWithGlasses={pictureWithGlasses}/>
+      <Divider>Iteration 10: Click the Dice!</Divider>
+      <Dice />
     </div>
   );
 }
