@@ -1,0 +1,34 @@
+[{
+    "type":"Visa",
+  "number":"0123456789018845",
+  "expirationMonth":3,
+  "expirationYear":2021,
+  "bank":"BNP",
+  "owner":"Maxence Bouret",
+  "bgColor":"#11aa99",
+  "color":"white",
+  "logo": "https://www.freepnglogos.com/uploads/verified-by-visa-logo-png-0.png"
+},
+{
+    "type":"Master Card",
+  "number":"0123456789010995",
+  "expirationMonth":4,
+  "expirationYear":2023,
+  "bank":"N26",
+  "owner":"Maxence Bouret",
+  "bgColor":"#eeeeee",
+  "color":"#222222",
+  "logo": "https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mastercard_circles_92px_2x.png"
+},
+{
+    "type":"Visa",
+  "number":"0123456789016984",
+  "expirationMonth":9,
+  "expirationYear":2026,
+  "bank":"BBVA",
+  "owner":"Maxence Bouret",
+  "bgColor":"#ddbb55",
+  "color":"white",
+  "logo": "https://www.freepnglogos.com/uploads/verified-by-visa-logo-png-0.png"
+}
+]

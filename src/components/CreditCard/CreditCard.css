@@ -1,0 +1,20 @@
+.logo{
+    width: 60px;
+    margin-top: 5px;
+    margin-right: 5px;
+    align-self: flex-end;
+}
+
+.credit-card{
+    width: 375px;
+    border: 0.1px blue solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.bold{
+    font-weight: bold;
+}

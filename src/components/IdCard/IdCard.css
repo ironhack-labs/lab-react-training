@@ -1,6 +1,4 @@
-.small{
-    
-}
+
 
 .card{
     width: 350px;
@@ -21,4 +19,17 @@
 
 .margin-top{
     margin-top: 25px;
+}
+
+.number{
+    font-size: 35px;
+}
+
+.flex-c{
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    justify-content: space-around;
 }
