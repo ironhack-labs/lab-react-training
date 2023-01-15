@@ -28,11 +28,25 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.purple {
+  background: purple;
 }
+.blue {
+  background: blue;
+}
+ 
+.green {
+  background: green;
+}
+ 
+.yello {
+  background: yellow;
+}
+.orange {
+  background: orange;
+}
+ 
+.red {
+  background: red;
+}
+ 
