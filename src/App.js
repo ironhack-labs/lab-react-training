@@ -67,7 +67,7 @@ function App() {
       <Carousel carouselImages={carouselImages}/>
       <Divider>Iteration 12: Numbers Table</Divider>
       <NumbersTable limit={22}/>
-      <Divider>Iteration 13: Facebook Simple</Divider>
+      <Divider>Iteration 13 +14: Facebook Simple & Advanced Country Filter</Divider>
       <Facebook/>
     </div>
   );
