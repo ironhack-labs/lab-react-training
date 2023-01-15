@@ -19,6 +19,7 @@ import Carousel from './components/Carousel/Carousel';
 import carouselImages from './CarouselImages.json'
 import NumbersTable from './components/NumbersTable/NumbersTable';
 import Facebook from './components/Facebook/Facebook';
+import SignupPage from './components/SignupPage/SignupPage';
 
 
 function App() {
@@ -69,6 +70,9 @@ function App() {
       <NumbersTable limit={22}/>
       <Divider>Iteration 13 +14: Facebook Simple & Advanced Country Filter</Divider>
       <Facebook/>
+      <Divider>Iteration 15: SignUp Form</Divider>
+
+      <SignupPage/>
     </div>
   );
 }

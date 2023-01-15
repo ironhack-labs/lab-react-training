@@ -7,7 +7,6 @@ function NumbersTable(props){
         for (let i=1;i<limit;i++){
            numbersArray.push(i)
         }
-        console.log(numbersArray)
     
     return(
         <div className='flexy'>
