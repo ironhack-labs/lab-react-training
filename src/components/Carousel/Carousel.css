@@ -1,0 +1,31 @@
+
+.carousel{
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    border-radius: 150px;    
+}
+
+.centered{
+    margin: 0 auto;
+
+    margin-bottom: 15px;
+    border: 1px blue solid;
+}
+
+.button-spec{
+    border: 1px blue solid;
+    background-color: rgb(255, 145, 0);
+    border-radius: 55px;
+}
+
+.margin-r{
+    margin-right: 25px;
+}
+
+.min{
+    width: 50px;
+    padding:15px 10px 15px 10px;
+    
+}

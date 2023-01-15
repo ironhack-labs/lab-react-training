@@ -1,0 +1,23 @@
+.number-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 2px blue solid;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.flexy{
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+
+}
+
+.red{
+    background-color: red;
+}

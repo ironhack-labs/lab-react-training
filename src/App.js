@@ -15,6 +15,10 @@ import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import picture from './assets/images/maxence.png'
 import pictureWithGlasses from './assets/images/maxence-glasses.png'
 import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import carouselImages from './CarouselImages.json'
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import Facebook from './components/Facebook/Facebook';
 
 
 function App() {
@@ -59,6 +63,12 @@ function App() {
       <ClickablePicture picture={picture} pictureWithGlasses={pictureWithGlasses}/>
       <Divider>Iteration 10: Click the Dice!</Divider>
       <Dice />
+      <Divider>Iteration 11: Carousel</Divider>
+      <Carousel carouselImages={carouselImages}/>
+      <Divider>Iteration 12: Numbers Table</Divider>
+      <NumbersTable limit={22}/>
+      <Divider>Iteration 13: Facebook Simple</Divider>
+      <Facebook/>
     </div>
   );
 }
