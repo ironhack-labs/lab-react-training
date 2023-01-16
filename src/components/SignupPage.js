@@ -5,7 +5,7 @@ function SignUp() {
 
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
-const [nationality, setNationality] = useState('');
+const [nationality, setNationality] = useState('English');
 
 const handleEmailInput = (e) => setEmail(e.target.value);
 const handlePasswordInput = (e) => setPassword(e.target.value);
@@ -51,7 +51,7 @@ function yourEmailIs(nationality){
 
               </form>
 
-            <p>{greeting(nationality)}</p>
+            <p id='greeting'>{greeting(nationality)}</p>
               <p id='emailInfo'>{yourEmailIs(nationality)}...<span id='email'>{email}</span></p>
 
          </div>
