@@ -1,4 +1,3 @@
-import { useState } from 'react';
 export default function NumbersTable({ limit }) {
   const tableNumbers = Array.from({ length: limit }, (_, i) => i + 1);
 
