@@ -7,7 +7,6 @@ export default function SignupPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const formData = { email, password, nationality };
   };
   return (
     <div>
