@@ -71,3 +71,12 @@
   max-height: 200px;
 }
 
+#emailInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#email{
+  font-weight: bold;
+}
