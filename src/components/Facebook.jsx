@@ -12,7 +12,13 @@ export default function Facebook() {
 
   return (
     <div>
-      <button>All</button>
+      <button
+        onClick={() => {
+          handleCountry('');
+        }}
+      >
+        All
+      </button>
       <button
         onClick={() => {
           handleCountry('England');
