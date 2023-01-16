@@ -2,6 +2,7 @@ import './App.css';
 import LikesButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import DiceChange from './components/Dice';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
 <LikesButton/>
 <ClickablePicture/>
 <DiceChange/>
+<Carousel/>
     </div>
   );
 }
