@@ -5,6 +5,8 @@ import img from './assets/images/maxence.png';
 import imgClicked from './assets/images/maxence-glasses.png';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
+import './App.css';
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
         ]}
       />
       <NumbersTable limit={12} />
+      <Facebook />
     </div>
   );
 }

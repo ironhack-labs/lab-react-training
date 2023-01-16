@@ -19,6 +19,7 @@ export default function ClickablePicture(props) {
         alt="clickable"
         style={{ cursor: 'pointer' }}
         onClick={clickHandler}
+        width={150}
       />
     </div>
   );
