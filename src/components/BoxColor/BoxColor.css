@@ -1,0 +1,18 @@
+.box-color {
+  width: 70%;
+  height: 20vh;
+  margin: 1%;
+  border: 3px solid black;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.box-color-text {
+  font-size: 2vw;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

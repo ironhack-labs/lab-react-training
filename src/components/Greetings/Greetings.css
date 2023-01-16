@@ -1,0 +1,7 @@
+.greetings {
+  width: 70%;
+  margin: 1%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: flex-start;
+}
