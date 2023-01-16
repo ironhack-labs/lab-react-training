@@ -1,0 +1,7 @@
+.rating {
+  width: 70%;
+  margin: 1%;
+  font-size: 4vw;
+  display: flex;
+  justify-content: flex-start;
+}
