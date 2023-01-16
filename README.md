@@ -341,8 +341,8 @@ Create a `ClickablePicture` component that displays a picture. On each click, th
 
 ```jsx
 <ClickablePicture
-  img='../assets/images/maxence.png'
-  imgClicked='../assets/images/maxence-glasses.png'
+  img='maxence.png'
+  imgClicked='maxence-glasses.png'
 />
 ```
 
