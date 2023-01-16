@@ -6,6 +6,7 @@ import imgClicked from './assets/images/maxence-glasses.png';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       />
       <NumbersTable limit={12} />
       <Facebook />
+      <SignupPage />
     </div>
   );
 }
