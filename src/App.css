@@ -3,3 +3,10 @@
   display: flex;
   gap: 1%;
 }
+
+.driver-card-group {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+}
