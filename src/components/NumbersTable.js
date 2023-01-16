@@ -1,3 +1,5 @@
+import '../App.css'
+
 function NumbersTable(props) {
     
     const numbersList = []
@@ -10,8 +12,9 @@ function NumbersTable(props) {
         numbersList.map((number)=>{
             return(
                 
+    
                 <td key={number} id='numbersTable' style={number % 2 === 0 ? { backgroundColor: 'red' } : {backgroundColor: 'white'}}>{number}</td>
-               
+
             )
             
         })

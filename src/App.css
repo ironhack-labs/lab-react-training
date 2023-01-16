@@ -54,3 +54,20 @@
   padding: 50px;
   border: 5px black
 }
+
+#profile-table{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.profileDetails{
+  display: flex;
+  flex-direction: column;
+}
+
+#profile-pic{
+  max-width: 200px;
+  max-height: 200px;
+}
+
