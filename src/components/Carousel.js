@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 
-const images = [
-  'https://randomuser.me/api/portraits/women/1.jpg',
-    'https://randomuser.me/api/portraits/men/1.jpg',
-    'https://randomuser.me/api/portraits/women/2.jpg',
-    'https://randomuser.me/api/portraits/men/2.jpg'
-]
-
-function Carousel(){
+function Carousel({images}){
 
 const [imageNumber, setImageNumber] = useState(0)
 

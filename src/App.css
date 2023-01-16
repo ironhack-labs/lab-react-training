@@ -50,3 +50,7 @@
   background: red;
 }
  
+#numbersTable{
+  padding: 50px;
+  border: 5px black
+}
