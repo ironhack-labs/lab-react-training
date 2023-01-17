@@ -84,3 +84,17 @@
 #greeting{
   font-weight: bold;
 }
+
+#colorInput{
+  margin-bottom: 50px;
+}
+
+#rgb{
+  margin-top: 50px;
+}
+
+#rgbColor{
+  margin: 50px;
+padding: 30px;
+}
+
