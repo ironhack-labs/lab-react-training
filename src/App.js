@@ -3,7 +3,11 @@ import './App.css';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
-import Raiting from './components/Raiting';
+import Rating from './components/Rating';
+import Star from './components/Star';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice'
 
 function App() {
   return (
@@ -37,14 +41,20 @@ function App() {
   <BoxColor r={255} g={0} b={0} />
   <BoxColor r={128} g={255} b={0} />
 
-  <Raiting>
+  <Rating>
     <Star star={0}/>
     <Star star={1.49}/>
     <Star star={1.5}/>
     <Star star={4}/>
     <Star star={5}/>
-    
-  </Raiting>
+  </Rating>
+
+  <LikeButton/>
+  <ClickablePicture
+  img='maxence.png'
+  imgClicked='maxence-glasses.png'
+/>
+<Dice />
     </div>
 
   

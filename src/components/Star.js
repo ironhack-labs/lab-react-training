@@ -9,7 +9,7 @@ function Star(props) {
     return (
         
   <div className='raitingDiv'>
-      <img src= alt="stars"/>
+      <img src="" alt="stars"/>
   </div>
  );
 }

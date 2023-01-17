@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+Dice {
+  height: 60px;
+  width: 60px;
+}

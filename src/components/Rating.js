@@ -1,14 +1,14 @@
 import React from 'react';
 
-function Raiting(props) {
+function Rating(props) {
     
     return (
        
         <div>
-        <h2>Raiting</h2>
+        <h2>Rating</h2>
         {props.children}
       </div>
  );
 }
 
-export default Raiting;
+export default Rating;
