@@ -1,0 +1,22 @@
+.color-box{
+    width: 55px;
+    height: 55px;
+    border: 1px blue solid;
+    margin-right: 25px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-content{    
+    justify-content: center;
+    align-items: center;
+}
+
+.short{
+    width: 90px;
+}

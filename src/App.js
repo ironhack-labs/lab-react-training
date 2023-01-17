@@ -20,7 +20,7 @@ import carouselImages from './CarouselImages.json'
 import NumbersTable from './components/NumbersTable/NumbersTable';
 import Facebook from './components/Facebook/Facebook';
 import SignupPage from './components/SignupPage/SignupPage';
-
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 
 function App() {
   console.log(creditCardArray)
@@ -43,7 +43,7 @@ function App() {
       </div>
       <Divider>Iteration 4: Color Boxes</Divider>
       <div className='flex'>
-      <BoxColor r={152} g={250} b={45}/>
+      <BoxColor r={152} g={120} b={45}/>
       <BoxColor r={12} g={50} b={122}/>
       </div>
       <Divider>Iteration 5: Credit Cards</Divider>
@@ -73,6 +73,9 @@ function App() {
       <Divider>Iteration 15: SignUp Form</Divider>
 
       <SignupPage/>
+      <Divider>Iteration 16: RGB Color Picker</Divider>
+      <RGBColorPicker/>
+
     </div>
   );
 }
