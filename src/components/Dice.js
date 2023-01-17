@@ -1,3 +1,4 @@
+import './Dice.css';
 import React from 'react';
 import { useState } from 'react';
 
@@ -18,12 +19,12 @@ function Dice () {
 
   const toggleDice = () => {setDice(!dice);};
  
-  let randomDice =Math.floor(Math.random()* diceArr.length )
+  let randomDice =diceArr[Math.floor(Math.random()* diceArr.length)]
     return (
       
     <div >
       <button onClick={toggleDice}> 
-      <img src= {dice ? diceEmpty : randomDice} alt="dice"/>
+      <img id ='Dice' src= {dice ? diceEmpty : randomDice} alt="dice"/>
       </button>
     </div>         
  );
