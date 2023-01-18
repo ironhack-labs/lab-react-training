@@ -26,7 +26,7 @@ function App() {
         ]}
       />
       <NumbersTable limit={12} />
-      {/* <Facebook /> */}
+      <Facebook />
       <SignupPage />
       <RGBColorPicker />
     </div>
