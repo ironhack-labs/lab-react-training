@@ -20,3 +20,7 @@
     justify-content: flex-start;
     
 }
+.countryButton{
+    border: 1px solid gray;
+    border-radius: 10;
+}

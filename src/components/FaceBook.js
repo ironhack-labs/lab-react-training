@@ -1,11 +1,29 @@
-import React from 'react';
+import { buildQueries } from '@testing-library/react';
+import React, { useState } from 'react';
 import profiles from '../data/berlin.json';
 import './FaceBook.css';
 
 function FaceBook(){
+const button = document.getElementsByName("button")
+const [selected , setSelected] = useState(false)
+
+const handleColor = () => {
+    setSelected(!selected)
+}
+
+
 
     return(
-        <div className="people">
+        <div>
+         <div className='allCountryButtons'>
+            <button className='countryButton' >All</button>
+            {profiles.map(profile =>{
+                return <button onClick={handleColor} style={{background: selected ? "red" : "white" }} 
+                               className='countryButton'>{profile.country}</button>
+            }
+            )}
+         </div>
+         <div className="people">
         {profiles.map(profile =>{
             return <div className="faceBookCard">
                       <img className='profilePic' src={profile.img} alt="profileImg"/>
@@ -18,6 +36,7 @@ function FaceBook(){
                    </div>   
         })
         }
+        </div>
         </div>
     )
 }
