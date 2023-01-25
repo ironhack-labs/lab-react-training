@@ -10,3 +10,7 @@
   flex-direction: column;
   gap: 1%;
 }
+
+.like-btn-group {
+  display: flex;
+}

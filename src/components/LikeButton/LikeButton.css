@@ -1,0 +1,8 @@
+.like-btn {
+  margin: 1%;
+}
+
+.like-btn button {
+  font-size: 2vw;
+  border-radius: 15px;
+}
