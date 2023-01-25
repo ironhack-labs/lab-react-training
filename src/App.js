@@ -10,6 +10,7 @@ import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import img from './assets/images/maxence.png';
 import imgClicked from './assets/images/maxence-glasses.png';
+import Dice from './components/Dice/Dice';
 
 function App() {
   return (
@@ -108,6 +109,7 @@ function App() {
         <LikeButton />
       </div>
       <ClickablePicture img={img} imgClicked={imgClicked} />
+      <Dice />
     </div>
   );
 }
