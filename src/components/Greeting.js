@@ -1,12 +1,12 @@
 function Greeting (props){
- 
+    if (props.user.nationality === "en"){return <p>Hello! Your Email is: {props.user.email}. Your Email address is correct!</p>}
+    else if (props.user.nationality === "fr"){return <p>Bounjour! Your Email is: {props.user.email}. Your Email address is correct!</p>}  
+    else if(props.user.nationality === "de"){return <p>Hallo! Your Email is: {props.user.email}. Your Email address is correct!</p>}
+    
+
         return (
             <div>
-            if (props.nationality === "en"){<p>Hello!</p>}
-            else if (props.nationality === "fr"){<p>Bounjour!</p>}  
-            else if (props.nationality === "de"){<p>Hallo!</p>}
-            else {<p>Select nationality!</p>}
-            <p>Your Email is: {props.email}</p>
+            <p>Select nationality!</p>
             </div>
         )
 }

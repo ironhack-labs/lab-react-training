@@ -6,7 +6,7 @@ function SignupPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [nationality, setNationality] = useState("");
-  const [user,setUser] = useState()
+  const [user,setUser] = useState({})
 
   console.log("the props on the sign up", user)
   
@@ -61,8 +61,8 @@ function SignupPage() {
                 onChange={handleNationalityInput} >
              <option></option>
              <option value= "en">England</option>
-          <option>fr</option>
-          <option>de</option>
+          <option value= "fr">France</option>
+          <option value= "de">Germany</option>
         </select>
         
         <button type="submit">Sign up</button>
