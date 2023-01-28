@@ -1,0 +1,6 @@
+.carousel {
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
