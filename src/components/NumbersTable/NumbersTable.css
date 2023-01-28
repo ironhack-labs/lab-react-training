@@ -1,0 +1,17 @@
+.square-group {
+  width: 30%;
+  margin: 1%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 5vw;
+  height: 10vh;
+  border: 1px solid black;
+}
+
+.square p {
+  margin-top: 30%;
+  text-align: center;
+}
