@@ -1,0 +1,24 @@
+.facebook {
+  width: 50%;
+  margin: 1%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.facebook img {
+  width: 15%;
+  margin: 1%;
+}
+
+.facebook-info {
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.facebook-info p {
+  font-size: 1.2vw;
+  margin: 0;
+}

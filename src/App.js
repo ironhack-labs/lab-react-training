@@ -13,6 +13,7 @@ import imgClicked from './assets/images/maxence-glasses.png';
 import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
+import FaceBook from './components/FaceBook/FaceBook';
 
 function App() {
   return (
@@ -121,6 +122,7 @@ function App() {
         ]}
       />
       <NumbersTable limit={12} />
+      <FaceBook />
     </div>
   );
 }
