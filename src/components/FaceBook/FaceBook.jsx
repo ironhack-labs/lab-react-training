@@ -28,12 +28,6 @@ function FaceBook(props) {
         <button onClick={handleToggleCountry} value="Germany">
           Germany
         </button>
-        <button onClick={handleToggleCountry} value="Nigeria">
-          Nigeria
-        </button>
-        <button onClick={handleToggleCountry} value="Sweden">
-          Sweden
-        </button>
       </div>
       <>
         {profiles.map((profile) => (
