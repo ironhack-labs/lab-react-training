@@ -1,0 +1,16 @@
+.container-card {
+    border-radius: 10px;
+	padding: 30px;
+	max-width: 100%;
+    margin: 20px;
+    width: 250px;
+}
+
+.num {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .info-card {
+    text-align: left;
+  }
