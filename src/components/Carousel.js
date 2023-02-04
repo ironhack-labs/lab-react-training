@@ -16,7 +16,7 @@ function Carousel({ images }) {
     function handleLeft() {
 
 
-        setPicIndex((picIndex - images.length + 1)) 
+        setPicIndex((picIndex - images.length + 1))
         // with the absolute value for the index we can conver the values that are if we click in the left
         // 0
         // -3 = 0 - 4 + 1 --> set to picIndex
@@ -26,14 +26,14 @@ function Carousel({ images }) {
 
     function handleRight() {
 
-        setPicIndex(picIndex + 1 )
+        setPicIndex(picIndex + 1)
     }
 
 
     return (
         <div>
             <button onClick={handleLeft}>Left</button>
-            <img src={images[index]} />
+            <img src={images[index]} alt="im" />
             <button onClick={handleRight}>Right</button>
         </div>
     )
