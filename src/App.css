@@ -1,3 +1,6 @@
+body{
+  background-color: white;
+}
 .App {
   text-align: center;
 }
@@ -14,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +29,110 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Card{
+  display: flex;
+  width: 800px;
+  margin: 20px;
+  padding: 40px;
+  border: 1px solid #000;
+}
+
+.Image{
+  width: 200px;
+}
+
+.Content{
+  margin-left: 20px;
+  font-size: medium;
+  text-align: left;
+  color: black;
+}
+
+.Greeting{
+  width: 800px;
+  border: 1px solid #000;
+  padding: 40px;
+  color: black;
+  display: flex;
+  text-align: initial;
+}
+
+.Random{
+  width: 800px;
+  border: 1px solid #000;
+  padding: 40px;
+  color: black;
+  display: flex;
+  text-align: initial;
+  margin-bottom: 20px;
+}
+
+.TextBox{
+  padding-top: 35px;
+  color: #000;
+}
+
+.Driver-Card{
+  background-color: #455DB5;
+  width: 800px;
+  border-radius: 8px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.Img-Driver{
+  border-radius: 80%;
+}
+
+.Driver-Content{
+  text-align: left;
+  margin-left: 40px;
+}
+
+.Credit-Card{
+  display: flex;
+  color: #000;
+  text-align: left;
+  font-size: large;
+  width: 1100px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.Credit-Card-In{
+  width: 400px;
+  border-radius: 12px;
+  margin: 20px 0px;
+  padding: 30px 40px 0px 40px;
+}
+
+.Credit-Image{
+  text-align: end;
+}
+
+.Date-Card{
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+}
+
+.Card-Info{
+  margin: auto;
+}
+
+.Credit-Num{
+  margin: 40px 20px 10px 0px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.Rating{
+  color: #000;
+  margin: 20px;
 }
 
 @keyframes App-logo-spin {
