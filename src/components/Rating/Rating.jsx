@@ -6,7 +6,6 @@ const Rating = ({children, ...props}) => {
     const raiting = (num) => {
         let x = parseFloat(num);
         let numRounded = numRound(x);
-        console.log('Este es el numero redondeado',numRounded)
         switch (numRounded){
             case 5:
                 return(
@@ -101,7 +100,7 @@ const Rating = ({children, ...props}) => {
     }
     return(
         <form>
-            <p class="clasificacion">{raiting(children)}</p>
+            <p className="clasificacion">{raiting(children)}</p>
         </form>
     );
 };
