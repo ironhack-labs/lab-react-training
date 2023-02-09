@@ -1,0 +1,8 @@
+.imgDice {
+    margin: 100px;
+}
+
+.imgDice img{
+    width: 300px;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.numbers-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+}
+
+.num-div {
+    display: flex;
+    
+    width: 50%;
+    height: auto;
+}
+
+.numb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+}

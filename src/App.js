@@ -1,5 +1,5 @@
 import './App.css';
-import { IdCard, Greetings, Random, BoxColor, CreditCard, Rating, DriverCard } from './components';
+import { IdCard, Greetings, Random, BoxColor, CreditCard, Rating, DriverCard, LikeButton, ClickablePicture, Dice, Carousel, NumbersTable } from './components';
 
 function App() {
   return (
@@ -93,6 +93,28 @@ function App() {
         }}
       />
 
+      <LikeButton />
+
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+
+      <Dice />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <NumbersTable 
+        limit={12}
+      />
+      
     </div>
   );
 }

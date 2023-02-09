@@ -1,0 +1,7 @@
+.clickPicture {
+    margin: 20px;
+}
+
+.clickPicture img {
+    cursor: pointer;
+}
