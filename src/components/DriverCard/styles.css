@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.driver-card {
+    background-color: rgb(54, 54, 243);
+    width: 700px;
+    border-radius: 10px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.calificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+
+.driver-card li {
+    list-style: none;
+    text-align: left;
+}
+
+.driver-card label {
+    color: gray;
+  }
+
+.driver-card label:hover,
+  label:hover ~ label {
+    color: white;
+  }
+  
+  .driver-card input[type="radio"]:checked ~ label {
+    color: white;
+  }
+
+  .driver-card img {
+    border-radius: 50%;
+    width: 130px;
+    height: 120px;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+  }
+
+  .driver-card h3 {
+    color: white;
+  }
+
+  .model-car {
+    color: white;
+  }
