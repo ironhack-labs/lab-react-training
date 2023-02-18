@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 
 export default function MediaCard({firstName,lastName,gender,height,birth,picture}) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 300 }}>
       <CardMedia
         sx={{ height: 140 }}
         image={picture}
