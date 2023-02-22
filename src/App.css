@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.IdCard{
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
+  display: flex;
+  height: 200px;
+  width: 700px;
+}
+
+.div{
+  border: solid 2px;
+  margin: 5px;
+  width: 400px;
+  display: flex;
+  padding-left: 10px;
+}

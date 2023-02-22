@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
+import IdCard from './components/IdCard'
+import Greetings from './components/Greeting'
+import Random from './components/Random'
+import BoxColor from './components/BoxColor'
 
-function App() {
+function App(){
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+      <IdCard
+         lastName= 'Done'
+         firstName= 'Jhon'
+         gender= 'male'
+         height= {178}
+         birth= {new Date ("1996-87-12")}
+         picture= "https://randomuser.me/api/portraits/men/44.jpg"
+    </div>
+
+    
+  )
+}
+  
+
+export default App
