@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+}
+
+.id{
+    display: flex;
+    border: solid black 1px;
+    margin: 15px;
+}
+
+.id img{
+    height: 180px;
+    width: 180px;
+    margin: .5rem;
+}
+
+.text{
+    text-align: left;
+    
+}
+
+.text p {
+    font-size: 15px;
+    margin-left: 1rem;
+}
