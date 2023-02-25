@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.profile-container {
+  display: flex;
+  border: solid black;
+  margin: 1%;
+  border-width: thin;
+  width: 800px;
+}
+
+.profile-pic {
+  margin: .5%;
+}
+
+.person-info {
+  text-align: left;
+  margin: 1%;
+}
