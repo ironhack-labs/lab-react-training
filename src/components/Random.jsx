@@ -6,8 +6,8 @@ function Random() {
 
     return (
         <div>
-            <h1>Random value between 1 and 6 => {randomInteger(6, 1)}</h1>
-            <h1>Random value between 1 and 100 => {randomInteger(100, 1)}</h1>
+            <h1>Random value between 1 and 6 = {randomInteger(6, 1)}</h1>
+            <h1>Random value between 1 and 100 = {randomInteger(100, 1)}</h1>
         </div>
 
     )
