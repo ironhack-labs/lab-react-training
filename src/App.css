@@ -119,3 +119,28 @@
   color: white;
   margin: 20px;
 }
+
+.profile {
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  overflow: 'hidden';
+}
+
+.driver-card-container {
+  background-color: #445eb5;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  width: 1000px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.internal-container-driver-card {
+  text-align: left;
+  margin: 20px;
+}
