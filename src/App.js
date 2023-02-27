@@ -1,6 +1,7 @@
 import { IdCard } from './components/IdCard';
 import './App.css';
 import { Greetings } from './components/Greetings';
+import Random from './components/Random';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <div className="greeting-container">
         <Greetings lang="fr" />
       </div>
+      <Random />
     </div>
   );
 }
