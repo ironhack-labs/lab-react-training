@@ -1,0 +1,10 @@
+.IdCard {
+    display: flex;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.IdList {
+    list-style-type: none;
+}

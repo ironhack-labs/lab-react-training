@@ -1,0 +1,34 @@
+.CreditCard {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.CardType {
+    display: flex;
+    justify-content: end;
+    height: 20px;
+}
+
+.CardType img {
+    width: 50px;
+}
+
+.CardNum {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 300;
+}
+
+.ExpBankLine {
+    display: flex;
+}
+
+.bankName {
+    margin-left: 20px;
+}
