@@ -36,3 +36,148 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  margin-right: 200px;
+  margin-left: 200px;
+}
+.credit-cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+.credit-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.credit-card__logo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.credit-card__logo img {
+  width: 60px;
+  height: auto;
+}
+
+.credit-card__number {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.credit-card__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.credit-card__expiration {
+  font-size: 16px;
+}
+
+.credit-card__bank {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.credit-card__owner {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+.driver-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: darkcyan;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.driver-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.driver-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.driver-info h2 {
+  margin: 0;
+}
+
+.driver-rating {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+.driver-rating .star {
+  color: rgb(0, 0, 0);
+  margin-right: 5px;
+}
+
+.driver-rating-empty .star {
+  color: #000000;
+}
+
+.driver-info p {
+  margin: 0;
+  font-size: 14px;
+  color: white
+}
+
+.id-card {
+  display: flex;
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px gray;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.id-card img {
+  height: 100%;
+}
+
+.id-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.id-card-info div {
+  margin: 5px 0;
+}
+
+.id-card-info strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.greetings{
+  border: 2px solid black;
+}
+
+.random{
+  border: 2px solid black;
+}
