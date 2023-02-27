@@ -1,0 +1,16 @@
+.CreditCard {
+    display: inline-block;
+    width: 30%;
+    margin-right: 20px;
+}
+
+.CreditCard div {
+    display: flex;
+    margin: 20px;
+
+}
+
+.divRare {
+    display: flex;
+    justify-content: space-between;
+}
