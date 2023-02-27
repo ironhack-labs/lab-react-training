@@ -1,0 +1,18 @@
+.IdCard {
+    border: 2px solid;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 10px;
+}
+
+.IdData {
+    font-size: 20px;
+    line-height: 10px;
+    margin-left: 20px;
+
+}
+
+imgCard {
+    padding: 15px;
+}
