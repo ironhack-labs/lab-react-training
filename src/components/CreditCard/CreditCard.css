@@ -1,0 +1,36 @@
+.CreditCard {
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.CreditCard p {
+    font-size: 0.7em;
+    margin: 0;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.CreditCard img {
+    width: 65px;
+    height: auto;
+}
+
+.CreditCardImg {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+.CreditCardNum {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+.CreditCardBank {
+    display: flex;
+}

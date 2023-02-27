@@ -1,0 +1,25 @@
+.DriverCard {
+    border: 1px solid;
+    padding: 10px;
+    padding-left: 400px;
+    margin: 10px;
+    display: flex;
+}
+
+.DriverCard p {
+    font-size: 0.7em;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.DriverCard img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.DriverCardName {
+    font-size: 1.8em;
+    margin-left: 20px;
+    margin-top: 15px;
+}
