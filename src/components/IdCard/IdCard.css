@@ -1,0 +1,12 @@
+.IdCard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.IdCard div {
+    margin: 20px;
+}

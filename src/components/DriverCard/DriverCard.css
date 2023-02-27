@@ -1,0 +1,17 @@
+.ImageDrive {
+    width: 10%;
+    border-radius: 100px;
+}
+
+.DriverCard {
+    display: flex;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.DriverCard div {
+
+    margin: 20px;
+}
