@@ -1,0 +1,14 @@
+.DriverCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    width: 600px;
+    border-radius: 8px;
+    color: white;
+    margin: 20px;
+}
+
+.DriverCardContainer p h2 {
+    margin: 0 0 10px;
+}

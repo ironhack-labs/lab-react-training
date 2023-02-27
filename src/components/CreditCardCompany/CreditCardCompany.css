@@ -1,0 +1,5 @@
+.CreditCardCompany {
+    display: flex;
+    justify-content: flex-end;
+    height: 64px;
+}
