@@ -1,0 +1,14 @@
+.Card {
+    display: flex;
+    border: solid 1px black;
+    margin: 40px;
+    background-color: beige;
+}
+
+.Card img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    margin-right: 50px;
+
+}

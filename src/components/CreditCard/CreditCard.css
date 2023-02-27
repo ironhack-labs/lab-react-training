@@ -1,0 +1,38 @@
+.CreditCard {
+    margin: 20px;
+    width: 25%;
+    border-radius: 20px;
+}
+
+.CreditCard h2 {
+    letter-spacing: 3px;
+}
+
+.CreditCard img {
+    justify-content: end;
+    width: 70px;
+    margin: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex p {
+    margin-left: 20px;
+}
+
+.Name {
+    text-align: start;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.CardLogo {
+    display: flex;
+    justify-content: end;
+}
+
+.CardLogo img {
+    margin-right: 20px;
+}

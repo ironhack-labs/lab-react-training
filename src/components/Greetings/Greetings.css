@@ -1,0 +1,8 @@
+.GreetingsCard {
+    padding: 10px;
+    text-align: start;
+    font-weight: 900;
+    font-size: 1.4em;
+    border: solid 2px black;
+    margin: 20px;
+}
