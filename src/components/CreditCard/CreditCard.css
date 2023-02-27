@@ -1,0 +1,34 @@
+.flex {
+    width: 40%;
+    padding: 0 20px;
+}
+
+.flex p {
+    margin: 5px;
+}
+
+.logo {
+    display: flex;
+    justify-content: end;
+    height: 50px;
+    padding: 10px;
+}
+
+.logo img {
+    height: 20px;
+}
+
+.cardNumber {
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.cardData {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px 0;
+}
+
+.cardOwner {
+    padding-bottom: 10px 0;
+}

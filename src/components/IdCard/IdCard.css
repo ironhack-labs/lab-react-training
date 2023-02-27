@@ -1,0 +1,10 @@
+.picture {
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.info {
+    width: 100%;
+    line-height: 0.1em;
+    text-align: start;
+}

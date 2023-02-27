@@ -32,7 +32,15 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.card {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  display: flex;
 }
