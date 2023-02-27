@@ -1,0 +1,7 @@
+.CreditCardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 5px;
+    padding: 10px;
+}

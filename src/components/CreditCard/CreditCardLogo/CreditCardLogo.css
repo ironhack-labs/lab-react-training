@@ -1,0 +1,10 @@
+.CreditCardLogo img {
+    width: 50px;
+}
+
+.CreditCardLogo {
+    display: flex;
+    justify-content: end;
+    margin: 15px;
+    padding: 15px;
+}
