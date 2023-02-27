@@ -7,6 +7,7 @@ import { CreditCard } from './components/CreditCard';
 import { DriverCard } from './components/DriverCard';
 import { Rating } from './components/Rating';
 import LikeButton from './components/LikeButton'
+import ClickablePicture from './components/ClickablePicture.jsx'
 
 
 function App() {
@@ -84,6 +85,10 @@ function App() {
           licensePlate: "BE33ER"
         }} />
       <LikeButton />
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
 
     </div>
   );
