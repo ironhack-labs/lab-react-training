@@ -1,0 +1,12 @@
+.IdCard {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+img {
+    height: 100%;
+}

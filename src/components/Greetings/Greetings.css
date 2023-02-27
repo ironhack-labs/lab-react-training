@@ -1,0 +1,8 @@
+.Greeting {
+    border: 1px solid;
+    margin: 10px;
+}
+
+.Greeting p {
+    text-align: left;
+}
