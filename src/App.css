@@ -58,7 +58,64 @@
   border: solid black;
   border-width: thin;
   width: 1000px;
-  margin: .5%;
+  margin: 0.5%;
   text-align: left;
-  padding: .5%;
+  padding: 0.5%;
+}
+
+.credit-card {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 400px;
+  background-color: black;
+  color: white;
+  margin: 20px;
+}
+
+.credit-img {
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
+}
+.credit-number {
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-name-card {
+  display: flex;
+  gap: 30px;
+  margin-left: 10px;
+}
+
+.background-visa {
+  background-color: #11aa99;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 400px;
+  color: white;
+  margin: 20px;
+}
+
+.background-mastercard {
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 400px;
+  color: #222222;
+  margin: 20px;
+}
+
+.background-visa-gold {
+  background-color: #ddbb55;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 400px;
+  color: white;
+  margin: 20px;
 }
