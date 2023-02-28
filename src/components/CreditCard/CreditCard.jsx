@@ -22,12 +22,13 @@ const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner
     }
 
     return (
+
         <div className='CreditCard' style={divStyle}>
 
             <div>
                 <img src={img} alt={type} />
             </div>
-            <p> {number}</p>
+            <p>{number}</p>
             <p>{expirationMonth}</p>
             <p>{expirationYear}</p>
             <p>{bank}</p>
