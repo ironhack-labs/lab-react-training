@@ -69,3 +69,8 @@ code {
   font-size: 30px;;
   padding:20px 60px;
 }
+
+.dice{
+  height:auto;
+  width:200px;
+}

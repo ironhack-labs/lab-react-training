@@ -9,6 +9,8 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 
 
@@ -17,7 +19,11 @@ function App() {
   const colorsArray = ['purple','blue','green','yellow','orange','red'];
   
   const [likes, setLikes] = useState(0);
+  const [likesSecond, setLikesSecond] = useState(0);
   const [color, setColor] = useState(0);
+  const [colorSecond, setcolorSecond] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [dice, setDice] = useState('./images/dice-empty.png');
 
   //Handler functions
   const handleLike = () => {
@@ -30,6 +36,33 @@ function App() {
     console.log(colorsArray[color])
     
   }
+
+  //Handle secon Like
+  const handleLikeSecond = () => {
+    setLikesSecond(likesSecond + 1)
+    if(color === colorsArray.length - 1){
+      setColor(0)
+    }else {
+      setcolorSecond(colorSecond + 1)
+    }
+    console.log(colorsArray[color])
+    
+  }
+
+  //Handle visibility
+  const toggleVisibility = () =>{
+    setVisible(!visible);
+    console.log(visible)
+  }
+
+  const randomDice = () => {
+        setDice('../images/dice-empty.png');
+
+        setTimeout(() => {
+          setDice(`./images/dice${Math.floor(Math.random() * (6 - 1 + 1)) + 1}.png`)
+        }, 1000)
+        
+    }
 
   return (
     <div className="App">
@@ -155,12 +188,23 @@ function App() {
 />
 
 <LikeButton
-  likesFunction = {handleLike}
-  likes = {likes}
-  colors = {colorsArray[color]}
+  likesFunction = {handleLikeSecond}
+  likes = {likesSecond}
+  colors = {colorsArray[colorSecond]}
 />
 </div>
 
+ 
+
+<ClickablePicture 
+visibleFunction = {toggleVisibility}
+visibility = {visible}
+ />
+
+  <Dice
+    diceFunction = {randomDice}
+    dice = {dice}
+  />
 
     </div>
   );
