@@ -1,0 +1,11 @@
+.CardImage {
+    height: 100px;
+    width: 100px;
+
+}
+
+.CardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

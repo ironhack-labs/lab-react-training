@@ -6,6 +6,12 @@ import Random from "./components/Random/Random";
 import './App.css'
 import Rating from "./components/Rating/Rating";
 import DriverCard from "./components/DriverCard/DriverCard";
+import LikeButton from "./components/LikeButton/LikeButton";
+import ClickablePicture from "./components/ClickablePicture/ClickablePicture";
+import Dice from "./components/Dice/Dice";
+import Carousel from "./components/Carousel/Carousel";
+import NumbersTable from "./components/NumbersTable/NumbersTable";
+import FaceBook from "./components/FaceBook/FaceBook";
 function App() {
 
   const usersInfo = [
@@ -114,6 +120,26 @@ function App() {
       <hr />
       <DriverCard driverInfo={driverInfo[0]} />
       <DriverCard driverInfo={driverInfo[1]} />
+      <hr />
+      <LikeButton />
+      <LikeButton />
+      <hr />
+      <ClickablePicture />
+      <hr />
+      <Dice />
+      <hr />
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <hr />
+      <NumbersTable limit={12} />
+      <hr />
+      <FaceBook></FaceBook>
     </>
   );
 }

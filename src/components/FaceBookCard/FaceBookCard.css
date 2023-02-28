@@ -1,0 +1,9 @@
+.FaceBookCard {
+    display: flex;
+    border: solid 1px black;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}

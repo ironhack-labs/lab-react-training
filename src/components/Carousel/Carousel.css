@@ -1,0 +1,9 @@
+.Carousel {
+    display: flex;
+    align-items: center;
+}
+
+.Carousel button {
+    height: 30px;
+    margin: 10px;
+}

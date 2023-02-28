@@ -1,0 +1,9 @@
+.Dice {
+    height: 100px;
+    width: 100px;
+}
+
+.Dice img {
+    width: 100%;
+    height: 100%;
+}
