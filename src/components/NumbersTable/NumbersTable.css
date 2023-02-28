@@ -1,0 +1,9 @@
+.Table {
+    display: flex;
+    margin-top: 20px;
+}
+
+.Number {
+    border: 1px solid black;
+    padding: 25px;
+}
