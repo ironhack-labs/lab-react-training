@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.id-card{
+  border: solid black 2px;
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  flex-direction: row;
+
+}
+
+.id-image{
+  width: 100px;
+}
+
+.visa{
+  width: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.masterCard{
+  width: 30px;
+}
+
+.imgDriver{
+  width: 70px;
+  border-radius: 70px;
+}
+
+.driverCard{
+  background-color: rgba(10, 115, 175, 0.938);
+  border-radius: 20px;
+  width: 800px;
+  height: 150px;
+  margin: 10px;
+  color: white;
+
+}
