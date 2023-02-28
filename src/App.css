@@ -27,26 +27,102 @@
 .App-link {
   color: #61dafb;
 }
-.container{
+.title {
+  margin: 10px;
+  text-align: left;
+}
+.container {
   display: flex;
   flex-direction: row;
   margin: 10px;
   border: 1px solid black;
 }
-.profilePic{
+.profilePic {
   margin: 5px 2px 0px 5px;
 }
 
-.info-container{
+.info-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 2px;
 }
-.greeting{
+
+.greeting {
   border: 1px solid black;
   margin: 10px;
   text-align: left;
+  padding: 2px;
+}
+
+.random {
+  border: 1px solid black;
+  margin: 10px;
+  text-align: left;
+  padding: 2px;
+}
+
+.boxColor {
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.creditCardDisplay{
+  display: flex;
+  flex-direction: row;
+}
+
+.creditCard{
+  border-radius: 10px;
+  width: 300px;
+  height: 148px;
+  margin: 10px;
+  padding: 20px;
+  display: inline-block;
+}
+.creditImage{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.creditImage > img{
+  width:50px;
+}
+.creditNumber{
+  padding-top:5px;
+  padding-bottom:20px;
+  font-size: 1.9em;
+}
+.alignText{
+  text-align: left;
+}
+.bankSpan{
+  margin-left:15px;
+}
+
+.ratingAlign{
+  text-align: left;
+  margin-left: 10px;
+}
+
+.driverCard{
+  background-color: #425cbb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 10px;
+  border-radius: 15px;
+  perspective: 1px;
+  overflow: hidden;
+}
+.driverCard > div > img{
+  width: 100px;
+  height: 100px;
+  margin: 5px;
 }
 
 @keyframes App-logo-spin {
