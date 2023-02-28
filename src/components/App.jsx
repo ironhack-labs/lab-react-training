@@ -1,11 +1,17 @@
 import './App.css';
-import BoxColor from './components/BoxColor/BoxColor';
-import CreditCard from './components/CreditCard/Creditcard';
-import DriverCard from './components/DriverCard/DriverCard';
-import Greetings from './components/Greetings/Greetings';
-import IdCard from './components/IdCard/IdCard';
-import Random from './components/Random/Random';
-import Rating from './components/Rating/Rating';
+import BoxColor from './BoxColor/BoxColor';
+import Carousel from './Carousel/Carousel';
+import ClickablePicture from './ClickablePicture/ClickablePicture';
+import CreditCard from './CreditCard/Creditcard';
+import Dice from './Dice/Dice';
+import DriverCard from './DriverCard/DriverCard';
+import Facebook from './Facebook/Facebook';
+import Greetings from './Greetings/Greetings';
+import IdCard from './IdCard/IdCard';
+import LikeButton from './LikeButton/LikeButton';
+import NumbersTable from './NumbersTable/NumbersTable';
+import Random from './Random/Random';
+import Rating from './Rating/Rating';
 
 function App() {
   const CreditCardArr = [
@@ -79,6 +85,13 @@ function App() {
       }
     }
   ]
+
+  const images = [
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]
   return (
     <div className="App">
       <IdCard person={PersonArr[0]} />
@@ -122,8 +135,32 @@ function App() {
       <hr />
 
       <DriverCard driver={DriverCardArr[0]} />
-
       <DriverCard driver={DriverCardArr[1]} />
+
+      <hr />
+
+      <LikeButton />
+      <LikeButton />
+
+      <hr />
+
+      <ClickablePicture img='maxence.png' imgClicked='maxence-glasses.png' />
+
+      <hr />
+
+      <Dice />
+
+      <hr />
+
+      <Carousel images={images} />
+
+      <hr />
+
+      <NumbersTable limit={12} />
+
+      <hr />
+
+      <Facebook />
     </div>
   )
 }

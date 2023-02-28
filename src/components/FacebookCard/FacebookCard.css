@@ -1,0 +1,11 @@
+.FacebookCard {
+    width: 50%;
+    margin: 50px;
+    display: flex;
+    border: solid 2px black;
+}
+
+.FacebookCard img {
+    width: 300px;
+    margin: 20px;
+}
