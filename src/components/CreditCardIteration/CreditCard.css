@@ -1,0 +1,34 @@
+.card-container {   
+    padding: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-right: 10px 
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.secret-number {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+}
+
+.expire {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.toUpper {
+    text-transform: uppercase;
+}
