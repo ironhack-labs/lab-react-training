@@ -6,6 +6,14 @@ import BoxColor from './components/BoxColor/BoxColor'
 import CreditCard from './components/CreditCard/CreditCard'
 import Rating from './components/Rating/Rating'
 import DriverCard from './components/DriverCard/DriverCard'
+import Likebutton from './components/LikeButton/LikeButton'
+import ClickablePicture from './components/ClickablePicture/ClickablePicture'
+import max from '../src/assets/images/maxence.png'
+import maxWithGlasses from '../src/assets/images/maxence-glasses.png'
+import Dice from './components/Dice/Dice'
+import Carousel from './components/Carousel/Carousel'
+import NumbersTable from './components/NumbersTable/Numberstable'
+import FaceBook from './components/FaceBook/FaceBook'
 
 function App() {
 
@@ -13,7 +21,7 @@ function App() {
 
     <div className='App'>
 
-      <div className='cards'>
+      <div className='separation'>
         <IdCard cardInfo={{
           lastName: 'Doe',
           firstName: 'John',
@@ -34,23 +42,23 @@ function App() {
         />
       </div>
 
-      <div className='greetings'>
+      <div className='separation'>
         <Greetings language={"es"}>Andrei</Greetings>
       </div>
 
-      <div className='random'>
+      <div className='separation'>
         <Random min={1} max={6}></Random>
         <Random min={1} max={100}></Random>
       </div>
 
-      <div>
+      <div className='separation'>
         <BoxColor r={199} g={59} b={100} />
         <BoxColor r={32} g={56} b={122} />
         <BoxColor r={43} g={124} b={12} />
         <BoxColor r={45} g={220} b={167} />
       </div>
 
-      <div>
+      <div className='separation'>
         <CreditCard infoCard={{
           type: "Visa",
           number: "0123456789018845",
@@ -86,7 +94,7 @@ function App() {
         />
       </div>
 
-      <div className='rating'>
+      <div className='separation'>
         <Rating>1.5</Rating>
         <Rating>2.8</Rating>
         <Rating>3.2</Rating>
@@ -116,8 +124,36 @@ function App() {
           }]
         }}
         />
-
       </div>
+
+      <div className='separation'>
+        <Likebutton />
+        <Likebutton />
+      </div>
+
+      <div className='separation'>
+        <ClickablePicture {...{ max, maxWithGlasses }} />
+      </div>
+
+      <div className='separation'>
+        <Dice />
+      </div>
+
+      <div className='separation'>
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+      </div>
+
+
+      <NumbersTable limit={12} />
+
+      <FaceBook />
 
     </div>
   )

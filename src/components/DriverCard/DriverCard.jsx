@@ -5,7 +5,7 @@ const driverCard = ({ driverInfo }) => {
 
     return (
         <div className="driverCard">
-            <img src={img} alt="profil-photo" />
+            <img className="driver" src={img} alt="profil-photo" />
             <Rating>{rating}</Rating>
             <h4>{name}</h4>
             <p>{car[0].model}-{car[0].licensePlate}</p>

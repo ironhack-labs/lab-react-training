@@ -5,6 +5,13 @@ img {
 .App {
   margin-left: 5%;
   margin-right: 5%;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.separation {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .IdCard {
@@ -36,6 +43,35 @@ img {
 }
 
 .driverCard img {
-  width: 10%;
+  width: 150px;
   margin-top: 20px;
+}
+
+.creditCard img {
+  width: 30px;
+}
+
+.like-button {
+  margin-left: 20px;
+}
+
+.table {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-left: 10%;
+}
+
+.numbers {
+  text-align: center;
+  width: 30px;
+}
+
+.uniqueProfile {
+  display: flex;
+  margin-top: 50px;
+}
+
+.uniqueProfile img {
+  width: 200px;
 }
