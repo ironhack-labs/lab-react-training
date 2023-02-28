@@ -5,7 +5,7 @@ import master from '../assets/images/mastercardIcon.png'
 const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color }) => {
     const lastNumber = number.slice(-4);
 
-    const getLogo = () => {
+    const logoIm = () => {
         if (type === 'Visa') {
             return visa;
         } else if (type === 'Master Card') {
@@ -18,7 +18,7 @@ const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner
     return (
         <div className="Card" style={{ backgroundColor: bgColor, color: color }}>
             <div className="logo">
-                <img src={getLogo()} alt={type} />
+                <img src={logoIm()} alt={type} />
             </div>
             <div className="number">
                 <p>**** **** **** {lastNumber}</p>
