@@ -6,6 +6,11 @@ import Random from './components/Random/Random';
 import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable'
 
 function App() {
   return (
@@ -90,6 +95,34 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+
+      <hr />
+
+      <LikeButton />
+      <LikeButton />
+
+      <hr />
+
+      <ClickablePicture />
+
+      <hr />
+
+      <Dice />
+
+      <hr />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <hr />
+
+      <NumbersTable limit={12} />
 
 
     </div>
