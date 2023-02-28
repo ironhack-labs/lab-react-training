@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+display: flex;
+
+flex-direction: row;
+
+text-align:left;
+border: #d7dbe2;
+border-color: #d7dbe2;
+border-style:groove
+}
+
+.image1{
+  width:35vh;
+}
