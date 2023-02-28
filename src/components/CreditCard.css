@@ -1,0 +1,40 @@
+.Card {
+    display: flex;
+    display: inline-block;
+    justify-content: space-between;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 20px;
+}
+
+.number p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.info p {
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+.nameIm {
+    font-size: 18px;
+}

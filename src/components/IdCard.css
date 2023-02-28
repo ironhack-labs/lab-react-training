@@ -1,0 +1,20 @@
+img {
+    width: 100%;
+}
+
+.IdCard {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 95%;
+}
+
+.IdCard img {
+    width: 200px;
+}
+
+.info-container {
+    text-align: left;
+    margin-left: 20px;
+}
