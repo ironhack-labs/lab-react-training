@@ -1,0 +1,23 @@
+.image {
+    padding-top: 10px;
+    display: flex;
+    margin-left: 20px;
+    border: 1px;
+    border-color: black;
+
+}
+
+.IdCard {
+    display: flex;
+    margin-left: 20px;
+    border-width: 10px;
+}
+
+.data {
+    margin-left: 20px;
+}
+
+.card {
+    width: 10px;
+    margin-left: 60px;
+}

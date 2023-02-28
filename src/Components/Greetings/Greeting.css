@@ -1,0 +1,7 @@
+.greeting {
+    width: 510px;
+    height: 100;
+    display: block;
+    border-color: black;
+    border-width: 5px;
+}

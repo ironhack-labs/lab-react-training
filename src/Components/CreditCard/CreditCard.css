@@ -1,0 +1,13 @@
+.CreditCard {
+    width: 500px;
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+.visa-image {
+    width: 10px;
+    height: 50px;
+}
