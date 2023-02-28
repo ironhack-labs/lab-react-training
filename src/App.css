@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.idCard{
+  border: 3px solid #282c34;
+  height: min-content;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+
+}
+
+.card-cont{
+  display: flex;
+}
+
+.img-carta{
+
+  width: 150px;
+  border-radius: 50%;
+}
+
+.carta{
+  background-color: rgba(0, 132, 255, 0.56);
+  margin: 20px;
+  width: max-content;
+}
