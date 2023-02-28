@@ -1,0 +1,11 @@
+.ClickeablePicture {
+    display: flex;
+    justify-content: center;
+
+}
+
+.ClickeablePicture img {
+    width: 200px;
+    height: 100%;
+    margin-top: 15px;
+}

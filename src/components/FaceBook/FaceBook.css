@@ -1,0 +1,25 @@
+.ProfileCard {
+    border: 1px solid black;
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.ProfileCard p {
+    margin-left: 15px;
+}
+
+.ProfileCard img {
+    width: 150px;
+    height: 100%;
+}
+
+.Button {
+    margin: 15px;
+}
+
+.Blue {
+    background-color: blue;
+}

@@ -1,0 +1,9 @@
+.NumberBox {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.Box {
+    display: flex;
+    justify-content: center;
+}
