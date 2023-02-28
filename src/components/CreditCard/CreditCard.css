@@ -1,0 +1,32 @@
+.CreditCard {
+    height: 140px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.TopCard {
+
+    padding-left: 10px;
+}
+
+.CardNumber {
+
+    text-align: center;
+}
+
+.BottomCard {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 0.75em;
+}
+
+.BottomCard ul {
+    padding-top: 20px;
+    list-style: none;
+    list-style-type: none;
+    padding-left: 10px;
+
+
+}
