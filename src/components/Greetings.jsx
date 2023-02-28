@@ -3,7 +3,7 @@ import React from 'react';
 function Greetings(props) {
   const { lang, children } = props;
   return (
-    <div>
+    <div className='greetings-card'>
       {lang === 'de' && <p>Hallo {children}</p>}
       {lang === 'en' && <p>Hello {children}</p>}
       {lang === 'es' && <p>Hola {children}</p>}

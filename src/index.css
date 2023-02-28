@@ -11,3 +11,137 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* id card */
+
+.id-card {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.id-card img {
+  width: 10vw;
+}
+
+.information-card p {
+  margin: 0 10px;
+  font-size: 1.3vw;
+  text-align: left;
+}
+
+/* greetings */
+
+.greetings-card {
+  border: 2px solid black;
+  margin: 20px;
+  font-size: 25px;
+}
+
+/* random */
+
+.random-card {
+  border: 2px solid black;
+  margin: 20px;
+  font-size: 25px;
+}
+
+/* box color*/
+
+.boxcolor-card {
+  border: 2px solid black;
+  margin: 20px;
+  font-size: 25px;
+}
+
+/* credit card */
+.creditcard-card {
+  width: 30vw;
+  border-radius: 10px;
+  margin: 1vw;
+  padding: 0;
+}
+
+.creditcard-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.creditcard-card img {
+  width: 5vw;
+  margin: 1vw;
+}
+
+.logo-type {
+  text-align: right;
+  padding: 5px;
+}
+
+.card-number h4 {
+  margin: 1vw;
+  font-size: 2vw;
+}
+
+.card-details {
+  display: flex;
+  justify-content: left;
+}
+
+.card-details p {
+  margin: 0 5px 0 30px;
+  font-size: 1.2vw;
+}
+
+.card-owner p {
+  margin: 0 30px;
+  padding-bottom: 3vw;
+  text-align: left;
+  font-size: 1.2vw;
+}
+
+/* driver card*/
+
+.drivercard-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drivercard {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: rgb(49, 33, 200);
+  margin: 30px;
+  color: white;
+  width: 70vw;
+}
+
+.driver-card-img {
+  width: 10vw;
+  border-radius: 50%;
+  margin: 20px 30px;
+}
+
+.driver-details {
+  text-align: left;
+}
+
+.driver-details h2 {
+  font-size: 3vw;
+  margin: 20px 0 0 0;
+}
+
+.driver-details p {
+  font-size: 3vw;
+  margin: 0;
+}
+
+.driver-details h3 {
+  font-size: 2vw;
+  font-weight: lighter;
+  margin: 0 0 20px;
+}

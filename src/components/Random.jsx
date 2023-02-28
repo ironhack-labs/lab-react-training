@@ -5,8 +5,8 @@ function Random(props) {
   const randomNumber = Math.floor(Math.random() * (max - min)) + min;
 
   return (
-    <div>
-      <h3>Random value between {min} and {max} -- {randomNumber} </h3>
+    <div className='random-card'>
+      <p>Random value between {min} and {max} -- {randomNumber} </p>
     </div>
   );
 }

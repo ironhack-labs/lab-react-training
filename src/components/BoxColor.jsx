@@ -5,11 +5,9 @@ function BoxColor(props) {
 
     const style = {
         backgroundColor: `rgb(${r}, ${g}, ${b})`,
-        width: '100vw',
-        height: '10vh',
     }
   return (
-    <div style={style}>
+    <div className='boxcolor-card' style={style}>
         <p>rgb({r}, {g}, {b})</p>
     </div>
   )
