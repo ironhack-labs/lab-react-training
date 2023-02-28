@@ -1,0 +1,16 @@
+.driver-card {
+    width: 70vw;
+    height: auto;
+    background-color: rgb(16, 84, 84);
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    color: white;
+  }
+
+.driver-img {
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 20px 10px;
+}
