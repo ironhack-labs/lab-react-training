@@ -1,0 +1,31 @@
+.CreditCard {
+    
+    width: 30%;
+    height: 200px;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.type {
+    text-align: right;
+}
+
+.datebank{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bank {
+    margin-left: 30px;
+}
+
+.owner {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.number {
+    text-align: left;
+}
