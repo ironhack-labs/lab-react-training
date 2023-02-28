@@ -2,7 +2,7 @@ import React from 'react'
 
 function CreditCard(props) {
     const{type, number, expirationMonth, expirationYear, bank, owner, bgColor, color} = props;
-    const securedNumber = number.slice(0, 4);
+    const securedNumber = number.slice(12, 16);
   return (
     <div className="credit-card" style={{backgroundColor : bgColor, color:color}}>
         <img className="card-type-img" src={type} alt="" />
