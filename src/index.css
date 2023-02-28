@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.creditCard-container{
+  display:flex;
+  justify-content: space-around;
+  margin:50px;
+}
+
+.credit-card{
+  border-radius:20px;
+  padding-top:40px;
+  position:relative;
+  width:450px;
+}
+
+.card-type-img{
+  height:auto;
+  width:80px;
+  position:absolute;
+  right:10%;
+  top:5%;
+}
+
+.credit-card-expire{
+  display:flex;
+  margin-left:40px;
+}
+
+.driver-image{
+
+  border-radius: 50%;
+  height:auto;
+  width:80px;
+}
+
+.id-card{
+  border:solid 1px black;
+  display:flex;
+  padding:20px;
+  text-align: left;
+ 
+  
+}
+
+.id-image{
+  margin-right:10px;
+  width:220px;
+}
+
+.like-buttons-container{
+  display:flex;
+  justify-content: center;
+  gap:10px;
+}
+
+.like-button{
+  font-size: 30px;;
+  padding:20px 60px;
+}
