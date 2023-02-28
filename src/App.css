@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+.rectBox {
+  width: 50vw;
+  padding: 30px;
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+.cardBankDiv {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cardBank {
+  border-radius: 5px;
+  width: 30vw;
+}
+
+.imageCardBank {
+  width: 3vw;
+}
+
+.driversCard {
+  background-color: #5f6ed1;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 10px auto;
+  width: 40vw;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.driversCard div,
+.driversCard p,
+.driversCard h6 {
+  margin: 0;
+}
+
+.driverImg {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
