@@ -1,0 +1,18 @@
+.driverCard {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    text-align: left; */
+    text-align: left;
+    border: 1px solid;
+    border-radius: 15px;
+    margin-left: 50px;
+    width: 250px;
+    padding: 50px 100px;
+    font-size: 20px;
+}
+
+.image {
+    width: 40%;
+}

@@ -1,0 +1,17 @@
+.userInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    width: 30%;
+    border: 1px solid;
+    padding-right: 500px;
+    margin: 20px;
+}
+
+.avatar {
+    width: 40%;
+    margin-right: 20px;
+    margin-left: 5px;
+}

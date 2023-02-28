@@ -1,0 +1,7 @@
+.salutation {
+    display: flex;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}

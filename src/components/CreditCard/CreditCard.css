@@ -1,0 +1,17 @@
+.cards {
+    display: flex;
+}
+
+.logo {
+    margin-left: 250px;
+}
+
+.creditCard {
+    text-align: left;
+    border: 1px solid;
+    border-radius: 15px;
+    margin-left: 50px;
+    width: 250px;
+    padding: 50px 100px;
+    font-size: 20px;
+}
