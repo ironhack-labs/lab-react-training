@@ -1,0 +1,15 @@
+.profileCard {
+    border: 1px solid black;
+    display: flex;
+    margin: 15px;
+    width: 700px;
+}
+
+.profileCard img {
+    width: 200px;
+}
+
+.facebook button {
+    margin: 15px;
+    padding: 15px;
+}

@@ -1,13 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import './components/IdCard/IdCard'
-import IdCard from './components/IdCard/IdCard';
-import Greetings from './components/Greetings/Greetings';
-import Random from './components/Random/Random';
-import BoxColor from './components/BoxColor/BoxColor';
-import CreditCard from './components/CreditCard/CreditCard';
-import Rating from './components/Rating/Rating';
-import Drivers from './components/Drivers/Drivers';
+import './IdCard/IdCard'
+import IdCard from './IdCard/IdCard';
+import Greetings from './Greetings/Greetings';
+import Random from './Random/Random';
+import BoxColor from './BoxColor/BoxColor';
+import CreditCard from './CreditCard/CreditCard';
+import Rating from './Rating/Rating';
+import Drivers from './Drivers/Drivers';
+import LikeButton from './LikeButton/LikeButton';
+import ClickablePicture from './ClickablePicture/ClickablePicture';
+import Dice from './Dice/Dice';
+import Carousel from './Carousel/Carousel';
+import NumbersTable from './NumbersTable/NumbersTable';
+import FaceBook from './FaceBook/FaceBook';
 
 const users = [
   {
@@ -114,6 +119,29 @@ function App() {
 
       <Drivers driver={drivers[0]} />
       <Drivers driver={drivers[1]} />
+
+      <LikeButton />
+      <LikeButton />
+
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+
+      <Dice />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <NumbersTable limit={12} />
+
+      <FaceBook />
 
     </div>
 

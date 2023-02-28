@@ -1,0 +1,10 @@
+.counter {
+    display: inline;
+    text-align: start;
+}
+
+.counter button {
+    margin: 10px;
+    font-size: 30px;
+    padding: 10px;
+}

@@ -1,0 +1,11 @@
+.numberTable {
+    margin: 10px;
+    display: flex;
+}
+
+.numberTable {
+    border: 1px solid black;
+    font-size: 30px;
+    padding: 45px;
+    margin: 0;
+}
