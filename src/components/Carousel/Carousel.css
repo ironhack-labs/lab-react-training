@@ -1,0 +1,8 @@
+.Carousel img {
+    width: 150px;
+    height: auto;
+}
+
+.Carousel button {
+    padding: 10px 50px;
+}

@@ -6,6 +6,11 @@ import BoxColor from './BoxColor/BoxColor'
 import CreditCard from './CreditCard/CreditCard'
 import Rating from './Rating/Rating'
 import DriverCard from './DriverCard/DriverCard'
+import LikeButton from './LikeButton/LikeButton'
+import ClickablePicture from './ClickablePicture/ClickablePicture'
+import Dice from './Dice/Dice'
+import Carousel from './Carousel/Carousel'
+
 
 function App() {
   return (
@@ -125,6 +130,40 @@ function App() {
             }}
           />
         </section>
+
+        <hr />
+
+        <section className='LikeButtonsContainer'>
+          <LikeButton />
+          <LikeButton />
+        </section>
+
+        <hr />
+
+        <section>
+          <ClickablePicture />
+        </section>
+
+        <hr />
+
+        <section>
+          <Dice />
+        </section>
+
+        <hr />
+
+        <section>
+          <Carousel
+            images={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg'
+            ]}
+          />
+        </section>
+
+        <hr />
 
       </header>
     </div>

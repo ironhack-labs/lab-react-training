@@ -46,3 +46,8 @@ img {
   display: flex;
   justify-content: center;
 }
+
+.LikeButtonsContainer {
+  display: flex;
+  justify-content: center;
+}

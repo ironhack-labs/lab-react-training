@@ -1,0 +1,13 @@
+.LikeButton {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    width: 100px;
+}
+
+.LikeButton p {
+    font-size: 0.7em;
+    margin: 0;
+    margin-left: 10px;
+}
