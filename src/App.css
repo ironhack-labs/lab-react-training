@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+.cards {
+ display: flex;
+
+ object-fit: contain;
+  border: solid 3px;
+} 
+
+.red-box {
+  display: flex;
+  color: white;
+  justify-content: center;
+  background-color: rgb(255,0,0);
+  width: 500px;
+  height: 100px;
+  border: solid  black 2px;
+}
+
+.green-box {
+  background-color: rgb(128,255,0);
+  width: 500px;
+  height: 100px;
+  display: flex;
+  color: white;
+ justify-content: center;
+ border: solid  black 2px;
+}
