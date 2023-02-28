@@ -4,13 +4,14 @@
 function IdCard(props) {
     return (
       <div  className="cards">
-        <img src={props.picture} alt="profile" />
-        <p>First Name:{props.lastName}</p>
-        <p>Last Name: {props.firstName}</p>
-        <p>Gender: {props.gender}</p>
-        <p>Height: {props.height}</p>
-        <p>Birth: {props.birth.toDateString()}</p>
-        
+        <img className="image-cards"src={props.picture} alt="profile" />
+        <div className="details-card">
+        <span><b>First Name:</b>{props.lastName}</span>
+        <span><b>Last Name:</b> {props.firstName}</span>
+        <span><b>Gender:</b> {props.gender}</span>
+        <span><b>Height:</b> {props.height}</span>
+        <span><b>Birth: </b>{props.birth.toDateString()}</span>
+        </div>
       </div>
     );
   }

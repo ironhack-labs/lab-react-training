@@ -11,6 +11,7 @@ import './App.css'
 function App() {
   return (
     <div>
+      <h1 >IdCard</h1>
       <IdCard
         lastName='Delores '
         firstName='Obrien'
@@ -28,6 +29,7 @@ function App() {
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
       <div>
+      <h1>Greetings</h1>
         <Greetings lang="de">Ludwig</Greetings>
 
         <Greetings lang="fr">François</Greetings>
@@ -38,17 +40,21 @@ function App() {
       </div>
 
       <div>
+      <h1>Random</h1>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
       </div>
 
-      <div className="red-box">
+      <h1>Box Colors</h1>
+      <div >
+      
         <BoxColor r={255} g={0} b={0} />
       </div>
-      <div className="green-box">
+      <div >
         <BoxColor r={128} g={255} b={0} />
       </div>
 
+      <h1>Credit Card</h1>
       <div>
         <CreditCard
           type="Visa"
@@ -83,15 +89,17 @@ function App() {
           color="white"
         />
       </div>
-      <div>
-        <Rating>0</Rating>
+
+      <h1>Rating</h1>
+      <div >
+        <Rating >0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
         <Rating>3</Rating>
         <Rating>4</Rating>
         <Rating>5</Rating>
       </div>
-
+      <h1>Driver Card</h1>
       <div>
         <DriverCard
           name="Travis Kalanick"

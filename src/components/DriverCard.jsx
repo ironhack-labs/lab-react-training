@@ -9,9 +9,9 @@ function DriverCard(props) {
     }
 
   return (
-    <div>
+    <div className='drivercard'>
 
-    <img src={img} alt={name} style={divStyle}/>
+    <img className="circle-image"src={img} alt={name} style={divStyle}/>
     <p>{name}</p>
     <p>{rating}</p>
     <p>{car.model} - {car.licensePlate}</p>

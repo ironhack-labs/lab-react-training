@@ -3,6 +3,8 @@ import React from 'react'
 function Greetings(props) {
     const {lang} = props;
 
+        
+
 function getLang(placeHolder) {
     if (placeHolder == "de")
     return (
@@ -25,10 +27,12 @@ function getLang(placeHolder) {
 
 
    return(
-    <div>
+    
+    <div className='greetings'>
+        
  <h1>{getLang(lang)} {props.children}</h1>
     </div>
-    
+
    )
 }
 

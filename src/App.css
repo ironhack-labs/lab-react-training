@@ -32,33 +32,88 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 .cards {
- display: flex;
-
- object-fit: contain;
-  border: solid 3px;
-} 
-
-.red-box {
   display: flex;
-  color: white;
-  justify-content: center;
-  background-color: rgb(255,0,0);
-  width: 500px;
-  height: 100px;
-  border: solid  black 2px;
+  align-items: center;
+
+  margin-bottom: 20px;
+  border: solid 1px;
 }
 
-.green-box {
-  background-color: rgb(128,255,0);
-  width: 500px;
-  height: 100px;
-  display: flex;
+
+
+.BoxColor {
+  text-align: center;
+  margin-bottom: 20px;
   color: white;
- justify-content: center;
- border: solid  black 2px;
+  padding: 30px;
+  border: solid black 1px;
+}
+
+
+
+
+
+.details-card {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.image-cards {
+  object-fit: contain;
+}
+
+.greetings {
+  font-size: 12px;
+  font-weight: 100;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.random {
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.number-card {
+  display: flex;
+  justify-content: center;
+  font-size:25px;
+}
+
+.stars-size {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.drivercard {
+  background-color: blue;
+  color: white;
+  border-radius: 8px 8px 8px 8px;
+  margin-bottom: 20px;
+  width:90vw;
+  height:150px;
+}
+
+.circle-image {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width:50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circle-image img {
+  
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

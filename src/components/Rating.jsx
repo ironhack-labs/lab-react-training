@@ -12,7 +12,7 @@ function Rating(props) {
             else if (children < 5.5) return "★★★★★"
         } 
       return (
-        <div>{stars(children)}</div>
+        <div className='stars-size'>{stars(children)}</div>
       )
     }
     
