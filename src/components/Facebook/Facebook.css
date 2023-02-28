@@ -1,0 +1,17 @@
+.facebookCard {
+    display: flex;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+}
+
+.picture img {
+    width: 200px;
+}
+
+.fbInfo {
+    display: block;
+    text-align: start;
+    font-size: 2em;
+    line-height: 0.4;
+}

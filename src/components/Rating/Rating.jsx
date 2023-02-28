@@ -10,9 +10,9 @@ const Rating = props => {
     const stars = '★'.repeat(blackStars) + '☆'.repeat(whiteStars)
 
     return (
-        <div className="card">
+        <>
             <p className='stars'>{stars}</p>
-        </div>
+        </>
     )
 }
 

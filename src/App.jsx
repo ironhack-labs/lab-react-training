@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard/IdCard';
 import Greetings from './components/Greetings/Greetings';
@@ -7,6 +6,12 @@ import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import Facebook from './components/Facebook/Facebook';
 
 const App = () => {
 
@@ -31,6 +36,7 @@ const App = () => {
     <div className="App">
 
       {/* iteration 1 - Id Card */}
+      <hr />
 
       <IdCard
         lastName='Doe'
@@ -51,21 +57,25 @@ const App = () => {
       />
 
       {/* iteration 2 - Greetings */}
+      <hr />
 
       <Greetings lang='de'>Ludvig</Greetings>
       <Greetings lang='fr'>Francois</Greetings>
 
       {/* iteration 3 - Random */}
+      <hr />
 
       <Random min={1} max={6} />
       <Random min={1} max={100} />
 
       {/* iteration 4 - Box Color */}
+      <hr />
 
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
       {/* iteration 5 - CreditCard */}
+      <hr />
 
       <CreditCard
         type="Visa"
@@ -101,6 +111,7 @@ const App = () => {
       />
 
       {/* iteration 6 - Stars */}
+      <hr />
 
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -110,6 +121,7 @@ const App = () => {
       <Rating>5</Rating>
 
       {/* iteration 7 - Driver Card */}
+      <hr />
 
       <DriverCard
         name="Travis Kalanick"
@@ -130,6 +142,47 @@ const App = () => {
           licensePlate: "BE33ER"
         }}
       />
+
+      {/* iterion 8 - Like Button */}
+      <hr />
+
+      <LikeButton />
+      <LikeButton />
+
+      {/* iterion 9 - ClickablePicture */}
+      <hr />
+
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+
+      {/* iterion 10 - Dice */}
+      <hr />
+
+      <Dice />
+
+      {/* iterion 11 - Carousel */}
+      <hr />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      {/* iterion 12 - Numbes Table */}
+      <hr />
+
+      <NumbersTable limit={12} />
+
+      {/* iterion 13 - Numbes Table */}
+      <hr />
+
+      <Facebook />
 
     </div>
   );
