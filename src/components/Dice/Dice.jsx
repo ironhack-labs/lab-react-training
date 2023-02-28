@@ -14,18 +14,18 @@ const Dice = () => {
     const [diceValue, setDiceValue] = useState(empty)
     const [rolling, setRolling] = useState(false)
 
-    const diceArray = [empty, dice1, dice2, dice3, dice4, dice5, dice6]
+    const diceArray = [dice1, dice2, dice3, dice4, dice5, dice6]
 
 
     const switchDice = () => {
         if (!rolling) {
-            setRolling(true);
+            setRolling(true)
             setTimeout(() => {
-                const randomIndex = Math.floor(Math.random() * diceArray.length);
-                const randomDice = diceArray[randomIndex];
-                setDiceValue(randomDice);
-                setRolling(false);
-            }, 1000);
+                const randomIndex = Math.floor(Math.random() * diceArray.length)
+                const randomDice = diceArray[randomIndex]
+                setDiceValue(randomDice)
+                setRolling(false)
+            }, 500)
         }
     }
 

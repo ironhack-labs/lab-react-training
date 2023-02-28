@@ -10,6 +10,7 @@ import ClickablePicture from './ClickablePicture/ClickablePicture'
 import img1 from './../assets/images/maxence.png'
 import img2 from './../assets/images/maxence-glasses.png'
 import Dice from './Dice/Dice'
+import Carousel from './Carousel/Carousel'
 
 
 function App() {
@@ -136,6 +137,16 @@ function App() {
 
         <Dice />
 
+
+
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
 
 
 
