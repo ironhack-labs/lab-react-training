@@ -1,0 +1,13 @@
+.headshot {
+    height: 100px;
+    width: auto;
+    margin: 20px
+
+}
+
+.driverCard {
+    background-color:rgb(68, 124, 143);
+    display: flex;
+    flex-direction: row;
+
+}

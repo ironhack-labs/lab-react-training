@@ -1,0 +1,6 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    border-style:solid;
+    margin: 10px;
+}
