@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -35,4 +35,136 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.id-card {
+  display: flex;
+  border: 2px solid #000;
+  padding: 20px;
+  margin-bottom: 1vh;
+}
+
+.id-card-img {
+  display: flex;
+  justify-content: start;
+}
+
+.greetings {
+  border: 2px solid #000;
+  margin-bottom: 1vh;
+  width: 25%;
+}
+
+.random {
+  border: 2px solid #000;
+  margin-bottom: 1vh;
+  width: 25%;
+}
+
+.box-color {
+  border: 2px solid #000;
+  margin-bottom: 1vh;
+  width: 25%;
+}
+
+.credit-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit-card {
+  margin: 10px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.credit-card-logo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.credit-card-logo img {
+  width: 60px;
+  height: auto;
+}
+
+.credit-card-number {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.credit-card-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.credit-card-expiration {
+  font-size: 16px;
+}
+
+.credit-card-bank {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.credit-card-owner {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.driver-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: rgb(0, 104, 139);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.driver-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.driver-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.driver-info h2 {
+  margin: 0;
+}
+
+.driver-rating {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+.driver-rating .star {
+  color: rgb(0, 0, 0);
+  margin-right: 5px;
+}
+
+.driver-rating-empty .star {
+  color: #000000;
+}
+
+.driver-info p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
 }
