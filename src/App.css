@@ -1,38 +1,150 @@
-.App {
+.text{
+  text-align: justify;
+  font-weight: black;
+  margin-left: 150px;
+  margin-top: 15px;
+  line-height: 7px;
+  border: 10px ridge #6666cc;
+  height:  121px;
+  width: 500px;
+}
+
+.textdos{
+  text-align: justify;
+  font-weight: black;
+  margin-left: -10px;
+  margin-top: 50px;
+  line-height: 7px;
+  border: 10px ridge #6666cc;
+  height:  121px;
+  width: 500px;
+}
+
+
+.text img{
+  position: absolute;
+  margin-left: -145px;
+  margin-top: -135px;
+width: 110px;
+height: 110px;
+}
+
+.idioma1{
+  text-align: center;
+  margin-top: 20px;
+  border: 10px ridge #6666cc;
+}
+.idioma2{
+  text-align: center;
+  margin-top: 20px;
+  border: 10px ridge #6666cc;
+}
+
+.random1{
+  text-align: center;
+  margin-top: 20px;
+  border: 10px ridge #6666cc;
+}
+
+.random2{
+  text-align: center;
+  margin-top: 20px;
+  border: 10px ridge #6666cc;
+}
+
+.uno{
+  margin-top: 20px;
+  background-color: #ff0000 ;
+  border: 10px ridge #6666cc;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dos{
+  margin-top: 20px;
+  background-color: #80ff00 ;
+  border: 10px ridge #6666cc;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.tarjeta1{
+  width: 190px;
+  height: 110px;
+  margin-top: 20px;
+  background-color: rgb(77, 145, 121);
+  border: 2px ridge transparent;
+  border-radius: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tarjeta2{
+  width: 190px;
+  height: 110px;
+  margin-left: 220px;
+  margin-top: -115px;
+  background-color: rgb(178, 188, 184);
+  border: 2px ridge transparent;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tarjeta3{
+  width: 190px;
+  height: 110px;
+  margin-left: 440px;
+  margin-top: -115px;
+  background-color: rgb(172, 161, 81);
+  border: 2px ridge transparent;
+  border-radius: 10px;
+  color: white;
+}
+
+.type{
+  text-align: right;
+}
+
+.number{
+  text-align: center;
+  color: white;
+}
+
+.fecha{
+  font-size: 16px;
+}
+
+.nombre{
+  font-size: 13px;
+}
+
+.tarjeta2 .number{
+  text-align: center;
+  color:#222222;
+}
+
+.conductores img{
+  position: absolute;
+  margin-left: -90px;
+  margin-top: -90px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.rancon1 .nom{
+  margin-top: 40px;
+  border-radius: 10px;
+} 
+
+.rancon2 .nom{
+  margin-top: 40px;
+  border-radius: 10px;
+} 
+
+ .con{
+  width: 400px;
+  margin-top: 20px;
+  border: 2px ridge transparent;
+  border-radius: 10px;
+  background-color: rgb(112, 112, 215);
+  margin-left: 200px;
+  color: white;
+  float: left;
 }
