@@ -4,7 +4,7 @@ const Greetings = ({ lang, children }) => {
 
     let greet
 
-    
+
 
     if (lang === 'en') { greet = 'Hello' }
     else if (lang === 'fr') {
@@ -17,7 +17,7 @@ const Greetings = ({ lang, children }) => {
         greet = 'Hallo'
 
     return (
-        
+
         <div className='Greetings'>
             <p>{greet} {children}</p>
         </div>

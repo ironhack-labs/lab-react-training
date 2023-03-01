@@ -1,5 +1,4 @@
 .DriverCard {
-
     height: 300px;
     width: 100%;
     border: 1px solid;
@@ -10,7 +9,7 @@
 }
 
 .DriverCard img {
-    width: 10%;
-    border-radius: 100%;
+    width: 100px;
+    border-radius: 150px;
 
 }
