@@ -1,0 +1,9 @@
+.squares {
+    display: flex;
+}
+
+.box {
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+}
