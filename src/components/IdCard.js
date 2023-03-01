@@ -7,13 +7,17 @@ function capitalize(str) {
 function IdCard(props) {
   const { lastName, firstName, gender, height, birth, picture } = props;
   return (
-    <div>
-      <h3>First Name: {capitalize(firstName)}</h3>
-      <h3>Last Name: {capitalize(lastName)}</h3>
-      <h3>Gender: {capitalize(gender)}</h3>
-      <h3>Height: {height}</h3>
-      <h3>Birth: {birth.toLocaleString()}</h3>
-      <img src={`${picture}`} alt="" />
+    <div className='idOrganizer'>
+    <div className="idContainer">
+      <img className="idCardImg" src={`${picture}`} alt="" />
+      <ul className="idCardUl" style={{listStyle: "none"}}>
+        <li className="idCardItem"><strong>First Name:</strong> {capitalize(firstName)}</li>
+        <li className="idCardItem"> <strong>Last Name:</strong> {capitalize(lastName)}</li>
+        <li className="idCardItem"><strong>Gender:</strong> {capitalize(gender)}</li>
+        <li className="idCardItem"><strong>Height:</strong> {height}</li>
+        <li className="idCardItem"><strong>Birth:</strong> {birth.toLocaleString()}</li>
+      </ul>
+    </div>
     </div>
   );
 }

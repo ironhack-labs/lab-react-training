@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Iteration 1 Id Card */
+
+.idOrganizer {
+  display: flex;
+  justify-content: center;
+}
+.idContainer {
+  border: 2px solid black;
+  width: 50vw;
+  display: flex;
+}
+
+.idCardImg {
+  width: 10vw;
+  height: auto;
+  border-right: 2px solid black;
+}
+
+.idCardItem {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+/* Iteration 2 Greetings */
+
+.greetingsContainer {
+  
+}
