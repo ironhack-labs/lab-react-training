@@ -1,0 +1,9 @@
+.button {
+    padding-left: 20px;
+    justify-content: space-between;
+    display: inline;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    size: 50px;
+}

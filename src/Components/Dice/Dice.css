@@ -1,0 +1,9 @@
+.dice {
+    width: 5px;
+}
+
+.dices {
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+}
