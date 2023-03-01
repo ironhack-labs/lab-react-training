@@ -1,0 +1,17 @@
+.container-flex-idCard {
+  display: flex;
+  border-style: solid;
+  margin: 2rem;
+}
+
+.idCard-image {
+  width: 180px;
+}
+
+.container-text {
+  padding: 0.5rem;
+}
+
+span {
+  font-weight: bold;
+}
