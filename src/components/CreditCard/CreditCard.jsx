@@ -11,7 +11,7 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
     }
 
     const lastFour = number.substring(number.length - 4, number.length)
-    console.log(lastFour)
+
 
     return (
 

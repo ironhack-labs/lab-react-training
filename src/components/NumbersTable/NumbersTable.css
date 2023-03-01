@@ -1,0 +1,22 @@
+.square {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid;
+    text-align: center;
+    background-color: rgb(221, 219, 219);
+
+}
+
+.NumbersTable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px;
+    margin-top: 100px;
+    width: 600 px
+}
