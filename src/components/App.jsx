@@ -1,11 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import IdCard from './components/IdCard';
-import Greetings from './components/Greetings';
-import { GenerateRandom } from './components/Random';
-import BoxColor from './components/BoxColor';
-import CreditCard from './components/CreditCard';
-import Rating from './components/Rating';
+import IdCard from './IdCard';
+import Greetings from './Greetings';
+import GenerateRandom from './Random';
+import BoxColor from './BoxColor';
+import CreditCard from './CreditCard';
+import LikeButton from './likeButton';
+import ClickablePicture from './ClickablePicture';
+import Dice from './Dice';
+import Carousel from './Carousel';
+import NumbersTable from './NumbersTable';
+
+
 
 
 
@@ -77,12 +82,29 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
-      <Rating>0</Rating>
-      <Rating>1.49</Rating>
-      <Rating>1.5</Rating>
-      <Rating>3</Rating>
-      <Rating>4</Rating>
-      <Rating>5</Rating>
+      <LikeButton />
+      <LikeButton />
+
+
+      <ClickablePicture />
+
+      <hr />
+
+      <Dice />
+      <hr />
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <hr />
+
+      <NumbersTable limit={12} />
+
+
     </div>
   );
 }
