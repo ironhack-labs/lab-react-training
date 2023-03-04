@@ -9,6 +9,7 @@ import { Rating } from './components/Rating';
 import LikeButton from './components/LikeButton'
 import ClickablePicture from './components/ClickablePicture.jsx'
 import Dice from './components/Dice'
+import Carousel from './components/Carousel';
 
 
 function App() {
@@ -91,6 +92,14 @@ function App() {
         imgClicked='maxence-glasses.png'
       />
       <Dice />
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/19.jpg',
+          'https://randomuser.me/api/portraits/men/11.jpg',
+          'https://randomuser.me/api/portraits/women/12.jpg',
+          'https://randomuser.me/api/portraits/men/10.jpg'
+        ]}
+      />
 
     </div>
   );
