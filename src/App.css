@@ -144,3 +144,19 @@
   text-align: left;
   margin: 20px;
 }
+
+.number-box {
+  width: 100px;
+  height: 100px;
+  border: black solid;
+}
+
+.number-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
