@@ -1,5 +1,5 @@
 import './App.css';
-import {IdCard, Greetings, Random, BoxColor, CreditCard, Rating, DriverCard} from './components'
+import {IdCard, Greetings, Random, BoxColor, CreditCard, Rating, DriverCard, LikeButton, Dice, Carousel, NumbersTable} from './components'
 
 function App() {
   return (
@@ -50,6 +50,22 @@ function App() {
           licensePlate: "CO42DE"
         }}
         />
+
+        <LikeButton />
+
+        <Dice />
+
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+
+        <NumbersTable limit={11} />
+
     </div>
   );
 }
