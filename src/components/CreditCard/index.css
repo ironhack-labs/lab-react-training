@@ -1,0 +1,38 @@
+.CreditCard {
+    border: 1px solid black;
+    width: 320px;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.imageCard {
+
+   display: flex;
+   justify-content: right;
+}
+
+.imageCard img {
+    width: 50px;
+}
+
+.CreditCard div {
+    display: flex;
+}
+
+.numbersCard {
+    display: flex;
+    align-items: center;
+}
+
+.numbersCard p {
+    margin: 0;
+}
+
+.nameBank {
+    margin-left: 30px;
+}
+
+span {
+    font-weight: bolder;
+}

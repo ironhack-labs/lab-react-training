@@ -1,0 +1,10 @@
+.React {
+    border: 2px solid black;
+    width: 300px;
+    margin: 10px auto;
+    padding-left: 5px; 
+}
+
+.React p {
+    text-align: center;
+}
