@@ -1,9 +1,11 @@
 import './App.css';
 import BoxColor from './components/misc/BoxColor';
+import ClickablePicture from './components/misc/ClickablePicture';
 import CreditCard from './components/misc/CreditCard';
 import DriverCard from './components/misc/DriverCard';
 import Greetings from './components/misc/Greetings';
 import IdCard from './components/misc/IdCard';
+import LikeButton from './components/misc/LikeButton';
 import Random from './components/misc/Random';
 import Rating from './components/misc/Rating';
 
@@ -109,6 +111,12 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
+
+       <LikeButton />
+
+
+       <ClickablePicture/>
+       
       </header>
     </div>
   );

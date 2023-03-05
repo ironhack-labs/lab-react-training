@@ -1,0 +1,8 @@
+.LikeButton {
+    display: flex;
+    margin-top: 20px;
+}
+.Likebtn {
+    width: 200px;
+    height: 50px;
+}
