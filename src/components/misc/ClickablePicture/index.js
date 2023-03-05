@@ -28,7 +28,7 @@ class ClickablePicture extends Component {
         return (
             <div>
                <img className='ClickablePicture' src={this.state.clicked} onClick={this.changeImg} alt=''/>
-               {/* <img src={maxence} alt=""></img> */}
+              
             </div>
         );
     }

@@ -1,7 +1,9 @@
 import './App.css';
 import BoxColor from './components/misc/BoxColor';
+// import Carousel from './components/misc/Carousel';
 import ClickablePicture from './components/misc/ClickablePicture';
 import CreditCard from './components/misc/CreditCard';
+import Dice from './components/misc/Dice';
 import DriverCard from './components/misc/DriverCard';
 import Greetings from './components/misc/Greetings';
 import IdCard from './components/misc/IdCard';
@@ -112,11 +114,20 @@ function App() {
           }}
         />
 
-       <LikeButton />
+        <LikeButton />
 
+        <ClickablePicture />
 
-       <ClickablePicture/>
-       
+        <Dice></Dice>
+{/* 
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
+        /> */}
       </header>
     </div>
   );
