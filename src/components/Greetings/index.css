@@ -1,0 +1,12 @@
+.Greetings {
+    border: 2px solid black;
+    width: 600px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.Greetings p {
+    text-align: left;
+    margin-left: 10px;
+    margin: 5px 0 5px 5px;
+}
