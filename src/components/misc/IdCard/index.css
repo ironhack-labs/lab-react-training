@@ -1,0 +1,13 @@
+ul {
+    list-style-type: none;
+   }
+
+.IdCard {
+    border: 1px solid black;
+    display: flex;
+    margin: 10px;
+}
+
+.IdCard img {
+    margin: 5px
+}
