@@ -5,28 +5,34 @@ import visa from '../../assets/images/visa.png'
 
 function CreditCard ({type, number, expirationMonth, expirationYear, bank, owner, bgColor, color}) {
   
-const lastNums = number.slice(12)  
-// const image = {} 
-// if({type} === "Visa") {
-//     image = {visa}
-// } else {image = {credit}}
+const lastNums = number.slice(12)
 
-// const year = expirationYear.slice(2)
+// let typeCard = ""
+  
+// if(type === "Visa") {
+//     typeCard = "visa"
+// } else {typeCard = "credit"}
+
+const year = expirationYear.toString().slice(2)
+let month = ""
+if(expirationMonth.toString().length !==2) {
+    month = '0' + expirationMonth
+} else {month = expirationMonth}
 
     return (
         <div className='CreditCard' style={{backgroundColor:`${bgColor}`, color:`${color}`}}>
             <div className='imageCard'>
-             <img src={visa}/>
+             {/* <img src={typeCard === 'visa' ? visa : credit}/> */}
+             <img src={type === 'Visa' ? visa : credit}/>
             </div>
-            <div className='numbersCard'>
-            <span>.... .... ....</span>
-            <p>{lastNums}</p>
-            </div>
-            
-            <div>
-                <p>Expires {expirationMonth}/{expirationYear}</p>
+
+            <p className='hiddenNums'><span>.... .... .... </span>{lastNums}</p>
+
+            <div className='Dates'>
+                <p>Expires {month}/{year}</p>
                 <p className='nameBank'>{bank}</p>
             </div>
+
             <p>{owner}</p>
         </div>
     );

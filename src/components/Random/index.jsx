@@ -3,8 +3,9 @@ import './index.css'
 
 function Random ({min, max}) {
 
-    const result = Math.floor(Math.random() * ({max} - {min}) + {min})
+    const result = Math.floor(Math.random() * (max - min) + min)
    
+
     return (
         <div className='Random'>
             <p>Random value between {min} and {max} = {result} </p>
