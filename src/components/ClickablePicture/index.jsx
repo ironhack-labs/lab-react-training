@@ -7,14 +7,29 @@ class ClickablePicture extends React.Component {
     constructor(props) {
         super(props)
         this.state= {
-            // img: img,
-            // imgClicked: imgClicked
+            image: props.img,
+           
         }
     }
+
+    changeImage = () => {
+        if(this.state.image === this.props.img) {
+            this.setState({
+                image: this.props.imgClicked,
+        })
+        } else {
+            this.setState({
+                image: this.props.img,
+        })
+        }
+          
+
+        }
+    
     render() {
         return(
             <div className='ClickablePicture'>
-                {/* <button><img src={this.state.img}/></button> */}
+                <button onClick={this.changeImage}><img src={this.state.image}/></button>
             </div>
         )
         };
