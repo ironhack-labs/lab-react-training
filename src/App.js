@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import IdCard from  './components/IdCard';
+import { arrIdCard } from "./data/IdCard-data";
+import Greetings from './components/Greetings';
+import Random from './components/Random';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>Id Card</h1>
+    {arrIdCard.map((card) => {
+      return (
+        <IdCard
+        key={card.id}
+        picture={card.picture}
+        firstName={card.firstName}
+        lastName={card.lastName}
+        gender={card.gender}
+        height={card.height}
+        birth={card.birth}
+        />
+        );
+    })}
+
+    <h1>Greetings</h1>
+    <Greetings lang='fr'>Francois</Greetings>
+    <Greetings lang='de'>Ludwig</Greetings>
+
+    <h1>Random</h1>
+    <Random min="1" max="6"></Random>
+    <Random min="1" max="100"></Random>
+
+
+
     </div>
   );
 }

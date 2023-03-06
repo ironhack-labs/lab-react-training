@@ -1,0 +1,10 @@
+.Random {
+  display: flex;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.Random h1 {
+  font-size: 10px;
+  margin: 10px;
+}
