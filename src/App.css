@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.CreditApp{
+  display: flex;
+  gap: 2rem;
+  padding: 10px 20px;
+
+}
