@@ -9,6 +9,7 @@ import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
+import Carousel from './components/Carusel'
 
 function App() {
   return (
@@ -140,7 +141,19 @@ function App() {
         <h3>Iteration 10</h3>
         <Dice />
       </div>
-      
+
+      <div className="iteration11">
+        <h3>Iteration 11</h3>
+        <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+/>
+      </div>
+
     </div>
   );
 }
