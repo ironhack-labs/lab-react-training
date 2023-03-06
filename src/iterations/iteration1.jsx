@@ -1,6 +1,5 @@
-import IdCard from '../../components/IdCard';
+import IdCard from '../components/IdCard';
 import React from 'react';
-import './index.css';
 
 function Iteration1() {
   return (
