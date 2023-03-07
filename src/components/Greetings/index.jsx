@@ -1,15 +1,16 @@
 import React from 'react';
+import './index.css';
 
 const langConfig = {
   en: 'Hello',
   es: 'Hola',
-  fr: 'Hallo',
-  de: 'Bonjour',
+  fr: 'Bonjour',
+  de: 'Hallo',
 };
 
 function Greetings({ lang, children }) {
   return (
-    <div>
+    <div className="Greetings">
       {langConfig[lang]} {children}
     </div>
   );
