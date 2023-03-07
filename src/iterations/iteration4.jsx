@@ -1,4 +1,4 @@
-import BoxColor from '../components/Component';
+import BoxColor from '../components/BoxColor';
 import React from 'react';
 
 function Iteration4() {
