@@ -4,6 +4,8 @@
     margin-bottom: 8px;
     display: flex;
     gap: 8px;
+    width: 500px ;
+    margin-left: 200px;
   }
   
   .ArrCard p {

@@ -1,0 +1,24 @@
+ .CreditCard {
+    width: 300px;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    justify-content: center;
+    height: 110px;
+    margin-left: 200px;
+  }
+  
+  .CreditCard .CreditCard-type {
+    height: 20px;
+    text-align: right;
+  }
+  
+  .CreditCard .CreditCard-type img {
+    height: 100%;
+  }
+  
+  .CreditCard .CreditCard-data {
+    display: flex;
+    gap: 8px;
+   
+  }

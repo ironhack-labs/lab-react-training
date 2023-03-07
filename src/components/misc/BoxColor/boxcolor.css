@@ -1,4 +1,4 @@
-.Greetings {
+.BoxColor{
     border: 1px solid black;
     padding: 1px;
     font-size: 18px;
@@ -6,6 +6,6 @@
     display: flex;
     gap: 4px;
     width: 500px ;
-    margin-left: 200px;
     justify-content: center;
-  }
+    margin-left: 200px;
+}
