@@ -1,0 +1,14 @@
+.ArrCard {
+    border: 1px solid black;
+    padding: 2px;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .ArrCard p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align:left;
+    margin-left: 50px;
+  }
