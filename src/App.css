@@ -43,3 +43,11 @@
   padding: 10px 20px;
 
 }
+
+
+.RatingApp{
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  margin: 10px 50px;
+}
