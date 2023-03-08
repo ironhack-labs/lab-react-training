@@ -1,0 +1,37 @@
+
+.credit-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 50px;
+    border-radius: 13px;
+}
+
+
+.credit-card img{
+    width: 70px;
+    height:40px;
+    margin-left: 80%;
+    margin-bottom: 6%;
+}
+
+#card-number{
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-left: 10%;
+}
+
+#information-card {
+    height:60%;
+    margin-bottom: 0px;
+}
+
+#information-card p {
+ margin-bottom: 0%;
+ margin-left: 10%;
+}
+
+#expiration{
+    margin-top: 10px;
+}
+
