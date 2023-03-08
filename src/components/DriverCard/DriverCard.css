@@ -1,0 +1,19 @@
+.DriverCard {
+    width: 450px;
+    height: 200px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 50px;
+    gap: 20px;
+    margin-top: 30px;
+    border-radius: 50px;
+}
+
+.white-space {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}

@@ -1,0 +1,17 @@
+.Id-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    width: 600px;
+    margin-top: 10px;
+}
+
+.Id-card img {
+    margin-left: 8px;
+}
+
+.id-card-content {
+    margin-left: 20px;
+}
