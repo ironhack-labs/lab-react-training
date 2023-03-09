@@ -7,6 +7,7 @@ import Iteration3 from './iterations/iteration3';
 import Iteration4 from './iterations/iteration4';
 import Iteration5 from './iterations/iteration5';
 import Iteration6 from './iterations/iteration6';
+import Iteration7 from './iterations/iteration7';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
 
       <strong>ITERATION 6</strong>
       <Iteration6 />
+
+      <strong>ITERATION 7</strong>
+      <Iteration7 />
     </div>
   );
 }
