@@ -22,9 +22,11 @@ class ClickablePicture extends React.Component {
   render() {
     return (
       <div className="ClickablePicture">
-        <button onClick={this.handleChangeImage}>
-          <img src={this.state.image} alt="..." />
-        </button>
+        <img
+          onClick={this.handleChangeImage}
+          src={this.state.image}
+          alt="..."
+        />
       </div>
     );
   }
