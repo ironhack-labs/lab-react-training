@@ -11,7 +11,7 @@ export const DriverCard = ({name, rating, img, car}) => {
       <div className="DriverInformation">
       <h2>{name}</h2>
       <h2><Rating>{rating}</Rating></h2>
-      <h3>{car.model}-{car.licensePlate}</h3>
+      <h3>{car.model} - {car.licensePlate}</h3>
 
       </div>
     </div>
