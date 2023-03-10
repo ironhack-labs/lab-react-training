@@ -21,3 +21,7 @@
   padding: 10px 20px;
 }
 
+.DiceApp{
+  display: flex;
+  justify-content: flex-start;
+}
