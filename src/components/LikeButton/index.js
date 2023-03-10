@@ -1,5 +1,5 @@
 import './index.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const colors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
 
@@ -8,7 +8,7 @@ export const LikeButton = () => {
   const [likeCount, setLikeCount] = useState(0);
   const textLike = (likeCount === 1 ? 'Like' : 'Likes');
 
-  const handleClick = (event) => {
+  const handleClick = () => {
     setLikeCount((prevlikes)=> prevlikes + 1)
     setColor(colors[likeCount % colors.length]);
   };
