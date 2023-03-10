@@ -1,10 +1,10 @@
 import React from 'react';
-import Dice from '../components/Dice';
+import ClickablePicture from '../components/ClickablePicture';
 
 function Iteration9() {
   return (
     <div className="Iteration9">
-      <Dice />
+      <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
     </div>
   );
 }
