@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 
 import Iteration1 from './iterations/iteration1';
-import Iteration10 from './iterations/iteration10';
 import Iteration2 from './iterations/iteration2';
 import Iteration3 from './iterations/iteration3';
 import Iteration4 from './iterations/iteration4';
@@ -11,6 +10,8 @@ import Iteration6 from './iterations/iteration6';
 import Iteration7 from './iterations/iteration7';
 import Iteration8 from './iterations/iteration8';
 import Iteration9 from './iterations/iteration9';
+import Iteration10 from './iterations/iteration10';
+import Iteration11 from './iterations/iteration11';
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
 
       <strong>ITERATION 10</strong>
       <Iteration10 />
+
+      <strong>ITERATION 11</strong>
+      <Iteration11 />
     </div>
   );
 }
