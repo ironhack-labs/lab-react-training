@@ -4,8 +4,9 @@ import Random from './components/random/Random';
 import BoxColor from './components/boxColor/BoxColor';
 import CreditCard from './components/creditCard/CreditCard';
 import Rating from './components/rating/Rating';
-import './App.css';
 import DriverCard from './components/driverCard/DriverCard';
+import LikeButton from './components/likeButton/LikeButton';
+import './App.css';
 
 const App = () => {
   return (
@@ -134,6 +135,18 @@ const App = () => {
           />
         </div>
       </div>
+
+      <hr />
+
+      <div className="components">
+        <h1>LikeButton Component</h1>
+        <div className="like-button">
+        <LikeButton />
+        <LikeButton />
+        </div>
+      </div>
+
+      <hr />
     </div>
   );
 };
