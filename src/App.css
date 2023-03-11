@@ -21,3 +21,11 @@
   gap: 1rem;
   justify-content: center;
 }
+
+.App .rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

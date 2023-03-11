@@ -3,6 +3,7 @@ import IdCard from './components/idCard/IdCard';
 import Random from './components/random/Random';
 import BoxColor from './components/boxColor/BoxColor';
 import CreditCard from './components/creditCard/CreditCard';
+import Rating from './components/rating/Rating';
 import './App.css';
 
 const App = () => {
@@ -89,6 +90,20 @@ const App = () => {
             bgColor="#ddbb55"
             color="white"
           />
+        </div>
+      </div>
+
+      <hr />
+
+      <div className="components">
+        <h1>Rating Component</h1>
+        <div className="rating">
+          <Rating>0</Rating>
+          <Rating>1.49</Rating>
+          <Rating>1.5</Rating>
+          <Rating>3</Rating>
+          <Rating>4</Rating>
+          <Rating>5</Rating>
         </div>
       </div>
 
