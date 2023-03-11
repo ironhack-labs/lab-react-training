@@ -1,7 +1,8 @@
 import Greetings from './components/greetings/Greetings';
 import IdCard from './components/idCard/IdCard';
-import './App.css';
 import Random from './components/random/Random';
+import BoxColor from './components/boxColor/BoxColor';
+import './App.css';
 
 const App = () => {
   return (
@@ -41,6 +42,15 @@ const App = () => {
       <div className="components">
         <h1>Random Component</h1>
         <Random min={8} max={10} />
+      </div>
+
+      <hr />
+
+      <div className="components">
+        <h1>BoxColor Component</h1>
+        <BoxColor />
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={123} g={80} b={0} />
       </div>
 
       <hr />

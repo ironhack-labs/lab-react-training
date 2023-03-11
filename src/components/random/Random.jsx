@@ -18,4 +18,9 @@ const Random = ({ min, max }) => {
   );
 };
 
+Random.defaultProps = {
+  min: 0,
+  max: 10,
+};
+
 export default Random;
