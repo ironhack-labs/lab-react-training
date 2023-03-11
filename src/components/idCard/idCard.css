@@ -1,0 +1,16 @@
+.card-container {
+  display: flex;
+  border: 1px solid aliceblue;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.card-container img {
+  height: 100%;
+  margin-right: 7rem;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-container span {
+  font-weight: 700;
+}
