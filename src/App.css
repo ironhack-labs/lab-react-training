@@ -1,3 +1,7 @@
+.App{
+  display: flex;
+  flex-direction: column;
+}
 h2{
   font-size: 40px;
   padding-left: 10px;
@@ -78,7 +82,14 @@ h2{
 }
 
 .creditCardsContainer {
+  width: 100vw;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   
+}
+
+.like-btn{
+  display: flex;
+  flex-direction: column;
 }
