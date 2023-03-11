@@ -1,0 +1,33 @@
+.creditcard-container {
+  width: 350px;
+  height: 225px;
+  border-radius: 10px;
+}
+
+.creditcard-container .type {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1rem 0 0;
+}
+
+.creditcard-container .type img {
+  height: 30px;
+}
+
+.creditcard-container .number p {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.creditcard-container .date {
+  margin-left: 2rem;
+}
+
+.creditcard-container .date p {
+  line-height: 5px;
+  font-size: 1.1rem;
+}
+
+.creditcard-container .date span {
+  margin-left: 1rem;
+}
