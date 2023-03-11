@@ -1,4 +1,4 @@
-import Random from '../components/Random';
+import Random from '../components/Random/random';
 import React from 'react';
 
 function Iteration3() {
