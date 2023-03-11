@@ -32,9 +32,7 @@ class Dice extends React.Component {
     render() {
         return (
             <div className='Dice'>
-                <button onClick={this.handleRandomFace}>
-                    <img src={this.state.image} />
-                </button>
+                <img onClick={this.handleRandomFace} src={this.state.image} />
             </div>
         )
     }
