@@ -1,4 +1,5 @@
 import React from 'react'
+import BlackBox from './BlackBox'
 
 export default function Greetings({ lang, children }) {
 
@@ -8,10 +9,10 @@ export default function Greetings({ lang, children }) {
     es: "Holi",
     fr: "Bonjour"
   }
- 
+
   return (
-    <div className='border border-black mt-2'>
-      <p className=''>{langConfig[lang]} {children}</p>
-    </div>
+    <BlackBox>
+      {langConfig[lang]} {children}
+    </BlackBox>
   )
 }

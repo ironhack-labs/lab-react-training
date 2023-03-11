@@ -1,4 +1,5 @@
 import React from 'react'
+import BlackBox from './BlackBox'
 
 export default function Random({ min, max }) {
   function randomNum(min, max) {
@@ -6,8 +7,8 @@ export default function Random({ min, max }) {
   }
 
   return (
-    <div className='border border-black mt-2'>
+    <BlackBox>
       <p>Random value between {min} and {max} {'=>'} {randomNum(min, max)} </p>
-    </div>
+    </BlackBox>
   )
 }

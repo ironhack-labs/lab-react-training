@@ -1,8 +1,9 @@
 import React from 'react'
+import BlackBox from './BlackBox'
 
 export default function IdCard({ lastName, firstName, gender, height, birth, picture }) {
   return (
-    <div className='border border-black flex p-2 mt-2' >
+    <BlackBox>
       <img src={picture} alt="Id" />
       <div className='flex flex-col items-start ml-2'>
         <p><span className='font-bold'>First name:</span> {firstName}</p>
@@ -11,6 +12,6 @@ export default function IdCard({ lastName, firstName, gender, height, birth, pic
         <p><span className='font-bold'>Height:</span> {height}</p>
         <p><span className='font-bold'>Birth:</span> {birth.toDateString()}</p>
       </div>
-    </div>
+    </BlackBox>
   )
 }
