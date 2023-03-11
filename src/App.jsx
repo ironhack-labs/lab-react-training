@@ -1,11 +1,12 @@
 import Greetings from './components/greetings/Greetings';
 import IdCard from './components/idCard/IdCard';
 import './App.css';
+import Random from './components/random/Random';
 
 const App = () => {
   return (
     <div className="App">
-      <div className="id-cards">
+      <div className="components">
         <h1>IdCards Component</h1>
         <IdCard
           firstName="John"
@@ -27,12 +28,19 @@ const App = () => {
 
       <hr />
 
-      <div className="greetings">
+      <div className="components">
         <h1>Greetings Component</h1>
         <Greetings>Español</Greetings>
         <Greetings lang="en">English</Greetings>
         <Greetings lang="fr">François</Greetings>
         <Greetings lang="de">Ludwig</Greetings>
+      </div>
+
+      <hr />
+
+      <div className="components">
+        <h1>Random Component</h1>
+        <Random min={8} max={10} />
       </div>
 
       <hr />
