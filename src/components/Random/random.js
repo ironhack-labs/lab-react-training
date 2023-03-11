@@ -1,4 +1,4 @@
-import "./randon.css";
+//import "./randon.css"; 
 import React from "react";
 
 function Random({ min, max }) {
