@@ -1,0 +1,34 @@
+.CreditCard {
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding-bottom: 15px;
+}
+
+.CreditCard img {
+  width: 50px;
+  align-self: flex-end;
+  margin: 15px 15px 0 0;
+}
+
+.CreditCard h3 {
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.CreditCard div {
+  text-align: left;
+}
+
+.CreditCard span {
+  margin: 0 20px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.CreditCard p {
+  margin: 0 20px;
+}
