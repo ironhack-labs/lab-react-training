@@ -1,0 +1,23 @@
+.Facebook img {
+  width: 180px;
+}
+
+.Facebook{
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  width: 600px;
+  border: 1px solid black;
+  margin: 10px 20px;
+}
+
+.ProfileInformation p{
+ margin: 0
+}
+
+.ProfileInformation{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-left: 20px;
+}

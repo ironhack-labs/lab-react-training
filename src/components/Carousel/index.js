@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './index.css';
 
 export const Carousel = ({images}) => {
-  console.log(images[0]);
   const [index, setIndex] = useState(0)
   const handleClickLeft = () =>{
     if(index === 0) {

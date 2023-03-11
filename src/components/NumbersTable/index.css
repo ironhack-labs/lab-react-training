@@ -1,0 +1,12 @@
+.NumbersTable {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  padding: 10px 20px;
+}
+
+.Item {
+  padding: 8px 0;
+  width: 45px;
+  border: 1px solid;
+}

@@ -25,3 +25,9 @@
   display: flex;
   justify-content: flex-start;
 }
+
+.FacebookApp{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
