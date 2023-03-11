@@ -1,0 +1,37 @@
+.CreditCard {
+    box-sizing: border-box;
+    width: 300px;
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    margin-top: 6px;
+    line-height: 0.5;
+    padding: 10px;
+ }
+  
+  
+  .CreditCard .CreditCard-type {
+    height: 20px;
+    text-align: right;
+  }
+  
+  .CreditCard .CreditCard-type img {
+    height: 100%;
+  
+  }
+  .CreditCard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .CreditCard-container > * {
+    margin: 10px;
+  }
+
+  .CreditCard .card-number p {
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: -1px;
+    font-size: 24px;
+    word-spacing: -2px;
+  }

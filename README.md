@@ -31,23 +31,15 @@ $ npm start
 
 - Create a Pull Request so that your TAs can review your work.
 
-  
-
 ## Instructions
-
-
 
 ### Iteration 0 | Components folder
 
-Inside of the `src/` folder, create a new folder named `components`. 
+Inside of the `src/` folder, create a new folder named `components`.
 
 Use the `components` folder to store all the components that you create in the following iterations.
 
-
-
-----
-
-
+---
 
 ### Iteration 1 | Component: `IdCard`
 
@@ -86,11 +78,7 @@ Create and render an `IdCard` component with 6 props:
 
 ![image](https://user-images.githubusercontent.com/5306791/52976030-22b0d200-33c8-11e9-91fe-e3ce0fa14078.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 2 | Component: `Greetings`
 
@@ -112,11 +100,7 @@ The component should display a greeting text in the chosen language.
 
 ![image](https://user-images.githubusercontent.com/5306791/52957158-57edfd80-3391-11e9-8726-93c1a3389016.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 3 | Component: `Random`
 
@@ -138,11 +122,7 @@ The component should display a random integer in the range between the `min` and
 
 ![image](https://user-images.githubusercontent.com/5306791/52957202-718f4500-3391-11e9-9b45-d1172067e877.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 4 | Component: `BoxColor`
 
@@ -167,15 +147,11 @@ The component should take 3 props:
 
 As a bonus, you can also display the hex values of the color (e.g., `#ff0000` for red).
 
-
-
-----
-
-
+---
 
 ### Iteration 5 | Component: `CreditCard`
 
-Create a `CreditCard` component that displays a rectangle with the information coming from the props. 
+Create a `CreditCard` component that displays a rectangle with the information coming from the props.
 
 The component should take 8 props:
 
@@ -188,7 +164,7 @@ The component should take 8 props:
 - `bgColor`: A string for the background color of the card
 - `color`: A string for the text color of the card
 
-Take your time to make the component look as close to the *expected output* as possible. You'll probably want to use flexbox.
+Take your time to make the component look as close to the _expected output_ as possible. You'll probably want to use flexbox.
 
 **Example:**
 
@@ -201,9 +177,9 @@ Take your time to make the component look as close to the *expected output* as p
   bank="BNP"
   owner="Maxence Bouret"
   bgColor="#11aa99"
-  color="white" 
+  color="white"
 />
-    
+
 <CreditCard
   type="Master Card"
   number="0123456789010995"
@@ -214,7 +190,7 @@ Take your time to make the component look as close to the *expected output* as p
   bgColor="#eeeeee"
   color="#222222"
 />
-    
+
 <CreditCard
   type="Visa"
   number="0123456789016984"
@@ -223,7 +199,7 @@ Take your time to make the component look as close to the *expected output* as p
   bank="Name of the Bank"
   owner="Firstname Lastname"
   bgColor="#ddbb55"
-  color="white" 
+  color="white"
 />
 ```
 
@@ -231,11 +207,7 @@ Take your time to make the component look as close to the *expected output* as p
 
 ![image](https://user-images.githubusercontent.com/5306791/52975678-ac5fa000-33c6-11e9-8cbf-7d13a8a0f625.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 6 | Component: `Rating`
 
@@ -260,20 +232,16 @@ The component should take 1 prop:
 
 ![image](https://user-images.githubusercontent.com/5306791/52972787-39512c00-33bc-11e9-93d8-428d835442fd.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 7 | Component: `DriverCard`
 
-Create a `DriverCard` component that displays a rectangle with content based on the received props. 
+Create a `DriverCard` component that displays a rectangle with content based on the received props.
 
 The component should take 4 props:
 
 - `name`: A string
-- `rating`: A number between `0` and `5`.  The value can be a floating point number.
+- `rating`: A number between `0` and `5`. The value can be a floating point number.
 - `img`: A string
 - `car`: An object with properties `model` and `licensePlate`.
 
@@ -305,11 +273,7 @@ The component should take 4 props:
 
 ![image](https://user-images.githubusercontent.com/5306791/52972847-66054380-33bc-11e9-92e0-8e48d1ab0212.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 8 | State: `LikeButton`
 
@@ -327,11 +291,7 @@ As a bonus, implement the background color change on each click. You can use the
 
 ![](https://media.giphy.com/media/OQJkfIEkYTUdYkgNP7/giphy.gif)
 
-
-
-----
-
-
+---
 
 ### Iteration 9: State: `ClickablePicture`
 
@@ -340,10 +300,7 @@ Create a `ClickablePicture` component that displays a picture. On each click, th
 **Example:**
 
 ```jsx
-<ClickablePicture
-  img='maxence.png'
-  imgClicked='maxence-glasses.png'
-/>
+<ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
 ```
 
 **Expected Output:**
@@ -352,11 +309,7 @@ Create a `ClickablePicture` component that displays a picture. On each click, th
 
 PS: If you want to use your picture instead, you can create it using this picture: http://www.stickpng.com/assets/images/584999937b7d4d76317f5ffd.png 😎
 
-
-
-----
-
-
+---
 
 ### Iteration 10 | State: `Dice`
 
@@ -385,11 +338,7 @@ Every time the user clicks on the component, it should:
 
 ![image](https://user-images.githubusercontent.com/5306791/52976752-f64a8500-33ca-11e9-98ee-b0b17f5e85b2.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 11 | State: `Carousel`
 
@@ -407,7 +356,7 @@ The component should take 1 prop:
     'https://randomuser.me/api/portraits/women/1.jpg',
     'https://randomuser.me/api/portraits/men/1.jpg',
     'https://randomuser.me/api/portraits/women/2.jpg',
-    'https://randomuser.me/api/portraits/men/2.jpg'
+    'https://randomuser.me/api/portraits/men/2.jpg',
   ]}
 />
 ```
@@ -416,11 +365,7 @@ The component should take 1 prop:
 
 ![](https://media.giphy.com/media/1n7cAJu0MWerLnnohR/giphy.gif)
 
-
-
-----
-
-
+---
 
 ### Iteration 12 | List and Keys | `NumbersTable`
 
@@ -440,11 +385,7 @@ The component should take 1 prop:
 
 ![image](https://user-images.githubusercontent.com/5306791/53028410-13349600-3467-11e9-8199-407375e61ab0.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 13 | List and Keys - `FaceBook` (Simple)
 
@@ -464,11 +405,7 @@ import profiles from './data/berlin.json';
 
 ![image](https://user-images.githubusercontent.com/5306791/53018529-e8d8dd80-3452-11e9-9912-1221eef67be6.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 14 | List and Keys - `FaceBook` (Advanced)
 
@@ -490,11 +427,7 @@ Update your `FaceBook` component and add a button for each country the students 
 - Add sort buttons
 - Add a search input
 
-
-
-----
-
-
+---
 
 ### Iteration 15 | Form - `SignupPage`
 
@@ -509,8 +442,6 @@ Create a `SignupPage` component with the following elements:
 - A paragraph displaying `"Hello"`, `"Hallo"` or `"Bonjour"` based on the selected nationality
 
 - A text "Your email is john@doe.com"
-
-  
 
 For this, you will need 3 state variables:
 
@@ -540,11 +471,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ![image](https://user-images.githubusercontent.com/5306791/53089348-9c51d880-350c-11e9-9621-cad9d87bdd48.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 16 | Lifting State Up - `RGBColorPicker`
 
@@ -559,9 +486,7 @@ Create 2 components:
 
   - `bValue`: A number between `0` and `255`, representing the amount of blue
 
-    
-
-- The `SingleColorPicker` component should have an input field of type `"number"`, and allow the user to select a number between `0` and `255`. 
+- The `SingleColorPicker` component should have an input field of type `"number"`, and allow the user to select a number between `0` and `255`.
 
   The component should take 3 props:
 
@@ -569,38 +494,32 @@ Create 2 components:
   - `value`: A number between `0` and `255`
   - `onChange`: A method that is triggered when the input is changed
 
-
-
 The `RGBColorPicker` should render 3 `SingleColorPicker` components and send the state values to them.
 
 **Example:**
 
 ```jsx
-<SingleColorPicker 
+<SingleColorPicker
   color="r"
   value={rValue}
   onChange={ () => { /* ... */ }  }
 />
 
-<SingleColorPicker 
+<SingleColorPicker
   color="g"
   value={gValue}
   onChange={ () => { /* ... */ }  }
 />
 
-<SingleColorPicker 
+<SingleColorPicker
   color="b"
   value={bValue}
   onChange={ () => { /* ... */ }  }
 />
 ```
 
-
-
 **Expected Output**
 
 ![image](https://user-images.githubusercontent.com/5306791/53166207-f918c600-35d4-11e9-8c47-c58cdc2d05b0.png)
-
-
 
 **Happy coding!** :heart:
