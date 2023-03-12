@@ -1,0 +1,17 @@
+.table-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.table-container .table {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container .table h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

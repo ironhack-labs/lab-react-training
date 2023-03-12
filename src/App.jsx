@@ -10,6 +10,7 @@ import ClickablePicture from './components/clickablePicture/ClickablePicture';
 import './App.css';
 import Dice from './components/dice/Dice';
 import Carousel from './components/carousel/Carousel';
+import NumbersTable from './components/numbersTable/NumbersTable';
 
 const App = () => {
   return (
@@ -173,7 +174,7 @@ const App = () => {
       <hr />
 
       <div className="components">
-        <h1>Dice Component</h1>
+        <h1>Carousel Component</h1>
         <div className="carousel">
           <Carousel
             images={[
@@ -185,6 +186,17 @@ const App = () => {
           />
         </div>
       </div>
+
+      <hr />
+
+      <div className="components">
+        <h1>NumberTable Component</h1>
+        <div className="number-table">
+          <NumbersTable limit={12} />
+        </div>
+      </div>
+
+      <hr />
     </div>
   );
 };
