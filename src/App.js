@@ -10,6 +10,7 @@ import IdCard from './components/misc/IdCard';
 import LikeButton from './components/misc/LikeButton';
 import Random from './components/misc/Random';
 import Rating from './components/misc/Rating';
+import NumbersTable from './components/NumbersTable/NumbersTable';
 
 function App() {
   return (
@@ -113,13 +114,13 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
-
+        {/* It.8 */}
         <LikeButton />
-
+        {/* It.9 */}
         <ClickablePicture />
-
+        {/* It.10 */}
         <Dice></Dice>
-
+         {/* It.11 */}
         <Carousel
           images={[
             'https://randomuser.me/api/portraits/women/1.jpg',
@@ -128,6 +129,9 @@ function App() {
             'https://randomuser.me/api/portraits/men/2.jpg',
           ]}
         />
+        {/* It.12 */}
+
+        <NumbersTable limit={12} />     
       </header>
     </div>
   );
