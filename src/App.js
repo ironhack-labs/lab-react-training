@@ -1,6 +1,6 @@
 import './App.css';
 import BoxColor from './components/misc/BoxColor';
-// import Carousel from './components/misc/Carousel';
+import Carousel from './components/misc/Carousel';
 import ClickablePicture from './components/misc/ClickablePicture';
 import CreditCard from './components/misc/CreditCard';
 import Dice from './components/misc/Dice';
@@ -119,7 +119,7 @@ function App() {
         <ClickablePicture />
 
         <Dice></Dice>
-{/* 
+
         <Carousel
           images={[
             'https://randomuser.me/api/portraits/women/1.jpg',
@@ -127,7 +127,7 @@ function App() {
             'https://randomuser.me/api/portraits/women/2.jpg',
             'https://randomuser.me/api/portraits/men/2.jpg',
           ]}
-        /> */}
+        />
       </header>
     </div>
   );
