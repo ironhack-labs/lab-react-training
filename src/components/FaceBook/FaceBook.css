@@ -1,0 +1,19 @@
+.profilecard {
+    display: flex;
+    border: 1px solid black;
+    width: 1000px;
+    margin: 50px 10px;
+}
+
+.profilecard img{
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+}
+
+.profilecard p{
+    font-size: 25px;
+    
+
+
+}

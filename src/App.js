@@ -1,4 +1,5 @@
 import './App.css';
+import FaceBook from './components/FaceBook/FaceBook';
 import BoxColor from './components/misc/BoxColor';
 import Carousel from './components/misc/Carousel';
 import ClickablePicture from './components/misc/ClickablePicture';
@@ -131,7 +132,12 @@ function App() {
         />
         {/* It.12 */}
 
-        <NumbersTable limit={12} />     
+        <NumbersTable limit={12} />  
+
+        {/* It. 13    */}
+
+        <FaceBook />
+
       </header>
     </div>
   );
