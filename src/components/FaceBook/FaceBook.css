@@ -13,7 +13,14 @@
 
 .profilecard p{
     font-size: 25px;
-    
 
+}
 
+.btn-container {
+    display: flex;
+    margin-top:50px;
+}
+
+.btn-container button{
+    margin:30px;
 }
