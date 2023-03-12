@@ -12,6 +12,10 @@ import LikeButton from './components/misc/LikeButton';
 import Random from './components/misc/Random';
 import Rating from './components/misc/Rating';
 import NumbersTable from './components/NumbersTable/NumbersTable';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
+import SignupPage from './components/SignupPage/SignupPage';
+
+
 
 function App() {
   return (
@@ -134,9 +138,21 @@ function App() {
 
         <NumbersTable limit={12} />  
 
-        {/* It. 13    */}
+        {/* It. 13 and 14   */}
 
         <FaceBook />
+
+
+        {/* It. 15 */}
+
+        <SignupPage />
+
+
+
+        {/* It.16 */}
+        
+        <RGBColorPicker />
+
 
       </header>
     </div>
