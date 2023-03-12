@@ -11,6 +11,7 @@ import './App.css';
 import Dice from './components/dice/Dice';
 import Carousel from './components/carousel/Carousel';
 import NumbersTable from './components/numbersTable/NumbersTable';
+import FaceBook from './components/faceBook/FaceBook';
 
 const App = () => {
   return (
@@ -193,6 +194,15 @@ const App = () => {
         <h1>NumberTable Component</h1>
         <div className="number-table">
           <NumbersTable limit={12} />
+        </div>
+      </div>
+
+      <hr />
+
+      <div className="components">
+        <h1>FaceBook Component</h1>
+        <div className="face-book">
+          <FaceBook />
         </div>
       </div>
 

@@ -19,7 +19,7 @@ const NumbersTable = ({ limit }) => {
         }
 
         return (
-          <div style={divStyle} className="table">
+          <div style={divStyle} className="table" key={i}>
             <h1 style={h1Style}>{i + 1}</h1>
           </div>
         );

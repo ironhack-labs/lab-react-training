@@ -1,0 +1,38 @@
+.facebook-container{
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  justify-items: center;
+}
+
+.facebook-container .facebook {
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 10px;
+  color: rgb(23, 23, 23);
+  width: 500px;
+  height: 200px;
+  margin-bottom: 2rem;
+}
+
+.facebook-container .img {
+  display: flex;
+}
+
+.facebook-container .img img {
+  height: 200px;
+  border-radius: 10px 0 0 10px;
+}
+
+.facebook-container .data {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.facebook-container .data p {
+  line-height: 20px;
+}
+
+.facebook-container .data span {
+  font-weight: 700;
+}
