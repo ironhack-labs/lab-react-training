@@ -15,7 +15,7 @@ function Greetings({ lang, children }) {
   };
   return (
     <div>
-      <div className="card fs-4 w-50 border border-3 border-dark m-3 p-3">
+      <div className="card fs-4 w-25 border border-3 border-dark m-3 p-3">
         {getLang(lang)} {children}
       </div>
     </div>

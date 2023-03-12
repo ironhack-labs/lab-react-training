@@ -2,6 +2,8 @@ import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Section from './components/Section';
+import Random from './components/Random';
+import BoxColor from './components/BoxColor';
 
 function App() {
   return (
@@ -28,6 +30,16 @@ function App() {
       <Section title="Greetings">
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
+      </Section>
+
+      <Section title="Random">
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
+      </Section>
+
+      <Section title="Box Color">
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
       </Section>
     </div>
   );
