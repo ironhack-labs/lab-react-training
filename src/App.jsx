@@ -8,6 +8,7 @@ import DriverCard from './components/driverCard/DriverCard';
 import LikeButton from './components/likeButton/LikeButton';
 import ClickablePicture from './components/clickablePicture/ClickablePicture';
 import './App.css';
+import Dice from './components/dice/Dice';
 
 const App = () => {
   return (
@@ -160,6 +161,13 @@ const App = () => {
       </div>
 
       <hr />
+
+      <div className="components">
+        <h1>Dice Component</h1>
+        <div className="dice">
+          <Dice />
+        </div>
+      </div>
     </div>
   );
 };

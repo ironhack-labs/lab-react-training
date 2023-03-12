@@ -19,7 +19,8 @@
 .App .credit-card,
 .App .rating,
 .App .like-button,
-.App .clickable-picture {
+.App .clickable-picture,
+.App .dice {
   display: flex;
   justify-content: center;
 }
