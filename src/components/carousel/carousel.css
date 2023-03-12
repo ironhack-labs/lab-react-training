@@ -1,0 +1,30 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.carousel-container img {
+  width: 250px;
+}
+
+.carousel-container .btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.carousel-container .btns button {
+  width: 7rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: aliceblue;
+}
+
+.carousel-container .btns button:active {
+  background-color: rgb(41, 55, 67);
+  color: aliceblue;
+}

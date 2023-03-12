@@ -9,6 +9,7 @@ import LikeButton from './components/likeButton/LikeButton';
 import ClickablePicture from './components/clickablePicture/ClickablePicture';
 import './App.css';
 import Dice from './components/dice/Dice';
+import Carousel from './components/carousel/Carousel';
 
 const App = () => {
   return (
@@ -166,6 +167,22 @@ const App = () => {
         <h1>Dice Component</h1>
         <div className="dice">
           <Dice />
+        </div>
+      </div>
+
+      <hr />
+
+      <div className="components">
+        <h1>Dice Component</h1>
+        <div className="carousel">
+          <Carousel
+            images={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg',
+            ]}
+          />
         </div>
       </div>
     </div>
