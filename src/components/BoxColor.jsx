@@ -14,12 +14,12 @@ function BoxColor({ r, g, b }) {
 
   return (
     <div>
-      <p
+      <div
         className="card fs-4 w-25 border border-3 border-dark m-3 p-3 text-center"
         style={bgColor}
       >
         rgb({r},{g},{b})<div>{rgbToHex(r, g, b)}</div>
-      </p>
+      </div>
     </div>
   );
 }
