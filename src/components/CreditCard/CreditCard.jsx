@@ -22,7 +22,7 @@ const divStyle = {
       </div>
       <div className="expiration">
         <p>Expires: {expirationMonth}/{expirationYear %100}</p>
-        <p class="bank">{bank}</p> 
+        <p className="bank">{bank}</p> 
       </div>
       <div className="owner">
         <p>{owner}</p>
