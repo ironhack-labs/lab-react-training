@@ -2,25 +2,24 @@ import './numbersTable.css';
 
 const NumbersTable = ({ limit }) => {
   return (
-    <div className='table-container'>
+    <div className="table-container">
       {[...new Array(limit)].map((table, i) => {
-        const divStyle = {
-          backgroundColor: 'white',
-        };
-
-        const h1Style = {
+        const divStyleEven = {
+          backgroundColor: 'red',
           color: 'white',
         };
-
-        if ((i + 1) % 2 === 0) {
-          divStyle.backgroundColor = 'red';
-        } else {
-          h1Style.color = 'black';
-        }
+        const divStyleOdd = {
+          backgroundColor: 'white',
+          color: 'black',
+        };
 
         return (
-          <div style={divStyle} className="table" key={i}>
-            <h1 style={h1Style}>{i + 1}</h1>
+          <div
+            style={(i + 1) % 2 === 0 ? divStyleEven : divStyleOdd}
+            className="table"
+            key={i}
+          >
+            <h1>{i + 1}</h1>
           </div>
         );
       })}

@@ -1,0 +1,15 @@
+.countries {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.countries button {
+  font-size: 1.3rem;
+  width: 8rem;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem 0;
+}

@@ -7,11 +7,12 @@ import Rating from './components/rating/Rating';
 import DriverCard from './components/driverCard/DriverCard';
 import LikeButton from './components/likeButton/LikeButton';
 import ClickablePicture from './components/clickablePicture/ClickablePicture';
-import './App.css';
 import Dice from './components/dice/Dice';
 import Carousel from './components/carousel/Carousel';
 import NumbersTable from './components/numbersTable/NumbersTable';
 import FaceBook from './components/faceBook/FaceBook';
+import ListAndKeys from './components/listAndKeys/ListAndKeys';
+import './App.css';
 
 const App = () => {
   return (
@@ -203,6 +204,15 @@ const App = () => {
         <h1>FaceBook Component</h1>
         <div className="face-book">
           <FaceBook />
+        </div>
+      </div>
+
+      <hr />
+
+      <div className="components">
+        <h1>List and Keys - FaceBook (Advanced) Component</h1>
+        <div className="face-book">
+          <ListAndKeys />
         </div>
       </div>
 
