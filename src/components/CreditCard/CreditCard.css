@@ -1,0 +1,40 @@
+.creditCard {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 500px;
+  height: 280px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.logoBanco {
+  display: flex;
+  justify-content: end;
+}
+
+
+.logoBanco img{
+  width: 80px;
+  height: 40px;
+  margin: 5px;
+
+}
+
+.targetNumber {
+  font-size: 30px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.expiration,
+.owner {
+  display: flex;
+  margin-left: 10px;
+}
+
+.bank{
+  margin-left: 10px;
+}
