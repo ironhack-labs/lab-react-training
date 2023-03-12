@@ -13,6 +13,7 @@
   height: 6rem;
   width: 6rem;
   border-radius: 100%;
+  align-self: center;
 }
 
 .drivercar-container .driver-card .data .rating-container img {
@@ -21,12 +22,12 @@
 }
 
 .drivercar-container .driver-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-  padding: 2rem 0;
+  width: 450px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-items: center;
+  margin: 0 auto;
+  padding-block: 1rem;
 }
 
 .drivercar-container .driver-card h1 {
@@ -40,4 +41,10 @@
   font-size: 1rem;
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+.drivercar-container .driver-card .data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

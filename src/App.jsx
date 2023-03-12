@@ -6,6 +6,7 @@ import CreditCard from './components/creditCard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/driverCard/DriverCard';
 import LikeButton from './components/likeButton/LikeButton';
+import ClickablePicture from './components/clickablePicture/ClickablePicture';
 import './App.css';
 
 const App = () => {
@@ -141,8 +142,20 @@ const App = () => {
       <div className="components">
         <h1>LikeButton Component</h1>
         <div className="like-button">
-        <LikeButton />
-        <LikeButton />
+          <LikeButton />
+          <LikeButton />
+        </div>
+      </div>
+
+      <hr />
+
+      <div className="components">
+        <h1>ClickablePicture Component</h1>
+        <div className="clickable-picture">
+          <ClickablePicture
+            img="maxence.png"
+            imgClicked="maxence-glasses.png"
+          />
         </div>
       </div>
 

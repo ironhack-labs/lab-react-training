@@ -16,23 +16,22 @@
   margin-bottom: 6rem;
 }
 
-.App .credit-card {
+.App .credit-card,
+.App .rating,
+.App .like-button,
+.App .clickable-picture {
   display: flex;
-  gap: 1rem;
   justify-content: center;
+}
+
+.App .credit-card,
+.App .rating,
+.App .like-button,
+.App .clickable-picture {
+  align-items: center;
+  gap: 1rem;
 }
 
 .App .rating {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.App .like-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
 }
