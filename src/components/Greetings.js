@@ -19,8 +19,8 @@ function Greetings({ lang, children }) {
 
   }
   return (
-     <div className="">
-        <p>{lang} {children}</p>
+     <div className="mb-3 border border-1 border-dark m-3">
+        <p className="m-2">{lang} {children}</p>
      </div>
   )
 };
