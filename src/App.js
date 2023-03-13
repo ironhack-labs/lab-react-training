@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+
+import berlinDB from "./data/berlin.json"
+
+import IdCard from './components/IdCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <IdCard gender="male" height={1.78} birth={new Date("1988-05-11")} {...berlinDB[0]}/>
     </div>
   );
 }
