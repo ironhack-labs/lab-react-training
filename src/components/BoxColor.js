@@ -2,11 +2,11 @@ import React from 'react'
 
 function BoxColor({r,g,b}) {
 
-  function trim (str) {
+  function trim (str) { // https://gist.github.com/whitlockjc/9363016
     return str.replace(/^\s+|\s+$/gm,'');
   }
   
-  const rgbaToHex = (rgba) => {
+  const rgbaToHex = (rgba) => { // https://gist.github.com/whitlockjc/9363016
     console.log(rgba)
     let inParts = rgba.substring(rgba.indexOf("(")).split(","),
         r = parseInt(trim(inParts[0].substring(1)), 10),
