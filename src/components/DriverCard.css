@@ -1,0 +1,12 @@
+.driver {
+  background-color: #455eb5;
+  width: 40%;
+  border-radius: 20px;
+}
+
+.img-driver {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
