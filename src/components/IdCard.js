@@ -7,8 +7,8 @@ function IdCard({ lastName, firstName, img, gender, height, birth }) {
 
     <div className="card m-3">
       <div className="row g-0">
-        <div className="col-2" style={{maxWidth:"200px"}}>
-          <img src={img} className="img-fluid rounded-start float-start" alt="..." style={{ maxWidth: "200px" }}/>
+        <div className="col-2 d-flex" style={{maxWidth:"150px"}}>
+          <img src={img} className="img-fluid rounded float-start" alt="..." style={{ maxWidth: "150px" }}/>
         </div>
         <div className="col-10">
           <div className="card-body text-start">
