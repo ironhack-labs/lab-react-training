@@ -4,6 +4,7 @@ import CreditCard from './components/CreditCard';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import Random from './components/Random';
+import Rating from './components/Rating';
 
 function App() {
   return (
@@ -83,6 +84,16 @@ function App() {
           bgColor="#ddbb55"
           color="white"
         />
+      </div>
+
+      <div>
+        <p className="text-4xl font-bold text-slate-400 hover:text-slate-600 my-8 border-b-2 border-slate-400">Rating</p>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
       </div>
 
     </div>

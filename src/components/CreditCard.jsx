@@ -1,7 +1,5 @@
 function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color }) {
 
-  console.log(bgColor, color)
-
   function formatMonth(expirationMonth) {
     if (expirationMonth < 9)
       return "0" + expirationMonth;
@@ -55,4 +53,3 @@ CreditCard.defaultProps = {
 }
 
 export default CreditCard;
-
