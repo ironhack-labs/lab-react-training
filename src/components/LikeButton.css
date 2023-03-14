@@ -1,0 +1,11 @@
+.Counter{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+   background-color:purple;
+   font-size: 25px;
+   width: 15vw;
+   display: flex;
+   justify-content: center;
+   height: 5vh;
+}

@@ -1,11 +1,18 @@
 import { useState } from 'react';
+import './LikeButton.css';
 
 function LikeButton () {
-    const [count, setCount] = useState(0);
+    const [counter, setCounter] = useState(0);
 
     
 return(
-    <button>0</button>
+    <div >
+   <p>
+   <button className="Counter" onClick={() => {
+    setCounter (counter +1)
+   }}>{counter} Likes</button>
+   </p> 
+   </div>
 )
 
 }
