@@ -7,12 +7,11 @@ import LikeBtn from './components/LikeBtn';
 import Random from './components/Random';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
-import Carousel from './components/Carousel'
+import Carousel from './components/Carousel';
+import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage';
 
 function App() {
-
-  
-
   return (
     <div className="App">
       <h2>IdCard</h2>
@@ -99,6 +98,14 @@ function App() {
             'https://randomuser.me/api/portraits/women/2.jpg',
             'https://randomuser.me/api/portraits/men/2.jpg'
           ]}/>      
+      </div>
+      <div>
+        <h2>FaceBook</h2>
+        <FaceBook />
+      </div>
+      <div>
+        <h2>Sign Up Page</h2>
+        <SignupPage />
       </div>
          
     </div>
