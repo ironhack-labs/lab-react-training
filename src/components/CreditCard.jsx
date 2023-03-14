@@ -17,9 +17,14 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
       break;
   }
 
+  const changeStyles = {
+    backgroundColor: bgColor,
+    color: color,
+  };
+
   return (
     <div className="flex justify-center mb-8">
-      <div className={`bg-[${bgColor}] w-3/5 h-44 rounded-xl flex flex-col justify-center px-4 py-2 text-${color} font-light border-4 border-slate-300 hover:scale-110 hover:shadow-2xl`}>
+      <div style={changeStyles} className={`w-3/5 h-44 rounded-xl flex flex-col justify-center px-4 py-2 font-light border-4 border-slate-300 hover:scale-110 hover:shadow-2xl transition-all ease-in-out duration-500`}>
         <div className="flex justify-end">
           <img src={typeCard} alt="typeCard" className="h-4 px-6" />
         </div>

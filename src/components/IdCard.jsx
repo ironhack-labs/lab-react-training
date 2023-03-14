@@ -1,7 +1,7 @@
 function IdCard({ lastName, firstName, gender, height, birth, picture }) {
   return (
     <div className="flex justify-center">
-      <div className="card border-4 bg-slate-200 border-slate-600 rounded-full flex px-10 py-5 my-5 hover:bg-green-200 hover:border-green-600 hover:cursor-pointer hover:shadow-2xl transform transition duration-500 hover:scale-105">
+      <div className="card border-4 bg-slate-200 border-slate-600 rounded-full flex px-10 py-5 my-5 hover:bg-green-200 hover:border-green-600 hover:cursor-pointer hover:shadow-2xl transition duration-300 hover:scale-110">
         <div>
           <img src={picture} alt="UserPhoto" className="rounded-full border-4 border-white" />
         </div>

@@ -1,17 +1,25 @@
-function BoxColor({ color, intensity }) {
+function BoxColor({ r, g, b }) {
+
+  const rgb = `rgb(${r}, ${g}, ${b})`;
+  console.log(rgb);
+
+  const changeStyles = {
+    backgroundColor: rgb,
+  };
 
   return (
-    <div className='flex justify-center'>
-      <div className={`bg-${color}-${intensity} px-8 py-2 rounded-xl`}>
-        <span>Tailwind color: <b>{color.toUpperCase()}</b> with an intensity of: {intensity}</span>
+    <div className='flex justify-center mb-4'>
+      <div style={changeStyles} className='px-8 py-2 rounded-xl'>
+        <span>RGB color: {r}, {g}, {b} </span>
       </div>
     </div>
   );
 }
 
 BoxColor.defaultProps = {
-  color: '',
-  intensity: ''
+  r: '',
+  g: '',
+  b: ''
 }
 
 export default BoxColor;

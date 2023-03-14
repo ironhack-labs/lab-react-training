@@ -45,10 +45,8 @@ function App() {
 
       <div>
         <p className="text-4xl font-bold text-slate-400 hover:text-slate-600 my-8 border-b-2 border-slate-400">Box Color</p>
-        <BoxColor
-          color='yellow'
-          intensity='200'
-        />
+        <BoxColor r={254} g={240} b={138} />
+        <BoxColor r={165} g={243} b={252} />
       </div>
 
       <div>
@@ -82,7 +80,7 @@ function App() {
           expirationYear={2019}
           bank="Name of the Bank"
           owner="Firstname Lastname"
-          bgColor="#ddbb55"
+          bgColor='#ddbb55'
           color="white"
         />
       </div>
