@@ -15,7 +15,7 @@ function Rating({ children }) {
 }
 
 Rating.defaultProps = {
-
+  children: '0'
 }
 
 export default Rating;
