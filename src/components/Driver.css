@@ -1,0 +1,25 @@
+.driver-card{
+    margin-left: 50px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+   background-color:blue;
+   width: 70vw;
+   display: flex;
+   justify-content: center;
+   height: 15vh;
+   border-radius: 20px;
+
+}
+
+#driver-img img{
+ height: 90px;
+ width:100px;
+ border-radius: 100%;
+ margin-right: 20px;
+ margin-top: 10%;
+}
+
+#driver-information{
+margin-top: 5%;
+color: white;
+}
