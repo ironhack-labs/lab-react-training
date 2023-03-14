@@ -6,6 +6,7 @@ import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
 import Rating from "./components/Rating";
 import DriverCard from "./components/DriverCard";
+import LikeButton from "./components/LikeButton";
 
 const person = {
   firstName: "John",
@@ -23,9 +24,9 @@ const max = 9;
 const rgbColors = [0, 255, 0];
 
 const creditCardInfo = {
-  type: "master",
+  type: "visa",
   number: "0123456789016984",
-  expirationMonth: 12,
+  expirationMonth: 5,
   expirationYear: 2027,
   bank: "Bank of America",
   owner: "Test",
@@ -53,6 +54,7 @@ function App() {
      <CreditCard type = {creditCardInfo.type} number = {creditCardInfo.number} expirationMonth = {creditCardInfo.expirationMonth} expirationYear = {creditCardInfo.expirationYear} bank = {creditCardInfo.bank} owner = {creditCardInfo.owner} bgColor = {creditCardInfo.bgColor} color = {creditCardInfo.color}/>
     <Rating rate = {rating}/>
     <DriverCard name = {driver.name} rating = {driver.rating} img = {driver.img} car = {driver.car}/>
+    <LikeButton/>
     </div>
   );
 }

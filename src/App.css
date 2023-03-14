@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+#like-button {
+  width: 200px;
+  height: 100px;
+  font-size: 1.6em;
+  color: white;
+  border-radius: 15px;
+  box-shadow: #193d85;
+}
