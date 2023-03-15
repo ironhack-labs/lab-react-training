@@ -15,7 +15,7 @@ const divStyle = {
   return (
     <div className="creditCard" style={divStyle}>
       <div className="logoBanco">
-        <img src={cardLogo} alt="card logo" style={{width: '80px', height: '40px'}} />
+        <img src={cardLogo} alt="card logo" />
       </div>
       <div className="targetNumber">
         <h4>●●●● ●●●● ●●●● {number.slice(-4)}</h4>

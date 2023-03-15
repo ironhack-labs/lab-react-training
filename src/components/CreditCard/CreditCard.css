@@ -6,6 +6,7 @@
   margin: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
 }
 
@@ -16,9 +17,11 @@
 
 
 .logoBanco img{
-  width: 80px;
-  height: 40px;
-  margin: 5px;
+  max-width: 85px;
+max-height: 50px;
+height: 100%;
+object-fit: contain;
+margin: 6px;
 
 }
 

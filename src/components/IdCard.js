@@ -9,7 +9,7 @@ export default function IdCard({lastName, firstName, gender, height, birth, pict
       <p><b>Last Name: </b>{lastName}</p>
       <p><b>Gender: </b>{gender}</p>
       <p><b>Height: </b>{height/100}m</p>
-      <p><b>birth: </b>{birth.toLocaleString()}</p>
+      <p><b>birth: </b>{birth.toDateString()}</p>
       </div>
     </div>
   )

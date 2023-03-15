@@ -1,5 +1,5 @@
 import React from 'react';
-import Rating from '../Rating';
+import Rating from '../Rating/Rating';
 import './DriverCard.css';
 
 function DriverCard({ name, rating, img, car }) {

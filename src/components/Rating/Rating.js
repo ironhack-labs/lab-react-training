@@ -1,4 +1,5 @@
 import React from 'react';
+import "./rating.css"
 
 export default function Rating({ children }) {
   let rating = '';
@@ -10,7 +11,7 @@ export default function Rating({ children }) {
     rating += `\u2606`;
   }
   return (
-    <div style={{display:'flex'}}>
+    <div className='rating'>
       <p>{rating}</p>
     </div>
     )
