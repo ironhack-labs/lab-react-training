@@ -13,8 +13,6 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
   }
   
   const formatNumber = number.replace(/\d{4}(?=\d)/g, '$& ')
-
-  const hiddenDigits = formatNumber.slice(0, -4).replace(/[0-9]/g, '●');
   const visibleDigits = formatNumber.slice(-4);
 
   const year = expirationYear.toString().slice(-2)
@@ -26,7 +24,7 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
         <img className="me-2 mt-2" src={src} alt="visa" style={divStyle}></img>
         </div>
         <div className="text-center mt-4 mb-4">
-          <h1 className="card-text fs-5">{hiddenDigits}{visibleDigits}</h1>
+          <h1 className="card-text fs-5">●●●● ●●●● ●●●● {visibleDigits}</h1>
         </div>
         <div className="d-flex flex-row ms-3">
           <p className="mb-0">Expires {expirationMonth}/{year}</p>
