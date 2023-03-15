@@ -4,6 +4,7 @@ import CreditCard from './components/CreditCard';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import Random from './components/Random';
+import Rating from './components/Rating';
 
 function App() {
   return (
@@ -27,19 +28,19 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
 
-      <h1 className='text-center'>Iteration 2</h1>
+      <h1 className='text-center mt-5'>Iteration 2</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
 
-      <h1 className='text-center'>Iteration 3</h1>
+      <h1 className='text-center mt-5'>Iteration 3</h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
 
-      <h1 className='text-center'>Iteration 4</h1>
+      <h1 className='text-center mt-5'>Iteration 4</h1>
       <BoxColor r={250} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
-      <h1 className='text-center'>Iteration 5</h1>
+      <h1 className='text-center mt-5'>Iteration 5</h1>
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -71,6 +72,14 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+
+      <h1 className='text-center mt-5'>Iteration 6</h1>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
 
     </div>
   );

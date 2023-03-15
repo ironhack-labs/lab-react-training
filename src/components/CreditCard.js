@@ -11,16 +11,16 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
   const divStyle = {
     width: 60,
   }
-  
+
   const visibleDigits = number.slice(-4);
 
   const year = expirationYear.toString().slice(-2)
 
   return (
-    <div className={`card m-3 shadow text-${color}`} style={{ backgroundColor: bgColor}}>
+    <div className={`card m-3 shadow text-${color}`} style={{ backgroundColor: bgColor }}>
       <div className="card-body">
         <div className="text-end">
-        <img className="me-2 mt-2" src={src} alt="visa" style={divStyle}></img>
+          <img className="me-2 mt-2" src={src} alt="visa" style={divStyle}></img>
         </div>
         <div className="text-center mt-4 mb-4">
           <h1 className="card-text fs-5">●●●● ●●●● ●●●● {visibleDigits}</h1>

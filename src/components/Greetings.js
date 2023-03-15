@@ -2,26 +2,26 @@
 
 function Greetings({ lang, children }) {
   switch (lang) {
-    case "de": 
+    case "de":
       lang = "Hallo";
       break;
-    case "en": 
+    case "en":
       lang = "Hello";
       break;
-    case "es": 
+    case "es":
       lang = "Hola";
       break;
-    case "fr": 
+    case "fr":
       lang = "Bonjour";
       break;
-      default:
+    default:
       lang = 'Hello'
 
   }
   return (
-     <div className="mb-3 border border-1 border-dark m-3">
-        <p className="m-2">{lang} {children}</p>
-     </div>
+    <div className="mb-3 border border-1 border-dark m-3">
+      <p className="m-2">{lang} {children}</p>
+    </div>
   )
 };
 

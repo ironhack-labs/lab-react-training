@@ -13,7 +13,7 @@ function IdCard({ firstName, lastName, gender, height, birth, picture }) {
         <p><b> Birth: </b> {birth}</p>
       </div>
     </div>
-    
+
   )
 
 

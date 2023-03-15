@@ -4,9 +4,9 @@ function BoxColor({ r, g, b }) {
     background: `rgb(${r}, ${g}, ${b}`
   }
   return (
-      <div className="mb-3 border border-1 border-dark m-3 p-3" style={divStyle}>
+    <div className="mb-3 border border-1 border-dark m-3 p-3" style={divStyle}>
       <p className="text-center fs-3">rgb({r}, {g}, {b})</p>
-      </div>
+    </div>
   )
 
 }
