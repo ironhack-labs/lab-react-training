@@ -13,7 +13,7 @@ function Rating({ children }) {
   }
 
   return (
-    <h1 className='row mx-3 my-0 d-flex flex-row justify-content-start'>{setStars()}</h1>
+    <h1>{setStars()}</h1>
   )
 }
 

@@ -4,7 +4,6 @@ function IdCard({ lastName, firstName, img, gender, height, birth }) {
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
   return (
-
     <div className="card m-3">
       <div className="row g-0">
         <div className="col-2 d-flex" style={{maxWidth:"150px"}}>
