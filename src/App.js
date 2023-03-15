@@ -5,6 +5,7 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
@@ -38,6 +39,10 @@ function App() {
         owner="Maxence Bouret"
         bgColor="#11aa99"
         color="white"
+      />
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
       />
     </div>
   );
