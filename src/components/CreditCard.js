@@ -15,13 +15,13 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
       cardLogo = ''
   }
 
-  function showCardLast4(number) {
+  const showCardLast4 = (number) => {
     return number
       .split('')
       .map((char, index) => index < number.length - 4 ? (index + 1) % 4 === 0 && index > 0 ? '\u2022 ' : '\u2022' : char)
   }
 
-  function showYearLast2(year) {
+  const showYearLast2 = (year) => {
     return year.toString()
       .split('')
       .slice(2)
