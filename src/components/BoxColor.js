@@ -7,7 +7,7 @@ function BoxColor({r,g,b}) {
   }
   
   const rgbaToHex = (rgba) => { // https://gist.github.com/whitlockjc/9363016
-    console.log(rgba)
+    // console.log(rgba)
     let inParts = rgba.substring(rgba.indexOf("(")).split(","),
         r = parseInt(trim(inParts[0].substring(1)), 10),
         g = parseInt(trim(inParts[1]), 10),

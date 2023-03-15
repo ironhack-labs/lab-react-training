@@ -20,3 +20,16 @@ ul {
   max-width: 150px;
   border-radius: var(--bs-border-radius) 0 0 var(--bs-border-radius) !important;
 }
+
+.credit-card {
+  border: 0px solid;
+  height: 200px;
+  width: 400px;;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.credit-card img {
+  height: 20px;
+  width: auto;
+}
