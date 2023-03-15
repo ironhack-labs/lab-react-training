@@ -12,8 +12,7 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
     width: 60,
   }
   
-  const formatNumber = number.replace(/\d{4}(?=\d)/g, '$& ')
-  const visibleDigits = formatNumber.slice(-4);
+  const visibleDigits = number.slice(-4);
 
   const year = expirationYear.toString().slice(-2)
 
