@@ -4,6 +4,7 @@ import CreditCard from './components/CreditCard';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import Random from './components/Random';
+import Rating from './components/Rating';
 
 function App() {
   return (
@@ -72,6 +73,13 @@ function App() {
         color="white"
       />
 
+      <h1 className='text-center mt-4'>Iteration 6</h1>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
 
     </div>
   );
