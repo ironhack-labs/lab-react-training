@@ -13,9 +13,7 @@ function LikeButton() {
   }
 
   const setColor = () => {
-    console.log('count > ', count)
-    console.log(count - (Math.round(count/colors.length)))
-    return colors[count - (Math.ceil(count/colors.length))]
+    return colors[count - (colors.length * Math.floor(count/colors.length))]
   }
 
   return (
