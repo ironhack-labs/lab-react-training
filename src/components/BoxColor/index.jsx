@@ -3,7 +3,8 @@ import './index.css'
 
 function valueHex (color) {
     const hex = color.toString(16)
-    return hex
+    // return hex
+    return hex.length === 1 ? `0${hex}`: hex
 }
 
 function rgbtoHex (r, g, b) {

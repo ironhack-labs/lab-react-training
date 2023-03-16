@@ -10,6 +10,7 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
 import Carousel from './components/Carusel'
+import NumbersTable from './components/NumbersTable/NumbersTable';
 
 function App() {
   return (
@@ -152,6 +153,16 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
 />
+      </div>
+
+      <div className="iteration12">
+        <h3>Iteration 12</h3>
+        <NumbersTable limit={12} />
+      </div>
+
+      <div className="iteration13">
+        <h3>Iteration 13</h3>
+ 
       </div>
 
     </div>
