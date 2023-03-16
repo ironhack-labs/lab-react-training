@@ -1,5 +1,6 @@
 import './App.css';
 import BoxColor from './components/BoxColor/BoxColor';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import CreditCard from './components/CreditCard/CreditCard';
 import DriverCard from './components/DriverCard/DriverCard';
 import Greetings from './components/Greetings/Greetings';
@@ -7,6 +8,9 @@ import IdCard from './components/IdCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import Random from './components/Random/Random';
 import Rating from './components/Rating/Rating';
+import picture1 from './assets/images/maxence.png'
+import picture2 from './assets/images/maxence-glasses.png'
+
 
 function App() {
   return (
@@ -122,6 +126,14 @@ function App() {
       <p className='m-5'><b>Iteration 8</b></p>
       <div className='d-flex flex-sm-column align-items-center'>
         <LikeButton />
+      </div>
+
+      <p className='m-5'><b>Iteration 9</b></p>
+      <div className='d-flex flex-sm-column align-items-center'>
+        <ClickablePicture 
+          img={picture1} 
+          imgClicked={picture2}
+        />
       </div>
     </div>
   );
