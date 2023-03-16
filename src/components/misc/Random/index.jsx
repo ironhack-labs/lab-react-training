@@ -6,7 +6,7 @@ function Random({ minN, maxN }) {
     let randomN = Math.floor(Math.random() * (maxN - minN + 1) + minN)
     return (
         <div className="random-container">
-            <h3>Random value between {minN} and {maxN} = {randomN}</h3>
+            <h3>Random value between {minN} and {maxN} =&gt {randomN}</h3>
         </div>
     )
 }
