@@ -1,0 +1,17 @@
+.Facebook {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.FacebookBox {
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.Facebook img {
+    width: 100px;
+    margin-right: 20px;
+}
+

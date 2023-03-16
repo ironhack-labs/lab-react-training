@@ -11,6 +11,7 @@ import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
 import Carousel from './components/Carusel'
 import NumbersTable from './components/NumbersTable/NumbersTable';
+import Facebook from './components/Facebook/Facebook';
 
 function App() {
   return (
@@ -162,7 +163,7 @@ function App() {
 
       <div className="iteration13">
         <h3>Iteration 13</h3>
- 
+        <Facebook />
       </div>
 
     </div>
