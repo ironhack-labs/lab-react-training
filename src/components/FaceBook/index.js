@@ -16,9 +16,7 @@ export const FaceBook = (profile) => {
     
   }
   
-  const type = profile.isStudent ? 'Student' : 'Teacher';
-  console.log(type);
-
+  
   
   const profilesFilered  = () =>{
     
@@ -50,7 +48,7 @@ export const FaceBook = (profile) => {
       <p>FirstName: {profile.firstName}</p>
       <p>LastName: {profile.lastName}</p>
       <p>Country: {profile.country}</p>
-      <p>Type: {type}</p>
+      <p>Type: {profile.isStudent ? 'Student' : 'Teacher'}</p>
       </div>
       
       </div>
