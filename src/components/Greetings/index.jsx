@@ -11,7 +11,7 @@ const langConfig = {
 const Greetings = ({ lang , children}) => {
 
     return (
-        <div className="greetings">
+        <div className="Greetings">
             {langConfig[lang]} {children}
         </div>
     );

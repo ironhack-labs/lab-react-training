@@ -1,0 +1,34 @@
+.DriverCard {
+    border: 2px solid black;
+    color: white;
+    border-radius: 8px;
+    margin: 8px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #455EB5;
+    max-width: 60%;
+    height: 200px;
+}
+
+.FotoCircle{
+    height: 104px;
+    width: 104px;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Foto{
+    max-height: 100%;
+    width: auto;
+}
+
+.Info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
