@@ -1,5 +1,7 @@
 import './App.css';
+import Greetings from './components/Greetings/Greetings';
 import IdCard from './components/IdCard/IdCard';
+import Random from './components/Random/Random';
 
 const cardsArray = [  
   {  
@@ -26,6 +28,10 @@ function App() {
     <div className="App">
       <IdCard card={ cardsArray[0] }/>
       <IdCard card={ cardsArray[1] }/>
+      <Greetings lang="de" >Ludwig</Greetings>
+      <Greetings lang="fr" >François</Greetings>
+      <Random min={6} max={15} />
+      <Random min={1} max={10} />
     </div>
   );
 }
