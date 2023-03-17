@@ -1,0 +1,8 @@
+.boxcolor {
+    border: 1px solid black;
+    width: 500px;
+    margin: 10px;
+    color:white;
+    font-size: 2em;
+    font-weight: 600;
+}

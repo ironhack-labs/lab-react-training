@@ -1,0 +1,6 @@
+.greetings {
+    border: 2px solid black;
+    display: flex;
+    margin:  16px;
+    padding: 16px;
+}
