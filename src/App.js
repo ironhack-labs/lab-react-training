@@ -141,10 +141,9 @@ function App() {
         <NumbersTable limit={15} />
       </div>
 
-          <div className='FacebookApp'>
-          <FaceBook />
-          </div>
-
+      <div className="FacebookApp">
+        <FaceBook />
+      </div>
     </div>
   );
 }

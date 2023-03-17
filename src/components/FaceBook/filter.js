@@ -1,8 +1,6 @@
 import "./index.css"
 import profiles from "../../data/berlin.json"
 
-
-console.log(profiles.country);
 const filterOptions = [
   {
     text: 'All',
