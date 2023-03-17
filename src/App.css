@@ -103,3 +103,33 @@
   width: 100px;
   height: 100px;
 }
+.button-like{
+  width: 100px;
+  padding: 10px 20px;
+  margin: 10px auto;
+  color: white;
+  border-radius: 5px;
+}
+.dado{
+  width: 150px;
+}
+.numbers-table{
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.IdCard{
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  height: 130px;
+  margin-bottom: 10px;
+}
+
+.cardInfo p {
+  padding-left: 5px;
+  margin-top: 0px;
+  font-weight: bold;
+}
