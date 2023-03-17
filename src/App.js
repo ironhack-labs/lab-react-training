@@ -2,6 +2,7 @@ import './App.css';
 import Greetings from './components/Greetings/Greetings';
 import IdCard from './components/IdCard/IdCard';
 import Random from './components/Random/Random';
+import BoxColor from './components/BoxColor/BoxColor';
 
 const cardsArray = [  
   {  
@@ -32,6 +33,7 @@ function App() {
       <Greetings lang="fr" >François</Greetings>
       <Random min={6} max={15} />
       <Random min={1} max={10} />
+      <BoxColor r={255} g={0} b={0} />
     </div>
   );
 }
