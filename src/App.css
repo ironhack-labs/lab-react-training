@@ -59,3 +59,13 @@
   margin-top: 30px;
   line-height: 5px;
 }
+
+.Greeting {
+  display: flex;
+  line-height: 5px;
+  width: 300px;
+  border: 1px solid black;
+  padding-left: 20px;
+  margin-left: 500px;
+  margin-top: 20px;
+}

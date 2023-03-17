@@ -1,5 +1,5 @@
 
-function IdCard ({lastName, firstName, gender, height, birth, picture}) {
+function IdCard ({ lastName, firstName, gender, height, birth, picture }) {
     return(
         <div className="IdCard">
             <div className="cardPicture">
