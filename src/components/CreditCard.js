@@ -2,6 +2,14 @@
 
 function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color }) {
 
+  const divStyle = {
+    width: 500,
+    height: 250,
+    borderRadius: 15,
+    marginBottom: 50,
+    backgroundColor: bgColor,  
+  }
+
   let cardPhoto = ''
   if (type === "Visa") {
     cardPhoto = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Visa_2014.svg/1024px-Visa_2014.svg.png"
@@ -9,9 +17,8 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
     cardPhoto = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/MasterCard_early_1990s_logo.svg/1024px-MasterCard_early_1990s_logo.svg.png"
   }
 
-
   return (
-    <div className={`card m-5  text-${color}`} style={{ backgroundColor: bgColor }}>
+    <div className={`card m-5  text-${color}`} style={divStyle}>
       <div className="card-body">
         <div className="text-end">
           <img className=" mt-1" src={cardPhoto} alt="Card" style= {{width: 80}}></img>
