@@ -9,12 +9,12 @@ const selecLang = {
   fr: 'Bonjour',
 };
 
-const Greetings = ({ lang, children }) => {
+function Greetings({ lang, children }) {
   return (
-    <div className="Grettings">
+    <div className="Greetings">
       {selecLang[lang]} {children}
     </div>
-  );
-};
+  )
+}
 
-export default Greetings;
+export default Greetings

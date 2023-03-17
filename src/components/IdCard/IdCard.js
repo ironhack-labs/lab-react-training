@@ -2,13 +2,12 @@ import React from 'react';
 import './IdCard.css';
 import '../../App.css';
 
-
-const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
+function IdCard({ lastName, firstName, gender, height, birth, picture }) {
   return (
     <div className="IdCard">
       <div className="d-flex">
         <div>
-          <img src={picture} class="card-img" alt="picture" />
+          <img src={picture} class="card-img" alt="photoPerson" />
         </div>
         <div class="d-flex flex-column mb-3">
           <p class="p-2">
@@ -30,6 +29,6 @@ const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
       </div>
     </div>
   );
-};
+}
 
 export default IdCard;

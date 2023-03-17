@@ -1,0 +1,11 @@
+.Random {
+  border: 3px solid black;
+  padding: 2px;
+  margin: 3px;
+  overflow: hidden;
+  max-width: 1000px;
+  text-align: left;
+  font-weight: bold;
+  font-size: large;
+
+}
