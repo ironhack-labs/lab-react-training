@@ -1,0 +1,7 @@
+.ClickablePicture {
+    margin: 16px;
+}
+
+.ClickablePicture img {
+    max-width: 240px;
+}
