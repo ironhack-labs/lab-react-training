@@ -17,7 +17,7 @@ function LikeButton() {
   }
 
   return (
-    <button type="button" className="btn btn-primary" style={{backgroundColor: `${setColor()}`}} onClick={handleCount}>{count} Likes</button>
+    <button type="button" className="btn btn-primary ms-3" style={{backgroundColor: `${setColor()}`}} onClick={handleCount}>{count} Likes</button>
   )
 }
 

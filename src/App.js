@@ -56,7 +56,8 @@ function App() {
       />
       <h1 className="text-start ms-3">LikeButton</h1>
       <div className="row">
-        <div className="col d-flex mx-3">
+        <div className="col d-flex">
+          <LikeButton />
           <LikeButton />
         </div>
       </div>

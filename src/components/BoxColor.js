@@ -31,7 +31,7 @@ function BoxColor({r,g,b}) {
   }
 
   return (
-    <div className='row m-3 p-2 rounded' style={{backgroundColor: `rgba(${r},${g},${b})`}}>
+    <div className='row m-3 p-2 rounded' style={{backgroundColor: `rgba(${r},${g},${b}, 1)`}}>
       <div className='col'>
         rgba({r},{g},{b})
         <br></br>

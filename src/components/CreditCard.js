@@ -9,7 +9,7 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
       cardLogo = visaLogo
       break;
     case "Masterd Card":
-      
+
       break;
     default:
       cardLogo = ''
@@ -21,14 +21,20 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
       .map((char, index) => index < number.length - 4 ? (index + 1) % 4 === 0 && index > 0 ? '\u2022 ' : '\u2022' : char)
   }
 
-  const showYearLast2 = (year) => {
-    return year.toString()
+  const showYearLast2 = () => {
+    return expirationYear.toString()
       .split('')
-      .slice(2)
+      .slice(-2)
+  }
+
+  const showMonthLast2 = () => {
+    return `0${expirationMonth}`
+      .split('')
+      .slice(-2)
   }
 
   return (
-    <div className='credit-card container d-flex flex-column justify-content-around' style={{backgroundColor: `${bgColor}`, color: `${color}`}}>
+    <div className='credit-card container d-flex flex-column justify-content-around' style={{ backgroundColor: `${bgColor}`, color: `${color}` }}>
       <div className="row">
         <div className="col d-flex flex-row justify-content-end">
           <img src={cardLogo} alt="" srcSet="" />
@@ -41,7 +47,7 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
       </div>
       <div className="row">
         <div className="col d-flex flex-column align-items-start">
-          <div>Expires {expirationMonth}/{showYearLast2(expirationYear)}<span className='ms-4'>{bank}</span></div>
+          <div>Expires {showMonthLast2()}/{showYearLast2()}<span className='ms-4'>{bank}</span></div>
           <div>{owner}</div>
         </div>
       </div>
