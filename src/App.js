@@ -1,6 +1,6 @@
 import './App.css';
 
-import berlinDB from "./data/berlin.json"
+import berlinDB from "./data/berlin.json";
 
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -10,6 +10,7 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
@@ -55,11 +56,15 @@ function App() {
       <DriverCard name="Dara Khosrowshahi" rating={4.9} img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg" car={{ model: "Audi A3", licensePlate: "BE33ER" }}
       />
       <h1 className="text-start ms-3">LikeButton</h1>
-      <div className="row">
+      <div className="row g-0">
         <div className="col d-flex">
           <LikeButton />
           <LikeButton />
         </div>
+      </div>
+      <h1 className="text-start ms-3">ClickablePicture</h1>
+      <div className="row g-0 d-flex justify-content-start">
+        <ClickablePicture img='maxence.png' imgClicked='maxence-glasses.png' />
       </div>
     </div>
   );
