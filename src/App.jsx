@@ -12,6 +12,7 @@ import Carousel from './components/carousel/Carousel';
 import NumbersTable from './components/numbersTable/NumbersTable';
 import FaceBook from './components/faceBook/FaceBook';
 import ListAndKeys from './components/listAndKeys/ListAndKeys';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 import './App.css';
 
 const App = () => {
@@ -213,6 +214,15 @@ const App = () => {
         <h1>List and Keys - FaceBook (Advanced) Component</h1>
         <div className="face-book">
           <ListAndKeys />
+        </div>
+      </div>
+
+      <hr />
+
+      <div className="components">
+        <h1>RGBColorPicker Component</h1>
+        <div className="rgb-color-picker">
+          <RGBColorPicker />
         </div>
       </div>
 

@@ -15,6 +15,9 @@ const CreditCard = ({
 }) => {
   const [creditCard, setCreditCard] = useState('');
 
+  const fixMonth = `0${expirationMonth}`.slice(-2);
+  const fixYear = expirationYear.toString().slice(-2);
+
   useEffect(() => {
     const hideNum = [];
     for (let i = 0; i < number.length; i++) {
@@ -33,6 +36,7 @@ const CreditCard = ({
     backgroundColor: bgColor,
     color: color,
   };
+
   return (
     <div style={divStyles} className="creditcard-container">
       <div className="type">
@@ -44,8 +48,7 @@ const CreditCard = ({
       </div>
       <div className="date">
         <p>
-          Expires {expirationMonth.toString()}/
-          {expirationYear.toString().slice(2, 4)} <span>{bank}</span>
+          Expires {fixMonth}/{fixYear} <span>{bank}</span>
         </p>
         <p>{owner}</p>
       </div>

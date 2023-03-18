@@ -1,0 +1,61 @@
+.rgb-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rgb-container .rgb-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 400px;
+  width: 400px;
+}
+
+.rgb-container .rgb {
+  border-radius: 10px;
+  background-color: rgb(23, 23, 23);
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rgb-container .rgb p {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+/* Single Color */
+
+.single-container {
+  margin-bottom: 2rem;
+}
+
+.single-container .color-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.single-container .color-input {
+  border-radius: 10px;
+  background-color: rgb(23, 23, 23);
+  padding: 3rem 1rem;
+}
+
+.single-container label {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.single-container input {
+  text-transform: uppercase;
+  font-size: 2rem;
+  width: 5rem;
+}
