@@ -1,0 +1,10 @@
+.RGBColorPicker div {
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+}
+
+.RGBColorPicker div div {
+  border: 2px solid grey;
+  border-radius: 3px;
+}

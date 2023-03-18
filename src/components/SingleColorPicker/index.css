@@ -1,0 +1,10 @@
+.SingleColorPicker {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+}
+
+.SingleColorPicker div {
+  width: 30px;
+  height: 30px;
+}

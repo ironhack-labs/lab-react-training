@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -13,6 +12,8 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   return (
@@ -137,6 +138,12 @@ function App() {
 
         <p>Iteration 13/14</p>
         <Facebook />
+
+        <p>Iteration 15</p>
+        <SignupPage />
+
+        <p>Iteration 16</p>
+        <RGBColorPicker />
       </div>
     </div>
   );
