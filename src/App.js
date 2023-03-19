@@ -7,6 +7,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import ClickablePicture from './components/ClickablePicture';
 import LikeButton from './components/LikeButton';
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -78,6 +79,8 @@ function App() {
         <LikeButton />
         <LikeButton />
       </div>
+      <div className='bg-orange-200 font-bold my-1'>Dice</div>
+      <Dice />
     </div>
   );
 }
