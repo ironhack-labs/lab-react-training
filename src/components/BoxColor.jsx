@@ -4,7 +4,7 @@ import BlackBox from './BlackBox'
 export default function BoxColor({ r, g, b }) {
 
   function textColor(r, g, b) {
-    const luminance = ((0.299 * r) + (0.587 * g) + (0.114 * b))/255
+    const luminance = ((0.299 * r) + (0.587 * g) + (0.114 * b)) / 255
     if (luminance > 0.5) {
       return 'text-black'
     } else {
