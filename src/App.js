@@ -12,6 +12,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
+import AdvancedFacebook from './components/AdvancedFacebook'
 
 function App() {
   return (
@@ -153,10 +154,14 @@ function App() {
           <h1 className="ms-3">Numbers Table</h1>
           <NumbersTable limit={12} />
         </div>
-        <div>
+        {/*<div>
           <h1 className="ms-3">Facebook</h1>
           <FaceBook />
-        </div>
+          </div>*/}
+          <div>
+          <h1 className="ms-3">Advanced Facebook</h1>
+          <AdvancedFacebook />
+          </div>
       </div>
     </div>
   );
