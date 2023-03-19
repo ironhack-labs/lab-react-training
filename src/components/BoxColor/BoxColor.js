@@ -9,7 +9,7 @@ function BoxColor({r, g, b}) {
   }
 
   return (
-    <div style={styleColor}>BoxColor {r}, {g}, {b} </div>
+    <div className='mt-4 col-3' style={styleColor}>BoxColor {r}, {g}, {b} </div>
   )
 }
 

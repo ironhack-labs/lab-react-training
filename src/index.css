@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cardNumber {
+  font-size: 32px;
+}
+
+.cardLogo {
+  max-width: 60px;
+  max-height: 38px;  
+}
