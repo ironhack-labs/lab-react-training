@@ -83,3 +83,90 @@
   margin-left: 10px;
   padding-left: 10px;
 }
+
+.randomNum {
+  margin: 2px;
+  border: 1px solid black;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.boxColor {
+  height: 100px;
+  width: 400px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.colorDiv {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.rating {
+  display: flex;
+  gap: 0.5rem
+}
+
+.creditCard {
+  height: 170px;
+  width: 300px;
+  border-radius: 8px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.cards {
+  margin: 50px 20px;
+  max-height: 100px;
+  
+} 
+
+.logoCard {
+  max-width: 60px;
+  background-color: transparent;
+  background-size: cover;
+  position: relative;
+  left: 220px;
+  top: 10px;
+}
+
+.creditCardData {
+  font-size: small;
+  grid-template-rows: auto;
+  line-height: 0.7;
+  
+}
+
+.creditCardNumber {
+  font-size: xx-large;
+  align-self: center;
+  
+}
+
+
+.driverCard {
+  height: 220px;
+  width: 100%;
+  background-color: blue;
+  margin: 20px;
+  display: flex;
+  border-radius: 8px;
+}
+
+.driverInfo {
+  margin: auto;
+  color: white;
+}
+
+
+.driver-img {
+  padding: 40px;
+  width: 160px;;
+  border-radius: 50%;
+
+}
+
+.drivers {
+}
