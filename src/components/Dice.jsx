@@ -18,8 +18,8 @@ export default function Dice() {
     setDice(emptyDice)
     setTimeout(() => {
       setDice(diceOptions[randomNum])
-      clearTimeout()
     }, 1000)
+    clearTimeout()
   }
 
   return (

@@ -9,9 +9,7 @@ export default function LikeButton() {
   const [bgColor, setBgColor] = useState(bgColors[likes % 6])
 
   const handleIncreaseLikes = () => {
-    setLikes((prev) => {
-      return (prev + 1)
-    })
+    setLikes((prev) => prev + 1)
     setBgColor(bgColors[(likes + 1) % 6])
   }
 
