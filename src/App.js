@@ -10,6 +10,8 @@ import Random from './components/Random/Random';
 import Rating from './components/Rating/Rating';
 import picture1 from './assets/images/maxence.png'
 import picture2 from './assets/images/maxence-glasses.png'
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
 
 
 function App() {
@@ -92,7 +94,7 @@ function App() {
 
       <p className='m-5'><b>Iteration 6</b></p>
       <div className='d-flex flex-sm-column align-items-center'>
-        <Rating children={0}/>
+        <Rating>0</Rating>
         <Rating children={1.49}/>
         <Rating children={1.5}/>
         <Rating children={3}/>
@@ -124,7 +126,8 @@ function App() {
       </div>
 
       <p className='m-5'><b>Iteration 8</b></p>
-      <div className='d-flex flex-sm-column align-items-center'>
+      <div className='d-flex justify-content-center align-items-center'>
+        <LikeButton />
         <LikeButton />
       </div>
 
@@ -135,6 +138,24 @@ function App() {
           imgClicked={picture2}
         />
       </div>
+
+      <p className='m-5'><b>Iteration 10</b></p>
+      <div className='d-flex justify-content-center align-items-center'>
+        <Dice />
+      </div>
+
+      <p className='m-5'><b>Iteration 10</b></p>
+      <div className='d-flex justify-content-center align-items-center'>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      </div> 
+
     </div>
   );
 }
