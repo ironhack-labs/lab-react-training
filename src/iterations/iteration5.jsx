@@ -1,9 +1,9 @@
 import CreditCard from '../components/CreditCard';
 import React from 'react';
 
-function Iteration4() {
+function Iteration5() {
   return (
-    <div className="Iteration4" style={{ display: 'flex' }}>
+    <div className="Iteration5" style={{ display: 'flex' }}>
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -40,4 +40,4 @@ function Iteration4() {
   );
 }
 
-export default Iteration4;
+export default Iteration5;
