@@ -1,0 +1,18 @@
+.SingleColorPicker {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.SingleColorPicker label {
+    margin-right: 5px;
+}
+
+.ColorSquare {
+    margin-right: 20px;
+}
+
+.RGBColorPicker .rgb {
+    display: flex;
+    align-items: center;
+}
