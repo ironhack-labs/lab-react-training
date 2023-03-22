@@ -1,0 +1,29 @@
+.IdCard {
+    display: flex;
+    margin: 24px;
+    align-items: left;
+    border: 1px solid black;
+    padding: 8px;
+    width: 40%
+}
+
+.IdCard .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left:16px;
+    line-height:0%;
+}
+
+.IdCard .textline {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height:24px;
+    
+}
+
+.IdCard .textline .text-result {
+    font-weight: 400;
+    padding-left: 8px;
+}
