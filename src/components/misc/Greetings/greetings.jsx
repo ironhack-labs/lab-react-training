@@ -25,3 +25,5 @@ const Greetings = ({lang, children}) => {
 
 
 export default Greetings;
+
+

@@ -1,0 +1,16 @@
+.Facebook .FacebookItem .FacebookItem-img {
+    width: 125px;
+  }
+  
+  .Facebook .FacebookItem .FacebookItem-img img {
+    width: 100%;
+  }
+  
+  .Facebook .FacebookItem {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .Facebook .FacebookItem.FacebookItem-select {
+    background-color: aqua;
+  }

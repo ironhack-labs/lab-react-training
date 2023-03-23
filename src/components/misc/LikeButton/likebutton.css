@@ -1,0 +1,8 @@
+.btn-lg{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    justify-content: center;
+    position: absolute;
+    margin-left: 200px;
+}

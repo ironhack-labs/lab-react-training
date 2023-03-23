@@ -1,0 +1,14 @@
+.Carousel{
+    margin-left: 200px;
+    margin-top: 80px;
+   
+}
+
+.Carousel img {
+    height: 300px;
+    width: 300px;
+}
+
+.button-carousel{
+    margin-left: 100px;
+}
