@@ -8,6 +8,7 @@ import IdCard from './components/IdCard';
 import LikeButton from './components/LikeButton';
 import Random from './components/Random';
 import Rating from './components/Rating';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
@@ -112,6 +113,16 @@ function App() {
       <ClickablePicture
         img='maxence.png'
         imgClicked='maxence-glasses.png'
+      />
+
+      <h1 className='m-4'>Carousel</h1>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
       />
 
     </div>
