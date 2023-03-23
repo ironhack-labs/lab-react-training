@@ -4,6 +4,7 @@ import CreditCard from './components/CreditCard';
 import DriverCard from './components/DriverCard';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
+import LikeButton from './components/LikeButton';
 import Random from './components/Random';
 import Rating from './components/Rating';
 
@@ -82,7 +83,7 @@ function App() {
       <Rating>4</Rating>
       <Rating>5</Rating>
 
-<h1 className='m-4'>DriverCard </h1>
+      <h1 className='m-4'>DriverCard </h1>
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -102,6 +103,9 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+
+      <h1 className='m-4'>LikeButton</h1>
+      <LikeButton />
 
     </div>
   );
