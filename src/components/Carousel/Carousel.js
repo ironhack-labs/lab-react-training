@@ -1,19 +1,32 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 function Carousel({ images }) {
 
-  const [imageArr, setImageArr] = useState(images)
-  function randomImage() {
-    return imageArr[Math.floor(Math.random() * imageArr.length)]
+  const [imageArr, setImageArr] = useState(images[Math.floor(Math.random() * images.length)])
+
+  const handlePrevious = () => {
+    setImageArr((prevImage) => {
+      let index = images.indexOf(prevImage)
+      if (index <= 0) {
+        index = images.length - 1
+      } else {
+        index--
+      }
+      return images[index]
+    })
   }
 
-  const handlePrevious = () => {}
-
-  const handleNext = () => {}
-
-  useEffect(() => {
-    setImageArr(randomImage())
-  }, [])
+  const handleNext = () => {
+    setImageArr((prevImage) => {
+      let index = images.indexOf(prevImage)
+      if (index === images.length - 1) {
+        index = 0
+      } else {
+        index++
+      }
+      return images[index]
+    })
+  }
 
   return (
     <div>

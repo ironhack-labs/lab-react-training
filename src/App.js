@@ -12,6 +12,10 @@ import picture1 from './assets/images/maxence.png'
 import picture2 from './assets/images/maxence-glasses.png'
 import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import Facebook from './components/Facebook/Facebook';
+import SignupPage from './components/SignupPage/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 
 
 function App() {
@@ -95,11 +99,11 @@ function App() {
       <p className='m-5'><b>Iteration 6</b></p>
       <div className='d-flex flex-sm-column align-items-center'>
         <Rating>0</Rating>
-        <Rating children={1.49}/>
-        <Rating children={1.5}/>
-        <Rating children={3}/>
-        <Rating children={4}/>
-        <Rating children={5}/>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
       </div>  
 
       <p className='m-5'><b>Iteration 7</b></p>
@@ -144,7 +148,7 @@ function App() {
         <Dice />
       </div>
 
-      <p className='m-5'><b>Iteration 10</b></p>
+      <p className='m-5'><b>Iteration 11</b></p>
       <div className='d-flex justify-content-center align-items-center'>
       <Carousel
         images={[
@@ -154,6 +158,25 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
       />
+      </div> 
+      <p className='m-5'><b>Iteration 12</b></p>
+      <div className='d-flex justify-content-center align-items-center'>
+        <NumbersTable limit={12} />
+      </div> 
+
+      <p className='m-5'><b>Iteration 13 & 14</b></p>
+      <div className='d-flex justify-content-center align-items-center'>
+        <Facebook />
+      </div> 
+
+      <p className='m-5'><b>Iteration 15</b></p>
+      <div className='d-flex justify-content-center align-items-center'>
+        <SignupPage />
+      </div> 
+
+      <p className='m-5'><b>Iteration 16</b></p>
+      <div className='d-flex justify-content-center align-items-center'>
+        <RGBColorPicker />
       </div> 
 
     </div>

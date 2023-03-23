@@ -6,12 +6,7 @@ function ClickablePicture({ img, imgClicked }) {
 
   const handleClicked = () => {
     setImage((previmg) => {
-      if(previmg === img) {
-        previmg = imgClicked
-      } else {
-        previmg = img
-      }
-      return previmg
+      return previmg === img ? imgClicked : img
     })
   }
 
