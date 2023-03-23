@@ -3,13 +3,17 @@ import React, { useState } from 'react'
 
 function ClickablePicture({ img, imgClicked }) {
 
-  const [activeIgm, setActiveImg] = useState(img)
+  const [activeImg, setActiveImg] = useState(img)
 
-  
+  const handleClick = () => {
+    setActiveImg(
+      activeImg === img ? imgClicked : img
+    )
+  }
 
   return (
     <div>
-      <img>ClickablePicture</img>
+      <img src={`/${activeImg}`} alt="" onClick={handleClick} />
     </div>
   )
 }
