@@ -10,6 +10,7 @@ import Random from './components/Random';
 import Rating from './components/Rating';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import Facebook from './components/FaceBook';
 
 function App() {
   return (
@@ -126,10 +127,16 @@ function App() {
         ]}
       />
 
-<h1 className='m-4'>Carousel</h1>
-<NumbersTable limit={12} />
+      <h1 className='m-4'>Carousel</h1>
+      <NumbersTable limit={12} />
+
+      <h1 className='m-4'>Carousel</h1>
+      <Facebook />
+
     </div>
+
   );
 }
+
 
 export default App;
