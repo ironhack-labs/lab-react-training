@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +32,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+.saludo {
+  margin: 1%;
+  border: 1px solid;
+  padding: 12px 0px 0px 10px;
+}
+.tarjetas{
+  max-width: 70px;
+}
+.creditcard {
+  width: 30%;
+  display: inline-flex;
+}
+.cardnumbers{
+  font-size: 22px;
+}
+.card {
+  background-color: rgb(83, 83, 224);
 }

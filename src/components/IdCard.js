@@ -1,15 +1,15 @@
-function IdCard(props) {
+function IdCard({ firstName, lastName, gender, height, birth, picture }) {
   return (
-    <div className="card">
+    <div className="card d-flex flex-row border border-dark m-3">
       <div>
-        <img src={props.picture} alt="image" />
+        <img className="m-2" src={picture} alt="ProfilePicture" />
       </div>
-      <div>
-        <p><b> First Name: </b> {props.firstName}</p>
-        <p><b> Last Name: </b> {props.lastName}</p>
-        <p><b> Gender: </b> {props.gender}</p>
-        <p><b> Height: </b> {props.height}</p>
-        <p><b> Birth: </b> {props.birth}</p>
+      <div className="mt-2 text-left">
+        <p className="m-0"><b>First Name:</b> {firstName}</p>
+        <p className="m-0"><b>Last Name:</b> {lastName}</p>
+        <p className="m-0"><b>Gender:</b> {gender}</p>
+        <p className="m-0"><b>Height:</b> {height}</p>
+        <p className="m-0"><b>Birth:</b> {birth}</p>
       </div>
     </div>
 
@@ -17,6 +17,7 @@ function IdCard(props) {
 }
 
 IdCard.defaultProps = {
+  picture: '',
   firstName: '',
   lastName: '',
   gender: '',
