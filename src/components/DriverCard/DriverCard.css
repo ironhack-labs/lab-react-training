@@ -1,0 +1,38 @@
+.driver-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    background-color: #0074D9;
+    margin-bottom: 40px; 
+    padding: 10px;
+}
+  
+  .driver-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 60%;
+    max-width: 1700px;
+    max-height: 100px;
+    padding: 25px;
+    background-color: #393b89;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 10px; 
+  }
+  
+  .driver-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .driver-card-rating {
+    font-size: 30px;
+  }
+
+
+ 
