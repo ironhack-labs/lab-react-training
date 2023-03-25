@@ -1,7 +1,7 @@
 .NumbersTable {
   display: flex;
   flex-wrap: wrap;
-  width: 250px;
+  width: 280px;
   padding: 10px 20px;
 }
 

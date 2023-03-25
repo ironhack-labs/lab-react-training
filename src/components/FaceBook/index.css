@@ -22,7 +22,7 @@ align-items: flex-start;
 margin-left: 20px;
 }
 
-.card {
+.cardFacebook {
   display: flex;
   justify-content: flex-start;
   padding: 10px 20px;

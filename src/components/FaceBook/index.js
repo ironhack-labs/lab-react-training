@@ -42,7 +42,7 @@ export const FaceBook = (profile) => {
     </div>
     
     {profilesFilered().map((profile) => (
-      <div className='card' key={profile.img}>
+      <div className='cardFacebook' key={profile.img}>
       <img src={profile.img} alt="ProfileImage" />
       <div className="ProfileInformation">
       <p>FirstName: {profile.firstName}</p>

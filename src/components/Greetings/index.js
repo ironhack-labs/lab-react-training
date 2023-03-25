@@ -1,24 +1,39 @@
-import "./index.css"
+import './index.css';
 
+const Greetings = ({ lang, name, email }) => {
+  let greeting = '';
+  let textEmail = '';
+  let validEmail = ""
 
+  if (lang === 'de') {
+    greeting = 'Hallo';
+    textEmail = 'Ihre E-Mail-Adresse ist: ';
+    validEmail = "Ihre E-Mail ist gültig";
 
-const Greetings = ({lang, children}) => {
-  let greeting = ""
-
-  if (lang === "de") {
-      greeting = "Hallo";
-  } else if (lang === "en") {
-      greeting = "Hello";
-  } else if (lang === "es") {
-      greeting = "Hola"
-  } else if (lang === "fr") {
-      greeting = "Bonjour"
-  } 
+  } else if (lang === 'en') {
+    greeting = 'Hello';
+    textEmail = 'Your email address is: ';
+    validEmail = "your email is valid"
+  } else if (lang === 'es') {
+    greeting = 'Hola';
+    textEmail = 'Tu correo electronico es: ';
+    validEmail = "su correo electrónico es válido"
+  } else if (lang === 'fr') {
+    greeting = 'Bonjour';
+    textEmail = 'Votre adresse e-mail est: ';
+    validEmail = "votre email est valide"
+  }
   return (
     <div className="Greetings">
-    <p>{greeting} {children}</p>
+      <p>
+        {greeting} {name}
+      </p>
+      <p>
+        {textEmail && textEmail} {email}
+      </p>
+      <p>{validEmail && validEmail}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Greetings
+export default Greetings;

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  box-sizing:content-box;
+  margin: 20px;
 }
 
 .CreditApp {
