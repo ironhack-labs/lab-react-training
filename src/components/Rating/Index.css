@@ -1,0 +1,7 @@
+.Rating {
+  display: flex;
+  border: 1px solid black;
+  width: 100px;
+  align-items: center;
+  margin: 5px
+}
