@@ -168,5 +168,50 @@
 
 }
 
-.drivers {
+.counter {
+  height: 30px;
+  width: 100px;
+  font-size: medium;
+  margin: 10px;
+  color: white;
+
+}
+
+.stripes {
+  max-width: 400px;
+  text-align: center;
+  margin-top: 40px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr) repeat(2, 1fr);
+}
+
+.grid {
+  width: 80px;
+  height: 20px;
+}
+
+.profilePhoto {
+  width: 120px;
+  height: 120px;
+  margin: 0 20px;
+  border: 1px solid black;
+
+}
+
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid black;
+  font-weight: 700;
+  max-height: 200px;
+  margin: 20px;
+}
+
+.dataFB {
+  display: flex;
+  flex-direction: column;
+  line-height: 5px;
 }
