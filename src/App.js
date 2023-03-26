@@ -11,6 +11,8 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel'
 
 function App() {
   return (
@@ -65,6 +67,21 @@ function App() {
       <h1 className="text-start ms-3">ClickablePicture</h1>
       <div className="row g-0 d-flex justify-content-start">
         <ClickablePicture img='maxence.png' imgClicked='maxence-glasses.png' />
+      </div>
+      <h1 className="text-start ms-3">Dice</h1>
+      <div className="row g-0 d-flex justify-content-start">
+        <Dice />
+      </div>
+      <h1 className="text-start ms-3">Carousel</h1>
+      <div className="row g-0 d-flex justify-content-start">
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ function ClickablePicture({img, imgClicked}) {
   }
 
   return (
-    <img src={`../${image}`} alt="" style={{width: '400px'}} onClick={handleOnClick}/>
+    <img src={`../${image}`} alt="" className='ms-3' style={{width: '400px'}} onClick={handleOnClick}/>
   )
 }
 
