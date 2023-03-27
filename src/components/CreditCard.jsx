@@ -8,9 +8,9 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
   }
 
 
-  const divStyle = {
-    width: 60,
-  }
+  // const divStyle = {
+  //   width: 60,
+  // }
 
   const visibleDigits = number.slice(-4);
 
@@ -20,7 +20,7 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
     <div className={`card m-3 mx-auto shadow text-${color}`} style={{ backgroundColor: bgColor }}>
       <div className="card-body m-2 mb-0 pb-0">
         <div className="text-end">
-          <img className="me-2 mt-2" src={src} alt="visa" style={divStyle}></img>
+          <img className="me-2 mt-2" src={src} alt="visa" style={{ width: 60 }}></img>
         </div>
         <div className="text-center mt-4 mb-4">
           <h5 className="card-text">●●●● ●●●● ●●●● {visibleDigits}</h5>
