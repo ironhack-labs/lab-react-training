@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.numbers-table {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  justify-content: center;
+  text-align: center;
+  border: solid 2px #282c34;
+} 

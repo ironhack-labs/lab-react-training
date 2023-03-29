@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import BoxColor from './components/BoxColor';
 import DriverCard from './components/DriverCard';
@@ -9,26 +8,12 @@ import Rating from './components/Rating';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-
       <div className=" container-fluid d-flex justify-content-center flex-column align-items-center">
 
         <h3 className="m-5">ITERATION 1: ID CARD</h3>
@@ -113,6 +98,11 @@ function App() {
             'https://randomuser.me/api/portraits/men/2.jpg'
           ]}
         />
+
+        <h3 className='m-5'>ITERATION 12: NUMBERS TABLE</h3>
+        <NumbersTable limit={12}/>
+
+
       </div>
     </div>
   );
