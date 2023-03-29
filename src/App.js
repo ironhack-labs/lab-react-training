@@ -2,6 +2,7 @@ import './App.css';
 import BoxColor from './components/BoxColor';
 import ClickablePicture from './components/ClickablePicture';
 import CreditCard from './components/CreditCard';
+import Dice from './components/Dice';
 import DriverCard from './components/DriverCard';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
@@ -117,6 +118,11 @@ function App() {
           img="/maxence.png"
           imgClicked="/maxence-glasses.png"
         />
+      </div>
+
+      <h1 className='text-center mt-5 mb-3'>Iteration 10</h1>
+      <div className='d-flex flex-row justify-content-center'>
+        <Dice />
       </div>
 
 
