@@ -1,5 +1,6 @@
 import './App.css';
 import BoxColor from './components/BoxColor';
+import ClickablePicture from './components/ClickablePicture';
 import CreditCard from './components/CreditCard';
 import DriverCard from './components/DriverCard';
 import Greetings from './components/Greetings';
@@ -110,6 +111,13 @@ function App() {
         <LikeButton />
       </div>
 
+      <h1 className='text-center mt-5 mb-3'>Iteration 9</h1>
+      <div className='d-flex flex-row justify-content-center'>
+        <ClickablePicture
+          img="/maxence.png"
+          imgClicked="/maxence-glasses.png"
+        />
+      </div>
 
 
     </div>
