@@ -7,6 +7,7 @@ import IdCard from './components/IdCard';
 import Random from './components/Random';
 import Rating from './components/Rating';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 
 function App() {
@@ -90,12 +91,20 @@ function App() {
         }}
       />
 
-      <h3 className="m-5">ITERATION 9: DRIVER CARD</h3>
+      <h3 className="m-5">ITERATION 9: CLICKABLE PICTURE</h3>
 
       <ClickablePicture
-      img='/maxence.png'
-      imgClicked='/maxence-glasses.png'
+        img='/maxence.png'
+        imgClicked='/maxence-glasses.png'
+      />
+
+      <h3 className="m-5">ITERATION 10: DICE</h3>
+
+        <Dice
+      
         />
+
+
     </div>
   );
 }
