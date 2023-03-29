@@ -8,6 +8,7 @@ import DriverCard from './components/DriverCard';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import LikeButton from './components/LikeButton';
+import NumbersTable from './components/NumbersTable';
 import Random from './components/Random';
 import Rating from './components/Rating';
 
@@ -134,6 +135,11 @@ function App() {
           'https://randomuser.me/api/portraits/women/2.jpg',
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]} />
+      </div>
+
+      <h1 className='text-center mt-5 mb-3'>Iteration 12</h1>
+      <div className='d-flex flex-row justify-content-center'>
+        <NumbersTable limit={12} />
       </div>
     </div>
   );
