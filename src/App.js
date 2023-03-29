@@ -6,6 +6,8 @@ import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import Random from './components/Random';
 import Rating from './components/Rating';
+import ClickablePicture from './components/ClickablePicture';
+
 
 function App() {
   return (
@@ -58,7 +60,7 @@ function App() {
       <BoxColor r={128} g={255} b={0} />
 
       {/* <h3 className="m-5">ITERATION 5: CREDIT CARD</h3> */}
-      
+
       <h3 className="m-5">ITERATION 6: RATING</h3>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -87,6 +89,13 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+
+      <h3 className="m-5">ITERATION 9: DRIVER CARD</h3>
+
+      <ClickablePicture
+      img='/maxence.png'
+      imgClicked='/maxence-glasses.png'
+        />
     </div>
   );
 }
