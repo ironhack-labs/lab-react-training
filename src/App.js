@@ -143,7 +143,7 @@ function App() {
         <NumbersTable limit={12} />
       </div>
 
-      <h1 className='text-center mt-5 mb-3'>Iteration 13</h1>
+      <h1 className='text-center mt-5 mb-3'>Iteration 13 & 14</h1>
       <div className='d-flex flex-row justify-content-center'>
         <Facebook />
       </div>
