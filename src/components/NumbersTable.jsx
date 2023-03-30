@@ -6,7 +6,7 @@ function NumbersTable({ limit }) {
 
   return (
     <div className='d-flex flex-wrap m-3'>
-      {numbers.map(number => <Square numbers={number + 1} />)}
+      {numbers.map(number => <Square numbers={number + 1} key={number} />)}
     </div>
   )
 }
@@ -27,9 +27,9 @@ function Square({ numbers }) {
 
   return (
     <div>
-      <div class="border border-1 border-dark" style={divStyle} >
-        <div class="card-body">
-          <p class="card-text text-center d-flex justify-content-center mt-4">{numbers}</p>
+      <div className="border border-1 border-dark" style={divStyle} >
+        <div className="card-body">
+          <p className="card-text text-center d-flex justify-content-center mt-4">{numbers}</p>
         </div>
       </div>
     </div>

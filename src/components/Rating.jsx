@@ -28,7 +28,7 @@ function Rating({ children }) {
   }
   return (
     <div className="rating ms-4">
-      <p className="fs-3 mb-0">{rating}</p>
+      <h3 className="fs-3 mb-0">{rating}</h3>
     </div>
   )
 }

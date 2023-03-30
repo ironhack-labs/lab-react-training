@@ -14,9 +14,9 @@ function DriverCard({ name, rating, img, car }) {
       <img className="rounded-circle m-3" src={img} alt="ProfileImg" style={divStyle}/>
      </div>
      <div className="mt-3 align-items-center">
-      <p className="mb-0 ms-4">{name}</p>
-      <p  className="mb-0 ms-0"><Rating>{rating}</Rating></p>
-      <p className="ms-4">{car.model} - {car.licensePlate}</p>
+      <h3 className="mb-0 ms-4">{name}</h3>
+      <h3  className="mb-0 ms-0"><Rating>{rating}</Rating></h3>
+      <h3 className="ms-4">{car.model} - {car.licensePlate}</h3>
      </div>
    </div>
   )
