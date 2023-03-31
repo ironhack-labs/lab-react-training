@@ -13,7 +13,7 @@ function Facebook() {
 
   return (
     <div>
-      <div >{(countries.map(country => <button className={selectedCountry === country ? "blue" : ""} value={country} key={country} onClick={handleClick}>{country}</button>))}</div>
+      <div >{(countries.map(country => <button className={selectedCountry === country ? "btn bg-primary" : "btn btn-secondary"} value={country} key={country} onClick={handleClick}>{country}</button>))}</div>
       <div>{profiles.map(profiles => <Profile profiles={profiles} key={profiles.lastName} selectedCountry={selectedCountry} />)}</div>
     </div>
   )
@@ -25,8 +25,11 @@ export default Facebook
 
 
 function Profile({ profiles, selectedCountry }) {
+
+  const color = selectedCountry === profiles.country ? "bg-primary" : ""
+
   return (
-    <div className={ selectedCountry === profiles.country ? "d-flex flex-row mb-3 border border-1 border-dark m-3 bg-primary" : "d-flex flex-row mb-3 border border-1 border-dark m-3"}>
+    <div className={`d-flex flex-row mb-3 border border-1 border-dark m-3 ${color}`}>
       <div>
         <img className="m-2" src={profiles.img} style={{ width: 150 }} alt="ProfilePicture" />
       </div>
