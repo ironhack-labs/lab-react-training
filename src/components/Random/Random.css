@@ -1,0 +1,12 @@
+/*CSS DE LA INTERACCIÓN 3*/
+
+.Random {
+    font-size: 30px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.Random p {
+    margin: 0;
+}

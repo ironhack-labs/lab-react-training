@@ -1,0 +1,12 @@
+/*CSS DE LA INTERACCIÓN 4*/
+
+.BoxColor {
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid black;
+    padding: 40px;
+    margin: 10px 0;
+}
+.BoxColor p {
+    margin: 0;
+}

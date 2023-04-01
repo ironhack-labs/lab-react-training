@@ -1,0 +1,10 @@
+/*CSS DE LA INTERACCIÓN 11*/
+
+.Carousel {
+    margin: 10px 0;
+    display: flex;
+
+}
+.Carousel img {
+    width: 200px;
+}

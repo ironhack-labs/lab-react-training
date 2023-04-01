@@ -1,0 +1,29 @@
+/*CSS DE LA INTERACCIÓN 5*/
+
+.CreditCard {
+    margin: 10px;
+    padding: 30px;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+.CreditCard p {
+    margin: 0;
+}
+.CreditCard .CreditCard-header {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.CreditCard .CreditCard p {
+    font-size: 30px;
+}
+.CreditCard .CreditCard-header img {
+    height: 20px;
+    margin-bottom: 15px;
+}
+.CreditCard .CreditCard-info {
+    font-size: 13px;
+}
+.CreditCard .CreditCard-info >div {
+    display: flex;
+}

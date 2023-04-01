@@ -1,0 +1,23 @@
+/*CSS DE LA INTERACCIÓN 13*/
+
+.FaceBook {
+    margin: 10px 0;
+}
+
+.FaceBookItem {
+    display: flex;
+    padding: 8px;
+    border: 2px solid black;
+    margin: 10px 0;
+    width: 500px;
+}
+
+.FaceBookItem p {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.FaceBookItem .FaceBookItem-img img {
+    height: 150px;
+}

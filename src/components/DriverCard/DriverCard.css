@@ -1,0 +1,33 @@
+/*CSS DE LA INTERACCIÓN 7*/
+
+.DriverCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #445EB5;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.DriverCard p,
+.DriverCard h2 {
+    margin: 0;
+}
+
+.DriverCard .image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.DriverCard .image-cropper img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
