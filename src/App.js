@@ -10,6 +10,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable/NumbersTable';
 import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
 
 
 function App() {
@@ -105,6 +106,10 @@ function App() {
 
         <h3 className='m-5'>ITERATION 13 AND 14: FACEBOOK</h3>
         <Facebook />
+
+        <h3 className='m-5'>ITERATION 15: SIGNUP PAGE</h3>
+        <SignupPage />
+
       </div>
     </div>
   );

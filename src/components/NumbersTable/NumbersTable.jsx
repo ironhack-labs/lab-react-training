@@ -15,3 +15,6 @@ function NumbersTable({ limit }) {
 }
 
 export default NumbersTable
+
+
+

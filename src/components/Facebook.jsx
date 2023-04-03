@@ -4,7 +4,6 @@ import profiles from '../data/berlin.json'
 function Facebook() {
 
   const countries = Array.from(new Set(profiles.flatMap(profile => profile.country)))
-  const [background, setBackground] = useState("")
   const [selectedCountry, setSelectedCountry] = useState("")
 
   const handleOnClick = (event) => {
