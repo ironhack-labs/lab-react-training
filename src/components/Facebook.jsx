@@ -10,6 +10,7 @@ function Facebook() {
 
   const handleClick = (event) => {
    setSelectedCountry(event.target.value)
+   console.log(event.target.value)
   }
 
   const handleOnChange = (event) => {
@@ -21,7 +22,7 @@ function Facebook() {
 
   return (
     <div className='m-3'>
-      <div >{(countries.map(country => <button className={selectedCountry === country ? "btn bg-primary" : "btn btn-secondary"} value={country} key={country} onClick={handleClick}>{country}</button>))}</div>
+      <div ><button onClick={handleClick} value="All" className={selectedCountry === "All" ? "btn bg-primary" : "btn btn-secondary"} >All</button>{(countries.map(country => <button className={selectedCountry === country ? "btn bg-primary" : "btn btn-secondary"} value={country} key={country} onClick={handleClick}>{country}</button>))}</div>
       <div className='mt-3'>
         <label htmlFor="" className='me-1'>Search</label>
         <input className='rounded' type="text" value={input} placeholder="Search..." onChange={handleOnChange}/>
