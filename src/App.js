@@ -12,6 +12,7 @@ import LikeButton from './components/LikeButton';
 import NumbersTable from './components/NumbersTable';
 import Random from './components/Random';
 import Rating from './components/Rating';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
@@ -148,7 +149,10 @@ function App() {
         <Facebook />
       </div>
 
-
+      <h1 className='text-center mt-5 mb-3'>Iteration 15</h1>
+      <div className='d-flex flex-row justify-content-center'>
+        <SignupPage />
+      </div>
 
 
     </div>
