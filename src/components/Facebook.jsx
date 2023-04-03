@@ -4,6 +4,7 @@ import profiles from '../data/berlin.json'
 function Facebook() {
 
   const [selectedCountry, setSelectedCountry] = useState('')
+  const [input, setInput] = useState('')
 
   const countries = Array.from(new Set(profiles.flatMap(profileCountry => profileCountry.country)))
 
@@ -11,10 +12,24 @@ function Facebook() {
    setSelectedCountry(event.target.value)
   }
 
+  const handleOnChange = (event) => {
+    const { value } = event.target
+    setInput(value)
+  }
+
+
+
   return (
-    <div>
+    <div className='m-3'>
       <div >{(countries.map(country => <button className={selectedCountry === country ? "btn bg-primary" : "btn btn-secondary"} value={country} key={country} onClick={handleClick}>{country}</button>))}</div>
-      <div>{profiles.map(profiles => <Profile profiles={profiles} key={profiles.lastName} selectedCountry={selectedCountry} />)}</div>
+      <div className='mt-3'>
+        <label htmlFor="" className='me-1'>Search</label>
+        <input className='rounded' type="text" value={input} placeholder="Search..." onChange={handleOnChange}/>
+      </div>
+      <div>{profiles
+        .filter(profiles => profiles.firstName.toLocaleLowerCase().includes(input.toLowerCase()))
+        .map(profiles => <Profile profiles={profiles} key={profiles.lastName} selectedCountry={selectedCountry} />)}
+        </div>
     </div>
   )
 }
