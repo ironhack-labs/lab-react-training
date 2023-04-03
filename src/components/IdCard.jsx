@@ -1,6 +1,6 @@
 function IdCard({ firstName, lastName, gender, height, birth, picture }) {
   return (
-    <div className="d-flex flex-row mb-3 border border-dark m-2">
+    <div className="d-flex flex-row mb-3 border border-dark m-2 w-50">
       <div>
         <img className="m-2" src={picture} alt="Profile Picture" />
       </div>
