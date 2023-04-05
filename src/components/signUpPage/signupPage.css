@@ -1,0 +1,31 @@
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.signup-container form label {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.signup-container form label input,
+.signup-container form label select {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.signup-container form button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.signup-container .greeting {
+  font-size: 1.5rem;
+}

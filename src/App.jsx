@@ -14,6 +14,7 @@ import FaceBook from './components/faceBook/FaceBook';
 import ListAndKeys from './components/listAndKeys/ListAndKeys';
 import RGBColorPicker from './components/RGBColorPicker/RGBColorPicker';
 import './App.css';
+import SignupPage from './components/signUpPage/SignupPage';
 
 const App = () => {
   return (
@@ -223,6 +224,15 @@ const App = () => {
         <h1>RGBColorPicker Component</h1>
         <div className="rgb-color-picker">
           <RGBColorPicker />
+        </div>
+      </div>
+
+      <hr />
+
+      <div className="components">
+        <h1>SignupPage Component</h1>
+        <div className="signup">
+          <SignupPage />
         </div>
       </div>
 

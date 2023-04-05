@@ -5,7 +5,7 @@ const ClickablePicture = ({ img, imgClicked }) => {
   const [clicked, setClicked] = useState(false);
 
   const handleUpdateImg = () => {
-    clicked ? setClicked(false) : setClicked(true);
+    setClicked(!clicked);
   };
 
   return (

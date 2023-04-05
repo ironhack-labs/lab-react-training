@@ -11,16 +11,19 @@ const RGBColorPicker = () => {
     backgroundColor: `rgb(${rValue}, ${gValue}, ${bValue})`,
   };
 
-  const handleChangeColor = (num, color) => {
+  const handleChangeColor = (e) => {
+    const color = e.target.id;
+    const value = e.target.value;
+
     switch (color) {
-      case 'red':
-        setRValue(num);
+      case 'r':
+        setRValue(value);
         break;
-      case 'green':
-        setGValue(num);
+      case 'g':
+        setGValue(value);
         break;
-      case 'blue':
-        setBValue(num);
+      case 'b':
+        setBValue(value);
         break;
 
       default:

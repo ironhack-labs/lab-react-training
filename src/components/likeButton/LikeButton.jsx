@@ -5,17 +5,6 @@ const LikeButton = () => {
   const [likes, setLikes] = useState(0);
   const [color, setColor] = useState('grey');
 
-  let likeText;
-  switch (likes) {
-    case 1:
-      likeText = 'Like';
-      break;
-
-    default:
-      likeText = 'Likes';
-      break;
-  }
-
   const buttonStyle = {
     backgroundColor: `${color}`,
   };
@@ -33,7 +22,7 @@ const LikeButton = () => {
   return (
     <div className="button-container">
       <button onClick={handleLikes} style={buttonStyle}>
-        {likes} {likeText}
+        {likes} {likes === 1 ? 'Like' : 'Likes'}
       </button>
     </div>
   );

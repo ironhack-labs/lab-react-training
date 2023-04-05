@@ -12,7 +12,6 @@ const SingleColorPicker = ({ color, value, handleChangeColor }) => {
       break;
 
     default:
-      selectedColor = 'white';
       break;
   }
 
@@ -28,9 +27,9 @@ const SingleColorPicker = ({ color, value, handleChangeColor }) => {
           <input
             type="number"
             name="color"
-            id=""
+            id={color}
             value={value}
-            onChange={(e) => handleChangeColor(e.target.value, selectedColor)}
+            onChange={(e) => handleChangeColor(e)}
             min="0"
             max="255"
           />
