@@ -93,3 +93,45 @@ h1 {
   font-size: 1.2rem;
   margin: 0;
 }
+
+#ccDiv {
+  display: flex;
+}
+
+.cc {
+  margin: 15px;
+  border-radius: 15px;
+  width: 100vw;
+  height: calc(55vw/3);
+}
+
+.ccLogo {
+  display: flex;
+  justify-content: flex-end;
+  height: 30%;
+  object-fit: contain;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ccLogo > img {
+  height: 50%;
+}
+
+.ccNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  font-size: 2rem;
+}
+
+.ccNumber > p {
+  margin: 0;
+}
+
+.ccData {
+  text-align: start;
+  line-height: 0.5;
+  padding-left: 5%;
+}

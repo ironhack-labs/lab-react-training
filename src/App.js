@@ -3,6 +3,9 @@ import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
+import CreditCard from './components/CreditCard';
+import visa from "./assets/images/visa.png"
+import mastercard from "./assets/images/Mastercard-logo.svg.png"
 
 function App() {
   return (
@@ -38,7 +41,44 @@ function App() {
       <h1>BoxColor</h1>
       <BoxColor r={255} g={0} b={0} fontColor="white"/>
       <BoxColor r={128} g={255} b={0} fontColor="black"/>
+
+      <h1>CreditCard</h1>
+      <div id="ccDiv">
+        <CreditCard
+          type={visa}
+          number="0123456789018845"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="BNP"
+          owner="Maxence Bouret"
+          bgColor="#11aa99"
+          color="white" 
+        />
+            
+        <CreditCard
+          type={mastercard}
+          number="0123456789010995"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="N26"
+          owner="Maxence Bouret"
+          bgColor="#eeeeee"
+          color="#222222"
+        />
+            
+        <CreditCard
+          type={visa}
+          number="0123456789016984"
+          expirationMonth={12}
+          expirationYear={2019}
+          bank="Name of the Bank"
+          owner="Firstname Lastname"
+          bgColor="#ddbb55"
+          color="white" 
+        />
+      </div>
     </div>
+
   );
 }
 
