@@ -82,3 +82,14 @@ h1 {
   font-size: 1.2rem;
   margin: 0;
 }
+
+.boxColor {
+  margin: 10px;
+  padding: 15px;
+  border: 2px solid black;
+}
+
+.boxColor > p {
+  font-size: 1.2rem;
+  margin: 0;
+}
