@@ -1,13 +1,149 @@
+/* index.css */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+div,
+section,
+main {
+  box-sizing: border-box;
+}
+
+nav {
+  background: #cec8db;
+  color: white;
+  padding: 0px 20px;
+  box-shadow: 0px 1px 2px gray;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+nav p {
+  color: white;
+  margin-left: 0px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h2 {
+  padding: 15px 30px;
+  border: 1px solid #6d6d6d;
+  background: lightcyan;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+h3 {
+  padding: 5px 50px;
+  display: inline-block;
+}
+
+button,
+select {
+  padding: 3px 10px;
+  min-width: 50px;
+  height: 40px;
+  margin: 5px;
+  font-size: 1rem;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.list {
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0px 2px 3px grey;
+  margin-bottom: 20px;
+  background: white;
+}
+
+.list > li,
+.list > p,
+.list > div {
+  margin: 10px;
+  border: 1px solid #f98a8a;
+}
+
+.MovieCard {
+  border: 1px solid grey;
+  box-shadow: 0px 2px 3px grey;
+  width: 400px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.Spinner {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Spinner img {
+  width: 100px;
+  height: 100px;
+}
+
+span.green,
+span.red,
+span.black {
+  display: inline-block;
+  padding: 3px 10px;
+  width: 25px;
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+}
+
+.green {
+  background: green;
+}
+
+.red {
+  background: red;
+}
+
+.black {
+  background: black;
+}
+
+.cc-brand img {
+  height: 50px;
+}
+
+.cc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: 250px;
+  border: 1px solid grey;
+  box-shadow: 0px 2px 3px grey;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
 }
