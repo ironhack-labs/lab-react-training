@@ -147,3 +147,10 @@ span.black {
   padding: 10px;
   border-radius: 4px;
 }
+
+.driver-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
