@@ -9,6 +9,8 @@ import DriverCard from './component/DriverCard';
 import LikeButton from './component/LikeButton';
 import ClickablePicture from './component/ClickablePicture';
 import Dice from './component/Dice';
+import Carousel from './component/Carousel';
+import NumbersTable from './component/NumbersTable';
 
 import './App.css';
 
@@ -95,8 +97,8 @@ function App() {
         car={{
           model: "Toyota Corolla Altis",
           licensePlate: "CO42DE"
-  }}
-/>
+    }}
+      />
 
       <DriverCard
         name="Dara Khosrowshahi"
@@ -105,15 +107,30 @@ function App() {
         car={{
           model: "Audi A3",
           licensePlate: "BE33ER"
-  }}
-/>
-<LikeButton /> <LikeButton />
-<ClickablePicture
-  img='maxence.png'
-  imgClicked='maxence-glasses.png'
-/>
+    }}
+      />
+      <LikeButton /> <LikeButton />
 
-<Dice />
+      <br />
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+
+      <br />
+      <Dice />
+
+      <br />
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <br />
+      <NumbersTable limit={12} />
 
     </div>
   );
