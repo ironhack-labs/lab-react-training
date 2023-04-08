@@ -70,3 +70,15 @@ h1 {
   font-size: 1.2rem;
   margin: 0;
 }
+
+.random {
+  margin: 10px;
+  text-align: left;
+  padding: 5px;
+  border: 2px solid;
+}
+
+.random > p {
+  font-size: 1.2rem;
+  margin: 0;
+}
