@@ -172,7 +172,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   flex-grow: 6;
   color: white;
 }
@@ -184,4 +184,15 @@ h1 {
 
 .driverName {
   font-size: 1.5rem;
+}
+
+#buttonDiv {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.likeButton {
+  padding: 5px;
+  color: white;
 }

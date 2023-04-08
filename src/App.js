@@ -8,6 +8,7 @@ import visa from "./assets/images/visa.png"
 import mastercard from "./assets/images/Mastercard-logo.svg.png"
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
@@ -109,6 +110,12 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+
+      <h1>LikeButton</h1>
+      <div id='buttonDiv'>
+        <LikeButton />
+        <LikeButton />
+      </div>
     </div>
 
   );
