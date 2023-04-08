@@ -5,7 +5,7 @@ function Rating({children}) {
         return ("\u2605").repeat(fullStars) + ("\u2606").repeat(5 - fullStars)
     }
     return (
-        <div>
+        <div className="starsDiv">
             <p className="stars">{stars(rating)}</p>
         </div>
     )

@@ -7,6 +7,7 @@ import CreditCard from './components/CreditCard';
 import visa from "./assets/images/visa.png"
 import mastercard from "./assets/images/Mastercard-logo.svg.png"
 import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
 
 function App() {
   return (
@@ -87,6 +88,27 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+
+      <h1>DriverCard</h1>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4}
+        img="https://i.imgur.com/Zz79PMt.jpg"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE"
+        }}
+      />
+
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
+        }}
+      />
     </div>
 
   );

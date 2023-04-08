@@ -136,8 +136,52 @@ h1 {
   padding-left: 5%;
 }
 
+.starsDiv {
+  margin-left: 10px;
+}
+
 .stars {
   text-align: start;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.driverCard {
+  display: flex;
+  height: 20vh;
+  background-color: #425cbb;
   margin: 10px;
-  font-size: 3rem;
+  border-radius: 10px;
+}
+
+.profilePicture {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 4;
+  height: 100%;
+  object-fit: contain;
+}
+
+.profilePicture > img {
+  height: 80%;
+  border-radius: 50%;
+}
+
+.driverData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  flex-grow: 6;
+  color: white;
+}
+
+.driverData > p {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.driverName {
+  font-size: 1.5rem;
 }
