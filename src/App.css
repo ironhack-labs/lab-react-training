@@ -135,3 +135,9 @@ h1 {
   line-height: 0.5;
   padding-left: 5%;
 }
+
+.stars {
+  text-align: start;
+  margin: 10px;
+  font-size: 3rem;
+}
