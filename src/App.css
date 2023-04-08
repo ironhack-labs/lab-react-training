@@ -196,3 +196,15 @@ h1 {
   padding: 5px;
   color: white;
 }
+
+.clickImgDiv {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.clickImgDiv > img {
+  cursor: pointer;
+  margin-left: 10px;
+  height: 10%;
+  width: 10%;
+}

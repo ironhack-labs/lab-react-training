@@ -9,6 +9,7 @@ import mastercard from "./assets/images/Mastercard-logo.svg.png"
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
@@ -116,6 +117,12 @@ function App() {
         <LikeButton />
         <LikeButton />
       </div>
+
+      <h1>ClickablePicture</h1>
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
     </div>
 
   );
