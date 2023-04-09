@@ -208,3 +208,15 @@ h1 {
   height: 10%;
   width: 10%;
 }
+
+.diceDiv {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.diceDiv > img {
+  cursor: pointer;
+  margin-left: 10px;
+  height: 10%;
+  width: 10%;
+}
