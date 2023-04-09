@@ -323,3 +323,44 @@ hr {
   width: 100%;
   color: grey;
 }
+
+.RGBPicker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  width: 20%;
+}
+
+.singleColorPicker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  width: 70%;
+} 
+
+.pickerInput {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px;
+  width: 100px;
+}
+
+.colorSquare {
+  border: 3px black solid;
+  height: 50px;
+  width: 50px;
+}
+
+.resultColorDiv {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.resultColorDiv > p {
+  margin-left: 15px;
+}
