@@ -50,6 +50,10 @@
   padding: 5px;
 }
 
+.idCardPicture > img {
+  height: 120px;
+}
+
 .idCard > div > p {
   margin: 0;
 }
