@@ -1,13 +1,29 @@
+import { useState } from "react";
 import profiles from "../data/berlin.json"
 
 function FaceBook() {
 
+    const [countryChoice, setCountryChoice] = useState(null)
+
+    const countries = [...new Set(profiles.map(profile => profile.country))]
+
+    function handleClick(country) {
+        setCountryChoice(country)
+    }
+
     return (
         <>
+            <div className="countryButtonDiv">
+                {countries.map(country => {
+                    return(
+                        <button className={`${country === countryChoice ? "clicked" : ""}`} onClick={() => handleClick(country)}>{country}</button>
+                    )
+                })}
+            </div>
             {profiles.map(profile => {
 
                 return(
-                    <div className="idCard">
+                    <div className={`idCard ${countryChoice === profile.country ? "blueCountry" : "" }`}>
                         <div className="idCardPicture">
                             <img src={profile.img} alt="" />
                         </div>
