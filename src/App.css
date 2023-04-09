@@ -226,3 +226,26 @@ h1 {
   justify-content: flex-start;
   margin-left: 10px;
 }
+
+.numbersTable {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 10vh;
+  margin-left: 10px;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+  font-size: 24px;
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.even {
+  background-color: red;
+}
