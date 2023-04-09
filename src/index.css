@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card-body p {
+  font-weight: bold;
+}
+
+.card-body p span {
+  font-weight: lighter;
+}
+
+.cc-font {
+  font-size: 4rem;
+}
+.profiles{
+  display:grid;
+  grid-template-columns: auto auto auto;
+}
+h3 span{
+  font-weight: lighter;
+}
+
