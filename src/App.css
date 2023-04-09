@@ -274,3 +274,52 @@ h1 {
 .clicked {
   background-color: lightblue !important;
 }
+
+.signupPageDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.signupPageDiv > input {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.signupPageDiv > label {
+  margin-top: 10px;
+}
+
+.signupPageDiv > select {
+  width: 102%;
+  padding: 5px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px grey solid;
+}
+
+.signupPageButton {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0275d8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.signupPageDiv > p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+hr {
+  width: 100%;
+  color: grey;
+}

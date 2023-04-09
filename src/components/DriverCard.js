@@ -1,12 +1,6 @@
 import Rating from "./Rating";
 
 function DriverCard({name, rating, img, car}) {
-    const stars = Math.ceil(rating)
-
-    function starDraw(fullStars) {
-        return ("\u2605").repeat(fullStars) + ("\u2606").repeat(5 - fullStars)
-    }
-
 
     return (
 
