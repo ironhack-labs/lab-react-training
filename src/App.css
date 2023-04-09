@@ -2,37 +2,89 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.IdCard {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  margin: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.IdPic{
+  width: 100px;
+  height: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.IdInfo {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: left;
+  text-align: left;
+  margin: 10px;
+}
+.IdInfo p {
+  margin: 0;
+}
+
+.credit-card{
+  display: flex;
+  flex-direction: column;
+  width: calc(85.6*5px);
+  height: calc(53.98*5px);
+  margin: 10px;
+  border-radius: 5%;
+  position: relative;
+}
+.credit-card-logo{
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  top: 16px; /* Adjust the top distance as needed */
+  right: 16px; /* Adjust the right distance as needed */
+}
+.credit-card-number{
+  margin-top: 100px;
+  font-size: 45px
+}
+.credit-card-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 30px;
+  font-size: 20px
+}
+.driver-card {
+  width: 600px;
+  background-color: rgb(83, 98, 234);
   color: white;
+  display: flex;
+  flex-direction: row;
+
+  margin: 10px;
+  border-radius: 20px;
+}
+.driver-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 100px;
+}
+.driver-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin: 10px;
+  width: auto;
+}
+.driver-info p {
+  width: fit-content;
+}
+.dice img {
+  width: 100px;
+  height: 100px
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
