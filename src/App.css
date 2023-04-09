@@ -220,3 +220,9 @@ h1 {
   height: 10%;
   width: 10%;
 }
+
+.carouselDiv {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
