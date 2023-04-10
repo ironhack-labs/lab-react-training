@@ -117,10 +117,10 @@ function App() {
 
 <Carousel
   images={[
-    'https://randomuser.me/api/portraits/women/1.jpg',
-    'https://randomuser.me/api/portraits/men/1.jpg',
-    'https://randomuser.me/api/portraits/women/2.jpg',
-    'https://randomuser.me/api/portraits/men/2.jpg'
+    'https://xsgames.co/randomusers/assets/avatars/male/50.jpg',
+    'https://xsgames.co/randomusers/assets/avatars/female/45.jpg',
+    'https://xsgames.co/randomusers/assets/avatars/male/8.jpg',
+    'https://xsgames.co/randomusers/assets/avatars/female/21.jpg'
   ]}
 />
 

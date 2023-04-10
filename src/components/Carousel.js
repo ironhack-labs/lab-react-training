@@ -6,6 +6,28 @@ const Carousel = ({images}) => {
 
     const [index, setIndex] = useState(0)
 
+    const imageArray = [...images]
+
+    const nextImage = () => {
+        setIndex( (index + 1) % imageArray.length)
+    }
+
+    const previousImage = () => {
+        setIndex( (index - 1) % imageArray.length)
+    }
+
+    return (
+
+        <div>
+        <button onClick={previousImage}> Prev </button>
+        <img src={imageArray[index]} alt="" />
+        <button onClick={nextImage}> Next </button>
+        </div>
+
+)
+
+
 }
+
 
 export default Carousel
