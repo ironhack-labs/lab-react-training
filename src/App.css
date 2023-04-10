@@ -46,6 +46,33 @@
   border-radius: 10px;
 }
 
+.red, .white {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  border: 2px solid black;
+}
+
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: white;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+  flex-wrap: wrap;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

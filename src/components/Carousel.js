@@ -9,11 +9,11 @@ const Carousel = ({images}) => {
     const imageArray = [...images]
 
     const nextImage = () => {
-        setIndex( (index + 1) % imageArray.length)
+        setIndex( (index + imageArray.length + 1) % imageArray.length)
     }
 
     const previousImage = () => {
-        setIndex( (index - 1) % imageArray.length)
+        setIndex( (index + imageArray.length - 1) % imageArray.length)
     }
 
     return (
