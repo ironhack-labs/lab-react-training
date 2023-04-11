@@ -45,8 +45,6 @@ function Dice(){
     }
 
 
-
-
     return (
         <div className="dice">
             <img src={dice} alt="dice" onClick={handleClick}/>

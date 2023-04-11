@@ -114,5 +114,22 @@
   justify-content: center;
   align-items: center;
 }
+.profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 400px;
+  height: 100%;
+  margin: 50px 50px 0 100px;
+  border: 1px solid black;
+}
+.profile img{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.profile-info {
+  text-align: left;
+}
 
 
