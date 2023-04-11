@@ -98,6 +98,16 @@
   font-size: 24px;
 }
 
+#email:valid,
+#password:valid {
+  border: 2px solid green;
+}
+
+#email:invalid,
+#password:invalid {
+  border: 2px solid red;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
