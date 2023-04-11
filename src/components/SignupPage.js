@@ -4,28 +4,34 @@ import { useState } from "react";
 function SignupPage() {
 
     let [emailStr, setEmailStr] = useState('')
+    
     const [emBorder, setEmBorder] = useState('form-control border border-3 border-danger')
     const [emMsg, setEmMsg] = useState('Please enter a valid email.')
     const [emColor, setEmColor] = useState('red')
 
     const [pwStr, setPwStr] = useState('')
+
     const [pwBorder, setPwBorder] = useState('form-control border border-3 border-danger')
     const [pwMsg, setPwMsg] = useState('Please enter a valid password.')
     const [pwColor, setPwColor] = useState('red')
 
     const [nationStr, setNationStr] = useState('')
+
     const [nationBorder, setNationBorder] = useState('form-control border border-3 border-danger')
     const [nationMsg, setNationMsg] = useState('Please select nationality.')
     const [nationColor, setNationColor] = useState('red')
 
     const [langStr, setLangStr] = useState('')
 
+
     const isEmpty = (e) => {
+
+        setEmailStr(e.target.value)
         let apos = e.target.value.indexOf('@')
         let dotpos = e.target.value.indexOf('.')
 
-        if (e.target.value == "" || apos < 1 || dotpos - apos < 2 || e.target.value.length <= e.target.value.indexOf('.') + 1) {
-            setEmailStr("")
+        if (e.target.value == "" || apos < 1 || dotpos - apos < 2 || e.target.value.length <= e.target.value.indexOf('.') + 1) { //Javascript style: e.g. apple@baloon.com
+   
             setEmBorder('form-control border border-3 border-danger')
             setEmMsg('Please enter a valid email.')
             setEmColor('red')
@@ -33,7 +39,6 @@ function SignupPage() {
         }
         else {
 
-            setEmailStr(e.target.value)
             setEmBorder("form-control border border-success border-3")
             setEmColor('green')
             setEmMsg('You type a valid email')
@@ -44,16 +49,18 @@ function SignupPage() {
 
     const validatePassword = (e) => {
 
-        const regex = /^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$/;
+        setPwStr(e.target.value)
+
+        const regex = /^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$/; //Regex style:  Minimum 8 characters, one capital letter, one number, one symbol
 
         if (e.target.value === "" || e.target.value.length < 9 || !regex.test(e.target.value)) {
-            setPwStr('')
+    
             setPwBorder('form-control border border-3 border-danger')
             setPwMsg('Please enter a valid password.')
             setPwColor('red')
         }
         else {
-            setPwStr(e.target.value)
+       
             setPwBorder('form-control border border-3 border-success')
             setPwMsg('Valid Password Entered.')
             setPwColor('green')
@@ -62,8 +69,11 @@ function SignupPage() {
     }
 
     const validateNationality = (e) => {
+
+        setNationStr(e.target.value)
+
         if (e.target.value !== "") {
-            setNationStr(e.target.value)
+    
             setNationBorder('form-control border border-3 border-success')
             setNationMsg('Nationality selected.')
             setNationColor('green')
@@ -80,11 +90,10 @@ function SignupPage() {
 
         }
         else {
-            setNationStr('')
+     
             setNationBorder('form-control border border-3 border-danger')
             setNationMsg('Please select nationality.')
             setNationColor('red')
-
         }
     }
 
@@ -94,7 +103,6 @@ function SignupPage() {
         let submittedDetails = { emailStr, pwStr, nationStr }
 
         console.log(submittedDetails);
-
 
         setEmailStr('')
         setEmBorder('form-control border border-3 border-danger')
@@ -113,8 +121,7 @@ function SignupPage() {
 
         setLangStr('')
 
-        e.target.reset()
-        console.log(submittedDetails);
+       // e.target.reset()
         
     }
 
@@ -127,7 +134,7 @@ function SignupPage() {
 
                     <div>
                         <div class="input-group mb-3">
-                            <input style={{ color: emColor }} name="emailStr"  onChange={isEmpty} type="text" class={emBorder} placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" />
+                            <input style={{ color: emColor }} pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" value={emailStr} name="emailStr"  onChange={isEmpty} type="text" class={emBorder} placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" />
                         </div>
                         <p style={{ color: emColor }}>{emMsg}</p>
                     </div>
@@ -137,7 +144,7 @@ function SignupPage() {
 
                     <div>
                         <div class="input-group mb-3">
-                            <input style={{ color: pwColor }} name="pwStr"  onChange={validatePassword} type="password" class={pwBorder} placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" />
+                            <input style={{ color: pwColor }}  value={pwStr} name="pwStr"  onChange={validatePassword} type="password" class={pwBorder} placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" />
                         </div>
                         <p style={{ color: pwColor }}>{pwMsg}</p>
                     </div>
@@ -145,10 +152,10 @@ function SignupPage() {
                     <h3>Nationality:</h3>
 
                     <div>
-                        <select style={{ color: nationColor }} onChange={validateNationality} name="nationStr" type="text" class={nationBorder} aria-label="Username" aria-describedby="basic-addon1">
-                            <option  >-- select one --</option>
+                        <select style={{ color: nationColor }} onChange={validateNationality} name="nationStr" value={nationStr} type="text" class={nationBorder} aria-label="Username" aria-describedby="basic-addon1">
+                            <option value='' >-- select one --</option>
                             <option value="en">English</option>
-                           
+                                
                             <option value="fr">French</option>
                            
                             <option value="de">German</option>
