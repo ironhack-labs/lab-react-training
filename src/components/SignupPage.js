@@ -38,7 +38,7 @@ const SignupPage = () => {
   }
 
   return (
-    <div>
+    <div className="signup-form">
       <form action="">
         <label htmlFor="email">Email</label>
         <input
