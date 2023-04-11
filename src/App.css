@@ -46,7 +46,8 @@
   border-radius: 10px;
 }
 
-.red, .white {
+.red,
+.white {
   width: 100px;
   height: 100px;
   display: flex;
@@ -71,7 +72,31 @@
   flex-wrap: wrap;
 }
 
+.facebook-card {
+  width: 800px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+}
 
+.profile-picture img {
+  width: 180px;
+  height: 180px;
+  padding: 10px;
+}
+
+.face-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 24px;
+}
 
 @keyframes App-logo-spin {
   from {
