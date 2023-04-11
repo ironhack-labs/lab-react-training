@@ -6,10 +6,7 @@ import dice5 from '../assets/images/dice5.png';
 import dice6 from '../assets/images/dice6.png';
 import diceEmpty from '../assets/images/dice-empty.png';
 
-import { useState, useEffect } from 'react'
-
-
-
+import { useState} from 'react'
 
 function Dice(){
 

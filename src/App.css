@@ -85,6 +85,34 @@
   width: 100px;
   height: 100px
 }
+.numbers-table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin: 50px;
+}
 
+.numbers-table-even{
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.numbers-table-odd{
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
