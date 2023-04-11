@@ -18,6 +18,9 @@ const SignupPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setEmail('');
+    setPassword('');
+    setLanguage('');
     console.log('email', email);
   };
 
@@ -39,7 +42,7 @@ const SignupPage = () => {
 
   return (
     <div className="signup-form">
-      <form action="">
+      <form onSubmit={handleSubmit} action="">
         <label htmlFor="email">Email</label>
         <input
           value={email}
