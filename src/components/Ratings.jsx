@@ -11,7 +11,7 @@ function Ratings({ children }) {
   }
 
   return (
-    <div className='rating'>
+    <div className="rating">
       <p> {stars(children)}</p>
     </div>
   );

@@ -7,10 +7,18 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Ratings';
 import DriverCard from './components/DriverCard';
+import SignUpPage from './components/SignupPage';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Section title="Cards">
         <IdCard
           lastName="Doe"
@@ -107,6 +115,38 @@ function App() {
             licensePlate: 'BE33ER',
           }}
         />
+      </Section>
+      <Section title="Sign Up Page">
+        <SignUpPage />
+      </Section>
+      <Section title="Like Button">
+        <LikeButton />
+      </Section>
+      <Section title="ClickablePicture">
+        <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
+      </Section>
+      <Section title="Dice">
+        <Dice />
+      </Section>
+      <Section title="Carousel">
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
+        />
+      </Section>
+      <Section title="NumbersTable">
+        <NumbersTable limit={12} />
+      </Section>
+
+      <Section title="Facebook">
+        <Facebook />
+      </Section>
+      <Section title="RGB ColorPicker">
+        <RGBColorPicker />
       </Section>
     </div>
   );
