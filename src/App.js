@@ -10,6 +10,10 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   return (
@@ -43,7 +47,6 @@ function App() {
       <br />
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -54,7 +57,6 @@ function App() {
         bgColor="#11aa99"
         color="white"
       />
-
       <CreditCard
         type="Master Card"
         number="0123456789010995"
@@ -65,7 +67,6 @@ function App() {
         bgColor="#eeeeee"
         color="#222222"
       />
-
       <CreditCard
         type="Visa"
         number="0123456789016984"
@@ -76,14 +77,12 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
-
       <Ratings>0</Ratings>
       <Ratings>1.49</Ratings>
       <Ratings>1.5</Ratings>
       <Ratings>3</Ratings>
       <Ratings>4</Ratings>
       <Ratings>5</Ratings>
-
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -93,7 +92,6 @@ function App() {
           licensePlate: 'CO42DE',
         }}
       />
-
       <DriverCard
         name="Dara Khosrowshahi"
         rating={4.9}
@@ -103,13 +101,11 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
-
       <LikeButton />
-
       <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
-
       <Dice />
-
+      <Dice />
+      <Dice />
       <Carousel
         images={[
           'https://randomuser.me/api/portraits/women/1.jpg',
@@ -118,6 +114,11 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+      <NumbersTable limit={12} />
+      <Facebook />
+      <SignupPage />
+
+      <RGBColorPicker />
     </div>
   );
 }

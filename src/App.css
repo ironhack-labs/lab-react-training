@@ -158,6 +158,10 @@
 
 /* Carousel */
 
+.carousel {
+  margin-bottom: 80px;
+}
+
 .carousel button {
   padding: 10px;
   border: none;
@@ -168,4 +172,32 @@
 
 .carousel img {
   border: 3px solid black;
+}
+
+/* NumbersTable  */
+
+.numbers {
+  padding: 30px;
+  border: 2px solid black;
+}
+
+/* Facebook  */
+
+.profile {
+  display: flex;
+  margin: 100px 0;
+  border: 2px solid gray;
+  padding: 10px;
+  width: 60%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.facebook {
+  margin-top: 100px;
 }
