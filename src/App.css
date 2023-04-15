@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.profile {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.profile div {
+  margin-bottom: 10px;
+}
+
+.profile strong {
+  margin-right: 10px;
+  font-weight: bold;
+}
