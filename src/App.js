@@ -9,6 +9,12 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/Facebook';
+import SignupPage from './components/SignupPage';
+
 
 function App() {
   return (
@@ -126,6 +132,33 @@ function App() {
             imgClicked='maxence-glasses.png'
       />
       </div>
+
+      <div>
+         <Dice />
+      </div>
+
+            <div>
+            <Carousel
+                    images={[
+                      'https://randomuser.me/api/portraits/women/1.jpg',
+                      'https://randomuser.me/api/portraits/men/1.jpg',
+                      'https://randomuser.me/api/portraits/women/2.jpg',
+                      'https://randomuser.me/api/portraits/men/2.jpg'
+                    ]}
+              />
+            </div>
+
+            <div>
+            <NumbersTable limit={12} />
+            </div>
+
+            <div>
+               <FaceBook />
+            </div>
+
+            <div>
+              <SignupPage />
+            </div>
     </div>
   );
 }
