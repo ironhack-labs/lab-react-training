@@ -1,9 +1,5 @@
 import { useState } from 'react';
-import { FormGroup } from 'reactstrap';
-
 function SignupPage(){
-
-
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [nationality, setNationality] = useState('');
@@ -28,6 +24,7 @@ function SignupPage(){
         setPassword('')
         setNationality('')
     }
+    
     return(
         <div>
             <h1>Sign Up</h1>
