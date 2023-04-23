@@ -1,11 +1,11 @@
 import './App.css';
-import Random from './components/Random';
+import BoxColor from './components/BoxColor';
 
 function App() {
   return (
     <div className="App">
-      <Random min={3} max={6} />
-      <Random min={1} max={100} />
+      <BoxColor r={241} g={56} b={48} />
+      <BoxColor r={128} g={255} b={0} />
     </div>
   );
 }
