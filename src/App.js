@@ -1,11 +1,10 @@
 import './App.css';
-import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
     <div className="App">
-     <LikeButton />
-     <LikeButton />
+      <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
     </div>
   );
 }
