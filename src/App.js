@@ -1,10 +1,10 @@
 import './App.css';
-import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 function App() {
   return (
     <div className="App">
-      <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
+     <Dice />
     </div>
   );
 }

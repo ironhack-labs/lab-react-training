@@ -12,7 +12,7 @@ const LikeButton = () => {
 
     colors.forEach((arrayColor, index) => {
       if (color === arrayColor) {
-        if (index == colors.length - 1) {
+        if (index === colors.length - 1) {
           setColor(colors[0]);
         } else {
           setColor(colors[index + 1]);
