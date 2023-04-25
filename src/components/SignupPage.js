@@ -1,28 +1,28 @@
 import { useState } from 'react';
 function SignupPage(){
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [nationality, setNationality] = useState('');
 
-    const handleEmailInput = (event) => {
-        setEmail(event.target.value);
+    const [user, setUser] = useState({
+        email: '',
+        password: '',
+        nationality: ''
+    });
+
+    const handleInput = (event) => {
+        const { name, value } = event.target;
+        setUser({ ...user, [name]: value });
     }
 
-    const handlePasswordInput = (event) => {
-        setPassword(event.target.value);
-    }
-
-    const handleNationalityInput = (event) => {
-        setNationality(event.target.value);
-    }
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const newUser = { email, password, nationality };
+        const newUser = user
         console.log("newUser", newUser);
-        setEmail('')
-        setPassword('')
-        setNationality('')
+        setUser({
+            email: '',
+            password: '',
+            nationality: ''
+        })
+
     }
     
     return(
@@ -30,13 +30,13 @@ function SignupPage(){
             <h1>Sign Up</h1>
             <form onSubmit={handleSubmit}>
                 <label>Email</label>
-                <input valid type="email" name="email" id="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" value={email} onChange={handleEmailInput}/>
+                <input valid type="email" name="email" id="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" value={user.email} onChange={handleInput}/>
 
                 <label>Password</label>
-                <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" value={password} onChange={handlePasswordInput}/>
+                <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" value={user.password} onChange={handleInput}/>
 
                 <label>Nationality</label>
-                <select type="nationality" name="nationality" onChange={handleNationalityInput}>
+                <select type="nationality" name="nationality" onChange={handleInput}>
                     <option value="en">English</option>
                     <option value="de">German</option>
                     <option value="fr">French</option>
@@ -46,12 +46,12 @@ function SignupPage(){
             </form>
             <hr></hr>
             <div>
-                {nationality === "en" && <p>Hello</p>}
-                {nationality === "de" && <p>Hallo</p>}
-                {nationality === "fr" && <p>Bonjour</p>}
+                {user.nationality === "en" && <p>Hello</p>}
+                {user.nationality === "de" && <p>Hallo</p>}
+                {user.nationality === "fr" && <p>Bonjour</p>}
             </div>
             <div>
-                <p>Your email address is: {email}</p>
+                <p>Your email address is: {user.email}</p>
             </div>
         </div>
     )
