@@ -17,7 +17,7 @@ const Greetings = ({ lang, children }) => {
       break;
     default:
       greeting = 'Hello';
-  }1
+  }
   return (
     <div>
       {greeting} {children}
