@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 const NumbersTable = ({ limit }) => {
   let numbers = [];
 

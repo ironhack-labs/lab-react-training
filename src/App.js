@@ -1,10 +1,10 @@
 import './App.css';
-import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
 
 function App() {
   return (
     <div className="App">
-      <NumbersTable limit={12} />
+      <FaceBook />
     </div>
   );
 }
