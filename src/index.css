@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.IdCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000;
+  width: 600px;
+  margin: 10px;
+}
+
+.IdCard img {
+  width: 160px;
+}
+
+.contact-infos {
+  text-align: left;
+  padding: 20px;
+  line-height: 0.8rem;
+}
+
+.contact-image-container {
+  text-align: center;
+  padding: 20px;
+}
