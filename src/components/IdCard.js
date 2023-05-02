@@ -1,7 +1,7 @@
 function IdCard (props) {
     return (
       <div className="IdCard">
-        <img className="dee" src={props.picture} alt="profile" width="200" />
+        <img src={props.picture} alt="profile" width="200" />
         <div>
           <p>Last Name: {props.lastName}</p>
           <p>First Name: {props.firstName}</p>

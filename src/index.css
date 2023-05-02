@@ -28,3 +28,12 @@ code {
     margin: auto;
     
 }
+
+.likeButton {
+  background-color: aqua;
+  width: 200px;
+  height: 70px;
+  color: #000000;
+  font-size: 35px;
+  font-weight: bold;
+}

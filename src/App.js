@@ -5,9 +5,16 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 import dee from './assets/images/dee.jpg';
-//import masterCard from './assets/images/master-card.svg';
+import rafal from './assets/images/rafal.jpg';
 import visaCard from './assets/images/visa.png';
+import ClickablePicture from './components/ClickablePicture';
+import imgNow from './assets/images/maxence.png';
+import imgClicked from './assets/images/maxence-glasses.png';
+
+
 
 const personProperties = [
   {
@@ -17,6 +24,14 @@ const personProperties = [
     height: 157,
     birth: new Date('1991-12-04'),
     picture: dee,
+  },
+  {
+    lastName: 'Kolibaba',
+    firstName: 'Rafal',
+    gender: 'male',
+    height: 185,
+    birth: new Date('1997-07-17'),
+    picture: rafal,
   },
 ];
 
@@ -41,7 +56,6 @@ const creditCardProperties = [
     owner: 'Maxence Bouret',
     bgColor: '#eeeeee',
     color: '#222222',
-    //picture: masterCard,
   },
   {
     type: 'Visa',
@@ -53,6 +67,27 @@ const creditCardProperties = [
     bgColor: '#ddbb55',
     color: 'white',
     picture: visaCard,
+  },
+];
+
+const driverCardProperties = [
+  {
+    name: 'Travis Kalanick',
+    rating: 4.2,
+    img: 'https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428',
+    car: {
+      model: 'Toyota Corolla Altis',
+      licensePlate: 'CO42DE',
+    },
+  },
+  {
+    name: 'Dara Khosrowshahi',
+    rating: 4.9,
+    img: 'https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg',
+    car: {
+      model: 'Audi A3',
+      licensePlate: 'BE33ER',
+    },
   },
 ];
 
@@ -68,6 +103,14 @@ function App() {
         height={personProperties[0].height}
         birth={personProperties[0].birth}
         picture={personProperties[0].picture}
+      />
+      <IdCard
+        lastName={personProperties[1].lastName}
+        firstName={personProperties[1].firstName}
+        gender={personProperties[1].gender}
+        height={personProperties[1].height}
+        birth={personProperties[1].birth}
+        picture={personProperties[1].picture}
       />
       <h2>Greetings</h2>
 
@@ -130,6 +173,33 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+
+      <div>
+        <h2>Driver Card</h2>
+        <DriverCard
+          name={driverCardProperties[0].name}
+          rating={driverCardProperties[0].rating}
+          img={driverCardProperties[0].img}
+          model={driverCardProperties[0].car.model}
+          licensePlate={driverCardProperties[0].car.licensePlate}
+        />
+        <DriverCard
+          name={driverCardProperties[1].name}
+          rating={driverCardProperties[1].rating}
+          img={driverCardProperties[1].img}
+          model={driverCardProperties[1].car.model}
+          licensePlate={driverCardProperties[1].car.licensePlate}
+        />
+      </div>
+
+      <h2>Like Button</h2>
+      <LikeButton />
+
+      <h2>Clickable Picture</h2>
+      <ClickablePicture
+        img="./assets/images/maxence.png"
+        imgClicked="assets/images/maxence-glasses.png"
+      />
     </div>
   );
 }

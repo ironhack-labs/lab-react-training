@@ -1,3 +1,7 @@
+import visaCard from '../assets/images/visa.png';
+
+
+
 function CreditCard(props) {
     const { type, number, expirationMonth, expirationYear, bank, owner, bgColor, color } = props;
   
@@ -12,7 +16,7 @@ function CreditCard(props) {
     return (
       <div className="CreditCard" style={cardStyle}>
         <div className="credit-card-logo">
-          <img src={cardTypeImage} alt={type} />
+          <img src={visaCard} alt={type} width="150"/>
         </div>
         <div className="credit-card-number">{formattedNumber}</div>
         <div className="credit-card-details">
