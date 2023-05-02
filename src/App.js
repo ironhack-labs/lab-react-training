@@ -2,6 +2,8 @@ import './App.css';
 import studentList from './data/berlin.json';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
+import Random from './components/Random';
+import BoxColor from './components/BoxColor';
 
 function App() {
   return (
@@ -35,6 +37,16 @@ function App() {
       <section clasName="greetings-section">
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
+      </section>
+
+      <section clasName="random">
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
+      </section>
+
+      <section clasName="box-color">
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
       </section>
     </div>
   );
