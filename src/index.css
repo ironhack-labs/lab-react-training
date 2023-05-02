@@ -44,3 +44,37 @@ code {
 	margin: 5px 0;
 	max-width: 100%;
 }
+
+.credit-card {
+	width: 33%;
+	height: 120px;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.credit-card-type {
+	display: flex;
+	justify-content: flex-end;
+}
+.credit-card-type img {
+	height: 12px;
+}
+.credit-card-number {
+	display: flex;
+	justify-content: center;
+	font-size: 1.2rem;
+	font-weight: 500;
+	letter-spacing: 0.8pt;
+}
+.credit-card-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-size: 0.7rem;
+}
+.credit-card-info span {
+	margin-left: 15px;
+}
