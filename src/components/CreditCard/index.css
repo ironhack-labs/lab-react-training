@@ -1,0 +1,35 @@
+.CreditCard{
+  padding: 16px 20px;
+  width: 280px;
+  height: 170px;
+  border-radius: 8px;
+
+}
+
+.ImageType{
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+.ImageType > img{
+  width: 70px;
+}
+
+.Number {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+}
+
+.Expiration{
+  text-align: left;
+  margin-top: 10px;
+  display: flex;
+  gap: 2rem;
+}
+
+.Owner{
+  text-align: left;
+}

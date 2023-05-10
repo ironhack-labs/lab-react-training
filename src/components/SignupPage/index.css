@@ -1,0 +1,21 @@
+.SignupPage  form{
+  margin: 10px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  gap: .5rem;
+}
+
+.SignupPage label{
+  display: flex;
+  align-items: flex-start;
+  
+}
+
+.SignupPage{
+  padding: 10px 40px;
+  
+}
+
+

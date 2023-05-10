@@ -1,0 +1,10 @@
+.LikeButton button {
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+}
+
+.LikeButton button:hover{
+  border: 2px solid rgb(203, 249, 255);
+}

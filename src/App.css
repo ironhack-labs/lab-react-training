@@ -1,38 +1,35 @@
 .App {
   text-align: center;
+  box-sizing:content-box;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.CreditApp {
+  display: flex;
+  gap: 2rem;
+  padding: 10px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.RatingApp {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  margin: 10px 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.LikeButtonApp {
+  display: flex;
+  gap: 1rem;
+  padding: 10px 20px;
+}
+
+.DiceApp{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.FacebookApp{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: flex-start;
 }

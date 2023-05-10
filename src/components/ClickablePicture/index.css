@@ -1,0 +1,9 @@
+.ClickablePicture img{
+  width: 250px;
+  padding: 10px 20px;
+}
+
+.ClickablePicture{
+  display: flex;
+  justify-content: flex-start;
+}

@@ -1,0 +1,11 @@
+.Carousel{
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 20px
+}
+
+.Carousel img{
+  width: 160px;
+ padding: 0 20px;
+ margin-top: 10px;
+}
