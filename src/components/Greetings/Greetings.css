@@ -1,0 +1,8 @@
+.BoxGreetings{
+    width: 200px;
+    margin: auto;
+    background-color: rgb(240, 255, 200);
+    padding: 20px;
+    margin-top: 5px;
+    border-radius: 15px;
+}

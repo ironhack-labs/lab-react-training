@@ -1,0 +1,20 @@
+.Card{
+    margin: 10px auto;
+    width: 50%;
+    background-color: rgb(207, 207, 207);
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    text-align: left;
+}
+
+.CardImage img{
+    width: 100%;
+}
+
+.CardText {
+    margin-left: 20px;
+} 
+
+
