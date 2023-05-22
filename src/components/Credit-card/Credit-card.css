@@ -1,0 +1,27 @@
+.credit-card {
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+}
+
+.card-logo {
+    width: 60px;
+}
+
+.card-number {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 1.5;
+}
