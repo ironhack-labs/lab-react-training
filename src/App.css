@@ -32,7 +32,24 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.greeting {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+.color {
+  height: 80px;
+  margin: 5px;
+}
+
+.rating {
+  font-size: 2em;
 }
