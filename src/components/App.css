@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.App h1 {
+  margin: 20px;
+  text-align: left;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,6 +37,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
