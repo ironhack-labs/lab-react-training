@@ -14,9 +14,13 @@ const Rating = ({ children }) => {
     // }
 
     let stars
-    if (starsNum === 0) {
-        stars = "☆☆☆☆☆"
-    }
+
+    stars = starsNum === 0 ? "☆☆☆☆☆" : undefined
+
+    // if (starsNum === 0) {
+    //     stars = "☆☆☆☆☆"
+    // }
+
     if (starsNum === 1) {
         stars = "★☆☆☆☆"
     }
