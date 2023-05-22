@@ -1,0 +1,10 @@
+.stars {
+    display: flex;
+    justify-content: start;
+    margin: 8px 8px;
+}
+
+.stars p {
+    font-size: 50px;
+    margin: 5px;
+}

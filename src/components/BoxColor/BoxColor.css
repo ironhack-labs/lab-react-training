@@ -1,0 +1,10 @@
+.box-card {
+    border: 2px solid black;
+    margin: 20px;
+    text-align: start;
+    padding: 10px;
+}
+
+.colorParagraph {
+    text-align: center;
+}
