@@ -1,0 +1,7 @@
+.greetings {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border: 2px solid black;
+    margin: 2rem;
+}

@@ -1,0 +1,12 @@
+.id-card {
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 2rem;
+    border: 2px solid black;
+    margin: 2rem;
+}
+
+.id-card img {
+    width: 200px;
+}
