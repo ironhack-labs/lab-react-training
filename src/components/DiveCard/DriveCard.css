@@ -1,0 +1,16 @@
+.DriveCards {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 500px;
+    background-color: rgb(75, 75, 211);
+}
+
+.DriveCards img {
+    width: 100px;
+    margin-bottom: 10px;
+}
