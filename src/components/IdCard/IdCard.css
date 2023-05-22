@@ -1,0 +1,16 @@
+.idCard {
+    border: 2px solid black;
+    display: flex;
+    justify-content: start;
+    width: 900px;
+    margin-bottom: 30px;
+    text-align: left;
+    height: 150px;
+
+}
+
+.text {
+    margin-left: 10px;
+    line-height: 10px;
+
+}
