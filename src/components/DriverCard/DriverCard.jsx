@@ -15,10 +15,14 @@ const DriverCard = ({ name, rating, img, car }) => {
     //     }
     // }
 
-    let stars
-    if (starsNum === 0) {
-        stars = "☆☆☆☆☆"
-    }
+    let stars = ""
+
+    stars = starsNum === 0 ? "☆☆☆☆☆" : undefined
+
+    // if (starsNum === 0) {
+    //     stars = "☆☆☆☆☆"
+    // }
+
     if (starsNum === 1) {
         stars = "★☆☆☆☆"
     }
@@ -46,11 +50,8 @@ const DriverCard = ({ name, rating, img, car }) => {
                 {/* <div className="star-rating">{stars}</div> */}
                 <p>{stars}</p>
                 <p> {model} - {licensePlate} </p>
-
             </div>
-
         </div>
-
     )
 }
 
