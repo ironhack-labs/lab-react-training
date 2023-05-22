@@ -18,9 +18,7 @@ const IdCard = ({ userId }) => {
                 <p><strong>Birth:</strong> {birth.toDateString()}</p>
             </div>
         </div>
-
-
-    );
-};
+    )
+}
 
 export default IdCard;

@@ -1,49 +1,29 @@
-// import './CreditCard.css';
+import './Credit-card.css'
+import visa from '../../assets/images/visa.png'
+import masterCard from '../../assets/images/mastercard-logo.png'
 
-// const CreditCard = ({
-//     type,
-//     number,
-//     expirationMonth,
-//     expirationYear,
-//     bank,
-//     owner,
-//     bgColor,
-//     color,
-// }) => {
-//     const cardStyle = {
-//         backgroundColor: bgColor,
-//         color: color,
-//     };
+const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color }) => {
+    const cardStyle = { backgroundColor: bgColor, color: color };
 
-//     return (
-//         <div>
-//             {type === 'Visa' ? (
-//                 <img
-//                     src="https://img.icons8.com/color/96/000000/visa.png"
-//                     alt="Visa"
-//                     className="card-logo"
-//                 />
-//             ) : (
-//                 <img
-//                     src="https://img.icons8.com/color/96/000000/mastercard.png"
-//                     alt="MasterCard"
-//                     className="card-logo"
-//                 />
-//             )}
+    const lastFourDigits = number.slice(-4);
+    const hiddenDigits = number.slice(0, -4).replace(/\d/g, '*');
+    const maskedNumber = hiddenDigits + lastFourDigits;
+    const style = { backgroundColor: bgColor, color };
 
-//             <div >
-//                 {number.replace(/\d(?=\d{4})/g, '*')}
-//             </div>
+    return (
 
-//             <div >
+        <div class='rounded-box' >
+            <div style={style}>
+                {type === 'Visa' ? (<img class='caja' src={visa} alt="Visa" />) : (<img class='caja' src={masterCard} alt="MasterCard" />)}
+                <h3 class='text'>{maskedNumber}</h3>
+                <p class='text'>Expires: {expirationMonth}/{expirationYear}   {bank}</p>
 
-//                 <div>{bank}</div>
-//                 <div>{owner}</div>
-//             </div>
-//         </div>
-//     );
-// };
+                <div class='text'>{owner}</div>
+            </div>
+        </div>
 
-// export default CreditCard;
+    )
+}
+export default CreditCard;
 
 
