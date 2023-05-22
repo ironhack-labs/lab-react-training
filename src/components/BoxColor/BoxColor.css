@@ -1,0 +1,8 @@
+.BoxColor {
+    align-items: center;
+    color: azure;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    margin-bottom: 1em;
+}
