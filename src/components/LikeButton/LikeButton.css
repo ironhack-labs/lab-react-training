@@ -1,0 +1,10 @@
+.contador {
+    display: inline;
+    text-align: start;
+}
+
+.contador button {
+    margin: 10px;
+    font-size: 30px;
+    padding: 15px;
+}
