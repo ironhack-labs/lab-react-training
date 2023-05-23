@@ -1,0 +1,16 @@
+.fbCard {
+    margin: 0 auto;
+    min-width: 480px;
+    max-width: 640px;
+    min-height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    line-height: 18px;
+}
+
+.fbCard img {
+    width: 100%;
+}
