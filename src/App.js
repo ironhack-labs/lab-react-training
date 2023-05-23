@@ -6,6 +6,8 @@ import Random from './components/Random/Random';
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 
 function App() {
   return (
@@ -87,6 +89,11 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      <div className='flex'>
+        <LikeButton /><LikeButton />
+      </div>
+      <ClickablePicture img='maxence.png'
+        imgClicked='maxence-glasses.png'></ClickablePicture>
     </div>
 
   );

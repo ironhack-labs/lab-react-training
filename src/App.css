@@ -72,3 +72,23 @@
     height: 100px;
     border-radius: 50%;
 }
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.perroMeme {
+    position: relative;
+}
+
+.gafas {
+    position: absolute;
+    z-index: 5;
+    top: 60px;
+    left: 85px;
+}
