@@ -1,0 +1,13 @@
+.boxColor{
+    display: flex;
+    border: 2px solid black;
+    margin: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding:1rem 0 1rem 0.5rem;
+}
+
+.displayColor{
+    margin:0;
+}
