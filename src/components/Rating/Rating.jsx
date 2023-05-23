@@ -7,10 +7,10 @@ const Rating = ({ rating }) => {
         return (
             <div className="startRating">
                 <i className="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
             </div>
         )
     }
@@ -18,10 +18,10 @@ const Rating = ({ rating }) => {
         return (
             <div className="startRating">
                 <i className="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
             </div>
         )
     }
@@ -29,10 +29,10 @@ const Rating = ({ rating }) => {
         return (
             <div className="startRating">
                 <i className="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
             </div>
         )
     }
@@ -40,10 +40,10 @@ const Rating = ({ rating }) => {
         return (
             <div className="startRating">
                 <i className="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="far fa-star"></i>
+                <i className="far fa-star"></i>
             </div>
         )
     }
@@ -51,10 +51,10 @@ const Rating = ({ rating }) => {
         return (
             <div className="startRating">
                 <i className="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="far fa-star"></i>
             </div>
         )
     }
@@ -62,10 +62,10 @@ const Rating = ({ rating }) => {
         return (
             <div className="startRating">
                 <i className="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
             </div>
         )
     }

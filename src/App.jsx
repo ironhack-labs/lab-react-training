@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import User from './components/IdCard/IdCard';
 import Greetings from './components/lenguague/Greetings'
@@ -7,6 +6,12 @@ import BoxColor from './components/BoxColor/BoxColor';
 import CreditCard from './components/CreditCard/CreditCard';
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
+import LikeButtom from './components/LikeButtom/LikeButtom';
+import ClickleablePicture from './ClickleablePicture/ClickleablePicture';
+import Dice from './components/Dice/dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import Facebook from './components/Facebook/Facebook';
 
 const users = [
   {
@@ -84,7 +89,7 @@ const driverCard = [
 
 function App() {
   return (
-    <body style={{ margin: 30 }}>
+    <div style={{ margin: 30 }}>
       <User user={users[0]} />
       <User user={users[1]} />
       <Greetings text="Paco" lang="en" />
@@ -113,8 +118,27 @@ function App() {
       <DriverCard driverCards={driverCard[0]} />
       <DriverCard driverCards={driverCard[1]} />
 
+      <h2>Like Buttom</h2>
+      <LikeButtom />
+      <LikeButtom />
+      <h2>Image</h2>
+      <ClickleablePicture />
+      <h2>Dice</h2>
+      <Dice />
+      <h2>Carousel</h2>
+      <Carousel images={[
+        'https://randomuser.me/api/portraits/women/1.jpg',
+        'https://randomuser.me/api/portraits/men/1.jpg',
+        'https://randomuser.me/api/portraits/women/2.jpg',
+        'https://randomuser.me/api/portraits/men/2.jpg'
+      ]}
+      />
+      <h2>Numbers Table</h2>
+      <NumbersTable limit={12} />
+      <h2>Facebook</h2>
+      <Facebook />
+    </div>
 
-    </body>
 
   );
 }
