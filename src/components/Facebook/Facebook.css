@@ -1,0 +1,29 @@
+.facebook {
+    width: 400px;
+    height: 200px;
+    font-size: 0.8em;
+    border: 1px solid black;
+    border-radius: none;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+
+    margin-top: 5px;
+
+}
+
+.cardSelected {
+    background: rgb(212, 212, 251);
+}
+
+.img {
+    width: 50%;
+}
+
+.letras {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+}

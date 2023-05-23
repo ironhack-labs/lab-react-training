@@ -7,6 +7,12 @@ import Color from './components/Color/Color'
 import CreditCard from './components/CreditCard/CreditCard'
 import Rating from './components/Rating/Rating';
 import DriverCard from './components/DriverCard/DriverCard';
+import LikeBtn from './components/LikeBtn/LikeBtn'
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import Dice from './components/Dice/Dice';
+import Carrousel from './components/Carrousel/Carrousel';
+import NumberTable from './components/NumbersTable/NumberTable'
+import Facebook from './components/Facebook/Facebook'
 
 const people = [
   {
@@ -73,6 +79,12 @@ const drivers = [
 
   }
 ]
+const images = [
+  'https://randomuser.me/api/portraits/women/1.jpg',
+  'https://randomuser.me/api/portraits/men/1.jpg',
+  'https://randomuser.me/api/portraits/women/2.jpg',
+  'https://randomuser.me/api/portraits/men/2.jpg'
+]
 
 
 function App() {
@@ -109,6 +121,24 @@ function App() {
         <DriverCard driver={drivers[0]}></DriverCard>
         <br />
         <DriverCard driver={drivers[1]}></DriverCard>
+      </>
+      <>
+        <LikeBtn></LikeBtn>
+      </>
+      <>
+        <ClickablePicture></ClickablePicture>
+      </>
+      <>
+        <Dice></Dice>
+      </>
+      <>
+        <Carrousel pictures={images}></Carrousel>
+      </>
+      <>
+        <NumberTable limit={10}></NumberTable>
+      </>
+      <>
+        <Facebook></Facebook>
       </>
 
     </div>
