@@ -1,0 +1,20 @@
+.idCard {
+    border: 2px solid black;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    padding-left: 10px;
+}
+
+span {
+    font-weight: bold;
+}

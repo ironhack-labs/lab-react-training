@@ -1,0 +1,36 @@
+p {
+    padding: 0;
+    margin: 0
+}
+
+.card {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 5px;
+}
+
+.visa {
+    height: 20px;
+    padding: 10px;
+}
+
+.masterCard {
+    height: 40px;
+    padding-right: 10px;
+}
+
+.visa, .masterCard {
+    width: auto;
+    display: flex;
+    align-self: end;
+}
+
+.row {
+    display:flex;
+}
+
+.expiration {
+    padding-right: 50px;
+}
