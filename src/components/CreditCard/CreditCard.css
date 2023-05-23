@@ -1,0 +1,15 @@
+.card {
+    border: 3px solid black;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    align-items: start;
+    width: 30%;
+}
+
+img {
+    width: 20%;
+    display: flex;
+
+
+}
