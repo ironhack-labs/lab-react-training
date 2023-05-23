@@ -1,0 +1,8 @@
+button {
+    width: 300px;
+    padding: 30px;
+    border-radius: 4px;
+    margin: 30px;
+    color: beige;
+    font-weight: bold;
+}
