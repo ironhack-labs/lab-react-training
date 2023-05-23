@@ -6,6 +6,12 @@ import BoxColor from './components/BoxColor'
 import CreditCard from './components/CreditCard'
 import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
+import LikeButton from './components/LikeButton/LikeButton'
+import ClickablePicture from './components/ClickablePicture/ClickablePicture'
+import Dice from './components/Dice/Dice'
+import Carousel from './components/Carousel/Carousel'
+import NumbersTable from './components/NumbersTable/NumbersTable'
+import FaceBook from './components/FaceBook/FaceBook'
 
 function App() {
   return (
@@ -27,9 +33,7 @@ function App() {
           birth={new Date("1988-05-11")}
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
-        <div class="space">
-          <hr />
-        </div>
+        <div class="space"></div>
         <>
           <Greetings lang='de'>Franz </Greetings>
           <Greetings lang='en'>Heather </Greetings>
@@ -37,18 +41,14 @@ function App() {
           <Greetings lang='fr'>Chantal </Greetings>
         </>
 
-        <div class="space">
-          <hr />
-        </div>
+        <div class="space"></div>
 
         <>
           <Random min={1} max={6} />
           <Random min={1} max={100} />
         </>
 
-        <div class="space">
-          <hr />
-        </div>
+        <div class="space"></div>
 
         <>
           <BoxColor r={255} g={0} b={0}
@@ -56,9 +56,7 @@ function App() {
           <BoxColor r={128} g={255} b={0} />
         </>
 
-        <div class="space">
-          <hr />
-        </div>
+        <div class="space"></div>
 
         <div className="card-container">
           <CreditCard
@@ -95,9 +93,7 @@ function App() {
           />
         </div>
 
-        <div class="space">
-          <hr />
-        </div>
+        <div class="space"></div>
 
         <>
           <Rating>0</Rating>
@@ -108,9 +104,7 @@ function App() {
           <Rating>5</Rating>
         </>
 
-        <div class="space">
-          <hr />
-        </div>
+        <div class="space"></div>
 
         <DriverCard
           name="Travis Kalanick"
@@ -132,10 +126,41 @@ function App() {
           }}
         />
 
-        <div class="space">
-          <hr />
-        </div>
+        <div class="space"></div>
 
+        <LikeButton />
+
+        <div class="space"></div>
+
+        <ClickablePicture
+          img='maxence.png'
+          imgClicked='maxence-glasses.png'
+        />
+
+        <div class="space"></div>
+
+        <Dice />
+
+        <div class="space"></div>
+
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+
+        <div class="space"></div>
+
+        <NumbersTable limit={12} />
+
+        <div class="space"></div>
+
+        <FaceBook />
+
+        <div class="space"></div>
 
 
       </header>

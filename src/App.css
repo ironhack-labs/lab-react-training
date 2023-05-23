@@ -28,11 +28,6 @@
   color: #61dafb;
 }
 
-hr {
-  border-color: #3e3e3e !important;
-  border-width: 1px !important;
-}
-
 .card-container {
   display: flex;
   justify-content: space-between;
@@ -40,7 +35,7 @@ hr {
 }
 
 .space {
-  height: 30px
+  height: 45px
 }
 
 @keyframes App-logo-spin {
