@@ -13,7 +13,7 @@ const CreditCard = ({ ccInfo }) => {
     }
 
     return (
-        <div class="card-container" style={{ backgroundColor: bgColor, color: color }}>
+        <div className="card-container" style={{ backgroundColor: bgColor, color: color }}>
             <div className="flex-container">
 
                 <div>{cardType}</div>
