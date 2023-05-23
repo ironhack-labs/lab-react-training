@@ -1,0 +1,14 @@
+.image-container {
+    display: flex;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.image-container img {
+    width: 180px;
+    padding: 10px;
+}
+
+.idInfo-container {
+    margin-left: 10px;
+}
