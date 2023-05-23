@@ -1,0 +1,15 @@
+.numberDiv {
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.numberTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

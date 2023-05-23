@@ -6,6 +6,12 @@ import BoxColor from './BoxColor/BoxColor';
 import CreditCard from './CreditCard/CreditCard';
 import Rating from './Rating/Rating';
 import DriverCard from './DriverCard/DriverCard';
+import LikeButton from './LikeButton/LikeButton';
+import ClickablePicture from './ClickablePicture/ClickablePicture';
+import Dice from './Dice/Dice';
+import Carousel from './Carousel/Carousel';
+import NumbersTable from './NumbersTable/NumbersTable';
+import FaceBook from './FaceBook/FaceBook';
 
 function App() {
   return (
@@ -29,19 +35,27 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
 
+      <hr />
+
       <h1>Greetings</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
       <Greetings lang="es">Paco</Greetings>
       <Greetings lang="en">Frank</Greetings>
 
+      <hr />
+
       <h1>Random</h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
 
+      <hr />
+
       <h1>Box Color</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+
+      <hr />
 
       <h1>Credit Card</h1>
 
@@ -78,6 +92,8 @@ function App() {
         color="white"
       />
 
+      <hr />
+
       <h1>Rating</h1>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -85,6 +101,8 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+
+      <hr />
 
       <h1>Driver Card</h1>
 
@@ -107,6 +125,47 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+
+      <hr />
+
+      <h1>Like Button</h1>
+      <LikeButton />
+      <LikeButton />
+
+      <hr />
+
+      <h1>Clickable Picture</h1>
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+
+      <hr />
+
+      <h1>Dice</h1>
+      <Dice />
+
+      <hr />
+
+      <h1>Carousel</h1>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <hr />
+
+      <h1>Numbers Table</h1>
+      <NumbersTable limit={12} />
+
+      <hr />
+
+      <h1>Facebook Simple</h1>
+      <FaceBook />
 
     </div>
   );
