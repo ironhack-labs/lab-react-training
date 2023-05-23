@@ -16,7 +16,6 @@ const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
                 <p><strong> HEIGHT: </strong>{height}</p>
                 <p><strong> BIRTH: </strong>{birthFormatted}</p>
             </div>
-
         </div>
 
     )
