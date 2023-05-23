@@ -1,0 +1,14 @@
+.creditCard {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.creditCard img {
+    padding-top: 30px;
+    width: 20%;
+}
+
+.CreditFlex {
+    display: flex;
+    justify-content: space-around;
+}
