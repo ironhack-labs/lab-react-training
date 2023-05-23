@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__iteration {
+  border: 2px;
+  border-radius: 30px;
+  background-color: rgb(232, 232, 232);
+  margin: 3% 10%;
+  padding: 4%;
+}
