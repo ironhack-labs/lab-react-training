@@ -5,6 +5,12 @@ import Greetings from './components/Greeting/Greetings';
 import Random from './components/Random/Random';
 import BoxColor from './components/Box-color/Box-color';
 import CreditCard from './components/Credit-card/Credit-card';
+import Counter from './components/Counter/Counter';
+import ClickImage from './components/ClikedImage/ClikedImage';
+import RandomDice from './components/Random-dice/Random-dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import FaceBook from './components/FaceBookPage/FaceBook';
 
 function App() {
 
@@ -78,6 +84,29 @@ function App() {
           bgColor="#ddbb55"
           color="white"
         />
+        <div>
+          <Counter />
+        </div>
+        <ClickImage
+          img='maxence.png'
+          imgClicked='maxence-glasses.png'
+        />
+        <RandomDice />
+
+      </div>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <div>
+        <NumbersTable limit={12} />
+      </div>
+      <div>
+        <FaceBook />
       </div>
     </div >
   )
