@@ -92,3 +92,28 @@
     top: 60px;
     left: 85px;
 }
+
+.numbers-table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number-item {
+    padding: 0.5em;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.facebook-card {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.facebook-container {
+    max-width: 600px;
+}
