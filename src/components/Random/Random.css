@@ -1,0 +1,8 @@
+.randomValue {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
