@@ -6,7 +6,6 @@ const DriverCard = ({ name, rating, img, car }) => {
     const roundRating = Math.round(rating)
 
 
-
     let stars
     if (roundRating === 0) {
         stars = "☆☆☆☆☆"

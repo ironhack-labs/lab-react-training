@@ -1,0 +1,16 @@
+.ProfileCard{
+    width: 20%;
+    border: 15px solid rgb(49, 49, 49);
+    margin: 10px 20px;   
+   display: inline-block;
+   border-radius: 10px;
+   padding: 20px;
+}
+
+.ProfileCard img {
+    width: 100px;
+}
+
+.ContainerButtons{
+    padding: 30px;
+}
