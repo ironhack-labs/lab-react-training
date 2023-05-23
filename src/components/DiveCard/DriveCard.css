@@ -1,4 +1,4 @@
-.DriveCards {
+/* .DriveCards {
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -7,10 +7,49 @@
     align-items: center;
     margin-bottom: 5px;
     width: 500px;
+    height: 200px;
     background-color: rgb(75, 75, 211);
 }
 
 .DriveCards img {
     width: 100px;
     margin-bottom: 10px;
+}
+ */
+.DriveCards {
+    background-color: rgb(84, 84, 209);
+    width: 700px;
+    height: 120px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.DriveCards img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.DriveCards .info {
+    margin-left: 20px;
+}
+
+.driverName {
+    margin: 5px;
+}
+
+.carDeets {
+    margin: 5px;
+    font-size: 70%;
+}
+
+.info {
+    text-align: left;
 }

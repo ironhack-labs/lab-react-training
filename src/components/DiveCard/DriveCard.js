@@ -8,10 +8,10 @@ const DriveCard = ({ name, rating, img, car }) => {
     return (
         <div className='DriveCards' style={{}}>
             <img src={img}></img>
-            <p>{name}</p>
+            <p className='driverName'>{name}</p>
             <Rating>{rating}</Rating>
 
-            <p>{model}- {licensePlate}</p>
+            <p className='info'>{model}- {licensePlate}</p>
         </div>
     )
 
