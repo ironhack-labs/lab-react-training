@@ -1,0 +1,10 @@
+.FaceBook-Card {
+    border: 1px solid red;
+    display: inline-block;
+    padding: 1em;
+    width: 30%;
+}
+
+.FaceBook-Card img {
+    width: 100%;
+}
