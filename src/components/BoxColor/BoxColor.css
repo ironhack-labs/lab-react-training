@@ -1,0 +1,9 @@
+.boxColor {
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 18px;
+    min-width: 480px;
+    max-width: 640px;
+    min-height: 80px;
+}
