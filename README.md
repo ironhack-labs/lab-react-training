@@ -39,9 +39,9 @@ To see the expected result for each iteration, refer to the solution example: [*
 - Clone this repo
 
 ```shell
-$ cd lab-react-training
-$ npm install
-$ npm start
+cd lab-react-training-vite
+npm install
+npm run dev
 ```
 
 ## Submission
@@ -54,7 +54,7 @@ $ npm start
   git push origin master
   ```
 
-- Create a Pull Request so that your TAs can review your work.
+- Create a Pull Request and submit your assignment.
 
   
 
@@ -340,7 +340,7 @@ The component should take 4 props:
 
 Create a `LikeButton` component that displays a button with the initial text `"0 Likes"`. With each click, the number of Likes should increase.
 
-As a bonus, implement the background color change on each click. You can use the following array of colors: `['purple','blue','green','yellow','orange','red']`
+As a bonus, implement the background color change on each click. You can use the following array of colors: `["purple", "blue", "green", "yellow", "orange", "red"]`
 
 **Example:**
 
@@ -366,8 +366,8 @@ Create a `ClickablePicture` component that displays a picture. On each click, th
 
 ```jsx
 <ClickablePicture
-  img='maxence.png'
-  imgClicked='maxence-glasses.png'
+  img="maxence.png"
+  imgClicked="maxence-glasses.png"
 />
 ```
 
@@ -429,10 +429,10 @@ The component should take 1 prop:
 ```jsx
 <Carousel
   images={[
-    'https://randomuser.me/api/portraits/women/1.jpg',
-    'https://randomuser.me/api/portraits/men/1.jpg',
-    'https://randomuser.me/api/portraits/women/2.jpg',
-    'https://randomuser.me/api/portraits/men/2.jpg'
+    "https://randomuser.me/api/portraits/women/1.jpg",
+    "https://randomuser.me/api/portraits/men/1.jpg",
+    "https://randomuser.me/api/portraits/women/2.jpg",
+    "https://randomuser.me/api/portraits/men/2.jpg"
   ]}
 />
 ```
@@ -476,7 +476,7 @@ The component should take 1 prop:
 Create a `FaceBook` component that displays the list of all profiles coming from the file `src/data/berlin.json`. Remember to import the json data in the component:
 
 ```jsx
-import profiles from './data/berlin.json';
+import profiles from "./data/berlin.json";
 ```
 
 **Example:**
@@ -549,10 +549,10 @@ If you want to include Bootstrap with [Reactstrap](https://reactstrap.github.io)
 npm install reactstrap bootstrap
 ```
 
-And add the following line in `src/index.js`
+And add the following line in `src/main.jsx`
 
 ```js
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 ```
 
 **Example**
