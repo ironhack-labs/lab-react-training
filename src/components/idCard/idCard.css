@@ -1,0 +1,14 @@
+.card-person {
+    align-items: center;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: stretch;
+    margin-bottom: 1em;
+    padding: 1em;
+
+}
+
+.card-person .text {
+    margin-left: 1em;
+    text-align: left;
+}
