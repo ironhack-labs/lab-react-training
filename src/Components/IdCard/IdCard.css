@@ -1,0 +1,10 @@
+.idCard__body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    border: 2px solid black;
+    text-align: left;
+}
+
+.idCard__img {}
