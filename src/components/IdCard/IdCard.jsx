@@ -1,3 +1,4 @@
+import './IdCard.css'
 const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
 
     const birthDate = new Date(birth).toDateString()
