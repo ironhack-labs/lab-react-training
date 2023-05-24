@@ -7,6 +7,13 @@ import Greetings from './Greetings/Greetings'
 import Random from './Random/Random';
 import Rating from './Rating/Rating';
 import LikeButton from './LikeButton/LikeButton';
+import Dice from './Dice/Dice';
+import Carousel from './Carousel/Carousel';
+import ClickablePicture from './ClickablePicture/ClickablePicture';
+import FaceBook from './FaceBook/FaceBook';
+import NumbersTable from './NumbersTable/NumbersTable';
+import RGBColorPicker from './RGBColorPicker/RGBColorPicker';
+import SignUpPage from './SignUpPage/SignUpPage';
 
 function App() {
   return (
@@ -114,6 +121,35 @@ function App() {
 
       <div className='card__iteration'>
         <LikeButton />
+        <LikeButton />
+      </div>
+      <div className='card__iteration'>
+        <ClickablePicture />
+      </div>
+      <div className='card__iteration'>
+        <Dice />
+      </div>
+      <div className='card__iteration'>
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+      </div>
+      <div className='card__iteration'>
+        <NumbersTable limit={14} />
+      </div>
+      <div className='card__iteration'>
+        <FaceBook />
+      </div>
+      <div className='card__iteration'>
+        <RGBColorPicker />
+      </div>
+      <div className='card__iteration'>
+        <SignUpPage />
       </div>
 
     </div>
