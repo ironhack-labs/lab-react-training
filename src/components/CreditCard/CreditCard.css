@@ -1,0 +1,11 @@
+.cards {
+    border-radius: 15px;
+    width: 20%;
+    height: auto
+}
+
+.cards img {
+    display: block;
+    margin-left: auto;
+    width: 50px
+}

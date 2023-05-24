@@ -1,0 +1,6 @@
+.randomCard {
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+}
