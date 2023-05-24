@@ -7,9 +7,9 @@
     padding: 5px;
 }
 
-.Card img {
+.CardImage img {
+    width: 100px;
     margin-top: 20px;
     margin-right: 20px;
-
     margin-bottom: 10px;
 }

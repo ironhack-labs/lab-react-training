@@ -1,11 +1,15 @@
 import './App.css';
-import IdCard from './components/IdCard/IdCard'
-import Greetings from './components/Greetings/Greetings';
-import Random from './components/Random/Random';
-import BoxColor from './components/BoxColor/BoxColor';
-import CreditCard from './components/CreditCard/CreditCard';
-import Rating from './components/Rating/Rating';
-
+import IdCard from './IdCard/IdCard'
+import Greetings from './Greetings/Greetings';
+import Random from './Random/Random';
+import BoxColor from './BoxColor/BoxColor';
+import CreditCard from './CreditCard/CreditCard';
+import Rating from './Rating/Rating';
+import LikeButton from './LikeButton/LikeButton';
+import ClickablePicture from './ClickablePicture/ClickablePicture';
+import Dice from './Dice/Dice';
+import Carousel from './Carousel/Carousel';
+import Facebook from './FaceBook/FaceBook';
 
 function App() {
   return (
@@ -81,14 +85,34 @@ function App() {
       <Rating>4</Rating>
       <Rating>5</Rating>
 
+      <div className="LikeFlex">
+        <LikeButton />
+        <LikeButton />
+      </div>
+
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+
+      <div>
+        <Dice />
+      </div>
+
+      <div>
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+      </div>
+
+      <Facebook />
 
     </div>
-
-
-
-
-
-
 
   );
 }
