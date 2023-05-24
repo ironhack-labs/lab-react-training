@@ -1,0 +1,7 @@
+.cards {
+    border: 1px solid #0c0c0c;
+    display: inline-block;
+    margin: 50px;
+    padding: 10px;
+    width: 20%;
+}
