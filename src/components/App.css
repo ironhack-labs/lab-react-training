@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  padding: 50px;
 }
 
 .App-logo {
@@ -37,4 +36,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.dice {
+  width: 300px;
+}
+
+.Carrousel img {
+  width: 300px;
+}
+
+.dados {
+  display: inline-block;
+  text-align: center;
+}
+
+.dados div {
+  width: 300px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+
+.cardFb img {
+  width: 200px;
+  margin-right: 20px;
+}
+
+
+
+.cardFb {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  width: 800px;
+  margin: 30px;
+  border: 4px solid black;
 }
