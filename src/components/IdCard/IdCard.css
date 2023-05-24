@@ -1,0 +1,20 @@
+.img {
+    width: 30%;
+    height: 30%;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    border: 1px solid black;
+}
+
+.dataCard {
+    flex-direction: column;
+    width: 100%;
+}
+
+p {
+    display: block;
+    width: 150px;
+}

@@ -1,0 +1,19 @@
+.contactCard {
+    width: 750px;
+    height: 110px;
+    font-size: 1em;
+    padding: 50px;
+    display: flex;
+    justify-content: left;
+    margin: 5px;
+    border: solid black 2px;
+}
+
+.contactImg {
+    width: 20%;
+    align-items: center;
+}
+
+.contactData {
+    justify-content: center;
+}
