@@ -36,3 +36,100 @@
     transform: rotate(360deg);
   }
 }
+.IdCard{
+  
+
+}
+.box{
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 10px 0;
+  display: flex;
+}
+.box img {
+  margin-right: 5px;
+
+}
+.boxcolor{
+  text-align: center;
+  padding: 20px;
+  display: block;
+}
+
+.credit-card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  margin: 10px;
+}
+
+.card-type {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-number {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-expiration {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card-bank {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card-owner {
+  font-size: 16px;
+  font-style: italic;
+}
+.driverCardbox {
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 10px;
+}
+
+
+.driverCardbox img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.driverRight{
+  flex-direction: column;
+  margin: 10px;
+  width: 30%;
+}
+
+.like {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4a90e2;
+}
+
+
+
