@@ -1,0 +1,12 @@
+.LikeButton {
+    display: inline-block;
+    margin: 20px;
+
+}
+
+.LikeButton button {
+    font-size: 1.5em;
+    padding: 10px;
+    width: 150px;
+
+}
