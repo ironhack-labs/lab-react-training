@@ -1,0 +1,8 @@
+.Id-card {
+    width: 30%;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    padding: 5px;
+}
