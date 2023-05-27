@@ -1,4 +1,4 @@
-function Idcard({ lastName, firstName, gender, height, birth, img }) {
+const Idcard = ({ lastName, firstName, gender, height, birth, img }) => {
   return (
     <div className="flex gap-2 border-solid border-2 border-blue-800 p-2
     m-2">

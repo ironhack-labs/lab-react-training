@@ -1,4 +1,5 @@
 import './App.css';
+import Greetings from './components/Greetings';
 import Idcard from './components/Idcard';
 import berlinData from "./data/berlin.json";
 
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      
+<div className='flex justify-center p-6'>Iteration 1</div>
       <Idcard 
       firstName={berlinData[0].firstName}
       lastName={berlinData[0].lastName}
@@ -26,7 +27,15 @@ function App() {
       birth="1991-03-12"
       img={berlinData[1].img}
       />
+      <div className='flex justify-center p-6'>Iteration 2</div>
+
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
+
+      <div className='flex justify-center p-6'>Iteration 3</div>
     </div>
+    
+    
   );
 }
 
