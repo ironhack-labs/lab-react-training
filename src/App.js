@@ -2,6 +2,9 @@ import './App.css';
 import IdCard from './components/IdCard/IdCard';
 import Greetings from './components/folderGreatings/Greetings';
 import Random from './components/folderRandom/Random';
+import BoxColor from './components/folderBoxColor/BoxColor';
+import Facebook from './components/folderFacebook/Facebook';
+import data from './data/berlin.json';
 
 function App() {
   return (
@@ -30,6 +33,14 @@ function App() {
       <h2>Ramdom</h2>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
+
+      <h2>Box Color</h2>
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
+
+      <h2>Facebook</h2>
+      <Facebook profile={data[0]} />
+      <Facebook profile={data[1]} />
     </div>
   );
 }
