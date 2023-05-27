@@ -35,7 +35,7 @@ function App() {
 
       <div className='flex justify-center p-6 text-4xl text-bold'>Random</div>
 
-      <Random min={1} max={100} />
+      <Random min={1} max={10} />
     </div>
     
     
