@@ -22,3 +22,11 @@
   padding: 0.5rem;
 }
 
+.BoxColor {
+  border: 2px solid black;
+  width: 40%;
+  margin-bottom: 1%;
+  padding: 3rem;
+  text-align: center;
+}
+
