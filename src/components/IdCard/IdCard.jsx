@@ -1,4 +1,4 @@
-import  styles from "./IdCard.css"
+import "./IdCard.css"
 function IdCard (props){
     return(
 <div>
