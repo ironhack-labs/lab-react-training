@@ -12,7 +12,7 @@ function Greetings (props) {
     }
     
     return (
-        <div className="Greeting">
+        <div className="BasicCard">
             <p>{greeting} {props.children}</p>
         </div>
     )
