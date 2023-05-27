@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  border: 1px solid black;
+  width:500px;
+  display: flex;
+  margin: 20px
+}
+
+.card-img {
+  display: flex;
+  align-items: center;
+  margin:10px
+}
+
+.card-info, .card-number{
+  padding-left: 20px;
+}
+
+.card-info {
+  padding-bottom: 20px;
+}
+
+.credit-card {
+  width: 300px;
+  border-radius: 10px;
+  margin:20px
+}
+
+.card-logo {
+  width: 50px;
+  margin-right:20px;
+  margin-top: 20px
+  ;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-end;;
+}
+
+.credit-card p {
+  font-size: 10px;
+}
