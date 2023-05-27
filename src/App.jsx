@@ -3,6 +3,7 @@ import Greetings from './components/Greetings';
 import Idcard from './components/Idcard';
 import Random from './components/Random';
 import berlinData from "./data/berlin.json";
+import BoxColor from './components/BoxColor';
 
 
 function App() {
@@ -36,6 +37,12 @@ function App() {
       <div className='flex justify-center p-6 text-4xl text-bold'>Random</div>
 
       <Random min={1} max={10} />
+      <div className='flex justify-center p-6 text-4xl text-bold'>Box Color</div>
+      
+      <BoxColor r={255} g={0} b={0}/>
+      <BoxColor r={0} g={40} b={255}/>
+      
+      <div className='flex justify-center p-6 text-4xl text-bold'>Box Color</div>
     </div>
     
     
