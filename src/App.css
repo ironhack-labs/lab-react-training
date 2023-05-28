@@ -1,3 +1,7 @@
+*{
+  /* border:1px solid red; */
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.profile{
+  width:150px;
+  height:150px;
+}
+
+.card-dots{
+  font-size: 4rem;
+}
+
+.card-logo{
+  width:55px;
+  height: 25px;
+}
+
+.m-0{
+  margin: 0 !important;
+}
+
+.p-0{
+  padding: 0 !important;
+}
+
+.profile-picture{
+  width:100px;
+  height:100px;
+}
+
+.dice{
+  width:120px;
+  height:120px;
+}
+
+.facebook-profile{
+  width:200px;
+  height:200px;
 }
