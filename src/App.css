@@ -65,3 +65,28 @@
   margin: 20px;
 
 }
+
+.ccdiv{
+  width: 500px;
+  height: 250px;
+  margin: 14px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardlogo{
+  max-height: 60px;
+  max-width: 60px;
+  align-self: flex-end;
+}
+
+.cardnumbers{
+  font-size: 50px;
+}
+
+.smallercard{
+  font-size: 20px;
+  margin: 0px;
+}
