@@ -4,6 +4,7 @@ import Greetings from './components/folderGreatings/Greetings';
 import Random from './components/folderRandom/Random';
 import BoxColor from './components/folderBoxColor/BoxColor';
 import CreditCard from './components/folderCreditCard/CreditCard';
+import Rating from './components/folderRating/Rating';
 import Facebook from './components/folderFacebook/Facebook';
 import data from './data/berlin.json';
 
@@ -75,6 +76,14 @@ function App() {
         color="white"
         img="../VISA-Logo.png"
       />
+
+      <h2>Rating</h2>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
 
       <h2>Facebook</h2>
       <Facebook profile={data[0]} />
