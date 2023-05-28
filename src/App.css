@@ -30,3 +30,37 @@
   text-align: center;
 }
 
+.CreditCard {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 1%;
+  padding: 2%
+}
+
+.CreditCard p {
+  margin:0
+}
+
+.CreditCardNumber {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.BankLogo {
+  text-align: right;
+}
+
+
+.CreditCardInfo {
+  display: flex;
+  gap: 20px;
+}
+
+.CreditCards {
+  display: flex;
+ 
+}
+
+
