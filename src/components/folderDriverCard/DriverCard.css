@@ -1,0 +1,40 @@
+.img-driver{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.flex-driver{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  color:white;
+}
+.container-driver{
+    width: 50%;
+    height: 200px;
+    background-color: #455eb5;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-driver p{
+  color: white;
+}
+
+.name-driver{
+  font-size: 30px;
+  font-weight: bold;
+}
+
