@@ -26,3 +26,22 @@ code {
 .profileImg {
   margin: 5px;
 }
+
+.greeting {
+  border: solid 1px;
+  margin: 10px;
+  padding-left: 20px;
+}
+
+.random {
+  border: solid 1px;
+  margin: 10px;
+  padding-left: 20px;
+}
+
+.boxColor {
+  border: solid 1px;
+  margin: 10px;
+  padding-left: 20px;
+  text-align: center;
+}
