@@ -13,6 +13,7 @@ import { Dice } from './components/Dice';
 import { Carousel } from './components/Carousel';
 import { NumbersTable } from './components/NumbersTable';
 import { FaceBook } from './components/FaceBook';
+import { SignupPage } from './components/SignUpPage';
 
 function App() {
   return (
@@ -155,6 +156,10 @@ function App() {
     <div className="d-flex flex-column gap-3">
     <h1 className="fw-bold text-start">Facebook</h1>
     <FaceBook />
+    </div>
+    <div className="d-flex flex-column gap-3">
+    <h1 className="fw-bold text-start">SignUpPage</h1>
+    <SignupPage />
     </div>
     </div>
   );
