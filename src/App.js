@@ -49,6 +49,7 @@ function App() {
         owner="Maxence Bouret"
         bgColor="#11aa99"
         color="white"
+        img="../VISA-Logo.png"
       />
 
       <CreditCard
@@ -60,6 +61,7 @@ function App() {
         owner="Maxence Bouret"
         bgColor="#eeeeee"
         color="#222222"
+        img="../logo-Mastercard.png"
       />
 
       <CreditCard
@@ -71,6 +73,7 @@ function App() {
         owner="Firstname Lastname"
         bgColor="#ddbb55"
         color="white"
+        img="../VISA-Logo.png"
       />
 
       <h2>Facebook</h2>
