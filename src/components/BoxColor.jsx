@@ -14,7 +14,7 @@ function BoxColor(props) {
   };
   const hexaColor = toHex(props.r) + toHex(props.g) + toHex(props.b);
   return (
-    <div className="boxColor" style={divBackColor}>
+    <div className="BoxColor Border" style={divBackColor}>
       <p>
         rgb({props.r}, {props.g}, {props.b})
       </p>

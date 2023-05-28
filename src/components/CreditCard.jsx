@@ -3,7 +3,7 @@ function CreditCard(props) {
     backgroundColor: `${props.bgColor}`,
   };
   return (
-    <div style={divBackColor}>
+    <div className="CreditCard" style={divBackColor}>
       <div>
         {props.type === 'Visa' && (
           <img
@@ -18,17 +18,18 @@ function CreditCard(props) {
           />
         )}
       </div>
-      <div>
+      <div className="CC-Numbers">
         <p>**** **** **** {props.number.substr(12, 16)}</p>
       </div>
-      <div>
-        <p>
-          Expires {props.expirationMonth}/
-          {props.expirationYear.toString().substr(2, 4)}
-        </p>
-        <p>{props.bank}</p>
-      </div>
-      <div>
+      <div className="CC-User">
+        <div className="CC-Data">
+          <p>
+            Expires {props.expirationMonth}/
+            {props.expirationYear.toString().substr(2, 4)}
+          </p>
+          <p>{props.bank}</p>
+        </div>
+
         <p>{props.owner}</p>
       </div>
     </div>
