@@ -1,6 +1,7 @@
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
+import Random from './components/Random';
 
 function App() {
   const cardArray = [ {  
@@ -22,18 +23,22 @@ function App() {
     picture: "https://randomuser.me/api/portraits/men/44.jpg"
 } ];
 
-  // const lang = ["de", "en", "es", "fr"];
-  // const children = [{en: "Hello"},{de: "Hallo"},{es: "Hola"},{fr: "Bonjour"}];
-
+  
   return (
     <div className='App'>
-      {cardArray.map (card => {
-        return <IdCard eachCard={card}/>
-      }
-      )}
       <div>
-      <Greetings lang="de">Ludwig</Greetings>
-      <Greetings lang="fr">François</Greetings>
+        {cardArray.map (card => {
+          return <IdCard eachCard={card}/>
+        }
+        )}
+      </div>
+      <div>
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
+      </div>
+      <div>
+        <Random min={1} max={6}/>
+        <Random min={1} max={100}/>
       </div>
       </div>
   );
