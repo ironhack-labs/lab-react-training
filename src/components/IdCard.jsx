@@ -2,7 +2,7 @@ function IdCard({eachCard}) {
         return (
             <div className="cardDiv">
                 <div>
-                    <img className="cardImage" src={eachCard.picture} alt="user image"/>
+                    <img className="cardImage" src={eachCard.picture} alt="user"/>
                 </div>
                 <div className="cardTextDiv">
                     <p>Name: {eachCard.firstName}</p>
