@@ -48,16 +48,16 @@
   padding-bottom: 20px;
 }
 
+
+
 .BankLogo {
-  text-align: right;
-  
+  text-align: right;  
 }
 
 .BankLogo img {
-  width:20%;
+  width: 20%;
 
 }
-
 
 .CreditCardInfo {
   display: flex;
@@ -69,6 +69,29 @@
  
 }
 
+.StarsRating {
+  margin: 1%;
+}
 
+.DriverCard {
+  display: flex;
+  background-color: #455EB5;
+  color: white;
+  justify-content: center;
+  padding: 1%;
+  width: 40%;
+  margin-top: 10px;
+  border-radius: 10px;
+  
+}
+
+.DriverImage img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  padding-right: 10px;
+
+}
 
 
