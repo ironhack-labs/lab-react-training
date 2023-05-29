@@ -50,6 +50,12 @@
 
 .BankLogo {
   text-align: right;
+  
+}
+
+.BankLogo img {
+  width:20%;
+
 }
 
 
@@ -62,5 +68,7 @@
   display: flex;
  
 }
+
+
 
 

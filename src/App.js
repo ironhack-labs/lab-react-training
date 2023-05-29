@@ -6,6 +6,7 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
+import LogoVisa from './assets/images/visa.png'
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
       <div className="CreditCards">
         <CreditCard
           type="Visa"
-          img="./assets/images/visa.png"
+          img={LogoVisa}
           number="0123456789018845"
           expirationMonth={3}
           expirationYear={2021}
@@ -52,7 +53,7 @@ function App() {
 
         <CreditCard
           type="Master Card"
-          img="./assets/v/master-card.svg"
+          img="/master-card.svg"
           number="0123456789010995"
           expirationMonth={3}
           expirationYear={2021}
@@ -64,7 +65,7 @@ function App() {
 
         <CreditCard
           type="Visa"
-          img="./assets/images/visa.png"
+          img={LogoVisa}
           number="0123456789016984"
           expirationMonth={12}
           expirationYear={2019}
