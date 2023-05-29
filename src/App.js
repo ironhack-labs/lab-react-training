@@ -14,6 +14,8 @@ import { Carousel } from './components/Carousel';
 import { NumbersTable } from './components/NumbersTable';
 import { FaceBook } from './components/FaceBook';
 import { SignupPage } from './components/SignUpPage';
+import { RgbColorPicker } from './components/RGBColorPicker';
+import { SingleColorPicker } from './components/SingleColorPicker';
 
 function App() {
   return (
@@ -160,6 +162,10 @@ function App() {
     <div className="d-flex flex-column gap-3">
     <h1 className="fw-bold text-start">SignUpPage</h1>
     <SignupPage />
+    </div>
+    <div className="d-flex flex-column gap-3">
+    <h1 className="fw-bold text-start">ColorPicker</h1>
+    <RgbColorPicker />
     </div>
     </div>
   );
