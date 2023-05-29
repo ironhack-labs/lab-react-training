@@ -90,3 +90,41 @@
   font-size: 20px;
   margin: 0px;
 }
+
+.driverdiv{
+  background-color: #485cb4;
+  width: 650px;
+  height: 100px;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 15px;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  
+  
+}
+
+
+.imgcrop{
+  width: 100px;
+  height: 100px;
+  /* position: relative; */
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 20%;
+}
+
+.driverimg{
+  /* display: inline; */
+  height: 100%;
+}
+
+.driveinfo{
+
+}
+
+.driveinfo > p,h3{
+  margin: 0;
+  padding: 0;
+}
