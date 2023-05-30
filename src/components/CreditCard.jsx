@@ -1,11 +1,14 @@
+import visa from '../assets/images/visa.png';
+import mastercard from '../assets/images/master-card.png';
+
 function CreditCard(props) {
   const { creditCard } = props;
 
   function cardType() {
     if (creditCard.type === 'Visa') {
-      return '../assets/images/visa.png';
+      return visa;
     } else if (creditCard.type === 'Master Card') {
-      return '../assets/images/master-card.svg';
+      return mastercard;
     }
   }
 
@@ -34,16 +37,16 @@ function CreditCard(props) {
           color: `${creditCard.color}`,
         }}
       >
-        <div className="cardType">
-          <img src={cardType()} alt="cardType"></img>
+        <div>
+          <img className="cardType" src={cardType()} alt="cardType"></img>
         </div>
         <div className="cardNumber">
           <p>●●●● ●●●● ●●●● {cardNumber()}</p>
         </div>
         <div className="cardInfo">
-          <p>
-            Expires {cardMonth()}/{cardYear()} {creditCard.bank}
-          </p>
+          <pre>
+            Expires {cardMonth()}/{cardYear()}     {creditCard.bank}
+          </pre>
           <p>{creditCard.owner}</p>
         </div>
       </div>
