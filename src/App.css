@@ -79,3 +79,31 @@
 .credit-card p {
   font-size: 10px;
 }
+
+.driver-card {
+display: flex;
+justify-content: center;
+background-color: #445eb5;
+width: 400px;
+margin: 10px;
+border-radius: 10px;
+}
+
+.driver-pic {
+  width: 100px;
+  height: 100px;
+  margin:10px
+}
+
+.driver-img-div {
+  display: flex;
+  align-items: center;
+}
+
+.driver-info{
+  color:white
+}
+
+.dice {
+  width: 100px;
+}
