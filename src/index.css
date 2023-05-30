@@ -45,3 +45,39 @@ code {
   padding-left: 20px;
   text-align: center;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.creditCard {
+  height: 200px;
+  width: 350px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cardNumber {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: -10px;
+}
+
+.cardInfo {
+  line-height: 7px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.cardType {
+  height: 30px;
+  width: 50px;
+  border: solid 1px;
+  margin: 15px;
+  margin-left: 285px;
+}
