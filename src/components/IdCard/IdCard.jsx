@@ -1,20 +1,24 @@
-import './IdCard.css'
-function IdCard(lastName, firstName, gender, height, birth, image) {
-    return (
-    //   const date= new Date(birth).toString.split...??
+import React from 'react';
+import './IdCard.css';
+
+
+function IdCard({ lastName, firstName, gender, height, birth, imagen }) {
+  const birthDate = new Date(birth);
+
+  return (
     <div className="IdCard">
       <div>
-        <img src={image} alt={image}></img>
+        <img src={imagen} alt={imagen}></img>
       </div>
-
       <div>
-        <p> FirstName:{firstName}</p>
-        <p>LastName:{lastName}</p>
-        <p>Gender:{gender}</p>
-        <p> Heigth:{height}</p>
-        <p> Birth: {birth}</p>
+        <p>FirstName: {firstName}</p>
+        <p>LastName: {lastName}</p>
+        <p>Gender: {gender}</p>
+        <p>Height: {height}</p>
+        <p>Birth: {birthDate.toLocaleDateString()}</p>
       </div>
     </div>
   );
 }
+
 export default IdCard;
