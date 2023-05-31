@@ -128,17 +128,34 @@ border-radius: 10px;
 
 .fb-user-card {
   border: 2px solid black;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin: 20px;
-  width: 500px;
 }
 
 .fb-user-picture {
   width: 100px;
-  padding-left: 20px;
+  padding: 20px;
 }
 
 .fb-user-info {
-  padding-left: 20px;
+  padding: 20px;
+}
+
+.selected {
+  background-color: #61dafb;
+}
+
+.active {
+  background-color: #61dafb;
+}
+
+.each-country-button {
+  margin: 5px
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
