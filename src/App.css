@@ -107,3 +107,38 @@ border-radius: 10px;
 .dice {
   width: 100px;
 }
+
+.numbers-table {
+  width: 640px;
+  table-layout: fixed;
+}
+
+.numbers-table tr {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.numbers-table td {
+  width: 120px;
+  height: 120px;
+  border: 2px solid black;
+  font-size: 40px;
+  text-align: center;
+}
+
+.fb-user-card {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  width: 500px;
+}
+
+.fb-user-picture {
+  width: 100px;
+  padding-left: 20px;
+}
+
+.fb-user-info {
+  padding-left: 20px;
+}

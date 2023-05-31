@@ -1,79 +1,25 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon, library } from '@fortawesome/fontawesome-svg-core';
-import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
-import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
+import React from 'react'
 
-library.add(solidStar, regularStar);
-icon({ prefix: 'fas', iconName: 'star' });
-icon({ prefix: 'far', iconName: 'star' });
+function Rating (props) {
+    const emptyStar = <i className="far fa-regular fa-star"></i>
+    const star = <i className="fas fa-regular fa-star"></i>
 
-const Rating = (props) => {
-    const roundedRating = Math.round(props.children);
+    const totalStars = 5;
+    const getActiveStars = (num) => {
+        return Math.ceil(num)
+    }
 
-    return (
-        <div>
-            {roundedRating === 0 && 
-            <div className="rating">
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
+    const activeStars = getActiveStars(props.children)
+
+        return(
+            <div>
+                {[...new Array(totalStars)].map((arr, index) => {
+                    const icon = index < activeStars ? star: emptyStar;
+                    const color = props.color || "black"
+                    return React.cloneElement(icon, { style: { color: color }, key: index })
+                })}
             </div>
-            }
-
-            {roundedRating === 1 && 
-            <div className="rating">
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-            </div>
-            }
-
-            {roundedRating === 2 && 
-            <div className="rating">
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-            </div>
-            }
-
-            {roundedRating === 3 && 
-            <div className="rating">
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-            </div>
-            }
-
-            {roundedRating === 4 && 
-            <div className="rating">
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['far', 'star']} style={{ color: "#000000" }} />
-            </div>
-            }
-
-            {roundedRating === 5 && 
-            <div className="rating">
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-                <FontAwesomeIcon icon={['fas', 'star']} style={{ color: "#000000" }} />
-            </div>
-            }
-        </div>
-    );
-};
+        )
+}
 
 export default Rating;

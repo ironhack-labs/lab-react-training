@@ -1,12 +1,15 @@
 import './App.css';
 import BoxColor from './components/BoxColor';
+import Carousel from './components/Carousel';
 import ClickablePicture from './components/ClickablePicture';
 import CreditCard from './components/CreditCard';
 import Dice from './components/Dice';
 import DriverCard from './components/DriverCard';
+import Facebook from './components/Facebook';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import LikeButton from './components/LikeButton';
+import NumbersTable from './components/NumbersTable';
 import Random from './components/Random';
 import Rating from './components/Rating';
 
@@ -16,19 +19,19 @@ function App() {
       <IdCard
         lastName='Doe'
         firstName='John'
-        gender='non-binary'
+        gender='male'
         height={178}
-        birth="20-08-1993"
-        img="https://randomuser.me/api/portraits/men/44.jpg"
+        birth={new Date("1992-07-14")}
+        picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
-
+        
       <IdCard
-        lastName='Delores'
+        lastName='Delores '
         firstName='Obrien'
         gender='female'
         height={172}
-        birth="20-08-1993"
-        img="https://randomuser.me/api/portraits/women/44.jpg"
+        birth={new Date("1988-05-11")}
+        picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
 
       <Greetings lang="es">Pepe</Greetings>
@@ -111,6 +114,18 @@ function App() {
       />
 
       <Dice />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <NumbersTable limit={12} />
+      <Facebook />
 
 </div>
 

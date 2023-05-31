@@ -1,8 +1,15 @@
 const IdCard = (props) => {
+
+    const formattedBirth = props.birth.toLocaleDateString('en-US', {
+        weekday: 'short',
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+    })
     return(
         <div class="card">
             <div class="card-img">
-                <img src={props.img} alt="user" />
+                <img src={props.picture} alt="user" />
             </div>
 
             <div class="card-info">
@@ -10,7 +17,7 @@ const IdCard = (props) => {
                 <p><b>Last name: {props.lastName}</b></p>
                 <p><b>Gender: {props.gender}</b></p>
                 <p><b>Height: {props.height}</b></p>
-                <p><b>Birth: {props.birth}</b></p>
+                <p><b>Birth: {formattedBirth}</b></p>
             </div>
         </div>
     )
