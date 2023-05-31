@@ -25,6 +25,8 @@ function App() {
       />
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+      <Greetings lang="es">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
 
       <Random 
         min={0}
