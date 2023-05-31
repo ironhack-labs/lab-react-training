@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+ .card{
+  margin: 6px;
+  padding-top: 5px;
+ }
+
+ .p{
+  margin:0px;
+  text-align: left;
+ }
+
+ .diverCard{
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+ }
+
+.diverCard img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+ }
