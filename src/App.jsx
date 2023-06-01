@@ -1,10 +1,11 @@
 // import { useState } from 'react';
 import './App.css';
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
 // import jsonData from './data/berlin.json';
 
 function App() {
-  // const [idCards, setIdCards] = useState(jsonData);
+  // const [] = useState(jsonData);
 
   return (
     <div className="App">
@@ -24,7 +25,9 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-      {/* <IdCard idCards={idCards} setIdCards={setIdCards} /> */}
+
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
     </div>
   );
 }
