@@ -20,7 +20,7 @@ function CreditCard(props) {
     return (
         <div className="credit-card" style={{ backgroundColor: bgColor, color: color }}>
             {cardTypeImage}
-            <h3>{last4Digits}</h3>
+            <h3>... ... ... {last4Digits}</h3>
             <p>
                 Expires {expirationMonth}/{expirationYear} <br />
                 {bank} <br />
