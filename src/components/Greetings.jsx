@@ -1,6 +1,5 @@
 function Greetings({ lang, children }) {
   let greeting;
-
   switch (lang) {
     case 'de':
       greeting = `Hallo ${children}`;
@@ -14,6 +13,8 @@ function Greetings({ lang, children }) {
     case 'es':
       greeting = `Hola ${children}`;
       break;
+    default:
+      return null;
   }
 
   return (
