@@ -15,3 +15,7 @@ display: flex;
 .img-card {
   margin: 5px;
 }
+
+.language-card{
+  border: 1px solid;
+}
