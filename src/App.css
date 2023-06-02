@@ -28,3 +28,12 @@ h1 {
   font-size: 20px;
   border: 1px solid black;
 }
+.color {
+  padding: 10px;
+  margin: 20px;
+  font-size: 20px;
+  border: 1px solid black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
