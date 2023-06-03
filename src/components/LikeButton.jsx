@@ -15,7 +15,6 @@ export default function LikeButton() {
     setColor(colors[colorIndex]);
   };
   const backColor = { backgroundColor: `${color}` };
-  console.log(backColor);
 
   return (
     <button style={backColor} onClick={() => handleColorAndCounter()}>

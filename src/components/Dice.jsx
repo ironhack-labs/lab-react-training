@@ -12,7 +12,7 @@ function getRandomDice() {
   return dices[Math.floor(Math.random() * dices.length)];
 }
 
-export default function Dice() {
+function Dice() {
   const [dice, setDice] = useState(getRandomDice());
 
   const handleClick = () => {
@@ -24,3 +24,5 @@ export default function Dice() {
 
   return <img src={dice} alt="Random dice" onClick={() => handleClick()} />;
 }
+
+export default Dice;

@@ -1,5 +1,4 @@
 export default function IdCard(props) {
-  console.log(props);
   return (
     <div className="Idcard Border">
       <div>
