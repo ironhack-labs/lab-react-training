@@ -37,3 +37,11 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+.rating {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  font-size: 20px;
+}
