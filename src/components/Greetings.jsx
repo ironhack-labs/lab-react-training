@@ -1,7 +1,7 @@
 function Greetings({ lang, children }) {
   return (
-    <article class="greeting">
-      <h3>
+    <article className="greeting">
+      <h4>
         „
         {lang === 'de'
           ? 'Guten Tag'
@@ -13,7 +13,7 @@ function Greetings({ lang, children }) {
           ? 'Bonjour'
           : 'Bonan tagon'}
         , {children}“
-      </h3>
+      </h4>
     </article>
   );
 }

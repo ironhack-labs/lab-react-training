@@ -1,5 +1,13 @@
+:root {
+  --grid-spacing-vertical: var(--spacing);
+}
+
 body {
-  padding: 0 1rem;
+  padding: calc(var(--spacing) * 4) 1rem;
+}
+
+.App > :first-child {
+  margin-top: 0;
 }
 
 #root {
@@ -7,13 +15,24 @@ body {
   margin: 0 auto;
 }
 
+.grid > article {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.grid + .grid {
+  margin-top: var(--grid-spacing-vertical);
+}
+
+@media (min-width: 992px){
+  .grid {
+      grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+  }
+}
+
 h2 {
   border-bottom: 2px solid var(--range-border-color);
   margin-top: calc(var(--spacing) * 4);
-}
-
-.App > h2 {
-  margin-bottom: 0;
 }
 
 h1:only-child,
@@ -26,6 +45,8 @@ h6:only-child {
 }
 
 .greeting {
+  display: grid;
+  place-items: center;
   text-align: center;
 }
 
@@ -50,4 +71,8 @@ small {
   min-height: 30px;
   object-position: top;
   object-fit: contain;
+}
+
+.rating {
+  text-align: center;
 }

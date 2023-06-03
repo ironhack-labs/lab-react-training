@@ -13,7 +13,7 @@ function CreditCard({
 }) {
   return (
     <article
-      class="credit-card"
+      className="credit-card"
       style={{ backgroundColor: bgColor, color: color }}
     >
       {type === 'Visa' || type === 'Master Card' ? (

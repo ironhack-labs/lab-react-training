@@ -4,12 +4,14 @@ const getRandomNum = (min, max) => {
 
 function Random({ min, max }) {
   return (
-    <p>
-      <strong>
-        Random value between {min} and {max}:
-      </strong>{' '}
-      {getRandomNum(min, max)}
-    </p>
+    <article>
+      <p>
+        <strong>
+          Random value between {min} and {max}:
+        </strong>{' '}
+        {getRandomNum(min, max)}
+      </p>
+    </article>
   );
 }
 
