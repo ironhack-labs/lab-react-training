@@ -2,10 +2,44 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Profile{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 90vw;
+  margin: 20px;
 }
+
+.ProfileImage{
+ 
+  border: 1px solid black;
+  
+  
+}
+.Greeting {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border: 2px solid black;
+  width: 300px;
+ margin: 10px;
+
+}
+.RandomNumber {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border: 2px solid black;
+  width: 300px;
+ margin: 10px;
+}
+
+
+.ProfileInfo{
+  text-align: left;
+  padding: 5px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -27,6 +61,13 @@
 .App-link {
   color: #61dafb;
 }
+.Rating {
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+
 
 @keyframes App-logo-spin {
   from {
