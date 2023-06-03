@@ -7,6 +7,16 @@ import BoxColor from './components/BoxColor.jsx'
 import CreditCard from './components/CreditCard.jsx'
 import Rating from './components/Rating.jsx'
 import DriverCard from './components/DriverCard.jsx'
+import LikeButton from './components/LikeButton.jsx'
+import maxence from './assets/images/maxence.png'
+import maxenceGlasses from './assets/images/maxence-glasses.png'
+import ClickablePicture from './components/ClickablePicture.jsx'
+import Dice from './components/Dice.jsx'
+import Carousel from './components/Carousel.jsx'
+import NumbersTable from './components/NumbersTable.jsx'
+import FaceBook from './components/FaceBook.jsx'
+import SignupPage from './components/SignupPage.jsx'
+import RGBColorPicker from './components/RGBColorPicker.jsx'
 
 
 
@@ -122,6 +132,56 @@ function App() {
             licensePlate: "BE33ER"
           }}
         />
+      </div>
+      {/* iteration8 */}
+      <div>
+        <h2>LikeButton</h2>
+        <LikeButton />
+      </div>
+      {/* iteration9 */}
+      <div>
+        <h2>ClickablePicture</h2>
+        <ClickablePicture
+          img={maxence}
+          imgClicked={maxenceGlasses}
+        />
+      </div>
+      {/* iteration10 */}
+      <div>
+        <h2>Dice</h2>
+        <Dice />
+      </div>
+      {/* iteration 11 */}
+      <div>
+        <h2>Carousel</h2>
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+      </div>
+      {/* iteration 12 */}
+      <div>
+        <h2>NumbersTable</h2>
+        <NumbersTable limit={40} />
+      </div>
+      {/* iteration 13 & 14 */}
+      <div>
+        <h2>FaceBook</h2>
+        <FaceBook />
+      </div>
+      {/* iteration 15 */}
+      <div>
+        <h2>SignupPage</h2>
+        <SignupPage />
+      </div>
+      {/* iteration 16 */}
+      <div>
+        <h2>RGBColorPicker</h2>
+        <RGBColorPicker/>
       </div>
 
     </div>
