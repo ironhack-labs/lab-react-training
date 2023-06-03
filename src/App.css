@@ -36,3 +36,72 @@
     transform: rotate(360deg);
   }
 }
+
+.id-card {
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 300px;
+  padding: 16px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border-radius: 1px;
+  width: auto;
+}
+
+.id-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.id-card h2 {
+  margin: 10px 0;
+}
+
+.id-card p {
+  margin: 5px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.box {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+  padding-left: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.creditcard {
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 30vw;
+  padding: 16px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border-radius: 1px;
+}
+
+.creditcard img {
+  width: 30px;
+  height: auto;
+  align-self: flex-end;
+}
+
+.creditcard-number {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
