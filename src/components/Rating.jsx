@@ -14,8 +14,9 @@ const Rating = ({ prop }) => {
     }
 
   return (
-    <>
-    </>
+    <div >
+
+    </div>
   );
 };
 
