@@ -1,17 +1,21 @@
 function Rating({ children, displayNum }) {
   return (
-    <div className="rating">
+    <p className="rating">
       {children >= 0 && children <= 5 ? (
         <strong aria-label={'Rating: ' + children + 'stars'}>
           {'★'.repeat(Math.round(children))}
           {'☆'.repeat(5 - Math.round(children))}
-          <br />
-          {displayNum !== false ? children : null}
+          {displayNum !== false ? (
+            <span>
+              <br />
+              {children}
+            </span>
+          ) : null}
         </strong>
       ) : (
         'invalid rating'
       )}
-    </div>
+    </p>
   );
 }
 
