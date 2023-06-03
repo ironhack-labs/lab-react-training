@@ -20,7 +20,7 @@ function LikeButton() {
         backgroundColor: colorsArr[count % colorsArr.length],
       }}
       onClick={updateCount}
-      class="btn-like"
+      className="btn-like"
     >
       <span className="icon">👍</span>
       <span className="text">{count}</span>
