@@ -37,4 +37,15 @@
   }
 }
 
-app
+.IdCard{
+  display: flex;
+  border: 5px solid black;
+  width: 600px;
+  height: 200px;
+margin: 20px;
+  align-items: center;
+}
+.photoPic{
+  margin: 5px;
+}
+
