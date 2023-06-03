@@ -10,6 +10,10 @@ body {
   margin-top: 0;
 }
 
+article > :last-child {
+  margin-bottom: 0;
+}
+
 #root {
   max-width: 1000px;
   margin: 0 auto;
@@ -78,7 +82,12 @@ small {
 }
 
 .drivercard {
+  background-color: #455EB5;
   text-align: center;
+}
+
+.drivercard * {
+  color: #fff;
 }
 
 .drivercard img {
@@ -91,4 +100,45 @@ small {
 
 .drivercard h3 {
   margin-bottom: 1rem;
+}
+
+
+/*----- BTN LIKE -----*/
+
+.btn-like {
+  border: none;
+  box-shadow: none;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn-like .text {
+  padding-top: 4rem;
+  display: block;
+}
+
+.btn-like .icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .btn-like .icon {
+    transform: rotate(0);
+    transition-property: transform, font-size, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+
+  .btn-like:active .icon {
+    font-size: 4rem;
+    transform: rotate(40deg);
+    transition-property: transform, font-size, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
 }

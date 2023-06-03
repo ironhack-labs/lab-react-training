@@ -19,6 +19,9 @@ function App() {
   return (
     <div className="App">
       <h2>Iteration 8</h2>
+      <article>
+        <LikeButton />
+      </article>
 
       <h2>Iteration 7</h2>
       <div className="grid">
