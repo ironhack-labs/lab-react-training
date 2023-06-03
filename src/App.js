@@ -1,23 +1,67 @@
 import './css/pico.min.css';
 import './css/custom.css';
+import BoxColor from './components/BoxColor';
+import Carousel from './components/Carousel';
 import CreditCard from './components/CreditCard';
+import Dice from './components/Dice';
+import DriverCard from './components/DriverCard';
+import FaceBook from './components/FaceBook';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
+import LikeButton from './components/LikeButton';
+import NumbersTable from './components/NumbersTable';
 import Random from './components/Random';
 import Rating from './components/Rating';
-import BoxColor from './components/BoxColor';
+import RGBColorPicker from './components/RGBColorPicker';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
     <div className="App">
+      <h2>Iteration 8</h2>
+
+      <h2>Iteration 7</h2>
+      <div className="grid">
+        <DriverCard
+          name="Travis Kalanick"
+          rating={4.2}
+          img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+          car={{
+            model: 'Toyota Corolla Altis',
+            licensePlate: 'CO42DE',
+          }}
+        />
+        <DriverCard
+          name="Dara Khosrowshahi"
+          rating={4.9}
+          img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+          car={{
+            model: 'Audi A3',
+            licensePlate: 'BE33ER',
+          }}
+        />
+      </div>
+
       <h2>Iteration 6</h2>
       <div className="grid">
-        <Rating>0</Rating>
-        <Rating>1.49</Rating>
-        <Rating>1.5</Rating>
-        <Rating>3</Rating>
-        <Rating>4</Rating>
-        <Rating>5</Rating>
+        <article>
+          <Rating>0</Rating>
+        </article>
+        <article>
+          <Rating>1.49</Rating>
+        </article>
+        <article>
+          <Rating>1.5</Rating>
+        </article>
+        <article>
+          <Rating>3</Rating>
+        </article>
+        <article>
+          <Rating>4</Rating>
+        </article>
+        <article>
+          <Rating>5</Rating>
+        </article>
       </div>
 
       <h2>Iteration 5</h2>

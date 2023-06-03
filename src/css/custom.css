@@ -76,3 +76,19 @@ small {
 .rating {
   text-align: center;
 }
+
+.drivercard {
+  text-align: center;
+}
+
+.drivercard img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
+.drivercard h3 {
+  margin-bottom: 1rem;
+}
