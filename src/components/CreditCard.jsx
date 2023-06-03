@@ -10,16 +10,6 @@ function CreditCard({
   bgColor,
   color,
 }) {
-  const card = {
-    type,
-    number,
-    expirationMonth,
-    expirationYear,
-    bank,
-    owner,
-    bgColor,
-    color,
-  };
   const cardStyle = {
     backgroundColor: bgColor,
     color: color,
