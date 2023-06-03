@@ -1,31 +1,49 @@
 body {
-    padding: 0 1rem;
-  }
-  
-  #root {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .color-details {
-    background-color: #fff;
-    border-radius: var(--border-radius);
-    margin: 0 auto;
-    padding: 0 0.5rem;
-    text-align: center;
-    width: max-content;
-  }
-  
-  small {
-    font-size: 0.7rem;
-    line-height: 1.8;
-    display: block;
-  }
+  padding: 0 1rem;
+}
 
-  .credit-card img {
-    display: block;
-    margin: 0 0 1rem auto; 
-    min-height: 30px;
-    object-position: top;
-    object-fit: contain;
+#root {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  border-bottom: 2px solid var(--range-border-color);
+  margin-top: calc(var(--spacing) * 4);
+}
+
+h1:only-child,
+h2:only-child,
+h3:only-child,
+h4:only-child,
+h5:only-child,
+h6:only-child {
+  margin-bottom: 0;
+}
+
+.greeting {
+  text-align: center;
+}
+
+.color-details {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  text-align: center;
+  width: max-content;
+}
+
+small {
+  font-size: 0.7rem;
+  line-height: 1.8;
+  display: block;
+}
+
+.credit-card img {
+  display: block;
+  margin: 0 0 1rem auto; 
+  min-height: 30px;
+  object-position: top;
+  object-fit: contain;
 }

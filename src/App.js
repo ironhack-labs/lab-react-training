@@ -9,6 +9,7 @@ import BoxColor from './components/BoxColor';
 function App() {
   return (
     <div className="App">
+      <h2>Iteration 5</h2>
       <div className="grid">
         <div>
           <CreditCard
@@ -48,15 +49,38 @@ function App() {
         </div>
       </div>
 
+      <h2>Iteration 4</h2>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
+      <h2>Iteration 3</h2>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
 
-      <Greetings lang="de">Ludwig</Greetings>
-      <Greetings lang="fr">François</Greetings>
+      <h2>Iteration 2</h2>
+      <div class="grid">
+        <div>
+          <Greetings lang="de">Ludwig</Greetings>
+        </div>
+        <div>
+          <Greetings lang="fr">François</Greetings>
+        </div>
+      </div>
+      <div class="grid">
+        <div>
+          <Greetings lang="es">Silvia</Greetings>
+        </div>
+        <div>
+          <Greetings lang="en">Shaun 😉</Greetings>
+        </div>
+      </div>
+      <div class="grid">
+        <div>
+          <Greetings>nameless Esperanto speaker</Greetings>
+        </div>
+      </div>
 
+      <h2>Iteration 1</h2>
       <IdCard
         lastName="Doe"
         firstName="John"
