@@ -37,3 +37,9 @@
   font-weight: bold;
   padding: 10px;
 }
+
+.square {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px auto;
+}
