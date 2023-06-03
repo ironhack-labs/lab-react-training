@@ -1,12 +1,34 @@
+.App h1 {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
 .idCard-box {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
   background-color: aqua;
   border: solid black 1px;
+  padding-right: 10px;
 }
 
 .idCard-box img {
   width: 200px;
   height: auto;
+}
+
+.greetings {
+  border: solid 1px black;
+  width: 300px;
+  margin: 0 auto 10px auto;
+}
+
+.greetings p {
+  text-align: center;
+  font-weight: bold;
 }
