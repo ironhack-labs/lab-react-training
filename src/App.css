@@ -26,13 +26,14 @@
   height: auto;
 }
 
-.greetings {
+.normal-box {
   border: solid 1px black;
-  width: 300px;
+  width: 500px;
   margin: 0 auto 10px auto;
 }
 
-.greetings p {
+.normal-box p {
   text-align: center;
   font-weight: bold;
+  padding: 10px;
 }

@@ -16,7 +16,7 @@ function Greetings({ lang, children }) {
     }
 
     return (
-      <div className="greetings">
+      <div className="normal-box">
         <p>{greeting}</p>
       </div>
     );
