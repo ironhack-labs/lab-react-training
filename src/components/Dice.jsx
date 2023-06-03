@@ -35,7 +35,7 @@ const Dice = () => {
 
     return(
         <div>
-            <img class="dice" src={diceImage} alt="dice" onClick={handleClick} />
+            <img className="dice" src={diceImage} alt="dice" onClick={handleClick} />
         </div>
     )
 }

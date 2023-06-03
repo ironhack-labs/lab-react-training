@@ -159,3 +159,23 @@ border-radius: 10px;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.single-color {
+  display: flex;
+  margin:20px;
+}
+.square {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px
+}
+
+.mixed-square {
+  width: 100px;
+  height: 100px;
+  margin: 20px
+}
+
+.color-text {
+  margin:20px
+}

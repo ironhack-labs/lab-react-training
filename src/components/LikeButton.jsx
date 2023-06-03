@@ -6,7 +6,7 @@ const LikeButton = () => {
     const [ backgroundColor, setBackgroundColor ] = useState('red')
     const colors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red']
     return(
-        <div class="like-button">
+        <div className="like-button">
             <button
                 style={{ backgroundColor: backgroundColor}}
                 onClick={() => {

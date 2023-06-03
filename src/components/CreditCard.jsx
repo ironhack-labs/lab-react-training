@@ -18,8 +18,8 @@ const CreditCard = (props) => {
     console.log()
 
     return(
-        <div class="credit-card" style= {{backgroundColor: props.bgColor }}>
-            <div class="logo-container">
+        <div className="credit-card" style= {{backgroundColor: props.bgColor }}>
+            <div className="logo-container">
                 {props.type === "Visa" && 
                 <img className="card-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="visa" />}
                 {props.type === "Master Card" && 
