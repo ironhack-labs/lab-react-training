@@ -143,3 +143,11 @@
   flex-wrap: wrap;
   max-width: 550px;
 }
+
+.facebookdiv{
+  border: 1px black solid;
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 180px;
+}

@@ -11,6 +11,8 @@ import ClickablePicture from "./components/ClickablePicture"
 import Dice from "./components/Dice"
 import Carousel from "./components/Carousel"
 import NumbersTable from "./components/NumbersTable"
+import FaceBook from "./components/FaceBook"
+import profiles from "./data/berlin.json"
 
 function App() {
   const cardArray = [ {  
@@ -137,7 +139,13 @@ function App() {
             />
             {/* Iteration 12 - NumbersTable */}
             <NumbersTable limit={12} />
-          
+
+            {/* Iteration 13 - Facebook */}
+            {profiles.map(elem => {
+              return  <FaceBook profile={elem}/>})}
+        
+  
+            
       </div>
       </div>
   );
