@@ -1,6 +1,3 @@
-.App {
- 
-}
 
 .id-card {
 border: 1px solid;
@@ -18,4 +15,18 @@ display: flex;
 
 .language-card{
   border: 1px solid;
+}
+
+.random-card{
+  border: 1px solid;
+}
+
+.box-color{
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  width: 400px;
+  height: 100px;
+  margin: 20px;
+
 }
