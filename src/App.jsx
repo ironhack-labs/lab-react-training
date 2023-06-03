@@ -6,6 +6,7 @@ import berlinData from './data/berlin.json';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import CardItems from './components/CardItems';
+import Rating from './components/Rating';
 
 function App() {
   // console.log(berlinData)
@@ -83,6 +84,17 @@ function App() {
           color="#222222"
         />
       </CardItems>
+     <Rating prop={0}/> 
+     <br />
+     <Rating prop={1}/> 
+     <br />
+     <Rating prop={2}/> 
+     <br />
+     <Rating prop={3}/> 
+     <br />
+     <Rating prop={4}/> 
+     <br />
+     <Rating prop={5}/> 
     </div>
   );
 }
