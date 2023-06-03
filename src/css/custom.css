@@ -12,6 +12,10 @@ h2 {
   margin-top: calc(var(--spacing) * 4);
 }
 
+.App > h2 {
+  margin-bottom: 0;
+}
+
 h1:only-child,
 h2:only-child,
 h3:only-child,
