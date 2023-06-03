@@ -8,6 +8,7 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from "./components/LikeButton"
 import ClickablePicture from "./components/ClickablePicture"
+import Dice from "./components/Dice"
 
 function App() {
   const cardArray = [ {  
@@ -119,6 +120,9 @@ function App() {
                 img='https://www.thesprucepets.com/thmb/3ABKoAPm0Hu4PcWsDH1giawq7ck=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/chinese-dog-breeds-4797219-hero-2a1e9c5ed2c54d00aef75b05c5db399c.jpg'
                 imgClicked='https://www.akc.org/wp-content/uploads/2018/05/samoyed-mother-dog-with-puppy-outdoors.jpg'
               />
+
+            {/* Iteration 10 - Dice */}
+            <Dice />
 
           
       </div>
