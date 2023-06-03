@@ -1,4 +1,4 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -7,10 +7,11 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
-// import jsonData from './data/berlin.json';
+import LikeButton from './components/LikeButton';
 
 function App() {
-  // const [] = useState(jsonData);
+  const [countLike, setCountLike] = useState(0);
+  const [countLike2, setCountLike2] = useState(0);
 
   return (
     <div className="App">
@@ -72,7 +73,6 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -82,7 +82,6 @@ function App() {
           licensePlate: 'CO42DE',
         }}
       />
-
       <DriverCard
         name="Dara Khosrowshahi"
         rating={4.9}
@@ -92,6 +91,8 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <LikeButton countLike={countLike} setCountLike={setCountLike} />
+      <LikeButton countLike={countLike2} setCountLike={setCountLike2} />
     </div>
   );
 }

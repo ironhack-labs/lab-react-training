@@ -5,7 +5,14 @@ function DriverCard({ car, name, rating, img }) {
   const numberRound = Math.floor(rating);
 
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: 'blue',
+        height: '200px',
+        width: '400px',
+        border: '3px, solid, grey',
+      }}
+    >
       <img
         src={img}
         style={{ width: '100px', height: '100px', borderRadius: '50px' }}
