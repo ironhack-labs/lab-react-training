@@ -7,25 +7,21 @@ export default function ClickablePicture(props) {
     setImageClicked(!imageClicked);
   };
 
-  if (imageClicked) {
-    return (
-      <img
-        src={props.imgClicked}
-        alt="Clicked"
-        onClick={() => {
-          handleClick();
-        }}
-      />
-    );
-  } else {
-    return (
-      <img
-        src={props.img}
-        alt="NonClicke"
-        onClick={() => {
-          handleClick();
-        }}
-      />
-    );
-  }
+  return imageClicked ? (
+    <img
+      src={props.imgClicked}
+      alt="Clicked"
+      onClick={() => {
+        handleClick();
+      }}
+    />
+  ) : (
+    <img
+      src={props.img}
+      alt="NonClicke"
+      onClick={() => {
+        handleClick();
+      }}
+    />
+  );
 }
