@@ -9,7 +9,11 @@ function Random({ min, max }) {
         <strong>
           Random value between {min} and {max}:
         </strong>{' '}
-        {getRandomNum(min, max)}
+        <span
+          style={{ display: 'block', fontSize: '4rem', fontWeight: 'bold' }}
+        >
+          {getRandomNum(min, max)}
+        </span>
       </p>
     </article>
   );
