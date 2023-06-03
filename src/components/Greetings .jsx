@@ -1,6 +1,4 @@
 function Greetings(props) {
-  console.log(props);
-
   if (props.lang === 'de') {
     return (
       <div className="language-card">

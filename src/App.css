@@ -28,5 +28,53 @@ display: flex;
   width: 400px;
   height: 100px;
   margin: 20px;
-
 }
+
+.all-credit-card{
+  display: flex;
+  flex-direction: row;  
+}
+
+.one-credit-card {
+  border-radius: 5px;
+  margin: 10px;
+  height: 150px;
+  width: 900px;
+  font-size: 10px;
+}
+
+.bank-logo {
+  display: flex;
+  justify-content: right;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.account-number{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.expiration-date-bank-name{
+  display: flex;
+  flex-direction: row;
+}
+
+.expiration-date-bank-name p {
+  margin: 10px 10px 5px 10px;
+}
+
+.account-owner{
+  display: flex;
+  justify-content: left;
+  margin: 0 0 10px 10px;
+}
+
+
+
+
+
+
