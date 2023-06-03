@@ -2,6 +2,7 @@ import './css/pico.min.css';
 import './css/custom.css';
 import BoxColor from './components/BoxColor';
 import Carousel from './components/Carousel';
+import ClickablePicture from './components/ClickablePicture';
 import CreditCard from './components/CreditCard';
 import Dice from './components/Dice';
 import DriverCard from './components/DriverCard';
@@ -18,6 +19,9 @@ import SignupPage from './components/SignupPage';
 function App() {
   return (
     <div className="App">
+      <h2>Iteration 9</h2>
+      <ClickablePicture img="maxence.jpeg" imgClicked="maxence-glasses.jpeg" />
+
       <h2>Iteration 8</h2>
       <article>
         <LikeButton />
