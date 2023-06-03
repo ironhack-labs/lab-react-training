@@ -45,3 +45,28 @@ h1 {
   margin: 5px;
   font-size: 20px;
 }
+
+.driver-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(45, 99, 179);
+  color: white;
+  margin: 10px;
+  border-radius: 10px;
+}
+.driver-card > .driver-img {
+  border-radius: 90px;
+  margin: -10px;
+}
+
+h2 {
+  margin: 10px;
+}
+p {
+  margin: 10px;
+}
+.rating-star {
+  margin: 10px;
+}

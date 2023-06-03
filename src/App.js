@@ -53,7 +53,7 @@ function App() {
         number="0123456789010995"
         expirationMonth={3}
         expirationYear={2021}
-        bank="NCV"
+        bank="BDV"
         owner="Maxence Bouret"
         bgColor="#eeeeee"
         color="#222222"
@@ -85,7 +85,7 @@ function App() {
       />
       <DriverCard
         name="Dara Khosrowshahi"
-        rating={4.9}
+        rating={5}
         img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
         car={{
           model: 'Audi A3',
