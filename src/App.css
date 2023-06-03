@@ -128,3 +128,18 @@
   margin: 0;
   padding: 0;
 }
+
+.number{
+  height: 100px;
+  width: 100px;
+  border: 2px black solid;
+  font-size: 30px;
+  text-align: center;
+  
+}
+
+.numbersDiv{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 550px;
+}

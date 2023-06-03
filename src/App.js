@@ -10,6 +10,7 @@ import LikeButton from "./components/LikeButton"
 import ClickablePicture from "./components/ClickablePicture"
 import Dice from "./components/Dice"
 import Carousel from "./components/Carousel"
+import NumbersTable from "./components/NumbersTable"
 
 function App() {
   const cardArray = [ {  
@@ -134,7 +135,8 @@ function App() {
                 'https://randomuser.me/api/portraits/men/2.jpg'
               ]}
             />
-
+            {/* Iteration 12 - NumbersTable */}
+            <NumbersTable limit={12} />
           
       </div>
       </div>
