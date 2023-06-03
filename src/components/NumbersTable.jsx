@@ -3,7 +3,6 @@ function NumbersTable({ limit }) {
   for (let i = 1; i <= limit; i++) {
     numArr.push(i);
   }
-  console.log(numArr);
 
   return (
     <div className="numbers-table grid">

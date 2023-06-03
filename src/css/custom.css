@@ -156,3 +156,13 @@ small {
 .numbers-table article:nth-child(even) {
   background-color: #c63925;
 }
+
+/*------ FACEBOOK ------*/
+
+.facebook img {
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  min-height: 200px;  
+}
