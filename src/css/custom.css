@@ -150,3 +150,9 @@ small {
   display: block;
   margin-bottom: 1rem;
 }
+
+/* ----- CAROUSEL ------ */
+
+.numbers-table article:nth-child(even) {
+  background-color: #c63925;
+}
