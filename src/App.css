@@ -70,3 +70,14 @@ p {
 .rating-star {
   margin: 10px;
 }
+
+.like-btn {
+  margin: 10px;
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: row;
+}
