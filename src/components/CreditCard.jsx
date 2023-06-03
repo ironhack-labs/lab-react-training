@@ -1,3 +1,5 @@
+import visa from '../assets/images/visa.png';
+
 function CreditCard(props) {
   const divBackColor = {
     backgroundColor: `${props.bgColor}`,
@@ -5,12 +7,7 @@ function CreditCard(props) {
   return (
     <div className="CreditCard" style={divBackColor}>
       <div>
-        {props.type === 'Visa' && (
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
-            alt="Visa logo"
-          />
-        )}
+        {props.type === 'Visa' && <img src={visa} alt="Visa logo" />}
         {props.type === 'Master Card' && (
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg"

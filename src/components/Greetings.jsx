@@ -1,10 +1,10 @@
 export default function Greetings(props) {
+  const greetings = { de: 'Halo', es: 'Saludos', en: 'Hi', fr: 'Bonjour' };
   return (
     <div className="Border">
-      {props.lang === 'de' && <p>Halo {props.children}</p>}
-      {props.lang === 'es' && <p>Saludos {props.children}</p>}
-      {props.lang === 'en' && <p>Hi {props.children}</p>}
-      {props.lang === 'fr' && <p>Bonjour {props.children}</p>}
+      <p>
+        {greetings[props.lang]} {props.children}
+      </p>
     </div>
   );
 }
