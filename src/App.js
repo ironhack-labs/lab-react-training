@@ -6,10 +6,10 @@ import Boxcolor from './components/Boxcolor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from "./components/LikeButton"
 
 function App() {
   const cardArray = [ {  
-    // id: 1,
     lastName: "Delores",
     firstName:'Obrien',
     gender: 'female',
@@ -18,7 +18,6 @@ function App() {
     picture: "https://randomuser.me/api/portraits/women/44.jpg"}
 
 , { 
-  // id: 2,
     lastName: "Doe",
     firstName:'John',
     gender: 'male',
@@ -111,8 +110,8 @@ function App() {
             }}
           />
 
-
-
+            {/* Iteration 8 - Like Button */}
+            <LikeButton />
 
           
       </div>
