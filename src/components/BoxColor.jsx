@@ -20,15 +20,7 @@ function BoxColor({ r, g, b }) {
         backgroundColor: numToRGB(color),
       }}
     >
-      <p
-        style={{
-          backgroundColor: 'white',
-          margin: '0 auto',
-          padding: '0.5rem',
-          textAlign: 'center',
-          width: 'max-content',
-        }}
-      >
+      <p className="color-details">
         {numToRGB(color)}
         <br />
         {rgbToHex(color)}
