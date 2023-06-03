@@ -19,6 +19,9 @@ import SignupPage from './components/SignupPage';
 function App() {
   return (
     <div className="App">
+      <h2>Iteration 10</h2>
+      <Dice />
+
       <h2>Iteration 9</h2>
       <ClickablePicture img="maxence.jpeg" imgClicked="maxence-glasses.jpeg" />
 
