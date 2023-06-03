@@ -1,19 +1,19 @@
-function IdCard(props) {
+function IdCard({ picture, firstName, lastName, height, birthday }) {
   return (
     <article>
       <div className="grid">
         <div>
-          <img src={props.picture} alt={props.firstname} />
+          <img src={picture} alt={firstName + ' ' + lastName} />
         </div>
         <div>
           <p>
-            <strong>First Name:</strong> {props.firstName}
+            <strong>First Name:</strong> {firstName}
             <br />
-            <strong>Last Name: </strong> {props.lastName}
+            <strong>Last Name: </strong> {lastName}
             <br />
-            <strong>Height:</strong> {props.height}
+            <strong>Height:</strong> {height}
             <br />
-            <strong>Birthday:</strong> {props.birthday}
+            <strong>Birthday:</strong> {birthday}
           </p>
         </div>
       </div>

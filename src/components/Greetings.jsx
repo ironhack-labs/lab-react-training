@@ -1,16 +1,16 @@
-function Greetings(props) {
+function Greetings({ lang, children }) {
   return (
     <h2>
-      {props.lang === 'de'
+      {lang === 'de'
         ? 'Guten Tag'
-        : props.lang === 'en'
+        : lang === 'en'
         ? 'Oh, hi'
-        : props.lang === 'es'
+        : lang === 'es'
         ? 'Olà'
-        : props.lang === 'fr'
+        : lang === 'fr'
         ? 'Bonjour'
         : 'Bonan tagon'}
-      , {props.children}
+      , {children}
     </h2>
   );
 }
