@@ -142,3 +142,11 @@ small {
     transition-timing-function: ease;
   }
 }
+
+/* ----- CAROUSEL ------ */
+
+.carousel img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1rem;
+}

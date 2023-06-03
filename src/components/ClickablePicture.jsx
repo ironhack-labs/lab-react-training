@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
 function ClickablePicture({ img, imgClicked }) {
-  let [image, setImage] = useState(img);
+  const [image, setImage] = useState();
 
   const updateImage = () => {
     setImage(!image);
   };
 
-  return <img src={image ? img : imgClicked} alt="" onClick={updateImage} />;
+  return <img src={image ? imgClicked : img} alt="" onClick={updateImage} />;
 }
 
 export default ClickablePicture;

@@ -19,6 +19,16 @@ import SignupPage from './components/SignupPage';
 function App() {
   return (
     <div className="App">
+      <h2>Iteration 11</h2>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
       <h2>Iteration 10</h2>
       <Dice />
 
