@@ -48,6 +48,10 @@ h6:only-child {
   margin-bottom: 0;
 }
 
+button {
+  border: none;
+}
+
 .greeting {
   display: grid;
   place-items: center;
@@ -164,5 +168,38 @@ small {
   display: block;
   object-fit: cover;
   margin: 0 auto 1rem;
-  min-height: 200px;  
+  min-height: 150px;
+}
+
+.facebook .filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: stretch;
+  justify-items: stretch;
+  align-content: stretch;
+  gap: 0.75rem;
+  margin-bottom: 2rem;  
+}
+
+.facebook .filter button {
+  background-color: rgb(69, 94, 181);
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  margin-bottom: 0;
+  width: auto;
+}
+
+.facebook article.highlighted,
+.facebook button.highlighted {
+  background-color: rgb(115, 51, 165);
+}
+
+.facebook article {
+  text-align: center;
+}
+
+.facebook h4 {
+  margin-bottom: 1rem;
 }

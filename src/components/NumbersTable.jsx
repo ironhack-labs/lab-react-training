@@ -1,3 +1,5 @@
+import { nanoid } from 'nanoid';
+
 function NumbersTable({ limit }) {
   const numArr = [];
   for (let i = 1; i <= limit; i++) {
@@ -7,7 +9,7 @@ function NumbersTable({ limit }) {
   return (
     <div className="numbers-table grid">
       {numArr.map((num) => (
-        <article key={num}>{num}</article>
+        <article key={nanoid()}>{num}</article>
       ))}
     </div>
   );

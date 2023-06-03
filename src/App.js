@@ -19,7 +19,13 @@ import SignupPage from './components/SignupPage';
 function App() {
   return (
     <div className="App">
-      <h2>Iteration 13</h2>
+      <h2>Iteration 16</h2>
+      <RGBColorPicker />
+
+      <h2>Iteration 15</h2>
+      <SignupPage />
+
+      <h2>Iteration 13 + 14</h2>
       <FaceBook />
 
       <h2>Iteration 12</h2>
