@@ -11,6 +11,7 @@ import Rating from './components/Rating.jsx';
 import DriverCard from './components/DriverCard.jsx';
 import LikeButton from './components/LikeButton.jsx';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 
 function App() {
@@ -122,7 +123,10 @@ function App() {
       <ClickablePicture
        img='maxence.png'
        imgClicked='maxence-glasses.png'
-       />
+      />
+      
+      {/* Iteration X */}
+      <Dice />
 
 
       
