@@ -19,7 +19,9 @@ function Dice() {
   };
 
   const rollDice = () => {
-    setDice(getRandomDice());
+    setTimeout(() => {
+      setDice(getRandomDice());
+    }, 1000);
   };
 
   return (
