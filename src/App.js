@@ -1,14 +1,18 @@
 import './App.css';
 import IdCard from './components/IdCard/IdCard';
-import Greetings from './components/folderGreatings/Greetings';
-import Random from './components/folderRandom/Random';
-import BoxColor from './components/folderBoxColor/BoxColor';
-import CreditCard from './components/folderCreditCard/CreditCard';
-import Rating from './components/folderRating/Rating';
-import DriverCard from './components/folderDriverCard/DriverCard';
+import Greetings from './components/Greatings/Greetings';
+import Random from './components/Random/Random';
+import BoxColor from './components/BoxColor/BoxColor';
+import CreditCard from './components/CreditCard/CreditCard';
+import Rating from './components/Rating/Rating';
+import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
-import Facebook from './components/folderFacebook/Facebook';
+import Dice from './components/Dice/Dice';
+import Carousel from './components/Carousel/Carousel';
+import NumbersTable from './components/NumbersTable/NumbersTable';
+import Facebook from './components/Facebook/Facebook';
+import SignupPage from './components/SignupPage/SignupPage';
 import data from './data/berlin.json';
 
 function App() {
@@ -118,9 +122,29 @@ function App() {
       <h2>ClickablePicture</h2>
       <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
 
+      <h2>Dice</h2>
+      <Dice />
+
+      <h2>Carousel</h2>
+      <Carousel
+        className="container-carousel"
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      <h2>List and Keys</h2>
+      <NumbersTable limit={12} />
+
       <h2>Facebook</h2>
       <Facebook profile={data[0]} />
       <Facebook profile={data[1]} />
+
+      <h2>SignupPage</h2>
+      <SignupPage />
     </div>
   );
 }
