@@ -9,9 +9,11 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import { useState } from 'react';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   const [likes, setLikes] = useState(0);
+  const [photobomb, setPhotobomb] = useState(false);
 
   return (
     <div className="App">
@@ -102,6 +104,8 @@ function App() {
       />
 
       <LikeButton likes={likes} setLikes={setLikes} />
+
+      <ClickablePicture photoBomb={photobomb} setPhotobomb={setPhotobomb} />
     </div>
   );
 }
