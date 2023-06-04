@@ -1,20 +1,26 @@
+import profiles from "../data/berlin.json"
+import {useState} from "react";
+import FaceBookCard from "./FaceBookCard";
+
+function FaceBook() {
+  const [bgColor, setBgColor] = useState("#ff0000");
+  
+  const uniqueCountries = profiles.filter((item, index) => {
+    return profiles.findIndex(obj => obj.country === item.country) === index;
+  }).map(item => item.country);
 
 
-function FaceBook({profile}) {
-  return (
-    <div className="facebookdiv">
-    <div>
-        <img style={{height:"170px"}} alt="profile" src={profile.img}/>
-    </div>
-    <div>
-        <p>First name: {profile.firstName}</p>
-        <p>Last name: {profile.lastName}</p>
-        <p>Country: {profile.country}</p>
-        <p>Type: {profile.isStudent ? "Student" : "Teacher"}</p>
-    </div>
+    // const countryPicker = (country) => {
+    //   if (country === profiles[i].country) {
+    //     return setBgColor("#ff0000")
+    //   }};
+  
 
-    </div>
-  )
+    return (
+      <>
+        {/* {uniqueCountries.map(country => {return <button onClick={countryPicker(country)}> {country}</button>})} */}
+        {profiles.map (elem => {return <FaceBookCard profile={elem} bgColor={bgColor}/>})}
+      </>)
 }
 
 export default FaceBook
