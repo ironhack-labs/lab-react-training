@@ -7,8 +7,9 @@ import Greetings from './components/Greetings.jsx'
 import Random from './components/Random.jsx'
 import BoxColor from './components/BoxColor.jsx'
 import CreditCard from './components/CreditCard.jsx';
-import Rating from './components/Rating';
-import DriverCard from './components/DriverCard';
+import Rating from './components/Rating.jsx';
+import DriverCard from './components/DriverCard.jsx';
+import LikeButton from './components/LikeButton.jsx';
 
 
 function App() {
@@ -110,7 +111,11 @@ function App() {
     model: "Audi A3",
     licensePlate: "BE33ER"
   }}
-/>
+      />
+
+     {/* Iteration VIII */}
+
+      <LikeButton />
       
       
 
