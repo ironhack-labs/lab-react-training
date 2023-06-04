@@ -1,5 +1,6 @@
 import './App.css';
 import BoxColor from './components/BoxColor';
+import ClickablePicture from './components/ClickablePicture';
 import CreditCard from './components/CreditCard';
 import DriverCard from './components/DriverCard';
 import Greetings from './components/Greetings ';
@@ -100,6 +101,8 @@ function App() {
       />
 
       <LikeButton />
+
+      <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
     </div>
   );
 }
