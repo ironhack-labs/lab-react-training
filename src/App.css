@@ -62,4 +62,41 @@ margin: 20px;
    width: 500px;
    background-color: rgb(red, green, blue);
 }
+.creditCard{
+  display: flex;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 300px;
+  height: 150px;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.type{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 10px;
+  height: 30px;
+}
+.number{
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
 
+  
+}
+.date{
+  display: flex;
+  height: 20px;
+  align-items: center;
+  margin-left: 20px;
+
+}
+.owner{
+  display: flex;
+  height: 20px;
+  align-items: center;
+  margin-left: 20px;
+}
