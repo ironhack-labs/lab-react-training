@@ -96,6 +96,23 @@
 
 .Dice img , .CliclablePicture img {
   width: 200px;
+  margin: 2%;
+}
+
+.NumbersTable {
+  display: flex;
+  margin: 2%
+}
+
+.Number {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black;
+
+ 
 }
 
 
