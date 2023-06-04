@@ -1,7 +1,7 @@
 import React from 'react';
 function BoxColor(props) {
 
-    const color = 'rgb'+'('+props.r+","+ props.b+","+props.b+')';
+    const color = 'rgb'+'('+props.r+","+ props.g+","+props.b+')';
     const divStyle = {
         display: 'flex',
         border: '2px',
