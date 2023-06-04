@@ -12,6 +12,9 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
+import profiles from './data/berlin.json';
+
 
 function App() {
   return (
@@ -123,6 +126,11 @@ function App() {
       />
 
       <NumbersTable limit={12} />
+
+      {profiles.map (profile => (
+        <Facebook  profile={profile}/>
+      ))}
+      
     </div>
   );
 }

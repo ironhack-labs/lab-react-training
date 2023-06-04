@@ -2,13 +2,18 @@
   padding: 1rem;
 }
 
-.IdCard {
+.IdCard, .FacebookCard {
   display: flex;
   align-items: center;
   border: 2px solid black;
   width: 40%;
   margin-bottom: 2%;
 
+}
+
+.FacebookCard img {
+  width: 200px;
+  height: 200px;
 }
 
 .IdCard img {
