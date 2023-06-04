@@ -26,18 +26,24 @@ function SignupPage() {
     <>
         
         <form onSubmit={handleSubmit}>
+            <label>Email: </label>
             <input type="email" value={email} onChange={(event)=>setEmail(event.target.value)} />
+
+            <label>Password: </label>
             <input type="password"  value={password} onChange={(event)=>setPassword(event.target.value)}   />
+
+            <label>Nationality: </label>
             <select  value={nationality} onChange={(event)=>setNationality(event.target.value)} >
-                <option value="en">en</option>
-                <option value="de">de</option>
-                <option value="fr">fr</option>
+                <option value="en">English </option>
+                <option value="de">German </option>
+                <option value="fr">French </option>
             </select>
-            <button type="submit">Submit form</button>
+            <button type="submit">Sign up</button>
         </form>
         
         <p>{(newItem.nationality==="fr") ? "Bonjour" : (newItem.nationality==="de" ? "Hallo" : "Hello")}!</p>
-        <p>Your email is {newItem.email}</p>
+        <p>Your email is: {newItem.email}</p>
+        <p>Your email is correct</p>
 
     </>
   )

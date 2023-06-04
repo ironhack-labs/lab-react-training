@@ -13,6 +13,8 @@ import Carousel from "./components/Carousel"
 import NumbersTable from "./components/NumbersTable"
 import FaceBook from "./components/FaceBook"
 import SignupPage from "./components/SignupPage"
+import RGBColorPicker from "./components/RGBColorPicker"
+
 
 
 function App() {
@@ -38,7 +40,7 @@ function App() {
     <div className='App'>
       <div>
         {cardArray.map (card => {
-          return <IdCard eachCard={card}/>
+          return <IdCard eachCard={card} key={card.firstName}/>
         }
         )}
       </div>
@@ -146,6 +148,9 @@ function App() {
 
             {/* Iteration 15 - Sign up page */}
             <SignupPage />
+
+            {/* Iteration 16 - RGBColorPicker */}
+            <RGBColorPicker />
   
             
       </div>
