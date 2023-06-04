@@ -5,8 +5,14 @@ import Greeting from './components/Greeting';
 import RandomNumber from './components/RandomNumber';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
+import { useState } from 'react';
+import LikeButton from './components/LikeButton';
 
 function App() {
+  const [likes, setLikes] = useState(0);
+
   return (
     <div className="App">
       <IdCard
@@ -67,6 +73,35 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
+
+      <Rating children={0} />
+      <Rating children={1.49} />
+      <Rating children={1.5} />
+      <Rating children={3} />
+      <Rating children={4} />
+      <Rating children={5} />
+
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://randomuser.me/api/portraits/men/44.jpg"
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
+        }}
+      />
+
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
+      />
+
+      <LikeButton likes={likes} setLikes={setLikes} />
     </div>
   );
 }

@@ -84,7 +84,8 @@
   border: 1px solid #ddd;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  width: 30vw;
+  width: 300px;
+  height: auto;
   padding: 16px;
   margin: 10px;
   display: flex;
@@ -102,6 +103,37 @@
 
 .creditcard-number {
   display: flex;
-  text-align: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.creditcard-number span {
+  flex: 1;
+
   justify-content: space-between;
+}
+
+.driver-card {
+  display: flex;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px 10px 10px;
+}
+
+.driver-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.driver-card .info {
+  margin-left: 20px;
+}
+
+.driver-card .info p {
+  margin: 0;
 }

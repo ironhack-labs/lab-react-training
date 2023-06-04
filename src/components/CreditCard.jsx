@@ -18,13 +18,19 @@ function CreditCard({
       style={{ backgroundColor: bgColor, color: color }}
     >
       <img src={type === 'Visa' ? Visa : MasterCard} alt={type} />
-      <div className="creditcard-number">•••• •••• •••• {number.slice(-4)}</div>
+      <div className="creditcard-number">
+        <span style={{ fontSize: 30 }}>••••</span>
+        <span style={{ fontSize: 30 }}>••••</span>
+        <span style={{ fontSize: 30 }}>••••</span>
+        <span style={{ fontSize: 25 }}>{number.slice(-4)}</span>
+      </div>
+
       <div className="creditcard-details">
-        <p>
-          Expires: {expirationMonth}/{expirationYear}
+        <p style={{ textAlign: 'left' }}>
+          Expires: {expirationMonth}/{expirationYear} {bank}
         </p>
-        <p>{bank}</p>
-        <p>{owner}</p>
+
+        <p style={{ textAlign: 'left' }}>{owner}</p>
       </div>
     </div>
   );
