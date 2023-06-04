@@ -10,7 +10,6 @@ function ClickablePicture(props) {
       {isImage ? (
         <img
           onClick={changeImage}
-          className="profile-picture"
           src={props.img}
           style={{ cursor: 'pointer', width: '300px' }}
           alt={props.img}
@@ -18,7 +17,6 @@ function ClickablePicture(props) {
       ) : (
         <img
           onClick={changeImage}
-          className="profile-picture"
           src={props.imgClicked}
           style={{ cursor: 'pointer', width: '300px' }}
           alt={props.imgClicked}

@@ -9,6 +9,7 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 function App() {
   const [countLike, setCountLike] = useState(0);
@@ -95,6 +96,7 @@ function App() {
       <LikeButton countLike={countLike} setCountLike={setCountLike} />
       <LikeButton countLike={countLike2} setCountLike={setCountLike2} />
       <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
+      <Dice />
     </div>
   );
 }
