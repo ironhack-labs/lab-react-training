@@ -1,24 +1,22 @@
+function Rating(props) {
+  const totalStars = 5;
+  const getActiveStars = (num) => {
+    return Math.round(num);
+  };
 
-function Rating (props) {
+  const activeStars = getActiveStars(props.children);
 
-const emptyStar =  <i class="far fa-regular fa-star"></i>
-const star = <i class="fas fa-regular fa-star"></i>
-
-const totalStars = 5;
-const getActiveStars = (num) => {
-    return Math.round(num)
-}
-
-const activeStars = getActiveStars(props.children)
-
-    return(
-        <div className="StarsRating">   
-        {[...new Array(totalStars)].map((arr, index) => {
-        return index < activeStars ? star : emptyStar;
+  return (
+    <div className="StarsRating">
+      {[...new Array(totalStars)].map((arr, index) => {
+        return index < activeStars ? (
+          <i key={index} className="fas fa-regular fa-star"></i>
+        ) : (
+          <i key={index} className="far fa-regular fa-star"></i>
+        );
       })}
-           
-        </div>
-    )
+    </div>
+  );
 }
 
 export default Rating;
