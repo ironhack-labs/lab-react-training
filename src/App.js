@@ -8,6 +8,8 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import LogoVisa from './assets/images/visa.png';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
@@ -103,6 +105,9 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+
+      <LikeButton />
+      <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
     </div>
   );
 }
