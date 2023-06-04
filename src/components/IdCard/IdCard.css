@@ -1,0 +1,44 @@
+.contenedor-IdCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid black;
+    width: 800px;
+    height: 350px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    
+
+}
+
+.contenedor-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+}
+
+.style-p{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    line-height: 0.5px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+

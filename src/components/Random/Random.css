@@ -1,0 +1,18 @@
+.border {
+    margin: 20px 0px;
+    border: 1px solid black;
+    align-items: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    align-items: center;
+}
+
+.style-font{
+    font-size: 23px;
+}
+
+.bold{
+    font-weight: 400px;
+}
