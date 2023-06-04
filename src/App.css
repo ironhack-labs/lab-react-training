@@ -49,3 +49,16 @@ margin: 20px;
   margin: 5px;
 }
 
+.random{
+  display: flex;
+   border: 2px solid black;
+   margin: 5px;
+   width: 500px;
+}
+.greet{
+  display: flex;
+   border: 2px solid black;
+   margin: 5px;
+   width: 500px;
+}
+

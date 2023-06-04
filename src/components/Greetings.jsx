@@ -5,12 +5,16 @@ function Greetings(props) {
     if (props.lang === "de") {
         let greet = "Hallo";
         return ( 
-            <h4>{greet } {props.children }</h4>
+            <div className="greet">
+                <h4>{greet} {props.children}</h4>
+            </div>
        )
             }else if (props.lang==="fr"){
         let greet = "Bonjour";
-         return ( 
-            <h4>{greet } {props.children }</h4>
+        return ( 
+             <div className="greet">
+                <h4>{greet} {props.children}</h4>
+            </div>
        )
             }
     
