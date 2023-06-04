@@ -4,6 +4,7 @@ import CreditCard from './components/CreditCard';
 import DriverCard from './components/DriverCard';
 import Greetings from './components/Greetings ';
 import IdCard from './components/IdCard';
+import LikeButton from './components/LikeButton';
 import Random from './components/Random';
 import Rating from './components/Rating';
 
@@ -97,6 +98,8 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+
+      <LikeButton />
     </div>
   );
 }
