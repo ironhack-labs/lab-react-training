@@ -105,3 +105,23 @@ height: 17px;
   align-items: center;
   margin-left: 20px;
 }
+
+.driverCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 400px;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: rgb(38, 38, 209);
+  margin: 5px;
+}
+.photo img{
+  height: 60px;
+  border-radius: 100%;
+}
+.driverCard h4{
+  height: 5px;
+
+}
