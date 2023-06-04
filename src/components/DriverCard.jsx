@@ -1,10 +1,8 @@
+import Rating from './Rating';
+
 function DriverCard(props) {
     const { driverCard } = props;
-    const rating = Math.round(driverCard.rating);
-    const stars = ['☆', '☆', '☆', '☆', '☆'];
-    for (let i = 0; i < rating; i++) {
-        stars[i] = '★';
-    }
+
     return (
         <div className='driverCard'>
             <div>
@@ -13,7 +11,7 @@ function DriverCard(props) {
             <div className='driverCardData'>
                 <h2>{driverCard.name}</h2>
                 <div className='stars'>
-                    {stars.join('')}
+                    <Rating>{driverCard.rating}</Rating>
                 </div>
                 <p>{driverCard.car.model} - {driverCard.car.licensePlate}</p>
             </div>
