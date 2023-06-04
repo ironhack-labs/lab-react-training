@@ -81,3 +81,6 @@ p {
   display: flex;
   flex-direction: row;
 }
+.carousel {
+  margin: 20px;
+}
