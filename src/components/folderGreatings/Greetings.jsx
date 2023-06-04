@@ -1,7 +1,7 @@
 import "./Greetings.css"
 
 function Greetings(props) {
-console.log(props)
+    console.log(props)
     let language = props.lang
     let children = props.children
     let greeting = ""

@@ -6,6 +6,8 @@ import BoxColor from './components/folderBoxColor/BoxColor';
 import CreditCard from './components/folderCreditCard/CreditCard';
 import Rating from './components/folderRating/Rating';
 import DriverCard from './components/folderDriverCard/DriverCard';
+import LikeButton from './components/LikeButton/LikeButton';
+import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import Facebook from './components/folderFacebook/Facebook';
 import data from './data/berlin.json';
 
@@ -106,6 +108,15 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+
+      <h2>Like Button</h2>
+      <div className="flex-direction">
+        <LikeButton />
+        <LikeButton />
+      </div>
+
+      <h2>ClickablePicture</h2>
+      <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
 
       <h2>Facebook</h2>
       <Facebook profile={data[0]} />

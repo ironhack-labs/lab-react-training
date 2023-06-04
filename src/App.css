@@ -1,8 +1,14 @@
 *{
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 h2{
   font-size: 40px;
 }
+
+  .flex-direction {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
