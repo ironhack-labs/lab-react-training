@@ -60,5 +60,6 @@ margin: 20px;
    border: 2px solid black;
    margin: 5px;
    width: 500px;
+   background-color: rgb(red, green, blue);
 }
 

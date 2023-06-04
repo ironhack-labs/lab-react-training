@@ -4,7 +4,7 @@ import React from 'react';
 function IdCard(props) {
     
     const date = props.birth; 
-    console.log()
+    
     return (
         <div className="IdCard">
             <div className="photoPic">

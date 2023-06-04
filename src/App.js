@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+
 import IdCard from './components/IdCard.jsx'
 import Greetings from './components/Greetings.jsx'
 import Random from './components/Random.jsx'
+import BoxColor from './components/BoxColor.jsx'
+
 
 function App() {
   return (
@@ -34,7 +37,12 @@ function App() {
       {/* Iteration III */}
 
       <Random min={1} max={6}/>
-      <Random min={1} max={100}/>
+      <Random min={1} max={100} />
+      
+      {/* Iteration IV */}
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
+
 
       
     </div>
