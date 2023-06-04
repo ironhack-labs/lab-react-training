@@ -1,27 +1,38 @@
 import React from 'react';
 import visa from '../assets/images/visa.png'
-// import masterCard from '../assets/images/master-card.svg'
+//import masterCard from '../assets/images/master-card.svg'
 
 function CreditCard(props) {
-    console.log(props);
+    
     const backColor = props.bgColor;
     const textColor = props.color;
     const divStyle = {
         backgroundColor: backColor,
         color: textColor
     }
-
+    const lastFour = props.number.slice(12)
+    const credNumber = '**** **** **** ' + lastFour;
+    
+    const logo = ((elem) => {
+        if (elem === "Visa") {
+            return <img src={visa} alt={props.owner}/>
+            
+        } else {
+            return "MasterCard"
+        }
+    })
     
 
 
     return (
         <div className="creditCard" style={divStyle}>
             <div className="type">
-                <h4>{props.type}</h4>
+                
+                {logo(props.type)}
                 
             </div>
             <div className="number">
-                <h3>{props.number} </h3>
+                <h3>{credNumber} </h3>
                 
 
             </div>

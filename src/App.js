@@ -57,7 +57,7 @@ function App() {
   color="white" 
 />
     
-{/* <CreditCard
+<CreditCard
   type="Master Card"
   number="0123456789010995"
   expirationMonth={3}
@@ -74,10 +74,10 @@ function App() {
   expirationMonth={12}
   expirationYear={2019}
   bank="Name of the Bank"
-  owner="Firstname Lastname"
+  owner="Bada-bing Bada-bom"
   bgColor="#ddbb55"
   color="white" 
-/> */}
+/>
 
 
       

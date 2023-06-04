@@ -70,7 +70,7 @@ margin: 20px;
   height: 150px;
   flex-direction: column;
   padding: 0;
-  margin: 0;
+  margin: 10px;
 }
 .type{
   display: flex;
@@ -78,25 +78,30 @@ margin: 20px;
   align-items: center;
   margin-right: 10px;
   height: 30px;
+
+}
+.type img{
+height: 17px;
+
 }
 .number{
   display: flex;
   height: 30px;
-  align-items: center;
   justify-content: center;
 
   
 }
 .date{
   display: flex;
-  height: 20px;
+  height: 30px;
   align-items: center;
   margin-left: 20px;
+  margin-top: 30px;
 
 }
 .owner{
   display: flex;
-  height: 20px;
+  height: 10px;
   align-items: center;
   margin-left: 20px;
 }
