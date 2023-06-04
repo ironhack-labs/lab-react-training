@@ -10,6 +10,7 @@ import CreditCard from './components/CreditCard.jsx';
 import Rating from './components/Rating.jsx';
 import DriverCard from './components/DriverCard.jsx';
 import LikeButton from './components/LikeButton.jsx';
+import ClickablePicture from './components/ClickablePicture';
 
 
 function App() {
@@ -86,7 +87,7 @@ function App() {
 
       {/* Iteration VI */}
 
-      <Rating>0</Rating>
+      <Rating>0.49</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
       <Rating>3</Rating>
@@ -117,7 +118,11 @@ function App() {
 
       <LikeButton />
       
-      
+      {/* Iteration IX */}
+      <ClickablePicture
+       img='maxence.png'
+       imgClicked='maxence-glasses.png'
+       />
 
 
       
