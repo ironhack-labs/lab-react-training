@@ -1,11 +1,11 @@
 import './App.css';
-import IdCard from './components/IdCard';
+import Idcard from './components/Idcard';
 
 function App() {
   return (
     <div className="App">
     <h1>Iteration 1- IdCard</h1>
-  <IdCard
+  <Idcard
   lastName='Doe'
   firstName='John'
   gender='male'
@@ -14,7 +14,7 @@ function App() {
   picture="https://randomuser.me/api/portraits/men/44.jpg"
 />
 
-<IdCard
+<Idcard
   lastName='Delores '
   firstName='Obrien'
   gender='female'
