@@ -7,10 +7,16 @@ function NumbersTable({ limit }) {
   }
 
   return (
-    <div className="numbers-table grid">
-      {numbersArr.map((num) => (
-        <article key={nanoid()}>{num}</article>
-      ))}
+    <div>
+      {numbersArr.map((num) =>
+        num % 2 === 1 ? (
+          <div key={nanoid()}>{num}</div>
+        ) : (
+          <div key={nanoid()} style={{ backgroundColor: 'red' }}>
+            {num}
+          </div>
+        )
+      )}
     </div>
   );
 }
