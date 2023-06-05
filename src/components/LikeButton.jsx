@@ -3,10 +3,11 @@ import { useState } from 'react';
 
 function LikeButton() {
    
-        const [counter, setCounter] = useState(0);
-        const incrementCount = () => setCounter(counter + 1);
-        const decrementCount = () => setCounter(counter -1)
-        console.log(counter)
+        const [count, setCount] = useState(0);
+        const incrementCount = () => setCount(prevCount => prevCount + 1);
+ 
+        const decrementCount = () => setCount(prevCount => prevCount -1);
+        console.log(count)
         
         
       
@@ -20,7 +21,7 @@ function LikeButton() {
      
     
   >
-    <p>Likes {counter}</p>
+    <p>Likes {count}</p>
     Like button
   </button>
   <button style={{backgroundColor: 'red'}}
@@ -29,7 +30,7 @@ function LikeButton() {
      
     
   >
-    <p>Likes {counter}</p>
+    <p>Likes {count}</p>
     Dislike button
   </button>
   </div>
