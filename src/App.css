@@ -97,4 +97,18 @@ p {
   align-items: center;
   border: 1px solid black;
   background-color: red;
+  margin: 5px;
+}
+
+.facebook {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid black;
+}
+
+.facebook-img {
+  display: flex;
+  flex-direction: row;
 }
