@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import diceEmpty from '../assets/images/dice-empty.png';
 import dice1 from '../assets/images/dice1.png';
 import dice2 from '../assets/images/dice2.png';
@@ -9,22 +9,30 @@ import dice6 from '../assets/images/dice6.png';
 
 function Dice() {
   const diceImages = [dice1, dice2, dice3, dice4, dice5, dice6];
-  const [diceImg, setDiceImg] = useState(diceEmpty);
-
-  useEffect(() => {
-    let intervalId = setInterval(() => {
-      let randomIndexNumber = Math.floor(Math.random() * diceImages.length);
-      setDiceImg(diceImages[randomIndexNumber]);
-    }, 1000);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  });
+  const [diceImg, setDiceImg] = useState(
+    diceImages[Math.floor(Math.random() * diceImages.length)]
+  );
 
   return (
     <div>
-      <img className="dice-img" src={diceImg} alt="dice" />
+      <img
+        className="dice-img"
+        onClick={() => {
+          setDiceImg(diceEmpty);
+          let timeOutId = setTimeout(() => {
+            let randomIndexNumber = Math.floor(
+              Math.random() * diceImages.length
+            );
+            setDiceImg(diceImages[randomIndexNumber]);
+          }, 1000);
+
+          return () => {
+            clearTimeout(timeOutId);
+          };
+        }}
+        src={diceImg}
+        alt="dice"
+      />
     </div>
   );
 }
