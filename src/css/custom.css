@@ -1,0 +1,15 @@
+.grid + .grid {
+  margin-top: var(--grid-spacing-vertical);
+}
+.grid > article {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.numbers-table article:nth-child(even) {
+  background-color: #c63925;
+}
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  }
+}

@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import './css/pico.min.css';
+import './css/custom.css';
 import './App.css';
+import { useState } from 'react';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
@@ -11,6 +13,7 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 function App() {
   const [countLike, setCountLike] = useState(0);
@@ -106,6 +109,7 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+      <NumbersTable limit={12} />
     </div>
   );
 }
