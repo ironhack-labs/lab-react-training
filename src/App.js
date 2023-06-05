@@ -1,5 +1,6 @@
 import './App.css';
 import BoxColor from './components/BoxColor';
+import Carousel from './components/Carousel';
 import ClickablePicture from './components/ClickablePicture';
 import CreditCard from './components/CreditCard';
 import Dice from './components/Dice';
@@ -106,6 +107,15 @@ function App() {
       <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
 
       <Dice />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
     </div>
   );
 }
