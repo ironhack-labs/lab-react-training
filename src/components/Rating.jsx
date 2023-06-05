@@ -1,8 +1,8 @@
 function Rating({ children }) {
   let roundedNumber = Math.round(children);
-  console.log('average', roundedNumber);
-  console.log(children);
-  let star = '';
+  //console.log('average', roundedNumber);
+  //console.log(children);
+ 
   if (roundedNumber == 0) return <p>☆☆☆☆☆</p>;
 
   if (roundedNumber == 1) return <p>★☆☆☆☆</p>;

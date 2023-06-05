@@ -5,6 +5,10 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import img from '/Users/mauriciobenaventeibanez/reactTraining/lab-react-training/src/assets/images/maxence.png'
+import toggleImg from '/Users/mauriciobenaventeibanez/reactTraining/lab-react-training/src/assets/images/maxence-glasses.png'
+
 import './App.css';
 
 
@@ -88,6 +92,7 @@ return <CreditCard creditCard={creditCard} />
 <Rating>4</Rating>
 <Rating>4.7</Rating>
 <LikeButton />
+<ClickablePicture img={img} toggleImg={toggleImg} />
       </div>
     );
   
