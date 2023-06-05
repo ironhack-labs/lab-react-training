@@ -88,3 +88,13 @@
     flex-wrap: wrap;
     font-size: 2em;
 }
+
+.dice {
+    width: 100px;
+}
+
+.myButtons {
+    display: flex;
+    margin: 2px;
+    padding: 6px;
+}

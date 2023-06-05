@@ -1,5 +1,4 @@
 import './App.css';
-import { useState } from 'react';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
@@ -9,12 +8,13 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
 
 function App() {
-  const [thug, setThug] = useState('noThug');
-  const toggleThug = (event) => {
-    setThug(!thug);
-  };
   return (
     <div className="App">
       <h1>IdCards:</h1>
@@ -26,7 +26,6 @@ function App() {
         birth={new Date('1992-07-14')}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
-
       <IdCard
         lastName="Delores "
         firstName="Obrien"
@@ -35,19 +34,15 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-
       <h1>Greetings:</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-
       <h1>Random:</h1>
       <Random min={1} max={6}></Random>
       <Random min={1} max={100} />
-
       <h1>BoxColor:</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
       <h1>Credit Card:</h1>
       <div className="credit">
         <CreditCard
@@ -83,7 +78,6 @@ function App() {
           color="white"
         />
       </div>
-
       <h1>Rating:</h1>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -91,7 +85,6 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
       <h1>Driver Card:</h1>
       <DriverCard
         name="Travis Kalanick"
@@ -102,7 +95,6 @@ function App() {
           licensePlate: 'CO42DE',
         }}
       />
-
       <DriverCard
         name="Dara Khosrowshahi"
         rating={4.9}
@@ -112,12 +104,26 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
-
       <h1>Likes:</h1>
       <LikeButton />
-
       <h1>Clickable image:</h1>
       <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
+      <h1>Random dice:</h1>
+      <Dice />
+      <h1>Carousel</h1>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />{' '}
+      <h1>NumbersTable</h1>
+      <NumbersTable limit={12} />
+      <h1>Facebook</h1>
+      <Facebook />
+      <SignupPage />
     </div>
   );
 }

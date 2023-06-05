@@ -1,6 +1,4 @@
 function Rating(props) {
-  console.log('------>', props.children);
-
   function rate(props) {
     if (props.children < 0.5) {
       return <div className="star">☆☆☆☆☆</div>;
