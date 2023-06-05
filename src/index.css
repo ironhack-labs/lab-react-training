@@ -48,7 +48,6 @@ code {
 
 .container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -108,4 +107,38 @@ pre {
   text-align: left;
   line-height: 15px;
   margin: 10px;
+}
+
+.likeButton {
+  padding: 20px 40px;
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.clickablePicture {
+  height: 200px;
+  width: 200px;
+}
+
+.dice {
+  height: 200px;
+  width: 200px;
+}
+
+.NumbersTable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Number {
+  height: 60px;
+  width: 60px;
+  border: solid 1px;
+  text-align: center;
+  font-size: 30px;
+}
+
+button {
+  cursor: pointer;
 }
