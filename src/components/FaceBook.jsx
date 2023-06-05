@@ -1,27 +1,30 @@
-import profiles from "../data/berlin.json"
-import {useState} from "react";
-import FaceBookCard from "./FaceBookCard";
+import profiles from '../data/berlin.json';
+import { useState } from 'react';
+import FaceBookCard from './FaceBookCard';
 
 function FaceBook() {
-  const [bgColor, setBgColor] = useState("#ff0000");
-  
-  // const uniqueCountries = profiles.filter((item, index) => {
-  //   return profiles.findIndex(obj => obj.country === item.country) === index;
-  // }).map(item => item.country);
+  const [pickedCountry, setPickedCountry] = useState("");
 
+  const uniqueCountries = profiles.filter((item, index) => {
+    return profiles.findIndex(obj => obj.country === item.country) === index;
+  }).map(item => item.country);
 
-    // const countryPicker = (country) => {
-    //   if (country === profiles[i].country) {
-    //     return setBgColor("#ff0000")
-    //   }};
-  
+  const countryPicker = (country)=>{
+    setPickedCountry(country);
+  }
 
-    return (
-      <>
-        <p>Hi</p>
-        {/* {uniqueCountries.map(country => {return <button onClick={countryPicker(country)}> {country}</button>})} */}
-        {/* {profiles.map (elem => {return <FaceBookCard profile={elem} bgColor={bgColor}/>})} */}
-      </>)
+  return (
+    <>
+      {/* <button onClick={(()=>{countryPicker("England")})}>England</button> */}
+      {uniqueCountries
+        .map(country => {return <button onClick={(() => {countryPicker(country)})}>{country}</button>})}
+      {console.log(pickedCountry)}
+      {profiles
+        .map((elem) => {
+        return <FaceBookCard profile={elem} key={elem.firstName} pickedCountry={pickedCountry} />;
+      })}
+    </>
+  );
 }
 
-export default FaceBook
+export default FaceBook;

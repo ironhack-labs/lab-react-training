@@ -1,5 +1,6 @@
 .App {
   /* text-align: center; */
+  margin: 20px;
 }
 
 .App-logo {
@@ -37,36 +38,34 @@
   }
 }
 
-
-.cardDiv{
+.cardDiv {
   display: flex;
   flex-direction: row;
   padding: 20px;
   border: 1px solid black;
-  width: 400px;
+  width: 600px;
   margin: 20px;
 }
 
-.cardImage{
+.cardImage {
   padding: 20px;
 }
 
-.cardTextDiv{
+.cardTextDiv {
   text-align: left;
   padding: 5px;
 }
 
-.langdiv{
+.langdiv {
   display: flex;
   flex-direction: row;
   padding: 20px;
   border: 1px solid black;
   width: 400px;
   margin: 20px;
-
 }
 
-.ccdiv{
+.ccdiv {
   width: 500px;
   height: 250px;
   margin: 14px;
@@ -76,22 +75,22 @@
   flex-direction: column;
 }
 
-.cardlogo{
+.cardlogo {
   max-height: 60px;
   max-width: 60px;
   align-self: flex-end;
 }
 
-.cardnumbers{
+.cardnumbers {
   font-size: 50px;
 }
 
-.smallercard{
+.smallercard {
   font-size: 20px;
   margin: 0px;
 }
 
-.driverdiv{
+.driverdiv {
   background-color: #485cb4;
   width: 650px;
   height: 100px;
@@ -101,12 +100,9 @@
   display: flex;
   color: white;
   flex-direction: row;
-  
-  
 }
 
-
-.imgcrop{
+.imgcrop {
   width: 100px;
   height: 100px;
   /* position: relative; */
@@ -115,36 +111,36 @@
   margin-left: 20%;
 }
 
-.driverimg{
+.driverimg {
   /* display: inline; */
   height: 100%;
 }
 
-.driveinfo{
-
+.driveinfo {
 }
 
-.driveinfo > p,h3{
+.driveinfo > p,
+h3 {
   margin: 0;
   padding: 0;
 }
 
-.number{
+.number {
   height: 100px;
   width: 100px;
-  border: 2px black solid;
+  border: 3px black solid;
   font-size: 30px;
   text-align: center;
-  
 }
 
-.numbersDiv{
+.numbersDiv {
   display: flex;
   flex-wrap: wrap;
   max-width: 550px;
+
 }
 
-.facebookdiv{
+.facebookdiv {
   border: 1px black solid;
   display: flex;
   flex-direction: row;

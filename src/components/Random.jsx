@@ -1,5 +1,3 @@
-
-
 function Random(props) {
   const result =  Math.floor(Math.random() * (props.max - props.min) + props.min);
   return (
