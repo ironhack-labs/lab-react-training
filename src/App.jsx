@@ -1,5 +1,4 @@
 import './css/pico.min.css';
-import './css/custom.css';
 import './App.css';
 import { useState } from 'react';
 import IdCard from './components/IdCard';
