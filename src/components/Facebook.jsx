@@ -5,7 +5,7 @@ function Facebook() {
   const [allProf, setAllProf] = useState(profiles);
   const [pAllProf, setPAllProf] = useState(profiles);
 
-  pAllProf.map((pAllProf, index) => {
+  return pAllProf.map((pAllProf, index) => {
     console.log('------------', pAllProf);
     return (
       <div className="IdCard" key={index}>
