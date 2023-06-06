@@ -112,3 +112,11 @@ p {
   display: flex;
   flex-direction: row;
 }
+
+.form {
+  margin: 10px;
+}
+
+.signup-btn {
+  margin-top: 10px;
+}
