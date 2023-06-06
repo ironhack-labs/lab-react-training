@@ -9,9 +9,10 @@ import ClickablePicture from './components/ClickablePicture';
 import img from '/Users/mauriciobenaventeibanez/reactTraining/lab-react-training/src/assets/images/maxence.png'
 import toggleImg from '/Users/mauriciobenaventeibanez/reactTraining/lab-react-training/src/assets/images/maxence-glasses.png'
 import dataJSON from './data/berlin.json'
-import './App.css';
-import Facebook from './components/Facebook';
+import SignUp from './components/SignUp';
 
+import Facebook from './components/Facebook';
+import './App.css';
 
 function App() {
   const idCard = [ {  
@@ -95,6 +96,7 @@ return <CreditCard creditCard={creditCard} key={creditCard.number}/>
 <LikeButton />
 <ClickablePicture img={img} toggleImg={toggleImg} />
 <Facebook data={dataJSON}/>
+<SignUp/>
       </div>
     );
   

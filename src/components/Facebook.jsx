@@ -1,12 +1,18 @@
 import React from 'react'
 
+
 function Facebook({data}) {
+
   return (
     <div className='FacebookSimple'>
 {data.map((user) => {
     return (
+       
         
-        <div className='Mauri' key={user.firstName}>
+        
+        
+        <div className='Mauri' key={user.firstName} id="Mauri">
+       
         <img className="FacebookImage" src={user.img} alt="userImage" width="200vw" />
         <div>
         <p><strong>First Name: </strong>{user.firstName}</p>
@@ -16,7 +22,7 @@ function Facebook({data}) {
         </div>
        
         </div>
-        
+      
        
       
        
@@ -24,6 +30,7 @@ function Facebook({data}) {
     )
    
 })}
+
  </div>
     
   )
