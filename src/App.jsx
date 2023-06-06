@@ -1,4 +1,4 @@
-import './css/pico.min.css';
+// import './css/pico.min.css';
 import './App.css';
 import { useState } from 'react';
 
