@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  margin: 20px;
 }
 
 .App-logo {
@@ -17,11 +18,11 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center;  */
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -35,4 +36,115 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.cardDiv {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border: 1px solid black;
+  width: 600px;
+  margin: 20px;
+}
+
+.cardImage {
+  padding: 20px;
+}
+
+.cardTextDiv {
+  text-align: left;
+  padding: 5px;
+}
+
+.langdiv {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border: 1px solid black;
+  width: 400px;
+  margin: 20px;
+}
+
+.ccdiv {
+  width: 500px;
+  height: 250px;
+  margin: 14px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardlogo {
+  max-height: 60px;
+  max-width: 60px;
+  align-self: flex-end;
+}
+
+.cardnumbers {
+  font-size: 50px;
+}
+
+.smallercard {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.driverdiv {
+  background-color: #485cb4;
+  width: 650px;
+  height: 100px;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 15px;
+  display: flex;
+  color: white;
+  flex-direction: row;
+}
+
+.imgcrop {
+  width: 100px;
+  height: 100px;
+  /* position: relative; */
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 20%;
+}
+
+.driverimg {
+  /* display: inline; */
+  height: 100%;
+}
+
+.driveinfo > p,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.number {
+  height: 100px;
+  width: 100px;
+  border: 3px black solid;
+  font-size: 30px;
+  text-align: center;
+}
+
+.numbersDiv {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 550px;
+
+}
+
+.facebookdiv {
+  border: 1px black solid;
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 180px;
+}
+
+button{
+  
 }
