@@ -1,15 +1,17 @@
 import { useState } from 'react';
 
 function Carousel(props) {
-  console.log(props.images);
-
-  const [img, setImg] = useState(props.images[0]);
-
+  const [indexNumber, setIndexNumber] = useState(1);
+  const [img, setImg] = useState(props.images[indexNumber]);
+  console.log(indexNumber);
   return (
     <div>
       <button
         onClick={() => {
-          setImg(props.images[1]);
+          if (indexNumber >= 1) {
+            setIndexNumber(indexNumber - 1);
+          }
+          setImg(props.images[indexNumber]);
         }}
       >
         Left
@@ -17,7 +19,10 @@ function Carousel(props) {
       <img src={img} alt="diferent imgs" />
       <button
         onClick={() => {
-          setImg(props.images[0]);
+          if (indexNumber < props.images.length - 1) {
+            setIndexNumber(indexNumber + 1);
+          }
+          setImg(props.images[indexNumber]);
         }}
       >
         Right
