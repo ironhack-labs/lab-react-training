@@ -1,8 +1,10 @@
 import profiles from '../data/berlin.json';
 import { useState } from 'react';
 import FaceBookCard from './FaceBookCard';
+import "../App.css"
 
 function FaceBook() {
+  const bgColor = "lightblue";
   const [pickedCountry, setPickedCountry] = useState("");
 
   const uniqueCountries = profiles.filter((item, index) => {
@@ -18,10 +20,9 @@ function FaceBook() {
       {/* <button onClick={(()=>{countryPicker("England")})}>England</button> */}
       {uniqueCountries
         .map(country => {return <button onClick={(() => {countryPicker(country)})}>{country}</button>})}
-      {console.log(pickedCountry)}
       {profiles
         .map((elem) => {
-        return <FaceBookCard profile={elem} key={elem.firstName} pickedCountry={pickedCountry} />;
+        return <FaceBookCard profile={elem} key={elem.firstName} pickedCountry={pickedCountry} bgColor={bgColor}/>;
       })}
     </>
   );

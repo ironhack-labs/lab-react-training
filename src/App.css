@@ -116,9 +116,6 @@
   height: 100%;
 }
 
-.driveinfo {
-}
-
 .driveinfo > p,
 h3 {
   margin: 0;
@@ -146,4 +143,8 @@ h3 {
   flex-direction: row;
   width: 500px;
   height: 180px;
+}
+
+button{
+  
 }

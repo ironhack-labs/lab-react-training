@@ -1,15 +1,14 @@
-
 import SingleColorPicker from "./SingleColorPicker"
 import {useState} from "react";
 
 function RGBColorPicker() {
-    const [rValue, setRValue] = useState("");
-    const [gValue, setGValue] = useState("");
-    const [bValue, setBValue] = useState("");
+    const [rValue, setRValue] = useState(0);
+    const [gValue, setGValue] = useState(0);
+    const [bValue, setBValue] = useState(0);
 
   return (
     <>
-        <div>
+        <div style={{margin: "100px"}}>
         <SingleColorPicker 
             color="r"
             value={rValue}

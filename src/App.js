@@ -16,33 +16,28 @@ import SignupPage from './components/SignupPage';
 import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
-  const cardArray = [
-    {
-      lastName: 'Delores',
-      firstName: 'Obrien',
-      gender: 'female',
-      height: 172,
-      birth: Date('1988-05-11'),
-      picture: 'https://randomuser.me/api/portraits/women/44.jpg',
-    },
-
-    {
-      lastName: 'Doe',
-      firstName: 'John',
-      gender: 'male',
-      height: 178,
-      birth: Date('1992-07-14'),
-      picture: 'https://randomuser.me/api/portraits/men/44.jpg',
-    },
-  ];
 
   return (
     <div className="App">
       {/* Iteration 1 - IdCard */}
-      <p>Iteration 1 - IdCard: </p>
-      {cardArray.map((card) => {
-        return <IdCard eachCard={card} key={card.firstName} />;
-      })}
+      <p>Iteration 1 - IdCard: </p> 
+      <IdCard
+        lastName='Doe'
+        firstName='John'
+        gender='male'
+        height={178}
+        birth={new Date("1992-07-14")}
+        picture="https://randomuser.me/api/portraits/men/44.jpg"
+      />
+
+      <IdCard
+        lastName='Delores '
+        firstName='Obrien'
+        gender='female'
+        height={172}
+        birth={new Date("1988-05-11")}
+        picture="https://randomuser.me/api/portraits/women/44.jpg"
+      />
 
       {/* Iteration 2 - Greetings */}
       <p>Iteration 2 - Greetings: </p>

@@ -1,15 +1,15 @@
-function IdCard({eachCard}) {
+function IdCard({firstName, lastName, gender, height, birth, picture}) {
         return (
             <div className="cardDiv">
                 <div>
-                    <img className="cardImage" src={eachCard.picture} alt="user"/>
+                    <img className="cardImage" src={picture} alt="user"/>
                 </div>
                 <div className="cardTextDiv">
-                    <p>Name: {eachCard.firstName}</p>
-                    <p>Last name: {eachCard.lastName}</p>
-                    <p>Gender: {eachCard.gender}</p>
-                    <p>Height: {eachCard.height}</p>
-                    <p>Birth: {eachCard.birth}</p>
+                    <p>Name: {firstName}</p>
+                    <p>Last name: {lastName}</p>
+                    <p>Gender: {gender}</p>
+                    <p>Height: {height}</p>
+                    <p>Birth: {birth.toLocaleDateString()}</p>
                 </div>   
             </div>
   )

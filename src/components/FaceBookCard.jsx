@@ -1,5 +1,5 @@
-function FaceBookCard({ profile, pickedCountry }) {
-  const bgColor = "lightblue"
+function FaceBookCard({ profile, pickedCountry, bgColor }) {
+
 
   return (
     <div>
