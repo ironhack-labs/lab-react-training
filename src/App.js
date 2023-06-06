@@ -10,10 +10,18 @@ import DriverCard from './components/DriverCard';
 import { useState } from 'react';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import diceEmpty from './images/dice-empty.png';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import profilesData from '../src/data/berlin.json';
 
 function App() {
   const [likes, setLikes] = useState(0);
   const [photobomb, setPhotobomb] = useState(false);
+  const [dice, setDice] = useState(diceEmpty);
+  const profiles = profilesData;
 
   return (
     <div className="App">
@@ -106,6 +114,25 @@ function App() {
       <LikeButton likes={likes} setLikes={setLikes} />
 
       <ClickablePicture photoBomb={photobomb} setPhotobomb={setPhotobomb} />
+
+      <Dice dice={dice} setDice={setDice} diceEmpty={diceEmpty} />
+
+      <br></br>
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      <br></br>
+
+      <NumbersTable limit={12} />
+
+      <br></br>
     </div>
   );
 }

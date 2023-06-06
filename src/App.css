@@ -137,3 +137,35 @@
 .driver-card .info p {
   margin: 0;
 }
+
+.img {
+  width: 150px;
+  height: auto;
+}
+
+.numbers-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.numbers-table-item-red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+.numbers-table-item-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #282c34;
+  border-style: solid;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
