@@ -1,7 +1,7 @@
 export default function FacebookCard(props) {
   const { profile } = props;
   return (
-    <div className="Idcard Border">
+    <div className="Idcard Border" style={props.style}>
       <div>
         <img src={profile.img} alt="Profile" />
       </div>
