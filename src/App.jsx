@@ -15,6 +15,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage';
 
 function App() {
   const [countLike, setCountLike] = useState(0);
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+      <SignupPage />
       <IdCard
         lastName="Doe"
         firstName="John"

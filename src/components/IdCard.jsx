@@ -1,6 +1,14 @@
 function IdCard(props) {
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        border: '1px solid black',
+        width: '400px',
+        margin: '60px',
+      }}
+    >
       <div>
         <img src={props.picture} alt="Profile" />
       </div>

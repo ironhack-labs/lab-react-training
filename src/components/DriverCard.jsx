@@ -11,6 +11,8 @@ function DriverCard({ car, name, rating, img }) {
         height: '200px',
         width: '400px',
         border: '3px, solid, grey',
+        display: 'flex',
+        padding: '20px',
       }}
     >
       <img
