@@ -1,6 +1,8 @@
 import './css/pico.min.css';
 import './App.css';
 import { useState } from 'react';
+import profilesJSON from './data/berlin.json';
+
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
@@ -13,6 +15,7 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
 
 function App() {
   const [countLike, setCountLike] = useState(0);
@@ -109,6 +112,7 @@ function App() {
         ]}
       />
       <NumbersTable limit={12} />
+      <FaceBook profiles={profilesJSON} />
     </div>
   );
 }
