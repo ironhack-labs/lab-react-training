@@ -1,4 +1,8 @@
-function FaceBook({ profiles }) {
+import { useState } from 'react';
+import profilesJSON from '../data/berlin.json';
+
+function FaceBook() {
+  const [profiles, setProfiles] = useState(profilesJSON);
   return (
     <div>
       {profiles.map((profile) => {

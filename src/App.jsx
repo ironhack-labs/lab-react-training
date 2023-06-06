@@ -1,7 +1,6 @@
 import './css/pico.min.css';
 import './App.css';
 import { useState } from 'react';
-import profilesJSON from './data/berlin.json';
 
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -112,7 +111,7 @@ function App() {
         ]}
       />
       <NumbersTable limit={12} />
-      <FaceBook profiles={profilesJSON} />
+      <FaceBook />
     </div>
   );
 }
