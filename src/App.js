@@ -35,8 +35,8 @@ function App() {
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
       <h1>Greetings:</h1>
-      <Greetings lang="de">Ludwig</Greetings>
-      <Greetings lang="fr">François</Greetings>
+      <Greetings lang="de"> Ludwig</Greetings>
+      <Greetings lang="fr"> François</Greetings>
       <h1>Random:</h1>
       <Random min={1} max={6}></Random>
       <Random min={1} max={100} />

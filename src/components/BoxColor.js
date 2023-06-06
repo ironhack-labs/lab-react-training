@@ -1,4 +1,5 @@
 function BoxColor(props) {
+  console.log(props);
   const { r, g, b } = props;
   function rgbToHex(r, g, b) {
     r = r.toString(16);
@@ -19,7 +20,9 @@ function BoxColor(props) {
   return (
     <div
       className="IdCard box"
-      style={{ backgroundColor: `rgb(${r}, ${g}, ${b})` }}
+      style={{
+        backgroundColor: `rgb(${r}, ${g}, ${b})`,
+      }}
     >
       <p>
         rgb({props.r}, {props.g}, {props.b})

@@ -1,9 +1,14 @@
 .IdCard img{
-    height: auto;
+    height: 200px;
     margin: 6px;
 }
 
 .IdCard p {
+    margin: 6px;
+}
+
+.ccImg {
+    width: 40px;
     margin: 6px;
 }
 
@@ -35,7 +40,7 @@
 
 .creditCard {
     border: 1px solid black;
-    width: 30%;
+    width: 340px;
     border-radius: 6%;
 }
 
