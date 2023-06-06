@@ -2,8 +2,8 @@ import React from 'react';
 
 function IdCard({idCard}) {
     return (
-        <div className="Profile">
             
+        <div className="Profile" key={idCard.firstName}>
                 <img className="ProfileImage" src={idCard.picture} alt="userImage"/>
                 
             <div className="ProfileInfo">

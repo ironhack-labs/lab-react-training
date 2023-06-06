@@ -10,6 +10,26 @@
   margin: 20px;
 }
 
+.FacebookSimple {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  text-align: left;
+}
+.Mauri {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  border: 1px solid black;
+}
+.Mauri, p {
+  font-size: larger;
+}
+.FacebookImage {
+  border: 1px solid black;
+  padding: 10px;
+}
+
 .ProfileImage{
  
   border: 1px solid black;

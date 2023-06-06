@@ -8,8 +8,9 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import img from '/Users/mauriciobenaventeibanez/reactTraining/lab-react-training/src/assets/images/maxence.png'
 import toggleImg from '/Users/mauriciobenaventeibanez/reactTraining/lab-react-training/src/assets/images/maxence-glasses.png'
-
+import dataJSON from './data/berlin.json'
 import './App.css';
+import Facebook from './components/Facebook';
 
 
 function App() {
@@ -67,7 +68,7 @@ const creditCard = [
       <div className="App">
           <div>
         {idCard.map ((idCard => {
-          return <IdCard idCard={idCard}/>
+          return <IdCard idCard={idCard} key={idCard.firstName}/>
         }
         )
         )}
@@ -81,7 +82,7 @@ const creditCard = [
       <BoxColor r={128} g={255} b={0}>rgb(128, 255, 0) #80ff00   </BoxColor>
       <div>
       {creditCard.map((creditCard => {
-return <CreditCard creditCard={creditCard} />
+return <CreditCard creditCard={creditCard} key={creditCard.number}/>
 
       }))}
       </div>
@@ -93,6 +94,7 @@ return <CreditCard creditCard={creditCard} />
 <Rating>4.7</Rating>
 <LikeButton />
 <ClickablePicture img={img} toggleImg={toggleImg} />
+<Facebook data={dataJSON}/>
       </div>
     );
   
