@@ -6,8 +6,13 @@ import IdCard from './components/IdCard';
 import Random from './components/Random';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import { useState } from 'react';
+import LikeButton from './components/LikeButton';
 
 function App() {
+  const [ likeCounter, setLikeCounter ] = useState(0);
+  const [ likeCounter2, setLikeCounter2 ] = useState(0);
+
   return (
     <div className="App">
       <h1>Hello bello</h1>
@@ -99,6 +104,10 @@ function App() {
               licensePlate: 'BE33ER',
             }}
           />
+        </div>
+        <div className='all-likeBtn'>
+          <LikeButton likeCounter = {likeCounter} setLikeCounter = {setLikeCounter} />
+          <LikeButton likeCounter = {likeCounter2} setLikeCounter = {setLikeCounter2} />
         </div>
       </div>
     </div>
