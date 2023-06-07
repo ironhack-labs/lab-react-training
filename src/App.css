@@ -39,7 +39,7 @@ display: flex;
   border-radius: 5px;
   margin: 10px;
   height: 150px;
-  width: 900px;
+  width: 400px;
   font-size: 10px;
 }
 
@@ -80,6 +80,7 @@ display: flex;
   border-radius: 5px;
   background-color: rgb(28, 67, 196);
   margin: 10px;
+  width: 600px;
 
 }
 
@@ -113,13 +114,38 @@ display: flex;
 
 .toggle-img{
   margin: 20px;
-  width: 150px;
+  width: 300px;
 }
 
 .dice-img {
   margin: 20px;
-  width: 150px;
+  width: 300px;
 }
+
+.carousel-img{
+  margin: 20px;
+  width: 300px;
+}
+
+.numbers-table{ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.numbers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 40px;
+  border: solid 1px;
+  width: 200px;
+  height: 200px;
+}
+
+
 
 
 

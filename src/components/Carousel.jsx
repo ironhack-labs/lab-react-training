@@ -16,7 +16,7 @@ function Carousel(props) {
       >
         Left
       </button>
-      <img src={img} alt="diferent imgs" />
+      <img className="carousel-img" src={img} alt="diferent imgs" />
       <button
         onClick={() => {
           if (indexNumber < props.images.length - 1) {

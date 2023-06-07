@@ -8,6 +8,7 @@ import DriverCard from './components/DriverCard';
 import Greetings from './components/Greetings ';
 import IdCard from './components/IdCard';
 import LikeButton from './components/LikeButton';
+import NumbersTable from './components/NumbersTable';
 import Random from './components/Random';
 import Rating from './components/Rating';
 
@@ -116,6 +117,8 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+
+      <NumbersTable limit={12} />
     </div>
   );
 }
