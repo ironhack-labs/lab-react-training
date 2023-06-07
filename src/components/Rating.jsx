@@ -2,7 +2,7 @@ import { IoMdStarOutline } from "react-icons/io";
 import { IoMdStar } from "react-icons/io";
 
 function Rating( {children} ) {
-    const childrenRounded = Math.floor(children);
+    const childrenRounded = Math.round(children);
     // const emptyStar = <IoMdStarOutline />;
     // const fullStar = <IoMdStar />;
     // console.log(`empty star ${emptyStar} full star ${fullStar} `);
