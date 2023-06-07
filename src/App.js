@@ -8,6 +8,7 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import { useState } from 'react';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   const [ likeCounter, setLikeCounter ] = useState(0);
@@ -109,6 +110,8 @@ function App() {
           <LikeButton likeCounter = {likeCounter} setLikeCounter = {setLikeCounter} />
           <LikeButton likeCounter = {likeCounter2} setLikeCounter = {setLikeCounter2} />
         </div>
+        <ClickablePicture img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvhwnWFdz2y8eH8k2q2rbBNKYpMA842VZcQQ&usqp=CAU" 
+        imgClicked ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS857vYUAHqfHQD0HNlKGj81YNa6FckXAJtAA&usqp=CAU"/>
       </div>
     </div>
   );
