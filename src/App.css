@@ -80,3 +80,11 @@
 .card-details-box p {
   margin: 0;
 }
+
+.all-rating {
+  /* background-color: aqua; */
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+}

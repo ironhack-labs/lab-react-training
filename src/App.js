@@ -70,7 +70,14 @@ function App() {
             color={'white'}
           />
         </div>
-        <Rating children={1.49}/>
+        <div className="all-rating">
+          <Rating children={0} />
+          <Rating children={1.49} />
+          <Rating children={1.5} />
+          <Rating children={3} />
+          <Rating children={4} />
+          <Rating children={5} />
+        </div>
       </div>
     </div>
   );
