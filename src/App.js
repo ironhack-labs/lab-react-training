@@ -9,6 +9,7 @@ import DriverCard from './components/DriverCard';
 import { useState } from 'react';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 function App() {
   const [ likeCounter, setLikeCounter ] = useState(0);
@@ -112,6 +113,7 @@ function App() {
         </div>
         <ClickablePicture img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvhwnWFdz2y8eH8k2q2rbBNKYpMA842VZcQQ&usqp=CAU" 
         imgClicked ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS857vYUAHqfHQD0HNlKGj81YNa6FckXAJtAA&usqp=CAU"/>
+        <Dice />
       </div>
     </div>
   );
