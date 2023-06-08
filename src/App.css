@@ -135,3 +135,8 @@
 .likeBtn-box button {
   font-size: 20px;
 }
+
+.clickablePicture-box {
+  width: 200px;
+  margin: 10px auto;
+}
