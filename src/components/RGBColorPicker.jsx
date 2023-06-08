@@ -3,10 +3,9 @@ import SingleColorPicker from './SingleColorPicker';
 import { useState } from 'react';
 
 function RGBColorPicker() {
-  const values = { rValue: '255', gValue: '150', bValue: '0' };
-  const [rValue, setRValue] = useState('');
-  const [gValue, setGValue] = useState('');
-  const [bValue, setBValue] = useState('');
+  const [rValue, setRValue] = useState(255);
+  const [gValue, setGValue] = useState(150);
+  const [bValue, setBValue] = useState(0);
 
   const handleRChange = (event) => {
     setRValue(Number(event.target.value));
@@ -27,7 +26,7 @@ function RGBColorPicker() {
       <SingleColorPicker color="g" value={gValue} onChange={handleGChange} />
 
       <SingleColorPicker color="b" value={bValue} onChange={handleBChange} />
-      <BoxColor />
+      <BoxColor r={rValue} g={gValue} b={bValue} />
     </div>
   );
 }

@@ -1,5 +1,3 @@
-import { nanoid } from 'nanoid';
-
 function SingleColorPicker({ color, value, onChange }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -8,7 +6,9 @@ function SingleColorPicker({ color, value, onChange }) {
           width: '40px',
           height: '40px',
           border: '1px  solid black',
-          backgroundColor: 'red',
+          backgroundColor: `rgb(${color === 'r' ? value : 0}, ${
+            color === 'g' ? value : 0
+          }, ${color === 'b' ? value : 0})`,
           margin: '5px',
         }}
       ></div>
