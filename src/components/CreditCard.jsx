@@ -2,14 +2,18 @@ function CreditCard(props) {
   const lastDigits = props.number.slice(-4);
 
   return (
-    <div>
-      <h1>Credit Card Types:</h1>
+    <div
+      style={{
+        margin: '15px',
+      }}
+    >
       <div
         style={{
           color: `${props.color}`,
           width: '350px',
           height: '200px',
           backgroundColor: `${props.bgColor}`,
+          borderRadius: '5px',
         }}
       >
         <div>{lastDigits}</div>

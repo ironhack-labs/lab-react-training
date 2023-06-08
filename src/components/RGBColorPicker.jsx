@@ -1,3 +1,4 @@
+import BoxColor from './BoxColor';
 import SingleColorPicker from './SingleColorPicker';
 import { useState } from 'react';
 
@@ -26,6 +27,7 @@ function RGBColorPicker() {
       <SingleColorPicker color="g" value={gValue} onChange={handleGChange} />
 
       <SingleColorPicker color="b" value={bValue} onChange={handleBChange} />
+      <BoxColor />
     </div>
   );
 }

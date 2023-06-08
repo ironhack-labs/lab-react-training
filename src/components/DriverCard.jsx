@@ -13,6 +13,9 @@ function DriverCard({ car, name, rating, img }) {
         border: '3px, solid, grey',
         display: 'flex',
         padding: '20px',
+        margin: '10px',
+        color: 'white',
+        borderRadius: '5px',
       }}
     >
       <img
@@ -20,8 +23,12 @@ function DriverCard({ car, name, rating, img }) {
         style={{ width: '100px', height: '100px', borderRadius: '50px' }}
         alt={name}
       ></img>
-      <div>
-        <>{name}</>
+      <div
+        style={{
+          padding: '20px',
+        }}
+      >
+        <h4>{name}</h4>
         <br />
         {[1, 2, 3, 4, 5].map((value, index) =>
           numberRound >= index + 1 ? <BsFillStarFill /> : <AiOutlineStar />

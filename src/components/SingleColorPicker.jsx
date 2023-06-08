@@ -3,17 +3,22 @@ import { nanoid } from 'nanoid';
 function SingleColorPicker({ color, value, onChange }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
-      SingleColorPicker
       <div
         style={{
-          width: '20px',
-          height: '20px',
-          border: '1px black solid',
+          width: '40px',
+          height: '40px',
+          border: '1px  solid black',
           backgroundColor: 'red',
+          margin: '5px',
         }}
       ></div>
-      RGBColorPicker
       <input
+        style={{
+          width: '70px',
+          height: '25px',
+          border: '1px  solid lightgrey',
+          margin: '5px',
+        }}
         type="number"
         min={0}
         max={255}
