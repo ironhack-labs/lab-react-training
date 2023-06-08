@@ -1,11 +1,14 @@
 function ClickablePicture( {img, imgClicked }) {
+    let wasClicked = false;
     const changeImg = (() => {
         const currentImage = document.getElementById('diplayedImg');
 
-        if (currentImage.src.match(img)) {
-            currentImage.src = img
+        if (wasClicked === false) {
+            currentImage.src = img;
+            wasClicked = true;
         } else {
             currentImage.src = imgClicked
+            wasClicked = false;
         }
     })
 
