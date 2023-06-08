@@ -20,3 +20,12 @@ margin: 5px;
 .credit-cards{
   display: flex;
 }
+
+.drivercard{
+  background-color: rgb(73, 73, 205);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding:10px
+}
