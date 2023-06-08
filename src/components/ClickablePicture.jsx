@@ -2,21 +2,21 @@ import { useState } from 'react';
 
 function ClickablePicture(props) {
   const [isImage, setIsImage] = useState(true);
-  const changeImage = () => {
+  const reverseImage = () => {
     setIsImage(!isImage);
   };
   return (
     <div>
       {isImage ? (
         <img
-          onClick={changeImage}
+          onClick={reverseImage}
           src={props.img}
           style={{ cursor: 'pointer', width: '300px' }}
           alt={props.img}
         />
       ) : (
         <img
-          onClick={changeImage}
+          onClick={reverseImage}
           src={props.imgClicked}
           style={{ cursor: 'pointer', width: '300px' }}
           alt={props.imgClicked}

@@ -1,5 +1,12 @@
 import { nanoid } from 'nanoid';
 
+const style = {
+  width: '50px',
+  height: '50px',
+  border: '1px solid black',
+  margin: '5px',
+};
+
 function NumbersTable({ limit }) {
   const numbersArr = [];
   for (let i = 1; i <= limit; i++) {
@@ -15,25 +22,14 @@ function NumbersTable({ limit }) {
     >
       {numbersArr.map((num) =>
         num % 2 === 1 ? (
-          <div
-            style={{
-              width: '50px',
-              height: '50px',
-              border: '1px solid black',
-              margin: '5px',
-            }}
-            key={nanoid()}
-          >
+          <div style={style} key={nanoid()}>
             {num}
           </div>
         ) : (
           <div
             key={nanoid()}
             style={{
-              width: '50px',
-              height: '50px',
-              border: '1px solid black',
-              margin: '5px',
+              ...style,
               backgroundColor: 'red',
             }}
           >

@@ -2,7 +2,7 @@ import { AiOutlineStar } from 'react-icons/ai';
 import { BsFillStarFill } from 'react-icons/bs';
 
 function DriverCard({ car, name, rating, img }) {
-  const numberRound = Math.floor(rating);
+  const numberRound = Math.round(rating);
 
   return (
     <div
@@ -22,7 +22,7 @@ function DriverCard({ car, name, rating, img }) {
         src={img}
         style={{ width: '100px', height: '100px', borderRadius: '50px' }}
         alt={name}
-      ></img>
+      />
       <div
         style={{
           padding: '20px',
@@ -30,8 +30,12 @@ function DriverCard({ car, name, rating, img }) {
       >
         <h4>{name}</h4>
         <br />
-        {[1, 2, 3, 4, 5].map((value, index) =>
-          numberRound >= index + 1 ? <BsFillStarFill /> : <AiOutlineStar />
+        {[1, 2, 3, 4, 5].map((value) =>
+          numberRound >= value ? (
+            <BsFillStarFill key={value} />
+          ) : (
+            <AiOutlineStar key={value} />
+          )
         )}
         <br />
         <>{car.model}</> - <>{car.licensePlate}</>

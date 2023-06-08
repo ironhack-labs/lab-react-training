@@ -9,20 +9,32 @@ function CreditCard(props) {
     >
       <div
         style={{
-          color: `${props.color}`,
+          color: props.color,
           width: '350px',
           height: '200px',
-          backgroundColor: `${props.bgColor}`,
+          backgroundColor: props.bgColor,
           borderRadius: '5px',
         }}
       >
-        <div>{lastDigits}</div>
+        <img
+          src={`/images/${
+            props.type === 'Visa' ? 'visa.png' : 'master-card.svg'
+          }`}
+          style={{
+            width: '50px',
+          }}
+          alt={props.type}
+        />
+        <div>
+          &middot;&middot;&middot;&middot; &middot;&middot;&middot;&middot;
+          &middot;&middot;&middot;&middot; {lastDigits}
+        </div>
         {props.type}
         <div>
-          {props.expirationMonth}/{props.expirationYear}
-          {props.bank}
-          <div>{props.owner}</div>
+          {props.expirationMonth}/{props.expirationYear}{' '}
         </div>
+        <div>{props.bank}</div>
+        <div>{props.owner}</div>
       </div>
     </div>
   );

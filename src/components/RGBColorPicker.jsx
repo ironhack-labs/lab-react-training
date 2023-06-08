@@ -7,25 +7,31 @@ function RGBColorPicker() {
   const [gValue, setGValue] = useState(150);
   const [bValue, setBValue] = useState(0);
 
-  const handleRChange = (event) => {
-    setRValue(Number(event.target.value));
-  };
-
-  const handleGChange = (event) => {
-    setGValue(Number(event.target.value));
-  };
-
-  const handleBChange = (event) => {
-    setBValue(Number(event.target.value));
-  };
-
   return (
     <div>
-      <SingleColorPicker color="r" value={rValue} onChange={handleRChange} />
+      <SingleColorPicker
+        color="r"
+        value={rValue}
+        onChange={(event) => {
+          setRValue(Number(event.target.value));
+        }}
+      />
 
-      <SingleColorPicker color="g" value={gValue} onChange={handleGChange} />
+      <SingleColorPicker
+        color="g"
+        value={gValue}
+        onChange={(event) => {
+          setGValue(Number(event.target.value));
+        }}
+      />
 
-      <SingleColorPicker color="b" value={bValue} onChange={handleBChange} />
+      <SingleColorPicker
+        color="b"
+        value={bValue}
+        onChange={(event) => {
+          setBValue(Number(event.target.value));
+        }}
+      />
       <BoxColor r={rValue} g={gValue} b={bValue} />
     </div>
   );

@@ -28,13 +28,14 @@ function FaceBook() {
           }
           return (
             <div
+              key={profile.firstName}
               style={{
                 border: '1px solid black',
                 backgroundColor: bgColor,
               }}
             >
-              <div key={profile.firstName}>
-                <img src={profile.img} height={150} alt={profile.firstName} />
+              <div>
+                <img src={profile.img} height="150px" alt={profile.firstName} />
                 <p>
                   <strong>First Name: </strong>
                   {profile.firstName}
@@ -47,15 +48,11 @@ function FaceBook() {
                   <strong>Country: </strong>
                   {profile.country}
                 </p>
-                {profile.isStudent ? (
-                  <p>
-                    <strong>Type:</strong> Student
-                  </p>
-                ) : (
-                  <p>
-                    <strong>Type:</strong> Teacher
-                  </p>
-                )}
+
+                <p>
+                  <strong>Type: </strong>
+                  {profile.isStudent ? 'Student' : 'Teacher'}
+                </p>
               </div>
             </div>
           );

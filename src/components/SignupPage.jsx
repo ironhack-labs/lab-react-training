@@ -13,6 +13,7 @@ function SignupPage() {
       password: password,
       nationality: nationality,
     };
+
     setNewProfile(newEntry);
     setEmail('');
     setPassword('');
@@ -21,7 +22,6 @@ function SignupPage() {
 
   return (
     <div>
-      SignupPage
       <div
         style={{
           display: 'flex',
@@ -36,25 +36,27 @@ function SignupPage() {
             <p>Email:</p>
             <div style={{ width: '400px' }}>
               <input
+                value={email}
                 type="email"
-                onChange={(e) => {
-                  setEmail(e.target.value);
+                onChange={(event) => {
+                  setEmail(event.target.value);
                 }}
               />
             </div>
             <p>Password:</p>
             <div style={{ width: '400px' }}>
               <input
+                value={password}
                 type="text"
-                onChange={(e) => {
-                  setPassword(e.target.value);
+                onChange={(event) => {
+                  setPassword(event.target.value);
                 }}
               />
             </div>
             <p>Nationality</p>
             <select
-              onChange={(e) => {
-                setNationality(e.target.value);
+              onChange={(event) => {
+                setNationality(event.target.value);
               }}
             >
               <option value="en">English</option>
