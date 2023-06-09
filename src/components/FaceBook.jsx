@@ -6,6 +6,36 @@ function FaceBook() {
 
   return (
     <>
+      <div className="facebook-button">
+        <button>All</button>
+        <button
+          onClick={() => {
+            profiles.map((profile) =>
+              if(profile.contry === 'USA') {
+                profile.filter()
+              }
+            );
+          }}
+        >
+          USA
+        </button>
+        <button>England</button>
+        <button>Malaysia</button>
+        <button>Germany</button>
+        <button>Sweden</button>
+        <button>Nigeria</button>
+        <button>Italy</button>
+        <button>Scotland</button>
+        <button>Kazakhstan</button>
+        <button>Russia</button>
+        <button>Catalonia</button>
+        <button>France</button>
+        <button>Israel</button>
+        <button>Brazil</button>
+        <button>Taiwan</button>
+        <button>Turkey</button>
+        <button>Norway</button>
+      </div>
       {profiles.map((profile) => {
         return (
           <div className="id-card">
