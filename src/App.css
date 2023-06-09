@@ -169,3 +169,57 @@
   height: 40px;
   background-color: white;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  margin: 5px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.id-card {
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 300px;
+  padding: 16px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+}
+
+.id-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.id-card.highlight {
+  background-color: lightblue;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.profile-info p {
+  margin: 0;
+  padding: 2px 0;
+}

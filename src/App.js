@@ -16,6 +16,9 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
 import profilesData from '../src/data/berlin.json';
+import SignupPage from './components/SignupPage';
+import SingleColorPicker from './components/SingleColorPicker';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   const [likes, setLikes] = useState(0);
@@ -133,6 +136,16 @@ function App() {
       <NumbersTable limit={12} />
 
       <br></br>
+
+      <FaceBook profiles={profiles} />
+
+      <br></br>
+      <SignupPage />
+
+      <br></br>
+
+      <RGBColorPicker />
+      <SingleColorPicker />
     </div>
   );
 }
