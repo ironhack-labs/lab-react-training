@@ -59,7 +59,9 @@
   text-align: left;
   padding: 5px;
 }
-
+table, th, td {
+  border: 1px solid black;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

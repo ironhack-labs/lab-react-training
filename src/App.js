@@ -6,10 +6,14 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 import img from '/Users/mauriciobenaventeibanez/reactTraining/lab-react-training/src/assets/images/maxence.png'
 import toggleImg from '/Users/mauriciobenaventeibanez/reactTraining/lab-react-training/src/assets/images/maxence-glasses.png'
 import dataJSON from './data/berlin.json'
 import SignUp from './components/SignUp';
+
 
 import Facebook from './components/Facebook';
 import './App.css';
@@ -74,6 +78,17 @@ const creditCard = [
         )
         )}
         </div>
+        <Dice/>
+        <Carousel 
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+        />
+        
+
          <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
 
@@ -87,6 +102,7 @@ return <CreditCard creditCard={creditCard} key={creditCard.number}/>
 
       }))}
       </div>
+      <NumbersTable limit={12} />
       <Rating >0</Rating>
 <Rating>1</Rating>
 <Rating>1.7</Rating>
@@ -97,6 +113,8 @@ return <CreditCard creditCard={creditCard} key={creditCard.number}/>
 <ClickablePicture img={img} toggleImg={toggleImg} />
 <Facebook data={dataJSON}/>
 <SignUp/>
+
+
       </div>
     );
   

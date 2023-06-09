@@ -1,8 +1,7 @@
 import React from 'react';
-import { useState } from 'react';
 
 function ClickablePicture({ img, toggleImg }) {
-  function changePicture(e) {
+  function changePicture() {
     let displayImage = document.getElementById('img1');
     // console.log(displayImage)
 

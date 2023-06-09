@@ -5,9 +5,10 @@ function LikeButton() {
    
         const [count, setCount] = useState(0);
         const incrementCount = () => setCount(prevCount => prevCount + 1);
- 
+       
+
         const decrementCount = () => setCount(prevCount => prevCount -1);
-        console.log(count)
+        //console.log(count)
         
         
       
