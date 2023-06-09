@@ -1,4 +1,4 @@
-.idCard, .greetings, .random, .boxColor{
+.idCard, .greetings, .random, .boxColor,.facebook-card{
 border: 2px black solid ;
 margin: 20px;
 padding: 10px;
@@ -28,4 +28,55 @@ margin: 5px;
   justify-content: center;
   margin: 10px;
   padding:10px
+}
+
+.facebook-card{width: 500px;}
+
+.facebook-card img{
+  width:200px;
+  margin: 10px;
+}
+
+
+
+.country-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.country-buttons button {
+  padding: 5px 10px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
+
+.country-buttons button.active {
+  background: #b4d7ff;
+}
+
+.profile-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.facebook-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.facebook-card.selected {
+  background-color: #b4d7ff;
+}
+
+.facebook-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.facebook-card p {
+  margin: 5px 0;
 }
