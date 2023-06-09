@@ -10,10 +10,11 @@ import { useState } from 'react';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
+import Carousel from './components/Carousel';
 
 function App() {
-  const [ likeCounter, setLikeCounter ] = useState(0);
-  const [ likeCounter2, setLikeCounter2 ] = useState(0);
+  const [likeCounter, setLikeCounter] = useState(0);
+  const [likeCounter2, setLikeCounter2] = useState(0);
 
   return (
     <div className="App">
@@ -107,13 +108,29 @@ function App() {
             }}
           />
         </div>
-        <div className='all-likeBtn'>
-          <LikeButton likeCounter = {likeCounter} setLikeCounter = {setLikeCounter} />
-          <LikeButton likeCounter = {likeCounter2} setLikeCounter = {setLikeCounter2} />
+        <div className="all-likeBtn">
+          <LikeButton
+            likeCounter={likeCounter}
+            setLikeCounter={setLikeCounter}
+          />
+          <LikeButton
+            likeCounter={likeCounter2}
+            setLikeCounter={setLikeCounter2}
+          />
         </div>
-        <ClickablePicture img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvhwnWFdz2y8eH8k2q2rbBNKYpMA842VZcQQ&usqp=CAU" 
-        imgClicked ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS857vYUAHqfHQD0HNlKGj81YNa6FckXAJtAA&usqp=CAU"/>
+        <ClickablePicture
+          img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvhwnWFdz2y8eH8k2q2rbBNKYpMA842VZcQQ&usqp=CAU"
+          imgClicked="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS857vYUAHqfHQD0HNlKGj81YNa6FckXAJtAA&usqp=CAU"
+        />
         <Dice />
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
+        />
       </div>
     </div>
   );
