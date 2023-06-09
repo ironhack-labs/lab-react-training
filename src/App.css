@@ -2,6 +2,8 @@
 .id-card {
 border: 1px solid;
 display: flex;
+width: 600px;
+margin: 10px;
 }
 
 .card-info {
@@ -9,8 +11,10 @@ display: flex;
   line-height: 5px;
 }
 
-.img-card {
-  margin: 5px;
+.id-card img {
+  margin: 10px;
+  height: 150px;
+
 }
 
 .language-card{
