@@ -25,8 +25,7 @@ function DriverCard(props) {
         }
 
 
-    console.log(roundedNumber)
-    console.log(props);
+    
 
     return (
         <div className="driverCard">
