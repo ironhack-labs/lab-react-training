@@ -16,7 +16,7 @@
   padding-top: 40px;
   text-align: left;
 }
-.Mauri {
+.facebookDiv {
   display: flex;
   flex-direction: row;
   margin-top: 40px;
@@ -35,6 +35,44 @@
   border: 1px solid black;
   
   
+}
+.creditCardlogo img {
+  width: 50px;
+}
+
+.creditCard {
+  width: 320px;
+  height: 150px;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 1%;
+}
+.creditCardlogo{
+  display: flex;
+  justify-content: flex-end;
+}
+.cardNumber{
+  font-size: 1.5em;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+.driverCar{
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(60, 95, 220) ;
+}
+.driverImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
 }
 .Greeting {
   display: flex;

@@ -1,7 +1,7 @@
 function Rating({ children }) {
   let roundedNumber = Math.round(children);
-  //console.log('average', roundedNumber);
-  //console.log(children);
+ 
+ 
  
   if (roundedNumber == 0) return <p>☆☆☆☆☆</p>;
 

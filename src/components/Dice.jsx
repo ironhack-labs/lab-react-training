@@ -22,7 +22,7 @@ function Dice() {
 
   return (
     <div>
-      <img src={img} onClick={handleClick} alt="dice3" width="50px" />
+      <img src={img} onClick={() => handleClick()} alt="dice3" width="50px" />
     </div>
   );
 }
