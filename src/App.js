@@ -13,6 +13,11 @@ import robodoctor from './assets/images/robodoctor.png'
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
+
+
 
 
 function App() {
@@ -216,6 +221,22 @@ function App() {
 <div>
 <h1> Iteration 12 - NumbersTable</h1>
 <NumbersTable limit={12} />
+</div>
+
+<div>
+<h1> Iteration 13 & 14 - Lists and Keys Facebook</h1>
+<Facebook/>
+</div>
+
+<div>
+  <h1>Iteration 15 - SignupPage</h1>
+  <SignupPage/>
+</div>
+
+<div>
+  <h1>Iteration 16 - RGBColorPicker</h1>
+  <RGBColorPicker />
+ 
 </div>
     </div>
   );

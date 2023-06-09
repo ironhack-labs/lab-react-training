@@ -118,4 +118,102 @@ align-items: center;
         background-color: red;
         color: white;
       }
+
+      .facebook {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+      }
+      
+      .profile {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+      }
+      .profile img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+      
+      .profile.selected {
+        background-color: blue;
+        color: white;
+      }
+      
+      .signup-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+      
+      label {
+        margin-top: 10px;
+      }
+      
+      input,
+      select {
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 200px;
+      }
+      
+      .valid-input {
+        border: 1px solid green;
+      }
+      
+      .invalid-input {
+        border: 1px solid red;
+      }
+      
+      .password-input {
+        border: 1px solid;
+      }
+      
+      .Weak {
+        border-color: red;
+      }
+      
+      .Strong {
+        border-color: green;
+      }
+      
+      .greeting {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .signupbutton{
+        border-radius: 25%;
+      }
+
+      .color-picker-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .color-square {
+        width: 200px;
+        height: 200px;
+      }
+      
+      .color-input {
+        margin-top: 10px;
+      }
+      .color-picker-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .color-square {
+        width: 200px;
+        height: 200px;
+      }
+      
+      .color-input {
+        margin-top: 10px;
+      }
       
