@@ -140,3 +140,13 @@
   width: 200px;
   margin: 10px auto;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.dice-box img {
+  width: 200px;
+}
