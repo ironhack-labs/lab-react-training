@@ -13,14 +13,14 @@ import LikeButton from './components/LikeButton';
 import NumbersTable from './components/NumbersTable';
 import Random from './components/Random';
 import Rating from './components/Rating';
-import RGBColorPicker from './components/RGBColorPicker';
+import ColorPickerRGB from './components/ColorPickerRGB';
 import SignupPage from './components/SignupPage';
 
 function App() {
   return (
     <div className="App">
       <h2>Iteration 16</h2>
-      <RGBColorPicker />
+      <ColorPickerRGB />
 
       <h2>Iteration 15</h2>
       <SignupPage />

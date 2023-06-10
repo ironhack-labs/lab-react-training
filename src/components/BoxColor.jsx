@@ -16,6 +16,7 @@ function BoxColor({ r, g, b }) {
 
   return (
     <article
+      className="box-color"
       style={{
         backgroundColor: numToRGB(color),
       }}
