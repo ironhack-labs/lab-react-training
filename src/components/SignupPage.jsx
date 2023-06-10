@@ -11,11 +11,11 @@ function SignupPage() {
 
       <label htmlFor="signupEmail">Email</label>
       <input type="email" name="email" id="signupEmail" autoComplete="email" />
-      <small>valid email</small>
+      <small>invalid email</small>
 
       <label htmlFor="signupPassword">Password</label>
       <input type="password" name="password" id="signupPassword" />
-      <small>strong password</small>
+      <small>weak password</small>
 
       <label htmlFor="signupLang">Language</label>
       <select name="language" id="signupLang">
