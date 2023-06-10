@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.IdCard{
+  display: flex;
+  text-align: left;
+}
+li{
+  list-style: none;
+}
+span{
+  font-weight: 800;
+}
+.App{
+  border: solid 1px black;
+}
