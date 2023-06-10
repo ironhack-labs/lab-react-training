@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.idcard {
+  width: 90vw;
+  height: fit-content;
+  display: flex;
+
+  font-size: 1em;
+  margin: 50px;
+  border: 1px black solid;
+}
+
+.idcard img {
+  
+  height: 100%;
+  margin: 3px;
+
+}
+
+.greeting {
+  width: 90vw;
+  height: fit-content;
+
+  font-size: 1em;
+  margin: 50px;
+  border: 1px black solid;
+}
