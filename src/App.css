@@ -45,3 +45,29 @@
 .credit-card__expiracy-date {
   margin-left: 0.5rem;
 }
+.driver-card {
+  background-color: rgb(69, 94, 181);
+  border-radius: 5px;
+  display: flex;
+  color: white;
+}
+.driver-card__content {
+  margin: 1rem auto;
+  display: flex;
+  gap: 1rem;
+  width: 25rem;
+}
+.driver-card__avatar {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+.driver-card__infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.driver-card__title {
+  margin: 0;
+  font-size: 1.8rem;
+}
