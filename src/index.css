@@ -121,3 +121,88 @@ code {
   font-size: 2em;
   margin: 0 auto;
 }
+
+.driverCard {
+  
+  width: 80vw;
+  height: fit-content;
+  display: flex;
+  background-color: cornflowerblue;
+  margin: 10px auto;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.driverCardPhoto {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  
+
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.driverInfo {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px;
+}
+
+.likeButton {
+  width: 20vw;
+  margin: 10px auto;
+  
+}
+
+.clickableImage {
+  height: 10vh;
+  margin: 10px auto;
+}
+
+.dice {
+  width: 10vw;
+  margin: 10px auto;
+}
+
+#carousel {
+  width: 15vw;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#carouselBtns {
+  display: flex;
+}
+
+#carousel button {
+  width: 10vw;
+  margin: 10px;
+}
+
+#numbersTable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#numbersTable li {
+  list-style: none;
+  width: 5vw;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px black solid;
+
+}
+
+#numbersTable li:nth-child(2n) {
+  background-color: red;
+}
