@@ -110,10 +110,13 @@ function App() {
         />
       </div>
       <LikeButton/>
-      <ClickablePicture
-        img='maxence.png'
-        imgClicked='maxence-glasses.png'
-      />
+      <div>
+        <ClickablePicture
+          img='maxence.png'
+          imgClicked='maxence-glasses.png'
+        />
+      </div>
+
     </div>
     
   );
