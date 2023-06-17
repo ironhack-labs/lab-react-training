@@ -30,3 +30,11 @@ span{
   text-align: left;
   border : solid 1px black;
 }
+.creditCard{
+display: flex;
+justify-content: center;
+
+}
+.creditCard >div{
+  width: 30vw;
+}
