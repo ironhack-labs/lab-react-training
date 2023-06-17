@@ -13,6 +13,10 @@
 .card__userInfo {
   margin-bottom: 0.4rem;
 }
+.card__userImage {
+  height: 8rem;
+  width: auto;
+}
 
 .card__userInfo label {
   font-weight: bold;
@@ -70,4 +74,39 @@
 .driver-card__title {
   margin: 0;
   font-size: 1.8rem;
+}
+.dice__img {
+  height: 4rem;
+  width: auto;
+}
+.carousel {
+  position: relative;
+  width: 320px;
+}
+.carousel__img {
+  width: 100%;
+}
+.carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.carousel__arrow-right {
+  right: 0.5rem;
+}
+.carousel__arrow-left {
+  left: 0.5rem;
+}
+.numbers-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 40%;
+}
+.number-box {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid black;
+  display: grid;
+  place-content: center;
+  font-size: 2rem;
 }

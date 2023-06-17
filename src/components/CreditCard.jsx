@@ -26,7 +26,7 @@ export default function CreditCard(props) {
         <div className="credit-card__expBank">
           <div className="credit-card__expiracy">
             Expires
-            <span class="credit-card__expiracy-date">
+            <span className="credit-card__expiracy-date">
               {props.expirationMonth.toString().padStart(2, '0')}/
               {props.expirationYear.toString().padStart(2, '0')}
             </span>
