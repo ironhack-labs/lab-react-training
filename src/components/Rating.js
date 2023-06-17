@@ -14,7 +14,7 @@ function Rating(props) {
   return (
     <>
       {starsArr.map((el) => {
-        return <p>{el}</p>;
+        return <p key={Math.random()*1000}>{el}</p>;
       })}
     </>
   );

@@ -46,5 +46,32 @@ justify-content: center;
 .rate{
   display:flex;
   flex-direction: row;
-  justify-content: center;;
+  justify-content: center;
+}
+.driverCards{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.driverCards img{
+ width: 150px;
+ border-radius: 50%;
+ align-items: center;
+}
+
+.driver{
+  background-color: cadetblue;
+  display:flex;
+  width:80vw;
+  margin: auto;
+  justify-content: center;
+  padding: 20px 0px;
+  border-radius: 5px;
+  margin-bottom : 10px;
+}
+.driverText{
+  margin: 0px 20px;
+  justify-content: left;
+  text-align: left;
 }
