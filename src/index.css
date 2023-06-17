@@ -38,3 +38,13 @@ justify-content: center;
 .creditCard >div{
   width: 30vw;
 }
+
+.ratings {
+  display : flex;
+  flex-direction:column;
+}
+.rate{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;;
+}
