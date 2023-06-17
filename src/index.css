@@ -12,13 +12,18 @@ code {
     monospace;
 }
 
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
 .idcard {
   width: 90vw;
   height: fit-content;
   display: flex;
 
   font-size: 1em;
-  margin: 50px;
+  margin: 50px auto;
   border: 1px black solid;
 }
 
@@ -36,4 +41,83 @@ code {
   font-size: 1em;
   margin: 50px;
   border: 1px black solid;
+}
+
+.random {
+  width: 90vw;
+  height: fit-content;
+
+  font-size: 1em;
+  margin: 50px;
+  border: 1px black solid;
+}
+
+.box {
+  width: 70vw;
+  height: 5vh;
+  margin: 10px auto;
+}
+
+.rating {
+  margin: 10px auto;
+}
+
+.creditCard {
+  position: relative;
+  width: 30vw;
+  
+  aspect-ratio: 3/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 10px;
+
+}
+
+.creditCardLogo {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 20%;
+}
+
+.creditCardNum {
+  position: absolute;
+  top: 50%;
+  font-size: calc(1vw + 4px);
+  
+}
+
+.creditCardInfo {
+  position: absolute;
+  bottom: 17%;
+  left: 10%;
+  font-size: calc(1vw + 1px);
+}
+
+.bank {
+  position: absolute;
+  bottom: 17%;
+  right: 10%;
+  max-width: 30%;
+  font-size: calc(1vw + 1px);
+}
+
+#creditCardList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.creditCardOwner {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  font-size: calc(1vw + 2px);
+}
+
+.rating {
+  font-size: 2em;
+  margin: 0 auto;
 }

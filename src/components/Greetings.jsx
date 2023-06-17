@@ -6,7 +6,7 @@ function Greetings(props) {
   const message = dic[props.lang]; // "Bonjour"
 
   return (
-    <div class="greeting">
+    <div className="greeting">
       <span>{message}</span> {props.children}
     </div>
   );
