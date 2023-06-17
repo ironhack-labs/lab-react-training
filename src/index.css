@@ -75,3 +75,6 @@ justify-content: center;
   justify-content: left;
   text-align: left;
 }
+.dice img{
+  width : 150px;
+}
