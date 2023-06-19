@@ -16,6 +16,7 @@
 .card__userImage {
   height: 8rem;
   width: auto;
+  cursor: pointer;
 }
 
 .card__userInfo label {
@@ -109,4 +110,24 @@
   display: grid;
   place-content: center;
   font-size: 2rem;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  display: block;
+}
+.signupForm {
+  border-bottom: 2px solid grey;
+}
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.color-picker__box {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid black;
 }

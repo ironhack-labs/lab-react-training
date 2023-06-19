@@ -10,8 +10,10 @@ import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import LikeButton from './components/LikeButton';
 import NumbersTable from './components/NumbersTable';
+import RGBColorPicker from './components/RGBColorPicker';
 import Random from './components/Random';
 import Rating from './components/Rating';
+import Signup from './components/Signup';
 
 function App() {
   return (
@@ -119,6 +121,8 @@ function App() {
       />
       <NumbersTable limit={22} />
       <Facebook />
+      <Signup />
+      <RGBColorPicker />
     </div>
   );
 }
