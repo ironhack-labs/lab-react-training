@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  padding: 16px;
 }
 
 .App-logo {
@@ -35,4 +40,215 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h2 {
+  font-size: 32px;
+  text-align: start;
+}
+
+.oneCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.oneCard img {
+  width: 150px;
+  height: 150px;
+}
+
+.infoCard {
+  font-weight: 700;
+  text-align: start;
+  }
+
+.infoContent {
+  display: inline;
+  font-weight: 400;
+}
+
+.greetings p {
+  border: 2px solid black;
+  font-size: 16px;
+  text-align: start;
+  padding: 10px 5px;
+}
+
+.RandomValue p {
+  border: 2px solid black;
+  font-size: 16px;
+  text-align: start;
+  padding: 10px 5px;
+}
+
+.boxColor {
+  text-align: center;
+  margin-block: auto;
+  border: 2px solid black;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.ccContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.creditCard {
+  border-radius: 10px;
+  width: 340px;
+  padding: 20px;
+}
+
+.creditCard p {
+  margin: 0;
+}
+
+.creditCard .type {
+  text-align: end;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.creditCard .num {
+  font-size: 32px;
+}
+
+.creditCard .expiration {
+  text-align: start;
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.creditCard .owner {
+  text-align: start;
+}
+
+.country-buttons {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.country-buttons button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.country-buttons .selected {
+  background-color: #a3d2e2;
+}
+
+.prof-container img {
+  width: 150px;
+  height: 150px;
+}
+
+.profiles-container .selected {
+  background-color: #a3d2e2;
+}
+
+.fb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.prof-container {
+  border: 2px solid #000000;
+  padding: 10px;
+  text-align: center;
+  width: 245px;
+  height: 345px;
+}
+
+.info-prof {
+  margin-top: 10px;
+  padding-left: 40px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+
+}
+
+.info-prof p {
+  font-weight: 600;
+  margin: 0;
+}
+
+.info-prof p span {
+  font-weight: 400;
+}
+
+.signup-container form{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.signup-container label{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.signup-container form input, 
+.signup-container form select {
+  width: 600px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.valid-input {
+  border: 2px solid green;
+}
+
+.invalid-input {
+  border: 2px solid red;
+}
+
+.weak {
+  border: 1px solid red;
+}
+
+.strong {
+  border: 1px solid green;
+}
+
+.greeting {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.signup-btn button {
+  color: white;
+  background-color: #5aa2ff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.greeting-container {
+  text-align: start;
 }
