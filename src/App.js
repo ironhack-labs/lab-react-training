@@ -5,6 +5,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 import './App.css';
 
 function App() {
@@ -97,7 +98,7 @@ function App() {
       }}
     />
 
-
+    <LikeButton />
     </div>
   );
 }

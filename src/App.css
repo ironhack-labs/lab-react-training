@@ -134,6 +134,12 @@
   align-items: flex-start;
   margin-left: 20px;
 }
+
 .driver-card .car-info{
   font-size: 0.9rem;
+}
+
+.big-button {
+  font-size: 1.5rem;
+  padding: 20px;;
 }
