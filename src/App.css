@@ -152,3 +152,25 @@
 .carousel img {
   width:300px;
 }
+
+.number-table {
+  display: flex;
+  flex-wrap: wrap;
+  width: 520px;
+}
+
+.number-table div{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.number-table .even{
+  background-color: red;
+}
+.number-table .odd{
+  background-color: white;
+}
