@@ -1,12 +1,15 @@
 function idCard(props){
     return(
+
         <div className="idCard">
-            <h3>{props.lastName}</h3>
-            <h3>{props.firstName}</h3>
-            <h3>{props.gender}</h3>
-            <h3>{props.height}</h3>
-            <h3>{props.birth}</h3>
-            <img src={props.picture} />
+            <img src={props.img} alt={props.lastName}/>
+            <div className="content">
+                <h3>Lastname : {props.lastName}</h3>
+                <h3>firstName : {props.firstName}</h3>
+                <p>Gender : {props.gender}</p>
+                <p>Height : {props.height}</p>
+                <p> Birth :{props.birth}</p>
+            </div>
         </div>
     )
 }
