@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+#id-card {
+  border: 1px solid black;
+  display: flex;
+  margin: 5px;
+}
+
+#id-card .label{
+  font-weight: bold;
+}
+
+#id-card img {
+  height: 150px;
+  width: auto;
+  margin: 5px;
+}
+
+#id-card>div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#id-card p {
+  margin: 0px;
+}
