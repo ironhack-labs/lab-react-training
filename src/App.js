@@ -1,4 +1,5 @@
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
 import './App.css';
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
           birth={new Date("1988-05-11")}
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
+
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
     </div>
   );
 }

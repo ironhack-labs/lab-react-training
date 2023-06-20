@@ -63,3 +63,11 @@
 #id-card p {
   margin: 0px;
 }
+
+.box-with-text {
+  border: 1px solid black;
+  font-size: 30px;
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+}
