@@ -2,7 +2,7 @@ function idCard(props){
     return(
 
         <div className="idCard">
-            <img src={props.img} alt={props.lastName}/>
+            <img src={props.picture} alt={props.lastName}/>
             <div className="content">
                 <h3>Lastname : {props.lastName}</h3>
                 <h3>firstName : {props.firstName}</h3>
