@@ -1,12 +1,14 @@
+import Visa from '../assets/images/visa.png'
+import MasterCard from '../assets/images/master-card.png'
 
 export default function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color }) {
-    let picture = type === "Visa" ? "../assets/images/visa.png" : "../assets/images/master-card.svg";
    
     const style = { backgroundColor: bgColor, color };
     
     return (
         <div className="credit-card" style={style}>
-            <img src={picture} alt={type} />
+            {type === "Visa" && <img src={Visa} alt={type} />}
+            {type === "Master Card" && <img src={MasterCard} alt={type} />}
             <span className="number">●●●● ●●●● ●●●● {number.slice(-4)}</span>
             <div className="bottom-left">
                 <div>

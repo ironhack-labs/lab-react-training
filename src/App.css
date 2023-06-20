@@ -95,6 +95,7 @@
 
 .credit-card img {
   align-self: flex-end;
+  height: 20px;
 }
 
 .credit-card .bottom-left {
