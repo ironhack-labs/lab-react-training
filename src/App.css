@@ -75,3 +75,34 @@
 .center {
   text-align: center;
 }
+
+.credit-card {
+  width: 400px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 1.2rem;
+  
+}
+
+.credit-card .number {
+  /* font-weight: bold; */
+  font-size: 2rem;
+}
+
+.credit-card img {
+  align-self: flex-end;
+}
+
+.credit-card .bottom-left {
+  align-self: flex-start;
+  justify-self: flex-end;
+  text-align: left;
+}
+
+.credit-card span.bank {
+  margin-left: 20px;
+}
