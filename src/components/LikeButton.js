@@ -13,6 +13,8 @@ export default function LikeButton() {
     }
 
     return (
-        <button className="big-button" onClick={increaseLikes} style={style}>{likesCount} Likes</button>
+        <div>
+          <button className="big-button" onClick={increaseLikes} style={style}>{likesCount} Likes</button>
+        </div>
     );
 }
