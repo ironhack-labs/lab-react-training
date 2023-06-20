@@ -174,3 +174,16 @@
 .number-table .odd{
   background-color: white;
 }
+
+.color-picker .color-box {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.color-picker .color-single {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}

@@ -14,6 +14,7 @@ import FaceBook from './components/FaceBook';
 import SignupPage from './components/SignupPage';
 
 import './App.css';
+import RGBColorPicker from './components/RGBColorPicker ';
 
 function App() {
   return (
@@ -128,6 +129,8 @@ function App() {
     <FaceBook />
 
     <SignupPage />
+
+    <RGBColorPicker />
 
     </div>
   );
