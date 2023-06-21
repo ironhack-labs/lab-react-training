@@ -1,38 +1,133 @@
-.App {
+.container {
+  margin-inline: 0.5rem;
+}
+.box {
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+.card {
+  display: flex;
+  gap: 1rem;
+}
+.card__userInfo {
+  margin-bottom: 0.4rem;
+}
+.card__userImage {
+  height: 8rem;
+  width: auto;
+  cursor: pointer;
+}
+
+.card__userInfo label {
+  font-weight: bold;
+}
+.box-color {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.credit-card {
+  display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  width: 16rem;
+  height: 10rem;
+  border-radius: 5px;
+  margin-inline: 0.8rem;
+}
+.credit-card__logo {
+  text-align: right;
+}
+.credit-card__img {
+  height: 1rem;
+  width: auto;
+}
+.credit-card__expBank {
+  display: flex;
+  gap: 1rem;
+}
+.credit-card__expiracy-date {
+  margin-left: 0.5rem;
+}
+.driver-card {
+  background-color: rgb(69, 94, 181);
+  border-radius: 5px;
+  display: flex;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.driver-card__content {
+  margin: 1rem auto;
+  display: flex;
+  gap: 1rem;
+  width: 25rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.driver-card__avatar {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+.driver-card__infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.driver-card__title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+.dice__img {
+  height: 4rem;
+  width: auto;
+}
+.carousel {
+  position: relative;
+  width: 320px;
+}
+.carousel__img {
+  width: 100%;
+}
+.carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.carousel__arrow-right {
+  right: 0.5rem;
+}
+.carousel__arrow-left {
+  left: 0.5rem;
+}
+.numbers-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 40%;
+}
+.number-box {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid black;
+  display: grid;
+  place-content: center;
+  font-size: 2rem;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  display: block;
+}
+.signupForm {
+  border-bottom: 2px solid grey;
+}
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.color-picker__box {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid black;
 }
