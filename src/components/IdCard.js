@@ -4,10 +4,10 @@ function idCard(props){
         <div className="idCard">
             <img src={props.picture} alt={props.lastName}/>
             <div className="content">
-                <h3>Lastname : {props.lastName}</h3>
-                <h3>firstName : {props.firstName}</h3>
-                <p>Gender : {props.gender}</p>
-                <p>Height : {props.height}</p>
+                <p>Lastname : <span>{props.lastName}</span></p>
+                <p>firstName : <span>{props.firstName}</span></p>
+                <p>Gender : <span>{props.gender}</span></p>
+                <p>Height : <span>{props.height}</span></p>
                 
             </div>
         </div>

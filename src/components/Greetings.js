@@ -3,14 +3,14 @@ function Greetings(props){
         <div className="greetings">
             <p>
                 {props.lang === 'fr'
-                ? 'Bonjours,'
+                ? 'Bonjours, '
                 : props.lang === 'de'
-                ? 'Hallo'
+                ? 'Hallo, '
                 : props.lang === 'es'
-                ? "Hola"
+                ? "Hola, "
                 : props.lang === 'en'
-                ? 'Hello'
-                : "Hey" }
+                ? 'Hello, '
+                : "Hey, " }
                 {props.children}
             </p>
         </div>
