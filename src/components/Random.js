@@ -8,4 +8,4 @@ function Random({min, max}){
 )
 }
 
-export default random
+export default Random

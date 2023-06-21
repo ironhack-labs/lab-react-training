@@ -8,7 +8,7 @@ function idCard(props){
                 <h3>firstName : {props.firstName}</h3>
                 <p>Gender : {props.gender}</p>
                 <p>Height : {props.height}</p>
-                <p> Birth :{props.birth}</p>
+                
             </div>
         </div>
     )

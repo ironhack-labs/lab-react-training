@@ -1,6 +1,8 @@
 import Rating from "./Rating"
 
 function DriverCard(props){
+
+    let car = props.car
     return (
         <div>
             <div>
@@ -9,9 +11,7 @@ function DriverCard(props){
             <div>
                 <h2>{props.name}</h2>
                 <p>{props.rating}</p>
-                {props.car.map(element =>{
-                    <p>{element.model} - {element.licensePlate}</p>
-                })}
+                <p>{props.car.model} - {props.car.licensePlate}</p>
             </div>
         </div>
     )
