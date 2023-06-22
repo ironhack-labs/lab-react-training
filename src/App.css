@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.idCard{
+  border: solid 1px black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  padding: 1em;
+  margin-left: 18em;
+  width: 60%;
+}
+.idCard p {
+  font-weight: 700;
+  padding-left: 1em;
+
+}
+.idCard p span{
+  font-size: medium;
+  font-style: none;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+.greetings, .random{
+  margin: 0.5em;
+  border: solid 1px black;
+  padding: 0em 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CreditCard{
+  width: 30em;
+  height: 15em;
+  border-radius: 1em;
 }
