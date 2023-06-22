@@ -1,15 +1,32 @@
 import React from 'react';
 import profiles from '../data/berlin.json';
+import { useState } from 'react';
 
 function FaceBook() {
+    const [selectedCountry, setSelectedCountry] = useState(null);
+
+    const allCountries = profiles.map(profile => profile.country);
+    const uniqueCountriesSet = new Set(allCountries);
+    const uniqueCountries = Array.from(uniqueCountriesSet);
+
     return (
         <div>
+             {uniqueCountries.map((country, index) => (
+                <button
+                    key={index}
+                    onClick={() => setSelectedCountry(country)}
+                    style={{ backgroundColor: selectedCountry === country ? 'blue' : 'transparent', color: selectedCountry === country ? 'white' : 'black' }}
+                >
+                    {country}
+                </button>
+            ))}
             {profiles.map((profile, index) => (
                 <div key={index} style={{
                     display: "flex",
                     border: "1px solid black",
                     margin: "10px",
-                    padding: "10px"
+                    padding: "10px",
+                    backgroundColor: profile.country === selectedCountry ? 'lightblue' : 'transparent'
                 }}>
                     <img src={profile.img} 
                         alt={`${profile.firstName} ${profile.lastName}`} 
