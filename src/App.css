@@ -36,3 +36,152 @@
     transform: rotate(360deg);
   }
 }
+
+.cardList{
+  width: 30%;
+}
+.cardId{
+  display: flex;
+  justify-content: baseline;
+  width: 100%;
+  
+  font-size: 14px;
+  color: black;
+  background-color: whitesmoke;
+
+  padding: 4px;
+  border: 2px solid black;
+  margin: 5px;
+}
+.cardId img{
+  height: 100px;
+  width: 100px;
+  margin-right: 5px;
+}
+.cardInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-size: 14px;
+  color: black;
+}
+.cardInfo p{
+  margin: 0;
+}
+.cardInfo span{
+  font-weight: bold;
+}
+
+.greetingList{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.greeting{
+  font-size: 24px;
+  text-align: left;
+  color: black;
+  background-color: whitesmoke;
+
+  padding: 4px;
+  border: 2px solid black;
+  margin: 5px;
+}
+.randomList{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.random{
+  font-size: 24px;
+  text-align: left;
+  color: black;
+  background-color: whitesmoke;
+ 
+  padding: 4px;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.boxColorList{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.boxColor{
+  font-size: 24px;
+  text-align: center;
+  color: white;
+ 
+  padding: 4px;
+  border: 2px solid black;
+  margin: 5px;
+}
+.creditCard-section{
+width: 100%;
+}
+
+.creditCardList{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+.creditCard{
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  width: 17%;
+ 
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.cardTypeImg{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.creditCardInfo{
+  display: flex;
+  justify-content: baseline;
+  flex-wrap: wrap;
+}
+.creditCard p{
+  margin: 0 10px;
+}
+
+.driverCardList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.driverCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+ 
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+
+  background-color: rgb(98, 98, 223);
+}
+
+.driverCard img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.driverCardInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
