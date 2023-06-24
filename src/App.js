@@ -1,10 +1,13 @@
 import './App.css';
 import './index.css';
 import IdCard from './components/IdCard';
+import Greetings from './components/Greatings';
 
 function App() {
   return (
     <div className="App">
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
       <IdCard
         lastName="Doe"
         firstName="John"
