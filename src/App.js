@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+      <Greetings lang>Greg</Greetings>
       <IdCard
         lastName="Doe"
         firstName="John"

@@ -1,5 +1,5 @@
-export default function Greetings({ lang, greetings }) {
-  let greetings;
+export default function Greetings({ lang, children }) {
+  let greeting;
   switch (lang) {
     case 'de':
       greeting = 'Guten Tag';
@@ -14,14 +14,13 @@ export default function Greetings({ lang, greetings }) {
       greeting = 'Bonjour';
       break;
     default:
-      greeting = 'καλημέρα';
+      greeting = 'Kαλημέρα';
   }
 
   return (
     <div className="box-with-text">
       <p>
-        {greetings}
-        {children}
+        {greeting} {children}
       </p>
     </div>
   );
