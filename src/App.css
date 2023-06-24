@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
 * {
   box-sizing: border-box;
 }
@@ -97,6 +99,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .creditCard {
@@ -130,6 +133,139 @@ h2 {
   text-align: start;
 }
 
+.stars {
+  margin-bottom: 10px;
+  font-size: 60px;
+  text-align: start;
+  letter-spacing: 10px;
+}
+
+.dCards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.dCard-wrapper {
+  background-color: #455eb5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 16px;
+}
+
+.dCard-wrapper img {
+ height: 80px;
+ width: 80px;
+ border-radius: 50%;
+}
+
+.dCard-info {
+  color: white;
+}
+
+.dCard-info h3 {
+  margin: 0;
+}
+
+.dCard-info p {
+  font-size: 32px;
+  margin: 0;
+}
+
+.clickablePic {
+  margin-bottom: 50px;
+  padding: 16px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.clickablePic img {
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
+}
+
+.dice {
+  min-height: 250px;
+  margin-bottom: 50px;
+  background-color: brown;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice img {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.carousel {
+  background-color: #282c34;
+  padding: 30px 0;
+}
+
+.carousel img {
+  min-height: 250px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 15px 5px rgba(54, 59, 129, 0.39);
+}
+
+.carousel .btn-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.carousel .btn-wrapper button {
+  display: flex;
+  padding: 10px 45px;
+  text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+   font-size: 40px;
+   color: white;
+   background: #6225E6;
+   transition: 1s;
+   box-shadow: 6px 6px 0 black;
+   transform: skewX(-15deg);
+}
+
+.carousel .btn-wrapper button:focus {
+  outline: none;
+}
+
+.carousel .btn-wrapper button:hover {
+  transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+}
+
+.numTable {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  margin: 50px auto;
+  width: 550px;
+}
+
+.numTable div {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.numTable div:nth-child(2n) {
+  background-color: red;
+}
+  
 .country-buttons {
   margin-top: 40px;
   display: flex;
@@ -187,7 +323,7 @@ h2 {
 }
 
 .info-prof p {
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -202,6 +338,7 @@ h2 {
   gap: 30px;
   margin-top: 20px;
   padding-left: 20px;
+  margin-bottom: 100px;
 }
 .signup-container label{
   display: flex;
@@ -251,4 +388,18 @@ h2 {
 
 .greeting-container {
   text-align: start;
+}
+
+.colorPick-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.renderColor-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
 }

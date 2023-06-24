@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import React from 'react';
 
 import dice0 from '../assets//images/dice-empty.png';
 import dice1 from '../assets//images/dice1.png';
@@ -25,7 +26,7 @@ function Dice() {
   };
 
   return (
-    <div>
+    <div className="dice">
       <img width="100" src={dices[diceValue]} onClick={handleClick} />
     </div>
   );

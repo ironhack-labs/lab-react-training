@@ -1,5 +1,7 @@
+import React from 'react';
+
 function BoxColor(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <div className="boxColor">
       <div>

@@ -17,6 +17,9 @@ function LikeButton() {
     color: 'white',
     fontWeight: 'bold',
     cursor: 'pointer',
+    marginBottom: '50px',
+    width: '150px',
+    height: '70px'
   };
 
   return (

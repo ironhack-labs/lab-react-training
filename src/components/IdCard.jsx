@@ -1,3 +1,5 @@
+import React from 'react';
+
 function IdCard(props) {
   // console.log(props.birth);
   const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -13,7 +15,7 @@ function IdCard(props) {
     'Sep',
     'Oct',
     'Nov',
-    'Dec',
+    'Dec'
   ];
 
   return (
@@ -21,24 +23,24 @@ function IdCard(props) {
       <img src={props.picture} alt="picture" />
       <div className="infoCard">
         <p>
-          First name: <p className="infoContent">{props.firstName}</p>
+          First name: <span className="infoContent">{props.firstName}</span>
         </p>
         <p>
-          Last name: <p className="infoContent">{props.lasttName}</p>
+          Last name: <span className="infoContent">{props.lasttName}</span>
         </p>
         <p>
-          Gender: <p className="infoContent">{props.gender}</p>
+          Gender: <span className="infoContent">{props.gender}</span>
         </p>
         <p>
-          Height: <p className="infoContent">{props.height}</p>
+          Height: <span className="infoContent">{props.height}</span>
         </p>
         <p>
           Birth:{' '}
-          <p className="infoContent">
+          <span className="infoContent">
             {dayNames[props.birth.getDay()]}{' '}
             {monthNames[props.birth.getMonth()]} {props.birth.getDate()}{' '}
             {props.birth.getFullYear()}
-          </p>
+          </span>
         </p>
       </div>
     </div>

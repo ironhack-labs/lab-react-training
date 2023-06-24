@@ -1,15 +1,16 @@
 import { useState } from 'react';
+import React from 'react';
 
 function SignupPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [nationality, setNationality] = useState('en');
 
-  const handleEmailInput = (e) => setEmail(e.target.value);
-  const handlePasswordInput = (e) => setPassword(e.target.value);
-  const handleNationality = (e) => setNationality(e.target.value);
+  const handleEmailInput = e => setEmail(e.target.value);
+  const handlePasswordInput = e => setPassword(e.target.value);
+  const handleNationality = e => setNationality(e.target.value);
 
-  const isEmailValid = (email) => {
+  const isEmailValid = email => {
     const validateEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return validateEmail.test(email);
   };
@@ -22,7 +23,7 @@ function SignupPage() {
     }
   };
 
-  const passwordStrength = (password) => {
+  const passwordStrength = password => {
     if (password.length < 8) {
       return 'weak';
     } else {
@@ -30,7 +31,7 @@ function SignupPage() {
     }
   };
 
-  const Greeting = (nationality) => {
+  const Greeting = nationality => {
     if (nationality === 'en') {
       return 'Hello';
     } else if (nationality === 'de') {
@@ -45,7 +46,7 @@ function SignupPage() {
   return (
     <div className="signup-container">
       <form
-        onSubmit={(e) => {
+        onSubmit={e => {
           e.preventDefault();
 
           setEmail('');

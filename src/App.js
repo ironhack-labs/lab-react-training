@@ -1,4 +1,7 @@
+import React from 'react';
+
 import './App.css';
+
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
@@ -13,6 +16,7 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
 import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App(props) {
   let likes = [];
@@ -87,25 +91,30 @@ function App(props) {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-      <DriverCard
-        name="Travis Kalanick"
-        rating={4.2}
-        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
-        car={{
-          model: 'Toyota Corolla Altis',
-          licensePlate: 'CO42DE',
-        }}
-      />
-      <DriverCard
-        name="Dara Khosrowshahi"
-        rating={4.9}
-        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
-        car={{
-          model: 'Audi A3',
-          licensePlate: 'BE33ER',
-        }}
-      />
+
+      <div className="dCards-container">
+        <DriverCard
+          name="Travis Kalanick"
+          rating={4.2}
+          img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+          car={{
+            model: 'Toyota Corolla Altis',
+            licensePlate: 'CO42DE'
+          }}
+        />
+        <DriverCard
+          name="Dara Khosrowshahi"
+          rating={4.9}
+          img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+          car={{
+            model: 'Audi A3',
+            licensePlate: 'BE33ER'
+          }}
+        />
+      </div>
+
       <LikeButton likes={likes} />
+
       <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
       <Dice />
       <Carousel
@@ -113,7 +122,7 @@ function App(props) {
           'https://randomuser.me/api/portraits/women/1.jpg',
           'https://randomuser.me/api/portraits/men/1.jpg',
           'https://randomuser.me/api/portraits/women/2.jpg',
-          'https://randomuser.me/api/portraits/men/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
       />
       <NumbersTable limit={12} />
@@ -121,6 +130,8 @@ function App(props) {
       <Facebook />
 
       <SignupPage />
+
+      <RGBColorPicker />
     </div>
   );
 }

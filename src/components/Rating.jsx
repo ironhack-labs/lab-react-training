@@ -1,16 +1,18 @@
-const rating = [1, 2, 3, 4, 5];
+import React from 'react';
 
 function Rating(props) {
-  return (
-    <div>
-      {rating.map((el) => {
-        let score = '☆☆☆☆☆';
-        if (Math.floor(props.children) === el) {
-          return Math.floor(props.children);
-        }
-      })}
-    </div>
-  );
+  const filledStars = Math.round(props.children);
+  const emptyStars = 5 - filledStars;
+
+  const starIcons = [];
+  for (let i = 0; i < filledStars; i++) {
+    starIcons.push('★');
+  }
+  for (let i = 0; i < emptyStars; i++) {
+    starIcons.push('☆');
+  }
+
+  return <div className="stars">{starIcons.join('')}</div>;
 }
 
 export default Rating;

@@ -1,3 +1,5 @@
+import React from 'react';
+
 function NumbersTable(props) {
   const numbers = [];
 
@@ -7,8 +9,8 @@ function NumbersTable(props) {
 
   return (
     <div className="numTable">
-      {numbers.map((num) => {
-        return <div>{num}</div>;
+      {numbers.map(num => {
+        return <div key={num}>{num}</div>;
       })}
     </div>
   );

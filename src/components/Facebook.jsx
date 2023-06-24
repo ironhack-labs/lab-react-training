@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 
 import Profiles from '../data/berlin.json';
@@ -7,7 +8,7 @@ function Facebook() {
 
   const [selectedCountry, setSelectedCountry] = useState('');
 
-  const handleCountryClick = (country) => {
+  const handleCountryClick = country => {
     setSelectedCountry(country);
   };
 
@@ -21,7 +22,7 @@ function Facebook() {
             }
             return countries;
           }, [])
-          .map((country) => (
+          .map(country => (
             <button
               key={country}
               onClick={() => handleCountryClick(country)}
@@ -33,9 +34,10 @@ function Facebook() {
       </div>
 
       <div className="fb">
-        {profiles.map((profile) => {
+        {profiles.map(profile => {
           return (
             <div
+              key={profile.firstName}
               className={`prof-container ${
                 profile.country === selectedCountry ? 'selected' : ''
               }`}
