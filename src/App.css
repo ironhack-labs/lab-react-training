@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.idCard, .greetings, .random, .boxColor,.facebook-card{
+border: 2px black solid ;
+margin: 20px;
+padding: 10px;
+display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.idCard img{
+  object-fit: cover;
+  width: 200px;
+
+  margin-right: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.idCard p{
+margin: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.credit-cards{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.drivercard{
+  background-color: rgb(73, 73, 205);
+  border-radius: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px;
+  padding:10px
 }
 
-.App-link {
-  color: #61dafb;
+.facebook-card{width: 500px;}
+
+.facebook-card img{
+  width:200px;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.country-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.country-buttons button {
+  padding: 5px 10px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
+
+.country-buttons button.active {
+  background: #b4d7ff;
+}
+
+.profile-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.facebook-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.facebook-card.selected {
+  background-color: #b4d7ff;
+}
+
+.facebook-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.facebook-card p {
+  margin: 5px 0;
 }
