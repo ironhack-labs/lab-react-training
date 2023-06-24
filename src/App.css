@@ -2,9 +2,103 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Profile{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 90vw;
+  margin: 20px;
+}
+
+.FacebookSimple {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  text-align: left;
+}
+.facebookDiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  border: 1px solid black;
+}
+.Mauri, p {
+  font-size: larger;
+}
+.FacebookImage {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.ProfileImage{
+ 
+  border: 1px solid black;
+  
+  
+}
+.creditCardlogo img {
+  width: 50px;
+}
+
+.creditCard {
+  width: 320px;
+  height: 150px;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 1%;
+}
+.creditCardlogo{
+  display: flex;
+  justify-content: flex-end;
+}
+.cardNumber{
+  font-size: 1.5em;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+.driverCar{
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(60, 95, 220) ;
+}
+.driverImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+.Greeting {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border: 2px solid black;
+  width: 300px;
+ margin: 10px;
+
+}
+.RandomNumber {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border: 2px solid black;
+  width: 300px;
+ margin: 10px;
+}
+
+
+.ProfileInfo{
+  text-align: left;
+  padding: 5px;
+}
+table, th, td {
+  border: 1px solid black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -27,6 +121,13 @@
 .App-link {
   color: #61dafb;
 }
+.Rating {
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+
 
 @keyframes App-logo-spin {
   from {
