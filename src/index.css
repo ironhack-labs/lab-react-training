@@ -96,3 +96,17 @@ justify-content: center;
 .red {
   background-color: red;
 }
+
+form{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+button{
+  border-radius: 12px;
+  color: white;
+  background-color: skyblue;
+}
+
