@@ -6,10 +6,12 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
     <div className="App">
+      <LikeButton />
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
