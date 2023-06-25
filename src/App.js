@@ -10,9 +10,13 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import dice1 from './assets/images/dice1.png';
 import dice2 from './assets/images/dice2.png';
+import FaceBook from './components/FaceBook';
+
 function App() {
   return (
     <div className="App">
+      <FaceBook />
+
       <ClickablePicture img={dice1} imgClicked={dice2} />
 
       <LikeButton />
