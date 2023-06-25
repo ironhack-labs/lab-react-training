@@ -7,10 +7,14 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import LikeButton from './components/LikeButton';
-
+import ClickablePicture from './components/ClickablePicture';
+import dice1 from './assets/images/dice1.png';
+import dice2 from './assets/images/dice2.png';
 function App() {
   return (
     <div className="App">
+      <ClickablePicture img={dice1} imgClicked={dice2} />
+
       <LikeButton />
       <Rating>0</Rating>
       <Rating>1.49</Rating>
