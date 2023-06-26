@@ -11,3 +11,102 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.IdCard{
+  display: flex;
+  text-align: left;
+}
+li{
+  list-style: none;
+}
+span{
+  font-weight: 800;
+}
+.App{
+  border: solid 1px black;
+}
+
+.Iteration2{
+  text-align: left;
+  border : solid 1px black;
+}
+.creditCard{
+display: flex;
+justify-content: center;
+
+}
+.creditCard >div{
+  width: 30vw;
+}
+
+.ratings {
+  display : flex;
+  flex-direction:column;
+}
+.rate{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.driverCards{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.driverCards img{
+ width: 150px;
+ border-radius: 50%;
+ align-items: center;
+}
+
+.driver{
+  background-color: cadetblue;
+  display:flex;
+  width:80vw;
+  margin: auto;
+  justify-content: center;
+  padding: 20px 0px;
+  border-radius: 5px;
+  margin-bottom : 10px;
+}
+.driverText{
+  margin: 0px 20px;
+  justify-content: left;
+  text-align: left;
+}
+.dice img{
+  width : 150px;
+}
+
+.numbersTable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numberItem {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red {
+  background-color: red;
+}
+
+form{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+button{
+  border-radius: 12px;
+  color: white;
+  background-color: skyblue;
+}
+
