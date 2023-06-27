@@ -1,38 +1,123 @@
 .App {
+  padding: 1rem;
+}
+
+.IdCard, .FacebookCard {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  width: 40%;
+  margin-bottom: 2%;
+
+}
+
+.FacebookCard img {
+  width: 200px;
+  height: 200px;
+}
+
+.IdCard img {
+  margin-right: 0.5rem;
+}
+
+.BasicCard {
+  border: 2px solid black;
+  width: 40%;
+  margin-bottom: 1%;
+  padding: 0.5rem;
+}
+
+.BoxColor {
+  border: 2px solid black;
+  width: 40%;
+  margin-bottom: 1%;
+  padding: 3rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.CreditCard {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 1%;
+  padding: 2%
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.CreditCard p {
+  margin:0
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.CreditCardNumber {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+.BankLogo {
+  text-align: right;  
+}
+
+.BankLogo img {
+  width: 20%;
+
+}
+
+.CreditCardInfo {
   display: flex;
-  flex-direction: column;
+  gap: 20px;
+}
+
+.CreditCards {
+  display: flex;
+ 
+}
+
+.StarsRating, .LikeButton {
+  margin: 1%;
+}
+
+.DriverCard {
+  display: flex;
+  background-color: #455EB5;
+  color: white;
+  justify-content: center;
+  padding: 1%;
+  width: 40%;
+  margin-top: 10px;
+  border-radius: 10px;
+  
+}
+
+.DriverImage img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  padding-right: 10px;
+
+}
+
+.Dice img , .CliclablePicture img {
+  width: 200px;
+  margin: 2%;
+}
+
+.NumbersTable {
+  display: flex;
+  margin: 2%
+}
+
+.Number {
+  width: 60px;
+  height: 60px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: solid 1px black;
+
+ 
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
