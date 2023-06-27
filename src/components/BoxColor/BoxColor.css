@@ -1,0 +1,7 @@
+.color {
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 1rem;
+}

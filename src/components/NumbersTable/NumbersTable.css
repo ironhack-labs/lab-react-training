@@ -1,0 +1,9 @@
+.number-color {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 300px;
+    justify-content: center;
+    font-size: 1.4em;
+    text-align: center;
+
+}

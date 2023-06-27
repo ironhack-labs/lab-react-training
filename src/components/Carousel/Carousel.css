@@ -1,0 +1,10 @@
+.carousel {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel div {
+    margin-bottom: 20px;
+}

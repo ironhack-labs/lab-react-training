@@ -1,0 +1,13 @@
+.facebook-card {
+    display: flex;
+    margin: 20px;
+    gap: 2rem;
+    font-size: 1.3em;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+.facebook-card img {
+    width: 15%;
+}
