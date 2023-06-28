@@ -1,38 +1,127 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Border {
+  margin: 5px 2px;
+  border: solid;
+  border-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p,
+h3 {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Iteration 1 */
+
+.Idcard {
+  display: flex;
+  flex-direction: row;
+}
+.Iddata {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+
+.Idcard p span {
+  font-weight: bold;
+}
+
+/* Iteration 4 */
+
+.BoxColor {
+  text-align: center;
+}
+.BoxColor p {
+  padding: 5px;
+}
+
+/* Iteration 5 */
+
+.CreditCard {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.CreditCard img {
+  width: 50px;
+  float: right;
+  margin: 5px;
+}
+
+.CC-Numbers {
+  text-align: center;
+  margin: 0;
+}
+.CC-Numbers p {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.CC-Data {
+  display: flex;
+  flex-direction: row;
+}
+.CC-Data p {
+  padding-right: 20px;
+}
+
+.CC-User {
+  margin: 5px;
+}
+
+.CC-Position {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Iteration 6 */
+
+.Rating {
+  text-align: center;
+  margin: 5px;
+}
+
+.Rating p {
+  font-size: 30px;
+}
+
+/* Iteration 7 */
+
+.DriverCard {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 10px;
+  padding: 10px;
+  background-color: blue;
+  border-radius: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.DC-ImgBlock img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DC-Data {
+  width: 400px;
+  margin-left: 15px;
 }
+
+.DC-Data p {
+  text-align: left;
+  font-size: 15px;
+}
+
+/* Iteration 8 */
