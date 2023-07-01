@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+.idCard {
+  border-style: solid;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+}
+
+.greetings{
+  margin-top: 30px;
+  padding: 5px;
+  border-style: solid;
+}
+
+.Random{
+  background-color: rgb(40, 44, 52);
+}
+
+
+.idcard-container {
+  display: flex;
+  align-items: start;
+  border: 1px solid black;
+  width: 30vw;
+
+}
+
+.image-box, .profile-box {
+  padding: 0.5rem;
+}
+
+.profile-box p span {
+  font-weight: 500;
+}
+
+.creditCard-container {
+    width: 23vw;
+    padding: 0.7rem;
+    margin: 1rem 0;
+    border-radius: 9px;
+}
