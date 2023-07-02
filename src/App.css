@@ -36,3 +36,146 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  border: 1px solid black;
+  width:500px;
+  display: flex;
+  margin: 20px
+}
+
+.card-img {
+  display: flex;
+  align-items: center;
+  margin:10px
+}
+
+.card-info, .card-number{
+  padding-left: 20px;
+}
+
+.card-info {
+  padding-bottom: 20px;
+}
+
+.credit-card {
+  width: 300px;
+  border-radius: 10px;
+  margin:20px
+}
+
+.card-logo {
+  width: 50px;
+  margin-right:20px;
+  margin-top: 20px
+  ;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-end;;
+}
+
+.credit-card p {
+  font-size: 10px;
+}
+
+.driver-card {
+display: flex;
+justify-content: center;
+background-color: #445eb5;
+width: 400px;
+margin: 10px;
+border-radius: 10px;
+}
+
+.driver-pic {
+  width: 100px;
+  height: 100px;
+  margin:10px
+}
+
+.driver-img-div {
+  display: flex;
+  align-items: center;
+}
+
+.driver-info{
+  color:white
+}
+
+.dice {
+  width: 100px;
+}
+
+.numbers-table {
+  width: 640px;
+  table-layout: fixed;
+}
+
+.numbers-table tr {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.numbers-table td {
+  width: 120px;
+  height: 120px;
+  border: 2px solid black;
+  font-size: 40px;
+  text-align: center;
+}
+
+.fb-user-card {
+  border: 2px solid black;
+  display: inline-flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.fb-user-picture {
+  width: 100px;
+  padding: 20px;
+}
+
+.fb-user-info {
+  padding: 20px;
+}
+
+.selected {
+  background-color: #61dafb;
+}
+
+.active {
+  background-color: #61dafb;
+}
+
+.each-country-button {
+  margin: 5px
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.single-color {
+  display: flex;
+  margin:20px;
+}
+.square {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px
+}
+
+.mixed-square {
+  width: 100px;
+  height: 100px;
+  margin: 20px
+}
+
+.color-text {
+  margin:20px
+}
