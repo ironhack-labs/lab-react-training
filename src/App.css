@@ -1,38 +1,152 @@
-.App {
+.App h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-bold {
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.idCard-box {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  background-color: aqua;
+  border: solid black 1px;
+  padding-right: 10px;
+}
+
+.idCard-box img {
+  width: 200px;
+  height: auto;
+}
+
+.normal-box {
+  border: solid 1px black;
+  width: 500px;
+  margin: 0 auto 10px auto;
+}
+
+.normal-box p {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px auto;
+}
+
+.all-cards-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.credit-card {
+  border-radius: 10px;
+  width: 300px;
+  padding: 10px;
+}
+.credit-card img {
+  float: right;
+  padding: 10px;
+  height: 20px;
+  margin-right: 0;
+}
+
+.credit-card h2 {
+  margin-top: 40px;
+}
+
+#bank-name {
+  margin-left: 30px;
+}
+
+.card-details-box {
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.card-details-box p {
+  margin: 0;
+}
+
+.all-rating {
+  /* background-color: aqua; */
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+.all-driverCard {
+  margin: 0 auto;
+}
+
+.driverCard-box {
+  margin: 30px auto;
+  display: flex;
+  gap: 30px;
+  background-color: #3B55A9;
+  padding: 20px;
+  width: 800px;
+  border-radius: 20px;
+  color: white;
+  justify-content: center;
+}
+
+.driverCard-box img {
+  width: auto;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.driver-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.driver-info h4 {
+  margin: 0 0 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.driver-info p {
+  margin: 0;
+}
+
+.all-likeBtn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 50px;
+}
+
+.likeBtn-box button {
+  font-size: 20px;
+}
+
+.clickablePicture-box {
+  width: 200px;
+  margin: 10px auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.dice-box img {
+  width: 200px;
 }
