@@ -22,37 +22,24 @@ const contacts = [
   }
 ];
 
-const languages = [
-  {
-    lang: 'en'
-  },
-  {
-    lang: 'fr'
-  }
-]
+const languages = [{ lang: 'en' }, { lang: 'fr' }];
 
-const contactList = () => contacts.map((contact, index) => (
+const contactList = () => contacts.map((contact, contactIndex) => (
   <IdCard
-    key={index}
-    lastName={contact.lastName}
-    firstName={contact.firstName}
-    gender={contact.gender}
-    height={contact.height}
-    birth={contact.birth}
-    picture={contact.picture}
+    key={contactIndex}
+    {...contact}
   />
 ));
 
-const langList = () => languages.map((language, index) => (
-  <Greetings key={index} lang={language.lang} name="Ludwig" />
+const langList = () => languages.map((language, languageIndex) => (
+  <Greetings key={languageIndex} lang={language.lang} name="Ludwig" />
 ));
 
 function App() {
   return (
     <div className="App">
       {contactList()}
-      {langList()}
-      
+      {langList()}  
     </div>
   );
 }
