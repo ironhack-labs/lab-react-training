@@ -30,3 +30,12 @@ code {
 .inner-card-data {
   margin-left: 10px;
 }
+
+.greetings {
+  display: flex;
+  border: 1px solid black;
+  font-size: large;
+  padding: 10px 20px;
+  align-items: start;
+  margin: 10px 10px;
+}
