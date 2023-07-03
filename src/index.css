@@ -24,7 +24,7 @@ code {
 }
 
 .inner-card > img {
-  width: 175px;
+  width: 200px;
 }
 
 .inner-card-data {
@@ -38,4 +38,21 @@ code {
   padding: 10px 20px;
   align-items: start;
   margin: 10px 10px;
+}
+
+.rgb-text {
+  font-weight: 400;
+}
+
+.credit-card {
+  border-radius: 8px;
+  width: 30%;
+  height: 150px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+#cc-div {
+  display: flex;
+  justify-content: space-around;
 }
