@@ -82,3 +82,31 @@
   display: flex;
   padding: 0.2rem;
 }
+
+.driverCard-container{
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 0.1rem;
+  width: 70vw;
+  background-color: #682df1;
+  color:white;
+  margin-bottom: 20px;
+}
+
+.driverInfo{
+  display: flex;
+  flex-direction: column;
+}
+
+.driverPic{
+  display: block;
+  margin: 3rem 0rem 1rem 2rem;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+.driverCar{
+  display: flex;
+  gap: 10px;
+}
