@@ -1,4 +1,3 @@
-import React from 'react';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
@@ -6,6 +5,12 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import SignupPage from './components/SignupPage';
+
 import './App.css';
 
 const contacts = [
@@ -25,33 +30,45 @@ const contacts = [
     birth: new Date("1988-05-11"),
     picture: "https://randomuser.me/api/portraits/women/44.jpg"
   }
+]
+
+const languages = [
+  {
+    lang: 'de'
+  },
+  {
+    lang: 'en'
+  }
+]
+
+const images = [
+  'https://randomuser.me/api/portraits/women/1.jpg',
+  'https://randomuser.me/api/portraits/men/1.jpg',
+  'https://randomuser.me/api/portraits/women/2.jpg',
+  'https://randomuser.me/api/portraits/men/2.jpg'
 ];
 
-const languages = ['de', 'en'];
 
-const App = () => {
-  const contactList = contacts.map(contact => (
-    <IdCard
-      key={`${contact.firstName}-${contact.lastName}`}
-      {...contact}
-    />
-  ));
+const contactList = () => contacts.map(contact => (
+  <IdCard lastName={ contact.lastName} firstName={ contact.firstName } gender={ contact.gender } height={ contact.height } birth={ contact.birth } picture={ contact.picture } />
+ ))
 
-  const greetingList = languages.map(lang => (
-    <Greetings key={lang} lang={lang}>
-      Ludwig
-    </Greetings>
-  ));
+const getLang = () => languages.map(language => (
+  <Greetings lang={ language.lang }>Ludwig</Greetings>
+))
 
+
+
+function App() {
   return (
     <div className="App">
-      {contactList}
-      {greetingList}
-      <Random min={1} max={6} />
-      <Random min={1} max={100} />
+      {contactList()}
+      {getLang()}
+      <Random min={1} max={6}/>
+      <Random min={1} max={100}/>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-      <div id="cc-div">
+      <div id='cc-div'>
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -60,8 +77,9 @@ const App = () => {
           bank="BNP"
           owner="Maxence Bouret"
           bgColor="#11aa99"
-          color="white"
+          color="white" 
         />
+            
         <CreditCard
           type="Master Card"
           number="0123456789010995"
@@ -72,6 +90,7 @@ const App = () => {
           bgColor="#eeeeee"
           color="#222222"
         />
+            
         <CreditCard
           type="Visa"
           number="0123456789016984"
@@ -80,7 +99,7 @@ const App = () => {
           bank="Name of the Bank"
           owner="Firstname Lastname"
           bgColor="#ddbb55"
-          color="black"
+          color="white" 
         />
       </div>
       <Rating>0</Rating>
@@ -98,6 +117,7 @@ const App = () => {
           licensePlate: "CO42DE"
         }}
       />
+
       <DriverCard
         name="Dara Khosrowshahi"
         rating={4.9}
@@ -107,10 +127,13 @@ const App = () => {
           licensePlate: "BE33ER"
         }}
       />
+      <LikeButton />
+      <ClickablePicture />
+      <Dice />
+      <Carousel images={images}/>
+      <SignupPage />
     </div>
   );
-};
+}
 
 export default App;
-
-       
