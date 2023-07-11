@@ -128,7 +128,11 @@ html{
 }
 
 .dice{
-  width: 2vw;
-  height: 2vw;
-
+  display: flex;
+  width: 10vw;
+  height: 10vw;
+}
+.carousel{
+display: flex;
+padding: 15px;
 }
