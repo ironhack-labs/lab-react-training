@@ -159,3 +159,17 @@ html {
   border: 1px solid black;
   padding: 10px;
 }
+
+.image-box img {
+  width: 10vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+}
+
+.selected-country {
+  background-color: rgb(118, 174, 226);
+}
