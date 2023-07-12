@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.id-card {
+  margin: 20px;
+  border: 1px solid black;
   display: flex;
-  flex-direction: column;
+}
+
+img {
+  height: 120px;
+  padding: 20px;
+  margin: 20px;
+}
+
+h1 {
+  padding: 10px;
+  margin: 20px;
+}
+
+.greeting-text {
+  padding: 10px;
+  margin: 20px;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+.random {
+  padding: 10px;
+  margin: 20px;
+  font-size: 20px;
+  border: 1px solid black;
+}
+.color {
+  padding: 10px;
+  margin: 20px;
+  font-size: 20px;
+  border: 1px solid black;
   align-items: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.rating {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.driver-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(45, 99, 179);
   color: white;
+  margin: 10px;
+  border-radius: 10px;
+}
+.driver-card > .driver-img {
+  border-radius: 90px;
+  margin: -10px;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  margin: 10px;
+}
+p {
+  margin: 10px;
+}
+.rating-star {
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.like-btn {
+  margin: 10px;
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: row;
+}
+.carousel {
+  margin: 20px;
+}
+
+.numbers-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+.number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: red;
+  margin: 5px;
+}
+
+.facebook {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid black;
+}
+
+.facebook-img {
+  display: flex;
+  flex-direction: row;
+}
+
+.form {
+  margin: 10px;
+}
+
+.signup-btn {
+  margin-top: 10px;
 }
