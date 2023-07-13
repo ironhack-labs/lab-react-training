@@ -1,3 +1,7 @@
+html {
+  font-size: 100%;
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +36,140 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.idCard {
+  border-style: solid;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+}
+
+.greetings {
+  margin-top: 30px;
+  padding: 5px;
+  border-style: solid;
+}
+
+.Random {
+  background-color: rgb(40, 44, 52);
+}
+
+.idcard-container {
+  display: flex;
+  align-items: start;
+  border: 1px solid black;
+  width: 30vw;
+}
+
+.image-box,
+.profile-box {
+  padding: 0.5rem;
+}
+
+.profile-box p span {
+  font-weight: 500;
+}
+
+.creditCard-container {
+  width: 23vw;
+  padding: 0.7rem;
+  margin: 1rem 0;
+  border-radius: 9px;
+}
+
+.rating {
+  display: flex;
+  padding: 0.2rem;
+  font-size: 2rem;
+}
+
+.driverCard-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 0.1rem;
+  width: 70vw;
+  background-color: #682df1;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.driverInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.driverPic {
+  display: block;
+  margin: 3rem 0rem 1rem 2rem;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.driverCar {
+  display: flex;
+  gap: 10px;
+}
+
+#likeButton {
+  width: 6vw;
+  height: 2vw;
+}
+
+.maxene {
+  display: flex;
+  height: 15vw;
+}
+
+.dice {
+  display: flex;
+  width: 10vw;
+  height: 10vw;
+}
+
+.carousel {
+  display: flex;
+  padding: 15px;
+}
+
+.numberTable {
+  display: flex;
+  width: 9vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.even {
+  display: flex;
+  background-color: red;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.odd {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.image-box img {
+  width: 10vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+}
+
+.selected-country {
+  background-color: rgb(118, 174, 226);
 }
