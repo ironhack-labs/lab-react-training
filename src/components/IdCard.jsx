@@ -1,5 +1,3 @@
-import React from 'react';
-
 function IdCard({lastName, firstName, gender, height, birth, picture}) {
   return (
     <div className='card'>

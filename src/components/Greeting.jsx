@@ -1,5 +1,3 @@
-import React from "react";
-
 function Greetings ({ lang, children}) {
     const printGreeting = () => {
         switch (lang) {
