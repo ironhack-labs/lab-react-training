@@ -1,5 +1,12 @@
 import './App.css';
+import Greetings from './components/Greeting';
 import IdCard from './components/IdCard';
+import React from 'react'
+
+const greetings = [
+  { lang: 'en' },
+  { lang: 'fr' }
+]
 
 const contacts = [
   {
@@ -27,9 +34,14 @@ function App() {
     return <IdCard lastName={ contact.lastName} firstName={ contact.firstName } gender={ contact.gender } height={ contact.height } birth={ contact.birth } picture={ contact.picture }/>
   })
 
+  const greetingsList = () => greetings.map((greeting, i) => {
+    return <Greetings key={i} lang={greeting.lang} name="Ludwing"/>
+  })
+
   return (
     <div className="App">
        {contactList()}
+       {greetingsList()}
     </div>
   );
 }
