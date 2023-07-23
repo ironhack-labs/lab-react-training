@@ -2,6 +2,7 @@ import './App.css';
 import Greetings from './components/Greeting';
 import IdCard from './components/IdCard';
 import React from 'react'
+import Random from './components/Random';
 
 const greetings = [
   { lang: 'en' },
@@ -42,6 +43,8 @@ function App() {
     <div className="App">
        {contactList()}
        {greetingsList()}
+       <Random min={1} max={6} />
+       <Random min={1} max={100} />
     </div>
   );
 }
