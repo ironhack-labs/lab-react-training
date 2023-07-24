@@ -1,15 +1,22 @@
 const Greetings = (props) => { 
   const { lang, children } = props
+  let greetingMessage
 
   if (lang === 'de') {
-    return <p>Hallo {children}</p>
+    greetingMessage = 'Hallo'
   } else if (lang === 'fr') {
-    return <p>Bonjour {children}</p>
+    greetingMessage = 'Bonjour'
   } else if (lang === 'en') {
-    return <p>Hello {children}</p>;
+    greetingMessage = 'Hello'
   } else if (lang === 'es') {
-    return <p>Hola {children}</p>;
+    greetingMessage = 'Hola'
   }
+
+  return (
+    <div className="Greetings">
+      <p>{greetingMessage} {children}</p>
+    </div>
+  )
 }
 
 export default Greetings
