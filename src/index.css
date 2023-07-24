@@ -97,3 +97,8 @@ code {
   padding-left: 10px;
   padding-bottom: 15px;
 }
+
+.Rating {
+  margin: 10px;
+  max-width: 100px;
+}
