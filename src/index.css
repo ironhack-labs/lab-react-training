@@ -17,9 +17,38 @@ code {
   display: flex;
   text-align: left;
   max-width: 400px;
+  margin: 10px;
 }
-
 .IdCard p {
   margin: 0;
   padding-left: 10px;
+}
+
+.Greetings {
+  border: 1px solid black;
+  max-width: 400px;
+  text-align: left;
+  margin: 10px;
+}
+.Greetings p {
+  margin: 5px;
+}
+
+.Random {
+  border: 1px solid black;
+  max-width: 400px;
+  text-align: left;
+  margin: 10px;
+}
+.Random p {
+  margin: 5px;
+}
+
+.BoxColor {
+  border: 1px solid black;
+  max-width: 400px;
+  margin: 10px;
+}
+.BoxColor p {
+  margin: 5px;
 }
