@@ -102,3 +102,45 @@ code {
   margin: 10px;
   max-width: 100px;
 }
+
+.DriverCard {
+  background-color: rgb(69,84, 181);
+  display: flex;
+  max-width: 400px;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.driver-image{
+  position: relative;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+.DriverCard img {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;
+}
+.DriverCard p {
+  margin: 10px 0;
+  margin-left: 5px;
+  padding: 0;
+}
+.DriverCard p:first-child {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.DriverCard p:nth-child(2) {
+  font-size: 1.4rem;
+}
