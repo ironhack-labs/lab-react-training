@@ -52,3 +52,48 @@ code {
 .BoxColor p {
   margin: 5px;
 }
+
+.CreditCard {
+  margin: 10px;
+  max-width: 270px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.card-logo{
+  text-align: right;
+}
+.card-logo img {
+  width: 40px;
+  padding: 15px 15px 10px 0;
+}
+
+.CreditCard div:nth-child(2) {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+.CreditCard div:nth-child(3) {
+  font-size: 0.8rem;
+}
+.CreditCard div:nth-child(4) {
+  font-size: 0.8rem;
+}
+
+.card-data {
+  display: flex;
+}
+.card-data span {
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+.card-data span:first-child {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.card-owner {
+  display: flex;
+}
+.card-owner span {
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
