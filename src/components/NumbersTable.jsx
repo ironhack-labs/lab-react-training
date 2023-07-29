@@ -28,7 +28,7 @@ function NumbersTable({ limit }) {
       }}
     >
       {numbers.map((number) => {
-        return <div style={customStyle(number)}>{number}</div>;
+        return <div style={customStyle(number)} key={number}>{number}</div>
       })}
     </div>
   )

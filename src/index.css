@@ -18,6 +18,7 @@ code {
   text-align: left;
   max-width: 400px;
   margin: 10px;
+  height: 110px;
 }
 .IdCard p {
   margin: 0;
@@ -124,7 +125,7 @@ code {
   border-radius: 100%;
   margin-right: 5px;
 }
-.DriverCard img {
+.DriverCard div img {
   position:absolute;
   top: 50%;
   left: 50%;
@@ -132,16 +133,16 @@ code {
   width: auto;
   height: 100%;
 }
-.DriverCard p {
+.DriverCard div p {
   margin: 10px 0;
   margin-left: 5px;
   padding: 0;
 }
-.DriverCard p:first-child {
+.DriverCard div p:first-child {
   font-size: 1.3rem;
   font-weight: bold;
 }
-.DriverCard p:nth-child(2) {
+.DriverCard div p:nth-child(2) {
   font-size: 1.4rem;
 }
 
@@ -202,4 +203,22 @@ code {
 .Carousel img {
   width: 200px;
   height: 200px;
+}
+
+.profile-img-container img {
+  height: 95%;
+  max-width: 100px;
+  margin-left: 4px;
+}
+
+.id-img-container img {
+  height: 95%;
+  margin-left: 4px;
+}
+
+.id-img-container,
+.profile-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

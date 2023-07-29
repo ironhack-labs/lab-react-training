@@ -24,7 +24,7 @@ const IdCard = (props) => {
         </p>
       </div>
     </div>
-  );
+  )
 }
 
 export default IdCard
