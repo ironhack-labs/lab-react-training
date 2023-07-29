@@ -222,3 +222,14 @@ code {
   align-items: center;
   justify-content: center;
 }
+
+
+.FilterButtons {
+  width: 400px;
+  margin: 10px;
+}
+.FilterButton {
+  border: 1px solid gray;
+  margin: 0 5px;
+  border-radius: 5px;
+}
