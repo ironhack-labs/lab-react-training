@@ -14,7 +14,7 @@ const DriverCard = (props) => {
         <p>{car.model} {car.licensePlate}</p>
       </div>
     </div>
-  );
+  )
 
 }
 

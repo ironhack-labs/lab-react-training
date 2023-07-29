@@ -6,6 +6,7 @@ import BoxColor from './components/BoxColor'
 import CreditCard from './components/CreditCard'
 import Rating from './components/Rating'
 import DriverCard from './components/DriverCard'
+import LikeButton from './components/LikeButton';
 
 function App() {
   const scoreToStars = (rating) => {
@@ -18,7 +19,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" style={{ display: 'flex', flexDirection: 'column'}}>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -104,6 +105,9 @@ function App() {
         }}
         scoreToStars={scoreToStars}
       />
+
+      <LikeButton />
+      <LikeButton />
     </div>
   );
 }

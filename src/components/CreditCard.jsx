@@ -24,7 +24,7 @@ const CreditCard = (props) => {
         <img src={`${process.env.PUBLIC_URL}/${logoSrc}`} alt="logo" />
       </div>
 
-      <div classNanme="card-number">
+      <div className="card-number">
         <span>⏺⏺⏺⏺ ⏺⏺⏺⏺ ⏺⏺⏺⏺ {number.slice(12)}</span>
       </div>
       <div className="card-data">

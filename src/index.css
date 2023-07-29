@@ -144,3 +144,12 @@ code {
 .DriverCard p:nth-child(2) {
   font-size: 1.4rem;
 }
+
+.LikeButton {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  width: 100px;
+}
