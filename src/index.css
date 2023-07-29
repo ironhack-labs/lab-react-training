@@ -152,4 +152,17 @@ code {
   margin: 10px;
   color: white;
   width: 100px;
+
+}
+
+.ClickablePicture {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.ClickablePicture img {
+  width: 380px;
+  padding: 5px;
 }
