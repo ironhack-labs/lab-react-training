@@ -166,3 +166,14 @@ code {
   width: 380px;
   padding: 5px;
 }
+
+.Dice {
+  width: 400px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Dice img {
+  width: 390px;
+}
