@@ -11,3 +11,163 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+p{
+  margin: 0 0;
+}
+.card{
+  display:flex;
+  flex-direction: row;
+  transition: 0.3s;
+  margin: 30px 20px;
+  height: 120px;
+  border: 3px solid black;
+}
+
+.card img{
+  width: 120px;
+  height: 100px;
+}
+
+.card p{
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.gretings{
+  display:flex;
+  flex-direction: row;
+  transition: 0.3s;
+  margin: 30px 20px;
+  height: 40px;
+  align-items: center;
+  border: 3px solid black;
+}
+.gretings p{
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+
+.random{
+  display:flex;
+  flex-direction: row;
+  transition: 0.3s;
+  margin: 30px 20px;
+  height: 40px;
+  align-items: center;
+  border: 3px solid black;
+}
+.random p{
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+.boxcolor{
+  display:flex;
+  flex-direction: column;
+  margin: 30px 20px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+}
+
+.boxcolor p{
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.credit-card-container{
+  width: 800px;
+}
+
+.credit-card{
+  
+  margin: 30px 20px;
+  height: 200px;
+  width: 380px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+
+}
+.credit-car-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+
+}
+.credit-car-header img{
+  width: 50px;
+  height: 25px;
+  margin: 20px;
+}
+
+
+.number h2{
+  margin-top: 10px;
+  font-size: 30px;
+  margin-bottom: 10px;
+
+}
+
+.expire-bank{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+
+}
+.expire-bank p{
+  text-align: left;
+  padding: 0;
+  margin: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.owner p{
+  text-align: left;
+  padding: 0;
+  margin: 20px;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.rating h1{
+  margin: 0 0;
+}
+
+.driverCard{
+  background-color: cornflowerblue;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 10px;
+  border-radius: 10px;
+
+}
+
+.driverCard img{
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin:10px;
+}
+.driverCard h2{
+  margin:0 0;
+}
+
+.driverCard span{
+  margin:0 0;
+}
