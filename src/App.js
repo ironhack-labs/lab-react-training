@@ -4,6 +4,7 @@ import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
+import CreditCard from './components/CreditCard';
 
 function App() {
   return (
@@ -33,6 +34,17 @@ function App() {
 
       <BoxColor r={171} g={171} b={171} />
       <BoxColor r={9} g={99} b={119} />
+
+      <CreditCard
+        type='Visa'
+        number="0123456789018845"
+        expirationMonth={3}
+        expirationYear={2025}
+        bank="BNP"
+        owner="Bernard Cardoso"
+        bgColor="#11aa99"
+        color="white" />
+
     </div>
   );
 }
