@@ -4,6 +4,7 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
 
 function App() {
 
@@ -76,6 +77,13 @@ function App() {
           color="white" 
         />
       </div>
+
+      <Rating rating='0'></Rating>
+      <Rating rating='1.49'></Rating>
+      <Rating rating='1.5'></Rating>
+      <Rating rating='3'></Rating>
+      <Rating rating='4'></Rating>
+      <Rating rating='5'></Rating>
     </div>
   );
 }
