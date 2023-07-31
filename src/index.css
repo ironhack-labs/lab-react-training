@@ -16,7 +16,7 @@ code {
   border: 1px solid black;
   display: flex;
   text-align: left;
-  max-width: 400px;
+  width: 400px;
   margin: 10px;
   height: 110px;
 }
@@ -27,7 +27,7 @@ code {
 
 .Greetings {
   border: 1px solid black;
-  max-width: 400px;
+  width: 400px;
   text-align: left;
   margin: 10px;
 }
@@ -37,7 +37,7 @@ code {
 
 .Random {
   border: 1px solid black;
-  max-width: 400px;
+  width: 400px;
   text-align: left;
   margin: 10px;
 }
@@ -47,7 +47,7 @@ code {
 
 .BoxColor {
   border: 1px solid black;
-  max-width: 400px;
+  width: 400px;
   margin: 10px;
 }
 .BoxColor p {
@@ -56,7 +56,7 @@ code {
 
 .CreditCard {
   margin: 10px;
-  max-width: 270px;
+  width: 270px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -101,13 +101,13 @@ code {
 
 .Rating {
   margin: 10px;
-  max-width: 100px;
+  width: 100px;
 }
 
 .DriverCard {
   background-color: rgb(69,84, 181);
   display: flex;
-  max-width: 400px;
+  width: 400px;
   color: white;
   padding: 10px;
   margin: 10px;
@@ -153,7 +153,9 @@ code {
   margin: 10px;
   color: white;
   width: 100px;
-
+}
+.LikeButton:hover {
+  cursor: pointer;
 }
 
 .ClickablePicture {
@@ -162,6 +164,9 @@ code {
   align-items: center;
   justify-content: center;
   margin: 10px;
+}
+.ClickablePicture:hover {
+  cursor: pointer;
 }
 .ClickablePicture img {
   width: 380px;
@@ -207,7 +212,7 @@ code {
 
 .profile-img-container img {
   height: 95%;
-  max-width: 100px;
+  width: 100px;
   margin-left: 4px;
 }
 
@@ -252,5 +257,11 @@ code {
   width: 400px;
 }
 .SignupPage form {
-  max-width: 99%;
+  width: 99%;
+}
+
+.color-box {
+  width: 40px;
+  height: 40px;
+  border: 3px solid black;
 }

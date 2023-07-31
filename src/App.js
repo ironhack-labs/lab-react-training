@@ -13,6 +13,7 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
 import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   const scoreToStars = (rating) => {
@@ -25,7 +26,7 @@ function App() {
   }
 
   return (
-    <div className="App" style={{ display: 'flex', flexDirection: 'column' }}>
+    <div className="App" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -132,7 +133,9 @@ function App() {
       
       <FaceBook />
       
-      <SignupPage/>
+      <SignupPage />
+      
+      <RGBColorPicker/>
     </div>
   )
 }
