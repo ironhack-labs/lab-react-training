@@ -238,14 +238,19 @@ code {
   color: red;
 }
 
-.SignupPage input {
+.SignupPage form input {
   width: 97.5%;
   height: 20px;
 }
-.SignupPage select {
+.SignupPage form select {
   width: 100%;
   height: 28px;
 }
 .SignupPage {
   text-align: left;
+  margin: 10px;
+  width: 400px;
+}
+.SignupPage form {
+  max-width: 99%;
 }

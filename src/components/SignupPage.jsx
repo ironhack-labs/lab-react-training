@@ -11,13 +11,17 @@ function SignupPage() {
   const [user, setUser] = useState(initialState)
   const [warning, setWarning] = useState(initialState)
 
-  const handleFormInput = (identifier, value) => {
-    const pattern = /^(?=.*[!@#$%^&*(),.?":{}|<>])(?=.*[A-Z]).{8,}$/
+
+  const handleErrors = (identifier, value) => {
+    const pattern = /^(?=.*[!@#$%^&*(),.?":{}|<>])(?=.*[A-Z]).{8,}$/;
 
     const updateWarning = (message) => {
-      setWarning((prevWarning) => ({ ...prevWarning, [identifier]: message }))
+      setWarning((prevWarning) => ({
+        ...prevWarning,
+        [identifier]: message,
+      }))
     }
-    
+
     switch (identifier) {
       case 'email':
         String(value).includes('@' && '.com') && String(value).length > 5
@@ -34,9 +38,13 @@ function SignupPage() {
           ? updateWarning('')
           : updateWarning('Must select an option')
         break
-      default: break
+      default:
+        break
     }
+  }
 
+  const handleFormInput = (identifier, value) => {
+    handleErrors(identifier, value)
     setFormData((prevFormData) => ({ ...prevFormData, [identifier]: value }))
   }
 
@@ -48,26 +56,9 @@ function SignupPage() {
       setFormData(initialState)
       console.log(formData)
     } else {
-      warning.nationality
-        ? setWarning((prevWarning) => ({
-            ...prevWarning,
-            nationality: 'Enter valid option',
-          }))
-        : void 0
-      
-      warning.password
-        ? setWarning((prevWarning) => ({
-            ...prevWarning,
-            password: 'Enter valid password',
-          }))
-        : void 0
-      
-      warning.email
-        ? setWarning((prevWarning) => ({
-            ...prevWarning,
-            email: 'Enter valid email',
-          }))
-        : void 0
+      handleErrors('email', formData.email)
+      handleErrors('password', formData.password)
+      handleErrors('nationality', formData.nationality)
     }
   }
 
@@ -106,16 +97,9 @@ function SignupPage() {
   }
 
   return (
-    <div className="SignupPage" style={{ width: 400 }}>
+    <div className="SignupPage">
       <form
-        className="SignupPage"
         onSubmit={handleOnSubmit}
-        style={{
-          // display: 'flex',
-          // flexDirection: 'column',
-          width: 400,
-          // alignItems: 'center',
-        }}
       >
         <label>Email:</label>
         <input
@@ -188,7 +172,7 @@ function SignupPage() {
       <hr />
       {setMessage(user)}
     </div>
-  );
+  )
 }
 
 export default SignupPage
