@@ -1,8 +1,8 @@
 const BoxColor = (props) => {
   const { r, g, b } = props
-  const rHex = r.toString(16)
-  const gHex = g.toString(16)
-  const bHex = b.toString(16)
+  const rHex = String('0' + r.toString(16)).slice(-2)
+  const gHex = String('0' + g.toString(16) ).slice(-2)
+  const bHex = String('0' + b.toString(16)).slice(-2)
 
   const backgroundStyle = {
     backgroundColor: `rgb(${r}, ${g}, ${b})`
