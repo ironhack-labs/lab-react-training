@@ -14,6 +14,7 @@ import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
 import SignupPage from './components/SignupPage';
 import RGBColorPicker from './components/RGBColorPicker';
+import { useState } from 'react'
 
 function App() {
   const scoreToStars = (rating) => {
@@ -25,8 +26,38 @@ function App() {
     return <>{stars.join('')}</>
   }
 
+  let leftValue = '0px', topValue = '0px'
+  const [circleStyle, setCircleStyle] = useState({
+    display: 'none',
+    width: 40,
+    height: 40,
+    border: '2px solid black',
+    borderRadius: '50%',
+    backgroundColor: 'transparent',
+    position: 'absolute',
+    left: { leftValue },
+    top: { topValue },
+    zIndex: 1
+  })
+
+  const handleClickArea = (e) => {
+    const x = e.pageX, y = e.pageY
+    leftValue = x - 20 + 'px'
+    topValue = y - 20 + 'px'
+    setCircleStyle(previousStyle => ({ ...previousStyle, 'display':'block', 'left': leftValue, 'top': topValue}))
+    setTimeout(
+      () => {
+        setCircleStyle((previousStyle) => ({ ...previousStyle, 'display': 'none' }))
+      },
+      100
+    )
+  }
+
   return (
-    <div className="App" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <div
+      className="App"
+      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+    >
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -113,10 +144,16 @@ function App() {
         scoreToStars={scoreToStars}
       />
 
-      <LikeButton />
-      <LikeButton />
+      <div onClick={handleClickArea}>
+        <div className="circle" style={circleStyle}></div>
+        <LikeButton />
+        <LikeButton />
+      </div>
 
-      <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
+      <div onClick={handleClickArea}>
+        <div className="circle" style={circleStyle}></div>
+        <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
+      </div>
 
       <Dice />
 
@@ -130,14 +167,14 @@ function App() {
       />
 
       <NumbersTable limit={12} />
-      
+
       <FaceBook />
-      
+
       <SignupPage />
-      
-      <RGBColorPicker/>
+
+      <RGBColorPicker />
     </div>
-  )
+  );
 }
 
 export default App

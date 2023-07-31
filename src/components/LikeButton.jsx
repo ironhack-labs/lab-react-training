@@ -14,14 +14,14 @@ function LikeButton() {
   }
 
   return (
-    <button
-      onClick={hanldeClickButton}
-      style={backgroundStyle}
-      className="LikeButton"
-    >
-      {likesCount} Likes 👍
-    </button>
-  );
+      <button
+        onClick={hanldeClickButton}
+        style={backgroundStyle}
+        className="LikeButton"
+      >
+        {likesCount} Likes 👍
+      </button>
+  )
 }
 
 export default LikeButton

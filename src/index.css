@@ -159,7 +159,7 @@ code {
 }
 
 .ClickablePicture {
-  width: 400px;
+  width: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,7 +169,7 @@ code {
   cursor: pointer;
 }
 .ClickablePicture img {
-  width: 380px;
+  width: 200px;
   padding: 5px;
 }
 
