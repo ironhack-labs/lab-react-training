@@ -11,7 +11,7 @@ const Rating = (props) => {
            <img src="./star-regular.svg" width="20px"></img>
            </div>
     } else if(Math.round(rating) === 1){
-           return <div>
+        return <div>
            <img src="./star-solid.svg" width="20px"></img>
            <img src="./star-regular.svg" width="20px"></img>
            <img src="./star-regular.svg" width="20px"></img>
