@@ -7,6 +7,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
 
 const greetings = [
   { lang: 'en' },
@@ -110,6 +111,8 @@ function App() {
   }}
 />
 
+  <LikeButton />
+  <LikeButton />
     </div>
   );
 }
