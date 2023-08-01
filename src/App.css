@@ -1,8 +1,17 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-div {
-  padding: 10px;
+.App > * {
+  margin: 15px;
+  padding: 20px;
+}
+
+img {
+  height: default;
+  width: 200px;
 }
