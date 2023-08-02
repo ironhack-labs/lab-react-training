@@ -13,7 +13,7 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
 import './App.css';
-import SignupPage from './components/SignupPage';
+import SignupPage from './components/SignupPage/SignupPage';
 function App() {
 
   const creditCards = {
