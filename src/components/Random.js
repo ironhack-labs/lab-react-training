@@ -4,7 +4,7 @@ const Random = (props) => {
 
     const random = Math.floor(Math.random() * (max - min)) + min;
 
-    return <p>Random value between {min} and {max} = {random}</p>
+    return <p className="border">Random value between {min} and {max} = {random}</p>
 }
 
 export default Random;
