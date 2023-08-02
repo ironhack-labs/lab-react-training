@@ -13,6 +13,7 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
 import './App.css';
+import SignupPage from './components/SignupPage';
 function App() {
 
   const creditCards = {
@@ -136,6 +137,8 @@ function App() {
 <NumbersTable limit={12} />
 <h1>Facebook</h1>
 <Facebook />
+
+<SignupPage />
     </div>
   );
 }

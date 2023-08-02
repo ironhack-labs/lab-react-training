@@ -4,40 +4,48 @@ import profiles from '../data/berlin.json';
 const Facebook = () => {
 
     const [people, setPeople] = useState(profiles)
-    const [country, setCountry] = useState("")
-    const [selected, setSelected] = useState(false)
+    const [selectedCountry, setSelectedCountry] = useState("");
 
-    const handleClick = (item) => {
-        setCountry(item)
-        setSelected(!selected)
+    const countries = [
+        "All",
+        "England",
+        "Malaysia",
+        "Germany",
+        "USA",
+        "Sweden",
+        "Nigeria",
+        "Italy",
+        "Scotland",
+        "Kazakhstan",
+        "Russia",
+        "Catalonia",
+        "France",
+        "Israel",
+        "Brazil",
+        "Taiwan",
+        "Turkey",
+        "Norway"
+    ];
+
+    const handleClick = (country) => {
+        setSelectedCountry(country);
     }
     
     return (
     <div>
-        <button>All</button>
-        <button onClick={() => handleClick("England")}>England</button>
-        {selected ? <button  onClick={() => handleClick("Malaysia")}>Malaysia</button> : <button onClick={() => handleClick("Malaysia")}>Malaysia</button>}
-        {selected ? <button style={{color: "blue"}} onClick={() => handleClick("Malaysia")}>Malaysia</button> : <button onClick={() => handleClick("Malaysia")}>Malaysia</button>}
-        <button onClick={() => handleClick("Germany")}>Germany</button>
-        <button onClick={() => handleClick("USA")}>USA</button>
-        <button onClick={() => handleClick("Sweden")}>Sweden</button>
-        <button onClick={() => handleClick("England")}>Nigeria</button>
-        <button onClick={() => handleClick("England")}>Italy</button>
-        <button onClick={() => handleClick("England")}> Scotland</button>
-        <button onClick={() => handleClick("England")}>Kazakhstan</button>
-        <button onClick={() => handleClick("England")}>Russia</button>
-        <button onClick={() => handleClick("England")}>Catalonia</button>
-        <button onClick={() => handleClick("England")}>France</button>
-        <button onClick={() => handleClick("England")}>Israel</button>
-        <button onClick={() => handleClick("England")}>Brazil</button>
-        <button onClick={() => handleClick("England")}>Taiwan</button>
-        <button onClick={() => handleClick("England")}>Turkey</button>
-        <button onClick={() => handleClick("England")}>Norway</button>
-    
+{countries.map((country) => (
+                <button
+                    key={country}
+                    style={{ background: selectedCountry === country ? 'blue' : 'white' }}
+                    onClick={() => handleClick(country)}
+                >
+                    {country}
+                </button>
+))}
 
             <table>
            {people.map(profile => {
-           return  <tr style={{ backgroundColor: profile.country === country ? 'blue' : 'white'}}>
+           return  <tr style={{ backgroundColor: profile.country === selectedCountry ? 'blue' : 'white'}}>
                     <img src={profile.img} width="150px" />
                     <h4>First Name: <span>{profile.firstName}</span></h4>
                     <h4>Last Name: <span>{profile.lastName}</span></h4>
