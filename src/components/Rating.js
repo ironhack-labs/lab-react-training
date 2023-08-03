@@ -1,57 +1,22 @@
-const Rating = (props) => {
+const Rating = ({rating}) => {
+   const fullStars = Math.round(rating);
 
-    const { rating } = props;
-
-    if(Math.round(rating) === 0){
-        return <div>
-           <img src="./star-regular.svg" width="20px"></img>
-           <img src="./star-regular.svg" width="20px"></img>
-           <img src="./star-regular.svg" width="20px"></img>
-           <img src="./star-regular.svg" width="20px"></img>
-           <img src="./star-regular.svg" width="20px"></img>
-           </div>
-    } else if(Math.round(rating) === 1){
-        return <div>
-           <img src="./star-solid.svg" width="20px"></img>
-           <img src="./star-regular.svg" width="20px"></img>
-           <img src="./star-regular.svg" width="20px"></img>
-           <img src="./star-regular.svg" width="20px"></img>
-           <img src="./star-regular.svg" width="20px"></img>
-           </div>
-     } else if(Math.round(rating) === 2){
-        return <div>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-regular.svg" width="20px"></img>
-       <img src="./star-regular.svg" width="20px"></img>
-       <img src="./star-regular.svg" width="20px"></img>
-       </div>
-     } else if(Math.round(rating) === 3){
-       return <div>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-regular.svg" width="20px"></img>
-       <img src="./star-regular.svg" width="20px"></img>
-       </div>
-    } else if(Math.round(rating) === 4){
-        return <div>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-regular.svg" width="20px"></img>
-       </div>
-     } else if(Math.round(rating) === 5){
-        return <div>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-solid.svg" width="20px"></img>
-       <img src="./star-solid.svg" width="20px"></img>
-       </div>
+   const stars = [];
+   for (let i = 1; i <= 5; i++) {
+     if (i <= fullStars) {
+       stars.push('★');
+     
+     } else {
+       stars.push('☆');
      }
-    
-}
+   }
+ 
+   return <div>
+      {stars.map(star =>  {
+         return star
+      })}
+      </div>;
+ };
+
 
 export default Rating;
