@@ -21,7 +21,7 @@ const Dice = () => {
         }, 1000)
     }
     
-    return <img src={dice} onClick={handleClick} width="60px"/>
+    return <img src={dice} onClick={handleClick} width="100px"/>
 }
 
 export default Dice;

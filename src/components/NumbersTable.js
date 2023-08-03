@@ -1,11 +1,19 @@
-const NumbersTable = (props) => {
 
-    const { limit } = props;
+
+const NumbersTable = ({limit}) => {
 
     const red = {
         backgroundColor: "red"
     }
-
+    
+    const numberStyling = {
+    padding: "15px",
+    border: "black solid 1px"
+    }
+    
+    const container = {
+        display: "flex"
+    }
 
     const numbers = [];
 
@@ -13,10 +21,10 @@ const NumbersTable = (props) => {
         numbers.push(i)
     }
 
-    return <table>
+    return <table style={container}>
         {numbers.map(number => 
         
-        number % 2 ? <tr key={number}>{number}</tr> : <tr key={number} style={red}>{number}</tr>)}
+        number % 2 ? <tr key={number} style={numberStyling}>{number}</tr> : <tr key={number} style={{...numberStyling, ...red}}>{number}</tr>)}
     </table>
 }
 

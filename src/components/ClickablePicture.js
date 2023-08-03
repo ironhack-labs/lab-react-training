@@ -19,7 +19,7 @@ const ClickablePicture = (props) => {
     
 
     return <div>
-            <img src={image} onClick={handleClick} />
+            <img src={image} onClick={handleClick} width="100px"/>
            </div>
 
 }
