@@ -12,7 +12,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
-import SignupPage from './components/SignupPage/SignupPage';
+import SignupPage from './components/SignupPage';
 import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {

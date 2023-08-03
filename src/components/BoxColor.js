@@ -1,5 +1,3 @@
-import './BoxColor.css'
-
 const BoxColor = ({ r, g, b}) => {
 
     const background = {

@@ -1,5 +1,3 @@
-import "./IdCard.css"
-
 const IdCard = ({picture, firstName, lastName, gender, height, birth}) => {
 
     const main = {
