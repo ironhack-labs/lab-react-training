@@ -14,6 +14,7 @@ import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
 import './App.css';
 import SignupPage from './components/SignupPage/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 function App() {
 
   const creditCards = {
@@ -139,6 +140,7 @@ function App() {
 <Facebook />
 
 <SignupPage />
+<RGBColorPicker />
     </div>
   );
 }
