@@ -10,10 +10,24 @@ const BoxColor = ({ r, g, b}) => {
         border: "solid black 1px"
       }
 
+      const valueToHex = (n) => {
+
+        const hex = n.toString(16)
+
+        return hex
+      }
+
+      const rgbToHex = (r, g, b) => {
+      return `#${(valueToHex(r) + valueToHex(g) + valueToHex(b))}`
+      }
+
 
     return (    
             <div style={background}>
-                <p style={paragraph}>rgb({r}, {g}, {b})</p>
+              <div style={paragraph}>
+                <p>rgb({r}, {g}, {b})</p>
+                <p>{rgbToHex(r, g, b)}</p>
+                </div>
             </div>
     );
 }

@@ -11,6 +11,8 @@ const IdCard = ({picture, firstName, lastName, gender, height, birth}) => {
         flexDirection: "row",
         alignItems: "center"
     }
+
+
     
     return (
                     <div style={main}>
