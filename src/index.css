@@ -171,3 +171,86 @@ p{
 .driverCard span{
   margin:0 0;
 }
+
+.button{
+  width: 80px;
+  height: 40px;
+  margin: 20px 20px;
+}
+
+.image-glass{
+  width: 120px;
+  height: 120px;
+  margin: 20px 20px;
+}
+
+.dice-img{
+  width: 120px;
+  height: 120px;
+  margin: 20px 20px;
+}
+.table-body{
+  display: flex;
+  flex-direction: row;
+
+}
+.table-body tr:nth-child(even){
+  background-color: red;
+  padding: 0;
+  margin: 0;
+
+}
+.table-body td{
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+}
+.carousel button{
+  width: 80px;
+  height: 40px;
+  margin: 20px 20px;
+}
+
+.carousel img{
+  width: 120px;
+  height: 120px;
+  margin: 20px 20px;
+}
+
+.facebook {
+  margin: 20px;
+}
+.facebookFilter{
+  margin: 10px;
+}
+.buttonFilter{
+  margin: 2px;
+  height: 35px;
+  background-color: white;
+  border: 2px solid gray;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.facebook-card {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid black;
+  width: 800px;
+}
+.facebook-card div{
+  margin: 20px;
+}
+.facebook-card img{
+  width: 220px;
+  height: 260px;
+}
+
+.facebook-card p{
+  font-size: 40px;
+  text-align: left;
+}

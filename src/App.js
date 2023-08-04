@@ -1,13 +1,26 @@
 import './App.css';
 import BoxColor from './components/BoxColor';
+import Carousel from './components/Carousel';
+import ClickablePicture from './components/ClickablePicture';
 import CreditCard from './components/CreditCard';
+import Dice from './components/Dice';
 import DriverCard from './components/DriverCard';
+import Facebook from './components/Facebook';
 import Gretings from './components/Gretings';
 import IdCard from './components/IdCard';
+import LikeButton from './components/LikeButton';
+import NumbersTable from './components/NumbersTable';
 import Random from './components/Random';
 import Rating from './components/Rating';
+import SignupPage from './components/SignupPage';
+
+
 
 function App() {
+
+  
+ 
+
   return (
     <div className="App">
       <IdCard
@@ -36,7 +49,7 @@ function App() {
 
       <BoxColor r={225} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-     
+
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -77,13 +90,13 @@ function App() {
       <Rating rating={4} />
       <Rating rating={5} />
 
-      <DriverCard 
+      <DriverCard
         name="Travis Kalanick"
         rating={4.2}
         img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
         car={{
-          model: "Toyota Corolla Altis",
-          licensePlate: "CO42DE"
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
         }}
       />
       <DriverCard
@@ -91,11 +104,36 @@ function App() {
         rating={4.9}
         img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
         car={{
-          model: "Audi A3",
-          licensePlate: "BE33ER"
-      }}
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
       />
 
+      <LikeButton />
+
+      <ClickablePicture
+        img="./../../maxence.png"
+        imgClicked="./../../maxence-glasses.png"
+      />
+
+      <Dice />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      <NumbersTable limit={12} />
+
+      
+      <Facebook />
+
+      <SignupPage />
+      
     </div>
   );
 }
