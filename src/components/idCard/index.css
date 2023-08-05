@@ -1,0 +1,23 @@
+.idcard{
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid black;
+    margin: 2rem;
+}
+
+.info{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.info-info{
+    margin: 0.12rem;
+}
+
+.picture{
+    padding: 5px;
+}

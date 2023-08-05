@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.creditCard{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 15rem;
+    border-radius: 1rem;
+}
+
+.picture{
+    display: flex;
+    width: 5rem;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 27vw;
+}
+
+.cardNumber{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.number{
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    padding-left: 1rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 1rem;
+}
+
+.date{
+    padding-right: 1.5rem;
+}
+
+.name{
+    display: flex;
+    padding-left: 1rem;
+}
+

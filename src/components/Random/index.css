@@ -1,0 +1,7 @@
+.random{
+    display: flex;
+    border: 2px solid black;
+    margin: 2rem;
+    align-self: flex-start;
+    padding-left: 0.5rem;
+}
