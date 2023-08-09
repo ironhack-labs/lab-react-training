@@ -36,3 +36,80 @@
     transform: rotate(360deg);
   }
 }
+
+.number-item {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 40px;
+  margin: 5px;
+}
+
+.even {
+  background-color: red;
+}
+
+
+.profile-card {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.profile-card div {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ... Your existing styles ... */
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.filter-buttons button {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.sort-button {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.profile-card {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.profile-card.active {
+  border: 1px solid blue;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}

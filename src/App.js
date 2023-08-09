@@ -8,8 +8,24 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
+
+
+
 
 function App() {
+  const images = [
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ];
   return (
     <div className="App">
   <IdCard
@@ -99,6 +115,20 @@ function App() {
       />
 
 <LikeButton /> <LikeButton />
+        <br/>
+<ClickablePicture
+        img="maxence.png"
+        imgClicked="maxence-glasses.png"
+      />
+        <br/>
+<Dice/>      
+  
+  <Carousel images={images} />
+
+  <NumbersTable limit={12} />
+  <FaceBook />
+  <SignupPage />      
+  <RGBColorPicker />
 
     </div>
   );
