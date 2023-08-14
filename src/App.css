@@ -36,3 +36,150 @@
     transform: rotate(360deg);
   }
 }
+
+.greetings-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.box-color-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.credit-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.rating {
+  font-size: 34px;
+}
+
+.numbers-table {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-gap: 0px;
+  justify-content: center;
+}
+
+.number-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  font-size: 18px;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.facebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 30%;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info p {
+  margin: 3px 0;
+}
+
+.country-buttons button.selected {
+  background-color: lightblue;
+}
+
+.profile.highlight {
+  background-color: lightblue;
+}
+
+.country-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.country-buttons button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border: 1px solid rgb(178, 170, 170);
+  background-color: white;
+  cursor: pointer;
+}
+
+.country-buttons button:disabled {
+  color: gray;
+  cursor: default;
+}
+
+.signup-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.color-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.color-block {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.color-label {
+  margin-right: 5px;
+}
+
+.color-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.color-value {
+  margin-right: 10px;
+}
+
+
+

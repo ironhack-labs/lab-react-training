@@ -1,0 +1,40 @@
+.driver-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a4bb0;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .driver-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .driver-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .driver-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .driver-rating {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .driver-car {
+    font-size: 16px;
+  }
+  
