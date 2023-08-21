@@ -1,0 +1,6 @@
+.greetings {
+    margin-top: 10px;
+    border: 1px solid;
+    display: flex;
+    justify-content: start;
+}
