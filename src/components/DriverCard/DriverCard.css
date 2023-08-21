@@ -1,0 +1,11 @@
+.drivercard {
+    border: 5px solid white;
+    background-color: rgb(77, 77, 216);
+    border-radius: 20px;
+}
+
+.drivercard img {
+    width: 10%;
+    height: 80px;
+    border-radius: 50%;
+}
