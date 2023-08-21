@@ -1,0 +1,26 @@
+.cardContainer {
+    width: 25vw;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.cardContainer img {
+    object-fit: cover;
+    height: 20px;
+}
+
+.cardLogo {
+    text-align: end;
+}
+
+.cardInfo {
+    text-align: start;
+}
+
+.cardText {
+    font-size: 1.2em;
+}
