@@ -1,0 +1,8 @@
+.Student {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.Student ul li{
+list-style: none ;
+}
