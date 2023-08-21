@@ -1,0 +1,8 @@
+.all {
+    display: flex;
+    border: 1px solid black;
+}
+
+img {
+    object-fit: cover;
+}

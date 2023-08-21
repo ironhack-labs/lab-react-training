@@ -1,0 +1,6 @@
+.driverImage {
+    width: 100px;
+    display: flex;
+    border-radius: 50%;
+    object-fit: cover;
+}
