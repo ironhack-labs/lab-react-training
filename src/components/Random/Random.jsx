@@ -2,7 +2,7 @@ import './Random.css'
 
 const Random = ({ min, max }) => {
 
-    function getRandomInt(min, max) {
+    const getRandomInt = (min, max) => {
         min = Math.ceil(min)
         max = Math.floor(max)
 
