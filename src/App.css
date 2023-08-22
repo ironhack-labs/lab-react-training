@@ -2,3 +2,9 @@ body{
     font-family: sans-serif;
     
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
