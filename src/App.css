@@ -1,5 +1,8 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +38,135 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.idCard{
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 700px;
+}
+
+.idCardInfo{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.idCardInfo p{
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+.text-box{
+  border: 1px solid black;
+  text-align: left;
+  padding: 5px;
+  padding-left: 5px;
+  width: 700px;
+}
+
+.color-box{
+  padding: 25px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  width: 660px;
+}
+
+.credit-card img{
+  display: flex;
+  width: 50px;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.credit-card{
+  width: 300px;
+  height: 150px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.credit-card p{
+  margin-bottom: -10px;
+}
+
+.card-image{
+  display: flex;
+  justify-content: end;
+  height: 42px;
+}
+
+.bank-date{
+  display: flex;
+}
+
+.bank-date p{
+  margin-left: 15px;
+}
+
+.owner{
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.number{
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.credit-cards{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.rating{
+  font-size: 50px;
+}
+
+.driver-card img{
+  display: flex;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.driver-card{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(68, 68, 175);
+  border-radius: 10px;
+  display: flex;
+  width: 700px;
+  margin-bottom: 10px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.driver-image{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.driver-text{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.driver-text p {
+  margin: 0.3em 0; /* Adjust the margin values as needed */
+}
+
+.rating-driver{
+  font-size: 25px;
 }
