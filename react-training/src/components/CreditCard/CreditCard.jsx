@@ -7,15 +7,15 @@ const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner
     const cardExpirationYear = expirationYear.toString().slice(2)
     return (
         <>
-            <div class='cardContainer' style={{ backgroundColor: `${bgColor}`, color: `${color}` }}>
-                <div class='cardLogo'>
+            <div className='cardContainer' style={{ backgroundColor: `${bgColor}`, color: `${color}` }}>
+                <div className='cardLogo'>
                     <img src={logo} alt="Logo" />
                 </div>
-                <div class='cardText'>
+                <div className='cardText'>
                     <h3>{cardNum}</h3>
                 </div>
 
-                <div class='cardInfo'>
+                <div className='cardInfo'>
                     <p>Expires {expirationMonth}/{cardExpirationYear}  {bank}</p>
                     <p>{owner}</p>
                 </div>

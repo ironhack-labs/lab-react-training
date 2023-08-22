@@ -7,15 +7,13 @@ const Rating = ({ children }) => {
     const star5 = Math.round(children) >= 5 ? 'fas fa-star' : 'far fa-star'
 
     return (
-        <>
-            <div >
-                <i className={star1} data-testid="heart-icon"></i>
-                <i className={star2} data-testid="heart-icon"></i>
-                <i className={star3} data-testid="heart-icon"></i>
-                <i className={star4} data-testid="heart-icon"></i>
-                <i className={star5} data-testid="heart-icon"></i>
-            </div>
-        </>
+        <div>
+            <i className={star1} data-testid="heart-icon"></i>
+            <i className={star2} data-testid="heart-icon"></i>
+            <i className={star3} data-testid="heart-icon"></i>
+            <i className={star4} data-testid="heart-icon"></i>
+            <i className={star5} data-testid="heart-icon"></i>
+        </div>
     )
 }
 

@@ -4,11 +4,11 @@ const IdCard = ({ lastName, firstName, gender, height, birth, picture }) => {
 
     return (
         <>
-            <div class='greetingsContainer'>
-                <div class='imgContainer'>
+            <div className='greetingsContainer'>
+                <div className='imgContainer'>
                     <img src={picture} alt="profile pic" />
                 </div>
-                <div class="greetingsData">
+                <div className="greetingsData">
                     <p><strong>First name: </strong>{firstName}</p>
                     <p><strong>Last name:</strong> {lastName}</p>
                     <p><strong>Gender:</strong> {gender}</p>

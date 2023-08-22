@@ -1,11 +1,21 @@
 import './App.css'
-import IdCard from './components/IdCard'
-import Greetings from './components/Greetings'
-import Random from './components/Random'
-import BoxColor from './components/BoxColor'
-import CreditCard from './components/CreditCard'
-import Rating from './components/Rating'
-import DriverCard from './components/DriverCard'
+import IdCard from './components/IdCard/IdCard'
+import Greetings from './components/Greetings/Greetings'
+import Random from './components/Random/Random'
+import BoxColor from './components/BoxColor/BoxColor'
+import CreditCard from './components/CreditCard/CreditCard'
+import Rating from './components/Rating/Rating'
+import DriverCard from './components/DriverCard/DriverCard'
+import LikeButton from './components/LikeButton/LikeButton'
+import ClickablePicture from './components/ClickablePicture/ClickablePicture'
+import Dice from './components/Dice/Dice'
+import Carousel from './components/Carousel/Carousel'
+import NumbersTable from './components/NumbersTable/NumbersTable'
+import FaceBook from './components/FaceBook/FaceBook'
+
+
+
+
 
 
 function App() {
@@ -110,6 +120,37 @@ function App() {
         }}
       />
 
+      <hr />
+      <h2>Iteration 8 </h2>
+      <LikeButton />
+
+      <hr />
+      <h2>Iteration 9 </h2>
+      <ClickablePicture />
+
+      <hr />
+      <h2>Iteration 10 </h2>
+      <Dice />
+
+      <hr />
+      <h2>Iteration 11 </h2>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <hr />
+      <h2>Iteration 12 </h2>
+      <NumbersTable limit={12} />
+
+
+      <hr />
+      <h2>Iteration 13 </h2>
+      <FaceBook />
     </>
   )
 }
