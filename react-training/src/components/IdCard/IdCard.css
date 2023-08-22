@@ -1,0 +1,16 @@
+.greetingsContainer {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.greetingsContainer img {
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.greetingsData {
+    text-align: start;
+}

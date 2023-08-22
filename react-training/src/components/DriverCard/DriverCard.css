@@ -1,0 +1,17 @@
+.containerCard {
+    width: 90vw;
+    background-color: rgb(43, 43, 168);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.containerCard img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
