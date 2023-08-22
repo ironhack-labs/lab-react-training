@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +41,87 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.credit-card {
+  position: relative;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 430px;
+  height: 270px;
+
+}
+
+.type-card-img{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 90px;
+
+}
+
+
+.credit-card span {
+  font-weight: bold;
+}
+
+.credit-card-number {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 400px;
+  text-align: center;
+}
+
+.credit-card-details {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 1.3rem;
+  text-align: start;
+}
+
+.credit-card-more-details {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 5px;
+}
+
+.driver-card {
+  color: white;
+  background-color: #445eb5;
+  border-radius: 10px;
+  padding: 20px 0;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.driver-card-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  width: 400px;
+}
+
+.driver-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.driver-details {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+}
+
+
