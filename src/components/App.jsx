@@ -6,6 +6,12 @@ import BoxColor from './BoxColor/BoxColor'
 import CreditCard from './CreditCard/CreditCard'
 import Rating from './Rating/Rating'
 import DriverCard from './DriverCard/DriverCard'
+import LikeButton from './LikeButton/LikeButton'
+import ClickablePicture from './ClickablePicture/ClickablePicture'
+import Dice from './Dice/Dice'
+import Carousel from './Carousel/Carousel'
+import NumberTable from './NumbersTable/NumbersTable'
+import FaceBook from './FaceBook/FaceBook'
 
 function App() {
 
@@ -28,17 +34,17 @@ function App() {
         birth={new Date("1988-05-11")}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-
+      <hr />
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-
+      <hr />
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
+      <hr />
 
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
+      <hr />
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -71,14 +77,14 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
-
+      <hr />
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
+      <hr />
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -98,7 +104,32 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      <hr />
+      <div className="likebutton">
+        <LikeButton />
+        <LikeButton />
+      </div>
+      <hr />
+      <div className="ClickablePicture">
+        <ClickablePicture />
+      </div>
+      <hr />
+      <Dice />
+      <hr />
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <hr />
+      <NumberTable limit={12} />
 
+      <hr />
+
+      <FaceBook />
     </>
   )
 }

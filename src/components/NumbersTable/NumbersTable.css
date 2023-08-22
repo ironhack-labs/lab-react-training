@@ -1,0 +1,17 @@
+.table {
+    display: flex;
+}
+
+.numbertableRed {
+    background-color: red;
+    border: 1px solid;
+    width: 100px;
+    height: 30px;
+}
+
+.numbertableWhite {
+    background-color: white;
+    border: 1px solid;
+    width: 100px;
+    height: 30px;
+}
