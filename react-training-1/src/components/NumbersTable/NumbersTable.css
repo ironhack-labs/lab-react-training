@@ -1,0 +1,15 @@
+.Red {
+    background-color: red;
+    border: 2px solid;
+    width: 100px;
+}
+
+.White {
+    background-color: white;
+    border: 2px solid;
+    width: 100px;
+}
+
+.NumbersBox {
+    display: flex;
+}

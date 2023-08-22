@@ -5,6 +5,11 @@ import Random from './components/Random/Random'
 import BoxColor from './components/BoxColor/BoxColor'
 import CreditCard from './components/CreditCard/CreditCard'
 import Rating from './components/Rating/Rating'
+import LikeButtom from './components/LikeButton/LikeButton'
+import ClikablePicture from './components/ClickablePicture/ClickablePicture'
+import Dice from './components/Dice/Dice'
+import Carousel from './components/Carousel/Carousel'
+import NumbersTable from './components/NumbersTable/NumbersTable'
 
 function App() {
 
@@ -82,6 +87,8 @@ function App() {
 
       <hr />
 
+      {/* SEXTA ITERACIÓN */}
+
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
@@ -89,6 +96,36 @@ function App() {
       <Rating>4</Rating>
       <Rating>5</Rating>
 
+      <hr />
+
+      {/* OCTAVA ITERACIÓN */}
+
+      <LikeButtom />
+
+      <hr />
+
+      <ClikablePicture />
+
+      <hr />
+
+      <Dice />
+
+      <hr />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <hr />
+
+      <NumbersTable limit={12} />
+
+      <hr />
 
     </>
   )
