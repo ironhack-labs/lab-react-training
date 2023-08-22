@@ -1,18 +1,28 @@
-import { useState } from "react";
-
 function Greetings(props){
     const {lang, children} = props;
 
-    const {language, setLanguage} = useState('');
+    function renderSwitch(lang, children){
+        switch(lang){
+            case "de":
+                return "Hallo " + children;
+
+            case "en":
+                return "Hello " + children;
+
+            case "es":
+                return "Hola " + children;
+
+            case "fr":
+                return "Bonjour " + children;
+
+            default:
+                return "Olá " + children;
+        }
+    }
+
     return(
         <div>
-            <p></p>
-            <select onChange={event => setLanguage(event.target.value)}>
-                <option value="de">De</option>
-                <option value="en">En</option>
-                <option value="es">Es</option>
-                <option value="fr">Fr</option>
-            </select>
+            <p>{renderSwitch(lang, children)}</p>
         </div>
     )
 }

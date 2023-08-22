@@ -1,4 +1,4 @@
-function DriveCard(props){
+function DriverCard(props){
     const {name, rating, img} = props;
     return(
         <div>
@@ -11,4 +11,4 @@ function DriveCard(props){
     );
 }
 
-export default DriveCard;
+export default DriverCard;
