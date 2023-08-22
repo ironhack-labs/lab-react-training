@@ -9,9 +9,6 @@ const BoxColor = ({ r, g, b }) => {
         <div className='Box' style={color}>
             <p>rgb({r},{g},{b})</p>
         </div>
-
-
-
     )
 }
 

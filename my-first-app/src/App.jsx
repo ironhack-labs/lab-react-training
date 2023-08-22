@@ -5,7 +5,14 @@ import Random from './components/random/Random'
 import BoxColor from './components/BoxColor/BoxColor'
 import CreditCard from './components/CreditCard/CreditCard'
 import Rating from './components/Rating/Rating'
-import CreditCard from './components/CreditCard/CreditCard'
+import DriverCard from './components/DriverCard/DriverCard'
+import LikeButton from './components/LikeButton/LikeButton'
+import ClickablePicture from './components/ClickablePicture/ClickablePicture'
+import Dice from './components/Dice/Dice'
+import Carousel from './components/Carousel/Carousel'
+import NumbersTable from './components/NumbersTable/NumbersTable'
+
+
 
 
 function App() {
@@ -88,7 +95,6 @@ function App() {
       <Rating>5</Rating>
 
       <hr />
-
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -108,6 +114,38 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      <hr />
+
+      <LikeButton />
+
+      <hr />
+
+      <ClickablePicture
+      />
+
+      <hr />
+
+      <Dice />
+
+      <hr />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <hr />
+
+      <NumbersTable limit={12} />
+
+      <hr />
+
+      {/* <FaceBook /> */}
+
     </>
 
 
