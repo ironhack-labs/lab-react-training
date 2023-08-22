@@ -6,6 +6,10 @@ import BoxColor from './components/BoxColor/BoxColor'
 import CreditCard from './components/CreditCard/CreditCard'
 import Rating from './components/Rating/Rating'
 import DriverCard from './components/DriverCard/DriverCard'
+import LikeButton from './components/LikeButton/LikeButton'
+import ClickablePicture from './components/ClickablePicture/ClickablePicture'
+import Dice from './components/Dice/Dice'
+import Carousel from './components/Carousel/Carousel'
 
 function App() {
 
@@ -113,6 +117,22 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+
+      <h1>Interaction 8: LikeButton</h1>
+
+      <LikeButton />
+
+      <h1>Interaction 9: ClickablePicture</h1>
+
+      <ClickablePicture />
+
+      <h1>Interaction 10: Dice</h1>
+
+      <Dice />
+
+      <h1>Interaction 11: Carousel</h1>
+
+      <Carousel />
 
     </>
 
