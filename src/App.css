@@ -28,6 +28,73 @@
   color: #61dafb;
 }
 
+.id-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  margin: 10px auto;
+}
+
+.greeting {
+  font-size: 18px;
+  margin: 10px auto;
+  border-style: solid;
+  padding: 20px;
+  width: 40%;
+}
+
+.id-card img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.random {
+  font-size: 18px;
+  margin: 10px auto;
+  border-style: solid;
+  padding: 20px;
+  width: 40%;
+}
+
+
+.driver-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  width: 300px; 
+}
+
+.driver-card-img img {
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.driver-card-info {
+  flex: 1;
+}
+
+.driver-card-rating {
+  font-size: 18px;
+}
+
+.driver-card-rating .filled {
+  color: orange;
+}
+
+.car-info {
+  font-size: 14px;
+  color: #888;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
