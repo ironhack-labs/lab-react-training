@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 2rem;
 }
 
 .App-logo {
@@ -35,4 +36,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.id-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem;
+  width: 300px;
+}
+
+.id-card img{
+ 
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.id-card p {
+  margin: 0.2rem 0;
+}
+
+.Credit-card {
+  border: 1px solid black;
+  margin-top: 1rem;
+  width: 250px;
+  
+
+}
+
+
+.Driver img {
+   width: 150px;
+  
+
+}
+
+.Driver {
+  border: 1px solid black;
+  margin-top: 1rem;
+  width: 200px;
+  background-color: blanchedalmond;
 }
