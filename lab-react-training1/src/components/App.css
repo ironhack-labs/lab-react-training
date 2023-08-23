@@ -1,0 +1,8 @@
+.frame {
+	padding: 6px;
+	border: 1px solid black;
+}
+
+.credits {
+	display: flex;
+}
