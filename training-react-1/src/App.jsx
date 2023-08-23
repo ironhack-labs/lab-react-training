@@ -3,13 +3,23 @@ import IdCard from './components/IdCard'
 import Greetings from './components/Greetings'
 import Random from './components/Random'
 import BoxColor from './components/BoxColor'
-import creditCard from './components/CreditCard'
+import LikeButton from './components/LikeButton'
+// import creditCard from './components/CreditCard'
+import ClickablePicture from './components/ClickablePicture'
+// import Dice from './components/Dice'
+import Carousel from './components/Carousel'
+// import FaceBook from './components/FaceBook'
 
 
 function App() {
 
   return (
+
+
     <>
+
+      {/* ITERATION 1 */}
+
       <div className='IdCard'>
 
         <IdCard
@@ -34,6 +44,8 @@ function App() {
 
       <hr />
 
+      {/* ITERATION 2 */}
+
       <div className="Greetings">
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="en">Elise</Greetings>
@@ -43,12 +55,16 @@ function App() {
 
       <hr />
 
+      {/* ITERATION 3 */}
+
       <div className="Random">
         <Random min={1} max={6} />
         <Random min={1} max={100} />
       </div>
 
       <hr />
+
+      {/* ITERATION 4 */}
 
       <div className="BoxColor">
         <BoxColor r={255} g={0} b={0} />
@@ -57,7 +73,9 @@ function App() {
 
       <hr />
 
-      <div className="creditCard">
+      {/* ITERATION 5  ATASCADA*/}
+
+      {/* <div className="creditCard">
 
         <CreditCard
           type="Visa"
@@ -91,12 +109,60 @@ function App() {
           bgColor="#ddbb55"
           color="white"
         />
+      </div> */}
+
+      <hr />
+
+      {/* ITERATION 8 */}
+
+      <div className="likeButton">
+        <LikeButton />
+        <LikeButton />
       </div>
 
+      <hr />
 
+      {/* ITERATION 9 */}
 
+      <div className="ClickablePicture">
+        <ClickablePicture
+          img="maxence.png"
+          imgClicked="maxence-glasses.png"
+        />
+      </div>
 
+      <hr />
 
+      {/* ITERATION 10 ATASCADA*/}
+
+      {/* <div className="Dice">
+        <Dice />
+      </div> */}
+
+      <hr />
+
+      {/* ITERATION 11 */}
+
+      <div className="Carousel">
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+      </div>
+
+      <hr />
+
+      {/* ITERACIÓN 12 --> ATASCADA */}
+
+      {/* ITERACIÓN 13 */}
+
+      {/* <div className="Facebook">
+        <FaceBook />
+      </div> */}
 
 
 

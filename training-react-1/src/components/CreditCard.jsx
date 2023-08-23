@@ -1,6 +1,6 @@
 const creditCard = ({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color }) => {
 
-    let logo = type === "Visa" ? "./visa.png" : "./mastercardIcon.png"
+    let logo = type === "Visa" ? "./src/assets/visa.png" : "./src/assets/mastercardIcon.png"
 
     let cardStyle = {
         backgroundColor: bgColor,
