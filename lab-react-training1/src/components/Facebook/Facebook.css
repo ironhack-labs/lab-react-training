@@ -1,0 +1,15 @@
+.profile {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.profile img {
+	width: 150px
+}
+
+.profile ul {
+	list-style-type: none;
+}
+profile ul li {
+	padding-bottom: 10px;
+}

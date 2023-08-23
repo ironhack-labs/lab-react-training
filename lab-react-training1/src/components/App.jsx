@@ -1,18 +1,23 @@
 import './App.css'
 
 import IdCard from './IdCard/IdCard'
-import Title from './Ttitle/Tittle'
 import Greetings from './Greetings/Greetings'
 import Random from './Random/Random'
 import BoxColor from './BoxColor/BoxColor'
 import CreditCard from './CreditCard/CreditCard'
 import Rating from './Rating/Rating'
 import DriverCard from './DriverCard/DriverCard'
+import LikeButton from './LikeButton/LikeButton'
+import ClickablePicture from './ClickablePicture/ClickablePicture'
+import Dice from './Dice/Dice'
+import Carousel from './Carousel/Carousel'
+import NumbersTable from './NumbersTable/NumbersTable'
+import Facebook from './Facebook/Facebook'
 
 const App = () => {
 	return (
 		<>
-			<Title text={'IdCard'} />
+			<h2>IdCard</h2>
 
 			<IdCard
 				lastName='Doe'
@@ -31,24 +36,24 @@ const App = () => {
 				birth={new Date('1988-05-11')}
 				picture='https://randomuser.me/api/portraits/women/44.jpg'
 			/>
-			<Title text={'Greetings'} />
+			<h2>Greetings</h2>
 
 			<Greetings lang='de'>Ludwig</Greetings>
 			<Greetings lang='fr'>François</Greetings>
 			<Greetings lang='en'>Michael</Greetings>
 			<Greetings lang='es'>Antonio</Greetings>
 
-			<Title text={'Random'} />
+			<h2>Random</h2>
 
 			<Random min={1} max={6} />
 			<Random min={1} max={100} />
 
-			<Title text={'BoxColor'} />
+			<h2>Box Color</h2>
 
 			<BoxColor r={255} g={0} b={0} white={true} />
 			<BoxColor r={128} g={255} b={0} />
 
-			<Title text={'CreditCard'} />
+			<h2>Credit Card</h2>
 
 			<section className='credits'>
 				<CreditCard
@@ -85,7 +90,7 @@ const App = () => {
 				/>
 			</section>
 
-			<Title text={'Rating'} />
+			<h2>Rating</h2>
 
 			<Rating>0</Rating>
 			<Rating>1.49</Rating>
@@ -94,7 +99,7 @@ const App = () => {
 			<Rating>4</Rating>
 			<Rating>5</Rating>
 
-			<Title text={'Rating'} />
+			<h2>Drive Card</h2>
 
 			<DriverCard
 				name='Travis Kalanick'
@@ -115,6 +120,37 @@ const App = () => {
 					licensePlate: 'BE33ER',
 				}}
 			/>
+
+			<h2>Like Button</h2>
+
+			<LikeButton />
+
+			<h2>Clickable Picture</h2>
+
+			<ClickablePicture />
+
+			<h2>Dice</h2>
+
+			<Dice />
+
+			<h2>Carousel</h2>
+
+			<Carousel
+				images={[
+					'https://randomuser.me/api/portraits/women/1.jpg',
+					'https://randomuser.me/api/portraits/men/1.jpg',
+					'https://randomuser.me/api/portraits/women/2.jpg',
+					'https://randomuser.me/api/portraits/men/2.jpg',
+				]}
+			/>
+
+			<h2>Numbers Table</h2>
+
+			<NumbersTable limit={12} />
+
+			<h2>Facebook</h2>
+
+			<Facebook />
 		</>
 	)
 }
