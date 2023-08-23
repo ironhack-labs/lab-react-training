@@ -1,26 +1,26 @@
+import Rating from "../Rating/Rating"
+import './DriverCard.css'
 
 
-const DriverCard = (name, rating, img, { car }) => {
+const DriverCard = (driverCard) => {
 
-
-
-
-
-
+    const { name, rating, img, car } = driverCard
+    const { model, licensePlate } = car
 
     return (
-        <article className="IdCard">
+        <article className="DriverCard">
 
 
-            <img src={picture} alt={firstName} />
+            <img className="pepe" src={img} alt={name} />
+            <p>{name}</p>
 
+            <Rating>
+                {rating}
+            </Rating>
 
+            <p>{model}</p>
+            <p>{licensePlate}</p>
 
-            <p>{lastName}</p>
-            <p>{firstName}</p>
-            <p>{gender}</p>
-            <p>{height}</p>
-            <p>{birth}</p>
 
 
         </article>
@@ -28,4 +28,4 @@ const DriverCard = (name, rating, img, { car }) => {
 
 }
 
-export default IdCard
+export default DriverCard

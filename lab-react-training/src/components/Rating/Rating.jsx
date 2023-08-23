@@ -1,5 +1,7 @@
 import './Rating.css'
 
+
+
 const Rating = ({ children }) => {
 
     const redonNumber = (children) => {
@@ -8,7 +10,7 @@ const Rating = ({ children }) => {
     }
 
     let redon = redonNumber(children)
-    console.log(redon)
+
 
 
     if (redon === 0) {
