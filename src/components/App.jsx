@@ -6,6 +6,12 @@ import BoxColor from './BoxColor/BoxColor'
 import CreditCard from './CreditCard/CreditCard'
 import Rating from './Rating/Rating'
 import DriverCard from './DriverCard/DriverCard'
+import LikeButton from './LikeButton/LikeButton'
+import ClickablePicture from './ClickablePicture/ClickablePicture'
+import Dice from './Dice/Dice'
+import Carousel from './Carousel/Carousel'
+import NumbersTable from './NumbersTable/NumbersTable'
+
 
 function App() {
 
@@ -133,6 +139,47 @@ function App() {
       />
 
       <hr />
+
+
+      {/* Like Button */}
+      <LikeButton />
+
+      <hr />
+
+
+      {/* Clickable Picture */}
+      <ClickablePicture />
+
+      <hr />
+
+
+      {/* Dice */}
+      <Dice />
+
+      <hr />
+
+
+      {/* Carousel */}
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <hr />
+
+
+      {/* Numbers Table */}
+      <NumbersTable limit={12} />
+
+      <hr />
+
+
+      {/* FaceBook Simple */}
+
 
     </>
   )

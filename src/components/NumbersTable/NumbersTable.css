@@ -1,0 +1,19 @@
+.NumbersTable {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    margin: 3rem 1rem;
+}
+
+.NumbersTable span {
+    border: 1px solid;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    align-items: center; 
+    justify-content: center;
+}
+
+.NumbersTable .even {
+    background-color: red;
+}
