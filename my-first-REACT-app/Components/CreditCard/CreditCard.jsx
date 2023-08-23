@@ -22,7 +22,7 @@ const CreditCard = ({ type, number, expirationMonth, expirationYear, bank, owner
     return (
         <div style={coloredCard}>
 
-            <img src={imgSource} class="cardLogo" alt={type} />
+            <img src={imgSource} className="cardLogo" alt={type} />
             <p>{maskedNumber}</p>
             <p>{ExpiringDate}</p>
             <p>{bank}</p>

@@ -1,3 +1,5 @@
+import './DriverCard.css'
+
 const DriverCard = ({ name, rating, img, car }) => {
 
     let carInfo = `${car.model} - ${car.licensePlate}`
@@ -20,8 +22,8 @@ const DriverCard = ({ name, rating, img, car }) => {
     }
 
     return (
-        <div>
-            <img src="" alt="" />
+        <div className='driverCard'>
+            <img className="driverCardImg" src={img} alt="" />
             <p>{name}</p>
             <p>{countStars}</p>
             <p>{carInfo}</p>
