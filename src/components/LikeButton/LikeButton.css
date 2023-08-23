@@ -1,0 +1,13 @@
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.LikeButton{
+    font-size: 1em;
+    font-weight: 600;
+    height: 50px;
+    width: 100px;
+    margin-top: 50px;
+   
+}
