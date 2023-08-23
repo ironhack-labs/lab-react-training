@@ -10,7 +10,7 @@ const DriverCard = ({ name, rating, img, car }) => {
 
             <h2>{name}</h2>
             <img src={img} />
-            <Rating>{rating}</Rating>
+            <Rating>{Math.floor(rating)}</Rating>
             <div>car :
                 {model}
                 {licensePlate}

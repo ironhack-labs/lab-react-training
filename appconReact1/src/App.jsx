@@ -6,6 +6,11 @@ import BoxColor from './components/boxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickAblePicture';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
 
 const App = () => {
   return (
@@ -117,6 +122,49 @@ const App = () => {
           }}
         />
       </>
+
+
+      <div>
+
+        <LikeButton />
+
+      </div>
+
+      <div>
+
+        <ClickablePicture />
+      </div>
+
+      <div>
+
+        <Carousel
+          Images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+      </div>
+
+
+      <div>
+
+        <NumbersTable limit={12} />
+      </div>
+
+      <div>
+
+        <FaceBook />
+
+      </div>
+
+
+
+
+
+
+
     </div>
 
   )
