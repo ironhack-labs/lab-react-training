@@ -6,14 +6,10 @@ const Facebook = () => {
 	let highlighted = false
 	const profiles = [...profilesArray]
 
-	const [profilesHighlighted, setHiglightedProfiles] = useState(profiles)
+	const [highlightedCountry, setHiglightedCountry] = useState('none')
 
 	const highlightCountry = country => {
-		const higlightedProfiles = profilesHighlighted.filter(
-			eachProfile => eachProfile.country === country
-		)
-		higlightedProfiles.forEach(elm => (elm.highlighted = true))
-		setHiglightedProfiles(higlightedProfiles)
+		setHiglightedCountry(country)
 	}
 
 	return (
@@ -28,12 +24,12 @@ const Facebook = () => {
 			<button onClick={() => highlightCountry('Scotland')}>Scotland</button>
 			<button onClick={() => highlightCountry('Catalonia')}>Catalonia</button>
 			<button onClick={() => highlightCountry('Kazakhstan')}>Kazakhstan</button>
-			{profiles.map(({ firstName, lastName, img, country, highlighted }) => {
+			{profiles.map(({ firstName, lastName, img, country }) => {
 				return (
 					<div
 						className='profile frame'
 						style={{
-							backgroundColor: highlighted ? 'blue' : 'white',
+							backgroundColor: country === highlightedCountry ? 'blue' : 'white',
 						}}>
 						<img src={img} alt={firstName} />
 						<ul>
