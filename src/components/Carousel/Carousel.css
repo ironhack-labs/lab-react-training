@@ -1,0 +1,20 @@
+.Carousel {
+    display: flex;
+    height: 300px;
+    margin: 3rem 1rem;
+    width: 300px;
+}
+
+.Carousel img {
+    border: 1px solid;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.Carousel button {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+}

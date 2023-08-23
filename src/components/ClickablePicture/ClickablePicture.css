@@ -1,0 +1,10 @@
+.ClickablePicture {
+    height: 400px;
+    margin: 3rem 1rem;
+    width: 400px;
+}
+
+.ClickablePicture img {
+    object-fit: cover;
+    width: 100%;
+}

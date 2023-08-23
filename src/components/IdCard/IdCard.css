@@ -1,0 +1,18 @@
+.IdCard {
+    align-items: center;
+    border: 2px solid black;
+    display: flex;
+    height: 24vh;
+    justify-content: left;
+    margin: 1rem;
+}
+
+.IdCard img {
+    height: 90%;
+    margin-left: 0.8rem;
+}
+
+.IdCard ul {
+    font-size: 1.5rem;
+    list-style: none;
+}

@@ -1,0 +1,12 @@
+.Dice {
+    height: 400px;
+    margin: 3rem 1rem;
+    width: 400px;
+}
+
+.Dice img {
+    border-radius: 3rem;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}

@@ -1,0 +1,11 @@
+.LikeButton {
+    margin: 3rem 1rem;
+}
+
+.LikeButton button{
+    padding: 2rem 4rem;
+    border: 4px solid rgb(99, 99, 99);
+    font-size: 2rem;
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
