@@ -1,0 +1,30 @@
+.SignupPage {
+    border: solid black;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 60vh;
+}
+
+form > div > label {
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+form > div > label > select, form > div > label > input {
+    margin: 3px 0px;
+    padding: 6px 20px;
+    font-size: 0.9em;
+    width: 100%;
+}

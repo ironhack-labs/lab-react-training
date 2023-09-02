@@ -1,0 +1,32 @@
+.Facebook {
+    border: solid black;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: stretch
+}
+
+.Facebook > img {
+    height: 100px;
+}
+
+.Facebook > div {
+    text-align: start;
+    padding: 0px 20px;
+}
+
+p > span {
+    font-weight: 600;
+}
+
+p {
+    margin: 0;
+    padding: 1px;
+    font-size: 0.9em;
+}
+
+.country {
+    padding: 5px;
+    margin: 5px;
+}

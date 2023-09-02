@@ -1,0 +1,40 @@
+.CreditCard {
+    border-radius: 20px;
+    box-shadow: 5px;
+    padding: 5px;
+    margin: 5px;
+    width: 28%
+}
+
+.card-image > img {
+    height: 40px;
+}
+
+.card-image {
+    text-align: end;
+    padding: 5px 15px;
+}
+
+.CreditCard > h2 {
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+.card-details {
+    text-align: start;
+    padding: 10px 0 0 20px;
+    display: flex;
+}
+
+.card-details > p {
+    padding: 0 5px;
+}
+
+.card-owner {
+    text-align: start;
+    padding: 0 0 10px 25px; 
+    display: flex;
+    margin: 0;
+}
