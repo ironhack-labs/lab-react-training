@@ -1,0 +1,42 @@
+.credit-card {
+    margin-top: 10px;
+    width: 400px;
+    height: 180px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+}
+
+.type {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.number {
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.expiration {
+    font-size: 14px;
+}
+
+.bank {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.owner {
+    font-size: 18px;
+}
+
+.creditImage {
+    width: 80px;
+    margin-left: auto;
+
+}
