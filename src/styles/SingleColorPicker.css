@@ -1,0 +1,12 @@
+.SingleColorPicker {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.SingleColorPicker > h5 {
+    margin-right: 10px;
+}

@@ -1,0 +1,12 @@
+.ClickablePicture {
+    border: solid black;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch
+}
+
+.ClickablePicture > img {
+    height: 200px;
+}

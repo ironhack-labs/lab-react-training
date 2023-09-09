@@ -1,0 +1,14 @@
+.Rating {
+    padding: 5px 0;
+    display: flex;
+    justify-content: start;
+    align-items: stretch
+}
+
+.div-stars {
+    display:flex;
+}
+
+.div-stars > img {
+    width: 20px;
+}

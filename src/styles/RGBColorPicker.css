@@ -1,0 +1,23 @@
+.RGBColorPicker {
+    border: solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    border: solid black 1px;
+    margin: 10px;
+}
+
+.single {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.single > h5 {
+    margin: 10px;
+}

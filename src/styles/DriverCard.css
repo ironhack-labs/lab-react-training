@@ -1,0 +1,30 @@
+.DriverCard {
+    border: solid black;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: blueviolet;
+    width: 50vh
+}
+
+.driver-pic > img {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+
+.driver-details {
+    margin: 0 0 0 20px;
+    text-align: start;
+    color: white;
+}
+
+.driver-details > h3 {
+    margin: 0;
+}
+
+.driver-details > p {
+    font-size: 0.7em;
+}
