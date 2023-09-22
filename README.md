@@ -109,7 +109,7 @@ Create and render an `IdCard` component with 6 props:
 
 **Expected Output:**
 
-![IdCard component]([https://user-images.githubusercontent.com/5306791/52976030-22b0d200-33c8-11e9-91fe-e3ce0fa14078.png](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/01-idcard.png))
+![IdCard component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/01-idcard.png)
 
 
 
