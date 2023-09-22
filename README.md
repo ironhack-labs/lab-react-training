@@ -439,7 +439,7 @@ The component should take 1 prop:
 
 **Expected Output:**
 
-![](https://media.giphy.com/media/1n7cAJu0MWerLnnohR/giphy.gif)
+![Carousel component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/11-carousel.gif)
 
 
 
