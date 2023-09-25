@@ -28,9 +28,9 @@ function SingupPage(props) {
     let emailGreeting = `Your email address is: ${emailAddress} `;
     let emailCorrectGreeting = "Your email is correct";
 
-    language === 'EN'
+    language === 'English'
     ? (greetingLanguage = 'Hello')
-    : language === 'DE'
+    : language === 'Deutsch'
     ? (greetingLanguage = 'Hallo')
     : (greetingLanguage = 'Bonjour');
   setGreeting([greetingLanguage, emailGreeting, emailCorrectGreeting]);
@@ -50,7 +50,7 @@ function SingupPage(props) {
           />
         </FormGroup>
         <FormGroup>
-          <Label for="password">Email</Label>
+          <Label for="password">Password</Label>
           <Input
             id="password"
             name="password"
@@ -69,9 +69,9 @@ function SingupPage(props) {
             value={state.lang}
             onChange={handleChange}
           >
-            <option>EN</option>
-            <option>FR</option>
-            <option>DE</option>
+            <option value="English">English</option>
+            <option value="Deutsch">Deutsch</option>
+            <option value="French">French</option>
           </select>
           <Button>Submit</Button>
           
