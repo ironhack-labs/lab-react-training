@@ -4,6 +4,13 @@ import Greetings from "./components/greetings"
 import Random from "./components/random"
 import BoxColor from "./components/box-color";
 import CreditCard from "./components/credit-card";
+import Rating from "./components/rating";
+import DriverCard from "./components/driver-card";
+import LikeButton from "./components/like-button";
+import ClickablePicture from "./components/clickablePicture";
+import Dice from "./components/dice";
+import Carousel from "./components/carousel";
+import NumbersTable from "./components/numbers-table";
 
 function App() {
   return (
@@ -74,11 +81,58 @@ function App() {
       </div>
       
       <h6 className="text-start ms-4 mt-4 mb-1">Iteration 6</h6>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
 
       <h6 className="text-start ms-4 mt-4 mb-1">Iteration 7</h6>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE"
+        }}
+      />
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER"
+        }}
+      />
 
       <h6 className="text-start ms-4 mt-4 mb-1">Iteration 8</h6>
+      <LikeButton />
+      <LikeButton />
 
+      <h6 className="text-start ms-4 mt-4 mb-1">Iteration 9</h6>
+      <ClickablePicture
+        img="../public/images/cat.png"
+        imgClicked="../public/images/catWithGlasses.png"
+      />
+
+      <h6 className="text-start ms-4 mt-4 mb-1">Iteration 10</h6>
+        <Dice />
+
+      <h6 className="text-start ms-4 mt-4 mb-1">Iteration 11</h6>
+      <Carousel
+        images={[
+          "https://randomuser.me/api/portraits/women/1.jpg",
+          "https://randomuser.me/api/portraits/men/1.jpg",
+          "https://randomuser.me/api/portraits/women/2.jpg",
+          "https://randomuser.me/api/portraits/men/2.jpg"
+        ]}
+      />
+
+      <h6 className="text-start ms-4 mt-4 mb-1">Iteration 12</h6>
+      <NumbersTable limit={12} />
     </div>
   );
 }
