@@ -8,7 +8,7 @@ function Carousel({ images }) {
             <button className="mx-2 align-self-end" onClick={() => {
                 imageIndex === 0 ? setIndex(images.length - 1) : setIndex(imageIndex - 1);
             }}>↶</button>
-            <img className="mb-2" src={ images[imageIndex] }/>
+            <img className="mb-2" style={{ height: "250px"}} src={ images[imageIndex] }/>
             <button className="mx-2 align-self-end" onClick={() => {
                 imageIndex === images.length - 1 ? setIndex(0) : setIndex(imageIndex + 1);
             }}>↷</button>

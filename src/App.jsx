@@ -11,6 +11,7 @@ import ClickablePicture from "./components/clickablePicture";
 import Dice from "./components/dice";
 import Carousel from "./components/carousel";
 import NumbersTable from "./components/numbers-table";
+import FaceBook from "./components/face-book";
 
 function App() {
   return (
@@ -133,6 +134,9 @@ function App() {
 
       <h6 className="text-start ms-4 mt-4 mb-1">Iteration 12</h6>
       <NumbersTable limit={12} />
+
+      <h6 className="text-start ms-4 mt-4 mb-1">Iteration 13</h6>
+      <FaceBook />
     </div>
   );
 }
