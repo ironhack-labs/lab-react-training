@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function Greetings({lang, children}) {
     let greeting = "";
     switch (lang) {

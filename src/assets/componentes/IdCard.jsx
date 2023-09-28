@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function IdCard ({ firstName,lastName,picture,birth,gender,height}) {
  
   return (

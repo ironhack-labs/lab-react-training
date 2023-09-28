@@ -3,6 +3,8 @@ import IdCard from "./assets/componentes/IdCard";
 import Greetings from "./assets/componentes/Greetings";
 import RandomComponent from "./assets/componentes/RandomComponent";
 import BoxColorComponent from "./assets/componentes/BoxColor";
+import CreditCard from "./assets/componentes/creditCard";
+import RatingStars from "./assets/componentes/rating";
 
 function App() {
   return <>
@@ -40,9 +42,51 @@ function App() {
 
       <div>Iteración 4</div>
       <div>
-        <BoxColorComponent r={255} g={0} b={0} /> 
-        <BoxColorComponent r={0} g={128} b={0} /> 
-        <BoxColorComponent r={0} g={0} b={255} /> 
+        <BoxColorComponent r={255} g={0} b={0} />
+        <BoxColorComponent r={0} g={128} b={0} />
+        <BoxColorComponent r={0} g={0} b={255} />
+      </div>
+      <div>Iteración 5</div>
+      <div>
+        <CreditCard
+          type="Visa"
+          number="0123456789018845"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="BNP"
+          owner="Maxence Bouret"
+          bgColor="#11aa99"
+          color="white"
+        />
+        <CreditCard
+          type="Master Card"
+          number="0123456789010995"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="N26"
+          owner="Maxence Bouret"
+          bgColor="#eeeeee"
+          color="#222222"
+        />
+        <CreditCard
+          type="Visa"
+          number="0123456789016984"
+          expirationMonth={12}
+          expirationYear={2019}
+          bank="Name of the Bank"
+          owner="Firstname Lastname"
+          bgColor="#ddbb55"
+          color="white"
+        />
+      </div>
+      <div>Iteración 6</div>
+      <div>
+        <RatingStars>0</RatingStars>
+        <RatingStars>1.49</RatingStars>
+        <RatingStars>1.5</RatingStars>
+        <RatingStars>3</RatingStars>
+        <RatingStars>4</RatingStars>
+        <RatingStars>5</RatingStars>
       </div>
     </div>
   </>;

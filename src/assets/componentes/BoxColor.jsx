@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function BoxColorComponent({ r, g, b }) {
     const rgbColor = `rgb(${r}, ${g}, ${b})`;
 
