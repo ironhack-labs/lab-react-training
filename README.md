@@ -375,7 +375,7 @@ Create a `ClickablePicture` component that displays a picture. On each click, th
 
 ![ClickablePicture component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/09-clickable-pic.gif)
 
-PS: If you want to use your picture instead, you can create it using this picture: http://www.stickpng.com/assets/images/584999937b7d4d76317f5ffd.png 😎
+PS: If you want to use your picture instead, you can create it using this picture: [/assets/images/glasses.png](https://raw.githubusercontent.com/ironhack-labs/lab-react-training-vite/master/src/assets/images/glasses.png) 😎
 
 
 
