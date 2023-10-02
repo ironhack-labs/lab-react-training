@@ -5,7 +5,7 @@ function BoxColor({ r, g, b }) {
     const divStyle = { backgroundColor: rgbColor };
 
     const luminance = 0.299 * (r / 255) + 0.587 * (g / 255) + 0.114 * (b / 255);
-    luminance < 0.5 ? divStyle.color = "white" : divStyle.color = "black";
+    divStyle.color = luminance < 0.5 ? "white" : "black";
 
     return (
         <div className="border-dark border my-3 mx-2 p-5 border-2 fw-bold" style={divStyle}>

@@ -5,8 +5,8 @@ function CreditCard(card) {
     let logo;
 
     card.type === "Visa" ? logo = "https://logodownload.org/wp-content/uploads/2016/10/visa-logo.png" : logo = "https://logodownload.org/wp-content/uploads/2014/07/mastercard-logo-3.png";
-    card.type === "Visa" ? imgStyle.width = "45px" : imgStyle.width = "35px";
-    card.type === "Visa" ? imgStyle.height = "20px" : imgStyle.height = "20px";
+    imgStyle.width = card.type === "Visa" ? "45px" : "35px";
+    imgStyle.height = "20px";
 
     return (
         <div className="d-flex flex-column rounded m-2 d-inline-flex" style={ divStyle }>

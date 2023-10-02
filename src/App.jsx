@@ -29,7 +29,7 @@ function App() {
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
       <IdCard
-        lastName='Delores '
+        lastName='Delores'
         firstName='Obrien'
         gender='female'
         height={172}
