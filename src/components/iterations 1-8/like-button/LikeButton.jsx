@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 function LikeButton() {
     const bgColors = ["purple", "blue", "green", "yellow", "orange", "red"];
     const textColors = ["white", "white", "white", "black", "black", "white"];

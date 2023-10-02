@@ -1,4 +1,4 @@
-import Rating from "./rating";
+import Rating from "../rating/Rating";
 
 function DriverCard(driver) {
     return (

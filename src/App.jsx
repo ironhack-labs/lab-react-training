@@ -1,17 +1,19 @@
 import "./App.css";
-import IdCard from "./components/id-card";
-import Greetings from "./components/greetings"
-import Random from "./components/random"
-import BoxColor from "./components/box-color";
-import CreditCard from "./components/credit-card";
-import Rating from "./components/rating";
-import DriverCard from "./components/driver-card";
-import LikeButton from "./components/like-button";
-import ClickablePicture from "./components/clickablePicture";
-import Dice from "./components/dice";
-import Carousel from "./components/carousel";
-import NumbersTable from "./components/numbers-table";
-import FaceBook from "./components/face-book";
+import IdCard from "./components/iterations 1-8/id-card/IdCard";
+import Greetings from "./components/iterations 1-8/greetings/Greetings"
+import Random from "./components/iterations 1-8/random/Random"
+import BoxColor from "./components/iterations 1-8/box-color/BoxColor";
+import CreditCard from "./components/iterations 1-8/credit-card/CreditCard";
+import Rating from "./components/iterations 1-8/rating/Rating";
+import DriverCard from "./components/iterations 1-8/driver-card/DriverCard";
+import LikeButton from "./components/iterations 1-8/like-button/LikeButton";
+import ClickablePicture from "./components/iterations 9-16/clickable-picture/ClickablePicture";
+import Dice from "./components/iterations 9-16/dice/Dice";
+import Carousel from "./components/iterations 9-16/carousel/Carousel";
+import NumbersTable from "./components/iterations 9-16/numbers-table/NumbersTable";
+import FaceBook from "./components/iterations 9-16/face-book/FaceBook";
+import SignupPage from "./components/iterations 9-16/signup-page/SignupPage";
+import RGBColorPicker from "./components/iterations 9-16/rgb-color-picker/RGBColorPicker";
 
 function App() {
   return (
@@ -115,8 +117,8 @@ function App() {
 
       <h6 className="text-start ms-4 mt-4 mb-1">Iteration 9</h6>
       <ClickablePicture
-        img="../public/images/cat.png"
-        imgClicked="../public/images/catWithGlasses.png"
+        img="../images/cat.png"
+        imgClicked="../images/catWithGlasses.png"
       />
 
       <h6 className="text-start ms-4 mt-4 mb-1">Iteration 10</h6>
@@ -135,8 +137,14 @@ function App() {
       <h6 className="text-start ms-4 mt-4 mb-1">Iteration 12</h6>
       <NumbersTable limit={12} />
 
-      <h6 className="text-start ms-4 mt-4 mb-1">Iteration 13</h6>
+      <h6 className="text-start ms-4 mt-4 mb-1">Iteration 13 - 14</h6>
       <FaceBook />
+
+      <h6 className="text-start ms-4 mt-4 mb-1">Iteration 15</h6>
+      <SignupPage />
+
+      <h6 className="text-start ms-4 mt-4 mb-1">Iteration 16</h6>
+      <RGBColorPicker />
     </div>
   );
 }
