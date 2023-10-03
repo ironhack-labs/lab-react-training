@@ -1,18 +1,23 @@
 import "./App.css";
 import IdCard from "./components/idCard/id-card";
-import './utils'
-import berlinData from './data/berlin.json';
+import "./utils";
+import berlinData from "./data/berlin.json";
 import Greetings from "./components/greetings/greetings";
-import Random from './components/random/random'
+import Random from "./components/random/random";
 import BoxColor from "./components/boxColor/box-color";
 import CreditCard from "./components/creditCard/credit-card";
-import creditCardList from "./data/creditcard.json"
+import creditCardList from "./data/creditcard.json";
 import Rating from "./components/rating/rating";
 import DriverCard from "./components/driverCard/driver-card";
 import LikeButton from "./components/buttons/like-button";
 import ClickablePicture from "./components/clickablePicture/clickable-picture";
 import Dice from "./components/dice/dice";
-
+import Carousel from "./components/carrousel/Carrousel";
+import NumbersTable from "./components/numbersTable/NumbersTable";
+import FacebookCard from "./components/facebookCard/facebookCard";
+import FacebookUpdate from "./components/facebookCard/facebookUpdate";
+import SignupPage from "./components/singUpPage/signUpPage";
+import RGBColorPicker from "./components/RGBcolorPicker/RGBColorPicker";
 
 function App() {
   return (
@@ -23,9 +28,9 @@ function App() {
       {/* <Greetings lang="es" children="Carlos"> */}
 
       {/* <Random min={1} max={10}/> */}
-     
+
       {/* <BoxColor r={255} g={0} b={0} /> */}
-     
+
       {/* <CreditCard creditCardList={creditCardList}/> */}
 
       {/* <Rating>0</Rating>
@@ -61,7 +66,25 @@ function App() {
         imgClicked="/src/assets/images/maxence-glasses.png"
       /> */}
 
-      <Dice />
+      {/* <Dice /> */}
+
+      {/* <Carousel
+        images={[
+          "https://randomuser.me/api/portraits/women/1.jpg",
+          "https://randomuser.me/api/portraits/men/1.jpg",
+          "https://randomuser.me/api/portraits/women/2.jpg",
+          "https://randomuser.me/api/portraits/men/2.jpg",
+        ]}
+      /> */}
+
+      {/* <NumbersTable limit={12} /> */}
+
+      {/* <FacebookCard personList={berlinData}/> */}
+      {/* <FacebookUpdate personList={berlinData}/> */}
+
+      {/* <SignupPage/> */}
+
+      <RGBColorPicker/>
     </div>
   );
 }
