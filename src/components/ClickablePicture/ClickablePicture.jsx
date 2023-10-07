@@ -5,15 +5,18 @@ import "./ClickablePicture.css";
 const ClickablePicture = ({ img, imgClicked }) => {
   const [clicked, setClicked] = useState(false);
   return (
-    <>
-      <img
-        className="trump"
-        onClick={() => setClicked(!clicked)}
-        src={img}
-        alt="Picture Trump"
-      />
+    <div className="position-relative">
+      <button className="border-0 bg-transparent">
+        <img
+          className="pe-auto"
+          onClick={() => setClicked(!clicked)}
+          src={img}
+          alt="Picture Trump"
+        />
+      </button>
+
       {clicked && <img className="glasse" src={imgClicked} alt="Sun Glasses" />}
-    </>
+    </div>
   );
 };
 

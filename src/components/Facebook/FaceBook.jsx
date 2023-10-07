@@ -7,43 +7,38 @@ const FaceBook = () => {
     (country2) => countries.find((a) => a === country2)
   );
   // COUNTRIES
-  const [filterCountry, setFilterContry] = useState("");
-  const ResultFilterCountry =
-    filterCountry !== ""
-      ? profiles.map((i) =>
-          i.country === filterCountry
-            ? (i = { ...i, isFind: true })
-            : (i = { ...i, isFind: false })
-        )
-      : profiles;
-
+  const [filterCountry, setFilterCountry] = useState("");
   // SEARCH
   const [search, setSearch] = useState("");
-  const ResultSearch =
-    search !== ""
-      ? profiles.filter((i) =>
-          i.firstName.toLowerCase().includes(search.toLowerCase())
-        )
-      : profiles;
-
   // SORT LAST NAME
   const [sortLastName, setSortLastName] = useState(false);
-  const sort = () => {
-    const data = profiles.slice().sort((a, b) => {
-      if (a.lastName > b.lastName) {
-        return 1;
-      }
-      if (a.lastName < b.lastName) {
-        return -1;
-      }
-      return 0;
-    });
-    return data;
+
+  const filterProfiles = () => {
+    let filteredProfiles = profiles;
+    // COUNTRIES
+    if (filterCountry !== "") {
+      filteredProfiles = profiles.map((infoProfile) => ({
+        ...infoProfile,
+        isFind: infoProfile.country === filterCountry,
+      }));
+    }
+    // SEARCH
+    if (search !== "") {
+      filteredProfiles = filteredProfiles.filter((i) =>
+        i.firstName.toLowerCase().includes(search.toLowerCase())
+      );
+    }
+    // SORT LAST NAME
+    if (sortLastName) {
+      filteredProfiles = filteredProfiles
+        .slice()
+        .sort((a, b) => a.lastName.localeCompare(b.lastName));
+    }
+
+    return filteredProfiles;
   };
 
-  const ResultFilter = search !== "" ? ResultSearch : ResultFilterCountry;
-  
-  const Result = sortLastName ? sort(ResultFilter) : ResultFilter;
+  const filteredProfiles = filterProfiles();
 
   return (
     <>
@@ -69,7 +64,7 @@ const FaceBook = () => {
       </div>
       {/* // COUNTRIES */}
       <button
-        onClick={() => setFilterContry("")}
+        onClick={() => setFilterCountry("")}
         style={{ marginRight: "2px" }}
       >
         All
@@ -78,7 +73,7 @@ const FaceBook = () => {
         return (
           <button
             key={i}
-            onClick={() => setFilterContry(i)}
+            onClick={() => setFilterCountry(i)}
             style={{
               marginRight: "2px",
               backgroundColor: i === filterCountry ? "#61dafb" : "",
@@ -90,7 +85,7 @@ const FaceBook = () => {
       })}
       {/* // PEOPLE CARDS */}
       <div className="d-flex flex-column align-items-center">
-        {Result.map((i) => (
+        {filteredProfiles.map((i) => (
           <div
             key={i.firstName}
             className="border border-2 border-black d-flex flex-wrap p-2 mb-2"

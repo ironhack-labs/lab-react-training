@@ -1,24 +1,26 @@
 import "./App.css";
+import RGBColorPicker from "./components/RGBColorPicker/RGBColorPicker";
 import FaceBook from "./components/Facebook/FaceBook";
-// import BoxColor from "./components/BoxColor/BoxColor";
-// import ClickablePicture from "./components/ClickablePicture/ClickablePicture";
-// import Greetings from "./components/Greetings/Greetings";
-// import LikeButton from "./components/LikeButton/LikeButton";
-// import Random from "./components/Random/Random";
-// import IdCard from "./components/IdCard/IdCard";
-// import CreditCard from "./components/CreditCard/CreditCard";
-// import Rating from "./components/Rating/Rating";
-// import DriverCard from "./components/DriveCard/DriverCard";
-// import Dice from "./components/Dice/Dice";
-// import Carousel from "./components/Carousel/Carousel";
+import BoxColor from "./components/BoxColor/BoxColor";
+import ClickablePicture from "./components/ClickablePicture/ClickablePicture";
+import Greetings from "./components/Greetings/Greetings";
+import LikeButton from "./components/LikeButton/LikeButton";
+import Random from "./components/Random/Random";
+import IdCard from "./components/IdCard/IdCard";
+import CreditCard from "./components/CreditCard/CreditCard";
+import Rating from "./components/Rating/Rating";
+import DriverCard from "./components/DriveCard/DriverCard";
+import Dice from "./components/Dice/Dice";
+import Carousel from "./components/Carousel/Carousel";
 import NumbersTable from "./components/NumbersTable/NumbersTable";
+import SignupPage from "./components/SingupPage/SingupPage";
 
 function App() {
   return (
     <div className="App">
       <h1> LAB | React Training</h1>
       {/* //- ITERATION 1 */}
-      {/* <IdCard
+      <IdCard
         lastName="Doe"
         firstName="John"
         gender="male"
@@ -34,21 +36,21 @@ function App() {
         birth={new Date("1988-05-11")}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-      <hr/> */}
+      <hr />
       {/* //- ITERATION 2 */}
-      {/* <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-      <hr/> */}
+      <hr />
       {/* //- ITERATION 3 */}
-      {/* <Random min={1} max={6} />
+      <Random min={1} max={6} />
       <Random min={1} max={100} />
-      <hr/> */}
+      <hr />
       {/* //- ITERATION 4 */}
-      {/* <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-      <hr /> */}
+      <hr />
       {/* //- ITERATION 5 */}
-      {/* <div className="d-flex justify-content-evenly">
+      <div className="d-flex justify-content-evenly">
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -80,17 +82,17 @@ function App() {
           color="white"
         />
       </div>
-      <hr /> */}
+      <hr />
       {/* //- ITERATION 6 */}
-      {/* <Rating>0</Rating>
+      <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-      <hr /> */}
+      <hr />
       {/* //- ITERATION 7 */}
-      {/* <DriverCard
+      <DriverCard
         name="Travis Kalanick"
         rating={4.2}
         img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
@@ -108,19 +110,22 @@ function App() {
           licensePlate: "BE33ER",
         }}
       />
-      <hr /> */}
+      <hr />
       {/* //- ITERATION 8 */}
-      {/* <LikeButton />
       <LikeButton />
-      <hr /> */}
+      <LikeButton />
+      <hr />
       {/* //- ITERATION 9 */}
-      {/* <ClickablePicture img="https://www.trumparea.com/_pics/one-people.jpg" imgClicked="../public/glasses.png" />
-      <hr /> */}
+      <ClickablePicture
+        img="https://www.trumparea.com/_pics/one-people.jpg"
+        imgClicked="../public/glasses.png"
+      />
+      <hr />
       {/* //- ITERATION 10 */}
-      {/* <Dice />
-      <hr /> */}
+      <Dice />
+      <hr />
       {/* //- ITERATION 11 */}
-      {/* <Carousel
+      <Carousel
         images={[
           "https://randomuser.me/api/portraits/women/1.jpg",
           "https://randomuser.me/api/portraits/men/1.jpg",
@@ -128,17 +133,18 @@ function App() {
           "https://randomuser.me/api/portraits/men/2.jpg",
         ]}
       />
-      <hr /> */}
+      <hr />
       {/* //- ITERATION 12 */}
-      {/* <NumbersTable limit={12} />
-      <hr /> */}
+      <NumbersTable limit={12} />
+      <hr />
       {/* //- ITERATION 13 & 14 */}
       <FaceBook />
       <hr />
       {/* //- ITERATION 15 */}
+      <SignupPage />
       <hr />
       {/* //- ITERATION 16 */}
-      <hr />
+      <RGBColorPicker />
     </div>
   );
 }
