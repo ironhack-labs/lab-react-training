@@ -1,0 +1,44 @@
+.credit-card {
+    width: 300px;
+    height: 180px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 10px;
+    position: relative;
+    padding: 10px;
+}
+
+.credit-card-logo {
+    width: 35px;
+    height: 10%;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+}
+
+.credit-card-num {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 40px;
+    left: 60px;
+    font-size: 32px;
+    margin-top: 25px;
+
+}
+
+.credit-card-expire {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+}
+
+.credit-card-name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -55px;
+}
+
+.listCards {
+    display: flex;
+    background-color: brown;
+}

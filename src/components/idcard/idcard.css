@@ -1,0 +1,17 @@
+.idcard-main {
+    display: flex;
+    flex-direction: row;
+    line-height: 25px;  
+    border-style: solid;
+    border-radius: 10px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.image {
+    margin: 10px;
+}
+
+.bodyId {
+
+}

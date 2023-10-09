@@ -1,0 +1,7 @@
+.greetinsBox {
+    border-style: solid;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    padding-left: 10px;
+}

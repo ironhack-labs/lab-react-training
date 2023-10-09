@@ -1,0 +1,9 @@
+.randomCard {
+    height: 30px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    align-items: start;
+    padding-left: 15px;
+}
