@@ -6,9 +6,19 @@ import BoxColor from "./components/box-color/box-color";
 import CreditCard from "./components/credit-card/credit-card";
 import RandomValue from "./components/random/random";
 import RatingStars from "./components/rating/rating";
-
+import ClickablePicture from "./components/clickable-picture/clickable-picture";
+import DiceComponent from "./components/dice/dice";
+import Carousel from "./components/carousel/carousel";
 
 function App() {
+
+  const imageUrls = [
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ];
+
   return (
     <div className="App">
       <h1> LAB | React Training Carlos M</h1>
@@ -35,7 +45,7 @@ function App() {
       <hr></hr>
       <div className="m-5">
         <RandomValue min={1} max={6} />
-        <RandomValue min={1} max={100}/>
+        <RandomValue min={1} max={100} />
       </div>
       <hr></hr>
       <div className="m-5">
@@ -92,6 +102,24 @@ function App() {
           <RatingStars>4</RatingStars>
           <RatingStars>5</RatingStars>
         </div>
+        <hr></hr>
+        <div>
+          <h3>Imagen clicable</h3>
+          <ClickablePicture
+            img='https://randomuser.me/api/portraits/men/44.jpg'
+            imgClicked='https://randomuser.me/api/portraits/women/44.jpg'
+          />
+        </div>
+        <hr></hr>
+        <div>
+          <DiceComponent img='../src/components/dice/dice1.png' />
+        </div>
+        <hr></hr>
+        <div className="App">
+          <Carousel images={imageUrls} />
+        </div>
+        <hr></hr>
+        
       </div>
     </div>
   );
