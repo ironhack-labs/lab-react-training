@@ -8,6 +8,10 @@ import Rating from "./assets/componentes/rating";
 import DriverCard from "./assets/componentes/driverCard";
 import LikeButton from "./assets/componentes/likebutton";
 import ClickablePicture from "./assets/componentes/clickablePicture";
+import Dice from "./assets/componentes/dice";
+import Carousel from "./assets/componentes/carousel";
+import NumbersTable from "./assets/componentes/NumbersTable";
+import FaceBook from "./assets/componentes/Facebook";
 
 function App() {
   return <>
@@ -130,6 +134,26 @@ function App() {
         imgClicked="../src/assets/images/glasses.png"
       />
     </div>
+    <hr />
+    <div>Iteración 10</div>
+    <Dice />
+    <hr />
+    <div>Iteración 11</div>
+    <Carousel
+      images={[
+        'https://randomuser.me/api/portraits/women/1.jpg',
+        'https://randomuser.me/api/portraits/men/1.jpg',
+        'https://randomuser.me/api/portraits/women/2.jpg',
+        'https://randomuser.me/api/portraits/men/2.jpg'
+      ]}
+    />
+    <hr />
+    <div>Iteración 12</div>
+
+    <NumbersTable limit={12} />
+    <hr />
+    <div>Iteración 13</div>
+    <FaceBook />
   </>;
 }
 export default App;
