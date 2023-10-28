@@ -36,3 +36,64 @@
     transform: rotate(360deg);
   }
 }
+
+.idContainer{
+  display: flex;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  gap: 20px;
+  text-align: left;
+  margin: 20px;
+
+}
+
+.idContainer img{
+  width: 200px;
+}
+
+.randomContainer{
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.boxColorContainer{
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px;
+}
+
+.creditCardContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 200px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin: 20px 200px;
+}
+
+.driverCardContainer{
+  display: flex;
+  padding: 10px 50px;
+  margin: 20px 70px;
+  background-color: rgba(0, 0, 255, 0.571);
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border-radius: 10px;
+  gap: 20px;
+  color: white;
+}
+
+.driverCardContainer img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 100px;
+}
