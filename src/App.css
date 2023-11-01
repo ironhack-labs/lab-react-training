@@ -36,3 +36,282 @@
     transform: rotate(360deg);
   }
 }
+
+/* My css editing from here title for all */
+.title {
+  margin: 20px;
+}
+
+/* Id card */
+.idCard {
+  display: flex;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.idCard img {
+  max-width: 150px; 
+  height: auto; 
+  padding: 5px; 
+}
+
+.idCardText h3 {
+  flex: 1; 
+  margin: 5px 0; 
+  line-height: 1.2; 
+  font-weight: normal;
+}
+
+.idCardText h3 .label {
+  font-weight: bold;
+}
+
+/* Greetings */
+.greetings {
+  border: 1px solid black;
+  margin: 10px;
+  padding-left: 5px;
+}
+
+/* Random numbers */
+.random {
+  border: 1px solid black;
+  margin: 10px;
+  padding-left: 5px;
+}
+
+/* Credit Card*/
+.credit-card-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Rating */
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  padding-left: 1px;
+  font-size: 30px;
+}
+
+/* Driver Card*/
+.driver-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: #455eb5;
+  border-radius: 15px;
+}
+
+.driver-card-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%; /* Creates a circular shape for the icon */
+  overflow: hidden;
+  margin-right: 10px; /* Add some spacing between the image and info */
+}
+
+.driver-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps the image aspect ratio and covers the circular space */
+}
+
+.driver-card-info {
+  text-align: center;
+}
+
+/*Like Button*/
+.like-button-container {
+  margin: 15px;
+}
+
+
+/* Clickable Picture*/
+.clickable-picture-container {
+  margin: 15px;
+}
+
+.clickable-picture {
+  max-width: 200px;
+  max-height: 200px; 
+}
+
+
+/*Dice*/
+.dice {
+  max-width: 100px;
+  max-height: 100px; 
+  margin: 15px;
+}
+
+/* Carousel*/
+
+/* Numbers Table*/
+.number-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+}
+
+.nums-table-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+/*FaceBook (Simple)*/ /*  AND FaceBook (Advanced)====================*/
+.buttons {
+  display: flex;
+  margin: 10px;
+}
+
+.buttons button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.buttons button.selected {
+  background-color: lightblue;
+}
+
+.id-card {
+  display: flex;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.id-card img {
+  max-width: 150px;
+  height: auto;
+  padding: 5px;
+}
+
+.id-cardText h3 {
+  flex: 1;
+  margin: 5px 0;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+
+/*Signup Page*/
+
+/*RGB Color Picker*/
+
+/* Responsive styles for smaller screens ===================== */
+@media screen and (max-width: 768px) {
+  .idCard {
+    flex-direction: column;
+  }
+
+  .idCard img {
+    max-width: 20%;
+    height: auto;
+  }
+
+  .idCardText h3 {
+    margin: 5px 0;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+
+  .idCardText h3 .label {
+    font-weight: bold;
+  }
+
+  .credit-card-container {
+    flex-direction: column;
+  }
+
+  .driver-card {
+    flex-direction: column;
+  }
+
+  .driver-card-img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .driver-card-info {
+    text-align: center;
+  }
+
+  .like-button-container {
+    margin: 15px;
+  }
+
+  .clickable-picture-container {
+    margin: 15px;
+  }
+
+  .dice {
+    max-width: 100px;
+    max-height: 100px; 
+    margin: 15px;
+  }
+
+  .number-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+  }
+
+  .nums-table-container {
+    display: horizontal;
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+
+  /*The face mobile screen*/
+  .buttons {
+    display: block;
+    margin: 10px;
+  }
+
+  .buttons button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
+  .buttons button.selected {
+    background-color: lightblue;
+  }
+
+  .id-card {
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .id-card img {
+    max-width: 150px;
+    height: auto;
+    padding: 5px;
+  }
+
+  .id-cardText h3 {
+    flex: 1;
+    margin: 5px 0;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+
+  /*Signup Page*/
+}
+
