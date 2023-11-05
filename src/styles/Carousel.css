@@ -1,0 +1,12 @@
+.Carousel {
+    border: solid black;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.Carousel > img {
+    margin: 0 20px;
+}

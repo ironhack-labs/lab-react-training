@@ -1,0 +1,8 @@
+.BoxColor {
+    border: 1px solid black;
+    padding: 25px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
