@@ -1,0 +1,19 @@
+.LikeButton {
+    border: solid black;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch
+}
+
+.LikeButton > button {
+    border: none;
+    box-shadow:  5px 2px 2px grey;
+    padding: 15px 20px;
+    background-color: purple;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 5px;
+    cursor: pointer;
+}
