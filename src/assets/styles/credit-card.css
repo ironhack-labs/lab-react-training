@@ -1,0 +1,28 @@
+.credit-card {
+  margin: 5px;
+  border-radius: 5px;
+  padding: 10px 10px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.img-card {
+  display: flex;
+  justify-content: end;
+}
+
+.img-card img {
+  max-width: 30px;
+}
+
+.number-credit-card {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.expiration-bank {
+  display: flex;
+  gap: 10px;
+}

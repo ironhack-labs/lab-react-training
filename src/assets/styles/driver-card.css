@@ -1,0 +1,32 @@
+.driver-card {
+  margin: 5px;
+  padding: 10px;
+  background-color: #455eb5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.img-driver img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.driver-informations {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.driver-name {
+  font-weight: bold;
+}
+
+.driver-car {
+  font-size: 0.7rem;
+}
