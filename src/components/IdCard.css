@@ -1,0 +1,13 @@
+.id-card {
+    border: 1px solid black;
+    margin: 1rem;
+    display: flex;
+}
+
+.id-card img {
+    margin: 0.5rem;
+}
+
+.id-card-info {
+    text-align: left;
+}
