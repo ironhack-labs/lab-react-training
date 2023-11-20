@@ -97,7 +97,6 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
-
     </>
   )
 }

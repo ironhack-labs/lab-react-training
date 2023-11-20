@@ -5,7 +5,7 @@ const BoxColor = ({ r, g, b }) => {
     };
 
     return (
-        <div style={divStyle}>rbg({r},{g},{b})</div>
+        <div className="BoxColor box" style={divStyle}>rbg({r},{g},{b})</div>
     )
 
 }

@@ -2,17 +2,17 @@ const Rating = ({ children }) => {
     const value = Math.floor(children)
     switch (value) {
         case 0:
-            return <p>☆☆☆☆☆</p>
+            return <div className="Rating">☆☆☆☆☆</div>
         case 1:
-            return <p>★☆☆☆☆</p>
+            return <div className="Rating">★☆☆☆☆</div>
         case 2:
-            return <p>★★☆☆☆</p>
+            return <div className="Rating">★★☆☆☆</div>
         case 3:
-            return <p>★★★☆☆</p>
+            return <div className="Rating">★★★☆☆</div>
         case 4:
-            return <p>★★★★☆</p>
+            return <div className="Rating">★★★★☆</div>
         case 5:
-            return <p>★★★★★</p>
+            return <div className="Rating">★★★★★</div>
         default:
             break;
     }

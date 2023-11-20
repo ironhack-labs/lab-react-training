@@ -1,13 +1,13 @@
 const Greetings = ({ lang, children }) => {
     switch (lang) {
         case "de":
-            return <p>Hallo {children}</p>
+            return <div className="box">Hallo {children}</div>
         case "en":
-            return <p>Hello {children}</p>
+            return <div className="box">Hello {children}</div>
         case "es":
-            return <p>Hola {children}</p>
+            return <div className="box">Hola {children}</div>
         case "fr":
-            return <p>Bonjour {children}</p>
+            return <div className="box">Bonjour {children}</div>
         default:
             break;
     }
