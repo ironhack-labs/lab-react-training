@@ -1,0 +1,14 @@
+.imgDrivers {
+    height: 200px;
+    border-radius: 100px;
+}
+
+.divDrivers {
+    display: flex;
+    padding: 20px;
+    background-color: blueviolet;
+}
+
+.descriptionDrivers {
+    padding-left: 100px;
+}

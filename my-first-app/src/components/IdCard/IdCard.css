@@ -1,0 +1,6 @@
+.IdCards {
+    display: flex;
+    border: 3px;
+    border-color: white;
+    margin-bottom: 40px;
+}
