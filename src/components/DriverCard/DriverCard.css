@@ -1,0 +1,18 @@
+.driverCard {
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImage img {
+    width: 300px;
+    height: 300px;
+    padding: 20px 50px;
+}
+
+.driverCard ul {
+    list-style: none;
+}

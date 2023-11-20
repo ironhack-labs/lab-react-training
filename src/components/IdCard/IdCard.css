@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.cardImage {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.card ul {
+    list-style: none;
+}
