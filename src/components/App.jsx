@@ -6,6 +6,9 @@ import BoxColor from './BoxColor'
 import CreditCard from './CreditCard'
 import Rating from './Rating'
 import DriverCard from './DriverCard'
+import LikeButton from './LikeButton'
+import ClickablePicture from './ClickablePicture'
+import Dice from "./Dice"
 
 function App() {
 
@@ -97,6 +100,15 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      <h1>LikeButton</h1>
+      <LikeButton />
+      <h1>ClickablePicture</h1>
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+      <h1>Dice</h1>
+      <Dice />
     </>
   )
 }
