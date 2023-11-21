@@ -1,0 +1,13 @@
+.allCards {
+    display: flex;
+    justify-content: space-around;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.profileCards {
+    display: flex;
+    flex-direction: column;
+}

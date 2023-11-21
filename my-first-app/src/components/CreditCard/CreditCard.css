@@ -1,0 +1,24 @@
+.expirationDate {
+    margin-right: 20px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end
+}
+
+.card {
+    width: 300px;
+    border: 0.5px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cardNumber {
+    font-size: 2em;
+    padding: 0;
+}

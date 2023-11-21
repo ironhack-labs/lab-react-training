@@ -1,0 +1,7 @@
+.number {
+    height: 50px;
+    border: 1px solid black;
+    font-size: 1.5em;
+    margin: 20px;
+    padding-left: 10px;
+}
