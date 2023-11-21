@@ -1,0 +1,30 @@
+.CreditCard {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+
+.CreditCard .imagen {
+    right: 5px;
+    position: absolute;
+
+}
+
+.numero {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center
+}
+
+.data {
+    padding-left: 30px;
+}
+
+.CreditCard img {
+    height: 50px;
+    width: 60px;
+    background-size: cover;
+}
