@@ -1,0 +1,16 @@
+.LikeButton {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid black;
+    background: cornflowerblue;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button,
+select {
+    padding: 3px 10px;
+    min-width: 50px;
+    margin: 5px;
+}

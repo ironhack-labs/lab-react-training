@@ -1,0 +1,12 @@
+.licenseCard {
+    background-color: CornflowerBlue;
+    color: white;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 20px
+}
+
+.licenseCard img {
+    width: 120px;
+    border-radius: 100%;
+}

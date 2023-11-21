@@ -1,0 +1,16 @@
+.grid {
+    margin: 100px;
+}
+
+.grid span {
+    padding: 30px;
+    text-align: center;
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+}
+
+.odd {
+    background-color: red;
+
+}
