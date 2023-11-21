@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.list{
+list-style:  none;
+}
+
+.driverimg{
+  margin-top: 2%;
+display: block;
+}
+
+.boxColor{
+margin-top: 3%;
+
+}

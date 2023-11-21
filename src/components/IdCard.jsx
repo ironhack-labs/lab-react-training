@@ -1,5 +1,3 @@
-
-
 const IdCard = (props) => {
     return (
         <div>
