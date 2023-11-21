@@ -7,6 +7,12 @@ import CreditCard from './CreditCard/CreditCard'
 import Selector from './Selector/Selector'
 import Rating from './Rating/Rating'
 import DriverCard from './DriverCard/DriverCard'
+import LikeButton from './LikeButton/LikeButton'
+import ClickablePicture from './ClickablePicture/ClickablePicture'
+import Dice from './Dice/Dice'
+import Carousel from './Carousel/Carousel'
+import NumbersTable from './NumbersTable/NumbersTable'
+import Facebook from './FaceBook/Facebook'
 
 function App() {
 
@@ -110,6 +116,39 @@ function App() {
         }}
       />
 
+      <Selector />
+
+      <LikeButton />
+
+      <Selector />
+
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+
+      <Selector />
+
+      <Dice />
+
+      <Selector />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <Selector />
+
+      <NumbersTable limit={12} />
+
+      <Selector />
+
+      <Facebook />
 
     </div>
   )
