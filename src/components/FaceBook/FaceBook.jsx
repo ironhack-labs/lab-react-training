@@ -6,15 +6,15 @@ const FaceBook = () => {
 
     const [country, setCountry] = useState(null)
 
-    const isSelected = (selectedCountry, profileCountry) => {
+    const isSelectedCountry = (selectedCountry, profileCountry) => {
 
         if (selectedCountry === profileCountry) {
             return true
         }
-
     }
 
     const setSelectedCountry = (selectedCountry) => {
+
         if (selectedCountry === 'All') {
             setCountry(null)
         } else {
@@ -33,7 +33,7 @@ const FaceBook = () => {
             {
                 profiles.map((elm, i) => {
                     return (
-                        <div key={i} className='item' style={{ backgroundColor: isSelected(country, elm.country) ? 'red' : '' }}>
+                        <div key={i} className='item' style={{ backgroundColor: isSelectedCountry(country, elm.country) ? 'red' : '' }}>
                             <div className="row">
                                 <div className="col-3">
                                     <figure><img src={elm.img} alt="" /></figure>
