@@ -1,0 +1,13 @@
+.DriveCard {
+    width: 500px;
+    height: fit-content;
+    background-color: rgb(70, 96, 182);
+    border-radius: 12px;
+}
+
+.DriveCard img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    padding: 15px;
+}
