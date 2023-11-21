@@ -21,6 +21,22 @@
   transition: filter 300ms;
 }
 
+.cardiii {
+  margin-top: 30px;
+  width: 600px;
+  height: 180px;
+  border: 1px solid black;
+  padding-top: 30px;
+  display: inline-flex;
+  margin: 30px
+}
+
+.cardiii img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }

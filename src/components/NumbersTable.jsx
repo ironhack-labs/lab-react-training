@@ -3,7 +3,7 @@ function NumbersTable({ limit }) {
     for (let i = 0; i <= limit; i++) {
         arr.push(i)
     }
-    console.log(arr)
+
 
     const red = {
         backgroundColor: "red",
