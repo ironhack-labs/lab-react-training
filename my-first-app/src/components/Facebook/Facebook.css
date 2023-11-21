@@ -1,0 +1,11 @@
+.StudentCard {
+    display: flex;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+    align-items: center;
+    width: 400px;
+}
+
+.StudentCard img {
+    width: 150px;
+}
