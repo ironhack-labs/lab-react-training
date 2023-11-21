@@ -1,0 +1,16 @@
+.cardStyle {
+    padding: 10px;
+    width: 30%;
+    border: 1px solid #ccc;
+    margin: 30px 1%;
+    display: inline-block;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.cardStyle img {
+    height: 40px;
+    margin: 10px;
+    width: 50px;
+    margin-left: 430px;
+}
