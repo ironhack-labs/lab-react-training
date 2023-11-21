@@ -24,13 +24,16 @@ a:hover {
 }
 
 .greets {
-  border: 1px solid;
-  margin: 10px
+  border: 2px solid;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 10px;
+  display: inline-flex;
 }
 
 .cardi {
   width: 600px;
-  display: flex;
+  display: inline-flex;
   margin: 10px;
   border: 1px solid blue;
 }
@@ -61,6 +64,57 @@ button {
 
 button:hover {
   border-color: #646cff;
+}
+
+.randomi {
+  padding: 10px;
+  display: inline-flex;
+  margin: 15px;
+  border: 2px solid gray;
+  border-radius: 3px;
+}
+
+.credi .poch {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.credi {
+  display: inline-block;
+  margin: 20px;
+  width: 400px;
+  height: 200px;
+  border-radius: 13px;
+
+}
+
+.credi img {
+  margin-right: 40px;
+}
+
+.margb {
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.credi2 {
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+  margin: 10px;
+  width: 400px;
+  height: 200px;
+  border-radius: 13px;
+  justify-content: space-around;
+  border: 3px solid black;
+  align-items: center;
+
+}
+
+.credi2 img {
+  border: 2px solid black;
+  border-radius: 4px;
 }
 
 button:focus,

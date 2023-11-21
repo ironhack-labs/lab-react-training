@@ -5,6 +5,13 @@ import Greetings from './components/Greetings'
 import CreditCard from './components/CreditCard'
 import DriverCard from './components/DriverCard'
 import Rating from './components/Rating'
+import LikeButton from './components/LikeButton'
+import ClickablePicture from './components/ClickablePicture'
+import noGlass from './assets/maxence-glasses.png'
+import withGlass from './assets/maxence.png'
+import Dice from './components/Dice'
+import Carousel from './components/Carousel'
+import NumbersTable from './components/NumbersTable'
 import './App.css'
 
 function App() {
@@ -36,7 +43,8 @@ function App() {
           <Random min={1} max={100} />
           <BoxColor r={255} g={0} b={0} />
           <BoxColor r={128} g={255} b={0} />
-          <CreditCard
+          <div className='row' ></div>
+          <CreditCard className="col md-6"
             type="Master Card"
             number="0123456789010995"
             expirationMonth={3}
@@ -47,7 +55,7 @@ function App() {
             color="#222222"
           />
 
-          <CreditCard
+          <CreditCard className="col md-6"
             type="Visa"
             number="0123456789016984"
             expirationMonth={12}
@@ -57,12 +65,13 @@ function App() {
             bgColor="#ddbb55"
             color="white"
           />
-          <Rating>0</Rating>
-          <Rating>1.49</Rating>
-          <Rating>1.5</Rating>
-          <Rating>3</Rating>
-          <Rating>4</Rating>
-
+          <div className='row' >
+            <Rating>0</Rating>
+            <Rating>1.49</Rating>
+            <Rating>1.5</Rating>
+            <Rating>3</Rating>
+            <Rating>4</Rating>
+          </div>
           <DriverCard
             name="Travis Kalanick"
             rating={4.2}
@@ -84,7 +93,22 @@ function App() {
           />
 
         </div>
+        <LikeButton />
       </div>
+      <ClickablePicture
+        img={noGlass}
+        imgClicked={withGlass}
+      />
+      <Dice />
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <NumbersTable limit={12} />
     </>
   )
 }

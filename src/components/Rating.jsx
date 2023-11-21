@@ -22,7 +22,7 @@ const Rating = ({ children }) => {
 
     }
 
-    return (<div>{ratArr}</div>)
+    return (<div className="ratingg">{ratArr}</div>)
 }
 
 export default Rating

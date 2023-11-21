@@ -40,11 +40,12 @@ const CreditCard = ({
 
 
     return (
-        <div style={cardo}>
-            <p>{imagen}</p>
-            <span>{number}      </span> <span>{bank}</span> <span>{type}</span> <hr />
-            <span>Expires: ${month}/{year}  </span> <hr />
-            <span>{owner}</span>
+        <div className='credi' style={cardo}>
+            <p className='poch'>{imagen}</p>
+            <span>{number}</span>
+            <p>Bank name:{bank}     Type:{type}</p>
+            <p className='poch'>     Expires: {month}/{year}  </p>
+            <p className='poch'>{owner}</p>
 
         </div >
     )

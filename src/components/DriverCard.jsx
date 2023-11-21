@@ -17,11 +17,11 @@ const DriverCard = ({
 
 
     return (
-        <div style={tarjetita} >
-            <p> <img src={img} alt={name} width="80" height="60" /> <span>{name}</span> </p>
+        <div className="credi2" style={tarjetita} >
+            <p className="margb"> <img src={img} alt={name} width="100" height="80" /> <span >{name}</span> </p>
             <Rating>{rating}</Rating>
             <p>{model} - {licensePlate}</p>
-            <hr />
+
         </div>
     )
 }

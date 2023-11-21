@@ -6,6 +6,14 @@
 
 }
 
+.placa {
+  display: block;
+}
+
+.placa button {
+  padding: 10px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -17,8 +25,24 @@
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 
+.butoni {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 6px;
+
+}
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.ratingg {
+  display: inline-flex;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
 }
 
 @keyframes logo-spin {
