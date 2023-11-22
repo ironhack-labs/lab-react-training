@@ -6,6 +6,22 @@
 
 }
 
+.boxi {
+  width: 450px;
+  height: 120px;
+  margin: 10px;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.boxi div {
+  width: 45%;
+  padding: 20px;
+  background-size: cover;
+  border: 2px solid rgb(0, 0, 0);
+}
+
 .placa {
   display: block;
 }
@@ -21,20 +37,22 @@
   transition: filter 300ms;
 }
 
+
 .cardiii {
-  margin-top: 30px;
-  width: 600px;
-  height: 180px;
+
+  width: 500px;
+  height: 200px;
   border: 1px solid black;
   padding-top: 30px;
-  display: inline-flex;
+  display: inline-block;
   margin: 30px
 }
 
 .cardiii img {
+  margin-left: 0;
   width: 100px;
   height: 100px;
-  margin: 10px;
+  display: inline-flex;
 }
 
 .logo:hover {
@@ -59,6 +77,8 @@
   border: 1px solid black;
   padding: 5px;
   margin: 5px;
+  background-color: wheat;
+  border-radius: 7px;
 }
 
 @keyframes logo-spin {

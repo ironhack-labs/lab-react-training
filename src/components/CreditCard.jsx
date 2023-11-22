@@ -11,10 +11,15 @@ const CreditCard = ({
     bgColor,
     color
 }) => {
-    const cardo = {
+    let cardo = {
         backgroundColor: bgColor,
         color: color,
-        padding: '40px'
+        padding: '20px',
+        border: "3px solid black",
+        borderRadius: '8px',
+        width: '450px',
+        margin: "10px",
+        display: "inline-block"
     }
 
     let month = 0
@@ -40,7 +45,7 @@ const CreditCard = ({
 
 
     return (
-        <div className='credi' style={cardo}>
+        <div style={cardo}>
             <p className='poch'>{imagen}</p>
             <span>{number}</span>
             <p>Bank name:{bank}     Type:{type}</p>

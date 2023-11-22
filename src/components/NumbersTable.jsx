@@ -8,14 +8,14 @@ function NumbersTable({ limit }) {
     const red = {
         backgroundColor: "red",
         padding: "20px",
-        border: "1px solid black",
+        border: "2px solid black",
         display: "inline-flex"
     }
 
     const white = {
         backgroundColor: "white",
         padding: "20px",
-        border: "1px solid black",
+        border: "2px solid black",
         display: "inline-flex"
     }
     return (arr.map(e => {

@@ -19,7 +19,12 @@ const BoxColor = ({ r, g, b }) => {
     const puchi = rgbToHex(r, g, b)
 
     return (
-        <div style={colorB}>{r}{g}{b} <p>{puchi}</p></div >
+        <div className="boxi">
+            <div style={colorB}>
+                <p>{r}{g}{b}</p>
+                <p>{puchi}</p>
+            </div >
+        </div >
     )
 }
 
