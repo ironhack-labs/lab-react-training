@@ -1,0 +1,11 @@
+.CredictCard {
+    display: flexbox;
+
+
+}
+
+.CredictCard img {
+    height: 50px;
+    width: 50px;
+
+}
