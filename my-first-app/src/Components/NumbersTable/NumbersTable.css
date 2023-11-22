@@ -1,0 +1,14 @@
+.Red {
+    background-color: red;
+    color: black;
+}
+
+span {
+    padding: 30px;
+    border: 2px solid;
+
+}
+
+.num {
+    margin: 50px;
+}
