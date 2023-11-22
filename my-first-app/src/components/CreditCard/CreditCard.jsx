@@ -10,9 +10,9 @@ const CreditCard = ({
     color
 }) => {
 
-    const cardTypeClass = type === 'Visa' ? 'visa-card' : 'mastercard-card';
+    const cardTypeClass = type === 'Visa' ? 'visa-card' : 'mastercard-card'
 
-    const cardLastDigits = number.slice(-4);
+    const cardLastDigits = number.slice(-4)
 
     return (
         <div className={`credit-card ${cardTypeClass}`} style={{ backgroundColor: bgColor, color, }}>

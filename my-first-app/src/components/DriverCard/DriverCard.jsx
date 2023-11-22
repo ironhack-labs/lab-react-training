@@ -1,9 +1,9 @@
 const DriverCard = ({ name, rating, img, car }) => {
     const { model, licensePlate } = car
 
-    const roundedStars = Math.round(rating);
-    const fullStars = '★'.repeat(roundedStars);
-    const emptyStars = '☆'.repeat(5 - roundedStars);
+    const roundedStars = Math.round(rating)
+    const fullStars = '★'.repeat(roundedStars)
+    const emptyStars = '☆'.repeat(5 - roundedStars)
 
     return (
         <div style={{
