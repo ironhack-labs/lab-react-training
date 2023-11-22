@@ -32,7 +32,7 @@ const CreditCard = (({ type, number, expirationMonth, expirationYear, bank, owne
                     <img src={image} alt={type} />
                 </figure>
             </div>
-            <div class="numero">
+            <div className="numero">
                 <h2>**** **** **** {numero}</h2>
             </div>
             <div className="data">
