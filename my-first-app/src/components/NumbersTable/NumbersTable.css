@@ -1,0 +1,14 @@
+.tableRed {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: solid black;
+    display: inline-block;
+}
+.tableBlack {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: solid black;
+    display: inline-block;
+}
