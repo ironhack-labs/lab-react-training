@@ -1,7 +1,6 @@
-import mastercard from '../assets/mastercard.png'
+import mastercard from '../../assets/mastercard.png'
 
-import visa from '../assets/visa.png'
-
+import visa from '../../assets/visa.png'
 
 
 const Creditcard = ({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color }) => {
@@ -24,7 +23,6 @@ const Creditcard = ({ type, number, expirationMonth, expirationYear, bank, owner
 
 
     }
-
 
 
     return (

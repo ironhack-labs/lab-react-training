@@ -1,4 +1,4 @@
-import Rating from "./Rating"
+import Rating from "../Rating/Rating"
 
 const DriverCard = ({ name, rating, img, car }) => {
 

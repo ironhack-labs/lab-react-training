@@ -1,20 +1,31 @@
-import IdCard from "./components/IdCard"
 
-import Greetings from "./components/Greetings"
+import './App.css'
 
-import Random from "./components/Random"
+import IdCard from "./IdCard/IdCard"
 
+import Greetings from "./Greetings/Greetings"
 
-import BoxColor from "./components/BoxColor"
+import Random from "./Random/Random"
 
+import BoxColor from "./BoxColor/BoxColor"
 
-import Creditcard from "./components/CreditCard"
+import Creditcard from "./CreditCard/CreditCard"
 
+import Rating from "./Rating/Rating"
 
-import Rating from "./components/Rating"
+import DriverCard from "./DriveCard/DriveCard"
 
-import DriverCard from "./components/DriveCard"
+import LikeButton from "./LikeButton/LikeButton"
 
+import ClickablePicture from "./ClickablePicture/ClickablePicture"
+
+import Dice from "./Dice/Dice"
+
+import Carousel from "./Carousel/Carousel"
+
+import NumbersTable from "./NumbersTable/NumbersTable"
+
+import Facebbok from "./Facebook/Facebok"
 
 const App = () => {
 
@@ -113,6 +124,32 @@ const App = () => {
           licensePlate: "BE33ER"
         }}
       />
+
+      <LikeButton />
+      <LikeButton />
+
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+
+      <Dice />
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <NumbersTable limit={12} />
+
+      <Facebbok />
+
+
+
 
 
 
