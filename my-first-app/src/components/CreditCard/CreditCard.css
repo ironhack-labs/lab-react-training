@@ -1,0 +1,22 @@
+.card {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 280px;
+    justify-content: space-between;
+}
+
+.cardLogo {
+    align-self: flex-end;
+}
+
+.cardNumber {
+    align-self: center;
+    font-size: 3em;
+}
+
+.cardValue {
+    align-self: flex-start;
+    text-align: left;
+}

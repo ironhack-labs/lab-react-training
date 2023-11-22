@@ -1,0 +1,17 @@
+.squareRow {
+    margin: 30px;
+}
+
+.squareCell {
+    padding: 5px;
+    color: black;
+
+}
+
+.evenNumber {
+    background-color: red;
+}
+
+.oddNumber {
+    background-color: white;
+}
