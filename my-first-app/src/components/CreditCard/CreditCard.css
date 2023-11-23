@@ -1,0 +1,22 @@
+.CreditCard {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative
+}
+
+.CreditCard img {
+    position: absolute;
+    right: 20px;
+    width: 50px
+}
+
+.CreditCard p {
+    font-size: 14px
+}
