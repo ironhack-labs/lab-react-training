@@ -1,0 +1,18 @@
+.numbers-table {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.numbers-table div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.even {
+    background-color: red;
+}
