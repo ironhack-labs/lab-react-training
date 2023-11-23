@@ -1,0 +1,17 @@
+.IdCard {
+    width: 30%;
+    border: 1px solid;
+    margin: 30px 1%;
+    display: inline-block
+}
+
+
+.IdCard picture {
+    width: 100%
+}
+
+
+.IdCard p {
+    text-align: center;
+
+}
