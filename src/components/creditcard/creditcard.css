@@ -1,0 +1,11 @@
+.CreditCard img {
+    width: 80px;
+}
+
+.CreditCard {
+    width: 500px;
+    height: 250px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
