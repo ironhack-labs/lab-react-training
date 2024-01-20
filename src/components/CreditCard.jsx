@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import imgVisa from '../assets/images/visa.png'
+import imgMastercard from '../assets/images/master-card.svg'
 
 function CreditCard(props) {
     const { type, number, expirationMonth, expirationYear, 
@@ -20,7 +22,7 @@ function CreditCard(props) {
         <div style={cardAppearance}>
             <div>
                 <img 
-                    src={type === 'Visa' ? 'visa-logo.png' : 'mastercard-logo.png'}
+                    src={type === 'Visa' ? imgVisa : imgMastercard }
                     alt={type}
                     style={imgStyle}
                 />
