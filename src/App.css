@@ -36,3 +36,119 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.idCard {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.dataCard {
+  text-align: left;
+}
+
+.dataCard p {
+  margin: 5px 0;
+}
+
+
+.languages {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.languages p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between; 
+  margin: 0 -10px;
+}
+
+.CreditCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin: 0 10px;
+}
+
+
+.CreditCard img {
+  max-width: 20%; 
+  max-height: 20%;
+}
+
+.CreditCard img {
+  max-width: 10%;
+  align-self: flex-end; 
+}
+
+
+.Rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem; 
+}
+
+
+.driver {
+  display: flex;
+  background-color: #87CEEB; 
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px; 
+}
+
+.driver-img img {
+  max-width: 20%;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.driver-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 1.2rem; 
+  font-weight: bold; 
+}
+
+.rate {
+  font-size: 1.5rem; 
+}
+
+.car-info {
+  font-size: 1rem; 
+}
