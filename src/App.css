@@ -199,3 +199,16 @@ h2 {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+.facebook-page {
+  margin: 50px 10px;
+}
+
+.country-sort-button-container {
+  margin-left: 10px;
+}
+
+.country-sort-button {
+  padding: 5px 10px;
+  margin: 5px;
+}
