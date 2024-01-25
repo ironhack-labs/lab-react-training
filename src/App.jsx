@@ -6,7 +6,17 @@ import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
 import Rating from "./components/Rating";
 import DriverCard from "./components/DriverCard";
-import DataJson from "./data/berlin.json";
+import FaceBook from "./components/FaceBook";
+import LikeButton from "./components/LikeButton";
+import ClickablePicture from "./components/ClickablePicture";
+import Dice from "./components/Dice";
+import Carousel from "./components/Carousel";
+import NumbersTable from "./components/NumbersTable";
+import SignupPage from "./components/SignupPage";
+import RGBColorPicker from "./components/RGBColorPicker";
+import SingleColorPicker from "./components/SingleColorPicker";
+
+
 
 function App() {
   return (
@@ -95,7 +105,7 @@ function App() {
       <Rating>5</Rating>
 
 
-
+      <h3>Drivers</h3>
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -116,9 +126,45 @@ function App() {
         }}
       />
 
+      <h2>Likes</h2>
+      <LikeButton />
 
 
+      <div>
+        <h3>The Big Boss </h3>
+        <ClickablePicture
+          img="src/assets/images/3f4adbdd66b1e55348c7f0e3977828e4_768_1024.webp"
+          imgClicked="src/assets/images/glasses.png"
+        />
+      </div>
 
+
+      <Dice />
+
+      <h2>Carousel</h2>
+      <div className="app-container">
+        <Carousel />
+      </div>
+
+
+      <h2>Numbers Table</h2>
+      <NumbersTable limit={12} />
+
+      <h2>FaceBook</h2>
+      <div>
+        <FaceBook />
+      </div>
+
+      <h2>Signup</h2>
+      <div className="container-signup">
+        <SignupPage />
+      </div>
+
+
+      <h2>Color Picker</h2>
+      <div className="app-container">
+        <RGBColorPicker />
+      </div>
 
     </div>
   );
