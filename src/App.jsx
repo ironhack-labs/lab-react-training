@@ -13,6 +13,9 @@ import secondCat from "./assets/images/cat2.jpg";
 import Dice from "./components/Dice";
 import Carousel from "./components/Carousel";
 import NumbersTable from "./components/NumbersTable";
+import FaceBook from "./components/FaceBook";
+import SignupPage from "./components/SignupPage";
+import RGBColorPicker from "./components/RGBColorPicker";
 
 function App() {
   return (
@@ -140,8 +143,11 @@ function App() {
       <FaceBook />
 
       <h1>Signup Page</h1>
+      <SignupPage />
 
       <h1>RGB Color Picker</h1>
+      <RGBColorPicker />
+
     </div>
   );
 }
