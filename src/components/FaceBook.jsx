@@ -16,11 +16,12 @@ function FaceBook() {
   return (
     <div>
         <div>
-        <button onClick={handleAll}>All</button>
+        <button onClick={handleAll} style={{ backgroundColor: selectedCountry === null ? "LightSkyBlue" : "white" }}>All</button>
             {uniqueCountries.map((country, index) => (
                 <button
                 key={index}
                 onClick={(() => handleCountry(country))}
+                style={{ backgroundColor: country === selectedCountry ? "LightSkyBlue" : "white" }}
                 >
                 {country}
                 </button>
