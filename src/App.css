@@ -1,18 +1,15 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,11 +20,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +30,288 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.idCard {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.dataCard {
+  text-align: left;
+}
+
+.dataCard p {
+  margin: 5px 0;
+}
+
+.languages {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.languages p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.CreditCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.CreditCard img {
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.CreditCard img {
+  max-width: 10%;
+  align-self: flex-end;
+}
+
+.Rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.driver {
+  display: flex;
+  background-color: #87ceeb;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.driver-img img {
+  max-width: 20%;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.driver-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.rate {
+  font-size: 1.5rem;
+}
+
+.car-info {
+  font-size: 1rem;
+}
+
+.like-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.like-button:hover {
+  background-color: lightgray;
+}
+
+.carousel-container {
+  position: relative;
+  text-align: center;
+}
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: #45a049;
+}
+
+.numbers-table {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  margin: 5px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.even {
+  background-color: red;
+  color: white;
+}
+
+.facebook-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.country-buttons button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.country-buttons button.active {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+  background-color: #fff;
+}
+
+.profile-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.profile-card.selected {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.selected-profile {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+}
+
+.container-signup {
+  margin: auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.rgb-color-picker-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.rgb-color-box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  margin-right: 20px;
+}
+
+.single-color-picker {
+  margin: 0 10px;
 }
