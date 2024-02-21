@@ -36,3 +36,93 @@
     transform: rotate(360deg);
   }
 }
+
+.idCard{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  column-gap: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+.idCard-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.text-box{
+  font-size: 25px;
+  text-align: left;
+  border: 1px solid black;
+  margin: 20px ;
+  padding: 5px;
+}
+
+.credit-card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 300px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.credit-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 40px 0px;
+}
+
+.upper-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 10px;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.down-info{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 5px;
+  font-size: 15px;
+}
+
+.expiration-info{
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  column-gap: 10px;
+}
+
+.rating{
+  margin: 40px;
+  font-size: 35px;
+}
+
+.driver-card{
+  background-color: blue;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  color: white;
+  line-height: 10px;
+  height: 150px;
+}
+
+.driver-card img{
+  width: 125px;
+  border-radius: 80px;
+}
