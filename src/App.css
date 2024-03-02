@@ -54,3 +54,11 @@
   width: 200px;
  }
 
+ .greetings-container {
+  width: 100vw;
+  padding: 15px 10px;
+  border: #282c34 solid 1px;
+  text-align: left;
+  margin-top: 10px;
+ }
+

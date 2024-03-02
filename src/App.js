@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
 
 function App() {
   return (
@@ -23,6 +24,13 @@ function App() {
         img="https://randomuser.me/api/portraits/women/44.jpg"
         birthDate="1988-05-11"
       />
+
+      <Greetings lang='fr'>
+        Idir
+      </Greetings>
+      <Greetings lang='de'>
+        Arnold
+      </Greetings>
     </div>
   );
 }
