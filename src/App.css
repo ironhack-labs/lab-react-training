@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 10px;
 }
 
 .App-logo {
@@ -36,3 +37,20 @@
     transform: rotate(360deg);
   }
 }
+ .idCard-container {
+  width: 100vw;
+  display: flex;
+  padding: 15px 10px;
+  border: #282c34 solid 1px;
+  gap: 5px;
+ }
+
+ .idCard-text {
+  width: 150px;
+  text-align: left;
+ }
+
+ .idCard-container img {
+  width: 200px;
+ }
+
