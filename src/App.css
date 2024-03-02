@@ -74,3 +74,27 @@
   border: #282c34 solid 2px;
  }
 
+.credit-cards-container {
+  display: flex;
+  margin-top: 10px;
+  gap: 15px;
+}
+ .card-container {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 10px 5px;
+ }
+
+ .img-container {
+  text-align: right;
+ }
+
+ .img-container img {
+  width: 56.74px;
+  height: 20px;
+ }
+
+ .card-number {
+  font-size: 20px;
+ }
