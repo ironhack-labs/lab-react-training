@@ -277,3 +277,40 @@
   font-size: 1.5em;
   margin: 30px 40px;
 }
+
+.square{
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+.single-color form div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  margin: 20px 0px;
+}
+
+.single-color input{
+  width: 50px;
+  height: 25px;
+  font-size: 18px;
+}
+
+.rgb-square div{
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  display: flex;
+  margin-right: 15px;
+}
+
+.rgb-square{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
