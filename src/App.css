@@ -190,3 +190,31 @@
   justify-content: center;
   font-size: 25px;
 }
+
+.facebook-profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70vw;
+  margin: 50px 100px;
+  border: 2px solid black;
+  padding: 20px;
+  column-gap: 50px;
+}
+
+.facebook-profile img{
+  width: 150px;
+}
+
+.facebook-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+  font-size: 18px;
+}
+
+.background-blue{
+  background-color: lightblue;
+}

@@ -13,6 +13,7 @@ import glasses from './assets/images/glasses.png'
 import Dice from "./components/Dice";
 import Carousel from "./components/Carousel";
 import NumbersTable from "./components/NumbersTable";
+import Facebook from "./components/Facebook";
 
 function App() {
   return (
@@ -160,6 +161,10 @@ function App() {
       <h1>Number Boxes</h1>
       <NumbersTable limit={12}/>
 
+      <br/>
+      <br/>
+      <h1>Facebook</h1>
+      <Facebook />
     </div>
   );
 }
