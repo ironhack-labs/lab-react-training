@@ -62,3 +62,15 @@
   margin-top: 10px;
  }
 
+ .boxcolor-container {
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border: #282c34 solid 2px;
+ }
+
