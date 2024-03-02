@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    gap : 10px;
+    border : 2px solid  black ;
+    margin: 20px;
+}
+.photo {
+    width : 150px;
+    height :150px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.id p {
+    margin: 0;
+}
+h1 {
+    border: 2px solid black;
+    padding: 5px;
+    font-weight: lighter;
+}
+.box {
+    width: 300px;
+    height: 100px;
+    background-color: black;
+}
