@@ -36,13 +36,13 @@ export default function Facebook() {
   })}
 
   return (
-    <div>
-        <button onClick={() => changeBackground(countries.all)}>All</button>
-        <button onClick={() => changeBackground(countries.england)}>England</button>
-        <button onClick={() => changeBackground(countries.usa)}>Usa</button>
-        <button onClick={() => changeBackground(countries.malaysia)}>Malaysia</button>
-        <button onClick={() => changeBackground(countries.germany)}>Germany</button>
-        <button onClick={() => changeBackground(countries.italy)}>Italy</button> 
+    <div className="facebook">
+        <button className="button" onClick={() => changeBackground(countries.all)}>All</button>
+        <button className="button" onClick={() => changeBackground(countries.england)}>England</button>
+        <button className="button" onClick={() => changeBackground(countries.usa)}>Usa</button>
+        <button className="button" onClick={() => changeBackground(countries.malaysia)}>Malaysia</button>
+        <button className="button" onClick={() => changeBackground(countries.germany)}>Germany</button>
+        <button className="button" onClick={() => changeBackground(countries.italy)}>Italy</button> 
         
         {displayProfiles()}
     </div>
