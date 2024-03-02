@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.id-card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color:white;
+  color:#282c34;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  border: magenta;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.id-card > img{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+}
+
+/*
+
+ <div className="id-card">
+      <img src={img} className="id-card-img" alt="id-card-img" />
+      <div className="info">
+        First Name : {firstName} <br/>
+        Last Name : {lastName} <br/>
+        Country : {country} <br/>
+        Are they a student : {isStudent ? "Yes" : "No"} <br/>
+      </div>
+    </div>
+*/
