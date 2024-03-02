@@ -6,7 +6,7 @@ export default function BoxColor({r, g, b}) {
  const divStyle = {
     backgroundColor: `rgb(${r}, ${g}, ${b})`,
     textAlign: "center"
- }
+  }
 
 
   return (

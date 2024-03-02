@@ -2,7 +2,6 @@ import React from 'react'
 // {lastName, firstName, gender, height, birth, picture}
 // eslint-disable-next-line react/prop-types
 export default function IdCard({lastName, firstName, gender, height, birth, picture}) {
-
   return (
     <div className="idCard">
         <div className="idCard-img">

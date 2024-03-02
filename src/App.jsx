@@ -6,6 +6,13 @@ import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
 import Rating from "./components/Rating";
 import DriverCard from "./components/DriverCard";
+import LikeButton from "./components/LikeButton";
+import ClickablePicture from "./components/ClickablePicture";
+import albertImg from './assets/images/alberto.png'
+import glasses from './assets/images/glasses.png'
+import Dice from "./components/Dice";
+import Carousel from "./components/Carousel";
+import NumbersTable from "./components/NumbersTable";
 
 function App() {
   return (
@@ -17,7 +24,7 @@ function App() {
         firstName={'John'}
         gender={'male'}
         height={178}
-        birth={`${new Date("1992-07-14")}`}
+        birth={"1992-07-14"}
         picture={"https://randomuser.me/api/portraits/men/44.jpg"}
       />
 
@@ -26,7 +33,7 @@ function App() {
         firstName={'Obrien'}
         gender={'female'}
         height={172}
-        birth={`${new Date("1988-05-11")}`}
+        birth={"1988-05-11"}
         picture={"https://randomuser.me/api/portraits/women/44.jpg"}
       />
 
@@ -118,6 +125,41 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      <br/>
+      <br/>
+      <h1>Like Button</h1>
+      <LikeButton />
+
+      <br/>
+      <br/>
+      <h1>Clickable Picture</h1>
+      <ClickablePicture
+        img={albertImg}
+        imgClicked={glasses}
+      />
+
+      <br/>
+      <br/> 
+      <h1>Dice</h1>
+      <Dice />
+
+      <br/>
+      <br/>
+      <h1>Carousel</h1>
+      <Carousel
+        images={[
+          "https://randomuser.me/api/portraits/women/1.jpg",
+          "https://randomuser.me/api/portraits/men/1.jpg",
+          "https://randomuser.me/api/portraits/women/2.jpg",
+          "https://randomuser.me/api/portraits/men/2.jpg"
+        ]}
+      />
+
+      <br/>
+      <br/>
+      <h1>Number Boxes</h1>
+      <NumbersTable limit={12}/>
+
     </div>
   );
 }
