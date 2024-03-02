@@ -39,9 +39,9 @@ To see the expected result for each iteration, refer to the solution example: [*
 - Clone this repo
 
 ```shell
-$ cd lab-react-training
-$ npm install
-$ npm start
+cd lab-react-training-vite
+npm install
+npm run dev
 ```
 
 ## Submission
@@ -54,7 +54,7 @@ $ npm start
   git push origin master
   ```
 
-- Create a Pull Request so that your TAs can review your work.
+- Create a Pull Request and submit your assignment.
 
   
 
@@ -109,7 +109,7 @@ Create and render an `IdCard` component with 6 props:
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52976030-22b0d200-33c8-11e9-91fe-e3ce0fa14078.png)
+![IdCard component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/01-idcard.png)
 
 
 
@@ -135,7 +135,7 @@ The component should display a greeting text in the chosen language.
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52957158-57edfd80-3391-11e9-8726-93c1a3389016.png)
+![Greetings component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/02-greetings.png)
 
 
 
@@ -161,7 +161,7 @@ The component should display a random integer in the range between the `min` and
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52957202-718f4500-3391-11e9-9b45-d1172067e877.png)
+![Random component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/03-random.png)
 
 
 
@@ -188,7 +188,7 @@ The component should take 3 props:
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52957816-ec0c9480-3392-11e9-9e00-67094fa2b431.png)
+![image](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/04-boxcolor.png)
 
 As a bonus, you can also display the hex values of the color (e.g., `#ff0000` for red).
 
@@ -254,7 +254,7 @@ Take your time to make the component look as close to the *expected output* as p
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52975678-ac5fa000-33c6-11e9-8cbf-7d13a8a0f625.png)
+![CreditCard component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/05-creditcard.png)
 
 
 
@@ -283,7 +283,7 @@ The component should take 1 prop:
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52972787-39512c00-33bc-11e9-93d8-428d835442fd.png)
+![Rating component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/06-rating.png)
 
 
 
@@ -328,7 +328,7 @@ The component should take 4 props:
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52972847-66054380-33bc-11e9-92e0-8e48d1ab0212.png)
+![DriverCard component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/07-driver-card.png)
 
 
 
@@ -340,7 +340,7 @@ The component should take 4 props:
 
 Create a `LikeButton` component that displays a button with the initial text `"0 Likes"`. With each click, the number of Likes should increase.
 
-As a bonus, implement the background color change on each click. You can use the following array of colors: `['purple','blue','green','yellow','orange','red']`
+As a bonus, implement the background color change on each click. You can use the following array of colors: `["purple", "blue", "green", "yellow", "orange", "red"]`
 
 **Example:**
 
@@ -350,7 +350,7 @@ As a bonus, implement the background color change on each click. You can use the
 
 **Expected Output:**
 
-![](https://media.giphy.com/media/OQJkfIEkYTUdYkgNP7/giphy.gif)
+![LikeButton component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/08-like-button.gif)
 
 
 
@@ -366,16 +366,16 @@ Create a `ClickablePicture` component that displays a picture. On each click, th
 
 ```jsx
 <ClickablePicture
-  img='maxence.png'
-  imgClicked='maxence-glasses.png'
+  img="maxence.png"
+  imgClicked="maxence-glasses.png"
 />
 ```
 
 **Expected Output:**
 
-![](https://media.giphy.com/media/9FXwCr2LLLIlgNL2sL/giphy.gif)
+![ClickablePicture component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/09-clickable-pic.gif)
 
-PS: If you want to use your picture instead, you can create it using this picture: http://www.stickpng.com/assets/images/584999937b7d4d76317f5ffd.png 😎
+PS: If you want to use your picture instead, you can create it using this picture: [/assets/images/glasses.png](https://raw.githubusercontent.com/ironhack-labs/lab-react-training-vite/master/src/assets/images/glasses.png) 😎
 
 
 
@@ -400,15 +400,15 @@ Every time the user clicks on the component, it should:
 
 **Expected Output before the click:**
 
-![image](https://user-images.githubusercontent.com/5306791/52976705-c13e3280-33ca-11e9-8684-f4dbff643b79.png)
+![Dice component state 1](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/10-dice-01.png)
 
 **Expected Output immediately after the click:**
 
-![image](https://user-images.githubusercontent.com/5306791/52976790-25f98d00-33cb-11e9-864e-ec14b4ec2a31.png)
+![Dice component state 2](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/10-dice-02.png)
 
 **Expected Output 1 second after the click:**
 
-![image](https://user-images.githubusercontent.com/5306791/52976752-f64a8500-33ca-11e9-98ee-b0b17f5e85b2.png)
+![Dice component state 3](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/10-dice-03.png)
 
 
 
@@ -429,17 +429,17 @@ The component should take 1 prop:
 ```jsx
 <Carousel
   images={[
-    'https://randomuser.me/api/portraits/women/1.jpg',
-    'https://randomuser.me/api/portraits/men/1.jpg',
-    'https://randomuser.me/api/portraits/women/2.jpg',
-    'https://randomuser.me/api/portraits/men/2.jpg'
+    "https://randomuser.me/api/portraits/women/1.jpg",
+    "https://randomuser.me/api/portraits/men/1.jpg",
+    "https://randomuser.me/api/portraits/women/2.jpg",
+    "https://randomuser.me/api/portraits/men/2.jpg"
   ]}
 />
 ```
 
 **Expected Output:**
 
-![](https://media.giphy.com/media/1n7cAJu0MWerLnnohR/giphy.gif)
+![Carousel component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/11-carousel.gif)
 
 
 
@@ -463,7 +463,7 @@ The component should take 1 prop:
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/53028410-13349600-3467-11e9-8199-407375e61ab0.png)
+![NumbersTable component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/12-numbers-table.png)
 
 
 
@@ -476,7 +476,7 @@ The component should take 1 prop:
 Create a `FaceBook` component that displays the list of all profiles coming from the file `src/data/berlin.json`. Remember to import the json data in the component:
 
 ```jsx
-import profiles from './data/berlin.json';
+import profiles from "./data/berlin.json";
 ```
 
 **Example:**
@@ -487,7 +487,7 @@ import profiles from './data/berlin.json';
 
 **Expected Output:** (you should see about 28 profiles)
 
-![image](https://user-images.githubusercontent.com/5306791/53018529-e8d8dd80-3452-11e9-9912-1221eef67be6.png)
+![FaceBook component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/13-facebook.png)
 
 
 
@@ -507,7 +507,7 @@ Update your `FaceBook` component and add a button for each country the students 
 
 **Expected Output:** (note: part of the content in the screenshot was cropped)
 
-![image](https://user-images.githubusercontent.com/5306791/53018961-f8a4f180-3453-11e9-9c82-1f57a2f66a30.png)
+![FaceBook component advanced](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/14-facebook-adv.png)
 
 **Bonus:**
 
@@ -549,10 +549,10 @@ If you want to include Bootstrap with [Reactstrap](https://reactstrap.github.io)
 npm install reactstrap bootstrap
 ```
 
-And add the following line in `src/index.js`
+And add the following line in `src/main.jsx`
 
 ```js
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 ```
 
 **Example**
@@ -563,7 +563,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 **Output**
 
-![image](https://user-images.githubusercontent.com/5306791/53089348-9c51d880-350c-11e9-9621-cad9d87bdd48.png)
+![SignupPage component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/15-signup-page.png)
 
 
 
@@ -624,7 +624,7 @@ The `RGBColorPicker` should render 3 `SingleColorPicker` components and send the
 
 **Expected Output**
 
-![image](https://user-images.githubusercontent.com/5306791/53166207-f918c600-35d4-11e9-8c47-c58cdc2d05b0.png)
+![RGBColorPicker component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/16-rgb-color-picker.png)
 
 
 

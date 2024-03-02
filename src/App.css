@@ -36,3 +36,281 @@
     transform: rotate(360deg);
   }
 }
+
+.idCard{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  column-gap: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+.idCard-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.text-box{
+  font-size: 25px;
+  text-align: left;
+  border: 1px solid black;
+  margin: 20px ;
+  padding: 5px;
+}
+
+.credit-card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 300px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.credit-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 40px 0px;
+}
+
+.upper-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 10px;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.down-info{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 5px;
+  font-size: 15px;
+}
+
+.expiration-info{
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  column-gap: 10px;
+}
+
+.rating{
+  margin: 40px;
+  font-size: 35px;
+}
+
+.driver-card{
+  background-color: blue;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  color: white;
+  line-height: 10px;
+  height: 150px;
+}
+
+.driver-card img{
+  width: 125px;
+  border-radius: 80px;
+}
+
+.button button{
+  margin: 20px;
+  padding: 15px;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.glasses{
+  width: 200px;
+  position: relative;
+  bottom: 420px;
+  right: 20px;
+}
+
+.alberto-pic{
+  margin: 75px;
+  border: 20px solid black;
+  border-radius: 20px;
+}
+
+.images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dice img{
+  width: 200px;
+  margin: 20px 75px;
+}
+
+.carousel button{
+  background-color: lightblue;
+  border: 1px solid lightblue;
+  border-radius: 20px;
+  margin: 10px 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.carousel img{
+  width: 200px;
+}
+
+.numbers-table{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 40px 200px;
+}
+
+.numbers-table div{
+  border: 2px solid black;
+  padding: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.facebook-profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70vw;
+  margin: 50px 100px;
+  border: 2px solid black;
+  padding: 20px;
+  column-gap: 50px;
+}
+
+.facebook-profile img{
+  width: 150px;
+}
+
+.facebook-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+  font-size: 18px;
+}
+
+.background-blue{
+  background-color: lightblue;
+}
+
+.facebook button{
+  margin: 20px 15px;
+}
+
+.sign-up-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 900;
+  row-gap: 35px;
+  margin: 20px;
+}
+
+.sign-up-form div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+}
+
+.sign-up-form input{
+  width: 400px;
+  height: 25px;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.sign-up-form select {
+  width: 100px;
+  height: 25px;
+  font-size: 17px;
+}
+
+.button {
+  padding: 15px;
+  font-size: 18px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 20px;
+}
+
+.red-border{
+  border: 2px solid red;
+}
+
+.weak-pass-text{
+  font-size: 13px;
+  color: red
+}
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 1.5em;
+  margin: 30px 40px;
+}
+
+.square{
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+.single-color form div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  margin: 20px 0px;
+}
+
+.single-color input{
+  width: 50px;
+  height: 25px;
+  font-size: 18px;
+}
+
+.rgb-square div{
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  display: flex;
+  margin-right: 15px;
+}
+
+.rgb-square{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
