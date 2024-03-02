@@ -16,7 +16,3 @@ function IdCard(props) {
 }
 
 export default IdCard;
-
-/*
-{"firstName": "Aaron", "lastName": "Newell", "country": "England", "img": "https://i.imgur.com/CFgX3Xx.png", "isStudent": false},
-*/
