@@ -55,6 +55,7 @@ code {
   width: 300px;
   border-radius: 10px;
   display: inline-block;
+  text-align: left;
 }
 
 .CreditCard .type {
