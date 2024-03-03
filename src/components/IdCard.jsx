@@ -3,13 +3,13 @@ import React from 'react';
 function IdCard(props) {
   const { lastName, firstName, country, img, isStudent } = props.id;
   return (
-    <div className="id-card">
-      <img src={img} className="id-card-img" alt="id-card-img" />
+    <div className="IdCard">
+      <img src={img} alt="id-card-img" />
       <div className="info">
-        First Name: {firstName} <br/>
-        Last Name: {lastName} <br/>
-        Country: {country} <br/>
-        Are they a student: {isStudent ? "Yes" : "No"} <br/>
+        <b>First Name: </b>{firstName} <br/>
+        <b>Last Name: </b>{lastName} <br/>
+        <b>Country: </b>{country} <br/>
+        <b>Are they a student: </b>{isStudent ? "Yes" : "No"} <br/>
       </div>
     </div>
   );

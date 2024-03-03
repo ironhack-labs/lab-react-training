@@ -1,49 +1,154 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  /* margin: 0; */
+  /* padding: 0; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.box {
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 1.7rem;
+  text-align: left;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.id-card{
+
+.IdCard {
+  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color:white;
-  color:#282c34;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.IdCard img {
+  margin-right: 5px;
+}
+
+.info{
+  display: block;
+  text-align: start;
+  font-size: 1.5rem;
+}
+
+.BoxColour {
   text-align: center;
-  font-size: calc(10px + 2vmin);
-  border: magenta;
-  border-style: solid;
+  padding: 20px;
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 1.7rem;
+}
+
+.CreditCard {
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
   border-radius: 10px;
+  display: inline-block;
 }
 
-.id-card > img{
+.CreditCard .type {
+  text-align: right;
+}
+
+.CreditCard .type img {
+  height: 20px;
+}
+
+.CreditCard .number {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.CreditCard .bank {
+  margin-left: 20px;
+}
+
+.Rating {
+  font-size: 2rem;
+}
+
+.DriverCard {
+  background-color: #425cbb;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+  display: -webkit-flex;
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 200px;
-  height: 200px;
-  align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 10px;
 }
 
-/*
+.DriverCard > * {
+  margin: 5px;
+}
 
- <div className="id-card">
-      <img src={img} className="id-card-img" alt="id-card-img" />
-      <div className="info">
-        First Name : {firstName} <br/>
-        Last Name : {lastName} <br/>
-        Country : {country} <br/>
-        Are they a student : {isStudent ? "Yes" : "No"} <br/>
-      </div>
-    </div>
-*/
+.DriverCard img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.DriverCard .right > * {
+  margin: 0;
+}
+
+.Dice {
+  height: 100px;
+  width: 100px;
+}
+
+.ClickablePicture {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.Dice {
+  cursor: pointer;
+}
+
+h1 {
+  display: block;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.NumbersTable {
+  display: -webkit-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.NumbersTable li {
+  margin: 0;
+  list-style-type: none;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}

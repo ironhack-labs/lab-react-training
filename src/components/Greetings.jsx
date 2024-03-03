@@ -24,10 +24,8 @@ function Greetings(props) {
   }
 
   return (
-    <div>
-      <h1>
+    <div className='box'>
         {message} {name}
-      </h1>
     </div>
   );
 }
