@@ -4,6 +4,7 @@ import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
+import './index.css';
 
 function App() {
   return (
@@ -34,12 +35,11 @@ picture="https://randomuser.me/api/portraits/men/44.jpg" />
 <Random min={1} max={6}/>
 <Random min={1} max={100}/>
 </div>
-<div>
-<BoxColor r={255} g={0} b={0} />
-<BoxColor r={128} g={255} b={0} />
+<div className="Box-color"/>
+<div className="Box-color1"> <BoxColor r= {255} g = {0} b= {0} /> </div><br></br>
+<div className="Box-color2"> <BoxColor r= {128} g = {255} b= {0} /> </div>
 </div>
 
-</div>
     
   );
 }

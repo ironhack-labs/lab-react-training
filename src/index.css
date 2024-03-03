@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Box-color,.Box-color1,.Box-color2 {
+  border-style:groove;
+  border-width: 1px;
+  border-color:black;
+  box-sizing: border-box;
+  width:400px;
+}
+.Box-color1{
+  background-color: rgb(255, 0, 0);
+}
+.Box-color2{
+  background-color:rgb(128,255,0);
+}
