@@ -37,6 +37,10 @@
     transform: rotate(360deg);
   }
 }
+
+h2 {
+  text-align: left;
+}
  .idCard-container {
   width: 100vw;
   display: flex;
@@ -98,3 +102,42 @@
  .card-number {
   font-size: 20px;
  }
+
+
+.container-driverCard {
+  margin-top: 10px;
+  background-color: #425cbb;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 15px;
+  color: white;
+}
+
+.container-driverCard-content {
+  display: flex;
+  text-align: left;
+  gap: 10px;
+}
+
+.container-driverCard-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.container-driverCard-text .title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.container-driverCard-stars {
+  font-size: 32px;
+}
+
+.container-driverCard-text .label {
+  font-size: 16px;
+  margin: 0;
+}
+
