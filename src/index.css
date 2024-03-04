@@ -13,10 +13,12 @@ code {
 }
 .Box-color,.Box-color1,.Box-color2 {
   border-style:groove;
-  border-width: 1px;
+  border-width: 0px;
   border-color:black;
   box-sizing: border-box;
   width:400px;
+  text-align: center;
+  padding: 0px;
 }
 .Box-color1{
   background-color: rgb(255, 0, 0);
@@ -24,6 +26,6 @@ code {
 .Box-color2{
   background-color:rgb(128,255,0);
 }
-CreditCard{
+Credit-card{
   width : 200px;
 }

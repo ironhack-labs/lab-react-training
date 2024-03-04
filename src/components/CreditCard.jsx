@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import  { Component } from 'react';
 
 // Definition of the component CreditCard
 class CreditCard extends Component {
