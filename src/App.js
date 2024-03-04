@@ -7,6 +7,7 @@ import BoxColor from './components/BoxColor';
 import './index.css';
 import CreditCard from './components/CreditCard';
 
+
 function App() {
   return (
     <div className="lists">
@@ -40,38 +41,40 @@ picture="https://randomuser.me/api/portraits/men/44.jpg" />
 <div className="Box-color1"> <BoxColor r= {255} g = {0} b= {0} /> </div><br></br>
 <div className="Box-color2"> <BoxColor r= {128} g = {255} b= {0} /> </div>
 <div>
-<CreditCard
-  type='Visa'
-  number='0123456789018845'
-  expirationMonth={3}
-  expirationYear={2021}
-  bank='BNP'
-  owner="Maxence Bouret"
-  bgColor='#11aa99'
-  color='white' 
-/>
-    
-<CreditCard
-  type="Master Card"
-  number="0123456789010995"
-  expirationMonth={3}
-  expirationYear={2021}
-  bank="N26"
-  owner="Maxence Bouret"
-  bgColor="#eeeeee"
-  color="#222222"
-/>
-    
-<CreditCard
-  type="Visa"
-  number="0123456789016984"
-  expirationMonth={12}
-  expirationYear={2019}
-  bank="Name of the Bank"
-  owner="Firstname Lastname"
-  bgColor="#ddbb55"
-  color="white" 
-/>
+<h1>CreditCard</h1>
+
+        <CreditCard 
+          type="Visa"
+          number="0123456789018845"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="BNP"
+          owner="Maxence Bouret"
+          bgColor="#11aa99"
+          color="white"
+          
+           /><br></br>
+        <CreditCard 
+          type="Master Card"
+          number="0123456789010995"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="N26"
+          owner="Maxence Bouret"
+          bgColor="#eeeeee"
+          color="#222222" 
+          
+          /><br></br>
+        <CreditCard 
+          type="Visa"
+          number="0123456789016984"
+          expirationMonth={12}
+          expirationYear={2019}
+          bank="Name of the Bank"
+          owner="Firstname Lastname"
+          bgColor="#ddbb55"
+          color="white"
+           />
 </div>
 </div>
 

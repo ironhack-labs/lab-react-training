@@ -3,8 +3,6 @@ function IdCard(props){
     return(
         <div className="list">
             
-                
-                   
                     <div>
                     <p> First name: {props.firstName}</p>
                     <p>lastName:{props.lastName}</p>
