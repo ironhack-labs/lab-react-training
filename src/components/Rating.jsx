@@ -28,7 +28,7 @@ function Rating(props) {
       break;
   }
 
-  return <div className='box'>{stars}</div>;
+  return <div className='Rating'>{stars}</div>;
 }
 
 export default Rating;
