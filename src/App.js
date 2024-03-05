@@ -6,6 +6,7 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import DriverCard from './components/DriverCard';
+import Rating from './components/Rating';
 
 function App() {
   return (
@@ -74,6 +75,13 @@ function App() {
           color="white"
         />
       </div>
+      <h2>Ratings</h2>
+      <Rating>0</Rating>
+      <Rating>1</Rating>
+      <Rating>2</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
       <h2>DriverCard</h2>
       <DriverCard
         img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"

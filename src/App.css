@@ -103,6 +103,15 @@ h2 {
   font-size: 20px;
  }
 
+ .ratings {
+  text-align: left;
+  font-size: 30px;
+ }
+
+ .ratings p {
+  margin: 2px;
+ }
+
 
 .container-driverCard {
   margin-top: 10px;

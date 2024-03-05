@@ -8,7 +8,7 @@ function DriverCard({img, name, rating, car}) {
             return "☆☆☆☆☆"
         }
         else if (rating === 1) {
-            return "★☆☆☆"
+            return "★☆☆☆☆"
         }
         else if (rating === 2) {
             return "★★☆☆☆"
