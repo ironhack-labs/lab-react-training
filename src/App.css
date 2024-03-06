@@ -32,7 +32,63 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+.photo {
+  width: 200px;
+  height: 190px;
+  padding: 7px;
+
+
+
+}
+.conteiner span{
+  font-weight: bold;
+}
+.conteiner {
+  gap: 20px;
+border: 2px solid #000;
+display: flex;
+}
+
+.credit-card{
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 15px;
+  width: 100%;
+}
+.card-wrapper{
+  display: flex;
+  gap: 30px;
+
+}
+.credit-card-type {
+
+  text-align: right;
+
+}
+.credit-card-number {
+  text-align: center;
+  font-size: 30px;
+}
+.driver-card {
+  background-color: blue;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  color: white;
+  line-height: 10px;
+  height: 150px;
+}
+
+.driver-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 80px;
 }
