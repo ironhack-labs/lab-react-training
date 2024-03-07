@@ -1,19 +1,21 @@
-function DriverCard (props) {
-    const imgstyle = {borderRadius: "50%"}
-    const divstyle = {display: "flex", justifyContent: "space-evenly", backgroundColor: "blue"}
+import React, { Component } from 'react';
+import Rating from './Rating';
+
+// Definition of the component DriverCard
+class DriverCard extends Component {
+  render() {
     return (
-        <div style={divstyle}>
-            <div >
-                <img src= {props.img} height={100} width = {100} style={imgstyle} alt="" />
-            </div>
-                <p>{props.name}</p>
-                <p>{props.car.model}</p>
-
-            <div>
-
-            </div>
+      <div className="DriverCard">
+        <img className="left" src={this.props.img}  alt='img-name'/>
+        <div className="right">
+          <h2>{this.props.name}</h2>
+          <Rating>{this.props.rating}</Rating>
+          <p>{this.props.car.model} - {this.props.car.licensePlate}</p>
         </div>
-    )
+      </div>
+    );
+  }
 }
 
 export default DriverCard;
+

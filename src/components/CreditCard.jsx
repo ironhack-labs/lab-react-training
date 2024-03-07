@@ -1,7 +1,7 @@
-import  { Component } from 'react';
+import React from 'react';
 
 // Definition of the component CreditCard
-class CreditCard extends Component {
+/*class CreditCard extends Component {
   render() {
     return (
       <div className="CreditCard" style={{
@@ -22,5 +22,21 @@ class CreditCard extends Component {
     );
   }
 }   
+
+export default CreditCard;*/
+const CreditCard =({ type, number, expirationMonth, expirationYear, bank, owner, bgColor, color}) => {
+
+
+  return (
+    <div className="card-credit" style={{ backgroundColor: `${bgColor}`, color: `${color}`}}>
+    <div>
+      <h3 className="logo-card">{type}</h3>
+      <p>●●●● ●●●● ●●●● {number.slice(-4, 16)}</p>
+      <p>Expires: {expirationMonth}/{expirationYear} {bank}</p>
+      <p>{owner}</p>
+    </div>
+    </div>
+  );
+}
 
 export default CreditCard;

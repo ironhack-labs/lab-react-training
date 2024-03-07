@@ -29,3 +29,36 @@ code {
 Credit-card{
   width : 200px;
 }
+.lists {
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0px 2px 3px grey;
+  margin-bottom: 20px;
+  background: white;
+}
+.card-credit {
+  width: 300px;
+  height:150px;
+  border: 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 6px;
+}
+.img-driver {
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
+}
+
+.container-driver-card {
+  background-color: rgb(62, 62, 185);
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-bottom: 4px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
