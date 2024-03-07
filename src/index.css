@@ -46,9 +46,11 @@ Credit-card{
   margin-top: 6px;
 }
 .img-driver {
-  width: 100px;
-  height: 100px;
-  border-radius: 60%;
+  width: 400px;
+  height: 300px;
+  border-radius:0;
+
+  
 }
 
 .container-driver-card {
