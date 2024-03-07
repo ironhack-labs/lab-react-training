@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Box-color,.Box-color1,.Box-color2 {
+  border-style:groove;
+  border-width: 0px;
+  border-color:black;
+  box-sizing: border-box;
+  width:400px;
+  text-align: center;
+  padding: 0px;
+}
+.Box-color1{
+  background-color: rgb(255, 0, 0);
+}
+.Box-color2{
+  background-color:rgb(128,255,0);
+}
+Credit-card{
+  width : 200px;
+}
+.lists {
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0px 2px 3px grey;
+  margin-bottom: 20px;
+  background: white;
+}
+.card-credit {
+  width: 300px;
+  height:150px;
+  border: 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 6px;
+}
+.img-driver {
+  width: 400px;
+  height: 300px;
+  border-radius:0;
+
+  
+}
+
+.container-driver-card {
+  background-color: rgb(62, 62, 185);
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-bottom: 4px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
