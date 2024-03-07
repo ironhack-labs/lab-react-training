@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
   
-  // Definition of the component BoxColor
+  
+  
   class BoxColor extends Component {
+    constructor(props) {
+      super(props);
+        this.boxStyle = 
+          `rgb(${this.props.r},${this.props.g},${this.props.b})`
+        }
+  
+    
     render() {
-      let { r,g,b } = this.props
-      let hex = '#'
-        + ('0'+r.toString(16)).substr(-2)
-        + ('0'+g.toString(16)).substr(-2)
-        + ('0'+b.toString(16)).substr(-2)
-      let color = 'white'
-      if (r+g+b > 127*3) color = 'black'
-      return (
-        <div className="BoxColor box" style={{
-          backgroundColor: `rgb(${r},${g},${b})`,
-          color: color,
-        }}>
-          rgb({r},{g},{b})<br/>
-          {hex}
+     return (
+        <div className="size-box" style={
+          {backgroundColor: `${this.boxStyle}`}
+          }>
+          {this.boxStyle}
         </div>
-      );
-    }
+     )
+   }
   }
   
-  export default BoxColor;
+   export default BoxColor;
+  

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Rating from './Rating';
 
-// Definition of the component DriverCard
+
 class DriverCard extends Component {
   render() {
     return (
