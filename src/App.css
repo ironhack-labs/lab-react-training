@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 10px;
 }
 
 .App-logo {
@@ -36,3 +37,116 @@
     transform: rotate(360deg);
   }
 }
+
+h2 {
+  text-align: left;
+}
+ .idCard-container {
+  width: 100vw;
+  display: flex;
+  padding: 15px 10px;
+  border: #282c34 solid 1px;
+  gap: 5px;
+ }
+
+ .idCard-text {
+  width: 150px;
+  text-align: left;
+ }
+
+ .idCard-container img {
+  width: 200px;
+ }
+
+ .greetings-container {
+  width: 100vw;
+  padding: 15px 10px;
+  border: #282c34 solid 1px;
+  text-align: left;
+  margin-top: 10px;
+ }
+
+ .boxcolor-container {
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border: #282c34 solid 2px;
+ }
+
+.credit-cards-container {
+  display: flex;
+  margin-top: 10px;
+  gap: 15px;
+}
+ .card-container {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 10px 5px;
+ }
+
+ .img-container {
+  text-align: right;
+ }
+
+ .img-container img {
+  width: 56.74px;
+  height: 20px;
+ }
+
+ .card-number {
+  font-size: 20px;
+ }
+
+ .ratings {
+  text-align: left;
+  font-size: 30px;
+ }
+
+ .ratings p {
+  margin: 2px;
+ }
+
+
+.container-driverCard {
+  margin-top: 10px;
+  background-color: #425cbb;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 15px;
+  color: white;
+}
+
+.container-driverCard-content {
+  display: flex;
+  text-align: left;
+  gap: 10px;
+}
+
+.container-driverCard-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.container-driverCard-text .title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.container-driverCard-stars {
+  font-size: 32px;
+}
+
+.container-driverCard-text .label {
+  font-size: 16px;
+  margin: 0;
+}
+
