@@ -1,0 +1,27 @@
+.facebook-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  margin: 10px 0px 10px 15px;
+  gap: 10px;
+}
+
+.facebook-img {
+  height: 140px;
+  margin: 10px 0px 10px 15px;
+}
+
+.facebook-second-container {
+
+}
+
+.facebook-second-container p {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.highlighted {
+  background-color: rgba(29, 127, 255, 0.753);
+}

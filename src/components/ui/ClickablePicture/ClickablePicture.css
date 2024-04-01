@@ -1,0 +1,23 @@
+.clickablepicture-rick {
+  position: absolute;
+  height: 150px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.clickablepicture-glasses {
+  position: relative;
+  height: 45px;
+  transform: rotateZ(35deg);
+  top: 38px;
+  left: 90px;
+}
+
+.clickablepicture-rick:hover {
+  cursor: pointer;
+}
+
+.clickablepicture-glasses:hover {
+  cursor: pointer;
+}

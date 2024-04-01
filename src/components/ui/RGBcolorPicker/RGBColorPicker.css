@@ -1,0 +1,13 @@
+.rgbcolorpicker-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0px 10px 15px;
+}
+
+.boxcolor-container {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}

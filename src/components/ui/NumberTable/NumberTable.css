@@ -1,0 +1,21 @@
+.numbertable-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.even {
+  width: 40px;
+  text-align: center;
+  background-color: red;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.odd {
+  width: 40px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+}

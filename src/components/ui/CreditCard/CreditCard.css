@@ -1,0 +1,66 @@
+.creditcard-container {
+  width: 400px;
+  height: 230px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin: 15px;
+  border: 1px solid black;
+}
+
+.creditcard-container p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.creditcard-visa-image {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  height: 12%;
+  width: 20%;
+}
+
+.creditcard-mastercard-image {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  height: 20%;
+  width: 20%;
+}
+
+.creditcard-number {
+  text-align: center;
+  font-size: 32px;
+  margin: 0px;
+}
+
+.creditcard-expires {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+}
+
+.creditcard-expires :first-child {
+  margin-left: 15px;
+}
+
+.creditcard-expires :last-child {
+  margin-left: 25px;
+}
+
+.creditcard-container .creditcard-owner {
+  margin-top: 5px;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.creditcard-second-container {
+  position: absolute;
+  bottom: 20px;
+}
+
+

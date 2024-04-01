@@ -1,0 +1,14 @@
+.boxcolor-div {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  margin: 0px 0px 10px 5px;
+}
+
+.boxcolor-div p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+}

@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.title {
+  margin-left: 15px;
+}
+
+.title2 {
+  margin-left: 15px;
+  margin-top: 180px;
+}
+
+.creditcard {
+  display: flex;
+}
+
+.likebutton {
+  display: flex;
+}

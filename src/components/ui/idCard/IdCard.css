@@ -1,0 +1,18 @@
+.container_IdCard {
+  display: flex;
+  justify-content: flex-start;
+  align-items:start;
+  border: 1px solid black;
+  margin: 1rem 0px;
+  margin-left: 5px;
+}
+
+.img_IdCard {
+  height: 115px;
+  margin: 5px;
+}
+
+.information_IdCard p {
+  margin: 6px 0px;
+  padding: 0px;
+}

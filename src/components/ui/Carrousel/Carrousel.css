@@ -1,0 +1,9 @@
+.carrousel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}

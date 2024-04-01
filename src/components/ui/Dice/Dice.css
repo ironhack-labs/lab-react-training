@@ -1,0 +1,15 @@
+.container-dice {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.dice {
+  width: 5%;
+}
+
+.dice:hover {
+  cursor: pointer;
+}
+
+
+

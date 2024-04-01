@@ -1,0 +1,29 @@
+.signuppage-container {
+  border: 1px solid black;
+  margin: 10px 0px 10px 15px;  
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  margin: 10px 0px 10px 15px;
+}
+
+.response-container {
+  margin: 10px 0px 5px 15px;
+}
+
+.response-container p {
+  margin: 0;
+}
+
+.valid {
+  border: 1px solid green;
+}
+
+.invalid {
+  border: 1px solid red;
+}
