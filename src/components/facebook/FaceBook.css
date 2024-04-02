@@ -1,0 +1,13 @@
+.cardFB {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    border: 1px solid #3a3a3a64;
+    border-radius: 10px;
+    max-width: 600px;
+    img {
+        width: 200px;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+}

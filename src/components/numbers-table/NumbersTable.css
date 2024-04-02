@@ -1,0 +1,15 @@
+.num {
+    border: 1px solid #1a1a1a;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    align-content: center;
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 300px;
+}
