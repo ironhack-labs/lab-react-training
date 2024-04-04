@@ -1,0 +1,11 @@
+.random{
+    margin: 20px;
+    padding: 5px;
+    font-weight: 700;
+    text-align: left;
+    border: 2px solid black;
+}
+
+.random p{
+    margin-bottom: 0;
+}

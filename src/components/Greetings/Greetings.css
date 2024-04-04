@@ -1,0 +1,11 @@
+.greeting{
+    text-align: left;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.greeting p{
+    margin-bottom: 0;
+}

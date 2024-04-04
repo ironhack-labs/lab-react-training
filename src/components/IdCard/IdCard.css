@@ -1,0 +1,16 @@
+.idcard-p{
+font-weight: 700;
+margin-left: 5px;
+margin-bottom: 0;
+text-align: left;
+}
+
+.idcard-span{
+    font-weight: 400;
+}
+
+.IdCard{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 5px;
+}
