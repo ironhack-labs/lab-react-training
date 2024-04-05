@@ -1,0 +1,11 @@
+.borderRandom {
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-block: 30px;
+    margin-left: 30px;
+    margin-right: 700px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    
+   }
