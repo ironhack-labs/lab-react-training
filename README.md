@@ -7,23 +7,23 @@
    <h2>Learning Goals</h2>
   </summary>
 
-  This exercise allows you to practice and apply the concepts and techniques taught in class. 
+This exercise allows you to practice and apply the concepts and techniques taught in class.
 
-  Upon completion of this exercise, you will be able to:
+Upon completion of this exercise, you will be able to:
 
-  - Create and render components with multiple props.
-  - Use props to pass data to components and display the data received through props within the components
-  - Use inline styles to modify the appearance of components
-  - Use operators `?` and `&&` to conditionally render content
-  - Use the `useState` hook to create state variables and add state to React components.
-  - Use state variable setter functions to update state and trigger component re-render.
-  - Create event handler functions to handle user interactions and browser events.
-  - Create controlled components to manage the form inputs.
-  - Apply the "Lifting State Up" approach to share the state between components.
-  - Pass functions as props from a parent component to a child component.
+- Create and render components with multiple props.
+- Use props to pass data to components and display the data received through props within the components
+- Use inline styles to modify the appearance of components
+- Use operators `?` and `&&` to conditionally render content
+- Use the `useState` hook to create state variables and add state to React components.
+- Use state variable setter functions to update state and trigger component re-render.
+- Create event handler functions to handle user interactions and browser events.
+- Create controlled components to manage the form inputs.
+- Apply the "Lifting State Up" approach to share the state between components.
+- Pass functions as props from a parent component to a child component.
 
   <br>
-  <hr> 
+  <hr>
 
 </details>
 
@@ -39,9 +39,9 @@ To see the expected result for each iteration, refer to the solution example: [*
 - Clone this repo
 
 ```shell
-$ cd lab-react-training
-$ npm install
-$ npm start
+cd lab-react-training-vite
+npm install
+npm run dev
 ```
 
 ## Submission
@@ -54,25 +54,17 @@ $ npm start
   git push origin master
   ```
 
-- Create a Pull Request so that your TAs can review your work.
-
-  
+- Create a Pull Request and submit your assignment.
 
 ## Instructions
 
-
-
 ### Iteration 0 | Components folder
 
-Inside of the `src/` folder, create a new folder named `components`. 
+Inside of the `src/` folder, create a new folder named `components`.
 
 Use the `components` folder to store all the components that you create in the following iterations.
 
-
-
-----
-
-
+---
 
 ### Iteration 1 | Component: `IdCard`
 
@@ -109,13 +101,9 @@ Create and render an `IdCard` component with 6 props:
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52976030-22b0d200-33c8-11e9-91fe-e3ce0fa14078.png)
+![IdCard component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/01-idcard.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 2 | Component: `Greetings`
 
@@ -135,13 +123,9 @@ The component should display a greeting text in the chosen language.
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52957158-57edfd80-3391-11e9-8726-93c1a3389016.png)
+![Greetings component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/02-greetings.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 3 | Component: `Random`
 
@@ -161,13 +145,9 @@ The component should display a random integer in the range between the `min` and
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52957202-718f4500-3391-11e9-9b45-d1172067e877.png)
+![Random component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/03-random.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 4 | Component: `BoxColor`
 
@@ -188,19 +168,15 @@ The component should take 3 props:
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52957816-ec0c9480-3392-11e9-9e00-67094fa2b431.png)
+![image](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/04-boxcolor.png)
 
 As a bonus, you can also display the hex values of the color (e.g., `#ff0000` for red).
 
-
-
-----
-
-
+---
 
 ### Iteration 5 | Component: `CreditCard`
 
-Create a `CreditCard` component that displays a rectangle with the information coming from the props. 
+Create a `CreditCard` component that displays a rectangle with the information coming from the props.
 
 The component should take 8 props:
 
@@ -213,7 +189,7 @@ The component should take 8 props:
 - `bgColor`: A string for the background color of the card
 - `color`: A string for the text color of the card
 
-Take your time to make the component look as close to the *expected output* as possible. You'll probably want to use flexbox.
+Take your time to make the component look as close to the _expected output_ as possible. You'll probably want to use flexbox.
 
 **Example:**
 
@@ -226,9 +202,9 @@ Take your time to make the component look as close to the *expected output* as p
   bank="BNP"
   owner="Maxence Bouret"
   bgColor="#11aa99"
-  color="white" 
+  color="white"
 />
-    
+
 <CreditCard
   type="Master Card"
   number="0123456789010995"
@@ -239,7 +215,7 @@ Take your time to make the component look as close to the *expected output* as p
   bgColor="#eeeeee"
   color="#222222"
 />
-    
+
 <CreditCard
   type="Visa"
   number="0123456789016984"
@@ -248,19 +224,15 @@ Take your time to make the component look as close to the *expected output* as p
   bank="Name of the Bank"
   owner="Firstname Lastname"
   bgColor="#ddbb55"
-  color="white" 
+  color="white"
 />
 ```
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52975678-ac5fa000-33c6-11e9-8cbf-7d13a8a0f625.png)
+![CreditCard component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/05-creditcard.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 6 | Component: `Rating`
 
@@ -283,22 +255,18 @@ The component should take 1 prop:
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52972787-39512c00-33bc-11e9-93d8-428d835442fd.png)
+![Rating component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/06-rating.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 7 | Component: `DriverCard`
 
-Create a `DriverCard` component that displays a rectangle with content based on the received props. 
+Create a `DriverCard` component that displays a rectangle with content based on the received props.
 
 The component should take 4 props:
 
 - `name`: A string
-- `rating`: A number between `0` and `5`.  The value can be a floating point number.
+- `rating`: A number between `0` and `5`. The value can be a floating point number.
 - `img`: A string
 - `car`: An object with properties `model` and `licensePlate`.
 
@@ -328,19 +296,15 @@ The component should take 4 props:
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/52972847-66054380-33bc-11e9-92e0-8e48d1ab0212.png)
+![DriverCard component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/07-driver-card.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 8 | State: `LikeButton`
 
 Create a `LikeButton` component that displays a button with the initial text `"0 Likes"`. With each click, the number of Likes should increase.
 
-As a bonus, implement the background color change on each click. You can use the following array of colors: `['purple','blue','green','yellow','orange','red']`
+As a bonus, implement the background color change on each click. You can use the following array of colors: `["purple", "blue", "green", "yellow", "orange", "red"]`
 
 **Example:**
 
@@ -350,13 +314,9 @@ As a bonus, implement the background color change on each click. You can use the
 
 **Expected Output:**
 
-![](https://media.giphy.com/media/OQJkfIEkYTUdYkgNP7/giphy.gif)
+![LikeButton component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/08-like-button.gif)
 
-
-
-----
-
-
+---
 
 ### Iteration 9: State: `ClickablePicture`
 
@@ -365,23 +325,16 @@ Create a `ClickablePicture` component that displays a picture. On each click, th
 **Example:**
 
 ```jsx
-<ClickablePicture
-  img='maxence.png'
-  imgClicked='maxence-glasses.png'
-/>
+<ClickablePicture img='maxence.png' imgClicked='maxence-glasses.png' />
 ```
 
 **Expected Output:**
 
-![](https://media.giphy.com/media/9FXwCr2LLLIlgNL2sL/giphy.gif)
+![ClickablePicture component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/09-clickable-pic.gif)
 
-PS: If you want to use your picture instead, you can create it using this picture: http://www.stickpng.com/assets/images/584999937b7d4d76317f5ffd.png 😎
+PS: If you want to use your picture instead, you can create it using this picture: [/assets/images/glasses.png](https://raw.githubusercontent.com/ironhack-labs/lab-react-training-vite/master/src/assets/images/glasses.png) 😎
 
-
-
-----
-
-
+---
 
 ### Iteration 10 | State: `Dice`
 
@@ -400,21 +353,17 @@ Every time the user clicks on the component, it should:
 
 **Expected Output before the click:**
 
-![image](https://user-images.githubusercontent.com/5306791/52976705-c13e3280-33ca-11e9-8684-f4dbff643b79.png)
+![Dice component state 1](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/10-dice-01.png)
 
 **Expected Output immediately after the click:**
 
-![image](https://user-images.githubusercontent.com/5306791/52976790-25f98d00-33cb-11e9-864e-ec14b4ec2a31.png)
+![Dice component state 2](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/10-dice-02.png)
 
 **Expected Output 1 second after the click:**
 
-![image](https://user-images.githubusercontent.com/5306791/52976752-f64a8500-33ca-11e9-98ee-b0b17f5e85b2.png)
+![Dice component state 3](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/10-dice-03.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 11 | State: `Carousel`
 
@@ -428,24 +377,20 @@ The component should take 1 prop:
 
 ```jsx
 <Carousel
-  images={[
-    'https://randomuser.me/api/portraits/women/1.jpg',
-    'https://randomuser.me/api/portraits/men/1.jpg',
-    'https://randomuser.me/api/portraits/women/2.jpg',
-    'https://randomuser.me/api/portraits/men/2.jpg'
-  ]}
+	images={[
+		'https://randomuser.me/api/portraits/women/1.jpg',
+		'https://randomuser.me/api/portraits/men/1.jpg',
+		'https://randomuser.me/api/portraits/women/2.jpg',
+		'https://randomuser.me/api/portraits/men/2.jpg',
+	]}
 />
 ```
 
 **Expected Output:**
 
-![](https://media.giphy.com/media/1n7cAJu0MWerLnnohR/giphy.gif)
+![Carousel component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/11-carousel.gif)
 
-
-
-----
-
-
+---
 
 ### Iteration 12 | List and Keys | `NumbersTable`
 
@@ -463,13 +408,9 @@ The component should take 1 prop:
 
 **Expected Output:**
 
-![image](https://user-images.githubusercontent.com/5306791/53028410-13349600-3467-11e9-8199-407375e61ab0.png)
+![NumbersTable component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/12-numbers-table.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 13 | List and Keys - `FaceBook` (Simple)
 
@@ -487,13 +428,9 @@ import profiles from './data/berlin.json';
 
 **Expected Output:** (you should see about 28 profiles)
 
-![image](https://user-images.githubusercontent.com/5306791/53018529-e8d8dd80-3452-11e9-9912-1221eef67be6.png)
+![FaceBook component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/13-facebook.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 14 | List and Keys - `FaceBook` (Advanced)
 
@@ -507,7 +444,7 @@ Update your `FaceBook` component and add a button for each country the students 
 
 **Expected Output:** (note: part of the content in the screenshot was cropped)
 
-![image](https://user-images.githubusercontent.com/5306791/53018961-f8a4f180-3453-11e9-9c82-1f57a2f66a30.png)
+![FaceBook component advanced](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/14-facebook-adv.png)
 
 **Bonus:**
 
@@ -515,11 +452,7 @@ Update your `FaceBook` component and add a button for each country the students 
 - Add sort buttons
 - Add a search input
 
-
-
-----
-
-
+---
 
 ### Iteration 15 | Form - `SignupPage`
 
@@ -535,8 +468,6 @@ Create a `SignupPage` component with the following elements:
 
 - A text "Your email is john@doe.com"
 
-  
-
 For this, you will need 3 state variables:
 
 - `email`
@@ -549,7 +480,7 @@ If you want to include Bootstrap with [Reactstrap](https://reactstrap.github.io)
 npm install reactstrap bootstrap
 ```
 
-And add the following line in `src/index.js`
+And add the following line in `src/main.jsx`
 
 ```js
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -563,13 +494,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 **Output**
 
-![image](https://user-images.githubusercontent.com/5306791/53089348-9c51d880-350c-11e9-9621-cad9d87bdd48.png)
+![SignupPage component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/15-signup-page.png)
 
-
-
-----
-
-
+---
 
 ### Iteration 16 | Lifting State Up - `RGBColorPicker`
 
@@ -584,9 +511,7 @@ Create 2 components:
 
   - `bValue`: A number between `0` and `255`, representing the amount of blue
 
-    
-
-- The `SingleColorPicker` component should have an input field of type `"number"`, and allow the user to select a number between `0` and `255`. 
+- The `SingleColorPicker` component should have an input field of type `"number"`, and allow the user to select a number between `0` and `255`.
 
   The component should take 3 props:
 
@@ -594,38 +519,32 @@ Create 2 components:
   - `value`: A number between `0` and `255`
   - `onChange`: A method that is triggered when the input is changed
 
-
-
 The `RGBColorPicker` should render 3 `SingleColorPicker` components and send the state values to them.
 
 **Example:**
 
 ```jsx
-<SingleColorPicker 
+<SingleColorPicker
   color="r"
   value={rValue}
   onChange={ () => { /* ... */ }  }
 />
 
-<SingleColorPicker 
+<SingleColorPicker
   color="g"
   value={gValue}
   onChange={ () => { /* ... */ }  }
 />
 
-<SingleColorPicker 
+<SingleColorPicker
   color="b"
   value={bValue}
   onChange={ () => { /* ... */ }  }
 />
 ```
 
-
-
 **Expected Output**
 
-![image](https://user-images.githubusercontent.com/5306791/53166207-f918c600-35d4-11e9-8c47-c58cdc2d05b0.png)
-
-
+![RGBColorPicker component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/react-training/16-rgb-color-picker.png)
 
 **Happy coding!** :heart:
