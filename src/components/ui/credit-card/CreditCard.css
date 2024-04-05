@@ -1,0 +1,11 @@
+.cards {
+  display: flex;
+}
+.credit-card {
+  border-radius: 5px;
+  width: 300px;
+}
+.credit-card > img {
+  width: 50px;
+  float: right;
+}
