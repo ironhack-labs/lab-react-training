@@ -1,0 +1,19 @@
+.BoxCreditCard {
+    padding: 20px;
+    border-radius: 2%;
+    margin: 10px;
+    width: 350px;
+}
+
+.cardNumber {
+    font-size: xx-large;
+}
+
+.cardInfo{
+    text-align: left;
+}
+
+.cardLogo{
+    width: 50px;
+    margin-left: 250px;
+}

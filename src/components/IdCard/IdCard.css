@@ -1,0 +1,11 @@
+.IdCard {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+    display: flex;
+}
+
+.IdCardInfo {
+    text-align: left;
+    margin-left: 5px;
+}
