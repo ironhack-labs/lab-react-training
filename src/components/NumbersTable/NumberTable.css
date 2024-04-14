@@ -1,0 +1,11 @@
+.box {
+    max-width: 150px;
+    height: 150px;
+    border: solid 1px black;
+}
+.evenNumber{
+    background-color: darkgray;
+}
+.oddNumber{
+    background-color: darkcyan;
+}

@@ -1,0 +1,18 @@
+.imgClickable {
+    
+    width: 40%;
+   
+}
+.imgGlass {
+    position: absolute;
+   
+    left: calc(51% - 40px);
+    top:110px;
+    width: 8%;
+   
+   
+    height: 20px;
+}
+.displayNone {
+    display: none;
+}
