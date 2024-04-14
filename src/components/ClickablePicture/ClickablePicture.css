@@ -1,0 +1,17 @@
+
+.images-glasses {
+  position: relative;
+}
+
+.image-no-glasses {
+  position: absolute;
+  max-width: 150px;
+}
+
+.image-glasses {
+  position: absolute;
+  max-width: 70px;
+  max-height: 70px;
+  padding-top: 36px;
+  padding-right: 5px;
+}

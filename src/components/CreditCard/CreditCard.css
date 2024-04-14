@@ -1,0 +1,46 @@
+
+.credit-card {
+  border: 1px solid black;
+  border-radius: 13px;
+  width: 400px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row-reverse;
+  max-height: 50px;
+  margin: 25px;
+}
+
+.logo img {
+  width: 90px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin: 6px;
+}
+
+.info {
+  display: flex;
+  font-size: 20px;
+}
+
+.expiration {
+  margin-left: 20px;
+}
+
+.bank {
+  margin-left: 20px;
+}
+
+.owner {
+  margin-left: 20px;
+  font-size: 20px;
+}
