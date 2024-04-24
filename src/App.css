@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-flow: column;  
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +39,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.creditCard {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem, 5rem;
 }

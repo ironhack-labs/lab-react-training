@@ -1,0 +1,17 @@
+.Facebook {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+}
+
+.FacebookCardInfo {
+    margin-left: 5px;
+    text-align: left;
+}
+
+img{
+    margin: 0;
+}

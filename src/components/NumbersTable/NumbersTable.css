@@ -1,0 +1,10 @@
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.NumberBox {
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+}
