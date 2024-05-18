@@ -1,0 +1,29 @@
+.id-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #060606;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 600px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .id-card__picture {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .id-card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  
+  .id-card__info p {
+    margin: 5px 0;
+    text-align: left;
+  }

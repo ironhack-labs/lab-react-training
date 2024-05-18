@@ -1,0 +1,24 @@
+.overlap {
+
+width: 100px; 
+align-items: middle;
+position: relative;
+
+}
+
+.Dog {
+    position: absolute;
+    width: 100%; 
+    height: auto;
+    
+
+}
+
+.glasses {
+
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    transform: rotate(-20deg); 
+
+}
