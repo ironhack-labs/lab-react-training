@@ -1,0 +1,23 @@
+.driver {
+    background: purple;
+    width: 1000px;
+    height: 110px;
+    font-size: 1.2em;
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+
+}
+
+.driver-img {
+    width: 15%;
+    border-radius: 100px;
+}
+
+.text {
+    margin-left: 20px;
+}

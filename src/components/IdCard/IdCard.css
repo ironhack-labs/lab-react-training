@@ -1,0 +1,31 @@
+.img {
+    width: 10%;
+    margin: 20px;
+}
+
+.borde {
+    border: 1px solid black;
+    display: flex;
+    padding: 20px;
+    margin: 5px;
+}
+
+.card {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+li {
+    list-style: none;
+    display: block;
+}
+
+p {
+    display: block;
+    width: 150px;
+}
