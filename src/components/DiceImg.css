@@ -1,0 +1,15 @@
+.DiceContainer {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    width: 200px;
+    height: 200px; /* Added height to ensure vertical centering */
+    margin: auto; /* Centers the container itself if it's within a larger container */
+    text-align: center;
+  }
+  
+  .DiceImg {
+    max-height: 200px; /* Adjust the size of the image */
+    width: auto; /* Ensures the image maintains its aspect ratio */
+  }
+  

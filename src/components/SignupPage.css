@@ -1,0 +1,34 @@
+/* SignupPage.css */
+
+/* Form要素全体のスタイル */
+.form-container {
+    max-width: 600px; /* 幅を600pxに設定 */
+    margin: 0 auto; /* 左右の余白を自動で調整して中央揃え */
+  }
+  
+  /* テキストの左寄せスタイル */
+  .custom-text {
+    text-align: left; /* テキストを左寄せに設定 */
+  }
+  /* Form要素全体のスタイル */
+.form {
+    max-width: 600px; /* 幅を600pxに設定 */
+    margin: 0 auto; /* 左右の余白を自動で調整して中央揃え */
+    text-align: left; /* テキストを左寄せに設定 */
+
+  }
+  
+  /* インプットの共通スタイル */
+  .custom-input {
+    max-width: 300px;  }
+  
+  /* Select要素のスタイル */
+  .custom-select {
+    max-width: 300px;  }
+  }
+  
+  /* テキストのスタイル */
+  .custom-text {
+    text-align: left;
+  }
+  

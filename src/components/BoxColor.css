@@ -1,0 +1,19 @@
+/* BoxColor.css */
+.BoxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100; /* カラーボックスの幅 */
+  height: 150px; /* カラーボックスの高さ */
+  margin: 10px; /* カラーボックスの間隔 */
+}
+
+.ColorBox {
+  width: 100%;
+  height: 100%;
+}
+
+.rgb {
+  margin-top: 10px; /* rgbテキストの上部マージン */
+}

@@ -1,0 +1,46 @@
+.creditCard {
+  border-radius: 10px;
+  padding: 20px;
+  width: 260px;
+  height: auto;
+  margin: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.creditCard-type {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    text-align: right; 
+    align-content: end;
+  }
+
+.creditCard-type img {
+    width: 50px;
+    /* justify-content: flex-end;
+    text-align: right; 
+    align-content: end; */
+}
+
+.creditCard-number {
+    display: flex;
+    align-self:center;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.creditCard-expiry-bank {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.creditCard-owner {
+  font-size: 1em;
+  margin-top: 10px;
+}

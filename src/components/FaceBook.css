@@ -1,0 +1,76 @@
+/* styles.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; /* 上下の余白を追加 */
+    flex-wrap: wrap; /* ボタンが折り返された際に新しい行を作成 */
+    gap: 10px; /* ボタン間のスペースを設定 */
+  }
+  
+  .filter-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filter-button.active {
+    background-color: #0056b3;
+  }
+  
+  .profiles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 60%;
+
+    /* background-color: aqua; */
+  }
+  
+  .profile-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 10px; /* カード間の余白を追加 */
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ .profile-details {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+  }
+   
+
+  .profile-details p {
+    margin: 5px 0; /* 上下のマージンを5pxに設定 */
+  }
+  
