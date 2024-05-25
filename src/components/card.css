@@ -1,0 +1,18 @@
+.id-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  width: 400px;
+}
+
+.id-card img {
+  margin-right: 15px;
+}
+
+.id-card-details {
+  display: flex;
+  flex-direction: column;
+}
