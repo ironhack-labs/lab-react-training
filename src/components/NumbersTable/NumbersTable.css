@@ -1,0 +1,16 @@
+.numbers-table{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.numbers-table .table{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 0;
+    font-size: 3em;
+    font-weight: bold;
+}

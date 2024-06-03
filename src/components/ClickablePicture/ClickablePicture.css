@@ -1,0 +1,14 @@
+.clickckable-picture{
+    width: 200px;
+    position: relative;
+}
+.clickckable-picture .img{
+    width: 100%;
+    cursor: pointer;
+}
+.img-clicked{
+    width: 110px;
+    position: absolute;
+    top: 60px;
+    left: 55px;
+}

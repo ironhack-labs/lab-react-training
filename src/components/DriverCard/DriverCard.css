@@ -1,0 +1,22 @@
+.driver-card {
+  background-color: #455eb5;
+  color: #fff;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+.img-driver-card {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.img-driver-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

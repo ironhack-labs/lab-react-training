@@ -1,0 +1,145 @@
+import "./App.css";
+import BoxColor from "./components/BoxColor/BoxColor";
+import Card from "./components/Card/Card";
+import ClickablePicture from "./components/ClickablePicture/ClickablePicture";
+import CreditCard from "./components/CreditCard/CreditCard";
+import DriverCard from "./components/DriverCard/DriverCard";
+import Greetings from "./components/Greetings/Greetings";
+import LikeButton from "./components/LikeButton/LikeButton";
+import Random from "./components/Ramdom/Random";
+import Rating from "./components/Rating/Rating";
+import glasses from "./assets/images/glasses.png";
+import Dice from "./components/Dice/Dice";
+import Carousel from "./components/Carousel/Carousel";
+import NumbersTable from "./components/NumbersTable/NumbersTable";
+import FaceBook from "./components/FaceBook/FaceBook";
+
+function App() {
+  return (
+    <>
+      <div className="App">
+        <h1> LAB | React Training</h1>
+      </div>
+      <Card
+        lastName="Doe"
+        firstName="John"
+        gender="male"
+        height={178}
+        birth={new Date("1992-07-14")}
+        picture="https://randomuser.me/api/portraits/men/44.jpg"
+      />
+      <Card
+        lastName="Delores "
+        firstName="Obrien"
+        gender="female"
+        height={172}
+        birth={new Date("1988-05-11")}
+        picture="https://randomuser.me/api/portraits/women/44.jpg"
+      />
+      <Greetings lang={"de"}>Ludwig</Greetings>
+      <Greetings lang={"en"}>John</Greetings>
+      <Greetings lang={"es"}>Paco</Greetings>
+      <Greetings lang={"fr"}>François</Greetings>
+      <div className="mt-5 mb-5">
+        <Random min={1} max={6} />
+        <Random min={1} max={45} />
+        <Random min={1} max={100} />
+        <Random min={1} max={9} />
+      </div>
+      <div className="mt-5 mb-5">
+        <BoxColor r={155} g={45} b={255} />
+        <BoxColor r={155} g={45} b={255} />
+        <BoxColor r={1} g={150} b={255} />
+      </div>
+      <div className="mt-5 mb-5 d-flex">
+        <CreditCard
+          type="Visa"
+          number="0123456789018845"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="BNP"
+          owner="Maxence Bouret"
+          bgColor="#11aa99"
+          color="white"
+        />
+        <CreditCard
+          type="Master Card"
+          number="0123456789010995"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="N26"
+          owner="Maxence Bouret"
+          bgColor="#eeeeee"
+          color="#222222"
+        />
+        <CreditCard
+          type="Visa"
+          number="0123456789016984"
+          expirationMonth={12}
+          expirationYear={2019}
+          bank="Name of the Bank"
+          owner="Firstname Lastname"
+          bgColor="#ddbb55"
+          color="white"
+        />
+      </div>
+      <div className="mt-5 mb-5">
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+      </div>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE",
+        }}
+      />
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER",
+        }}
+      />
+      <div className="container ">
+        <LikeButton />
+        <LikeButton />
+      </div>
+      <div className="container">
+        <ClickablePicture
+          img="https://i.imgur.com/CFgX3Xx.png"
+          imgClicked={glasses}
+        />
+      </div>
+      <div className="container">
+        <Dice />
+      </div>
+      <div className="container">
+        <Carousel
+          images={[
+            "https://randomuser.me/api/portraits/women/1.jpg",
+            "https://randomuser.me/api/portraits/men/1.jpg",
+            "https://randomuser.me/api/portraits/women/2.jpg",
+            "https://randomuser.me/api/portraits/men/2.jpg",
+          ]}
+        />
+      </div>
+      <div className="container">
+        <NumbersTable limit={12} />
+      </div>
+      <div className="container">
+        <FaceBook />
+      </div>
+    </>
+  );
+}
+
+export default App;
