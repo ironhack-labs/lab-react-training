@@ -1,0 +1,37 @@
+.container-creditCard{
+  width: 32%;
+  height: 400px;
+  margin:20px;
+  border-radius: 10px;
+}
+
+.img-credit{
+    width: 100px;
+    height:70px;
+    float: right;
+    padding-right: 40px;
+}
+
+.text-credit{
+  font-size: 25px;
+  padding-left: 40px;
+  padding-top: 15px;
+}
+
+.number-credit{
+  font-size: 80px;
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 25px;
+}
+
+.dot-credit{
+  font-size: 130px;
+  text-align: center;
+  align-items: center;
+}
+
+.flex-direction-credit{
+  display: flex;
+  flex-direction: row;
+}
