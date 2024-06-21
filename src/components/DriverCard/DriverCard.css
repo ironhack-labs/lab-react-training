@@ -1,0 +1,19 @@
+.driver-card {
+    align-items: center;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.Driver-card-img {
+    width: 30%;
+
+}
+
+.driver-rating {
+    width: 30%;
+}
+
+.driver-rating img {
+    width: 20%;
+}
