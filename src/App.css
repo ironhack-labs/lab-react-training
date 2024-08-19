@@ -36,3 +36,125 @@
     transform: rotate(360deg);
   }
 }
+
+.idCard {
+  border: solid 1px black;
+  display: flex;
+  text-align: start;
+  padding: 5px;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.idCard > img {
+  margin-right: 5px;
+  max-width: 128px;
+}
+
+.idCard p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.container {
+  border: solid 1px black;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: start;
+  padding: 5px;
+}
+
+.creditCard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 220px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.creditCard > img {
+  width: 20%;
+  margin-left: auto;
+}
+
+.creditCard > p {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 12px;
+}
+
+.driverCard {
+  display: flex;
+  text-align: start;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: rgb(64, 64, 211);
+  color: white;
+  border-radius: 10px;
+}
+
+.circle-crop {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 5px;
+}
+
+.circle-crop > img {
+  height: 100%;
+}
+
+.driverCard p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.numbersTable {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.numberCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  height: 200px;
+  margin: 0 auto;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.signup button {
+  width: fit-content;
+}
+
+.colorPicker {
+  width: 50px;
+  height: 50px;
+  border: solid 1px black;
+  margin-right: 5px;
+}
