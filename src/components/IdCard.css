@@ -1,0 +1,40 @@
+.box{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 16px;
+    height: 20vh;
+    padding: 20px;
+}
+
+.id-card {
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 16px;
+    width: 400px;
+    height: 150px; 
+    box-sizing: border-box; 
+}
+
+.id-card img {
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.id-card .info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .id-card p {
+    margin: 4px 0;
+  }
+  
+  .id-card strong {
+    font-weight: bold;
+  }
