@@ -1,0 +1,16 @@
+.card {
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.card img {
+    width: 100%;
+}
