@@ -1,38 +1,72 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Id {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 200px;
+  border: 2px solid black;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  justify-content: space-evenly;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.greeting-card, .random-number {
+  border: 2px solid black;
+  margin: 1%;
+  width: 600px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.box-color{
+  border: 2px solid black;
+  margin: 1%;
+  width: 600px;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo img {
+  width: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.creditcard {
+  width: 320px;
+  height: 150px;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 1%;
+}
+.logo{
+  display: flex;
+  justify-content: flex-end;
+}
+.card-number{
+  font-size: 1.5em;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.driver-car{
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(60, 95, 220) ;
+}
+.driver-picture img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
 }
