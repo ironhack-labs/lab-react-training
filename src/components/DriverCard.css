@@ -1,0 +1,12 @@
+.DriverCard {
+  height: 200px;
+  width: 500px;
+  background-color: blue;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.DriverCard img {
+  width: 100px;
+  height: auto;
+}
