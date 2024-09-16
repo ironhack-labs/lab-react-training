@@ -1,0 +1,21 @@
+.idCard {
+    width: 700px;
+    border: 2px solid black;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.idCard img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.idCard p {
+    font-size: 70%;
+    margin: 0;
+    text-align: left;
+}

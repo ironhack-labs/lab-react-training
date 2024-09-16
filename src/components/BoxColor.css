@@ -1,0 +1,19 @@
+.BoxColor.white {
+    color: #fff;
+}
+
+.BoxColor.black {
+    color: #000
+}
+
+.BoxColor {
+    height: 70 px;
+    width: 500px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 8px 0
+}
+
+.BoxColor p {
+    margin: 2px
+}

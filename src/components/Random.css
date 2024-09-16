@@ -1,0 +1,13 @@
+.randomCard {
+    width: 700px;
+    border: 2px solid black;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.randomCard p {
+    margin: 0;
+
+}
