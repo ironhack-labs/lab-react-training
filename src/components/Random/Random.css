@@ -1,0 +1,12 @@
+.random-container {
+    border: 2px solid black;
+    margin: 10px;
+    width: 40%;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.random-container p {
+    padding: 0;
+    margin: 0
+}
