@@ -1,0 +1,15 @@
+.Card {
+    width: 500px;
+    border: 2px solid #000000;
+    display: flex;
+    text-align: left;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.CardImage img {
+    width: 100px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}

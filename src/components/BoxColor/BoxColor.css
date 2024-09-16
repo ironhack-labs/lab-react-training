@@ -1,0 +1,7 @@
+.BoxLine {
+    border: 2px solid #000000;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    padding: 40px;
+}
