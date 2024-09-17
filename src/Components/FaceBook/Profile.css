@@ -1,0 +1,21 @@
+.profile__container--body {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    margin: 5%;
+    padding: 1%;
+}
+
+.profile__container--text {
+    margin-left: 3%;
+    font-size: 2vw;
+}
+
+.profile__text--firstName {
+    margin-top: 0px;
+}
+
+.profile__photo {
+    width: 30%;
+    height: 30%;
+}

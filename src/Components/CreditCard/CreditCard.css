@@ -1,0 +1,43 @@
+.creditCard__image--visa {
+    width: 15%;
+}
+
+.creditCard__image--masterCard {
+    width: 10%;
+}
+
+.creditCard__container {
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10%;
+}
+
+.creditCard__container--number {
+    display: flex;
+    flex-direction: row;
+}
+
+.creditCard__container--dot {
+    margin: 10px;
+}
+
+.creditCard__container--downSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.creditCard__container--owner {
+    display: flex;
+    flex-direction: column;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+}

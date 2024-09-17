@@ -1,0 +1,10 @@
+.driverCard__container--body {
+    background-color: rgb(56, 76, 158);
+    border-radius: 40px;
+}
+
+.driverCard__img {
+    width: 10%;
+    height: 25%;
+    border-radius: 50%;
+}
