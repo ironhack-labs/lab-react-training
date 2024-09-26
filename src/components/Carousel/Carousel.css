@@ -1,0 +1,18 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carousel button {
+    height: 50px;
+    width: 100px;
+    background-color: rgb(165, 218, 220);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.carousel img {
+    width: 300px;
+}

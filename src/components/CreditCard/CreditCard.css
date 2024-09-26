@@ -1,0 +1,44 @@
+.creditCard {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.imageType {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imageType img {
+    width: 40px;
+    margin: 15px 15px 0 0;
+}
+
+.cardNumber {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.dots {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-right: 10px;
+}
+
+.expiration {
+    display: flex;
+}
+
+.expiration span {
+    font-size: 15px;
+    margin: 0 15px;
+}
+
+.name {
+    display: flex;
+    margin: 0 15px 15px 15px;
+    font-size: 15px;
+}
