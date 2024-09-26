@@ -1,0 +1,17 @@
+.star {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    background-color: #ccc;
+}
+
+.star.filled {
+    background-color: black;
+}
+
+.star-rating {
+    display: inline-block;
+    font-size: 0;
+    width: 100%;
+}
