@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+
+.id-card {
+border: 1px solid;
+display: flex;
+width: 600px;
+margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-info {
+  margin-left: 5px;
+  line-height: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.id-card img {
+  margin: 10px;
+  height: 150px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.language-card{
+  border: 1px solid;
+}
+
+.random-card{
+  border: 1px solid;
+}
+
+.box-color{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: 1px solid;
+  width: 400px;
+  height: 100px;
+  margin: 20px;
+}
+
+.all-credit-card{
+  display: flex;
+  flex-direction: row;  
+}
+
+.one-credit-card {
+  border-radius: 5px;
+  margin: 10px;
+  height: 150px;
+  width: 400px;
+  font-size: 10px;
+}
+
+.bank-logo {
+  display: flex;
+  justify-content: right;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.account-number{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.expiration-date-bank-name{
+  display: flex;
+  flex-direction: row;
+}
+
+.expiration-date-bank-name p {
+  margin: 10px 10px 5px 10px;
+}
+
+.account-owner{
+  display: flex;
+  justify-content: left;
+  margin: 0 0 10px 10px;
+}
+
+.car-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: rgb(28, 67, 196);
+  margin: 10px;
+  width: 600px;
+
+}
+
+.car-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin: 30px;
+}
+
+.car-card-info{
+  margin-top: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.car-card-info h1{
+  font-size: 20px;
+  margin: 0px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.car-card-rating p{
+  font-size: 25px;
+  margin: 0px; 
 }
+
+.car-card-model {
+  font-size: 14px;
+  margin: 0px; 
+}
+
+.toggle-img{
+  margin: 20px;
+  width: 300px;
+}
+
+.dice-img {
+  margin: 20px;
+  width: 300px;
+}
+
+.carousel-img{
+  margin: 20px;
+  width: 300px;
+}
+
+.numbers-table{ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.numbers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 40px;
+  border: solid 1px;
+  width: 200px;
+  height: 200px;
+}
+
+.facebook-button{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.facebook-button button {
+  margin: 5px;
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+}
+
+
+
+
+
+
+
+
