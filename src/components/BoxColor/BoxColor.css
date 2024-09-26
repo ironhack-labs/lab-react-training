@@ -1,0 +1,9 @@
+.BoxColor.white {
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.BoxColor.black {
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}

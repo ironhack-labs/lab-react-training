@@ -1,0 +1,13 @@
+.id-card {
+    width: 30%;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.id-card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
