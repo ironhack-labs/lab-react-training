@@ -1,0 +1,21 @@
+.credit-card {
+    font-size: 18px;
+    margin-top: 50px;
+    height: 25%;
+    width: 20%;
+    border: black 1px solid;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+.credit-card>p,
+span {
+    margin-left: 15px
+}
+
+
+
+.credit-card img {
+    width: 20%;
+    margin: 10px 0 0 215px
+}
