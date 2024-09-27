@@ -1,0 +1,8 @@
+.random {
+    display: flex;
+    justify-content: flex-start;
+    border: 3px solid black;
+    width: 29%;
+    margin: 20px;
+    padding: 10px;
+}
