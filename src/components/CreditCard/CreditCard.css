@@ -1,0 +1,17 @@
+.SingleCard {
+    display: flex;
+}
+
+.CardContainer {
+    width: 300px;
+    border: 1px solid black;
+    text-align: center;
+    display: inline-block;
+    height: 200px;
+}
+
+.cardLogo {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+}
