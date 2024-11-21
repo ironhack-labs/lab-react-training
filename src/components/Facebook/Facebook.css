@@ -1,0 +1,24 @@
+.fbCard {
+    border: 3px solid black;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    align-items: start;
+    width: 50%;
+}
+
+.fbCardImg {
+    margin: 5px;
+}
+
+.fbCardImg img {
+    width: 100px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-align: start;
+}

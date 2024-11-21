@@ -1,0 +1,10 @@
+.boxColor {
+    display: flex;
+    justify-content: center;
+}
+
+.boxColorInfo {
+    width: 600px;
+    height: 200px;
+    color: white;
+}
