@@ -1,0 +1,22 @@
+.driveCard {
+    background: rgb(49, 73, 195);
+    width: 750px;
+    height: 110px;
+    font-size: 1em;
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.driverImg {
+    width: 15%;
+    border-radius: 100px;
+}
+
+.dataDriver {
+    margin-left: 20px;
+}

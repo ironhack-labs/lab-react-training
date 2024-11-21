@@ -1,0 +1,25 @@
+.creditCard {
+    margin: 20px;
+    width: 30%;
+    height: 200px;
+    border-radius: 20px;
+    padding: 50px 20px 20px 20px;
+}
+
+.card img {
+    width: 15%;
+}
+
+.expires {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+}
+
+.expires p:last-child {
+    padding-left: 30px;
+}
+
+.owner {
+    text-align: start;
+}
