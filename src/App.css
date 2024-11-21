@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+  .creditCard {
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+  
+  .creditCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .creditCard .type {
+    font-size: 1.2em;
+    text-align: right;
+    
+
+  }
+  
+  .creditCard .type img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .creditCard .number {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .creditCard .details {
+    font-size: 1em;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .creditCard .owner {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .creditCard .bank {
+    margin-left: 10px;
+  }
+  
+
+  .imgDriver {
+    width: 80px;
+    border-radius: 50px;
+    margin-left: 150px;
+  }
