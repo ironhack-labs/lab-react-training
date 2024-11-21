@@ -1,4 +1,4 @@
-.App {
+/* 542.App {
   text-align: center;
 }
 
@@ -35,4 +35,119 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* my css */
+
+/* idCard function */
+.idCard, .facebook-profile {
+  display: flex;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+  gap: 5px;
+}
+
+.imageCard {
+  display: flex;
+  align-items: center;
+}
+
+.description, .facebook-description {
+  margin: 0px;
+}
+
+/* Greetings function */
+
+.greetings,
+.random {
+  border: 2px solid black;
+  margin: 5px;
+  padding-left: 5px;
+}
+
+/* CreditCard function */
+
+.credit-card {
+  display: inline-block;
+  width: auto;
+  border-radius: 5%;
+  margin: 5px;
+  padding: 15px;
+}
+
+.icon-card {
+  text-align: end;
+  margin-top: 0px;
+}
+
+.number {
+  text-align: end;
+  font-size: xx-large;
+  margin: 0px;
+}
+
+.expire-and-bank {
+  display: flex;
+}
+
+.expire {
+  margin-right: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.bank,
+.owner {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/* rating function */
+
+/* .rating {
+  margin-left: 20px;
+} */
+
+/* driverCard function */
+
+.driver-card {
+  display: flex;
+  background-color: rgba(11, 19, 156, 0.739);
+  border-radius: 9px;
+  margin: 5px;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+}
+
+.img-driver-card {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: inherit;
+  object-fit: cover;
+}
+
+.writingCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details {
+  margin: 0px;
+  /* font-size: x-large; */
+}
+
+/* facebook profile */
+
+.facebook-profiles {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook-img {
+  width: 100px;
+  object-fit: cover;
 }
