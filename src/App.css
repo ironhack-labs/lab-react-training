@@ -36,3 +36,179 @@
     transform: rotate(360deg);
   }
 }
+
+.IdCard {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.IdCard__ImageContainer {
+  margin-right: 15px;
+}
+
+.IdCard__ImageContainer img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.IdCard__InfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.IdCard__InfoContainer p {
+  margin: 2px 0;
+  line-height: 1.2;
+}
+
+.Greetings {
+  border: 1px solid black;
+  font-size: large;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+.Random {
+  border: 1px solid black;
+  font-size: large;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+.BoxColor {
+  border: 1px solid black;
+  font-size: large;
+  margin: 10px;
+  text-align: center;
+}
+
+.CreditCard {
+  width: 320px;
+  height: 200px;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  background-color: #222;
+  font-family: "Arial", sans-serif;
+  margin: 10px;
+}
+
+.CreditCard_CardLogo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.CreditCard_CardLogo img {
+  width: 60px;
+}
+
+.CreditCard_CardNumber {
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.CreditCard_ExpirationBank {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.CreditCard_Owner {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.Rating {
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-align: left;
+  margin: 10px;
+}
+
+.DriverCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #471fcd; /* Purple/blue background */
+  color: white; /* White text color */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px;
+}
+
+.DriverCard_ProfilePic {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DriverCard_ProfilePic img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.DriverCard_DriverInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.DriverCard_DriverInfo p {
+  margin: 5px 0;
+}
+
+.DriverCard_DriverInfo strong {
+  font-size: 1.5em; /* Larger font size for name */
+}
+
+.DriverCard_DriverInfo .Rating {
+  font-size: 1.2em; /* Larger font size for rating */
+}
+
+.NumbersTable {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(50px, 1fr)
+  ); /* Adjust 50px to control item size */
+  gap: 0; /* No spacing between grid items */
+  color: #000;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.NumbersTable_NumberContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Adjust height as needed */
+  font-weight: bold;
+  padding: 10px; /* Adjust padding as needed */
+  box-sizing: border-box;
+  border: 1px solid #000; /* Optional: Add borders to separate items */
+  color: #000;
+}
