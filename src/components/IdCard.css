@@ -1,0 +1,34 @@
+.id-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 500px; /* Adjust width as needed */
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the image */
+  .id-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  
+  /* Styling for the text information */
+  .id-card-details {
+    text-align: left;
+  }
+  
+  .id-card-details p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .id-card-details strong {
+    font-weight: bold;
+  }
