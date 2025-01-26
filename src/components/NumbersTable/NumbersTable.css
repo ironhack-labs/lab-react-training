@@ -1,0 +1,17 @@
+.numbers-table {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    div{
+        display: flex;
+        p{
+            padding: 20px;
+            border: 2px solid black;
+            font-weight: 600;
+            font-size: larger;
+        }
+    }
+    .red-background{
+        background-color: red;
+    }
+}

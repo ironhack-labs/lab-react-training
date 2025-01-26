@@ -1,0 +1,10 @@
+.boxColor {
+   
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,37 @@
+.creditCard {
+    box-sizing: border-box; 
+    border-radius: 8px;
+    width: 380px; /* scalable size */
+    height:200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        .bank{
+            display: flex;
+            justify-content: end;
+            img{
+                width: 60px;
+                
+            }
+
+        }
+        .card-num{
+            font-size: 38px;
+        }
+        .info {
+            font-size: 16px;
+            div{
+                display: flex;
+                p{
+                    margin:0 25px 0 0;
+                }
+            }
+            p{
+                
+                text-align: left;
+                margin:0;
+                
+            }
+        }
+    }

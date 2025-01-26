@@ -1,0 +1,19 @@
+.profile {
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 25px;
+    img {
+        width: 180px;
+        border-radius: 5px;
+    }
+    div {
+        margin-left: 15px;
+        padding: 15px;
+    }
+}
+
+.blue-background {
+  background-color: rgba(173, 216, 230, 0.5);
+}

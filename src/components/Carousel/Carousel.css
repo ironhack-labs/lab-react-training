@@ -1,0 +1,21 @@
+.Carousel {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    img {
+        height: 100%;
+    }
+    
+      
+        button{
+            padding: 10px 15px 10px 15px;
+            font-size: larger;
+            margin: 10px;
+        }
+    
+}

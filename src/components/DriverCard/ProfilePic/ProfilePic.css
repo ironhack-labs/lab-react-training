@@ -1,0 +1,12 @@
+.imgDiv {
+    display: inline-block; /* Ensures div fits the content */
+    border-radius: 50%;   /* Makes it circular */
+    overflow: hidden;     /* Ensures the image doesn't go outside the div */
+    width: 110px;         /* Set a fixed width */
+    height: 110px; 
+    img{
+        width: 100%;          /* Ensures the image fills the div */
+        height: 100%;         /* Ensures the image fills the div */
+        object-fit: cover; 
+    }
+}

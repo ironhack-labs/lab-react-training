@@ -1,0 +1,14 @@
+.idCard{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 10px;
+        
+    }
+}

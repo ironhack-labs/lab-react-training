@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  padding: 20px;
+  .cardDiv{
+    margin: 15px 10px;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .App-logo {

@@ -1,0 +1,11 @@
+.ratingDiv{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+        font-size: 40px;
+    }
+}

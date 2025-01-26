@@ -1,0 +1,23 @@
+.container {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    .buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        padding: 15px;
+        button{
+            font-size: larger;
+            margin-bottom: 10px;
+        }
+    }
+    .facebook-simple{
+      
+        padding: 35px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
