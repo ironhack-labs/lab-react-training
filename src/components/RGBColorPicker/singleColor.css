@@ -1,0 +1,15 @@
+.single-color-picker {
+    margin-bottom: 10px;
+    display: flex;
+    .box-color{
+        border: 1px solid black;
+        margin-right: 15px;
+        border-radius: 4px;
+        width: 40px;
+        height: 40px;
+    }
+   input {
+    width: 50px;
+    margin-left: 15px;
+   }
+}

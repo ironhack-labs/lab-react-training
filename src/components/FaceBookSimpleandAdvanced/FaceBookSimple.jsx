@@ -1,4 +1,4 @@
-import profilesData from "./../../data/berlin.json";
+import profilesData from "../../data/berlin.json";
 import Profile from "./Profile";
 import "./FaceBookSimple.css";
 import { useState } from "react";

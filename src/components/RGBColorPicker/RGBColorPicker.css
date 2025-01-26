@@ -1,0 +1,30 @@
+.color-picker {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    .single-color{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .rgb-picker{
+        display: flex;
+        align-items: center;
+        .box-color {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+           
+           }
+           p{
+            margin: 0;
+           }
+    }
+    
+
+
+}

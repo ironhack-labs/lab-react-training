@@ -3,7 +3,7 @@ import "./Rating.css";
 function Rating(props) {
     function displayRating(num) {
         const numRounded = Math.round(num); 
-        const stars = "★".repeat(numRounded) + "☆".repeat(5 - numRounded); // Create stars dynamically
+        const stars = "★".repeat(numRounded) + "☆".repeat(5 - numRounded); 
         return <p>{stars}</p>;
       }
   return (
